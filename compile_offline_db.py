@@ -188,6 +188,32 @@ def main():
             if not q_text and not c1:
                 continue
 
+            def sanitize_choice_str(val):
+                if not val: return ''
+                v = re.sub(r'<\s*br\s*/?\s*>', ' ', str(val), flags=re.IGNORECASE)
+                v = re.sub(r'---', '', v)
+                return re.sub(r'\s+', ' ', v).strip()
+
+            c1 = sanitize_choice_str(c1)
+            c2 = sanitize_choice_str(c2)
+            c3 = sanitize_choice_str(c3)
+            c4 = sanitize_choice_str(c4)
+            c5 = sanitize_choice_str(c5)
+
+            # In Musculoskeleton, ensure subtopic is strictly OA, RA, Osteoporosis, or Gout
+            if 'musculo' in s_name.lower() or '1.' in s_name:
+                st_low = subtopic.lower()
+                if 'gout' in st_low or 'เกาต์' in st_low:
+                    subtopic = 'Gout'
+                elif 'osteoarthritis' in st_low or 'ข้อเสื่อม' in st_low or 'ข้อเข่า' in st_low or st_low == 'oa':
+                    subtopic = 'OA'
+                elif 'osteoporosis' in st_low or 'กระดูกพรุน' in st_low or 'กระดูกบาง' in st_low:
+                    subtopic = 'Osteoporosis'
+                elif 'rheumatoid' in st_low or 'รูมาตอยด์' in st_low or st_low == 'ra':
+                    subtopic = 'RA'
+                elif not subtopic or subtopic == s_name:
+                    subtopic = 'OA'
+
             # Answer key parsing (supports 1, 2, 3, 4, 5 or ก, ข, ค, ง, จ or A, B, C, D, E)
             ans_key = 1
             ans_map = {'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5, 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}

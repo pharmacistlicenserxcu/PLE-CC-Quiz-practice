@@ -17,39 +17,26 @@ creds = service_account.Credentials.from_service_account_file(
 )
 service = build('sheets', 'v4', credentials=creds)
 
-# Build rows: A to N
+# Build rows: A to O (15 columns)
 rows = []
-for q in parse_musculo.parsed_questions:
-    # A: คำถาม
-    # B: รูปถาม
-    # C: ตัวเลือก 1
-    # D: ตัวเลือก 2
-    # E: ตัวเลือก 3
-    # F: ตัวเลือก 4
-    # G: ตัวเลือก 5
-    # H: เฉลย (ตัวเลข 1-5)
-    # I: คำอธิบายเฉลย
-    # J: รูปเฉลย
-    # K: Filter หมวด/Subtopic
-    # L: Product / Clinic
-    # M: หมายเหตุ
-    # N: ประเภทข้อสอบ / ปีข้อสอบ
+for idx, q in enumerate(parse_musculo.parsed_questions):
     c = q['choices']
     row = [
-        q['question'],
-        "", # รูปถาม
-        c[0] if len(c) > 0 else "",
-        c[1] if len(c) > 1 else "",
-        c[2] if len(c) > 2 else "",
-        c[3] if len(c) > 3 else "",
-        c[4] if len(c) > 4 else "",
-        int(q['answer']),
-        q['explanation'],
-        "", # รูปเฉลย
-        q['subtopic'],
-        "Clinic",
-        f"ข้อสอบจริงปี {q['year']}" if q['year'] else "ข้อสอบจริง",
-        q['exam_type']
+        idx + 1, # A: ข้อที่
+        q['question'], # B: คำถาม
+        "", # C: รูปถาม
+        c[0] if len(c) > 0 else "", # D: ตัวเลือก 1
+        c[1] if len(c) > 1 else "", # E: ตัวเลือก 2
+        c[2] if len(c) > 2 else "", # F: ตัวเลือก 3
+        c[3] if len(c) > 3 else "", # G: ตัวเลือก 4
+        c[4] if len(c) > 4 else "", # H: ตัวเลือก 5
+        int(q['answer']), # I: เฉลย (ตัวเลข 1-5)
+        q['explanation'], # J: คำอธิบายเฉลย
+        "", # K: รูปเฉลย
+        q['subtopic'], # L: Filter หมวด/Subtopic
+        "Clinic", # M: Product / Clinic
+        q['note'], # N: หมายเหตุ (Clinical Guideline / Key Takeaway)
+        q['exam_type'] # O: ประเภทข้อสอบ / ปีข้อสอบ
     ]
     rows.append(row)
 
@@ -57,7 +44,7 @@ for q in parse_musculo.parsed_questions:
 print(f"🧹 Clearing existing data rows in '{SHEET_NAME}' from row 3 downwards...")
 service.spreadsheets().values().clear(
     spreadsheetId=SPREADSHEET_ID,
-    range=f"'{SHEET_NAME}'!A3:N500"
+    range=f"'{SHEET_NAME}'!A3:O500"
 ).execute()
 
 # Upload rows starting at A3
@@ -67,7 +54,7 @@ body = {
 }
 res = service.spreadsheets().values().update(
     spreadsheetId=SPREADSHEET_ID,
-    range=f"'{SHEET_NAME}'!A3:N{len(rows)+2}",
+    range=f"'{SHEET_NAME}'!A3:O{len(rows)+2}",
     valueInputOption='RAW',
     body=body
 ).execute()
@@ -92,7 +79,7 @@ if sheet_id is not None:
                     "startRowIndex": 2,
                     "endRowIndex": len(rows) + 2,
                     "startColumnIndex": 0,
-                    "endColumnIndex": 14
+                    "endColumnIndex": 15
                 },
                 "cell": {
                     "userEnteredFormat": {
@@ -107,15 +94,36 @@ if sheet_id is not None:
                 "fields": "userEnteredFormat(wrapStrategy,verticalAlignment,textFormat)"
             }
         },
-        # Center align answer key and choices numbers
+        # Center align item number (Col A) and answer key (Col I)
         {
             "repeatCell": {
                 "range": {
                     "sheetId": sheet_id,
                     "startRowIndex": 2,
                     "endRowIndex": len(rows) + 2,
-                    "startColumnIndex": 7,
-                    "endColumnIndex": 8
+                    "startColumnIndex": 0,
+                    "endColumnIndex": 1
+                },
+                "cell": {
+                    "userEnteredFormat": {
+                        "horizontalAlignment": "CENTER",
+                        "textFormat": {
+                            "bold": True,
+                            "fontSize": 10
+                        }
+                    }
+                },
+                "fields": "userEnteredFormat(horizontalAlignment,textFormat)"
+            }
+        },
+        {
+            "repeatCell": {
+                "range": {
+                    "sheetId": sheet_id,
+                    "startRowIndex": 2,
+                    "endRowIndex": len(rows) + 2,
+                    "startColumnIndex": 8,
+                    "endColumnIndex": 9
                 },
                 "cell": {
                     "userEnteredFormat": {

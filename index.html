@@ -603,27 +603,108 @@
     }
     .rb-item:last-child { border-bottom: none; }
 
-    /* ══ BROWSE VIEW ══ */
-    #browseView { padding: 14px 16px 20px; flex: 1; overflow-y: auto; }
-    .browse-search-bar { position: relative; margin-bottom: 10px; }
-    .browse-search-input {
-      width: 100%; padding: 10px 34px 10px 36px; border: 1px solid var(--border);
-      border-radius: var(--r-md); background: var(--card); font-family: inherit; font-size: 13.5px; color: var(--ink); outline: none;
+    /* ══ TIMER CHIP IN TOPBAR ══ */
+    .timer-chip {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 10px; border-radius: 10px;
+      font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 700;
+      background: #FEF3C7; color: #92400E; border: 1px solid #FDE68A;
+      box-shadow: var(--shadow-sm); flex-shrink: 0; transition: all 0.2s;
     }
-    .browse-search-input:focus { border-color: var(--clinic); }
+    .timer-chip.urgent {
+      background: #FEE2E2; color: #DC2626; border-color: #FECACA;
+      animation: timerPulse 1s infinite alternate;
+    }
+    @keyframes timerPulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.04); box-shadow: 0 0 10px rgba(220, 38, 38, 0.35); }
+    }
+
+    /* ══ BROWSE VIEW (REVAMPED ANSWER BOOK STYLE) ══ */
+    #browseView { padding: 14px 16px 24px; flex: 1; overflow-y: auto; }
+    .browse-controls-bar {
+      display: flex; flex-direction: column; gap: 10px;
+      margin-bottom: 14px; background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--r-md); padding: 12px 14px; box-shadow: var(--shadow-sm);
+    }
+    .browse-search-bar { position: relative; width: 100%; }
+    .browse-search-input {
+      width: 100%; padding: 9px 34px 9px 36px; border: 1px solid var(--border);
+      border-radius: var(--r-sm); background: var(--bg); font-family: inherit; font-size: 13.5px; color: var(--ink); outline: none;
+    }
+    .browse-search-input:focus { border-color: var(--clinic); background: #fff; }
     .browse-search-icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); pointer-events: none; stroke: var(--ink-faint); }
     .browse-clear-btn { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--ink-faint); font-size: 15px; cursor: pointer; }
 
-    .browse-table-wrap { border: 1px solid var(--border); border-radius: 14px; background: var(--card); overflow: hidden; margin-top: 8px; }
-    .browse-table-item { padding: 12px 14px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.15s; }
-    .browse-table-item:last-child { border-bottom: none; }
-    .browse-table-item:hover { background: var(--bg); }
-    .bt-tag { font-size: 11px; font-weight: 700; color: var(--clinic); }
-    .bt-q { font-size: 13.5px; font-weight: 700; color: var(--ink); line-height: 1.4; margin-top: 3px; }
-    .bt-a { font-size: 13px; color: var(--confident); margin-top: 5px; line-height: 1.5; font-weight: 600; display: none; }
-    .bt-a.show { display: block; }
-    .bt-exp { font-size: 12px; color: var(--ink-soft); margin-top: 4px; display: none; line-height: 1.4; }
-    .bt-exp.show { display: block; }
+    .browse-filters-row {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    }
+    .browse-select {
+      flex: 1; min-width: 140px; padding: 7px 10px; border: 1px solid var(--border);
+      border-radius: 8px; background: var(--bg); font-family: inherit; font-size: 12px; font-weight: 600;
+      color: var(--ink); outline: none; cursor: pointer;
+    }
+    .browse-select:focus { border-color: var(--clinic); }
+
+    .browse-cards-container { display: flex; flex-direction: column; gap: 14px; }
+    .browse-card {
+      background: var(--card); border: 1.5px solid var(--border); border-radius: 18px;
+      padding: 18px 20px; box-shadow: var(--shadow-sm); transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .browse-card:hover { border-color: var(--clinic-border); box-shadow: var(--shadow-md); }
+    .browse-card-head {
+      display: flex; align-items: center; justify-content: space-between; gap: 8px;
+      margin-bottom: 10px; flex-wrap: wrap;
+    }
+    .browse-item-num-badge {
+      font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 700;
+      color: #fff; background: var(--ink); padding: 3px 8px; border-radius: 6px;
+    }
+    .browse-card-tags { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+
+    .browse-card-question {
+      font-size: 15.5px; font-weight: 700; line-height: 1.6; color: var(--ink); margin-bottom: 14px;
+    }
+
+    /* Browse Choices List */
+    .browse-choices-list { display: flex; flex-direction: column; gap: 7px; margin-bottom: 12px; }
+    .browse-choice-row {
+      display: flex; align-items: center; gap: 10px; padding: 9px 12px;
+      border: 1px solid var(--choice-border); border-radius: 10px;
+      background: var(--bg); font-size: 13.5px; line-height: 1.45;
+    }
+    .browse-choice-letter {
+      width: 24px; height: 24px; border-radius: 6px; background: var(--card);
+      border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 12px; color: var(--ink-soft); flex-shrink: 0;
+    }
+    .browse-choice-text { flex: 1; color: var(--ink); }
+    .browse-choice-row.is-correct {
+      background: #F0FDF4 !important; border-color: #86EFAC !important; font-weight: 600;
+    }
+    .browse-choice-row.is-correct .browse-choice-letter {
+      background: #16A34A !important; color: #fff !important; border-color: #16A34A !important;
+    }
+    .browse-choice-row.is-correct .browse-choice-text { color: #14532D; }
+    .browse-correct-pill {
+      font-size: 11px; font-weight: 700; background: #DCFCE7; color: #15803D;
+      border: 1px solid #86EFAC; padding: 2px 7px; border-radius: 6px; white-space: nowrap;
+    }
+
+    /* Browse Explanation Block */
+    .browse-exp-toggle-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--bg); color: var(--ink-soft); font-family: inherit; font-size: 12px;
+      font-weight: 700; cursor: pointer; transition: all 0.15s; margin-top: 4px;
+    }
+    .browse-exp-toggle-btn:hover { background: var(--clinic-soft); color: var(--clinic); border-color: var(--clinic); }
+    .browse-exp-box {
+      display: none; background: #F8FAFC; border: 1.5px solid #E2E8F0;
+      border-radius: 12px; padding: 12px 14px; margin-top: 8px; font-size: 13px; line-height: 1.6;
+    }
+    .browse-exp-box.show { display: block; }
+    .browse-exp-title { font-weight: 700; color: #1E40AF; margin-bottom: 5px; font-size: 13px; }
 
     /* ══ MODALS ══ */
     .modal-overlay {
@@ -705,25 +786,35 @@
       background: #F1F5F9; color: #475569; border: 1px solid #E2E8F0;
     }
 
-    /* Exam Mode Question Navigator Palette */
-    .exam-nav-palette {
-      display: none; width: 100%; max-width: 720px; margin: 0 auto 12px;
-      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
-      padding: 10px 12px; box-shadow: var(--shadow-sm);
+    /* ══ COMPACT & COLLAPSIBLE EXAM NAVIGATOR PALETTE ══ */
+    .exam-palette-toggle-bar {
+      display: none; width: 100%; max-width: 720px; margin: 0 auto 6px;
+      padding: 6px 12px; border-radius: 10px; border: 1px solid var(--border);
+      background: var(--card); font-size: 12px; font-weight: 700; color: var(--ink);
+      cursor: pointer; align-items: center; justify-content: space-between;
+      transition: all 0.15s; box-shadow: var(--shadow-sm); user-select: none;
     }
-    .exam-nav-palette.show { display: block; }
+    .exam-palette-toggle-bar.show { display: flex; }
+    .exam-palette-toggle-bar:hover { background: var(--bg); border-color: var(--clinic); color: var(--clinic); }
+
+    .exam-nav-palette {
+      display: none; width: 100%; max-width: 720px; margin: 0 auto 10px;
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 10px 12px; box-shadow: var(--shadow-sm); animation: popIn 0.2s ease-out;
+    }
+    .exam-nav-palette.is-open { display: block; }
     .exam-palette-grid {
-      display: flex; flex-wrap: wrap; gap: 6px; max-height: 120px; overflow-y: auto;
+      display: flex; flex-wrap: wrap; gap: 5px; max-height: 110px; overflow-y: auto; padding-right: 4px;
     }
     .palette-btn {
-      width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--border);
-      background: var(--bg); font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+      width: 27px; height: 27px; border-radius: 6px; border: 1px solid var(--border);
+      background: var(--bg); font-family: 'IBM Plex Mono', monospace; font-size: 11px;
       font-weight: 700; color: var(--ink); cursor: pointer; display: flex; align-items: center; justify-content: center;
-      transition: all 0.15s;
+      transition: all 0.12s; flex-shrink: 0;
     }
-    .palette-btn:hover { border-color: var(--clinic); }
+    .palette-btn:hover { border-color: var(--clinic); transform: translateY(-1px); }
     .palette-btn.current { border: 2px solid var(--clinic); background: var(--clinic-soft); color: var(--clinic); }
-    .palette-btn.answered { background: #DCFCE7; border-color: #86EFAC; color: #15803D; }
+    .palette-btn.answered { background: #DCFCE7; border-color: #86EFAC; color: #15803D; font-weight: 700; }
 
     /* Exam History Table */
     .history-item {
@@ -731,6 +822,16 @@
       display: flex; align-items: center; justify-content: space-between;
     }
     .history-item:last-child { border-bottom: none; }
+
+    /* Setup Modal Chips & Inputs */
+    .setup-count-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+    .setup-chip-btn {
+      padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--bg); font-family: inherit; font-size: 12.5px; font-weight: 700;
+      color: var(--ink-soft); cursor: pointer; transition: all 0.15s;
+    }
+    .setup-chip-btn:hover { border-color: var(--clinic); color: var(--clinic); }
+    .setup-chip-btn.active { background: var(--clinic-soft); border-color: var(--clinic); color: var(--clinic); }
 
   </style>
 </head>
@@ -904,11 +1005,11 @@
       <h3>เครื่องมือทำข้อสอบ</h3>
     </div>
     <div class="lobby-quick-tools">
-      <button class="lobby-tool-btn primary" onclick="enterQuizAll('clinic')">
+      <button class="lobby-tool-btn primary" onclick="openQuizSetupModal('__all__', currentTrack)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         ทำข้อสอบทั้งหมด
       </button>
-      <button class="lobby-tool-btn smart-btn" onclick="openRandomModal()">
+      <button class="lobby-tool-btn smart-btn" onclick="openQuizSetupModal('__all__', currentTrack, true)">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
         🎲 สุ่มข้อสอบ
       </button>
@@ -937,7 +1038,7 @@
   <div id="quizView" style="display:none; flex-direction:column; flex:1;">
     <div class="topbar">
       <div class="topbar-left">
-        <button class="back-home-btn" onclick="showLobby()" title="กลับหน้า Lobby">
+        <button class="back-home-btn" onclick="confirmExitQuiz()" title="กลับหน้า Lobby">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           <span>Lobby</span>
         </button>
@@ -946,6 +1047,12 @@
       <div class="titles">
         <div class="deck-name" id="quizCategoryTitle">หมวดวิชา</div>
         <div class="deck-sub" id="quizCategorySub">Multiple Choices Quiz</div>
+      </div>
+
+      <!-- Live Sticky Countdown Timer -->
+      <div class="timer-chip" id="quizTimerChip" style="display:none;" title="เวลานับถอยหลัง">
+        <span id="quizTimerIcon">⏱️</span>
+        <span id="quizTimerText">00:00:00</span>
       </div>
       
       <div class="topbar-right">
@@ -978,17 +1085,23 @@
         <span class="progress-count" id="quizProgressScore" style="color:var(--confident);">0 ถูก</span>
       </div>
 
-      <!-- Main Quiz Card -->
-      
-      <!-- Question Navigator Palette (Exam Mode) -->
-      <div class="exam-nav-palette" id="examNavPalette">
-        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
-          <span style="font-size:12px; font-weight:700; color:var(--ink);">แผนผังข้อสอบ (คลิกข้ามข้อได้อิสระ):</span>
-          <span id="examAnsweredCountText" style="font-size:11.5px; font-weight:700; color:#15803D;">ตอบแล้ว 0/0 ข้อ</span>
+      <!-- Collapsible Palette Toggle Bar (Compact) -->
+      <div class="exam-palette-toggle-bar" id="examPaletteToggleBar" onclick="toggleExamPalette()">
+        <div style="display:flex; align-items:center; gap:6px;">
+          <span>🗺️ ผังข้อสอบ</span>
+          <span id="examAnsweredCountText" style="color:#0891B2; font-weight:700;">(ตอบแล้ว 0/0 ข้อ)</span>
         </div>
+        <div id="examPaletteToggleText" style="font-size:11.5px; color:var(--ink-soft); display:flex; align-items:center; gap:4px;">
+          <span id="examPaletteToggleLabel">แสดงผัง</span> <span id="examPaletteArrow">▼</span>
+        </div>
+      </div>
+
+      <!-- Question Navigator Palette (Exam Mode Collapsible Grid) -->
+      <div class="exam-nav-palette" id="examNavPalette">
         <div class="exam-palette-grid" id="examPaletteGrid"></div>
       </div>
 
+      <!-- Main Quiz Card -->
       <div class="quiz-card" id="quizCard">
         <div class="quiz-card-head">
           <span class="tag clinic-tag" id="quizCardTag">Clinic · Cardiovascular</span>
@@ -1087,7 +1200,7 @@
     </div>
   </div>
 
-  <!-- ══ BROWSE VIEW ══ -->
+  <!-- ══ BROWSE VIEW (ANSWER BOOK & QUESTION ARCHIVE) ══ -->
   <div id="browseView" style="display:none; flex-direction:column; flex:1;">
     <div class="topbar">
       <div class="topbar-left">
@@ -1097,28 +1210,139 @@
         </button>
       </div>
       <div class="titles">
-        <div class="deck-name">Browse คลังข้อสอบปรนัย</div>
+        <div class="deck-name">📖 คลังข้อสอบและเฉลยละเอียด</div>
         <div class="deck-sub" id="browseResultCount">พบ 0 ข้อ</div>
       </div>
       <div class="topbar-right">
-        <button class="icon-btn" onclick="toggleAllBrowseAnswers()" title="แสดง/ซ่อน เฉลยทั้งหมด">
+        <button class="icon-btn" onclick="toggleAllBrowseAnswers()" title="แสดง/ซ่อน คำอธิบายเฉลยทั้งหมด">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
         </button>
       </div>
     </div>
 
-    <div class="browse-search-bar" style="padding:12px 16px 0;">
-      <svg class="browse-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input type="text" id="browseSearchInput" class="browse-search-input" placeholder="พิมพ์คำค้นหาโจทย์ หรือคำอธิบายเฉลย..." oninput="onBrowseSearchChange()">
-      <button class="browse-clear-btn" id="browseSearchClear" onclick="clearBrowseSearch()" style="display:none;">✕</button>
+    <!-- Filter & Search Controls Bar -->
+    <div class="browse-controls-bar" style="margin:12px 16px 10px;">
+      <div class="browse-search-bar">
+        <svg class="browse-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="browseSearchInput" class="browse-search-input" placeholder="พิมพ์คำค้นหาโจทย์ ตัวเลือก หรือคำอธิบายเฉลย..." oninput="onBrowseSearchChange()">
+        <button class="browse-clear-btn" id="browseSearchClear" onclick="clearBrowseSearch()" style="display:none;">✕</button>
+      </div>
+      <div class="browse-filters-row">
+        <select class="browse-select" id="browseCategoryFilter" onchange="onBrowseCategoryChange()">
+          <option value="all">🌟 ทุกหมวดวิชา</option>
+        </select>
+        <select class="browse-select" id="browseSubtopicFilter" onchange="renderBrowseList()">
+          <option value="all">📂 ทุกหัวข้อย่อย</option>
+        </select>
+        <select class="browse-select" id="browseExamTypeFilter" onchange="renderBrowseList()">
+          <option value="all">🎯 ทุกประเภทข้อสอบ</option>
+          <option value="real_2567">เฉพาะข้อสอบจริงปี 2567</option>
+          <option value="real_all">ข้อสอบจริงทุกปี</option>
+          <option value="mock">เฉพาะข้อสอบจำลอง (Mock)</option>
+        </select>
+      </div>
     </div>
 
-    <div class="browse-table-wrap" id="browseContainer" style="margin:12px 16px 20px;">
-      <!-- Browse items -->
+    <div class="browse-cards-container" id="browseContainer" style="margin:0 16px 20px;">
+      <!-- Browse question cards rendered dynamically -->
     </div>
   </div>
 
   <!-- ══ MODALS ══ -->
+
+  <!-- Pre-Quiz Setup Modal -->
+  <div class="modal-overlay" id="quizSetupModal">
+    <div class="modal-box" style="max-width:520px;">
+      <div class="modal-head">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:20px;">⚙️</span>
+          <div>
+            <h3 style="margin:0;">ตั้งค่าการทำแบบทดสอบ</h3>
+            <div style="font-size:11.5px; color:var(--ink-soft); font-weight:500;">ปรับแต่งหมวดวิชา จำนวนข้อ และระบบจับเวลาก่อนเริ่ม</div>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closeQuizSetupModal()">✕</button>
+      </div>
+
+      <div class="form-group">
+        <label>หมวดวิชา / กลุ่มโรค</label>
+        <select class="form-input" id="setupCategorySelect" onchange="onSetupCategoryChange()">
+          <!-- Populated dynamically -->
+        </select>
+      </div>
+
+      <div class="form-group" id="setupSubtopicGroup">
+        <label>หัวข้อย่อย (Subtopic)</label>
+        <select class="form-input" id="setupSubtopicSelect" onchange="onSetupSubtopicChange()">
+          <option value="__all__">📂 ทุกหัวข้อย่อย</option>
+        </select>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px;">
+        <div class="form-group" style="margin-bottom:0;">
+          <label>ประเภทข้อสอบ</label>
+          <select class="form-input" id="setupExamTypeSelect" onchange="onSetupFiltersUpdate()">
+            <option value="all">🌟 ทุกประเภทข้อสอบ</option>
+            <option value="real_2567">🎯 เฉพาะข้อสอบจริงปี 2567</option>
+            <option value="real_all">🎯 ข้อสอบจริงทุกปี</option>
+            <option value="mock">📝 ข้อสอบจำลอง (Mock)</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label>โหมดการสอบ</label>
+          <select class="form-input" id="setupModeSelect">
+            <option value="practice">📖 โหมดฝึกฝน (ตรวจทีละข้อ)</option>
+            <option value="exam">⏱️ โหมดสอบจริง (ส่งรวมท้ายชุด)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Question Count Selection -->
+      <div class="form-group">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+          <label style="margin-bottom:0;">จำนวนข้อที่ต้องการทำ</label>
+          <span id="setupAvailableCountBadge" style="font-size:11px; font-weight:700; color:var(--clinic);">มีทั้งหมด 0 ข้อ</span>
+        </div>
+        <div class="setup-count-chips">
+          <button type="button" class="setup-chip-btn" id="chipCount10" onclick="setSetupQuestionCount(10)">10 ข้อ</button>
+          <button type="button" class="setup-chip-btn active" id="chipCount20" onclick="setSetupQuestionCount(20)">20 ข้อ</button>
+          <button type="button" class="setup-chip-btn" id="chipCount40" onclick="setSetupQuestionCount(40)">40 ข้อ</button>
+          <button type="button" class="setup-chip-btn" id="chipCount60" onclick="setSetupQuestionCount(60)">60 ข้อ</button>
+          <button type="button" class="setup-chip-btn" id="chipCount120" onclick="setSetupQuestionCount(120)">120 (ชุดใหญ่)</button>
+          <button type="button" class="setup-chip-btn" id="chipCountAll" onclick="setSetupQuestionCount('all')">ทั้งหมด</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:12px; color:var(--ink-soft); font-weight:600;">หรือกำหนดเอง:</span>
+          <input type="number" id="setupCustomCountInput" value="20" min="1" max="500" style="width:75px; padding:6px 8px; border:1px solid var(--border); border-radius:8px; text-align:center; font-weight:700; font-family:'IBM Plex Mono'; font-size:13px;" oninput="onSetupCustomCountChange()">
+          <span style="font-size:12px; color:var(--ink-soft);">ข้อ</span>
+        </div>
+      </div>
+
+      <!-- Timer Configuration -->
+      <div class="form-group" style="margin-top:14px; padding-top:12px; border-top:1px dashed var(--border);">
+        <label>⏱️ ระบบจับเวลานับถอยหลัง (Countdown Timer)</label>
+        <select class="form-input" id="setupTimerSelect" onchange="onSetupTimerSelectChange()">
+          <option value="auto">⏱️ คำนวณอัตโนมัติ (1.5 นาที/ข้อ — มาตรฐาน PLE-CC1)</option>
+          <option value="15">⏱️ 15 นาที</option>
+          <option value="30">⏱️ 30 นาที</option>
+          <option value="60">⏱️ 60 นาที (1 ชั่วโมง)</option>
+          <option value="180">⏱️ 180 นาที (3 ชั่วโมง — ชุดเต็ม 120 ข้อ)</option>
+          <option value="0">♾️ ไม่จำกัดเวลา (Untimed)</option>
+        </select>
+        <div id="setupTimerDesc" style="font-size:11.5px; color:var(--ink-soft); margin-top:4px;">
+          💡 ระบบจะเริ่มนับถอยหลังทันที และส่งข้อสอบอัตโนมัติเมื่อหมดเวลา
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px; margin-top:18px;">
+        <button class="lobby-tool-btn" onclick="closeQuizSetupModal()" style="flex:1;">ยกเลิก</button>
+        <button class="submit-btn" onclick="startConfiguredQuiz()" style="flex:2;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          เริ่มทำข้อสอบ
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- Random Modal -->
   <div class="modal-overlay" id="randomModal">
@@ -1667,13 +1891,23 @@ async function fetchLiveSheetQuestions(sheetName) {
             const ansRaw = getVal(offset + 7);
             const explanation = getVal(offset + 8);
             const ansImg = getVal(offset + 9);
-            const subtopic = getVal(offset + 10);
+            let subtopic = getVal(offset + 10);
             const track = getVal(offset + 11) || 'Clinic';
             const note = getVal(offset + 12);
             const examType = getVal(offset + 13) || 'ข้อสอบทั่วไป';
 
             if (!qText && !c1) return;
             if (qText.includes('คำถาม') || qText.includes('กลับหน้าแรก')) return;
+
+            // Normalize Musculoskeleton subtopics
+            if (sheetName.toLowerCase().includes('musculo') || sheetName.startsWith('1.')) {
+              const stLow = (subtopic || '').toLowerCase();
+              if (stLow.includes('gout') || stLow.includes('เกาต์')) subtopic = 'Gout';
+              else if (stLow.includes('osteoarthritis') || stLow.includes('ข้อเสื่อม') || stLow.includes('ข้อเข่า') || stLow === 'oa') subtopic = 'OA';
+              else if (stLow.includes('osteoporosis') || stLow.includes('กระดูกพรุน') || stLow.includes('กระดูกบาง')) subtopic = 'Osteoporosis';
+              else if (stLow.includes('rheumatoid') || stLow.includes('รูมาตอยด์') || stLow === 'ra') subtopic = 'RA';
+              else if (!subtopic || subtopic === sheetName) subtopic = 'OA';
+            }
 
             let ansKey = 1;
             const ansMap = {'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5, 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5};
@@ -1683,8 +1917,9 @@ async function fetchLiveSheetQuestions(sheetName) {
               ansKey = parseInt(ansRaw.replace(/\D/g, ''), 10) || 1;
             }
 
-            const choices = [c1, c2, c3, c4];
-            if (c5) choices.push(c5);
+            const cleanC = (s) => (s || '').replace(/<\s*br\s*\/?>/gi, ' ').replace(/---/g, '').replace(/\s+/g, ' ').trim();
+            const choices = [cleanC(c1), cleanC(c2), cleanC(c3), cleanC(c4)];
+            if (c5) choices.push(cleanC(c5));
 
             qs.push({
               id: sheetName + '::' + (idx + 2),
@@ -1970,7 +2205,7 @@ function buildLobby() {
     const fillClass = norm.includes('prod') ? 'product-fill' : norm.includes('sap') ? 'sap-fill' : 'clinic-fill';
 
     html += `
-      <div class="deck-card ${cardClass}" onclick="enterQuizCategory('${cat.name.replace(/'/g, "\\'")}')">
+      <div class="deck-card ${cardClass}" onclick="openQuizSetupModal('${cat.name.replace(/'/g, "\\'")}', '${cat.track}')">
         <div class="deck-card-top">
           <div class="deck-emoji">${em}</div>
           <span class="deck-pct-badge ${pctBadgeClass}">${pct}% ทำแล้ว</span>
@@ -1983,56 +2218,332 @@ function buildLobby() {
   grid.innerHTML = html;
 }
 
-// ─── START QUIZ ───
-function enterQuizCategory(catName) {
-  currentCategory = catName;
-  let qs = allQuestionsMap[catName] || [];
-  qs = filterQuestionsByExamType(qs);
-  if (!qs.length) {
-    showToast('⚠️ ไม่พบข้อสอบตามตัวกรองที่เลือกในหมวดนี้');
+// ─── CHOICE CLEANING HELPER & CONSTANTS ───
+const THAI_CHOICE_LETTERS = ['ก.', 'ข.', 'ค.', 'ง.', 'จ.'];
+
+function cleanChoiceString(text) {
+  if (!text && text !== 0) return '';
+  let str = String(text);
+  str = str.replace(/<\s*br\s*\/?>/gi, ' ');
+  str = str.replace(/---/g, '');
+  return str.replace(/\s+/g, ' ').trim();
+}
+
+// ─── COUNTDOWN TIMER ENGINE ───
+let quizCountdownTimer = null;
+let quizRemainingSeconds = 0;
+let quizTimerTotalSeconds = 0;
+let quizSessionStartTime = 0;
+
+function startQuizCountdownTimer(seconds) {
+  stopQuizCountdownTimer();
+  quizTimerTotalSeconds = seconds || 0;
+  quizRemainingSeconds = seconds || 0;
+  quizSessionStartTime = Date.now();
+
+  const chip = document.getElementById('quizTimerChip');
+  if (!chip) return;
+
+  if (seconds <= 0) {
+    chip.style.display = 'none';
+    chip.classList.remove('urgent');
     return;
   }
 
-  // Populate subtopics dropdown
-  const subSelect = document.getElementById('quizSubtopicSelect');
-  const subs = Array.from(new Set(qs.map(q => q.subtopic).filter(Boolean)));
-  let subHtml = '<option value="__all__">📂 ทุกหัวข้อย่อยในหมวดนี้ (' + qs.length + ' ข้อ)</option>';
-  subs.forEach(s => {
-    const count = qs.filter(q => q.subtopic === s).length;
-    subHtml += `<option value="${s}">📌 ${s} (${count} ข้อ)</option>`;
-  });
-  subSelect.innerHTML = subHtml;
-  subSelect.value = '__all__';
-  currentSubtopic = '__all__';
+  chip.style.display = 'inline-flex';
+  chip.classList.remove('urgent');
+  updateQuizTimerDisplay();
 
-  document.getElementById('quizSubtopicRow').style.display = subs.length > 1 ? 'flex' : 'none';
+  quizCountdownTimer = setInterval(() => {
+    quizRemainingSeconds--;
+    updateQuizTimerDisplay();
 
-  startQuizWithQuestions(qs, catName);
-
-  // Background fetch live updates
-  fetchLiveSheetQuestions(catName).then(live => {
-    if (live && live.length > 0 && live.length !== qs.length) {
-      allQuestionsMap[catName] = live;
-      showToast('🟢 อัปเดตข้อสอบสดจาก Google Sheet (' + live.length + ' ข้อ)');
+    if (quizRemainingSeconds <= 300 && quizRemainingSeconds > 0) {
+      chip.classList.add('urgent');
+      const icon = document.getElementById('quizTimerIcon');
+      if (icon) icon.textContent = '⚠️';
+    } else {
+      chip.classList.remove('urgent');
+      const icon = document.getElementById('quizTimerIcon');
+      if (icon) icon.textContent = '⏱️';
     }
-  }).catch(() => {});
+
+    if (quizRemainingSeconds <= 0) {
+      stopQuizCountdownTimer();
+      handleQuizTimeout();
+    }
+  }, 1000);
+}
+
+function stopQuizCountdownTimer() {
+  if (quizCountdownTimer) {
+    clearInterval(quizCountdownTimer);
+    quizCountdownTimer = null;
+  }
+  const chip = document.getElementById('quizTimerChip');
+  if (chip) {
+    chip.classList.remove('urgent');
+  }
+}
+
+function formatTimerString(secs) {
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  const s = secs % 60;
+  const pad = (n) => String(n).padStart(2, '0');
+  if (h > 0) return `${pad(h)}:${pad(m)}:${pad(s)}`;
+  return `${pad(m)}:${pad(s)}`;
+}
+
+function updateQuizTimerDisplay() {
+  const el = document.getElementById('quizTimerText');
+  if (el) el.textContent = formatTimerString(Math.max(0, quizRemainingSeconds));
+}
+
+function handleQuizTimeout() {
+  alert('⏰ หมดเวลาการทำข้อสอบแล้ว! ระบบจะทำการส่งข้อสอบและสรุปผลคะแนนให้คุณโดยอัตโนมัติ');
+  if (appQuizMode === 'exam') {
+    submitExamModeWholeSession(true);
+  } else {
+    showQuizResultSummary();
+  }
+}
+
+function confirmExitQuiz() {
+  if (confirm('คุณกำลังทำแบบทดสอบอยู่ ต้องการออกจากการทำข้อสอบและกลับหน้า Lobby หรือไม่?')) {
+    stopQuizCountdownTimer();
+    showLobby();
+  }
+}
+
+// ─── COMPACT EXAM PALETTE TOGGLE ───
+let isPaletteOpen = false;
+
+function toggleExamPalette() {
+  isPaletteOpen = !isPaletteOpen;
+  const pal = document.getElementById('examNavPalette');
+  const label = document.getElementById('examPaletteToggleLabel');
+  const arrow = document.getElementById('examPaletteArrow');
+  if (pal) pal.classList.toggle('is-open', isPaletteOpen);
+  if (label) label.textContent = isPaletteOpen ? 'ซ่อนผัง' : 'แสดงผัง';
+  if (arrow) arrow.textContent = isPaletteOpen ? '▲' : '▼';
+}
+
+// ─── PRE-QUIZ SETUP MODAL LOGIC ───
+let setupCategory = '__all__';
+let setupSubtopic = '__all__';
+let setupExamType = 'all';
+let setupQuestionCount = 20;
+let setupIsRandom = false;
+
+function openQuizSetupModal(catName, track, isRandom = false) {
+  setupCategory = catName || '__all__';
+  setupSubtopic = '__all__';
+  setupExamType = currentExamTypeFilter || 'all';
+  setupIsRandom = isRandom;
+  setupQuestionCount = 20;
+
+  populateSetupCategories();
+  document.getElementById('setupCategorySelect').value = setupCategory;
+  onSetupCategoryChange();
+
+  document.getElementById('setupExamTypeSelect').value = setupExamType;
+  document.getElementById('setupModeSelect').value = appQuizMode;
+
+  setSetupQuestionCount(20);
+  document.getElementById('setupTimerSelect').value = 'auto';
+  onSetupTimerSelectChange();
+
+  document.getElementById('quizSetupModal').classList.add('show');
+}
+
+function closeQuizSetupModal() {
+  document.getElementById('quizSetupModal').classList.remove('show');
+}
+
+function populateSetupCategories() {
+  const sel = document.getElementById('setupCategorySelect');
+  let html = `<option value="__all__">🌟 รวมทุกหมวดในสายวิชา (${currentTrack.toUpperCase()})</option>`;
+  const vis = getVisibleCategories();
+  vis.forEach(c => {
+    html += `<option value="${c.name}">${c.name} (${c.count} ข้อ)</option>`;
+  });
+  sel.innerHTML = html;
+}
+
+function onSetupCategoryChange() {
+  setupCategory = document.getElementById('setupCategorySelect').value;
+  const subGroup = document.getElementById('setupSubtopicGroup');
+  const subSel = document.getElementById('setupSubtopicSelect');
+
+  if (setupCategory === '__all__') {
+    subGroup.style.display = 'none';
+    setupSubtopic = '__all__';
+  } else {
+    const qs = allQuestionsMap[setupCategory] || [];
+    const subs = Array.from(new Set(qs.map(q => q.subtopic).filter(Boolean)));
+    if (subs.length > 1) {
+      subGroup.style.display = 'block';
+      let html = '<option value="__all__">📂 ทุกหัวข้อย่อย (' + qs.length + ' ข้อ)</option>';
+      subs.sort().forEach(s => {
+        const c = qs.filter(q => q.subtopic === s).length;
+        html += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
+      });
+      subSel.innerHTML = html;
+      subSel.value = '__all__';
+      setupSubtopic = '__all__';
+    } else {
+      subGroup.style.display = 'none';
+      setupSubtopic = '__all__';
+    }
+  }
+  updateSetupAvailableCount();
+}
+
+function onSetupSubtopicChange() {
+  setupSubtopic = document.getElementById('setupSubtopicSelect').value;
+  updateSetupAvailableCount();
+}
+
+function onSetupFiltersUpdate() {
+  setupExamType = document.getElementById('setupExamTypeSelect').value;
+  updateSetupAvailableCount();
+}
+
+function getSetupFilteredPool() {
+  let pool = [];
+  if (setupCategory === '__all__') {
+    const vis = getVisibleCategories();
+    vis.forEach(c => {
+      pool = pool.concat(allQuestionsMap[c.name] || []);
+    });
+  } else {
+    pool = (allQuestionsMap[setupCategory] || []).slice();
+    if (setupSubtopic !== '__all__') {
+      pool = pool.filter(q => q.subtopic === setupSubtopic);
+    }
+  }
+
+  // Filter by exam type
+  if (setupExamType !== 'all') {
+    pool = pool.filter(q => {
+      const et = (q.examType || '').toLowerCase();
+      if (setupExamType === 'real_2567') return et.includes('2567') || et.includes('67');
+      if (setupExamType === 'real_all') return et.includes('จริง') || et.includes('real');
+      if (setupExamType === 'mock') return et.includes('จำลอง') || et.includes('mock');
+      return true;
+    });
+  }
+  return pool;
+}
+
+function updateSetupAvailableCount() {
+  const pool = getSetupFilteredPool();
+  const badge = document.getElementById('setupAvailableCountBadge');
+  if (badge) badge.textContent = `มีทั้งหมด ${pool.length} ข้อ`;
+  onSetupTimerSelectChange();
+}
+
+function setSetupQuestionCount(val) {
+  setupQuestionCount = val;
+  const chips = ['10', '20', '40', '60', '120', 'All'];
+  chips.forEach(c => {
+    const el = document.getElementById('chipCount' + c);
+    if (el) el.classList.remove('active');
+  });
+
+  const pool = getSetupFilteredPool();
+  let numVal = val;
+  if (val === 'all') {
+    numVal = pool.length || 1;
+    const el = document.getElementById('chipCountAll');
+    if (el) el.classList.add('active');
+  } else {
+    const el = document.getElementById('chipCount' + val);
+    if (el) el.classList.add('active');
+  }
+  document.getElementById('setupCustomCountInput').value = numVal;
+  onSetupTimerSelectChange();
+}
+
+function onSetupCustomCountChange() {
+  const val = parseInt(document.getElementById('setupCustomCountInput').value, 10) || 10;
+  setupQuestionCount = val;
+  const chips = ['10', '20', '40', '60', '120', 'All'];
+  chips.forEach(c => {
+    const el = document.getElementById('chipCount' + c);
+    if (el) el.classList.toggle('active', c === String(val));
+  });
+  onSetupTimerSelectChange();
+}
+
+function onSetupTimerSelectChange() {
+  const selVal = document.getElementById('setupTimerSelect').value;
+  const desc = document.getElementById('setupTimerDesc');
+  const count = parseInt(document.getElementById('setupCustomCountInput').value, 10) || 20;
+
+  if (selVal === 'auto') {
+    const mins = Math.round(count * 1.5);
+    desc.innerHTML = `💡 คำนวณตามมาตรฐาน: <b>${count} ข้อ = ${mins} นาที</b> (ประมาณ 1.5 นาที/ข้อ)`;
+  } else if (selVal === '0') {
+    desc.innerHTML = `💡 โหมดไม่จำกัดเวลา (Untimed) ฝึกทำข้อสอบสบายๆ`;
+  } else {
+    desc.innerHTML = `💡 จับเวลานับถอยหลัง: <b>${selVal} นาที</b> และจะส่งข้อสอบทันทีเมื่อหมดเวลา`;
+  }
+}
+
+function startConfiguredQuiz() {
+  const pool = getSetupFilteredPool();
+  if (!pool.length) {
+    alert('ไม่พบข้อสอบตามตัวกรองที่เลือก กรุณาเลือกหมวดหรือตัวกรองอื่น');
+    return;
+  }
+
+  closeQuizSetupModal();
+
+  // Mode
+  const chosenMode = document.getElementById('setupModeSelect').value;
+  setAppQuizMode(chosenMode);
+
+  // Question count & sampling
+  let finalQuestions = pool.slice();
+  if (setupIsRandom || setupQuestionCount !== 'all') {
+    for (let i = finalQuestions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [finalQuestions[i], finalQuestions[j]] = [finalQuestions[j], finalQuestions[i]];
+    }
+  }
+
+  const targetCount = (setupQuestionCount === 'all') ? finalQuestions.length : (parseInt(document.getElementById('setupCustomCountInput').value, 10) || finalQuestions.length);
+  finalQuestions = finalQuestions.slice(0, targetCount);
+
+  // Timer Calculation
+  const timerOption = document.getElementById('setupTimerSelect').value;
+  let totalSeconds = 0;
+  if (timerOption === 'auto') {
+    totalSeconds = Math.round(finalQuestions.length * 1.5 * 60);
+  } else if (timerOption !== '0') {
+    totalSeconds = parseInt(timerOption, 10) * 60;
+  }
+
+  // Title
+  let title = (setupCategory === '__all__') ? `รวมข้อสอบ (${finalQuestions.length} ข้อ)` : setupCategory;
+  if (setupSubtopic !== '__all__') title += ` · ${setupSubtopic}`;
+
+  // Hide subtopic dropdown row if custom setup was used
+  document.getElementById('quizSubtopicRow').style.display = 'none';
+
+  startQuizWithQuestions(finalQuestions, title);
+  startQuizCountdownTimer(totalSeconds);
+}
+
+// ─── START QUIZ ───
+function enterQuizCategory(catName) {
+  openQuizSetupModal(catName, currentTrack);
 }
 
 function enterQuizAll(track) {
-  let list = [];
-  const visCats = getVisibleCategories();
-  visCats.forEach(c => {
-    const qs = allQuestionsMap[c.name] || [];
-    list = list.concat(qs);
-  });
-  list = filterQuestionsByExamType(list);
-
-  if (!list.length) {
-    showToast('⚠️ ไม่พบข้อสอบตามตัวกรองที่เลือก');
-    return;
-  }
-  document.getElementById('quizSubtopicRow').style.display = 'none';
-  startQuizWithQuestions(list, 'รวมข้อสอบทั้งหมด (' + list.length + ' ข้อ)');
+  openQuizSetupModal('__all__', currentTrack);
 }
 
 function onQuizSubtopicChange() {
@@ -2067,9 +2578,18 @@ function startQuizWithQuestions(qs, titleText) {
   document.getElementById('quizCategoryTitle').textContent = titleText;
   document.getElementById('quizCategorySub').textContent = `${modeBadge} (${activeQuizQuestions.length} ข้อ)`;
 
-  // Palette visibility
+  // Palette toggle bar visibility
+  const toggleBar = document.getElementById('examPaletteToggleBar');
+  if (toggleBar) toggleBar.classList.toggle('show', appQuizMode === 'exam');
+  
+  // Collapse palette by default
+  isPaletteOpen = false;
   const pal = document.getElementById('examNavPalette');
-  if (pal) pal.classList.toggle('show', appQuizMode === 'exam');
+  if (pal) pal.classList.remove('is-open');
+  const arrow = document.getElementById('examPaletteArrow');
+  if (arrow) arrow.textContent = '▼';
+  const label = document.getElementById('examPaletteToggleLabel');
+  if (label) label.textContent = 'แสดงผัง';
 
   renderCurrentQuestion();
 }
@@ -2100,7 +2620,8 @@ function renderCurrentQuestion() {
     examTagClass = 'tag-mock-exam';
   }
 
-  tagEl.innerHTML = `<span>${q.track || 'Clinic'} · ${q.subtopic || q.category} · ข้อ ${currentQuestionIndex + 1}</span> <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>`;
+  const itemNo = q.itemNo || (currentQuestionIndex + 1);
+  tagEl.innerHTML = `<span>${q.track || 'Clinic'} · ${q.subtopic || q.category} · ข้อ ${itemNo}</span> <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>`;
   tagEl.className = `tag ${norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag'}`;
 
   // Question Image
@@ -2124,10 +2645,12 @@ function renderCurrentQuestion() {
     if (!choice && choice !== 0) return;
     const choiceNum = idx + 1;
     const isSelected = (selectedChoiceIndex === choiceNum);
+    const cleanChoice = cleanChoiceString(choice);
+    const thaiLetter = THAI_CHOICE_LETTERS[idx] || (choiceNum + '.');
     cHtml += `
       <div class="choice-item ${isSelected ? 'selected' : ''}" id="choiceItem_${choiceNum}" onclick="selectChoice(${choiceNum})">
-        <div class="choice-num">${choiceNum}</div>
-        <div class="choice-text">${formatPlainTextToHtml(choice)}</div>
+        <div class="choice-num">${thaiLetter}</div>
+        <div class="choice-text">${formatPlainTextToHtml(cleanChoice)}</div>
       </div>`;
   });
   container.innerHTML = cHtml;
@@ -2232,6 +2755,7 @@ function submitAnswerPracticeMode() {
   const correctLabel = document.getElementById('correctChoiceLabel');
 
   expBox.classList.add('show');
+  const correctLetter = THAI_CHOICE_LETTERS[q.answer - 1] || q.answer;
   if (isCorrect) {
     expBox.classList.remove('is-wrong');
     expBadge.className = 'exp-badge badge-correct';
@@ -2240,11 +2764,11 @@ function submitAnswerPracticeMode() {
   } else {
     expBox.classList.add('is-wrong');
     expBadge.className = 'exp-badge badge-wrong';
-    expBadge.innerHTML = `❌ ยังไม่ถูกต้อง (เฉลยข้อ ${q.answer})`;
+    expBadge.innerHTML = `❌ ยังไม่ถูกต้อง (เฉลยข้อ ${correctLetter})`;
     expTitle.textContent = '💡 คำอธิบายข้อที่ถูกต้อง:';
   }
 
-  correctLabel.textContent = `ข้อที่ถูก: ตัวเลือกที่ ${q.answer}`;
+  correctLabel.textContent = `ข้อที่ถูก: ตัวเลือกที่ ${correctLetter}`;
   expText.innerHTML = q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
 
   // Answer Image
@@ -2275,10 +2799,11 @@ function submitAnswerPracticeMode() {
   updateQuizNav();
 }
 
-function submitExamModeWholeSession() {
+function submitExamModeWholeSession(isTimeout = false) {
+  stopQuizCountdownTimer();
   const answeredCount = Object.keys(userAnswersExamMode).length;
   const total = activeQuizQuestions.length;
-  if (answeredCount < total) {
+  if (!isTimeout && answeredCount < total) {
     if (!confirm(`คุณยังทำข้อสอบไม่ครบ (ตอบไปแล้ว ${answeredCount}/${total} ข้อ) ต้องการส่งข้อสอบและตรวจผลคะแนนหรือไม่?`)) {
       return;
     }
@@ -2321,14 +2846,15 @@ function renderExamPalette() {
 
   const total = activeQuizQuestions.length;
   const answered = Object.keys(userAnswersExamMode).length;
-  document.getElementById('examAnsweredCountText').textContent = `ตอบแล้ว ${answered}/${total} ข้อ`;
+  const countEl = document.getElementById('examAnsweredCountText');
+  if (countEl) countEl.textContent = `(ตอบแล้ว ${answered}/${total} ข้อ)`;
 
   let html = '';
   for (let i = 0; i < total; i++) {
     const isCurrent = (i === currentQuestionIndex);
     const isAnswered = (userAnswersExamMode[i] != null);
     html += `
-      <button class="palette-btn ${isCurrent ? 'current' : ''} ${isAnswered ? 'answered' : ''}" onclick="jumpToExamQuestion(${i})">
+      <button class="palette-btn ${isCurrent ? 'current' : ''} ${isAnswered ? 'answered' : ''}" onclick="jumpToExamQuestion(${i})" title="ข้อ ${i + 1}${isAnswered ? ' (ตอบแล้ว)' : ''}">
         ${i + 1}
       </button>`;
   }
@@ -2386,9 +2912,9 @@ function updateQuizNav() {
   document.getElementById('btnNextQ').disabled = false;
 }
 
-
 // ─── RESULT SUMMARY ───
 function showQuizResultSummary() {
+  stopQuizCountdownTimer();
   currentAppMode = 'result';
   document.getElementById('lobbyView').style.display = 'none';
   document.getElementById('quizView').style.display = 'none';
@@ -2423,9 +2949,10 @@ function showQuizResultSummary() {
   let bHtml = '';
   activeQuizQuestions.forEach((q, idx) => {
     const isWrong = sessionResults.wrongQuestions.some(w => w.question.id === q.id);
+    const itemNo = q.itemNo || (idx + 1);
     bHtml += `
       <div class="rb-item">
-        <span style="font-weight:600;">ข้อ ${idx + 1}. ${(q.question || '').replace(/<[^>]*>/g, '').substring(0, 50)}...</span>
+        <span style="font-weight:600;">ข้อ ${itemNo}. ${(q.question || '').replace(/<[^>]*>/g, '').substring(0, 50)}...</span>
         <span style="font-weight:700; color:${isWrong ? '#dc2626' : '#16a34a'};">${isWrong ? '❌ ผิด' : '✅ ถูก'}</span>
       </div>`;
   });
@@ -2453,44 +2980,17 @@ function restartQuizSession() {
 
 // ─── RANDOM QUIZ MODAL ───
 function openRandomModal() {
-  document.getElementById('randomModal').classList.add('show');
+  openQuizSetupModal('__all__', currentTrack, true);
 }
 function closeRandomModal() {
-  document.getElementById('randomModal').classList.remove('show');
+  closeQuizSetupModal();
 }
 
 function startRandomQuiz() {
-  closeRandomModal();
-  const track = document.getElementById('randomTrackSelect').value;
-  const count = parseInt(document.getElementById('randomCountInput').value, 10) || 20;
-
-  let pool = [];
-  categories.forEach(c => {
-    const norm = (c.track || '').toLowerCase();
-    if (track === 'all' || (track === 'clinic' && norm.includes('clinic')) || (track === 'product' && norm.includes('prod')) || (track === 'sap' && norm.includes('sap'))) {
-      const qs = allQuestionsMap[c.name] || [];
-      pool = pool.concat(qs);
-    }
-  });
-
-  if (!pool.length) {
-    showToast('⚠️ ไม่พบข้อสอบในสายวิชานี้');
-    return;
-  }
-
-  // Shuffle pool (Fisher-Yates)
-  for (let i = pool.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [pool[i], pool[j]] = [pool[j], pool[i]];
-  }
-
-  const selected = pool.slice(0, count);
-  document.getElementById('quizSubtopicRow').style.display = 'none';
-  startQuizWithQuestions(selected, `🎲 สุ่มข้อสอบ (${selected.length} ข้อ)`);
-  showToast(`🎲 สุ่มได้ ${selected.length} ข้อ เริ่มทำเลย!`);
+  startConfiguredQuiz();
 }
 
-// ─── BROWSE VIEW ───
+// ─── BROWSE VIEW (REVAMPED ANSWER BOOK) ───
 function switchAppMode(mode) {
   currentAppMode = mode;
   document.getElementById('lobbyView').style.display = (mode === 'lobby' ? 'flex' : 'none');
@@ -2503,58 +3003,172 @@ function switchAppMode(mode) {
   }
 }
 
+function onBrowseCategoryChange() {
+  const cat = document.getElementById('browseCategoryFilter').value;
+  const subSel = document.getElementById('browseSubtopicFilter');
+
+  if (cat === 'all') {
+    subSel.innerHTML = '<option value="all">📂 ทุกหัวข้อย่อย</option>';
+  } else {
+    const qs = allQuestionsMap[cat] || [];
+    const subs = Array.from(new Set(qs.map(q => q.subtopic).filter(Boolean)));
+    let subHtml = '<option value="all">📂 ทุกหัวข้อย่อย (' + qs.length + ' ข้อ)</option>';
+    subs.sort().forEach(s => {
+      const count = qs.filter(q => q.subtopic === s).length;
+      subHtml += `<option value="${s}">📌 ${s} (${count} ข้อ)</option>`;
+    });
+    subSel.innerHTML = subHtml;
+  }
+  renderBrowseList();
+}
+
 function renderBrowseList() {
   const container = document.getElementById('browseContainer');
+  if (!container) return;
+
+  // Populate category filter if empty
+  const catSel = document.getElementById('browseCategoryFilter');
+  if (catSel && catSel.options.length <= 1) {
+    let catHtml = '<option value="all">🌟 ทุกหมวดวิชา</option>';
+    categories.forEach(c => {
+      catHtml += `<option value="${c.name}">${c.name} (${c.count} ข้อ)</option>`;
+    });
+    catSel.innerHTML = catHtml;
+  }
+
+  const selectedCat = catSel ? catSel.value : 'all';
+  const subSel = document.getElementById('browseSubtopicFilter');
+  const selectedSub = subSel ? subSel.value : 'all';
+  const examSel = document.getElementById('browseExamTypeFilter');
+  const selectedExam = examSel ? examSel.value : 'all';
   const term = document.getElementById('browseSearchInput').value.trim().toLowerCase();
+
   let list = [];
+  if (selectedCat === 'all') {
+    categories.forEach(c => {
+      list = list.concat(allQuestionsMap[c.name] || []);
+    });
+  } else {
+    list = (allQuestionsMap[selectedCat] || []).slice();
+  }
 
-  categories.forEach(c => {
-    const qs = allQuestionsMap[c.name] || [];
-    list = list.concat(qs);
-  });
+  // Filter Subtopic
+  if (selectedSub !== 'all') {
+    list = list.filter(q => q.subtopic === selectedSub);
+  }
 
+  // Filter Exam Type
+  if (selectedExam !== 'all') {
+    list = list.filter(q => {
+      const et = (q.examType || '').toLowerCase();
+      if (selectedExam === 'real_2567') return et.includes('2567') || et.includes('67');
+      if (selectedExam === 'real_all') return et.includes('จริง') || et.includes('real');
+      if (selectedExam === 'mock') return et.includes('จำลอง') || et.includes('mock');
+      return true;
+    });
+  }
+
+  // Filter Search
   if (term) {
     list = list.filter(q => {
       const qText = (q.question || '').toLowerCase();
       const expText = (q.explanation || '').toLowerCase();
       const sub = (q.subtopic || '').toLowerCase();
-      return qText.includes(term) || expText.includes(term) || sub.includes(term);
+      const choicesText = (q.choices || []).join(' ').toLowerCase();
+      return qText.includes(term) || expText.includes(term) || sub.includes(term) || choicesText.includes(term);
     });
   }
 
   document.getElementById('browseResultCount').textContent = `พบ ${list.length} ข้อ`;
 
   if (!list.length) {
-    container.innerHTML = '<div style="padding:24px; text-align:center; color:var(--ink-faint);">ไม่พบข้อสอบที่ตรงกับคำค้นหา</div>';
+    container.innerHTML = '<div style="padding:36px; text-align:center; color:var(--ink-faint); background:var(--card); border-radius:18px; border:1px solid var(--border);">ไม่พบข้อสอบที่ตรงกับคำค้นหาหรือตัวกรองที่เลือก</div>';
     return;
   }
 
   let html = '';
   list.forEach((q, idx) => {
+    const norm = (q.track || '').toLowerCase();
+    const trackBadgeClass = norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag';
+    
+    let examTagClass = 'tag-general-exam';
+    let examTagText = q.examType || 'ข้อสอบทั่วไป';
+    if (examTagText.includes('2567') || examTagText.includes('67') || examTagText.includes('จริง')) {
+      examTagClass = 'tag-real-exam';
+    } else if (examTagText.includes('จำลอง') || examTagText.includes('Mock')) {
+      examTagClass = 'tag-mock-exam';
+    }
+
+    const itemNo = q.itemNo || (idx + 1);
+
+    // Build Choices
+    let choicesHtml = '';
+    (q.choices || []).forEach((c, cIdx) => {
+      if (!c && c !== 0) return;
+      const cNum = cIdx + 1;
+      const isCorrect = (cNum === q.answer);
+      const cleanC = cleanChoiceString(c);
+      const thaiLetter = THAI_CHOICE_LETTERS[cIdx] || (cNum + '.');
+
+      choicesHtml += `
+        <div class="browse-choice-row ${isCorrect ? 'is-correct' : ''}">
+          <div class="browse-choice-letter">${thaiLetter}</div>
+          <div class="browse-choice-text">${formatPlainTextToHtml(cleanC)}</div>
+          ${isCorrect ? '<span class="browse-correct-pill">✅ คำตอบที่ถูกต้อง</span>' : ''}
+        </div>`;
+    });
+
     html += `
-      <div class="browse-table-item" onclick="toggleBrowseItemAnswer(this)">
-        <div class="bt-tag">${q.track || 'Clinic'} · ${q.subtopic || q.category}</div>
-        <div class="bt-q">${q.question || '-'}</div>
-        <div class="bt-a">✅ เฉลย: ตัวเลือกที่ ${q.answer} (${q.choices && q.choices[q.answer - 1] ? q.choices[q.answer - 1] : ''})</div>
-        <div class="bt-exp">💡 ${q.explanation || 'ไม่มีคำอธิบาย'}</div>
+      <div class="browse-card" id="browseCard_${idx}">
+        <div class="browse-card-head">
+          <div style="display:flex; align-items:center; gap:6px;">
+            <span class="browse-item-num-badge">ข้อที่ ${itemNo}</span>
+            <span class="tag ${trackBadgeClass}">${q.track || 'Clinic'} · ${q.subtopic || q.category}</span>
+          </div>
+          <div class="browse-card-tags">
+            <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>
+          </div>
+        </div>
+
+        ${q.questionImage ? `<div style="text-align:center; margin:8px 0 12px;"><img src="${q.questionImage}" style="max-height:220px; max-width:100%; border-radius:10px; border:1px solid var(--border); cursor:pointer;" onclick="openImgLightbox(this.src)" alt="รูปคำถาม"></div>` : ''}
+
+        <div class="browse-card-question">${formatPlainTextToHtml(q.question || '')}</div>
+
+        <div class="browse-choices-list">
+          ${choicesHtml}
+        </div>
+
+        <button type="button" class="browse-exp-toggle-btn" onclick="toggleBrowseExp(${idx})">
+          <span>💡 ดูคำอธิบายเฉลย & จุดเน้น</span>
+          <span id="browseExpArrow_${idx}">▼</span>
+        </button>
+
+        <div class="browse-exp-box" id="browseExpBox_${idx}">
+          <div class="browse-exp-title">💡 คำอธิบายเฉลยละเอียด (เฉลยตัวเลือกที่ ${q.answer} / ${THAI_CHOICE_LETTERS[q.answer - 1] || q.answer}):</div>
+          <div>${q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้'}</div>
+          ${q.answerImage ? `<div style="text-align:center; margin-top:8px;"><img src="${q.answerImage}" style="max-height:220px; max-width:100%; border-radius:8px; border:1px solid var(--border); cursor:pointer;" onclick="openImgLightbox(this.src)" alt="รูปเฉลย"></div>` : ''}
+          ${q.note ? `<div style="font-size:12px; color:var(--ink-soft); margin-top:6px; border-top:1px dashed var(--border); padding-top:4px;">📌 หมายเหตุ: ${q.note}</div>` : ''}
+        </div>
       </div>`;
   });
+
   container.innerHTML = html;
 }
 
-function toggleBrowseItemAnswer(el) {
-  const a = el.querySelector('.bt-a');
-  const exp = el.querySelector('.bt-exp');
-  if (a) a.classList.toggle('show');
-  if (exp) exp.classList.toggle('show');
+function toggleBrowseExp(idx) {
+  const box = document.getElementById('browseExpBox_' + idx);
+  const arrow = document.getElementById('browseExpArrow_' + idx);
+  if (!box) return;
+  const isShown = box.classList.toggle('show');
+  if (arrow) arrow.textContent = isShown ? '▲' : '▼';
 }
 
 function toggleAllBrowseAnswers() {
-  const allA = document.querySelectorAll('.bt-a');
-  const allExp = document.querySelectorAll('.bt-exp');
-  const anyHidden = Array.from(allA).some(a => !a.classList.contains('show'));
-  allA.forEach(a => a.classList.toggle('show', anyHidden));
-  allExp.forEach(exp => exp.classList.toggle('show', anyHidden));
+  const boxes = document.querySelectorAll('.browse-exp-box');
+  const arrows = document.querySelectorAll('[id^="browseExpArrow_"]');
+  const anyHidden = Array.from(boxes).some(b => !b.classList.contains('show'));
+  boxes.forEach(b => b.classList.toggle('show', anyHidden));
+  arrows.forEach(a => a.textContent = anyHidden ? '▲' : '▼');
 }
 
 function onBrowseSearchChange() {
