@@ -670,6 +670,68 @@
     }
     .app-copyright-footer a { color: var(--clinic); text-decoration: none; font-weight: 700; cursor: pointer; }
     .app-copyright-footer a:hover { text-decoration: underline; }
+  
+    /* ══ EXAM MODE & EXAM TYPE BADGES ══ */
+    .mode-switch-segmented {
+      display: inline-flex; background: var(--bg); border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 3px; gap: 4px; box-shadow: var(--shadow-sm);
+    }
+    .mode-seg-btn {
+      padding: 6px 14px; border: none; border-radius: 9px;
+      font-family: inherit; font-size: 12.5px; font-weight: 700;
+      cursor: pointer; color: var(--ink-soft); background: transparent; transition: all 0.18s;
+      display: flex; align-items: center; gap: 5px;
+    }
+    .mode-seg-btn:hover { color: var(--clinic); }
+    .mode-seg-btn.active {
+      background: var(--card); color: var(--clinic);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .mode-seg-btn.exam.active {
+      color: #DC2626; box-shadow: 0 1px 4px rgba(220, 38, 38, 0.15);
+    }
+
+    .tag-exam-type {
+      font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px;
+      margin-left: 6px; display: inline-flex; align-items: center; gap: 3px;
+    }
+    .tag-real-exam {
+      background: #FEF2F2; color: #DC2626; border: 1px solid #FECACA;
+    }
+    .tag-mock-exam {
+      background: #EFF6FF; color: #2563EB; border: 1px solid #BFDBFE;
+    }
+    .tag-general-exam {
+      background: #F1F5F9; color: #475569; border: 1px solid #E2E8F0;
+    }
+
+    /* Exam Mode Question Navigator Palette */
+    .exam-nav-palette {
+      display: none; width: 100%; max-width: 720px; margin: 0 auto 12px;
+      background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 10px 12px; box-shadow: var(--shadow-sm);
+    }
+    .exam-nav-palette.show { display: block; }
+    .exam-palette-grid {
+      display: flex; flex-wrap: wrap; gap: 6px; max-height: 120px; overflow-y: auto;
+    }
+    .palette-btn {
+      width: 32px; height: 32px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--bg); font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+      font-weight: 700; color: var(--ink); cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: all 0.15s;
+    }
+    .palette-btn:hover { border-color: var(--clinic); }
+    .palette-btn.current { border: 2px solid var(--clinic); background: var(--clinic-soft); color: var(--clinic); }
+    .palette-btn.answered { background: #DCFCE7; border-color: #86EFAC; color: #15803D; }
+
+    /* Exam History Table */
+    .history-item {
+      padding: 12px 14px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .history-item:last-child { border-bottom: none; }
+
   </style>
 </head>
 <body>
@@ -801,6 +863,29 @@
       </button>
     </div>
 
+    
+    <!-- Exam Type & Filter Row -->
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:14px; flex-wrap:wrap;">
+      <div class="mode-switch-segmented">
+        <button class="mode-seg-btn active" id="btnModePractice" onclick="setAppQuizMode('practice')">
+          📖 โหมดฝึกฝน (ตรวจทีละข้อ)
+        </button>
+        <button class="mode-seg-btn exam" id="btnModeExam" onclick="setAppQuizMode('exam')">
+          ⏱️ โหมดสอบจริง (ส่งรวมท้ายชุด)
+        </button>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span style="font-size:12px; font-weight:700; color:var(--ink-soft);">คัดกรอง:</span>
+        <select class="form-input" id="lobbyExamTypeFilter" onchange="onLobbyExamTypeFilterChange()" style="width:auto; padding:6px 12px; font-size:12.5px; font-weight:600; border-radius:10px;">
+          <option value="all">🌟 ทุกประเภทข้อสอบ</option>
+          <option value="real_2567">🎯 เฉพาะข้อสอบจริงปี 2567</option>
+          <option value="real_all">🎯 ข้อสอบจริงทุกปี</option>
+          <option value="mock">📝 เฉพาะข้อสอบจำลอง (Mock)</option>
+        </select>
+      </div>
+    </div>
+
     <div class="lobby-greeting">
       <h2>สวัสดี, <span id="lobbyGreetingName">ผู้ใช้งาน</span> 👋</h2>
       <p id="lobbyGreetingTrackDesc">เลือกหมวดโรคด้านล่างเพื่อเริ่มทำข้อสอบ หรือเลือกโหมด <b>สุ่มทำข้อสอบ</b> เพื่อจำลองสถานการณ์จริง</p>
@@ -830,6 +915,11 @@
       <button class="lobby-tool-btn" onclick="switchAppMode('browse')">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         Browse คลัง
+      </button>
+      
+      <button class="lobby-tool-btn" onclick="openHistoryModal()" style="color:#7C3AED; border-color:#DDD6FE; background:#F3E8FF;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        📜 ประวัติการสอบ
       </button>
       <button class="lobby-tool-btn" onclick="openStatsModal()" style="color:#1e40af; border-color:#bfdbfe; background:#eff6ff;">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
@@ -889,6 +979,16 @@
       </div>
 
       <!-- Main Quiz Card -->
+      
+      <!-- Question Navigator Palette (Exam Mode) -->
+      <div class="exam-nav-palette" id="examNavPalette">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:8px;">
+          <span style="font-size:12px; font-weight:700; color:var(--ink);">แผนผังข้อสอบ (คลิกข้ามข้อได้อิสระ):</span>
+          <span id="examAnsweredCountText" style="font-size:11.5px; font-weight:700; color:#15803D;">ตอบแล้ว 0/0 ข้อ</span>
+        </div>
+        <div class="exam-palette-grid" id="examPaletteGrid"></div>
+      </div>
+
       <div class="quiz-card" id="quizCard">
         <div class="quiz-card-head">
           <span class="tag clinic-tag" id="quizCardTag">Clinic · Cardiovascular</span>
@@ -1131,6 +1231,31 @@
     </div>
   </div>
 
+  
+  <!-- History Modal -->
+  <div class="modal-overlay" id="historyModal">
+    <div class="modal-box" style="max-width:560px;">
+      <div class="modal-head">
+        <h3>📜 ประวัติการสอบของฉัน</h3>
+        <button class="modal-close" onclick="closeHistoryModal()">✕</button>
+      </div>
+      <p style="font-size:12px; color:var(--ink-soft); margin-bottom:12px;">
+        บันทึกคะแนนและประวัติการทำแบบทดสอบแยกตามบัญชีผู้ใช้งาน
+      </p>
+      <div style="border:1px solid var(--border); border-radius:14px; max-height:320px; overflow-y:auto; background:var(--card);" id="historyListContainer">
+        <!-- Rendered history -->
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-top:14px;">
+        <button onclick="clearUserExamHistory()" style="background:none; border:none; color:var(--unsure); font-size:12px; font-weight:600; cursor:pointer; text-decoration:underline;">
+          ล้างประวัติทั้งหมด
+        </button>
+        <button class="submit-btn" onclick="closeHistoryModal()" style="width:auto; padding:8px 18px;">
+          ปิด
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Stats Modal -->
   <div class="modal-overlay" id="statsModal">
     <div class="modal-box">
@@ -1202,6 +1327,129 @@ function saveQuestionProgress(qId, selectedChoice, isCorrect, category) {
     };
     localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(p));
   } catch(e) {}
+}
+
+
+// ─── QUIZ MODE & EXAM HISTORY ───
+const EXAM_HISTORY_KEY = 'ple_quiz_exam_history_v1';
+let appQuizMode = 'practice'; // 'practice' | 'exam'
+let currentExamTypeFilter = 'all'; // 'all' | 'real_2567' | 'real_all' | 'mock'
+let userAnswersExamMode = {}; // { qIndex: choiceNum }
+
+function setAppQuizMode(mode) {
+  appQuizMode = mode;
+  document.getElementById('btnModePractice').classList.toggle('active', mode === 'practice');
+  document.getElementById('btnModeExam').classList.toggle('active', mode === 'exam');
+  showToast(mode === 'practice' ? '📖 สลับเป็นโหมดฝึกฝน (ตรวจเฉลยทีละข้อ)' : '⏱️ สลับเป็นโหมดสอบจริง (ส่งคะแนนตอนท้าย)');
+}
+
+function onLobbyExamTypeFilterChange() {
+  currentExamTypeFilter = document.getElementById('lobbyExamTypeFilter').value;
+  buildLobby();
+  showToast('🔍 ปรับตัวกรองประเภทข้อสอบแล้ว');
+}
+
+function filterQuestionsByExamType(list) {
+  if (currentExamTypeFilter === 'all') return list;
+  return list.filter(q => {
+    const et = (q.examType || '').toLowerCase();
+    if (currentExamTypeFilter === 'real_2567') return et.includes('2567') || et.includes('67');
+    if (currentExamTypeFilter === 'real_all') return et.includes('จริง') || et.includes('real');
+    if (currentExamTypeFilter === 'mock') return et.includes('จำลอง') || et.includes('mock');
+    return true;
+  });
+}
+
+function getExamHistory() {
+  try {
+    const raw = localStorage.getItem(EXAM_HISTORY_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch(e) { return []; }
+}
+
+function saveExamHistoryRecord(category, score, total, mode) {
+  try {
+    const hist = getExamHistory();
+    const record = {
+      id: 'ex_' + Date.now(),
+      user: currentUser ? currentUser.displayName : 'บุคคลทั่วไป',
+      username: currentUser ? currentUser.username : 'anonymous',
+      category: category,
+      score: score,
+      total: total,
+      percentage: total ? Math.round((score / total) * 100) : 0,
+      mode: mode,
+      timestamp: new Date().toISOString()
+    };
+    hist.unshift(record);
+    localStorage.setItem(EXAM_HISTORY_KEY, JSON.stringify(hist));
+
+    // Also send to GAS Log sheet if online
+    if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
+      fetch(window.QUIZ_GAS_WEBAPP_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action: 'submitQuizResult',
+          user: record.user,
+          category: record.category,
+          score: record.score,
+          total: record.total,
+          percentage: record.percentage,
+          timeSpent: 0
+        })
+      }).catch(() => {});
+    }
+  } catch(e) {}
+}
+
+function openHistoryModal() {
+  const container = document.getElementById('historyListContainer');
+  const allHist = getExamHistory();
+  const uname = currentUser ? currentUser.username : 'anonymous';
+  const userHist = allHist.filter(h => h.username === uname);
+
+  if (!userHist.length) {
+    container.innerHTML = '<div style="padding:24px; text-align:center; color:var(--ink-faint);">ยังไม่มีประวัติการสอบของบัญชีนี้</div>';
+  } else {
+    let html = '';
+    userHist.forEach(h => {
+      const dt = new Date(h.timestamp);
+      const dateStr = dt.toLocaleDateString('th-TH') + ' ' + dt.toLocaleTimeString('th-TH', { hour: '2-digit', minute: '2-digit' });
+      const isPass = h.percentage >= 60;
+      html += `
+        <div class="history-item">
+          <div>
+            <div style="font-size:13px; font-weight:700; color:var(--ink);">${h.category}</div>
+            <div style="font-size:11.5px; color:var(--ink-soft); margin-top:2px;">
+              ${dateStr} · <span style="font-weight:600; color:${h.mode === 'exam' ? '#DC2626' : '#0891B2'};">${h.mode === 'exam' ? '⏱️ สอบจริง' : '📖 ฝึกฝน'}</span>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:14px; font-weight:700; font-family:'IBM Plex Mono', monospace; color:${isPass ? '#16A34A' : '#DC2626'};">
+              ${h.score}/${h.total} (${h.percentage}%)
+            </div>
+            <div style="font-size:10.5px; font-weight:700; color:${isPass ? '#16A34A' : '#DC2626'};">
+              ${isPass ? '✓ ผ่านเกณฑ์' : '✕ ไม่ผ่าน'}
+            </div>
+          </div>
+        </div>`;
+    });
+    container.innerHTML = html;
+  }
+  document.getElementById('historyModal').classList.add('show');
+}
+function closeHistoryModal() { document.getElementById('historyModal').classList.remove('show'); }
+
+function clearUserExamHistory() {
+  if (confirm('ต้องการล้างประวัติการสอบของบัญชีนี้หรือไม่?')) {
+    const allHist = getExamHistory();
+    const uname = currentUser ? currentUser.username : 'anonymous';
+    const remain = allHist.filter(h => h.username !== uname);
+    localStorage.setItem(EXAM_HISTORY_KEY, JSON.stringify(remain));
+    openHistoryModal();
+    showToast('ล้างประวัติเรียบร้อย');
+  }
 }
 
 // ─── GLOBAL STATE ───
@@ -1725,9 +1973,10 @@ function buildLobby() {
 // ─── START QUIZ ───
 function enterQuizCategory(catName) {
   currentCategory = catName;
-  const qs = allQuestionsMap[catName] || [];
+  let qs = allQuestionsMap[catName] || [];
+  qs = filterQuestionsByExamType(qs);
   if (!qs.length) {
-    showToast('⚠️ ไม่พบข้อสอบในหมวดนี้');
+    showToast('⚠️ ไม่พบข้อสอบตามตัวกรองที่เลือกในหมวดนี้');
     return;
   }
 
@@ -1763,9 +2012,10 @@ function enterQuizAll(track) {
     const qs = allQuestionsMap[c.name] || [];
     list = list.concat(qs);
   });
+  list = filterQuestionsByExamType(list);
 
   if (!list.length) {
-    showToast('⚠️ ไม่พบข้อสอบ');
+    showToast('⚠️ ไม่พบข้อสอบตามตัวกรองที่เลือก');
     return;
   }
   document.getElementById('quizSubtopicRow').style.display = 'none';
@@ -1775,7 +2025,8 @@ function enterQuizAll(track) {
 function onQuizSubtopicChange() {
   const val = document.getElementById('quizSubtopicSelect').value;
   currentSubtopic = val;
-  const fullList = allQuestionsMap[currentCategory] || [];
+  let fullList = allQuestionsMap[currentCategory] || [];
+  fullList = filterQuestionsByExamType(fullList);
   const filtered = val === '__all__' ? fullList : fullList.filter(q => q.subtopic === val);
   startQuizWithQuestions(filtered, currentCategory + (val !== '__all__' ? ' · ' + val : ''));
 }
@@ -1783,6 +2034,10 @@ function onQuizSubtopicChange() {
 function startQuizWithQuestions(qs, titleText) {
   activeQuizQuestions = qs.slice();
   currentQuestionIndex = 0;
+  userAnswersExamMode = {};
+  selectedChoiceIndex = null;
+  isAnswerSubmitted = false;
+
   sessionResults = {
     total: activeQuizQuestions.length,
     score: 0,
@@ -1795,25 +2050,44 @@ function startQuizWithQuestions(qs, titleText) {
   document.getElementById('resultView').style.display = 'none';
   document.getElementById('browseView').style.display = 'none';
 
+  const modeBadge = appQuizMode === 'exam' ? '⏱️ โหมดสอบจริง' : '📖 โหมดฝึกฝน';
   document.getElementById('quizCategoryTitle').textContent = titleText;
+  document.getElementById('quizCategorySub').textContent = `${modeBadge} (${activeQuizQuestions.length} ข้อ)`;
+
+  // Palette visibility
+  const pal = document.getElementById('examNavPalette');
+  if (pal) pal.classList.toggle('show', appQuizMode === 'exam');
+
   renderCurrentQuestion();
 }
 
 // ─── RENDER QUESTION ───
 function renderCurrentQuestion() {
   if (currentQuestionIndex >= activeQuizQuestions.length) {
-    showQuizResultSummary();
+    if (appQuizMode === 'exam') {
+      submitExamModeWholeSession();
+    } else {
+      showQuizResultSummary();
+    }
     return;
   }
 
   const q = activeQuizQuestions[currentQuestionIndex];
-  selectedChoiceIndex = null;
-  isAnswerSubmitted = false;
+  isAnswerSubmitted = (appQuizMode === 'practice' ? false : (userAnswersExamMode[currentQuestionIndex] != null));
+  selectedChoiceIndex = (appQuizMode === 'exam') ? (userAnswersExamMode[currentQuestionIndex] || null) : null;
 
   // Header & Tag
   const norm = (q.track || '').toLowerCase();
   const tagEl = document.getElementById('quizCardTag');
-  tagEl.textContent = `${q.track || 'Clinic'} · ${q.subtopic || q.category} · ข้อ ${currentQuestionIndex + 1}`;
+  let examTagClass = 'tag-general-exam';
+  let examTagText = q.examType || 'ข้อสอบทั่วไป';
+  if (examTagText.includes('2567') || examTagText.includes('67') || examTagText.includes('จริง')) {
+    examTagClass = 'tag-real-exam';
+  } else if (examTagText.includes('จำลอง') || examTagText.includes('Mock')) {
+    examTagClass = 'tag-mock-exam';
+  }
+
+  tagEl.innerHTML = `<span>${q.track || 'Clinic'} · ${q.subtopic || q.category} · ข้อ ${currentQuestionIndex + 1}</span> <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>`;
   tagEl.className = `tag ${norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag'}`;
 
   // Question Image
@@ -1830,36 +2104,49 @@ function renderCurrentQuestion() {
   // Question Text
   document.getElementById('questionText').innerHTML = q.question || 'ไม่มีข้อความโจทย์';
 
-  // Render 5 Choices
+  // Render Choices
   const container = document.getElementById('choicesContainer');
   let cHtml = '';
   q.choices.forEach((choice, idx) => {
     if (!choice && choice !== 0) return;
     const choiceNum = idx + 1;
+    const isSelected = (selectedChoiceIndex === choiceNum);
     cHtml += `
-      <div class="choice-item" id="choiceItem_${choiceNum}" onclick="selectChoice(${choiceNum})">
+      <div class="choice-item ${isSelected ? 'selected' : ''}" id="choiceItem_${choiceNum}" onclick="selectChoice(${choiceNum})">
         <div class="choice-num">${choiceNum}</div>
         <div class="choice-text">${formatPlainTextToHtml(choice)}</div>
       </div>`;
   });
   container.innerHTML = cHtml;
 
-  // Reset Explanation Box
+  // Explanation Box
   const expBox = document.getElementById('explanationBox');
   expBox.className = 'explanation-box';
   expBox.classList.remove('show');
 
-  // Update Action Button & Nav
+  // Update Action Button
   const btnAction = document.getElementById('btnAction');
-  btnAction.textContent = 'ตรวจคำตอบ';
-  btnAction.disabled = true;
+  if (appQuizMode === 'exam') {
+    const isLast = (currentQuestionIndex + 1 >= activeQuizQuestions.length);
+    btnAction.textContent = isLast ? '📥 ส่งข้อสอบทั้งหมด' : 'ข้อถัดไป →';
+    btnAction.disabled = false;
+  } else {
+    btnAction.textContent = 'ตรวจคำตอบ';
+    btnAction.disabled = (selectedChoiceIndex == null);
+  }
 
   updateQuizNav();
+  renderExamPalette();
 }
 
 function selectChoice(choiceNum) {
-  if (isAnswerSubmitted) return;
+  if (appQuizMode === 'practice' && isAnswerSubmitted) return;
+
   selectedChoiceIndex = choiceNum;
+
+  if (appQuizMode === 'exam') {
+    userAnswersExamMode[currentQuestionIndex] = choiceNum;
+  }
 
   // Highlight selected choice item
   const items = document.querySelectorAll('.choice-item');
@@ -1867,18 +2154,32 @@ function selectChoice(choiceNum) {
     item.classList.toggle('selected', (idx + 1) === choiceNum);
   });
 
-  document.getElementById('btnAction').disabled = false;
+  const btnAction = document.getElementById('btnAction');
+  btnAction.disabled = false;
+
+  renderExamPalette();
 }
 
 function handleActionButton() {
+  if (appQuizMode === 'exam') {
+    // Exam mode: Just proceed or submit
+    if (currentQuestionIndex + 1 < activeQuizQuestions.length) {
+      goNextQuestion();
+    } else {
+      submitExamModeWholeSession();
+    }
+    return;
+  }
+
+  // Practice mode
   if (!isAnswerSubmitted) {
-    submitAnswer();
+    submitAnswerPracticeMode();
   } else {
     goNextQuestion();
   }
 }
 
-function submitAnswer() {
+function submitAnswerPracticeMode() {
   if (selectedChoiceIndex == null || isAnswerSubmitted) return;
   isAnswerSubmitted = true;
 
@@ -1961,6 +2262,71 @@ function submitAnswer() {
   updateQuizNav();
 }
 
+function submitExamModeWholeSession() {
+  const answeredCount = Object.keys(userAnswersExamMode).length;
+  const total = activeQuizQuestions.length;
+  if (answeredCount < total) {
+    if (!confirm(`คุณยังทำข้อสอบไม่ครบ (ตอบไปแล้ว ${answeredCount}/${total} ข้อ) ต้องการส่งข้อสอบและตรวจผลคะแนนหรือไม่?`)) {
+      return;
+    }
+  }
+
+  // Grade exam session
+  let score = 0;
+  const wrongQs = [];
+  activeQuizQuestions.forEach((q, idx) => {
+    const userChoice = userAnswersExamMode[idx];
+    const isCorrect = (userChoice === q.answer);
+    if (isCorrect) {
+      score++;
+    } else {
+      wrongQs.push({
+        question: q,
+        userChoice: userChoice || 0,
+        correctChoice: q.answer
+      });
+    }
+    saveQuestionProgress(q.id, userChoice || 0, isCorrect, q.category);
+  });
+
+  sessionResults = {
+    total: total,
+    score: score,
+    wrongQuestions: wrongQs
+  };
+
+  // Save to Exam History of this user
+  saveExamHistoryRecord(document.getElementById('quizCategoryTitle').textContent, score, total, 'exam');
+
+  showQuizResultSummary();
+}
+
+function renderExamPalette() {
+  if (appQuizMode !== 'exam') return;
+  const grid = document.getElementById('examPaletteGrid');
+  if (!grid) return;
+
+  const total = activeQuizQuestions.length;
+  const answered = Object.keys(userAnswersExamMode).length;
+  document.getElementById('examAnsweredCountText').textContent = `ตอบแล้ว ${answered}/${total} ข้อ`;
+
+  let html = '';
+  for (let i = 0; i < total; i++) {
+    const isCurrent = (i === currentQuestionIndex);
+    const isAnswered = (userAnswersExamMode[i] != null);
+    html += `
+      <button class="palette-btn ${isCurrent ? 'current' : ''} ${isAnswered ? 'answered' : ''}" onclick="jumpToExamQuestion(${i})">
+        ${i + 1}
+      </button>`;
+  }
+  grid.innerHTML = html;
+}
+
+function jumpToExamQuestion(idx) {
+  currentQuestionIndex = idx;
+  renderCurrentQuestion();
+}
+
 function goPrevQuestion() {
   if (currentQuestionIndex > 0) {
     currentQuestionIndex--;
@@ -1973,7 +2339,11 @@ function goNextQuestion() {
     currentQuestionIndex++;
     renderCurrentQuestion();
   } else {
-    showQuizResultSummary();
+    if (appQuizMode === 'exam') {
+      submitExamModeWholeSession();
+    } else {
+      showQuizResultSummary();
+    }
   }
 }
 
@@ -1982,7 +2352,12 @@ function updateQuizNav() {
   const current = currentQuestionIndex + 1;
 
   document.getElementById('quizProgressCount').textContent = `ข้อ ${current}/${total}`;
-  document.getElementById('quizProgressScore').textContent = `${sessionResults.score} ถูก`;
+  if (appQuizMode === 'exam') {
+    const answeredCount = Object.keys(userAnswersExamMode).length;
+    document.getElementById('quizProgressScore').textContent = `ตอบแล้ว ${answeredCount} ข้อ`;
+  } else {
+    document.getElementById('quizProgressScore').textContent = `${sessionResults.score} ถูก`;
+  }
 
   const pct = Math.round((current / total) * 100);
   const fill = document.getElementById('quizProgressFill');
@@ -1995,8 +2370,9 @@ function updateQuizNav() {
   }
 
   document.getElementById('btnPrevQ').disabled = (currentQuestionIndex <= 0);
-  document.getElementById('btnNextQ').disabled = (currentQuestionIndex + 1 >= total && !isAnswerSubmitted);
+  document.getElementById('btnNextQ').disabled = false;
 }
+
 
 // ─── RESULT SUMMARY ───
 function showQuizResultSummary() {
@@ -2248,8 +2624,30 @@ function submitReportIssue() {
     alert('กรุณากรอกรายละเอียดปัญหา');
     return;
   }
+  
+  const currentQ = (activeQuizQuestions && activeQuizQuestions[currentQuestionIndex]) ? activeQuizQuestions[currentQuestionIndex] : null;
+  const qId = currentQ ? currentQ.id : 'General';
+  const qText = currentQ ? (currentQ.question || '').replace(/<[^>]*>/g, '').substring(0, 150) : '';
+  const cat = currentQ ? currentQ.category : (currentCategory || 'All');
+
+  if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
+    fetch(window.QUIZ_GAS_WEBAPP_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        action: 'reportIssue',
+        user: currentUser ? currentUser.displayName : 'Anonymous',
+        category: cat,
+        questionId: qId,
+        question: qText,
+        issueType: type,
+        detail: detail
+      })
+    }).catch(() => {});
+  }
+
   closeReportIssueModal();
-  showToast('🚩 ส่งรายงานปัญหาเรียบร้อยแล้ว ขอบคุณที่ช่วยตรวจข้อสอบครับ!');
+  showToast('🚩 ส่งรายงานปัญหาข้อสอบเรียบร้อยแล้ว ขอบคุณมากครับ!');
 }
 
 function openStatsModal() {

@@ -148,7 +148,7 @@ def main():
         print(f"  -> Reading sheet: '{s_name}'...")
         res = service.spreadsheets().values().get(
             spreadsheetId=SPREADSHEET_ID,
-            range=f"'{s_name}'!A3:M"
+            range=f"'{s_name}'!A3:N"
         ).execute()
 
         rows = res.get('values', [])
@@ -156,9 +156,9 @@ def main():
         track_guess = 'Clinic'
 
         for idx, row in enumerate(rows):
-            row_num = idx + 2
-            # Pad row up to 13 columns
-            while len(row) < 13:
+            row_num = idx + 3
+            # Pad row up to 14 columns
+            while len(row) < 14:
                 row.append('')
 
             q_text = str(row[0] or '').strip()
@@ -174,6 +174,7 @@ def main():
             subtopic = str(row[10] or '').strip() or s_name
             track    = str(row[11] or 'Clinic').strip()
             note     = str(row[12] or '').strip()
+            exam_type = str(row[13] or 'ข้อสอบทั่วไป').strip() or 'ข้อสอบทั่วไป'
 
             if not q_text and not c1:
                 continue
@@ -214,7 +215,8 @@ def main():
                 'answer': ans_key,
                 'explanation': explanation,
                 'answerImage': ans_img,
-                'note': note
+                'note': note,
+                'examType': exam_type
             }
             questions.append(q_obj)
             all_questions_list.append(q_obj)
