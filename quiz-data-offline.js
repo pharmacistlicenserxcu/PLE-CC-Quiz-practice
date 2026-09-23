@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (Rich Text & Column O)
  * Total Questions: 76 across 7 Categories
- * Build Timestamp: 2026-09-23 18:35:14
+ * Build Timestamp: 2026-09-23 19:15:10
  */
 
 window.QUIZ_GOOGLE_SHEET_ID = "1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w";
@@ -67,7 +67,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. Naproxen<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยาต้านการอักเสบที่ไม่ใช่สเตียรอยด์ (NSAIDs) เช่น Naproxen เป็นยาทางเลือกแรก (First-line) ในการรักษาภาวะข้ออักเสบเกาต์เฉียบพลัน (Acute Gout Flare) ในผู้ป่วยที่ไม่มีข้อห้ามใช้ สำหรับยาลดกรดยูริก (Allopurinol, Probenecid) ห้ามเริ่มต้นใช้ในช่วงที่ข้ออักเสบเฉียบพลันยังไม่สงบ (หากคนไข้ยังไม่เคยได้มาก่อน) เนื่องจากทำให้กรดยูริกแกว่งและกระตุ้นให้อักเสบเพิ่มขึ้น ส่วน Tramadol/Pethidine เป็นยาแก้ปวดที่ไม่มีฤทธิ์ต้านการอักเสบจึงไม่เหมาะสมเป็นลำดับแรก<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 1 (หัวข้อ Executive Summary - Gout Flare Management) และ หน้า 6 (หัวข้อ Timing of ULT initiation) บ่งชี้ว่าแนะนำยารักษาข้ออักเสบเฉียบพลันได้แก่ Colchicine, NSAIDs หรือ Glucocorticoids<br><br>📌 <b>High-Yield Exam Pearl:</b> Gout Acute Flare: First-line = NSAIDs / Colchicine. ห้ามเริ่มยาลดกรดยูริกขณะ acute flare",
       "answerImage": "",
       "note": "Gout Acute Flare: First-line = NSAIDs / Colchicine. ห้ามเริ่มยาลดกรดยูริกขณะ acute flare",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     },
     {
       "id": "1. Musculoskeleton::4",
@@ -88,7 +89,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. นมหรือผลิตภัณฑ์นมประเภทพร่องมันเนย (Low-fat dairy products)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>อาหารประเภทนมพร่องมันเนย (Low-fat dairy products) มีรายงานการศึกษาทางคลินิกว่าช่วยลดระดับกรดยูริกในเลือดและลดความถี่ในการกำเริบของข้ออักเสบเกาต์ได้ (มีฤทธิ์ Uricosuric อ่อนๆ) ขณะที่น้ำผลไม้รสหวาน (มี Fructose สูง), เครื่องในสัตว์, แอลกอฮอล์ (เบียร์/สุรา) และสัตว์ปีก ล้วนเป็นอาหารพิวรีนสูงหรือกระตุ้นการสร้างกรดยูริกและลดการขับกรดยูริกทางไต ซึ่งผู้ป่วยต้องหลีกเลี่ยง<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 12 (หัวข้อ Lifestyle Recommendations) ระบุว่าผู้ป่วยเกาต์ควรหลีกเลี่ยงแอลกอฮอล์ พิวรีน และฟรุกโตส ส่วนผลิตภัณฑ์นมไขมันต่ำ (Low-fat dairy products) ได้รับการทบทวนหลักฐานทางคลินิกแล้วว่าปลอดภัยและแนะนำสำหรับผู้ป่วยโรคเกาต์<br><br>📌 <b>High-Yield Exam Pearl:</b> Gout Lifestyle: Low-fat dairy ช่วยลดกรดยูริก; หลีกเลี่ยง High-fructose, แอลกอฮอล์, เครื่องใน",
       "answerImage": "",
       "note": "Gout Lifestyle: Low-fat dairy ช่วยลดกรดยูริก; หลีกเลี่ยง High-fructose, แอลกอฮอล์, เครื่องใน",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     },
     {
       "id": "1. Musculoskeleton::5",
@@ -109,7 +111,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ค. ท้องเสียถ่ายเหลว (Diarrhea)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>อาการไม่พึงประสงค์จากการใช้ยา Colchicine ขนาดสูงแบบดั้งเดิม (เช่น กินทุก 2 ชั่วโมงจนกว่าจะหายปวดหรือท้องเสีย) ที่พบบ่อยที่สุดและเป็นสัญญาณเตือนการเกิดพิษเฉียบพลันคือ อาการทางระบบทางเดินอาหาร โดยเฉพาะอาการท้องเสียอย่างรุนแรง (Diarrhea) คลื่นไส้ อาเจียน<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 1 (หัวข้อ Recommendations for Gout Flare Management) ระบุแนะนำให้ใช้ Colchicine ขนาดต่ำ (low-dose colchicine) เพื่อหลีกเลี่ยงพิษต่อทางเดินอาหารรุนแรง เช่น ท้องเสีย (Diarrhea) ที่เกิดจากการใช้ขนาดสูง<br><br>📌 <b>High-Yield Exam Pearl:</b> Colchicine Toxicity: สัญญาณเตือนพิษเฉียบพลัน = Diarrhea, N/V. แนะนำ Low-dose regimen",
       "answerImage": "",
       "note": "Colchicine Toxicity: สัญญาณเตือนพิษเฉียบพลัน = Diarrhea, N/V. แนะนำ Low-dose regimen",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     },
     {
       "id": "1. Musculoskeleton::6",
@@ -130,7 +133,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Allopurinol<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผู้ป่วยโรคเกาต์ที่ตรวจพบยีนหรืออัลลีลเสี่ยงต่อการแพ้ยารุนแรงชนิด HLA-B<i>58:01 จะมีความเสี่ยงสูงมากต่อการเกิดปฏิกิริยาการแพ้ผิวหนังรุนแรง (Severe Cutaneous Adverse Reactions: SCARs) ได้แก่ Stevens-Johnson Syndrome (SJS) และ Toxic Epidermal Necrolysis (TEN) จากการใช้ยา Allopurinol ดังนั้นจึงมีข้อห้ามใช้เด็ดขาดสำหรับยารายนี้ และควรเปลี่ยนไปใช้ยากลุ่มอื่นแทน เช่น Febuxostat หรือ Benzbromarone<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 7 (หัวข้อ Allopurinol - Genetic testing) ระบุแนะนำให้ตรวจคัดกรองอัลลีล HLA-B</i>5801 ก่อนเริ่มยา Allopurinol ในผู้ป่วยกลุ่มประชากรเอเชียตะวันออกเฉียงใต้ (เช่น ชาวไทย, เกาหลี, จีนฮั่น) ที่มีความชุกของยีนนี้สูง<br><br>📌 <b>High-Yield Exam Pearl:</b> Allopurinol SCARs: ผู้ป่วยไทยมีความชุกของ HLA-B*58:01 สูง เสี่ยง SJS/TEN ต้องคัดกรอง",
       "answerImage": "",
       "note": "Allopurinol SCARs: ผู้ป่วยไทยมีความชุกของ HLA-B*58:01 สูง เสี่ยง SJS/TEN ต้องคัดกรอง",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     },
     {
       "id": "1. Musculoskeleton::7",
@@ -151,7 +155,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Osteoarthritis<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>อาการแสดงเด่นของผู้ป่วยรายนี้ (อายุ 65 ปี, ปวดข้อเข่าเรื้อรัง, มีเสียงกรอบแกรบขณะขยับข้อ/Crepitus, มีข้อติดตอนเช้า/Morning stiffness นานน้อยกว่า 30 นาที) เป็นลักษณะทางคลินิกที่เข้าได้กับเกณฑ์การวินิจฉัยโรคข้อเสื่อม (Osteoarthritis: OA) ของ ACR แตกต่างจากข้ออักเสบรูมาตอยด์ (RA) ซึ่งมักพบ Morning stiffness นานกว่า 1 ชั่วโมง และมีการอักเสบของหลายข้อพร้อมกันแบบสมมาตร<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> osteoarthritis-guideline-2019.pdf หน้า 1 และ 2 (หัวข้อ Methods/Introduction) และเปรียบเทียบกับ thai-osteoarthritis-guideline-2553.pdf หน้า 6 (ข้อ 1. การประเมินทางคลินิก บรรทัดที่ 10-18) ที่ระบุดัชนีการวินิจฉัยโรคข้อเข่าเสื่อมจากอาการปวดเข่าร่วมกับ Crepitus และข้อฝืดตึงตอนเช้า &lt; 30 นาที<br><br>📌 <b>High-Yield Exam Pearl:</b> OA Diagnosis: Morning stiffness &lt; 30 นาที, Crepitus, ปวดเมื่อใช้งาน ดีขึ้นเมื่อพัก",
       "answerImage": "",
       "note": "OA Diagnosis: Morning stiffness &lt; 30 นาที, Crepitus, ปวดเมื่อใช้งาน ดีขึ้นเมื่อพัก",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     },
     {
       "id": "1. Musculoskeleton::8",
@@ -172,7 +177,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. Topical NSAIDs (เช่น Diclofenac emulgel)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>แนวทางเวชปฏิบัติของ ACR 2019 แนะนำให้เริ่มต้นการรักษาโรคข้อเข่าเสื่อม (Knee OA) ด้วยยาทาเฉพาะกลุ่ม NSAIDs (Topical NSAIDs) เป็นอันดับแรกก่อนการใช้ยารับประทาน เนื่องจากมีประสิทธิภาพในการลดปวดอักเสบได้ดีและมีความปลอดภัยต่อระบบทั่วร่างกายสูงมาก (Systemic absorption ต่ำมาก) โดยเฉพาะในผู้ป่วยสูงอายุ (65 ปีขึ้นไป) ที่มีความเสี่ยงสูงต่อผลข้างเคียงทางไตและทางเดินอาหารจากยากิน NSAIDs<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> osteoarthritis-guideline-2019.pdf หน้า 3 (Figure 1) และ หน้า 12 (หัวข้อ Recommendations for Knee OA - Pharmacologic) ระบุอย่างชัดเจนว่า \"Topical NSAIDs are strongly recommended for Knee OA\" และแนะนำให้ใช้เป็นทางเลือกแรกก่อนยากินทั่วร่างกาย<br><br>📌 <b>High-Yield Exam Pearl:</b> OA Knee First-line: Topical NSAIDs (Diclofenac emulgel) มีประสิทธิภาพดีและปลอดภัยต่อ GI/CV/Renal",
       "answerImage": "",
       "note": "OA Knee First-line: Topical NSAIDs (Diclofenac emulgel) มีประสิทธิภาพดีและปลอดภัยต่อ GI/CV/Renal",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     },
     {
       "id": "1. Musculoskeleton::9",
@@ -193,7 +199,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. HLA-B<i>58:01<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>การตรวจวิเคราะห์ทางพันธุกรรมเพื่อหาอัลลีล HLA-B</i>58:01 มีความคุ้มค่าและแนะนำให้คัดกรองในผู้ป่วยชาวไทยและประชากรเอเชียตะวันออกก่อนเริ่มยา Allopurinol เพื่อประเมินความเสี่ยงและป้องกันการเกิดโรคแพ้ยาทางผิวหนังที่รุนแรงเฉียบพลันชนิด SCARs/TEN/DRESS<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 7 (หัวข้อ Allopurinol) และ หน้า 16 (บรรทัดอ้างอิงที่ 65-66: Association between HLA-B<i>5801 and allopurinol-induced SJS/TEN in a Thai population)<br><br>📌 <b>High-Yield Exam Pearl:</b> Allopurinol Pharmacogenomics: ตรวจยีน HLA-B</i>58:01 ก่อนเริ่มยาในคนไทยทุกราย",
       "answerImage": "",
       "note": "Allopurinol Pharmacogenomics: ตรวจยีน HLA-B*58:01 ก่อนเริ่มยาในคนไทยทุกราย",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     },
     {
       "id": "1. Musculoskeleton::10",
@@ -214,7 +221,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. เพื่อป้องกันการเกิดข้ออักเสบเฉียบพลัน (Gout flare prophylaxis) ในระยะเริ่มยาลดกรดยูริก<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ในช่วงเริ่มต้นรักษาโรคเกาต์ด้วยยาลดระดับกรดยูริก (ULT เช่น Allopurinol) ระดับกรดยูริกในกระแสเลือดจะลดลงอย่างรวดเร็ว ส่งผลให้เกิดการละลายของผลึกเกลือยูเรต (Urate crystal dissolution) ที่สะสมอยู่ในข้อ ทำให้กระตุ้นให้เกิดภาวะข้ออักเสบเฉียบพลันกำเริบขึ้นได้ (Gout flare) แพทย์จึงสั่งใช้ยา Colchicine ขนาดต่ำ (0.6 mg วันละครั้ง) เพื่อทำหน้าที่ต้านอักเสบและป้องกันไม่ให้อาการข้ออักเสบเฉียบพลันกำเริบในช่วง 3-6 เดือนแรกของการเริ่ม ULT<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 1, 5 (ตารางที่ 2 ข้อ 9) และหน้า 6 (หัวข้อ Concomitant antiinflammatory prophylaxis) ระบุอย่างเข้มแข็งให้ใช้ร่วมกันนานอย่างน้อย 3-6 เดือน<br><br>📌 <b>High-Yield Exam Pearl:</b> Gout Flare Prophylaxis: ให้ Colchicine / NSAID ร่วมกับ Allopurinol นานอย่างน้อย 3-6 เดือน",
       "answerImage": "",
       "note": "Gout Flare Prophylaxis: ให้ Colchicine / NSAID ร่วมกับ Allopurinol นานอย่างน้อย 3-6 เดือน",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     },
     {
       "id": "1. Musculoskeleton::11",
@@ -235,7 +243,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. Topical NSAIDs (เช่น Diclofenac emulgel)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ตามแนวทาง ACR 2019 แนะนำใช้ Topical NSAIDs เป็น First-line สำหรับผู้ป่วยโรคข้อเข่าเสื่อม (Knee OA) เนื่องจากมีข้อแนะนำสนับสนุนที่เข้มแข็ง (Strongly recommended) และปลอดภัยกว่าการใช้ยาแก้ปวดชนิดรับประทานทั่วไป สำหรับ Paracetamol เป็นเพียงข้อแนะนำแบบมีเงื่อนไข (Conditionally recommended) และมีประสิทธิภาพลดปวดในข้อเสื่อมต่ำ<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> osteoarthritis-guideline-2019.pdf หน้า 3 (Figure 1) และ หน้า 12 (หัวข้อ Recommendations for Knee OA - Pharmacologic)<br><br>📌 <b>High-Yield Exam Pearl:</b> ACR 2019 OA: แนะนำ Topical NSAID เป็นอันดับแรกก่อน Oral NSAID ในข้อเข่าเสื่อม",
       "answerImage": "",
       "note": "ACR 2019 OA: แนะนำ Topical NSAID เป็นอันดับแรกก่อน Oral NSAID ในข้อเข่าเสื่อม",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::12",
@@ -256,7 +265,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. ท้องเสียถ่ายเหลว (Diarrhea)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>อาการไม่พึงประสงค์สำคัญที่พบบ่อยที่สุดของ Colchicine คือการกระตุ้นให้เกิดพิษต่อระบบทางเดินอาหาร โดยมีอาการท้องเสียถ่ายเหลว (Diarrhea) เป็นอาการหลัก ซึ่งสัมพันธ์โดยตรงกับขนาดยา (Dose-dependent) เภสัชกรต้องแนะนำให้ผู้ป่วยหยุดยาทันทีหากเริ่มมีอาการท้องเสีย<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 1 (หัวข้อ Recommendations for Gout Flare Management) บ่งชี้เรื่องความปลอดภัยในการหลีกเลี่ยงพิษ Colchicine ต่อทางเดินอาหาร (Diarrhea)<br><br>📌 <b>High-Yield Exam Pearl:</b> Colchicine Counseling: หยุดยาหรือลดขนาดทันทีหากเกิดอาการถ่ายเหลวรุนแรง",
       "answerImage": "",
       "note": "Colchicine Counseling: หยุดยาหรือลดขนาดทันทีหากเกิดอาการถ่ายเหลวรุนแรง",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::13",
@@ -277,7 +287,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. เพิ่มยา Hydroxychloroquine<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผู้ป่วยโรคข้ออักเสบรูมาตอยด์ (RA) ที่ไม่สามารถควบคุมโรคด้วย Methotrexate เดี่ยว ๆ ได้ จำเป็นต้องปรับเพิ่มยาในกลุ่ม Conventional synthetic DMARDs (csDMARDs) ร่วมด้วย โดยยาทั้ง 3 ตัวที่นิยมใช้ร่วมกันคือ Methotrexate, Sulfasalazine, และ Hydroxychloroquine แต่เนื่องจากผู้ป่วยรายนี้มีประวัติแพ้ยากลุ่ม Sulfa อย่างรุนแรง ยา Sulfasalazine จึงเป็นข้อห้ามใช้เด็ดขาด ดังนั้นทางเลือกที่เหมาะสมและปลอดภัยที่สุดคือการสั่งจ่ายเพิ่มยา Hydroxychloroquine เพื่อควบคุมโรค<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 25 (หัวข้อ ข้อห้ามใช้ - Sulfonamide allergy ใน Celecoxib) ซึ่งเทียบเคียงทางเภสัชวิทยาและปฏิกิริยาแพ้ยาข้ามกลุ่มของยากลุ่ม Sulfonamides ทั้งหมด (รวมถึง Sulfasalazine)<br><br>📌 <b>High-Yield Exam Pearl:</b> RA Treat-to-target: หากคุมโรคไม่ได้ด้วย MTX ให้พิจารณา Add-on csDMARDs อื่น (เช่น HCQ, SSZ)",
       "answerImage": "",
       "note": "RA Treat-to-target: หากคุมโรคไม่ได้ด้วย MTX ให้พิจารณา Add-on csDMARDs อื่น (เช่น HCQ, SSZ)",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::14",
@@ -298,7 +309,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ค. เพื่อป้องกันการเกิดข้ออักเสบเฉียบพลัน (Gout flare) จากการเปลี่ยนแปลงของระดับกรดยูริก<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>วัตถุประสงค์หลักของการให้ Colchicine ขนาดต่ำควบคู่กับ Allopurinol ในระยะเริ่มต้นของการลดกรดยูริก (ULT) คือการป้องกันข้ออักเสบเฉียบพลันกำเริบ (Gout flare prophylaxis) เนื่องจากกรดยูริกในเลือดที่แกว่งและลดลงอย่างรวดเร็วจะทำให้ผลึกเกลือยูเรตละลายตัวและกระตุ้นระบบภูมิคุ้มกันให้เกิดการอักเสบในข้อขึ้นมาได้<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 1, 5, 6 (หัวข้อ Concomitant antiinflammatory prophylaxis)<br><br>📌 <b>High-Yield Exam Pearl:</b> Gout Prophylaxis: ป้องกัน Gout flare จากการแกว่งของระดับกรดยูริกในช่วงเริ่ม ULT",
       "answerImage": "",
       "note": "Gout Prophylaxis: ป้องกัน Gout flare จากการแกว่งของระดับกรดยูริกในช่วงเริ่ม ULT",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::15",
@@ -319,7 +331,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. การตรวจตาอย่างละเอียดโดยจักษุแพทย์ (Eye examination)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>การประเมินหรือตรวจตาอย่างละเอียดโดยจักษุแพทย์ (Ophthalmologic examination) เป็นพารามิเตอร์ที่จำเป็นสำหรับเฝ้าระวังพิษต่อจอประสาทตา (Retinotoxicity) จากยา Hydroxychloroquine (HCQ) เท่านั้น ไม่จำเป็นสำหรับการตรวจติดตามยา Methotrexate (MTX) ขณะที่การใช้ MTX ต้องตรวจติดตาม CBC (เฝ้าระวัง Bone marrow suppression), LFT (Hepatotoxicity), Creatinine (Renal function), และ Chest X-ray (เฝ้าระวัง Pulmonary fibrosis/Pneumonitis)<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> เทียบเคียงคำแนะนำของสมาคมแพทย์โรคข้ออเมริกา (ACR) และสมาคมจักษุแพทย์ เกี่ยวกับแนวทางเฝ้าระวังความเป็นพิษต่อจอประสาทตาของยารักษาโรคข้อรูมาตอยด์ (HCQ Retinopathy screening)<br><br>📌 <b>High-Yield Exam Pearl:</b> DMARDs Monitoring: HCQ ต้องตรวจคัดกรอง Retinal toxicity ด้วย Eye exam ประจำปี (MTX ไม่ต้อง)",
       "answerImage": "",
       "note": "DMARDs Monitoring: HCQ ต้องตรวจคัดกรอง Retinal toxicity ด้วย Eye exam ประจำปี (MTX ไม่ต้อง)",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::16",
@@ -340,7 +353,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. สามารถปรับลดขนาดยาเองได้ทันทีเมื่ออาการของโรคเริ่มคงที่หรือไม่มีอาการปวดอักเสบ<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผู้ป่วยไม่มีสิทธิ์ปรับลดหรือเพิ่มขนาดยากลุ่ม DMARDs (รวมถึง Methotrexate) ด้วยตัวเองเด็ดขาด เนื่องจากเป็นยาที่มีดัชนีการรักษาแคบและมีความเป็นพิษสูง การปรับขนาดยาจำเป็นต้องตรวจประเมินดัชนีความรุนแรงของโรค (Disease activity) และค่าทางห้องปฏิบัติการอย่างรอบคอบโดยแพทย์ผู้เชี่ยวชาญ ส่วนข้ออื่น ๆ เป็นคำแนะนำที่ถูกต้องและเหมาะสมสำหรับผู้ป่วยที่ใช้ MTX<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-rheumatoid-arthritis-guideline-2557.pdf หน้า 40 (ตารางที่ 7: ความถี่ในการติดตามผลข้างเคียงของยา DMARDs — ตรวจ CBC, LFT, Cr ทุก 1-3 เดือน ห้ามปรับขนาดยาเองโดยไม่มีการประเมิน Disease activity โดยแพทย์); ยืนยันโดย ra-guideline-2021.pdf หน้า 2 (Routine laboratory monitoring — refer readers to ACR guidelines for periodic lab follow-up)<br><br>📌 <b>High-Yield Exam Pearl:</b> DMARDs Counseling: MTX ทานสัปดาห์ละ 1 ครั้งเท่านั้น ห้ามทานทุกวัน และห้ามปรับลดขนาดยาเอง",
       "answerImage": "",
       "note": "DMARDs Counseling: MTX ทานสัปดาห์ละ 1 ครั้งเท่านั้น ห้ามทานทุกวัน และห้ามปรับลดขนาดยาเอง",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::17",
@@ -361,7 +375,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. เพิ่มยา Leflunomide<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>จากกรณีศึกษา ผู้ป่วยมีอาการรุนแรงระดับปานกลาง (Moderate disease activity) และมีข้อจำกัดในการใช้ Sulfasalazine เนื่องจากแพ้ยากลุ่ม Sulfa ดังนั้นตัวยาในกลุ่ม csDMARDs ที่มีประสิทธิภาพสูงใกล้เคียงกับ Methotrexate และสามารถใช้ร่วมกับ Methotrexate หรือใช้เดี่ยว ๆ ทดแทนได้ดีคือ Leflunomide (ยับยั้ง Pyrimidine synthesis) ซึ่งมีความเหมาะสมในการควบคุมความรุนแรงของโรค<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> ra-guideline-2021.pdf หน้า 4 (ตาราง Recommendations for DMARD-naive patients: \"Methotrexate monotherapy conditionally recommended over Leflunomide — Low certainty, PICO 2a.C3\") และหน้า 5 (\"Methotrexate recommended over leflunomide because of its greater dosing flexibility and lower cost\"); ยืนยันโดย thai-rheumatoid-arthritis-guideline-2557.pdf หน้า 10 (DMARDs ที่แนะนำ: methotrexate, sulfasalazine, antimalarial — Leflunomide เป็นทางเลือกเมื่อมีข้อห้ามของยาอื่น)<br><br>📌 <b>High-Yield Exam Pearl:</b> RA Sulfa Allergy: Sulfasalazine มีโครงสร้าง Sulfa ห้ามใช้ในคนไข้แพ้ Sulfa ให้เลี่ยงไปใช้ HCQ หรือ LEF",
       "answerImage": "",
       "note": "RA Sulfa Allergy: Sulfasalazine มีโครงสร้าง Sulfa ห้ามใช้ในคนไข้แพ้ Sulfa ให้เลี่ยงไปใช้ HCQ หรือ LEF",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::18",
@@ -382,7 +397,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. Osteoarthritis<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผู้ป่วยสูงอายุ (55 ปี), น้ำหนักเกิน (BMI 26.67), ปวดข้อเข่าทั้งสองข้างเวลาขึ้นลงบันได (มีแรงกดทับข้อ), ข้อฝืดตึงตอนเช้าสั้น ๆ เพียง 10 นาที (Morning stiffness &lt; 30 นาที), คลำพบเสียงกรอบแกรบ (Crepitus) และไม่มีการอักเสบ บวม แดง ร้อนของข้อ ร่วมกับไม่มีโรคประจำตัวอื่น อาการทางคลินิกทั้งหมดชี้ชัดว่าเป็นโรคข้อเข่าเสื่อม (Osteoarthritis)<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 6 (หัวข้อ การประเมินทางคลินิก)<br><br>📌 <b>High-Yield Exam Pearl:</b> OA Clinical Features: ข้อฝืดขัดสั้น ๆ (&lt;30 นาที), อาการปวดสัมพันธ์กับการลงน้ำหนัก/เคลื่อนไหว",
       "answerImage": "",
       "note": "OA Clinical Features: ข้อฝืดขัดสั้น ๆ (&lt;30 นาที), อาการปวดสัมพันธ์กับการลงน้ำหนัก/เคลื่อนไหว",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::19",
@@ -403,7 +419,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Etoricoxib<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยาลดอักเสบกลุ่ม Selective COX-2 Inhibitors โดยเฉพาะ Etoricoxib มีความสัมพันธ์กับการเกิดปฏิกิริยาข้างเคียงในการเก็บกักโซเดียมและน้ำ (Sodium &amp; Water retention) ในไต ส่งผลให้เพิ่มแรงดันและทำให้การควบคุมระดับความดันโลหิตในคนไข้โรคความดันโลหิตสูงแย่ลงได้มากที่สุดในกลุ่มยาแก้ปวดปวดที่ระบุ<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 23 และ หน้า 25 (หัวข้อ ผลข้างเคียงของยากลุ่ม COX-2 inhibitors บรรทัดที่ 4-7: \"ผู้ป่วยโรคหัวใจและหลอดเลือด เนื่องจากอาจทำให้เกิดความดันโลหิตสูง ภาวะหัวใจล้มเหลว\")<br><br>📌 <b>High-Yield Exam Pearl:</b> OA CV Safety: Etoricoxib / COX-2 inhibitors เพิ่มความเสี่ยง Thrombotic CV events สูงสุด",
       "answerImage": "",
       "note": "OA CV Safety: Etoricoxib / COX-2 inhibitors เพิ่มความเสี่ยง Thrombotic CV events สูงสุด",
-      "examType": "ข้อสอบจริง"
+      "examType": "ข้อสอบจริง",
+      "examYear": ""
     },
     {
       "id": "1. Musculoskeleton::20",
@@ -424,7 +441,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. Capsaicin gel<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>เนื่องจากผู้ป่วยรายนี้ทาน Paracetamol เพื่อบรรเทาอาการปวดข้อเข่าเสื่อมแต่ไม่ได้ผล และผู้ป่วยมีภาวะความดันโลหิตสูงร่วมด้วย การจ่ายยาแก้ปวดชนิดรับประทานกลุ่ม NSAIDs (Diclofenac tablet) อาจส่งผลเสียต่อความดันโลหิตและเพิ่มความเสี่ยงทางระบบหัวใจและหลอดเลือด ดังนั้นยาบรรเทาอาการทางเลือกแรกถัดมาที่มีความปลอดภัยสูงและแนะนำในเวชปฏิบัติคือ ยาทาเฉพาะที่ Capsaicin gel (ทาเพื่อลดปริมาณ Substance P ในเส้นประสาทรับความรู้สึก) เพื่อหลีกเลี่ยงผลเสียของยากินทั่วร่างกาย<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> osteoarthritis-guideline-2019.pdf หน้า 3 (Figure 1) และหน้า 9 (หัวข้อ Topical capsaicin) ระบุแนะนำใช้เป็นยาทาต้านปวดข้อเข่าเสื่อมอย่างมีเงื่อนไข (conditionally recommended for knee OA) และเทียบเคียงคู่มือ thai-osteoarthritis-guideline-2553.pdf หน้า 13 (ข้อ 7: \"ยาทาภายนอก... มีความปลอดภัยสูง\")<br><br>📌 <b>High-Yield Exam Pearl:</b> OA Capsaicin: Capsaicin ทาเฉพาะที่ออกฤทธิ์ยับยั้ง Substance P บรรเทาปวดข้อเข่าได้อย่างปลอดภัย",
       "answerImage": "",
       "note": "OA Capsaicin: Capsaicin ทาเฉพาะที่ออกฤทธิ์ยับยั้ง Substance P บรรเทาปวดข้อเข่าได้อย่างปลอดภัย",
-      "examType": "ข้อสอบจริง"
+      "examType": "ข้อสอบจริง",
+      "examYear": ""
     },
     {
       "id": "1. Musculoskeleton::21",
@@ -445,7 +463,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. ท้องเสียถ่ายเหลว (Diarrhea)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>อาการข้างเคียงที่สัมพันธ์กับขนาดยาและพบบ่อยที่สุดของ Colchicine คือ ท้องเสียถ่ายเหลวอย่างรุนแรง (Diarrhea) ซึ่งเกิดจากยาไปยับยั้งการแบ่งเซลล์ที่เยื่อบุทางเดินอาหาร (Microtubule disruption) ทำให้เยื่อบุผิวทางเดินอาหารลอกและสูญเสียน้ำ<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 1 (Gout flare management - low-dose colchicine)<br><br>📌 <b>High-Yield Exam Pearl:</b> Colchicine ADR: Diarrhea เป็น ADR พบบ่อยสุดจากการรบกวนเซลล์เยื่อบุลำไส้ที่แบ่งตัวเร็ว",
       "answerImage": "",
       "note": "Colchicine ADR: Diarrhea เป็น ADR พบบ่อยสุดจากการรบกวนเซลล์เยื่อบุลำไส้ที่แบ่งตัวเร็ว",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::22",
@@ -466,7 +485,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. เพื่อป้องกันข้ออักเสบเฉียบพลันกำเริบ (Gout flare) ในระหว่างเริ่มต้นใช้ยาลดกรดยูริก<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>การเริ่มต้นให้ยาลดกรดยูริก Allopurinol จะทำให้ความเข้มข้นของกรดยูริกในกระแสเลือดเปลี่ยนแปลงอย่างรวดเร็ว ซึ่งเป็นตัวกระตุ้นให้ผลึกเกลือยูเรตที่ตกตะกอนในข้อนิ้วเท้าเกิดการละลายตัวและกระตุ้นการอักเสบซ้ำ แพทย์จึงจำเป็นต้องจ่ายยาต้านอักเสบขนาดต่ำ เช่น Colchicine เพื่อป้องกันการกำเริบอักเสบเฉียบพลันดังกล่าว (Gout flare prophylaxis)<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 1, 5, 6 (หัวข้อ Concomitant antiinflammatory prophylaxis)<br><br>📌 <b>High-Yield Exam Pearl:</b> Gout Prophylaxis: Colchicine ป้องกันข้ออักเสบกำเริบซ้ำจากการสลายผลึก Urate ในช่วงเริ่มยาลดกรดยูริก",
       "answerImage": "",
       "note": "Gout Prophylaxis: Colchicine ป้องกันข้ออักเสบกำเริบซ้ำจากการสลายผลึก Urate ในช่วงเริ่มยาลดกรดยูริก",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::23",
@@ -487,7 +507,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. HLA-B<i>58:01<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>การตรวจคัดกรองพันธุกรรมที่เป็นมาตรฐานและแนะนำในผู้ป่วยไทยก่อนเริ่มต้นยาลดกรดยูริก Allopurinol คือการตรวจหาอัลลีล HLA-B</i>58:01 เพื่อลดโอกาสการแพ้ยาเฉียบพลันและรุนแรงประเภท SCARs/SJS/TEN ซึ่งมีอัตราการเสียชีวิตสูงในคนไทย<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 7 (หัวข้อ Allopurinol และตารางที่ 2 ข้อ 22) ระบุคัดกรองยีนเด่นชัดในประชากรไทย<br><br>📌 <b>High-Yield Exam Pearl:</b> Allopurinol Gene Screening: HLA-B*58:01 allele เป็น biomarker ทำนายการเกิด SCARs",
       "answerImage": "",
       "note": "Allopurinol Gene Screening: HLA-B*58:01 allele เป็น biomarker ทำนายการเกิด SCARs",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     },
     {
       "id": "1. Musculoskeleton::24",
@@ -508,7 +529,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. Oral Naproxen (หรือยากลุ่ม NSAIDs)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยาทางเลือกแรกที่ใช้ระงับอาการอักเสบเฉียบพลันของโรคเกาต์ (Acute gout attack) คือยากลุ่ม NSAIDs (เช่น Naproxen, Indomethacin), Colchicine หรือ Corticosteroids ชนิดกิน ยาลดกรดยูริก (Allopurinol, Probenecid, Benzbromarone) ห้ามนำมาเริ่มใช้เพื่อแก้ปวดอักเสบเฉียบพลัน ส่วนยาสเตียรอยด์ฉีดเข้าข้อ (Intra-articular steroid) จะพิจารณาเฉพาะเมื่ออักเสบเพียง 1-2 ข้อใหญ่และผู้ป่วยมีข้อห้ามใช้ยารับประทานตัวอื่น<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 1 (Management of Gout Flares)<br><br>📌 <b>High-Yield Exam Pearl:</b> Acute Gout: Naproxen / NSAIDs เป็นทางเลือกแรก ห้ามเริ่ม Allopurinol ทันที",
       "answerImage": "",
       "note": "Acute Gout: Naproxen / NSAIDs เป็นทางเลือกแรก ห้ามเริ่ม Allopurinol ทันที",
-      "examType": "ข้อสอบจริงปี 2565"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2565"
     },
     {
       "id": "1. Musculoskeleton::25",
@@ -529,7 +551,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Allopurinol<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผลการตรวจคัดกรองพันธุกรรม HLA-B*58:01 เป็นบวก แสดงว่าผู้ป่วยมีความเสี่ยงสูงมากที่จะแพ้ยารุนแรงชนิด SJS/TEN จากยา Allopurinol จึงห้ามสั่งใช้ยา Allopurinol อย่างเด็ดขาด และผู้ป่วยสามารถใช้ยาลดกรดยูริกทางเลือกตัวอื่นแทนได้ เช่น Febuxostat หรือกลุ่ม Uricosuric (Benzbromarone, Probenecid)<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 7 (หัวข้อ Allopurinol - Genetic testing)<br><br>📌 <b>High-Yield Exam Pearl:</b> Allopurinol Contraindication: ห้ามใช้เด็ดขาดในผู้ป่วยที่มีประวัติแพ้ยา Allopurinol รุนแรง (SJS/TEN)",
       "answerImage": "",
       "note": "Allopurinol Contraindication: ห้ามใช้เด็ดขาดในผู้ป่วยที่มีประวัติแพ้ยา Allopurinol รุนแรง (SJS/TEN)",
-      "examType": "ข้อสอบจริงปี 2565"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2565"
     },
     {
       "id": "1. Musculoskeleton::26",
@@ -550,7 +573,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. แนะนำให้รับประทานวิตามินดี (Vitamin D) ปริมาณสูงเพื่อช่วยขับยูริก<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>การบำบัดรักษาโรคเกาต์โดยไม่ใช้ยาประกอบด้วย การลดน้ำหนักตัวในคนอ้วน, งดเครื่องดื่มแอลกอฮอล์ (เบียร์), หลีกเลี่ยงเครื่องในสัตว์ และลดการดื่มเครื่องดื่มที่มี Fructose สูง เนื่องจากอาหารเหล่านี้มีผลโดยตรงต่อกรดยูริก อย่างไรก็ตาม การรับประทานวิตามินดีปริมาณสูง (High-dose Vitamin D) ไม่มีข้อมูลหรือข้อแนะนำในระดับแนวทางเวชปฏิบัติว่าช่วยขับกรดยูริกออกทางปัสสาวะ<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 12 (หัวข้อ Lifestyle recommendations) และ หน้า 10 (บรรทัดที่ 30-34: \"Vitamin D is conditionally recommended against in patients with gout\")<br><br>📌 <b>High-Yield Exam Pearl:</b> Gout Advice: การหยุดยาลดกรดยูริกทันทีเมื่อปวดทำให้ยูริกแกว่งและอักเสบเรื้อรัง",
       "answerImage": "",
       "note": "Gout Advice: การหยุดยาลดกรดยูริกทันทีเมื่อปวดทำให้ยูริกแกว่งและอักเสบเรื้อรัง",
-      "examType": "ข้อสอบจริงปี 2565"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2565"
     },
     {
       "id": "1. Musculoskeleton::27",
@@ -571,7 +595,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. Fenofibrate<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยาลดไขมันในเลือดกลุ่ม Fibrate โดยเฉพาะ Fenofibrate มีรายงานการศึกษาทางคลินิกว่ามีผลพลอยได้ในการกระตุ้นการขับกรดยูริกทางปัสสาวะ (Uricosuric effect) ทำให้ระดับกรดยูริกในเลือดลดลงเล็กน้อย จึงไม่มีผลเพิ่มยูริก ต่างจากยาเม็ดแอสไพรินขนาดต่ำ (81 mg), Pyราชินาไมด์ (ยารักษาวัณโรค), Furosemide และ HCTZ (ยาขับปัสสาวะ) ที่มีกลไกแย่งการขับถ่ายกรดยูริกที่ท่อไต ส่งผลให้ยูริกสะสมสูงขึ้น (Hyperuricemia)<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 6 (หัวข้อ Diuretic use/HCTZ) และการปรับเปลี่ยนยาร่วมในโรคความดัน<br><br>📌 <b>High-Yield Exam Pearl:</b> Gout Drug-Induced: Losartan ช่วยขับกรดยูริกทางปัสสาวะ ขณะที่ Thiazide/Aspirin ลดการขับยูริก",
       "answerImage": "",
       "note": "Gout Drug-Induced: Losartan ช่วยขับกรดยูริกทางปัสสาวะ ขณะที่ Thiazide/Aspirin ลดการขับยูริก",
-      "examType": "ข้อสอบจริงปี 2565"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2565"
     },
     {
       "id": "1. Musculoskeleton::28",
@@ -592,7 +617,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. Complete Blood Count (CBC) และค่าการทำงานของตับ (AST/ALT)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ความเป็นพิษเด่นและอันตรายที่สัมพันธ์กับยา Methotrexate (MTX) คือ ภาวะกดไขกระดูก (Bone marrow suppression ซึ่งตรวจติดตามจาก CBC) และความเป็นพิษต่อตับ (Hepatotoxicity ตรวจติดตามจาก AST/ALT) ซึ่งหากผลตรวจพบความผิดปกติรุนแรง แพทย์จำเป็นต้องปรับลดขนาดยาหรือหยุดใช้ชั่วคราวเพื่อความปลอดภัยของผู้ป่วย<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-rheumatoid-arthritis-guideline-2557.pdf หน้า 17 (ตารางที่ 6: \"ชื่อยา CBC LFT Cr CXR จอประสาตา — Methotrexate: x x x x -\") และหน้า 40 (ตารางที่ 7: \"ความถี่ในการติดตาม CBC, LFT, Cr ทุก 1-3 เดือน\"); ยืนยันโดย thai-rheumatoid-arthritis-guideline-2557.pdf หน้า 37 (\"MTX ทำให้เอนไซม์ตับเพิ่มขึ้น ร้อยละ 2.5-42 และเม็ดเลือดขาวต่ำ [leucopenia] ร้อยละ 11\")<br><br>📌 <b>High-Yield Exam Pearl:</b> RA Disease Activity: ประเมินด้วย CDAI, SDAI หรือ DAS28 เพื่อปรับขนาดยาตาม Treat-to-target",
       "answerImage": "",
       "note": "RA Disease Activity: ประเมินด้วย CDAI, SDAI หรือ DAS28 เพื่อปรับขนาดยาตาม Treat-to-target",
-      "examType": "ข้อสอบจริงปี 2565"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2565"
     },
     {
       "id": "1. Musculoskeleton::29",
@@ -613,7 +639,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. เถาวัลย์เปรียง<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ในบัญชียาหลักแห่งชาติ สมุนไพร \"เถาวัลย์เปรียง\" (Derris scandens) ได้รับการรับรองและบรรจุในบัญชียาแผนไทย/สมุนไพร เพื่อบรรเทาอาการปวดระบบกล้ามเนื้อและกระดูก มีการศึกษาทางคลินิกเปรียบเทียบพบว่ามีฤทธิ์ต้านอักเสบและลดปวดได้ดีในระดับใกล้เคียงกับยาต้านการอักเสบแผนปัจจุบัน<br><br>📌 <b>High-Yield Exam Pearl:</b> Herbal Medicine: สารสกัดเถาวัลย์เปรียง บรรเทาอาการปวดข้อเข่าเสื่อมได้เทียบเท่า NSAIDs",
       "answerImage": "",
       "note": "Herbal Medicine: สารสกัดเถาวัลย์เปรียง บรรเทาอาการปวดข้อเข่าเสื่อมได้เทียบเท่า NSAIDs",
-      "examType": "ข้อสอบจริงปี 2565"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2565"
     },
     {
       "id": "1. Musculoskeleton::30",
@@ -634,7 +661,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Pancytopenia (เซลล์เม็ดเลือดต่ำทุกชนิด)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>จากผลการตรวจแล็บ เม็ดเลือดขาว (WBC = 3,000 ต่ำกว่าปกติ 4,000-10,000), เกล็ดเลือด (Platelet = 40,000 ต่ำกว่าปกติ 150,000-450,000) และ ฮีโมโกลบิน (Hb = 7 g/dL ต่ำกว่าปกติ 12-16 บ่งชี้ภาวะโลหิตจางรุนแรง) การที่มีการลดลงของเม็ดเลือดทั้งสามสายในเวลาเดียวกันเรียกว่า ภาวะเม็ดเลือดต่ำทุกชนิด (Pancytopenia)<br><br>📌 <b>High-Yield Exam Pearl:</b> MTX Toxicity: ตรวจพบ Leukopenia / Myelosuppression จากฤทธิ์ Antifolate ของ MTX",
       "answerImage": "",
       "note": "MTX Toxicity: ตรวจพบ Leukopenia / Myelosuppression จากฤทธิ์ Antifolate ของ MTX",
-      "examType": "ข้อสอบจริงปี 2564"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2564"
     },
     {
       "id": "1. Musculoskeleton::31",
@@ -655,7 +683,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. Colchicine<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยา Colchicine มีความเป็นพิษสูงต่อเซลล์ที่มีการแบ่งตัวเร็ว (Antimitotic agent ผ่านกลไกยับยั้ง Tubulin polymerization) หากสะสมในร่างกายปริมาณสูง (เช่น ในกรณีที่คนไข้มีไตวายเฉียบพลัน/eGFR ต่ำ หรือได้รับยาเกินขนาด) ยาจะแสดงพิษรุนแรงต่อไขกระดูก ส่งผลให้หยุดยั้งการสร้างเซลล์เม็ดเลือดและเหนี่ยวนำให้เกิดภาวะกดไขกระดูกอย่างเฉียบพลันและเกิด Pancytopenia ที่อันตรายถึงชีวิต<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 9-10 (หัวข้อ Management of gout flares: \"low-dose colchicine over high-dose colchicine is strongly recommended\" — เน้นความเป็นพิษของ high-dose colchicine); FDA Drug Safety Communication (Colcrys® Prescribing Information): \"Fatal toxicity including multi-organ failure with bone marrow suppression has been reported with colchicine toxicity\" — แหล่งอ้างอิงระดับ FDA label<br><br>📌 <b>High-Yield Exam Pearl:</b> Drug-Induced Cytopenia: MTX กดไขกระดูก ป้องกันได้ด้วยการให้ Folic acid เสริม",
       "answerImage": "",
       "note": "Drug-Induced Cytopenia: MTX กดไขกระดูก ป้องกันได้ด้วยการให้ Folic acid เสริม",
-      "examType": "ข้อสอบจริงปี 2564"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2564"
     },
     {
       "id": "1. Musculoskeleton::32",
@@ -676,7 +705,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. ค่าความหนาแน่นมวลกระดูกของผู้ป่วยเมื่อเทียบกับค่าสูงสุดของประชากรเพศเดียวกันในวัยหนุ่มสาว (Peak bone mass)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ค่า T-score ทางคลินิกกระดูกพรุน บ่งบอกถึงค่าความหนาแน่นมวลกระดูก (BMD) ของผู้ป่วยเมื่อนำไปเปรียบเทียบกับค่ามวลกระดูกสูงสุด (Peak bone mass) ของประชากรเพศเดียวกันที่มีสุขภาพดีในวัยหนุ่มสาว (อายุประมาณ 20-30 ปี) โดยใช้อัตราส่วนเบี่ยงเบนมาตรฐาน (SD) เป็นเกณฑ์ในการประเมินความเสี่ยงและระดับความพรุนของกระดูก<br><br>📌 <b>High-Yield Exam Pearl:</b> Osteoporosis Definition: T-score ≤ -2.5 SD ณ Lumbar spine หรือ Hip",
       "answerImage": "",
       "note": "Osteoporosis Definition: T-score ≤ -2.5 SD ณ Lumbar spine หรือ Hip",
-      "examType": "ข้อสอบจริงปี 2564"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2564"
     },
     {
       "id": "1. Musculoskeleton::33",
@@ -697,7 +727,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Alendronate (หรือยากลุ่ม Bisphosphonates)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>สำหรับหญิงหมดประจำเดือนที่ตรวจพบภาวะกระดูกพรุนและมีความเสี่ยงสูง (T-score = -2.5 หรือต่ำกว่า) ยาต้านการสลายกระดูกในกลุ่ม Bisphosphonates ชนิดรับประทาน เช่น Alendronate ถือเป็นยาทางเลือกแรก (First-line therapy) เนื่องจากมีหลักฐานทางคลินิกสนับสนุนเข้มแข็งในการป้องกันและลดความเสี่ยงของการเกิดกระดูกหักทั้งที่กระดูกสันหลังและสะโพก<br><br>📌 <b>High-Yield Exam Pearl:</b> Osteoporosis First-line: Alendronate / Risedronate (Oral Bisphosphonates) ลด Fracture ได้ดีที่สุด",
       "answerImage": "",
       "note": "Osteoporosis First-line: Alendronate / Risedronate (Oral Bisphosphonates) ลด Fracture ได้ดีที่สุด",
-      "examType": "ข้อสอบจริงปี 2564"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2564"
     },
     {
       "id": "1. Musculoskeleton::34",
@@ -718,7 +749,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ค. น้ำหนักตัวของผู้ป่วย<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ในการเลือกยาต้านการอักเสบกลุ่ม NSAIDs สำหรับผู้ป่วยระบบข้อและกล้ามเนื้อ ปัจจัยที่มีผลต่อความปลอดภัยและใช้เป็นหลักเกณฑ์พิจารณาเลือกยา ได้แก่ อายุผู้ป่วย (หลีกเลี่ยง NSAIDs ในผู้สูงอายุเนื่องจากพิษทางไตและทางเดินอาหาร), โรคร่วมและยาอื่นที่ใช้ร่วม (ระวังความเสี่ยงโรคหัวใจ, ไต, กระเพาะอาหาร), ประวัติแพ้ยา และปัจจัยด้านราคาค่ายา ส่วน \"น้ำหนักตัวของผู้ป่วย\" มีผลต่อการปรับขนาดยาน้อยมากสำหรับกลุ่ม NSAIDs ทั่วไปในผู้ใหญ่<br><br>📌 <b>High-Yield Exam Pearl:</b> NSAIDs Safety: ปัจจัยเสี่ยงแผลทางเดินอาหาร ได้แก่ ผู้สูงอายุ, ประวัติ GI bleed, ยาต้านเกล็ดเลือด",
       "answerImage": "",
       "note": "NSAIDs Safety: ปัจจัยเสี่ยงแผลทางเดินอาหาร ได้แก่ ผู้สูงอายุ, ประวัติ GI bleed, ยาต้านเกล็ดเลือด",
-      "examType": "ข้อสอบจริงปี 2563"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2563"
     },
     {
       "id": "1. Musculoskeleton::35",
@@ -739,7 +771,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. จ่ายยากลุ่ม NSAIDs ร่วมกับ Proton Pump Inhibitor (PPI เช่น Omeprazole) ทุกครั้งเพื่อความปลอดภัยต่อทางเดินอาหาร<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผู้ป่วยรายนี้มีปัจจัยเสี่ยงสูงมากต่อการเกิดเลือดออกในทางเดินอาหาร (High GI risk) จากอายุ 75 ปี, ประวัติเคยมี GI bleeding และทาน Aspirin ร่วมด้วย หากมีความจำเป็นต้องใช้ยาต้านการอักเสบกลุ่ม NSAIDs เพื่อควบคุมอาการปวดที่รุนแรง (Pain score = 7) เภสัชกรต้องแนะนำให้แพทย์จ่ายยาลดอักเสบกลุ่มที่เหมาะสม ร่วมกับยาเคลือบหรือป้องกันแผลทางเดินอาหารกลุ่ม Proton Pump Inhibitors (เช่น Omeprazole) เสมอเพื่อความปลอดภัย<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 13 (ข้อ 8: \"ในรายที่มีความเสี่ยงต่อผลข้างเคียงของทางเดินอาหารให้ใช้ non-selective NSAIDs ร่วมกับ gastroprotective agent หรือใช้ COX-2 inhibitor\") และหน้า 25 (ข้อห้ามใช้ Celecoxib ในผู้ป่วยแพ้ Sulfonamide)<br>* <b>📌 ข้อควรระวังเพิ่มเติม</b>: ผู้ป่วยมีประวัติแพ้ยาในกลุ่ม Sulfonamides รุนแรง ห้ามเลือกใช้ยา Celecoxib เด็ดขาดเนื่องจากมีโครงสร้าง sulfonamide และอาจเกิดปฏิกิริยาแพ้ข้ามกลุ่มได้ ทางเลือกที่ดีคือใช้ Naproxen คู่กับ Omeprazole<br><br>📌 <b>High-Yield Exam Pearl:</b> NSAIDs GI Protection: ใช้ Celecoxib ร่วมกับ PPIs ในผู้ป่วย High GI risk และ low CV risk",
       "answerImage": "",
       "note": "NSAIDs GI Protection: ใช้ Celecoxib ร่วมกับ PPIs ในผู้ป่วย High GI risk และ low CV risk",
-      "examType": "ข้อสอบจริงปี 2563"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2563"
     },
     {
       "id": "1. Musculoskeleton::36",
@@ -760,7 +793,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ค. Oxypurinol (หรือ Alloxanthine)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยาลดกรดยูริก Allopurinol เมื่อเข้าสู่ร่างกายจะถูกสลายและเปลี่ยนสภาพอย่างรวดเร็วโดยเอนไซม์ Xanthine Oxidase ไปเป็นสารเมตาโบไลต์ชนิดหลักที่มีฤทธิ์ในการรักษาและละลายน้ำได้ดีกว่าคือ Oxypurinol (หรือ Alloxanthine) ซึ่งสารนี้จะถูกขับออกทางปัสสาวะและมีครึ่งชีวิตที่ยาวนานในร่างกาย<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 5-7 (หัวข้อ Urate-Lowering Therapy — Allopurinol section: \"The Voting Panel strongly recommended allopurinol as the preferred first-line ULT\"); เภสัชจลนศาสตร์ Allopurinol → Oxypurinol (active metabolite): อ้างจาก Zyloprim® product information (Reference ข้อ 38 ใน gout-guideline-2020.pdf หน้า 15: \"Zyloprim [allopurinol] product information. East Brunswick, NJ\") — Allopurinol t½ ~1-2 hr; Oxypurinol t½ ~15-30 hr<br><br>📌 <b>High-Yield Exam Pearl:</b> Allopurinol Metabolism: เปลี่ยนเป็นสารออกฤทธิ์ Oxypurinol ขับออกทางไตเป็นหลัก ต้องปรับตาม CrCl",
       "answerImage": "",
       "note": "Allopurinol Metabolism: เปลี่ยนเป็นสารออกฤทธิ์ Oxypurinol ขับออกทางไตเป็นหลัก ต้องปรับตาม CrCl",
-      "examType": "ข้อสอบจริงปี 2563"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2563"
     },
     {
       "id": "1. Musculoskeleton::37",
@@ -781,7 +815,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ค. 36 ชั่วโมง<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>การใช้ยา Colchicine เพื่อระงับอาการอักเสบข้อเกาต์เฉียบพลันให้ได้ผลดีและมีประสิทธิภาพสูงสุดในการยับยั้งการเคลื่อนตัวของเซลล์เม็ดเลือดขาว (Neutrophil chemotaxis) ควรเริ่มรับประทานยาภายใน 24 ถึง 36 ชั่วโมงแรกหลังจากเริ่มมีอาการปวดอักเสบเฉียบพลัน หากพ้นระยะเวลานี้ไปแล้วประสิทธิภาพของยาในการต้านการอักเสบจะลดลงอย่างมีนัยสำคัญ<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 10 (หัวข้อ Management of gout flares: \"For patients experiencing a gout flare, we strongly recommend using oral colchicine, NSAIDs, or glucocorticoids... When colchicine is the chosen agent, we strongly recommend low-dose colchicine over high-dose colchicine\"); หลักฐาน 36-hour window: Terkeltaub RA et al. (อ้างใน Supplementary Figure 4, Reference ข้อ 32 ของ gout-guideline-2020.pdf) — colchicine มีประสิทธิภาพสูงสุดเมื่อเริ่มภายใน 36 ชั่วโมงแรกของอาการกำเริบ<br><br>📌 <b>High-Yield Exam Pearl:</b> Colchicine Flare Duration: ควรเริ่มยาภายใน 24-36 ชั่วโมงหลังมีอาการ และให้ต่อเนื่องจนอาการสงบ",
       "answerImage": "",
       "note": "Colchicine Flare Duration: ควรเริ่มยาภายใน 24-36 ชั่วโมงหลังมีอาการ และให้ต่อเนื่องจนอาการสงบ",
-      "examType": "ข้อสอบจริงปี 2563"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2563"
     },
     {
       "id": "1. Musculoskeleton::38",
@@ -802,7 +837,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. น้อยกว่า 6 mg/dL<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ตามมาตรฐานแนวทางเวชปฏิบัติการดูแลโรคเกาต์ เป้าหมายระดับกรดยูริกในกระแสเลือดระยะยาว (Target serum uric acid) เพื่อป้องกันการสะสมผลึกใหม่และส่งเสริมการสลายผลึกเดิมในผู้ป่วยเกาต์ทั่วไปที่ไม่มีปุ่มกระดูกแข็งโทฟัส (Tophi) คือ การลดระดับให้มีค่าน้อยกว่า 6 mg/dL (หากเป็นคนไข้ที่มีโทฟัสหรือโรคเกาต์รุนแรงเรื้อรัง เป้าหมายจะเข้มงวดขึ้นเป็นน้อยกว่า 5 mg/dL)<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 1, 6 และ หน้า 7 (ข้อ 13: \"achieve and maintain an SU target of &lt;6 mg/dL\")<br><br>📌 <b>High-Yield Exam Pearl:</b> Gout SUA Target: เป้าหมายกรดยูริกในเลือด &lt; 6.0 mg/dL (&lt; 5.0 mg/dL หากมี Tophi)",
       "answerImage": "",
       "note": "Gout SUA Target: เป้าหมายกรดยูริกในเลือด &lt; 6.0 mg/dL (&lt; 5.0 mg/dL หากมี Tophi)",
-      "examType": "ข้อสอบจริงปี 2563"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2563"
     },
     {
       "id": "1. Musculoskeleton::39",
@@ -823,7 +859,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. Acute renal failure (ไตวายเฉียบพลัน)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผู้ป่วยรายนี้มีภาวะความดันโลหิตสูงและใช้ยา Enalapril (ยากลุ่ม ACEIs) ร่วมกับโรคไตเรื้อรัง (eGFR &lt; 40) หากนำยา Naproxen (ยากลุ่ม NSAIDs) มารับประทานเสริมร่วมด้วย จะเหนี่ยวนำให้เกิดปฏิกิริยา \"Triple Whammy\" (เกิดจากการรวมกันของยาขับปัสสาวะ หรือโรคไตเดิม + ACEIs/ARBs + NSAIDs) ส่งผลให้หลอดเลือดฝอยที่เข้าไตหดตัวและลดความดันเลือดภายในไตอย่างรุนแรง นำไปสู่สภาวะไตวายเฉียบพลัน (Acute renal failure) ได้ทันที<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 23 (หัวข้อ ไต บรรทัดที่ 1-5: \"ในผู้ป่วยที่มีการทำงานของไตบกพร่อง ควรหลีกเลี่ยงการใช้ยา NSAIDs\")<br><br>📌 <b>High-Yield Exam Pearl:</b> NSAIDs AKI: ยับยั้ง Renal PGE2/PGI2 ทำให้เกิด Afferent arteriole vasoconstriction",
       "answerImage": "",
       "note": "NSAIDs AKI: ยับยั้ง Renal PGE2/PGI2 ทำให้เกิด Afferent arteriole vasoconstriction",
-      "examType": "ข้อสอบจริงปี 2563"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2563"
     },
     {
       "id": "1. Musculoskeleton::40",
@@ -844,7 +881,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Acute renal injury (Acute kidney injury: AKI)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>กลไกของยากลุ่ม NSAIDs ในการเหนี่ยวนำให้เกิดไตวายเฉียบพลันคือ การยับยั้งเอนไซม์ COX-1 และ COX-2 ซึ่งส่งผลยับยั้งการสร้าง Prostaglandin (PGE2, PGI2) ที่ทำหน้าที่ขยายหลอดเลือดฝอยขาเข้าไต (Afferent arteriole) เมื่อขาดพรอสตาแกลนดิน หลอดเลือดขาเข้าหดตัวอย่างรุนแรง ทำให้เลือดไหลเข้าสู่หน่วยไตลดลงอย่างรวดเร็ว เกิดการบาดเจ็บของไตเฉียบพลัน (Acute Kidney Injury: AKI) ในรูปแบบของ Hemodynamic-mediated AKI<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 23 (ระบบทางเดินปัสสาวะ บรรทัดที่ 14-17: \"การคั่งของน้ำและเกลือแร่ จากการทำงานของไตบกพร่อง\")<br><br>📌 <b>High-Yield Exam Pearl:</b> NSAIDs Nephrotoxicity: เสี่ยงต่อ Hemodynamic acute kidney injury โดยเฉพาะเมื่อใช้ร่วมกับ ACEI/Diuretics",
       "answerImage": "",
       "note": "NSAIDs Nephrotoxicity: เสี่ยงต่อ Hemodynamic acute kidney injury โดยเฉพาะเมื่อใช้ร่วมกับ ACEI/Diuretics",
-      "examType": "ข้อสอบจริงปี 2563"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2563"
     },
     {
       "id": "1. Musculoskeleton::41",
@@ -865,7 +903,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. Hydrochlorothiazide (HCTZ)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยาขับปัสสาวะกลุ่ม Thiazide เช่น Hydrochlorothiazide (HCTZ) มีฤทธิ์เหนี่ยวนำให้เกิดระดับกรดยูริกสูงในกระแสเลือด (Hyperuricemia) เนื่องจากยาขับปัสสาวะจะกระตุ้นการดูดกลับของโซเดียมและน้ำที่ท่อไต พร้อมทั้งแย่งกลไกการขับกรดยูริกออกที่บริเวณท่อไตส่วนต้น (Proximal tubule) จึงเป็นยาขับปัสสาวะและยาลดความดันที่ต้องหลีกเลี่ยงในผู้ป่วยโรคเกาต์<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 6 (หัวข้อ Diuretic use) แนะนำให้เปลี่ยนการใช้ยา HCTZ ไปใช้ยาลดความดันชนิดอื่น (เช่น Losartan ที่ช่วยขับกรดยูริก) หากกระทำได้<br><br>📌 <b>High-Yield Exam Pearl:</b> Gout Drug Caution: HCTZ และ Thiazide diuretics แย่งขับกรดยูริกที่ท่อไต ทำให้กรดยูริกสูงขึ้น",
       "answerImage": "",
       "note": "Gout Drug Caution: HCTZ และ Thiazide diuretics แย่งขับกรดยูริกที่ท่อไต ทำให้กรดยูริกสูงขึ้น",
-      "examType": "ข้อสอบจริงปี 2563"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2563"
     },
     {
       "id": "1. Musculoskeleton::42",
@@ -886,7 +925,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. Benzbromarone<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยาลดกรดยูริกที่มีกลไกเร่งการขับถ่ายกรดยูริกออกทางปัสสาวะ (Uricosuric agent) โดยการยับยั้งตัวขนส่ง URAT1 ที่ท่อไตส่วนต้น คือ Benzbromarone (รวมถึง Probenecid) ยานี้เหมาะสำหรับใช้ร่วมกับ Allopurinol เมื่อใช้ยากลุ่มยับยั้งการสร้าง (XO Inhibitor) แล้วยังไม่ได้ผลตามเป้าหมาย ส่วน Febuxostat จัดอยู่ในกลุ่ม XO Inhibitor เช่นเดียวกับ Allopurinol<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 8 (หัวข้อ Uricosurics) และเทียบกับยาทางเลือกสำหรับการลดกรดยูริก<br><br>📌 <b>High-Yield Exam Pearl:</b> Gout Add-on ULT: หากใช้ Allopurinol เต็มขนาดแล้วยังไม่ถึงเป้า แนะนำ Add-on Uricosuric (Benzbromarone)",
       "answerImage": "",
       "note": "Gout Add-on ULT: หากใช้ Allopurinol เต็มขนาดแล้วยังไม่ถึงเป้า แนะนำ Add-on Uricosuric (Benzbromarone)",
-      "examType": "ข้อสอบจริงปี 2563"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2563"
     },
     {
       "id": "1. Musculoskeleton::43",
@@ -907,7 +947,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Osteoarthritis<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>อาการแสดงเด่น (ชายอายุ 60 ปี, ปวดข้อเข่าข้างเดียวนาน 6 เดือน, ตรวจคลำพบเสียงกรอบแกรบ Crepitus, ข้อติดตอนเช้าสั้นกว่า 30 นาที, ไม่มีตุ่มแข็งตามผิวหนัง, ไม่มีอาการแดงร้อนบริเวณข้อ) บ่งชี้อย่างชัดเจนถึงโรคข้อเสื่อม (Osteoarthritis)<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 6 (หัวข้อ การวินิจฉัย)<br><br>📌 <b>High-Yield Exam Pearl:</b> OA Diagnosis: ปวดเข่า, ขยับมีเสียง Crepitus, ข้อติดตอนเช้า &lt; 30 นาที, ไม่มีอาการอักเสบร้อนแดง",
       "answerImage": "",
       "note": "OA Diagnosis: ปวดเข่า, ขยับมีเสียง Crepitus, ข้อติดตอนเช้า &lt; 30 นาที, ไม่มีอาการอักเสบร้อนแดง",
-      "examType": "ข้อสอบจริงปี 2562"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2562"
     },
     {
       "id": "1. Musculoskeleton::44",
@@ -928,7 +969,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Celecoxib<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผู้ป่วยรายนี้มีโรคประจำตัวคือ โรคไตเรื้อรังระยะสุดท้าย (Chronic Kidney Disease Stage 5) ที่ต้องได้รับการฟอกไต การใช้ยากินกลุ่ม NSAIDs รวมถึงกลุ่ม Selective COX-2 Inhibitor เช่น Celecoxib จัดเป็นข้อห้ามใช้อย่างเด็ดขาด (Contraindicated) เนื่องจาก NSAIDs จะเพิ่มความเสี่ยงต่อการเกิดพิษต่อระบบหลอดเลือดและหัวใจ, ทำให้ความดันโลหิตสูงขึ้น และลดประสิทธิภาพของการล้างไต<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 23 (หัวข้อ ไต บรรทัดที่ 1-5: \"ในผู้ป่วยที่มีการทำงานของไตบกพร่อง ควรหลีกเลี่ยงการใช้ยา NSAIDs\")<br><br>📌 <b>High-Yield Exam Pearl:</b> OA CKD Caution: ห้ามใช้ Oral NSAIDs ในผู้ป่วย ESRD หรือ Severe CKD (eGFR &lt; 30 mL/min)",
       "answerImage": "",
       "note": "OA CKD Caution: ห้ามใช้ Oral NSAIDs ในผู้ป่วย ESRD หรือ Severe CKD (eGFR &lt; 30 mL/min)",
-      "examType": "ข้อสอบจริงปี 2562"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2562"
     },
     {
       "id": "1. Musculoskeleton::45",
@@ -949,7 +991,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. รับประทาน Glucosamine sulfate เพื่อป้องกันและรักษาอาการ<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>แนวทางเวชปฏิบัติในการรักษาโรคข้อเสื่อมของสมาคมแพทย์โรคข้ออเมริกา (ACR) ปี 2019 ได้ออกข้อแนะนำที่เข้มแข็งให้หลีกเลี่ยงหรือต่อต้าน (Strongly recommended against) การรับประทานอาหารเสริม Glucosamine sulfate ในผู้ป่วยโรคข้อเสื่อม เนื่องจากขาดข้อมูลสนับสนุนประสิทธิภาพทางคลินิกที่เด่นชัดและไม่มีผลในการชะลอการเสื่อมสลายของกระดูกอ่อนข้ออย่างมีนัยสำคัญ<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> osteoarthritis-guideline-2019.pdf หน้า 11 (หัวข้อ Glucosamine: \"Glucosamine is strongly recommended against in patients with knee, hip, and/or hand OA\")<br><br>📌 <b>High-Yield Exam Pearl:</b> OA Management: ลดน้ำหนัก, กายภาพบำบัดเพิ่มความแข็งแรงของกล้ามเนื้อรอบข้อเข่า Quadriceps",
       "answerImage": "",
       "note": "OA Management: ลดน้ำหนัก, กายภาพบำบัดเพิ่มความแข็งแรงของกล้ามเนื้อรอบข้อเข่า Quadriceps",
-      "examType": "ข้อสอบจริงปี 2562"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2562"
     },
     {
       "id": "1. Musculoskeleton::46",
@@ -970,7 +1013,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ค. Alendronate (หรือยากลุ่ม Bisphosphonates)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผู้ป่วยมีกระดูกหักร่วมกับค่า T-score น้อยกว่า -2.5 จัดเป็นโรคกระดูกพรุนรุนแรง (Severe osteoporosis) ยารักษาทางเลือกแรกเพื่อต้านการสลายกระดูกและลดโอกาสเกิดกระดูกหักซ้ำคือ ยากลุ่ม Bisphosphonates เช่น Alendronate (ให้สัปดาห์ละ 1 ครั้ง) ซึ่งมีผลการศึกษาทางคลินิกสนับสนุนประสิทธิผลและผลลัพธ์ที่ดีเด่นชัดที่สุด<br><br>📌 <b>High-Yield Exam Pearl:</b> Osteoporosis First-line: Alendronate เพิ่ม BMD และลดอุบัติการณ์กระดูกหักได้อย่างมีนัยสำคัญ",
       "answerImage": "",
       "note": "Osteoporosis First-line: Alendronate เพิ่ม BMD และลดอุบัติการณ์กระดูกหักได้อย่างมีนัยสำคัญ",
-      "examType": "ข้อสอบจริงปี 2562"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2562"
     },
     {
       "id": "1. Musculoskeleton::47",
@@ -991,7 +1035,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. Osteonecrosis of the jaw (กระดูกขากรรไกรเน่าเสีย)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>อาการไม่พึงประสงค์ (ADR) ที่รุนแรงและต้องระมัดระวังมากที่สุดของการรับประทานยากลุ่ม Bisphosphonates (เช่น Alendronate, Risedronate) ต่อเนื่องเป็นเวลานานคือ ภาวะกระดูกขากรรไกรเน่าเสียหลังการทำหัตถการทางทันตกรรม (Osteonecrosis of the jaw: ONJ) เภสัชกรต้องแนะนำให้ผู้ป่วยรักษาสุขภาพช่องปาก ตรวจฟัน และแจ้งทันตแพทย์ทุกครั้งว่าใช้ยานี้อยู่ก่อนทำฟันหรือถอนฟัน<br><br>📌 <b>High-Yield Exam Pearl:</b> Bisphosphonates ADR: Osteonecrosis of the Jaw (ONJ) ต้องตรวจและทำหัตถการทันตกรรมก่อนเริ่มยา",
       "answerImage": "",
       "note": "Bisphosphonates ADR: Osteonecrosis of the Jaw (ONJ) ต้องตรวจและทำหัตถการทันตกรรมก่อนเริ่มยา",
-      "examType": "ข้อสอบจริงปี 2562"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2562"
     },
     {
       "id": "1. Musculoskeleton::48",
@@ -1012,7 +1057,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. ยับยั้งการทำงานของเอนไซม์ Phospholipase A2<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยากลุ่ม Corticosteroids มีกลไกออกฤทธิ์ต้านการอักเสบที่เหนี่ยวนำผ่านการจับกับ Glucocorticoid Receptor และกระตุ้นการสร้างโปรตีน Lipocortin (หรือ Annexin A1) ซึ่งโปรตีนนี้จะทำหน้าที่ยับยั้งการทำงานของเอนไซม์ Phospholipase A2 ส่งผลให้ยับยั้งการปล่อยสารตั้งต้น Arachidonic acid จากเยื่อหุ้มเซลล์ ทำให้ลดการสังเคราะห์ Prostaglandins และ Leukotrienes ที่เป็นสื่อกลางการอักเสบได้ตั้งแต่ต้นกระบวนการ<br><br>📌 <b>High-Yield Exam Pearl:</b> Steroids Mechanism: จับกับ Glucocorticoid receptor ยับยั้ง NF-kB และลดการสร้าง Pro-inflammatory cytokines",
       "answerImage": "",
       "note": "Steroids Mechanism: จับกับ Glucocorticoid receptor ยับยั้ง NF-kB และลดการสร้าง Pro-inflammatory cytokines",
-      "examType": "ข้อสอบจริงปี 2562"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2562"
     },
     {
       "id": "1. Musculoskeleton::49",
@@ -1033,7 +1079,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. น้อยกว่าหรือเท่ากับ -2.5<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>องค์การอนามัยโลก (WHO) กำหนดให้ใช้ค่า T-score จากการตรวจหาความหนาแน่นมวลกระดูก (BMD) ด้วยเครื่อง DEXA scan ในการแบ่งประเภทมวลกระดูกดังนี้:<br>  - ปกติ (Normal): T-score มากกว่าหรือเท่ากับ -1.0<br>  - กระดูกบาง (Osteopenia): T-score ระหว่าง -1.0 ถึง -2.5<br>  - กระดูกพรุน (Osteoporosis): T-score น้อยกว่าหรือเท่ากับ -2.5<br><br>📌 <b>High-Yield Exam Pearl:</b> BMD Criteria: WHO เกณฑ์ Osteoporosis คือ T-score ≤ -2.5 SD",
       "answerImage": "",
       "note": "BMD Criteria: WHO เกณฑ์ Osteoporosis คือ T-score ≤ -2.5 SD",
-      "examType": "ข้อสอบจริงปี 2562"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2562"
     },
     {
       "id": "1. Musculoskeleton::50",
@@ -1054,7 +1101,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Osteoporosis<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผู้ป่วยสูงอายุ (66 ปี), มีอุบัติเหตุกระดูกข้อมือหักจากแรงกระแทกต่ำ (Fracture of right radial head จากการล้มในห้องน้ำ), และมีค่าความหนาแน่นมวลกระดูกสะโพก (BMD T-score = -2.6 น้อยกว่าหรือเท่ากับ -2.5) เกณฑ์แสดงอาการและค่าทางห้องปฏิบัติการทั้งหมดวินิจฉัยว่าเป็นโรคกระดูกพรุน (Osteoporosis)<br><br>📌 <b>High-Yield Exam Pearl:</b> Osteoporosis Fragility Fracture: ผู้สูงอายุหกล้มกระดูกข้อมือหัก ร่วมกับ T-score ≤ -2.5 วินิจฉัย Osteoporosis",
       "answerImage": "",
       "note": "Osteoporosis Fragility Fracture: ผู้สูงอายุหกล้มกระดูกข้อมือหัก ร่วมกับ T-score ≤ -2.5 วินิจฉัย Osteoporosis",
-      "examType": "ข้อสอบจริงปี 2561"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2561"
     },
     {
       "id": "1. Musculoskeleton::51",
@@ -1075,7 +1123,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. เพศหญิงและอายุที่มากขึ้น (วัยหมดประจำเดือน)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ปัจจัยเสี่ยงหลักตามธรรมชาติของการเกิดโรคกระดูกพรุนคือ เพศหญิงและอายุที่เพิ่มมากขึ้น โดยเฉพาะในวัยหมดประจำเดือนซึ่งระดับฮอร์โมน Estrogen ลดลงอย่างรวดเร็ว ส่งผลให้ขบวนการสลายกระดูกทำงานมากกว่าการสร้างกระดูก สำหรับการใช้ยาขับปัสสาวะ HCTZ จะส่งเสริมการดูดซึมกลับของแคลเซียมที่ท่อไต จึงมีผลช่วยรักษาและไม่เป็นปัจจัยเสี่ยงต่อโรคกระดูกพรุน<br><br>📌 <b>High-Yield Exam Pearl:</b> Osteoporosis Risk Factors: วัยหมดประจำเดือน ขาดฮอร์โมน Estrogen ทำให้ Osteoclast สลายกระดูกเด่น",
       "answerImage": "",
       "note": "Osteoporosis Risk Factors: วัยหมดประจำเดือน ขาดฮอร์โมน Estrogen ทำให้ Osteoclast สลายกระดูกเด่น",
-      "examType": "ข้อสอบจริงปี 2561"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2561"
     },
     {
       "id": "1. Musculoskeleton::52",
@@ -1096,7 +1145,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. Peptic ulcer<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยาสมุนไพร \"เถาวัลย์เปรียง\" (Derris scandens) มีกลไกการออกฤทธิ์ต้านการอักเสบผ่านการยับยั้งเอนไซม์ COX-1 และ COX-2 คล้ายคลึงกับยากลุ่ม NSAIDs แผนปัจจุบัน ดังนั้นจึงมีอาการไม่พึงประสงค์ระคายเคืองกระเพาะอาหารและห้ามใช้หรือต้องระวังเป็นพิเศษในผู้ป่วยที่มีประวัติโรคแผลในทางเดินอาหาร (Peptic ulcer) เพื่อป้องกันเลือดออกในทางเดินอาหาร<br><br>📌 <b>High-Yield Exam Pearl:</b> Derris scandens Caution: เถาวัลย์เปรียงยับยั้ง COX มีฤทธิ์ระคายเคืองกระเพาะอาหาร ระวังใน Peptic ulcer",
       "answerImage": "",
       "note": "Derris scandens Caution: เถาวัลย์เปรียงยับยั้ง COX มีฤทธิ์ระคายเคืองกระเพาะอาหาร ระวังใน Peptic ulcer",
-      "examType": "ข้อสอบจริงปี 2561"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2561"
     },
     {
       "id": "1. Musculoskeleton::53",
@@ -1117,7 +1167,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. Alendronate<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ในแนวทางเวชปฏิบัติการรักษาโรคกระดูกพรุน ยาต้านการสลายกระดูกกลุ่ม Bisphosphonates เช่น Alendronate เป็นยาทางเลือกแรกในการป้องกันกระดูกหักซ้ำในผู้ป่วยสูงอายุหลังมีอุบัติเหตุกระดูกหักแล้ว เนื่องจากประสิทธิภาพในการเพิ่มความหนาแน่นกระดูกสันหลังและสะโพกสูงและสะดวกในการใช้ (สัปดาห์ละครั้ง)<br><br>📌 <b>High-Yield Exam Pearl:</b> Osteoporosis Secondary Prevention: Alendronate เป็นยาทางเลือกแรกในการป้องกันกระดูกหักซ้ำ",
       "answerImage": "",
       "note": "Osteoporosis Secondary Prevention: Alendronate เป็นยาทางเลือกแรกในการป้องกันกระดูกหักซ้ำ",
-      "examType": "ข้อสอบจริงปี 2561"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2561"
     },
     {
       "id": "1. Musculoskeleton::54",
@@ -1138,7 +1189,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. Osteonecrosis of the jaw (กระดูกขากรรไกรเน่าเสีย)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>อาการไม่พึงประสงค์ (ADR) ระยะยาวที่ร้ายแรงมากของยากลุ่ม Bisphosphonates (Alendronate) ที่แพทย์และเภสัชกรต้องเฝ้าระวังคือ ภาวะกระดูกขากรรไกรเน่าเสีย (Osteonecrosis of the jaw: ONJ) ผู้ป่วยต้องประเมินสุขภาพช่องปากก่อนเริ่มใช้ยา<br><br>📌 <b>High-Yield Exam Pearl:</b> Bisphosphonates Rare ADR: ONJ และ Atypical femoral fracture (AFF) สัมพันธ์กับการใช้ยาระยะยาว",
       "answerImage": "",
       "note": "Bisphosphonates Rare ADR: ONJ และ Atypical femoral fracture (AFF) สัมพันธ์กับการใช้ยาระยะยาว",
-      "examType": "ข้อสอบจริงปี 2561"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2561"
     },
     {
       "id": "1. Musculoskeleton::55",
@@ -1159,7 +1211,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. Diclofenac<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยากินกลุ่ม NSAIDs (Diclofenac) มีผลข้างเคียงสำคัญต่อไตโดยตรงเนื่องจากไปยับยั้งการสร้าง Prostaglandins ที่ช่วยขยายหลอดเลือดไต หากรับประทานอย่างต่อเนื่องเป็นเวลานานจะลดการไหลเวียนเลือดในไตและเหนี่ยวนำให้เกิดโรคไตเรื้อรัง (CKD) หรือภาวะไตวายเฉียบพลันได้สูงที่สุดในบรรดายารายการอื่นที่ระบุ<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 23 (ระบบทางเดินปัสสาวะ/ไต บรรทัดที่ 1-5: \"ในผู้ป่วยที่มีการทำงานของไตบกพร่อง ควรหลีกเลี่ยงการใช้ยา NSAIDs\")<br><br>📌 <b>High-Yield Exam Pearl:</b> NSAIDs Renal Safety: ยับยั้ง Prostaglandins ลดเลือดไปเลี้ยงไต ส่งผลให้ Scr สูงขึ้นและเกิดไตวาย",
       "answerImage": "",
       "note": "NSAIDs Renal Safety: ยับยั้ง Prostaglandins ลดเลือดไปเลี้ยงไต ส่งผลให้ Scr สูงขึ้นและเกิดไตวาย",
-      "examType": "ข้อสอบจริงปี 2559"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2559"
     },
     {
       "id": "1. Musculoskeleton::56",
@@ -1180,7 +1233,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. ควรรับประทานยาร่วมกับนมหรือยาลดกรดเพื่อเพิ่มประสิทธิภาพการดูดซึมยา<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>คำแนะนำที่ <b>ไม่ถูกต้อง</b> คือข้อ จ. เนื่องจากนม ผลิตภัณฑ์จากนม และยาลดกรดทั่วไปมีส่วนประกอบของไอออนโลหะประจุบวกที่มีวาเลนซีสองและสาม (เช่น $Ca^{2+}$, $Mg^{2+}$, $Al^{3+}$) ซึ่งจะจับสารประกอบเชิงซ้อนกับยา Risedronate ในระบบทางเดินอาหารและลดการดูดซึมของยากลุ่ม Bisphosphonates ลงเกือบทั้งหมด เภสัชกรต้องเน้นย้ำให้คนไข้ดื่มน้ำเปล่าสะอาดเท่านั้นในการกลืนยา<br><br>📌 <b>High-Yield Exam Pearl:</b> Bisphosphonates Administration: ทานตอนเช้าก่อนอาหาร 30 นาที ดื่มน้ำเปล่าเต็มแก้ว และห้ามนอนราบ 30 นาที",
       "answerImage": "",
       "note": "Bisphosphonates Administration: ทานตอนเช้าก่อนอาหาร 30 นาที ดื่มน้ำเปล่าเต็มแก้ว และห้ามนอนราบ 30 นาที",
-      "examType": "ข้อสอบจริงปี 2559"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2559"
     },
     {
       "id": "1. Musculoskeleton::57",
@@ -1201,7 +1255,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. Diclofenac<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยากลุ่ม NSAIDs เช่น Diclofenac ไปยับยั้งการสังเคราะห์พรอสตาแกลนดินที่ไต ส่งผลให้เกิดการคั่งของน้ำและโซเดียมในกระแสเลือด และเพิ่มแรงต้านของหลอดเลือดส่วนปลาย มีผลทำให้ความดันโลหิตของผู้ป่วยเพิ่มสูงขึ้นและทำให้ประสิทธิภาพของยาลดความดันโลหิต (Enalapril, HCTZ) ลดลง<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 23 (หัวข้อระบบหัวใจและหลอดเลือด บรรทัดที่ 4-7: \"ผู้ป่วยโรคหัวใจและหลอดเลือด เนื่องจากอาจทำให้เกิดความดันโลหิตสูง ภาวะหัวใจล้มเหลว\")<br><br>📌 <b>High-Yield Exam Pearl:</b> NSAIDs Blood Pressure: NSAIDs ยับยั้ง Renal PG ทำให้เกิดการคั่งของโซเดียมและน้ำ ส่งผลให้ความดันโลหิตสูงขึ้น",
       "answerImage": "",
       "note": "NSAIDs Blood Pressure: NSAIDs ยับยั้ง Renal PG ทำให้เกิดการคั่งของโซเดียมและน้ำ ส่งผลให้ความดันโลหิตสูงขึ้น",
-      "examType": "ข้อสอบจริงปี 2559"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2559"
     },
     {
       "id": "1. Musculoskeleton::58",
@@ -1222,7 +1277,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ค. Naproxen<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>จากข้อมูลการศึกษาทางคลินิกด้านความปลอดภัยต่อระบบหัวใจและหลอดเลือด ยา Naproxen จัดเป็นยาต้านการอักเสบกลุ่ม NSAIDs ที่มีความปลอดภัยต่อระบบหัวใจและหลอดเลือด (Cardiovascular safety) สูงที่สุด เนื่องจากมีฤทธิ์ยับยั้ง COX-1 ยาวนานและลดการเกาะกลุ่มของเกล็ดเลือดได้ใกล้เคียงกับ Aspirin ต่างจากยาต้านการอักเสบตัวอื่นที่เพิ่มความเสี่ยงต่อการเกิดโรคหลอดเลือดสมองและหัวใจล้มเหลว<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 23 (หัวข้อระบบหัวใจและหลอดเลือด บรรทัดที่ 4-10: การเปรียบเทียบความเสี่ยงของยา NSAIDs ต่อ Cardiovascular risk)<br><br>📌 <b>High-Yield Exam Pearl:</b> ACR 2019 Knee OA: Strongly recommend Topical NSAIDs over oral NSAIDs; Exercise &amp; weight management are core non-pharmacologic interventions.",
       "answerImage": "",
       "note": "ACR 2019 Knee OA: Strongly recommend Topical NSAIDs over oral NSAIDs; Exercise &amp; weight management are core non-pharmacologic interventions.",
-      "examType": "ข้อสอบจริงปี 2559"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2559"
     },
     {
       "id": "1. Musculoskeleton::59",
@@ -1243,7 +1299,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. Acetaminophen<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>สำหรับการบรรเทาอาการปวดในโรคข้อเสื่อม (Osteoarthritis) ตามแนวปฏิบัติของไทย หากผู้ป่วยปวดปานกลางและไม่มีอาการอักเสบเฉียบพลันชัดเจน แนะนำให้เริ่มต้นการรักษาด้วยยา Acetaminophen (Paracetamol) เนื่องจากมีความปลอดภัยในภาพรวมทางระบบทางเดินอาหารและไตสูงกว่ายากลุ่ม NSAIDs แผนปัจจุบัน<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 13 (คำแนะนำที่ 6: \"พาราเซตามอลเป็นยาแก้ปวดรูปรับประทานที่ควรใช้เป็นชนิดแรก หากใช้ได้ผลแนะนำให้ใช้เป็นยาแก้ปวดในระยะยาว\")<br><br>📌 <b>High-Yield Exam Pearl:</b> OA Treatment Hierarchy: Paracetamol หรือ Topical NSAIDs เป็นตัวเลือกลำดับแรกในข้อเข่าเสื่อม",
       "answerImage": "",
       "note": "OA Treatment Hierarchy: Paracetamol หรือ Topical NSAIDs เป็นตัวเลือกลำดับแรกในข้อเข่าเสื่อม",
-      "examType": "ข้อสอบจริงปี 2559"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2559"
     },
     {
       "id": "1. Musculoskeleton::60",
@@ -1264,7 +1321,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. ยับยั้งการทำงานของเอนไซม์ Cyclo-oxygenase<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยา Naproxen เป็นยาต้านการอักเสบชนิดไม่ใช่สเตียรอยด์ (NSAID) ออกฤทธิ์ลดปวดอักเสบโดยมีกลไกการยับยั้งเอนไซม์ Cyclo-oxygenase (ทั้ง COX-1 และ COX-2) แบบไม่เจาะจง ส่งผลลดการเปลี่ยน Arachidonic acid ไปเป็น Prostaglandins ซึ่งเป็นสารสำคัญในการสื่อสารการอักเสบและความรู้สึกปวด<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 24 (ตารางที่ 1 บรรทัดที่ 11: ค่าครึ่งชีวิตและกลไกของ Naproxen)<br><br>📌 <b>High-Yield Exam Pearl:</b> NSAIDs Mechanism: ยับยั้งเอนไซม์ Cyclooxygenase (COX) ลดการสร้าง Prostaglandins บรรเทาปวดอักเสบ",
       "answerImage": "",
       "note": "NSAIDs Mechanism: ยับยั้งเอนไซม์ Cyclooxygenase (COX) ลดการสร้าง Prostaglandins บรรเทาปวดอักเสบ",
-      "examType": "ข้อสอบจริงปี 2559"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2559"
     },
     {
       "id": "1. Musculoskeleton::61",
@@ -1285,7 +1343,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. รับประทาน Naproxen 500 mg ร่วมกับ Omeprazole<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>เมื่อผู้ป่วยได้รับการปรับขนาดของ Naproxen เป็น 500 mg แล้วควบคุมอาการปวดได้ดี แต่เกิดผลข้างเคียงเรื่องกรดไหลย้อน/แสบยอดอก การจัดการแก้ไขปัญหาที่ถูกต้องและเหมาะสมคือ การจ่ายยาลดกรดกลุ่ม Proton Pump Inhibitors (เช่น Omeprazole 20 mg วันละครั้ง ก่อนอาหารเช้า) ควบคู่ไปกับการทานยา Naproxen เพื่อป้องกันการเกิดแผลและรักษาอาการระคายเคืองทางเดินอาหาร<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 13 (คำแนะนำที่ 8: \"ในรายที่มีความเสี่ยงต่อผลข้างเคียงของทางเดินอาหารให้ใช้ non-selective NSAIDs ร่วมกับ gastroprotective agent หรือใช้ COX-2 inhibitor\")<br><br>📌 <b>High-Yield Exam Pearl:</b> NSAIDs GI Prevention: ให้ PPI (เช่น Omeprazole) ร่วมกับ NSAID ช่วยป้องกันการเกิด Gastric &amp; Duodenal ulcers",
       "answerImage": "",
       "note": "NSAIDs GI Prevention: ให้ PPI (เช่น Omeprazole) ร่วมกับ NSAID ช่วยป้องกันการเกิด Gastric &amp; Duodenal ulcers",
-      "examType": "ข้อสอบจริงปี 2559"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2559"
     },
     {
       "id": "1. Musculoskeleton::62",
@@ -1306,7 +1365,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ค. Retinal toxicity (พิษต่อจอประสาทตา)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>อาการไม่พึงประสงค์จากการใช้ยา (ADR) ที่สำคัญและรุนแรงที่สุดของยารักษาโรคข้ออักเสบรูมาตอยด์ Hydroxychloroquine (HCQ) คือ พิษต่อจอประสาทตา (Retinal toxicity หรือ Bull's eye maculopathy) ซึ่งหากเกิดขึ้นแล้วไม่สามารถรักษาให้หายขาดได้ เภสัชกรและแพทย์จึงต้องส่งผู้ป่วยตรวจจอประสาทตาโดยจักษุแพทย์ก่อนเริ่มใช้ยาและติดตามปีละครั้งหลังจากใช้ยาครบ 5 ปี<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-rheumatoid-arthritis-guideline-2557.pdf หน้า 17 (ตารางที่ 6: \"Hydroxychloroquine — จอประสาทตา: x [ต้องตรวจ]\") และหน้า 11 (\"จอประสาทตา ทุก 1 ปีและเมื่อมีข้อบ่งชี้\"); ยืนยันโดย thai-rheumatoid-arthritis-guideline-2557.pdf หน้า 40 (\"จอประสาทตา ภาพรังสีทรวงอก อย่างน้อยทุก 1 ปีและเมื่อมีข้อบ่งชี้\")<br><br>📌 <b>High-Yield Exam Pearl:</b> Hydroxychloroquine Ocular Toxicity: ตกตะกอนที่ Retinal pigment epithelium ต้องตรวจลานสายตาและจอประสาทตาทุกปี",
       "answerImage": "",
       "note": "Hydroxychloroquine Ocular Toxicity: ตกตะกอนที่ Retinal pigment epithelium ต้องตรวจลานสายตาและจอประสาทตาทุกปี",
-      "examType": "ข้อสอบจริงปี 2559"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2559"
     },
     {
       "id": "1. Musculoskeleton::63",
@@ -1327,7 +1387,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. Capsaicin<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>สารสำคัญที่สกัดได้จากพริกธรรมชาติที่มีผลต่อการลดความรู้สึกปวดและลดการอักเสบคือ สารสารแคปไซซิน (Capsaicin) ซึ่งนำมาพัฒนาในรูปแบบเจลทาผิวหนัง (Capsicum gel) เพื่อออกฤทธิ์กระตุ้นและลดการหลั่งสารสื่อประสาทนำความปวดที่ชื่อว่า Substance P ที่บริเวณปลายประสาทรับความรู้สึก<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> osteoarthritis-guideline-2019.pdf หน้า 3 (Figure 1) และหน้า 9 (หัวข้อ Topical capsaicin)<br><br>📌 <b>High-Yield Exam Pearl:</b> Capsaicin Gel: สารสกัดจากพริก ยับยั้งการหลั่ง Substance P จากปลายประสาทรับความรู้สึกปวด",
       "answerImage": "",
       "note": "Capsaicin Gel: สารสกัดจากพริก ยับยั้งการหลั่ง Substance P จากปลายประสาทรับความรู้สึกปวด",
-      "examType": "ข้อสอบจริงปี 2559"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2559"
     },
     {
       "id": "1. Musculoskeleton::64",
@@ -1348,7 +1409,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. การเกิดพยาธิสภาพที่ข้อเข่าทั้งสองข้างพร้อมกัน<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ลักษณะทางคลินิกของโรคข้อเข่าเสื่อม (Osteoarthritis) ไม่จำเป็นต้องอักเสบหรือเกิดพยาธิสภาพของข้อเข่าทั้งสองข้างพร้อมกัน (สามารถปวดอักเสบเข่าข้างเดียวได้/Unilateral) ซึ่งต่างจากเกณฑ์การวินิจฉัยโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis) ที่กำหนดให้มีอาการอักเสบของข้อและพยาธิสภาพแบบสมมาตร (Symmetrical) และเกิดพร้อมกันทั้งสองข้างของร่างกาย<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 6 (หัวข้อ การประเมินทางคลินิก)<br><br>📌 <b>High-Yield Exam Pearl:</b> OA Diagnostic Criteria: Morning stiffness นานเกิน 1 ชั่วโมง เป็นลักษณะของ RA ไม่ใช่ OA (OA &lt; 30 นาที)",
       "answerImage": "",
       "note": "OA Diagnostic Criteria: Morning stiffness นานเกิน 1 ชั่วโมง เป็นลักษณะของ RA ไม่ใช่ OA (OA &lt; 30 นาที)",
-      "examType": "ข้อสอบจริงปี 2558"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2558"
     },
     {
       "id": "1. Musculoskeleton::65",
@@ -1369,7 +1431,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. Paracetamol (Acetaminophen)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ผู้ป่วยรายนี้มีโรคประจำตัวคือ โรคหลอดเลือดหัวใจ และรับประทานยาแอสไพริน (Aspirin 81 mg) เป็นประจำ ซึ่งการได้รับยากินกลุ่ม NSAIDs ทั่วไปจะเพิ่มความเสี่ยงต่อการเกิดแผลและเลือดออกในกระเพาะอาหารอย่างมาก และยาแก้ปวด NSAIDs จะไปแย่งจับกับเกล็ดเลือดและบดบังประสิทธิภาพของยา Aspirin ในการต้านเกล็ดเลือด ดังนั้นการรักษาอาการปวดข้อเข่าเสื่อมเริ่มต้นทางช่องทางยาเม็ดกินที่ปลอดภัยคือ ยา Paracetamol (หรือเลือกใช้ Topical NSAID)<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 13 (ข้อ 6: \"พาราเซตามอลเป็นยาแก้ปวดรูปรับประทานที่ควรใช้เป็นชนิดแรก\")<br><br>📌 <b>High-Yield Exam Pearl:</b> OA First-line Analgesic: Paracetamol ขนาดไม่เกิน 3,000-4,000 mg/day เหมาะสำหรับ Mild-to-moderate OA pain",
       "answerImage": "",
       "note": "OA First-line Analgesic: Paracetamol ขนาดไม่เกิน 3,000-4,000 mg/day เหมาะสำหรับ Mild-to-moderate OA pain",
-      "examType": "ข้อสอบจริงปี 2558"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2558"
     },
     {
       "id": "1. Musculoskeleton::66",
@@ -1390,7 +1453,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ก. ขมิ้นชัน<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>สมุนไพร \"ขมิ้นชัน\" (Curcuma longa) มีการศึกษาวิจัยทางคลินิกในประเทศไทย (โดยคณะแพทยศาสตร์) เปรียบเทียบกับยาต้านการอักเสบ Ibuprofen พบว่าการรับประทานสารสกัดขมิ้นชันเข้มข้นมีประสิทธิภาพในการบรรเทาความเจ็บปวดและเพิ่มสมรรถภาพการใช้งานข้อเข่าในผู้ป่วยโรคข้อเข่าเสื่อมได้ดีโดยไม่แตกต่างจากการรักษาด้วยยาแผนปัจจุบัน และมีผลข้างเคียงต่อระบบทางเดินอาหารต่ำกว่า<br><br>📌 <b>High-Yield Exam Pearl:</b> Curcumin in Knee OA: สารสกัดขมิ้นชัน มีฤทธิ์ลดปวดข้อเข่าเสื่อมได้ดีเทียบเท่า Ibuprofen และ GI safety สูงกว่า",
       "answerImage": "",
       "note": "Curcumin in Knee OA: สารสกัดขมิ้นชัน มีฤทธิ์ลดปวดข้อเข่าเสื่อมได้ดีเทียบเท่า Ibuprofen และ GI safety สูงกว่า",
-      "examType": "ข้อสอบจริงปี 2558"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2558"
     },
     {
       "id": "1. Musculoskeleton::67",
@@ -1411,7 +1475,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. Omeprazole<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยาลดกรดในกลุ่ม Proton Pump Inhibitors (PPIs) เช่น Omeprazole เป็นยาป้องกันการเกิดโรคแผลในทางเดินอาหารเหนี่ยวนำจากยา NSAIDs (NSAIDs-induced peptic ulcer) ที่มีประสิทธิภาพสูงที่สุดและได้รับการรับรองในระดับสากลเหนือยากลุ่ม H2 blockers (Cimetidine) หรือยาเคลือบกระเพาะ Sucralfate<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 13 (ข้อ 8: \"non-selective NSAIDs ร่วมกับ gastroprotective agent (เช่น PPI)\")<br><br>📌 <b>High-Yield Exam Pearl:</b> PPI Co-prescription: Omeprazole เป็นยาทางเลือกมาตรฐานในการป้องกัน NSAID-induced ulcer",
       "answerImage": "",
       "note": "PPI Co-prescription: Omeprazole เป็นยาทางเลือกมาตรฐานในการป้องกัน NSAID-induced ulcer",
-      "examType": "ข้อสอบจริงปี 2558"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2558"
     },
     {
       "id": "1. Musculoskeleton::68",
@@ -1432,7 +1497,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. Parecoxib<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยากลุ่มต้านอักเสบเจาะจงเอนไซม์ COX-2 (Selective COX-2 Inhibitors) เช่น Parecoxib หรือ Valdecoxib/Etoricoxib มีความปลอดภัยต่อระบบหัวใจและหลอดเลือดต่ำที่สุด (มีอัตราเสี่ยงต่อการเกิดโรคหัวใจล้มเหลว โรคกล้ามเนื้อหัวใจขาดเลือด หรือโรคหลอดเลือดสมองอุดตันสูงที่สุด) เนื่องจากยาจะยับยั้งเฉพาะ PGI2 (Prostacyclin) ซึ่งช่วยขยายหลอดเลือดและต้านการเกาะกลุ่มของเกล็ดเลือด โดยไม่มีฤทธิ์ยับยั้ง Thromboxane A2 ทำให้เสียสมดุลของการแข็งตัวของเลือด<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> thai-osteoarthritis-guideline-2553.pdf หน้า 23 และ หน้า 25 (หัวข้อ ผลข้างเคียงของยากลุ่ม COX-2 inhibitors บรรทัดที่ 4-7: \"ผู้ป่วยโรคหัวใจและหลอดเลือด เนื่องจากอาจทำให้เกิดความดันโลหิตสูง ภาวะหัวใจล้มเหลว และหลอดเลือดหัวใจและสมองอุดตัน\")<br><br>📌 <b>High-Yield Exam Pearl:</b> NSAIDs CV Risk: Parecoxib / Selective COX-2 inhibitors มีความเสี่ยงต่อ CV events สูงสุด",
       "answerImage": "",
       "note": "NSAIDs CV Risk: Parecoxib / Selective COX-2 inhibitors มีความเสี่ยงต่อ CV events สูงสุด",
-      "examType": "ข้อสอบจริงปี 2558"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2558"
     },
     {
       "id": "1. Musculoskeleton::69",
@@ -1453,7 +1519,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ง. Type IV<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ปฏิกิริยาการแพ้ยารุนแรงทางผิวหนังชนิด Toxic Epidermal Necrolysis (TEN) จัดอยู่ในกลุ่มปฏิกิริยาการแพ้แบบช้าผ่านเซลล์ภูมิคุ้มกัน (Type IV Hypersensitivity หรือ Cell-mediated immune response) โดยเฉพาะผ่านการทำงานของเซลล์ CD8+ Cytotoxic T lymphocytes ที่ปล่อยสารเหนี่ยวนำการตายของเซลล์ผิวหนัง Keratinocytes เช่น Granulysin, Perforin/granzyme B และ FasL<br><br>📌 <b>High-Yield Exam Pearl:</b> TEN Hypersensitivity: จัดเป็น Type IV (Delayed cell-mediated) hypersensitivity กระตุ้นโดย CD8+ T cells",
       "answerImage": "",
       "note": "TEN Hypersensitivity: จัดเป็น Type IV (Delayed cell-mediated) hypersensitivity กระตุ้นโดย CD8+ T cells",
-      "examType": "ข้อสอบจริงปี 2558"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2558"
     },
     {
       "id": "1. Musculoskeleton::70",
@@ -1474,7 +1541,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ข. การรับประทานยา Allopurinol<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>ยาลดกรดยูริก Allopurinol เป็นยากลุ่มที่มีอุบัติการณ์ในการแพ้ยารุนแรงทางผิวหนังชนิด SJS/TEN สูงมาก (High-risk drug) โดยเฉพาะในกลุ่มประชากรไทยที่มีความเสี่ยงทางพันธุกรรม HLA-B<i>58:01 โดยผู้ป่วยมักแสดงอาการในช่วง 1 ถึง 8 สัปดาห์แรกหลังเริ่มยา ซึ่งตรงกับประวัติของผู้ป่วยรายนี้ที่เพิ่งทานยาได้เพียง 1 สัปดาห์<br><br>📖 <b>แนวทางเวชปฏิบัติอ้างอิง:</b> gout-guideline-2020.pdf หน้า 7 (หัวข้อ Allopurinol - Genetic testing) และ หน้า 16 (Association between HLA-B</i>5801 and allopurinol-induced SJS/TEN in a Thai population)<br><br>📌 <b>High-Yield Exam Pearl:</b> Allopurinol-induced TEN: Allopurinol เป็นสาเหตุพบบ่อยอันดับต้น ๆ ของ SJS/TEN ในประเทศไทย",
       "answerImage": "",
       "note": "Allopurinol-induced TEN: Allopurinol เป็นสาเหตุพบบ่อยอันดับต้น ๆ ของ SJS/TEN ในประเทศไทย",
-      "examType": "ข้อสอบจริงปี 2558"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2558"
     },
     {
       "id": "1. Musculoskeleton::71",
@@ -1495,7 +1563,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ จ. ระยะเวลาการเป็นโรคประจำตัวเรื้อรังนานกว่า 2 สัปดาห์ขึ้นไป<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>เกณฑ์การวินิจฉัยและประเมินโรค TEN จะอิงกับร้อยละพื้นที่ผิวหนังที่ลอกไหม้ (TEN จะลอกมากกว่า 30% ของพื้นที่ผิวร่างกาย), อาการนำเริ่มต้น (มีไข้ เจ็บคอ ผื่นผิวหนังอักเสบ), ประวัติการได้รับยาเสี่ยง และการมีรอยโรคตามเยื่อบุต่าง ๆ (Mucosal involvement) สำหรับ \"ระยะเวลาการเป็นโรคประจำตัวเรื้อรัง\" ของคนไข้ไม่มีส่วนเกี่ยวข้องใด ๆ กับเกณฑ์การวินิจฉัยความรุนแรงของโรคแพ้ยาเฉียบพลันชนิดนี้<br><br>📌 <b>High-Yield Exam Pearl:</b> TEN Diagnosis: เกณฑ์การวินิจฉัยประเมินจาก Skin detachment &gt; 30% BSA, Mucosal involvement, และ SCORTEN",
       "answerImage": "",
       "note": "TEN Diagnosis: เกณฑ์การวินิจฉัยประเมินจาก Skin detachment &gt; 30% BSA, Mucosal involvement, และ SCORTEN",
-      "examType": "ข้อสอบจริงปี 2558"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2558"
     },
     {
       "id": "1. Musculoskeleton::72",
@@ -1516,7 +1585,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ <b>คำตอบที่ถูกต้อง:</b> ข้อ ค. Severe severity (หรือ Life-threatening)<br><br>💡 <b>คำอธิบายทางคลินิก (Clinical Rationale):</b><br>อาการไม่พึงประสงค์จากยาที่ส่งผลให้ผิวหนังของผู้ป่วยเกิดการลอกไหม้อย่างรุนแรงมากกว่าร้อยละ 30 ของพื้นที่ผิวทั้งหมด และเกิดแผลพุพองตามเยื่อบุอวัยวะสำคัญ ซึ่งจัดเป็นสภาวะวิกฤตที่เสี่ยงต่อการเสียชีวิตเนื่องจากการสูญเสียน้ำและติดเชื้อในกระแสเลือดสูง จัดเป็นระดับความรุนแรงระดับสูงสุดคือ Severe (หรือ Life-threatening)<br><br>📌 <b>High-Yield Exam Pearl:</b> TEN Severity Level: SJS/TEN เป็นอาการไม่พึงประสงค์ระดับ Life-threatening ที่มีอัตราการเสียชีวิตสูง",
       "answerImage": "",
       "note": "TEN Severity Level: SJS/TEN เป็นอาการไม่พึงประสงค์ระดับ Life-threatening ที่มีอัตราการเสียชีวิตสูง",
-      "examType": "ข้อสอบจริงปี 2558"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2558"
     }
   ],
   "2. Cardiovascular": [
@@ -1539,7 +1609,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "ในผู้ป่วย STEMI ที่ได้รับการรักษาด้วยการขยายหลอดเลือดหัวใจ (Primary PCI) แนะนำ Loading dose ของ Clopidogrel ที่ 600 mg เพื่อให้เกิด platelet inhibition รวดเร็วที่สุด (ถ้าได้ Fibrinolysis ให้ 300 mg)",
       "answerImage": "",
       "note": "ESC/ACC STEMI Guidelines",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     }
   ],
   "4. Endocrine": [
@@ -1562,7 +1633,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "Metformin เป็น First-line pharmacotherapy สำหรับ Type 2 DM ร่วมกับการปรับเปลี่ยนพฤติกรรมชีวิต มีประสิทธิภาพดี ไม่ทำให้น้ำหนักเพิ่ม และความเสี่ยงต่อภาวะน้ำตาลต่ำ (Hypoglycemia) ต่ำมาก",
       "answerImage": "",
       "note": "ADA Standards of Care",
-      "examType": "ข้อสอบจริงปี 2566"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566"
     }
   ],
   "8. Infectious diseases": [
@@ -1585,7 +1657,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "Fluoroquinolones ยับยั้ง DNA gyrase ในแบคทีเรียแกรมลบ และ Topoisomerase IV ในแบคทีเรียแกรมบวก ส่งผลให้กระบวนการคลายเกลียวและจำลองตัวของ DNA หยุดชะงัก",
       "answerImage": "",
       "note": "Pharmacology",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     }
   ],
   "11. Pulmonary": [
@@ -1608,7 +1681,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "GINA Track 1 แนะนำ Low-dose ICS-Formoterol as reliever เพื่อลดความเสี่ยงต่อการเกิด Exacerbation รุนแรงจากการใช้ SABA เดี่ยวๆ",
       "answerImage": "",
       "note": "GINA Guidelines",
-      "examType": "ข้อสอบจำลอง (Mock Exam)"
+      "examType": "Mock",
+      "examYear": ""
     }
   ],
   "1. Titrations": [
@@ -1631,7 +1705,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "การวิเคราะห์หาปริมาณ Paracetamol ในเภสัชตำรับ (เช่น BP/USP) นำตัวอย่างไปต้มกับกรดซัลฟิวริกเจือจางเพื่อ hydrolyze พันธะ amide ให้ได้ p-aminophenol จากนั้นนำไปไทเทรตด้วยมาตรฐาน Ceric ammonium sulfate โดยใช้ Ferroin เป็น indicator",
       "answerImage": "",
       "note": "British Pharmacopoeia / Thai Pharmacopoeia",
-      "examType": "ข้อสอบจริงปี 2567"
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567"
     }
   ],
   "1. Pharmacy Laws & Ethics": [
@@ -1654,7 +1729,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "ยาควบคุมพิเศษ กฎหมายกำหนดให้จำหน่ายได้เฉพาะเมื่อมีใบสั่งยาของผู้ประกอบวิชาชีพเวชกรรม ทันตกรรม หรือสัตวแพทย์ชั้นหนึ่งเท่านั้น และเภสัชกรผู้มีหน้าที่ปฏิบัติการต้องลงบัญชีการรับและจ่ายยาทุกครั้ง",
       "answerImage": "",
       "note": "พ.ร.บ. ยา พ.ศ. 2510",
-      "examType": "ข้อสอบจำลอง (Mock Exam)"
+      "examType": "Mock",
+      "examYear": ""
     }
   ]
 };

@@ -218,7 +218,7 @@ def main():
         try:
             res = service.spreadsheets().get(
                 spreadsheetId=SPREADSHEET_ID,
-                ranges=[f"'{s_name}'!A3:O"],
+                ranges=[f"'{s_name}'!A3:P"],
                 includeGridData=True
             ).execute()
             sheet_obj = res['sheets'][0]
@@ -226,7 +226,7 @@ def main():
             row_data = data_obj.get('rowData', [])
         except Exception as e:
             print(f"     [WARN] Fallback values.get for '{s_name}': {e}")
-            val_res = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=f"'{s_name}'!A3:O").execute()
+            val_res = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=f"'{s_name}'!A3:P").execute()
             raw_rows = val_res.get('values', [])
             row_data = []
             for r in raw_rows:
@@ -239,7 +239,7 @@ def main():
         for idx, r_obj in enumerate(row_data):
             row_num = idx + 3
             cells = r_obj.get('values', [])
-            while len(cells) < 15:
+            while len(cells) < 16:
                 cells.append({})
 
             def get_plain(col_i):
@@ -253,7 +253,7 @@ def main():
                 return ''
 
             first_col = get_plain(0)
-            if first_col.isdigit() or (len(cells) >= 15 and len(first_col) <= 4 and first_col.isdigit()):
+            if first_col.isdigit() or (len(cells) >= 16 and len(first_col) <= 4 and first_col.isdigit()):
                 offset = 1
                 item_no = int(first_col) if first_col.isdigit() else len(questions) + 1
             else:
@@ -274,7 +274,8 @@ def main():
             subtopic = get_plain(offset + 10) or s_name
             track = get_plain(offset + 11) or 'Clinic'
             note_html = get_html(offset + 12)
-            exam_type = get_plain(offset + 13) or 'ข้อสอบทั่วไป'
+            exam_type = get_plain(offset + 13)
+            exam_year = get_plain(offset + 14)
 
             if not q_text_plain and not c1:
                 continue
@@ -344,7 +345,8 @@ def main():
                 'explanation': exp_html,
                 'answerImage': ans_img,
                 'note': note_html,
-                'examType': exam_type
+                'examType': exam_type,
+                'examYear': exam_year
             }
             questions.append(q_obj)
 

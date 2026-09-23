@@ -96,8 +96,8 @@ function doGet(e) {
         const lastRow = sheet.getLastRow();
         if (lastRow < 3) return; // แถว 1=Banner, แถว 2=Header
 
-        // อ่าน A3:O(lastRow) -> 15 คอลัมน์ (รองรับคอลัมน์ A เป็น "ข้อที่")
-        const values = sheet.getRange(3, 1, lastRow - 2, 15).getValues();
+        // อ่าน A3:P(lastRow) -> 16 คอลัมน์ (รองรับคอลัมน์ A เป็น "ข้อที่")
+        const values = sheet.getRange(3, 1, lastRow - 2, 16).getValues();
 
         values.forEach((row, idx) => {
           const rowNum = idx + 3;
@@ -105,7 +105,7 @@ function doGet(e) {
           
           let offset = 0;
           let itemNo = allQuestions.length + 1;
-          if (/^\d+$/.test(firstVal) || (row.length >= 15 && firstVal.length <= 4)) {
+          if (/^\d+$/.test(firstVal) || (row.length >= 16 && firstVal.length <= 4)) {
             offset = 1;
             itemNo = parseInt(firstVal, 10) || (allQuestions.length + 1);
           }
@@ -123,7 +123,8 @@ function doGet(e) {
           const subtopic     = String(row[offset + 10] || '').trim() || sName;
           const track        = String(row[offset + 11] || 'Clinic').trim();
           const note         = String(row[offset + 12] || '').trim();
-          const examType     = String(row[offset + 13] || 'ข้อสอบจำลอง (Mock)').trim();
+          const examType     = String(row[offset + 13] || '').trim();
+          const examYear     = String(row[offset + 14] || '').trim();
 
           if (!questionText && !c1) return;
 
@@ -138,6 +139,7 @@ function doGet(e) {
             subtopic: subtopic,
             track: track,
             examType: examType,
+            examYear: examYear,
             question: questionText,
             questionImage: questionImg,
             choices: choices,

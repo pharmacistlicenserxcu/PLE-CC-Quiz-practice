@@ -2455,9 +2455,6 @@
         </select>
         <select class="browse-select" id="browseExamTypeFilter" onchange="renderBrowseList()">
           <option value="all">🎯 ทุกประเภทข้อสอบ</option>
-          <option value="real_2567">เฉพาะข้อสอบจริงปี 2567</option>
-          <option value="real_all">ข้อสอบจริงทุกปี</option>
-          <option value="mock">เฉพาะข้อสอบจำลอง (Mock)</option>
         </select>
       </div>
     </div>
@@ -2502,9 +2499,6 @@
           <label>ประเภทข้อสอบ</label>
           <select class="form-input" id="setupExamTypeSelect" onchange="onSetupFiltersUpdate()">
             <option value="all">🌟 ทุกประเภทข้อสอบ</option>
-            <option value="real_2567">🎯 เฉพาะข้อสอบจริงปี 2567</option>
-            <option value="real_all">🎯 ข้อสอบจริงทุกปี</option>
-            <option value="mock">📝 ข้อสอบจำลอง (Mock)</option>
           </select>
         </div>
         <div class="form-group" style="margin-bottom:0;">
@@ -2970,31 +2964,110 @@ function setAppQuizMode(mode) {
   showToast(msg);
 }
 
+function getExamBadgeInfo(q) {
+  if (!q) return { text: '', cssClass: 'tag-general-exam', icon: '🏷️', html: '' };
+  const type = (q.examType || '').trim();
+  const year = (q.examYear || '').trim();
+
+  let text = '';
+  if (type && year) {
+    text = `${type} · ${year}`;
+  } else if (type) {
+    text = type;
+  } else if (year) {
+    text = year;
+  } else {
+    text = '';
+  }
+
+  if (!text) return { text: '', cssClass: '', icon: '', html: '' };
+
+  let cssClass = 'tag-general-exam';
+  let icon = '🏷️';
+  const lower = (type + ' ' + year).toLowerCase();
+  if (lower.includes('จริง') || lower.includes('real')) {
+    cssClass = 'tag-real-exam';
+    icon = '🎯';
+  } else if (lower.includes('mock') || lower.includes('จำลอง')) {
+    cssClass = 'tag-mock-exam';
+    icon = '📝';
+  }
+
+  return {
+    text: text,
+    cssClass: cssClass,
+    icon: icon,
+    html: `<span class="tag-exam-type ${cssClass}">${icon} ${text}</span>`
+  };
+}
+
 function getAllUniqueExamTypes() {
-  const types = new Set();
   const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+  const typeMap = new Map();
+
   Object.values(map).forEach(qs => {
     qs.forEach(q => {
-      if (q.examType && q.examType.trim()) types.add(q.examType.trim());
+      const type = (q.examType || '').trim();
+      const year = (q.examYear || '').trim();
+      if (!type && !year) return;
+      const mainType = type || 'ข้อสอบทั่วไป';
+      if (!typeMap.has(mainType)) {
+        typeMap.set(mainType, new Set());
+      }
+      if (year) {
+        typeMap.get(mainType).add(year);
+      }
     });
   });
-  return Array.from(types).sort((a, b) => {
-    const yA = (a.match(/\d+/) || [0])[0];
-    const yB = (b.match(/\d+/) || [0])[0];
-    if (yA && yB) return parseInt(yB, 10) - parseInt(yA, 10);
-    return a.localeCompare(b, 'th');
-  });
+
+  return typeMap;
 }
 
 function populateExamTypeFilterDropdown(selectId, includeAllOption = true) {
   const sel = document.getElementById(selectId);
   if (!sel) return;
   const currentVal = sel.value;
-  const types = getAllUniqueExamTypes();
+  const typeMap = getAllUniqueExamTypes();
+  
   let html = includeAllOption ? '<option value="all">🌟 ทุกประเภทข้อสอบ</option>' : '';
-  types.forEach(t => {
-    html += `<option value="${t}">🎯 ${t}</option>`;
+
+  const sortedTypes = Array.from(typeMap.keys()).sort((a, b) => {
+    const aReal = a.includes('จริง');
+    const bReal = b.includes('จริง');
+    if (aReal && !bReal) return -1;
+    if (!aReal && bReal) return 1;
+    const aMock = a.toLowerCase().includes('mock') || a.includes('จำลอง');
+    const bMock = b.toLowerCase().includes('mock') || b.includes('จำลอง');
+    if (aMock && !bMock) return -1;
+    if (!aMock && bMock) return 1;
+    return a.localeCompare(b, 'th');
   });
+
+  sortedTypes.forEach(type => {
+    const yearsSet = typeMap.get(type) || new Set();
+    const years = Array.from(yearsSet).sort((a, b) => {
+      const numA = parseInt((a.match(/\d+/) || [0])[0], 10);
+      const numB = parseInt((b.match(/\d+/) || [0])[0], 10);
+      if (numA && numB) return numB - numA;
+      return b.localeCompare(a, 'th', { numeric: true });
+    });
+
+    const isReal = type.includes('จริง');
+    const isMock = type.toLowerCase().includes('mock') || type.includes('จำลอง');
+    const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
+
+    if (years.length > 1) {
+      html += `<option value="type:${type}">${icon} ${type} (ทุกปี / ทุกชุด)</option>`;
+      years.forEach(y => {
+        html += `<option value="combo:${type}::${y}">&nbsp;&nbsp;&nbsp;📅 ${type} · ${y}</option>`;
+      });
+    } else if (years.length === 1 && years[0]) {
+      html += `<option value="combo:${type}::${years[0]}">${icon} ${type} · ${years[0]}</option>`;
+    } else {
+      html += `<option value="type:${type}">${icon} ${type}</option>`;
+    }
+  });
+
   sel.innerHTML = html;
   if (currentVal && Array.from(sel.options).some(o => o.value === currentVal)) {
     sel.value = currentVal;
@@ -3002,19 +3075,47 @@ function populateExamTypeFilterDropdown(selectId, includeAllOption = true) {
 }
 
 function onLobbyExamTypeFilterChange() {
-  currentExamTypeFilter = document.getElementById('lobbyExamTypeFilter').value;
+  const el = document.getElementById('lobbyExamTypeFilter');
+  if (el) currentExamTypeFilter = el.value;
   buildLobby();
   showToast('🔍 ปรับตัวกรองประเภทข้อสอบแล้ว');
 }
 
 function filterQuestionsByExamType(list, filterVal = currentExamTypeFilter) {
   if (!filterVal || filterVal === 'all') return list;
+
   return list.filter(q => {
-    const et = (q.examType || '').trim();
-    if (filterVal === 'real_2567') return et.includes('2567') || et.includes('67');
-    if (filterVal === 'real_all') return et.includes('จริง') || et.includes('real');
-    if (filterVal === 'mock') return et.includes('จำลอง') || et.includes('mock');
-    return et === filterVal;
+    const qType = (q.examType || '').trim();
+    const qYear = (q.examYear || '').trim();
+
+    if (filterVal.startsWith('type:')) {
+      const targetType = filterVal.substring(5).trim();
+      return qType === targetType;
+    }
+
+    if (filterVal.startsWith('combo:')) {
+      const parts = filterVal.substring(6).split('::');
+      const targetType = (parts[0] || '').trim();
+      const targetYear = (parts[1] || '').trim();
+      return qType === targetType && qYear === targetYear;
+    }
+
+    // Legacy or direct match fallback
+    if (filterVal === 'real_2567') {
+      return (qType.includes('จริง') || qType.includes('real')) && (qYear.includes('2567') || qType.includes('2567'));
+    }
+    if (filterVal === 'real_all') {
+      return qType.includes('จริง') || qType.includes('real');
+    }
+    if (filterVal === 'mock') {
+      return qType.toLowerCase().includes('mock') || qType.includes('จำลอง');
+    }
+
+    if (qType === filterVal) return true;
+    if (`${qType} · ${qYear}` === filterVal) return true;
+    if (qYear === filterVal) return true;
+
+    return false;
   });
 }
 
@@ -3363,7 +3464,8 @@ async function fetchLiveSheetQuestions(sheetName) {
             let subtopic = getVal(offset + 10);
             const track = getVal(offset + 11) || 'Clinic';
             const note = getVal(offset + 12);
-            const examType = getVal(offset + 13) || 'ข้อสอบทั่วไป';
+            const examType = getVal(offset + 13) || '';
+            const examYear = getVal(offset + 14) || '';
 
             if (!qText && !c1) return;
             if (qText.includes('คำถาม') || qText.includes('กลับหน้าแรก')) return;
@@ -3397,6 +3499,7 @@ async function fetchLiveSheetQuestions(sheetName) {
               subtopic: subtopic || sheetName,
               track: track,
               examType: examType,
+              examYear: examYear,
               question: formatPlainTextToHtml(qText),
               questionImage: (qImg.startsWith('http') || qImg.startsWith('images/')) ? qImg : '',
               choices: choices,
@@ -4436,13 +4539,7 @@ function renderScrollPractice() {
       cardClass += isCorrect ? ' answered-correct' : ' answered-wrong';
     }
 
-    let examTagClass = 'tag-general-exam';
-    let examTagText = q.examType || 'ข้อสอบทั่วไป';
-    if (examTagText.includes('2567') || examTagText.includes('67') || examTagText.includes('จริง')) {
-      examTagClass = 'tag-real-exam';
-    } else if (examTagText.includes('จำลอง') || examTagText.includes('Mock')) {
-      examTagClass = 'tag-mock-exam';
-    }
+    const examBadge = getExamBadgeInfo(q);
 
     let statusBadge = '<span class="scroll-status-badge">⚪ ยังไม่ได้ตอบ</span>';
     if (isAnswered) {
@@ -4513,7 +4610,7 @@ function renderScrollPractice() {
             <span class="scroll-item-num">ข้อ ${qNum}</span>
             <span class="tag clinic-tag" style="font-size:11px; padding:2px 8px;">${q.subtopic || q.category || 'Clinic'}</span>
             ${refBadge}
-            <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>
+            ${examBadge.html}
           </div>
           <div style="display:flex; align-items:center; gap:6px;">
             ${statusBadge}
@@ -4633,24 +4730,18 @@ function renderCurrentQuestion() {
   // Header & Tag
   const norm = (q.track || '').toLowerCase();
   const tagEl = document.getElementById('quizCardTag');
-  let examTagClass = 'tag-general-exam';
-  let examTagText = q.examType || 'ข้อสอบทั่วไป';
-  if (examTagText.includes('2567') || examTagText.includes('67') || examTagText.includes('จริง')) {
-    examTagClass = 'tag-real-exam';
-  } else if (examTagText.includes('จำลอง') || examTagText.includes('Mock')) {
-    examTagClass = 'tag-mock-exam';
-  }
+  const examBadge = getExamBadgeInfo(q);
 
   const currentDisplayNumber = currentQuestionIndex + 1;
   const totalQuestions = activeQuizQuestions.length;
 
   if (appQuizMode === 'exam') {
     // BLIND EXAM MODE: Hide subtopic & category name so user cannot guess disease/drug class
-    tagEl.innerHTML = `<span>ข้อที่ ${currentDisplayNumber} / ${totalQuestions}</span> <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>`;
+    tagEl.innerHTML = `<span>ข้อที่ ${currentDisplayNumber} / ${totalQuestions}</span> ${examBadge.html}`;
   } else {
     // PRACTICE MODE: Show full details, clean session number, and internal Ref ID
     const refBadge = q.itemNo ? `<span style="font-size:10.5px; opacity:0.65; margin-left:4px;">(Ref: ${q.itemNo})</span>` : '';
-    tagEl.innerHTML = `<span>${q.track || 'Clinic'} · ${q.subtopic || q.category} · ข้อที่ ${currentDisplayNumber}</span>${refBadge} <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>`;
+    tagEl.innerHTML = `<span>${q.track || 'Clinic'} · ${q.subtopic || q.category} · ข้อที่ ${currentDisplayNumber}</span>${refBadge} ${examBadge.html}`;
   }
   tagEl.className = `tag ${norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag'}`;
 
@@ -5100,13 +5191,7 @@ function renderExamReview() {
     const norm = (q.track || '').toLowerCase();
     const trackBadgeClass = norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag';
 
-    let examTagClass = 'tag-general-exam';
-    let examTagText = q.examType || 'ข้อสอบทั่วไป';
-    if (examTagText.includes('2567') || examTagText.includes('67') || examTagText.includes('จริง')) {
-      examTagClass = 'tag-real-exam';
-    } else if (examTagText.includes('จำลอง') || examTagText.includes('Mock')) {
-      examTagClass = 'tag-mock-exam';
-    }
+    const examBadge = getExamBadgeInfo(q);
 
     const userLetter = userChoice ? (THAI_CHOICE_LETTERS[userChoice - 1] || userChoice) : 'ไม่ได้ตอบ';
     const correctLetter = THAI_CHOICE_LETTERS[q.answer - 1] || q.answer;
@@ -5152,7 +5237,7 @@ function renderExamReview() {
               : '<span style="background:#FEE2E2; color:#991B1B; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:6px; border:1px solid #FECACA;">❌ คุณตอบผิด (คุณตอบ ' + userLetter + ' / เฉลย ' + correctLetter + ')</span>'}
           </div>
           <div class="browse-card-tags">
-            <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>
+            ${examBadge.html}
           </div>
         </div>
 
@@ -5306,13 +5391,7 @@ function renderBrowseList() {
     const norm = (q.track || '').toLowerCase();
     const trackBadgeClass = norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag';
     
-    let examTagClass = 'tag-general-exam';
-    let examTagText = q.examType || 'ข้อสอบทั่วไป';
-    if (examTagText.includes('2567') || examTagText.includes('67') || examTagText.includes('จริง')) {
-      examTagClass = 'tag-real-exam';
-    } else if (examTagText.includes('จำลอง') || examTagText.includes('Mock')) {
-      examTagClass = 'tag-mock-exam';
-    }
+    const examBadge = getExamBadgeInfo(q);
 
     const itemNo = q.itemNo || (idx + 1);
 
@@ -5341,7 +5420,7 @@ function renderBrowseList() {
             <span class="tag ${trackBadgeClass}">${q.track || 'Clinic'} · ${q.subtopic || q.category}</span>
           </div>
           <div class="browse-card-tags">
-            <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>
+            ${examBadge.html}
           </div>
         </div>
 
