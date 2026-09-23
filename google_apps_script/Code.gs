@@ -289,7 +289,7 @@ function doPost(e) {
         String(data.question || '').substring(0, 150),
         String(data.issueType || 'ทั่วไป'),
         String(data.detail || ''),
-        "Pending"
+        "Pending (รอดำเนินการ)"
       ]);
 
       return jsonResponse_({ success: true, message: 'บันทึกรายงานปัญหาเรียบร้อย' });
