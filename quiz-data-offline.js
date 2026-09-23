@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (Rich Text & Column O)
- * Total Questions: 76 across 7 Categories
- * Build Timestamp: 2026-09-23 16:41:23
+ * Total Questions: 89 across 9 Categories
+ * Build Timestamp: 2026-09-23 17:42:38
  */
 
 window.QUIZ_GOOGLE_SHEET_ID = "1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w";
@@ -43,6 +43,16 @@ window.QUIZ_OFFLINE_CATEGORIES = [
     "name": "1. Pharmacy Laws & Ethics",
     "count": 1,
     "track": "SAP"
+  },
+  {
+    "name": "User_Profiles",
+    "count": 10,
+    "track": "Clinic"
+  },
+  {
+    "name": "Community_Chat",
+    "count": 3,
+    "track": "Clinic"
   }
 ];
 
@@ -1655,6 +1665,283 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "answerImage": "",
       "note": "พ.ร.บ. ยา พ.ศ. 2510",
       "examType": "ข้อสอบจำลอง (Mock Exam)"
+    }
+  ],
+  "User_Profiles": [
+    {
+      "id": "User_Profiles::3",
+      "itemNo": 1,
+      "category": "User_Profiles",
+      "subtopic": "User_Profiles",
+      "track": "Clinic",
+      "question": "max",
+      "questionImage": "Doctor Max (ประธานรุ่น)",
+      "choices": [
+        "140",
+        "126",
+        "90%",
+        "12",
+        "2026-09-23T16:30:00Z"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "User_Profiles::4",
+      "itemNo": 2,
+      "category": "User_Profiles",
+      "subtopic": "User_Profiles",
+      "track": "Clinic",
+      "question": "thanadol",
+      "questionImage": "Thanadol (RxCU84)",
+      "choices": [
+        "95",
+        "82",
+        "86%",
+        "7",
+        "2026-09-23T15:20:00Z"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "User_Profiles::5",
+      "itemNo": 3,
+      "category": "User_Profiles",
+      "subtopic": "User_Profiles",
+      "track": "Clinic",
+      "question": "admin",
+      "questionImage": "PLE Academic Admin",
+      "choices": [
+        "210",
+        "195",
+        "93%",
+        "25",
+        "2026-09-23T16:45:00Z"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "User_Profiles::6",
+      "itemNo": 4,
+      "category": "User_Profiles",
+      "subtopic": "User_Profiles",
+      "track": "Clinic",
+      "question": "rx_lin",
+      "questionImage": "Lin (วิชาการ Clinic)",
+      "choices": [
+        "160",
+        "142",
+        "89%",
+        "14",
+        "2026-09-23T14:10:00Z"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "User_Profiles::7",
+      "itemNo": 5,
+      "category": "User_Profiles",
+      "subtopic": "User_Profiles",
+      "track": "Clinic",
+      "question": "rx_fon",
+      "questionImage": "Fon (วิชาการ Product)",
+      "choices": [
+        "110",
+        "94",
+        "85%",
+        "9",
+        "2026-09-23T13:40:00Z"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "User_Profiles::8",
+      "itemNo": 6,
+      "category": "User_Profiles",
+      "subtopic": "User_Profiles",
+      "track": "Clinic",
+      "question": "rx_irene",
+      "questionImage": "Irene (Head OSPE)",
+      "choices": [
+        "130",
+        "115",
+        "88%",
+        "11",
+        "2026-09-23T12:00:00Z"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "User_Profiles::9",
+      "itemNo": 7,
+      "category": "User_Profiles",
+      "subtopic": "User_Profiles",
+      "track": "Clinic",
+      "question": "rx_kratae",
+      "questionImage": "Kratae (Clinic OSPE)",
+      "choices": [
+        "85",
+        "71",
+        "84%",
+        "5",
+        "2026-09-23T11:30:00Z"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "User_Profiles::10",
+      "itemNo": 8,
+      "category": "User_Profiles",
+      "subtopic": "User_Profiles",
+      "track": "Clinic",
+      "question": "rx_min",
+      "questionImage": "Min (Product OSPE)",
+      "choices": [
+        "90",
+        "78",
+        "87%",
+        "6",
+        "2026-09-23T10:15:00Z"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "User_Profiles::11",
+      "itemNo": 9,
+      "category": "User_Profiles",
+      "subtopic": "User_Profiles",
+      "track": "Clinic",
+      "question": "rx_poy",
+      "questionImage": "Poy (เลขาโครงการ)",
+      "choices": [
+        "75",
+        "62",
+        "83%",
+        "4",
+        "2026-09-23T09:20:00Z"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "User_Profiles::12",
+      "itemNo": 10,
+      "category": "User_Profiles",
+      "subtopic": "User_Profiles",
+      "track": "Clinic",
+      "question": "rx_title",
+      "questionImage": "Title (เหรัญญิก)",
+      "choices": [
+        "60",
+        "49",
+        "82%",
+        "3",
+        "2026-09-23T08:50:00Z"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    }
+  ],
+  "Community_Chat": [
+    {
+      "id": "Community_Chat::3",
+      "itemNo": 1,
+      "category": "Community_Chat",
+      "subtopic": "Community_Chat",
+      "track": "Clinic",
+      "question": "msg_1",
+      "questionImage": "2026-09-23T10:00:00Z",
+      "choices": [
+        "max",
+        "Doctor Max (ประธานรุ่น)",
+        "ยินดีต้อนรับเพื่อนๆ นิสิต RxCU สู่ระบบเตรียมสอบใบประกอบวิชาชีพ 2569 ครับ! หากมีข้อสงสัยเกี่ยวกับโจทย์หรือต้องการแลกเปลี่ยนแนวคิด สามารถพิมพ์คุยกันในนี้ได้เลยครับ 🎉",
+        "",
+        "ประกาศ"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "Community_Chat::4",
+      "itemNo": 2,
+      "category": "Community_Chat",
+      "subtopic": "Community_Chat",
+      "track": "Clinic",
+      "question": "msg_2",
+      "questionImage": "2026-09-23T10:15:00Z",
+      "choices": [
+        "rx_lin",
+        "Lin (วิชาการ Clinic)",
+        "หมวด Musculoskeletal ตอนนี้คัดเฉพาะ Clinic แท้ 70 ข้อพร้อม Clinical Pearls แล้วนะครับ เน้นข้อห้ามใช้ Allopurinol ใน HLA-B*58:01 ให้แม่นๆ นะครับ 💊",
+        "",
+        "Clinic"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
+    },
+    {
+      "id": "Community_Chat::5",
+      "itemNo": 3,
+      "category": "Community_Chat",
+      "subtopic": "Community_Chat",
+      "track": "Clinic",
+      "question": "msg_3",
+      "questionImage": "2026-09-23T10:20:00Z",
+      "choices": [
+        "thanadol",
+        "Thanadol (RxCU84)",
+        "ขอบคุณครับ! ข้อสอบ OA เรื่อง Paracetamol กับ Selective COX-2 ออกตรงแนวสอบสภาบ่อยมาก",
+        "msg_2",
+        "Clinic"
+      ],
+      "answer": 1,
+      "explanation": "",
+      "answerImage": "",
+      "note": "",
+      "examType": "ข้อสอบทั่วไป"
     }
   ]
 };
