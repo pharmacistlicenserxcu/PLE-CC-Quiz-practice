@@ -1280,6 +1280,9 @@
     .mode-seg-btn.exam.active {
       color: #DC2626; box-shadow: 0 1px 4px rgba(220, 38, 38, 0.15);
     }
+    .mode-seg-btn.scroll.active {
+      color: #7C3AED; box-shadow: 0 1px 4px rgba(124, 58, 237, 0.15);
+    }
 
     .tag-exam-type {
       font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px;
@@ -1293,6 +1296,337 @@
     }
     .tag-general-exam {
       background: #F1F5F9; color: #475569; border: 1px solid #E2E8F0;
+    }
+
+    /* ══ SCROLL-DOWN PRACTICE VIEWPORT ══ */
+    .scroll-practice-viewport {
+      width: 100%;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 10px 14px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    /* Floating Stats & Control Bar */
+    .scroll-practice-controls {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 9px 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .scroll-controls-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .scroll-stats-pills {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+    }
+
+    .scroll-stat-pill {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 7px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--ink-soft);
+      font-family: 'IBM Plex Mono', 'Bai Jamjuree', monospace;
+    }
+    .scroll-stat-pill.correct {
+      background: #DCFCE7;
+      color: #15803D;
+      border-color: #86EFAC;
+    }
+    .scroll-stat-pill.wrong {
+      background: #FEE2E2;
+      color: #B91C1C;
+      border-color: #FECACA;
+    }
+    .scroll-stat-pill.acc {
+      background: #EFF6FF;
+      color: #1D4ED8;
+      border-color: #BFDBFE;
+    }
+
+    .scroll-controls-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .scroll-action-btn {
+      padding: 5px 9px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      font-family: inherit;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--ink-soft);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .scroll-action-btn:hover {
+      background: var(--surface);
+      border-color: var(--clinic);
+      color: var(--clinic);
+    }
+    .scroll-action-btn.active {
+      background: var(--clinic-soft);
+      border-color: var(--clinic-border);
+      color: var(--clinic);
+    }
+
+    /* Scroll Question Card */
+    .scroll-q-card {
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .scroll-q-card:hover {
+      border-color: var(--clinic-border);
+      box-shadow: 0 4px 14px rgba(8, 145, 178, 0.08);
+    }
+    .scroll-q-card.answered-correct {
+      border-left: 5px solid var(--confident);
+    }
+    .scroll-q-card.answered-wrong {
+      border-left: 5px solid var(--unsure);
+    }
+
+    .scroll-q-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 11px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .scroll-item-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: var(--ink);
+      color: #FFF;
+    }
+
+    .scroll-status-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--ink-faint);
+      border: 1px solid var(--border);
+    }
+    .scroll-status-badge.correct {
+      background: #DCFCE7;
+      color: #15803D;
+      border-color: #86EFAC;
+    }
+    .scroll-status-badge.wrong {
+      background: #FEE2E2;
+      color: #B91C1C;
+      border-color: #FECACA;
+    }
+
+    .scroll-q-text {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.6;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+
+    .scroll-q-img {
+      max-height: 220px;
+      max-width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      margin: 6px 0 10px;
+    }
+
+    /* Choices in Scroll Card */
+    .scroll-choices-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 10px;
+    }
+
+    .scroll-choice-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 9px 12px;
+      border-radius: 11px;
+      border: 1.5px solid var(--choice-border);
+      background: var(--choice-bg);
+      font-family: inherit;
+      font-size: 13.5px;
+      line-height: 1.45;
+      color: var(--ink);
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      width: 100%;
+    }
+    .scroll-choice-btn:hover {
+      background: var(--choice-hover-bg);
+      border-color: var(--choice-hover-border);
+    }
+    .scroll-choice-letter {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--ink-soft);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Choice States */
+    .scroll-choice-btn.user-correct {
+      background: var(--choice-correct-bg) !important;
+      border-color: var(--choice-correct-border) !important;
+      color: var(--choice-correct-text) !important;
+    }
+    .scroll-choice-btn.user-correct .scroll-choice-letter {
+      background: var(--choice-correct-border);
+      color: #FFF;
+    }
+
+    .scroll-choice-btn.user-wrong {
+      background: var(--choice-wrong-bg) !important;
+      border-color: var(--choice-wrong-border) !important;
+      color: var(--choice-wrong-text) !important;
+    }
+    .scroll-choice-btn.user-wrong .scroll-choice-letter {
+      background: var(--choice-wrong-border);
+      color: #FFF;
+    }
+
+    .scroll-choice-btn.target-correct {
+      background: #F0FDF4 !important;
+      border-color: #22C55E !important;
+      color: #14532D !important;
+    }
+    .scroll-choice-btn.target-correct .scroll-choice-letter {
+      background: #22C55E;
+      color: #FFF;
+    }
+
+    .scroll-choice-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 5px;
+      margin-left: auto;
+      white-space: nowrap;
+    }
+
+    /* Explanation Box in Scroll Card */
+    .scroll-exp-box {
+      display: none;
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-top: 8px;
+      animation: fadeIn 0.2s ease;
+    }
+    .scroll-exp-box.show {
+      display: block;
+    }
+    .scroll-exp-box.is-wrong {
+      background: #FFFBEB;
+      border-color: #FDE68A;
+    }
+
+    .scroll-exp-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #166534;
+      margin-bottom: 4px;
+    }
+    .scroll-exp-box.is-wrong .scroll-exp-title {
+      color: #B45309;
+    }
+
+    .scroll-exp-content {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--ink);
+      white-space: pre-wrap;
+    }
+
+    .scroll-exp-note {
+      font-size: 11.5px;
+      color: var(--ink-soft);
+      margin-top: 5px;
+      border-top: 1px dashed rgba(0, 0, 0, 0.1);
+      padding-top: 4px;
+    }
+
+    .scroll-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 6px;
+    }
+    .scroll-toggle-exp-btn {
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--clinic);
+      cursor: pointer;
+      padding: 3px 5px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .scroll-toggle-exp-btn:hover {
+      background: var(--clinic-soft);
     }
 
     /* ══ COMPACT & COLLAPSIBLE EXAM NAVIGATOR PALETTE ══ */
@@ -1679,14 +2013,17 @@
     </div>
 
     
-    <!-- Quiz Mode Switch Row -->
+    <!-- Quiz Mode Switch Row (3 Modes) -->
     <div style="display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
       <div class="mode-switch-segmented">
-        <button class="mode-seg-btn active" id="btnModePractice" onclick="setAppQuizMode('practice')">
-          📖 โหมดฝึกฝน (ตรวจทีละข้อ)
+        <button class="mode-seg-btn active" id="btnModePractice" onclick="setAppQuizMode('practice')" title="ฝึกฝนทีละข้อ ตรวจคำตอบทันที">
+          📖 ฝึกทีละข้อ (Card)
         </button>
-        <button class="mode-seg-btn exam" id="btnModeExam" onclick="setAppQuizMode('exam')">
-          ⏱️ โหมดสอบจริง (ส่งรวมท้ายชุด)
+        <button class="mode-seg-btn scroll" id="btnModeScroll" onclick="setAppQuizMode('scroll')" title="ฝึกฝนและอ่านข้อสอบแบบเลื่อนยาวต่อเนื่อง">
+          📜 เลื่อนอ่าน (Scroll Down)
+        </button>
+        <button class="mode-seg-btn exam" id="btnModeExam" onclick="setAppQuizMode('exam')" title="โหมดจำลองสอบจริง จับเวลาและส่งรวมท้ายชุด">
+          ⏱️ สอบจริง (Exam)
         </button>
       </div>
     </div>
@@ -1834,6 +2171,9 @@
       </div>
       
       <div class="topbar-right">
+        <button class="icon-btn" id="btnTogglePracticeViewStyle" onclick="togglePracticeViewStyle()" title="สลับมุมมอง: ทีละข้อ (Card) / เลื่อนยาว (Scroll Down)">
+          <span id="practiceViewStyleIcon" style="font-size:13px;">📜</span>
+        </button>
         <button class="icon-btn" id="btnShufflePractice" onclick="shuffleCurrentQuizDeck()" title="🔀 สลับลำดับข้อสอบ (Shuffle)">
           <span style="font-size:13px;">🔀</span>
         </button>
@@ -1849,8 +2189,8 @@
       </div>
     </div>
 
-    <!-- QUIZ VIEWPORT -->
-    <div class="quiz-viewport">
+    <!-- QUIZ VIEWPORT (CARD-BY-CARD) -->
+    <div class="quiz-viewport" id="cardPracticeViewport">
       <div class="subtopic-selector-row" id="quizSubtopicRow">
         <div class="subtopic-select-wrap">
           <select class="subtopic-dropdown" id="quizSubtopicSelect" onchange="onQuizSubtopicChange()">
@@ -1937,6 +2277,50 @@
         <span class="kbd-chip"><kbd>1-5</kbd> เลือกตัวเลือก</span>
         <span class="kbd-chip"><kbd>Enter/Space</kbd> ตรวจคำตอบ/ข้อถัดไป</span>
         <span class="kbd-chip"><kbd>←</kbd> <kbd>→</kbd> เลื่อนข้อ</span>
+      </div>
+    </div>
+
+    <!-- ══ SCROLL-DOWN PRACTICE VIEWPORT ══ -->
+    <div class="scroll-practice-viewport" id="scrollPracticeViewport" style="display:none;">
+      <!-- Sticky Stats & Control Header -->
+      <div class="scroll-practice-controls">
+        <div class="scroll-controls-top">
+          <div class="scroll-stats-pills">
+            <span class="scroll-stat-pill" id="scrollStatAnsweredPill">📝 ทำแล้ว <b id="scrollStatAnswered">0</b>/<span id="scrollStatTotal">0</span> ข้อ</span>
+            <span class="scroll-stat-pill correct">✅ ถูก <b id="scrollStatCorrect">0</b></span>
+            <span class="scroll-stat-pill wrong">❌ ผิด <b id="scrollStatWrong">0</b></span>
+            <span class="scroll-stat-pill acc">🎯 แม่นยำ <b id="scrollStatAccuracy">0%</b></span>
+          </div>
+
+          <div class="scroll-controls-actions">
+            <button class="scroll-action-btn" id="btnScrollToggleAllExp" onclick="toggleAllScrollExp()" title="แสดงหรือซ่อนคำอธิบายเฉลยทุกข้อ">
+              <span>👁️ แสดงเฉลยทั้งหมด</span>
+            </button>
+            <button class="scroll-action-btn" onclick="resetScrollAnswers()" title="ล้างคำตอบที่ตอบไปเพื่อเริ่มทำใหม่">
+              <span>🔄 ล้างคำตอบ</span>
+            </button>
+            <button class="scroll-action-btn" onclick="togglePracticeViewStyle()" title="สลับกลับไปทำแบบทีละข้อ (Card View)">
+              <span>🃏 โหมดทีละข้อ</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Subtopic & Search row in scroll mode -->
+        <div style="display:flex; gap:8px; align-items:center;">
+          <div style="position:relative; flex:1;">
+            <select class="subtopic-dropdown" id="scrollSubtopicSelect" onchange="onScrollSubtopicChange()" style="width:100%; padding:6px 28px 6px 10px; border-radius:8px; border:1px solid var(--border); font-size:12px; font-weight:700; color:var(--clinic); outline:none; background:var(--card);">
+              <option value="__all__">📂 ทุกหัวข้อย่อยในหมวดนี้</option>
+            </select>
+          </div>
+          <div style="position:relative; width:180px;">
+            <input type="text" id="scrollSearchInput" placeholder="🔍 ค้นหาในชุดนี้..." oninput="onScrollSearchChange()" style="width:100%; padding:6px 10px; border-radius:8px; border:1px solid var(--border); font-size:12px; outline:none; background:var(--card);">
+          </div>
+        </div>
+      </div>
+
+      <!-- Vertical Feed of Question Cards -->
+      <div id="scrollQuestionsList" style="display:flex; flex-direction:column; gap:12px;">
+        <!-- Dynamically rendered scroll cards -->
       </div>
     </div>
   </div>
@@ -2552,20 +2936,29 @@ function saveQuestionProgress(qId, selectedChoice, isCorrect, category) {
 // ─── QUIZ MODE & EXAM HISTORY ───
 const EXAM_HISTORY_KEY = 'ple_quiz_exam_history_v1';
 const LS_APP_QUIZ_MODE = 'ple_quiz_app_mode';
-let appQuizMode = localStorage.getItem(LS_APP_QUIZ_MODE) || 'practice'; // 'practice' | 'exam'
+let appQuizMode = localStorage.getItem(LS_APP_QUIZ_MODE) || 'practice'; // 'practice' | 'scroll' | 'exam'
+let practiceViewStyle = (appQuizMode === 'scroll') ? 'scroll' : 'card'; // 'card' | 'scroll'
+let scrollUserAnswers = {}; // { qIndex: { choice: cNum, isCorrect: bool } }
 let currentExamTypeFilter = 'all'; // 'all' | exact string from Column O
 let userAnswersExamMode = {}; // { qIndex: choiceNum }
 
 function setAppQuizMode(mode) {
   appQuizMode = mode;
+  practiceViewStyle = (mode === 'scroll') ? 'scroll' : 'card';
   try { localStorage.setItem(LS_APP_QUIZ_MODE, mode); } catch(e) {}
   const btnP = document.getElementById('btnModePractice');
+  const btnS = document.getElementById('btnModeScroll');
   const btnE = document.getElementById('btnModeExam');
   if (btnP) btnP.classList.toggle('active', mode === 'practice');
+  if (btnS) btnS.classList.toggle('active', mode === 'scroll');
   if (btnE) btnE.classList.toggle('active', mode === 'exam');
   const setupMode = document.getElementById('setupModeSelect');
-  if (setupMode) setupMode.value = mode;
-  showToast(mode === 'practice' ? '📖 สลับเป็นโหมดฝึกฝน (ตรวจเฉลยทีละข้อ)' : '⏱️ สลับเป็นโหมดสอบจริง (ส่งคะแนนตอนท้าย)');
+  if (setupMode) setupMode.value = (mode === 'exam') ? 'exam' : 'practice';
+
+  let msg = '📖 สลับเป็นโหมดฝึกฝนทีละข้อ (Card)';
+  if (mode === 'scroll') msg = '📜 สลับเป็นโหมดฝึกฝนเลื่อนอ่าน (Scroll Down)';
+  else if (mode === 'exam') msg = '⏱️ สลับเป็นโหมดสอบจริง (ส่งคะแนนตอนท้าย)';
+  showToast(msg);
 }
 
 function getAllUniqueExamTypes() {
@@ -3307,7 +3700,7 @@ function buildLobby() {
 }
 
 function handleDeckCardClick(catName, track) {
-  if (appQuizMode === 'practice') {
+  if (appQuizMode === 'practice' || appQuizMode === 'scroll') {
     enterQuizCategoryDirectly(catName, track);
   } else {
     openQuizSetupModal(catName, track, false);
@@ -3766,6 +4159,10 @@ function startQuizWithQuestions(qs, titleText) {
   userAnswersExamMode = {};
   selectedChoiceIndex = null;
   isAnswerSubmitted = false;
+  scrollUserAnswers = {};
+  scrollShowAllExp = false;
+  scrollFilterSubtopic = '__all__';
+  scrollSearchQuery = '';
 
   sessionResults = {
     total: activeQuizQuestions.length,
@@ -3781,7 +4178,7 @@ function startQuizWithQuestions(qs, titleText) {
   const revView = document.getElementById('examReviewView');
   if (revView) revView.style.display = 'none';
 
-  const modeBadge = appQuizMode === 'exam' ? '⏱️ โหมดสอบจริง' : '📖 โหมดฝึกฝน';
+  const modeBadge = appQuizMode === 'exam' ? '⏱️ โหมดสอบจริง' : (appQuizMode === 'scroll' ? '📜 เลื่อนอ่านโหมด' : '📖 โหมดฝึกฝน');
   document.getElementById('quizCategoryTitle').textContent = titleText;
   document.getElementById('quizCategorySub').textContent = `${modeBadge} (${activeQuizQuestions.length} ข้อ)`;
 
@@ -3789,10 +4186,16 @@ function startQuizWithQuestions(qs, titleText) {
   const toggleBar = document.getElementById('examPaletteToggleBar');
   if (toggleBar) toggleBar.classList.toggle('show', appQuizMode === 'exam');
   
-  // Shuffle button in practice mode
+  // Shuffle button in practice and scroll mode
   const shuffleBtn = document.getElementById('btnShufflePractice');
   if (shuffleBtn) {
-    shuffleBtn.style.display = (appQuizMode === 'practice') ? 'inline-flex' : 'none';
+    shuffleBtn.style.display = (appQuizMode !== 'exam') ? 'inline-flex' : 'none';
+  }
+
+  // Toggle button between card and scroll view
+  const viewToggleBtn = document.getElementById('btnTogglePracticeViewStyle');
+  if (viewToggleBtn) {
+    viewToggleBtn.style.display = (appQuizMode !== 'exam') ? 'inline-flex' : 'none';
   }
 
   // Collapse palette by default
@@ -3804,7 +4207,11 @@ function startQuizWithQuestions(qs, titleText) {
   const label = document.getElementById('examPaletteToggleLabel');
   if (label) label.textContent = 'แสดงผัง';
 
-  renderCurrentQuestion();
+  if (appQuizMode === 'scroll' || (appQuizMode === 'practice' && practiceViewStyle === 'scroll')) {
+    showScrollViewport();
+  } else {
+    showCardViewport();
+  }
 }
 
 function shuffleCurrentQuizDeck() {
@@ -3819,8 +4226,384 @@ function shuffleCurrentQuizDeck() {
   currentQuestionIndex = 0;
   selectedChoiceIndex = null;
   isAnswerSubmitted = false;
-  renderCurrentQuestion();
+  scrollUserAnswers = {};
+
+  if (practiceViewStyle === 'scroll' && appQuizMode !== 'exam') {
+    renderScrollPractice();
+    updateScrollPracticeStats();
+  } else {
+    renderCurrentQuestion();
+  }
   showToast('🔀 สลับลำดับข้อสอบสุ่มใหม่เรียบร้อยแล้ว!');
+}
+
+// ─── SCROLL DOWN PRACTICE MODE CONTROLLERS ───
+let scrollShowAllExp = false;
+let scrollFilterSubtopic = '__all__';
+let scrollSearchQuery = '';
+let activeReportQuestion = null;
+
+function populateScrollSubtopicDropdown() {
+  const subSel = document.getElementById('scrollSubtopicSelect');
+  if (!subSel) return;
+  const subs = Array.from(new Set(activeQuizQuestions.map(q => q.subtopic).filter(Boolean)));
+  let sHtml = `<option value="__all__">📂 ทุกหัวข้อย่อย (${activeQuizQuestions.length} ข้อ)</option>`;
+  subs.sort().forEach(s => {
+    const c = activeQuizQuestions.filter(q => q.subtopic === s).length;
+    sHtml += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
+  });
+  subSel.innerHTML = sHtml;
+  subSel.value = scrollFilterSubtopic || '__all__';
+}
+
+function onScrollSubtopicChange() {
+  const subSel = document.getElementById('scrollSubtopicSelect');
+  if (subSel) {
+    scrollFilterSubtopic = subSel.value;
+  }
+  renderScrollPractice();
+}
+
+function onScrollSearchChange() {
+  const searchInput = document.getElementById('scrollSearchInput');
+  if (searchInput) {
+    scrollSearchQuery = searchInput.value.toLowerCase().trim();
+  }
+  renderScrollPractice();
+}
+
+function updateScrollPracticeStats() {
+  const total = activeQuizQuestions.length;
+  const ansKeys = Object.keys(scrollUserAnswers);
+  const answered = ansKeys.length;
+  const correct = ansKeys.filter(k => scrollUserAnswers[k] && scrollUserAnswers[k].isCorrect).length;
+  const wrong = answered - correct;
+  const acc = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+
+  const elTotal = document.getElementById('scrollStatTotal');
+  const elAns = document.getElementById('scrollStatAnswered');
+  const elCorr = document.getElementById('scrollStatCorrect');
+  const elWrong = document.getElementById('scrollStatWrong');
+  const elAcc = document.getElementById('scrollStatAccuracy');
+
+  if (elTotal) elTotal.textContent = total;
+  if (elAns) elAns.textContent = answered;
+  if (elCorr) elCorr.textContent = correct;
+  if (elWrong) elWrong.textContent = wrong;
+  if (elAcc) elAcc.textContent = acc + '%';
+}
+
+function togglePracticeViewStyle() {
+  if (appQuizMode === 'exam') {
+    showToast('⏱️ โหมดสอบจริงไม่อนุญาตให้สลับมุมมองระหว่างสอบ');
+    return;
+  }
+  if (practiceViewStyle === 'scroll') {
+    showCardViewport();
+    showToast('🃏 สลับเป็นมุมมองทีละข้อ');
+  } else {
+    showScrollViewport();
+    showToast('📜 สลับเป็นมุมมองเลื่อนอ่านยาว');
+  }
+}
+
+function showScrollViewport() {
+  practiceViewStyle = 'scroll';
+  const cardVp = document.getElementById('cardPracticeViewport');
+  const scrollVp = document.getElementById('scrollPracticeViewport');
+  if (cardVp) cardVp.style.display = 'none';
+  if (scrollVp) scrollVp.style.display = 'flex';
+  const icon = document.getElementById('practiceViewStyleIcon');
+  if (icon) icon.textContent = '🃏';
+  const btn = document.getElementById('btnTogglePracticeViewStyle');
+  if (btn) btn.title = 'สลับมุมมอง: โหมดทีละข้อ (Card View)';
+
+  populateScrollSubtopicDropdown();
+  updateScrollPracticeStats();
+  renderScrollPractice();
+}
+
+function showCardViewport() {
+  practiceViewStyle = 'card';
+  const cardVp = document.getElementById('cardPracticeViewport');
+  const scrollVp = document.getElementById('scrollPracticeViewport');
+  if (cardVp) cardVp.style.display = 'flex';
+  if (scrollVp) scrollVp.style.display = 'none';
+  const icon = document.getElementById('practiceViewStyleIcon');
+  if (icon) icon.textContent = '📜';
+  const btn = document.getElementById('btnTogglePracticeViewStyle');
+  if (btn) btn.title = 'สลับมุมมอง: โหมดเลื่อนอ่านยาว (Scroll Down)';
+
+  renderCurrentQuestion();
+}
+
+function toggleAllScrollExp() {
+  scrollShowAllExp = !scrollShowAllExp;
+  const btn = document.getElementById('btnScrollToggleAllExp');
+  if (btn) {
+    btn.innerHTML = scrollShowAllExp ? '<span>🙈 ซ่อนเฉลยทั้งหมด</span>' : '<span>👁️ แสดงเฉลยทั้งหมด</span>';
+    btn.classList.toggle('active', scrollShowAllExp);
+  }
+
+  const expBoxes = document.querySelectorAll('.scroll-exp-box');
+  expBoxes.forEach(box => {
+    const qIdx = parseInt(box.getAttribute('data-qindex'), 10);
+    const isAns = (scrollUserAnswers[qIdx] != null);
+    if (scrollShowAllExp || isAns) {
+      box.classList.add('show');
+    } else {
+      box.classList.remove('show');
+    }
+  });
+
+  showToast(scrollShowAllExp ? '👁️ แสดงคำอธิบายเฉลยทุกข้อแล้ว' : '🙈 ซ่อนคำอธิบายข้อที่ยังไม่ได้ทำแล้ว');
+}
+
+function resetScrollAnswers() {
+  if (Object.keys(scrollUserAnswers).length === 0) {
+    showToast('ยังไม่มีคำตอบที่ต้องล้าง');
+    return;
+  }
+  scrollUserAnswers = {};
+  updateScrollPracticeStats();
+  renderScrollPractice();
+  showToast('🔄 ล้างคำตอบเพื่อฝึกทำใหม่เรียบร้อยแล้ว');
+}
+
+function toggleScrollCardExp(qIdx) {
+  const box = document.getElementById(`scrollExpBox_${qIdx}`);
+  if (box) {
+    box.classList.toggle('show');
+  }
+}
+
+function openReportIssueModalForQ(qIdx) {
+  if (activeQuizQuestions && activeQuizQuestions[qIdx]) {
+    activeReportQuestion = activeQuizQuestions[qIdx];
+  }
+  openReportIssueModal();
+}
+
+function renderScrollPractice() {
+  const container = document.getElementById('scrollQuestionsList');
+  if (!container) return;
+
+  if (!activeQuizQuestions || !activeQuizQuestions.length) {
+    container.innerHTML = '<div style="text-align:center; padding:40px; color:var(--ink-soft);">ไม่มีข้อสอบในชุดนี้</div>';
+    return;
+  }
+
+  const query = (scrollSearchQuery || '').toLowerCase();
+  const subtopicFilter = scrollFilterSubtopic || '__all__';
+
+  let html = '';
+  let matchCount = 0;
+
+  activeQuizQuestions.forEach((q, idx) => {
+    // Subtopic filter
+    if (subtopicFilter !== '__all__' && q.subtopic !== subtopicFilter) return;
+
+    // Search query filter (matches question text, choices, subtopic, or explanation)
+    if (query) {
+      const qText = (q.question || '').toLowerCase();
+      const sub = (q.subtopic || '').toLowerCase();
+      const exp = (q.explanation || '').toLowerCase();
+      const choicesStr = (q.choices || []).join(' ').toLowerCase();
+      if (!qText.includes(query) && !sub.includes(query) && !exp.includes(query) && !choicesStr.includes(query)) {
+        return;
+      }
+    }
+
+    matchCount++;
+    const qNum = idx + 1;
+    const ansState = scrollUserAnswers[idx];
+    const isAnswered = (ansState != null);
+    const isCorrect = isAnswered && ansState.isCorrect;
+    const selectedChoice = isAnswered ? ansState.choice : null;
+    const correctChoice = q.answer;
+
+    let cardClass = 'scroll-q-card';
+    if (isAnswered) {
+      cardClass += isCorrect ? ' answered-correct' : ' answered-wrong';
+    }
+
+    let examTagClass = 'tag-general-exam';
+    let examTagText = q.examType || 'ข้อสอบทั่วไป';
+    if (examTagText.includes('2567') || examTagText.includes('67') || examTagText.includes('จริง')) {
+      examTagClass = 'tag-real-exam';
+    } else if (examTagText.includes('จำลอง') || examTagText.includes('Mock')) {
+      examTagClass = 'tag-mock-exam';
+    }
+
+    let statusBadge = '<span class="scroll-status-badge">⚪ ยังไม่ได้ตอบ</span>';
+    if (isAnswered) {
+      if (isCorrect) {
+        statusBadge = '<span class="scroll-status-badge correct">✅ ถูกต้อง</span>';
+      } else {
+        const correctLetter = THAI_CHOICE_LETTERS[correctChoice - 1] || correctChoice;
+        statusBadge = `<span class="scroll-status-badge wrong">❌ ผิด (เฉลย: ${correctLetter})</span>`;
+      }
+    }
+
+    const refBadge = q.itemNo ? `<span style="font-size:10.5px; opacity:0.65; margin-left:4px;">(Ref: ${q.itemNo})</span>` : '';
+
+    let imgHtml = '';
+    if (q.questionImage) {
+      imgHtml = `<img class="scroll-q-img" src="${q.questionImage}" alt="รูปคำถามข้อ ${qNum}" onclick="openImgLightbox(this.src)">`;
+    }
+
+    let choicesHtml = '';
+    (q.choices || []).forEach((cText, cIdx) => {
+      if (!cText && cText !== 0) return;
+      const cNum = cIdx + 1;
+      const cleanText = cleanChoiceString(cText);
+      const letter = THAI_CHOICE_LETTERS[cIdx] || (cNum + '.');
+
+      let btnClass = 'scroll-choice-btn';
+      let badgeHtml = '';
+
+      if (isAnswered) {
+        if (cNum === correctChoice) {
+          btnClass += (selectedChoice === cNum) ? ' user-correct' : ' target-correct';
+          badgeHtml = '<span class="scroll-choice-badge" style="background:#DCFCE7; color:#15803D;">✅ เฉลย</span>';
+        } else if (cNum === selectedChoice && !isCorrect) {
+          btnClass += ' user-wrong';
+          badgeHtml = '<span class="scroll-choice-badge" style="background:#FEE2E2; color:#B91C1C;">❌ คุณเลือก</span>';
+        }
+      }
+
+      choicesHtml += `
+        <button class="${btnClass}" onclick="onScrollChoiceClick(${idx}, ${cNum})" id="scrollChoice_${idx}_${cNum}">
+          <div class="scroll-choice-letter">${letter}</div>
+          <div style="flex:1;">${formatPlainTextToHtml(cleanText)}</div>
+          ${badgeHtml}
+        </button>
+      `;
+    });
+
+    const showExp = scrollShowAllExp || isAnswered;
+    const isExpWrong = isAnswered && !isCorrect;
+    const correctLetter = THAI_CHOICE_LETTERS[correctChoice - 1] || correctChoice;
+    
+    let expImgHtml = '';
+    if (q.answerImage) {
+      expImgHtml = `<div style="margin-top:8px;"><img class="scroll-q-img" src="${q.answerImage}" alt="รูปเฉลยข้อ ${qNum}" onclick="openImgLightbox(this.src)"></div>`;
+    }
+
+    let noteHtml = '';
+    if (q.note) {
+      noteHtml = `<div class="scroll-exp-note" style="margin-top:8px; padding:6px 10px; border-radius:8px; background:rgba(0,0,0,0.03); font-size:12px; color:var(--ink-soft);">📌 หมายเหตุ: ${formatPlainTextToHtml(q.note)}</div>`;
+    }
+
+    const expText = q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
+
+    html += `
+      <div class="${cardClass}" id="scrollCard_${idx}">
+        <div class="scroll-q-head">
+          <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+            <span class="scroll-item-num">ข้อ ${qNum}</span>
+            <span class="tag clinic-tag" style="font-size:11px; padding:2px 8px;">${q.subtopic || q.category || 'Clinic'}</span>
+            ${refBadge}
+            <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:6px;">
+            ${statusBadge}
+            <button class="btn-report-card" onclick="openReportIssueModalForQ(${idx})" title="แจ้งปัญหาข้อนี้">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="scroll-q-text">${formatPlainTextToHtml(q.question || '')}</div>
+        ${imgHtml}
+
+        <div class="scroll-choices-list">
+          ${choicesHtml}
+        </div>
+
+        <div class="scroll-exp-box ${showExp ? 'show' : ''} ${isExpWrong ? 'is-wrong' : ''}" id="scrollExpBox_${idx}" data-qindex="${idx}">
+          <div class="scroll-exp-title">💡 คำอธิบายเฉลย (ตอบข้อ ${correctLetter}):</div>
+          <div class="scroll-exp-content">${expText}</div>
+          ${expImgHtml}
+          ${noteHtml}
+        </div>
+
+        <div style="display:flex; justify-content:flex-end; margin-top:8px;">
+          <button class="scroll-toggle-exp-btn" onclick="toggleScrollCardExp(${idx})" style="background:none; border:none; color:var(--ink-soft); font-size:11.5px; font-weight:700; cursor:pointer; padding:3px 6px; border-radius:6px;" onmouseover="this.style.color='var(--clinic)'" onmouseout="this.style.color='var(--ink-soft)'">
+            👁️ สลับการแสดงเฉลย
+          </button>
+        </div>
+      </div>
+    `;
+  });
+
+  if (matchCount === 0) {
+    container.innerHTML = '<div style="text-align:center; padding:40px; color:var(--ink-soft); font-size:13.5px;">🔍 ไม่พบข้อสอบที่ตรงกับเงื่อนไขการค้นหา/หัวข้อย่อย</div>';
+  } else {
+    container.innerHTML = html;
+  }
+}
+
+function onScrollChoiceClick(qIdx, choiceNum) {
+  const q = activeQuizQuestions[qIdx];
+  if (!q) return;
+
+  const isCorrect = (choiceNum === q.answer);
+  scrollUserAnswers[qIdx] = { choice: choiceNum, isCorrect: isCorrect };
+
+  saveQuestionProgress(q.id, choiceNum, isCorrect, q.category);
+  updateScrollPracticeStats();
+  updateSingleScrollCardDOM(qIdx);
+}
+
+function updateSingleScrollCardDOM(qIdx) {
+  const card = document.getElementById(`scrollCard_${qIdx}`);
+  const q = activeQuizQuestions[qIdx];
+  if (!card || !q) return;
+
+  const ansState = scrollUserAnswers[qIdx];
+  if (!ansState) return;
+
+  const isCorrect = ansState.isCorrect;
+  const selectedChoice = ansState.choice;
+  const correctChoice = q.answer;
+
+  card.classList.remove('answered-correct', 'answered-wrong');
+  card.classList.add(isCorrect ? 'answered-correct' : 'answered-wrong');
+
+  const headRight = card.querySelector('.scroll-q-head > div:last-child');
+  if (headRight) {
+    const correctLetter = THAI_CHOICE_LETTERS[correctChoice - 1] || correctChoice;
+    const badge = headRight.querySelector('.scroll-status-badge');
+    if (badge) {
+      badge.className = 'scroll-status-badge ' + (isCorrect ? 'correct' : 'wrong');
+      badge.textContent = isCorrect ? '✅ ถูกต้อง' : `❌ ผิด (เฉลย: ${correctLetter})`;
+    }
+  }
+
+  (q.choices || []).forEach((cText, cIdx) => {
+    const cNum = cIdx + 1;
+    const btn = document.getElementById(`scrollChoice_${qIdx}_${cNum}`);
+    if (!btn) return;
+
+    btn.className = 'scroll-choice-btn';
+    const oldBadge = btn.querySelector('.scroll-choice-badge');
+    if (oldBadge) oldBadge.remove();
+
+    if (cNum === correctChoice) {
+      btn.className += (selectedChoice === cNum) ? ' user-correct' : ' target-correct';
+      btn.insertAdjacentHTML('beforeend', '<span class="scroll-choice-badge" style="background:#DCFCE7; color:#15803D;">✅ เฉลย</span>');
+    } else if (cNum === selectedChoice && !isCorrect) {
+      btn.className += ' user-wrong';
+      btn.insertAdjacentHTML('beforeend', '<span class="scroll-choice-badge" style="background:#FEE2E2; color:#B91C1C;">❌ คุณเลือก</span>');
+    }
+  });
+
+  const expBox = document.getElementById(`scrollExpBox_${qIdx}`);
+  if (expBox) {
+    expBox.classList.add('show');
+    expBox.classList.toggle('is-wrong', !isCorrect);
+  }
 }
 
 // ─── RENDER QUESTION ───
@@ -4610,7 +5393,7 @@ function clearBrowseSearch() {
 window.addEventListener('keydown', (e) => {
   const tag = (e.target.tagName || '').toLowerCase();
   if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
-  if (currentAppMode !== 'quiz') return;
+  if (currentAppMode !== 'quiz' || (typeof practiceViewStyle !== 'undefined' && practiceViewStyle === 'scroll' && appQuizMode !== 'exam')) return;
 
   if (['1', '2', '3', '4', '5'].includes(e.key)) {
     e.preventDefault();
@@ -4690,7 +5473,10 @@ function openReportIssueModal() {
   document.getElementById('reportIssueDetail').value = '';
   document.getElementById('reportIssueModal').classList.add('show');
 }
-function closeReportIssueModal() { document.getElementById('reportIssueModal').classList.remove('show'); }
+function closeReportIssueModal() {
+  document.getElementById('reportIssueModal').classList.remove('show');
+  activeReportQuestion = null;
+}
 
 function submitReportIssue() {
   const type = document.getElementById('reportIssueType').value;
@@ -4700,7 +5486,7 @@ function submitReportIssue() {
     return;
   }
   
-  const currentQ = (activeQuizQuestions && activeQuizQuestions[currentQuestionIndex]) ? activeQuizQuestions[currentQuestionIndex] : null;
+  const currentQ = activeReportQuestion || ((activeQuizQuestions && activeQuizQuestions[currentQuestionIndex]) ? activeQuizQuestions[currentQuestionIndex] : null);
   const qId = currentQ ? currentQ.id : 'General';
   const qText = currentQ ? (currentQ.question || '').replace(/<[^>]*>/g, '').substring(0, 150) : '';
   const cat = currentQ ? currentQ.category : (currentCategory || 'All');
