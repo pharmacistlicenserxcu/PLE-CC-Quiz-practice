@@ -1820,9 +1820,27 @@
       }
       .print-q-card {
         page-break-inside: avoid;
+        break-inside: avoid;
         margin-bottom: 12pt;
         padding-bottom: 8pt;
         border-bottom: 1px dotted #ccc;
+      }
+      .print-img-wrap {
+        text-align: center;
+        margin: 6pt 0;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      .print-q-img, .print-ans-img {
+        max-height: 220px;
+        max-width: 85%;
+        object-fit: contain;
+        margin: 4pt auto;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        page-break-inside: avoid;
+        break-inside: avoid;
       }
       .print-q-title {
         font-weight: 700;
@@ -5698,7 +5716,7 @@ function executePrintExam() {
         <div class="print-q-title">
           <span>ข้อที่ ${idx + 1}.</span> ${formatPlainTextToHtml(q.question || '')}
         </div>
-        ${q.questionImage ? `<div style="text-align:center; margin:6pt 0;"><img src="${q.questionImage}" style="max-height:160px; max-width:100%; border:1px solid #ccc;"></div>` : ''}
+        ${q.questionImage ? `<div class="print-img-wrap"><img class="print-q-img" src="${q.questionImage}" alt="รูปประกอบข้อที่ ${idx + 1}"></div>` : ''}
         <div class="print-choices">
           ${choicesHtml}
         </div>
@@ -5706,7 +5724,7 @@ function executePrintExam() {
           <div class="print-exp-box">
             <div style="font-weight:700; margin-bottom:3pt;">💡 เฉลยละเอียด: ตัวเลือกที่ ${q.answer} (${THAI_CHOICE_LETTERS[q.answer - 1] || q.answer})</div>
             <div>${q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติม'}</div>
-            ${q.answerImage ? `<div style="text-align:center; margin-top:6pt;"><img src="${q.answerImage}" style="max-height:140px; max-width:100%; border:1px solid #ccc;"></div>` : ''}
+            ${q.answerImage ? `<div class="print-img-wrap"><img class="print-ans-img" src="${q.answerImage}" alt="รูปเฉลยข้อที่ ${idx + 1}"></div>` : ''}
             ${q.note ? `<div style="font-size:8pt; color:#555; margin-top:3pt;">📌 หมายเหตุ: ${q.note}</div>` : ''}
           </div>` : ''}
       </div>`;
@@ -5782,9 +5800,32 @@ function executePrintExam() {
     </div>`;
 
   closePrintExamModal();
-  setTimeout(() => {
-    window.print();
-  }, 300);
+
+  // Wait for all images in printContainer to fully decode before triggering window.print()
+  const printImages = Array.from(container.querySelectorAll('img'));
+  if (printImages.length > 0) {
+    showToast(`🖨️ กำลังโหลดรูปภาพ (${printImages.length} รูป) เตรียมพร้อมพิมพ์ PDF...`);
+    const imgPromises = printImages.map(img => {
+      if (img.complete && img.naturalHeight !== 0) return Promise.resolve();
+      return new Promise(resolve => {
+        img.onload = resolve;
+        img.onerror = resolve;
+      });
+    });
+
+    Promise.race([
+      Promise.all(imgPromises),
+      new Promise(resolve => setTimeout(resolve, 2500))
+    ]).then(() => {
+      setTimeout(() => {
+        window.print();
+      }, 150);
+    });
+  } else {
+    setTimeout(() => {
+      window.print();
+    }, 300);
+  }
 }
 
 
