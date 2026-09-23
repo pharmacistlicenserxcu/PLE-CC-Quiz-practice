@@ -1646,19 +1646,31 @@ async function fetchLiveSheetQuestions(sheetName) {
             const c = r.c;
             if (!c) return;
             const getVal = (i) => (c[i] && c[i].v != null ? String(c[i].v).trim() : '');
-            const qText = getVal(0);
-            const qImg = getVal(1);
-            const c1 = getVal(2);
-            const c2 = getVal(3);
-            const c3 = getVal(4);
-            const c4 = getVal(5);
-            const c5 = getVal(6);
-            const ansRaw = getVal(7);
-            const explanation = getVal(8);
-            const ansImg = getVal(9);
-            const subtopic = getVal(10);
-            const track = getVal(11) || 'Clinic';
-            const note = getVal(12);
+
+            const firstCol = getVal(0);
+            if (firstCol.includes('คำถาม') || firstCol.includes('กลับหน้าแรก') || firstCol.includes('ข้อที่')) return;
+
+            let offset = 0;
+            let itemNo = qs.length + 1;
+            if (/^\d+$/.test(firstCol) || (c.length >= 15 && firstCol.length <= 4)) {
+              offset = 1;
+              itemNo = parseInt(firstCol, 10) || (qs.length + 1);
+            }
+
+            const qText = getVal(offset + 0);
+            const qImg = getVal(offset + 1);
+            const c1 = getVal(offset + 2);
+            const c2 = getVal(offset + 3);
+            const c3 = getVal(offset + 4);
+            const c4 = getVal(offset + 5);
+            const c5 = getVal(offset + 6);
+            const ansRaw = getVal(offset + 7);
+            const explanation = getVal(offset + 8);
+            const ansImg = getVal(offset + 9);
+            const subtopic = getVal(offset + 10);
+            const track = getVal(offset + 11) || 'Clinic';
+            const note = getVal(offset + 12);
+            const examType = getVal(offset + 13) || 'ข้อสอบทั่วไป';
 
             if (!qText && !c1) return;
             if (qText.includes('คำถาม') || qText.includes('กลับหน้าแรก')) return;
@@ -1676,10 +1688,11 @@ async function fetchLiveSheetQuestions(sheetName) {
 
             qs.push({
               id: sheetName + '::' + (idx + 2),
-              itemNo: qs.length + 1,
+              itemNo: itemNo,
               category: sheetName,
               subtopic: subtopic || sheetName,
               track: track,
+              examType: examType,
               question: formatPlainTextToHtml(qText),
               questionImage: (qImg.startsWith('http') || qImg.startsWith('images/')) ? qImg : '',
               choices: choices,

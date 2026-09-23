@@ -96,25 +96,34 @@ function doGet(e) {
         const lastRow = sheet.getLastRow();
         if (lastRow < 3) return; // แถว 1=Banner, แถว 2=Header
 
-        // อ่าน A3:N(lastRow) -> 14 คอลัมน์
-        const values = sheet.getRange(3, 1, lastRow - 2, 14).getValues();
+        // อ่าน A3:O(lastRow) -> 15 คอลัมน์ (รองรับคอลัมน์ A เป็น "ข้อที่")
+        const values = sheet.getRange(3, 1, lastRow - 2, 15).getValues();
 
         values.forEach((row, idx) => {
           const rowNum = idx + 3;
-          const questionText = String(row[0] || '').trim();
-          const questionImg  = String(row[1] || '').trim();
-          const c1           = String(row[2] || '').trim();
-          const c2           = String(row[3] || '').trim();
-          const c3           = String(row[4] || '').trim();
-          const c4           = String(row[5] || '').trim();
-          const c5           = String(row[6] || '').trim();
-          const answerKey    = parseInt(row[7], 10) || 1;
-          const explanation  = String(row[8] || '').trim();
-          const answerImg    = String(row[9] || '').trim();
-          const subtopic     = String(row[10] || '').trim() || sName;
-          const track        = String(row[11] || 'Clinic').trim();
-          const note         = String(row[12] || '').trim();
-          const examType     = String(row[13] || 'ข้อสอบจำลอง (Mock)').trim();
+          const firstVal = String(row[0] || '').trim();
+          
+          let offset = 0;
+          let itemNo = allQuestions.length + 1;
+          if (/^\d+$/.test(firstVal) || (row.length >= 15 && firstVal.length <= 4)) {
+            offset = 1;
+            itemNo = parseInt(firstVal, 10) || (allQuestions.length + 1);
+          }
+
+          const questionText = String(row[offset + 0] || '').trim();
+          const questionImg  = String(row[offset + 1] || '').trim();
+          const c1           = String(row[offset + 2] || '').trim();
+          const c2           = String(row[offset + 3] || '').trim();
+          const c3           = String(row[offset + 4] || '').trim();
+          const c4           = String(row[offset + 5] || '').trim();
+          const c5           = String(row[offset + 6] || '').trim();
+          const answerKey    = parseInt(row[offset + 7], 10) || 1;
+          const explanation  = String(row[offset + 8] || '').trim();
+          const answerImg    = String(row[offset + 9] || '').trim();
+          const subtopic     = String(row[offset + 10] || '').trim() || sName;
+          const track        = String(row[offset + 11] || 'Clinic').trim();
+          const note         = String(row[offset + 12] || '').trim();
+          const examType     = String(row[offset + 13] || 'ข้อสอบจำลอง (Mock)').trim();
 
           if (!questionText && !c1) return;
 
@@ -124,7 +133,7 @@ function doGet(e) {
 
           allQuestions.push({
             id: sName + '::' + rowNum,
-            itemNo: allQuestions.length + 1,
+            itemNo: itemNo,
             category: sName,
             subtopic: subtopic,
             track: track,

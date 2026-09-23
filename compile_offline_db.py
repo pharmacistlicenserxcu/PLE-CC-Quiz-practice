@@ -148,7 +148,7 @@ def main():
         print(f"  -> Reading sheet: '{s_name}'...")
         res = service.spreadsheets().values().get(
             spreadsheetId=SPREADSHEET_ID,
-            range=f"'{s_name}'!A3:N"
+            range=f"'{s_name}'!A3:O"
         ).execute()
 
         rows = res.get('values', [])
@@ -157,24 +157,33 @@ def main():
 
         for idx, row in enumerate(rows):
             row_num = idx + 3
-            # Pad row up to 14 columns
-            while len(row) < 14:
+            # Pad row up to 15 columns
+            while len(row) < 15:
                 row.append('')
 
-            q_text = str(row[0] or '').strip()
-            q_img  = str(row[1] or '').strip()
-            c1     = str(row[2] or '').strip()
-            c2     = str(row[3] or '').strip()
-            c3     = str(row[4] or '').strip()
-            c4     = str(row[5] or '').strip()
-            c5     = str(row[6] or '').strip()
-            ans_raw = str(row[7] or '').strip()
-            explanation = str(row[8] or '').strip()
-            ans_img = str(row[9] or '').strip()
-            subtopic = str(row[10] or '').strip() or s_name
-            track    = str(row[11] or 'Clinic').strip()
-            note     = str(row[12] or '').strip()
-            exam_type = str(row[13] or 'ข้อสอบทั่วไป').strip() or 'ข้อสอบทั่วไป'
+            first_col = str(row[0] or '').strip()
+            # Detect whether column A is item number
+            if first_col.isdigit() or len(rows) > 0 and len(row) >= 15 and (first_col.isdigit() or len(first_col) <= 4):
+                offset = 1
+                item_no = int(first_col) if first_col.isdigit() else len(questions) + 1
+            else:
+                offset = 0
+                item_no = len(questions) + 1
+
+            q_text = str(row[offset + 0] or '').strip()
+            q_img  = str(row[offset + 1] or '').strip()
+            c1     = str(row[offset + 2] or '').strip()
+            c2     = str(row[offset + 3] or '').strip()
+            c3     = str(row[offset + 4] or '').strip()
+            c4     = str(row[offset + 5] or '').strip()
+            c5     = str(row[offset + 6] or '').strip()
+            ans_raw = str(row[offset + 7] or '').strip()
+            explanation = str(row[offset + 8] or '').strip()
+            ans_img = str(row[offset + 9] or '').strip()
+            subtopic = str(row[offset + 10] or '').strip() or s_name
+            track    = str(row[offset + 11] or 'Clinic').strip()
+            note     = str(row[offset + 12] or '').strip()
+            exam_type = str(row[offset + 13] or 'ข้อสอบทั่วไป').strip() or 'ข้อสอบทั่วไป'
 
             if not q_text and not c1:
                 continue
@@ -191,10 +200,10 @@ def main():
                     ans_key = 1
 
             # In-cell image resolution
-            if not q_img and (s_name, row_num, 1) in images_map:
-                q_img = images_map[(s_name, row_num, 1)]
-            if not ans_img and (s_name, row_num, 9) in images_map:
-                ans_img = images_map[(s_name, row_num, 9)]
+            if not q_img and (s_name, row_num, offset + 1) in images_map:
+                q_img = images_map[(s_name, row_num, offset + 1)]
+            if not ans_img and (s_name, row_num, offset + 9) in images_map:
+                ans_img = images_map[(s_name, row_num, offset + 9)]
 
             choices = [c1, c2, c3, c4]
             if c5:
@@ -205,7 +214,7 @@ def main():
 
             q_obj = {
                 'id': f"{s_name}::{row_num}",
-                'itemNo': len(questions) + 1,
+                'itemNo': item_no,
                 'category': s_name,
                 'subtopic': subtopic,
                 'track': track or 'Clinic',
