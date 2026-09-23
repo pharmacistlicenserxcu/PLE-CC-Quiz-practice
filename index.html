@@ -436,17 +436,32 @@
       align-self: flex-start;
     }
 
-    @media (max-width: 960px) {
+    /* iPad / Tablet & below: Stack Chat Board cleanly at the bottom */
+    @media (max-width: 1120px) {
       .lobby-split-layout {
         flex-direction: column;
+        gap: 22px;
+      }
+      .lobby-main-col {
+        width: 100%;
       }
       .lobby-community-sidebar {
+        flex: 1 1 auto;
         width: 100%;
+        max-width: 100%;
         position: static;
+        margin-top: 6px;
+      }
+      .sidebar-community-card {
+        min-height: auto;
+      }
+      .sidebar-chat-feed {
+        height: 280px;
       }
     }
     body.mode-phone .lobby-split-layout {
       flex-direction: column;
+      gap: 16px;
     }
     body.mode-phone .lobby-community-sidebar {
       width: 100%;
