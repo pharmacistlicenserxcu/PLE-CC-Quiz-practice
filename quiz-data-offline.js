@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (Rich Text & Column O)
- * Total Questions: 76 across 7 Categories
- * Build Timestamp: 2026-09-23 19:15:10
+ * Total Questions: 97 across 7 Categories
+ * Build Timestamp: 2026-09-23 20:14:18
  */
 
 window.QUIZ_GOOGLE_SHEET_ID = "1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w";
@@ -16,7 +16,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "2. Cardiovascular",
-    "count": 1,
+    "count": 22,
     "track": "Clinic"
   },
   {
@@ -1594,23 +1594,485 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "id": "2. Cardiovascular::3",
       "itemNo": 1,
       "category": "2. Cardiovascular",
-      "subtopic": "Acute Coronary Syndrome (ACS)",
+      "subtopic": "Hypertension",
       "track": "Clinic",
-      "question": "ผู้ป่วยชายอายุ 65 ปี มีประวัติกล้ามเนื้อหัวใจขาดเลือดเฉียบพลัน (STEMI) ได้รับการทำ PCI แพทย์ต้องการสั่งยาต้านเกล็ดเลือดคู่ (DAPT) ขนาดยาเริ่มต้น (Loading dose) ของ Clopidogrel ที่ถูกต้องคือข้อใด?",
+      "question": "ชายไทยอายุ 65 ปี มีอาการวิงเวียนศีรษะ จึงได้รับการตรวจวัดความดันโลหิตเพื่อยืนยันผลในครั้งที่สอง มีความดันเท่ากับ 155/105 mmHg มีประวัติป่วยเป็นโรคเบาหวานชนิดที่สอง ได้ใช้อินซูลินมาแล้ว 5 ปี<br><br>ตาม JNC VII ผู้ป่วยรายนี้มีความดันอยู่ใน stage ใด",
       "questionImage": "",
       "choices": [
-        "Clopidogrel 75 mg",
-        "Clopidogrel 150 mg",
-        "Clopidogrel 300 mg",
-        "Clopidogrel 600 mg",
-        "Clopidogrel 900 mg"
+        "Prehypertension",
+        "Stage I",
+        "Stage II",
+        "Stage III",
+        "Normal"
+      ],
+      "answer": 3,
+      "explanation": "เฉลยข้อ ค ตามเกณฑ์และแนวทางการรักษาทางเภสัชกรรม",
+      "answerImage": "",
+      "note": "ข้อ 1 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ค)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::4",
+      "itemNo": 2,
+      "category": "2. Cardiovascular",
+      "subtopic": "Hypertension",
+      "track": "Clinic",
+      "question": "ชายไทยอายุ 65 ปี มีอาการวิงเวียนศีรษะ จึงได้รับการตรวจวัดความดันโลหิตเพื่อยืนยันผลในครั้งที่สอง มีความดันเท่ากับ 155/105 mmHg มีประวัติป่วยเป็นโรคเบาหวานชนิดที่สอง ได้ใช้อินซูลินมาแล้ว 5 ปี<br><br>อาหารที่ไม่ควรรับประทานในผู้ป่วยความดันสูงคือ",
+      "questionImage": "",
+      "choices": [
+        "ให้กินอาหารที่มีโซเดียมสูง",
+        "กินอาหารที่มีรสเผ็ดจัด",
+        "กินอาหารจำพวกปลา",
+        "กินอาหารจำพวกผักและผลไม้",
+        "ถูกทุกข้อ"
+      ],
+      "answer": 1,
+      "explanation": "เฉลยข้อ ก ตามเกณฑ์และแนวทางการรักษาทางเภสัชกรรม",
+      "answerImage": "",
+      "note": "ข้อ 2 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ก)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::5",
+      "itemNo": 3,
+      "category": "2. Cardiovascular",
+      "subtopic": "Hypertension",
+      "track": "Clinic",
+      "question": "ชายไทยอายุ 65 ปี มีอาการวิงเวียนศีรษะ จึงได้รับการตรวจวัดความดันโลหิตเพื่อยืนยันผลในครั้งที่สอง มีความดันเท่ากับ 155/105 mmHg มีประวัติป่วยเป็นโรคเบาหวานชนิดที่สอง ได้ใช้อินซูลินมาแล้ว 5 ปี<br><br>ยาใดที่ไม่ควรให้ในผู้ป่วยรายนี้เป็นอันดับแรกตามการรักษาของ JNC VIII",
+      "questionImage": "",
+      "choices": [
+        "Amlodipine",
+        "Propranolol",
+        "HCTZ",
+        "Valsartan",
+        "Enalapril"
+      ],
+      "answer": 2,
+      "explanation": "เฉลยข้อ ข ตามเกณฑ์และแนวทางการรักษาทางเภสัชกรรม",
+      "answerImage": "",
+      "note": "ข้อ 3 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ข)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::6",
+      "itemNo": 4,
+      "category": "2. Cardiovascular",
+      "subtopic": "Hypertension",
+      "track": "Clinic",
+      "question": "ชายไทยอายุ 65 ปี มีอาการวิงเวียนศีรษะ จึงได้รับการตรวจวัดความดันโลหิตเพื่อยืนยันผลในครั้งที่สอง มีความดันเท่ากับ 155/105 mmHg มีประวัติป่วยเป็นโรคเบาหวานชนิดที่สอง ได้ใช้อินซูลินมาแล้ว 5 ปี<br><br>ความดันเป้าหมายของผู้ป่วยรายนี้ตาม JNC VIII คือ",
+      "questionImage": "",
+      "choices": [
+        "130/80 mmHg",
+        "120/80 mmHg",
+        "140/80 mmHg",
+        "130/85 mmHg",
+        "140/90 mmHg"
+      ],
+      "answer": 5,
+      "explanation": "เฉลยข้อ จ ตามเกณฑ์และแนวทางการรักษาทางเภสัชกรรม",
+      "answerImage": "",
+      "note": "ข้อ 4 Pharma Plus Fight for Pharmacy License (เฉลยข้อ จ)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::7",
+      "itemNo": 5,
+      "category": "2. Cardiovascular",
+      "subtopic": "Hypertension",
+      "track": "Clinic",
+      "question": "ชายไทยอายุ 65 ปี มีอาการวิงเวียนศีรษะ จึงได้รับการตรวจวัดความดันโลหิตเพื่อยืนยันผลในครั้งที่สอง มีความดันเท่ากับ 155/105 mmHg มีประวัติป่วยเป็นโรคเบาหวานชนิดที่สอง ได้ใช้อินซูลินมาแล้ว 5 ปี<br><br>แพทย์พิจารณาจ่ายยา enalapril อาการข้างเคียงที่พบบ่อยของยาตัวนี้คือ",
+      "questionImage": "",
+      "choices": [
+        "อาการไอแห้งๆ",
+        "ผื่นแพ้รุนแรง",
+        "หัวใจเต้นช้าลง",
+        "ระดับน้ำตาลในเลือดสูงขึ้น",
+        "ไม่มีข้อใดถูก"
+      ],
+      "answer": 1,
+      "explanation": "เฉลยข้อ ก ตามเกณฑ์และแนวทางการรักษาทางเภสัชกรรม",
+      "answerImage": "",
+      "note": "ข้อ 5 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ก)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::8",
+      "itemNo": 6,
+      "category": "2. Cardiovascular",
+      "subtopic": "Hypertension",
+      "track": "Clinic",
+      "question": "ชายไทยอายุ 65 ปี มีอาการวิงเวียนศีรษะ จึงได้รับการตรวจวัดความดันโลหิตเพื่อยืนยันผลในครั้งที่สอง มีความดันเท่ากับ 155/105 mmHg มีประวัติป่วยเป็นโรคเบาหวานชนิดที่สอง ได้ใช้อินซูลินมาแล้ว 5 ปี<br><br>จากการรับประทานยา enalapril ควรทำการติดตามค่าใด",
+      "questionImage": "",
+      "choices": [
+        "AST/ALT",
+        "CBC",
+        "Electrolyte",
+        "Renal function",
+        "ข้อ ค และ ง ถูก"
+      ],
+      "answer": 5,
+      "explanation": "เฉลยข้อ จ ตามเกณฑ์และแนวทางการรักษาทางเภสัชกรรม",
+      "answerImage": "",
+      "note": "ข้อ 6 Pharma Plus Fight for Pharmacy License (เฉลยข้อ จ)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::9",
+      "itemNo": 7,
+      "category": "2. Cardiovascular",
+      "subtopic": "Hypertension",
+      "track": "Clinic",
+      "question": "ผู้ป่วยไปซื้อยา enalapril ที่ร้านขายยา เภสัชกรร้านสามารถจ่ายยานี้ได้หรือไม่",
+      "questionImage": "",
+      "choices": [
+        "จ่ายได้ เพราะเป็นยาอันตราย",
+        "จ่ายไม่ได้ เพราะเป็นยาควบคุมพิเศษ",
+        "จ่ายไม่ได้ เพราะเป็นวัตถุออกฤทธิ์ต่อจิตและประสาทประเภท 2",
+        "จ่ายได้ เพราะเป็นยาบรรจุเสร็จที่ไม่ใช่ยาอันตรายหรือยาควบคุมพิเศษ",
+        "จ่ายไม่ได้ เพราะเป็นยาเสพติดให้โทษประเภทที่ 3 ต้องมีใบสั่งแพทย์เท่านั้น"
+      ],
+      "answer": 1,
+      "explanation": "Enalapril จัดเป็นยาอันตราย ซึ่งตามกฎหมายร้านขายยาแผนปัจจุบัน (บ.ช.) เภสัชกรสามารถจ่ายยาอันตรายให้แก่ผู้ป่วยได้โดยต้องให้คำแนะนำที่เหมาะสม",
+      "answerImage": "",
+      "note": "ข้อ 7 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ก)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::10",
+      "itemNo": 8,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "สถานการณ์ที่ 2 ชายอายุ 53 ปี เป็นโรคเบาหวานมานาน 5 ปี ไม่สูบบุหรี่ ดื่มไวน์วันละ 3-4 แก้วทุกวัน มาพบแพทย์ที่คลินิกผู้ป่วยนอก ผลการตรวจร่างกาย BP 138/88 mmHg HR 85/min RR 18/min และผลทางห้องปฏิบัติการอื่น ๆ ดังนี้<br>Total cholesterol (&lt;240) 243 mg/dL<br>Triglyceride (&lt;200) 200 mg/dL<br>HDL-C (&gt;40) 33 mg/dL<br>FBS (&lt;126) 135 mg%<br>HbA1c (&lt;7) 7.0%<br>จากการซักประวัติเพิ่มพบว่าบิดาเสียชีวิตด้วยโรค myocardial infarction เมื่ออายุ 53 ปี พี่ชายเสียชีวิตด้วยโรคเดียวกันนี้เมื่ออายุ 44 ปี ยาที่กินอยู่คือ glibenclamide 10 mg BID<br><br>ผู้ป่วยมีค่า LDL-C เท่าไร",
+      "questionImage": "",
+      "choices": [
+        "130 mg/dl",
+        "140 mg/dl",
+        "150 mg/dl",
+        "160 mg/dl",
+        "170 mg/dl"
+      ],
+      "answer": 5,
+      "explanation": "คำนวณค่า LDL จากสูตร Friedewald formula: LDL = Total Cholesterol - HDL - (Triglyceride / 5) = 243 - 33 - (200 / 5) = 210 - 40 = 170 mg/dL",
+      "answerImage": "",
+      "note": "ข้อ 8 Pharma Plus Fight for Pharmacy License (เฉลยข้อ จ)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::11",
+      "itemNo": 9,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "สถานการณ์ที่ 2 ชายอายุ 53 ปี เป็นโรคเบาหวานมานาน 5 ปี ไม่สูบบุหรี่ ดื่มไวน์วันละ 3-4 แก้วทุกวัน มาพบแพทย์ที่คลินิกผู้ป่วยนอก ผลการตรวจร่างกาย BP 138/88 mmHg HR 85/min RR 18/min และผลทางห้องปฏิบัติการอื่น ๆ ดังนี้<br>Total cholesterol (&lt;240) 243 mg/dL<br>Triglyceride (&lt;200) 200 mg/dL<br>HDL-C (&gt;40) 33 mg/dL<br>FBS (&lt;126) 135 mg%<br>HbA1c (&lt;7) 7.0%<br>จากการซักประวัติเพิ่มพบว่าบิดาเสียชีวิตด้วยโรค myocardial infarction เมื่ออายุ 53 ปี พี่ชายเสียชีวิตด้วยโรคเดียวกันนี้เมื่ออายุ 44 ปี ยาที่กินอยู่คือ glibenclamide 10 mg BID<br><br>ข้อใดไม่ใช่ major risk factor ต่อการเกิด coronary heart disease",
+      "questionImage": "",
+      "choices": [
+        "บิดาเสียชีวิตด้วย myocardial infarction เมื่ออายุ 53 ปี",
+        "พี่ชายเสียชีวิตด้วย myocardial infarction เมื่ออายุ 44 ปี",
+        "ดื่มไวน์ 2 แก้วทุกวัน",
+        "มีระดับ HDL-C 33 mg/dl",
+        "ผู้ป่วยเป็นชายอายุ 53 ปี"
+      ],
+      "answer": 3,
+      "explanation": "ปัจจัยเสี่ยงหลัก (major risk factor) ของ CHD ได้แก่ อายุ (ชาย &gt; 45 ปี, หญิง &gt; 55 ปี), ประวัติครอบครัวที่เป็นโรคหัวใจขาดเลือดก่อนวัยอันควร (ชาย &lt; 55, หญิง &lt; 65), HDL ต่ำ (&lt; 40), สูบบุหรี่, ความดันโลหิตสูง การดื่มไวน์ 2 แก้วไม่ใช่ major risk factor",
+      "answerImage": "",
+      "note": "ข้อ 9 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ค)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::12",
+      "itemNo": 10,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "สถานการณ์ที่ 2 ชายอายุ 53 ปี เป็นโรคเบาหวานมานาน 5 ปี ไม่สูบบุหรี่ ดื่มไวน์วันละ 3-4 แก้วทุกวัน มาพบแพทย์ที่คลินิกผู้ป่วยนอก ผลการตรวจร่างกาย BP 138/88 mmHg HR 85/min RR 18/min และผลทางห้องปฏิบัติการอื่น ๆ ดังนี้<br>Total cholesterol (&lt;240) 243 mg/dL<br>Triglyceride (&lt;200) 200 mg/dL<br>HDL-C (&gt;40) 33 mg/dL<br>FBS (&lt;126) 135 mg%<br>HbA1c (&lt;7) 7.0%<br>จากการซักประวัติเพิ่มพบว่าบิดาเสียชีวิตด้วยโรค myocardial infarction เมื่ออายุ 53 ปี พี่ชายเสียชีวิตด้วยโรคเดียวกันนี้เมื่ออายุ 44 ปี ยาที่กินอยู่คือ glibenclamide 10 mg BID<br><br>เป้าหมายแรกในการรักษาภาวะ Hyperlipidemia ของผู้ป่วย",
+      "questionImage": "",
+      "choices": [
+        "ลดระดับ Total cholesterol",
+        "เพิ่มระดับ HDL-C",
+        "ลดระดับ Non-HDL-C",
+        "ลดระดับ Triglyceride",
+        "ลดระดับ LDL-C"
+      ],
+      "answer": 5,
+      "explanation": "เป้าหมายหลัก (primary target) ของการรักษาภาวะไขมันในเลือดสูงเพื่อลดโรคหัวใจและหลอดเลือดคือการลดระดับ LDL-C",
+      "answerImage": "",
+      "note": "ข้อ 10 Pharma Plus Fight for Pharmacy License (เฉลยข้อ จ)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::13",
+      "itemNo": 11,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "สถานการณ์ที่ 2 ชายอายุ 53 ปี เป็นโรคเบาหวานมานาน 5 ปี ไม่สูบบุหรี่ ดื่มไวน์วันละ 3-4 แก้วทุกวัน มาพบแพทย์ที่คลินิกผู้ป่วยนอก ผลการตรวจร่างกาย BP 138/88 mmHg HR 85/min RR 18/min และผลทางห้องปฏิบัติการอื่น ๆ ดังนี้<br>Total cholesterol (&lt;240) 243 mg/dL<br>Triglyceride (&lt;200) 200 mg/dL<br>HDL-C (&gt;40) 33 mg/dL<br>FBS (&lt;126) 135 mg%<br>HbA1c (&lt;7) 7.0%<br>จากการซักประวัติเพิ่มพบว่าบิดาเสียชีวิตด้วยโรค myocardial infarction เมื่ออายุ 53 ปี พี่ชายเสียชีวิตด้วยโรคเดียวกันนี้เมื่ออายุ 44 ปี ยาที่กินอยู่คือ glibenclamide 10 mg BID<br><br>การรักษาผู้ป่วยรายนี้จะต้องลดระดับ LDL - C ให้ได้เท่าไร เพื่อป้องกัน atherosclerosis",
+      "questionImage": "",
+      "choices": [
+        "&lt; 100 mg/dl",
+        "&lt; 130 mg/dl",
+        "&lt; 160 mg/dl",
+        "&lt; 190 mg/dl",
+        "&lt; 200 mg/dl"
+      ],
+      "answer": 1,
+      "explanation": "ผู้ป่วยรายนี้เป็นเบาหวาน (ซึ่งจัดเป็น high risk ในการเกิดโรคหัวใจและหลอดเลือด) เป้าหมายการลดระดับ LDL-C คือ &lt; 100 mg/dL",
+      "answerImage": "",
+      "note": "ข้อ 11 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ก)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::14",
+      "itemNo": 12,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "ยาที่คนไข้ควรได้รับเป็นอันดับแรกเพื่อให้ได้ผลตามเป้าหมายตามข้อข้างต้น",
+      "questionImage": "",
+      "choices": [
+        "ยากลุ่ม statin",
+        "ยากลุ่ม bile acid sequestrants",
+        "ยากลุ่ม nicotinic acid",
+        "ยากลุ่ม fibric acid",
+        "ยากลุ่ม plant sterol"
+      ],
+      "answer": 1,
+      "explanation": "ยากลุ่ม statin เป็นยาเลือกอันดับแรก (first-line therapy) ในการลดระดับ LDL-C และลดความเสี่ยงโรคหัวใจและหลอดเลือด",
+      "answerImage": "",
+      "note": "ข้อ 12 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ก)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::15",
+      "itemNo": 13,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "ยาในกลุ่ม statin สามารถลดระดับ LDL-C ด้วยกลไกใด",
+      "questionImage": "",
+      "choices": [
+        "ลดการสร้าง LDL-C receptor ที่ตับ",
+        "ลดการสร้าง cholesterol และเพิ่มจำนวน LDL-C receptor",
+        "ลด enterohepatic recycling ของ cholesterol",
+        "ลดการสร้าง VLDL",
+        "ลดการสร้าง HDL"
+      ],
+      "answer": 2,
+      "explanation": "Statin ยับยั้งเอนไซม์ HMG-CoA reductase ทำให้ลดการสังเคราะห์คอเลสเตอรอลในตับ ส่งผลให้เซลล์ตับเพิ่มการสร้าง LDL receptor เพื่อดึง LDL-C จากกระแสเลือดเข้าสู่เซลล์มากขึ้น",
+      "answerImage": "",
+      "note": "ข้อ 13 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ข)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::16",
+      "itemNo": 14,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "ในการเสนอเกณฑ์การประเมินการใช้ยากลุ่ม statin เภสัชกรควรใช้หลักฐานทางวิชาการ งานวิจัยประเภทใดที่มีความน่าเชื่อถือมากที่สุด",
+      "questionImage": "",
+      "choices": [
+        "Cohort study, Case controlled study",
+        "Case report, Cross-sectional study",
+        "Case controlled study, Cross-sectional study",
+        "Meta-analysis, Randomized controlled study",
+        "Cross-sectional study, Randomized controlled study"
       ],
       "answer": 4,
-      "explanation": "ในผู้ป่วย STEMI ที่ได้รับการรักษาด้วยการขยายหลอดเลือดหัวใจ (Primary PCI) แนะนำ Loading dose ของ Clopidogrel ที่ 600 mg เพื่อให้เกิด platelet inhibition รวดเร็วที่สุด (ถ้าได้ Fibrinolysis ให้ 300 mg)",
+      "explanation": "Meta-analysis และ Randomized controlled study (RCT) จัดอยู่ในระดับความน่าเชื่อถือสูงสุด (Level of evidence ระดับต้นๆ) ตามลำดับความน่าเชื่อถือของหลักฐานทางการแพทย์",
       "answerImage": "",
-      "note": "ESC/ACC STEMI Guidelines",
-      "examType": "ข้อสอบจริง",
-      "examYear": "2567"
+      "note": "ข้อ 14 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ง)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::17",
+      "itemNo": 15,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "จากรูปสูตรโครงสร้างข้อใดถูกต้อง",
+      "questionImage": "",
+      "choices": [
+        "Cholestyramine ลดการดูดซึมยา simvastatin เพราะ simvastatin มี lactone ring ในโครงสร้าง",
+        "Cholestyramine ลดการดูดซึมยา pravastatin เพราะ pravastatin มี carboxylic acid ในโครงสร้าง",
+        "Simvastatin ลดการดูดซึมยา cholestyramine",
+        "Cholestyramine ไม่มีผลต่อการดูดซึมยา simvastatin และ pravastatin",
+        "Cholestyramine เพิ่มการดูดซึมยา simvastatin และ pravastatin"
+      ],
+      "answer": 2,
+      "explanation": "Cholestyramine เป็น resin ที่ประจุบวก สามารถจับกับยาที่มีประจุลบหรือโครงสร้างกรดได้ดี แต่ในที่นี้พิจารณาจากโครงสร้าง Simvastatin มีลักษณะเป็น pro-drug ชนิด lactone ring ส่วน Pravastatin มีหมู่ carboxylic acid",
+      "answerImage": "",
+      "note": "ข้อ 15 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ข)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::18",
+      "itemNo": 16,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "โครงสร้างที่แสดงข้างต้นสัมพันธ์กับการออกฤทธิ์ของยาอย่างไร",
+      "questionImage": "",
+      "choices": [
+        "Pravastatin เป็น pro-drug",
+        "Simvastatin และ Pravastatin เป็น pro-drug",
+        "Pravastatin มีโครงสร้างที่ออกฤทธิ์ในร่างกาย 2 โครงสร้าง คือ โครงสร้างที่เกิดการเชื่อมเป็นวง lactone ring และรูปที่เป็น carboxylic acid",
+        "Simvastatin มีโครงสร้างที่ออกฤทธิ์คือ โครงสร้างที่ lactone ring เปิด",
+        "Simvastatin และ Pravastatin ไม่เป็น pro-drug"
+      ],
+      "answer": 4,
+      "explanation": "Simvastatin เป็น lactone prodrug ซึ่งต้องถูกเปลี่ยนรูปในร่างกายโดยการเปิดวง lactone ให้เป็นรูป hydroxy acid ที่ออกฤทธิ์ ส่วน Pravastatin ออกฤทธิ์ได้ทันที (active form)",
+      "answerImage": "",
+      "note": "ข้อ 16 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ง)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::19",
+      "itemNo": 17,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "สถานการณ์ที่ 3 นายสมยศอายุ 57 ปี มีประวัติ stable angina เมื่อ 2 ปีก่อน แพทย์ให้ยาตัวหนึ่ง ครั้งนี้มาด้วยอาการเจ็บแน่นหน้าอก ผู้ป่วยได้รับการวินิจฉัยว่าเป็น acute myocardial infarction รายการยาที่ได้รับมีดังนี้<br>Atenolol 50 mg PO OD, Ramipril 10 mg PO OD<br>Aspirin (ASA) 81 mg PO OD, Clopidogrel 75 mg PO OD<br>Isosorbide dinitrate (ISDN) SL 5 mg prn เจ็บอก<br>วันนี้ผู้ป่วยมาพบแพทย์ตามนัดและออกกำลังกายมาแล้ว 6 เดือน มีผลทางห้องปฏิบัติการดังนี้<br>TC 250 mg/dl, TG 245 mg/dl<br><br>ข้อแนะนำต่อไปนี้เหมาะสมที่สุดสำหรับผู้ป่วยรายนี้",
+      "questionImage": "",
+      "choices": [
+        "เริ่มการรักษาโดยใช้ atorvastatin 40 mg ทุกเย็น และ follow up",
+        "ผู้ป่วยมีปัจจัยเสี่ยงเพียง 1 ปัจจัย ดังนั้นควรใช้การควบคุมอาหารรักษาต่อไป",
+        "เริ่มการรักษาโดยใช้ niacin 1 gm BID และ follow up ในอีก 6 เดือน",
+        "เริ่มการรักษาโดยใช้ cholestyramine 4 gm BID",
+        "เริ่มการรักษาโดยใช้ gemfibrozil 600 mg BID"
+      ],
+      "answer": 1,
+      "explanation": "เฉลยข้อ ก ตามแนวทางเวชปฏิบัติ",
+      "answerImage": "",
+      "note": "ข้อ 17 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ก)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::20",
+      "itemNo": 18,
+      "category": "2. Cardiovascular",
+      "subtopic": "Dyslipidemia",
+      "track": "Clinic",
+      "question": "สถานการณ์ที่ 3 นายสมยศอายุ 57 ปี มีประวัติ stable angina เมื่อ 2 ปีก่อน แพทย์ให้ยาตัวหนึ่ง ครั้งนี้มาด้วยอาการเจ็บแน่นหน้าอก ผู้ป่วยได้รับการวินิจฉัยว่าเป็น acute myocardial infarction รายการยาที่ได้รับมีดังนี้...<br><br>ความเสี่ยงของการเกิดภาวะกล้ามเนื้ออักเสบและกล้ามเนื้อสลาย (rhabdomyolysis) จากการใช้ยากลุ่ม statin จะเพิ่มสูงขึ้นเมื่อใช้ร่วมกับยาชนิดใดมากที่สุด",
+      "questionImage": "",
+      "choices": [
+        "Gemfibrozil",
+        "Niacin",
+        "Cholestyramine",
+        "Propranolol",
+        "Enalapril"
+      ],
+      "answer": 1,
+      "explanation": "เฉลยข้อ ก ตามแนวทางเวชปฏิบัติ",
+      "answerImage": "",
+      "note": "ข้อ 18 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ก)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::21",
+      "itemNo": 19,
+      "category": "2. Cardiovascular",
+      "subtopic": "Hypertension",
+      "track": "Clinic",
+      "question": "สถานการณ์ที่ 3 นายสมยศอายุ 57 ปี มีประวัติ stable angina เมื่อ 2 ปีก่อน แพทย์ให้ยาตัวหนึ่ง ครั้งนี้มาด้วยอาการเจ็บแน่นหน้าอก ผู้ป่วยได้รับการวินิจฉัยว่าเป็น acute myocardial infarction รายการยาที่ได้รับมีดังนี้...<br><br>ข้อใดถูกต้องเกี่ยวกับอาการไม่พึงประสงค์",
+      "questionImage": "",
+      "choices": [
+        "Atenolol อาการหอบ",
+        "Ramipril ภาวะ hypokalemia",
+        "Cholestyramine กล้ามเนื้ออ่อนแรง",
+        "Gemfibrozil ตามัว (blurred vision)",
+        "Isosorbide mononitrate ปวดศีรษะ"
+      ],
+      "answer": 5,
+      "explanation": "เฉลยข้อ จ ตามแนวทางเวชปฏิบัติ",
+      "answerImage": "",
+      "note": "ข้อ 19 Pharma Plus Fight for Pharmacy License (เฉลยข้อ จ)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::22",
+      "itemNo": 20,
+      "category": "2. Cardiovascular",
+      "subtopic": "Heart Failure",
+      "track": "Clinic",
+      "question": "สถานการณ์ที่ 3 นายสมยศอายุ 57 ปี มีประวัติ stable angina เมื่อ 2 ปีก่อน แพทย์ให้ยาตัวหนึ่ง ครั้งนี้มาด้วยอาการเจ็บแน่นหน้าอก ผู้ป่วยได้รับการวินิจฉัยว่าเป็น acute myocardial infarction รายการยาที่ได้รับมีดังนี้...<br><br>กลไกการออกฤทธิ์ของ atenolol",
+      "questionImage": "",
+      "choices": [
+        "เพิ่ม Heart rate ลดแรงบีบตัวของหัวใจทำให้ cardiac output เพิ่มขึ้น",
+        "ลด Heart rate ลดแรงบีบตัวของหัวใจทำให้ cardiac output เพิ่มขึ้น",
+        "ลด Heart rate ลดแรงบีบตัวของหัวใจทำให้ cardiac output ลดลง",
+        "กระตุ้นการหลั่ง Renin ที่ไต",
+        "ทำให้เกิด Negative feedback และ compensatory outflow จากระบบประสาทส่วนกลาง"
+      ],
+      "answer": 3,
+      "explanation": "เฉลยข้อ ค ตามแนวทางเวชปฏิบัติ",
+      "answerImage": "",
+      "note": "ข้อ 20 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ค)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::23",
+      "itemNo": 21,
+      "category": "2. Cardiovascular",
+      "subtopic": "ACS",
+      "track": "Clinic",
+      "question": "สถานการณ์ที่ 3 นายสมยศอายุ 57 ปี มีประวัติ stable angina เมื่อ 2 ปีก่อน แพทย์ให้ยาตัวหนึ่ง ครั้งนี้มาด้วยอาการเจ็บแน่นหน้าอก ผู้ป่วยได้รับการวินิจฉัยว่าเป็น acute myocardial infarction รายการยาที่ได้รับมีดังนี้...<br><br>ท่านจะแนะนำการใช้ Sublingual isosorbide dinitrate แก่ผู้ป่วยอย่างไร",
+      "questionImage": "",
+      "choices": [
+        "รับประทานยาแล้วดื่มน้ำตามมากๆ เวลามีอาการ",
+        "เคี้ยวยาให้ละเอียดก่อนกลืนเวลามีอาการ",
+        "เมื่อลืมรับประทานยา ให้รับประทานยาเพิ่มเป็น 2 เม็ดได้",
+        "เมื่อมีอาการอมยาไว้ใต้ลิ้นจนกว่ายาจะละลายหมดโดยพยายามไม่กลืนน้ำลาย",
+        "เมื่อมีอาการอมยาไว้ปากระหว่างเหงือกและกระพุ้งแก้มจนยาละลายหมด ไม่กลืนน้ำลาย"
+      ],
+      "answer": 4,
+      "explanation": "เฉลยข้อ ง ตามแนวทางเวชปฏิบัติ",
+      "answerImage": "",
+      "note": "ข้อ 21 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ง)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
+    },
+    {
+      "id": "2. Cardiovascular::24",
+      "itemNo": 22,
+      "category": "2. Cardiovascular",
+      "subtopic": "ACS",
+      "track": "Clinic",
+      "question": "สถานการณ์ที่ 3 นายสมยศอายุ 57 ปี มีประวัติ stable angina เมื่อ 2 ปีก่อน แพทย์ให้ยาตัวหนึ่ง ครั้งนี้มาด้วยอาการเจ็บแน่นหน้าอก ผู้ป่วยได้รับการวินิจฉัยว่าเป็น acute myocardial infarction รายการยาที่ได้รับมีดังนี้...<br><br>แพทย์สั่งให้ใช้ isosorbide mononitrate 20 mg. จะเขียนคำแนะนำในการใช้อย่างไร จึงจะเหมาะสมที่สุด",
+      "questionImage": "",
+      "choices": [
+        "รับประทานวันละ 2 ครั้ง เช้า-เย็น",
+        "รับประทานวันละ 2 ครั้ง เช้า-บ่าย (3 โมง)",
+        "รับประทานวันละ 2 ครั้ง เช้า-ก่อนนอน",
+        "อมใต้ลิ้น วันละ 2 ครั้ง เช้า-เย็น",
+        "อมใต้ลิ้น วันละ 2 ครั้ง เช้า-บ่าย (3 โมง)"
+      ],
+      "answer": 2,
+      "explanation": "เฉลยข้อ ข ตามแนวทางเวชปฏิบัติ",
+      "answerImage": "",
+      "note": "ข้อ 22 Pharma Plus Fight for Pharmacy License (เฉลยข้อ ข)",
+      "examType": "Mock",
+      "examYear": "เล่มม่วง (Pharma Plus)"
     }
   ],
   "4. Endocrine": [
