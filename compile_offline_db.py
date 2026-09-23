@@ -209,8 +209,9 @@ def main():
     offline_questions = {}
     total_q_count = 0
 
+    SYSTEM_SHEETS = {'สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template'}
     for s_name in sheet_names:
-        if s_name.startswith('Log_') or s_name.startswith('Report_') or s_name.startswith('Eval_') or s_name == 'สารบัญ':
+        if s_name in SYSTEM_SHEETS or s_name.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_')):
             continue
 
         print(f"  -> Reading sheet: '{s_name}' (with rich text gridData)...")

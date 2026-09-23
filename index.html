@@ -105,7 +105,7 @@
     /* ══ APP SHELL ══ */
     .app-shell {
       width: 100%;
-      max-width: 960px;
+      max-width: 1120px;
       background: var(--bg);
       border-radius: 28px;
       overflow: hidden;
@@ -415,25 +415,492 @@
     .deck-bar-fill.product-fill { background: var(--product); }
     .deck-bar-fill.sap-fill { background: var(--sap); }
 
-    .lobby-quick-tools { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-bottom: 18px; }
-    body.mode-phone .lobby-quick-tools { grid-template-columns: 1fr 1fr; }
-
-    .lobby-tool-btn {
-      padding: 11px; border-radius: 12px; border: 1px solid var(--border);
-      background: var(--card); font-family: inherit; font-size: 13px; font-weight: 700;
-      color: var(--ink); display: flex; align-items: center; justify-content: center; gap: 6px;
-      cursor: pointer; transition: all 0.15s; box-shadow: var(--shadow-sm);
+    /* ══ LOBBY SPLIT LAYOUT ══ */
+    .lobby-split-layout {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      width: 100%;
     }
-    .lobby-tool-btn svg { stroke: var(--ink); }
-    .lobby-tool-btn:hover { border-color: var(--clinic); color: var(--clinic); transform: translateY(-1px); }
-    .lobby-tool-btn:hover svg { stroke: var(--clinic); }
-    .lobby-tool-btn.primary { background: #0891B2; color: #fff; border-color: #0891B2; }
-    .lobby-tool-btn.primary svg { stroke: #fff; }
-    .lobby-tool-btn.primary:hover { background: #0E7490; }
-    
-    .lobby-tool-btn.smart-btn { background: #2563EB; color: #fff; border-color: #2563EB; }
-    .lobby-tool-btn.smart-btn svg { stroke: #fff; }
-    .lobby-tool-btn.smart-btn:hover { background: #1D4ED8; }
+    .lobby-main-col {
+      flex: 1 1 65%;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .lobby-community-sidebar {
+      flex: 0 0 330px;
+      width: 330px;
+      position: sticky;
+      top: 14px;
+      align-self: flex-start;
+    }
+
+    @media (max-width: 960px) {
+      .lobby-split-layout {
+        flex-direction: column;
+      }
+      .lobby-community-sidebar {
+        width: 100%;
+        position: static;
+      }
+    }
+    body.mode-phone .lobby-split-layout {
+      flex-direction: column;
+    }
+    body.mode-phone .lobby-community-sidebar {
+      width: 100%;
+      position: static;
+    }
+
+    /* ══ MINIMAL TOOLS PANEL ══ */
+    .minimal-tools-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin-bottom: 20px;
+    }
+    .tools-primary-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .tools-btn-main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 14px;
+      border-radius: 13px;
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.2, 0.9, 0.3, 1);
+      box-shadow: var(--shadow-sm);
+      border: 1.5px solid transparent;
+    }
+    .tools-btn-main.primary {
+      background: var(--clinic);
+      color: #FFFFFF;
+      border-color: var(--clinic);
+    }
+    .tools-btn-main.primary:hover {
+      background: #0E7490;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 16px rgba(8, 145, 178, 0.25);
+    }
+    .tools-btn-main.accent {
+      background: #1D4ED8;
+      color: #FFFFFF;
+      border-color: #1D4ED8;
+    }
+    .tools-btn-main.accent:hover {
+      background: #1E40AF;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 16px rgba(29, 78, 216, 0.25);
+    }
+
+    .tools-secondary-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+    @media (max-width: 640px) {
+      .tools-secondary-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    body.mode-phone .tools-secondary-row {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .tools-btn-sub {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 9px 8px;
+      border-radius: 11px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink-soft);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    }
+    .tools-btn-sub svg {
+      stroke: var(--ink-soft);
+      transition: stroke 0.15s ease;
+    }
+    .tools-btn-sub:hover {
+      background: var(--surface);
+      border-color: var(--clinic);
+      color: var(--clinic);
+      transform: translateY(-1px);
+    }
+    .tools-btn-sub:hover svg {
+      stroke: var(--clinic);
+    }
+
+    /* ══ SIDEBAR COMMUNITY CARD ══ */
+    .sidebar-community-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      min-height: 460px;
+    }
+    .sidebar-comm-head {
+      padding: 13px 15px 10px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #FFFFFF 0%, #FAFAF9 100%);
+    }
+    .sidebar-comm-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 9px;
+    }
+    .sidebar-comm-title-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sidebar-comm-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      background: var(--clinic-soft);
+      border: 1px solid var(--clinic-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      color: var(--clinic);
+    }
+    .sidebar-comm-title-text h4 {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .sidebar-comm-title-text p {
+      font-size: 11px;
+      color: var(--ink-faint);
+    }
+    .sidebar-live-dot {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #16A34A;
+      background: #DCFCE7;
+      padding: 2px 7px;
+      border-radius: 12px;
+    }
+    .live-pulse {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #16A34A;
+      animation: pulseDot 1.8s infinite;
+    }
+    @keyframes pulseDot {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      70% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+
+    .sidebar-tab-pills {
+      display: flex;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 3px;
+      gap: 3px;
+    }
+    .sidebar-tab-pill {
+      flex: 1;
+      padding: 5px 8px;
+      border: none;
+      border-radius: 7px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      background: transparent;
+      color: var(--ink-soft);
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+    .sidebar-tab-pill.active {
+      background: var(--card);
+      color: var(--clinic);
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .side-panel-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar-chat-feed {
+      flex: 1;
+      height: 310px;
+      overflow-y: auto;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      background: #FCFCFB;
+    }
+    .sidebar-chat-item {
+      display: flex;
+      flex-direction: column;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 8px 10px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+      transition: all 0.15s ease;
+    }
+    .sidebar-chat-item.mine {
+      background: var(--clinic-soft);
+      border-color: var(--clinic-border);
+    }
+    .sidebar-chat-head {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 2px;
+    }
+    .sidebar-chat-sender {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .sidebar-chat-badge {
+      font-size: 9.5px;
+      padding: 1px 5px;
+      border-radius: 4px;
+      background: rgba(0,0,0,0.05);
+      color: var(--ink-soft);
+    }
+    .sidebar-chat-time {
+      font-size: 9.5px;
+      color: var(--ink-faint);
+      margin-left: auto;
+    }
+    .sidebar-chat-body {
+      font-size: 12px;
+      line-height: 1.4;
+      color: var(--ink);
+      word-break: break-word;
+    }
+    .sidebar-chat-reply-quote {
+      font-size: 10px;
+      color: var(--ink-soft);
+      background: rgba(0,0,0,0.03);
+      border-left: 2px solid var(--clinic);
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-bottom: 4px;
+    }
+    .sidebar-chat-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2px;
+    }
+    .sidebar-chat-reply-btn {
+      background: none;
+      border: none;
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--clinic);
+      cursor: pointer;
+      padding: 1px 4px;
+    }
+
+    .sidebar-chat-compose {
+      border-top: 1px solid var(--border);
+      padding: 8px 10px;
+      background: var(--card);
+    }
+    .sidebar-reply-preview {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #FEF3C7;
+      border: 1px solid #FDE68A;
+      border-radius: 6px;
+      padding: 3px 6px;
+      font-size: 10.5px;
+      color: #92400E;
+      margin-bottom: 5px;
+    }
+    .reply-cancel-x {
+      background: none;
+      border: none;
+      font-size: 13px;
+      font-weight: 700;
+      color: #92400E;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .sidebar-chat-input-box {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .sidebar-chat-input-box input {
+      flex: 1;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 6px 10px;
+      font-family: inherit;
+      font-size: 12px;
+      background: var(--bg);
+      outline: none;
+    }
+    .sidebar-chat-input-box input:focus {
+      border-color: var(--clinic);
+      background: #FFF;
+    }
+    .sidebar-chat-send-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      background: var(--clinic);
+      color: #FFF;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+    }
+    .sidebar-chat-send-btn:hover {
+      background: #0E7490;
+      transform: translateY(-1px);
+    }
+
+    /* Sidebar Leaderboard List */
+    .sidebar-rank-list {
+      padding: 10px 12px;
+      height: 320px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .sidebar-rank-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 9px;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      transition: all 0.15s ease;
+    }
+    .sidebar-rank-row.my-row {
+      background: #EFF6FF;
+      border-color: #BFDBFE;
+    }
+    .sidebar-rank-pos {
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      font-family: 'IBM Plex Mono', monospace;
+      background: var(--bg);
+      color: var(--ink-soft);
+      flex-shrink: 0;
+    }
+    .sidebar-rank-pos.p1 { background: #FEF3C7; color: #B45309; }
+    .sidebar-rank-pos.p2 { background: #E2E8F0; color: #475569; }
+    .sidebar-rank-pos.p3 { background: #FED7AA; color: #C2410C; }
+
+    .sidebar-rank-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .sidebar-rank-name {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .sidebar-rank-sub {
+      font-size: 10px;
+      color: var(--ink-faint);
+    }
+    .sidebar-rank-score {
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .sidebar-rank-score-val {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--confident);
+    }
+    .sidebar-rank-score-acc {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9.5px;
+      color: var(--ink-soft);
+    }
+
+    .sidebar-rank-footer {
+      border-top: 1px solid var(--border);
+      padding: 7px 10px;
+      background: var(--bg);
+    }
+    .sidebar-full-modal-btn {
+      width: 100%;
+      padding: 7px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      font-family: inherit;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--clinic);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+    .sidebar-full-modal-btn:hover {
+      background: var(--clinic-soft);
+      border-color: var(--clinic-border);
+    }
+
+    /* Legacy lobby-quick-tools fallback */
+    .lobby-quick-tools { display: none; }
+    .lobby-tool-btn { display: none; }
 
     /* ══ QUIZ PRACTICE VIEW ══ */
     .quiz-viewport {
@@ -1224,54 +1691,119 @@
       </div>
     </div>
 
-    <div class="lobby-greeting">
-      <h2>สวัสดี, <span id="lobbyGreetingName">ผู้ใช้งาน</span> 👋</h2>
-      <p id="lobbyGreetingTrackDesc">เลือกหมวดโรคด้านล่างเพื่อเริ่มทำข้อสอบ หรือเลือกโหมด <b>สุ่มทำข้อสอบ</b> เพื่อจำลองสถานการณ์จริง</p>
-      <div class="lobby-streak-badge" id="lobbyStreakBadge">📚 วันนี้ยังไม่ได้เริ่มทำข้อสอบ มาลุยกัน!</div>
-    </div>
+    <!-- ══ SPLIT LOBBY: Main Content (Left) + Community Sidebar (Right) ══ -->
+    <div class="lobby-split-layout">
+      <!-- Main Content Column -->
+      <div class="lobby-main-col">
+        <div class="lobby-greeting">
+          <h2>สวัสดี, <span id="lobbyGreetingName">ผู้ใช้งาน</span> 👋</h2>
+          <p id="lobbyGreetingTrackDesc">เลือกหมวดโรคด้านล่างเพื่อเริ่มทำข้อสอบ หรือเลือกโหมด <b>สุ่มทำข้อสอบ</b> เพื่อจำลองสถานการณ์จริง</p>
+          <div class="lobby-streak-badge" id="lobbyStreakBadge">📚 วันนี้ยังไม่ได้เริ่มทำข้อสอบ มาลุยกัน!</div>
+        </div>
 
-    <div class="lobby-section-head">
-      <h3 id="lobbySectionDeckTitle">เลือกหมวดโรคทำข้อสอบ</h3>
-    </div>
+        <div class="lobby-section-head">
+          <h3 id="lobbySectionDeckTitle">เลือกหมวดโรคทำข้อสอบ</h3>
+        </div>
 
-    <div class="deck-grid" id="lobbyDeckGrid">
-      <div style="grid-column:1/-1; text-align:center; color:var(--ink-faint); padding:20px;">กำลังโหลดข้อสอบ...</div>
-    </div>
+        <div class="deck-grid" id="lobbyDeckGrid">
+          <div style="grid-column:1/-1; text-align:center; color:var(--ink-faint); padding:20px;">กำลังโหลดข้อสอบ...</div>
+        </div>
 
-    <div class="lobby-section-head">
-      <h3>เครื่องมือทำข้อสอบ</h3>
-    </div>
-    <div class="lobby-quick-tools">
-      <button class="lobby-tool-btn primary" onclick="openQuizSetupModal('__all__', currentTrack)">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        ทำข้อสอบทั้งหมด
-      </button>
-      <button class="lobby-tool-btn smart-btn" onclick="openQuizSetupModal('__all__', currentTrack, true)">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
-        🎲 สุ่มข้อสอบ
-      </button>
-      <button class="lobby-tool-btn" onclick="switchAppMode('browse')">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        Browse คลัง
-      </button>
-      
-      <button class="lobby-tool-btn" onclick="openCommunityModal()" style="color:#0891b2; border-color:#a5f3fc; background:#ecfeff;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-        👥 ชุมชน & อันดับ
-      </button>
-      <button class="lobby-tool-btn" onclick="openPrintExamModal()" style="color:#4338ca; border-color:#c7d2fe; background:#eef2ff;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-        🖨️ พิมพ์ข้อสอบ (PDF)
-      </button>
+        <div class="lobby-section-head">
+          <h3>เครื่องมือทำข้อสอบ</h3>
+        </div>
+        
+        <!-- Minimal, Prioritized Bottom Tools -->
+        <div class="minimal-tools-panel">
+          <!-- Row 1: Primary Actions -->
+          <div class="tools-primary-row">
+            <button class="tools-btn-main primary" onclick="openQuizSetupModal('__all__', currentTrack)" title="ทำข้อสอบทั้งหมดในหมวดวิชานี้">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>ทำข้อสอบทั้งหมด</span>
+            </button>
+            <button class="tools-btn-main accent" onclick="openQuizSetupModal('__all__', currentTrack, true)" title="จำลองสถานการณ์สอบจริง สุ่มข้อสอบและสลับตัวเลือก">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+              <span>🎲 สุ่มข้อสอบ</span>
+            </button>
+          </div>
 
-      <button class="lobby-tool-btn" onclick="openHistoryModal()" style="color:#7C3AED; border-color:#DDD6FE; background:#F3E8FF;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        📜 ประวัติการสอบ
-      </button>
-      <button class="lobby-tool-btn" onclick="openStatsModal()" style="color:#1e40af; border-color:#bfdbfe; background:#eff6ff;">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-        📊 สถิติของฉัน
-      </button>
+          <!-- Row 2: Secondary Utilities (Unified Minimal Aesthetic) -->
+          <div class="tools-secondary-row">
+            <button class="tools-btn-sub" onclick="switchAppMode('browse')" title="ดูคลังข้อสอบทั้งหมดพร้อมเฉลย">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <span>Browse คลัง</span>
+            </button>
+            <button class="tools-btn-sub" onclick="openPrintExamModal()" title="พิมพ์ข้อสอบเป็น PDF สำหรับซ้อมกา">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              <span>พิมพ์ (PDF)</span>
+            </button>
+            <button class="tools-btn-sub" onclick="openHistoryModal()" title="ดูประวัติการทำข้อสอบที่ผ่านมา">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>ประวัติสอบ</span>
+            </button>
+            <button class="tools-btn-sub" onclick="openStatsModal()" title="ดูสถิติควมแม่นยำรายบุคคล">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              <span>สถิติของฉัน</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Live Community & Leaderboard Sidebar -->
+      <aside class="lobby-community-sidebar">
+        <div class="sidebar-community-card">
+          <div class="sidebar-comm-head">
+            <div class="sidebar-comm-title-row">
+              <div class="sidebar-comm-title-left">
+                <div class="sidebar-comm-icon">👥</div>
+                <div class="sidebar-comm-title-text">
+                  <h4>RxCU ชุมชนคนขยัน</h4>
+                  <p>ห้องสนทนา & ตารางอันดับ</p>
+                </div>
+              </div>
+              <div class="sidebar-live-dot" title="ระบบเชื่อมต่อแบบเรียลไทม์">
+                <span class="live-pulse"></span>
+                <span>Live</span>
+              </div>
+            </div>
+            <div class="sidebar-tab-pills">
+              <button class="sidebar-tab-pill active" id="btnSideTabChat" onclick="switchSidebarCommTab('chat')">💬 แชทสด</button>
+              <button class="sidebar-tab-pill" id="btnSideTabRank" onclick="switchSidebarCommTab('rank')">🏆 ตารางอันดับ</button>
+            </div>
+          </div>
+
+          <!-- Tab Panel: Live Chat -->
+          <div id="sidePanelChat" class="side-panel-content">
+            <div class="sidebar-chat-feed" id="sidebarChatFeed">
+              <div style="padding:20px 10px; text-align:center; color:var(--ink-faint); font-size:12px;">กำลังโหลดบทสนทนา...</div>
+            </div>
+            <div class="sidebar-chat-compose">
+              <div id="sidebarChatReplyQuote" class="sidebar-reply-preview" style="display:none;">
+                <span id="sidebarChatReplyTarget"></span>
+                <button onclick="cancelSidebarReply()" class="reply-cancel-x">×</button>
+              </div>
+              <div class="sidebar-chat-input-box">
+                <input type="text" id="sidebarChatInput" placeholder="พิมพ์ข้อความคุยกับเพื่อน..." maxlength="200" onkeydown="handleSidebarChatKeyDown(event)">
+                <button class="sidebar-chat-send-btn" onclick="sendSidebarChatMessage()" title="ส่งข้อความ (Enter)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Panel: Leaderboard Top 5 -->
+          <div id="sidePanelRank" class="side-panel-content" style="display:none;">
+            <div class="sidebar-rank-list" id="sidebarRankList">
+              <div style="padding:20px 10px; text-align:center; color:var(--ink-faint); font-size:12px;">กำลังโหลดตารางอันดับ...</div>
+            </div>
+            <div class="sidebar-rank-footer">
+              <button class="sidebar-full-modal-btn" onclick="openCommunityModal()">
+                <span>ดูตารางอันดับเต็ม 10 อันดับแรก ↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
 
     <div class="app-copyright-footer">
@@ -2091,6 +2623,33 @@ function getExamHistory() {
   } catch(e) { return []; }
 }
 
+// ─── GOOGLE APPS SCRIPT ASYNC POST HELPER (CORS-SAFE) ───
+function sendGasPostRequest(payload) {
+  if (!window.QUIZ_GAS_WEBAPP_URL || window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
+    return Promise.resolve({ success: false, offline: true });
+  }
+  const bodyStr = JSON.stringify(payload);
+  
+  // 1. Try navigator.sendBeacon first if available (safelisted text/plain, no preflight)
+  try {
+    if (navigator.sendBeacon) {
+      const blob = new Blob([bodyStr], { type: 'text/plain;charset=utf-8' });
+      const sent = navigator.sendBeacon(window.QUIZ_GAS_WEBAPP_URL, blob);
+      if (sent) return Promise.resolve({ success: true, via: 'sendBeacon' });
+    }
+  } catch(e) {}
+
+  // 2. Fallback to fetch with mode: 'no-cors' and text/plain (CORS safelisted, no OPTIONS preflight)
+  return fetch(window.QUIZ_GAS_WEBAPP_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: bodyStr
+  }).catch(err => {
+    console.warn('sendGasPostRequest error:', err);
+  });
+}
+
 function saveExamHistoryRecord(category, score, total, mode) {
   try {
     const hist = getExamHistory();
@@ -2109,21 +2668,15 @@ function saveExamHistoryRecord(category, score, total, mode) {
     localStorage.setItem(EXAM_HISTORY_KEY, JSON.stringify(hist));
 
     // Also send to GAS Log sheet if online
-    if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
-      fetch(window.QUIZ_GAS_WEBAPP_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          action: 'submitQuizResult',
-          user: record.user,
-          category: record.category,
-          score: record.score,
-          total: record.total,
-          percentage: record.percentage,
-          timeSpent: 0
-        })
-      }).catch(() => {});
-    }
+    sendGasPostRequest({
+      action: 'submitQuizResult',
+      user: record.user,
+      category: record.category,
+      score: record.score,
+      total: record.total,
+      percentage: record.percentage,
+      timeSpent: 0
+    });
   } catch(e) {}
 }
 
@@ -2621,16 +3174,28 @@ function doLogout() {
 }
 
 // ─── DATA LOADING ───
+function isSystemCategory(name) {
+  if (!name) return true;
+  const n = String(name).trim();
+  const sys = ['สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template'];
+  if (sys.includes(n)) return true;
+  if (/^(User_|Community_|Report_|Log_|Eval_)/i.test(n)) return true;
+  return false;
+}
+
 function loadInitialData() {
-  categories = window.QUIZ_OFFLINE_CATEGORIES || [];
+  categories = (window.QUIZ_OFFLINE_CATEGORIES || []).filter(c => !isSystemCategory(c.name));
   allQuestionsMap = window.QUIZ_OFFLINE_QUESTIONS || {};
   showLobby();
+  if (typeof loadLeaderboardData === 'function') loadLeaderboardData();
+  if (typeof loadCommunityMessagesLive === 'function') loadCommunityMessagesLive();
 }
 
 async function syncDataFromSheet() {
   showToast('⚡ กำลังซิงค์ข้อมูลล่าสุดจาก Google Sheet...');
   try {
     for (const cat of categories) {
+      if (isSystemCategory(cat.name)) continue;
       const live = await fetchLiveSheetQuestions(cat.name);
       if (live && live.length > 0) {
         allQuestionsMap[cat.name] = live;
@@ -2675,10 +3240,11 @@ function switchTrack(track) {
 }
 
 function getVisibleCategories() {
-  if (currentTrack === 'clinic') return categories.filter(c => (c.track || '').toLowerCase().includes('clinic'));
-  if (currentTrack === 'product') return categories.filter(c => (c.track || '').toLowerCase().includes('prod'));
-  if (currentTrack === 'sap') return categories.filter(c => (c.track || '').toLowerCase().includes('sap'));
-  return categories;
+  let list = categories.filter(c => !isSystemCategory(c.name));
+  if (currentTrack === 'clinic') return list.filter(c => (c.track || '').toLowerCase().includes('clinic'));
+  if (currentTrack === 'product') return list.filter(c => (c.track || '').toLowerCase().includes('prod'));
+  if (currentTrack === 'sap') return list.filter(c => (c.track || '').toLowerCase().includes('sap'));
+  return list;
 }
 
 // ─── LOBBY VIEW ───
@@ -2699,6 +3265,7 @@ function buildLobby() {
 
   if (!visCats.length) {
     grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; color:var(--ink-faint); padding:24px;">ยังไม่มีข้อมูลในสายวิชานี้</div>';
+    if (typeof renderSidebarCommunity === 'function') renderSidebarCommunity();
     return;
   }
 
@@ -2734,6 +3301,9 @@ function buildLobby() {
       </div>`;
   });
   grid.innerHTML = html;
+  if (typeof renderSidebarCommunity === 'function') {
+    renderSidebarCommunity();
+  }
 }
 
 function handleDeckCardClick(catName, track) {
@@ -4135,21 +4705,15 @@ function submitReportIssue() {
   const qText = currentQ ? (currentQ.question || '').replace(/<[^>]*>/g, '').substring(0, 150) : '';
   const cat = currentQ ? currentQ.category : (currentCategory || 'All');
 
-  if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
-    fetch(window.QUIZ_GAS_WEBAPP_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        action: 'reportIssue',
-        user: currentUser ? currentUser.displayName : 'Anonymous',
-        category: cat,
-        questionId: qId,
-        question: qText,
-        issueType: type,
-        detail: detail
-      })
-    }).catch(() => {});
-  }
+  sendGasPostRequest({
+    action: 'reportIssue',
+    user: currentUser ? currentUser.displayName : 'Anonymous',
+    category: cat,
+    questionId: qId,
+    question: qText,
+    issueType: type,
+    detail: detail
+  });
 
   closeReportIssueModal();
   showToast('🚩 ส่งรายงานปัญหาข้อสอบเรียบร้อยแล้ว ขอบคุณมากครับ!');
@@ -4540,6 +5104,7 @@ async function loadLeaderboardData() {
 
   communityLeaderboardList = users;
   renderLeaderboard(users);
+  if (typeof renderSidebarRank === 'function') renderSidebarRank(users);
 }
 
 function renderLeaderboard(users) {
@@ -4672,6 +5237,7 @@ async function loadCommunityMessagesLive() {
 
   communityCachedMessages = msgs;
   renderCommunityMessages(msgs);
+  if (typeof renderSidebarChat === 'function') renderSidebarChat(msgs);
 }
 
 function renderCommunityMessages(msgs) {
@@ -4740,11 +5306,17 @@ function handleChatInputKeyDown(e) {
   }
 }
 
-function sendCommunityChatMessage() {
-  const inp = document.getElementById('chatInputText');
-  const text = (inp.value || '').trim();
-  if (!text) return;
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
 
+function postChatMessageInternal(text, replyTarget) {
   const userDisp = currentUser ? currentUser.displayName : 'นิสิต RxCU';
   const uname = currentUser ? currentUser.username : 'anonymous';
   const badge = (uname === 'max') ? '👑 ประธานโครงการ' : (uname === 'admin') ? '🛡️ ผู้ดูแลระบบ' : '🩺 นิสิต RxCU';
@@ -4755,8 +5327,8 @@ function sendCommunityChatMessage() {
     username: uname,
     displayName: userDisp,
     badge: badge,
-    replyToId: chatReplyTarget ? chatReplyTarget.id : '',
-    replySnippet: chatReplyTarget ? `${chatReplyTarget.author}: ${chatReplyTarget.snippet}` : '',
+    replyToId: replyTarget ? replyTarget.id : '',
+    replySnippet: replyTarget ? `${replyTarget.author}: ${replyTarget.snippet}` : '',
     body: text,
     category: currentCategory || 'Clinic'
   };
@@ -4766,29 +5338,36 @@ function sendCommunityChatMessage() {
   msgs.push(newMsg);
   localStorage.setItem(COMMUNITY_CHAT_STORAGE_KEY, JSON.stringify(msgs));
   communityCachedMessages = msgs;
-  renderCommunityMessages(msgs);
 
-  // Clear input & reply bar
-  inp.value = '';
-  cancelChatReply();
+  // Render both modal & sidebar
+  renderCommunityMessages(msgs);
+  if (typeof renderSidebarChat === 'function') renderSidebarChat(msgs);
+
   showToast('💬 ส่งข้อความเรียบร้อยแล้ว');
 
-  // Send to Google Apps Script / Sheet in background
-  if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
-    fetch(window.QUIZ_GAS_WEBAPP_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        action: 'postCommunityMessage',
-        username: uname,
-        displayName: userDisp,
-        userBadge: badge,
-        replyToId: newMsg.replyToId,
-        message: text,
-        categoryTag: newMsg.category
-      })
-    }).catch(() => {});
-  }
+  // Send to Google Apps Script / Sheet in background (CORS safe)
+  sendGasPostRequest({
+    action: 'postCommunityMessage',
+    username: uname,
+    displayName: userDisp,
+    userBadge: badge,
+    replyToId: newMsg.replyToId,
+    message: text,
+    categoryTag: newMsg.category
+  });
+}
+
+function sendCommunityChatMessage() {
+  const inp = document.getElementById('chatInputText');
+  if (!inp) return;
+  const text = (inp.value || '').trim();
+  if (!text) return;
+
+  const replyTarget = chatReplyTarget;
+  inp.value = '';
+  cancelChatReply();
+
+  postChatMessageInternal(text, replyTarget);
 }
 
 function syncCurrentUserProfile() {
@@ -4798,21 +5377,158 @@ function syncCurrentUserProfile() {
   const correct = Object.values(p).filter(v => v.isCorrect).length;
   const acc = total ? Math.round((correct / total) * 100) : 0;
 
-  if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
-    fetch(window.QUIZ_GAS_WEBAPP_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        action: 'syncUserProfile',
-        username: currentUser.username,
-        displayName: currentUser.displayName,
-        track: currentTrack || 'Clinic',
-        totalAnswered: total,
-        totalCorrect: correct,
-        accuracy: acc
-      })
-    }).catch(() => {});
+  sendGasPostRequest({
+    action: 'syncUserProfile',
+    username: currentUser.username,
+    displayName: currentUser.displayName,
+    track: currentTrack || 'Clinic',
+    totalAnswered: total,
+    totalCorrect: correct,
+    accuracy: acc
+  });
+}
+
+// ─── LOBBY SIDEBAR COMMUNITY CONTROLLER ───
+let sidebarCommunityTab = 'chat';
+let sidebarChatReplyTarget = null;
+
+function switchSidebarCommTab(tab) {
+  sidebarCommunityTab = tab;
+  const btnChat = document.getElementById('btnSideTabChat');
+  const btnRank = document.getElementById('btnSideTabRank');
+  const panelChat = document.getElementById('sidePanelChat');
+  const panelRank = document.getElementById('sidePanelRank');
+  
+  if (btnChat) btnChat.classList.toggle('active', tab === 'chat');
+  if (btnRank) btnRank.classList.toggle('active', tab === 'rank');
+  if (panelChat) panelChat.style.display = (tab === 'chat') ? 'flex' : 'none';
+  if (panelRank) panelRank.style.display = (tab === 'rank') ? 'flex' : 'none';
+
+  renderSidebarCommunity();
+}
+
+function renderSidebarCommunity() {
+  const msgs = (communityCachedMessages && communityCachedMessages.length) ? communityCachedMessages : getLocalCommunityMessages();
+  renderSidebarChat(msgs);
+
+  const users = (communityLeaderboardList && communityLeaderboardList.length) ? communityLeaderboardList : [];
+  renderSidebarRank(users);
+}
+
+function renderSidebarChat(msgs) {
+  const feed = document.getElementById('sidebarChatFeed');
+  if (!feed) return;
+
+  if (!msgs || !msgs.length) {
+    feed.innerHTML = '<div style="padding:20px 10px; text-align:center; color:var(--ink-faint); font-size:12px;">ยังไม่มีข้อความสนทนา เริ่มคุยคนแรกได้เลย!</div>';
+    return;
   }
+
+  let html = '';
+  // Show recent 25 messages in sidebar
+  const recent = msgs.slice(-25);
+  recent.forEach(m => {
+    const isMine = currentUser && (m.username === currentUser.username || m.displayName === currentUser.displayName);
+    const dt = new Date(m.time || m.timestamp || Date.now());
+    const timeStr = isNaN(dt.getTime()) ? '' : dt.toLocaleTimeString('th-TH', { hour: '2-digit', minute: '2-digit' });
+
+    let replyHtml = '';
+    if (m.replySnippet) {
+      replyHtml = `<div class="sidebar-chat-reply-quote">↩️ ${escapeHtml(m.replySnippet)}</div>`;
+    }
+
+    const cleanBody = formatPlainTextToHtml(m.body || m.message || '');
+    const escapedSnippet = (m.body || m.message || '').replace(/'/g, "\\'").replace(/"/g, '&quot;').substring(0, 40);
+
+    html += `
+      <div class="sidebar-chat-item ${isMine ? 'mine' : ''}">
+        <div class="sidebar-chat-head">
+          <span class="sidebar-chat-sender">${escapeHtml(m.displayName || m.username || 'นิสิต')}</span>
+          <span class="sidebar-chat-badge">${escapeHtml(m.badge || m.userBadge || 'RxCU')}</span>
+          <span class="sidebar-chat-time">${timeStr}</span>
+        </div>
+        ${replyHtml}
+        <div class="sidebar-chat-body">${cleanBody}</div>
+        <div class="sidebar-chat-actions">
+          <button class="sidebar-chat-reply-btn" onclick="setSidebarChatReply('${m.id}', '${(m.displayName || '').replace(/'/g, "\\'")}', '${escapedSnippet}')">ตอบกลับ</button>
+        </div>
+      </div>`;
+  });
+
+  feed.innerHTML = html;
+  feed.scrollTop = feed.scrollHeight;
+}
+
+function renderSidebarRank(users) {
+  const container = document.getElementById('sidebarRankList');
+  if (!container) return;
+
+  if (!users || !users.length) {
+    container.innerHTML = '<div style="padding:20px 10px; text-align:center; color:var(--ink-faint); font-size:12px;">กำลังรวบรวมอันดับ...</div>';
+    return;
+  }
+
+  // Top 5 on sidebar
+  const top5 = users.slice(0, 5);
+  let html = '';
+  top5.forEach((u, idx) => {
+    const isMe = currentUser && (u.username === currentUser.username || u.displayName === currentUser.displayName);
+    let posClass = idx === 0 ? 'p1' : idx === 1 ? 'p2' : idx === 2 ? 'p3' : '';
+    let posEmoji = idx === 0 ? '👑' : (idx + 1);
+
+    html += `
+      <div class="sidebar-rank-row ${isMe ? 'my-row' : ''}">
+        <div class="sidebar-rank-pos ${posClass}">${posEmoji}</div>
+        <div class="sidebar-rank-info">
+          <div class="sidebar-rank-name">${escapeHtml(u.displayName)} ${isMe ? '⭐' : ''}</div>
+          <div class="sidebar-rank-sub">${escapeHtml(u.badge || u.track || 'RxCU')}</div>
+        </div>
+        <div class="sidebar-rank-score">
+          <div class="sidebar-rank-score-val">${u.correct || u.totalCorrect || 0} ข้อ</div>
+          <div class="sidebar-rank-score-acc">${u.accuracy || '0%'} แม่นยำ</div>
+        </div>
+      </div>`;
+  });
+
+  container.innerHTML = html;
+}
+
+function setSidebarChatReply(msgId, author, snippet) {
+  sidebarChatReplyTarget = { id: msgId, author: author, snippet: snippet };
+  const bar = document.getElementById('sidebarChatReplyQuote');
+  const targetText = document.getElementById('sidebarChatReplyTarget');
+  if (bar && targetText) {
+    targetText.textContent = `↩️ ตอบกลับ ${author}: ${snippet}...`;
+    bar.style.display = 'flex';
+  }
+  const inp = document.getElementById('sidebarChatInput');
+  if (inp) inp.focus();
+}
+
+function cancelSidebarReply() {
+  sidebarChatReplyTarget = null;
+  const bar = document.getElementById('sidebarChatReplyQuote');
+  if (bar) bar.style.display = 'none';
+}
+
+function handleSidebarChatKeyDown(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendSidebarChatMessage();
+  }
+}
+
+function sendSidebarChatMessage() {
+  const inp = document.getElementById('sidebarChatInput');
+  if (!inp) return;
+  const text = (inp.value || '').trim();
+  if (!text) return;
+
+  const replyTarget = sidebarChatReplyTarget;
+  inp.value = '';
+  cancelSidebarReply();
+
+  postChatMessageInternal(text, replyTarget);
 }
 
 function showToast(msg) {

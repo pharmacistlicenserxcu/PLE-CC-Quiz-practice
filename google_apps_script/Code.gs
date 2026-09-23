@@ -333,48 +333,49 @@ function doPost(e) {
       const u = String(data.username || '').trim().toLowerCase();
       if (!u) return jsonResponse_({ success: false, error: 'Username required' });
       const dn = String(data.displayName || u).trim();
-      const ansInc = Number(data.answeredCount || 0);
-      const corInc = Number(data.correctCount || 0);
-      const streak = Number(data.streak || 1);
+      const track = String(data.track || 'Clinic').trim();
+      const totalAns = Number(data.totalAnswered != null ? data.totalAnswered : (data.answeredCount || 0));
+      const totalCor = Number(data.totalCorrect != null ? data.totalCorrect : (data.correctCount || 0));
+      const accPct = totalAns > 0 ? Math.round((totalCor / totalAns) * 100) + '%' : (data.accuracy ? String(data.accuracy) + '%' : '0%');
 
       const lastRow = sheet.getLastRow();
       let userRowIdx = -1;
-      let existingAns = 0;
-      let existingCor = 0;
+      let existingStreak = 1;
 
       if (lastRow >= 3) {
+        // Read Column A (Username)
         const usernames = sheet.getRange(3, 1, lastRow - 2, 1).getValues();
         for (let i = 0; i < usernames.length; i++) {
           if (String(usernames[i][0] || '').toLowerCase() === u) {
             userRowIdx = i + 3;
+            try {
+              existingStreak = Number(sheet.getRange(userRowIdx, 6).getValue()) || 1;
+            } catch(e) {}
             break;
           }
         }
       }
 
+      const nowIso = new Date().toISOString();
       if (userRowIdx > 0) {
-        const curVals = sheet.getRange(userRowIdx, 3, 1, 2).getValues()[0];
-        existingAns = Number(curVals[0] || 0) + ansInc;
-        existingCor = Number(curVals[1] || 0) + corInc;
-        const accPct = existingAns > 0 ? Math.round((existingCor / existingAns) * 100) + '%' : '0%';
+        // Update B to G (Display Name, Total Answered, Total Correct, Accuracy, Streak, Last Active)
         sheet.getRange(userRowIdx, 2, 1, 6).setValues([[
           dn,
-          existingAns,
-          existingCor,
+          totalAns,
+          totalCor,
           accPct,
-          streak,
-          new Date().toISOString()
+          existingStreak,
+          nowIso
         ]]);
       } else {
-        const accPct = ansInc > 0 ? Math.round((corInc / ansInc) * 100) + '%' : '0%';
         sheet.appendRow([
           u,
           dn,
-          ansInc,
-          corInc,
+          totalAns,
+          totalCor,
           accPct,
-          streak,
-          new Date().toISOString()
+          1,
+          nowIso
         ]);
       }
 
@@ -396,7 +397,7 @@ function doPost(e) {
       const u = String(data.username || 'anonymous').trim();
       const dn = String(data.displayName || 'Anonymous').trim();
       const rep = String(data.replyToId || '').trim();
-      const tag = String(data.topicTag || 'ทั่วไป').trim();
+      const tag = String(data.categoryTag || data.topicTag || 'ทั่วไป').trim();
 
       sheet.appendRow([
         msgId,
