@@ -279,7 +279,7 @@ def main():
 
             if not q_text_plain and not c1:
                 continue
-            if 'คำถาม' in q_text_plain or 'กลับหน้าแรก' in q_text_plain:
+            if q_text_plain == 'คำถาม' or 'กลับหน้าแรก' in q_text_plain or 'กลับสู่หน้าแรก' in q_text_plain:
                 continue
 
             def sanitize_choice_str(val):
