@@ -2916,7 +2916,7 @@
 <div id="printContainer"></div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
-<script src="quiz-data-offline.js?v=20260923_v4"></script>
+<script src="quiz-data-offline.js?v=20260924_v1"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
 const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
@@ -3767,11 +3767,36 @@ function switchTrack(track) {
   buildLobby();
 }
 
+const CLINIC_EXPLICIT_TABS = [
+  "1. Musculoskeleton", "2. Cardiovascular", "3. Dermatologic", "4. Endocrine",
+  "5. Gastrointestinal", "6. Hematologic", "7. Immunologic", "8. Infectious diseases",
+  "9. Neurologic", "10. Psychiatric", "11. Pulmonary", "12. Gynaecologic/Genitourinary",
+  "13. Eye disorder", "14. Oncologic", "15. Renal", "16. Others & Toxic", "18. Clinical Nutrition"
+];
+const PRODUCT_EXPLICIT_TABS = [
+  "1. Titrations", "2. Chromatography", "3. Spectroscopy & Optics", "4. Preformulation & GMP",
+  "5. Pharmaceutical Calc", "6. Solid Dosage Forms", "7. Liquid & Semisolids",
+  "8. Biopharm & Drug Release", "9. Sterile & Special Forms", "10. Biotech Products",
+  "11. Herbal Products", "12. Food Products & QA", "13. Medicinal Chemistry", "17. Herbal Medicine"
+];
+const SAP_EXPLICIT_TABS = [
+  "1. Pharmacy Laws & Ethics", "2. Pharmacy Administration & System", "3. Research & Biostats"
+];
+
+function getCategoryTrack(cat) {
+  const name = (cat.name || '').trim();
+  const tr = (cat.track || '').toLowerCase();
+  if (CLINIC_EXPLICIT_TABS.includes(name) || tr.includes('clinic')) return 'clinic';
+  if (PRODUCT_EXPLICIT_TABS.includes(name) || tr.includes('prod')) return 'product';
+  if (SAP_EXPLICIT_TABS.includes(name) || tr.includes('sap')) return 'sap';
+  return 'clinic';
+}
+
 function getVisibleCategories() {
   let list = categories.filter(c => !isSystemCategory(c.name));
-  if (currentTrack === 'clinic') return list.filter(c => (c.track || '').toLowerCase().includes('clinic'));
-  if (currentTrack === 'product') return list.filter(c => (c.track || '').toLowerCase().includes('prod'));
-  if (currentTrack === 'sap') return list.filter(c => (c.track || '').toLowerCase().includes('sap'));
+  if (currentTrack === 'clinic') return list.filter(c => getCategoryTrack(c) === 'clinic');
+  if (currentTrack === 'product') return list.filter(c => getCategoryTrack(c) === 'product');
+  if (currentTrack === 'sap') return list.filter(c => getCategoryTrack(c) === 'sap');
   return list;
 }
 
