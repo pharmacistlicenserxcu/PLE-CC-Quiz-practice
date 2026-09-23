@@ -45,17 +45,16 @@ function doGet(e) {
 
       sheets.forEach(sheet => {
         const title = sheet.getName();
-        // ข้าม sheet บันทึกผลหรือ log
-        if (title.startsWith('Log_') || title.startsWith('Report_') || title.startsWith('Eval_')) return;
+        // ข้าม sheet บันทึกผลหรือ log หรือ สารบัญ
+        if (title.startsWith('Log_') || title.startsWith('Report_') || title.startsWith('Eval_') || title === 'สารบัญ') return;
 
         const lastRow = sheet.getLastRow();
         let count = 0;
         let track = 'Clinic';
-        if (lastRow >= 2) {
-          count = lastRow - 1; // ลบ header row 1
-          // อ่าน sample row เพื่อดู track
+        if (lastRow >= 3) {
+          count = lastRow - 2; // ลบ banner row 1 และ header row 2
           try {
-            const sampleTrack = sheet.getRange(2, 12).getValue();
+            const sampleTrack = sheet.getRange(3, 12).getValue();
             if (sampleTrack) track = String(sampleTrack).trim();
           } catch(err) {}
         }
@@ -86,7 +85,7 @@ function doGet(e) {
       } else {
         targetSheets = ss.getSheets().filter(s => {
           const n = s.getName();
-          return !n.startsWith('Log_') && !n.startsWith('Report_') && !n.startsWith('Eval_');
+          return !n.startsWith('Log_') && !n.startsWith('Report_') && !n.startsWith('Eval_') && n !== 'สารบัญ';
         });
       }
 
@@ -95,13 +94,13 @@ function doGet(e) {
       targetSheets.forEach(sheet => {
         const sName = sheet.getName();
         const lastRow = sheet.getLastRow();
-        if (lastRow < 2) return;
+        if (lastRow < 3) return; // แถว 1=Banner, แถว 2=Header
 
-        // อ่าน A2:M(lastRow)
-        const values = sheet.getRange(2, 1, lastRow - 1, 13).getValues();
+        // อ่าน A3:N(lastRow) -> 14 คอลัมน์
+        const values = sheet.getRange(3, 1, lastRow - 2, 14).getValues();
 
         values.forEach((row, idx) => {
-          const rowNum = idx + 2;
+          const rowNum = idx + 3;
           const questionText = String(row[0] || '').trim();
           const questionImg  = String(row[1] || '').trim();
           const c1           = String(row[2] || '').trim();
@@ -115,6 +114,7 @@ function doGet(e) {
           const subtopic     = String(row[10] || '').trim() || sName;
           const track        = String(row[11] || 'Clinic').trim();
           const note         = String(row[12] || '').trim();
+          const examType     = String(row[13] || 'ข้อสอบจำลอง (Mock)').trim();
 
           if (!questionText && !c1) return;
 
@@ -128,6 +128,7 @@ function doGet(e) {
             category: sName,
             subtopic: subtopic,
             track: track,
+            examType: examType,
             question: questionText,
             questionImage: questionImg,
             choices: choices,
