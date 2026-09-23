@@ -142,13 +142,13 @@ def main():
     total_q_count = 0
 
     for s_name in sheet_names:
-        if s_name.startswith('Log_') or s_name.startswith('Report_') or s_name.startswith('Eval_'):
+        if s_name.startswith('Log_') or s_name.startswith('Report_') or s_name.startswith('Eval_') or s_name == 'สารบัญ':
             continue
 
         print(f"  -> Reading sheet: '{s_name}'...")
         res = service.spreadsheets().values().get(
             spreadsheetId=SPREADSHEET_ID,
-            range=f"'{s_name}'!A2:M"
+            range=f"'{s_name}'!A3:M"
         ).execute()
 
         rows = res.get('values', [])
