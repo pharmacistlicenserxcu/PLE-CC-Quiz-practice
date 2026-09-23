@@ -61,45 +61,32 @@ if requests:
 profiles_id = existing_sheets['User_Profiles']
 chat_id = existing_sheets['Community_Chat']
 
-# 2. Write content for User_Profiles
+# 2. Write headers for User_Profiles and Community_Chat (No mock data)
 profiles_values = [
     ['=HYPERLINK("#gid=0", "🏠 กลับสู่หน้าแรก (Go to Home Page)")', '', '', '', '', '', ''],
-    ['Username', 'Display Name', 'Total Answered', 'Total Correct', 'Accuracy (%)', 'Current Streak (Days)', 'Last Active'],
-    ['max', 'Doctor Max (ประธานรุ่น)', 140, 126, '90%', 12, '2026-09-23T16:30:00Z'],
-    ['thanadol', 'Thanadol (RxCU84)', 95, 82, '86%', 7, '2026-09-23T15:20:00Z'],
-    ['admin', 'PLE Academic Admin', 210, 195, '93%', 25, '2026-09-23T16:45:00Z'],
-    ['rx_lin', 'Lin (วิชาการ Clinic)', 160, 142, '89%', 14, '2026-09-23T14:10:00Z'],
-    ['rx_fon', 'Fon (วิชาการ Product)', 110, 94, '85%', 9, '2026-09-23T13:40:00Z'],
-    ['rx_irene', 'Irene (Head OSPE)', 130, 115, '88%', 11, '2026-09-23T12:00:00Z'],
-    ['rx_kratae', 'Kratae (Clinic OSPE)', 85, 71, '84%', 5, '2026-09-23T11:30:00Z'],
-    ['rx_min', 'Min (Product OSPE)', 90, 78, '87%', 6, '2026-09-23T10:15:00Z'],
-    ['rx_poy', 'Poy (เลขาโครงการ)', 75, 62, '83%', 4, '2026-09-23T09:20:00Z'],
-    ['rx_title', 'Title (เหรัญญิก)', 60, 49, '82%', 3, '2026-09-23T08:50:00Z']
+    ['Username', 'Display Name', 'Total Answered', 'Total Correct', 'Accuracy (%)', 'Current Streak (Days)', 'Last Active']
 ]
 
 chat_values = [
     ['=HYPERLINK("#gid=0", "🏠 กลับสู่หน้าแรก (Go to Home Page)")', '', '', '', '', '', ''],
-    ['MessageId', 'Timestamp', 'Username', 'Display Name', 'Message Text', 'ReplyToId', 'Topic Tag'],
-    ['msg_1', '2026-09-23T10:00:00Z', 'max', 'Doctor Max (ประธานรุ่น)', 'ยินดีต้อนรับเพื่อนๆ นิสิต RxCU สู่ระบบเตรียมสอบใบประกอบวิชาชีพ 2569 ครับ! หากมีข้อสงสัยเกี่ยวกับโจทย์หรือต้องการแลกเปลี่ยนแนวคิด สามารถพิมพ์คุยกันในนี้ได้เลยครับ 🎉', '', 'ประกาศ'],
-    ['msg_2', '2026-09-23T10:15:00Z', 'rx_lin', 'Lin (วิชาการ Clinic)', 'หมวด Musculoskeletal ตอนนี้คัดเฉพาะ Clinic แท้ 70 ข้อพร้อม Clinical Pearls แล้วนะครับ เน้นข้อห้ามใช้ Allopurinol ใน HLA-B*58:01 ให้แม่นๆ นะครับ 💊', '', 'Clinic'],
-    ['msg_3', '2026-09-23T10:20:00Z', 'thanadol', 'Thanadol (RxCU84)', 'ขอบคุณครับ! ข้อสอบ OA เรื่อง Paracetamol กับ Selective COX-2 ออกตรงแนวสอบสภาบ่อยมาก', 'msg_2', 'Clinic']
+    ['MessageId', 'Timestamp', 'Username', 'Display Name', 'Message Text', 'ReplyToId', 'Topic Tag']
 ]
 
 service.spreadsheets().values().update(
     spreadsheetId=SPREADSHEET_ID,
-    range='User_Profiles!A1:G12',
+    range='User_Profiles!A1:G2',
     valueInputOption='USER_ENTERED',
     body={'values': profiles_values}
 ).execute()
 
 service.spreadsheets().values().update(
     spreadsheetId=SPREADSHEET_ID,
-    range='Community_Chat!A1:G5',
+    range='Community_Chat!A1:G2',
     valueInputOption='USER_ENTERED',
     body={'values': chat_values}
 ).execute()
 
-print("Populated values for User_Profiles and Community_Chat.")
+print("Populated headers for User_Profiles and Community_Chat (Empty, clean state).")
 
 # 3. Format sheets according to Rule 3.5
 format_reqs = []

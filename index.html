@@ -2884,26 +2884,17 @@
 <script src="quiz-data-offline.js?v=20260923_v4"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
-const USERS_STORAGE_KEY = 'ple_quiz_users_db_v1';
-const SESSIONS_STORAGE_KEY = 'ple_quiz_sessions_db_v1';
+const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
+const SESSIONS_STORAGE_KEY = 'ple_quiz_sessions_db_v2';
 const PROGRESS_STORAGE_KEY = 'ple_quiz_progress_v1';
-const LS_SESSION_KEY = 'ple_quiz_session_token';
+const LS_SESSION_KEY = 'ple_quiz_session_token_v2';
 const LS_VIEW_MODE = 'ple_quiz_view_mode';
 const LS_TRACK = 'ple_quiz_current_track';
 
 function getLocalUsers() {
   try {
     const raw = localStorage.getItem(USERS_STORAGE_KEY);
-    if (!raw) {
-      const defaults = {
-        'max': { username: 'max', displayName: 'Doctor Max', pass: '123456' },
-        'thanadol': { username: 'thanadol', displayName: 'Thanadol', pass: '123456' },
-        'admin': { username: 'admin', displayName: 'Admin', pass: '123456' }
-      };
-      localStorage.setItem(USERS_STORAGE_KEY, JSON.stringify(defaults));
-      return defaults;
-    }
-    return JSON.parse(raw);
+    return raw ? JSON.parse(raw) : {};
   } catch(e) { return {}; }
 }
 
@@ -5828,20 +5819,7 @@ function refreshLeaderboardLive() {
 }
 
 async function loadLeaderboardData() {
-  const seedUsers = [
-    { rank: 1, username: 'max', displayName: 'Doctor Max', track: 'Clinic', total: 70, correct: 68, accuracy: 97, badge: '👑 Head' },
-    { rank: 2, username: 'thanadol', displayName: 'Thanadol', track: 'Clinic', total: 65, correct: 62, accuracy: 95, badge: '🩺 RxCU' },
-    { rank: 3, username: 'lin', displayName: 'Lin (วิชาการ Clinic)', track: 'Clinic', total: 60, correct: 57, accuracy: 95, badge: '💊 Team' },
-    { rank: 4, username: 'fon', displayName: 'Fon (วิชาการ Product)', track: 'Product', total: 55, correct: 51, accuracy: 93, badge: '🔬 Team' },
-    { rank: 5, username: 'irene', displayName: 'Irene (Head CC2 OSPE)', track: 'Clinic', total: 52, correct: 48, accuracy: 92, badge: '👑 Team' },
-    { rank: 6, username: 'kratae', displayName: 'Kratae (OSPE Clinic)', track: 'Clinic', total: 50, correct: 45, accuracy: 90, badge: '🗣️ Team' },
-    { rank: 7, username: 'min', displayName: 'Min (OSPE Product)', track: 'Product', total: 45, correct: 40, accuracy: 89, badge: '🧪 Team' },
-    { rank: 8, username: 'poy', displayName: 'Poy (เลขาโครงการ)', track: 'SAP', total: 40, correct: 36, accuracy: 90, badge: '📑 Team' },
-    { rank: 9, username: 'title', displayName: 'Title (เหรัญญิกโครงการ)', track: 'SAP', total: 38, correct: 34, accuracy: 89, badge: '💰 Team' },
-    { rank: 10, username: 'admin', displayName: 'Admin RxCU', track: 'All', total: 30, correct: 28, accuracy: 93, badge: '🛡️ Admin' }
-  ];
-
-  let users = seedUsers.slice();
+  let users = [];
 
   // Try fetching from Google Apps Script
   if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
@@ -5895,9 +5873,9 @@ async function loadLeaderboardData() {
 
 function renderLeaderboard(users) {
   const top10 = users.slice(0, 10);
-  const totalMembers = Math.max(users.length, 12);
+  const totalMembers = users.length;
   const totalAnsweredAll = users.reduce((acc, u) => acc + (u.total || 0), 0);
-  const avgAcc = users.length ? Math.round(users.reduce((acc, u) => acc + (u.accuracy || 0), 0) / users.length) : 90;
+  const avgAcc = users.length ? Math.round(users.reduce((acc, u) => acc + (u.accuracy || 0), 0) / users.length) : 0;
 
   // Stats boxes
   document.getElementById('lbStatTotalMembers').textContent = `${totalMembers} คน`;
@@ -5906,31 +5884,40 @@ function renderLeaderboard(users) {
 
   // Podium (Top 3)
   const podiumContainer = document.getElementById('lbPodiumContainer');
-  if (podiumContainer && top10.length >= 3) {
-    const r1 = top10[0], r2 = top10[1], r3 = top10[2];
-    podiumContainer.innerHTML = `
-      <div class="podium-slot rank-2">
-        <div class="podium-avatar">🥈</div>
-        <div class="podium-name" title="${r2.displayName}">${r2.displayName}</div>
-        <div class="podium-score">${r2.correct}/${r2.total}</div>
-        <div style="font-size:10px; color:var(--ink-soft);">${r2.accuracy}%</div>
-      </div>
-      <div class="podium-slot rank-1">
-        <div class="podium-avatar">👑</div>
-        <div class="podium-name" style="color:#B45309;" title="${r1.displayName}">${r1.displayName}</div>
-        <div class="podium-score" style="color:#B45309;">${r1.correct}/${r1.total}</div>
-        <div style="font-size:10.5px; font-weight:700; color:#B45309;">${r1.accuracy}% แม่นยำ</div>
-      </div>
-      <div class="podium-slot rank-3">
-        <div class="podium-avatar">🥉</div>
-        <div class="podium-name" title="${r3.displayName}">${r3.displayName}</div>
-        <div class="podium-score">${r3.correct}/${r3.total}</div>
-        <div style="font-size:10px; color:var(--ink-soft);">${r3.accuracy}%</div>
-      </div>`;
+  if (podiumContainer) {
+    if (top10.length >= 3) {
+      podiumContainer.style.display = 'flex';
+      const r1 = top10[0], r2 = top10[1], r3 = top10[2];
+      podiumContainer.innerHTML = `
+        <div class="podium-slot rank-2">
+          <div class="podium-avatar">🥈</div>
+          <div class="podium-name" title="${r2.displayName}">${r2.displayName}</div>
+          <div class="podium-score">${r2.correct}/${r2.total}</div>
+          <div style="font-size:10px; color:var(--ink-soft);">${r2.accuracy}%</div>
+        </div>
+        <div class="podium-slot rank-1">
+          <div class="podium-avatar">👑</div>
+          <div class="podium-name" style="color:#B45309;" title="${r1.displayName}">${r1.displayName}</div>
+          <div class="podium-score" style="color:#B45309;">${r1.correct}/${r1.total}</div>
+          <div style="font-size:10.5px; font-weight:700; color:#B45309;">${r1.accuracy}% แม่นยำ</div>
+        </div>
+        <div class="podium-slot rank-3">
+          <div class="podium-avatar">🥉</div>
+          <div class="podium-name" title="${r3.displayName}">${r3.displayName}</div>
+          <div class="podium-score">${r3.correct}/${r3.total}</div>
+          <div style="font-size:10px; color:var(--ink-soft);">${r3.accuracy}%</div>
+        </div>`;
+    } else {
+      podiumContainer.style.display = 'none';
+    }
   }
 
   // Top 10 Table
   const tbody = document.getElementById('lbTableBody');
+  if (!top10.length) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:32px; color:var(--ink-faint);">ยังไม่มีข้อมูลอันดับในขณะนี้ เมื่อเริ่มทำข้อสอบอันดับจะปรากฏที่นี่</td></tr>';
+    return;
+  }
   let tHtml = '';
   top10.forEach(u => {
     const isMe = currentUser && (u.username === currentUser.username || u.displayName === currentUser.displayName);
@@ -5956,51 +5943,12 @@ function renderLeaderboard(users) {
 }
 
 // ─── COMMUNITY OPEN CHAT ───
-const COMMUNITY_CHAT_STORAGE_KEY = 'ple_quiz_community_chat_v1';
+const COMMUNITY_CHAT_STORAGE_KEY = 'ple_quiz_community_chat_v2';
 
 function getLocalCommunityMessages() {
   try {
     const raw = localStorage.getItem(COMMUNITY_CHAT_STORAGE_KEY);
-    if (!raw) {
-      const defaults = [
-        {
-          id: 'msg_1',
-          time: new Date(Date.now() - 3600000 * 5).toISOString(),
-          username: 'max',
-          displayName: 'Doctor Max',
-          badge: '👑 ประธานโครงการ',
-          replyToId: '',
-          replySnippet: '',
-          body: 'ยินดีต้อนรับเพื่อนๆ นิสิต RxCU84/85 ทุกคนสู่ PLE-CC Quiz Practice ครับ! มีข้อสงสัยหรืออยากอภิปรายข้อไหนพิมพ์ถามในนี้ได้เลยครับ 🩺',
-          category: 'All'
-        },
-        {
-          id: 'msg_2',
-          time: new Date(Date.now() - 3600000 * 3).toISOString(),
-          username: 'lin',
-          displayName: 'Lin (วิชาการ Clinic)',
-          badge: '💊 ฝ่ายวิชาการ',
-          replyToId: 'msg_1',
-          replySnippet: 'ยินดีต้อนรับเพื่อนๆ นิสิต RxCU84/85 ทุกคนสู่ PLE-CC Quiz...',
-          body: 'หมวด Musculoskeleton (OA, RA, Osteoporosis, Gout) อัปเดตแนวทางเวชปฏิบัติและข้อสอบจริงปี 2567 ครบ 70 ข้อแล้วนะคะ ฝึกทำกันได้เลยค่ะ!',
-          category: 'Musculoskeleton'
-        },
-        {
-          id: 'msg_3',
-          time: new Date(Date.now() - 3600000 * 1).toISOString(),
-          username: 'thanadol',
-          displayName: 'Thanadol',
-          badge: '🩺 นิสิต RxCU',
-          replyToId: '',
-          replySnippet: '',
-          body: 'ข้อสอบ Gout เรื่องการตรวจยีน HLA-B*58:01 ก่อนเริ่มยา Allopurinol ออกบ่อยมาก จำขนาดยาเริ่มต้นในคนไข้โรคไตด้วยนะครับ 👍',
-          category: 'Clinic'
-        }
-      ];
-      localStorage.setItem(COMMUNITY_CHAT_STORAGE_KEY, JSON.stringify(defaults));
-      return defaults;
-    }
-    return JSON.parse(raw);
+    return raw ? JSON.parse(raw) : [];
   } catch(e) { return []; }
 }
 
