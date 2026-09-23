@@ -248,7 +248,7 @@ def main():
         f.write(" */\n\n")
         f.write("window.QUIZ_GOOGLE_SHEET_ID = " + json.dumps(SPREADSHEET_ID) + ";\n")
         f.write("window.QUIZ_GAS_SCRIPT_ID = '1LB8brFu49jQwb5xR3WeeyW2Su_M8e1X2XX3mxD6sxlO7yVwWpDPwG-tS';\n")
-        f.write("window.QUIZ_GAS_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbz_SAMPLE_DEPLOYMENT_URL/exec';\n\n")
+        f.write("window.QUIZ_GAS_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycby14F6sdMW67mOv2D6EzRW3NMP6rVnzUHKWjwr_8i10y3NWTOrQPvqmmy6p9LIITNrM/exec';\n\n")
         f.write("window.QUIZ_OFFLINE_CATEGORIES = " + json.dumps(offline_categories, ensure_ascii=False, indent=2) + ";\n\n")
         f.write("window.QUIZ_OFFLINE_QUESTIONS = " + json.dumps(offline_questions, ensure_ascii=False, indent=2) + ";\n\n")
         f.write("window.QUIZ_OFFLINE_BY_TRACK = " + json.dumps(questions_by_track, ensure_ascii=False) + ";\n")
