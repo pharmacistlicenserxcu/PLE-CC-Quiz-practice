@@ -875,6 +875,208 @@
     .setup-chip-btn:hover { border-color: var(--clinic); color: var(--clinic); }
     .setup-chip-btn.active { background: var(--clinic-soft); border-color: var(--clinic); color: var(--clinic); }
 
+    /* ══ COMMUNITY & LEADERBOARD STYLES ══ */
+    .community-tabs {
+      display: flex; gap: 8px; border-bottom: 1.5px solid var(--border);
+      margin-bottom: 14px; padding-bottom: 8px;
+    }
+    .comm-tab-btn {
+      padding: 7px 14px; border: none; border-radius: 9px;
+      font-family: inherit; font-size: 12.5px; font-weight: 700;
+      cursor: pointer; color: var(--ink-soft); background: var(--bg);
+      transition: all 0.15s;
+    }
+    .comm-tab-btn.active {
+      background: var(--clinic); color: #fff; box-shadow: var(--shadow-sm);
+    }
+    .leaderboard-stats-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px;
+    }
+    .lb-stat-card {
+      background: var(--bg); border: 1px solid var(--border); border-radius: 12px;
+      padding: 9px 8px; text-align: center;
+    }
+    .lb-stat-val { font-size: 17px; font-weight: 700; color: var(--clinic); font-family: 'IBM Plex Mono', monospace; }
+    .lb-stat-label { font-size: 10.5px; color: var(--ink-soft); margin-top: 2px; }
+    
+    .lb-podium {
+      display: flex; justify-content: center; align-items: flex-end; gap: 10px; margin-bottom: 16px;
+    }
+    .podium-slot {
+      display: flex; flex-direction: column; align-items: center; text-align: center;
+      background: var(--bg); border: 1.5px solid var(--border); border-radius: 14px;
+      padding: 10px 6px; width: 95px;
+    }
+    .podium-slot.rank-1 { height: 130px; border-color: #F59E0B; background: #FEF3C7; order: 2; }
+    .podium-slot.rank-2 { height: 110px; border-color: #94A3B8; background: #F1F5F9; order: 1; }
+    .podium-slot.rank-3 { height: 98px; border-color: #D97706; background: #FFEDD5; order: 3; }
+    .podium-avatar { font-size: 22px; margin-bottom: 2px; }
+    .podium-name { font-size: 11.5px; font-weight: 700; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 85px; }
+    .podium-score { font-size: 10.5px; font-weight: 700; color: var(--clinic); font-family: 'IBM Plex Mono', monospace; }
+
+    .lb-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .lb-table th { text-align: left; padding: 7px 8px; border-bottom: 2px solid var(--border); color: var(--ink-soft); font-size: 10.5px; }
+    .lb-table td { padding: 8px 8px; border-bottom: 1px solid var(--border); }
+    .lb-table tr.my-row { background: var(--clinic-soft); font-weight: 700; }
+    .lb-rank-badge {
+      display: inline-flex; width: 20px; height: 20px; align-items: center; justify-content: center;
+      border-radius: 50%; font-size: 10.5px; font-weight: 700;
+    }
+    .rank-1-badge { background: #FEF3C7; color: #B45309; }
+    .rank-2-badge { background: #F1F5F9; color: #475569; }
+    .rank-3-badge { background: #FFEDD5; color: #C2410C; }
+
+    /* Open Chat Feed */
+    .chat-messages-container {
+      height: 320px; overflow-y: auto; padding: 8px; border: 1px solid var(--border);
+      border-radius: 14px; background: var(--bg); display: flex; flex-direction: column; gap: 8px;
+    }
+    .chat-bubble {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 9px 11px; max-width: 88%; align-self: flex-start; box-shadow: var(--shadow-sm);
+    }
+    .chat-bubble.mine {
+      align-self: flex-end; background: var(--clinic-soft); border-color: var(--clinic-border);
+    }
+    .chat-bubble-head {
+      display: flex; align-items: center; gap: 6px; font-size: 11px; margin-bottom: 3px;
+    }
+    .chat-bubble-name { font-weight: 700; color: var(--ink); }
+    .chat-bubble-time { color: var(--ink-faint); font-size: 10px; margin-left: auto; }
+    .chat-reply-quote {
+      font-size: 10.5px; background: rgba(0,0,0,0.04); border-left: 3px solid var(--clinic);
+      padding: 3px 6px; border-radius: 4px; margin-bottom: 5px; color: var(--ink-soft);
+    }
+    .chat-bubble-body { font-size: 12.5px; line-height: 1.5; color: var(--ink); white-space: pre-wrap; word-break: break-word; }
+    .chat-bubble-action { text-align: right; margin-top: 3px; }
+    .chat-reply-btn {
+      background: none; border: none; font-size: 10.5px; color: var(--clinic); font-weight: 700;
+      cursor: pointer; padding: 1px 4px;
+    }
+    .chat-replying-bar {
+      display: none; align-items: center; justify-content: space-between;
+      background: #FEF3C7; border: 1px solid #FDE68A; border-radius: 8px;
+      padding: 4px 8px; font-size: 11px; color: #92400E; margin-bottom: 6px;
+    }
+    .chat-input-bar {
+      display: flex; gap: 6px; margin-top: 8px; align-items: flex-end;
+    }
+    .chat-input-box {
+      flex: 1; min-height: 38px; max-height: 80px; padding: 7px 10px;
+      border: 1px solid var(--border); border-radius: 10px; font-family: inherit;
+      font-size: 12.5px; resize: none; outline: none; background: var(--card);
+    }
+    .chat-input-box:focus { border-color: var(--clinic); }
+
+    /* ══ PRINT & PDF STYLES ══ */
+    #printContainer { display: none; }
+    
+    @media print {
+      body {
+        background: #fff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        color: #000 !important;
+      }
+      .app-shell, #authOverlay, .toast, .modal-overlay, #imgLightboxModal {
+        display: none !important;
+      }
+      #printContainer {
+        display: block !important;
+        background: #fff !important;
+        color: #000 !important;
+        padding: 1.2cm 1.2cm;
+        width: 100% !important;
+      }
+      .print-header {
+        border-bottom: 2px solid #000;
+        padding-bottom: 8px;
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .print-header h1 {
+        font-size: 15pt;
+        font-weight: 700;
+        margin-bottom: 3pt;
+      }
+      .print-header p {
+        font-size: 9.5pt;
+        color: #333;
+      }
+      .print-meta-box {
+        font-size: 9pt;
+        text-align: right;
+      }
+      .print-student-info {
+        display: flex;
+        gap: 16px;
+        border: 1px dashed #666;
+        padding: 5px 10px;
+        margin-bottom: 12px;
+        font-size: 9.5pt;
+      }
+      .print-q-card {
+        page-break-inside: avoid;
+        margin-bottom: 12pt;
+        padding-bottom: 8pt;
+        border-bottom: 1px dotted #ccc;
+      }
+      .print-q-title {
+        font-weight: 700;
+        margin-bottom: 5pt;
+      }
+      .print-choices {
+        margin-left: 12pt;
+      }
+      .print-choice-row {
+        margin-bottom: 3pt;
+        line-height: 1.35;
+      }
+      .print-exp-box {
+        margin-top: 6pt;
+        padding: 6pt 8pt;
+        background: #f4f4f4 !important;
+        border-left: 3pt solid #333;
+        font-size: 9pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .print-answer-sheet {
+        page-break-before: always;
+      }
+      .print-bubble-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6pt 20pt;
+        font-size: 8.5pt;
+      }
+      .print-bubble-row {
+        display: flex;
+        align-items: center;
+        gap: 6pt;
+      }
+      .print-bubble {
+        width: 13pt;
+        height: 13pt;
+        border: 1pt solid #000;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 7pt;
+        font-weight: 600;
+      }
+      /* Font Size Scaling */
+      .print-fs-11 { font-size: 11pt !important; }
+      .print-fs-11 .print-q-title { font-size: 11.5pt !important; }
+      .print-fs-13 { font-size: 13pt !important; }
+      .print-fs-13 .print-q-title { font-size: 13.5pt !important; }
+      .print-fs-15 { font-size: 15pt !important; }
+      .print-fs-15 .print-q-title { font-size: 15.5pt !important; }
+    }
+
   </style>
 </head>
 <body>
@@ -1010,8 +1212,8 @@
     </div>
 
     
-    <!-- Exam Type & Filter Row -->
-    <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:14px; flex-wrap:wrap;">
+    <!-- Quiz Mode Switch Row -->
+    <div style="display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
       <div class="mode-switch-segmented">
         <button class="mode-seg-btn active" id="btnModePractice" onclick="setAppQuizMode('practice')">
           📖 โหมดฝึกฝน (ตรวจทีละข้อ)
@@ -1019,16 +1221,6 @@
         <button class="mode-seg-btn exam" id="btnModeExam" onclick="setAppQuizMode('exam')">
           ⏱️ โหมดสอบจริง (ส่งรวมท้ายชุด)
         </button>
-      </div>
-
-      <div style="display:flex; align-items:center; gap:8px;">
-        <span style="font-size:12px; font-weight:700; color:var(--ink-soft);">คัดกรอง:</span>
-        <select class="form-input" id="lobbyExamTypeFilter" onchange="onLobbyExamTypeFilterChange()" style="width:auto; padding:6px 12px; font-size:12.5px; font-weight:600; border-radius:10px;">
-          <option value="all">🌟 ทุกประเภทข้อสอบ</option>
-          <option value="real_2567">🎯 เฉพาะข้อสอบจริงปี 2567</option>
-          <option value="real_all">🎯 ข้อสอบจริงทุกปี</option>
-          <option value="mock">📝 เฉพาะข้อสอบจำลอง (Mock)</option>
-        </select>
       </div>
     </div>
 
@@ -1063,6 +1255,15 @@
         Browse คลัง
       </button>
       
+      <button class="lobby-tool-btn" onclick="openCommunityModal()" style="color:#0891b2; border-color:#a5f3fc; background:#ecfeff;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        👥 ชุมชน & อันดับ
+      </button>
+      <button class="lobby-tool-btn" onclick="openPrintExamModal()" style="color:#4338ca; border-color:#c7d2fe; background:#eef2ff;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        🖨️ พิมพ์ข้อสอบ (PDF)
+      </button>
+
       <button class="lobby-tool-btn" onclick="openHistoryModal()" style="color:#7C3AED; border-color:#DDD6FE; background:#F3E8FF;">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         📜 ประวัติการสอบ
@@ -1101,6 +1302,9 @@
       </div>
       
       <div class="topbar-right">
+        <button class="icon-btn" id="btnShufflePractice" onclick="shuffleCurrentQuizDeck()" title="🔀 สลับลำดับข้อสอบ (Shuffle)">
+          <span style="font-size:13px;">🔀</span>
+        </button>
         <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
           <span style="font-size:13px;">📖</span>
         </button>
@@ -1580,8 +1784,185 @@
     <img class="lightbox-img" id="lightboxImg" src="" alt="ขยายรูปภาพ" onclick="event.stopPropagation()">
   </div>
 
+  <!-- ══ PRINT & EXPORT PDF MODAL ══ -->
+  <div class="modal-overlay" id="printExamModal">
+    <div class="modal-box" style="max-width:540px;">
+      <div class="modal-head">
+        <h3>🖨️ พิมพ์ข้อสอบ / บันทึกเป็น PDF (A4)</h3>
+        <button class="modal-close" onclick="closePrintExamModal()">✕</button>
+      </div>
+
+      <div class="form-group">
+        <label>หมวดวิชาที่ต้องการพิมพ์</label>
+        <select class="form-input" id="printCategorySelect" onchange="onPrintCategoryChange()"></select>
+      </div>
+
+      <div class="form-group" id="printSubtopicGroup" style="display:none;">
+        <label>หัวข้อย่อย</label>
+        <select class="form-input" id="printSubtopicSelect" onchange="updatePrintAvailableCount()"></select>
+      </div>
+
+      <div class="form-group">
+        <label>ประเภทข้อสอบ (คัดกรอง)</label>
+        <select class="form-input" id="printExamTypeSelect" onchange="updatePrintAvailableCount()"></select>
+      </div>
+
+      <div class="form-group">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+          <label>จำนวนข้อสอบที่ต้องการพิมพ์</label>
+          <span style="font-size:11.5px; font-weight:700; color:var(--clinic);" id="printAvailableCountBadge">มีทั้งหมด 0 ข้อ</span>
+        </div>
+        <div class="setup-count-chips">
+          <button type="button" class="setup-chip-btn" id="printChipCount10" onclick="setPrintQuestionCount(10)">10 ข้อ</button>
+          <button type="button" class="setup-chip-btn active" id="printChipCount20" onclick="setPrintQuestionCount(20)">20 ข้อ</button>
+          <button type="button" class="setup-chip-btn" id="printChipCount40" onclick="setPrintQuestionCount(40)">40 ข้อ</button>
+          <button type="button" class="setup-chip-btn" id="printChipCount60" onclick="setPrintQuestionCount(60)">60 ข้อ</button>
+          <button type="button" class="setup-chip-btn" id="printChipCount120" onclick="setPrintQuestionCount(120)">120 ข้อ (1 ชุด)</button>
+          <button type="button" class="setup-chip-btn" id="printChipCountAll" onclick="setPrintQuestionCount('all')">ทั้งหมด</button>
+        </div>
+        <input class="form-input" type="number" id="printCustomCountInput" min="1" max="500" value="20" oninput="onPrintCustomCountChange()">
+      </div>
+
+      <div class="form-group">
+        <label>รูปแบบการพิมพ์ (Mode)</label>
+        <select class="form-input" id="printLayoutModeSelect">
+          <option value="exam_paper">📝 ชุดข้อสอบปรนัย (Blank Exam Paper) + กระดาษคำตอบฝนท้ายชุด</option>
+          <option value="solution_book">📘 คู่มือเฉลยละเอียด (Complete Solution Key & Notes)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>ขนาดตัวอักษรสำหรับกระดาษ A4</label>
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:4px;">
+          <label style="display:flex; align-items:center; gap:6px; font-size:12.5px; cursor:pointer;">
+            <input type="radio" name="printFontSizeRadio" value="11" checked> 11pt (กะทัดรัด ประหยัดหน้า)
+          </label>
+          <label style="display:flex; align-items:center; gap:6px; font-size:12.5px; cursor:pointer;">
+            <input type="radio" name="printFontSizeRadio" value="13"> 13pt (มาตรฐาน สบายตา)
+          </label>
+          <label style="display:flex; align-items:center; gap:6px; font-size:12.5px; cursor:pointer;">
+            <input type="radio" name="printFontSizeRadio" value="15"> 15pt (ตัวโต อ่านง่าย)
+          </label>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px; margin-top:16px;">
+        <button class="submit-btn" onclick="executePrintExam()" style="background:#4338ca;">
+          🖨️ เปิดหน้าพิมพ์ / บันทึก PDF
+        </button>
+        <button class="lobby-tool-btn" onclick="closePrintExamModal()" style="width:auto; padding:0 16px;">
+          ยกเลิก
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ COMMUNITY & LEADERBOARD MODAL ══ -->
+  <div class="modal-overlay" id="communityModal">
+    <div class="modal-box" style="max-width:620px;">
+      <div class="modal-head">
+        <h3>👥 ชุมชนและอันดับคะแนน (Community & Leaderboard)</h3>
+        <button class="modal-close" onclick="closeCommunityModal()">✕</button>
+      </div>
+
+      <!-- Tabs -->
+      <div class="community-tabs">
+        <button class="comm-tab-btn active" id="tabCommLeaderboard" onclick="switchCommunityTab('leaderboard')">
+          🏆 อันดับคะแนน (Leaderboard)
+        </button>
+        <button class="comm-tab-btn" id="tabCommChat" onclick="switchCommunityTab('chat')">
+          💬 ห้องสนทนาถาม-ตอบ (Open Chat)
+        </button>
+      </div>
+
+      <!-- Tab 1: Leaderboard -->
+      <div id="commPanelLeaderboard">
+        <div class="leaderboard-stats-grid">
+          <div class="lb-stat-card">
+            <div class="lb-stat-val" id="lbStatTotalMembers">-</div>
+            <div class="lb-stat-label">👥 สมาชิกทั้งหมด</div>
+          </div>
+          <div class="lb-stat-card">
+            <div class="lb-stat-val" id="lbStatTotalAnswered">-</div>
+            <div class="lb-stat-label">📝 ทำข้อสอบสะสม</div>
+          </div>
+          <div class="lb-stat-card">
+            <div class="lb-stat-val" id="lbStatAvgAccuracy" style="color:var(--confident);">-</div>
+            <div class="lb-stat-label">🎯 ความแม่นยำเฉลี่ย</div>
+          </div>
+        </div>
+
+        <div class="lb-podium" id="lbPodiumContainer">
+          <!-- Top 3 Podium dynamically rendered -->
+        </div>
+
+        <div style="font-size:12px; font-weight:700; color:var(--ink); margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
+          <span>ตารางคะแนนสูงสุด 10 อันดับแรก (Top 10):</span>
+          <button onclick="refreshLeaderboardLive()" style="background:none; border:none; color:var(--clinic); font-size:11.5px; font-weight:700; cursor:pointer;">
+            🔄 รีเฟรช
+          </button>
+        </div>
+
+        <div style="border:1px solid var(--border); border-radius:12px; overflow:hidden; background:var(--card); max-height:240px; overflow-y:auto;">
+          <table class="lb-table" id="lbTable">
+            <thead>
+              <tr>
+                <th style="width:34px; text-align:center;">#</th>
+                <th>ชื่อผู้ใช้งาน</th>
+                <th style="text-align:center;">สายวิชา</th>
+                <th style="text-align:right;">ทำสะสม</th>
+                <th style="text-align:right;">คะแนนถูกต้อง</th>
+                <th style="text-align:right;">แม่นยำ</th>
+              </tr>
+            </thead>
+            <tbody id="lbTableBody">
+              <tr><td colspan="6" style="text-align:center; padding:20px; color:var(--ink-faint);">กำลังโหลดอันดับ...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 2: Open Chat & Q&A Forum -->
+      <div id="commPanelChat" style="display:none;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <span style="font-size:12px; color:var(--ink-soft);">แลกเปลี่ยนข้อสงสัย ถาม-ตอบจุดเน้นข้อสอบร่วมกับเพื่อนนิสิต</span>
+          <button onclick="loadCommunityMessagesLive()" style="background:none; border:none; color:var(--clinic); font-size:11.5px; font-weight:700; cursor:pointer;">
+            🔄 รีเฟรชแชท
+          </button>
+        </div>
+
+        <div class="chat-messages-container" id="chatMessagesContainer">
+          <div style="padding:20px; text-align:center; color:var(--ink-faint);">กำลังโหลดข้อความ...</div>
+        </div>
+
+        <!-- Replying indicator bar -->
+        <div class="chat-replying-bar" id="chatReplyingBar">
+          <span>ตอบกลับ: <b id="chatReplyTargetName">@user</b>: <span id="chatReplyTargetSnippet" style="font-style:italic;">...</span></span>
+          <button type="button" onclick="cancelChatReply()" style="background:none; border:none; color:#B45309; font-weight:700; cursor:pointer;">✕ ยกเลิก</button>
+        </div>
+
+        <!-- Chat input bar -->
+        <div class="chat-input-bar">
+          <textarea class="chat-input-box" id="chatInputText" placeholder="พิมพ์ข้อความถาม-ตอบ หรือแลกเปลี่ยนความรู้... (กด Enter เพื่อส่ง)" rows="1" onkeydown="handleChatInputKeyDown(event)"></textarea>
+          <button class="submit-btn" onclick="sendCommunityChatMessage()" style="width:auto; padding:8px 16px;" id="btnSendChat">
+            ส่ง 💬
+          </button>
+        </div>
+      </div>
+
+      <div style="margin-top:14px; text-align:right;">
+        <button class="submit-btn" onclick="closeCommunityModal()" style="width:auto; padding:8px 18px; margin-left:auto;">
+          ปิด
+        </button>
+      </div>
+    </div>
+  </div>
+
   <div class="toast" id="toast"></div>
 </div>
+
+<!-- ══ PRINT CONTAINER (A4 PRINT ENGINE) ══ -->
+<div id="printContainer"></div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
 <script src="quiz-data-offline.js?v=20260923_v4"></script>
@@ -1631,6 +2012,7 @@ function saveQuestionProgress(qId, selectedChoice, isCorrect, category) {
       timestamp: new Date().toISOString()
     };
     localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(p));
+    if (typeof syncCurrentUserProfile === 'function') syncCurrentUserProfile();
   } catch(e) {}
 }
 
@@ -2133,6 +2515,7 @@ function showApp() {
   document.getElementById('lobbyGreetingName').textContent = dn;
   setAppQuizMode(appQuizMode);
   loadInitialData();
+  if (typeof syncCurrentUserProfile === 'function') syncCurrentUserProfile();
 }
 
 function switchAuthTab(tab) {
@@ -2313,7 +2696,6 @@ function showLobby() {
 function buildLobby() {
   const grid = document.getElementById('lobbyDeckGrid');
   const visCats = getVisibleCategories();
-  populateExamTypeFilterDropdown('lobbyExamTypeFilter', true);
 
   if (!visCats.length) {
     grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; color:var(--ink-faint); padding:24px;">ยังไม่มีข้อมูลในสายวิชานี้</div>';
@@ -2341,7 +2723,7 @@ function buildLobby() {
     const fillClass = norm.includes('prod') ? 'product-fill' : norm.includes('sap') ? 'sap-fill' : 'clinic-fill';
 
     html += `
-      <div class="deck-card ${cardClass}" onclick="openQuizSetupModal('${cat.name.replace(/'/g, "\\'")}', '${cat.track}')">
+      <div class="deck-card ${cardClass}" onclick="handleDeckCardClick('${cat.name.replace(/'/g, "\\'")}', '${cat.track}')">
         <div class="deck-card-top">
           <div class="deck-emoji">${em}</div>
           <span class="deck-pct-badge ${pctBadgeClass}">${pct}% ทำแล้ว</span>
@@ -2352,6 +2734,46 @@ function buildLobby() {
       </div>`;
   });
   grid.innerHTML = html;
+}
+
+function handleDeckCardClick(catName, track) {
+  if (appQuizMode === 'practice') {
+    enterQuizCategoryDirectly(catName, track);
+  } else {
+    openQuizSetupModal(catName, track, false);
+  }
+}
+
+function enterQuizCategoryDirectly(catName, track) {
+  currentCategory = catName;
+  currentTrack = track || currentTrack;
+  currentSubtopic = '__all__';
+  let qs = (allQuestionsMap[catName] || []).slice();
+  if (!qs.length) {
+    showToast('ยังไม่มีข้อสอบในหมวดนี้');
+    return;
+  }
+
+  // Populate subtopic selector row if multiple subtopics
+  const subs = Array.from(new Set(qs.map(q => q.subtopic).filter(Boolean)));
+  const subRow = document.getElementById('quizSubtopicRow');
+  const subSel = document.getElementById('quizSubtopicSelect');
+  if (subs.length > 1) {
+    subRow.style.display = 'block';
+    let sHtml = '<option value="__all__">📂 ทุกหัวข้อย่อย (' + qs.length + ' ข้อ)</option>';
+    subs.sort().forEach(s => {
+      const c = qs.filter(q => q.subtopic === s).length;
+      sHtml += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
+    });
+    subSel.innerHTML = sHtml;
+    subSel.value = '__all__';
+  } else {
+    subRow.style.display = 'none';
+  }
+
+  stopQuizCountdownTimer();
+  startQuizWithQuestions(qs, catName);
+  showToast(`📖 เข้าสู่โหมดฝึกฝน: ${catName} (${qs.length} ข้อ)`);
 }
 
 // ─── CHOICE CLEANING HELPER & CONSTANTS ───
@@ -2631,6 +3053,63 @@ function onSetupTimerSelectChange() {
   }
 }
 
+function getStratifiedBalancedPool(categoriesList, targetTotal, examTypeFilter) {
+  if (!categoriesList || !categoriesList.length) return [];
+  const catPools = {};
+  let totalAvailable = 0;
+
+  categoriesList.forEach(c => {
+    let list = (allQuestionsMap[c.name] || []).slice();
+    list = filterQuestionsByExamType(list, examTypeFilter);
+    // Shuffle individual category pool
+    for (let i = list.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [list[i], list[j]] = [list[j], list[i]];
+    }
+    catPools[c.name] = list;
+    totalAvailable += list.length;
+  });
+
+  if (targetTotal >= totalAvailable) {
+    let combined = [];
+    Object.values(catPools).forEach(list => { combined = combined.concat(list); });
+    for (let i = combined.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [combined[i], combined[j]] = [combined[j], combined[i]];
+    }
+    return combined;
+  }
+
+  const numCats = categoriesList.length;
+  const perCatBase = Math.floor(targetTotal / numCats);
+  const selected = [];
+  const leftovers = [];
+
+  categoriesList.forEach(c => {
+    const list = catPools[c.name] || [];
+    const takeCount = Math.min(list.length, perCatBase);
+    selected.push(...list.slice(0, takeCount));
+    leftovers.push(...list.slice(takeCount));
+  });
+
+  const deficit = targetTotal - selected.length;
+  if (deficit > 0 && leftovers.length > 0) {
+    for (let i = leftovers.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [leftovers[i], leftovers[j]] = [leftovers[j], leftovers[i]];
+    }
+    selected.push(...leftovers.slice(0, deficit));
+  }
+
+  // Shuffle final combined result so categories are intermingled
+  for (let i = selected.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [selected[i], selected[j]] = [selected[j], selected[i]];
+  }
+
+  return selected;
+}
+
 function startConfiguredQuiz() {
   const pool = getSetupFilteredPool();
   if (!pool.length) {
@@ -2644,17 +3123,23 @@ function startConfiguredQuiz() {
   const chosenMode = document.getElementById('setupModeSelect').value;
   setAppQuizMode(chosenMode);
 
-  // Question count & sampling
-  let finalQuestions = pool.slice();
-  if (setupIsRandom || setupQuestionCount !== 'all') {
-    for (let i = finalQuestions.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [finalQuestions[i], finalQuestions[j]] = [finalQuestions[j], finalQuestions[i]];
-    }
-  }
+  // Question count & Stratified Sampling
+  const targetCount = (setupQuestionCount === 'all') ? pool.length : (parseInt(document.getElementById('setupCustomCountInput').value, 10) || pool.length);
 
-  const targetCount = (setupQuestionCount === 'all') ? finalQuestions.length : (parseInt(document.getElementById('setupCustomCountInput').value, 10) || finalQuestions.length);
-  finalQuestions = finalQuestions.slice(0, targetCount);
+  let finalQuestions = [];
+  if (setupCategory === '__all__') {
+    const visCats = getVisibleCategories();
+    finalQuestions = getStratifiedBalancedPool(visCats, targetCount, setupExamType);
+  } else {
+    finalQuestions = pool.slice();
+    if (setupIsRandom || setupQuestionCount !== 'all') {
+      for (let i = finalQuestions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [finalQuestions[i], finalQuestions[j]] = [finalQuestions[j], finalQuestions[i]];
+      }
+    }
+    finalQuestions = finalQuestions.slice(0, targetCount);
+  }
 
   // Timer Calculation
   const timerOption = document.getElementById('setupTimerSelect').value;
@@ -2734,6 +3219,12 @@ function startQuizWithQuestions(qs, titleText) {
   const toggleBar = document.getElementById('examPaletteToggleBar');
   if (toggleBar) toggleBar.classList.toggle('show', appQuizMode === 'exam');
   
+  // Shuffle button in practice mode
+  const shuffleBtn = document.getElementById('btnShufflePractice');
+  if (shuffleBtn) {
+    shuffleBtn.style.display = (appQuizMode === 'practice') ? 'inline-flex' : 'none';
+  }
+
   // Collapse palette by default
   isPaletteOpen = false;
   const pal = document.getElementById('examNavPalette');
@@ -2744,6 +3235,22 @@ function startQuizWithQuestions(qs, titleText) {
   if (label) label.textContent = 'แสดงผัง';
 
   renderCurrentQuestion();
+}
+
+function shuffleCurrentQuizDeck() {
+  if (!activeQuizQuestions || activeQuizQuestions.length <= 1) {
+    showToast('มีข้อสอบเพียง 1 ข้อ ไม่จำเป็นต้องสลับ');
+    return;
+  }
+  for (let i = activeQuizQuestions.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [activeQuizQuestions[i], activeQuizQuestions[j]] = [activeQuizQuestions[j], activeQuizQuestions[i]];
+  }
+  currentQuestionIndex = 0;
+  selectedChoiceIndex = null;
+  isAnswerSubmitted = false;
+  renderCurrentQuestion();
+  showToast('🔀 สลับลำดับข้อสอบสุ่มใหม่เรียบร้อยแล้ว!');
 }
 
 // ─── RENDER QUESTION ───
@@ -2772,8 +3279,17 @@ function renderCurrentQuestion() {
     examTagClass = 'tag-mock-exam';
   }
 
-  const itemNo = q.itemNo || (currentQuestionIndex + 1);
-  tagEl.innerHTML = `<span>${q.track || 'Clinic'} · ${q.subtopic || q.category} · ข้อ ${itemNo}</span> <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>`;
+  const currentDisplayNumber = currentQuestionIndex + 1;
+  const totalQuestions = activeQuizQuestions.length;
+
+  if (appQuizMode === 'exam') {
+    // BLIND EXAM MODE: Hide subtopic & category name so user cannot guess disease/drug class
+    tagEl.innerHTML = `<span>ข้อที่ ${currentDisplayNumber} / ${totalQuestions}</span> <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>`;
+  } else {
+    // PRACTICE MODE: Show full details, clean session number, and internal Ref ID
+    const refBadge = q.itemNo ? `<span style="font-size:10.5px; opacity:0.65; margin-left:4px;">(Ref: ${q.itemNo})</span>` : '';
+    tagEl.innerHTML = `<span>${q.track || 'Clinic'} · ${q.subtopic || q.category} · ข้อที่ ${currentDisplayNumber}</span>${refBadge} <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>`;
+  }
   tagEl.className = `tag ${norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag'}`;
 
   // Question Image
@@ -2787,8 +3303,14 @@ function renderCurrentQuestion() {
     qImgWrap.classList.remove('show');
   }
 
-  // Question Text
-  document.getElementById('questionText').innerHTML = q.question || 'ไม่มีข้อความโจทย์';
+  // Question Text (Blind exam mode topic leak prevention)
+  let rawQText = q.question || 'ไม่มีข้อความโจทย์';
+  if (appQuizMode === 'exam') {
+    rawQText = rawQText.replace(/\[\s*เรื่อง\s*:[^\]]+\]/gi, '');
+    rawQText = rawQText.replace(/📌\s*ข้อที่\s*\d+\s*(?:\[[^\]]+\])*\s*:/gi, `📌 ข้อที่ ${currentDisplayNumber}:`);
+    rawQText = rawQText.replace(/^ข้อที่\s*\d+\s*:/gi, `ข้อที่ ${currentDisplayNumber}:`);
+  }
+  document.getElementById('questionText').innerHTML = rawQText;
 
   // Render Choices
   const container = document.getElementById('choicesContainer');
@@ -3659,6 +4181,638 @@ function openImgLightbox(src) {
 }
 function closeImgLightbox() {
   document.getElementById('imgLightboxModal').classList.remove('show');
+}
+// ─── PRINT / EXPORT PDF ENGINE ───
+let printSelectedCategory = '__all__';
+let printSelectedSubtopic = '__all__';
+let printSelectedExamType = 'all';
+let printQuestionCount = 20;
+
+function openPrintExamModal() {
+  printSelectedCategory = '__all__';
+  printSelectedSubtopic = '__all__';
+  printSelectedExamType = 'all';
+  printQuestionCount = 20;
+
+  // Populate Categories
+  const catSel = document.getElementById('printCategorySelect');
+  let html = `<option value="__all__">🌟 รวมทุกหมวดในสายวิชา (${currentTrack.toUpperCase()})</option>`;
+  const vis = getVisibleCategories();
+  vis.forEach(c => {
+    html += `<option value="${c.name}">${c.name} (${c.count} ข้อ)</option>`;
+  });
+  catSel.innerHTML = html;
+  catSel.value = '__all__';
+
+  // Populate Exam Types
+  populateExamTypeFilterDropdown('printExamTypeSelect', true);
+
+  onPrintCategoryChange();
+  setPrintQuestionCount(20);
+
+  document.getElementById('printExamModal').classList.add('show');
+}
+
+function closePrintExamModal() {
+  document.getElementById('printExamModal').classList.remove('show');
+}
+
+function onPrintCategoryChange() {
+  printSelectedCategory = document.getElementById('printCategorySelect').value;
+  const subGroup = document.getElementById('printSubtopicGroup');
+  const subSel = document.getElementById('printSubtopicSelect');
+
+  if (printSelectedCategory === '__all__') {
+    subGroup.style.display = 'none';
+    printSelectedSubtopic = '__all__';
+  } else {
+    const qs = allQuestionsMap[printSelectedCategory] || [];
+    const subs = Array.from(new Set(qs.map(q => q.subtopic).filter(Boolean)));
+    if (subs.length > 1) {
+      subGroup.style.display = 'block';
+      let html = '<option value="__all__">📂 ทุกหัวข้อย่อย (' + qs.length + ' ข้อ)</option>';
+      subs.sort().forEach(s => {
+        const c = qs.filter(q => q.subtopic === s).length;
+        html += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
+      });
+      subSel.innerHTML = html;
+      subSel.value = '__all__';
+      printSelectedSubtopic = '__all__';
+    } else {
+      subGroup.style.display = 'none';
+      printSelectedSubtopic = '__all__';
+    }
+  }
+  updatePrintAvailableCount();
+}
+
+function updatePrintAvailableCount() {
+  const pool = getPrintFilteredPool();
+  const badge = document.getElementById('printAvailableCountBadge');
+  if (badge) badge.textContent = `มีทั้งหมด ${pool.length} ข้อ`;
+}
+
+function setPrintQuestionCount(val) {
+  printQuestionCount = val;
+  const chips = ['10', '20', '40', '60', '120', 'All'];
+  chips.forEach(c => {
+    const el = document.getElementById('printChipCount' + c);
+    if (el) el.classList.remove('active');
+  });
+
+  const pool = getPrintFilteredPool();
+  let numVal = val;
+  if (val === 'all') {
+    numVal = pool.length || 1;
+    const el = document.getElementById('printChipCountAll');
+    if (el) el.classList.add('active');
+  } else {
+    const el = document.getElementById('printChipCount' + val);
+    if (el) el.classList.add('active');
+  }
+  document.getElementById('printCustomCountInput').value = numVal;
+}
+
+function onPrintCustomCountChange() {
+  const val = parseInt(document.getElementById('printCustomCountInput').value, 10) || 10;
+  printQuestionCount = val;
+  const chips = ['10', '20', '40', '60', '120', 'All'];
+  chips.forEach(c => {
+    const el = document.getElementById('printChipCount' + c);
+    if (el) el.classList.toggle('active', c === String(val));
+  });
+}
+
+function getPrintFilteredPool() {
+  const examTypeFilter = document.getElementById('printExamTypeSelect') ? document.getElementById('printExamTypeSelect').value : 'all';
+  let pool = [];
+  if (printSelectedCategory === '__all__') {
+    const vis = getVisibleCategories();
+    vis.forEach(c => {
+      pool = pool.concat(allQuestionsMap[c.name] || []);
+    });
+  } else {
+    pool = (allQuestionsMap[printSelectedCategory] || []).slice();
+    const subSel = document.getElementById('printSubtopicSelect');
+    const subVal = subSel ? subSel.value : '__all__';
+    if (subVal !== '__all__') {
+      pool = pool.filter(q => q.subtopic === subVal);
+    }
+  }
+  return filterQuestionsByExamType(pool, examTypeFilter);
+}
+
+function executePrintExam() {
+  const pool = getPrintFilteredPool();
+  if (!pool.length) {
+    alert('ไม่พบข้อสอบตามเงื่อนไขที่เลือก กรุณาเปลี่ยนหมวดหรือตัวกรอง');
+    return;
+  }
+
+  const targetCount = (printQuestionCount === 'all') ? pool.length : (parseInt(document.getElementById('printCustomCountInput').value, 10) || pool.length);
+  const examTypeFilter = document.getElementById('printExamTypeSelect').value;
+
+  let questions = [];
+  if (printSelectedCategory === '__all__') {
+    const visCats = getVisibleCategories();
+    questions = getStratifiedBalancedPool(visCats, targetCount, examTypeFilter);
+  } else {
+    questions = pool.slice(0, targetCount);
+  }
+
+  const layoutMode = document.getElementById('printLayoutModeSelect').value;
+  const fontSizeRadio = document.querySelector('input[name="printFontSizeRadio"]:checked');
+  const fontSize = fontSizeRadio ? fontSizeRadio.value : '11';
+
+  const container = document.getElementById('printContainer');
+  if (!container) return;
+
+  const title = (printSelectedCategory === '__all__') ? `รวมข้อสอบในสายวิชา ${currentTrack.toUpperCase()}` : printSelectedCategory;
+  const subTitle = (printSelectedSubtopic !== '__all__') ? ` · ${printSelectedSubtopic}` : '';
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('th-TH', { year: 'numeric', month: 'long', day: 'numeric' });
+
+  // Generate Questions Markup
+  let qHtml = '';
+  questions.forEach((q, idx) => {
+    let choicesHtml = '';
+    (q.choices || []).forEach((c, cIdx) => {
+      if (!c && c !== 0) return;
+      const cNum = cIdx + 1;
+      const cleanC = cleanChoiceString(c);
+      const letter = THAI_CHOICE_LETTERS[cIdx] || (cNum + '.');
+      const isCorrect = (cNum === q.answer);
+      const highlight = (layoutMode === 'solution_book' && isCorrect);
+
+      choicesHtml += `
+        <div class="print-choice-row" style="${highlight ? 'font-weight:700; color:#14532D;' : ''}">
+          <span style="display:inline-block; width:22pt;">${letter}</span>
+          <span>${formatPlainTextToHtml(cleanC)}</span>
+          ${highlight ? ' <span style="font-size:8.5pt; color:#15803D;">[✓ คำตอบที่ถูกต้อง]</span>' : ''}
+        </div>`;
+    });
+
+    qHtml += `
+      <div class="print-q-card">
+        <div class="print-q-title">
+          <span>ข้อที่ ${idx + 1}.</span> ${formatPlainTextToHtml(q.question || '')}
+        </div>
+        ${q.questionImage ? `<div style="text-align:center; margin:6pt 0;"><img src="${q.questionImage}" style="max-height:160px; max-width:100%; border:1px solid #ccc;"></div>` : ''}
+        <div class="print-choices">
+          ${choicesHtml}
+        </div>
+        ${layoutMode === 'solution_book' ? `
+          <div class="print-exp-box">
+            <div style="font-weight:700; margin-bottom:3pt;">💡 เฉลยละเอียด: ตัวเลือกที่ ${q.answer} (${THAI_CHOICE_LETTERS[q.answer - 1] || q.answer})</div>
+            <div>${q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติม'}</div>
+            ${q.answerImage ? `<div style="text-align:center; margin-top:6pt;"><img src="${q.answerImage}" style="max-height:140px; max-width:100%; border:1px solid #ccc;"></div>` : ''}
+            ${q.note ? `<div style="font-size:8pt; color:#555; margin-top:3pt;">📌 หมายเหตุ: ${q.note}</div>` : ''}
+          </div>` : ''}
+      </div>`;
+  });
+
+  // Generate OMR Answer Bubble Grid if Blank Exam Paper
+  let answerSheetHtml = '';
+  if (layoutMode === 'exam_paper') {
+    let bubbleRowsHtml = '';
+    for (let i = 1; i <= questions.length; i++) {
+      bubbleRowsHtml += `
+        <div class="print-bubble-row">
+          <span style="width:24pt; font-weight:700; text-align:right;">ข้อ ${i}.</span>
+          <span class="print-bubble">ก</span>
+          <span class="print-bubble">ข</span>
+          <span class="print-bubble">ค</span>
+          <span class="print-bubble">ง</span>
+          <span class="print-bubble">จ</span>
+        </div>`;
+    }
+
+    answerSheetHtml = `
+      <div class="print-answer-sheet">
+        <div class="print-header">
+          <div>
+            <h1>กระดาษคำตอบสำหรับฝน (Answer Sheet)</h1>
+            <p>คณะทำงานโครงการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม ปีการศึกษา 2569 (RxCU)</p>
+          </div>
+          <div class="print-meta-box">
+            <div>ชุดวิชา: <b>${title}${subTitle}</b></div>
+            <div>จำนวนข้อสอบ: <b>${questions.length} ข้อ</b></div>
+          </div>
+        </div>
+        <div class="print-student-info">
+          <div>ชื่อ-นามสกุล: __________________________________________________</div>
+          <div>รหัสนิสิต: _________________</div>
+          <div>คะแนนที่ได้: _______ / ${questions.length}</div>
+        </div>
+        <p style="font-size:8.5pt; color:#444; margin-bottom:10pt;">
+          คำแนะนำ: ใช้ดินสอ 2B ฝนในวงกลมตัวเลือกที่ถูกต้องที่สุดเพียงข้อเดียว
+        </p>
+        <div class="print-bubble-grid">
+          ${bubbleRowsHtml}
+        </div>
+      </div>`;
+  }
+
+  // Combine Final Document
+  container.innerHTML = `
+    <div class="print-fs-${fontSize}">
+      <div class="print-header">
+        <div>
+          <h1>📘 PLE-CC 2569 — แบบทดสอบเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม</h1>
+          <p>หมวด: <b>${title}${subTitle}</b> · วันที่จัดพิมพ์: ${dateStr}</p>
+        </div>
+        <div class="print-meta-box">
+          <div>รูปแบบ: <b>${layoutMode === 'exam_paper' ? '📝 ฉบับข้อสอบจริง' : '📘 คู่มือเฉลยละเอียด'}</b></div>
+          <div>จำนวน: <b>${questions.length} ข้อ</b></div>
+        </div>
+      </div>
+
+      <div class="print-student-info">
+        <div>ชื่อ-นามสกุล: __________________________________________________</div>
+        <div>รหัสนิสิต: _________________</div>
+        <div>คะแนนที่ได้: _______ / ${questions.length}</div>
+      </div>
+
+      <div class="print-questions-list">
+        ${qHtml}
+      </div>
+
+      ${answerSheetHtml}
+    </div>`;
+
+  closePrintExamModal();
+  setTimeout(() => {
+    window.print();
+  }, 300);
+}
+
+
+// ─── COMMUNITY & LEADERBOARD ENGINE ───
+let communityCurrentTab = 'leaderboard';
+let chatReplyTarget = null;
+let communityCachedMessages = [];
+let communityLeaderboardList = [];
+
+function openCommunityModal() {
+  document.getElementById('communityModal').classList.add('show');
+  switchCommunityTab(communityCurrentTab);
+  loadLeaderboardData();
+  loadCommunityMessagesLive();
+}
+
+function closeCommunityModal() {
+  document.getElementById('communityModal').classList.remove('show');
+}
+
+function switchCommunityTab(tab) {
+  communityCurrentTab = tab;
+  document.getElementById('tabCommLeaderboard').classList.toggle('active', tab === 'leaderboard');
+  document.getElementById('tabCommChat').classList.toggle('active', tab === 'chat');
+  document.getElementById('commPanelLeaderboard').style.display = (tab === 'leaderboard') ? 'block' : 'none';
+  document.getElementById('commPanelChat').style.display = (tab === 'chat') ? 'block' : 'none';
+}
+
+function refreshLeaderboardLive() {
+  showToast('⚡ กำลังรีเฟรชตารางอันดับคะแนน...');
+  loadLeaderboardData();
+}
+
+async function loadLeaderboardData() {
+  const seedUsers = [
+    { rank: 1, username: 'max', displayName: 'Doctor Max', track: 'Clinic', total: 70, correct: 68, accuracy: 97, badge: '👑 Head' },
+    { rank: 2, username: 'thanadol', displayName: 'Thanadol', track: 'Clinic', total: 65, correct: 62, accuracy: 95, badge: '🩺 RxCU' },
+    { rank: 3, username: 'lin', displayName: 'Lin (วิชาการ Clinic)', track: 'Clinic', total: 60, correct: 57, accuracy: 95, badge: '💊 Team' },
+    { rank: 4, username: 'fon', displayName: 'Fon (วิชาการ Product)', track: 'Product', total: 55, correct: 51, accuracy: 93, badge: '🔬 Team' },
+    { rank: 5, username: 'irene', displayName: 'Irene (Head CC2 OSPE)', track: 'Clinic', total: 52, correct: 48, accuracy: 92, badge: '👑 Team' },
+    { rank: 6, username: 'kratae', displayName: 'Kratae (OSPE Clinic)', track: 'Clinic', total: 50, correct: 45, accuracy: 90, badge: '🗣️ Team' },
+    { rank: 7, username: 'min', displayName: 'Min (OSPE Product)', track: 'Product', total: 45, correct: 40, accuracy: 89, badge: '🧪 Team' },
+    { rank: 8, username: 'poy', displayName: 'Poy (เลขาโครงการ)', track: 'SAP', total: 40, correct: 36, accuracy: 90, badge: '📑 Team' },
+    { rank: 9, username: 'title', displayName: 'Title (เหรัญญิกโครงการ)', track: 'SAP', total: 38, correct: 34, accuracy: 89, badge: '💰 Team' },
+    { rank: 10, username: 'admin', displayName: 'Admin RxCU', track: 'All', total: 30, correct: 28, accuracy: 93, badge: '🛡️ Admin' }
+  ];
+
+  let users = seedUsers.slice();
+
+  // Try fetching from Google Apps Script
+  if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
+    try {
+      const resp = await fetch(window.QUIZ_GAS_WEBAPP_URL + '?action=getLeaderboard&_nocache=' + Date.now());
+      if (resp.ok) {
+        const json = await resp.json();
+        if (json.success && json.data && json.data.leaderboard && json.data.leaderboard.length > 0) {
+          users = json.data.leaderboard;
+        }
+      }
+    } catch(e) {}
+  }
+
+  // Merge current user's local real progress
+  if (currentUser && currentUser.username !== 'anonymous') {
+    const prog = getQuizProgress();
+    const myTotal = Object.keys(prog).length;
+    const myCorrect = Object.values(prog).filter(v => v.isCorrect).length;
+    const myAcc = myTotal ? Math.round((myCorrect / myTotal) * 100) : 0;
+
+    const existingIdx = users.findIndex(u => u.username === currentUser.username || u.displayName === currentUser.displayName);
+    if (existingIdx !== -1) {
+      if (myTotal > users[existingIdx].total) {
+        users[existingIdx].total = myTotal;
+        users[existingIdx].correct = myCorrect;
+        users[existingIdx].accuracy = myAcc;
+      }
+    } else if (myTotal > 0) {
+      users.push({
+        rank: 99,
+        username: currentUser.username,
+        displayName: currentUser.displayName,
+        track: currentTrack || 'Clinic',
+        total: myTotal,
+        correct: myCorrect,
+        accuracy: myAcc,
+        badge: 'นิสิต'
+      });
+    }
+  }
+
+  // Sort by correct desc then accuracy desc
+  users.sort((a, b) => (b.correct - a.correct) || (b.accuracy - a.accuracy));
+  users.forEach((u, idx) => u.rank = idx + 1);
+
+  communityLeaderboardList = users;
+  renderLeaderboard(users);
+}
+
+function renderLeaderboard(users) {
+  const top10 = users.slice(0, 10);
+  const totalMembers = Math.max(users.length, 12);
+  const totalAnsweredAll = users.reduce((acc, u) => acc + (u.total || 0), 0);
+  const avgAcc = users.length ? Math.round(users.reduce((acc, u) => acc + (u.accuracy || 0), 0) / users.length) : 90;
+
+  // Stats boxes
+  document.getElementById('lbStatTotalMembers').textContent = `${totalMembers} คน`;
+  document.getElementById('lbStatTotalAnswered').textContent = `${totalAnsweredAll.toLocaleString()} ข้อ`;
+  document.getElementById('lbStatAvgAccuracy').textContent = `${avgAcc}%`;
+
+  // Podium (Top 3)
+  const podiumContainer = document.getElementById('lbPodiumContainer');
+  if (podiumContainer && top10.length >= 3) {
+    const r1 = top10[0], r2 = top10[1], r3 = top10[2];
+    podiumContainer.innerHTML = `
+      <div class="podium-slot rank-2">
+        <div class="podium-avatar">🥈</div>
+        <div class="podium-name" title="${r2.displayName}">${r2.displayName}</div>
+        <div class="podium-score">${r2.correct}/${r2.total}</div>
+        <div style="font-size:10px; color:var(--ink-soft);">${r2.accuracy}%</div>
+      </div>
+      <div class="podium-slot rank-1">
+        <div class="podium-avatar">👑</div>
+        <div class="podium-name" style="color:#B45309;" title="${r1.displayName}">${r1.displayName}</div>
+        <div class="podium-score" style="color:#B45309;">${r1.correct}/${r1.total}</div>
+        <div style="font-size:10.5px; font-weight:700; color:#B45309;">${r1.accuracy}% แม่นยำ</div>
+      </div>
+      <div class="podium-slot rank-3">
+        <div class="podium-avatar">🥉</div>
+        <div class="podium-name" title="${r3.displayName}">${r3.displayName}</div>
+        <div class="podium-score">${r3.correct}/${r3.total}</div>
+        <div style="font-size:10px; color:var(--ink-soft);">${r3.accuracy}%</div>
+      </div>`;
+  }
+
+  // Top 10 Table
+  const tbody = document.getElementById('lbTableBody');
+  let tHtml = '';
+  top10.forEach(u => {
+    const isMe = currentUser && (u.username === currentUser.username || u.displayName === currentUser.displayName);
+    let badgeClass = 'lb-rank-badge';
+    if (u.rank === 1) badgeClass += ' rank-1-badge';
+    else if (u.rank === 2) badgeClass += ' rank-2-badge';
+    else if (u.rank === 3) badgeClass += ' rank-3-badge';
+
+    tHtml += `
+      <tr class="${isMe ? 'my-row' : ''}">
+        <td style="text-align:center;"><span class="${badgeClass}">${u.rank}</span></td>
+        <td>
+          <div style="font-weight:700; color:var(--ink);">${u.displayName} ${isMe ? '⭐ (คุณ)' : ''}</div>
+          <div style="font-size:10.5px; color:var(--ink-soft);">${u.badge || 'นิสิต RxCU'}</div>
+        </td>
+        <td style="text-align:center;"><span class="tag clinic-tag" style="padding:1px 6px; font-size:10.5px;">${u.track || 'Clinic'}</span></td>
+        <td style="text-align:right; font-family:'IBM Plex Mono', monospace;">${u.total} ข้อ</td>
+        <td style="text-align:right; font-family:'IBM Plex Mono', monospace; font-weight:700; color:var(--confident);">${u.correct}</td>
+        <td style="text-align:right; font-family:'IBM Plex Mono', monospace; font-weight:700;">${u.accuracy}%</td>
+      </tr>`;
+  });
+  tbody.innerHTML = tHtml;
+}
+
+// ─── COMMUNITY OPEN CHAT ───
+const COMMUNITY_CHAT_STORAGE_KEY = 'ple_quiz_community_chat_v1';
+
+function getLocalCommunityMessages() {
+  try {
+    const raw = localStorage.getItem(COMMUNITY_CHAT_STORAGE_KEY);
+    if (!raw) {
+      const defaults = [
+        {
+          id: 'msg_1',
+          time: new Date(Date.now() - 3600000 * 5).toISOString(),
+          username: 'max',
+          displayName: 'Doctor Max',
+          badge: '👑 ประธานโครงการ',
+          replyToId: '',
+          replySnippet: '',
+          body: 'ยินดีต้อนรับเพื่อนๆ นิสิต RxCU84/85 ทุกคนสู่ PLE-CC Quiz Practice ครับ! มีข้อสงสัยหรืออยากอภิปรายข้อไหนพิมพ์ถามในนี้ได้เลยครับ 🩺',
+          category: 'All'
+        },
+        {
+          id: 'msg_2',
+          time: new Date(Date.now() - 3600000 * 3).toISOString(),
+          username: 'lin',
+          displayName: 'Lin (วิชาการ Clinic)',
+          badge: '💊 ฝ่ายวิชาการ',
+          replyToId: 'msg_1',
+          replySnippet: 'ยินดีต้อนรับเพื่อนๆ นิสิต RxCU84/85 ทุกคนสู่ PLE-CC Quiz...',
+          body: 'หมวด Musculoskeleton (OA, RA, Osteoporosis, Gout) อัปเดตแนวทางเวชปฏิบัติและข้อสอบจริงปี 2567 ครบ 70 ข้อแล้วนะคะ ฝึกทำกันได้เลยค่ะ!',
+          category: 'Musculoskeleton'
+        },
+        {
+          id: 'msg_3',
+          time: new Date(Date.now() - 3600000 * 1).toISOString(),
+          username: 'thanadol',
+          displayName: 'Thanadol',
+          badge: '🩺 นิสิต RxCU',
+          replyToId: '',
+          replySnippet: '',
+          body: 'ข้อสอบ Gout เรื่องการตรวจยีน HLA-B*58:01 ก่อนเริ่มยา Allopurinol ออกบ่อยมาก จำขนาดยาเริ่มต้นในคนไข้โรคไตด้วยนะครับ 👍',
+          category: 'Clinic'
+        }
+      ];
+      localStorage.setItem(COMMUNITY_CHAT_STORAGE_KEY, JSON.stringify(defaults));
+      return defaults;
+    }
+    return JSON.parse(raw);
+  } catch(e) { return []; }
+}
+
+async function loadCommunityMessagesLive() {
+  let msgs = getLocalCommunityMessages();
+
+  // Try fetching from Google Apps Script
+  if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
+    try {
+      const resp = await fetch(window.QUIZ_GAS_WEBAPP_URL + '?action=getCommunityMessages&_nocache=' + Date.now());
+      if (resp.ok) {
+        const json = await resp.json();
+        if (json.success && json.messages && json.messages.length > 0) {
+          msgs = json.messages;
+          localStorage.setItem(COMMUNITY_CHAT_STORAGE_KEY, JSON.stringify(msgs));
+        }
+      }
+    } catch(e) {}
+  }
+
+  communityCachedMessages = msgs;
+  renderCommunityMessages(msgs);
+}
+
+function renderCommunityMessages(msgs) {
+  const container = document.getElementById('chatMessagesContainer');
+  if (!container) return;
+
+  if (!msgs || !msgs.length) {
+    container.innerHTML = '<div style="padding:24px; text-align:center; color:var(--ink-faint);">ยังไม่มีข้อความสนทนา ร่วมเปิดประเด็นคุยกันคนแรกได้เลย!</div>';
+    return;
+  }
+
+  let html = '';
+  msgs.forEach(m => {
+    const isMine = currentUser && (m.username === currentUser.username || m.displayName === currentUser.displayName);
+    const dt = new Date(m.time);
+    const timeStr = dt.toLocaleTimeString('th-TH', { hour: '2-digit', minute: '2-digit' });
+
+    let replyHtml = '';
+    if (m.replySnippet) {
+      replyHtml = `<div class="chat-reply-quote">↩️ ตอบกลับ: ${m.replySnippet}</div>`;
+    }
+
+    const cleanBody = formatPlainTextToHtml(m.body);
+    const escapedSnippet = (m.body || '').replace(/'/g, "\\'").replace(/"/g, '&quot;').substring(0, 45);
+
+    html += `
+      <div class="chat-bubble ${isMine ? 'mine' : ''}" id="chatBubble_${m.id}">
+        <div class="chat-bubble-head">
+          <span class="chat-bubble-name">${m.displayName}</span>
+          <span style="font-size:10px; color:var(--ink-soft); background:rgba(0,0,0,0.06); padding:1px 5px; border-radius:4px;">${m.badge || 'RxCU'}</span>
+          <span class="chat-bubble-time">${timeStr}</span>
+        </div>
+        ${replyHtml}
+        <div class="chat-bubble-body">${cleanBody}</div>
+        <div class="chat-bubble-action">
+          <button class="chat-reply-btn" onclick="setChatReplyTarget('${m.id}', '${m.displayName.replace(/'/g, "\\'")}', '${escapedSnippet}')">
+            💬 ตอบกลับ
+          </button>
+        </div>
+      </div>`;
+  });
+
+  container.innerHTML = html;
+  // Scroll to bottom
+  container.scrollTop = container.scrollHeight;
+}
+
+function setChatReplyTarget(msgId, author, snippet) {
+  chatReplyTarget = { id: msgId, author: author, snippet: snippet };
+  document.getElementById('chatReplyTargetName').textContent = author;
+  document.getElementById('chatReplyTargetSnippet').textContent = snippet + '...';
+  document.getElementById('chatReplyingBar').style.display = 'flex';
+  const inp = document.getElementById('chatInputText');
+  inp.focus();
+}
+
+function cancelChatReply() {
+  chatReplyTarget = null;
+  document.getElementById('chatReplyingBar').style.display = 'none';
+}
+
+function handleChatInputKeyDown(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendCommunityChatMessage();
+  }
+}
+
+function sendCommunityChatMessage() {
+  const inp = document.getElementById('chatInputText');
+  const text = (inp.value || '').trim();
+  if (!text) return;
+
+  const userDisp = currentUser ? currentUser.displayName : 'นิสิต RxCU';
+  const uname = currentUser ? currentUser.username : 'anonymous';
+  const badge = (uname === 'max') ? '👑 ประธานโครงการ' : (uname === 'admin') ? '🛡️ ผู้ดูแลระบบ' : '🩺 นิสิต RxCU';
+
+  const newMsg = {
+    id: 'msg_' + Date.now(),
+    time: new Date().toISOString(),
+    username: uname,
+    displayName: userDisp,
+    badge: badge,
+    replyToId: chatReplyTarget ? chatReplyTarget.id : '',
+    replySnippet: chatReplyTarget ? `${chatReplyTarget.author}: ${chatReplyTarget.snippet}` : '',
+    body: text,
+    category: currentCategory || 'Clinic'
+  };
+
+  // Optimistic UI update
+  const msgs = getLocalCommunityMessages();
+  msgs.push(newMsg);
+  localStorage.setItem(COMMUNITY_CHAT_STORAGE_KEY, JSON.stringify(msgs));
+  communityCachedMessages = msgs;
+  renderCommunityMessages(msgs);
+
+  // Clear input & reply bar
+  inp.value = '';
+  cancelChatReply();
+  showToast('💬 ส่งข้อความเรียบร้อยแล้ว');
+
+  // Send to Google Apps Script / Sheet in background
+  if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
+    fetch(window.QUIZ_GAS_WEBAPP_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        action: 'postCommunityMessage',
+        username: uname,
+        displayName: userDisp,
+        userBadge: badge,
+        replyToId: newMsg.replyToId,
+        message: text,
+        categoryTag: newMsg.category
+      })
+    }).catch(() => {});
+  }
+}
+
+function syncCurrentUserProfile() {
+  if (!currentUser || currentUser.username === 'anonymous') return;
+  const p = getQuizProgress();
+  const total = Object.keys(p).length;
+  const correct = Object.values(p).filter(v => v.isCorrect).length;
+  const acc = total ? Math.round((correct / total) * 100) : 0;
+
+  if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
+    fetch(window.QUIZ_GAS_WEBAPP_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        action: 'syncUserProfile',
+        username: currentUser.username,
+        displayName: currentUser.displayName,
+        track: currentTrack || 'Clinic',
+        totalAnswered: total,
+        totalCorrect: correct,
+        accuracy: acc
+      })
+    }).catch(() => {});
+  }
 }
 
 function showToast(msg) {

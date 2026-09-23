@@ -157,6 +157,95 @@ function doGet(e) {
       });
     }
 
+    // 4. ดึงข้อมูลตารางอันดับคนขยัน (Leaderboard Top 10) & สถิติจำนวนสมาชิก
+    if (action === 'getLeaderboard') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const sheet = ss.getSheetByName('User_Profiles');
+      if (!sheet) {
+        return jsonResponse_({ success: true, totalMembers: 0, totalAnsweredAll: 0, leaderboard: [] });
+      }
+      const lastRow = sheet.getLastRow();
+      if (lastRow < 3) {
+        return jsonResponse_({ success: true, totalMembers: 0, totalAnsweredAll: 0, leaderboard: [] });
+      }
+
+      const rows = sheet.getRange(3, 1, lastRow - 2, 7).getValues();
+      let totalQuestionsAll = 0;
+      const usersList = [];
+
+      rows.forEach(r => {
+        const u = String(r[0] || '').trim();
+        if (!u) return;
+        const dn = String(r[1] || u).trim();
+        const ans = Number(r[2] || 0);
+        const cor = Number(r[3] || 0);
+        const acc = String(r[4] || '0%').trim();
+        const streak = Number(r[5] || 0);
+        const last = String(r[6] || '').trim();
+        totalQuestionsAll += ans;
+
+        usersList.push({
+          username: u,
+          displayName: dn,
+          totalAnswered: ans,
+          totalCorrect: cor,
+          accuracy: acc,
+          streak: streak,
+          lastActive: last
+        });
+      });
+
+      // เรียงลำดับจาก TotalCorrect มากไปน้อย
+      usersList.sort((a, b) => b.totalCorrect - a.totalCorrect);
+      const top10 = usersList.slice(0, 10);
+
+      return jsonResponse_({
+        success: true,
+        totalMembers: usersList.length,
+        totalAnsweredAll: totalQuestionsAll,
+        leaderboard: top10
+      });
+    }
+
+    // 5. ดึงข้อความแชทและกระดานสนทนาล่าสุด (Community Messages)
+    if (action === 'getCommunityMessages') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const sheet = ss.getSheetByName('Community_Chat');
+      if (!sheet) {
+        return jsonResponse_({ success: true, messages: [] });
+      }
+      const lastRow = sheet.getLastRow();
+      if (lastRow < 3) {
+        return jsonResponse_({ success: true, messages: [] });
+      }
+
+      const rows = sheet.getRange(3, 1, lastRow - 2, 7).getValues();
+      const messages = [];
+
+      rows.forEach(r => {
+        const mId = String(r[0] || '').trim();
+        const text = String(r[4] || '').trim();
+        if (!mId && !text) return;
+        messages.push({
+          id: mId || ('msg_' + Math.random().toString(36).substr(2, 8)),
+          timestamp: String(r[1] || new Date().toISOString()),
+          username: String(r[2] || 'anonymous'),
+          displayName: String(r[3] || 'Anonymous'),
+          message: text,
+          replyToId: String(r[5] || '').trim(),
+          topicTag: String(r[6] || 'ทั่วไป').trim()
+        });
+      });
+
+      // นำข้อความ 50 ข้อความล่าสุด
+      const recent = messages.slice(-50);
+      return jsonResponse_({
+        success: true,
+        count: recent.length,
+        messages: recent
+      });
+    }
+
     return jsonResponse_({ success: true, message: 'PLE-CC Quiz API ready.' });
   } catch (err) {
     return jsonResponse_({ success: false, error: err.toString() });
@@ -231,6 +320,99 @@ function doPost(e) {
       ]);
 
       return jsonResponse_({ success: true, message: 'บันทึกผลการทำข้อสอบเรียบร้อย' });
+    }
+
+    // ซิงค์โปรไฟล์และคะแนนสะสมของผู้ใช้ (User Profile & Leaderboard)
+    if (action === 'syncUserProfile') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      let sheet = ss.getSheetByName('User_Profiles');
+      if (!sheet) {
+        return jsonResponse_({ success: false, error: 'User_Profiles sheet not found' });
+      }
+
+      const u = String(data.username || '').trim().toLowerCase();
+      if (!u) return jsonResponse_({ success: false, error: 'Username required' });
+      const dn = String(data.displayName || u).trim();
+      const ansInc = Number(data.answeredCount || 0);
+      const corInc = Number(data.correctCount || 0);
+      const streak = Number(data.streak || 1);
+
+      const lastRow = sheet.getLastRow();
+      let userRowIdx = -1;
+      let existingAns = 0;
+      let existingCor = 0;
+
+      if (lastRow >= 3) {
+        const usernames = sheet.getRange(3, 1, lastRow - 2, 1).getValues();
+        for (let i = 0; i < usernames.length; i++) {
+          if (String(usernames[i][0] || '').toLowerCase() === u) {
+            userRowIdx = i + 3;
+            break;
+          }
+        }
+      }
+
+      if (userRowIdx > 0) {
+        const curVals = sheet.getRange(userRowIdx, 3, 1, 2).getValues()[0];
+        existingAns = Number(curVals[0] || 0) + ansInc;
+        existingCor = Number(curVals[1] || 0) + corInc;
+        const accPct = existingAns > 0 ? Math.round((existingCor / existingAns) * 100) + '%' : '0%';
+        sheet.getRange(userRowIdx, 2, 1, 6).setValues([[
+          dn,
+          existingAns,
+          existingCor,
+          accPct,
+          streak,
+          new Date().toISOString()
+        ]]);
+      } else {
+        const accPct = ansInc > 0 ? Math.round((corInc / ansInc) * 100) + '%' : '0%';
+        sheet.appendRow([
+          u,
+          dn,
+          ansInc,
+          corInc,
+          accPct,
+          streak,
+          new Date().toISOString()
+        ]);
+      }
+
+      return jsonResponse_({ success: true, message: 'ซิงค์ข้อมูลโปรไฟล์เรียบร้อย' });
+    }
+
+    // บันทึกข้อความแชท Community ใหม่
+    if (action === 'postCommunityMessage') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      let sheet = ss.getSheetByName('Community_Chat');
+      if (!sheet) {
+        return jsonResponse_({ success: false, error: 'Community_Chat sheet not found' });
+      }
+
+      const msg = String(data.message || '').trim();
+      if (!msg) return jsonResponse_({ success: false, error: 'Message cannot be empty' });
+
+      const msgId = 'msg_' + Date.now();
+      const u = String(data.username || 'anonymous').trim();
+      const dn = String(data.displayName || 'Anonymous').trim();
+      const rep = String(data.replyToId || '').trim();
+      const tag = String(data.topicTag || 'ทั่วไป').trim();
+
+      sheet.appendRow([
+        msgId,
+        new Date().toISOString(),
+        u,
+        dn,
+        msg,
+        rep,
+        tag
+      ]);
+
+      return jsonResponse_({
+        success: true,
+        message: 'ส่งข้อความเรียบร้อย',
+        messageId: msgId
+      });
     }
 
     return jsonResponse_({ success: false, error: 'Unknown action: ' + action });
