@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 =============================================================================
-  🚀 PLE-CC Quiz Practice -- Offline Database Compiler
+  🚀 PLE-CC Quiz Practice -- Offline Database Compiler (Rich Text Support)
 =============================================================================
   Source Sheet: 1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w
   Output: quiz-data-offline.js
+  Features:
+  - Extracts rich text formatting: Bold, Italic, Font Colors from Google Sheet.
+  - Subtopic normalization: OA, RA, Osteoporosis, Gout in Musculoskeletal.
+  - Dynamic Exam Type extraction from Column O.
+  - Clinical Guideline Note extraction from Column N.
 =============================================================================
 """
 
@@ -129,6 +134,70 @@ def extract_in_cell_images():
         print(f"  ℹ️ Image extraction info: {e}")
     return extracted_map
 
+def cell_to_html(cell):
+    """Converts a Google Sheet cell (with rich text runs, formatting, and markdown) into HTML."""
+    if not cell:
+        return ''
+    val = cell.get('formattedValue', '')
+    if not val:
+        return ''
+    
+    runs = cell.get('textFormatRuns', [])
+    cell_fmt = cell.get('userEnteredFormat', {}).get('textFormat', {})
+
+    if not runs:
+        b = cell_fmt.get('bold', False)
+        it = cell_fmt.get('italic', False)
+        c = cell_fmt.get('foregroundColor', {})
+        sp = []
+        if b: sp.append('font-weight:bold')
+        if it: sp.append('font-style:italic')
+        if c:
+            r = int(c.get('red', 0) * 255)
+            g = int(c.get('green', 0) * 255)
+            bl = int(c.get('blue', 0) * 255)
+            if (r, g, bl) not in [(0, 0, 0), (255, 255, 255)]:
+                sp.append(f'color:rgb({r},{g},{bl})')
+        
+        # Parse markdown bold and italic
+        v = val.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        v = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', v)
+        v = re.sub(r'(?<!\*)\*([^*]+?)\*(?!\*)', r'<i>\1</i>', v)
+        v = v.replace('\n', '<br>')
+        if sp:
+            return f'<span style="{"; ".join(sp)}">{v}</span>'
+        return v
+
+    slices = []
+    run_starts = [r.get('startIndex', 0) for r in runs]
+    run_starts.append(len(val))
+
+    for i in range(len(runs)):
+        start = run_starts[i]
+        end = run_starts[i + 1]
+        chunk = val[start:end]
+        fmt = runs[i].get('format', {})
+        b = fmt.get('bold', False)
+        it = fmt.get('italic', False)
+        c = fmt.get('foregroundColor', {})
+        sp = []
+        if b: sp.append('font-weight:bold')
+        if it: sp.append('font-style:italic')
+        if c:
+            r = int(c.get('red', 0) * 255)
+            g = int(c.get('green', 0) * 255)
+            bl = int(c.get('blue', 0) * 255)
+            if (r, g, bl) not in [(0, 0, 0), (255, 255, 255)]:
+                sp.append(f'color:rgb({r},{g},{bl})')
+        
+        ch = chunk.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('\n', '<br>')
+        if sp:
+            slices.append(f'<span style="{"; ".join(sp)}">{ch}</span>')
+        else:
+            slices.append(ch)
+
+    return ''.join(slices)
+
 def main():
     images_map = extract_in_cell_images()
 
@@ -138,54 +207,77 @@ def main():
 
     offline_categories = []
     offline_questions = {}
-    all_questions_list = []
     total_q_count = 0
 
     for s_name in sheet_names:
         if s_name.startswith('Log_') or s_name.startswith('Report_') or s_name.startswith('Eval_') or s_name == 'สารบัญ':
             continue
 
-        print(f"  -> Reading sheet: '{s_name}'...")
-        res = service.spreadsheets().values().get(
-            spreadsheetId=SPREADSHEET_ID,
-            range=f"'{s_name}'!A3:O"
-        ).execute()
+        print(f"  -> Reading sheet: '{s_name}' (with rich text gridData)...")
+        try:
+            res = service.spreadsheets().get(
+                spreadsheetId=SPREADSHEET_ID,
+                ranges=[f"'{s_name}'!A3:O"],
+                includeGridData=True
+            ).execute()
+            sheet_obj = res['sheets'][0]
+            data_obj = sheet_obj['data'][0]
+            row_data = data_obj.get('rowData', [])
+        except Exception as e:
+            print(f"     [WARN] Fallback values.get for '{s_name}': {e}")
+            val_res = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=f"'{s_name}'!A3:O").execute()
+            raw_rows = val_res.get('values', [])
+            row_data = []
+            for r in raw_rows:
+                cells = [{'formattedValue': str(x)} for x in r]
+                row_data.append({'values': cells})
 
-        rows = res.get('values', [])
         questions = []
         track_guess = 'Clinic'
 
-        for idx, row in enumerate(rows):
+        for idx, r_obj in enumerate(row_data):
             row_num = idx + 3
-            # Pad row up to 15 columns
-            while len(row) < 15:
-                row.append('')
+            cells = r_obj.get('values', [])
+            while len(cells) < 15:
+                cells.append({})
 
-            first_col = str(row[0] or '').strip()
-            # Detect whether column A is item number
-            if first_col.isdigit() or len(rows) > 0 and len(row) >= 15 and (first_col.isdigit() or len(first_col) <= 4):
+            def get_plain(col_i):
+                if col_i < len(cells):
+                    return str(cells[col_i].get('formattedValue', '') or '').strip()
+                return ''
+
+            def get_html(col_i):
+                if col_i < len(cells):
+                    return cell_to_html(cells[col_i]).strip()
+                return ''
+
+            first_col = get_plain(0)
+            if first_col.isdigit() or (len(cells) >= 15 and len(first_col) <= 4 and first_col.isdigit()):
                 offset = 1
                 item_no = int(first_col) if first_col.isdigit() else len(questions) + 1
             else:
                 offset = 0
                 item_no = len(questions) + 1
 
-            q_text = str(row[offset + 0] or '').strip()
-            q_img  = str(row[offset + 1] or '').strip()
-            c1     = str(row[offset + 2] or '').strip()
-            c2     = str(row[offset + 3] or '').strip()
-            c3     = str(row[offset + 4] or '').strip()
-            c4     = str(row[offset + 5] or '').strip()
-            c5     = str(row[offset + 6] or '').strip()
-            ans_raw = str(row[offset + 7] or '').strip()
-            explanation = str(row[offset + 8] or '').strip()
-            ans_img = str(row[offset + 9] or '').strip()
-            subtopic = str(row[offset + 10] or '').strip() or s_name
-            track    = str(row[offset + 11] or 'Clinic').strip()
-            note     = str(row[offset + 12] or '').strip()
-            exam_type = str(row[offset + 13] or 'ข้อสอบทั่วไป').strip() or 'ข้อสอบทั่วไป'
+            q_text_html = get_html(offset + 0)
+            q_text_plain = get_plain(offset + 0)
+            q_img = get_plain(offset + 1)
+            c1 = get_html(offset + 2)
+            c2 = get_html(offset + 3)
+            c3 = get_html(offset + 4)
+            c4 = get_html(offset + 5)
+            c5 = get_html(offset + 6)
+            ans_raw = get_plain(offset + 7)
+            exp_html = get_html(offset + 8)
+            ans_img = get_plain(offset + 9)
+            subtopic = get_plain(offset + 10) or s_name
+            track = get_plain(offset + 11) or 'Clinic'
+            note_html = get_html(offset + 12)
+            exam_type = get_plain(offset + 13) or 'ข้อสอบทั่วไป'
 
-            if not q_text and not c1:
+            if not q_text_plain and not c1:
+                continue
+            if 'คำถาม' in q_text_plain or 'กลับหน้าแรก' in q_text_plain:
                 continue
 
             def sanitize_choice_str(val):
@@ -201,7 +293,7 @@ def main():
             c5 = sanitize_choice_str(c5)
 
             # In Musculoskeleton, ensure subtopic is strictly OA, RA, Osteoporosis, or Gout
-            if 'musculo' in s_name.lower() or '1.' in s_name:
+            if 'musculo' in s_name.lower():
                 st_low = subtopic.lower()
                 if 'gout' in st_low or 'เกาต์' in st_low:
                     subtopic = 'Gout'
@@ -214,7 +306,7 @@ def main():
                 elif not subtopic or subtopic == s_name:
                     subtopic = 'OA'
 
-            # Answer key parsing (supports 1, 2, 3, 4, 5 or ก, ข, ค, ง, จ or A, B, C, D, E)
+            # Answer key parsing
             ans_key = 1
             ans_map = {'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5, 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
             if ans_raw.lower() in ans_map:
@@ -244,51 +336,50 @@ def main():
                 'category': s_name,
                 'subtopic': subtopic,
                 'track': track or 'Clinic',
-                'question': q_text,
+                'question': q_text_html,
                 'questionImage': q_img,
                 'choices': choices,
                 'answer': ans_key,
-                'explanation': explanation,
+                'explanation': exp_html,
                 'answerImage': ans_img,
-                'note': note,
+                'note': note_html,
                 'examType': exam_type
             }
             questions.append(q_obj)
-            all_questions_list.append(q_obj)
 
         if questions:
             offline_questions[s_name] = questions
-            total_q_count += len(questions)
             offline_categories.append({
                 'name': s_name,
                 'count': len(questions),
                 'track': track_guess
             })
+            total_q_count += len(questions)
             print(f"     [OK] {len(questions)} questions extracted (Track: {track_guess})")
 
-    # Group all questions by track
-    questions_by_track = {
-        'all': all_questions_list,
-        'clinic': [q for q in all_questions_list if 'clinic' in q.get('track', '').lower()],
-        'product': [q for q in all_questions_list if 'product' in q.get('track', '').lower() or 'prod' in q.get('track', '').lower()],
-        'sap': [q for q in all_questions_list if 'sap' in q.get('track', '').lower() or 'สังคม' in q.get('track', '').lower()]
-    }
-
-    # Generate quiz-data-offline.js
+    # Output JS file
     print(f"\n  💾 Writing to {OUTPUT_JS}...")
     with open(OUTPUT_JS, 'w', encoding='utf-8') as f:
         f.write("/**\n")
-        f.write(" * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database\n")
+        f.write(" * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (Rich Text & Column O)\n")
         f.write(f" * Total Questions: {total_q_count} across {len(offline_categories)} Categories\n")
+        f.write(f" * Build Timestamp: {time_str()}\n")
         f.write(" */\n\n")
-        f.write("window.QUIZ_GOOGLE_SHEET_ID = " + json.dumps(SPREADSHEET_ID) + ";\n")
+        f.write(f'window.QUIZ_GOOGLE_SHEET_ID = "{SPREADSHEET_ID}";\n')
         f.write("window.QUIZ_GAS_SCRIPT_ID = '1LB8brFu49jQwb5xR3WeeyW2Su_M8e1X2XX3mxD6sxlO7yVwWpDPwG-tS';\n")
         f.write("window.QUIZ_GAS_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycby14F6sdMW67mOv2D6EzRW3NMP6rVnzUHKWjwr_8i10y3NWTOrQPvqmmy6p9LIITNrM/exec';\n\n")
-        f.write("window.QUIZ_OFFLINE_CATEGORIES = " + json.dumps(offline_categories, ensure_ascii=False, indent=2) + ";\n\n")
-        f.write("window.QUIZ_OFFLINE_QUESTIONS = " + json.dumps(offline_questions, ensure_ascii=False, indent=2) + ";\n\n")
-        f.write("window.QUIZ_OFFLINE_BY_TRACK = " + json.dumps(questions_by_track, ensure_ascii=False) + ";\n")
+        f.write("window.QUIZ_OFFLINE_CATEGORIES = ")
+        f.write(json.dumps(offline_categories, ensure_ascii=False, indent=2))
+        f.write(";\n\n")
+        f.write("window.QUIZ_OFFLINE_QUESTIONS = ")
+        f.write(json.dumps(offline_questions, ensure_ascii=False, indent=2))
+        f.write(";\n")
 
-    print(f"\n  🎉 Compilation Complete! Extracted {total_q_count} questions successfully.")
+    print(f"\n  🎉 Compilation Complete! Extracted {total_q_count} questions successfully.\n")
+
+def time_str():
+    import datetime
+    return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 if __name__ == '__main__':
     main()

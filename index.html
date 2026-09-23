@@ -152,10 +152,52 @@
       .question-text { font-size: 16px !important; line-height: 1.55 !important; }
     }
 
-    body.fullscreen-active { padding: 0 !important; background: var(--bg) !important; }
+    :fullscreen,
+    :fullscreen body,
+    body.fullscreen-active {
+      padding: 0 !important;
+      margin: 0 !important;
+      background: var(--bg) !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+    :fullscreen .app-shell,
     body.fullscreen-active .app-shell {
-      max-width: 100% !important; border-radius: 0 !important;
-      min-height: 100dvh !important; box-shadow: none !important; border: none !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      border-radius: 0 !important;
+      min-height: 100vh !important;
+      min-height: 100dvh !important;
+      box-shadow: none !important;
+      border: none !important;
+      margin: 0 !important;
+    }
+    :fullscreen .quiz-viewport,
+    body.fullscreen-active .quiz-viewport {
+      max-width: 980px !important;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* ══ EXAM REVIEW VIEW STYLES ══ */
+    .review-choice-item {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 10px 14px; border-radius: 10px;
+      margin-bottom: 6px; font-size: 14px; line-height: 1.5;
+      background: var(--surface); border: 1px solid var(--border);
+      transition: all 0.2s ease;
+    }
+    .review-choice-item.user-wrong {
+      background: #FEF2F2 !important; border: 1.5px solid #EF4444 !important; color: #991B1B;
+    }
+    .review-choice-item.is-correct {
+      background: #ECFDF5 !important; border: 1.5px solid #10B981 !important; color: #065F46;
+    }
+    .review-choice-item.user-correct {
+      background: #DCFCE7 !important; border: 1.5px solid #16A34A !important; color: #166534;
+    }
+    .review-badge-user {
+      font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px; margin-left: auto; white-space: nowrap;
     }
 
     /* ══ AUTH OVERLAY ══ */
@@ -942,6 +984,9 @@
         <button class="icon-btn" onclick="syncDataFromSheet()" title="อัปเดตข้อมูลจาก Google Sheet">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
         </button>
+        <button class="icon-btn" onclick="forceClearCacheAndReload()" title="ล้างแคชและรีโหลดข้อสอบล่าสุดใหม่ทั้งหมด">
+          <span style="font-size:13px;">🧹</span>
+        </button>
         <button class="icon-btn" onclick="doLogout()" title="ออกจากระบบ">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
         </button>
@@ -1187,16 +1232,52 @@
       </div>
 
       <div style="display:flex; flex-direction:column; gap:8px; margin-top:16px;">
-        <button class="submit-btn" id="btnReviewWrong" onclick="startReviewWrongQuestions()" style="background:#dc2626; display:none;">
+        <button class="submit-btn" id="btnReviewAll" onclick="openExamReviewView('all')" style="background:var(--accent);">
+          📋 ตรวจเฉลยและทบทวนทั้งชุดข้อสอบ (Browse Review)
+        </button>
+        <button class="submit-btn" id="btnReviewWrong" onclick="openExamReviewView('wrong')" style="background:#dc2626; display:none;">
           🔍 ดูเฉลยและทบทวนเฉพาะข้อที่ผิด
         </button>
-        <button class="submit-btn" onclick="restartQuizSession()">
+        <button class="submit-btn" onclick="restartQuizSession()" style="background:var(--surface); color:var(--ink); border:1px solid var(--border);">
           🔄 ทำข้อสอบชุดนี้ใหม่อีกครั้ง
         </button>
         <button class="lobby-tool-btn" onclick="showLobby()">
           🏠 กลับสู่หน้า Lobby
         </button>
       </div>
+    </div>
+  </div>
+
+  <!-- ══ 4.5 EXAM REVIEW VIEW (BROWSE-STYLE REVIEW OF EXAM SESSION) ══ -->
+  <div id="examReviewView" style="display:none; flex-direction:column; flex:1; min-height:100vh;">
+    <!-- Sticky Review Topbar -->
+    <div class="topbar" style="position:sticky; top:0; z-index:40; background:var(--surface); border-bottom:1px solid var(--border);">
+      <div class="topbar-left">
+        <button class="back-home-btn" onclick="backFromResultReview()" title="กลับหน้าสรุปคะแนน">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span>ผลคะแนน</span>
+        </button>
+      </div>
+      <div class="titles">
+        <div class="deck-name" id="reviewSessionTitle">📋 ทบทวนผลสอบ (Exam Review)</div>
+        <div class="category-path" id="reviewSessionSubtitle">คะแนน 0/0 (0%)</div>
+      </div>
+      <div class="topbar-right">
+        <button class="icon-btn" onclick="restartQuizSession()" title="ทำชุดนี้ใหม่อีกครั้ง">🔄</button>
+        <button class="icon-btn" onclick="showLobby()" title="หน้าหลัก Lobby">🏠</button>
+      </div>
+    </div>
+
+    <!-- Review Filter Segmented Control -->
+    <div style="padding:10px 16px; background:var(--surface); border-bottom:1px solid var(--border); display:flex; gap:8px; overflow-x:auto;">
+      <button class="mode-seg-btn active" id="btnReviewFilterAll" onclick="setReviewFilter('all')">📋 ทั้งหมด (0 ข้อ)</button>
+      <button class="mode-seg-btn" id="btnReviewFilterWrong" onclick="setReviewFilter('wrong')" style="color:#DC2626;">❌ เฉพาะข้อที่ตอบผิด (0 ข้อ)</button>
+      <button class="mode-seg-btn" id="btnReviewFilterCorrect" onclick="setReviewFilter('correct')" style="color:#16A34A;">✅ เฉพาะข้อที่ตอบถูก (0 ข้อ)</button>
+    </div>
+
+    <!-- Review Cards Container -->
+    <div class="browse-viewport" id="examReviewContainer" style="padding:16px; display:flex; flex-direction:column; gap:16px; max-width:860px; margin:0 auto; width:100%;">
+      <!-- Dynamically populated review cards -->
     </div>
   </div>
 
@@ -1290,7 +1371,7 @@
         </div>
         <div class="form-group" style="margin-bottom:0;">
           <label>โหมดการสอบ</label>
-          <select class="form-input" id="setupModeSelect">
+          <select class="form-input" id="setupModeSelect" onchange="onSetupModeSelectChange()">
             <option value="practice">📖 โหมดฝึกฝน (ตรวจทีละข้อ)</option>
             <option value="exam">⏱️ โหมดสอบจริง (ส่งรวมท้ายชุด)</option>
           </select>
@@ -1503,7 +1584,7 @@
 </div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
-<script src="quiz-data-offline.js"></script>
+<script src="quiz-data-offline.js?v=20260923_v4"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
 const USERS_STORAGE_KEY = 'ple_quiz_users_db_v1';
@@ -1556,15 +1637,52 @@ function saveQuestionProgress(qId, selectedChoice, isCorrect, category) {
 
 // ─── QUIZ MODE & EXAM HISTORY ───
 const EXAM_HISTORY_KEY = 'ple_quiz_exam_history_v1';
-let appQuizMode = 'practice'; // 'practice' | 'exam'
-let currentExamTypeFilter = 'all'; // 'all' | 'real_2567' | 'real_all' | 'mock'
+const LS_APP_QUIZ_MODE = 'ple_quiz_app_mode';
+let appQuizMode = localStorage.getItem(LS_APP_QUIZ_MODE) || 'practice'; // 'practice' | 'exam'
+let currentExamTypeFilter = 'all'; // 'all' | exact string from Column O
 let userAnswersExamMode = {}; // { qIndex: choiceNum }
 
 function setAppQuizMode(mode) {
   appQuizMode = mode;
-  document.getElementById('btnModePractice').classList.toggle('active', mode === 'practice');
-  document.getElementById('btnModeExam').classList.toggle('active', mode === 'exam');
+  try { localStorage.setItem(LS_APP_QUIZ_MODE, mode); } catch(e) {}
+  const btnP = document.getElementById('btnModePractice');
+  const btnE = document.getElementById('btnModeExam');
+  if (btnP) btnP.classList.toggle('active', mode === 'practice');
+  if (btnE) btnE.classList.toggle('active', mode === 'exam');
+  const setupMode = document.getElementById('setupModeSelect');
+  if (setupMode) setupMode.value = mode;
   showToast(mode === 'practice' ? '📖 สลับเป็นโหมดฝึกฝน (ตรวจเฉลยทีละข้อ)' : '⏱️ สลับเป็นโหมดสอบจริง (ส่งคะแนนตอนท้าย)');
+}
+
+function getAllUniqueExamTypes() {
+  const types = new Set();
+  const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+  Object.values(map).forEach(qs => {
+    qs.forEach(q => {
+      if (q.examType && q.examType.trim()) types.add(q.examType.trim());
+    });
+  });
+  return Array.from(types).sort((a, b) => {
+    const yA = (a.match(/\d+/) || [0])[0];
+    const yB = (b.match(/\d+/) || [0])[0];
+    if (yA && yB) return parseInt(yB, 10) - parseInt(yA, 10);
+    return a.localeCompare(b, 'th');
+  });
+}
+
+function populateExamTypeFilterDropdown(selectId, includeAllOption = true) {
+  const sel = document.getElementById(selectId);
+  if (!sel) return;
+  const currentVal = sel.value;
+  const types = getAllUniqueExamTypes();
+  let html = includeAllOption ? '<option value="all">🌟 ทุกประเภทข้อสอบ</option>' : '';
+  types.forEach(t => {
+    html += `<option value="${t}">🎯 ${t}</option>`;
+  });
+  sel.innerHTML = html;
+  if (currentVal && Array.from(sel.options).some(o => o.value === currentVal)) {
+    sel.value = currentVal;
+  }
 }
 
 function onLobbyExamTypeFilterChange() {
@@ -1573,14 +1691,14 @@ function onLobbyExamTypeFilterChange() {
   showToast('🔍 ปรับตัวกรองประเภทข้อสอบแล้ว');
 }
 
-function filterQuestionsByExamType(list) {
-  if (currentExamTypeFilter === 'all') return list;
+function filterQuestionsByExamType(list, filterVal = currentExamTypeFilter) {
+  if (!filterVal || filterVal === 'all') return list;
   return list.filter(q => {
-    const et = (q.examType || '').toLowerCase();
-    if (currentExamTypeFilter === 'real_2567') return et.includes('2567') || et.includes('67');
-    if (currentExamTypeFilter === 'real_all') return et.includes('จริง') || et.includes('real');
-    if (currentExamTypeFilter === 'mock') return et.includes('จำลอง') || et.includes('mock');
-    return true;
+    const et = (q.examType || '').trim();
+    if (filterVal === 'real_2567') return et.includes('2567') || et.includes('67');
+    if (filterVal === 'real_all') return et.includes('จริง') || et.includes('real');
+    if (filterVal === 'mock') return et.includes('จำลอง') || et.includes('mock');
+    return et === filterVal;
   });
 }
 
@@ -1716,140 +1834,154 @@ function getCategoryEmoji(catName, idx, track) {
 
 function formatPlainTextToHtml(text) {
   if (!text) return '';
-  var escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  var hasHtmlTags = /<\/?(span|b|i|br|strong|em|div|p)[^>]*>/i.test(text);
+  var escaped = text;
+
+  if (!hasHtmlTags) {
+    escaped = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    escaped = escaped.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
+    escaped = escaped.replace(/(?<!\*)\*([^*]+?)\*(?!\*)/g, '<i>$1</i>');
+    escaped = escaped.replace(/\n/g, '<br>');
+  } else {
+    // Already contains Google Sheet rich text runs (spans with colors/bolds/italics)
+    escaped = escaped.replace(/\r\n|\r|\n/g, '<br>');
+  }
 
   // 1. Badges & Callout Formatting
   if (escaped.indexOf('▶ [ข้อสอบจริง') !== -1 || escaped.indexOf('▶ [Real Exam') !== -1) {
-    escaped = escaped.replace(/▶\s*\[(ข้อสอบจริง[^\n\]]*|Real Exam[^\n\]]*)\]:?/gi, '<div style="display:inline-flex; align-items:center; gap:5px; background:#fef2f2; color:#b91c1c; border:1px solid #fecaca; padding:3px 10px; border-radius:6px; font-weight:700; font-size:0.88em; margin-bottom:8px; box-shadow:0 1px 2px rgba(0,0,0,0.05);">🎯 ข้อสอบจริง / Real Exam</div><br>');
+    escaped = escaped.replace(/▶\s*\[(ข้อสอบจริง[^\n\]<]*|Real Exam[^\n\]<]*)\]:?/gi, '<div style="display:inline-flex; align-items:center; gap:5px; background:#fef2f2; color:#b91c1c; border:1px solid #fecaca; padding:3px 10px; border-radius:6px; font-weight:700; font-size:0.88em; margin-bottom:8px; box-shadow:0 1px 2px rgba(0,0,0,0.05);">🎯 ข้อสอบจริง / Real Exam</div><br>');
   }
   if (escaped.indexOf('▶ [Clinical Case') !== -1 || escaped.indexOf('Case [') !== -1) {
-    escaped = escaped.replace(/(▶\s*\[Clinical Case[^\n\]]*\]:?|Case\s*\[[^\n\]]*\]:?)/gi, '<div style="display:inline-flex; align-items:center; gap:5px; background:#eff6ff; color:#1d4ed8; border:1px solid #bfdbfe; padding:3px 10px; border-radius:6px; font-weight:700; font-size:0.88em; margin-bottom:8px; box-shadow:0 1px 2px rgba(0,0,0,0.05);">📋 Clinical Case Scenario</div><br>');
+    escaped = escaped.replace(/(▶\s*\[Clinical Case[^\n\]<]*\]:?|Case\s*\[[^\n\]<]*\]:?)/gi, '<div style="display:inline-flex; align-items:center; gap:5px; background:#eff6ff; color:#1d4ed8; border:1px solid #bfdbfe; padding:3px 10px; border-radius:6px; font-weight:700; font-size:0.88em; margin-bottom:8px; box-shadow:0 1px 2px rgba(0,0,0,0.05);">📋 Clinical Case Scenario</div><br>');
   }
   if (escaped.indexOf('▶ [เฉลย') !== -1) {
     escaped = escaped.replace(/▶\s*\[เฉลย\]:?/gi, '<div style="display:inline-flex; align-items:center; gap:5px; background:#f0fdf4; color:#15803d; border:1px solid #bbf7d0; padding:2px 8px; border-radius:5px; font-weight:700; font-size:0.9em; margin-bottom:6px;">✅ เฉลย:</div>');
   }
   if (escaped.indexOf('💡 [คำอธิบาย') !== -1) {
-    escaped = escaped.replace(/💡\s*\[คำอธิบาย[^\n\]]*\]:?/gi, '<div style="background:#fffbeb; color:#92400e; border-left:3px solid #f59e0b; padding:6px 12px; border-radius:0 6px 6px 0; font-weight:600; margin:10px 0;">💡 คำอธิบายและจุดเน้นข้อสอบ:</div>');
+    escaped = escaped.replace(/💡\s*\[คำอธิบาย[^\n\]<]*\]:?/gi, '<div style="background:#fffbeb; color:#92400e; border-left:3px solid #f59e0b; padding:6px 12px; border-radius:0 6px 6px 0; font-weight:600; margin:10px 0;">💡 คำอธิบายและจุดเน้นข้อสอบ:</div>');
   }
-  // Major Topic Headers (with or without brackets)
-  escaped = escaped.replace(/(^|[\r\n])▶\s*([^\r\n:]+:?)/g, function(match, prefix, content) {
-    var c = '#1e40af'; // Royal Blue default
+
+  // Major Topic Headers
+  escaped = escaped.replace(/(^|[\r\n]|<br>)▶\s*([^<\r\n:]+:?)/g, function(match, prefix, content) {
+    var c = '#1e40af';
     if (content.indexOf('ดื้อ') !== -1 || content.indexOf('Resistance') !== -1 || content.indexOf('เตือน') !== -1) c = '#dc2626';
     else if (content.indexOf('ไว') !== -1 || content.indexOf('Susceptible') !== -1 || content.indexOf('ยาหลัก') !== -1 || content.indexOf('Choice') !== -1) c = '#16a34a';
     return prefix + '<div style="color:' + c + '; font-weight:700; font-size:0.98em; margin:10px 0 4px 0; border-bottom:1.5px solid ' + c + '33; padding-bottom:3px;">▶ ' + content + '</div>';
   });
 
-  escaped = escaped.replace(/(^|[\r\n])✦\s*([^\r\n:]+:?)/g, function(match, prefix, content) {
+  escaped = escaped.replace(/(^|[\r\n]|<br>)✦\s*([^<\r\n:]+:?)/g, function(match, prefix, content) {
     return prefix + '<div style="color:#d97706; font-weight:700; font-size:0.95em; margin:8px 0 4px 0; background:#fffbeb; padding:3px 8px; border-radius:4px; border-left:3px solid #d97706;">✦ ' + content + '</div>';
   });
 
-  escaped = escaped.replace(/(^|[\r\n])([ก-ง]\.)\s+/g, '$1<div style="margin:4px 0 4px 8px;"><b style="color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;">$2</b> ');
+  escaped = escaped.replace(/(^|[\r\n]|<br>)([ก-ง]\.)\s+/g, '$1<div style="margin:4px 0 4px 8px;"><b style="color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;">$2</b> ');
   escaped = escaped.replace(/↳\s+/g, '<span style="color:#64748b; font-weight:bold; margin-right:4px;">↳</span>');
 
-  var C_GREEN  = '#16a34a'; // DOC & Regimens
-  var C_RED    = '#dc2626'; // Warnings, Contraindications, Severe ADRs
-  var C_AMBER  = '#d97706'; // Criteria, Scores, Cutoffs
-  var C_PURPLE = '#7c3aed'; // Pathogens, Resistance Genes, Enzymes
-  var C_BLUE   = '#0284c7'; // Drug Names & Classes
+  if (!hasHtmlTags) {
+    var C_GREEN  = '#16a34a';
+    var C_RED    = '#dc2626';
+    var C_AMBER  = '#d97706';
+    var C_PURPLE = '#7c3aed';
+    var C_BLUE   = '#0284c7';
 
-  var regGreen = [
-    'Drug of Choice', 'First-line DOC', 'First-line', 'DOC',
-    'ยาขนานแรก', 'ยาทางเลือกอันดับ 1', 'ยาหลัก', 'สูตรมาตรฐาน',
-    'BPaLM Regimen', 'BPaLM', 'BPaL Regimen', 'BPaL',
-    '2HRZE / 4HR', '2HRZE', '4HR', '6 R-Z-E-Lfx',
-    'Empirical therapy', 'Empiric therapy', 'Empiric DOC'
-  ];
+    var regGreen = [
+      'Drug of Choice', 'First-line DOC', 'First-line', 'DOC',
+      'ยาขนานแรก', 'ยาทางเลือกอันดับ 1', 'ยาหลัก', 'สูตรมาตรฐาน',
+      'BPaLM Regimen', 'BPaLM', 'BPaL Regimen', 'BPaL',
+      '2HRZE / 4HR', '2HRZE', '4HR', '6 R-Z-E-Lfx',
+      'Empirical therapy', 'Empiric therapy', 'Empiric DOC'
+    ];
 
-  var regRed = [
-    'QT Prolongation', 'QTc > 500 ms', 'Torsades de Pointes', 'TdP',
-    'TB-DILI', 'DILI', 'ตับอักเสบรุนแรง', 'ตับวาย', 'มะเร็งตับวาย',
-    'Myelosuppression', 'กดไขกระดูก', 'Aplastic anemia', 'Thrombocytopenia',
-    'เกล็ดเลือดต่ำ', 'เม็ดเลือดขาวต่ำ', 'Optic Neuropathy', 'ตาบอดสีแดง-เขียว',
-    'Peripheral Neuropathy', 'ปลายประสาทอักเสบ', 'Ototoxicity', 'พิษต่อหู',
-    'Nephrotoxicity', 'พิษต่อไต', 'ไตวายเฉียบพลัน', 'Red Man Syndrome',
-    'Hypothyroidism', 'ภาวะไทรอยด์ทำงานต่ำ', 'Psychosis', 'อาการทางจิตเวช',
-    'Suicidal ideation', 'Seizure', 'ชัก', 'ห้ามใช้เด็ดขาด', 'ข้อห้ามใช้เด็ดขาด',
-    'ข้อห้ามใช้', 'Contraindicated', 'ห้ามใช้', 'อันตราย', 'Dead Zone'
-  ];
+    var regRed = [
+      'QT Prolongation', 'QTc > 500 ms', 'Torsades de Pointes', 'TdP',
+      'TB-DILI', 'DILI', 'ตับอักเสบรุนแรง', 'ตับวาย', 'มะเร็งตับวาย',
+      'Myelosuppression', 'กดไขกระดูก', 'Aplastic anemia', 'Thrombocytopenia',
+      'เกล็ดเลือดต่ำ', 'เม็ดเลือดขาวต่ำ', 'Optic Neuropathy', 'ตาบอดสีแดง-เขียว',
+      'Peripheral Neuropathy', 'ปลายประสาทอักเสบ', 'Ototoxicity', 'พิษต่อหู',
+      'Nephrotoxicity', 'พิษต่อไต', 'ไตวายเฉียบพลัน', 'Red Man Syndrome',
+      'Hypothyroidism', 'ภาวะไทรอยด์ทำงานต่ำ', 'Psychosis', 'อาการทางจิตเวช',
+      'Suicidal ideation', 'Seizure', 'ชัก', 'ห้ามใช้เด็ดขาด', 'ข้อห้ามใช้เด็ดขาด',
+      'ข้อห้ามใช้', 'Contraindicated', 'ห้ามใช้', 'อันตราย', 'Dead Zone'
+    ];
 
-  var regAmber = [
-    'Modified Duke Criteria', 'Duke Criteria', 'Definite IE', 'Possible IE',
-    'Major criteria', 'Minor criteria', 'Major Criteria', 'Minor Criteria',
-    'CURB-65 >= 2', 'CURB-65 >= 3', 'CURB-65', 'CURB65',
-    'PEDIS Grade 1', 'PEDIS Grade', 'CrCl < 30 mL/min', 'CrCl < 50 mL/min',
-    'CrCl < 30', 'CrCl < 50', 'ALT > 3x ULN', 'ALT > 5x ULN',
-    'Total Bilirubin > 2.0 mg/dL', 'Hb < 8.0 g/dL', 'Hb < 8 g/dL',
-    'Platelets < 50,000 /mcL', 'PMN > 75%', 'CSF opening pressure',
-    'GeneXpert MTB/RIF', 'GeneXpert', 'Line Probe Assay', 'LPA'
-  ];
+    var regAmber = [
+      'Modified Duke Criteria', 'Duke Criteria', 'Definite IE', 'Possible IE',
+      'Major criteria', 'Minor criteria', 'Major Criteria', 'Minor Criteria',
+      'CURB-65 >= 2', 'CURB-65 >= 3', 'CURB-65', 'CURB65',
+      'PEDIS Grade 1', 'PEDIS Grade', 'CrCl < 30 mL/min', 'CrCl < 50 mL/min',
+      'CrCl < 30', 'CrCl < 50', 'ALT > 3x ULN', 'ALT > 5x ULN',
+      'Total Bilirubin > 2.0 mg/dL', 'Hb < 8.0 g/dL', 'Hb < 8 g/dL',
+      'Platelets < 50,000 /mcL', 'PMN > 75%', 'CSF opening pressure',
+      'GeneXpert MTB/RIF', 'GeneXpert', 'Line Probe Assay', 'LPA'
+    ];
 
-  var regPurple = [
-    'Streptococcus pneumoniae', 'S. pneumoniae', 'Streptococcus pyogenes', 'S. pyogenes',
-    'Staphylococcus aureus', 'S. aureus', 'MSSA', 'MRSA', 'VISA', 'VRSA',
-    'Enterococcus faecalis', 'E. faecalis', 'Enterococcus faecium', 'E. faecium', 'VRE',
-    'Pseudomonas aeruginosa', 'P. aeruginosa', 'Acinetobacter baumannii', 'A. baumannii',
-    'Klebsiella pneumoniae', 'K. pneumoniae', 'Escherichia coli', 'E. coli',
-    'Neisseria meningitidis', 'N. meningitidis', 'Neisseria gonorrhoeae', 'N. gonorrhoeae',
-    'Listeria monocytogenes', 'L. monocytogenes', 'Haemophilus influenzae', 'H. influenzae',
-    'Mycobacterium tuberculosis', 'M. tuberculosis', 'Mycobacterium bovis', 'M. bovis',
-    'Pasteurella multocida', 'Pasteurella spp.', 'Pasteurella',
-    'Eikenella corrodens', 'Eikenella spp.', 'Eikenella',
-    'Viridans Streptococci', 'Viridans Group Streptococci', 'Viridans strep',
-    'Streptococcus gallolyticus', 'Streptococcus bovis', 'S. bovis',
-    'MDR-TB', 'Pre-XDR-TB', 'Pre-XDR', 'XDR-TB', 'RR-TB',
-    'ESBL', 'AmpC', 'CRE', 'CRAB', 'CRPA',
-    'mecA', 'PBP2a', 'PBP', 'vanA', 'vanB', 'blaCTX-M', 'blaSHV', 'blaTEM',
-    'blaKPC', 'blaNDM', 'blaOXA', 'katG', 'inhA', 'rpoB', 'pncA', 'embB',
-    'atpE', 'gyrA', 'gyrB', 'rrs', '23S rRNA', 'OprD', 'MexAB-OprM', 'Efflux pump',
-    'DNA Gyrase', 'Topoisomerase IV', 'ATP Synthase', 'RNA Polymerase'
-  ];
+    var regPurple = [
+      'Streptococcus pneumoniae', 'S. pneumoniae', 'Streptococcus pyogenes', 'S. pyogenes',
+      'Staphylococcus aureus', 'S. aureus', 'MSSA', 'MRSA', 'VISA', 'VRSA',
+      'Enterococcus faecalis', 'E. faecalis', 'Enterococcus faecium', 'E. faecium', 'VRE',
+      'Pseudomonas aeruginosa', 'P. aeruginosa', 'Acinetobacter baumannii', 'A. baumannii',
+      'Klebsiella pneumoniae', 'K. pneumoniae', 'Escherichia coli', 'E. coli',
+      'Neisseria meningitidis', 'N. meningitidis', 'Neisseria gonorrhoeae', 'N. gonorrhoeae',
+      'Listeria monocytogenes', 'L. monocytogenes', 'Haemophilus influenzae', 'H. influenzae',
+      'Mycobacterium tuberculosis', 'M. tuberculosis', 'Mycobacterium bovis', 'M. bovis',
+      'Pasteurella multocida', 'Pasteurella spp.', 'Pasteurella',
+      'Eikenella corrodens', 'Eikenella spp.', 'Eikenella',
+      'Viridans Streptococci', 'Viridans Group Streptococci', 'Viridans strep',
+      'Streptococcus gallolyticus', 'Streptococcus bovis', 'S. bovis',
+      'MDR-TB', 'Pre-XDR-TB', 'Pre-XDR', 'XDR-TB', 'RR-TB',
+      'ESBL', 'AmpC', 'CRE', 'CRAB', 'CRPA',
+      'mecA', 'PBP2a', 'PBP', 'vanA', 'vanB', 'blaCTX-M', 'blaSHV', 'blaTEM',
+      'blaKPC', 'blaNDM', 'blaOXA', 'katG', 'inhA', 'rpoB', 'pncA', 'embB',
+      'atpE', 'gyrA', 'gyrB', 'rrs', '23S rRNA', 'OprD', 'MexAB-OprM', 'Efflux pump',
+      'DNA Gyrase', 'Topoisomerase IV', 'ATP Synthase', 'RNA Polymerase'
+    ];
 
-  var regBlue = [
-    'Penicillin G', 'Penicillin', 'Ampicillin', 'Amoxicillin-Clavulanate', 'Amoxicillin/Clavulanate',
-    'Amoxicillin', 'Augmentin', 'Cloxacillin', 'Oxacillin', 'Nafcillin', 'Dicloxacillin',
-    'Cefazolin', 'Cephalexin', 'Cefalexin', 'Ceftriaxone', 'Ceftazidime/Avibactam',
-    'Ceftazidime', 'Cefepime', 'Ceftaroline', 'Meropenem', 'Imipenem', 'Ertapenem', 'Doripenem',
-    'Piperacillin/Tazobactam', 'Piperacillin', 'Tazobactam', 'Sulbactam', 'Clavulanate',
-    'Vancomycin', 'Daptomycin', 'Linezolid', 'Tedizolid', 'Colistin', 'Polymyxin B',
-    'Fosfomycin', 'Gentamicin', 'Amikacin', 'Tobramycin', 'Streptomycin', 'Kanamycin',
-    'Ciprofloxacin', 'Levofloxacin', 'Moxifloxacin', 'Azithromycin', 'Clarithromycin',
-    'Erythromycin', 'Doxycycline', 'Minocycline', 'Tigecycline', 'Cotrimoxazole',
-    'TMP/SMX', 'Metronidazole', 'Clindamycin', 'Rifampin', 'Rifampicin', 'Isoniazid',
-    'Pyrazinamide', 'Ethambutol', 'Bedaquiline', 'Pretomanid', 'Delamanid', 'Clofazimine',
-    'Cycloserine', 'Ethionamide', 'Prothionamide', 'Pyridoxine', 'Vitamin B6',
-    'Levothyroxine', 'Dexamethasone', 'Remdesivir', 'Molnupiravir', 'Paxlovid', 'Favipiravir'
-  ];
+    var regBlue = [
+      'Penicillin G', 'Penicillin', 'Ampicillin', 'Amoxicillin-Clavulanate', 'Amoxicillin/Clavulanate',
+      'Amoxicillin', 'Augmentin', 'Cloxacillin', 'Oxacillin', 'Nafcillin', 'Dicloxacillin',
+      'Cefazolin', 'Cephalexin', 'Cefalexin', 'Ceftriaxone', 'Ceftazidime/Avibactam',
+      'Ceftazidime', 'Cefepime', 'Ceftaroline', 'Meropenem', 'Imipenem', 'Ertapenem', 'Doripenem',
+      'Piperacillin/Tazobactam', 'Piperacillin', 'Tazobactam', 'Sulbactam', 'Clavulanate',
+      'Vancomycin', 'Daptomycin', 'Linezolid', 'Tedizolid', 'Colistin', 'Polymyxin B',
+      'Fosfomycin', 'Gentamicin', 'Amikacin', 'Tobramycin', 'Streptomycin', 'Kanamycin',
+      'Ciprofloxacin', 'Levofloxacin', 'Moxifloxacin', 'Azithromycin', 'Clarithromycin',
+      'Erythromycin', 'Doxycycline', 'Minocycline', 'Tigecycline', 'Cotrimoxazole',
+      'TMP/SMX', 'Metronidazole', 'Clindamycin', 'Rifampin', 'Rifampicin', 'Isoniazid',
+      'Pyrazinamide', 'Ethambutol', 'Bedaquiline', 'Pretomanid', 'Delamanid', 'Clofazimine',
+      'Cycloserine', 'Ethionamide', 'Prothionamide', 'Pyridoxine', 'Vitamin B6',
+      'Levothyroxine', 'Dexamethasone', 'Remdesivir', 'Molnupiravir', 'Paxlovid', 'Favipiravir'
+    ];
 
-  var groups = [
-    { color: C_GREEN, list: regGreen },
-    { color: C_RED, list: regRed },
-    { color: C_AMBER, list: regAmber },
-    { color: C_PURPLE, list: regPurple },
-    { color: C_BLUE, list: regBlue }
-  ];
+    var groups = [
+      { color: C_GREEN, list: regGreen },
+      { color: C_RED, list: regRed },
+      { color: C_AMBER, list: regAmber },
+      { color: C_PURPLE, list: regPurple },
+      { color: C_BLUE, list: regBlue }
+    ];
 
-  var placeholders = {};
-  var count = 0;
+    var placeholders = {};
+    var count = 0;
 
-  groups.forEach(function(g) {
-    var sortedList = g.list.slice().sort(function(a, b) { return b.length - a.length; });
-    var escapedPats = sortedList.map(function(p) {
-      return p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    groups.forEach(function(g) {
+      var sortedList = g.list.slice().sort(function(a, b) { return b.length - a.length; });
+      var escapedPats = sortedList.map(function(p) {
+        return p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      });
+      var combinedRegex = new RegExp('(?<![a-zA-Z0-9_\\u0E00-\\u0E7F])(' + escapedPats.join('|') + ')(?![a-zA-Z0-9_\\u0E00-\\u0E7F])', 'gi');
+
+      escaped = escaped.replace(combinedRegex, function(match) {
+        var key = '___HL_PH_' + (count++) + '___';
+        placeholders[key] = '<b style="color:' + g.color + ';">' + match + '</b>';
+        return key;
+      });
     });
-    var combinedRegex = new RegExp('(?<![a-zA-Z0-9_\\u0E00-\\u0E7F])(' + escapedPats.join('|') + ')(?![a-zA-Z0-9_\\u0E00-\\u0E7F])', 'gi');
 
-    escaped = escaped.replace(combinedRegex, function(match) {
-      var key = '___HL_PH_' + (count++) + '___';
-      placeholders[key] = '<b style="color:' + g.color + ';">' + match + '</b>';
-      return key;
-    });
-  });
-
-  for (var k in placeholders) {
-    escaped = escaped.replace(k, placeholders[k]);
+    for (var k in placeholders) {
+      escaped = escaped.replace(k, placeholders[k]);
+    }
   }
 
-  return escaped.replace(/\n/g, '<br>');
+  return escaped;
 }
 
 // ─── REALTIME FETCH FROM GOOGLE SHEET ───
@@ -1900,7 +2032,7 @@ async function fetchLiveSheetQuestions(sheetName) {
             if (qText.includes('คำถาม') || qText.includes('กลับหน้าแรก')) return;
 
             // Normalize Musculoskeleton subtopics
-            if (sheetName.toLowerCase().includes('musculo') || sheetName.startsWith('1.')) {
+            if (sheetName.toLowerCase().includes('musculo')) {
               const stLow = (subtopic || '').toLowerCase();
               if (stLow.includes('gout') || stLow.includes('เกาต์')) subtopic = 'Gout';
               else if (stLow.includes('osteoarthritis') || stLow.includes('ข้อเสื่อม') || stLow.includes('ข้อเข่า') || stLow === 'oa') subtopic = 'OA';
@@ -1999,6 +2131,7 @@ function showApp() {
   const dn = currentUser ? currentUser.displayName : 'ผู้ใช้งาน';
   document.getElementById('lobbyUserNameBadge').textContent = dn;
   document.getElementById('lobbyGreetingName').textContent = dn;
+  setAppQuizMode(appQuizMode);
   loadInitialData();
 }
 
@@ -2172,12 +2305,15 @@ function showLobby() {
   document.getElementById('quizView').style.display = 'none';
   document.getElementById('resultView').style.display = 'none';
   document.getElementById('browseView').style.display = 'none';
+  const rev = document.getElementById('examReviewView');
+  if (rev) rev.style.display = 'none';
   switchTrack(currentTrack);
 }
 
 function buildLobby() {
   const grid = document.getElementById('lobbyDeckGrid');
   const visCats = getVisibleCategories();
+  populateExamTypeFilterDropdown('lobbyExamTypeFilter', true);
 
   if (!visCats.length) {
     grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; color:var(--ink-faint); padding:24px;">ยังไม่มีข้อมูลในสายวิชานี้</div>';
@@ -2344,6 +2480,7 @@ function openQuizSetupModal(catName, track, isRandom = false) {
   setupQuestionCount = 20;
 
   populateSetupCategories();
+  populateExamTypeFilterDropdown('setupExamTypeSelect', true);
   document.getElementById('setupCategorySelect').value = setupCategory;
   onSetupCategoryChange();
 
@@ -2351,10 +2488,21 @@ function openQuizSetupModal(catName, track, isRandom = false) {
   document.getElementById('setupModeSelect').value = appQuizMode;
 
   setSetupQuestionCount(20);
-  document.getElementById('setupTimerSelect').value = 'auto';
+  document.getElementById('setupTimerSelect').value = (appQuizMode === 'practice') ? '0' : 'auto';
   onSetupTimerSelectChange();
 
   document.getElementById('quizSetupModal').classList.add('show');
+}
+
+function onSetupModeSelectChange() {
+  const chosenMode = document.getElementById('setupModeSelect').value;
+  setAppQuizMode(chosenMode);
+  if (chosenMode === 'practice') {
+    document.getElementById('setupTimerSelect').value = '0';
+  } else {
+    document.getElementById('setupTimerSelect').value = 'auto';
+  }
+  onSetupTimerSelectChange();
 }
 
 function closeQuizSetupModal() {
@@ -2424,17 +2572,8 @@ function getSetupFilteredPool() {
     }
   }
 
-  // Filter by exam type
-  if (setupExamType !== 'all') {
-    pool = pool.filter(q => {
-      const et = (q.examType || '').toLowerCase();
-      if (setupExamType === 'real_2567') return et.includes('2567') || et.includes('67');
-      if (setupExamType === 'real_all') return et.includes('จริง') || et.includes('real');
-      if (setupExamType === 'mock') return et.includes('จำลอง') || et.includes('mock');
-      return true;
-    });
-  }
-  return pool;
+  // Filter by dynamic exam type from Column O
+  return filterQuestionsByExamType(pool, setupExamType);
 }
 
 function updateSetupAvailableCount() {
@@ -2486,7 +2625,7 @@ function onSetupTimerSelectChange() {
     const mins = Math.round(count * 1.5);
     desc.innerHTML = `💡 คำนวณตามมาตรฐาน: <b>${count} ข้อ = ${mins} นาที</b> (ประมาณ 1.5 นาที/ข้อ)`;
   } else if (selVal === '0') {
-    desc.innerHTML = `💡 โหมดไม่จำกัดเวลา (Untimed) ฝึกทำข้อสอบสบายๆ`;
+    desc.innerHTML = `💡 โหมดไม่จำกัดเวลา (Untimed) ฝึกทำข้อสอบสบายๆ ทีละข้อ`;
   } else {
     desc.innerHTML = `💡 จับเวลานับถอยหลัง: <b>${selVal} นาที</b> และจะส่งข้อสอบทันทีเมื่อหมดเวลา`;
   }
@@ -2520,10 +2659,17 @@ function startConfiguredQuiz() {
   // Timer Calculation
   const timerOption = document.getElementById('setupTimerSelect').value;
   let totalSeconds = 0;
-  if (timerOption === 'auto') {
-    totalSeconds = Math.round(finalQuestions.length * 1.5 * 60);
-  } else if (timerOption !== '0') {
-    totalSeconds = parseInt(timerOption, 10) * 60;
+  if (chosenMode === 'exam') {
+    if (timerOption === 'auto') {
+      totalSeconds = Math.round(finalQuestions.length * 1.5 * 60);
+    } else if (timerOption !== '0') {
+      totalSeconds = parseInt(timerOption, 10) * 60;
+    }
+  } else {
+    // In practice mode, only set timer if user explicitly selected a duration > 0
+    if (timerOption !== 'auto' && timerOption !== '0') {
+      totalSeconds = parseInt(timerOption, 10) * 60;
+    }
   }
 
   // Title
@@ -2534,7 +2680,11 @@ function startConfiguredQuiz() {
   document.getElementById('quizSubtopicRow').style.display = 'none';
 
   startQuizWithQuestions(finalQuestions, title);
-  startQuizCountdownTimer(totalSeconds);
+  if (totalSeconds > 0) {
+    startQuizCountdownTimer(totalSeconds);
+  } else {
+    stopQuizCountdownTimer();
+  }
 }
 
 // ─── START QUIZ ───
@@ -2573,6 +2723,8 @@ function startQuizWithQuestions(qs, titleText) {
   document.getElementById('quizView').style.display = 'flex';
   document.getElementById('resultView').style.display = 'none';
   document.getElementById('browseView').style.display = 'none';
+  const revView = document.getElementById('examReviewView');
+  if (revView) revView.style.display = 'none';
 
   const modeBadge = appQuizMode === 'exam' ? '⏱️ โหมดสอบจริง' : '📖 โหมดฝึกฝน';
   document.getElementById('quizCategoryTitle').textContent = titleText;
@@ -2920,6 +3072,8 @@ function showQuizResultSummary() {
   document.getElementById('quizView').style.display = 'none';
   document.getElementById('resultView').style.display = 'flex';
   document.getElementById('browseView').style.display = 'none';
+  const revView = document.getElementById('examReviewView');
+  if (revView) revView.style.display = 'none';
 
   const total = sessionResults.total;
   const score = sessionResults.score;
@@ -2951,7 +3105,7 @@ function showQuizResultSummary() {
     const isWrong = sessionResults.wrongQuestions.some(w => w.question.id === q.id);
     const itemNo = q.itemNo || (idx + 1);
     bHtml += `
-      <div class="rb-item">
+      <div class="rb-item" onclick="openExamReviewView('all')" style="cursor:pointer;" title="คลิกเพื่อเปิดหน้าดูเฉลยละเอียดและทบทวนข้อนี้">
         <span style="font-weight:600;">ข้อ ${itemNo}. ${(q.question || '').replace(/<[^>]*>/g, '').substring(0, 50)}...</span>
         <span style="font-weight:700; color:${isWrong ? '#dc2626' : '#16a34a'};">${isWrong ? '❌ ผิด' : '✅ ถูก'}</span>
       </div>`;
@@ -2968,13 +3122,192 @@ function showQuizResultSummary() {
   }
 }
 
+// ─── EXAM REVIEW (BROWSE VIEW OF SESSION ATTEMPT) ───
+let currentReviewFilter = 'all'; // 'all' | 'wrong' | 'correct'
+
+function openExamReviewView(filter = 'all') {
+  currentAppMode = 'examReview';
+  document.getElementById('lobbyView').style.display = 'none';
+  document.getElementById('quizView').style.display = 'none';
+  document.getElementById('resultView').style.display = 'none';
+  document.getElementById('browseView').style.display = 'none';
+  const revView = document.getElementById('examReviewView');
+  if (revView) revView.style.display = 'flex';
+
+  const catTitle = document.getElementById('quizCategoryTitle').textContent || 'ชุดข้อสอบ';
+  const total = sessionResults.total || activeQuizQuestions.length;
+  const score = sessionResults.score || 0;
+  const pct = total ? Math.round((score / total) * 100) : 0;
+
+  const titleEl = document.getElementById('reviewSessionTitle');
+  if (titleEl) titleEl.textContent = `📋 ทบทวนผลสอบ: ${catTitle}`;
+  const subEl = document.getElementById('reviewSessionSubtitle');
+  if (subEl) subEl.textContent = `คะแนน ${score}/${total} (${pct}%) · ${pct >= 60 ? '✓ ผ่านเกณฑ์' : '✕ ยังไม่ผ่านเกณฑ์'}`;
+
+  const wrongCount = sessionResults.wrongQuestions ? sessionResults.wrongQuestions.length : 0;
+  const correctCount = total - wrongCount;
+
+  const btnAll = document.getElementById('btnReviewFilterAll');
+  if (btnAll) btnAll.textContent = `📋 ทั้งหมด (${total} ข้อ)`;
+  const btnWrong = document.getElementById('btnReviewFilterWrong');
+  if (btnWrong) btnWrong.textContent = `❌ ตอบผิด (${wrongCount} ข้อ)`;
+  const btnCorrect = document.getElementById('btnReviewFilterCorrect');
+  if (btnCorrect) btnCorrect.textContent = `✅ ตอบถูก (${correctCount} ข้อ)`;
+
+  setReviewFilter(filter);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function backFromResultReview() {
+  const revView = document.getElementById('examReviewView');
+  if (revView) revView.style.display = 'none';
+  document.getElementById('resultView').style.display = 'flex';
+  currentAppMode = 'result';
+}
+
+function setReviewFilter(filter) {
+  currentReviewFilter = filter;
+  const btnAll = document.getElementById('btnReviewFilterAll');
+  const btnWrong = document.getElementById('btnReviewFilterWrong');
+  const btnCorrect = document.getElementById('btnReviewFilterCorrect');
+  if (btnAll) btnAll.classList.toggle('active', filter === 'all');
+  if (btnWrong) btnWrong.classList.toggle('active', filter === 'wrong');
+  if (btnCorrect) btnCorrect.classList.toggle('active', filter === 'correct');
+  renderExamReview();
+}
+
+function renderExamReview() {
+  const container = document.getElementById('examReviewContainer');
+  if (!container) return;
+
+  const total = activeQuizQuestions.length;
+  if (!total) {
+    container.innerHTML = '<div style="padding:32px; text-align:center; color:var(--ink-faint);">ไม่มีข้อมูลข้อสอบสำหรับการทบทวน</div>';
+    return;
+  }
+
+  let html = '';
+  let visibleCount = 0;
+
+  activeQuizQuestions.forEach((q, idx) => {
+    // Determine user choice in this session
+    let userChoice = null;
+    if (appQuizMode === 'exam') {
+      userChoice = userAnswersExamMode[idx];
+    } else {
+      const wObj = sessionResults.wrongQuestions ? sessionResults.wrongQuestions.find(w => w.question.id === q.id) : null;
+      if (wObj) {
+        userChoice = wObj.userChoice;
+      } else {
+        const prog = getQuizProgress()[q.id];
+        userChoice = (prog && prog.selected) ? prog.selected : q.answer;
+      }
+    }
+
+    const isCorrect = (userChoice === q.answer);
+
+    // Filter logic
+    if (currentReviewFilter === 'wrong' && isCorrect) return;
+    if (currentReviewFilter === 'correct' && !isCorrect) return;
+
+    visibleCount++;
+
+    const itemNo = q.itemNo || (idx + 1);
+    const norm = (q.track || '').toLowerCase();
+    const trackBadgeClass = norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag';
+
+    let examTagClass = 'tag-general-exam';
+    let examTagText = q.examType || 'ข้อสอบทั่วไป';
+    if (examTagText.includes('2567') || examTagText.includes('67') || examTagText.includes('จริง')) {
+      examTagClass = 'tag-real-exam';
+    } else if (examTagText.includes('จำลอง') || examTagText.includes('Mock')) {
+      examTagClass = 'tag-mock-exam';
+    }
+
+    const userLetter = userChoice ? (THAI_CHOICE_LETTERS[userChoice - 1] || userChoice) : 'ไม่ได้ตอบ';
+    const correctLetter = THAI_CHOICE_LETTERS[q.answer - 1] || q.answer;
+
+    // Choices list
+    let choicesHtml = '';
+    (q.choices || []).forEach((c, cIdx) => {
+      if (!c && c !== 0) return;
+      const cNum = cIdx + 1;
+      const cleanC = cleanChoiceString(c);
+      const thaiLetter = THAI_CHOICE_LETTERS[cIdx] || (cNum + '.');
+
+      let choiceClass = 'review-choice-item';
+      let badgeHtml = '';
+
+      if (cNum === q.answer && userChoice === q.answer) {
+        choiceClass += ' user-correct';
+        badgeHtml = '<span class="review-badge-user" style="background:#16a34a; color:#fff;">✅ คุณตอบข้อนี้ (ถูกต้อง)</span>';
+      } else if (cNum === q.answer && userChoice !== q.answer) {
+        choiceClass += ' is-correct';
+        badgeHtml = '<span class="review-badge-user" style="background:#10b981; color:#fff;">✅ คำตอบที่ถูกต้อง</span>';
+      } else if (cNum === userChoice && userChoice !== q.answer) {
+        choiceClass += ' user-wrong';
+        badgeHtml = '<span class="review-badge-user" style="background:#ef4444; color:#fff;">❌ คุณตอบข้อนี้</span>';
+      }
+
+      choicesHtml += `
+        <div class="${choiceClass}">
+          <div style="font-weight:700; width:26px; flex-shrink:0;">${thaiLetter}</div>
+          <div style="flex:1;">${formatPlainTextToHtml(cleanC)}</div>
+          ${badgeHtml}
+        </div>`;
+    });
+
+    html += `
+      <div class="browse-card" style="border-left: 5px solid ${isCorrect ? '#16A34A' : '#DC2626'};">
+        <div class="browse-card-head">
+          <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+            <span class="browse-item-num-badge">ข้อที่ ${itemNo}</span>
+            <span class="tag ${trackBadgeClass}">${q.track || 'Clinic'} · ${q.subtopic || q.category}</span>
+            ${isCorrect 
+              ? '<span style="background:#DCFCE7; color:#166534; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:6px; border:1px solid #BBF7D0;">✅ คุณตอบถูก (ข้อ ' + userLetter + ')</span>' 
+              : '<span style="background:#FEE2E2; color:#991B1B; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:6px; border:1px solid #FECACA;">❌ คุณตอบผิด (คุณตอบ ' + userLetter + ' / เฉลย ' + correctLetter + ')</span>'}
+          </div>
+          <div class="browse-card-tags">
+            <span class="tag-exam-type ${examTagClass}">🎯 ${examTagText}</span>
+          </div>
+        </div>
+
+        ${q.questionImage ? `<div style="text-align:center; margin:8px 0 12px;"><img src="${q.questionImage}" style="max-height:220px; max-width:100%; border-radius:10px; border:1px solid var(--border); cursor:pointer;" onclick="openImgLightbox(this.src)" alt="รูปคำถาม"></div>` : ''}
+
+        <div class="browse-card-question">${formatPlainTextToHtml(q.question || '')}</div>
+
+        <div class="browse-choices-list" style="margin-top:12px;">
+          ${choicesHtml}
+        </div>
+
+        <!-- Inline Explanation Box for Direct Review -->
+        <div class="browse-exp-box show" style="margin-top:14px; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:12px; padding:14px;">
+          <div class="browse-exp-title" style="color:#0F172A; font-size:13.5px; font-weight:700; margin-bottom:8px;">
+            💡 เฉลยละเอียด: ตัวเลือกที่ ${q.answer} (${correctLetter})
+          </div>
+          <div style="font-size:13.5px; line-height:1.6; color:#334155;">
+            ${q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้'}
+          </div>
+          ${q.answerImage ? `<div style="text-align:center; margin-top:10px;"><img src="${q.answerImage}" style="max-height:220px; max-width:100%; border-radius:8px; border:1px solid var(--border); cursor:pointer;" onclick="openImgLightbox(this.src)" alt="รูปเฉลย"></div>` : ''}
+          ${q.note ? `<div style="font-size:12px; color:var(--ink-soft); margin-top:8px; border-top:1px dashed var(--border); padding-top:6px;">📌 หมายเหตุ: ${q.note}</div>` : ''}
+        </div>
+      </div>`;
+  });
+
+  if (visibleCount === 0) {
+    container.innerHTML = `<div style="padding:36px; text-align:center; color:var(--ink-faint); background:var(--card); border-radius:18px; border:1px solid var(--border);">ไม่พบข้อสอบในหมวด ${currentReviewFilter === 'wrong' ? 'ที่ตอบผิด' : 'ที่ตอบถูก'}</div>`;
+  } else {
+    container.innerHTML = html;
+  }
+}
+
 function startReviewWrongQuestions() {
-  if (!sessionResults.wrongQuestions.length) return;
-  const wrongQs = sessionResults.wrongQuestions.map(w => w.question);
-  startQuizWithQuestions(wrongQs, 'ทบทวนข้อที่ตอบผิด (' + wrongQs.length + ' ข้อ)');
+  openExamReviewView('wrong');
 }
 
 function restartQuizSession() {
+  const rev = document.getElementById('examReviewView');
+  if (rev) rev.style.display = 'none';
   startQuizWithQuestions(activeQuizQuestions, document.getElementById('quizCategoryTitle').textContent);
 }
 
@@ -2997,6 +3330,8 @@ function switchAppMode(mode) {
   document.getElementById('quizView').style.display = (mode === 'quiz' ? 'flex' : 'none');
   document.getElementById('resultView').style.display = (mode === 'result' ? 'flex' : 'none');
   document.getElementById('browseView').style.display = (mode === 'browse' ? 'flex' : 'none');
+  const rev = document.getElementById('examReviewView');
+  if (rev) rev.style.display = (mode === 'examReview' ? 'flex' : 'none');
 
   if (mode === 'browse') {
     renderBrowseList();
@@ -3036,10 +3371,14 @@ function renderBrowseList() {
     catSel.innerHTML = catHtml;
   }
 
+  const examSel = document.getElementById('browseExamTypeFilter');
+  if (examSel && examSel.options.length <= 1) {
+    populateExamTypeFilterDropdown('browseExamTypeFilter', true);
+  }
+
   const selectedCat = catSel ? catSel.value : 'all';
   const subSel = document.getElementById('browseSubtopicFilter');
   const selectedSub = subSel ? subSel.value : 'all';
-  const examSel = document.getElementById('browseExamTypeFilter');
   const selectedExam = examSel ? examSel.value : 'all';
   const term = document.getElementById('browseSearchInput').value.trim().toLowerCase();
 
@@ -3057,16 +3396,8 @@ function renderBrowseList() {
     list = list.filter(q => q.subtopic === selectedSub);
   }
 
-  // Filter Exam Type
-  if (selectedExam !== 'all') {
-    list = list.filter(q => {
-      const et = (q.examType || '').toLowerCase();
-      if (selectedExam === 'real_2567') return et.includes('2567') || et.includes('67');
-      if (selectedExam === 'real_all') return et.includes('จริง') || et.includes('real');
-      if (selectedExam === 'mock') return et.includes('จำลอง') || et.includes('mock');
-      return true;
-    });
-  }
+  // Filter Exam Type (Dynamic from Column O)
+  list = filterQuestionsByExamType(list, selectedExam);
 
   // Filter Search
   if (term) {
@@ -3231,6 +3562,31 @@ function toggleFullscreen() {
     document.documentElement.requestFullscreen().catch(() => {});
   } else {
     document.exitFullscreen().catch(() => {});
+  }
+}
+
+document.addEventListener('fullscreenchange', () => {
+  document.body.classList.toggle('fullscreen-active', !!document.fullscreenElement);
+});
+document.addEventListener('webkitfullscreenchange', () => {
+  document.body.classList.toggle('fullscreen-active', !!document.webkitFullscreenElement);
+});
+
+async function forceClearCacheAndReload() {
+  if (confirm('ต้องการล้างแคชทั้งหมดและโหลดข้อสอบล่าสุดใหม่หรือไม่?')) {
+    try {
+      if ('caches' in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(k => caches.delete(k)));
+      }
+      if ('serviceWorker' in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        for (const reg of regs) {
+          await reg.unregister();
+        }
+      }
+    } catch(e) {}
+    window.location.reload(true);
   }
 }
 
