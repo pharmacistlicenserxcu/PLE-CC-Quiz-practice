@@ -2420,6 +2420,12 @@
     <div class="quiz-viewport" id="cardPracticeViewport">
       <div class="subtopic-selector-row" id="quizSubtopicRow">
         <div class="subtopic-select-wrap">
+          <select class="subtopic-dropdown" id="quizExamTypeSelect" onchange="onQuizExamTypeFilterChange()">
+            <option value="all">🎯 ทุกประเภทข้อสอบ/ชุด</option>
+          </select>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="subtopic-select-wrap" id="quizSubtopicWrap">
           <select class="subtopic-dropdown" id="quizSubtopicSelect" onchange="onQuizSubtopicChange()">
             <option value="__all__">📂 ทุกหัวข้อย่อยในหมวดนี้</option>
           </select>
@@ -2532,14 +2538,19 @@
           </div>
         </div>
 
-        <!-- Subtopic & Search row in scroll mode -->
-        <div style="display:flex; gap:8px; align-items:center;">
-          <div style="position:relative; flex:1;">
+        <!-- Subtopic & Exam Type & Search row in scroll mode -->
+        <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+          <div style="position:relative; flex:1; min-width:180px;">
+            <select class="subtopic-dropdown" id="scrollExamTypeSelect" onchange="onScrollExamTypeFilterChange()" style="width:100%; padding:6px 28px 6px 10px; border-radius:8px; border:1px solid var(--border); font-size:12px; font-weight:700; color:var(--clinic); outline:none; background:var(--card);">
+              <option value="all">🎯 ทุกประเภทข้อสอบ/ชุด</option>
+            </select>
+          </div>
+          <div style="position:relative; flex:1; min-width:180px;" id="scrollSubtopicWrap">
             <select class="subtopic-dropdown" id="scrollSubtopicSelect" onchange="onScrollSubtopicChange()" style="width:100%; padding:6px 28px 6px 10px; border-radius:8px; border:1px solid var(--border); font-size:12px; font-weight:700; color:var(--clinic); outline:none; background:var(--card);">
               <option value="__all__">📂 ทุกหัวข้อย่อยในหมวดนี้</option>
             </select>
           </div>
-          <div style="position:relative; width:180px;">
+          <div style="position:relative; width:170px; min-width:140px;">
             <input type="text" id="scrollSearchInput" placeholder="🔍 ค้นหาในชุดนี้..." oninput="onScrollSearchChange()" style="width:100%; padding:6px 10px; border-radius:8px; border:1px solid var(--border); font-size:12px; outline:none; background:var(--card);">
           </div>
         </div>
@@ -4152,32 +4163,26 @@ function handleDeckCardClick(catName, track) {
   }
 }
 
+let practiceExamTypeFilter = 'all';
+
 function enterQuizCategoryDirectly(catName, track) {
   currentCategory = catName;
   currentTrack = track || currentTrack;
   currentSubtopic = '__all__';
+  practiceExamTypeFilter = 'all';
+  scrollFilterSubtopic = '__all__';
+  scrollFilterExamType = 'all';
   let qs = (allQuestionsMap[catName] || []).slice();
   if (!qs.length) {
     showToast('ยังไม่มีข้อสอบในหมวดนี้');
     return;
   }
 
-  // Populate subtopic selector row if multiple subtopics
-  const subs = Array.from(new Set(qs.map(q => q.subtopic).filter(Boolean)));
+  // Populate subtopic selector row and exam type filter
   const subRow = document.getElementById('quizSubtopicRow');
-  const subSel = document.getElementById('quizSubtopicSelect');
-  if (subs.length > 1) {
-    subRow.style.display = 'block';
-    let sHtml = '<option value="__all__">📂 ทุกหัวข้อย่อย (' + qs.length + ' ข้อ)</option>';
-    subs.sort().forEach(s => {
-      const c = qs.filter(q => q.subtopic === s).length;
-      sHtml += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
-    });
-    subSel.innerHTML = sHtml;
-    subSel.value = '__all__';
-  } else {
-    subRow.style.display = 'none';
-  }
+  if (subRow) subRow.style.display = 'flex';
+  populatePracticeSubtopicDropdowns(qs);
+  populatePracticeExamTypeDropdowns(qs);
 
   stopQuizCountdownTimer();
   startQuizWithQuestions(qs, catName);
@@ -5047,13 +5052,150 @@ function enterQuizAll(track) {
   openQuizSetupModal('__all__', currentTrack);
 }
 
-function onQuizSubtopicChange() {
-  const val = document.getElementById('quizSubtopicSelect').value;
-  currentSubtopic = val;
+// ─── PRACTICE MODE FILTERS (CARD & SCROLL) ───
+function populatePracticeSubtopicDropdowns(poolQs) {
+  const list = poolQs || (allQuestionsMap[currentCategory] || []);
+  const subs = Array.from(new Set(list.map(q => q.subtopic).filter(Boolean))).sort();
+
+  // 1. Card View Subtopic
+  const cardSubWrap = document.getElementById('quizSubtopicWrap');
+  const cardSubSel = document.getElementById('quizSubtopicSelect');
+  if (cardSubSel) {
+    let html = `<option value="__all__">📂 ทุกหัวข้อย่อย (${list.length} ข้อ)</option>`;
+    subs.forEach(s => {
+      const c = list.filter(q => q.subtopic === s).length;
+      html += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
+    });
+    cardSubSel.innerHTML = html;
+    cardSubSel.value = currentSubtopic || '__all__';
+    if (cardSubWrap) {
+      cardSubWrap.style.display = (subs.length > 1) ? 'block' : 'none';
+    }
+  }
+
+  // 2. Scroll View Subtopic
+  const scrollSubWrap = document.getElementById('scrollSubtopicWrap');
+  const scrollSubSel = document.getElementById('scrollSubtopicSelect');
+  if (scrollSubSel) {
+    let sHtml = `<option value="__all__">📂 ทุกหัวข้อย่อย (${list.length} ข้อ)</option>`;
+    subs.forEach(s => {
+      const c = list.filter(q => q.subtopic === s).length;
+      sHtml += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
+    });
+    scrollSubSel.innerHTML = sHtml;
+    scrollSubSel.value = scrollFilterSubtopic || '__all__';
+    if (scrollSubWrap) {
+      scrollSubWrap.style.display = (subs.length > 1) ? 'block' : 'none';
+    }
+  }
+}
+
+function populatePracticeExamTypeDropdowns(poolQs) {
+  const list = poolQs || (allQuestionsMap[currentCategory] || []);
+  const typeMap = new Map();
+
+  list.forEach(q => {
+    const { type, year } = sanitizeExamMeta(q.examType, q.examYear);
+    if (!type && !year) return;
+    const mainType = type || 'ข้อสอบทั่วไป';
+    if (!typeMap.has(mainType)) {
+      typeMap.set(mainType, new Set());
+    }
+    if (year) {
+      typeMap.get(mainType).add(year);
+    }
+  });
+
+  let html = '<option value="all">🎯 ทุกประเภทข้อสอบ/ชุด</option>';
+
+  const sortedTypes = Array.from(typeMap.keys()).sort((a, b) => {
+    const aReal = a.includes('จริง');
+    const bReal = b.includes('จริง');
+    if (aReal && !bReal) return -1;
+    if (!aReal && bReal) return 1;
+    const aMock = a.toLowerCase().includes('mock') || a.includes('จำลอง');
+    const bMock = b.toLowerCase().includes('mock') || b.includes('จำลอง');
+    if (aMock && !bMock) return -1;
+    if (!aMock && bMock) return 1;
+    return a.localeCompare(b, 'th');
+  });
+
+  sortedTypes.forEach(type => {
+    const yearsSet = typeMap.get(type) || new Set();
+    const years = Array.from(yearsSet).sort((a, b) => {
+      const numA = parseInt((a.match(/\d+/) || [0])[0], 10);
+      const numB = parseInt((b.match(/\d+/) || [0])[0], 10);
+      if (numA && numB) return numB - numA;
+      return b.localeCompare(a, 'th', { numeric: true });
+    });
+
+    const isReal = type.includes('จริง');
+    const isMock = type.toLowerCase().includes('mock') || type.includes('จำลอง');
+    const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
+
+    if (years.length > 1) {
+      html += `<option value="type:${type}">${icon} ${type} (ทุกปี / ทุกชุด)</option>`;
+      years.forEach(y => {
+        html += `<option value="combo:${type}::${y}">&nbsp;&nbsp;&nbsp;📅 ${type} · ${y}</option>`;
+      });
+    } else if (years.length === 1 && years[0]) {
+      html += `<option value="combo:${type}::${years[0]}">${icon} ${type} · ${years[0]}</option>`;
+    } else {
+      html += `<option value="type:${type}">${icon} ${type}</option>`;
+    }
+  });
+
+  const cardExamSel = document.getElementById('quizExamTypeSelect');
+  if (cardExamSel) {
+    cardExamSel.innerHTML = html;
+    cardExamSel.value = practiceExamTypeFilter || 'all';
+  }
+
+  const scrollExamSel = document.getElementById('scrollExamTypeSelect');
+  if (scrollExamSel) {
+    scrollExamSel.innerHTML = html;
+    scrollExamSel.value = practiceExamTypeFilter || 'all';
+  }
+}
+
+function applyPracticeFilters() {
   let fullList = allQuestionsMap[currentCategory] || [];
-  fullList = filterQuestionsByExamType(fullList);
-  const filtered = val === '__all__' ? fullList : fullList.filter(q => q.subtopic === val);
+  if (practiceExamTypeFilter && practiceExamTypeFilter !== 'all') {
+    fullList = filterQuestionsByExamType(fullList, practiceExamTypeFilter);
+  }
+  if (currentSubtopic && currentSubtopic !== '__all__') {
+    fullList = fullList.filter(q => q.subtopic === currentSubtopic);
+  }
+  return fullList;
+}
+
+function onQuizSubtopicChange() {
+  const val = document.getElementById('quizSubtopicSelect')?.value || '__all__';
+  currentSubtopic = val;
+  scrollFilterSubtopic = val;
+  const scrollSubSel = document.getElementById('scrollSubtopicSelect');
+  if (scrollSubSel) scrollSubSel.value = val;
+
+  const filtered = applyPracticeFilters();
+  if (!filtered.length) {
+    showToast('⚠️ ไม่พบข้อสอบในเงื่อนไขตัวกรองนี้');
+  }
   startQuizWithQuestions(filtered, currentCategory + (val !== '__all__' ? ' · ' + val : ''));
+}
+
+function onQuizExamTypeFilterChange() {
+  const val = document.getElementById('quizExamTypeSelect')?.value || 'all';
+  practiceExamTypeFilter = val;
+  scrollFilterExamType = val;
+  const scrollExamSel = document.getElementById('scrollExamTypeSelect');
+  if (scrollExamSel) scrollExamSel.value = val;
+
+  const filtered = applyPracticeFilters();
+  if (!filtered.length) {
+    showToast('⚠️ ไม่พบข้อสอบในเงื่อนไขตัวกรองนี้');
+  }
+  startQuizWithQuestions(filtered, currentCategory + (currentSubtopic !== '__all__' ? ' · ' + currentSubtopic : ''));
+  showToast('🔍 ปรับตัวกรองประเภท/ชุดข้อสอบแล้ว (' + filtered.length + ' ข้อ)');
 }
 
 function startQuizWithQuestions(qs, titleText) {
@@ -5153,28 +5295,44 @@ function shuffleCurrentQuizDeck() {
 // ─── SCROLL DOWN PRACTICE MODE CONTROLLERS ───
 let scrollShowAllExp = false;
 let scrollFilterSubtopic = '__all__';
+let scrollFilterExamType = 'all';
 let scrollSearchQuery = '';
 let activeReportQuestion = null;
 
 function populateScrollSubtopicDropdown() {
-  const subSel = document.getElementById('scrollSubtopicSelect');
-  if (!subSel) return;
-  const subs = Array.from(new Set(activeQuizQuestions.map(q => q.subtopic).filter(Boolean)));
-  let sHtml = `<option value="__all__">📂 ทุกหัวข้อย่อย (${activeQuizQuestions.length} ข้อ)</option>`;
-  subs.sort().forEach(s => {
-    const c = activeQuizQuestions.filter(q => q.subtopic === s).length;
-    sHtml += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
-  });
-  subSel.innerHTML = sHtml;
-  subSel.value = scrollFilterSubtopic || '__all__';
+  populatePracticeSubtopicDropdowns();
+  populatePracticeExamTypeDropdowns();
 }
 
 function onScrollSubtopicChange() {
   const subSel = document.getElementById('scrollSubtopicSelect');
   if (subSel) {
     scrollFilterSubtopic = subSel.value;
+    currentSubtopic = subSel.value;
   }
+  const cardSubSel = document.getElementById('quizSubtopicSelect');
+  if (cardSubSel) cardSubSel.value = scrollFilterSubtopic;
+
+  const filtered = applyPracticeFilters();
+  activeQuizQuestions = filtered.slice();
+  updateScrollPracticeStats();
   renderScrollPractice();
+}
+
+function onScrollExamTypeFilterChange() {
+  const examSel = document.getElementById('scrollExamTypeSelect');
+  if (examSel) {
+    scrollFilterExamType = examSel.value;
+    practiceExamTypeFilter = examSel.value;
+  }
+  const cardExamSel = document.getElementById('quizExamTypeSelect');
+  if (cardExamSel) cardExamSel.value = scrollFilterExamType;
+
+  const filtered = applyPracticeFilters();
+  activeQuizQuestions = filtered.slice();
+  updateScrollPracticeStats();
+  renderScrollPractice();
+  showToast('🔍 ปรับตัวกรองประเภท/ชุดข้อสอบแล้ว (' + filtered.length + ' ข้อ)');
 }
 
 function onScrollSearchChange() {
@@ -5231,7 +5389,8 @@ function showScrollViewport() {
   const btn = document.getElementById('btnTogglePracticeViewStyle');
   if (btn) btn.title = 'สลับมุมมอง: โหมดทีละข้อ (Card View)';
 
-  populateScrollSubtopicDropdown();
+  populatePracticeSubtopicDropdowns();
+  populatePracticeExamTypeDropdowns();
   updateScrollPracticeStats();
   renderScrollPractice();
 }
@@ -5247,6 +5406,8 @@ function showCardViewport() {
   const btn = document.getElementById('btnTogglePracticeViewStyle');
   if (btn) btn.title = 'สลับมุมมอง: โหมดเลื่อนอ่านยาว (Scroll Down)';
 
+  populatePracticeSubtopicDropdowns();
+  populatePracticeExamTypeDropdowns();
   renderCurrentQuestion();
 }
 
