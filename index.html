@@ -1994,31 +1994,52 @@
       background: var(--card);
       margin-bottom: 6px;
       overflow: hidden;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+      flex-shrink: 0;
     }
     .sim-subtopic-cat-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 7px 11px;
+      min-height: 40px;
+      padding: 8px 12px;
       background: var(--bg);
-      font-size: 11.5px;
+      font-size: 12px;
       font-weight: 700;
+      color: var(--ink);
       cursor: pointer;
       user-select: none;
+      transition: background 0.15s ease;
+    }
+    .sim-subtopic-cat-header:hover {
+      background: var(--surface);
+    }
+    .sim-subtopic-cat-arrow {
+      font-size: 10px;
+      color: var(--ink-soft);
+      transition: transform 0.2s ease;
+      display: inline-block;
+      margin-left: 6px;
+    }
+    .sim-subtopic-cat-box.collapsed .sim-subtopic-cat-arrow {
+      transform: rotate(-90deg);
+    }
+    .sim-subtopic-cat-box.collapsed .sim-subtopic-chips-grid {
+      display: none !important;
     }
     .sim-subtopic-chips-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 5px;
-      padding: 7px 10px;
+      gap: 6px;
+      padding: 10px 12px;
       background: var(--card);
+      border-top: 1px dashed var(--border);
     }
     .sim-sub-chip {
       display: inline-flex;
       align-items: center;
-      font-size: 11px;
-      padding: 3px 8px;
+      font-size: 11.5px;
+      padding: 4px 10px;
       border-radius: 6px;
       border: 1px solid var(--border);
       background: var(--bg);
@@ -2026,17 +2047,19 @@
       cursor: pointer;
       user-select: none;
       transition: all 0.15s ease;
-      line-height: 1.3;
+      line-height: 1.35;
+      font-weight: 500;
     }
     .sim-sub-chip:hover {
       border-color: #0284C7;
       color: #0284C7;
+      background: rgba(2, 132, 199, 0.05);
     }
     .sim-sub-chip.active {
-      background: rgba(2, 132, 199, 0.12);
+      background: rgba(2, 132, 199, 0.14);
       border-color: #0284C7;
       color: #0284C7;
-      font-weight: 600;
+      font-weight: 700;
     }
 
   </style>
@@ -4596,6 +4619,8 @@ function initSimSubtopicPicker() {
   renderSimSubtopicPicker();
 }
 
+let simCollapsedCats = new Set(); // Categories currently collapsed in Subtopic Optimizer
+
 function renderSimSubtopicPicker() {
   const container = document.getElementById('simSubtopicsContainer');
   if (!container) return;
@@ -4659,14 +4684,20 @@ function renderSimSubtopicPicker() {
         `;
       });
 
+      // If searching, always expand; otherwise check collapse set
+      const isCollapsed = filterText ? false : simCollapsedCats.has(catName);
+
       html += `
-        <div class="sim-subtopic-cat-box">
-          <div class="sim-subtopic-cat-header" onclick="toggleSimCategory('${catName}', event)">
-            <label style="display:flex; align-items:center; gap:6px; cursor:pointer; margin:0;">
-              <input type="checkbox" ${isCatChecked ? 'checked' : ''} onclick="event.stopPropagation(); toggleSimCategory('${catName}', event)">
-              <span>${catName}</span>
+        <div class="sim-subtopic-cat-box ${isCollapsed ? 'collapsed' : ''}" id="simCatBox_${encodeURIComponent(catName)}">
+          <div class="sim-subtopic-cat-header" onclick="toggleSimCatCollapse('${catName}', event)">
+            <label style="display:flex; align-items:center; gap:8px; cursor:pointer; margin:0;" onclick="event.stopPropagation()">
+              <input type="checkbox" ${isCatChecked ? 'checked' : ''} onchange="toggleSimCategory('${catName}', event)">
+              <span style="line-height:1.3;">${catName}</span>
             </label>
-            <span style="font-size:10.5px; font-weight:600; color:var(--ink-soft);">${qs.length} ข้อ</span>
+            <div style="display:flex; align-items:center; gap:6px; font-size:11px; color:var(--ink-soft); font-weight:600;">
+              <span>${qs.length} ข้อ (${matchingSubs.length} เรื่อง)</span>
+              <span class="sim-subtopic-cat-arrow">▼</span>
+            </div>
           </div>
           <div class="sim-subtopic-chips-grid">
             ${chipsHtml}
@@ -4682,6 +4713,21 @@ function renderSimSubtopicPicker() {
 
   container.innerHTML = html;
   updateSimSubtopicStats(totalPoolSize);
+}
+
+function toggleSimCatCollapse(catName, ev) {
+  if (ev) ev.stopPropagation();
+  if (simCollapsedCats.has(catName)) {
+    simCollapsedCats.delete(catName);
+  } else {
+    simCollapsedCats.add(catName);
+  }
+  const box = document.getElementById(`simCatBox_${encodeURIComponent(catName)}`);
+  if (box) {
+    box.classList.toggle('collapsed', simCollapsedCats.has(catName));
+  } else {
+    renderSimSubtopicPicker();
+  }
 }
 
 function toggleSimCategory(catName, ev) {
