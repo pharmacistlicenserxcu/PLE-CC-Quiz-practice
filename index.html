@@ -3765,7 +3765,33 @@ function normalizeImageUrl(val) {
 // ─── REALTIME FETCH FROM GOOGLE SHEET ───
 async function fetchLiveSheetQuestions(sheetName) {
   try {
-    // 1. Primary: Google Sheets GViz endpoint (Super fast: 150-250ms)
+    // 1. Primary: Google Apps Script Web App (Full support for in-cell images & native formulas)
+    if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
+      try {
+        let fetchOpts = {};
+        if (typeof AbortController !== 'undefined') {
+          const ctrl = new AbortController();
+          setTimeout(() => ctrl.abort(), 12000);
+          fetchOpts.signal = ctrl.signal;
+        }
+        const gasUrl = window.QUIZ_GAS_WEBAPP_URL + '?action=getQuestions&sheet=' + encodeURIComponent(sheetName) + '&_nocache=' + Date.now();
+        const gasResp = await fetch(gasUrl, fetchOpts);
+        if (gasResp.ok) {
+          const gasJson = await gasResp.json();
+          if (gasJson.success && gasJson.questions && gasJson.questions.length > 0) {
+            return gasJson.questions.map(q => ({
+              ...q,
+              questionImage: normalizeImageUrl(q.questionImage),
+              answerImage: normalizeImageUrl(q.answerImage)
+            }));
+          }
+        }
+      } catch(gasErr) {
+        console.warn('GAS fetch fallback:', gasErr);
+      }
+    }
+
+    // 2. Secondary: Google Sheets GViz endpoint
     try {
       const url = 'https://docs.google.com/spreadsheets/d/' + window.QUIZ_GOOGLE_SHEET_ID + '/gviz/tq?tqx=out:json&sheet=' + encodeURIComponent(sheetName) + '&_nocache=' + Date.now();
       const resp = await fetch(url, { cache: 'no-store' });
@@ -3810,6 +3836,17 @@ async function fetchLiveSheetQuestions(sheetName) {
             if (!qText && !c1) return;
             if (qText.includes('คำถาม') || qText.includes('กลับหน้าแรก')) return;
 
+            // Preserve image from offline cache if GViz returns empty
+            let finalQImg = normalizeImageUrl(qImg);
+            let finalAnsImg = normalizeImageUrl(ansImg);
+            const offlineCategory = (window.QUIZ_OFFLINE_QUESTIONS || {})[sheetName];
+            if (!finalQImg && offlineCategory && offlineCategory[idx] && offlineCategory[idx].questionImage) {
+              finalQImg = offlineCategory[idx].questionImage;
+            }
+            if (!finalAnsImg && offlineCategory && offlineCategory[idx] && offlineCategory[idx].answerImage) {
+              finalAnsImg = offlineCategory[idx].answerImage;
+            }
+
             // Normalize Musculoskeleton subtopics
             if (sheetName.toLowerCase().includes('musculo')) {
               const stLow = (subtopic || '').toLowerCase();
@@ -3841,11 +3878,11 @@ async function fetchLiveSheetQuestions(sheetName) {
               examType: examType,
               examYear: examYear,
               question: formatPlainTextToHtml(qText),
-              questionImage: normalizeImageUrl(qImg),
+              questionImage: finalQImg,
               choices: choices,
               answer: ansKey,
               explanation: formatPlainTextToHtml(explanation),
-              answerImage: normalizeImageUrl(ansImg),
+              answerImage: finalAnsImg,
               note: note
             });
           });
@@ -3854,32 +3891,6 @@ async function fetchLiveSheetQuestions(sheetName) {
       }
     } catch(gvizErr) {
       console.warn('GViz fetch fallback:', gvizErr);
-    }
-
-    // 2. Secondary: Google Apps Script Web App fallback
-    if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
-      try {
-        let fetchOpts = {};
-        if (typeof AbortController !== 'undefined') {
-          const ctrl = new AbortController();
-          setTimeout(() => ctrl.abort(), 6000);
-          fetchOpts.signal = ctrl.signal;
-        }
-        const gasUrl = window.QUIZ_GAS_WEBAPP_URL + '?action=getQuestions&sheet=' + encodeURIComponent(sheetName) + '&_nocache=' + Date.now();
-        const gasResp = await fetch(gasUrl, fetchOpts);
-        if (gasResp.ok) {
-          const gasJson = await gasResp.json();
-          if (gasJson.success && gasJson.questions && gasJson.questions.length > 0) {
-            return gasJson.questions.map(q => ({
-              ...q,
-              questionImage: normalizeImageUrl(q.questionImage),
-              answerImage: normalizeImageUrl(q.answerImage)
-            }));
-          }
-        }
-      } catch(gasErr) {
-        console.warn('GAS fallback error:', gasErr);
-      }
     }
     return null;
   } catch(e) {
