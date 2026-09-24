@@ -190,17 +190,8 @@ def main():
             exam_type = str(r[14] or '').strip()
             exam_year = str(r[15] or '').strip()
 
-            # Exam Set Mapping: Display as 'เล่มม่วง (Pharma Plus)'
-            if re.search(r'เล่มม่วง|pharma\s*plus|pharmaplus', exam_year, re.IGNORECASE) or exam_year == 'ชุด 1':
-                exam_year = 'เล่มม่วง (Pharma Plus)'
-                if not exam_type or exam_type == 'ข้อสอบจริง':
-                    exam_type = 'Mock'
-            if re.search(r'เล่มม่วง|pharma\s*plus|pharmaplus', exam_type, re.IGNORECASE):
-                exam_type = 'Mock'
-                if not exam_year or exam_year == 'ชุด 1':
-                    exam_year = 'เล่มม่วง (Pharma Plus)'
-
-            note_raw = re.sub(r'Pharma\s*Plus\s*(?:Fight\s*for\s*Pharmacy\s*License)?', 'เล่มม่วง (Pharma Plus)', note_raw, flags=re.IGNORECASE)
+            # Exam Set & Type: Keep strictly as entered in Google Sheets
+            # (No forced override to 'เล่มม่วง (Pharma Plus)')
 
             if not q_text_raw and not c1_raw:
                 continue
@@ -212,13 +203,10 @@ def main():
             if not q_clean:
                 q_clean = f"แบบทดสอบความรู้ทางเภสัชกรรม ข้อที่ {idx+1}"
 
-            # 2. Determine True Category & Subtopic
-            if s_name == '16. Others & Toxic':
-                target_sheet, target_sub, target_track = classify_question_precise(q_clean)
-            else:
-                target_sheet = s_name
-                target_sub = subtopic_raw or determine_standard_subtopic(s_name, q_clean, subtopic_raw)
-                target_track = track_raw or ('Product' if any(p in s_name for p in ['Titration', 'Chromatography', 'Spectroscopy', 'Preformulation', 'Calc', 'Solid', 'Liquid', 'Biopharm', 'Sterile', 'Biotech', 'Chemistry', 'Herbal', 'Food']) else ('SAP' if any(s in s_name for s in ['Laws', 'Administration', 'Research']) else 'Clinic'))
+            # 2. Category & Subtopic strictly faithful to Google Sheet tab
+            target_sheet = s_name
+            target_sub = subtopic_raw or determine_standard_subtopic(s_name, q_clean, subtopic_raw)
+            target_track = track_raw or ('Product' if any(p in s_name for p in ['Titration', 'Chromatography', 'Spectroscopy', 'Preformulation', 'Calc', 'Solid', 'Liquid', 'Biopharm', 'Sterile', 'Biotech', 'Chemistry', 'Herbal', 'Food']) else ('SAP' if any(s in s_name for s in ['Laws', 'Administration', 'Research']) else 'Clinic'))
 
             # In Musculoskeleton, strictly normalize subtopic (support multiple separated by /)
             if 'musculo' in target_sheet.lower():

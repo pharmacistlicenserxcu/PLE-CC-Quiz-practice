@@ -3316,24 +3316,16 @@ function setAppQuizMode(mode) {
   showToast(msg);
 }
 
-// ─── EXAM METADATA SANITIZER (Display as 'เล่มม่วง (Pharma Plus)') ───
+// ─── EXAM METADATA SANITIZER (Display directly from Google Sheet) ───
 function sanitizeExamMeta(rawType, rawYear) {
   let type = (rawType || '').trim();
   let year = (rawYear || '').trim();
-  if (/เล่มม่วง|pharma\s*plus|pharmaplus/i.test(year) || year === 'ชุด 1') {
-    year = 'เล่มม่วง (Pharma Plus)';
-    if (!type || type === 'ข้อสอบจริง') type = 'Mock';
-  }
-  if (/เล่มม่วง|pharma\s*plus|pharmaplus/i.test(type)) {
-    type = 'Mock';
-    if (!year || year === 'ชุด 1') year = 'เล่มม่วง (Pharma Plus)';
-  }
   return { type, year };
 }
 
 function sanitizeExamNote(note) {
   if (!note) return '';
-  return note.replace(/pharma\s*plus\s*(?:fight\s*for\s*pharmacy\s*license)?/gi, 'เล่มม่วง (Pharma Plus)');
+  return note;
 }
 
 function getExamBadgeInfo(q) {
