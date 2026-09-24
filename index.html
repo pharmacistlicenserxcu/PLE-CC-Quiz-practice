@@ -2589,19 +2589,21 @@
         <!-- Breakdown list items -->
       </div>
 
-      <div style="display:flex; flex-direction:column; gap:8px; margin-top:16px;">
-        <button class="submit-btn" id="btnReviewAll" onclick="openExamReviewView('all')" style="background:var(--accent);">
-          📋 ตรวจเฉลยและทบทวนทั้งชุดข้อสอบ (Browse Review)
+      <div style="display:flex; flex-direction:column; gap:10px; margin-top:20px;">
+        <button class="submit-btn" id="btnReviewAll" onclick="openExamReviewView('all')" style="background:var(--clinic); color:#fff; font-size:15px; font-weight:700; padding:12px 18px; border-radius:12px; box-shadow:0 3px 10px rgba(8,145,178,0.25);">
+          📖 ดูเฉลยละเอียดและคำอธิบายทั้งหมด
         </button>
-        <button class="submit-btn" id="btnReviewWrong" onclick="openExamReviewView('wrong')" style="background:#dc2626; display:none;">
-          🔍 ดูเฉลยและทบทวนเฉพาะข้อที่ผิด
+        <button class="submit-btn" id="btnReviewWrong" onclick="openExamReviewView('wrong')" style="background:#dc2626; color:#fff; font-size:14px; font-weight:700; padding:11px 16px; border-radius:12px; display:none;">
+          🔍 ดูเฉลยเฉพาะข้อที่ตอบผิด
         </button>
-        <button class="submit-btn" onclick="restartQuizSession()" style="background:var(--surface); color:var(--ink); border:1px solid var(--border);">
-          🔄 ทำข้อสอบชุดนี้ใหม่อีกครั้ง
-        </button>
-        <button class="lobby-tool-btn" onclick="showLobby()">
-          🏠 กลับสู่หน้า Lobby
-        </button>
+        <div style="display:flex; gap:10px; margin-top:2px;">
+          <button class="submit-btn" onclick="restartQuizSession()" style="flex:1; background:var(--surface); color:var(--ink); border:1.5px solid var(--border); font-size:13.5px; font-weight:700; padding:11px 14px; border-radius:12px;">
+            🔄 ทำชุดนี้ใหม่
+          </button>
+          <button class="submit-btn" onclick="showLobby()" style="flex:1; background:#0F172A; color:#FFFFFF; border:none; font-size:13.5px; font-weight:700; padding:11px 14px; border-radius:12px; box-shadow:var(--shadow-sm);">
+            🏠 กลับหน้าหลัก (Lobby)
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -6078,12 +6080,20 @@ function showQuizResultSummary() {
   });
   listContainer.innerHTML = bHtml;
 
-  // Toggle Review Wrong button
+  // Update Review All button label with total count
+  const btnRevAll = document.getElementById('btnReviewAll');
+  if (btnRevAll) {
+    btnRevAll.textContent = `📖 ดูเฉลยละเอียดและคำอธิบายทั้งหมด (${total} ข้อ)`;
+  }
+
+  // Toggle Review Wrong button (only show when there's an actual mix of wrong and correct)
   const btnRev = document.getElementById('btnReviewWrong');
-  if (sessionResults.wrongQuestions.length > 0) {
+  const wrongCount = sessionResults.wrongQuestions ? sessionResults.wrongQuestions.length : 0;
+  if (wrongCount > 0 && wrongCount < total) {
     btnRev.style.display = 'block';
-    btnRev.textContent = `🔍 ดูเฉลยและทบทวนเฉพาะข้อที่ผิด (${sessionResults.wrongQuestions.length} ข้อ)`;
+    btnRev.textContent = `🔍 ดูเฉลยเฉพาะข้อที่ตอบผิด (${wrongCount} ข้อ)`;
   } else {
+    // If all wrong (like 0/120) or all correct (like 120/120), keep only the main Review button
     btnRev.style.display = 'none';
   }
 }
