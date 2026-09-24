@@ -4218,6 +4218,21 @@ function enterQuizCategoryDirectly(catName, track) {
   stopQuizCountdownTimer();
   startQuizWithQuestions(qs, catName);
   showToast(`📖 เข้าสู่โหมดฝึกฝน: ${catName} (${qs.length} ข้อ)`);
+
+  // Background Live Sync: ดึงข้อมูลล่าสุดจากชีตสด (รวมรูปภาพที่เพิ่งแทรกในเซลล์) แบบไม่ค้างหน้าจอ
+  fetchLiveSheetQuestions(catName).then(liveQs => {
+    if (liveQs && liveQs.length > 0 && currentCategory === catName && currentAppMode === 'quiz') {
+      allQuestionsMap[catName] = liveQs;
+      const filtered = applyPracticeFilters();
+      activeQuizQuestions = filtered.slice();
+      if (practiceViewStyle === 'scroll') {
+        renderScrollPractice();
+        updateScrollPracticeStats();
+      } else {
+        renderCurrentQuestion();
+      }
+    }
+  }).catch(() => {});
 }
 
 // ─── CHOICE CLEANING HELPER & CONSTANTS ───
