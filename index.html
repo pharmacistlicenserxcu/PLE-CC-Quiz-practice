@@ -1911,6 +1911,124 @@
       .print-fs-15 .print-q-title { font-size: 15.5pt !important; }
     }
 
+    /* ══ PLE-CC1 SIMULATED EXAM QUICK BANNER ══ */
+    .sim-quick-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(99, 102, 241, 0.08) 100%);
+      border: 1.5px solid rgba(2, 132, 199, 0.25);
+      border-radius: 14px;
+      padding: 13px 18px;
+      margin-bottom: 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.06);
+    }
+    .sim-quick-card:hover {
+      border-color: var(--clinic);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.12);
+    }
+    .sim-quick-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sim-quick-icon {
+      font-size: 26px;
+      background: var(--card);
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      flex-shrink: 0;
+    }
+    .sim-quick-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 2px;
+    }
+    .sim-quick-sub {
+      font-size: 11.5px;
+      color: var(--ink-soft);
+      line-height: 1.4;
+    }
+    .sim-quick-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--clinic);
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .sim-quick-card:hover .sim-quick-btn {
+      background: #0369a1;
+    }
+    @media (max-width: 600px) {
+      .sim-quick-card {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .sim-quick-btn {
+        justify-content: center;
+      }
+    }
+
+    /* Subtopic Optimization Picker inside Simulated Exam Modal */
+    .sim-subtopic-cat-box {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card);
+      margin-bottom: 6px;
+      overflow: hidden;
+    }
+    .sim-subtopic-cat-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 10px;
+      background: var(--bg);
+      font-size: 11.5px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .sim-subtopic-chips-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding: 6px 10px;
+    }
+    .sim-sub-chip {
+      font-size: 10.5px;
+      padding: 2px 7px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--ink-soft);
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s;
+    }
+    .sim-sub-chip.active {
+      background: rgba(2, 132, 199, 0.12);
+      border-color: #0284C7;
+      color: #0284C7;
+      font-weight: 600;
+    }
+
   </style>
 </head>
 <body>
@@ -2069,6 +2187,21 @@
           <h2>สวัสดี, <span id="lobbyGreetingName">ผู้ใช้งาน</span> 👋</h2>
           <p id="lobbyGreetingTrackDesc">เลือกหมวดโรคด้านล่างเพื่อเริ่มทำข้อสอบ หรือเลือกโหมด <b>สุ่มทำข้อสอบ</b> เพื่อจำลองสถานการณ์จริง</p>
           <div class="lobby-streak-badge" id="lobbyStreakBadge">📚 วันนี้ยังไม่ได้เริ่มทำข้อสอบ มาลุยกัน!</div>
+        </div>
+
+        <!-- ⏱️ Quick Access Simulated Exam (120 Qs, 50:40:10, Subtopic Optimizer) -->
+        <div class="sim-quick-card" onclick="openRandomModal()" title="คลิกเพื่อตั้งค่าและเริ่มจำลองสอบจริง PLE-CC1 (120 ข้อ / 180 นาที)">
+          <div class="sim-quick-left">
+            <div class="sim-quick-icon">⏱️</div>
+            <div class="sim-quick-info">
+              <div class="sim-quick-title">จำลองสอบจริง PLE-CC1 (Simulated Exam)</div>
+              <div class="sim-quick-sub">มาตรฐาน 120 ข้อ (Clinic 50% / Product 40% / SAP 10%) · จับเวลา 180 นาที · <b>ปรับแต่งเรื่องย่อยได้</b></div>
+            </div>
+          </div>
+          <button type="button" class="sim-quick-btn">
+            <span>เข้าสู่การจำลองสอบ</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </button>
         </div>
 
         <div class="lobby-section-head">
@@ -2647,6 +2780,51 @@
         </div>
       </div>
 
+      <!-- 🎯 Subtopic Optimization Accordion (เลือกเรื่องย่อย/หมวดวิชาอิสระ) -->
+      <div style="background:var(--card); border:1px solid var(--border); border-radius:12px; margin-bottom:14px; overflow:hidden;">
+        <div onclick="toggleSimSubtopicOptimizer()" style="display:flex; justify-content:space-between; align-items:center; padding:10px 14px; cursor:pointer; background:var(--bg); user-select:none; border-bottom:1px solid var(--border);">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size:16px;">🎯</span>
+            <div>
+              <span style="font-size:12.5px; font-weight:700; color:var(--ink);">ปรับแต่งเรื่องย่อย & หมวดวิชา (Subtopic Optimization)</span>
+              <div style="font-size:11px; color:var(--ink-soft);"><span id="simSubtopicSummaryText">เลือกทั้งหมด (34 หมวดวิชา)</span></div>
+            </div>
+          </div>
+          <span id="simSubtopicToggleIcon" style="font-size:12px; color:var(--ink-soft); transition:transform 0.2s;">▼</span>
+        </div>
+
+        <div id="simSubtopicPanel" style="display:none; padding:12px;">
+          <!-- Controls Row: Search, Select All, Deselect All, Quick Filter -->
+          <div style="display:flex; gap:8px; margin-bottom:10px; align-items:center; flex-wrap:wrap;">
+            <div style="position:relative; flex:1; min-width:180px;">
+              <input type="text" id="simSubSearchInput" placeholder="🔍 ค้นหาเรื่องย่อย / หมวดวิชา..." oninput="filterSimSubtopicsList()" style="width:100%; padding:6px 10px; font-size:12px; border:1px solid var(--border); border-radius:6px; background:var(--card);">
+            </div>
+            <div style="display:flex; gap:4px;">
+              <button type="button" class="setup-chip-btn" onclick="setAllSimSubtopics(true)" style="padding:4px 8px; font-size:11px;">✅ เลือกทั้งหมด</button>
+              <button type="button" class="setup-chip-btn" onclick="setAllSimSubtopics(false)" style="padding:4px 8px; font-size:11px;">🔄 ล้าง</button>
+            </div>
+          </div>
+
+          <!-- Track Tabs for Quick Switching: All, Clinic, Product, SAP -->
+          <div style="display:flex; gap:4px; margin-bottom:8px;">
+            <button type="button" class="setup-chip-btn active" id="simSubTabAll" onclick="switchSimSubTab('all')" style="padding:3px 8px; font-size:11px;">🌐 ทั้งหมด</button>
+            <button type="button" class="setup-chip-btn" id="simSubTabClinic" onclick="switchSimSubTab('Clinic')" style="padding:3px 8px; font-size:11px; color:#0284c7;">🩺 Clinic</button>
+            <button type="button" class="setup-chip-btn" id="simSubTabProduct" onclick="switchSimSubTab('Product')" style="padding:3px 8px; font-size:11px; color:#d97706;">🧪 Product</button>
+            <button type="button" class="setup-chip-btn" id="simSubTabSap" onclick="switchSimSubTab('SAP')" style="padding:3px 8px; font-size:11px; color:#059669;">💼 SAP</button>
+          </div>
+
+          <!-- Scrollable Category / Subtopic Tree / List -->
+          <div id="simSubtopicsContainer" style="max-height:220px; overflow-y:auto; padding-right:4px; display:flex; flex-direction:column; gap:6px;">
+            <!-- Populated dynamically by renderSimSubtopicPicker() -->
+          </div>
+          
+          <div style="margin-top:8px; display:flex; justify-content:space-between; align-items:center; font-size:11px; color:var(--ink-soft); border-top:1px dashed var(--border); padding-top:6px;">
+            <span id="simSelectedCountBadge">เลือกแล้ว 0 เรื่องย่อย</span>
+            <span id="simAvailablePoolBadge" style="font-weight:600; color:var(--clinic);">พร้อมสุ่ม: 0 ข้อ</span>
+          </div>
+        </div>
+      </div>
+
       <!-- Mode & Timer Row -->
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px;">
         <div class="form-group" style="margin-bottom:0;">
@@ -2909,6 +3087,15 @@
           <!-- Top 3 Podium dynamically rendered -->
         </div>
 
+        <!-- Leaderboard Privacy Control Toggle -->
+        <div style="background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:10px 14px; margin-bottom:12px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+          <label style="display:flex; align-items:center; gap:8px; font-size:12px; font-weight:600; color:var(--ink); cursor:pointer; user-select:none;">
+            <input type="checkbox" id="chkLeaderboardPrivacy" onchange="toggleLeaderboardPrivacy(this.checked)" style="accent-color:var(--clinic); width:16px; height:16px; cursor:pointer;">
+            <span>🔒 ซ่อนชื่อและอันดับของฉันในตารางคะแนน (Anonymous Mode)</span>
+          </label>
+          <span id="lbPrivacyStatusBadge" style="font-size:11px; padding:2px 8px; border-radius:6px; font-weight:600; background:#ecfdf5; color:#047857;">🌐 แสดงชื่อปกติ</span>
+        </div>
+
         <div style="font-size:12px; font-weight:700; color:var(--ink); margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
           <span>ตารางคะแนนสูงสุด 10 อันดับแรก (Top 10):</span>
           <button onclick="refreshLeaderboardLive()" style="background:none; border:none; color:var(--clinic); font-size:11.5px; font-weight:700; cursor:pointer;">
@@ -2978,7 +3165,7 @@
 <div id="printContainer"></div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
-<script src="quiz-data-offline.js?v=20260924_v8"></script>
+<script src="quiz-data-offline.js?v=20260924_v9"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
 const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
@@ -3045,14 +3232,40 @@ function setAppQuizMode(mode) {
 
   let msg = '📖 สลับเป็นโหมดฝึกฝนทีละข้อ (Card)';
   if (mode === 'scroll') msg = '📜 สลับเป็นโหมดฝึกฝนเลื่อนอ่าน (Scroll Down)';
-  else if (mode === 'exam') msg = '⏱️ สลับเป็นโหมดสอบจริง (ส่งคะแนนตอนท้าย)';
+  else if (mode === 'exam') {
+    msg = '⏱️ สลับเป็นโหมดสอบจริง (ส่งคะแนนตอนท้าย)';
+    // Prompt to open Simulated Exam modal directly when in Lobby
+    if (typeof currentAppMode === 'undefined' || currentAppMode === 'lobby') {
+      openRandomModal();
+    }
+  }
   showToast(msg);
+}
+
+// ─── STRICT EXAM METADATA SANITIZER (NO 'เล่มม่วง' / NO 'Pharma Plus') ───
+function sanitizeExamMeta(rawType, rawYear) {
+  let type = (rawType || '').trim();
+  let year = (rawYear || '').trim();
+  if (/เล่มม่วง|pharma\s*plus|pharmaplus/i.test(year)) {
+    year = 'ชุด 1';
+    if (!type || type === 'ข้อสอบจริง') type = 'Mock';
+  }
+  if (/เล่มม่วง|pharma\s*plus|pharmaplus/i.test(type)) {
+    type = 'Mock';
+    if (!year) year = 'ชุด 1';
+  }
+  return { type, year };
+}
+
+function sanitizeExamNote(note) {
+  if (!note) return '';
+  return note.replace(/pharma\s*plus\s*(?:fight\s*for\s*pharmacy\s*license)?/gi, 'ชุด 1')
+             .replace(/เล่มม่วง/gi, 'ชุด 1');
 }
 
 function getExamBadgeInfo(q) {
   if (!q) return { text: '', cssClass: 'tag-general-exam', icon: '🏷️', html: '' };
-  const type = (q.examType || '').trim();
-  const year = (q.examYear || '').trim();
+  const { type, year } = sanitizeExamMeta(q.examType, q.examYear);
 
   let text = '';
   if (type && year) {
@@ -3092,8 +3305,7 @@ function getAllUniqueExamTypes() {
 
   Object.values(map).forEach(qs => {
     qs.forEach(q => {
-      const type = (q.examType || '').trim();
-      const year = (q.examYear || '').trim();
+      const { type, year } = sanitizeExamMeta(q.examType, q.examYear);
       if (!type && !year) return;
       const mainType = type || 'ข้อสอบทั่วไป';
       if (!typeMap.has(mainType)) {
@@ -3170,8 +3382,7 @@ function filterQuestionsByExamType(list, filterVal = currentExamTypeFilter) {
   if (!filterVal || filterVal === 'all') return list;
 
   return list.filter(q => {
-    const qType = (q.examType || '').trim();
-    const qYear = (q.examYear || '').trim();
+    const { type: qType, year: qYear } = sanitizeExamMeta(q.examType, q.examYear);
 
     if (filterVal.startsWith('type:')) {
       const targetType = filterVal.substring(5).trim();
@@ -3355,7 +3566,49 @@ function getCategoryEmoji(catName, idx, track) {
 }
 
 
-function formatPlainTextToHtml(text) {
+// Clean text formatter for Choices (Standard plain text, standardized math symbols, NO blue highlight, NO bolding)
+function formatChoiceText(text) {
+  if (!text) return '';
+  var str = String(text);
+  // Strip HTML tags
+  str = str.replace(/<[^>]+>/g, '');
+  // Normalize whitespace
+  str = str.replace(/\s+/g, ' ').trim();
+  // Escape HTML entities
+  var escaped = str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  // Math & comparison symbol normalization
+  escaped = escaped.replace(/&gt;=/g, '≥').replace(/>=/g, '≥').replace(/&ge;/g, '≥');
+  escaped = escaped.replace(/&lt;=/g, '≤').replace(/<=/g, '≤').replace(/&le;/g, '≤');
+  escaped = escaped.replace(/\+\/-/g, '±').replace(/&plusmn;/g, '±');
+  escaped = escaped.replace(/-&gt;/g, '→').replace(/->/g, '→');
+  return escaped;
+}
+
+// Clean text formatter for Question text (Standard plain text, preserved line breaks, NO blue drug highlights, NO student tags)
+function formatQuestionText(text) {
+  if (!text) return '';
+  var str = String(text);
+  // Strip student recollection tags e.g. (ไอซ์ 010), (ข้อสอบจำรุ่น)
+  str = str.replace(/\((?:ไอซ์|ice)\s*\d+[^)]*\)/gi, '');
+  str = str.replace(/\((?:เฉลย|ตัวเลือกที่ไฮไลต์)[^)]*\)/gi, '');
+  // Convert <br> tags to newline
+  str = str.replace(/<\s*br\s*\/?>/gi, '\n');
+  // Strip HTML tags
+  str = str.replace(/<[^>]+>/g, '');
+  // Escape HTML
+  var escaped = str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  // Math & comparison symbol normalization
+  escaped = escaped.replace(/&gt;=/g, '≥').replace(/>=/g, '≥').replace(/&ge;/g, '≥');
+  escaped = escaped.replace(/&lt;=/g, '≤').replace(/<=/g, '≤').replace(/&le;/g, '≤');
+  escaped = escaped.replace(/\+\/-/g, '±').replace(/&plusmn;/g, '±');
+  escaped = escaped.replace(/-&gt;/g, '→').replace(/->/g, '→');
+  // Line breaks to <br>
+  escaped = escaped.replace(/\r\n|\r|\n/g, '<br>');
+  return escaped;
+}
+
+// Rich Formatter ONLY for Explanations (คำอธิบายเฉลย)
+function formatExplanationHtml(text) {
   if (!text) return '';
   var hasHtmlTags = /<\/?(span|b|i|br|strong|em|div|p)[^>]*>/i.test(text);
   var escaped = text;
@@ -3366,7 +3619,6 @@ function formatPlainTextToHtml(text) {
     escaped = escaped.replace(/(?<!\*)\*([^*]+?)\*(?!\*)/g, '<i>$1</i>');
     escaped = escaped.replace(/\n/g, '<br>');
   } else {
-    // Strip background highlights, mark tags, and raw color styling spans
     escaped = escaped.replace(/<mark[^>]*>(.*?)<\/mark>/gi, '$1');
     escaped = escaped.replace(/<span\s+style="[^"]*(?:background|color:[^;"]*rgb)[^"]*"[^>]*>(.*?)<\/span>/gi, '$1');
     escaped = escaped.replace(/\r\n|\r|\n/g, '<br>');
@@ -3378,7 +3630,7 @@ function formatPlainTextToHtml(text) {
   escaped = escaped.replace(/\+\/-/g, '±').replace(/&plusmn;/g, '±');
   escaped = escaped.replace(/-&gt;/g, '→').replace(/->/g, '→');
 
-  // 1. Badges & Callout Formatting
+  // Badges & Callouts
   if (escaped.indexOf('▶ [ข้อสอบจริง') !== -1 || escaped.indexOf('▶ [Real Exam') !== -1) {
     escaped = escaped.replace(/▶\s*\[(ข้อสอบจริง[^\n\]<]*|Real Exam[^\n\]<]*)\]:?/gi, '<div style="display:inline-flex; align-items:center; gap:5px; background:#fef2f2; color:#b91c1c; border:1px solid #fecaca; padding:3px 10px; border-radius:6px; font-weight:700; font-size:0.88em; margin-bottom:8px; box-shadow:0 1px 2px rgba(0,0,0,0.05);">🎯 ข้อสอบจริง / Real Exam</div><br>');
   }
@@ -3407,112 +3659,15 @@ function formatPlainTextToHtml(text) {
   escaped = escaped.replace(/(^|[\r\n]|<br>)([ก-ง]\.)\s+/g, '$1<div style="margin:4px 0 4px 8px;"><b style="color:#1e293b; background:#f1f5f9; padding:1px 6px; border-radius:4px; margin-right:4px;">$2</b> ');
   escaped = escaped.replace(/↳\s+/g, '<span style="color:#64748b; font-weight:bold; margin-right:4px;">↳</span>');
 
-  if (!hasHtmlTags) {
-    var C_GREEN  = '#16a34a';
-    var C_RED    = '#dc2626';
-    var C_AMBER  = '#d97706';
-    var C_PURPLE = '#7c3aed';
-    var C_BLUE   = '#0284c7';
-
-    var regGreen = [
-      'Drug of Choice', 'First-line DOC', 'First-line', 'DOC',
-      'ยาขนานแรก', 'ยาทางเลือกอันดับ 1', 'ยาหลัก', 'สูตรมาตรฐาน',
-      'BPaLM Regimen', 'BPaLM', 'BPaL Regimen', 'BPaL',
-      '2HRZE / 4HR', '2HRZE', '4HR', '6 R-Z-E-Lfx',
-      'Empirical therapy', 'Empiric therapy', 'Empiric DOC'
-    ];
-
-    var regRed = [
-      'QT Prolongation', 'QTc > 500 ms', 'Torsades de Pointes', 'TdP',
-      'TB-DILI', 'DILI', 'ตับอักเสบรุนแรง', 'ตับวาย', 'มะเร็งตับวาย',
-      'Myelosuppression', 'กดไขกระดูก', 'Aplastic anemia', 'Thrombocytopenia',
-      'เกล็ดเลือดต่ำ', 'เม็ดเลือดขาวต่ำ', 'Optic Neuropathy', 'ตาบอดสีแดง-เขียว',
-      'Peripheral Neuropathy', 'ปลายประสาทอักเสบ', 'Ototoxicity', 'พิษต่อหู',
-      'Nephrotoxicity', 'พิษต่อไต', 'ไตวายเฉียบพลัน', 'Red Man Syndrome',
-      'Hypothyroidism', 'ภาวะไทรอยด์ทำงานต่ำ', 'Psychosis', 'อาการทางจิตเวช',
-      'Suicidal ideation', 'Seizure', 'ชัก', 'ห้ามใช้เด็ดขาด', 'ข้อห้ามใช้เด็ดขาด',
-      'ข้อห้ามใช้', 'Contraindicated', 'ห้ามใช้', 'อันตราย', 'Dead Zone'
-    ];
-
-    var regAmber = [
-      'Modified Duke Criteria', 'Duke Criteria', 'Definite IE', 'Possible IE',
-      'Major criteria', 'Minor criteria', 'Major Criteria', 'Minor Criteria',
-      'CURB-65 >= 2', 'CURB-65 >= 3', 'CURB-65', 'CURB65',
-      'PEDIS Grade 1', 'PEDIS Grade', 'CrCl < 30 mL/min', 'CrCl < 50 mL/min',
-      'CrCl < 30', 'CrCl < 50', 'ALT > 3x ULN', 'ALT > 5x ULN',
-      'Total Bilirubin > 2.0 mg/dL', 'Hb < 8.0 g/dL', 'Hb < 8 g/dL',
-      'Platelets < 50,000 /mcL', 'PMN > 75%', 'CSF opening pressure',
-      'GeneXpert MTB/RIF', 'GeneXpert', 'Line Probe Assay', 'LPA'
-    ];
-
-    var regPurple = [
-      'Streptococcus pneumoniae', 'S. pneumoniae', 'Streptococcus pyogenes', 'S. pyogenes',
-      'Staphylococcus aureus', 'S. aureus', 'MSSA', 'MRSA', 'VISA', 'VRSA',
-      'Enterococcus faecalis', 'E. faecalis', 'Enterococcus faecium', 'E. faecium', 'VRE',
-      'Pseudomonas aeruginosa', 'P. aeruginosa', 'Acinetobacter baumannii', 'A. baumannii',
-      'Klebsiella pneumoniae', 'K. pneumoniae', 'Escherichia coli', 'E. coli',
-      'Neisseria meningitidis', 'N. meningitidis', 'Neisseria gonorrhoeae', 'N. gonorrhoeae',
-      'Listeria monocytogenes', 'L. monocytogenes', 'Haemophilus influenzae', 'H. influenzae',
-      'Mycobacterium tuberculosis', 'M. tuberculosis', 'Mycobacterium bovis', 'M. bovis',
-      'Pasteurella multocida', 'Pasteurella spp.', 'Pasteurella',
-      'Eikenella corrodens', 'Eikenella spp.', 'Eikenella',
-      'Viridans Streptococci', 'Viridans Group Streptococci', 'Viridans strep',
-      'Streptococcus gallolyticus', 'Streptococcus bovis', 'S. bovis',
-      'MDR-TB', 'Pre-XDR-TB', 'Pre-XDR', 'XDR-TB', 'RR-TB',
-      'ESBL', 'AmpC', 'CRE', 'CRAB', 'CRPA',
-      'mecA', 'PBP2a', 'PBP', 'vanA', 'vanB', 'blaCTX-M', 'blaSHV', 'blaTEM',
-      'blaKPC', 'blaNDM', 'blaOXA', 'katG', 'inhA', 'rpoB', 'pncA', 'embB',
-      'atpE', 'gyrA', 'gyrB', 'rrs', '23S rRNA', 'OprD', 'MexAB-OprM', 'Efflux pump',
-      'DNA Gyrase', 'Topoisomerase IV', 'ATP Synthase', 'RNA Polymerase'
-    ];
-
-    var regBlue = [
-      'Penicillin G', 'Penicillin', 'Ampicillin', 'Amoxicillin-Clavulanate', 'Amoxicillin/Clavulanate',
-      'Amoxicillin', 'Augmentin', 'Cloxacillin', 'Oxacillin', 'Nafcillin', 'Dicloxacillin',
-      'Cefazolin', 'Cephalexin', 'Cefalexin', 'Ceftriaxone', 'Ceftazidime/Avibactam',
-      'Ceftazidime', 'Cefepime', 'Ceftaroline', 'Meropenem', 'Imipenem', 'Ertapenem', 'Doripenem',
-      'Piperacillin/Tazobactam', 'Piperacillin', 'Tazobactam', 'Sulbactam', 'Clavulanate',
-      'Vancomycin', 'Daptomycin', 'Linezolid', 'Tedizolid', 'Colistin', 'Polymyxin B',
-      'Fosfomycin', 'Gentamicin', 'Amikacin', 'Tobramycin', 'Streptomycin', 'Kanamycin',
-      'Ciprofloxacin', 'Levofloxacin', 'Moxifloxacin', 'Azithromycin', 'Clarithromycin',
-      'Erythromycin', 'Doxycycline', 'Minocycline', 'Tigecycline', 'Cotrimoxazole',
-      'TMP/SMX', 'Metronidazole', 'Clindamycin', 'Rifampin', 'Rifampicin', 'Isoniazid',
-      'Pyrazinamide', 'Ethambutol', 'Bedaquiline', 'Pretomanid', 'Delamanid', 'Clofazimine',
-      'Cycloserine', 'Ethionamide', 'Prothionamide', 'Pyridoxine', 'Vitamin B6',
-      'Levothyroxine', 'Dexamethasone', 'Remdesivir', 'Molnupiravir', 'Paxlovid', 'Favipiravir'
-    ];
-
-    var groups = [
-      { color: C_GREEN, list: regGreen },
-      { color: C_RED, list: regRed },
-      { color: C_AMBER, list: regAmber },
-      { color: C_PURPLE, list: regPurple },
-      { color: C_BLUE, list: regBlue }
-    ];
-
-    var placeholders = {};
-    var count = 0;
-
-    groups.forEach(function(g) {
-      var sortedList = g.list.slice().sort(function(a, b) { return b.length - a.length; });
-      var escapedPats = sortedList.map(function(p) {
-        return p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      });
-      var combinedRegex = new RegExp('(?<![a-zA-Z0-9_\\u0E00-\\u0E7F])(' + escapedPats.join('|') + ')(?![a-zA-Z0-9_\\u0E00-\\u0E7F])', 'gi');
-
-      escaped = escaped.replace(combinedRegex, function(match) {
-        var key = '___HL_PH_' + (count++) + '___';
-        placeholders[key] = '<b style="color:' + g.color + ';">' + match + '</b>';
-        return key;
-      });
-    });
-
-    for (var k in placeholders) {
-      escaped = escaped.replace(k, placeholders[k]);
-    }
-  }
-
   return escaped;
+}
+
+// Backward-compatible fallback: default is clean text (NO blue highlights)
+function formatPlainTextToHtml(text, isExplanation) {
+  if (isExplanation) {
+    return formatExplanationHtml(text);
+  }
+  return formatQuestionText(text);
 }
 
 // ─── REALTIME FETCH FROM GOOGLE SHEET ───
@@ -4369,12 +4524,216 @@ function startConfiguredQuiz() {
 let simClinicPct = 50;
 let simProductPct = 40;
 let simSapPct = 10;
+let selectedSimSubtopics = null; // Set of allowed keys, null means ALL allowed
+let simSubCurrentTab = 'all';
+
+function toggleSimSubtopicOptimizer() {
+  const panel = document.getElementById('simSubtopicPanel');
+  const icon = document.getElementById('simSubtopicToggleIcon');
+  if (!panel) return;
+  const isHidden = panel.style.display === 'none' || !panel.style.display;
+  panel.style.display = isHidden ? 'block' : 'none';
+  if (icon) icon.textContent = isHidden ? '▲' : '▼';
+  if (isHidden) {
+    initSimSubtopicPicker();
+  }
+}
+
+function initSimSubtopicPicker() {
+  const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+  
+  if (selectedSimSubtopics === null) {
+    selectedSimSubtopics = new Set();
+    Object.keys(map).forEach(cat => {
+      if (typeof isSystemCategory === 'function' && isSystemCategory(cat)) return;
+      selectedSimSubtopics.add(cat);
+      const qs = map[cat] || [];
+      qs.forEach(q => {
+        if (q.subtopic) {
+          selectedSimSubtopics.add(`${cat}::${q.subtopic.trim()}`);
+        }
+      });
+    });
+  }
+
+  renderSimSubtopicPicker();
+}
+
+function renderSimSubtopicPicker() {
+  const container = document.getElementById('simSubtopicsContainer');
+  if (!container) return;
+
+  const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+  const filterText = (document.getElementById('simSubSearchInput')?.value || '').toLowerCase().trim();
+
+  let html = '';
+  let totalSubCount = 0;
+  let selectedSubCount = 0;
+  let totalPoolSize = 0;
+
+  const trackMap = { 'Clinic': [], 'Product': [], 'SAP': [] };
+  const catList = (typeof categories !== 'undefined' && categories.length) ? categories : Object.keys(map).map(k => ({ name: k, count: map[k].length }));
+  catList.forEach(c => {
+    if (typeof isSystemCategory === 'function' && isSystemCategory(c.name)) return;
+    const t = (typeof getCategoryTrack === 'function') ? getCategoryTrack(c) : 'clinic';
+    const key = (t === 'clinic' ? 'Clinic' : (t === 'product' ? 'Product' : 'SAP'));
+    if (!trackMap[key]) trackMap[key] = [];
+    trackMap[key].push(c);
+  });
+
+  const displayTracks = (simSubCurrentTab === 'all') ? ['Clinic', 'Product', 'SAP'] : [simSubCurrentTab];
+
+  displayTracks.forEach(tr => {
+    const cats = trackMap[tr] || [];
+    cats.forEach(c => {
+      const catName = c.name;
+      const qs = map[catName] || [];
+      if (!qs.length) return;
+
+      const subMap = {};
+      qs.forEach(q => {
+        const s = (q.subtopic || catName).trim();
+        subMap[s] = (subMap[s] || 0) + 1;
+      });
+      const subList = Object.keys(subMap).sort();
+
+      const catMatchesSearch = !filterText || catName.toLowerCase().includes(filterText);
+      const matchingSubs = subList.filter(s => !filterText || s.toLowerCase().includes(filterText) || catMatchesSearch);
+
+      if (!matchingSubs.length && !catMatchesSearch) return;
+
+      const isCatChecked = selectedSimSubtopics.has(catName);
+      if (isCatChecked) selectedSubCount += matchingSubs.length;
+      totalSubCount += matchingSubs.length;
+
+      let chipsHtml = '';
+      matchingSubs.forEach(s => {
+        const subKey = `${catName}::${s}`;
+        const isSubChecked = selectedSimSubtopics.has(subKey);
+        if (isSubChecked) {
+          totalPoolSize += subMap[s];
+        }
+        chipsHtml += `
+          <span class="sim-sub-chip ${isSubChecked ? 'active' : ''}" 
+                onclick="toggleSimSubtopic('${catName}', '${s}', event)" 
+                title="${s} (${subMap[s]} ข้อ)">
+            ${s} (${subMap[s]})
+          </span>
+        `;
+      });
+
+      html += `
+        <div class="sim-subtopic-cat-box">
+          <div class="sim-subtopic-cat-header" onclick="toggleSimCategory('${catName}', event)">
+            <label style="display:flex; align-items:center; gap:6px; cursor:pointer; margin:0;">
+              <input type="checkbox" ${isCatChecked ? 'checked' : ''} onclick="event.stopPropagation(); toggleSimCategory('${catName}', event)">
+              <span>${catName}</span>
+            </label>
+            <span style="font-size:10.5px; font-weight:600; color:var(--ink-soft);">${qs.length} ข้อ</span>
+          </div>
+          <div class="sim-subtopic-chips-grid">
+            ${chipsHtml}
+          </div>
+        </div>
+      `;
+    });
+  });
+
+  if (!html) {
+    html = '<div style="padding:16px; text-align:center; color:var(--ink-faint); font-size:12px;">ไม่พบเรื่องย่อยที่ตรงกับคำค้นหา</div>';
+  }
+
+  container.innerHTML = html;
+  updateSimSubtopicStats(totalPoolSize);
+}
+
+function toggleSimCategory(catName, ev) {
+  if (ev) ev.stopPropagation();
+  const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+  const qs = map[catName] || [];
+  const currentlyChecked = selectedSimSubtopics.has(catName);
+
+  if (currentlyChecked) {
+    selectedSimSubtopics.delete(catName);
+    qs.forEach(q => {
+      const s = (q.subtopic || catName).trim();
+      selectedSimSubtopics.delete(`${catName}::${s}`);
+    });
+  } else {
+    selectedSimSubtopics.add(catName);
+    qs.forEach(q => {
+      const s = (q.subtopic || catName).trim();
+      selectedSimSubtopics.add(`${catName}::${s}`);
+    });
+  }
+
+  renderSimSubtopicPicker();
+}
+
+function toggleSimSubtopic(catName, subName, ev) {
+  if (ev) ev.stopPropagation();
+  const subKey = `${catName}::${subName}`;
+  if (selectedSimSubtopics.has(subKey)) {
+    selectedSimSubtopics.delete(subKey);
+  } else {
+    selectedSimSubtopics.add(subKey);
+    selectedSimSubtopics.add(catName);
+  }
+  renderSimSubtopicPicker();
+}
+
+function setAllSimSubtopics(enableAll) {
+  const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+  selectedSimSubtopics = new Set();
+  if (enableAll) {
+    Object.keys(map).forEach(cat => {
+      if (typeof isSystemCategory === 'function' && isSystemCategory(cat)) return;
+      selectedSimSubtopics.add(cat);
+      const qs = map[cat] || [];
+      qs.forEach(q => {
+        if (q.subtopic) selectedSimSubtopics.add(`${cat}::${q.subtopic.trim()}`);
+      });
+    });
+  }
+  renderSimSubtopicPicker();
+}
+
+function filterSimSubtopicsList() {
+  renderSimSubtopicPicker();
+}
+
+function switchSimSubTab(tab) {
+  simSubCurrentTab = tab;
+  ['all', 'Clinic', 'Product', 'SAP'].forEach(t => {
+    const btn = document.getElementById(`simSubTab${t}`);
+    if (btn) btn.classList.toggle('active', t === tab);
+  });
+  renderSimSubtopicPicker();
+}
+
+function updateSimSubtopicStats(poolSize = 0) {
+  const summaryEl = document.getElementById('simSubtopicSummaryText');
+  const countBadge = document.getElementById('simSelectedCountBadge');
+  const poolBadge = document.getElementById('simAvailablePoolBadge');
+
+  const count = selectedSimSubtopics ? selectedSimSubtopics.size : 0;
+  if (count === 0) {
+    if (summaryEl) summaryEl.textContent = '⚠️ ยังไม่ได้เลือกเรื่องย่อย (กรุณาเลือกอย่างน้อย 1 เรื่อง)';
+    if (countBadge) countBadge.textContent = 'เลือก 0 เรื่องย่อย';
+    if (poolBadge) poolBadge.textContent = 'พร้อมสุ่ม: 0 ข้อ';
+  } else {
+    if (summaryEl) summaryEl.textContent = `ปรับแต่งแล้ว (${count} รายการย่อย)`;
+    if (countBadge) countBadge.textContent = `เลือกแล้ว ${count} รายการ`;
+    if (poolBadge) poolBadge.textContent = `พร้อมสุ่ม: ${poolSize.toLocaleString()} ข้อ`;
+  }
+}
 
 function openRandomModal() {
   const m = document.getElementById('randomModal');
   if (m) {
     m.classList.add('show');
     recalcSimProportions();
+    initSimSubtopicPicker();
   }
 }
 
@@ -4484,7 +4843,7 @@ function recalcSimProportions() {
   if (badge) badge.textContent = `รวม: ${simClinicPct + simProductPct + simSapPct}% (${total} ข้อ)`;
 }
 
-function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter) {
+function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter, allowedSubtopics = null) {
   if (targetCount <= 0) return [];
   const trackCats = categories.filter(c => !isSystemCategory(c.name) && getCategoryTrack(c) === targetTrack);
   if (!trackCats.length) return [];
@@ -4496,6 +4855,13 @@ function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter) {
     qs = filterQuestionsByExamType(qs, examTypeFilter);
     qs.forEach(q => {
       const sub = (q.subtopic || c.name).trim();
+      const subKey = `${c.name}::${sub}`;
+      // Subtopic optimizer filter check:
+      if (allowedSubtopics && allowedSubtopics.size > 0) {
+        if (!allowedSubtopics.has(subKey) && !allowedSubtopics.has(sub) && !allowedSubtopics.has(c.name)) {
+          return;
+        }
+      }
       if (!subtopicMap[sub]) subtopicMap[sub] = [];
       subtopicMap[sub].push(q);
     });
@@ -4547,13 +4913,16 @@ function executeSimulatedExam() {
   const pTarget = Math.round((simProductPct / 100) * totalCount);
   const sTarget = Math.max(0, totalCount - cTarget - pTarget);
 
-  const clinicQuestions = sampleStratifiedFromTrack('clinic', cTarget, examTypeFilter);
-  const productQuestions = sampleStratifiedFromTrack('product', pTarget, examTypeFilter);
-  const sapQuestions = sampleStratifiedFromTrack('sap', sTarget, examTypeFilter);
+  // Check if user selected subtopics
+  const allowed = (selectedSimSubtopics && selectedSimSubtopics.size > 0) ? selectedSimSubtopics : null;
+
+  const clinicQuestions = sampleStratifiedFromTrack('clinic', cTarget, examTypeFilter, allowed);
+  const productQuestions = sampleStratifiedFromTrack('product', pTarget, examTypeFilter, allowed);
+  const sapQuestions = sampleStratifiedFromTrack('sap', sTarget, examTypeFilter, allowed);
 
   let combined = [...clinicQuestions, ...productQuestions, ...sapQuestions];
   if (!combined.length) {
-    alert('ไม่พบข้อสอบที่ตรงกับเงื่อนไขการจำลองสอบ กรุณาเลือกตัวกรองอื่น');
+    alert('ไม่พบข้อสอบที่ตรงกับเงื่อนไขการจำลองสอบ กรุณาเลือกเรื่องย่อยหรือตัวกรองอื่น');
     return;
   }
 
@@ -4920,7 +5289,7 @@ function renderScrollPractice() {
       choicesHtml += `
         <button class="${btnClass}" onclick="onScrollChoiceClick(${idx}, ${cNum})" id="scrollChoice_${idx}_${cNum}">
           <div class="scroll-choice-letter">${letter}</div>
-          <div style="flex:1;">${formatPlainTextToHtml(cleanText)}</div>
+          <div style="flex:1;">${formatChoiceText(cleanText)}</div>
           ${badgeHtml}
         </button>
       `;
@@ -4937,10 +5306,10 @@ function renderScrollPractice() {
 
     let noteHtml = '';
     if (q.note) {
-      noteHtml = `<div class="scroll-exp-note" style="margin-top:8px; padding:6px 10px; border-radius:8px; background:rgba(0,0,0,0.03); font-size:12px; color:var(--ink-soft);">📌 หมายเหตุ: ${formatPlainTextToHtml(q.note)}</div>`;
+      noteHtml = `<div class="scroll-exp-note" style="margin-top:8px; padding:6px 10px; border-radius:8px; background:rgba(0,0,0,0.03); font-size:12px; color:var(--ink-soft);">📌 หมายเหตุ: ${formatQuestionText(sanitizeExamNote(q.note))}</div>`;
     }
 
-    const expText = q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
+    const expText = q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
 
     html += `
       <div class="${cardClass}" id="scrollCard_${idx}">
@@ -5116,7 +5485,7 @@ function renderCurrentQuestion() {
     cHtml += `
       <div class="choice-item ${isSelected ? 'selected' : ''}" id="choiceItem_${choiceNum}" onclick="selectChoice(${choiceNum})">
         <div class="choice-num">${thaiLetter}</div>
-        <div class="choice-text">${formatPlainTextToHtml(cleanChoice)}</div>
+        <div class="choice-text">${formatChoiceText(cleanChoice)}</div>
       </div>`;
   });
   container.innerHTML = cHtml;
@@ -5235,7 +5604,7 @@ function submitAnswerPracticeMode() {
   }
 
   correctLabel.textContent = `ข้อที่ถูก: ตัวเลือกที่ ${correctLetter}`;
-  expText.innerHTML = q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
+  expText.innerHTML = q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
 
   // Answer Image
   const ansImgWrap = document.getElementById('ansImgWrap');
@@ -5251,7 +5620,7 @@ function submitAnswerPracticeMode() {
   // Note
   const expNote = document.getElementById('expNote');
   if (q.note) {
-    expNote.innerHTML = `📌 หมายเหตุ: ${q.note}`;
+    expNote.innerHTML = `📌 หมายเหตุ: ${sanitizeExamNote(q.note)}`;
     expNote.style.display = 'block';
   } else {
     expNote.style.display = 'none';
@@ -5560,7 +5929,7 @@ function renderExamReview() {
       choicesHtml += `
         <div class="${choiceClass}">
           <div style="font-weight:700; width:26px; flex-shrink:0;">${thaiLetter}</div>
-          <div style="flex:1;">${formatPlainTextToHtml(cleanC)}</div>
+          <div style="flex:1;">${formatChoiceText(cleanC)}</div>
           ${badgeHtml}
         </div>`;
     });
@@ -5582,7 +5951,7 @@ function renderExamReview() {
 
         ${q.questionImage ? `<div style="text-align:center; margin:8px 0 12px;"><img src="${q.questionImage}" style="max-height:220px; max-width:100%; border-radius:10px; border:1px solid var(--border); cursor:pointer;" onclick="openImgLightbox(this.src)" alt="รูปคำถาม"></div>` : ''}
 
-        <div class="browse-card-question">${formatPlainTextToHtml(q.question || '')}</div>
+        <div class="browse-card-question">${formatQuestionText(q.question || '')}</div>
 
         <div class="browse-choices-list" style="margin-top:12px;">
           ${choicesHtml}
@@ -5594,10 +5963,10 @@ function renderExamReview() {
             💡 เฉลยละเอียด: ตัวเลือกที่ ${q.answer} (${correctLetter})
           </div>
           <div style="font-size:13.5px; line-height:1.6; color:#334155;">
-            ${q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้'}
+            ${q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้'}
           </div>
           ${q.answerImage ? `<div style="text-align:center; margin-top:10px;"><img src="${q.answerImage}" style="max-height:220px; max-width:100%; border-radius:8px; border:1px solid var(--border); cursor:pointer;" onclick="openImgLightbox(this.src)" alt="รูปเฉลย"></div>` : ''}
-          ${q.note ? `<div style="font-size:12px; color:var(--ink-soft); margin-top:8px; border-top:1px dashed var(--border); padding-top:6px;">📌 หมายเหตุ: ${q.note}</div>` : ''}
+          ${q.note ? `<div style="font-size:12px; color:var(--ink-soft); margin-top:8px; border-top:1px dashed var(--border); padding-top:6px;">📌 หมายเหตุ: ${formatQuestionText(sanitizeExamNote(q.note))}</div>` : ''}
         </div>
       </div>`;
   });
@@ -5617,18 +5986,6 @@ function restartQuizSession() {
   const rev = document.getElementById('examReviewView');
   if (rev) rev.style.display = 'none';
   startQuizWithQuestions(activeQuizQuestions, document.getElementById('quizCategoryTitle').textContent);
-}
-
-// ─── RANDOM QUIZ MODAL ───
-function openRandomModal() {
-  openQuizSetupModal('__all__', currentTrack, true);
-}
-function closeRandomModal() {
-  closeQuizSetupModal();
-}
-
-function startRandomQuiz() {
-  startConfiguredQuiz();
 }
 
 // ─── BROWSE VIEW (REVAMPED ANSWER BOOK) ───
@@ -5746,7 +6103,7 @@ function renderBrowseList() {
       choicesHtml += `
         <div class="browse-choice-row ${isCorrect ? 'is-correct' : ''}">
           <div class="browse-choice-letter">${thaiLetter}</div>
-          <div class="browse-choice-text">${formatPlainTextToHtml(cleanC)}</div>
+          <div class="browse-choice-text">${formatChoiceText(cleanC)}</div>
           ${isCorrect ? '<span class="browse-correct-pill">✅ คำตอบที่ถูกต้อง</span>' : ''}
         </div>`;
     });
@@ -5765,7 +6122,7 @@ function renderBrowseList() {
 
         ${q.questionImage ? `<div style="text-align:center; margin:8px 0 12px;"><img src="${q.questionImage}" style="max-height:220px; max-width:100%; border-radius:10px; border:1px solid var(--border); cursor:pointer;" onclick="openImgLightbox(this.src)" alt="รูปคำถาม"></div>` : ''}
 
-        <div class="browse-card-question">${formatPlainTextToHtml(q.question || '')}</div>
+        <div class="browse-card-question">${formatQuestionText(q.question || '')}</div>
 
         <div class="browse-choices-list">
           ${choicesHtml}
@@ -5778,9 +6135,9 @@ function renderBrowseList() {
 
         <div class="browse-exp-box" id="browseExpBox_${idx}">
           <div class="browse-exp-title">💡 คำอธิบายเฉลยละเอียด (เฉลยตัวเลือกที่ ${q.answer} / ${THAI_CHOICE_LETTERS[q.answer - 1] || q.answer}):</div>
-          <div>${q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้'}</div>
+          <div>${q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้'}</div>
           ${q.answerImage ? `<div style="text-align:center; margin-top:8px;"><img src="${q.answerImage}" style="max-height:220px; max-width:100%; border-radius:8px; border:1px solid var(--border); cursor:pointer;" onclick="openImgLightbox(this.src)" alt="รูปเฉลย"></div>` : ''}
-          ${q.note ? `<div style="font-size:12px; color:var(--ink-soft); margin-top:6px; border-top:1px dashed var(--border); padding-top:4px;">📌 หมายเหตุ: ${q.note}</div>` : ''}
+          ${q.note ? `<div style="font-size:12px; color:var(--ink-soft); margin-top:6px; border-top:1px dashed var(--border); padding-top:4px;">📌 หมายเหตุ: ${formatQuestionText(sanitizeExamNote(q.note))}</div>` : ''}
         </div>
       </div>`;
   });
@@ -6138,7 +6495,7 @@ function executePrintExam() {
       choicesHtml += `
         <div class="print-choice-row" style="${highlight ? 'font-weight:700; color:#14532D;' : ''}">
           <span style="display:inline-block; width:22pt;">${letter}</span>
-          <span>${formatPlainTextToHtml(cleanC)}</span>
+          <span>${formatChoiceText(cleanC)}</span>
           ${highlight ? ' <span style="font-size:8.5pt; color:#15803D;">[✓ คำตอบที่ถูกต้อง]</span>' : ''}
         </div>`;
     });
@@ -6146,7 +6503,7 @@ function executePrintExam() {
     qHtml += `
       <div class="print-q-card">
         <div class="print-q-title">
-          <span>ข้อที่ ${idx + 1}.</span> ${formatPlainTextToHtml(q.question || '')}
+          <span>ข้อที่ ${idx + 1}.</span> ${formatQuestionText(q.question || '')}
         </div>
         ${q.questionImage ? `<div class="print-img-wrap"><img class="print-q-img" src="${q.questionImage}" alt="รูปประกอบข้อที่ ${idx + 1}"></div>` : ''}
         <div class="print-choices">
@@ -6155,9 +6512,9 @@ function executePrintExam() {
         ${layoutMode === 'solution_book' ? `
           <div class="print-exp-box">
             <div style="font-weight:700; margin-bottom:3pt;">💡 เฉลยละเอียด: ตัวเลือกที่ ${q.answer} (${THAI_CHOICE_LETTERS[q.answer - 1] || q.answer})</div>
-            <div>${q.explanation ? formatPlainTextToHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติม'}</div>
+            <div>${q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติม'}</div>
             ${q.answerImage ? `<div class="print-img-wrap"><img class="print-ans-img" src="${q.answerImage}" alt="รูปเฉลยข้อที่ ${idx + 1}"></div>` : ''}
-            ${q.note ? `<div style="font-size:8pt; color:#555; margin-top:3pt;">📌 หมายเหตุ: ${q.note}</div>` : ''}
+            ${q.note ? `<div style="font-size:8pt; color:#555; margin-top:3pt;">📌 หมายเหตุ: ${formatQuestionText(sanitizeExamNote(q.note))}</div>` : ''}
           </div>` : ''}
       </div>`;
   });
@@ -6344,8 +6701,40 @@ async function loadLeaderboardData() {
   if (typeof renderSidebarRank === 'function') renderSidebarRank(users);
 }
 
+function toggleLeaderboardPrivacy(isPrivate) {
+  localStorage.setItem('ple_leaderboard_private', isPrivate ? '1' : '0');
+  updateLeaderboardPrivacyUI();
+  if (communityLeaderboardList && communityLeaderboardList.length) {
+    renderLeaderboard(communityLeaderboardList);
+  }
+}
+
+function updateLeaderboardPrivacyUI() {
+  const isPrivate = localStorage.getItem('ple_leaderboard_private') === '1';
+  const chk = document.getElementById('chkLeaderboardPrivacy');
+  if (chk) chk.checked = isPrivate;
+  const badge = document.getElementById('lbPrivacyStatusBadge');
+  if (badge) {
+    badge.textContent = isPrivate ? '🔒 เปิดโหมดซ่อนชื่อแล้ว' : '🌐 แสดงชื่อปกติ';
+    badge.style.background = isPrivate ? '#fef3c7' : '#ecfdf5';
+    badge.style.color = isPrivate ? '#b45309' : '#047857';
+  }
+}
+
 function renderLeaderboard(users) {
-  const top10 = users.slice(0, 10);
+  updateLeaderboardPrivacyUI();
+  const isPrivate = localStorage.getItem('ple_leaderboard_private') === '1';
+  
+  // Transform users to apply privacy if isMe
+  const sanitizedUsers = (users || []).map(u => {
+    const isMe = currentUser && (u.username === currentUser.username || u.displayName === currentUser.displayName);
+    if (isMe && isPrivate) {
+      return Object.assign({}, u, { displayName: 'นิสิตไม่ประสงค์ออกนาม (คุณ)', isAnonymous: true });
+    }
+    return u;
+  });
+
+  const top10 = sanitizedUsers.slice(0, 10);
   const totalMembers = users.length;
   const totalAnsweredAll = users.reduce((acc, u) => acc + (u.total || 0), 0);
   const avgAcc = users.length ? Math.round(users.reduce((acc, u) => acc + (u.accuracy || 0), 0) / users.length) : 0;

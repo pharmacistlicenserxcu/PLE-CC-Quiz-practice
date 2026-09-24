@@ -190,6 +190,20 @@ def main():
             exam_type = str(r[14] or '').strip()
             exam_year = str(r[15] or '').strip()
 
+            # Strict Exam Set Code Mapping (GEMINI.md Rule 2):
+            # 'เล่มม่วง' / 'Pharma Plus' -> 'ชุด 1' / 'Mock'
+            if re.search(r'เล่มม่วง|pharma\s*plus|pharmaplus', exam_year, re.IGNORECASE):
+                exam_year = 'ชุด 1'
+                if not exam_type or exam_type == 'ข้อสอบจริง':
+                    exam_type = 'Mock'
+            if re.search(r'เล่มม่วง|pharma\s*plus|pharmaplus', exam_type, re.IGNORECASE):
+                exam_type = 'Mock'
+                if not exam_year:
+                    exam_year = 'ชุด 1'
+
+            note_raw = re.sub(r'Pharma\s*Plus\s*(?:Fight\s*for\s*Pharmacy\s*License)?', 'ชุด 1', note_raw, flags=re.IGNORECASE)
+            note_raw = re.sub(r'เล่มม่วง', 'ชุด 1', note_raw, flags=re.IGNORECASE)
+
             if not q_text_raw and not c1_raw:
                 continue
             if q_text_raw == 'คำถาม' or 'กลับหน้าแรก' in q_text_raw or 'กลับสู่หน้าแรก' in q_text_raw:
