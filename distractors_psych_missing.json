@@ -1,0 +1,58 @@
+{
+  "36": {
+    "distractors": {
+      "ข": "Amitriptyline เป็น Tricyclic antidepressant (TCA) ที่ลด seizure threshold และมีฤทธิ์ anticholinergic สูง ข้อห้ามใช้ในผู้ป่วยโรคลมชัก การใช้เพื่อเลิกบุหรี่จึงไม่เหมาะสมและอาจกระตุ้นชักได้",
+      "ค": "Lorazepam เป็น Benzodiazepine ที่มีฤทธิ์กด CNS และมีศักยภาพในการเสพติดสูง ไม่มีข้อบ่งชี้สำหรับการเลิกบุหรี่ และอาจกระตุ้นให้เกิด dependence ทำให้ไม่เหมาะสม",
+      "ง": "Alprazolam เป็น High-potency Benzodiazepine ที่มี half-life สั้น เสี่ยงต่อ dependence และ withdrawal seizure สูง ไม่มีข้อบ่งชี้สำหรับการเลิกบุหรี่",
+      "จ": "Diazepam เป็น Long-acting Benzodiazepine ที่ใช้ในการรักษา acute alcohol withdrawal delirium และ status epilepticus ไม่ใช่ยาสำหรับเลิกบุหรี่ และไม่มีหลักฐานรองรับการใช้ในบริบทนี้"
+    }
+  },
+  "38": {
+    "distractors": {
+      "ข": "Nicotine ใน physiological pH 7.4 อยู่ในรูป protonated (ionized) เป็นส่วนใหญ่ ไม่ใช่ free base ทำให้ดูดซึมผ่าน skin และ buccal mucosa ได้น้อยกว่า alkaline pH",
+      "ค": "Cotinine เป็น major metabolite ของ Nicotine ที่ถูก metabolize โดย CYP2A6 โดยมี half-life ประมาณ 16-20 ชั่วโมง (ยาวกว่า Nicotine ซึ่งมี t1/2 ประมาณ 2 ชั่วโมง) จึงใช้เป็น biomarker ตรวจการสูบบุหรี่",
+      "ง": "Sertraline เป็น SSRI ที่ไม่มีข้อบ่งชี้สำหรับการเลิกบุหรี่หรือ nicotine dependence ยาที่มีข้อบ่งชี้สำหรับเลิกบุหรี่คือ Varenicline (Partial nicotinic agonist) และ Bupropion",
+      "จ": "Hyperuricemia ไม่ใช่ผลข้างเคียงของ Nicotine replacement therapy หรือยาเลิกบุหรี่ ผลข้างเคียงที่พบบ่อยคืออาการคลื่นไส้ ใจสั่น และผิวแดงระคายเคืองบริเวณแผ่นแปะ"
+    }
+  },
+  "56": {
+    "distractors": {
+      "ข": "Amitriptyline เป็น TCA ที่ต้องใช้ใบสั่งแพทย์เช่นกัน แต่มีข้อบ่งใช้สำหรับภาวะซึมเศร้าและปวดเรื้อรัง ไม่ใช่ทางเลือกทดแทน Diazepam ในกรณีที่ผู้ป่วยขอซื้อยาโดยไม่มีใบสั่งแพทย์",
+      "ค": "Lorazepam เป็น Schedule II Psychotropic substance ที่ต้องสั่งจ่ายโดยแพทย์เท่านั้น เภสัชกรมีหน้าที่ตาม พ.ร.บ. วัตถุออกฤทธิ์ต่อจิตและประสาท ในการปฏิเสธการจ่ายยาโดยไม่มีใบสั่งแพทย์",
+      "ง": "Alprazolam ถูกจัดเป็น Schedule IV ใน US Controlled Substances Act และเป็นวัตถุออกฤทธิ์ในไทย ไม่สามารถจำหน่ายให้กับผู้ป่วยโดยไม่มีใบสั่งแพทย์ได้",
+      "จ": "Diazepam เป็นวัตถุออกฤทธิ์ต่อจิตและประสาทประเภท 4 (Schedule 4) ตาม พ.ร.บ. วัตถุออกฤทธิ์ฯ พ.ศ. 2518 การจำหน่ายให้ผู้ป่วยโดยไม่มีใบสั่งแพทย์เป็นความผิดตามกฎหมาย"
+    }
+  },
+  "60": {
+    "distractors": {
+      "ข": "Amitriptyline เป็น TCA ไม่ใช่ Benzodiazepine จึงไม่มีการเปรียบเทียบ potency กับ Diazepam ในแง่ของ GABA-A receptor modulation",
+      "ค": "Lorazepam มีความแรงมากกว่า Diazepam เนื่องจากมี 2-chloro substitution และ 3-hydroxyl group ที่ทำให้จับกับ GABA-A receptor ได้ดีกว่า ไม่ใช่เพราะจำนวน C12 atoms",
+      "ง": "Alprazolam มีความแรง (potency) สูงกว่า Diazepam เนื่องจากมี triazolo ring fusion ที่เพิ่ม receptor binding affinity ไม่ใช่เพียงเพราะ C12 atoms",
+      "จ": "Diazepam เป็นตัวเปรียบเทียบมาตรฐาน (reference compound) จึงไม่สามารถมีความแรงมากกว่าตัวเองได้ ยาชนิดอื่นเปรียบเทียบ potency กับ Diazepam"
+    }
+  },
+  "64": {
+    "distractors": {
+      "ข": "Amitriptyline เป็น TCA ไม่ใช่ Benzodiazepine จึงไม่มีการเปรียบเทียบ onset of action กับ Diazepam ผ่านกลไก GABA-A modulation",
+      "ค": "Lorazepam มี C-OH (3-hydroxyl group) เช่นกัน แต่ onset ของ Lorazepam ช้ากว่า IV Diazepam เนื่องจาก lipophilicity ต่ำกว่า ทำให้กระจายเข้าสมองช้ากว่า",
+      "ง": "Alprazolam ไม่มี C-OH หลักในโครงสร้าง แต่มี triazolo ring จึงไม่เหมาะสมกับบริบทของการอธิบาย delayed onset จาก C-OH group",
+      "จ": "Diazepam เป็น highly lipophilic compound (Log P สูง) จึงมี rapid onset of action เมื่อให้ทางหลอดเลือดดำ ไม่มี C-OH ที่ทำให้ onset ช้า"
+    }
+  },
+  "68": {
+    "distractors": {
+      "ข": "Amitriptyline เป็น TCA ที่ใช้รักษา MDD และ neuropathic pain ไม่มีฤทธิ์ antagonize Benzodiazepine receptor และไม่สามารถ reverse ภาวะ BZD overdose ได้",
+      "ค": "Lorazepam เองเป็น Benzodiazepine ชนิดหนึ่ง การให้ Lorazepam เพิ่มเติมจะทำให้ CNS depression รุนแรงขึ้น ไม่ใช่การรักษา BZD overdose",
+      "ง": "Alprazolam เป็น High-potency Benzodiazepine การให้ Alprazolam เพิ่มใน BZD overdose จะเพิ่มความเสี่ยงต่อ respiratory depression และเสียชีวิต",
+      "จ": "Diazepam เป็น Benzodiazepine ด้วย การให้เพิ่มจะยิ่งกดระบบ CNS และทางเดินหายใจ ยาที่ใช้รักษา BZD overdose ที่ถูกต้องคือ Flumazenil ซึ่งเป็น competitive BZD receptor antagonist"
+    }
+  },
+  "72": {
+    "distractors": {
+      "ข": "Amitriptyline เป็น TCA ที่ลด seizure threshold และมี anticholinergic effect ไม่ใช่ยาที่ใช้เพื่อเลิกบุหรี่ และไม่เกี่ยวข้องกับ Nicotine dependence treatment",
+      "ค": "Lorazepam เป็น BZD ไม่มีข้อบ่งใช้สำหรับ smoking cessation การใช้ BZD ในผู้ป่วยโรคลมชักต้องระวังเรื่อง tolerance และ dependence",
+      "ง": "Alprazolam เป็น BZD ที่ไม่มีบทบาทในการรักษา nicotine dependence ไม่ใช่ยาทางเลือกสำหรับ smoking cessation ตาม NICE/WHO guideline",
+      "จ": "Diazepam ไม่ใช่ยาสำหรับเลิกบุหรี่ ยาที่ FDA อนุมัติสำหรับ smoking cessation ได้แก่ Nicotine replacement therapy, Varenicline และ Bupropion (แต่ Bupropion มีข้อห้ามใช้ในผู้ป่วยโรคลมชัก)"
+    }
+  }
+}
