@@ -5677,8 +5677,9 @@ function initQuestionValidationEngine() {
 }
 
 function fetchValidationCountsFromGas() {
-  if (!GAS_WEBAPP_URL || GAS_WEBAPP_URL.includes('PASTE_YOUR_')) return;
-  fetch(`${GAS_WEBAPP_URL}?action=getValidationCounts`)
+  const gasUrl = window.QUIZ_GAS_WEBAPP_URL;
+  if (!gasUrl || gasUrl.includes('SAMPLE')) return;
+  fetch(`${gasUrl}?action=getValidationCounts&_nocache=${Date.now()}`)
     .then(res => res.json())
     .then(data => {
       if (data && data.success && data.counts) {
