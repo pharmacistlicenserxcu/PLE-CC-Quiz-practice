@@ -283,15 +283,16 @@ function doPost(e) {
       if (!sheet) {
         sheet = ss.insertSheet('Report_Quiz_Issues');
         sheet.appendRow([
-          "Timestamp", "User", "Category", "Question ID", "Question Text",
+          "Timestamp (เวลาไทย)", "User", "Category", "Question ID", "Question Text",
           "Issue Type", "Detail", "Status"
         ]);
         sheet.getRange(1, 1, 1, 8).setFontWeight("bold").setBackground("#991b1b").setFontColor("#ffffff");
         sheet.setFrozenRows(1);
       }
 
+      const thaiTimestamp = data.timestamp || Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
       sheet.appendRow([
-        new Date().toISOString(),
+        thaiTimestamp,
         String(data.user || 'Anonymous'),
         String(data.category || ''),
         String(data.questionId || ''),
@@ -311,15 +312,16 @@ function doPost(e) {
       if (!sheet) {
         sheet = ss.insertSheet('Log_Quiz_Results');
         sheet.appendRow([
-          "Timestamp", "User", "Category/Mode", "Score", "Total",
+          "Timestamp (เวลาไทย)", "User", "Category/Mode", "Score", "Total",
           "Percentage", "TimeSpentSeconds"
         ]);
         sheet.getRange(1, 1, 1, 7).setFontWeight("bold").setBackground("#0E7490").setFontColor("#ffffff");
         sheet.setFrozenRows(1);
       }
 
+      const thaiLogTime = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
       sheet.appendRow([
-        new Date().toISOString(),
+        thaiLogTime,
         String(data.user || 'Anonymous'),
         String(data.category || 'All'),
         Number(data.score || 0),

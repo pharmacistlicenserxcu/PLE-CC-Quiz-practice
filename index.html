@@ -6651,8 +6651,14 @@ function submitReportIssue() {
   const qText = currentQ ? (currentQ.question || '').replace(/<[^>]*>/g, '').substring(0, 150) : '';
   const cat = currentQ ? currentQ.category : (currentCategory || 'All');
 
+  const now = new Date();
+  const pad = (n) => String(n).padStart(2, '0');
+  const bkk = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Bangkok' }));
+  const thaiTimestamp = `${pad(bkk.getDate())}/${pad(bkk.getMonth() + 1)}/${bkk.getFullYear()} ${pad(bkk.getHours())}:${pad(bkk.getMinutes())}:${pad(bkk.getSeconds())}`;
+
   sendGasPostRequest({
     action: 'reportIssue',
+    timestamp: thaiTimestamp,
     user: currentUser ? currentUser.displayName : 'Anonymous',
     category: cat,
     questionId: qId,
