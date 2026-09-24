@@ -1990,37 +1990,47 @@
     /* Subtopic Optimization Picker inside Simulated Exam Modal */
     .sim-subtopic-cat-box {
       border: 1px solid var(--border);
-      border-radius: 8px;
+      border-radius: 9px;
       background: var(--card);
       margin-bottom: 6px;
       overflow: hidden;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
     }
     .sim-subtopic-cat-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 6px 10px;
+      padding: 7px 11px;
       background: var(--bg);
       font-size: 11.5px;
       font-weight: 700;
       cursor: pointer;
+      user-select: none;
     }
     .sim-subtopic-chips-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 4px;
-      padding: 6px 10px;
+      gap: 5px;
+      padding: 7px 10px;
+      background: var(--card);
     }
     .sim-sub-chip {
-      font-size: 10.5px;
-      padding: 2px 7px;
+      display: inline-flex;
+      align-items: center;
+      font-size: 11px;
+      padding: 3px 8px;
       border-radius: 6px;
       border: 1px solid var(--border);
       background: var(--bg);
-      color: var(--ink-soft);
+      color: var(--ink);
       cursor: pointer;
       user-select: none;
-      transition: all 0.15s;
+      transition: all 0.15s ease;
+      line-height: 1.3;
+    }
+    .sim-sub-chip:hover {
+      border-color: #0284C7;
+      color: #0284C7;
     }
     .sim-sub-chip.active {
       background: rgba(2, 132, 199, 0.12);
@@ -2735,7 +2745,7 @@
 
   <!-- PLE-CC1 Simulated Exam Modal (Mock 120 / Custom) -->
   <div class="modal-overlay" id="randomModal">
-    <div class="modal-box" style="max-width:540px;">
+    <div class="modal-box" style="max-width:580px; width:92vw;">
       <div class="modal-head">
         <div style="display:flex; align-items:center; gap:8px;">
           <span style="font-size:22px;">⏱️</span>
@@ -2835,14 +2845,14 @@
 
           <!-- Track Tabs for Quick Switching: All, Clinic, Product, SAP -->
           <div style="display:flex; gap:4px; margin-bottom:8px;">
-            <button type="button" class="setup-chip-btn active" id="simSubTabAll" onclick="switchSimSubTab('all')" style="padding:3px 8px; font-size:11px;">🌐 ทั้งหมด</button>
+            <button type="button" class="setup-chip-btn active" id="simSubTaball" onclick="switchSimSubTab('all')" style="padding:3px 8px; font-size:11px;">🌐 ทั้งหมด</button>
             <button type="button" class="setup-chip-btn" id="simSubTabClinic" onclick="switchSimSubTab('Clinic')" style="padding:3px 8px; font-size:11px; color:#0284c7;">🩺 Clinic</button>
             <button type="button" class="setup-chip-btn" id="simSubTabProduct" onclick="switchSimSubTab('Product')" style="padding:3px 8px; font-size:11px; color:#d97706;">🧪 Product</button>
-            <button type="button" class="setup-chip-btn" id="simSubTabSap" onclick="switchSimSubTab('SAP')" style="padding:3px 8px; font-size:11px; color:#059669;">💼 SAP</button>
+            <button type="button" class="setup-chip-btn" id="simSubTabSAP" onclick="switchSimSubTab('SAP')" style="padding:3px 8px; font-size:11px; color:#059669;">💼 SAP</button>
           </div>
 
           <!-- Scrollable Category / Subtopic Tree / List -->
-          <div id="simSubtopicsContainer" style="max-height:220px; overflow-y:auto; padding-right:4px; display:flex; flex-direction:column; gap:6px;">
+          <div id="simSubtopicsContainer" style="max-height:320px; min-height:160px; overflow-y:auto; padding-right:4px; display:flex; flex-direction:column; gap:6px;">
             <!-- Populated dynamically by renderSimSubtopicPicker() -->
           </div>
           
@@ -4732,8 +4742,8 @@ function filterSimSubtopicsList() {
 function switchSimSubTab(tab) {
   simSubCurrentTab = tab;
   ['all', 'Clinic', 'Product', 'SAP'].forEach(t => {
-    const btn = document.getElementById(`simSubTab${t}`);
-    if (btn) btn.classList.toggle('active', t === tab);
+    const btn = document.getElementById(`simSubTab${t}`) || document.getElementById(`simSubTab${t.toLowerCase()}`);
+    if (btn) btn.classList.toggle('active', t.toLowerCase() === tab.toLowerCase());
   });
   renderSimSubtopicPicker();
 }
@@ -5018,12 +5028,22 @@ function startQuizWithQuestions(qs, titleText) {
   };
 
   currentAppMode = 'quiz';
+  // Ensure all setting / setup modals are completely closed
+  if (typeof closeRandomModal === 'function') closeRandomModal();
+  if (typeof closeQuizSetupModal === 'function') closeQuizSetupModal();
+  document.querySelectorAll('.modal-overlay.show').forEach(m => m.classList.remove('show'));
+
   document.getElementById('lobbyView').style.display = 'none';
   document.getElementById('quizView').style.display = 'flex';
   document.getElementById('resultView').style.display = 'none';
   document.getElementById('browseView').style.display = 'none';
   const revView = document.getElementById('examReviewView');
   if (revView) revView.style.display = 'none';
+
+  // Scroll to top of window and quiz view
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  const qv = document.getElementById('quizView');
+  if (qv) qv.scrollTop = 0;
 
   const modeBadge = appQuizMode === 'exam' ? '⏱️ โหมดสอบจริง' : (appQuizMode === 'scroll' ? '📜 เลื่อนอ่านโหมด' : '📖 โหมดฝึกฝน');
   document.getElementById('quizCategoryTitle').textContent = titleText;
@@ -6049,59 +6069,71 @@ function onBrowseCategoryChange() {
   renderBrowseList();
 }
 
-function renderBrowseList() {
+// ─── BROWSE VIEW (CHUNKED LAZY LOAD & OPTIMIZED) ───
+let browseFilteredList = [];
+let browseRenderedCount = 0;
+const BROWSE_CHUNK_SIZE = 15;
+
+function renderBrowseList(reset = true) {
   const container = document.getElementById('browseContainer');
   if (!container) return;
 
-  // Populate category filter if empty
-  const catSel = document.getElementById('browseCategoryFilter');
-  if (catSel && catSel.options.length <= 1) {
-    let catHtml = '<option value="all">🌟 ทุกหมวดวิชา</option>';
-    categories.forEach(c => {
-      catHtml += `<option value="${c.name}">${c.name} (${c.count} ข้อ)</option>`;
-    });
-    catSel.innerHTML = catHtml;
+  if (reset) {
+    browseRenderedCount = 0;
+    // Populate category filter if empty
+    const catSel = document.getElementById('browseCategoryFilter');
+    if (catSel && catSel.options.length <= 1) {
+      let catHtml = '<option value="all">🌟 ทุกหมวดวิชา</option>';
+      categories.forEach(c => {
+        catHtml += `<option value="${c.name}">${c.name} (${c.count} ข้อ)</option>`;
+      });
+      catSel.innerHTML = catHtml;
+    }
+
+    const examSel = document.getElementById('browseExamTypeFilter');
+    if (examSel && examSel.options.length <= 1) {
+      populateExamTypeFilterDropdown('browseExamTypeFilter', true);
+    }
+
+    const selectedCat = catSel ? catSel.value : 'all';
+    const subSel = document.getElementById('browseSubtopicFilter');
+    const selectedSub = subSel ? subSel.value : 'all';
+    const selectedExam = examSel ? examSel.value : 'all';
+    const term = document.getElementById('browseSearchInput').value.trim().toLowerCase();
+
+    let list = [];
+    if (selectedCat === 'all') {
+      categories.forEach(c => {
+        list = list.concat(allQuestionsMap[c.name] || []);
+      });
+    } else {
+      list = (allQuestionsMap[selectedCat] || []).slice();
+    }
+
+    // Filter Subtopic
+    if (selectedSub !== 'all') {
+      list = list.filter(q => q.subtopic === selectedSub);
+    }
+
+    // Filter Exam Type (Dynamic from Column O)
+    list = filterQuestionsByExamType(list, selectedExam);
+
+    // Filter Search
+    if (term) {
+      list = list.filter(q => {
+        const qText = (q.question || '').toLowerCase();
+        const expText = (q.explanation || '').toLowerCase();
+        const sub = (q.subtopic || '').toLowerCase();
+        const choicesText = (q.choices || []).join(' ').toLowerCase();
+        return qText.includes(term) || expText.includes(term) || sub.includes(term) || choicesText.includes(term);
+      });
+    }
+
+    browseFilteredList = list;
+    container.innerHTML = '';
   }
 
-  const examSel = document.getElementById('browseExamTypeFilter');
-  if (examSel && examSel.options.length <= 1) {
-    populateExamTypeFilterDropdown('browseExamTypeFilter', true);
-  }
-
-  const selectedCat = catSel ? catSel.value : 'all';
-  const subSel = document.getElementById('browseSubtopicFilter');
-  const selectedSub = subSel ? subSel.value : 'all';
-  const selectedExam = examSel ? examSel.value : 'all';
-  const term = document.getElementById('browseSearchInput').value.trim().toLowerCase();
-
-  let list = [];
-  if (selectedCat === 'all') {
-    categories.forEach(c => {
-      list = list.concat(allQuestionsMap[c.name] || []);
-    });
-  } else {
-    list = (allQuestionsMap[selectedCat] || []).slice();
-  }
-
-  // Filter Subtopic
-  if (selectedSub !== 'all') {
-    list = list.filter(q => q.subtopic === selectedSub);
-  }
-
-  // Filter Exam Type (Dynamic from Column O)
-  list = filterQuestionsByExamType(list, selectedExam);
-
-  // Filter Search
-  if (term) {
-    list = list.filter(q => {
-      const qText = (q.question || '').toLowerCase();
-      const expText = (q.explanation || '').toLowerCase();
-      const sub = (q.subtopic || '').toLowerCase();
-      const choicesText = (q.choices || []).join(' ').toLowerCase();
-      return qText.includes(term) || expText.includes(term) || sub.includes(term) || choicesText.includes(term);
-    });
-  }
-
+  const list = browseFilteredList;
   document.getElementById('browseResultCount').textContent = `พบ ${list.length} ข้อ`;
 
   if (!list.length) {
@@ -6109,13 +6141,18 @@ function renderBrowseList() {
     return;
   }
 
+  // Remove existing Load More button if any
+  const oldBtn = document.getElementById('browseLoadMoreContainer');
+  if (oldBtn) oldBtn.remove();
+
+  const nextSlice = list.slice(browseRenderedCount, browseRenderedCount + BROWSE_CHUNK_SIZE);
   let html = '';
-  list.forEach((q, idx) => {
+
+  nextSlice.forEach((q, sliceIdx) => {
+    const idx = browseRenderedCount + sliceIdx;
     const norm = (q.track || '').toLowerCase();
     const trackBadgeClass = norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag';
-    
     const examBadge = getExamBadgeInfo(q);
-
     const itemNo = q.itemNo || (idx + 1);
 
     // Build Choices
@@ -6169,7 +6206,26 @@ function renderBrowseList() {
       </div>`;
   });
 
-  container.innerHTML = html;
+  browseRenderedCount += nextSlice.length;
+  container.insertAdjacentHTML('beforeend', html);
+
+  // If there are more questions, append "Load More" button
+  if (browseRenderedCount < list.length) {
+    const remaining = list.length - browseRenderedCount;
+    const nextBatchSize = Math.min(remaining, BROWSE_CHUNK_SIZE);
+    const loadMoreHtml = `
+      <div id="browseLoadMoreContainer" style="text-align:center; margin:20px 0 30px;">
+        <button type="button" class="submit-btn" onclick="loadMoreBrowseQuestions()" style="display:inline-flex; align-items:center; gap:8px; padding:10px 24px; font-size:13px; font-weight:700; width:auto; border-radius:24px; box-shadow:0 4px 12px rgba(2, 132, 199, 0.2);">
+          <span>📥 แสดงเพิ่มอีก ${nextBatchSize} ข้อ</span>
+          <span style="font-size:11px; opacity:0.85; font-weight:normal;">(แสดงแล้ว ${browseRenderedCount} จากทั้งหมด ${list.length} ข้อ)</span>
+        </button>
+      </div>`;
+    container.insertAdjacentHTML('beforeend', loadMoreHtml);
+  }
+}
+
+function loadMoreBrowseQuestions() {
+  renderBrowseList(false);
 }
 
 function toggleBrowseExp(idx) {
@@ -7096,11 +7152,14 @@ function renderSidebarRank(users) {
     return;
   }
 
+  const isPrivate = localStorage.getItem('ple_leaderboard_private') === '1';
+
   // Top 5 on sidebar
   const top5 = users.slice(0, 5);
   let html = '';
   top5.forEach((u, idx) => {
     const isMe = currentUser && (u.username === currentUser.username || u.displayName === currentUser.displayName);
+    const dispName = (isMe && isPrivate) ? 'นิสิตไม่ประสงค์ออกนาม (คุณ)' : (u.displayName || u.username);
     let posClass = idx === 0 ? 'p1' : idx === 1 ? 'p2' : idx === 2 ? 'p3' : '';
     let posEmoji = idx === 0 ? '👑' : (idx + 1);
 
@@ -7108,7 +7167,7 @@ function renderSidebarRank(users) {
       <div class="sidebar-rank-row ${isMe ? 'my-row' : ''}">
         <div class="sidebar-rank-pos ${posClass}">${posEmoji}</div>
         <div class="sidebar-rank-info">
-          <div class="sidebar-rank-name">${escapeHtml(u.displayName)} ${isMe ? '⭐' : ''}</div>
+          <div class="sidebar-rank-name">${escapeHtml(dispName)} ${isMe ? '⭐' : ''}</div>
           <div class="sidebar-rank-sub">${escapeHtml(u.badge || u.track || 'RxCU')}</div>
         </div>
         <div class="sidebar-rank-score">
