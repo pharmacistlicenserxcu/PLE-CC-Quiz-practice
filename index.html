@@ -2503,7 +2503,7 @@
           <div style="display:flex; align-items:center; gap:6px;">
             <button class="btn-validate-card" id="btnValidateCard" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
               <span class="val-icon">✅</span>
-              <span class="val-label">ถูกต้อง</span>
+              <span class="val-label">ข้อสอบถูกต้อง</span>
               <span class="val-count" id="valCountCard">0</span>
             </button>
             <button class="btn-report-card" onclick="openReportIssueModal()" title="แจ้งปัญหาข้อนี้">
@@ -3319,7 +3319,7 @@
 <div id="printContainer"></div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
-<script src="quiz-data-offline.js?v=20260925_v12"></script>
+<script src="quiz-data-offline.js?v=20260925_v13"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
 const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
@@ -5739,6 +5739,7 @@ function handleValidateQuestion(q, btnEls, countEls) {
   const bkk = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Bangkok' }));
   const thaiTimestamp = `${pad(bkk.getDate())}/${pad(bkk.getMonth() + 1)}/${bkk.getFullYear()} ${pad(bkk.getHours())}:${pad(bkk.getMinutes())}:${pad(bkk.getSeconds())}`;
 
+  // 1. Send via dedicated validateQuestion action (for future backend handler)
   sendGasPostRequest({
     action: 'validateQuestion',
     timestamp: thaiTimestamp,
@@ -5746,6 +5747,19 @@ function handleValidateQuestion(q, btnEls, countEls) {
     category: q.category || currentCategory || '-',
     questionId: qId,
     question: (q.question || '').replace(/<[^>]*>/g, '').substring(0, 150)
+  });
+
+  // 2. Also send via reportIssue action (guaranteed supported on currently deployed GAS webapp)
+  // Records directly to Report_Quiz_Issues sheet as "ข้อสอบถูกต้อง (Verified)"
+  sendGasPostRequest({
+    action: 'reportIssue',
+    timestamp: thaiTimestamp,
+    user: currentUser ? currentUser.displayName : 'Anonymous',
+    category: q.category || currentCategory || '-',
+    questionId: qId,
+    question: (q.question || '').replace(/<[^>]*>/g, '').substring(0, 150),
+    issueType: 'ข้อสอบถูกต้อง',
+    detail: `[VERIFIED] ยืนยันความถูกต้องข้อสอบและคำอธิบายเฉลย (สะสมครั้งที่ ${newCount})`
   });
 }
 
@@ -5947,7 +5961,7 @@ function renderScrollPractice() {
             ${statusBadge}
             <button class="btn-validate-card ${isValidated ? 'validated' : ''}" id="btnValScroll_${idx}" onclick="handleValidateScrollQuestion(${idx})" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
               <span>✅</span>
-              <span>ถูกต้อง</span>
+              <span>ข้อสอบถูกต้อง</span>
               <span class="val-count" id="valCountScroll_${idx}">${valCount}</span>
             </button>
             <button class="btn-report-card" onclick="openReportIssueModalForQ(${idx})" title="แจ้งปัญหาข้อนี้">
@@ -6590,7 +6604,7 @@ function renderExamReview() {
             ${examBadge.html}
             <button class="btn-validate-card ${isValidated ? 'validated' : ''}" id="btnValRev_${idx}" onclick="handleValidateReviewQuestion(${idx})" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
               <span>✅</span>
-              <span>ถูกต้อง</span>
+              <span>ข้อสอบถูกต้อง</span>
               <span class="val-count" id="valCountRev_${idx}">${valCount}</span>
             </button>
             <button class="btn-report-card" onclick="openReportIssueModalForQ(${idx})" title="แจ้งปัญหาข้อนี้">
@@ -6789,7 +6803,7 @@ function renderBrowseList(reset = true) {
             ${examBadge.html}
             <button class="btn-validate-card ${isValidated ? 'validated' : ''}" id="btnValBrowse_${idx}" onclick="handleValidateBrowseQuestion(${idx})" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
               <span>✅</span>
-              <span>ถูกต้อง</span>
+              <span>ข้อสอบถูกต้อง</span>
               <span class="val-count" id="valCountBrowse_${idx}">${valCount}</span>
             </button>
             <button class="btn-report-card" onclick="openReportIssueModalForBrowseQ(${idx})" title="แจ้งปัญหาข้อนี้">
