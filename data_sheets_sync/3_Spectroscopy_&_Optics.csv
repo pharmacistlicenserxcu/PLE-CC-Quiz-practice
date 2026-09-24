@@ -1,0 +1,529 @@
+﻿🏠 กลับสู่หน้าแรก (Go to Home Page),,,,,,,,,,,,,,,
+ข้อที่,คำถาม,รูปถาม,ตัวเลือก 1,ตัวเลือก 2,ตัวเลือก 3,ตัวเลือก 4,ตัวเลือก 5,เฉลย (ตัวเลข 1-5),คำอธิบายเฉลย,รูปเฉลย,Filter หมวด/Subtopic,Product / Clinic,หมายเหตุ,ประเภทข้อสอบ,ปี / เลขชุด
+2,ข้อใดเป็นเทคนิคที่เหมาะสมในการพิสูจน์ chirality อัตลักษณ์ของวัตถุดิบยา Paclitaxel,,NIR (near infrared spectroscopy),Karl Fischer titration,Polarimeter,Refractometer,Mass spectrometry,3,"✅ คำตอบที่ถูกต้อง: ข้อ ค. Polarimeter
+
+💡 Background:
+สารที่มี Chiral center (มี asymmetric carbon) จะมีคุณสมบัติทางแสงเป็น Optically active compound ซึ่งสามารถบิดหมุนระนาบของแสงโพลาไรซ์ (Plane-polarized light) ได้
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Polarimeter เป็นเครื่องมือมาตรฐานตามเภสัชตำรับ (USP/BP) ในการวัดค่า Specific rotation ([α]) เพื่อตรวจสอบ Chirality, Optical purity และใช้ในการระบุเอกลักษณ์ (Identification) ของวัตถุดิบยาที่มีไครัลเซนเตอร์ เช่น Paclitaxel
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (NIR): ใช้ตรวจเอกลักษณ์ทางเคมีหรือความชื้นแบบไม่ทำลายตัวอย่าง ไม่ได้ใช้วัด optical rotation โดยตรง
+• ข้อ ข. (Karl Fischer): ใช้หาปริมาณน้ำ (Water determination) ในตัวอย่าง
+• ข้อ ง. (Refractometer): ใช้วัดค่าดัชนีหักเหของแสง (Refractive index) ของของเหลว ไม่จำเพาะต่อ chirality
+• ข้อ จ. (Mass spectrometry): ใช้วัดมวลต่อประจุ (m/z) ไม่สามารถแยกความแตกต่างของ enantiomers ได้โดยตรง
+
+📖 Guideline อ้างอิง:
+USP <781> Optical Rotation & British Pharmacopoeia (BP) Standards
+
+📌 จุดจำก่อนสอบ:
+• Chirality / Optical Isomerism: ตรวจสอบด้วย Polarimeter เพื่อหาค่า Specific rotation
+• Dextrorotatory (+) หมุนตามเข็มนาฬิกา / Levorotatory (-) หมุนทวนเข็มนาฬิกา / Racemic mixture = 0 องศา",Optical Rotation & Chirality,ข้อสอบ Product (Chirality Identification),Spectroscopy,Mock PLE-CC 1 ข้อ 74,Mock,Mock RxCU83
+3,ในการควบคุมคุณภาพวัตถุดิบยา เภสัชตำรับระบุค่า specific rotation มีค่าอยู่ในช่วง -107° ถึง -109.5° เทคนิคหรือเครื่องมือใดต่อไปนี้เหมาะสมที่สุดสำหรับการตรวจวิเคราะห์ค่าดังกล่าว,,Polarimetry,NMR spectroscopy,IR spectroscopy,HPLC,Refractometry,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Polarimetry
+
+💡 Background:
+ค่า Specific Rotation หรือค่าการหมุนจำเพาะ เป็นสมบัติทางกายภาพเฉพาะตัวของสารที่มี Chiral center ที่สามารถบิดหมุนระนาบแสงโพลาไรซ์ได้ (Optically active compounds)
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Polarimetry เป็นเทคนิคที่ใช้เครื่อง Polarimeter ในการวัดมุมการบิดหมุนของแสงโพลาไรซ์ระนาบ (Observed optical rotation, α) โดยตรง จากนั้นนำมาคำนวณหาค่า Specific rotation ตามสูตร [α] = 100α / (l × c) เพื่อใช้ตรวจสอบเอกลักษณ์และความบริสุทธิ์ของตัวยา
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (NMR): ใช้ตรวจโครงสร้างทางเคมีและตำแหน่งนิวเคลียสของไฮโดรเจนหรือคาร์บอน
+• ข้อ ค. (IR): ใช้วิเคราะห์หมู่ฟังก์ชัน (Functional groups)
+• ข้อ ง. (HPLC): ใช้แยกสาร หาปริมาณ (Assay) และตรวจสารปนเปื้อน (Related substances)
+• ข้อ จ. (Refractometry): ใช้วัดค่าดัชนีหักเหของแสง (Refractive index) ของของเหลวบริสุทธิ์
+
+📖 Guideline อ้างอิง:
+USP <781> Optical Rotation & WHO Annex Guidelines for Quality Control of Pharmaceuticals
+
+📌 จุดจำก่อนสอบ:
+• ค่า Specific rotation ([α]): เครื่องมือตรวจวัดคือ Polarimeter / Polarimetry เสมอ",Polarimetry,ข้อสอบจริง PLE CC 1 (Product) ปี 2567 ข้อ 1,Spectroscopy,PLE_CC1_2567_Key ข้อ 3,ข้อสอบจริง,ปี 2567
+4,ตามมาตรฐานเภสัชตำรับ USP กำหนดให้ Morphine sulphate มีค่า specific rotation อยู่ในช่วงที่กำหนด เทคนิคการวิเคราะห์ใดต่อไปนี้เหมาะสมที่สุดสำหรับการวัด specific rotation ของ Morphine sulphate,,Refractometry,Polarimetry,UV spectroscopy,HPLC,Mass spectrometry,2,"✅ คำตอบที่ถูกต้อง: ข้อ ข. Polarimetry
+
+💡 Background:
+Morphine sulphate เป็นสารกลุ่ม Opioid alkaloid ที่มีโครงสร้างโมเลกุลแบบ asymmetric (chiral center 5 ตำแหน่ง) จึงมีสมบัติเป็น optically active หมุนระนาบแสงโพลาไรซ์
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Polarimetry เป็นเทคนิคที่มีกลไกการทำงานโดยการปล่อยแสงโพลาไรซ์ระนาบเดี่ยวผ่านสารละลายตัวอย่าง เพื่อวัดมุมองศาที่โครงสร้างโมเลกุลของสารบิดหมุนระนาบแสงไป แล้วคำนวณเป็นค่า Specific rotation ตามเกณฑ์ USP Monograph เพื่อยืนยันความบริสุทธิ์และเอกลักษณ์ของตัวยา
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Refractometry): ใช้วัด Refractive index ของสารละลาย ไม่สามารถวัดค่า specific rotation ได้
+• ข้อ ค. (UV spectroscopy): วัดการดูดกลืนแสงของโครโมฟอร์ (Chromophore) เพื่อหาความเข้มข้น
+• ข้อ ง. (HPLC): ใช้แยกสารและหาปริมาณ ไม่ได้วัดการหมุนแสงโพลาไรซ์โดยตรง (เว้นแต่ติด chiral detector พิเศษ)
+• ข้อ จ. (Mass spectrometry): วิเคราะห์มวลโมเลกุลและ fragmentation pattern
+
+📖 Guideline อ้างอิง:
+USP-NF Official Monograph: Morphine Sulfate & USP <781> Optical Rotation
+
+📌 จุดจำก่อนสอบ:
+• Monograph Morphine Sulfate Specific Rotation: ตรวจสอบด้วย Polarimetry เท่านั้น",Polarimetry,ข้อสอบจริง PLE CC 1 (Product) ปี 2567 ข้อ 2,Spectroscopy,PLE_CC1_2567_Set1_Key ข้อ 16,ข้อสอบจริง,ปี 2567
+5,ในการตรวจวิเคราะห์ทางเภสัชกรรม หากได้รับภาพผลการวิเคราะห์ด้วยเทคนิค Infrared Spectroscopy (IR Spectrum) ภาพดังกล่าวมีวัตถุประสงค์หลักเพื่อใช้ตรวจสอบหรือระบุสิ่งใด,,Functional group (หมู่ฟังก์ชันในโมเลกุล),Electrospray Ionization Mass (m/z),Optical Rotation via Polarimeter,Refractive Index via Abbe Refractometer,Melting point and thermal behavior,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Functional group (หมู่ฟังก์ชันในโมเลกุล)
+
+💡 Background:
+Infrared (IR) Spectroscopy เป็นเทคนิคการดูดกลืนรังสีอินฟราเรดที่ทำให้เกิดการสั่นของพันธะเคมี (Vibrational transitions) ภายในโมเลกุล
+
+🎯 ทำไมข้อนี้ถึงถูก:
+IR Spectrum แสดงพีคการดูดกลืนแสงที่ความถี่/เลขคลื่น (Wavenumber, cm⁻¹) เฉพาะของพันธะเคมีแต่ละชนิด จึงเป็นเทคนิคหลักที่ใช้ระบุหมู่ฟังก์ชัน (Functional group region: 4000-1500 cm⁻¹) และใช้ยืนยันเอกลักษณ์โครงสร้างด้วยบริเวณลายนิ้วมือโมเลกุล (Fingerprint region: 1500-400 cm⁻¹)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Mass m/z): ตรวจด้วย Mass Spectrometry (MS)
+• ข้อ ค. (Optical Rotation): ตรวจด้วย Polarimeter
+• ข้อ ง. (Refractive Index): ตรวจด้วย Abbe Refractometer
+• ข้อ จ. (Thermal behavior): ตรวจด้วย DSC หรือ Melting point apparatus
+
+📖 Guideline อ้างอิง:
+USP <197> Spectrophotometric Identification Tests & Silverstein Spectrometric Identification
+
+📌 จุดจำก่อนสอบ:
+• IR Spectroscopy Core Utility: ระบุ Functional groups และเปรียบเทียบ Fingerprint region กับ Reference Standard",Infrared (IR) Spectroscopy,ข้อสอบจริง PLE CC 1 (Product) ปี 2566 ข้อ 4,Spectroscopy,PLE-CC1 ปี 2566 Day 1 ข้อ 29,ข้อสอบจริง,ปี 2566
+6,"ในการควบคุมคุณภาพเภสัชภัณฑ์ตามมาตรฐานสากล (ICH Q3D / USP <232>, <233>) หากต้องการตรวจวิเคราะห์หาปริมาณสิ่งเจือปนประเภทธาตุโลหะหนัก (Elemental Impurities เช่น As, Cd, Pb, Hg) ในวัตถุดิบหรือยาสำเร็จรูป เทคนิคหรือเครื่องมือใดต่อไปนี้เหมาะสมที่สุด",,Inductively Coupled Plasma Spectroscopy (ICP-MS หรือ ICP-OES),Fourier Transform Infrared Spectroscopy (FT-IR),UV-Vis Spectrophotometry,Refractive Index via Abbe Refractometer,Differential Scanning Calorimetry (DSC),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Inductively Coupled Plasma Spectroscopy (ICP-MS หรือ ICP-OES)
+
+💡 Background:
+การควบคุมสิ่งเจือปนประเภทโลหะหนัก (Elemental Impurities) ในเภสัชภัณฑ์ ตามเกณฑ์ ICH Q3D และ USP <232>/<233> กำหนดขีดจำกัดความปลอดภัยของโลหะที่เป็นพิษสูง (เช่น สารหนู ตะกั่ว แคดเมียม ปรอท) ในระดับร่องรอย (ppb ถึง ppm)
+
+🎯 ทำไมข้อนี้ถึงถูก:
+USP <233> กำหนดให้ใช้เทคนิค Inductively Coupled Plasma ควบคู่กับ Mass Spectrometry (ICP-MS) หรือ Optical Emission Spectrometry (ICP-OES) เป็นวิธีมาตรฐาน เนื่องจากพลาสมาอุณหภูมิสูง (6,000-10,000 K) สามารถแตกตัวธาตุทุกชนิดให้เป็นอะตอมและไอออนเดี่ยวได้อย่างสมบูรณ์ มีความจำเพาะสูงมาก สามารถวิเคราะห์หลายธาตุพร้อมกัน (Multi-elemental analysis) และมีขีดจำกัดในการตรวจวัดต่ำมากในระดับ trace/ultratrace level (ppb/ppt)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (FT-IR): ใช้ตรวจหมู่ฟังก์ชันและพันธะโควาเลนต์ในสารอินทรีย์ ไม่สามารถตรวจโลหะเดี่ยวในระดับร่องรอยได้
+• ข้อ ค. (UV-Vis): ความจำเพาะและความไวไม่เพียงพอสำหรับการตรวจ elemental impurities ที่ซับซ้อนตามเกณฑ์ USP
+• ข้อ ง. (Refractometer): วัดดัชนีหักเหของของเหลว
+• ข้อ จ. (DSC): วัดการเปลี่ยนแปลงทางความร้อนของของแข็ง
+
+📖 Guideline อ้างอิง:
+ICH Q3D Guideline for Elemental Impurities & USP <233> Elemental Impurities – Procedures
+
+📌 จุดจำก่อนสอบ:
+• Elemental Impurities Standard Methods: ICP-OES หรือ ICP-MS ตาม USP <233> / ICH Q3D เสมอ",Atomic Spectroscopy & Elemental Impurities,ข้อสอบจริง PLE CC 1 ปี 2566 Day 2 ข้อ 90,Spectroscopy,PLE-CC1 ปี 2566 Day 2 ข้อ 1,ข้อสอบจริง,ปี 2566
+7,ในการทดสอบความถูกต้องของวิธีวิเคราะห์ที่พัฒนาขึ้นเองในห้องปฏิบัติการ (In-house analytical method validation) สำหรับการหาปริมาณตัวยาสำคัญ (Assay) ด้วยเทคนิค UV-Vis Spectrophotometry ตามแนวทาง ICH Q2(R1) และ USP <1225> หัวข้อใดต่อไปนี้ไม่มีความจำเป็นต้องประเมิน (ไม่ต้อง validate),,Limit of Detection (LOD; ขีดจำกัดต่ำสุดที่สามารถตรวจพบได้),Specificity (ความจำเพาะในการตรวจวิเคราะห์ตัวยาสำคัญท่ามกลางสารช่วยในตำรับ),Accuracy (ความถูกต้อง โดยประเมินค่า %Recovery),Precision (ความเที่ยง ทั้ง Repeatability และ Intermediate precision),Linearity and Range (ความเป็นเส้นตรงและช่วงการวิเคราะห์),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Limit of Detection (LOD; ขีดจำกัดต่ำสุดที่สามารถตรวจพบได้)
+
+💡 Background:
+การทำ Validation วิธีวิเคราะห์ตามแนวทาง ICH Q2(R1) และ USP <1225> แบ่งกลุ่มการทดสอบตามวัตถุประสงค์ของการวิเคราะห์ เช่น การหาปริมาณตัวยาสำคัญ (Category I: Assay) หรือการตรวจหาสิ่งเจือปน (Category II: Impurities testing)
+
+🎯 ทำไมข้อนี้ถึงถูก:
+สำหรับวิธีตรวจวิเคราะห์หาปริมาณตัวยาสำคัญ (Assay / Content uniformity) ความเข้มข้นของตัวยาในสารละลายทดสอบจะอยู่ในระดับสูง (ปกติประมาณ 80-120% ของ label claim) จึงต้องประเมิน Specificity, Linearity, Range, Accuracy และ Precision เป็นหลัก โดย ไม่จำเป็นต้องประเมิน Limit of Detection (LOD) เนื่องจาก LOD เป็นพารามิเตอร์ที่จำเป็นสำหรับการทดสอบสิ่งเจือปนหรือสารปนเปื้อนปริมาณน้อย (Limit tests of impurities) เท่านั้น
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข., ค., ง., จ.: เป็นหัวข้อหลักบังคับ (Mandatory parameters) สำหรับการ validate วิธี Assay ทุกวิธีตาม ICH Q2(R1)
+
+📖 Guideline อ้างอิง:
+ICH Harmonised Tripartite Guideline Q2(R1) Validation of Analytical Procedures & USP <1225> Validation of Compendial Procedures
+
+📌 จุดจำก่อนสอบ:
+• Assay Validation Parameters: Specificity, Linearity, Range, Accuracy, Precision (ไม่ต้องทำ LOD และ LOQ)
+• Quantitative Impurity Testing: ต้องทำครบทุกหัวข้อรวมถึง LOQ
+• Limit Test of Impurity: ต้องทำ Specificity และ LOD",Analytical Method Validation (ICH Q2),ข้อสอบจริง PLE CC 1 ปี 2566 Day 2 ข้อ 87,Spectroscopy,PLE-CC1 ปี 2566 Day 2 ข้อ 2,ข้อสอบจริง,ปี 2566
+8,"จากการตรวจวิเคราะห์เอกลักษณ์ของตัวยาสำคัญด้วย Infrared Spectroscopy (IR Spectrum) พบพีคการดูดกลืนแสงที่คมชัดและรุนแรง (Strong sharp band) ที่เลขคลื่นประมาณ 1,700 cm⁻¹ (1690 - 1750 cm⁻¹) พีคดังกล่าวแสดงถึงการสั่นแบบยืดตัว (Stretching vibration) ของหมู่ฟังก์ชันใดในโครงสร้างโมเลกุล",,"Carbonyl group (C=O stretching เช่น ใน ketone, ester, carboxylic acid)",Hydroxyl group (O-H stretching ใน alcohol หรือ phenol),Amine group (N-H stretching ใน primary หรือ secondary amine),Alkyne group (C≡C stretching),Aromatic ring (C=C aromatic stretching),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Carbonyl group (C=O stretching เช่น ใน ketone, ester, carboxylic acid)
+
+💡 Background:
+IR Spectroscopy อาศัยการดูดกลืนพลังงานรังสีอินฟราเรดที่จำเพาะต่อการสั่นของพันธะโควาเลนต์ โดยช่วงเลขคลื่น 1,500 - 4,000 cm⁻¹ คือ Functional Group Region
+
+🎯 ทำไมข้อนี้ถึงถูก:
+พันธะ Carbonyl (C=O) มีความแตกต่างของสภาพขั้วสูงมาก (High dipole moment) จึงดูดกลืนรังสี IR ได้อย่างรุนแรงและเกิดพีคคมชัดเด่นชัดที่สุดในสเปกตรัมที่ช่วงความถี่ 1,680 - 1,750 cm⁻¹ (เช่น Ketone ~1715 cm⁻¹, Ester ~1735 cm⁻¹, Carboxylic acid ~1710 cm⁻¹)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (O-H stretch): เกิดพีคกว้างมาก (Broad band) ที่ 3,200 - 3,600 cm⁻¹
+• ข้อ ค. (N-H stretch): เกิดพีคที่ 3,300 - 3,500 cm⁻¹
+• ข้อ ง. (C≡C stretch): เกิดพีคแหลมปานกลางที่ 2,100 - 2,260 cm⁻¹
+• ข้อ จ. (C=C aromatic): เกิดพีคหลายพีคที่ 1,450 - 1,600 cm⁻¹
+
+📖 Guideline อ้างอิง:
+Silverstein Spectrometric Identification of Organic Compounds & USP <197> Spectrophotometric Identification Tests
+
+📌 จุดจำก่อนสอบ:
+• C=O Carbonyl: พีคคมรุนแรงเด่นที่สุดที่ ~1700 cm⁻¹
+• O-H Alcohol/Acid: พีคกว้างเหมือนลิ้นที่ ~3300 cm⁻¹ (Carboxylic acid O-H กว้างคลุม 2500-3300 cm⁻¹)",Infrared (IR) Spectroscopy,ข้อสอบจริง PLE CC 1 ปี 2565 Day 1 ข้อ 45,Spectroscopy,PLE-CC1 ปี 2566 Day 2 ข้อ 3,ข้อสอบจริง,ปี 2566
+9,จากโครงสร้างและการควบคุมคุณภาพของยา Griseofulvin การตรวจสอบเอกลักษณ์เฉพาะทางกายภาพข้อใดต่อไปนี้ช่วยยืนยันโครงสร้างผลึกและความแตกต่างของ Polymorphic forms ได้อย่างจำเพาะเจาะจงที่สุด,,Infrared (IR) Spectroscopy และ X-ray Powder Diffraction (XRPD),UV-Vis Spectrophotometry,Thin Layer Chromatography (TLC),Refractive Index,Loss on Drying,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Infrared (IR) Spectroscopy และ X-ray Powder Diffraction (XRPD)
+
+💡 Background:
+ยา Griseofulvin เป็นยาต้านเชื้อราที่ละลายน้ำได้น้อยมาก (Biopharmaceutics Classification System; BCS Class II) ขนาดผลึกและรูปผลึก (Polymorphism) มีผลกระทบอย่างมีนัยสำคัญต่ออัตราการละลายและการดูดซึมเข้าร่างกาย (Bioavailability)
+
+🎯 ทำไมข้อนี้ถึงถูก:
+การจำแนกความแตกต่างของผลึกหลายรูป (Polymorphs) และการพิสูจน์เอกลักษณ์โครงสร้างของแข็งที่จำเพาะ ต้องอาศัยเทคนิค Solid-state Characterization ได้แก่ X-ray Powder Diffraction (XRPD) และ Solid-state FTIR Spectroscopy (KBr disc หรือ ATR) ซึ่งสามารถตรวจจับความแตกต่างของการจัดเรียงตัวของโมเลกุลในโครงสร้างแลตทิซผลึกและพันธะไฮโดรเจนระหว่างโมเลกุลได้อย่างแม่นยำ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (UV-Vis): เมื่อนำตัวยาไปละลายในตัวทำละลาย โครงสร้างผลึกจะถูกทำลายไป จึงไม่สามารถแยกความแตกต่างของรูปผลึกได้
+• ข้อ ค. (TLC): แยกสารตามขั้วเคมีในสารละลาย ไม่บอกลักษณะผลึก
+• ข้อ ง. และ จ.: ไม่สามารถตรวจรูปผลึกที่ซับซ้อนได้
+
+📖 Guideline อ้างอิง:
+USP <941> Characterization of Crystalline and Partially Crystalline Solids by X-ray Powder Diffraction & British Pharmacopoeia (BP)
+
+📌 จุดจำก่อนสอบ:
+• Polymorphism Characterization: ใช้ XRPD, DSC, Hot-stage microscopy และ Solid-state IR",Polymorphism & Solid-state Spectroscopy,ข้อสอบจริง PLE CC 1 ปี 2561 ข้อ 2,Spectroscopy,PLE_CC1_2564_All_Key ข้อ 136,ข้อสอบจริง,ปี 2564
+9,โครงสร้าง ethambutol ข้อใดถูก M69608 X neediererz restora ninata do nee ↑,,เป็น zwitter ion,ละลายได้ดีในกรด,ดูดกลืนแสงช่วง UV,มี stereomer 1 ตำแหน่ง,ขับออกได้ดีในสภาวะปัสสาวะเป็นด่าง,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. เป็น zwitter ion
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+เป็น zwitter ion 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก เป็น zwitter ion เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ UV-Vis Spectroscopy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ UV-Vis Spectroscopy)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ละลายได้ดีในกรด): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ดูดกลืนแสงช่วง UV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (มี stereomer 1 ตำแหน่ง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ขับออกได้ดีในสภาวะปัสสาวะเป็นด่าง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,UV-Vis Spectroscopy,Product,ข้อ 14 (PLE_CC1_2562_Key.md),ข้อสอบจริง,ปี 2562
+10,จากสูตรโครงสร้างของยา Triprolidine โครงสร้างหรือส่วนใดของโมเลกุลทำหน้าที่เป็น Chromophore ที่ทำให้สารสามารถตรวจวิเคราะห์ได้ด้วยเทคนิค UV-Vis Spectrophotometry,,Phenyl ring (และ Pyridyl ring ที่มี conjugated double bonds),Pyrrolidine ring (วง aliphatic heterocyclic amine),Methyl group,Ethylene bridge ที่ไม่มี conjugation,Aliphatic tertiary amine,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Phenyl ring (และ Pyridyl ring ที่มี conjugated double bonds)
+
+💡 Background:
+การดูดกลืนแสงในช่วง UV-Visible (200-800 nm) เกิดขึ้นเมื่อโมเลกุลมีหมู่อะตอมที่ไม่อิ่มตัวหรือมีระบบคอนจูเกชัน เรียกว่า โครโมฟอร์ (Chromophore) ซึ่งทำให้อิเล็กตรอนเกิดการส่งผ่านพลังงาน (π → π* transition)
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ในโครงสร้างของ Triprolidine มีหมู่อะโรมาติกคือ Phenyl ring และ 2-Pyridyl ring ที่เชื่อมต่อกับพันธะคู่ (Conjugated double bond system) ซึ่งทำหน้าที่เป็น Chromophore ดูดกลืนรังสี UV ที่ความยาวคลื่นประมาณ 230-290 nm ได้อย่างมีประสิทธิภาพ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Pyrrolidine ring): เป็นวงแหวนอิ่มตัว (Saturated cyclic amine) มีเฉพาะพันธะเดี่ยว (σ bond) และ n-electron ซึ่งดูดกลืนแสงที่ความยาวคลื่นสั้นมากในระดับ Vacuum UV (< 190 nm) ไม่สามารถตรวจวิเคราะห์ด้วย UV ทั่วไปได้
+• ข้อ ค., ง., จ.: เป็นพันธะเดี่ยวอิ่มตัว (Aliphatic single bonds) ไม่ใช่ chromophore
+
+📖 Guideline อ้างอิง:
+Silverstein & Webster: Spectrometric Identification of Organic Compounds & Clarke's Analysis of Drugs and Poisons
+
+📌 จุดจำก่อนสอบ:
+• UV Absorption Requirement: โมเลกุลต้องมี Conjugated system หรือ Aromatic ring (π → π* transition)
+• Auxochrome: หมู่อะตอมที่มี non-bonding electrons (เช่น -OH, -NH2) ที่ช่วยเพิ่มการดูดกลืนแสงและเลื่อนความยาวคลื่นไปทางสีแดง (Bathochromic shift)",UV-Vis Spectroscopy,ข้อสอบจริง PLE CC 1 ปี 2560 Set 1,Product,ข้อ 6 (PLE_CC1_2560 22 April Set 1.md),ข้อสอบจริง,ปี 2560
+11,ข้อใดคือเครื่องมือที่ใช้พิสูจน์เอกลักษณ์ในการออกฤทธิ์ของยาในข้อ 60,,Refractometer,Polarimeter,Infrared spectrometer,Mass spectrometer,UV-visible spectrometer ห้ามนำไปทำซ้ำทุกกรณี เว้นแต่จะได้รับอนุญาต candidiasis และ trichomonas vaginitis สั่งให้ยา - Tinidazole 500 mg 4x1 - Clotrimazole vaginal tablets 500 mg hs,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Refractometer
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Refractometer 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+กรณีศึกษาที่ 10 หญิง มีอาการคัน ตกขาวเป็นสีเหลือง และมีกลิ่นเหม็นคาวมาก แพทย์วินิจฉัยว่าเป็น vulvovaginal
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ UV-Vis Spectroscopy)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Polarimeter): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Infrared spectrometer): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Mass spectrometer): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (UV-visible spectrometer ห้ามนำไปทำซ้ำทุกกรณี เว้นแต่จะได้รับอนุญาต candidiasis และ trichomonas vaginitis สั่งให้ยา - Tinidazole 500 mg 4x1 - Clotrimazole vaginal tablets 500 mg hs): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,UV-Vis Spectroscopy,Product,ข้อ 61 (PLE_CC1_2559.md),ข้อสอบจริง,ปี 2559
+12,ข้อใดถูกต้องเกี่ยวกับกระบวนเมแทบอลิซึมของ metformin,,มีค่าชีวิตยาว เนื่องจากต้องถูกทำลายด้วยเอนไซม์ไซโตรโคมพี 450 หลายไอโซฟอร์ม,มีค่าชีวิตยาว เนื่องจากต้องถูกทำลายด้วยเอนไซม์ทรานเฟอร์เรสหลายชนิด,มีค่าชีวิตยาว เนื่องจากไม่สามารถถูกทำลายได้ด้วยกระบวนการเมแทบอลิซึมในร่างกาย,มีค่าครึ่งยาว เนื่องจากมีใช้เวลาในการดูดซึมนาน,มีค่าครึ่งยาว เนื่องจากมีการกระจายตัวในร่างกายที่ต่ำ,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. มีค่าชีวิตยาว เนื่องจากต้องถูกทำลายด้วยเอนไซม์ไซโตรโคมพี 450 หลายไอโซฟอร์ม
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+มีค่าชีวิตยาว เนื่องจากต้องถูกทำลายด้วยเอนไซม์ไซโตรโคมพี 450 หลายไอโซฟอร์ม 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก มีค่าชีวิตยาว เนื่องจากต้องถูกทำลายด้วยเอนไซม์ไซโตรโคมพี 450 หลายไอโซฟอร์ม เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ UV-Vis Spectroscopy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ UV-Vis Spectroscopy)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (มีค่าชีวิตยาว เนื่องจากต้องถูกทำลายด้วยเอนไซม์ทรานเฟอร์เรสหลายชนิด): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (มีค่าชีวิตยาว เนื่องจากไม่สามารถถูกทำลายได้ด้วยกระบวนการเมแทบอลิซึมในร่างกาย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (มีค่าครึ่งยาว เนื่องจากมีใช้เวลาในการดูดซึมนาน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (มีค่าครึ่งยาว เนื่องจากมีการกระจายตัวในร่างกายที่ต่ำ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,UV-Vis Spectroscopy,Product,ข้อ 93 (Pharmtutor_2024_Set1.md),Mock,Mock Pharmtutor 2024
+13,ยาสูตรใด มีความเป็นพิษต่อตับน้อยทีสุด (1) 2RZE / 10RE (2) 2SHE / 10HE (3) 2HRE / 7HR (4) 2SHRE / 6HR (5) 18-24SEO MCQ 12 | 1/2557 | Page 17,,Differential Scanning Calorimetry (DSC),UV-Vis Spectrophotometry at lambda max,FTIR Spectroscopy (Attenuated Total Reflection),Proton NMR (1H-NMR) Spectroscopy,Carbon-13 NMR (13C-NMR) Spectroscopy,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Differential Scanning Calorimetry (DSC)
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Differential Scanning Calorimetry (DSC) 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Differential Scanning Calorimetry (DSC) เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ UV-Vis Spectroscopy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ UV-Vis Spectroscopy)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (UV-Vis Spectrophotometry at lambda max): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (FTIR Spectroscopy (Attenuated Total Reflection)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Proton NMR (1H-NMR) Spectroscopy): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Carbon-13 NMR (13C-NMR) Spectroscopy): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,UV-Vis Spectroscopy,Product,ข้อ 20 (PLE_CC1_2557.md),ข้อสอบจริง,ปี 2557
+14,โครงสร้างของยาในข้อใด สามารถใช้ specific rotation เพือระบุเอกลักษณ์ของยาได้ (1) (2) (3) (4) (5),,Proton NMR (1H-NMR) Spectroscopy,Carbon-13 NMR (13C-NMR) Spectroscopy,Electrospray Ionization Mass Spectrometry (ESI-MS),Optical Rotation via Polarimeter,Refractive Index via Abbe Refractometer,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Proton NMR (1H-NMR) Spectroscopy
+
+💡 Background:
+การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Proton NMR (1H-NMR) Spectroscopy 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Proton NMR (1H-NMR) Spectroscopy เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Polarimetry โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Polarimetry)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Carbon-13 NMR (13C-NMR) Spectroscopy): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Electrospray Ionization Mass Spectrometry (ESI-MS)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Optical Rotation via Polarimeter): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Refractive Index via Abbe Refractometer): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Polarimetry,Product,ข้อ 21 (PLE_CC1_2557.md),ข้อสอบจริง,ปี 2557
+15,ในการวิเคราะห์วัตถุดิบ (raw material) ของ activated charcoal ไม่จำเป็นต้องวิเคราะห์หัวข้อใด (1) Active ingredient (2) Specific rotation (3) Loss on drying (4) Identification (5) Contamination MCQ 12 | 1/2557 | Page 24 สถานการณ์ที 10 หญิงไทย อายุ 26 ปี เข้ามาร้านยา เนืองจากมีปัญหาสิว หัวดำ และสิวหัวขาว กระจายทัวทังบริเวณใบหน้า ยังไม่มีการ อักเสบ ตุ่มนูนแดง หรือตุ่มหนอง,,Optical Rotation via Polarimeter,Refractive Index via Abbe Refractometer,Fluorescence Spectrophotometry,Atomic Absorption Spectrophotometry (AAS),Differential Scanning Calorimetry (DSC),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Optical Rotation via Polarimeter
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Optical Rotation via Polarimeter 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Optical Rotation via Polarimeter เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Polarimetry โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Polarimetry)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Refractive Index via Abbe Refractometer): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Fluorescence Spectrophotometry): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Atomic Absorption Spectrophotometry (AAS)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Differential Scanning Calorimetry (DSC)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Polarimetry,Product,ข้อ 65 (PLE_CC1_2557.md),ข้อสอบจริง,ปี 2557
+16,ยาที่มี Polymoph ต่างกันจะมีคุณสมบัติที่แตกต่างกัน ยกเว้น ข้อใด,,ความคงตัว,ค่าการละลาย,ประสิทธิภาพในการรักษา,ค่าคงที่การดูดกลืนแสง,การหักเหของแสง คณะเภสัชศาสตร์ มหาวิทยาลัยเชียงใหม่ Rx 44 CMU,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. ความคงตัว
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ความคงตัว 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก ความคงตัว เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ UV-Vis Spectroscopy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ UV-Vis Spectroscopy)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ค่าการละลาย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ประสิทธิภาพในการรักษา): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ค่าคงที่การดูดกลืนแสง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (การหักเหของแสง คณะเภสัชศาสตร์ มหาวิทยาลัยเชียงใหม่ Rx 44 CMU): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,UV-Vis Spectroscopy,Product,ข้อ 89 (PLE_CC1_2555 Day 1.md),ข้อสอบจริง,ปี 2555
+17,Specific rotation by polarimeter,,FTIR Spectroscopy (Attenuated Total Reflection),Proton NMR (1H-NMR) Spectroscopy,Carbon-13 NMR (13C-NMR) Spectroscopy,Electrospray Ionization Mass Spectrometry (ESI-MS),Optical Rotation via Polarimeter,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. FTIR Spectroscopy (Attenuated Total Reflection)
+
+💡 Background:
+การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+FTIR Spectroscopy (Attenuated Total Reflection) 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก FTIR Spectroscopy (Attenuated Total Reflection) เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Polarimetry โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Polarimetry)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Proton NMR (1H-NMR) Spectroscopy): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Carbon-13 NMR (13C-NMR) Spectroscopy): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Electrospray Ionization Mass Spectrometry (ESI-MS)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Optical Rotation via Polarimeter): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Polarimetry,Product,ข้อ 3 (PLE_CC1_2555 Day 2.md),ข้อสอบจริง,ปี 2555
+18,Spectrofluorometry,,Electrospray Ionization Mass Spectrometry (ESI-MS),Optical Rotation via Polarimeter,Refractive Index via Abbe Refractometer,Fluorescence Spectrophotometry,Atomic Absorption Spectrophotometry (AAS),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Electrospray Ionization Mass Spectrometry (ESI-MS)
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Electrospray Ionization Mass Spectrometry (ESI-MS) 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Electrospray Ionization Mass Spectrometry (ESI-MS) เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ UV-Vis Spectroscopy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ UV-Vis Spectroscopy)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Optical Rotation via Polarimeter): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Refractive Index via Abbe Refractometer): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Fluorescence Spectrophotometry): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Atomic Absorption Spectrophotometry (AAS)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,UV-Vis Spectroscopy,Product,ข้อ 3 (PLE_CC1_2555 Day 2.md),ข้อสอบจริง,ปี 2555
+19,เครื่องมือหรือเทคนิคในข้อใดต่อไปนี้ นิยมใช้ในการตรวจสอบและจำแนกความแตกต่างระหว่างรูปผลึก (Crystalline form) และอสัณฐาน (Amorphous form) ของวัตถุดิบยา,,X-ray Powder Diffraction (XRPD) และ Differential Scanning Calorimetry (DSC),Mass Spectrometry (MS),Refractometry,Polarimetry,Gas Chromatography (GC),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. X-ray Powder Diffraction (XRPD) และ Differential Scanning Calorimetry (DSC)
+
+💡 Background:
+สถานะของแข็งของตัวยาสำคัญสามารถอยู่ในรูปผลึก (Crystalline) ซึ่งมีการจัดเรียงตัวของโมเลกุลเป็นระเบียบ หรือรูปอสัณฐาน (Amorphous) ซึ่งโมเลกุลจัดเรียงตัวไม่เป็นระเบียบ มีพลังงานอิสระสูงกว่าและละลายน้ำได้เร็วกว่า
+
+🎯 ทำไมข้อนี้ถึงถูก:
+X-ray Powder Diffraction (XRPD) เป็นเทคนิคมาตรฐานระดับ Gold standard ในการตรวจการเลี้ยวเบนของรังสีเอกซ์ (Bragg's Law) ซึ่งรูปผลึกจะแสดงพีคแหลมคมชัดเจน (Sharp diffraction peaks) ส่วนรูปอสัณฐานจะแสดงลักษณะโค้งกว้าง (Halo pattern) ควบคู่กับ Differential Scanning Calorimetry (DSC) ที่ตรวจการเปลี่ยนแปลงทางความร้อน (Melting endotherm ของผลึก vs Glass transition temperature; Tg ของอสัณฐาน)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Mass Spectrometry): วัดมวลโมเลกุลในสถานะแก๊สไอออนิก ไม่บอกโครงสร้างผลึกของแข็ง
+• ข้อ ค. (Refractometry): วัดดัชนีหักเหของสารละลายของเหลว
+• ข้อ ง. (Polarimetry): วัดการหมุนแสงของสารละลายไครัล
+• ข้อ จ. (GC): ใช้แยกและวิเคราะห์สารระเหยง่าย
+
+📖 Guideline อ้างอิง:
+USP <941> Characterization of Crystalline and Partially Crystalline Solids by X-ray Powder Diffraction (XRPD) & USP <891> Thermal Analysis
+
+📌 จุดจำก่อนสอบ:
+• Crystalline vs Amorphous: XRPD ให้ Sharp peaks vs Halo pattern
+• Thermal Analysis: Crystalline มีจุดหลอมเหลวที่แน่นอน (Sharp melting peak) ขณะที่ Amorphous มี Glass transition (Tg)",Solid-State Characterization & Thermal Analysis,ข้อสอบจริง PLE CC 1 (Polymorphism & Solid-state),Product,ข้อ 19 (PLE_CC1_2554 SET2.md),ข้อสอบจริง,ปี 2554
+20,"ในการวิเคราะห์สารด้วย UV-Vis Spectrophotometer ตามกฎของเบียร์-แลมเบิร์ต (Beer-Lambert Law) กำหนดให้ A คือค่าการดูดกลืนแสง, b คือความกว้างของช่องใส่สารละลาย (Path length ในหน่วย cm) และ c คือความเข้มข้นของสารละลาย ค่าการดูดกลืนจำเพาะ (Absorptivity, a หรือ E) มีความสัมพันธ์ตามสมการใด",,a = A / (b × c),a = (A × b) / c,a = (A × c) / b,a = (b × c) / A,a = A - (b × c),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. a = A / (b × c)
+
+💡 Background:
+กฎของเบียร์-แลมเบิร์ต (Beer-Lambert Law) เป็นสมการพื้นฐานสำคัญที่สุดของการวิเคราะห์เชิงปริมาณด้วยสเปกโทรโฟโตเมทรี
+
+🎯 ทำไมข้อนี้ถึงถูก:
+สมการ Beer-Lambert Law คือ A = a × b × c (หรือ A = ε × b × c)
+โดยที่:
+• A = Absorbance (ไม่มีหน่วย)
+• a (หรือ ε) = Absorptivity หรือ Molar absorptivity (L·mol⁻¹·cm⁻¹)
+• b = Path length (ความหนาของคิวเวตต์ ปกติเท่ากับ 1 cm)
+• c = Concentration (ความเข้มข้น)
+ดังนั้นเมื่อย้ายข้างสมการหาค่า a จะได้ a = A / (b × c)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข., ค., ง., จ.: เป็นการย้ายข้างสมการทางคณิตศาสตร์ที่ไม่ถูกต้องตามกฎ Beer-Lambert Law
+
+📖 Guideline อ้างอิง:
+USP <857> Ultraviolet-Visible Spectroscopy & Skoog Fundamentals of Analytical Chemistry
+
+📌 จุดจำก่อนสอบ:
+• Beer-Lambert Law: A = abc (หรือ A = εbc หรือ A1% 1cm)
+• A1% 1cm: ค่าการดูดกลืนแสงของสารละลายความเข้มข้น 1% w/v (1 g/100 mL) ในหลอดวัดหนา 1 cm: A = A1% 1cm × b × c(%w/v)",UV-Vis Spectroscopy,ข้อสอบจริง PLE CC 1 (Beer-Lambert Law),Product,ข้อ 5 (PLE_CC1_2533.md),ข้อสอบจริง,ปี 2533
+21,UV spectrophotometry,,Carbon-13 NMR (13C-NMR) Spectroscopy,Electrospray Ionization Mass Spectrometry (ESI-MS),Optical Rotation via Polarimeter,Refractive Index via Abbe Refractometer,Fluorescence Spectrophotometry,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Carbon-13 NMR (13C-NMR) Spectroscopy
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Carbon-13 NMR (13C-NMR) Spectroscopy 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Carbon-13 NMR (13C-NMR) Spectroscopy เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ UV-Vis Spectroscopy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ UV-Vis Spectroscopy)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Electrospray Ionization Mass Spectrometry (ESI-MS)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Optical Rotation via Polarimeter): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Refractive Index via Abbe Refractometer): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Fluorescence Spectrophotometry): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,UV-Vis Spectroscopy,Product,ข้อ 4 (PLE_CC1_2533.md),ข้อสอบจริง,ปี 2533
+22,โครงสร้างของยาใด สามารถใช้ specific rotation เพื่อระบุเอกลักษณ์ (identification) ได้,,Pyrazinamide,Para-aminosalicylic acid,Ethionamide,Streptomycin 69 โรคติดเชื้อ ฝ่ายวิชาการ สโมสรนิสิตเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.),Ethambutol หัวข้อเรื่อง Urinary tract infections ผู้ป่วยหญิงไทยอายุ 30 ปี อาชีพรับจ้าง มาร้านยาด้วยอาการแสบขัดเมื่อปัสสาวะ โดยเป็นมาแล้ว 2 วัน จาก การซักประวัติพบว่ามีประวัติอั้นปัสสาวะนานประมาณครึ่งวัน เนื่องจากเดินทางไปต่างจังหวัดไม่สะดวกเข้า ประวัติแพ้ยา วัดอุณหภูมิร่างกายได้เท่ากับ 37.5 oC,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Pyrazinamide
+
+💡 Background:
+การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Pyrazinamide 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+ห้องน้ า ปฏิเสธอาการคันที่อวัยวะเพศ หรือตกขาว ผู้ป่วยไม่เคยมีอาการเช่นนี้มาก่อน ปฏิเสธโรคประจำตัวและ
+
+ เป็น Anti-TB agent ที่มี sterilizing effect สูงใน macrophage เสี่ยงต่อ hyperuricemia (ปวดข้อเก๊าท์) และ severe hepatotoxicity สูงสุดในกลุ่มยาวัณโรค
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Polarimetry)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Para-aminosalicylic acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Ethionamide): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Streptomycin 69 โรคติดเชื้อ ฝ่ายวิชาการ สโมสรนิสิตเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Ethambutol หัวข้อเรื่อง Urinary tract infections ผู้ป่วยหญิงไทยอายุ 30 ปี อาชีพรับจ้าง มาร้านยาด้วยอาการแสบขัดเมื่อปัสสาวะ โดยเป็นมาแล้ว 2 วัน จาก การซักประวัติพบว่ามีประวัติอั้นปัสสาวะนานประมาณครึ่งวัน เนื่องจากเดินทางไปต่างจังหวัดไม่สะดวกเข้า ประวัติแพ้ยา วัดอุณหภูมิร่างกายได้เท่ากับ 37.5 oC): เป็น Anti-TB agent ยับยั้ง arabinosyl transferase มี ADR เด่นคือ optic neuritis (มองเห็นสีเขียว-แดงผิดปกติ ตาพร่า) ขับออกทางไตจึงต้องปรับ dose ใน CKD
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Polarimetry,Product,ข้อ 16 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+23,ข้อใดไม่ใช่กลไกการดื้อยาของ Oxytetracyclin,,สร้างเอนไซม์มาทำลายยา,ยับยั้งเอนไซม์ peptidyl transferase,ขับยาออกนอกเซลล์โดยกระบวนการ active transport,เปลี่ยนโครงสร้างของไรโบโซม ทำให้ยาจับไม่ได้,ลดการผ่านเข้าเซลล์ของยา จากกรณีศึกษาต่อไปนี้ จงตอบคำถาม ข้อ 14-16 ผู้ป่วยหญิงไทยคู่ อายุ 65 ปีมาขอซื้อยาหยอดตาที่ร้านยาโดยมาด้วยอาการปวดตามาก ตาสู้แสงไม่ได้ ดวงไฟ ร่วมกับมีอาการคลื่นไส้อาเจียน ขี้ตาสีขาว เมื่อสังเกตที่กระจกตาพบว่ามีลักษณะขุ่น,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. สร้างเอนไซม์มาทำลายยา
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+สร้างเอนไซม์มาทำลายยา 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+ไม่มีโรคประจำตัว โดยมีอาการต่อเนื่องมา 5 วัน และจากการซักประวัติเพิ่มเติม ผู้ป่วยมองเห็นแสงสีรุ้งรอบ
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ UV-Vis Spectroscopy)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ยับยั้งเอนไซม์ peptidyl transferase): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ขับยาออกนอกเซลล์โดยกระบวนการ active transport): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (เปลี่ยนโครงสร้างของไรโบโซม ทำให้ยาจับไม่ได้): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ลดการผ่านเข้าเซลล์ของยา จากกรณีศึกษาต่อไปนี้ จงตอบคำถาม ข้อ 14-16 ผู้ป่วยหญิงไทยคู่ อายุ 65 ปีมาขอซื้อยาหยอดตาที่ร้านยาโดยมาด้วยอาการปวดตามาก ตาสู้แสงไม่ได้ ดวงไฟ ร่วมกับมีอาการคลื่นไส้อาเจียน ขี้ตาสีขาว เมื่อสังเกตที่กระจกตาพบว่ามีลักษณะขุ่น): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,UV-Vis Spectroscopy,Product,ข้อ 13 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+24,Atomic spectroscopy,,Proton NMR (1H-NMR) Spectroscopy,Carbon-13 NMR (13C-NMR) Spectroscopy,Electrospray Ionization Mass Spectrometry (ESI-MS),Optical Rotation via Polarimeter,Refractive Index via Abbe Refractometer,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Proton NMR (1H-NMR) Spectroscopy
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Proton NMR (1H-NMR) Spectroscopy 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Proton NMR (1H-NMR) Spectroscopy เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ UV-Vis Spectroscopy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ UV-Vis Spectroscopy)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Carbon-13 NMR (13C-NMR) Spectroscopy): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Electrospray Ionization Mass Spectrometry (ESI-MS)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Optical Rotation via Polarimeter): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Refractive Index via Abbe Refractometer): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ UV-Vis Spectroscopy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,UV-Vis Spectroscopy,Product,ข้อ 3 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU

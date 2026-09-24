@@ -1,0 +1,1036 @@
+﻿🏠 กลับสู่หน้าแรก (Go to Home Page),,,,,,,,,,,,,,,
+ข้อที่,คำถาม,รูปถาม,ตัวเลือก 1,ตัวเลือก 2,ตัวเลือก 3,ตัวเลือก 4,ตัวเลือก 5,เฉลย (ตัวเลข 1-5),คำอธิบายเฉลย,รูปเฉลย,Filter หมวด/Subtopic,Product / Clinic,หมายเหตุ,ประเภทข้อสอบ,ปี / เลขชุด
+1,ในการหาปริมาณตัวยาสำคัญ Paracetamol raw material ตามตำรับยา Pharmacopoeia ใช้วิธีไทเทรตแบบใด?,,Acid-Base Titration in aqueous medium,Nonaqueous Titration with Perchloric acid,Redox Titration with Ceric ammonium sulfate (หลัง acid hydrolysis),Complexometric Titration with EDTA,Precipitation Titration with Silver nitrate,3,"✅ คำตอบที่ถูกต้อง: ข้อ ค. Redox Titration with Ceric ammonium sulfate (หลัง acid hydrolysis)
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Redox Titration with Ceric ammonium sulfate (หลัง acid hydrolysis) 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การวิเคราะห์หาปริมาณ Paracetamol ในเภสัชตำรับ (เช่น BP/USP) นำตัวอย่างไปต้มกับกรดซัลฟิวริกเจือจางเพื่อ hydrolyze พันธะ amide ให้ได้ p-aminophenol จากนั้นนำไปไทเทรตด้วยมาตรฐาน Ceric ammonium sulfate โดยใช้ Ferroin เป็น indicator
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Redox titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Acid-Base Titration in aqueous medium): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Nonaqueous Titration with Perchloric acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Complexometric Titration with EDTA): วัคซีนรวมคอตีบ-บาดทะยัก ฉีดกระตุ้นทุก 10 ปี หรือใช้ในหญิงตั้งครรภ์และผู้ใหญ่
+• ข้อ จ. (Precipitation Titration with Silver nitrate): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Redox titration,Product,British Pharmacopoeia / Thai Pharmacopoeia,ข้อสอบจริง,2567
+3,จากข้อมูลความคงตัวของตัวยา Ferrous sulfate ที่ระบุว่าอัตราการเกิดปฏิกิริยาออกซิเดชันจะเพิ่มขึ้นเมื่อมีภาวะด่างหรือสัมผัสแสง สารช่วยในข้อใดต่อไปนี้ไม่มีความจำเป็น (หรือไม่เหมาะสม) ในการนำมาใช้ในสูตรตำรับยาน้ำเชื่อม Ferrous Sulfate Syrup,,Citric acid (สารปรับ pH กรดและ chelating agent),Disodium EDTA (สารคีเลตดักจับประจุโลหะ),Paraben (สารกันเสีย antimicrobial preservative),Sodium metabisulfite (สารต้านออกซิเดชัน antioxidant),Sucrose (น้ำตาลซูโครสความเข้มข้นสูง),3,"✅ คำตอบที่ถูกต้อง: ข้อ ค. Paraben (สารกันเสีย antimicrobial preservative)
+
+💡 Background:
+Ferrous Sulfate Syrup เป็นตำรับยาน้ำเชื่อมใสที่ตัวยาสำคัญ Fe²⁺ ถูกออกซิไดซ์เป็น Fe³⁺ ได้ง่ายมากโดยเฉพาะในสภาวะด่างหรือมีแสง
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ยาน้ำเชื่อม Ferrous Sulfate Syrup ตามสูตรมาตรฐานเภสัชตำรับ (USP/BP) มีน้ำตาลซูโครสความเข้มข้นสูง (Syrup USP มีน้ำตาล 85% w/v หรือ 65% w/w) ซึ่งมีแรงดันออสโมติกสูงมาก (High osmotic pressure) และมีค่าวอเตอร์แอกทิวิตี (Water activity, aw) ต่ำ จนเชื้อจุลินทรีย์ไม่สามารถเจริญเติบโตได้ (Self-preserving) จึงไม่มีความจำเป็นต้องเติมสารกันเสียกลุ่ม Paraben นอกจากนี้พาราเบนยังละลายน้ำได้น้อยในสารละลายน้ำเชื่อมเข้มข้น
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Citric acid): จำเป็นอย่างยิ่งในการช่วยปรับสภาวะตำรับให้เป็นกรด (pH 3.0-4.0) เพื่อชะลอการเกิด oxidation และยังเป็น Synergistic antioxidant/chelating agent
+• ข้อ ข. (Disodium EDTA): จำเป็นในการคีเลตไอออนโลหะเพื่อไม่ให้เร่งปฏิกิริยาออกซิเดชัน
+• ข้อ ง. (Sodium metabisulfite): จำเป็นอย่างยิ่งในการทำหน้าที่เป็น Antioxidant ป้องกัน Fe²⁺ เปลี่ยนเป็น Fe³⁺
+• ข้อ จ. (Sucrose): เป็นกระสายยาหลัก (Vehicle) ให้ความหวาน บดบังสรรพรสฝาดเฝื่อนของเหล็ก และป้องกันการออกซิเดชันทางกายภาพ
+
+📖 Guideline อ้างอิง:
+USP-NF Official Monograph: Ferrous Sulfate Oral Solution / Syrup & Remington: The Science and Practice of Pharmacy
+
+📌 จุดจำก่อนสอบ:
+• Ferrous Sulfate Syrup Antioxidant System: ใช้ Citric acid (กรด/คีเลต) ร่วมกับสารต้านออกซิเดชัน (Metabisulfite)
+• Syrup Base: น้ำตาลซูโครส 85% w/v มีสมบัติ Self-preserving ไม่จำเป็นต้องใส่ Paraben",Liquid Dosage Forms & Formulation,ข้อสอบ Product (Ferrous Sulfate Syrup Formulation),Titration,Mock PLE-CC 1 ข้อ 57,Mock,Mock RxCU83
+4,จากข้อมูลตามเภสัชตำรับ (Pharmacopoeia) การตรวจวิเคราะห์หาปริมาณเหล็ก (Assay for Iron) ในวัตถุดิบยา Ferrous Fumarate หรือ Ferrous Sulfate กำหนดให้ใช้วิธีวิเคราะห์แบบใดเป็นวิธีมาตรฐาน,,Acid-base titration,Redox titration (ไทเทรตด้วยสารละลายมาตรฐาน Ceric ammonium sulfate),Complexometric titration (ไทเทรตด้วย EDTA),Gravimetric titration,Colorimetric titration,2,"✅ คำตอบที่ถูกต้อง: ข้อ ข. Redox titration (ไทเทรตด้วยสารละลายมาตรฐาน Ceric ammonium sulfate)
+
+💡 Background:
+Ferrous fumarate (C4H2FeO4) และ Ferrous sulfate (FeSO4) มีเหล็กอยู่ในรูป Fe²⁺ (Ferrous ion) ซึ่งสามารถทำปฏิกิริยาถ่ายโอนอิเล็กตรอน (Redox reaction) ได้อย่างสมบูรณ์และจำเพาะ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ตามเภสัชตำรับ USP และ BP การหาปริมาณตัวยาสำคัญ (Assay) ของ Ferrous fumarate และ Ferrous sulfate กำหนดให้ใช้วิธี Redox Titration (Cerimetry) โดยละลายตัวอย่างในกรดซัลฟิวริกเจือจาง แล้วไทเทรต Fe²⁺ ด้วยสารละลายมาตรฐาน 0.1 N Ceric ammonium sulfate (Ce⁴⁺) หรือ Ceric sulfate โดยใช้ Orthophenanthroline (Ferroin) เป็นอินดิเคเตอร์ ปฏิกิริยาคือ Fe²⁺ + Ce⁴⁺ → Fe³⁺ + Ce³⁺
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Acid-base titration): ไม่ใช่วิธีหาปริมาณเหล็ก เนื่องจาก Fe²⁺ ไม่ได้ทำปฏิกิริยากรด-เบสจำเพาะในการวิเคราะห์ตามตำรับ
+• ข้อ ค. (Complexometric titration): แม้ EDTA จะจับกับเหล็กได้ แต่มีความจำเพาะและการรบกวนของสภาวะ pH มากกว่า ในเภสัชตำรับจึงเลือกใช้ Cerimetry เป็นวิธีหลัก
+• ข้อ ง. (Gravimetric): เป็นวิธีชั่งตะกอนที่ยุ่งยาก ใช้เวลานาน ไม่ใช่วิธีมาตรฐานตามโมโนกราฟ
+• ข้อ จ. (Colorimetric): มักใช้ตรวจ limit test หรือ trace iron ไม่ใช่วิธีหลักในการทำ %Assay วัตถุดิบยา
+
+📖 Guideline อ้างอิง:
+USP-NF Official Monograph: Ferrous Fumarate / Ferrous Sulfate Raw Material Assay & British Pharmacopoeia (BP)
+
+📌 จุดจำก่อนสอบ:
+• Assay of Ferrous Salts (Fe²⁺): ใช้ Redox Titration ด้วย Ceric ammonium sulfate (Ce⁴⁺) เสมอ
+• Indicator for Cerimetry: Ferroin (เปลี่ยนจากสีส้มแดงเป็นฟ้าอ่อนที่จุดยุติ)",Redox Titration,ข้อสอบ Product (Assay of Ferrous Salts),Titration,Mock PLE-CC 1 ข้อ 62,Mock,Mock RxCU83
+5,จากข้อมูล Monograph การหาปริมาณตัวยาสำคัญ (Assay) ของยา Aspirin ที่ระบุว่า: ชั่งผงยา ละลายและต้มกับสารละลายมาตรฐาน NaOH ที่มากเกินพอ จากนั้นนำด่างส่วนเกินมาไตเตรทกลับด้วยสารละลายมาตรฐาน H2SO4 การวิเคราะห์ดังกล่าวจัดเป็นรูปแบบการไตเตรทชนิดใด,,Direct titration,Residual (Back) titration,Complexometric titration,Precipitation titration,Non-aqueous acid-base titration,2,"✅ คำตอบที่ถูกต้อง: ข้อ ข. Residual (Back) titration
+
+💡 Background:
+Aspirin (Acetylsalicylic acid) มีพันธะเอสเทอร์ (Ester bond) ซึ่งไฮโดรไลซ์ได้ช้าในอุณหภูมิห้อง จึงไม่สามารถทำ Direct titration ให้สมบูรณ์ได้อย่างรวดเร็ว
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ตามเภสัชตำรับ USP/BP การหาปริมาณ Aspirin ใช้วิธี Residual (Back) titration โดยเติมสารละลายมาตรฐาน 0.5 N NaOH ในปริมาณที่มากเกินพอ (Excess) แล้วนำไปต้มให้เกิดปฏิกิริยา Saponification ไฮโดรไลซ์หมู่เอสเทอร์อย่างสมบูรณ์ กลายเป็น Salicylate และ Acetate จากนั้นจึงนำเบส NaOH ส่วนเกินที่เหลือมาไตเตรทกลับ (Back-titrate) ด้วยสารละลายมาตรฐาน 0.5 N H2SO4 โดยใช้ Phenolphthalein เป็นอินดิเคเตอร์
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Direct titration): ไม่เหมาะสมเพราะปฏิกิริยาไฮโดรไลซิสของเอสเทอร์เกิดขึ้นช้า ทำให้หาจุดยุติที่แท้จริงได้ยาก
+• ข้อ ค. (Complexometric titration): เป็นการสร้างสารเชิงซ้อนกับไอออนโลหะ ไม่ใช่ปฏิกิริยาของแอสไพริน
+• ข้อ ง. (Precipitation titration): เป็นปฏิกิริยาตกตะกอน (เช่น Argentometry)
+• ข้อ จ. (Non-aqueous): ไม่ใช่วิธีมาตรฐานตามโมโนกราฟหลักของยาเม็ดแอสไพริน
+
+📖 Guideline อ้างอิง:
+USP-NF Official Monograph: Aspirin Tablets & British Pharmacopoeia (BP)
+
+📌 จุดจำก่อนสอบ:
+• Aspirin Assay Principle: เติม NaOH เกินพอ ต้มไฮโดรไลซ์ แล้ว Back-titrate ด้วย H2SO4 (Residual Acid-Base Titration)",Acid-Base Titration,ข้อสอบจริง PLE CC 1 ปี 2566 Day 1 ข้อ 23,Titration,PLE-CC1 ปี 2566 Day 1 ข้อ 1,ข้อสอบจริง,ปี 2566
+6,จากสมการเคมีในการตรวจวิเคราะห์หาปริมาณตัวยาสำคัญ: Ce⁴⁺ + Fe²⁺ → Ce³⁺ + Fe³⁺ ปฏิกิริยาดังกล่าวจัดเป็นการวิเคราะห์โดยอาศัยรูปแบบการไตเตรทชนิดใด,,Redox titration (Oxidation-Reduction),Precipitation titration (Argentometry),Complexometric titration (EDTA),Acid-base neutralization titration,Non-aqueous titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Redox titration (Oxidation-Reduction)
+
+💡 Background:
+ปฏิกิริยารีดอกซ์ (Oxidation-Reduction Reaction) คือปฏิกิริยาที่มีการถ่ายโอนอิเล็กตรอนระหว่างสารตัวให้อิเล็กตรอน (Reducing agent) และสารตัวรับอิเล็กตรอน (Oxidizing agent)
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ในสมการ Ce⁴⁺ + Fe²⁺ → Ce³⁺ + Fe³⁺ มีการถ่ายโอน 1 อิเล็กตรอน โดย Fe²⁺ สูญเสียอิเล็กตรอนถูกออกซิไดซ์เป็น Fe³⁺ (Oxidation) และ Ce⁴⁺ รับอิเล็กตรอนถูกรีดิวซ์เป็น Ce³⁺ (Reduction) จึงเป็นการไทเทรตแบบ Redox Titration (Cerimetry) ซึ่งเป็นวิธีมาตรฐานในการตรวจวิเคราะห์หาปริมาณธาตุเหล็ก (Ferrous salts) ตามเภสัชตำรับ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Precipitation titration): เป็นปฏิกิริยาที่เกิดตะกอนที่ไม่ละลายน้ำ เช่น Ag⁺ + Cl⁻ → AgCl(s)
+• ข้อ ค. (Complexometric titration): เป็นการจับกลุ่มโคออร์ดิเนตระหว่าง ligand กับ metal ion (เช่น EDTA กับ Ca²⁺/Mg²⁺/Zn²⁺)
+• ข้อ ง. (Acid-base neutralization): เป็นการถ่ายโอนโปรตอน (H⁺) ไม่ใช่การถ่ายโอนอิเล็กตรอน
+• ข้อ จ. (Non-aqueous): ใช้สำหรับกรด-เบสที่อ่อนมากในตัวทำละลายอินทรีย์
+
+📖 Guideline อ้างอิง:
+USP-NF General Chapter <541> Titrimetry & Vogel's Quantitative Chemical Analysis
+
+📌 จุดจำก่อนสอบ:
+• Cerimetry (Ce⁴⁺): ไทแตรนต์เป็นสารออกซิไดซ์ที่เสถียรมากในกรดซัลฟิวริก ใช้ Ferroin เป็นอินดิเคเตอร์",Redox Titration,ข้อสอบจริง PLE CC 1 ปี 2566 Day 1 ข้อ 24,Titration,PLE-CC1 ปี 2566 Day 1 ข้อ 2,ข้อสอบจริง,ปี 2566
+7,จากเภสัชตำรับ การตรวจวิเคราะห์หาปริมาณตัวยาสำคัญ (Assay) ของ Potassium Chloride (KCl) กำหนดให้ละลายตัวอย่างแล้วนำไปไตเตรทด้วยสารละลายมาตรฐาน Silver nitrate (AgNO3) โดยใช้ Eosin Y หรือ Fluorescein เป็นอินดิเคเตอร์ การวิเคราะห์นี้จัดเป็นการไตเตรทประเภทใดและใช้วิธีการใด,,Precipitation titration (Fajans method),Precipitation titration (Mohr method),Precipitation titration (Volhard method),Complexometric titration,Acid-base neutralization titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Precipitation titration (Fajans method)
+
+💡 Background:
+การไทเทรตแบบตกตะกอนโดยใช้ Silver nitrate (Argentometry) มี 3 วิธีหลักตามชนิดของอินดิเคเตอร์ ได้แก่ Mohr, Volhard และ Fajans method
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ตามเภสัชตำรับ USP/BP การหาปริมาณ Chloride ion (Cl⁻) ใน KCl โดยใช้สารละลายมาตรฐาน AgNO3 และใช้อินดิเคเตอร์ชนิดดูดซับ (Adsorption indicator) เช่น Eosin Y หรือ Fluorescein จัดเป็น Fajans Method ซึ่งเมื่อถึงจุดยุติ ตะกอน AgCl ที่มีประจุบวกส่วนเกินของ Ag⁺ จะดูดซับอินดิเคเตอร์ไอออนลบ ทำให้เกิดการเปลี่ยนสีบนผิวตะกอนอย่างชัดเจน
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Mohr method): ใช้อินดิเคเตอร์ Potassium chromate (K2CrO4) เกิดตะกอนสีน้ำตาลแดงของ Ag2CrO4 ที่จุดยุติ ทำในสภาวะเป็นกลาง (pH 6.5-9)
+• ข้อ ค. (Volhard method): เป็นวิธี Back titration ในสภาวะกรด โดยเติม AgNO3 เกินพอ แล้วกรองตะกอนออกก่อนนำ Ag⁺ ส่วนเกินมาไทเทรตด้วย KSCN โดยใช้ Ferric ammonium sulfate เป็นอินดิเคเตอร์
+• ข้อ ง. และ จ.: ไม่ใช่ปฏิกิริยาตกตะกอนของเฮไลด์
+
+📖 Guideline อ้างอิง:
+USP-NF Official Monograph: Potassium Chloride & British Pharmacopoeia (BP)
+
+📌 จุดจำก่อนสอบ:
+• Fajans Method: Adsorption indicator (Fluorescein / Eosin Y)
+• Mohr Method: Direct titration, Chromate (CrO4²⁻) indicator, ตะกอนสีส้มแดง Ag2CrO4
+• Volhard Method: Back titration ในกรด (HNO3), Thiocyanate (SCN⁻), Fe³⁺ indicator (สารละลายสีแดง FeSCN²⁺)",Precipitation Titration,ข้อสอบจริง PLE CC 1 ปี 2566 Day 2 ข้อ 88,Titration,PLE-CC1 ปี 2566 Day 1 ข้อ 4,ข้อสอบจริง,ปี 2566
+8,ตามเภสัชตำรับ British Pharmacopoeia (BP) การวิเคราะห์หาปริมาณวัตถุดิบยา Acyclovir กำหนดให้ละลายตัวยา 0.150 g ในกรดแอนไฮดรัสแอซีติก (Anhydrous acetic acid) แล้วนำไปไตเตรทด้วยสารละลายมาตรฐาน 0.1 M Perchloric acid (HClO4) โดยหาจุดยุติด้วย Potentiometry การวิเคราะห์นี้จัดเป็นการไตเตรทแบบใด,,Non-aqueous acid-base titration (การไตเตรทกรด-เบสในตัวทำละลายปราศจากน้ำ),Aqueous acid-base neutralization,Precipitation titration (Argentometry),Complexometric titration,Redox titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Non-aqueous acid-base titration (การไตเตรทกรด-เบสในตัวทำละลายปราศจากน้ำ)
+
+💡 Background:
+สารที่เป็นเบสอ่อนมาก (Weak base ที่มี pKb > 8-10 เช่น สารกลุ่ม purine/guanine analogues) ไม่สามารถแตกตัวและให้จุดยุติที่คมชัดเมื่อไทเทรตในตัวทำละลายน้ำได้เนื่องจากเกิด Leveling effect ของน้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Acyclovir เป็นอนุพันธ์ของกวานีนที่มีความเป็นเบสอ่อนมาก (Very weak base) เภสัชตำรับจึงกำหนดให้ใช้ตัวทำละลายอินทรีย์ที่ปราศจากน้ำคือ Glacial/Anhydrous acetic acid ซึ่งทำหน้าที่เป็น Protogenic solvent ช่วยส่งเสริมความเป็นเบสของตัวยา และใช้กรดแก่มากคือ Perchloric acid (HClO4 in glacial acetic acid) เป็นไทแตรนต์ จึงจัดเป็น Non-aqueous Acid-Base Titration
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Aqueous): ไม่สามารถทำได้เพราะตัวยาเป็นเบสอ่อนมาก น้ำจะบดบังจุดยุติ (Leveling effect)
+• ข้อ ค. (Precipitation): ไม่ใช่ปฏิกิริยาตกตะกอน
+• ข้อ ง. (Complexometric): ไม่ได้ใช้การสร้างสารเชิงซ้อนกับ EDTA
+• ข้อ จ. (Redox): ไม่มีการเปลี่ยนแปลงเลขออกซิเดชันของโมเลกุล
+
+📖 Guideline อ้างอิง:
+British Pharmacopoeia (BP) Official Monograph: Aciclovir Raw Material & USP <541> Titrimetry
+
+📌 จุดจำก่อนสอบ:
+• Non-aqueous Titration of Weak Base: ตัวทำละลาย Glacial acetic acid, ไทแตรนต์ Perchloric acid (HClO4), อินดิเคเตอร์ Crystal violet หรือ Potentiometry
+• Non-aqueous Titration of Weak Acid: ตัวทำละลาย DMF หรือ Ethylenediamine, ไทแตรนต์ Sodium methoxide / Tetrabutylammonium hydroxide (TBAH)",Acid-Base Titration (Non-aqueous),ข้อสอบจริง PLE CC 1 ปี 2563 (BP Acyclovir Monograph),Titration,PLE-CC1 ปี 2566 Day 2 ข้อ 1,ข้อสอบจริง,ปี 2566
+9,การวิเคราะห์หาปริมาณสารเฮไลด์ (เช่น Chloride หรือ Bromide) โดยการเติมสารละลายมาตรฐาน AgNO3 ที่มากเกินพอในสภาวะกรดไนทริก แล้วนำ Ag⁺ ส่วนเกินที่เหลือมาไตเตรทกลับด้วยสารละลายมาตรฐาน KSCN หรือ NH4SCN โดยใช้ Ferric ammonium sulfate เป็นอินดิเคเตอร์ วิธีดังกล่าวเรียกว่าวิธีใด,,Volhard method (การไตเตรทแบบย้อนกลับในสภาวะกรด),Mohr method (การไตเตรทโดยตรงในสภาวะเป็นกลาง),Fajans method (การไตเตรทโดยใช้อินดิเคเตอร์ดูดซับ),Direct acid-base titration,Complexometric titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Volhard method (การไตเตรทแบบย้อนกลับในสภาวะกรด)
+
+💡 Background:
+Volhard Method เป็นเทคนิคการไทเทรตแบบตกตะกอน (Precipitation titration / Argentometry) แบบย้อนกลับ (Back titration)
+
+🎯 ทำไมข้อนี้ถึงถูก:
+หลักการของ Volhard Method คือการเติมสารละลายมาตรฐาน AgNO3 ที่มากเกินพอลงในสารละลายตัวอย่างที่มี Halide ion (เช่น Cl⁻) ในสารละลายกรด HNO3 เพื่อให้เกิดตะกอน AgCl อย่างสมบูรณ์ จากนั้นนำ Ag⁺ ที่เหลือเกินพอมาไทเทรตย้อนกลับด้วยสารละลายมาตรฐาน Thiocyanate (KSCN หรือ NH4SCN) โดยใช้ Ferric ammonium sulfate (Fe³⁺) เป็นอินดิเคเตอร์ เมื่อ Ag⁺ ทำปฏิกิริยากับ SCN⁻ จนหมด หยดแรกของ SCN⁻ ที่เกินพอจะทำปฏิกิริยากับ Fe³⁺ เกิดสารประกอบเชิงซ้อนสีส้มแดง [Fe(SCN)]²⁺ ที่จุดยุติอย่างคมชัด
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Mohr method): เป็น Direct titration ของ Cl⁻ หรือ Br⁻ ด้วย AgNO3 ในสภาวะ pH 6.5-9 โดยใช้ K2CrO4 เป็นอินดิเคเตอร์ ให้ตะกอนสีส้มแดง Ag2CrO4
+• ข้อ ค. (Fajans method): เป็น Direct titration โดยใช้ Adsorption indicator (เช่น Fluorescein, Eosin Y) ซึ่งเปลี่ยนสีบนผิวตะกอน
+• ข้อ ง. และ จ.: ไม่ใช่การวิเคราะห์เฮไลด์ด้วยการตกตะกอนเกลือเงิน
+
+📖 Guideline อ้างอิง:
+USP-NF General Chapter <541> Titrimetry & Skoog Fundamentals of Analytical Chemistry
+
+📌 จุดจำก่อนสอบ:
+• Volhard Method: Back titration, สภาวะกรด (HNO3), ไทแตรนต์ย้อนกลับ KSCN, อินดิเคเตอร์ Fe³⁺ (สีแดง FeSCN²⁺)
+• ข้อควรระวังใน Cl⁻ Assay: ตะกอน AgCl ละลายน้ำได้ดีกว่า AgSCN ดังนั้นต้องกรอง AgCl ออกก่อน หรือเติม Nitrobenzene เพื่อเคลือบผิวตะกอนป้องกันปฏิกิริยาย้อนกลับ",Precipitation Titration,ข้อสอบ Product (Volhard Method & Argentometry),Titration,PLE-CC1 ปี 2566 Day 2 ข้อ 2,ข้อสอบจริง,ปี 2566
+10,ในการตรวจวิเคราะห์หาปริมาณแคลเซียมคาร์บอเนต (Calcium Carbonate raw material) ตามเภสัชตำรับ USP/BP กำหนดให้ละลายตัวยาในกรดเจือจาง ปรับสภาวะเป็นด่างรุนแรง (pH ประมาณ 12-13 ด้วย NaOH) เพื่อตกตะกอนแมกนีเซียม แล้วไตเตรทด้วยสารละลายมาตรฐาน Disodium EDTA การวิเคราะห์นี้ใช้อินดิเคเตอร์ชนิดใด,,Hydroxynaphthol blue (หรือ Calconcarboxylic acid / Murexide),Phenolphthalein,Methyl orange,Ferroin,Potassium chromate,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Hydroxynaphthol blue (หรือ Calconcarboxylic acid / Murexide)
+
+💡 Background:
+Calcium Carbonate เป็นวัตถุดิบยาลดกรดและแร่ธาตุเสริม การหาปริมาณตัวยาสำคัญตามเภสัชตำรับใช้วิธี Complexometric Titration ด้วย EDTA
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ในการไทเทรตหา Ca²⁺ โดยจำเพาะเมื่ออาจมี Mg²⁺ ปนเปื้อน ต้องปรับ pH ให้สูงกว่า 12 (ด้วย 1 N NaOH) เพื่อให้ Mg²⁺ ตกตะกอนเป็น Mg(OH)2 แยกออกไป ไม่รบกวนการไทเทรต จากนั้นจึงใช้อินดิเคเตอร์โลหะ (Metallochromic indicator) ที่จำเพาะต่อ Ca²⁺ ในสภาวะด่างจัด ได้แก่ Hydroxynaphthol blue หรือ Calconcarboxylic acid (Patton-Reeder indicator) หรือ Murexide ซึ่งจับกับ Ca²⁺ ให้สีชมพู/แดง และเมื่อ EDTA แย่งจับ Ca²⁺ จนหมดที่จุดยุติ อินดิเคเตอร์อิสระจะเปลี่ยนเป็น สีน้ำเงิน (Blue) ชัดเจน
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. และ ค.: เป็น Acid-base indicator วัดการเปลี่ยนแปลง pH ไม่ใช่วัดอิสระของ metal ions
+• ข้อ ง. (Ferroin): เป็น Redox indicator ใช้ใน Cerimetry
+• ข้อ จ. (Potassium chromate): เป็น Precipitation indicator ใช้ใน Mohr method
+
+📖 Guideline อ้างอิง:
+USP-NF Official Monograph: Calcium Carbonate & British Pharmacopoeia (BP)
+
+📌 จุดจำก่อนสอบ:
+• Ca²⁺ Titration at pH > 12: ตกตะกอน Mg²⁺ เป็น Mg(OH)2, ใช้อินดิเคเตอร์ Hydroxynaphthol blue (เปลี่ยนเป็นสีน้ำเงิน)
+• Total Ca²⁺ + Mg²⁺ Titration at pH 10: ใช้ Ammonia buffer, อินดิเคเตอร์ Eriochrome Black T (EBT)",Complexometric Titration,ข้อสอบ Product (EDTA Calcium Carbonate Assay),Titration,PLE-CC1 ปี 2566 Day 2 ข้อ 3,ข้อสอบจริง,ปี 2566
+11,"การตรวจวิเคราะห์หาปริมาณตัวยาสำคัญที่มีสมบัติเป็นสารรีดิวซ์ (Reducing agent เช่น Ascorbic acid หรือ Vitamin C) ตามเภสัชตำรับ โดยการไตเตรทโดยตรงด้วยสารละลายมาตรฐานไอโอดีน (Standard Iodine solution, I2) โดยใช้น้ำแป้ง (Starch solution) เป็นอินดิเคเตอร์ วิธีดังกล่าวจัดเป็นการวิเคราะห์แบบใด",,Iodimetry (Direct redox titration with Iodine),Iodometry (Indirect redox titration via I2 liberation and Thiosulfate),Permanganometry,Biamperometric titration,Complexometric titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Iodimetry (Direct redox titration with Iodine)
+
+💡 Background:
+การวิเคราะห์ด้วยไอโอดีน (Iodine titrations) แบ่งออกเป็น 2 ประเภทหลักที่มักออกสอบบ่อย คือ Iodimetry (ทางตรง) และ Iodometry (ทางอ้อม)
+
+🎯 ทำไมข้อนี้ถึงถูก:
+• Iodimetry (ไอโอไดเมทรี) คือการไทเทรตโดยตรง (Direct titration) โดยใช้สารละลายมาตรฐาน I2 (ซึ่งเป็นสารออกซิไดซ์ปานกลาง) เป็นไทแตรนต์ในบิวเรตต์ เพื่อออกซิไดซ์สารตัวอย่างที่เป็นสารรีดิวซ์ (เช่น Ascorbic acid, Thiamine, Sulfites) เมื่อสารตัวอย่างทำปฏิกิริยาหมด หยดแรกของ I2 ส่วนเกินจะทำปฏิกิริยากับน้ำแป้ง (Starch) เกิดสารประกอบเชิงซ้อนสีน้ำเงินเข้ม (Deep blue starch-iodine complex) ทันทีที่จุดยุติ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Iodometry): เป็นวิธีทางอ้อม (Indirect method) โดยนำสารตัวอย่างที่เป็นสารออกซิไดซ์ (Oxidizing agent) ไปทำปฏิกิริยากับ KI ส่วนเกิน เพื่อปลดปล่อย I2 อิสระออกมา จากนั้นจึงนำ I2 ที่ได้ไปไทเทรตกับสารละลายมาตรฐาน Sodium thiosulfate (Na2S2O3) จนสีน้ำเงินของน้ำแป้งจางหายไปกลายเป็นไม่มีสี
+• ข้อ ค. (Permanganometry): ใช้สารละลาย KMnO4 เป็นทั้งไทแตรนต์และอินดิเคเตอร์ในตัว (Self-indicator)
+• ข้อ ง. และ จ.: ไม่ใช่วิธีทางตรงของไอโอดีน
+
+📖 Guideline อ้างอิง:
+USP-NF Official Monograph: Ascorbic Acid Raw Material / Tablets & Vogel's Textbook of Quantitative Chemical Analysis
+
+📌 จุดจำก่อนสอบ:
+• Iodimetry (ทางตรง): ตัวอย่างเป็น Reducing agent, ไทแตรนต์คือ I2, จุดยุติเกิดสีน้ำเงิน
+• Iodometry (ทางอ้อม): ตัวอย่างเป็น Oxidizing agent + KI excess → ปลดปล่อย I2 ออกมาไทเทรตกับ Na2S2O3, จุดยุติสีน้ำเงินหายไป",Redox Titration,ข้อสอบ Product (Iodimetry vs Iodometry Principles),Titration,PLE-CC1 ปี 2566 Day 2 ข้อ 4,ข้อสอบจริง,ปี 2566
+11,"หากต้องการวิเคราะห์หาปริมาณแร่ธาตุสังกะสี (Zinc) ในเภสัชภัณฑ์ที่มีตัวยาสำคัญคือเกลือสังกะสี (Zinc salts เช่น Zinc sulfate, Zinc oxide) ตามมาตรฐานเภสัชตำรับ จะต้องตรวจวิเคราะห์ด้วยวิธีใด",,Precipitation titration,Complexometric titration (ไทเทรตด้วยสารละลายมาตรฐาน Disodium EDTA),Karl Fischer titration,Fluorescence spectroscopy,Infrared spectroscopy,2,"✅ คำตอบที่ถูกต้อง: ข้อ ข. Complexometric titration (ไทเทรตด้วยสารละลายมาตรฐาน Disodium EDTA)
+
+💡 Background:
+Zinc เป็นโลหะแทรนซิชันที่มีประจุบวก 2+ (Zn²⁺) การวิเคราะห์เชิงปริมาณมาตรฐานตามเภสัชตำรับ USP และ BP คือ Complexometric titration ด้วย Disodium edetate (EDTA)
+
+🎯 ทำไมข้อนี้ถึงถูก:
+EDTA เป็น Hexadentate ligand ที่จับกับไอออนโลหะ Zn²⁺ เกิดเป็นสารประกอบเชิงซ้อนคีเลต (Metal-EDTA chelate complex) ที่เสถียรมากในอัตราส่วน 1:1 เสมอ โดยการไทเทรตทำในสภาวะควบคุม pH ประมาณ 10 (ใช้น้ำกระสายแอมโมเนียบัฟเฟอร์ Ammonia-ammonium chloride buffer) และใช้อินดิเคเตอร์ Eriochrome Black T (EBT) ซึ่งเปลี่ยนสีจากสีแดงไวน์ (Wine-red ของ Zn-EBT complex) กลายเป็นสีน้ำเงิน (Blue ของ free EBT) ที่จุดยุติอย่างคมชัด
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Precipitation titration): เป็นการไทเทรตตกตะกอน เช่น วิเคราะห์เฮไลด์ด้วยซิลเวอร์ไนเตรต
+• ข้อ ค. (Karl Fischer titration): ใช้สำหรับหาปริมาณน้ำหรือความชื้น (Water determination)
+• ข้อ ง. (Fluorescence spectroscopy): ใช้ตรวจสารที่มีโครงสร้างเรืองแสง
+• ข้อ จ. (Infrared spectroscopy): ใช้ตรวจหมู่ฟังก์ชันและเอกลักษณ์ของแข็ง ไม่ใช่วิธีมาตรฐานในการทำ %Assay ของเกลือโลหะอนินทรีย์
+
+📖 Guideline อ้างอิง:
+USP-NF Official Monograph: Zinc Sulfate / Zinc Oxide & British Pharmacopoeia (BP)
+
+📌 จุดจำก่อนสอบ:
+• Zinc Assay (Complexometry): EDTA ไทแตรนต์, สภาวะ pH 10 Ammonia buffer, อินดิเคเตอร์ Eriochrome Black T (EBT) เปลี่ยนจากแดงไวน์เป็นน้ำเงิน",Complexometric Titration,ข้อสอบจริง PLE CC 1 ปี 2562 (Assay of Zinc Salts),Product,ข้อ 41 (PLE_CC1_2562_Key.md),ข้อสอบจริง,ปี 2562
+12,EDTA ในตำรับข(างต(นทำหน(าอะไร,,Vehicle,Antioxidant,Stiffening agent,Emulsifying agent,Acidifying agent,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Vehicle
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Vehicle 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Vehicle เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Complexometric titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Complexometric titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Antioxidant): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Stiffening agent): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Emulsifying agent): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Acidifying agent): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Complexometric titration,Product,ข้อ 90 (PLE_CC1_2561_Key.md),ข้อสอบจริง,ปี 2561
+13,Residue on ignition คือการตรวจอะไร,,เพื่อหาปริมาณสารที่ระเหยง.าย,เพื่อหาปริมาณ organic impurity,เพื่อหาปริมาณ in organic impurity,เพื่อพิสูจนว.า organic impurity เป5นสารใด,เพื่อพิสูจนว.า inorganic impurity เป5นสารใด,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. เพื่อหาปริมาณสารที่ระเหยง.าย
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+เพื่อหาปริมาณสารที่ระเหยง.าย 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก เพื่อหาปริมาณสารที่ระเหยง.าย เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (เพื่อหาปริมาณ organic impurity): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (เพื่อหาปริมาณ in organic impurity): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (เพื่อพิสูจนว.า organic impurity เป5นสารใด): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (เพื่อพิสูจนว.า inorganic impurity เป5นสารใด): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 119 (PLE_CC1_2561_Key.md),ข้อสอบจริง,ปี 2561
+14,การสังเคราะห์ HCTZ จงระบุว่า A คือข้อใด,,H-CO-H,H-CO-OH,Cl-C-Cl,C-CO-H,...,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. H-CO-H
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+H-CO-H 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก H-CO-H เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (H-CO-OH): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Cl-C-Cl): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (C-CO-H): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (...): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 8 (PLE_CC1_2560 22 April Set 1.md),ข้อสอบจริง,ปี 2560
+15,หากผู้ป่วยต้องการ KCl 60 mEq/day จะต้องให้ KCl ความเข้มข้น 74.5 g/L กี่มิลลิลิตร (ก้าหนดให้ MW ของ KCl = 74.5 g/mol),,15 ml,30 ml,45 ml,60 ml,75 ml,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. 15 ml
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+15 ml 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก 15 ml เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (30 ml): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (45 ml): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (60 ml): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (75 ml): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 68 (PLE_CC1_2559.md),ข้อสอบจริง,ปี 2559
+16,หากผู้ป่วยต้องรักษาภาวะ secondary hyperthyroid ต้องได้ยาใด,,Vitamin A,Vitamin D,Vitamin E,Vitamin K,Vitamin B,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Vitamin A
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Vitamin A 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Vitamin A เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Vitamin D): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Vitamin E): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Vitamin K): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Vitamin B): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 51 (PLE_CC1_2558_Key.md),ข้อสอบจริง,ปี 2558
+17,"การวิเคราะห์ raw material ของ acyclovir จากตำรา British Pharmacopoeia 2013 เป็นการทดสอบแบบใด “Dissolve 0.150 g in 60 mL of anhydrous acetic acid R. Titrate with 0.1 M perchloric acid, determining the end-point potentiometrically. Carry out a black titration”",,Aqueous acid-base titration,Non-aqueous acid-base titration,Precipitation titration,Redox titration,Complexation titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Aqueous acid-base titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Aqueous acid-base titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Aqueous acid-base titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Non-aqueous acid-base titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Precipitation titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Redox titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Complexation titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 98 (Pharmtutor_2024_Set1.md),Mock,Mock Pharmtutor 2024
+18,จากสมการเคมีที่กำหนด เป็นการไทเทรตแบบใด 2HNO3 + CaCO3 ―> Ca(NO3)2 + CO2 + H2O HNO3 + NaOH ―> NaNO3 + H2O,,Direct acid-base titration,Back acid-base titration,Indirect acid-base titration,Back precipitation titration,"Indirect precipitation titration Azithromycin is white crystalline powder. mp: 126 อC soluble in ethanol and DSMO, minimally soluble in water",1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Direct acid-base titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Direct acid-base titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+เอกสารฉบับนี้รวบรวมข้อสอบขึ้นมา สำหรับนักเรียนคอร์สตะลุยโจทย์ Pharmtutors 2024 ข้อสอบดังกล่าวถือเป็นลิขสิทธิ์ ห้ามทำซ้ำ ดัดแปลง หรือแก้ไข
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Back acid-base titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Indirect acid-base titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Back precipitation titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Indirect precipitation titration Azithromycin is white crystalline powder. mp: 126 อC soluble in ethanol and DSMO, minimally soluble in water): เป็น Macrolide ครอบคลุม atypical pathogens (Mycoplasma, Chlamydia, Legionella) ขจัดออกทางตับเป็นหลัก และมี half-life ยาวนาน (~68 ชม.)
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 99 (Pharmtutor_2024_Set1.md),Mock,Mock Pharmtutor 2024
+19,จากปฏิกิริยาการหาปริมาณ Ferrous(II) ด้วยวิธีการไตไตรทที่กำหนดให้ ข้อใดคือชนิดของการไตเตรทที่ถูกต้อง 2FeSO4 + 2Ce(SO4)2 → Fe2(SO4)3 + Ce2(SO4)3,,Complexometric titration,Acid-base titration,Precipitation titration,Redox titration,ไม่มีข้อใดถูก,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Complexometric titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Complexometric titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Complexometric titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Acid-base titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Precipitation titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Redox titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ไม่มีข้อใดถูก): ข้อนี้ไม่ถูกต้องเนื่องจากมีตัวเลือกที่จำเพาะและตรงตามเกณฑ์มาตรฐานเวชปฏิบัติอย่างชัดเจน
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 94 (Pharmtutor_2024_Set2.md),Mock,Mock Pharmtutor 2024
+20,ข้อใดเป็นคำแนะนำทีเหมาะสมสำหรับการรับประทาน Calcium carbonate ในผู้ป่วยรายนี% (1) รับประทานก่อนอาหาร เพือเพิมการดูดซึมแคลเซียม (2) รับประทานพร้อมอาหารคำแรก เพือเพิมการจับ ระหว่างแคลเซียมและฟอสเฟต (3) รับประทานหลังอาหาร เพือป้องกันภาวะท้องผูก (4) รับประทานแคลเซียมพร้อมกับ FeSO4 (5) หลีกเลียงการรับประทานแคลเซียม ร่วมกับยา doxycycline,,Direct Acid-Base Titration,Back Acid-Base Titration,Redox Titration (Iodometry),Complexometric Titration (EDTA),Precipitation Titration (Mohr method),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Direct Acid-Base Titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Direct Acid-Base Titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Direct Acid-Base Titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Back Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Redox Titration (Iodometry)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Complexometric Titration (EDTA)): วัคซีนรวมคอตีบ-บาดทะยัก ฉีดกระตุ้นทุก 10 ปี หรือใช้ในหญิงตั้งครรภ์และผู้ใหญ่
+• ข้อ จ. (Precipitation Titration (Mohr method)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 69 (PLE_CC1_2557.md),ข้อสอบจริง,ปี 2557
+21,การวิเคราะห์ FeSO4 ด้วยสารละลาย potassium permanganate (KMnO4) ใช้วิธีวิเคราะห์ใด (1) Acid-base titration (2) Non-aqueous acid-base titration (3) Oxidation-reaction titration (4) Complexometric titration (5) Precipitation titration Final version | Maximum’2017 Rx30 | Prince of Songkla University,,Complexometric Titration (EDTA),Precipitation Titration (Mohr method),Volhard Titration method,Fajans Adsorption Indicator method,Potentiometric End-point Titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Complexometric Titration (EDTA)
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Complexometric Titration (EDTA) 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Complexometric Titration (EDTA) เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Redox titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Redox titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Precipitation Titration (Mohr method)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Volhard Titration method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Fajans Adsorption Indicator method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Potentiometric End-point Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Redox titration,Product,ข้อ 70 (PLE_CC1_2557.md),ข้อสอบจริง,ปี 2557
+22,"E หมายเหตุ : อันนี้เราหา reference แบบฟันธงเป๊ะๆไปเลยยังไม่ได้ ส่วนใหญ่จะบอกคล้ายๆกันว่ากลุ่ม azo group สามารถทำให้ เกิดสีได้ อันนี้เป็นข้อมูลที่มาจาก wikipidia อ่ะ ถ้าหาอันที่ชัดเจนและชัวร์กว่านี้แล้วจะแก้ไขมาให้ใหม่ “As a consequence of п-delocalization, aryl azo compounds have vivid colors, especially reds, oranges, and yellows. Therefore, they are used as dyes, and are commonly known as azo dyes, an example of which is Disperse Orange 1. Some azo compounds, eg. methyl orange, are used as acid-base indicators due to the different colors of their acid and salt forms. The development of azo dyes was an important step in the development of the chemical industry. Azo pigments are colorless particles (typically earths or clays), which have been colored using an azo compound. Azo pigments are important in a variety of paints including artist's paints. They have excellent coloring properties, again mainly in the yellow to red range, as well as lightfastness. The lightfastness depends not only on the properties of the organic azo compound, but also on the way they have been adsorbed on the pigment carrier. Many azo pigments non-toxic, although some, such as dinitroaniline orange, orthonitroaniline orange, or pigment orange 1, 2, and 5 have been found to be mutagenic.[1] Likewise, several case studies have linked azo pigments with Basal Cell Carcinoma.",,Fajans Adsorption Indicator method,Potentiometric End-point Titration,Biamperometric Titration,Nonaqueous Acid-Base Titration,Direct Acid-Base Titration,3,"✅ คำตอบที่ถูกต้อง: ข้อ ค. Biamperometric Titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Biamperometric Titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Biamperometric Titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Precipitation titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Precipitation titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Fajans Adsorption Indicator method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Potentiometric End-point Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Nonaqueous Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Direct Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Precipitation titration,Product,ข้อ 5 (PLE_CC1_2533.md),ข้อสอบจริง,ปี 2533
+23,ต้องการวิเคราะห์ phenazopyridine ควรใช้วิธีใดในการวิเคราะห์,,Nonaqueous Acid-Base Titration,Direct Acid-Base Titration,Back Acid-Base Titration,Redox Titration (Iodometry),Complexometric Titration (EDTA),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Nonaqueous Acid-Base Titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nonaqueous Acid-Base Titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Nonaqueous Acid-Base Titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Direct Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Back Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Redox Titration (Iodometry)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Complexometric Titration (EDTA)): วัคซีนรวมคอตีบ-บาดทะยัก ฉีดกระตุ้นทุก 10 ปี หรือใช้ในหญิงตั้งครรภ์และผู้ใหญ่
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 7 (PLE_CC1_2533.md),ข้อสอบจริง,ปี 2533
+24,Redox titration,,Redox Titration (Iodometry),Complexometric Titration (EDTA),Precipitation Titration (Mohr method),Volhard Titration method,Fajans Adsorption Indicator method,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Redox Titration (Iodometry)
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Redox Titration (Iodometry) 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Redox Titration (Iodometry) เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Redox titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Redox titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Complexometric Titration (EDTA)): วัคซีนรวมคอตีบ-บาดทะยัก ฉีดกระตุ้นทุก 10 ปี หรือใช้ในหญิงตั้งครรภ์และผู้ใหญ่
+• ข้อ ค. (Precipitation Titration (Mohr method)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Volhard Titration method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Fajans Adsorption Indicator method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Redox titration,Product,ข้อ 1 (PLE_CC1_2533.md),ข้อสอบจริง,ปี 2533
+25,Complexometric Titration,,Volhard Titration method,Fajans Adsorption Indicator method,Potentiometric End-point Titration,Biamperometric Titration,Nonaqueous Acid-Base Titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Volhard Titration method
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Volhard Titration method 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Volhard Titration method เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Complexometric titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Complexometric titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Fajans Adsorption Indicator method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Potentiometric End-point Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Biamperometric Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Nonaqueous Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Complexometric titration,Product,ข้อ 3 (PLE_CC1_2533.md),ข้อสอบจริง,ปี 2533
+26,สารใดในตำรับอยู่ในเฟสน้ำ,,Deionized water,Glycerin,Propylene glycol,Disodium EDTA,ถูกทุกข้อ,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Deionized water
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Deionized water 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Deionized water เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Glycerin): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Propylene glycol): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Disodium EDTA): วัคซีนรวมคอตีบ-บาดทะยัก ฉีดกระตุ้นทุก 10 ปี หรือใช้ในหญิงตั้งครรภ์และผู้ใหญ่
+• ข้อ จ. (ถูกทุกข้อ): ข้อนี้ไม่ถูกต้องเนื่องจากมีตัวเลือกที่จำเพาะและตรงตามเกณฑ์มาตรฐานเวชปฏิบัติอย่างชัดเจน
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 36 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+27,วัตถุประสงค์หลักของการใช้ non-aqueous acid-base titration คืออะไร,,การละลายน้ำของสาร,ความเข้มข้นของสาร,สารทำปฏิกิริยากับน้ำไม่ได้,สารทำปฏิกิริยารุนแรงกับน้ำ,ถูกทุกข้อ,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. การละลายน้ำของสาร
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+การละลายน้ำของสาร 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก การละลายน้ำของสาร เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ความเข้มข้นของสาร): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (สารทำปฏิกิริยากับน้ำไม่ได้): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (สารทำปฏิกิริยารุนแรงกับน้ำ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ถูกทุกข้อ): ข้อนี้ไม่ถูกต้องเนื่องจากมีตัวเลือกที่จำเพาะและตรงตามเกณฑ์มาตรฐานเวชปฏิบัติอย่างชัดเจน
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 8 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+28,ทำการวิเคราะห์หาปริมาณ nicotinic acid โดยการละลาย nicotinic acid 0.25 g ด้วย น้ำ ปราศจาก CO2 ปรับปริมาตรจนได้ 50 ml จากนั้นไตเตรทด้วย สารละลาย NaOH ที่ปราศจาก carbonate (0.1 mol/l) และใช้ phenolphthalein/ethanol เป็นอินดิเคเตอร์ โดยที่ 1ml ของสารละลาย NaOHที่ปราศจาก carbonate (0.1 mol/l) จะทำปฎิกิริยากับ 12.31 mg ของ C6H5NO2 จาก ข้อความข้างต้น เป็นวิเคราะห์ด้วยการ titration แบบใด,,strong acid/strong base titration,weak acid/strong base titraton,weak base/strong acid titration,non-aqueous titration of weak base,non-aqueous titration of weak acid,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. strong acid/strong base titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+strong acid/strong base titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก strong acid/strong base titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Complexometric titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Complexometric titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (weak acid/strong base titraton): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (weak base/strong acid titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (non-aqueous titration of weak base): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (non-aqueous titration of weak acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Complexometric titration,Product,ข้อ 9 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+29,ข้อใดกล่าวถูกต้องเกี่ยวกับ Precipitation titration,,เหมาะสำหรับปฏิกิริยาที่เกิดช้า เพื่อให้สังเกตเห็นการตกตะกอนอย่างช้าๆ,อุณหภูมิมีผลต่อการละลายของตะกอน โดยที่อุณหภูมิสูงจะเพิ่มการละลายของตะกอนเสมอ,จะเกิดการตกตะกอนเมื่อค่า Q = Ksp,Common ion effect คือผลกระทบที่เกิดจากการเติม ion ที่เป็นส่วนประกอบของตะกอน ส่วน Diverse ion effect คือผลที่เกิดจาก ion อื่นที่ไม่เป็นส่วนประกอบของตะกอน,ปฏิกิริยาที่มีค่า Ksp สูง จะทำให้หาจุดยุติจาก titration curve ได้ง่าย,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. เหมาะสำหรับปฏิกิริยาที่เกิดช้า เพื่อให้สังเกตเห็นการตกตะกอนอย่างช้าๆ
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+เหมาะสำหรับปฏิกิริยาที่เกิดช้า เพื่อให้สังเกตเห็นการตกตะกอนอย่างช้าๆ 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก เหมาะสำหรับปฏิกิริยาที่เกิดช้า เพื่อให้สังเกตเห็นการตกตะกอนอย่างช้าๆ เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Precipitation titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Precipitation titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (อุณหภูมิมีผลต่อการละลายของตะกอน โดยที่อุณหภูมิสูงจะเพิ่มการละลายของตะกอนเสมอ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (จะเกิดการตกตะกอนเมื่อค่า Q = Ksp): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Common ion effect คือผลกระทบที่เกิดจากการเติม ion ที่เป็นส่วนประกอบของตะกอน ส่วน Diverse ion effect คือผลที่เกิดจาก ion อื่นที่ไม่เป็นส่วนประกอบของตะกอน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ปฏิกิริยาที่มีค่า Ksp สูง จะทำให้หาจุดยุติจาก titration curve ได้ง่าย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Precipitation titration,Product,ข้อ 18 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+30,เภสัชกรได้วิเคราะห์หาปริมาณ NaHCO3 ในยาเม็ดลดกรดยี่ห้อหนึ่งด้วยการไทเทรตกับ 1N H2SO4 โดยวิเคราะห์จำนวน 2 ครั้ง ฉลากยาระบุว่ายา 1 เม็ด มีปริมาณ NaHCO3 0.3000 กรัม - กำหนดให้น้ำหนักเฉลี่ยของยาเม็ดเท่ากับ 0.4000 กรัม - กำหนดให้ 1N H2SO4 ปริมาตร 1มิลลิลิตร ทำปฏิกิริยาพอดีกับ NaHCO3 84.00 มิลลิกรัม ครั้งที่ 1 ครั้งที่ 2 น้ำหนักตัวอย่างที่ใช้วิเคราะห์,,5000 กรัม,6000 กรัม ปริมาตร 1N H2SO4 ที่ใช้ 22.32 มิลลิลิตร 23.20 มิลลิลิตร 346 เภสัชภัณฑ์รูปแบบกึ่งแข็ง (Semisolid dosage form) ฝ่ายวิชาการ สโมสรนักศึกษาคณะเภสัชศาสตร์มหาวิทยาลัยขอนแก่น และนักศึกษาชั้นปีที่4 รุ่นที่ 33 สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) จากการวิเคราะห์ ยาลดกรดยี่ห้อนี้มีปริมาณ NaHCO3 คิดเป็นร้อยละเท่าไหร่เทียบกับปริมาณยาที่ ฉลาก,90,95,100,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. 5000 กรัม
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+5000 กรัม 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก 5000 กรัม เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (6000 กรัม ปริมาตร 1N H2SO4 ที่ใช้ 22.32 มิลลิลิตร 23.20 มิลลิลิตร 346 เภสัชภัณฑ์รูปแบบกึ่งแข็ง (Semisolid dosage form) ฝ่ายวิชาการ สโมสรนักศึกษาคณะเภสัชศาสตร์มหาวิทยาลัยขอนแก่น และนักศึกษาชั้นปีที่4 รุ่นที่ 33 สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) จากการวิเคราะห์ ยาลดกรดยี่ห้อนี้มีปริมาณ NaHCO3 คิดเป็นร้อยละเท่าไหร่เทียบกับปริมาณยาที่ ฉลาก): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (90): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (95): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (100): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 19 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+31,ในการวิเคราะห์ Boric acid ด้วย Direct titration ใส่สารชนิดใดเพื่อให้ form complex กับ metaborate ion,,Silver nitrate,Glycerin,Phenolphthalein,Sodium hydroxide,Sodium bicarbonate,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Silver nitrate
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Silver nitrate 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Silver nitrate เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Complexometric titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Complexometric titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Glycerin): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Phenolphthalein): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Sodium hydroxide): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Sodium bicarbonate): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Complexometric titration,Product,ข้อ 23 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+32,วิเคราะห์ปริมาณ Aluminium hydroxide ใน Alum milk USP XXIV โดยวิธี Back titration ด้วย 0.05 M ZnSO4 25.38 ml ซึ่งสมมูลกับ 0.0522 M EDTA 25.00 ml และใน Sample A ใช้ 0.05 M ZnSO4 12.48 ml ซึ่งสมมูลกับ 0.0522 M EDTA ที่มากเกินพอ จงคำนวณหาปริมาณของ 0.0522 M EDTA ที่ทำปฏิกิริยากับ Al3+ ใน sample A,,10.01 ml,11.21 ml,11.52 ml,12.71 ml,12.98 ml,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. 10.01 ml
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+10.01 ml 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก 10.01 ml เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Complexometric titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Complexometric titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (11.21 ml): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (11.52 ml): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (12.71 ml): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (12.98 ml): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Complexometric titration,Product,ข้อ 24 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+33,กรดอ่อน HA เข้มข้น 0.10 M จำนวน 50 cm3 ถูกนำมาไทเทรตกับเบสแก่เข้มข้น 0.10 M จงคำนวณหาสมดุลของปฏิกิริยา (Kt) ที่ทำให้เมื่อทำการไทเทรตไปได้ 49.95 cm3 ปฏิกิริยาสามารถ เกิดได้สมบูรณ์ และเมื่อเติมเบสแก่เกินจุดสมมูล 1-2 หยด (0.05 cm3) ทำให้ pH เปลี่ยนแปลงไป,,00 หน่วย,2 x 105,2 x 109,2 x 10-5,2 x 10-9,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. 00 หน่วย
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+00 หน่วย 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก 00 หน่วย เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (2 x 105): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (2 x 109): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (2 x 10-5): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (2 x 10-9): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 25 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+34,"วิเคราะห์ปริมาณ Aspirin USP XXI (Back titration) ด้วย standard solution 0.0999 M HCl Sample A ใช้ 0.0999 M HCl 21.52 ml (0.0999 M HCl 23.60 ml สมมูลกับ 25.00 ml NaOH, ปริมาตรของ NaOH มากเกินพอที่เติมลงในตัวอย่างแต่ละ Sample = 50.0 ml) จงคำนวณหา molarity ของ NaOH",,0.0943,0.0952 350 เภสัชภัณฑ์รูปแบบกึ่งแข็ง (Semisolid dosage form) ฝ่ายวิชาการ สโมสรนักศึกษาคณะเภสัชศาสตร์มหาวิทยาลัยขอนแก่น และนักศึกษาชั้นปีที่4 รุ่นที่ 33 สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.),0.0967,0.0977,0.0981,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. 0.0943
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+0.0943 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก 0.0943 เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (0.0952 350 เภสัชภัณฑ์รูปแบบกึ่งแข็ง (Semisolid dosage form) ฝ่ายวิชาการ สโมสรนักศึกษาคณะเภสัชศาสตร์มหาวิทยาลัยขอนแก่น และนักศึกษาชั้นปีที่4 รุ่นที่ 33 สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (0.0967): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (0.0977): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (0.0981): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 34 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+35,การวิเคราะห์ Sodium bicarbonate tablet USP XXI ด้วย 1.0094 N H2SO4 (Direct titration quantitative analysis of finished product) โดยใช้ Sodium bicarbonate tablet จำนวน 20 เม็ด (น้ำหนักเฉลี่ย 0.3794 g) ฉลากระบุว่ายา 1 เม็ด ประกอบด้วย NaHCO3 300 mg Sample A ชั่งผงยามา 2.5927 g ไตเตรทใช้ 1.0094 N H2SO4 24.25 ml จงคำนวณหา %label amount ของ sample A (1 ml 1 N H2SO4 สมมูลกับ 84.01 mg NaHCO3),,100.10%,100.20%,100.30%,101.00%,102.00%,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. 100.10%
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+100.10% 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก 100.10% เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Complexometric titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Complexometric titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (100.20%): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (100.30%): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (101.00%): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (102.00%): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Complexometric titration,Product,ข้อ 35 (PLE_CC1_Practice_Exam.md),Mock,Mock สภาเภสัชฯ Practice
+36,Sodium metabisulfite + EDTA,,Biamperometric Titration,Nonaqueous Acid-Base Titration,Direct Acid-Base Titration,Back Acid-Base Titration,Redox Titration (Iodometry),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Biamperometric Titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Biamperometric Titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Biamperometric Titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Complexometric titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Complexometric titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Nonaqueous Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Direct Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Back Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Redox Titration (Iodometry)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Complexometric titration,Product,ข้อ 4 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU
+37,ข้อมูลวิธีวิเคราะห์: ใช้สาร percloric acid(HCLO4) เป็น tritrant และใช้ Potentiometry .... การวิเคราะห์ยา ketoconazole ใช้วิธีใด,,Back Acid-Base Titration,Redox Titration (Iodometry),Complexometric Titration (EDTA),Precipitation Titration (Mohr method),Volhard Titration method,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Back Acid-Base Titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Back Acid-Base Titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Back Acid-Base Titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Redox Titration (Iodometry)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Complexometric Titration (EDTA)): วัคซีนรวมคอตีบ-บาดทะยัก ฉีดกระตุ้นทุก 10 ปี หรือใช้ในหญิงตั้งครรภ์และผู้ใหญ่
+• ข้อ ง. (Precipitation Titration (Mohr method)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Volhard Titration method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 57 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU
+38,Complexometric Titrations ใช้ EDTA เป็น titrant,,Precipitation Titration (Mohr method),Volhard Titration method,Fajans Adsorption Indicator method,Potentiometric End-point Titration,Biamperometric Titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Precipitation Titration (Mohr method)
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Precipitation Titration (Mohr method) 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Precipitation Titration (Mohr method) เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Complexometric titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Complexometric titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Volhard Titration method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Fajans Adsorption Indicator method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Potentiometric End-point Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Biamperometric Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Complexometric titration,Product,ข้อ 1 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU
+39,"Redox titration ใช้พวก KMnO4, I2, FeSO4 เป็น titrant",,Potentiometric End-point Titration,Biamperometric Titration,Nonaqueous Acid-Base Titration,Direct Acid-Base Titration,Back Acid-Base Titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Potentiometric End-point Titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Potentiometric End-point Titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Potentiometric End-point Titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Redox titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Redox titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Biamperometric Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Nonaqueous Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Direct Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Back Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Redox titration,Product,ข้อ 2 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU
+40,Gravimetric titration,,Direct Acid-Base Titration,Back Acid-Base Titration,Redox Titration (Iodometry),Complexometric Titration (EDTA),Precipitation Titration (Mohr method),1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Direct Acid-Base Titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Direct Acid-Base Titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Direct Acid-Base Titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Back Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Redox Titration (Iodometry)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Complexometric Titration (EDTA)): วัคซีนรวมคอตีบ-บาดทะยัก ฉีดกระตุ้นทุก 10 ปี หรือใช้ในหญิงตั้งครรภ์และผู้ใหญ่
+• ข้อ จ. (Precipitation Titration (Mohr method)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 3 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU
+41,Non-Aqueous acid base titration ใช้กรด (perchloric acid) และเบสเป็น titrant (Sodium methoxide),,Complexometric Titration (EDTA),Precipitation Titration (Mohr method),Volhard Titration method,Fajans Adsorption Indicator method,Potentiometric End-point Titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Complexometric Titration (EDTA)
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Complexometric Titration (EDTA) 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Complexometric Titration (EDTA) เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Precipitation Titration (Mohr method)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Volhard Titration method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Fajans Adsorption Indicator method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Potentiometric End-point Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 4 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU
+42,"Precipitation titration ใช้หลัก Ag, Hg, Pb เจอหมู่ 7 ตกตะกอน",,Fajans Adsorption Indicator method,Potentiometric End-point Titration,Biamperometric Titration,Nonaqueous Acid-Base Titration,Direct Acid-Base Titration,1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. Fajans Adsorption Indicator method
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fajans Adsorption Indicator method 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Fajans Adsorption Indicator method เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Precipitation titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Precipitation titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Potentiometric End-point Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Biamperometric Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Nonaqueous Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Direct Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Precipitation titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Precipitation titration,Product,ข้อ 5 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU
+43,ข$อใดเปญนคำแนะนำที่เหมาะสมสำหรับการรับประทาน Calcium carbonate ในผ$ูป&วยรายนี้ (1) รับประทานกGอนอาหาร เพื่อเพิ่มการดูดซึมแคลเซียม (2) รับประทานพร$อมอาหารคำแรก เพื่อเพิ่มการจับระหวGางแคลเซียมและฟอสเฟต (3) รับประทานหลังอาหาร เพื่อปนองกันภาวะท$องผูก (4) รับประทานแคลเซียมพร$อมกับ FeSO4 (5) หลีกเลี่ยงการรับประทานแคลเซียมรGวมกับยา doxycycline Calcium carbonate ใช$เปญนตัวจับแรGธาตุฟอสเฟต ควรกินพร$อมอาหารคำแรกและเคี้ยวด$วยเพื่อให$ยามี action เร็ว การกินพร$อมอาหารคำแรกจะไปชGวยจับฟอสเฟตจากอาหารทำให$ลดการดูดชึมฟอสเฟตเข$าในรGางกาย เพื่อควบคุมระดับฟอสเฟตในเลือดไมGให$สูงจนเกินไป โดยระดับฟอสเฟตที่สูงมีผลกระทบตGอกระดูกทำให$กระดูกเปราะได$งGาย,,Nonaqueous Acid-Base Titration,Direct Acid-Base Titration,Back Acid-Base Titration,Redox Titration (Iodometry),Complexometric Titration (EDTA),3,"✅ คำตอบที่ถูกต้อง: ข้อ ค. Back Acid-Base Titration
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Back Acid-Base Titration 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Back Acid-Base Titration เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Acid-base titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Acid-base titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Nonaqueous Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Direct Acid-Base Titration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Redox Titration (Iodometry)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Acid-base titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Complexometric Titration (EDTA)): วัคซีนรวมคอตีบ-บาดทะยัก ฉีดกระตุ้นทุก 10 ปี หรือใช้ในหญิงตั้งครรภ์และผู้ใหญ่
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Acid-base titration,Product,ข้อ 69 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU
+44,การวิเคราะห_ FeSO4 ด$วยสารละลาย potassium permanganate (KMnO4) ใช$วิธีวิเคราะห_ใด (1) Acid-base titration (2) Non-aqueous acid-base titration (3) Oxidation-reaction titration (4) Complexometric titration (5) Precipitation titration,,Redox Titration (Iodometry),Complexometric Titration (EDTA),Precipitation Titration (Mohr method),Volhard Titration method,Fajans Adsorption Indicator method,4,"✅ คำตอบที่ถูกต้อง: ข้อ ง. Volhard Titration method
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Volhard Titration method 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก Volhard Titration method เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Redox titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Redox titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Redox Titration (Iodometry)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Complexometric Titration (EDTA)): วัคซีนรวมคอตีบ-บาดทะยัก ฉีดกระตุ้นทุก 10 ปี หรือใช้ในหญิงตั้งครรภ์และผู้ใหญ่
+• ข้อ ค. (Precipitation Titration (Mohr method)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Fajans Adsorption Indicator method): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Redox titration,Product,ข้อ 70 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU
+45,"ให้สูตรตำรับยาน้ำ paracetamol ประกอบด้วย paracetamol, propylene glycol, glycerin, sodium citrate, citric acid, EDTA จากตำรับ ตัวยา paracetamol ใช้ระบบใดในการละลาย",,co-solvent,pH,complex salt form,liposome,"micelle ตอบ a) co-solvent เนื่องจากในสูตรตำรับมี propylene glycol, glycerin ในตำรับซึ่งทำหน้าที่เป็น co- solvent ช่วยเพิ่มการละลาย paracetamol ซึ่งเป็นสารที่ละลายน้ำยาก โดยใส่มาเพื่อปรับค่า Dielectric constant ของตัวทำละลายร่วม (εmix) ให้มีค่าใกล้เคียงกับตัวยา เพื่อที่จะสามารถละลายยาได้เพิ่มขึ้น",1,"✅ คำตอบที่ถูกต้อง: ข้อ ก. co-solvent
+
+💡 Background:
+การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+co-solvent 💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+💡 คำอธิบายและเหตุผลทางเภสัชกรรม:
+การเลือก co-solvent เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Complexometric titration โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Complexometric titration)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (pH): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (complex salt form): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (liposome): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Complexometric titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (micelle ตอบ a) co-solvent เนื่องจากในสูตรตำรับมี propylene glycol, glycerin ในตำรับซึ่งทำหน้าที่เป็น co- solvent ช่วยเพิ่มการละลาย paracetamol ซึ่งเป็นสารที่ละลายน้ำยาก โดยใส่มาเพื่อปรับค่า Dielectric constant ของตัวทำละลายร่วม (εmix) ให้มีค่าใกล้เคียงกับตัวยา เพื่อที่จะสามารถละลายยาได้เพิ่มขึ้น): เป็น first-line analgesic บรรเทาอาการปวดเล็กน้อยถึงปานกลาง ไม่มี anti-inflammatory efficacy เด่นชัด ขนาดยาสูงสุดไม่เกิน 4,000 mg/day (หรือ 2,000-3,000 mg/day ในผู้สูงอายุ/โรคตับ)
+
+📖 Guideline อ้างอิง:
+The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII
+
+📌 จุดจำก่อนสอบ:
+• Excipient Function: แม่นยำในบทบาทหน้าที่ของ excipients (diluent, binder, disintegrant, lubricant)
+• Quality Specs: จำเกณฑ์ pharmacopoeia limits สำหรับ stability, dissolution และ uniformity
+• Defect Troubleshooting: วิเคราะห์สาเหตุและวิธีแก้ไขปัญหา formulation defects เชิงสูตรตำรับ",,Complexometric titration,Product,ข้อ 42 (PLE_CC1_Key_Rx20_UBU.md),Mock,Mock Rx20 UBU
