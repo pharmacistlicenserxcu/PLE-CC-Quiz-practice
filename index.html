@@ -6740,6 +6740,11 @@ function updateLeaderboardPrivacyUI() {
   const isPrivate = localStorage.getItem('ple_leaderboard_private') === '1';
   const chk = document.getElementById('chkLeaderboardPrivacy');
   if (chk) chk.checked = isPrivate;
+  const chkSide = document.getElementById('chkSidebarPrivacy');
+  if (chkSide) chkSide.checked = isPrivate;
+  const sideText = document.getElementById('sidebarPrivacyText');
+  if (sideText) sideText.textContent = isPrivate ? 'ซ่อน' : 'แสดง';
+
   const badge = document.getElementById('lbPrivacyStatusBadge');
   if (badge) {
     badge.textContent = isPrivate ? '🔒 เปิดโหมดซ่อนชื่อแล้ว' : '🌐 แสดงชื่อปกติ';

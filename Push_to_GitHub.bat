@@ -21,7 +21,7 @@ if not exist ".git" (
     echo [INFO] Initializing Git repository...
     git init
     git branch -M main
-    git remote add origin https://github.com/pharmacistlicenserxcu/PLE-CC-Quiz-practice.git
+    git remote add origin git@github.com:pharmacistlicenserxcu/PLE-CC-Quiz-practice.git
 )
 
 git status -s > tmp_status.txt 2>nul
