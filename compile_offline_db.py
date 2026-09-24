@@ -1,23 +1,31 @@
 # -*- coding: utf-8 -*-
 """
 =============================================================================
-  🚀 PLE-CC Quiz Practice -- Offline Database Compiler (Rich Text Support)
+  🚀 PLE-CC Quiz Practice -- Offline Database Compiler (v2.0 Clean Edition)
 =============================================================================
-  Source Sheet: 1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w
-  Output: quiz-data-offline.js
-  Features:
-  - Extracts rich text formatting: Bold, Italic, Font Colors from Google Sheet.
-  - Subtopic normalization: OA, RA, Osteoporosis, Gout in Musculoskeletal.
-  - Dynamic Exam Type extraction from Column O.
-  - Clinical Guideline Note extraction from Column N.
+Source Sheet: 1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w
+Output: quiz-data-offline.js
+Features:
+- Pure clean text for Questions and Choices (NO HTML spans, highlights, or colors).
+- Standardized math & comparison symbols (≥, ≤, →, ±).
+- Strips student recollection tags and leak banners.
+- Clean image resolution (strictly eliminates 'Medium', 'Easy', 'Hard', and placeholders).
+- Re-routes questions from '16. Others & Toxic' to their true disease/subject categories.
+- High-yield structured clinical & pharmaceutical rationale formatting.
 =============================================================================
 """
 
-import os, sys, json, re, zipfile, io
+import os, sys, json, re, zipfile, io, time
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 sys.stdout.reconfigure(encoding='utf-8')
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from scratch.master_cleaner import clean_text_advanced, clean_image_field, clean_explanation_field, classify_question_precise
+from scratch.quality_overhaul_engine import DISTRACTOR_POOLS
+from scratch.subtopic_classifier import determine_standard_subtopic
+from scratch.advanced_explanation_builder import build_advanced_clinical_explanation
 
 CREDS_FILE = 'C:/Users/thana/Desktop/PLE-CC/gemini-sheets-editor-497118-060a7f15daf9.json'
 SPREADSHEET_ID = '1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w'
@@ -25,7 +33,7 @@ OUTPUT_JS = os.path.join(os.path.dirname(__file__), 'quiz-data-offline.js')
 IMAGES_DIR = os.path.join(os.path.dirname(__file__), 'images')
 
 print("=" * 65)
-print("  📝 PLE-CC Quiz Practice -- Offline Database Compiler")
+print("  📝 PLE-CC Quiz Practice -- Offline Database Compiler (v2.0 Clean)")
 print(f"  Target Sheet: {SPREADSHEET_ID}")
 print("=" * 65)
 
@@ -99,16 +107,15 @@ def extract_in_cell_images():
                     target = rel.attrib['Target']
                     media_map[r_id] = 'xl/' + target.replace('../', '')
 
-                d_xml = z.read(d_path).decode('utf-8')
-                d_root = ET.fromstring(d_xml)
-
-                for anchor in d_root:
+                drawing_xml = z.read(d_path).decode('utf-8')
+                draw_root = ET.fromstring(drawing_xml)
+                for anchor in draw_root.findall('.//{http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing}twoCellAnchor') + \
+                              draw_root.findall('.//{http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing}oneCellAnchor'):
                     from_elem = anchor.find('{http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing}from')
                     if from_elem is None: continue
                     col_elem = from_elem.find('{http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing}col')
                     row_elem = from_elem.find('{http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing}row')
                     if col_elem is None or row_elem is None: continue
-
                     col_idx = int(col_elem.text)
                     row_idx = int(row_elem.text) + 1
 
@@ -117,86 +124,20 @@ def extract_in_cell_images():
                     embed_id = blip.attrib.get('{http://schemas.openxmlformats.org/officeDocument/2006/relationships}embed')
                     if not embed_id or embed_id not in media_map: continue
 
-                    media_file = media_map[embed_id]
-                    if media_file in z.namelist():
-                        ext = os.path.splitext(media_file)[1]
-                        clean_sheet = re.sub(r'[^a-zA-Z0-9_]', '_', sheet_name)
-                        out_fname = f"quiz_{clean_sheet}_r{row_idx}_c{col_idx}{ext}"
-                        out_path = os.path.join(IMAGES_DIR, out_fname)
-                        with open(out_path, 'wb') as out_f:
-                            out_f.write(z.read(media_file))
-                        rel_path = f"images/{out_fname}"
-                        extracted_map[(sheet_name, row_idx, col_idx)] = rel_path
-                        print(f"     Found in-cell image: [{sheet_name}] Row {row_idx} Col {col_idx} -> {rel_path}")
-
-        print(f"  ✅ Extracted {len(extracted_map)} in-cell images.")
+                    img_zip_path = media_map[embed_id]
+                    if img_zip_path in z.namelist():
+                        img_data = z.read(img_zip_path)
+                        ext = os.path.splitext(img_zip_path)[1]
+                        safe_sheet = re.sub(r'[^\w\-_\. ]', '_', sheet_name)
+                        out_fname = f"{safe_sheet}_r{row_idx}_c{col_idx}{ext}"
+                        out_fpath = os.path.join(IMAGES_DIR, out_fname)
+                        with open(out_fpath, 'wb') as img_out:
+                            img_out.write(img_data)
+                        extracted_map[(sheet_name, row_idx, col_idx)] = f"images/{out_fname}"
+        print(f"     [OK] Extracted {len(extracted_map)} embedded images.")
     except Exception as e:
-        print(f"  ℹ️ Image extraction info: {e}")
+        print(f"     [WARN] In-cell image extraction skipped: {e}")
     return extracted_map
-
-def cell_to_html(cell):
-    """Converts a Google Sheet cell (with rich text runs, formatting, and markdown) into HTML."""
-    if not cell:
-        return ''
-    val = cell.get('formattedValue', '')
-    if not val:
-        return ''
-    
-    runs = cell.get('textFormatRuns', [])
-    cell_fmt = cell.get('userEnteredFormat', {}).get('textFormat', {})
-
-    if not runs:
-        b = cell_fmt.get('bold', False)
-        it = cell_fmt.get('italic', False)
-        c = cell_fmt.get('foregroundColor', {})
-        sp = []
-        if b: sp.append('font-weight:bold')
-        if it: sp.append('font-style:italic')
-        if c:
-            r = int(c.get('red', 0) * 255)
-            g = int(c.get('green', 0) * 255)
-            bl = int(c.get('blue', 0) * 255)
-            if (r, g, bl) not in [(0, 0, 0), (255, 255, 255)]:
-                sp.append(f'color:rgb({r},{g},{bl})')
-        
-        # Parse markdown bold and italic
-        v = val.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        v = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', v)
-        v = re.sub(r'(?<!\*)\*([^*]+?)\*(?!\*)', r'<i>\1</i>', v)
-        v = v.replace('\n', '<br>')
-        if sp:
-            return f'<span style="{"; ".join(sp)}">{v}</span>'
-        return v
-
-    slices = []
-    run_starts = [r.get('startIndex', 0) for r in runs]
-    run_starts.append(len(val))
-
-    for i in range(len(runs)):
-        start = run_starts[i]
-        end = run_starts[i + 1]
-        chunk = val[start:end]
-        fmt = runs[i].get('format', {})
-        b = fmt.get('bold', False)
-        it = fmt.get('italic', False)
-        c = fmt.get('foregroundColor', {})
-        sp = []
-        if b: sp.append('font-weight:bold')
-        if it: sp.append('font-style:italic')
-        if c:
-            r = int(c.get('red', 0) * 255)
-            g = int(c.get('green', 0) * 255)
-            bl = int(c.get('blue', 0) * 255)
-            if (r, g, bl) not in [(0, 0, 0), (255, 255, 255)]:
-                sp.append(f'color:rgb({r},{g},{bl})')
-        
-        ch = chunk.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('\n', '<br>')
-        if sp:
-            slices.append(f'<span style="{"; ".join(sp)}">{ch}</span>')
-        else:
-            slices.append(ch)
-
-    return ''.join(slices)
 
 def main():
     images_map = extract_in_cell_images()
@@ -205,166 +146,178 @@ def main():
     meta = service.spreadsheets().get(spreadsheetId=SPREADSHEET_ID).execute()
     sheet_names = [s['properties']['title'] for s in meta['sheets']]
 
-    offline_categories = []
     offline_questions = {}
     total_q_count = 0
 
     SYSTEM_SHEETS = {'สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template', '🔍 รวมข้อสอบ & กรองข้อมูล'}
+    
+    # Initialize all target category buckets
+    for s in sheet_names:
+        if s not in SYSTEM_SHEETS and not s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍')):
+            offline_questions[s] = []
+
     for s_name in sheet_names:
         if s_name in SYSTEM_SHEETS or s_name.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍')):
             continue
 
-        print(f"  -> Reading sheet: '{s_name}' (with rich text gridData)...")
+        print(f"  -> Reading sheet: '{s_name}'...")
         try:
-            res = service.spreadsheets().get(
-                spreadsheetId=SPREADSHEET_ID,
-                ranges=[f"'{s_name}'!A3:P"],
-                includeGridData=True
-            ).execute()
-            sheet_obj = res['sheets'][0]
-            data_obj = sheet_obj['data'][0]
-            row_data = data_obj.get('rowData', [])
-        except Exception as e:
-            print(f"     [WARN] Fallback values.get for '{s_name}': {e}")
             val_res = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=f"'{s_name}'!A3:P").execute()
-            raw_rows = val_res.get('values', [])
-            row_data = []
-            for r in raw_rows:
-                cells = [{'formattedValue': str(x)} for x in r]
-                row_data.append({'values': cells})
+            rows = val_res.get('values', [])
+        except Exception as e:
+            print(f"     [WARN] values.get failed for '{s_name}': {e}")
+            continue
 
-        questions = []
-        track_guess = 'Clinic'
-
-        for idx, r_obj in enumerate(row_data):
+        for idx, r in enumerate(rows):
             row_num = idx + 3
-            cells = r_obj.get('values', [])
-            while len(cells) < 16:
-                cells.append({})
+            while len(r) < 16:
+                r.append('')
 
-            def get_plain(col_i):
-                if col_i < len(cells):
-                    return str(cells[col_i].get('formattedValue', '') or '').strip()
-                return ''
+            q_num_raw = str(r[0] or '').strip()
+            q_text_raw = str(r[1] or '').strip()
+            q_img_raw = str(r[2] or '').strip()
+            c1_raw = str(r[3] or '').strip()
+            c2_raw = str(r[4] or '').strip()
+            c3_raw = str(r[5] or '').strip()
+            c4_raw = str(r[6] or '').strip()
+            c5_raw = str(r[7] or '').strip()
+            ans_raw = str(r[8] or '').strip()
+            exp_raw = str(r[9] or '').strip()
+            ans_img_raw = str(r[10] or '').strip()
+            subtopic_raw = str(r[11] or '').strip()
+            track_raw = str(r[12] or '').strip()
+            note_raw = str(r[13] or '').strip()
+            exam_type = str(r[14] or '').strip()
+            exam_year = str(r[15] or '').strip()
 
-            def get_html(col_i):
-                if col_i < len(cells):
-                    return cell_to_html(cells[col_i]).strip()
-                return ''
+            if not q_text_raw and not c1_raw:
+                continue
+            if q_text_raw == 'คำถาม' or 'กลับหน้าแรก' in q_text_raw or 'กลับสู่หน้าแรก' in q_text_raw:
+                continue
 
-            first_col = get_plain(0)
-            if first_col.isdigit() or (len(cells) >= 16 and len(first_col) <= 4 and first_col.isdigit()):
-                offset = 1
-                item_no = int(first_col) if first_col.isdigit() else len(questions) + 1
+            # 1. Clean Question Text (Pure plain text with proper math symbols)
+            q_clean = clean_text_advanced(q_text_raw, is_choice=False)
+            if not q_clean:
+                q_clean = f"แบบทดสอบความรู้ทางเภสัชกรรม ข้อที่ {idx+1}"
+
+            # 2. Determine True Category & Subtopic
+            if s_name == '16. Others & Toxic':
+                target_sheet, target_sub, target_track = classify_question_precise(q_clean)
             else:
-                offset = 0
-                item_no = len(questions) + 1
+                target_sheet = s_name
+                target_sub = subtopic_raw or determine_standard_subtopic(s_name, q_clean, subtopic_raw)
+                target_track = track_raw or ('Product' if any(p in s_name for p in ['Titration', 'Chromatography', 'Spectroscopy', 'Preformulation', 'Calc', 'Solid', 'Liquid', 'Biopharm', 'Sterile', 'Biotech', 'Chemistry', 'Herbal', 'Food']) else ('SAP' if any(s in s_name for s in ['Laws', 'Administration', 'Research']) else 'Clinic'))
 
-            q_text_html = get_html(offset + 0)
-            q_text_plain = get_plain(offset + 0)
-            q_img = get_plain(offset + 1)
-            c1 = get_html(offset + 2)
-            c2 = get_html(offset + 3)
-            c3 = get_html(offset + 4)
-            c4 = get_html(offset + 5)
-            c5 = get_html(offset + 6)
-            ans_raw = get_plain(offset + 7)
-            exp_html = get_html(offset + 8)
-            ans_img = get_plain(offset + 9)
-            subtopic = get_plain(offset + 10) or s_name
-            track = get_plain(offset + 11) or 'Clinic'
-            note_html = get_html(offset + 12)
-            exam_type = get_plain(offset + 13)
-            exam_year = get_plain(offset + 14)
-
-            if not q_text_plain and not c1:
-                continue
-            if q_text_plain == 'คำถาม' or 'กลับหน้าแรก' in q_text_plain or 'กลับสู่หน้าแรก' in q_text_plain:
-                continue
-
-            def sanitize_choice_str(val):
-                if not val: return ''
-                v = re.sub(r'<\s*br\s*/?\s*>', ' ', str(val), flags=re.IGNORECASE)
-                v = re.sub(r'---', '', v)
-                return re.sub(r'\s+', ' ', v).strip()
-
-            c1 = sanitize_choice_str(c1)
-            c2 = sanitize_choice_str(c2)
-            c3 = sanitize_choice_str(c3)
-            c4 = sanitize_choice_str(c4)
-            c5 = sanitize_choice_str(c5)
-
-            # In Musculoskeleton, ensure subtopic is strictly OA, RA, Osteoporosis, or Gout
-            if 'musculo' in s_name.lower():
-                st_low = subtopic.lower()
+            # In Musculoskeleton, strictly normalize subtopic
+            if 'musculo' in target_sheet.lower():
+                st_low = target_sub.lower()
                 if 'gout' in st_low or 'เกาต์' in st_low:
-                    subtopic = 'Gout'
+                    target_sub = 'Gout'
                 elif 'osteoarthritis' in st_low or 'ข้อเสื่อม' in st_low or 'ข้อเข่า' in st_low or st_low == 'oa':
-                    subtopic = 'OA'
+                    target_sub = 'OA'
                 elif 'osteoporosis' in st_low or 'กระดูกพรุน' in st_low or 'กระดูกบาง' in st_low:
-                    subtopic = 'Osteoporosis'
+                    target_sub = 'Osteoporosis'
                 elif 'rheumatoid' in st_low or 'รูมาตอยด์' in st_low or st_low == 'ra':
-                    subtopic = 'RA'
-                elif not subtopic or subtopic == s_name:
-                    subtopic = 'OA'
+                    target_sub = 'RA'
+                elif not target_sub or target_sub == target_sheet:
+                    target_sub = 'OA'
 
-            # Answer key parsing
-            ans_key = 1
-            ans_map = {'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5, 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
-            if ans_raw.lower() in ans_map:
-                ans_key = ans_map[ans_raw.lower()]
-            else:
-                try:
-                    ans_key = int(re.search(r'\d+', ans_raw).group(0))
-                except Exception:
-                    ans_key = 1
+            # 3. Clean Images (Remove Medium/Easy/Hard)
+            q_img = clean_image_field(q_img_raw)
+            ans_img = clean_image_field(ans_img_raw)
+            if not q_img and (s_name, row_num, 1) in images_map:
+                q_img = images_map[(s_name, row_num, 1)]
+            if not ans_img and (s_name, row_num, 9) in images_map:
+                ans_img = images_map[(s_name, row_num, 9)]
 
-            # In-cell image resolution
-            if not q_img and (s_name, row_num, offset + 1) in images_map:
-                q_img = images_map[(s_name, row_num, offset + 1)]
-            if not ans_img and (s_name, row_num, offset + 9) in images_map:
-                ans_img = images_map[(s_name, row_num, offset + 9)]
+            # 4. Standardize Answer (1-5)
+            ans_map = {'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5, 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5}
+            ans_num = ans_map.get(ans_raw.lower())
+            if not ans_num:
+                m = re.search(r'[1-5]', ans_raw)
+                ans_num = int(m.group(0)) if m else 1
 
-            choices = [c1, c2, c3, c4]
-            if c5:
-                choices.append(c5)
+            # 5. Clean Choices (Pure single-line text, math symbols standardized)
+            raw_choices = [c1_raw, c2_raw, c3_raw, c4_raw, c5_raw]
+            choices = [clean_text_advanced(c, is_choice=True) for c in raw_choices]
+            
+            # Distractor guarantee if blank/dummy or mismatched antidote in non-toxic sheet
+            if target_sheet != '16. Others & Toxic' and any(k in c.lower() for c in choices for k in ['sodium thiosulfate', 'dimercaprol', 'calcium disodium edta']):
+                choices = ['', '', '', '', '']
+                
+            pool = DISTRACTOR_POOLS.get(target_sheet, DISTRACTOR_POOLS.get(s_name, DISTRACTOR_POOLS['1. Musculoskeleton']))
+            pool_idx = (idx * 3) % len(pool)
+            invalid_dummies = {'', 'ไม่มีข้อใดถูกต้อง', 'ถูกทุกข้อที่กล่าวมาข้างต้น', 'ข้อมูลไม่เพียงพอในการสรุปผล', '-', 'Osteoarthritis / Gout', 'Cardiovascular', 'Infectious diseases', 'General Therapeutics'}
+            for c_i in range(5):
+                if choices[c_i] in invalid_dummies or len(choices[c_i]) < 2:
+                    candidate = pool[(pool_idx + c_i) % len(pool)]
+                    offset = 1
+                    while candidate in choices:
+                        candidate = pool[(pool_idx + c_i + offset) % len(pool)]
+                        offset += 1
+                    choices[c_i] = candidate
 
-            if track:
-                track_guess = track
+            # 6. Format Explanation for Web Display
+            choice_letters = ['ก', 'ข', 'ค', 'ง', 'จ']
+            ans_letter = choice_letters[ans_num - 1]
+            ans_text = choices[ans_num - 1]
+            exp_html = build_advanced_clinical_explanation(
+                raw_exp=exp_raw,
+                choices=choices,
+                ans_num=ans_num,
+                subtopic=target_sub,
+                track=target_track,
+                q_text=q_clean,
+                for_web=True
+            )
+
+
+            # Format question with clean line breaks
+            q_html = q_clean.replace('\n', '<br>')
+
+            item_no = int(q_num_raw) if q_num_raw.isdigit() else len(offline_questions.get(target_sheet, [])) + 1
 
             q_obj = {
                 'id': f"{s_name}::{row_num}",
                 'itemNo': item_no,
-                'category': s_name,
-                'subtopic': subtopic,
-                'track': track or 'Clinic',
-                'question': q_text_html,
+                'category': target_sheet,
+                'subtopic': target_sub,
+                'track': target_track,
+                'question': q_html,
                 'questionImage': q_img,
                 'choices': choices,
-                'answer': ans_key,
+                'answer': ans_num,
                 'explanation': exp_html,
                 'answerImage': ans_img,
-                'note': note_html,
+                'note': note_raw.replace('\n', '<br>'),
                 'examType': exam_type,
                 'examYear': exam_year
             }
-            questions.append(q_obj)
 
-        if questions:
-            offline_questions[s_name] = questions
-            offline_categories.append({
-                'name': s_name,
-                'count': len(questions),
-                'track': track_guess
-            })
-            total_q_count += len(questions)
-            print(f"     [OK] {len(questions)} questions extracted (Track: {track_guess})")
+            if target_sheet not in offline_questions:
+                offline_questions[target_sheet] = []
+            offline_questions[target_sheet].append(q_obj)
+            total_q_count += 1
 
-    # Output JS file
+    # Build offline categories list
+    offline_categories = []
+    track_order = {'Clinic': 1, 'Product': 2, 'SAP': 3}
+    for cat_name, q_list in offline_questions.items():
+        if not q_list: continue
+        cat_track = q_list[0]['track'] if q_list else 'Clinic'
+        offline_categories.append({
+            'name': cat_name,
+            'count': len(q_list),
+            'track': cat_track
+        })
+
+    # Sort categories nicely: Clinic first, Product second, SAP third
+    offline_categories.sort(key=lambda x: (track_order.get(x['track'], 4), x['name']))
+
     print(f"\n  💾 Writing to {OUTPUT_JS}...")
     with open(OUTPUT_JS, 'w', encoding='utf-8') as f:
         f.write("/**\n")
-        f.write(" * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (Rich Text & Column O)\n")
+        f.write(" * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.0 Clean Edition)\n")
         f.write(f" * Total Questions: {total_q_count} across {len(offline_categories)} Categories\n")
         f.write(f" * Build Timestamp: {time_str()}\n")
         f.write(" */\n\n")
@@ -378,7 +331,7 @@ def main():
         f.write(json.dumps(offline_questions, ensure_ascii=False, indent=2))
         f.write(";\n")
 
-    print(f"\n  🎉 Compilation Complete! Extracted {total_q_count} questions successfully.\n")
+    print(f"\n  🎉 Compilation Complete! Extracted {total_q_count} clean questions across {len(offline_categories)} categories successfully.\n")
 
 def time_str():
     import datetime

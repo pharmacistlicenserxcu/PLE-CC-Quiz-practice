@@ -2091,9 +2091,9 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               <span>ทำข้อสอบทั้งหมด</span>
             </button>
-            <button class="tools-btn-main accent" onclick="openQuizSetupModal('__all__', currentTrack, true)" title="จำลองสถานการณ์สอบจริง สุ่มข้อสอบและสลับตัวเลือก">
+            <button class="tools-btn-main accent" onclick="openRandomModal()" title="จำลองสอบจริง PLE-CC1 (120 ข้อ / 180 นาที สัดส่วน 50:40:10)">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
-              <span>🎲 สุ่มข้อสอบ</span>
+              <span>⏱️ จำลองสอบจริง (120 ข้อ)</span>
             </button>
           </div>
 
@@ -2572,47 +2572,109 @@
     </div>
   </div>
 
-  <!-- Random Modal -->
+  <!-- PLE-CC1 Simulated Exam Modal (Mock 120 / Custom) -->
   <div class="modal-overlay" id="randomModal">
-    <div class="modal-box">
+    <div class="modal-box" style="max-width:540px;">
       <div class="modal-head">
-        <h3>🎲 สุ่มทำข้อสอบปรนัย (Mock Exam)</h3>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:22px;">⏱️</span>
+          <div>
+            <h3 style="margin:0;">จำลองสอบจริง PLE-CC1 (Simulated Exam)</h3>
+            <div style="font-size:11.5px; color:var(--ink-soft); font-weight:500;">จำลองสอบ 120 ข้อ (Clinic 50%, Product 40%, SAP 10%) พร้อมจับเวลา 180 นาที</div>
+          </div>
+        </div>
         <button class="modal-close" onclick="closeRandomModal()">✕</button>
       </div>
-      <p style="font-size:12px; color:var(--ink-soft); margin-bottom:12px;">
-        เลือกจำนวนข้อที่ต้องการสุ่ม ระบบจะสุ่มข้อสอบจากคลังที่เลือกเพื่อทดสอบความพร้อมเสมือนสอบจริง
-      </p>
 
-      <div class="form-group">
-        <label>สายวิชาที่ต้องการสุ่ม</label>
-        <select class="form-input" id="randomTrackSelect">
-          <option value="all">🌟 รวมทุกสายวิชา (Clinic + Product + SAP)</option>
-          <option value="clinic" selected>🩺 เฉพาะ Clinic</option>
-          <option value="product">🧪 เฉพาะ Product</option>
-          <option value="sap">💼 เฉพาะ SAP</option>
-        </select>
+      <!-- Presets bar -->
+      <div style="display:flex; gap:6px; margin-bottom:14px; background:var(--bg); padding:4px; border-radius:10px; border:1px solid var(--border);">
+        <button type="button" class="setup-chip-btn active" id="simPreset120" onclick="applySimPreset(120, 50, 40, 10, 180)" style="flex:1; padding:6px 4px; font-size:11.5px;">🎯 มาตรฐาน 120 ข้อ (สอบจริง)</button>
+        <button type="button" class="setup-chip-btn" id="simPreset60" onclick="applySimPreset(60, 50, 40, 10, 90)" style="flex:1; padding:6px 4px; font-size:11.5px;">⚡ ชุดย่อ 60 ข้อ</button>
+        <button type="button" class="setup-chip-btn" id="simPreset30" onclick="applySimPreset(30, 50, 40, 10, 45)" style="flex:1; padding:6px 4px; font-size:11.5px;">🚀 เร่งรัด 30 ข้อ</button>
       </div>
 
-      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:12px;">
-        <span style="font-size:13px; font-weight:700;">จำนวนข้อที่ต้องการ:</span>
-        <div style="display:flex; align-items:center; gap:5px;">
-          <input type="number" id="randomCountInput" value="20" min="1" max="240" style="width:75px; padding:6px; border:1px solid var(--border); border-radius:7px; text-align:center; font-weight:700; font-family:'IBM Plex Mono'; font-size:14px;">
-          <span style="font-size:12px; color:var(--ink-soft); font-weight:600;">ข้อ</span>
+      <!-- Total Questions & Exam Type Row -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px;">
+        <div class="form-group" style="margin-bottom:0;">
+          <label>จำนวนข้อทั้งหมด</label>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <input type="number" id="simTotalCount" value="120" min="10" max="240" oninput="recalcSimProportions()" style="width:100%; padding:8px 10px; border:1px solid var(--border); border-radius:8px; font-weight:700; font-family:'IBM Plex Mono'; font-size:14px; text-align:center;">
+            <span style="font-size:12px; color:var(--ink-soft); font-weight:600;">ข้อ</span>
+          </div>
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label>แหล่งข้อสอบที่ใช้สุ่ม</label>
+          <select class="form-input" id="simExamTypeSelect">
+            <option value="all">🌟 ข้อสอบทั้งหมดในระบบ</option>
+            <option value="ข้อสอบจริง">🏛️ เฉพาะข้อสอบจริงย้อนหลัง</option>
+            <option value="Mock">📚 เฉพาะแบบทดสอบจำลอง (Mock)</option>
+          </select>
         </div>
       </div>
 
-      <div style="display:flex; gap:6px; margin-bottom:16px;">
-        <button onclick="document.getElementById('randomCountInput').value=10" class="lobby-tool-btn" style="flex:1; padding:6px;">10</button>
-        <button onclick="document.getElementById('randomCountInput').value=20" class="lobby-tool-btn" style="flex:1; padding:6px;">20</button>
-        <button onclick="document.getElementById('randomCountInput').value=30" class="lobby-tool-btn" style="flex:1; padding:6px;">30</button>
-        <button onclick="document.getElementById('randomCountInput').value=50" class="lobby-tool-btn" style="flex:1; padding:6px;">50</button>
-        <button onclick="document.getElementById('randomCountInput').value=120" class="lobby-tool-btn" style="flex:1; padding:6px;">120 (ชุดใหญ่)</button>
+      <!-- Proportions Sliders Box -->
+      <div style="background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:12px; margin-bottom:14px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+          <span style="font-size:12px; font-weight:700; color:var(--ink);">สัดส่วนสายวิชา (Proportions & Subtopics):</span>
+          <span id="simTotalPctBadge" style="font-size:11px; font-weight:700; color:var(--clinic); background:var(--card); padding:2px 8px; border-radius:6px; border:1px solid var(--border);">รวม: 100% (120 ข้อ)</span>
+        </div>
+
+        <!-- Clinic Slider -->
+        <div style="margin-bottom:8px;">
+          <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
+            <span style="color:#0284C7; font-weight:700;">🩺 Clinic (บริบาลเภสัชกรรม):</span>
+            <span id="simClinicLabel" style="font-weight:700; font-family:'IBM Plex Mono';">50% (60 ข้อ)</span>
+          </div>
+          <input type="range" id="simClinicRange" min="0" max="100" value="50" oninput="onSimSliderChange('clinic')" style="width:100%; accent-color:#0284C7;">
+        </div>
+
+        <!-- Product Slider -->
+        <div style="margin-bottom:8px;">
+          <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
+            <span style="color:#D97706; font-weight:700;">🧪 Product (วิทยาศาสตร์เภสัชกรรม):</span>
+            <span id="simProductLabel" style="font-weight:700; font-family:'IBM Plex Mono';">40% (48 ข้อ)</span>
+          </div>
+          <input type="range" id="simProductRange" min="0" max="100" value="40" oninput="onSimSliderChange('product')" style="width:100%; accent-color:#D97706;">
+        </div>
+
+        <!-- SAP Slider -->
+        <div>
+          <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
+            <span style="color:#059669; font-weight:700;">💼 SAP (สังคมและการบริหาร/กฎหมาย):</span>
+            <span id="simSapLabel" style="font-weight:700; font-family:'IBM Plex Mono';">10% (12 ข้อ)</span>
+          </div>
+          <input type="range" id="simSapRange" min="0" max="100" value="10" oninput="onSimSliderChange('sap')" style="width:100%; accent-color:#059669;">
+        </div>
       </div>
 
-      <button class="submit-btn" onclick="startRandomQuiz()">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        เริ่มสุ่มข้อสอบทันที
-      </button>
+      <!-- Mode & Timer Row -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px;">
+        <div class="form-group" style="margin-bottom:0;">
+          <label>รูปแบบการทำ</label>
+          <select class="form-input" id="simModeSelect">
+            <option value="exam">⏱️ โหมดสอบจริง (ส่งรวมท้ายชุด)</option>
+            <option value="practice">📖 โหมดฝึกฝน (ตรวจทีละข้อ)</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label>เวลาในการทำ</label>
+          <select class="form-input" id="simTimerSelect">
+            <option value="auto">⏱️ คำนวณอัตโนมัติ (1.5 นาที/ข้อ)</option>
+            <option value="180">⏱️ 180 นาที (3 ชั่วโมงเต็ม)</option>
+            <option value="90">⏱️ 90 นาที (1.5 ชั่วโมง)</option>
+            <option value="45">⏱️ 45 นาที</option>
+            <option value="0">♾️ ไม่จำกัดเวลา</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px;">
+        <button class="lobby-tool-btn" onclick="closeRandomModal()" style="flex:1;">ยกเลิก</button>
+        <button class="submit-btn" onclick="executeSimulatedExam()" style="flex:2;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          เริ่มจำลองสอบทันที
+        </button>
+      </div>
     </div>
   </div>
 
@@ -2916,7 +2978,7 @@
 <div id="printContainer"></div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
-<script src="quiz-data-offline.js?v=20260924_v1"></script>
+<script src="quiz-data-offline.js?v=20260924_v8"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
 const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
@@ -3304,9 +3366,17 @@ function formatPlainTextToHtml(text) {
     escaped = escaped.replace(/(?<!\*)\*([^*]+?)\*(?!\*)/g, '<i>$1</i>');
     escaped = escaped.replace(/\n/g, '<br>');
   } else {
-    // Already contains Google Sheet rich text runs (spans with colors/bolds/italics)
+    // Strip background highlights, mark tags, and raw color styling spans
+    escaped = escaped.replace(/<mark[^>]*>(.*?)<\/mark>/gi, '$1');
+    escaped = escaped.replace(/<span\s+style="[^"]*(?:background|color:[^;"]*rgb)[^"]*"[^>]*>(.*?)<\/span>/gi, '$1');
     escaped = escaped.replace(/\r\n|\r|\n/g, '<br>');
   }
+
+  // Math & comparison symbol normalization
+  escaped = escaped.replace(/&gt;=/g, '≥').replace(/>=/g, '≥').replace(/&ge;/g, '≥');
+  escaped = escaped.replace(/&lt;=/g, '≤').replace(/<=/g, '≤').replace(/&le;/g, '≤');
+  escaped = escaped.replace(/\+\/-/g, '±').replace(/&plusmn;/g, '±');
+  escaped = escaped.replace(/-&gt;/g, '→').replace(/->/g, '→');
 
   // 1. Badges & Callout Formatting
   if (escaped.indexOf('▶ [ข้อสอบจริง') !== -1 || escaped.indexOf('▶ [Real Exam') !== -1) {
@@ -4288,6 +4358,227 @@ function startConfiguredQuiz() {
   document.getElementById('quizSubtopicRow').style.display = 'none';
 
   startQuizWithQuestions(finalQuestions, title);
+  if (totalSeconds > 0) {
+    startQuizCountdownTimer(totalSeconds);
+  } else {
+    stopQuizCountdownTimer();
+  }
+}
+
+// ─── PLE-CC1 EXAM SIMULATION ENGINE (120 QUESTIONS / STRATIFIED) ───
+let simClinicPct = 50;
+let simProductPct = 40;
+let simSapPct = 10;
+
+function openRandomModal() {
+  const m = document.getElementById('randomModal');
+  if (m) {
+    m.classList.add('show');
+    recalcSimProportions();
+  }
+}
+
+function closeRandomModal() {
+  const m = document.getElementById('randomModal');
+  if (m) m.classList.remove('show');
+}
+
+function applySimPreset(total, cPct, pPct, sPct, mins) {
+  document.getElementById('simTotalCount').value = total;
+  simClinicPct = cPct;
+  simProductPct = pPct;
+  simSapPct = sPct;
+
+  const rC = document.getElementById('simClinicRange');
+  const rP = document.getElementById('simProductRange');
+  const rS = document.getElementById('simSapRange');
+  if (rC) rC.value = cPct;
+  if (rP) rP.value = pPct;
+  if (rS) rS.value = sPct;
+
+  const tSel = document.getElementById('simTimerSelect');
+  if (tSel) {
+    if (mins === 180) tSel.value = '180';
+    else if (mins === 90) tSel.value = '90';
+    else if (mins === 45) tSel.value = '45';
+    else tSel.value = 'auto';
+  }
+
+  const p120 = document.getElementById('simPreset120');
+  const p60 = document.getElementById('simPreset60');
+  const p30 = document.getElementById('simPreset30');
+  if (p120) p120.classList.toggle('active', total === 120);
+  if (p60) p60.classList.toggle('active', total === 60);
+  if (p30) p30.classList.toggle('active', total === 30);
+
+  recalcSimProportions();
+}
+
+function onSimSliderChange(changedTrack) {
+  let c = parseInt(document.getElementById('simClinicRange').value, 10) || 0;
+  let p = parseInt(document.getElementById('simProductRange').value, 10) || 0;
+  let s = parseInt(document.getElementById('simSapRange').value, 10) || 0;
+
+  // Auto-adjust remaining sliders so total stays 100%
+  if (changedTrack === 'clinic') {
+    const remain = 100 - c;
+    if (remain <= 0) {
+      p = 0; s = 0;
+    } else {
+      const prevOthers = (p + s) || 1;
+      p = Math.round((p / prevOthers) * remain);
+      s = 100 - c - p;
+    }
+  } else if (changedTrack === 'product') {
+    const remain = 100 - p;
+    if (remain <= 0) {
+      c = 0; s = 0;
+    } else {
+      const prevOthers = (c + s) || 1;
+      c = Math.round((c / prevOthers) * remain);
+      s = 100 - p - c;
+    }
+  } else if (changedTrack === 'sap') {
+    const remain = 100 - s;
+    if (remain <= 0) {
+      c = 0; p = 0;
+    } else {
+      const prevOthers = (c + p) || 1;
+      c = Math.round((c / prevOthers) * remain);
+      p = 100 - s - c;
+    }
+  }
+
+  simClinicPct = Math.max(0, Math.min(100, c));
+  simProductPct = Math.max(0, Math.min(100, p));
+  simSapPct = Math.max(0, Math.min(100, s));
+
+  document.getElementById('simClinicRange').value = simClinicPct;
+  document.getElementById('simProductRange').value = simProductPct;
+  document.getElementById('simSapRange').value = simSapPct;
+
+  const p120 = document.getElementById('simPreset120');
+  const p60 = document.getElementById('simPreset60');
+  const p30 = document.getElementById('simPreset30');
+  if (p120) p120.classList.remove('active');
+  if (p60) p60.classList.remove('active');
+  if (p30) p30.classList.remove('active');
+
+  recalcSimProportions();
+}
+
+function recalcSimProportions() {
+  const total = parseInt(document.getElementById('simTotalCount').value, 10) || 120;
+  const cCount = Math.round((simClinicPct / 100) * total);
+  const pCount = Math.round((simProductPct / 100) * total);
+  const sCount = Math.max(0, total - cCount - pCount);
+
+  const lC = document.getElementById('simClinicLabel');
+  const lP = document.getElementById('simProductLabel');
+  const lS = document.getElementById('simSapLabel');
+  const badge = document.getElementById('simTotalPctBadge');
+
+  if (lC) lC.textContent = `${simClinicPct}% (${cCount} ข้อ)`;
+  if (lP) lP.textContent = `${simProductPct}% (${pCount} ข้อ)`;
+  if (lS) lS.textContent = `${simSapPct}% (${sCount} ข้อ)`;
+  if (badge) badge.textContent = `รวม: ${simClinicPct + simProductPct + simSapPct}% (${total} ข้อ)`;
+}
+
+function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter) {
+  if (targetCount <= 0) return [];
+  const trackCats = categories.filter(c => !isSystemCategory(c.name) && getCategoryTrack(c) === targetTrack);
+  if (!trackCats.length) return [];
+
+  // Group questions by subtopic within each category of this track
+  const subtopicMap = {};
+  trackCats.forEach(c => {
+    let qs = (allQuestionsMap[c.name] || []).slice();
+    qs = filterQuestionsByExamType(qs, examTypeFilter);
+    qs.forEach(q => {
+      const sub = (q.subtopic || c.name).trim();
+      if (!subtopicMap[sub]) subtopicMap[sub] = [];
+      subtopicMap[sub].push(q);
+    });
+  });
+
+  const subtopics = Object.keys(subtopicMap);
+  if (!subtopics.length) return [];
+
+  // Shuffle questions inside each subtopic
+  subtopics.forEach(sub => {
+    const list = subtopicMap[sub];
+    for (let i = list.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [list[i], list[j]] = [list[j], list[i]];
+    }
+  });
+
+  const selected = [];
+  const leftovers = [];
+  const perSubBase = Math.floor(targetCount / subtopics.length) || 1;
+
+  subtopics.forEach(sub => {
+    const list = subtopicMap[sub];
+    const take = Math.min(list.length, perSubBase);
+    selected.push(...list.slice(0, take));
+    leftovers.push(...list.slice(take));
+  });
+
+  // Fill deficit if needed
+  const deficit = targetCount - selected.length;
+  if (deficit > 0 && leftovers.length > 0) {
+    for (let i = leftovers.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [leftovers[i], leftovers[j]] = [leftovers[j], leftovers[i]];
+    }
+    selected.push(...leftovers.slice(0, deficit));
+  }
+
+  return selected.slice(0, targetCount);
+}
+
+function executeSimulatedExam() {
+  const totalCount = parseInt(document.getElementById('simTotalCount').value, 10) || 120;
+  const examTypeFilter = document.getElementById('simExamTypeSelect').value;
+  const chosenMode = document.getElementById('simModeSelect').value;
+  const timerOption = document.getElementById('simTimerSelect').value;
+
+  const cTarget = Math.round((simClinicPct / 100) * totalCount);
+  const pTarget = Math.round((simProductPct / 100) * totalCount);
+  const sTarget = Math.max(0, totalCount - cTarget - pTarget);
+
+  const clinicQuestions = sampleStratifiedFromTrack('clinic', cTarget, examTypeFilter);
+  const productQuestions = sampleStratifiedFromTrack('product', pTarget, examTypeFilter);
+  const sapQuestions = sampleStratifiedFromTrack('sap', sTarget, examTypeFilter);
+
+  let combined = [...clinicQuestions, ...productQuestions, ...sapQuestions];
+  if (!combined.length) {
+    alert('ไม่พบข้อสอบที่ตรงกับเงื่อนไขการจำลองสอบ กรุณาเลือกตัวกรองอื่น');
+    return;
+  }
+
+  // Shuffle final combined exam pool so questions from different categories are intermingled
+  for (let i = combined.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [combined[i], combined[j]] = [combined[j], combined[i]];
+  }
+
+  closeRandomModal();
+  setAppQuizMode(chosenMode);
+
+  // Calculate timer seconds
+  let totalSeconds = 0;
+  if (timerOption === 'auto') {
+    totalSeconds = Math.round(combined.length * 1.5 * 60);
+  } else if (timerOption !== '0') {
+    totalSeconds = parseInt(timerOption, 10) * 60;
+  }
+
+  const title = `⏱️ จำลองสอบจริง PLE-CC1 (${combined.length} ข้อ)`;
+  const subRow = document.getElementById('quizSubtopicRow');
+  if (subRow) subRow.style.display = 'none';
+
+  startQuizWithQuestions(combined, title);
   if (totalSeconds > 0) {
     startQuizCountdownTimer(totalSeconds);
   } else {

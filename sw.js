@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ple-cc-quiz-practice-v4';
+const CACHE_NAME = 'ple-cc-quiz-practice-v8';
 const ASSETS = [
   './',
   './index.html',
