@@ -3319,7 +3319,7 @@
 <div id="printContainer"></div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
-<script src="quiz-data-offline.js?v=20260925_v14"></script>
+<script src="quiz-data-offline.js?v=20260925_v15"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
 const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
@@ -7561,10 +7561,22 @@ function renderLeaderboard(users) {
 // ─── COMMUNITY OPEN CHAT ───
 const COMMUNITY_CHAT_STORAGE_KEY = 'ple_quiz_community_chat_v2';
 
+function isValidationSyncMsg(m) {
+  if (!m) return false;
+  return (
+    m.topicTag === '__val_vote__' ||
+    m.categoryTag === '__val_vote__' ||
+    m.category === '__val_vote__' ||
+    m.username === '__val_bot__' ||
+    m.displayName === 'Validation Sync'
+  );
+}
+
 function getLocalCommunityMessages() {
   try {
     const raw = localStorage.getItem(COMMUNITY_CHAT_STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
+    const parsed = raw ? JSON.parse(raw) : [];
+    return (Array.isArray(parsed) ? parsed : []).filter(m => !isValidationSyncMsg(m));
   } catch(e) { return []; }
 }
 
@@ -7578,7 +7590,8 @@ async function loadCommunityMessagesLive() {
       if (resp.ok) {
         const json = await resp.json();
         if (json.success && json.messages && json.messages.length > 0) {
-          msgs = json.messages;
+          // Exclude validation sync bot entries completely from chat
+          msgs = json.messages.filter(m => !isValidationSyncMsg(m));
           localStorage.setItem(COMMUNITY_CHAT_STORAGE_KEY, JSON.stringify(msgs));
         }
       }
@@ -7600,7 +7613,8 @@ function renderCommunityMessages(msgs) {
   }
 
   let html = '';
-  msgs.forEach(m => {
+  (msgs || []).forEach(m => {
+    if (isValidationSyncMsg(m)) return;
     const isMine = currentUser && (m.username === currentUser.username || m.displayName === currentUser.displayName);
     const dt = new Date(m.time);
     const timeStr = dt.toLocaleTimeString('th-TH', { hour: '2-digit', minute: '2-digit' });
@@ -7776,7 +7790,8 @@ function renderSidebarChat(msgs) {
 
   let html = '';
   // Show recent 25 messages in sidebar
-  const recent = msgs.slice(-25);
+  const validMsgs = (msgs || []).filter(m => !isValidationSyncMsg(m));
+  const recent = validMsgs.slice(-25);
   recent.forEach(m => {
     const isMine = currentUser && (m.username === currentUser.username || m.displayName === currentUser.displayName);
     const dt = new Date(m.time || m.timestamp || Date.now());
