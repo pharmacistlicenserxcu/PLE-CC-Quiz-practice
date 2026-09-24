@@ -220,19 +220,29 @@ def main():
                 target_sub = subtopic_raw or determine_standard_subtopic(s_name, q_clean, subtopic_raw)
                 target_track = track_raw or ('Product' if any(p in s_name for p in ['Titration', 'Chromatography', 'Spectroscopy', 'Preformulation', 'Calc', 'Solid', 'Liquid', 'Biopharm', 'Sterile', 'Biotech', 'Chemistry', 'Herbal', 'Food']) else ('SAP' if any(s in s_name for s in ['Laws', 'Administration', 'Research']) else 'Clinic'))
 
-            # In Musculoskeleton, strictly normalize subtopic
+            # In Musculoskeleton, strictly normalize subtopic (support multiple separated by /)
             if 'musculo' in target_sheet.lower():
-                st_low = target_sub.lower()
-                if 'gout' in st_low or 'เกาต์' in st_low:
-                    target_sub = 'Gout'
-                elif 'osteoarthritis' in st_low or 'ข้อเสื่อม' in st_low or 'ข้อเข่า' in st_low or st_low == 'oa':
+                parts = [p.strip() for p in re.split(r'[/,;]', target_sub) if p.strip()]
+                if not parts:
                     target_sub = 'OA'
-                elif 'osteoporosis' in st_low or 'กระดูกพรุน' in st_low or 'กระดูกบาง' in st_low:
-                    target_sub = 'Osteoporosis'
-                elif 'rheumatoid' in st_low or 'รูมาตอยด์' in st_low or st_low == 'ra':
-                    target_sub = 'RA'
-                elif not target_sub or target_sub == target_sheet:
-                    target_sub = 'OA'
+                else:
+                    norm_parts = []
+                    for p in parts:
+                        st_low = p.lower()
+                        if 'gout' in st_low or 'เกาต์' in st_low:
+                            norm_parts.append('Gout')
+                        elif 'osteoarthritis' in st_low or 'ข้อเสื่อม' in st_low or 'ข้อเข่า' in st_low or st_low == 'oa':
+                            norm_parts.append('OA')
+                        elif 'osteoporosis' in st_low or 'กระดูกพรุน' in st_low or 'กระดูกบาง' in st_low:
+                            norm_parts.append('Osteoporosis')
+                        elif 'rheumatoid' in st_low or 'รูมาตอยด์' in st_low or st_low == 'ra':
+                            norm_parts.append('RA')
+                        elif p and p != target_sheet:
+                            norm_parts.append(p)
+                    if not norm_parts:
+                        norm_parts = ['OA']
+                    seen = set()
+                    target_sub = ' / '.join([x for x in norm_parts if not (x in seen or seen.add(x))])
 
             # 3. Clean Images (Remove Medium/Easy/Hard)
             q_img = clean_image_field(q_img_raw)

@@ -3762,6 +3762,46 @@ function normalizeImageUrl(val) {
   return '';
 }
 
+// ─── MULTI-SUBTOPIC HELPERS (Support "/" separator e.g. "OA / RA") ───
+function getQuestionSubtopics(qOrSub) {
+  const raw = typeof qOrSub === 'string' ? qOrSub : (qOrSub ? (qOrSub.subtopic || '') : '');
+  if (!raw) return [];
+  return String(raw).split(/\s*[\/,;]\s*/).map(s => s.trim()).filter(Boolean);
+}
+
+function questionMatchesSubtopic(q, targetSubtopic) {
+  if (!targetSubtopic || targetSubtopic === '__all__' || targetSubtopic === 'all') return true;
+  const subs = getQuestionSubtopics(q);
+  const targetLower = targetSubtopic.trim().toLowerCase();
+  return subs.some(s => s.toLowerCase() === targetLower);
+}
+
+function normalizeMusculoSubtopics(subtopic) {
+  if (!subtopic) return 'OA';
+  const parts = String(subtopic).split(/\s*[\/,;]\s*/).map(p => p.trim()).filter(Boolean);
+  if (!parts.length) return 'OA';
+
+  const normalized = parts.map(part => {
+    const stLow = part.toLowerCase();
+    if (stLow.includes('gout') || stLow.includes('เกาต์')) return 'Gout';
+    if (stLow.includes('osteoarthritis') || stLow.includes('ข้อเสื่อม') || stLow.includes('ข้อเข่า') || stLow === 'oa') return 'OA';
+    if (stLow.includes('osteoporosis') || stLow.includes('กระดูกพรุน') || stLow.includes('กระดูกบาง')) return 'Osteoporosis';
+    if (stLow.includes('rheumatoid') || stLow.includes('รูมาตอยด์') || stLow === 'ra') return 'RA';
+    return part;
+  });
+
+  return Array.from(new Set(normalized)).join(' / ');
+}
+
+function renderSubtopicBadgesHtml(subtopicStr, tagClass = 'clinic-tag', track = '') {
+  const subs = getQuestionSubtopics(subtopicStr);
+  const prefix = track ? `${track} · ` : '';
+  if (!subs.length) {
+    return `<span class="tag ${tagClass}">${prefix}${subtopicStr || 'ทั่วไป'}</span>`;
+  }
+  return subs.map((s, idx) => `<span class="tag ${tagClass}">${(idx === 0 && prefix) ? prefix : ''}${s}</span>`).join(' ');
+}
+
 // ─── REALTIME FETCH FROM GOOGLE SHEET ───
 async function fetchLiveSheetQuestions(sheetName) {
   try {
@@ -3781,6 +3821,7 @@ async function fetchLiveSheetQuestions(sheetName) {
           if (gasJson.success && gasJson.questions && gasJson.questions.length > 0) {
             return gasJson.questions.map(q => ({
               ...q,
+              subtopic: sheetName.toLowerCase().includes('musculo') ? normalizeMusculoSubtopics(q.subtopic) : q.subtopic,
               questionImage: normalizeImageUrl(q.questionImage),
               answerImage: normalizeImageUrl(q.answerImage)
             }));
@@ -3847,14 +3888,9 @@ async function fetchLiveSheetQuestions(sheetName) {
               finalAnsImg = offlineCategory[idx].answerImage;
             }
 
-            // Normalize Musculoskeleton subtopics
+            // Normalize Musculoskeleton subtopics (supports multi-subtopics e.g. OA / RA)
             if (sheetName.toLowerCase().includes('musculo')) {
-              const stLow = (subtopic || '').toLowerCase();
-              if (stLow.includes('gout') || stLow.includes('เกาต์')) subtopic = 'Gout';
-              else if (stLow.includes('osteoarthritis') || stLow.includes('ข้อเสื่อม') || stLow.includes('ข้อเข่า') || stLow === 'oa') subtopic = 'OA';
-              else if (stLow.includes('osteoporosis') || stLow.includes('กระดูกพรุน') || stLow.includes('กระดูกบาง')) subtopic = 'Osteoporosis';
-              else if (stLow.includes('rheumatoid') || stLow.includes('รูมาตอยด์') || stLow === 'ra') subtopic = 'RA';
-              else if (!subtopic || subtopic === sheetName) subtopic = 'OA';
+              subtopic = normalizeMusculoSubtopics(subtopic);
             }
 
             let ansKey = 1;
@@ -4428,12 +4464,12 @@ function onSetupCategoryChange() {
     setupSubtopic = '__all__';
   } else {
     const qs = allQuestionsMap[setupCategory] || [];
-    const subs = Array.from(new Set(qs.map(q => q.subtopic).filter(Boolean)));
+    const subs = Array.from(new Set(qs.flatMap(q => getQuestionSubtopics(q))));
     if (subs.length > 1) {
       subGroup.style.display = 'block';
       let html = '<option value="__all__">📂 ทุกหัวข้อย่อย (' + qs.length + ' ข้อ)</option>';
       subs.sort().forEach(s => {
-        const c = qs.filter(q => q.subtopic === s).length;
+        const c = qs.filter(q => questionMatchesSubtopic(q, s)).length;
         html += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
       });
       subSel.innerHTML = html;
@@ -4467,7 +4503,7 @@ function getSetupFilteredPool() {
   } else {
     pool = (allQuestionsMap[setupCategory] || []).slice();
     if (setupSubtopic !== '__all__') {
-      pool = pool.filter(q => q.subtopic === setupSubtopic);
+      pool = pool.filter(q => questionMatchesSubtopic(q, setupSubtopic));
     }
   }
 
@@ -4678,9 +4714,10 @@ function initSimSubtopicPicker() {
       selectedSimSubtopics.add(cat);
       const qs = map[cat] || [];
       qs.forEach(q => {
-        if (q.subtopic) {
-          selectedSimSubtopics.add(`${cat}::${q.subtopic.trim()}`);
-        }
+        const subs = getQuestionSubtopics(q);
+        subs.forEach(s => {
+          selectedSimSubtopics.add(`${cat}::${s}`);
+        });
       });
     });
   }
@@ -4723,8 +4760,14 @@ function renderSimSubtopicPicker() {
 
       const subMap = {};
       qs.forEach(q => {
-        const s = (q.subtopic || catName).trim();
-        subMap[s] = (subMap[s] || 0) + 1;
+        const subs = getQuestionSubtopics(q);
+        if (!subs.length) {
+          subMap[catName] = (subMap[catName] || 0) + 1;
+        } else {
+          subs.forEach(s => {
+            subMap[s] = (subMap[s] || 0) + 1;
+          });
+        }
       });
       const subList = Object.keys(subMap).sort();
 
@@ -4808,14 +4851,26 @@ function toggleSimCategory(catName, ev) {
   if (currentlyChecked) {
     selectedSimSubtopics.delete(catName);
     qs.forEach(q => {
-      const s = (q.subtopic || catName).trim();
-      selectedSimSubtopics.delete(`${catName}::${s}`);
+      const subs = getQuestionSubtopics(q);
+      if (!subs.length) {
+        selectedSimSubtopics.delete(`${catName}::${catName}`);
+      } else {
+        subs.forEach(s => {
+          selectedSimSubtopics.delete(`${catName}::${s}`);
+        });
+      }
     });
   } else {
     selectedSimSubtopics.add(catName);
     qs.forEach(q => {
-      const s = (q.subtopic || catName).trim();
-      selectedSimSubtopics.add(`${catName}::${s}`);
+      const subs = getQuestionSubtopics(q);
+      if (!subs.length) {
+        selectedSimSubtopics.add(`${catName}::${catName}`);
+      } else {
+        subs.forEach(s => {
+          selectedSimSubtopics.add(`${catName}::${s}`);
+        });
+      }
     });
   }
 
@@ -4843,7 +4898,14 @@ function setAllSimSubtopics(enableAll) {
       selectedSimSubtopics.add(cat);
       const qs = map[cat] || [];
       qs.forEach(q => {
-        if (q.subtopic) selectedSimSubtopics.add(`${cat}::${q.subtopic.trim()}`);
+        const subs = getQuestionSubtopics(q);
+        if (!subs.length) {
+          selectedSimSubtopics.add(`${cat}::${cat}`);
+        } else {
+          subs.forEach(s => {
+            selectedSimSubtopics.add(`${cat}::${s}`);
+          });
+        }
       });
     });
   }
@@ -5006,16 +5068,15 @@ function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter, all
     let qs = (allQuestionsMap[c.name] || []).slice();
     qs = filterQuestionsByExamType(qs, examTypeFilter);
     qs.forEach(q => {
-      const sub = (q.subtopic || c.name).trim();
-      const subKey = `${c.name}::${sub}`;
-      // Subtopic optimizer filter check:
+      const subs = getQuestionSubtopics(q);
+      const subList = subs.length ? subs : [c.name];
       if (allowedSubtopics && allowedSubtopics.size > 0) {
-        if (!allowedSubtopics.has(subKey) && !allowedSubtopics.has(sub) && !allowedSubtopics.has(c.name)) {
-          return;
-        }
+        const isAllowed = subList.some(s => allowedSubtopics.has(`${c.name}::${s}`) || allowedSubtopics.has(s) || allowedSubtopics.has(c.name));
+        if (!isAllowed) return;
       }
-      if (!subtopicMap[sub]) subtopicMap[sub] = [];
-      subtopicMap[sub].push(q);
+      const primarySub = subList[0];
+      if (!subtopicMap[primarySub]) subtopicMap[primarySub] = [];
+      subtopicMap[primarySub].push(q);
     });
   });
 
@@ -5119,7 +5180,7 @@ function enterQuizAll(track) {
 // ─── PRACTICE MODE FILTERS (CARD & SCROLL) ───
 function populatePracticeSubtopicDropdowns(poolQs) {
   const list = poolQs || (allQuestionsMap[currentCategory] || []);
-  const subs = Array.from(new Set(list.map(q => q.subtopic).filter(Boolean))).sort();
+  const subs = Array.from(new Set(list.flatMap(q => getQuestionSubtopics(q)))).sort();
 
   // 1. Card View Subtopic
   const cardSubWrap = document.getElementById('quizSubtopicWrap');
@@ -5127,7 +5188,7 @@ function populatePracticeSubtopicDropdowns(poolQs) {
   if (cardSubSel) {
     let html = `<option value="__all__">📂 ทุกหัวข้อย่อย (${list.length} ข้อ)</option>`;
     subs.forEach(s => {
-      const c = list.filter(q => q.subtopic === s).length;
+      const c = list.filter(q => questionMatchesSubtopic(q, s)).length;
       html += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
     });
     cardSubSel.innerHTML = html;
@@ -5143,7 +5204,7 @@ function populatePracticeSubtopicDropdowns(poolQs) {
   if (scrollSubSel) {
     let sHtml = `<option value="__all__">📂 ทุกหัวข้อย่อย (${list.length} ข้อ)</option>`;
     subs.forEach(s => {
-      const c = list.filter(q => q.subtopic === s).length;
+      const c = list.filter(q => questionMatchesSubtopic(q, s)).length;
       sHtml += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
     });
     scrollSubSel.innerHTML = sHtml;
@@ -5228,7 +5289,7 @@ function applyPracticeFilters() {
     fullList = filterQuestionsByExamType(fullList, practiceExamTypeFilter);
   }
   if (currentSubtopic && currentSubtopic !== '__all__') {
-    fullList = fullList.filter(q => q.subtopic === currentSubtopic);
+    fullList = fullList.filter(q => questionMatchesSubtopic(q, currentSubtopic));
   }
   return fullList;
 }
@@ -5539,7 +5600,7 @@ function renderScrollPractice() {
 
   activeQuizQuestions.forEach((q, idx) => {
     // Subtopic filter
-    if (subtopicFilter !== '__all__' && q.subtopic !== subtopicFilter) return;
+    if (subtopicFilter !== '__all__' && !questionMatchesSubtopic(q, subtopicFilter)) return;
 
     // Search query filter (matches question text, choices, subtopic, or explanation)
     if (query) {
@@ -5634,7 +5695,7 @@ function renderScrollPractice() {
         <div class="scroll-q-head">
           <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
             <span class="scroll-item-num">ข้อ ${qNum}</span>
-            <span class="tag clinic-tag" style="font-size:11px; padding:2px 8px;">${q.subtopic || q.category || 'Clinic'}</span>
+            ${renderSubtopicBadgesHtml(q.subtopic || q.category || 'Clinic', 'clinic-tag')}
             ${refBadge}
             ${examBadge.html}
           </div>
@@ -5767,7 +5828,9 @@ function renderCurrentQuestion() {
   } else {
     // PRACTICE MODE: Show full details, clean session number, and internal Ref ID
     const refBadge = q.itemNo ? `<span style="font-size:10.5px; opacity:0.65; margin-left:4px;">(Ref: ${q.itemNo})</span>` : '';
-    tagEl.innerHTML = `<span>${q.track || 'Clinic'} · ${q.subtopic || q.category} · ข้อที่ ${currentDisplayNumber}</span>${refBadge} ${examBadge.html}`;
+    const subs = getQuestionSubtopics(q);
+    const subStr = subs.length ? subs.join(' / ') : (q.subtopic || q.category);
+    tagEl.innerHTML = `<span>${q.track || 'Clinic'} · ${subStr} · ข้อที่ ${currentDisplayNumber}</span>${refBadge} ${examBadge.html}`;
   }
   tagEl.className = `tag ${norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag'}`;
 
@@ -6265,7 +6328,7 @@ function renderExamReview() {
         <div class="browse-card-head">
           <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
             <span class="browse-item-num-badge">ข้อที่ ${itemNo}</span>
-            <span class="tag ${trackBadgeClass}">${q.track || 'Clinic'} · ${q.subtopic || q.category}</span>
+            <span class="tag ${trackBadgeClass}">${q.track || 'Clinic'} · ${getQuestionSubtopics(q).length ? getQuestionSubtopics(q).join(' / ') : (q.subtopic || q.category)}</span>
             ${isCorrect 
               ? '<span style="background:#DCFCE7; color:#166534; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:6px; border:1px solid #BBF7D0;">✅ คุณตอบถูก (ข้อ ' + userLetter + ')</span>' 
               : '<span style="background:#FEE2E2; color:#991B1B; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:6px; border:1px solid #FECACA;">❌ คุณตอบผิด (คุณตอบ ' + userLetter + ' / เฉลย ' + correctLetter + ')</span>'}
@@ -6337,10 +6400,10 @@ function onBrowseCategoryChange() {
     subSel.innerHTML = '<option value="all">📂 ทุกหัวข้อย่อย</option>';
   } else {
     const qs = allQuestionsMap[cat] || [];
-    const subs = Array.from(new Set(qs.map(q => q.subtopic).filter(Boolean)));
+    const subs = Array.from(new Set(qs.flatMap(q => getQuestionSubtopics(q))));
     let subHtml = '<option value="all">📂 ทุกหัวข้อย่อย (' + qs.length + ' ข้อ)</option>';
     subs.sort().forEach(s => {
-      const count = qs.filter(q => q.subtopic === s).length;
+      const count = qs.filter(q => questionMatchesSubtopic(q, s)).length;
       subHtml += `<option value="${s}">📌 ${s} (${count} ข้อ)</option>`;
     });
     subSel.innerHTML = subHtml;
@@ -6391,7 +6454,7 @@ function renderBrowseList(reset = true) {
 
     // Filter Subtopic
     if (selectedSub !== 'all') {
-      list = list.filter(q => q.subtopic === selectedSub);
+      list = list.filter(q => questionMatchesSubtopic(q, selectedSub));
     }
 
     // Filter Exam Type (Dynamic from Column O)
@@ -6456,7 +6519,7 @@ function renderBrowseList(reset = true) {
         <div class="browse-card-head">
           <div style="display:flex; align-items:center; gap:6px;">
             <span class="browse-item-num-badge">ข้อที่ ${itemNo}</span>
-            <span class="tag ${trackBadgeClass}">${q.track || 'Clinic'} · ${q.subtopic || q.category}</span>
+            <span class="tag ${trackBadgeClass}">${q.track || 'Clinic'} · ${getQuestionSubtopics(q).length ? getQuestionSubtopics(q).join(' / ') : (q.subtopic || q.category)}</span>
           </div>
           <div class="browse-card-tags">
             ${examBadge.html}
@@ -6743,12 +6806,12 @@ function onPrintCategoryChange() {
     printSelectedSubtopic = '__all__';
   } else {
     const qs = allQuestionsMap[printSelectedCategory] || [];
-    const subs = Array.from(new Set(qs.map(q => q.subtopic).filter(Boolean)));
+    const subs = Array.from(new Set(qs.flatMap(q => getQuestionSubtopics(q))));
     if (subs.length > 1) {
       subGroup.style.display = 'block';
       let html = '<option value="__all__">📂 ทุกหัวข้อย่อย (' + qs.length + ' ข้อ)</option>';
       subs.sort().forEach(s => {
-        const c = qs.filter(q => q.subtopic === s).length;
+        const c = qs.filter(q => questionMatchesSubtopic(q, s)).length;
         html += `<option value="${s}">📌 ${s} (${c} ข้อ)</option>`;
       });
       subSel.innerHTML = html;
@@ -6812,7 +6875,7 @@ function getPrintFilteredPool() {
     const subSel = document.getElementById('printSubtopicSelect');
     const subVal = subSel ? subSel.value : '__all__';
     if (subVal !== '__all__') {
-      pool = pool.filter(q => q.subtopic === subVal);
+      pool = pool.filter(q => questionMatchesSubtopic(q, subVal));
     }
   }
   return filterQuestionsByExamType(pool, examTypeFilter);
