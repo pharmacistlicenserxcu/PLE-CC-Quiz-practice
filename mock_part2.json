@@ -1,0 +1,354 @@
+[
+  {
+    "mock_num": 23,
+    "core_idx": 153,
+    "q_num": 154,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: ลักษณะใดสนับสนุนการวินิจฉัย RA มากกว่า OA ในผู้ป่วยรายนี้",
+    "choices": [
+      "ปวดเมื่อใช้งาน ดีขึ้นเมื่อพัก",
+      "ข้อฝืดตอนเช้าน้อยกว่า 30 นาที",
+      "คลำได้เสียงกรอบแกรบในข้อ",
+      "มักเกิดที่ข้อปลายนิ้ว (DIP)",
+      "ข้อฝืดตอนเช้ามากกว่า 1 ชั่วโมง ร่วมกับข้ออักเสบสมมาตร"
+    ],
+    "ans": 5,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 23 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 24,
+    "core_idx": 154,
+    "q_num": 155,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ยาใดควรใช้เป็นอันดับแรกเพื่อรักษาอาการกำเริบ (Acute attack)?",
+    "choices": [
+      "Allopurinol",
+      "Febuxostat",
+      "Colchicine",
+      "Probenecid",
+      "Sulfinpyrazone"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 24 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 25,
+    "core_idx": 155,
+    "q_num": 156,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ขนาดยา Colchicine ที่ถูกต้องใน Acute Gout คือข้อใด (ผู้ป่วยไตปกติ)?",
+    "choices": [
+      "1.2 mg OD",
+      "0.6 mg tid",
+      "1.2 mg ทันที ตามด้วย 0.6 mg ใน 1 ชม.",
+      "0.6 mg ทุก 2 ชม. จนกว่าจะท้องเสีย",
+      "1.2 mg ทันที ตามด้วย 1.2 mg ใน 1 ชม. เฉลย"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 25 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 26,
+    "core_idx": 156,
+    "q_num": 157,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ยาความดันตัวใดของผู้ป่วยที่มีฤทธิ์เพิ่มการขับกรดยูริก (Uricosuric effect)?",
+    "choices": [
+      "Bisoprolol",
+      "Losartan",
+      "Amlodipine",
+      "Enalapril",
+      "Diltiazem"
+    ],
+    "ans": 2,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 26 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 27,
+    "core_idx": 157,
+    "q_num": 158,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: อาหารใดที่จัดว่ามีพิวรีน (Purine) สูงและควรงด?",
+    "choices": [
+      "ข้าวสวย",
+      "ไข่ไก่",
+      "เครื่องในสัตว์และเบียร์",
+      "นมวัว",
+      "ผลไม้"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 27 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 28,
+    "core_idx": 158,
+    "q_num": 159,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: เป้าหมายการลดระดับกรดยูริก (Target Serum Uric Acid) ในผู้ป่วยเกาต์ทั่วไปคือเท่าใด?",
+    "choices": [
+      "< 4 mg/dL",
+      "< 5 mg/dL",
+      "< 6 mg/dL",
+      "< 7 mg/dL",
+      "< 8 mg/dL"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 28 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 29,
+    "core_idx": 159,
+    "q_num": 160,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: หากจะเริ่มยา Allopurinol ต้องระวังการเกิดผื่นแพ้ยารุนแรง (SJS/TEN) ควรตรวจยีนใดก่อนเริ่มยา?",
+    "choices": [
+      "HLA-B*15:02",
+      "HLA-B*58:01",
+      "HLA-B*57:01",
+      "CYP2C9",
+      "DPYD"
+    ],
+    "ans": 2,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 29 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 30,
+    "core_idx": 160,
+    "q_num": 161,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ยาใดที่ มีข้อห้ามใช้ร่วมกับ Allopurinol เพราะจะทำให้ยาตัวนั้นเกิดพิษ?",
+    "choices": [
+      "Metformin",
+      "Bisoprolol",
+      "Azathioprine",
+      "Atorvastatin",
+      "Losartan"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 30 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 31,
+    "core_idx": 161,
+    "q_num": 162,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: เมื่อเริ่มยา Allopurinol (ULT) ควรให้ยาใดควบคู่เพื่อป้องกัน Gout flare?",
+    "choices": [
+      "Colchicine 0.6 mg/day นาน 3-6 เดือน",
+      "Prednisolone นาน 1 ปี",
+      "Aspirin 81 mg",
+      "Probenecid",
+      "Paracetamol"
+    ],
+    "ans": 1,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 31 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 32,
+    "core_idx": 162,
+    "q_num": 163,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: กลไกการออกฤทธิ์ของ Colchicine คืออะไร?",
+    "choices": [
+      "ยับยั้ง COX-2",
+      "ยับยั้ง Xanthine oxidase",
+      "ขัดขวาง Microtubule polymerization ลดการเคลื่อนที่ของ Neutrophil",
+      "เพิ่มการขับ Uric acid",
+      "ยับยั้ง URAT1"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 32 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 33,
+    "core_idx": 163,
+    "q_num": 164,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ยาลดไขมันใดที่มีฤทธิ์ช่วยลดกรดยูริกได้บ้าง?",
+    "choices": [
+      "Simvastatin",
+      "Atorvastatin",
+      "Fenofibrate",
+      "Gemfibrozil",
+      "Ezetimibe"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 33 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 34,
+    "core_idx": 164,
+    "q_num": 165,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ข้อใดเป็นคำแนะนำในการปรับพฤติกรรมของผู้ป่วยชายชาวฮ่องกงรายนี้",
+    "choices": [
+      "ควบคุมอาหารและออกกำลังกายเพื่อลดน้ำหนักตัว โดยตั้งเป้าหมายให้ดัชนีมวลกาย (BMI) ลดลงต่ำกว่า 30 kg/m2",
+      "ลดหรือหลีกเลี่ยงการดื่มเครื่องดื่มแอลกอฮอล์ทุกชนิด",
+      "หลีกเลี่ยงการรับประทานอาหารที่มีสารพิวรีนสูง เช่น สัตว์ปีก เครื่องในสัตว์ และยอดผัก",
+      "ดื่มน้ำสะอาดในปริมาณที่เหมาะสมอย่างน้อย 2–3 ลิตรต่อวัน เพื่อช่วยขับกรดยูริกออกทางไต",
+      "ถูกต้องทุกข้อที่กล่าวมา"
+    ],
+    "ans": 5,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 34 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 35,
+    "core_idx": 165,
+    "q_num": 166,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: แนวทางที่เหมาะสมที่สุดในการรักษาภาวะข้ออักเสบเฉียบพลันของผู้ป่วยรายนี้คือข้อใด",
+    "choices": [
+      "เริ่ม allopurinol ทันที",
+      "ให้ probenecid เร่งขับกรดยูริก",
+      "ให้ colchicine/NSAIDs/steroid ยังไม่เริ่มยาลดกรดยูริก",
+      "ให้ paracetamol เดี่ยว ๆ",
+      "งดยาทุกชนิดรอหายเอง"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 35 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 36,
+    "core_idx": 166,
+    "q_num": 167,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ผู้ป่วยการทำงานของไตปกติ ขนาด colchicine ที่ถูกต้องตามแนวทางปัจจุบันคือข้อใด",
+    "choices": [
+      "0.6 mg วันละครั้งเท่านั้น",
+      "1.0 mg แล้ว 0.5 mg ทุกชั่วโมงจนท้องเสีย",
+      "2.4 mg ครั้งเดียว",
+      "1.2 mg ทันที แล้ว 0.6 mg อีก 1 ชม. ต่อด้วย 0.5–0.6 mg ทุก 8–12 ชม.",
+      "1.2 mg ทุก 2 ชม. รวม 6 ครั้ง"
+    ],
+    "ans": 4,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 36 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 37,
+    "core_idx": 167,
+    "q_num": 168,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ในการปรับยาลดความดันให้เหมาะกับผู้ป่วยเกาต์รายนี้ ข้อใดเหมาะสมที่สุด",
+    "choices": [
+      "คง losartan ไว้เพราะช่วยขับกรดยูริก",
+      "เปลี่ยน losartan เป็น hydrochlorothiazide",
+      "เพิ่ม bisoprolol เพื่อลดกรดยูริก",
+      "เพิ่ม low-dose aspirin",
+      "หยุด losartan เพราะเพิ่มกรดยูริก"
+    ],
+    "ans": 1,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 37 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 38,
+    "core_idx": 168,
+    "q_num": 169,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ก่อนเริ่ม allopurinol ในผู้ป่วยเชื้อสายเอเชียรายนี้ ควรตรวจยีนใด",
+    "choices": [
+      "HLA-B*15:02",
+      "HLA-B*58:01",
+      "HLA-B*57:01",
+      "CYP2C9",
+      "G6PD"
+    ],
+    "ans": 2,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 38 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 39,
+    "core_idx": 169,
+    "q_num": 170,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: เป้าหมายระดับกรดยูริกในเลือดระยะยาวของผู้ป่วยเกาต์ทั่วไปคือข้อใด",
+    "choices": [
+      "น้อยกว่า 4 mg/dL",
+      "น้อยกว่า 5 mg/dL",
+      "น้อยกว่า 6 mg/dL",
+      "น้อยกว่า 7 mg/dL",
+      "น้อยกว่า 8 mg/dL"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 39 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 40,
+    "core_idx": 170,
+    "q_num": 171,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ยาใดแนะนำเป็น First-line สำหรับผู้ป่วยรายนี้ตาม Guideline OA Knee?",
+    "choices": [
+      "Oral Paracetamol",
+      "Topical NSAIDs",
+      "Oral Glucosamine",
+      "IA Steroid",
+      "Tramadol"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 40 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 41,
+    "core_idx": 171,
+    "q_num": 172,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: กลไกของข้ออักเสบเสื่อม (OA) ต่างจาก RA อย่างไร?",
+    "choices": [
+      "OA เป็น Autoimmune",
+      "OA เกิดจากการสึกหรอของกระดูกอ่อน (Cartilage degradation)",
+      "OA มี Systemic symptom",
+      "OA ค่า ESR พุ่งสูง",
+      "OA มักโดนข้อข้อมือ"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 41 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 42,
+    "core_idx": 172,
+    "q_num": 173,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ข้อใดคือ Non-pharmacological therapy ที่ให้ผลดีที่สุดในการชะลอข้อเข่าเสื่อม?",
+    "choices": [
+      "ว่ายน้ำและลดน้ำหนัก",
+      "วิ่งมาราธอน",
+      "การฝังเข็ม",
+      "การใส่สนับเข่าตลอดเวลา",
+      "การทานคอลลาเจน"
+    ],
+    "ans": 1,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 42 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 43,
+    "core_idx": 173,
+    "q_num": 174,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: อาการ \"Crepitus\" ใน OA คืออะไร?",
+    "choices": [
+      "ข้อบวมแดง",
+      "ข้อผิดรูปเบี้ยว",
+      "เสียงดังกรอบแกรบขณะขยับข้อ",
+      "การขยับข้อไม่ได้เลย",
+      "กล้ามเนื้อลีบ"
+    ],
+    "ans": 3,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 43 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 44,
+    "core_idx": 174,
+    "q_num": 175,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: หากจำเป็นต้องใช้ Oral NSAIDs ในผู้สูงอายุ ควรเลือกแนวทางใดเพื่อความปลอดภัยสูงสุดต่อ GI?",
+    "choices": [
+      "Piroxicam",
+      "Ibuprofen dose สูง",
+      "COX-2 inhibitor + PPI",
+      "Indomethacin",
+      "Naproxen เดี่ยวๆ"
+    ],
+    "ans": 3,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 44 Mock Musculo RxCU84"
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "mock_num": 66,
+    "core_idx": 196,
+    "q_num": 197,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: เหตุผลที่เหมาะสมที่สุดที่ทำให้ไม่เลือกใช้ teriparatide ในผู้ป่วยรายนี้คือข้อใด",
+    "choices": [
+      "มีประวัติมะเร็ง เสี่ยง osteosarcoma",
+      "ผู้ป่วยเป็นเบาหวาน",
+      "ยาราคาถูก",
+      "การทำงานของไตปกติ",
+      "ไม่มีกระดูกหัก"
+    ],
+    "ans": 1,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 66 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 67,
+    "core_idx": 197,
+    "q_num": 198,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ผู้ป่วยปวดหลังรุนแรงจากกระดูกสันหลังยุบและกำลังได้ cisplatin แนวทางจัดการปวดที่เหมาะสมที่สุดคือข้อใด",
+    "choices": [
+      "NSAIDs ขนาดสูงต่อเนื่องเป็นหลัก",
+      "Colchicine",
+      "Opioid ตามบันได WHO ร่วมกับ paracetamol เลี่ยง NSAIDs",
+      "Allopurinol",
+      "งดยาแก้ปวดทุกชนิด"
+    ],
+    "ans": 3,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 67 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 68,
+    "core_idx": 198,
+    "q_num": 199,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ข้อใดถูกต้องเกี่ยวกับ calcitonin ในผู้ป่วยที่มีกระดูกสันหลังยุบเฉียบพลัน",
+    "choices": [
+      "เพิ่มระดับแคลเซียมในเลือด",
+      "กระตุ้นการทำงานของ osteoclast",
+      "เป็นยาหลักระยะยาวแทน bisphosphonate",
+      "ไม่มีฤทธิ์ลดปวด",
+      "ช่วยลดปวดระยะสั้นจากกระดูกสันหลังยุบ"
+    ],
+    "ans": 5,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 68 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 69,
+    "core_idx": 199,
+    "q_num": 200,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ผลข้างเคียงรุนแรงที่พบได้ทั้ง bisphosphonate และ denosumab (ควรตรวจสุขภาพช่องปากก่อนเริ่มยา) คือข้อใด",
+    "choices": [
+      "SJS/TEN",
+      "ไตวายเฉียบพลัน",
+      "หัวใจเต้นผิดจังหวะ",
+      "Osteonecrosis of the jaw และ atypical femur fracture",
+      "ต้อกระจก"
+    ],
+    "ans": 4,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 69 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 70,
+    "core_idx": 200,
+    "q_num": 201,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ความผิดพลาดร้ายแรง (Med Error) ในใบสั่งยานี้คืออะไร?",
+    "choices": [
+      "การคำนวณยา Infliximab ต่อน้ำหนักตัวผิดพลาด",
+      "สั่ง MTX กินทุกวันแทนที่จะเป็นสัปดาห์ละครั้ง",
+      "ให้ Folic acid ที่มีขนาดน้อยเกินไป",
+      "การที่ Prednisolone ให้รับประทานหลังอาหารทำให้ยาดูดซึมไม่ดี",
+      "การบริหาร NSS 0.9% มีอัตราเร็วจนเกินไป ก่อให้เกิดอาการบวมน้ำ"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 70 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 71,
+    "core_idx": 201,
+    "q_num": 202,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ผู้ป่วยรายนี้จากใบสั่งยานี้ (หากแก้ไขถูกต้องแล้ว) ควรเฝ้าระวังเรื่องใดบ้าง",
+    "choices": [
+      "CBC ที่ต่ำเกินไป",
+      "WBC ที่สูงเกินไป",
+      "ค่า LDL-C ที่สูงขึ้น",
+      "อาการเวียนศรีษะและหมดสติ",
+      "ไม่มีข้อใดถูกต้อง"
+    ],
+    "ans": 1,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 71 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 72,
+    "core_idx": 202,
+    "q_num": 203,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: อาการพิษรุนแรงจากการกิน MTX เกินขนาด (กินทุกวัน) คือข้อใด?",
+    "choices": [
+      "Retinopathy",
+      "ไขกระดูกฝ่อ (Bone marrow suppression)",
+      "SJS/TEN",
+      "QT Prolongation",
+      "ผมร่วงอย่างรุนแรง"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 72 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 73,
+    "core_idx": 203,
+    "q_num": 204,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ยาแก้พิษ (Antidote/Rescue) สำหรับภาวะ MTX Toxicity คือยาใด?",
+    "choices": [
+      "N-acetylcysteine",
+      "Flumazenil",
+      "Leucovorin (Folinic acid)",
+      "Vitamin K",
+      "Protamine sulfate"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 73 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 74,
+    "core_idx": 204,
+    "q_num": 205,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: การให้ Folic acid 5 mg สัปดาห์ละ 1-2 ครั้ง ร่วมกับ MTX มีจุดประสงค์เพื่ออะไร?",
+    "choices": [
+      "เพิ่มฤทธิ์ยา MTX",
+      "ลดการเกิดไขกระดูกฝ่อ",
+      "ลดผลข้างเคียงทางระบบทางเดินอาหารและแผลในปาก (GI/Mucositis)",
+      "บำรุงครรภ์",
+      "ป้องกันตับวาย"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 74 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 75,
+    "core_idx": 205,
+    "q_num": 206,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: กลไกของยา Methotrexate คือข้อใด?",
+    "choices": [
+      "ยับยั้ง COX-2",
+      "ยับยั้ง Xanthine oxidase",
+      "ยับยั้ง Dihydrofolate reductase (DHFR)",
+      "ยับยั้ง TNF-alpha",
+      "ยับยั้ง CD20"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 75 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 76,
+    "core_idx": 206,
+    "q_num": 207,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ก่อนเริ่มยา Infliximab (Biologics) ผู้ป่วยต้องได้รับการคัดกรอง (Screening) โรคติดเชื้อใดเสมอ?",
+    "choices": [
+      "HIV",
+      "Syphilis",
+      "Tuberculosis (TB) และ Hepatitis B/C",
+      "Malaria",
+      "COVID-19"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 76 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 77,
+    "core_idx": 207,
+    "q_num": 208,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: Infliximab มีกลไกการออกฤทธิ์อย่างไร?",
+    "choices": [
+      "Chimeric Monoclonal Antibody ต่อยับยั้ง TNF-alpha",
+      "Fully human MAb ต่อ TNF-alpha",
+      "IL-6 inhibitor",
+      "CD20 inhibitor",
+      "JAK inhibitor"
+    ],
+    "ans": 1,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 77 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 78,
+    "core_idx": 208,
+    "q_num": 209,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ปฏิกิริยาไม่พึงประสงค์ขณะให้ยา Infliximab ทางหลอดเลือดดำที่ต้องระวังคืออะไร?",
+    "choices": [
+      "Hypertension crisis",
+      "Infusion-related reaction (ไข้ หนาวสั่น ความดันตก)",
+      "น้ำท่วมปอด",
+      "ไตวายเฉียบพลัน",
+      "หัวใจเต้นผิดจังหวะ"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 78 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 79,
+    "core_idx": 209,
+    "q_num": 210,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ผู้ป่วยที่ได้รับยา Biologics มีข้อห้าม (Contraindication) ในการรับวัคซีนประเภทใด?",
+    "choices": [
+      "วัคซีนเชื้อตาย (Killed vaccine)",
+      "วัคซีน mRNA",
+      "วัคซีนเชื้อเป็นอ่อนฤทธิ์ (Live-attenuated vaccines เช่น MMR, Varicella)",
+      "วัคซีนไวรัสตับอักเสบบี",
+      "Toxoid"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 79 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 80,
+    "core_idx": 210,
+    "q_num": 211,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ยา Prednisolone ในผู้ป่วยรายนี้ หากใช้นานๆ จะเพิ่มความเสี่ยงโรคใดมากที่สุด?",
+    "choices": [
+      "Osteoarthritis",
+      "Osteoporosis, Hyperglycemia, และ Cushing's syndrome",
+      "Rheumatoid arthritis รุนแรงขึ้น",
+      "Asthma",
+      ""
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 80 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 81,
+    "core_idx": 211,
+    "q_num": 212,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: จากใบสั่งยาและข้อมูลทางคลินิกข้างต้น เหตุใดแพทย์จึงสามารถสั่งจ่ายยา Prednisolone 5 mg ในจำนวนที่ไม่ครบตามวันนัดได้ (จ่ายเพียง 7 เม็ด ในขณะที่วันนัดติดตามอาการคือ 2 สัปดาห์)",
+    "choices": [
+      "Prednisolone ไปเกิดอัตรกิริยากับ Inflixumab ทำให้ยา Inflixumab ออกฤทธิ์ได้ไม่เต็มที่",
+      "Prednisolone เป็นยาลดอักเสบซึ่งออกฤทธิ์เร็ว เพื่อบรรเทาอาการปวดระหว่างรอ MTX ออกฤทธิ์",
+      "Prednisolone มีผลข้างเคียงทำให้น้ำตาลในเลือดตกได้เนื่องจากมีผลข้างเคียงต่อระบบเผาผลาญ (Metabolic Disorder) จึงต้องให้ในระยะสั้น",
+      "Prednisolone อาจทำให้ผู้ป่วยมีอาการ Orthostatic hypotension",
+      "ไม่มีข้อใดถูกต้อง"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 81 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 82,
+    "core_idx": 212,
+    "q_num": 213,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ความคลาดเคลื่อนทางยา (medication error) ที่ร้ายแรงที่สุดในใบสั่งยานี้คือข้อใด",
+    "choices": [
+      "สั่ง methotrexate ให้กินทุกวันแทนสัปดาห์ละครั้ง",
+      "Folic acid ขนาดสูงเกินไป",
+      "Rosuvastatin ไม่จำเป็น",
+      "Candesartan ซ้ำซ้อน",
+      "คำนวณขนาด infliximab ผิด"
+    ],
+    "ans": 1,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 82 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 83,
+    "core_idx": 213,
+    "q_num": 214,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: หากได้รับ MTX ทุกวันตามที่สั่งผิด อาการพิษเฉียบพลันและการตรวจติดตามที่สำคัญที่สุดคือข้อใด",
+    "choices": [
+      "จอประสาทตาเสื่อม — ตรวจตา",
+      "กดไขกระดูกและเยื่อบุอักเสบ — ติดตาม CBC และ LFT",
+      "QT prolongation — ตรวจ ECG",
+      "นิ่วในไต — ตรวจปัสสาวะ",
+      "ต่อมไทรอยด์เป็นพิษ — ตรวจ TSH"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 83 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 84,
+    "core_idx": 214,
+    "q_num": 215,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ยาต้านพิษ (rescue) เมื่อเกิดภาวะเป็นพิษจาก methotrexate คือข้อใด",
+    "choices": [
+      "Naloxone",
+      "Flumazenil",
+      "Leucovorin (folinic acid)",
+      "Vitamin K",
+      "Folic acid ขนาดสูง"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 84 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 85,
+    "core_idx": 215,
+    "q_num": 216,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: เหตุผลที่เหมาะสมที่สุดของการสั่ง prednisolone ระยะสั้นในผู้ป่วยรายนี้คือข้อใด",
+    "choices": [
+      "เพื่อลดไขมันในเลือด",
+      "เพื่อรักษาความดันโลหิต",
+      "เพื่อป้องกันข้ออักเสบเกาต์",
+      "bridging ต้านการอักเสบระหว่างรอ MTX ออกฤทธิ์",
+      "เสริมฤทธิ์ infliximab โดยตรง"
+    ],
+    "ans": 4,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 85 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 86,
+    "core_idx": 216,
+    "q_num": 217,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: หากต้องเลือกยาแก้ปวดเสริมให้ผู้ป่วยที่ใช้ MTX ข้อใดเหมาะสมที่สุด",
+    "choices": [
+      "Ibuprofen ขนาดสูง",
+      "Aspirin ขนาดสูง",
+      "Naproxen ขนาดสูงต่อเนื่อง",
+      "Indomethacin ขนาดสูง",
+      "Paracetamol"
+    ],
+    "ans": 5,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 86 Mock Musculo RxCU84"
+  }
+]

@@ -1,0 +1,354 @@
+[
+  {
+    "mock_num": 1,
+    "core_idx": 131,
+    "q_num": 132,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: ยาใดเหมาะสมที่สุดในการบรรเทาปวดเบื้องต้นสำหรับผู้ป่วยรายนี้?",
+    "choices": [
+      "Ibuprofen",
+      "Diclofenac",
+      "Celecoxib",
+      "Tolperisone",
+      "Naproxen"
+    ],
+    "ans": 4,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 1 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 2,
+    "core_idx": 132,
+    "q_num": 133,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: หากผู้ป่วยแอบไปซื้อยา Ibuprofen มากินเอง จะเกิดปฏิกิริยาระหว่างยา (Drug Interaction) กับยาใดของผู้ป่วยที่รุนแรงที่สุด?",
+    "choices": [
+      "Aspirin",
+      "Candesartan",
+      "HCTZ",
+      "Atorvastatin",
+      "Ticagrelor"
+    ],
+    "ans": 1,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 2 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 3,
+    "core_idx": 133,
+    "q_num": 134,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: ยาความดันตัวใดของผู้ป่วยที่อาจทำให้เกิดระดับกรดยูริกสูงขึ้นได้?",
+    "choices": [
+      "Aspirin",
+      "Ticagrelor",
+      "Candesartan",
+      "HCTZ",
+      "Atorvastatin"
+    ],
+    "ans": 4,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 3 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 4,
+    "core_idx": 134,
+    "q_num": 135,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: การรักษาแบบ Non-pharmacological ใดที่ตรงกับพยาธิสภาพของ Trigger point มากที่สุด?",
+    "choices": [
+      "การฝังเข็ม",
+      "การประคบเย็น",
+      "การยกของหนัก",
+      "การลดน้ำหนัก",
+      "การใช้ไม้เท้า"
+    ],
+    "ans": 1,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 4 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 5,
+    "core_idx": 135,
+    "q_num": 136,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: หากจำเป็นต้องใช้ NSAIDs จริงๆ ในผู้ป่วย CV risk สูง ยาตัวใดมีข้อมูลปลอดภัยด้าน CV (แต่ GI risk สูง) ที่สุด?",
+    "choices": [
+      "Celecoxib",
+      "Diclofenac",
+      "Naproxen",
+      "Meloxicam",
+      "Etoricoxib"
+    ],
+    "ans": 3,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 5 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 6,
+    "core_idx": 136,
+    "q_num": 137,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: ยาแก้ปวดที่เหมาะสมที่สุดในการเริ่มบรรเทาอาการของผู้ป่วยรายนี้คือข้อใด",
+    "choices": [
+      "Naproxen",
+      "Celecoxib",
+      "Diclofenac",
+      "Paracetamol",
+      "Etoricoxib"
+    ],
+    "ans": 4,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 6 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 7,
+    "core_idx": 137,
+    "q_num": 138,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: ข้อใดกล่าวถูกต้องเกี่ยวกับอันตรกิริยาระหว่าง ibuprofen กับ aspirin",
+    "choices": [
+      "Ibuprofen เสริมฤทธิ์ต้านเกล็ดเลือดของ aspirin",
+      "Ibuprofen บดบังฤทธิ์ต้านเกล็ดเลือดของ aspirin",
+      "ไม่มีอันตรกิริยาต่อกัน",
+      "ควรให้ ibuprofen ก่อน aspirin 30 นาที",
+      "ทำให้ต้องลดขนาด ticagrelor"
+    ],
+    "ans": 2,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 7 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 8,
+    "core_idx": 138,
+    "q_num": 139,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: หากต้องปรับยาเดิมเพื่อลดผลต่อระดับกรดยูริก (เผื่อความเสี่ยงเกาต์) ข้อใดเหมาะสมที่สุด",
+    "choices": [
+      "เพิ่มขนาด hydrochlorothiazide",
+      "เพิ่ม low-dose aspirin เพื่อขับกรดยูริก",
+      "เปลี่ยน hydrochlorothiazide เป็น losartan",
+      "หยุด candesartan",
+      "หยุด atorvastatin"
+    ],
+    "ans": 3,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 8 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 9,
+    "core_idx": 139,
+    "q_num": 140,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: ข้อใดกล่าวถูกต้องเกี่ยวกับ tramadol",
+    "choices": [
+      "เป็น full μ-opioid agonist ล้วน",
+      "ไม่ทำให้ท้องผูก",
+      "ปลอดภัยในผู้ป่วยลมชัก",
+      "เป็น weak μ-agonist และยับยั้ง reuptake ของ NE/serotonin",
+      "ต้องเพิ่มขนาดในผู้ป่วยไตเสื่อม"
+    ],
+    "ans": 4,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 9 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 10,
+    "core_idx": 140,
+    "q_num": 141,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: เหตุผลหลักที่ควรหลีกเลี่ยง NSAIDs (รวม COX-2 inhibitor) ในผู้ป่วยรายนี้คือข้อใด",
+    "choices": [
+      "เพิ่มความเสี่ยงลิ่มเลือดอุดตันหลอดเลือดหัวใจ",
+      "ทำให้กรดยูริกในเลือดต่ำลง",
+      "เสริมฤทธิ์ต้านเกล็ดเลือดจนเลือดออกแน่นอน",
+      "ลดประสิทธิภาพของ statin",
+      "ทำให้ ticagrelor เป็นพิษต่อตับ"
+    ],
+    "ans": 1,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 10 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 11,
+    "core_idx": 141,
+    "q_num": 142,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: หากหญิงคนนี้มีอาการบวมและปวดมาก ใยาและขนาดในข้อใดใช้ในการบรรเทาอาการก่อน DMARDs ออกฤทธิ์ได้เหมาะสมที่สุด",
+    "choices": [
+      "Prednisolone 5 mg OD",
+      "Naproxen 250 mg TID",
+      "Tramadol 50 mg hs",
+      "Etorocoxib 120 mg OD",
+      "Tolperisone 50 mg TID"
+    ],
+    "ans": 1,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 11 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 12,
+    "core_idx": 142,
+    "q_num": 143,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: DMARDs ใด \"ปลอดภัยที่สุด\" และเป็น First-line สำหรับผู้ป่วย RA ที่กำลังตั้งครรภ์?",
+    "choices": [
+      "Methotrexate",
+      "Leflunomide",
+      "Hydroxychloroquine",
+      "Cyclophosphamide",
+      "Mycophenolate"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 12 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 13,
+    "core_idx": 143,
+    "q_num": 144,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: DMARDs ใดจัดเป็น Pregnancy Category X และห้ามใช้เด็ดขาด?",
+    "choices": [
+      "Hydroxychloroquine",
+      "Sulfasalazine",
+      "Methotrexate",
+      "Cyclosporine",
+      "Azathioprine"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 13 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 14,
+    "core_idx": 144,
+    "q_num": 145,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: หากผู้ป่วยทาน Leflunomide อยู่และพบว่าตั้งครรภ์ ต้องใช้ยาใดในการ Wash out?",
+    "choices": [
+      "Activated charcoal",
+      "Cholestyramine",
+      "N-acetylcysteine",
+      "Leucovorin",
+      "Folic acid"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 14 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 15,
+    "core_idx": 145,
+    "q_num": 146,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: อาการข้อฝืดตึงยามเช้า (Morning stiffness) ใน RA มักมีลักษณะอย่างไร?",
+    "choices": [
+      "< 15 นาที",
+      "< 30 นาที",
+      "> 1 ชั่วโมง",
+      "เป็นเฉพาะตอนเย็น",
+      "ดีขึ้นเมื่ออยู่นิ่งๆ"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 15 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 16,
+    "core_idx": 146,
+    "q_num": 147,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: หากใช้ยา Hydroxychloroquine ผู้ป่วยควรได้รับการตรวจติดตาม (Screening) เรื่องใดเป็นพิเศษ?",
+    "choices": [
+      "Liver function",
+      "Kidney function",
+      "Eye examination (Retinopathy)",
+      "Hearing test",
+      "Pulmonary function"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 16 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 17,
+    "core_idx": 147,
+    "q_num": 148,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: ลักษณะการอักเสบของข้อใน RA ต่างจาก OA อย่างไร?",
+    "choices": [
+      "RA เป็นอสมมาตร (Asymmetric)",
+      "RA มักโดนข้อ DIP",
+      "RA เป็นแบบสมมาตร (Symmetric)",
+      "OA มีอาการทั่วร่างกาย (Systemic)",
+      "OA ตรวจพบ Rheumatoid factor"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 17 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 18,
+    "core_idx": 148,
+    "q_num": 149,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: หากผู้ป่วยคนนี้ได้ Sulfazalazine 500 mg OD daily ในสัปดาห์แรกของการรักษาโรค เนื่องจากมีปัญหาที่กระจกตา ในฐานะเภสัชกรควรให้คำแนะนำอย่างไร",
+    "choices": [
+      "เน้นย้ำให้รับประทาน Ferrous Fumarate เพื่อป้องกันผลข้างเคียงเรื่องของโลหิตจาง",
+      "เน้นย้ำให้รับประทานยา Mecobalamin 5 mg ควบคู่กันทุกวัน เพื่อลดผลข้างเคียงทางระบบทางเดินอาหารและแผลในปาก",
+      "หากมีสารคัดหลั่งหรือปัสสาวะสีส้มให้หยุดยาทันทีแล้วพบแพทย์",
+      "หากมีสารคัดหลั่งหรือปัสสาวะสีส้มให้รับประทานต่อไป เนื่องจากเป็นผลข้างเคียงจากยาตามปกติที่ไม่มีอันตรายอะไร",
+      "หากอาการข้อนิ้วบวมและ Morning Stiffness หายแล้วสามารถหยุดยาเองได้เลยทันทีเพื่อป้องกันผลข้างเคียงในระยะยาว"
+    ],
+    "ans": 4,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 18 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 19,
+    "core_idx": 149,
+    "q_num": 150,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: ยาใดเหมาะสมที่สุดในการบรรเทาปวดข้อระหว่างรอ DMARDs ออกฤทธิ์ ในหญิงตั้งครรภ์รายนี้",
+    "choices": [
+      "Naproxen",
+      "Paracetamol",
+      "Celecoxib",
+      "Aspirin ขนาดสูง",
+      "Indomethacin"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 19 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 20,
+    "core_idx": 150,
+    "q_num": 151,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: หากได้รับ NSAIDs ในไตรมาสที่ 3 ผลต่อทารกที่สำคัญที่สุดคือข้อใด",
+    "choices": [
+      "ปากแหว่งเพดานโหว่",
+      "น้ำตาลในเลือดต่ำในทารก",
+      "ductus arteriosus ปิดก่อนกำหนด และน้ำคร่ำน้อย",
+      "หัวใจพิการแต่กำเนิด",
+      "ภาวะตัวเหลืองในทารก"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 20 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 21,
+    "core_idx": 151,
+    "q_num": 152,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: DMARD ใดปลอดภัยและใช้เป็นยาหลักในหญิงตั้งครรภ์ที่เป็น RA (ต้องติดตามจอประสาทตา)",
+    "choices": [
+      "Methotrexate",
+      "Leflunomide",
+      "Cyclophosphamide",
+      "Hydroxychloroquine",
+      "Tofacitinib"
+    ],
+    "ans": 4,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 21 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 22,
+    "core_idx": 152,
+    "q_num": 153,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: ข้อใดกล่าวถูกต้องเกี่ยวกับ methotrexate ในบริบทการตั้งครรภ์",
+    "choices": [
+      "เป็นสารก่อวิรูป ห้ามใช้ในครรภ์",
+      "ปลอดภัยในไตรมาส 2–3",
+      "ใช้ต่อได้หากให้ folic acid สูง",
+      "เป็นยาหลักในหญิงตั้งครรภ์",
+      "ไม่ผ่านรก"
+    ],
+    "ans": 1,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 22 Mock Musculo RxCU84"
+  }
+]

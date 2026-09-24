@@ -1,0 +1,1378 @@
+[
+  {
+    "mock_num": 1,
+    "core_idx": 131,
+    "q_num": 132,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: ยาใดเหมาะสมที่สุดในการบรรเทาปวดเบื้องต้นสำหรับผู้ป่วยรายนี้?",
+    "choices": [
+      "Ibuprofen",
+      "Diclofenac",
+      "Celecoxib",
+      "Tolperisone",
+      "Naproxen"
+    ],
+    "ans": 4,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 1 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 2,
+    "core_idx": 132,
+    "q_num": 133,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: หากผู้ป่วยแอบไปซื้อยา Ibuprofen มากินเอง จะเกิดปฏิกิริยาระหว่างยา (Drug Interaction) กับยาใดของผู้ป่วยที่รุนแรงที่สุด?",
+    "choices": [
+      "Aspirin",
+      "Candesartan",
+      "HCTZ",
+      "Atorvastatin",
+      "Ticagrelor"
+    ],
+    "ans": 1,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 2 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 3,
+    "core_idx": 133,
+    "q_num": 134,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: ยาความดันตัวใดของผู้ป่วยที่อาจทำให้เกิดระดับกรดยูริกสูงขึ้นได้?",
+    "choices": [
+      "Aspirin",
+      "Ticagrelor",
+      "Candesartan",
+      "HCTZ",
+      "Atorvastatin"
+    ],
+    "ans": 4,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 3 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 4,
+    "core_idx": 134,
+    "q_num": 135,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: การรักษาแบบ Non-pharmacological ใดที่ตรงกับพยาธิสภาพของ Trigger point มากที่สุด?",
+    "choices": [
+      "การฝังเข็ม",
+      "การประคบเย็น",
+      "การยกของหนัก",
+      "การลดน้ำหนัก",
+      "การใช้ไม้เท้า"
+    ],
+    "ans": 1,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 4 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 5,
+    "core_idx": 135,
+    "q_num": 136,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: หากจำเป็นต้องใช้ NSAIDs จริงๆ ในผู้ป่วย CV risk สูง ยาตัวใดมีข้อมูลปลอดภัยด้าน CV (แต่ GI risk สูง) ที่สุด?",
+    "choices": [
+      "Celecoxib",
+      "Diclofenac",
+      "Naproxen",
+      "Meloxicam",
+      "Etoricoxib"
+    ],
+    "ans": 3,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 5 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 6,
+    "core_idx": 136,
+    "q_num": 137,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: ยาแก้ปวดที่เหมาะสมที่สุดในการเริ่มบรรเทาอาการของผู้ป่วยรายนี้คือข้อใด",
+    "choices": [
+      "Naproxen",
+      "Celecoxib",
+      "Diclofenac",
+      "Paracetamol",
+      "Etoricoxib"
+    ],
+    "ans": 4,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 6 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 7,
+    "core_idx": 137,
+    "q_num": 138,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: ข้อใดกล่าวถูกต้องเกี่ยวกับอันตรกิริยาระหว่าง ibuprofen กับ aspirin",
+    "choices": [
+      "Ibuprofen เสริมฤทธิ์ต้านเกล็ดเลือดของ aspirin",
+      "Ibuprofen บดบังฤทธิ์ต้านเกล็ดเลือดของ aspirin",
+      "ไม่มีอันตรกิริยาต่อกัน",
+      "ควรให้ ibuprofen ก่อน aspirin 30 นาที",
+      "ทำให้ต้องลดขนาด ticagrelor"
+    ],
+    "ans": 2,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 7 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 8,
+    "core_idx": 138,
+    "q_num": 139,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: หากต้องปรับยาเดิมเพื่อลดผลต่อระดับกรดยูริก (เผื่อความเสี่ยงเกาต์) ข้อใดเหมาะสมที่สุด",
+    "choices": [
+      "เพิ่มขนาด hydrochlorothiazide",
+      "เพิ่ม low-dose aspirin เพื่อขับกรดยูริก",
+      "เปลี่ยน hydrochlorothiazide เป็น losartan",
+      "หยุด candesartan",
+      "หยุด atorvastatin"
+    ],
+    "ans": 3,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 8 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 9,
+    "core_idx": 139,
+    "q_num": 140,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: ข้อใดกล่าวถูกต้องเกี่ยวกับ tramadol",
+    "choices": [
+      "เป็น full μ-opioid agonist ล้วน",
+      "ไม่ทำให้ท้องผูก",
+      "ปลอดภัยในผู้ป่วยลมชัก",
+      "เป็น weak μ-agonist และยับยั้ง reuptake ของ NE/serotonin",
+      "ต้องเพิ่มขนาดในผู้ป่วยไตเสื่อม"
+    ],
+    "ans": 4,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 9 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 10,
+    "core_idx": 140,
+    "q_num": 141,
+    "question": "📌 สถานการณ์เคสที่ 1:\nผู้ป่วยชายไทย อายุ 46 ปี อาชีพพนักงานออฟฟิศ มาเข้ารับบริการที่ร้านยาด้วยอาการปวดตึงบริเวณคอ บ่า ไหล่ และหลังส่วนล่าง (Myalgia) สัมพันธ์กับการทำงาน มีอาการต่อเนื่องมานาน 2 สัปดาห์ ปฏิเสธประวัติอุบัติเหตุก่อนหน้านี้\nPMH: Acute Coronary Syndrome (ACS) เมื่อ 2 เดือนก่อน, Hypertension (HTN), Dyslipidemia (DLP)\nRenal function: Normal (eGFR > 60 mL/min/1.73 m²)\nVital Signs: BP 125/75 mmHg, HR 87 bpm\nPhysical Examination: บ่าและต้นคอมีอาการตึงมากและคลำเจอจุดกดเจ็บ (Trigger Point)\nCurrent Medications: Aspirin 81 mg 1x1 po daily pc, Ticagrelor 90 mg 1x2 po pc เช้า เย็น, Candesartan 8 mg 1x1 po pc, Hydrochlorothiazide 12.5 mg 2x1 po pc, Atorvastatin 40 mg 1x1 po hs\nคำถาม: เหตุผลหลักที่ควรหลีกเลี่ยง NSAIDs (รวม COX-2 inhibitor) ในผู้ป่วยรายนี้คือข้อใด",
+    "choices": [
+      "เพิ่มความเสี่ยงลิ่มเลือดอุดตันหลอดเลือดหัวใจ",
+      "ทำให้กรดยูริกในเลือดต่ำลง",
+      "เสริมฤทธิ์ต้านเกล็ดเลือดจนเลือดออกแน่นอน",
+      "ลดประสิทธิภาพของ statin",
+      "ทำให้ ticagrelor เป็นพิษต่อตับ"
+    ],
+    "ans": 1,
+    "topic": "Myofascial Pain Syndrome",
+    "subtopic": "ข้อ 10 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 11,
+    "core_idx": 141,
+    "q_num": 142,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: หากหญิงคนนี้มีอาการบวมและปวดมาก ใยาและขนาดในข้อใดใช้ในการบรรเทาอาการก่อน DMARDs ออกฤทธิ์ได้เหมาะสมที่สุด",
+    "choices": [
+      "Prednisolone 5 mg OD",
+      "Naproxen 250 mg TID",
+      "Tramadol 50 mg hs",
+      "Etorocoxib 120 mg OD",
+      "Tolperisone 50 mg TID"
+    ],
+    "ans": 1,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 11 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 12,
+    "core_idx": 142,
+    "q_num": 143,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: DMARDs ใด \"ปลอดภัยที่สุด\" และเป็น First-line สำหรับผู้ป่วย RA ที่กำลังตั้งครรภ์?",
+    "choices": [
+      "Methotrexate",
+      "Leflunomide",
+      "Hydroxychloroquine",
+      "Cyclophosphamide",
+      "Mycophenolate"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 12 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 13,
+    "core_idx": 143,
+    "q_num": 144,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: DMARDs ใดจัดเป็น Pregnancy Category X และห้ามใช้เด็ดขาด?",
+    "choices": [
+      "Hydroxychloroquine",
+      "Sulfasalazine",
+      "Methotrexate",
+      "Cyclosporine",
+      "Azathioprine"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 13 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 14,
+    "core_idx": 144,
+    "q_num": 145,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: หากผู้ป่วยทาน Leflunomide อยู่และพบว่าตั้งครรภ์ ต้องใช้ยาใดในการ Wash out?",
+    "choices": [
+      "Activated charcoal",
+      "Cholestyramine",
+      "N-acetylcysteine",
+      "Leucovorin",
+      "Folic acid"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 14 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 15,
+    "core_idx": 145,
+    "q_num": 146,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: อาการข้อฝืดตึงยามเช้า (Morning stiffness) ใน RA มักมีลักษณะอย่างไร?",
+    "choices": [
+      "< 15 นาที",
+      "< 30 นาที",
+      "> 1 ชั่วโมง",
+      "เป็นเฉพาะตอนเย็น",
+      "ดีขึ้นเมื่ออยู่นิ่งๆ"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 15 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 16,
+    "core_idx": 146,
+    "q_num": 147,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: หากใช้ยา Hydroxychloroquine ผู้ป่วยควรได้รับการตรวจติดตาม (Screening) เรื่องใดเป็นพิเศษ?",
+    "choices": [
+      "Liver function",
+      "Kidney function",
+      "Eye examination (Retinopathy)",
+      "Hearing test",
+      "Pulmonary function"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 16 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 17,
+    "core_idx": 147,
+    "q_num": 148,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: ลักษณะการอักเสบของข้อใน RA ต่างจาก OA อย่างไร?",
+    "choices": [
+      "RA เป็นอสมมาตร (Asymmetric)",
+      "RA มักโดนข้อ DIP",
+      "RA เป็นแบบสมมาตร (Symmetric)",
+      "OA มีอาการทั่วร่างกาย (Systemic)",
+      "OA ตรวจพบ Rheumatoid factor"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 17 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 18,
+    "core_idx": 148,
+    "q_num": 149,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: หากผู้ป่วยคนนี้ได้ Sulfazalazine 500 mg OD daily ในสัปดาห์แรกของการรักษาโรค เนื่องจากมีปัญหาที่กระจกตา ในฐานะเภสัชกรควรให้คำแนะนำอย่างไร",
+    "choices": [
+      "เน้นย้ำให้รับประทาน Ferrous Fumarate เพื่อป้องกันผลข้างเคียงเรื่องของโลหิตจาง",
+      "เน้นย้ำให้รับประทานยา Mecobalamin 5 mg ควบคู่กันทุกวัน เพื่อลดผลข้างเคียงทางระบบทางเดินอาหารและแผลในปาก",
+      "หากมีสารคัดหลั่งหรือปัสสาวะสีส้มให้หยุดยาทันทีแล้วพบแพทย์",
+      "หากมีสารคัดหลั่งหรือปัสสาวะสีส้มให้รับประทานต่อไป เนื่องจากเป็นผลข้างเคียงจากยาตามปกติที่ไม่มีอันตรายอะไร",
+      "หากอาการข้อนิ้วบวมและ Morning Stiffness หายแล้วสามารถหยุดยาเองได้เลยทันทีเพื่อป้องกันผลข้างเคียงในระยะยาว"
+    ],
+    "ans": 4,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 18 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 19,
+    "core_idx": 149,
+    "q_num": 150,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: ยาใดเหมาะสมที่สุดในการบรรเทาปวดข้อระหว่างรอ DMARDs ออกฤทธิ์ ในหญิงตั้งครรภ์รายนี้",
+    "choices": [
+      "Naproxen",
+      "Paracetamol",
+      "Celecoxib",
+      "Aspirin ขนาดสูง",
+      "Indomethacin"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 19 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 20,
+    "core_idx": 150,
+    "q_num": 151,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: หากได้รับ NSAIDs ในไตรมาสที่ 3 ผลต่อทารกที่สำคัญที่สุดคือข้อใด",
+    "choices": [
+      "ปากแหว่งเพดานโหว่",
+      "น้ำตาลในเลือดต่ำในทารก",
+      "ductus arteriosus ปิดก่อนกำหนด และน้ำคร่ำน้อย",
+      "หัวใจพิการแต่กำเนิด",
+      "ภาวะตัวเหลืองในทารก"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 20 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 21,
+    "core_idx": 151,
+    "q_num": 152,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: DMARD ใดปลอดภัยและใช้เป็นยาหลักในหญิงตั้งครรภ์ที่เป็น RA (ต้องติดตามจอประสาทตา)",
+    "choices": [
+      "Methotrexate",
+      "Leflunomide",
+      "Cyclophosphamide",
+      "Hydroxychloroquine",
+      "Tofacitinib"
+    ],
+    "ans": 4,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 21 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 22,
+    "core_idx": 152,
+    "q_num": 153,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: ข้อใดกล่าวถูกต้องเกี่ยวกับ methotrexate ในบริบทการตั้งครรภ์",
+    "choices": [
+      "เป็นสารก่อวิรูป ห้ามใช้ในครรภ์",
+      "ปลอดภัยในไตรมาส 2–3",
+      "ใช้ต่อได้หากให้ folic acid สูง",
+      "เป็นยาหลักในหญิงตั้งครรภ์",
+      "ไม่ผ่านรก"
+    ],
+    "ans": 1,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 22 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 23,
+    "core_idx": 153,
+    "q_num": 154,
+    "question": "📌 สถานการณ์เคสที่ 2:\nเคสที่ 2 ผู้หญิงชาวไทยอายุ 31 ปี ปัจจุบันกำลังตั้งครรภ์อยู่ในไตรมาส 2 เข้าพบแพทย์ด้วยอาการมีข้อบวมนิ้ว 6 ข้อ (บวมนิ้วชี้, นิ้วกลาง และนิ้วนางทั้ง 2 ข้าง) มีอาการบวม แดง ร้อน และจะปวดมากในตอนเช้าหลังตื่นนอน (Morning Stiffness) เป็นเวลา 2 ชั่วโมง มีอาการมานาน 7 สัปดาห์ มี U/D เป็นโรค Sjogren’s Syndrome ใช้น้ำตาเทียมและน้ำลายเทียม ไม่มียาใดกินเป็นประจำ\nคำถาม: ลักษณะใดสนับสนุนการวินิจฉัย RA มากกว่า OA ในผู้ป่วยรายนี้",
+    "choices": [
+      "ปวดเมื่อใช้งาน ดีขึ้นเมื่อพัก",
+      "ข้อฝืดตอนเช้าน้อยกว่า 30 นาที",
+      "คลำได้เสียงกรอบแกรบในข้อ",
+      "มักเกิดที่ข้อปลายนิ้ว (DIP)",
+      "ข้อฝืดตอนเช้ามากกว่า 1 ชั่วโมง ร่วมกับข้ออักเสบสมมาตร"
+    ],
+    "ans": 5,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 23 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 24,
+    "core_idx": 154,
+    "q_num": 155,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ยาใดควรใช้เป็นอันดับแรกเพื่อรักษาอาการกำเริบ (Acute attack)?",
+    "choices": [
+      "Allopurinol",
+      "Febuxostat",
+      "Colchicine",
+      "Probenecid",
+      "Sulfinpyrazone"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 24 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 25,
+    "core_idx": 155,
+    "q_num": 156,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ขนาดยา Colchicine ที่ถูกต้องใน Acute Gout คือข้อใด (ผู้ป่วยไตปกติ)?",
+    "choices": [
+      "1.2 mg OD",
+      "0.6 mg tid",
+      "1.2 mg ทันที ตามด้วย 0.6 mg ใน 1 ชม.",
+      "0.6 mg ทุก 2 ชม. จนกว่าจะท้องเสีย",
+      "1.2 mg ทันที ตามด้วย 1.2 mg ใน 1 ชม. เฉลย"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 25 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 26,
+    "core_idx": 156,
+    "q_num": 157,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ยาความดันตัวใดของผู้ป่วยที่มีฤทธิ์เพิ่มการขับกรดยูริก (Uricosuric effect)?",
+    "choices": [
+      "Bisoprolol",
+      "Losartan",
+      "Amlodipine",
+      "Enalapril",
+      "Diltiazem"
+    ],
+    "ans": 2,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 26 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 27,
+    "core_idx": 157,
+    "q_num": 158,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: อาหารใดที่จัดว่ามีพิวรีน (Purine) สูงและควรงด?",
+    "choices": [
+      "ข้าวสวย",
+      "ไข่ไก่",
+      "เครื่องในสัตว์และเบียร์",
+      "นมวัว",
+      "ผลไม้"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 27 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 28,
+    "core_idx": 158,
+    "q_num": 159,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: เป้าหมายการลดระดับกรดยูริก (Target Serum Uric Acid) ในผู้ป่วยเกาต์ทั่วไปคือเท่าใด?",
+    "choices": [
+      "< 4 mg/dL",
+      "< 5 mg/dL",
+      "< 6 mg/dL",
+      "< 7 mg/dL",
+      "< 8 mg/dL"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 28 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 29,
+    "core_idx": 159,
+    "q_num": 160,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: หากจะเริ่มยา Allopurinol ต้องระวังการเกิดผื่นแพ้ยารุนแรง (SJS/TEN) ควรตรวจยีนใดก่อนเริ่มยา?",
+    "choices": [
+      "HLA-B*15:02",
+      "HLA-B*58:01",
+      "HLA-B*57:01",
+      "CYP2C9",
+      "DPYD"
+    ],
+    "ans": 2,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 29 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 30,
+    "core_idx": 160,
+    "q_num": 161,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ยาใดที่ มีข้อห้ามใช้ร่วมกับ Allopurinol เพราะจะทำให้ยาตัวนั้นเกิดพิษ?",
+    "choices": [
+      "Metformin",
+      "Bisoprolol",
+      "Azathioprine",
+      "Atorvastatin",
+      "Losartan"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 30 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 31,
+    "core_idx": 161,
+    "q_num": 162,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: เมื่อเริ่มยา Allopurinol (ULT) ควรให้ยาใดควบคู่เพื่อป้องกัน Gout flare?",
+    "choices": [
+      "Colchicine 0.6 mg/day นาน 3-6 เดือน",
+      "Prednisolone นาน 1 ปี",
+      "Aspirin 81 mg",
+      "Probenecid",
+      "Paracetamol"
+    ],
+    "ans": 1,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 31 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 32,
+    "core_idx": 162,
+    "q_num": 163,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: กลไกการออกฤทธิ์ของ Colchicine คืออะไร?",
+    "choices": [
+      "ยับยั้ง COX-2",
+      "ยับยั้ง Xanthine oxidase",
+      "ขัดขวาง Microtubule polymerization ลดการเคลื่อนที่ของ Neutrophil",
+      "เพิ่มการขับ Uric acid",
+      "ยับยั้ง URAT1"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 32 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 33,
+    "core_idx": 163,
+    "q_num": 164,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ยาลดไขมันใดที่มีฤทธิ์ช่วยลดกรดยูริกได้บ้าง?",
+    "choices": [
+      "Simvastatin",
+      "Atorvastatin",
+      "Fenofibrate",
+      "Gemfibrozil",
+      "Ezetimibe"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 33 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 34,
+    "core_idx": 164,
+    "q_num": 165,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ข้อใดเป็นคำแนะนำในการปรับพฤติกรรมของผู้ป่วยชายชาวฮ่องกงรายนี้",
+    "choices": [
+      "ควบคุมอาหารและออกกำลังกายเพื่อลดน้ำหนักตัว โดยตั้งเป้าหมายให้ดัชนีมวลกาย (BMI) ลดลงต่ำกว่า 30 kg/m2",
+      "ลดหรือหลีกเลี่ยงการดื่มเครื่องดื่มแอลกอฮอล์ทุกชนิด",
+      "หลีกเลี่ยงการรับประทานอาหารที่มีสารพิวรีนสูง เช่น สัตว์ปีก เครื่องในสัตว์ และยอดผัก",
+      "ดื่มน้ำสะอาดในปริมาณที่เหมาะสมอย่างน้อย 2–3 ลิตรต่อวัน เพื่อช่วยขับกรดยูริกออกทางไต",
+      "ถูกต้องทุกข้อที่กล่าวมา"
+    ],
+    "ans": 5,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 34 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 35,
+    "core_idx": 165,
+    "q_num": 166,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: แนวทางที่เหมาะสมที่สุดในการรักษาภาวะข้ออักเสบเฉียบพลันของผู้ป่วยรายนี้คือข้อใด",
+    "choices": [
+      "เริ่ม allopurinol ทันที",
+      "ให้ probenecid เร่งขับกรดยูริก",
+      "ให้ colchicine/NSAIDs/steroid ยังไม่เริ่มยาลดกรดยูริก",
+      "ให้ paracetamol เดี่ยว ๆ",
+      "งดยาทุกชนิดรอหายเอง"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 35 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 36,
+    "core_idx": 166,
+    "q_num": 167,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ผู้ป่วยการทำงานของไตปกติ ขนาด colchicine ที่ถูกต้องตามแนวทางปัจจุบันคือข้อใด",
+    "choices": [
+      "0.6 mg วันละครั้งเท่านั้น",
+      "1.0 mg แล้ว 0.5 mg ทุกชั่วโมงจนท้องเสีย",
+      "2.4 mg ครั้งเดียว",
+      "1.2 mg ทันที แล้ว 0.6 mg อีก 1 ชม. ต่อด้วย 0.5–0.6 mg ทุก 8–12 ชม.",
+      "1.2 mg ทุก 2 ชม. รวม 6 ครั้ง"
+    ],
+    "ans": 4,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 36 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 37,
+    "core_idx": 167,
+    "q_num": 168,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ในการปรับยาลดความดันให้เหมาะกับผู้ป่วยเกาต์รายนี้ ข้อใดเหมาะสมที่สุด",
+    "choices": [
+      "คง losartan ไว้เพราะช่วยขับกรดยูริก",
+      "เปลี่ยน losartan เป็น hydrochlorothiazide",
+      "เพิ่ม bisoprolol เพื่อลดกรดยูริก",
+      "เพิ่ม low-dose aspirin",
+      "หยุด losartan เพราะเพิ่มกรดยูริก"
+    ],
+    "ans": 1,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 37 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 38,
+    "core_idx": 168,
+    "q_num": 169,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: ก่อนเริ่ม allopurinol ในผู้ป่วยเชื้อสายเอเชียรายนี้ ควรตรวจยีนใด",
+    "choices": [
+      "HLA-B*15:02",
+      "HLA-B*58:01",
+      "HLA-B*57:01",
+      "CYP2C9",
+      "G6PD"
+    ],
+    "ans": 2,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 38 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 39,
+    "core_idx": 169,
+    "q_num": 170,
+    "question": "📌 สถานการณ์เคสที่ 3:\nเคสที่ 3 ผู้ป่วยชายชาวฮ่องกง อายุ 50 ปี มาห้องฉุกเฉินด้วยอาการปวดอย่างรุนแรง บวม แดง และร้อน บริเวณข้อเข่าซ้าย อาการเกิดขึ้นเฉียบพลันเมื่อคืนนี้หลังร่วมงานเลี้ยงรับประทานเป็ดย่างร่วมกับดื่มเบียร์ในปริมาณมาก\nPhysical & Vital Signs: BW 90 kg, Ht 160 cm (BMI 35.2 kg/m²), NKDA, BP 125/79 mmHg, HR 88 bpm, Serum uric acid = 10.2 mg/dL\nPMH: T2DM, HTN, DLP, Normal renal function\nCurrent Medications: Metformin 500 mg 2x1 po pc เช้า, Sitagliptin 100 mg 1x1 po pc เช้า, Losartan 50 mg 1x1 po pc เช้า, Bisoprolol 5 mg 1x1 po pc เช้า, Atorvastatin 40 mg 1x1 po hs, Ezetimibe 10 mg 1x1 po hs\nคำถาม: เป้าหมายระดับกรดยูริกในเลือดระยะยาวของผู้ป่วยเกาต์ทั่วไปคือข้อใด",
+    "choices": [
+      "น้อยกว่า 4 mg/dL",
+      "น้อยกว่า 5 mg/dL",
+      "น้อยกว่า 6 mg/dL",
+      "น้อยกว่า 7 mg/dL",
+      "น้อยกว่า 8 mg/dL"
+    ],
+    "ans": 3,
+    "topic": "Gout & Hyperuricemia",
+    "subtopic": "ข้อ 39 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 40,
+    "core_idx": 170,
+    "q_num": 171,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ยาใดแนะนำเป็น First-line สำหรับผู้ป่วยรายนี้ตาม Guideline OA Knee?",
+    "choices": [
+      "Oral Paracetamol",
+      "Topical NSAIDs",
+      "Oral Glucosamine",
+      "IA Steroid",
+      "Tramadol"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 40 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 41,
+    "core_idx": 171,
+    "q_num": 172,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: กลไกของข้ออักเสบเสื่อม (OA) ต่างจาก RA อย่างไร?",
+    "choices": [
+      "OA เป็น Autoimmune",
+      "OA เกิดจากการสึกหรอของกระดูกอ่อน (Cartilage degradation)",
+      "OA มี Systemic symptom",
+      "OA ค่า ESR พุ่งสูง",
+      "OA มักโดนข้อข้อมือ"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 41 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 42,
+    "core_idx": 172,
+    "q_num": 173,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ข้อใดคือ Non-pharmacological therapy ที่ให้ผลดีที่สุดในการชะลอข้อเข่าเสื่อม?",
+    "choices": [
+      "ว่ายน้ำและลดน้ำหนัก",
+      "วิ่งมาราธอน",
+      "การฝังเข็ม",
+      "การใส่สนับเข่าตลอดเวลา",
+      "การทานคอลลาเจน"
+    ],
+    "ans": 1,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 42 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 43,
+    "core_idx": 173,
+    "q_num": 174,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: อาการ \"Crepitus\" ใน OA คืออะไร?",
+    "choices": [
+      "ข้อบวมแดง",
+      "ข้อผิดรูปเบี้ยว",
+      "เสียงดังกรอบแกรบขณะขยับข้อ",
+      "การขยับข้อไม่ได้เลย",
+      "กล้ามเนื้อลีบ"
+    ],
+    "ans": 3,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 43 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 44,
+    "core_idx": 174,
+    "q_num": 175,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: หากจำเป็นต้องใช้ Oral NSAIDs ในผู้สูงอายุ ควรเลือกแนวทางใดเพื่อความปลอดภัยสูงสุดต่อ GI?",
+    "choices": [
+      "Piroxicam",
+      "Ibuprofen dose สูง",
+      "COX-2 inhibitor + PPI",
+      "Indomethacin",
+      "Naproxen เดี่ยวๆ"
+    ],
+    "ans": 3,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 44 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 45,
+    "core_idx": 175,
+    "q_num": 176,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ยา Capsaicin cream มีกลไกแก้ปวดอย่างไร?",
+    "choices": [
+      "ยับยั้ง COX",
+      "Depletion ของ Substance P จากปลายประสาท",
+      "ยับยั้ง Mu-receptor",
+      "ขยายหลอดเลือดลดอักเสบ",
+      "ให้ความเย็นชา"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 45 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 46,
+    "core_idx": 176,
+    "q_num": 177,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: สารใดที่เป็นองค์ประกอบหลักของกระดูกอ่อนข้อต่อ (Cartilage) ที่เป็นเป้าหมายของยาเสริมอาหารบางชนิด?",
+    "choices": [
+      "Hyaluronic acid และ Proteoglycan",
+      "Calcium",
+      "Vitamin D",
+      "Uric acid",
+      "Fibrin"
+    ],
+    "ans": 1,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 46 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 47,
+    "core_idx": 177,
+    "q_num": 178,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: การฉีดคอร์ติโคสเตียรอยด์เข้าข้อ (Intra-articular) มีข้อจำกัดอย่างไร?",
+    "choices": [
+      "ห้ามฉีดเกินปีละ 1 ครั้ง",
+      "ให้ผลลดปวดเพียงระยะสั้น (Short-term) ไม่ชะลอโรค",
+      "ทำให้กระดูกงอก",
+      "ลดปวดถาวร",
+      "ใช้เป็น First-line เสมอ"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 47 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 48,
+    "core_idx": 178,
+    "q_num": 179,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: หากผู้ป่วยแพ้ยา NSAIDs รุนแรง ยาใดเป็นตัวเลือกถัดไปในการลดปวด?",
+    "choices": [
+      "Duloxetine หรือ Tramadol",
+      "Colchicine",
+      "Allopurinol",
+      "Methotrexate",
+      "Prednisolone"
+    ],
+    "ans": 1,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 48 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 49,
+    "core_idx": 179,
+    "q_num": 180,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ยากลุ่ม SYSADOA (เช่น Glucosamine) Guideline ปัจจุบัน (ACR) แนะนำอย่างไร?",
+    "choices": [
+      "แนะนำอย่างยิ่งให้ใช้ทุกราย",
+      "ไม่แนะนำให้ใช้ (Strongly against) หรือแนะนำอย่างมีเงื่อนไขว่าอาจใช้ใน OA Knee",
+      "แทนที่ NSAID ได้เลย",
+      "ใช้รักษา RA ได้",
+      "ใช้ป้องกันกระดูกหัก"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 49 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 50,
+    "core_idx": 180,
+    "q_num": 181,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ตามแนวทาง ACR 2019 ยาใดจัดเป็น first-line ที่แนะนำอย่างยิ่ง สำหรับข้อเข่าเสื่อมในผู้สูงอายุรายนี้",
+    "choices": [
+      "Paracetamol",
+      "Tramadol",
+      "Topical NSAIDs",
+      "Intra-articular hyaluronic acid",
+      "Glucosamine"
+    ],
+    "ans": 3,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 50 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 51,
+    "core_idx": 181,
+    "q_num": 182,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ยาต้านพิษของภาวะได้รับ paracetamol เกินขนาดคือข้อใด",
+    "choices": [
+      "Naloxone",
+      "Flumazenil",
+      "Vitamin K",
+      "N-acetylcysteine",
+      "Leucovorin"
+    ],
+    "ans": 4,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 51 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 52,
+    "core_idx": 182,
+    "q_num": 183,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: หากผู้ป่วยมีข้อห้ามใช้ NSAIDs และปวดเรื้อรัง ยาใดเหมาะสมที่สุด",
+    "choices": [
+      "Duloxetine",
+      "Colchicine",
+      "Allopurinol",
+      "Prednisolone ระยะยาว",
+      "Aspirin ขนาดสูง"
+    ],
+    "ans": 1,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 52 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 53,
+    "core_idx": 183,
+    "q_num": 184,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: กลไกการบรรเทาปวดของ capsaicin ชนิดทาเฉพาะที่คือข้อใด",
+    "choices": [
+      "ยับยั้งเอนไซม์ cyclooxygenase",
+      "กระตุ้น TRPV1 ทำให้ substance P พร่องลง",
+      "ต้านตัวรับ μ-opioid",
+      "ยับยั้ง xanthine oxidase",
+      "ยับยั้งการเก็บกลับ serotonin"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 53 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 54,
+    "core_idx": 184,
+    "q_num": 185,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ตามแนวทาง ACR 2019 คำแนะนำต่อการใช้ glucosamine ในข้อเข่าเสื่อมคือข้อใด",
+    "choices": [
+      "แนะนำอย่างยิ่งให้ใช้ทุกราย",
+      "ใช้แทน NSAIDs ได้",
+      "ใช้รักษา RA",
+      "ใช้ป้องกันกระดูกหัก",
+      "ไม่แนะนำให้ใช้"
+    ],
+    "ans": 5,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 54 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 55,
+    "core_idx": 185,
+    "q_num": 186,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ยาใดเป็น First-line ในการป้องกันกระดูกหักซ้ำสำหรับผู้ป่วยรายนี้?",
+    "choices": [
+      "Alendronate",
+      "Raloxifene",
+      "Estrogen",
+      "Calcitonin",
+      "Calcium"
+    ],
+    "ans": 1,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 55 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 56,
+    "core_idx": 186,
+    "q_num": 187,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: คำแนะนำการบริหารยา Alendronate ที่ถูกต้องคือข้อใด?",
+    "choices": [
+      "กินหลังอาหารทันที",
+      "กินก่อนนอน",
+      "กินตอนเช้าขณะท้องว่าง ดื่มน้ำเปล่าเต็มแก้ว และตั้งตรง 30 นาที",
+      "เคี้ยวให้ละเอียดก่อนกลืน",
+      "กินพร้อมนม"
+    ],
+    "ans": 3,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 56 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 57,
+    "core_idx": 187,
+    "q_num": 188,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ปริมาณแคลเซียมและวิตามินดีที่แนะนำต่อวัน (Total intake) ในหญิงสูงอายุ > 50 ปี คือเท่าใด?",
+    "choices": [
+      "Ca 500 mg, Vit D 400 IU",
+      "Ca 1200 mg, Vit D 800-1000 IU",
+      "Ca 2000 mg, Vit D 2000 IU",
+      "Ca 800 mg, Vit D 400 IU",
+      "Ca 1500 mg, Vit D 400 IU"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 57 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 58,
+    "core_idx": 188,
+    "q_num": 189,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: กลไกของยา Bisphosphonates คืออะไร?",
+    "choices": [
+      "กระตุ้น Osteoblast",
+      "ยับยั้ง RANKL",
+      "ยับยั้งการทำงานของ Osteoclast ชักนำให้เกิด Apoptosis",
+      "เป็นฮอร์โมนทดแทน",
+      "จับกับแคลเซียมในลำไส้ เฉลย"
+    ],
+    "ans": 3,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 58 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 59,
+    "core_idx": 189,
+    "q_num": 190,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: กลไกของยา Denosumab คืออะไร?",
+    "choices": [
+      "ยับยั้ง Osteoclast โดยตรง",
+      "เป็น Monoclonal antibody ต่อ RANKL",
+      "กระตุ้น PTH receptor",
+      "SERM",
+      "แคลเซียมสังเคราะห์"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 59 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 60,
+    "core_idx": 190,
+    "q_num": 191,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ทำไมผู้ป่วยรายนี้จึง \"ไม่ควร\" ใช้ยา Teriparatide?",
+    "choices": [
+      "ผู้ป่วยมีภาวะความดันสูง",
+      "ผู้ป่วยมีประวัติมะเร็ง (NSCLC) อาจเสี่ยงต่อ Osteosarcoma หรือ Bone mets",
+      "ผู้ป่วยเป็นเบาหวาน",
+      "ผู้ป่วยไม่มีกระดูกหัก",
+      "ยาราคาแพง"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 60 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 61,
+    "core_idx": 191,
+    "q_num": 192,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ทำไมจึง \"ไม่เลือก\" Raloxifene ให้ผู้ป่วยรายนี้?",
+    "choices": [
+      "ป้องกันได้เฉพาะ Vertebral fracture และมีประวัติมะเร็ง/อาจเสี่ยง VTE",
+      "ทำให้มวลกระดูกลดลง",
+      "ระคายเคืองกระเพาะอาหาร",
+      "ต้องฉีดเข้าเส้น",
+      "ห้ามใช้ในคนแก่"
+    ],
+    "ans": 1,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 61 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 62,
+    "core_idx": 192,
+    "q_num": 193,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ระยะเวลาการรักษาด้วย Oral Bisphosphonate ควรนานเท่าใดก่อนพิจารณา Drug holiday?",
+    "choices": [
+      "1 ปี",
+      "3-5 ปี",
+      "10 ปี",
+      "ตลอดชีวิต",
+      "6 เดือน"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 62 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 63,
+    "core_idx": 193,
+    "q_num": 194,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ค่า T-score ใดที่เข้าเกณฑ์การวินิจฉัย Osteoporosis?",
+    "choices": [
+      "T-score ≤ -1.0",
+      "T-score ≤ -2.0",
+      "T-score ≤ -2.5",
+      "T-score > -1.0",
+      "T-score = 0"
+    ],
+    "ans": 3,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 63 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 64,
+    "core_idx": 194,
+    "q_num": 195,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ผลข้างเคียงร้ายแรง (Rare but serious) ของยา Bisphosphonates และ Denosumab ที่เหมือนกันคือข้อใด?",
+    "choices": [
+      "SJS/TEN",
+      "Osteonecrosis of the jaw (ONJ) และ Atypical femur fracture (AFF)",
+      "รังไข่ฝ่อ",
+      "เลือดออกในสมอง",
+      "ไตวายเฉียบพลัน"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 64 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 65,
+    "core_idx": 195,
+    "q_num": 196,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ยาใดเหมาะสมเป็น first-line เพื่อลดความเสี่ยงกระดูกหักซ้ำในผู้ป่วยรายนี้",
+    "choices": [
+      "Raloxifene",
+      "Alendronate",
+      "Calcium เดี่ยว ๆ",
+      "Estrogen",
+      "Teriparatide"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 65 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 66,
+    "core_idx": 196,
+    "q_num": 197,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: เหตุผลที่เหมาะสมที่สุดที่ทำให้ไม่เลือกใช้ teriparatide ในผู้ป่วยรายนี้คือข้อใด",
+    "choices": [
+      "มีประวัติมะเร็ง เสี่ยง osteosarcoma",
+      "ผู้ป่วยเป็นเบาหวาน",
+      "ยาราคาถูก",
+      "การทำงานของไตปกติ",
+      "ไม่มีกระดูกหัก"
+    ],
+    "ans": 1,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 66 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 67,
+    "core_idx": 197,
+    "q_num": 198,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ผู้ป่วยปวดหลังรุนแรงจากกระดูกสันหลังยุบและกำลังได้ cisplatin แนวทางจัดการปวดที่เหมาะสมที่สุดคือข้อใด",
+    "choices": [
+      "NSAIDs ขนาดสูงต่อเนื่องเป็นหลัก",
+      "Colchicine",
+      "Opioid ตามบันได WHO ร่วมกับ paracetamol เลี่ยง NSAIDs",
+      "Allopurinol",
+      "งดยาแก้ปวดทุกชนิด"
+    ],
+    "ans": 3,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 67 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 68,
+    "core_idx": 198,
+    "q_num": 199,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ข้อใดถูกต้องเกี่ยวกับ calcitonin ในผู้ป่วยที่มีกระดูกสันหลังยุบเฉียบพลัน",
+    "choices": [
+      "เพิ่มระดับแคลเซียมในเลือด",
+      "กระตุ้นการทำงานของ osteoclast",
+      "เป็นยาหลักระยะยาวแทน bisphosphonate",
+      "ไม่มีฤทธิ์ลดปวด",
+      "ช่วยลดปวดระยะสั้นจากกระดูกสันหลังยุบ"
+    ],
+    "ans": 5,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 68 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 69,
+    "core_idx": 199,
+    "q_num": 200,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ผลข้างเคียงรุนแรงที่พบได้ทั้ง bisphosphonate และ denosumab (ควรตรวจสุขภาพช่องปากก่อนเริ่มยา) คือข้อใด",
+    "choices": [
+      "SJS/TEN",
+      "ไตวายเฉียบพลัน",
+      "หัวใจเต้นผิดจังหวะ",
+      "Osteonecrosis of the jaw และ atypical femur fracture",
+      "ต้อกระจก"
+    ],
+    "ans": 4,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 69 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 70,
+    "core_idx": 200,
+    "q_num": 201,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ความผิดพลาดร้ายแรง (Med Error) ในใบสั่งยานี้คืออะไร?",
+    "choices": [
+      "การคำนวณยา Infliximab ต่อน้ำหนักตัวผิดพลาด",
+      "สั่ง MTX กินทุกวันแทนที่จะเป็นสัปดาห์ละครั้ง",
+      "ให้ Folic acid ที่มีขนาดน้อยเกินไป",
+      "การที่ Prednisolone ให้รับประทานหลังอาหารทำให้ยาดูดซึมไม่ดี",
+      "การบริหาร NSS 0.9% มีอัตราเร็วจนเกินไป ก่อให้เกิดอาการบวมน้ำ"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 70 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 71,
+    "core_idx": 201,
+    "q_num": 202,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ผู้ป่วยรายนี้จากใบสั่งยานี้ (หากแก้ไขถูกต้องแล้ว) ควรเฝ้าระวังเรื่องใดบ้าง",
+    "choices": [
+      "CBC ที่ต่ำเกินไป",
+      "WBC ที่สูงเกินไป",
+      "ค่า LDL-C ที่สูงขึ้น",
+      "อาการเวียนศรีษะและหมดสติ",
+      "ไม่มีข้อใดถูกต้อง"
+    ],
+    "ans": 1,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 71 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 72,
+    "core_idx": 202,
+    "q_num": 203,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: อาการพิษรุนแรงจากการกิน MTX เกินขนาด (กินทุกวัน) คือข้อใด?",
+    "choices": [
+      "Retinopathy",
+      "ไขกระดูกฝ่อ (Bone marrow suppression)",
+      "SJS/TEN",
+      "QT Prolongation",
+      "ผมร่วงอย่างรุนแรง"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 72 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 73,
+    "core_idx": 203,
+    "q_num": 204,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ยาแก้พิษ (Antidote/Rescue) สำหรับภาวะ MTX Toxicity คือยาใด?",
+    "choices": [
+      "N-acetylcysteine",
+      "Flumazenil",
+      "Leucovorin (Folinic acid)",
+      "Vitamin K",
+      "Protamine sulfate"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 73 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 74,
+    "core_idx": 204,
+    "q_num": 205,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: การให้ Folic acid 5 mg สัปดาห์ละ 1-2 ครั้ง ร่วมกับ MTX มีจุดประสงค์เพื่ออะไร?",
+    "choices": [
+      "เพิ่มฤทธิ์ยา MTX",
+      "ลดการเกิดไขกระดูกฝ่อ",
+      "ลดผลข้างเคียงทางระบบทางเดินอาหารและแผลในปาก (GI/Mucositis)",
+      "บำรุงครรภ์",
+      "ป้องกันตับวาย"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 74 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 75,
+    "core_idx": 205,
+    "q_num": 206,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: กลไกของยา Methotrexate คือข้อใด?",
+    "choices": [
+      "ยับยั้ง COX-2",
+      "ยับยั้ง Xanthine oxidase",
+      "ยับยั้ง Dihydrofolate reductase (DHFR)",
+      "ยับยั้ง TNF-alpha",
+      "ยับยั้ง CD20"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 75 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 76,
+    "core_idx": 206,
+    "q_num": 207,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ก่อนเริ่มยา Infliximab (Biologics) ผู้ป่วยต้องได้รับการคัดกรอง (Screening) โรคติดเชื้อใดเสมอ?",
+    "choices": [
+      "HIV",
+      "Syphilis",
+      "Tuberculosis (TB) และ Hepatitis B/C",
+      "Malaria",
+      "COVID-19"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 76 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 77,
+    "core_idx": 207,
+    "q_num": 208,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: Infliximab มีกลไกการออกฤทธิ์อย่างไร?",
+    "choices": [
+      "Chimeric Monoclonal Antibody ต่อยับยั้ง TNF-alpha",
+      "Fully human MAb ต่อ TNF-alpha",
+      "IL-6 inhibitor",
+      "CD20 inhibitor",
+      "JAK inhibitor"
+    ],
+    "ans": 1,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 77 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 78,
+    "core_idx": 208,
+    "q_num": 209,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ปฏิกิริยาไม่พึงประสงค์ขณะให้ยา Infliximab ทางหลอดเลือดดำที่ต้องระวังคืออะไร?",
+    "choices": [
+      "Hypertension crisis",
+      "Infusion-related reaction (ไข้ หนาวสั่น ความดันตก)",
+      "น้ำท่วมปอด",
+      "ไตวายเฉียบพลัน",
+      "หัวใจเต้นผิดจังหวะ"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 78 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 79,
+    "core_idx": 209,
+    "q_num": 210,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ผู้ป่วยที่ได้รับยา Biologics มีข้อห้าม (Contraindication) ในการรับวัคซีนประเภทใด?",
+    "choices": [
+      "วัคซีนเชื้อตาย (Killed vaccine)",
+      "วัคซีน mRNA",
+      "วัคซีนเชื้อเป็นอ่อนฤทธิ์ (Live-attenuated vaccines เช่น MMR, Varicella)",
+      "วัคซีนไวรัสตับอักเสบบี",
+      "Toxoid"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 79 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 80,
+    "core_idx": 210,
+    "q_num": 211,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ยา Prednisolone ในผู้ป่วยรายนี้ หากใช้นานๆ จะเพิ่มความเสี่ยงโรคใดมากที่สุด?",
+    "choices": [
+      "Osteoarthritis",
+      "Osteoporosis, Hyperglycemia, และ Cushing's syndrome",
+      "Rheumatoid arthritis รุนแรงขึ้น",
+      "Asthma",
+      ""
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 80 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 81,
+    "core_idx": 211,
+    "q_num": 212,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: จากใบสั่งยาและข้อมูลทางคลินิกข้างต้น เหตุใดแพทย์จึงสามารถสั่งจ่ายยา Prednisolone 5 mg ในจำนวนที่ไม่ครบตามวันนัดได้ (จ่ายเพียง 7 เม็ด ในขณะที่วันนัดติดตามอาการคือ 2 สัปดาห์)",
+    "choices": [
+      "Prednisolone ไปเกิดอัตรกิริยากับ Inflixumab ทำให้ยา Inflixumab ออกฤทธิ์ได้ไม่เต็มที่",
+      "Prednisolone เป็นยาลดอักเสบซึ่งออกฤทธิ์เร็ว เพื่อบรรเทาอาการปวดระหว่างรอ MTX ออกฤทธิ์",
+      "Prednisolone มีผลข้างเคียงทำให้น้ำตาลในเลือดตกได้เนื่องจากมีผลข้างเคียงต่อระบบเผาผลาญ (Metabolic Disorder) จึงต้องให้ในระยะสั้น",
+      "Prednisolone อาจทำให้ผู้ป่วยมีอาการ Orthostatic hypotension",
+      "ไม่มีข้อใดถูกต้อง"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 81 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 82,
+    "core_idx": 212,
+    "q_num": 213,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ความคลาดเคลื่อนทางยา (medication error) ที่ร้ายแรงที่สุดในใบสั่งยานี้คือข้อใด",
+    "choices": [
+      "สั่ง methotrexate ให้กินทุกวันแทนสัปดาห์ละครั้ง",
+      "Folic acid ขนาดสูงเกินไป",
+      "Rosuvastatin ไม่จำเป็น",
+      "Candesartan ซ้ำซ้อน",
+      "คำนวณขนาด infliximab ผิด"
+    ],
+    "ans": 1,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 82 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 83,
+    "core_idx": 213,
+    "q_num": 214,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: หากได้รับ MTX ทุกวันตามที่สั่งผิด อาการพิษเฉียบพลันและการตรวจติดตามที่สำคัญที่สุดคือข้อใด",
+    "choices": [
+      "จอประสาทตาเสื่อม — ตรวจตา",
+      "กดไขกระดูกและเยื่อบุอักเสบ — ติดตาม CBC และ LFT",
+      "QT prolongation — ตรวจ ECG",
+      "นิ่วในไต — ตรวจปัสสาวะ",
+      "ต่อมไทรอยด์เป็นพิษ — ตรวจ TSH"
+    ],
+    "ans": 2,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 83 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 84,
+    "core_idx": 214,
+    "q_num": 215,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: ยาต้านพิษ (rescue) เมื่อเกิดภาวะเป็นพิษจาก methotrexate คือข้อใด",
+    "choices": [
+      "Naloxone",
+      "Flumazenil",
+      "Leucovorin (folinic acid)",
+      "Vitamin K",
+      "Folic acid ขนาดสูง"
+    ],
+    "ans": 3,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 84 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 85,
+    "core_idx": 215,
+    "q_num": 216,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: เหตุผลที่เหมาะสมที่สุดของการสั่ง prednisolone ระยะสั้นในผู้ป่วยรายนี้คือข้อใด",
+    "choices": [
+      "เพื่อลดไขมันในเลือด",
+      "เพื่อรักษาความดันโลหิต",
+      "เพื่อป้องกันข้ออักเสบเกาต์",
+      "bridging ต้านการอักเสบระหว่างรอ MTX ออกฤทธิ์",
+      "เสริมฤทธิ์ infliximab โดยตรง"
+    ],
+    "ans": 4,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 85 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 86,
+    "core_idx": 216,
+    "q_num": 217,
+    "question": "📌 สถานการณ์เคสที่ 6:\nเคสที่ 6 ผู้ป่วยชายไทย อายุ 35 ปี น้ำหนัก 60 กก. มีโรคประจำตัวเป็น HTN และ DLP ได้รับการวินิจฉัยเป็น Rheumatoid Arthritis (RA) ได้รับใบสั่งยาดังนี้:\nRx:\n- Infliximab 180 mg IV (3 mg/kg) drip over 2 hrs 1 Vial\n- NSS 0.9% 100 ml IV drip over 30 min after infliximab infusion 1 Bag\n- MTX 2.5 mg 1x1 po hs 14 Tablets\n- Prednisolone 5 mg 1x1 po pc เช้า 7 Tablets\n- Folic Acid 5 mg 1x1 po hs 14 Tablets\n- Rosuvastatin 20 mg 1x1 po hs 14 Tablets\n- Candesartan 8 mg 1x1 po pc เช้า 14 Tablets\nF/U 2 wks, NKDA, Lab: Triglyceride 90 mg/dL, LDL-C 54 mg/dL, HDL-C 70 mg/dL, BP 124/76 mmHg, HR 88 bpm\nคำถาม: หากต้องเลือกยาแก้ปวดเสริมให้ผู้ป่วยที่ใช้ MTX ข้อใดเหมาะสมที่สุด",
+    "choices": [
+      "Ibuprofen ขนาดสูง",
+      "Aspirin ขนาดสูง",
+      "Naproxen ขนาดสูงต่อเนื่อง",
+      "Indomethacin ขนาดสูง",
+      "Paracetamol"
+    ],
+    "ans": 5,
+    "topic": "Rheumatoid Arthritis",
+    "subtopic": "ข้อ 86 Mock Musculo RxCU84"
+  }
+]

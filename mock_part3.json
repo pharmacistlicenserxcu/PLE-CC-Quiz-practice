@@ -1,0 +1,338 @@
+[
+  {
+    "mock_num": 45,
+    "core_idx": 175,
+    "q_num": 176,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ยา Capsaicin cream มีกลไกแก้ปวดอย่างไร?",
+    "choices": [
+      "ยับยั้ง COX",
+      "Depletion ของ Substance P จากปลายประสาท",
+      "ยับยั้ง Mu-receptor",
+      "ขยายหลอดเลือดลดอักเสบ",
+      "ให้ความเย็นชา"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 45 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 46,
+    "core_idx": 176,
+    "q_num": 177,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: สารใดที่เป็นองค์ประกอบหลักของกระดูกอ่อนข้อต่อ (Cartilage) ที่เป็นเป้าหมายของยาเสริมอาหารบางชนิด?",
+    "choices": [
+      "Hyaluronic acid และ Proteoglycan",
+      "Calcium",
+      "Vitamin D",
+      "Uric acid",
+      "Fibrin"
+    ],
+    "ans": 1,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 46 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 47,
+    "core_idx": 177,
+    "q_num": 178,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: การฉีดคอร์ติโคสเตียรอยด์เข้าข้อ (Intra-articular) มีข้อจำกัดอย่างไร?",
+    "choices": [
+      "ห้ามฉีดเกินปีละ 1 ครั้ง",
+      "ให้ผลลดปวดเพียงระยะสั้น (Short-term) ไม่ชะลอโรค",
+      "ทำให้กระดูกงอก",
+      "ลดปวดถาวร",
+      "ใช้เป็น First-line เสมอ"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 47 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 48,
+    "core_idx": 178,
+    "q_num": 179,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: หากผู้ป่วยแพ้ยา NSAIDs รุนแรง ยาใดเป็นตัวเลือกถัดไปในการลดปวด?",
+    "choices": [
+      "Duloxetine หรือ Tramadol",
+      "Colchicine",
+      "Allopurinol",
+      "Methotrexate",
+      "Prednisolone"
+    ],
+    "ans": 1,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 48 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 49,
+    "core_idx": 179,
+    "q_num": 180,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ยากลุ่ม SYSADOA (เช่น Glucosamine) Guideline ปัจจุบัน (ACR) แนะนำอย่างไร?",
+    "choices": [
+      "แนะนำอย่างยิ่งให้ใช้ทุกราย",
+      "ไม่แนะนำให้ใช้ (Strongly against) หรือแนะนำอย่างมีเงื่อนไขว่าอาจใช้ใน OA Knee",
+      "แทนที่ NSAID ได้เลย",
+      "ใช้รักษา RA ได้",
+      "ใช้ป้องกันกระดูกหัก"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 49 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 50,
+    "core_idx": 180,
+    "q_num": 181,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ตามแนวทาง ACR 2019 ยาใดจัดเป็น first-line ที่แนะนำอย่างยิ่ง สำหรับข้อเข่าเสื่อมในผู้สูงอายุรายนี้",
+    "choices": [
+      "Paracetamol",
+      "Tramadol",
+      "Topical NSAIDs",
+      "Intra-articular hyaluronic acid",
+      "Glucosamine"
+    ],
+    "ans": 3,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 50 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 51,
+    "core_idx": 181,
+    "q_num": 182,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ยาต้านพิษของภาวะได้รับ paracetamol เกินขนาดคือข้อใด",
+    "choices": [
+      "Naloxone",
+      "Flumazenil",
+      "Vitamin K",
+      "N-acetylcysteine",
+      "Leucovorin"
+    ],
+    "ans": 4,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 51 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 52,
+    "core_idx": 182,
+    "q_num": 183,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: หากผู้ป่วยมีข้อห้ามใช้ NSAIDs และปวดเรื้อรัง ยาใดเหมาะสมที่สุด",
+    "choices": [
+      "Duloxetine",
+      "Colchicine",
+      "Allopurinol",
+      "Prednisolone ระยะยาว",
+      "Aspirin ขนาดสูง"
+    ],
+    "ans": 1,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 52 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 53,
+    "core_idx": 183,
+    "q_num": 184,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: กลไกการบรรเทาปวดของ capsaicin ชนิดทาเฉพาะที่คือข้อใด",
+    "choices": [
+      "ยับยั้งเอนไซม์ cyclooxygenase",
+      "กระตุ้น TRPV1 ทำให้ substance P พร่องลง",
+      "ต้านตัวรับ μ-opioid",
+      "ยับยั้ง xanthine oxidase",
+      "ยับยั้งการเก็บกลับ serotonin"
+    ],
+    "ans": 2,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 53 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 54,
+    "core_idx": 184,
+    "q_num": 185,
+    "question": "📌 สถานการณ์เคสที่ 4:\nเคสที่ 4 ผู้ป่วยชาย อายุ 62 ปี อดีตทหารผ่านศึก วิ่งออกกำลังกายเป็นประจำ มาด้วยอาการปวดเรื้อรังบริเวณข้อเข่าซ้าย ตึงขัดตอนเช้า (Morning Stiffness) ประมาณ 15-30 นาที เวลาเดินมีเสียงดังกรอบแกรบในข้อ (Crepitus) ยกของหนักหรือวิ่งจะปวดรุนแรงขึ้น X-Ray พบภาวะข้อเข่าเสื่อมชัดเจน โรคประจำตัว: ไขมันในเลือดสูง รับประทาน Simvastatin 10 mg OD hs\nคำถาม: ตามแนวทาง ACR 2019 คำแนะนำต่อการใช้ glucosamine ในข้อเข่าเสื่อมคือข้อใด",
+    "choices": [
+      "แนะนำอย่างยิ่งให้ใช้ทุกราย",
+      "ใช้แทน NSAIDs ได้",
+      "ใช้รักษา RA",
+      "ใช้ป้องกันกระดูกหัก",
+      "ไม่แนะนำให้ใช้"
+    ],
+    "ans": 5,
+    "topic": "Osteoarthritis",
+    "subtopic": "ข้อ 54 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 55,
+    "core_idx": 185,
+    "q_num": 186,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ยาใดเป็น First-line ในการป้องกันกระดูกหักซ้ำสำหรับผู้ป่วยรายนี้?",
+    "choices": [
+      "Alendronate",
+      "Raloxifene",
+      "Estrogen",
+      "Calcitonin",
+      "Calcium"
+    ],
+    "ans": 1,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 55 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 56,
+    "core_idx": 186,
+    "q_num": 187,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: คำแนะนำการบริหารยา Alendronate ที่ถูกต้องคือข้อใด?",
+    "choices": [
+      "กินหลังอาหารทันที",
+      "กินก่อนนอน",
+      "กินตอนเช้าขณะท้องว่าง ดื่มน้ำเปล่าเต็มแก้ว และตั้งตรง 30 นาที",
+      "เคี้ยวให้ละเอียดก่อนกลืน",
+      "กินพร้อมนม"
+    ],
+    "ans": 3,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 56 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 57,
+    "core_idx": 187,
+    "q_num": 188,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ปริมาณแคลเซียมและวิตามินดีที่แนะนำต่อวัน (Total intake) ในหญิงสูงอายุ > 50 ปี คือเท่าใด?",
+    "choices": [
+      "Ca 500 mg, Vit D 400 IU",
+      "Ca 1200 mg, Vit D 800-1000 IU",
+      "Ca 2000 mg, Vit D 2000 IU",
+      "Ca 800 mg, Vit D 400 IU",
+      "Ca 1500 mg, Vit D 400 IU"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 57 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 58,
+    "core_idx": 188,
+    "q_num": 189,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: กลไกของยา Bisphosphonates คืออะไร?",
+    "choices": [
+      "กระตุ้น Osteoblast",
+      "ยับยั้ง RANKL",
+      "ยับยั้งการทำงานของ Osteoclast ชักนำให้เกิด Apoptosis",
+      "เป็นฮอร์โมนทดแทน",
+      "จับกับแคลเซียมในลำไส้ เฉลย"
+    ],
+    "ans": 3,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 58 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 59,
+    "core_idx": 189,
+    "q_num": 190,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: กลไกของยา Denosumab คืออะไร?",
+    "choices": [
+      "ยับยั้ง Osteoclast โดยตรง",
+      "เป็น Monoclonal antibody ต่อ RANKL",
+      "กระตุ้น PTH receptor",
+      "SERM",
+      "แคลเซียมสังเคราะห์"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 59 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 60,
+    "core_idx": 190,
+    "q_num": 191,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ทำไมผู้ป่วยรายนี้จึง \"ไม่ควร\" ใช้ยา Teriparatide?",
+    "choices": [
+      "ผู้ป่วยมีภาวะความดันสูง",
+      "ผู้ป่วยมีประวัติมะเร็ง (NSCLC) อาจเสี่ยงต่อ Osteosarcoma หรือ Bone mets",
+      "ผู้ป่วยเป็นเบาหวาน",
+      "ผู้ป่วยไม่มีกระดูกหัก",
+      "ยาราคาแพง"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 60 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 61,
+    "core_idx": 191,
+    "q_num": 192,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ทำไมจึง \"ไม่เลือก\" Raloxifene ให้ผู้ป่วยรายนี้?",
+    "choices": [
+      "ป้องกันได้เฉพาะ Vertebral fracture และมีประวัติมะเร็ง/อาจเสี่ยง VTE",
+      "ทำให้มวลกระดูกลดลง",
+      "ระคายเคืองกระเพาะอาหาร",
+      "ต้องฉีดเข้าเส้น",
+      "ห้ามใช้ในคนแก่"
+    ],
+    "ans": 1,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 61 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 62,
+    "core_idx": 192,
+    "q_num": 193,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ระยะเวลาการรักษาด้วย Oral Bisphosphonate ควรนานเท่าใดก่อนพิจารณา Drug holiday?",
+    "choices": [
+      "1 ปี",
+      "3-5 ปี",
+      "10 ปี",
+      "ตลอดชีวิต",
+      "6 เดือน"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 62 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 63,
+    "core_idx": 193,
+    "q_num": 194,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ค่า T-score ใดที่เข้าเกณฑ์การวินิจฉัย Osteoporosis?",
+    "choices": [
+      "T-score ≤ -1.0",
+      "T-score ≤ -2.0",
+      "T-score ≤ -2.5",
+      "T-score > -1.0",
+      "T-score = 0"
+    ],
+    "ans": 3,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 63 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 64,
+    "core_idx": 194,
+    "q_num": 195,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ผลข้างเคียงร้ายแรง (Rare but serious) ของยา Bisphosphonates และ Denosumab ที่เหมือนกันคือข้อใด?",
+    "choices": [
+      "SJS/TEN",
+      "Osteonecrosis of the jaw (ONJ) และ Atypical femur fracture (AFF)",
+      "รังไข่ฝ่อ",
+      "เลือดออกในสมอง",
+      "ไตวายเฉียบพลัน"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 64 Mock Musculo RxCU84"
+  },
+  {
+    "mock_num": 65,
+    "core_idx": 195,
+    "q_num": 196,
+    "question": "📌 สถานการณ์เคสที่ 5:\nเคสที่ 5 ผู้ป่วยหญิงชาวดัตช์ อายุ 71 ปี ปวดหลังส่วนกลางและส่วนล่างอย่างรุนแรงเฉียบพลัน (Acute severe back pain) ภาพ CT scan พบกระดูกสันหลังส่วนเอวยุบตัวจากการกดทับ (Vertebral compression fracture) DXA scan พบ T-score = -2.7 วินิจฉัย Severe Osteoporosis\nPMH: T2DM, HTN, DLP, Non-Small Cell Lung Cancer ระยะที่ 4 (T4N1M1)\nPhysical & Labs: BW 54 kg, Ht 152 cm, ตับและไตปกติ, ไม่พบ Bone Metastasis\nCurrent Medications: Metformin 500 mg 2x1, Sitagliptin 100 mg 1x1, Losartan 50 mg 1x1, Manidipine 20 mg 1x1, Atorvastatin 40 mg 1x1, Ezetimibe 10 mg 1x1, Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² q 21 days\nคำถาม: ยาใดเหมาะสมเป็น first-line เพื่อลดความเสี่ยงกระดูกหักซ้ำในผู้ป่วยรายนี้",
+    "choices": [
+      "Raloxifene",
+      "Alendronate",
+      "Calcium เดี่ยว ๆ",
+      "Estrogen",
+      "Teriparatide"
+    ],
+    "ans": 2,
+    "topic": "Osteoporosis",
+    "subtopic": "ข้อ 65 Mock Musculo RxCU84"
+  }
+]
