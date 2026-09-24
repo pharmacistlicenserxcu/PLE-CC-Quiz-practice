@@ -3319,7 +3319,7 @@
 <div id="printContainer"></div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
-<script src="quiz-data-offline.js?v=20260925_v13"></script>
+<script src="quiz-data-offline.js?v=20260925_v14"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
 const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
@@ -5674,23 +5674,42 @@ function initQuestionValidationEngine() {
   } catch(e) {}
 
   fetchValidationCountsFromGas();
+  // Periodically refresh validation counts so all active devices stay in sync
+  if (!window._valSyncInterval) {
+    window._valSyncInterval = setInterval(fetchValidationCountsFromGas, 20000);
+  }
 }
 
 function fetchValidationCountsFromGas() {
-  const gasUrl = window.QUIZ_GAS_WEBAPP_URL;
-  if (!gasUrl || gasUrl.includes('SAMPLE')) return;
-  fetch(`${gasUrl}?action=getValidationCounts&_nocache=${Date.now()}`)
-    .then(res => res.json())
-    .then(data => {
-      if (data && data.success && data.counts) {
-        questionValidationCounts = Object.assign({}, questionValidationCounts, data.counts);
-        try {
-          localStorage.setItem('ple_question_validation_counts', JSON.stringify(questionValidationCounts));
-        } catch(e) {}
-        updateAllActiveValidationBadges();
-      }
-    })
-    .catch(() => {});
+  // Sync from live community channel where verified votes are broadcasted
+  if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
+    fetch(`${window.QUIZ_GAS_WEBAPP_URL}?action=getCommunityMessages&_nocache=${Date.now()}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data && data.success && data.messages && data.messages.length > 0) {
+          // Parse all broadcasted validation votes
+          let updated = false;
+          data.messages.forEach(m => {
+            if (m.topicTag === '__val_vote__' && m.replyToId) {
+              const qId = m.replyToId;
+              const prev = Number(questionValidationCounts[qId] || 0);
+              const voteCount = Number(m.message) || 1;
+              if (voteCount > prev) {
+                questionValidationCounts[qId] = voteCount;
+                updated = true;
+              }
+            }
+          });
+          if (updated) {
+            try {
+              localStorage.setItem('ple_question_validation_counts', JSON.stringify(questionValidationCounts));
+            } catch(e) {}
+            updateAllActiveValidationBadges();
+          }
+        }
+      })
+      .catch(() => {});
+  }
 }
 
 function getQuestionValidationCount(qId) {
@@ -5760,6 +5779,17 @@ function handleValidateQuestion(q, btnEls, countEls) {
     question: (q.question || '').replace(/<[^>]*>/g, '').substring(0, 150),
     issueType: 'ข้อสอบถูกต้อง',
     detail: `[VERIFIED] ยืนยันความถูกต้องข้อสอบและคำอธิบายเฉลย (สะสมครั้งที่ ${newCount})`
+  });
+
+  // 3. Broadcast to all users via community channel (live multi-user sync)
+  sendGasPostRequest({
+    action: 'postCommunityMessage',
+    username: '__val_bot__',
+    displayName: 'Validation Sync',
+    userBadge: 'BOT',
+    replyToId: qId,
+    message: String(newCount),
+    categoryTag: '__val_vote__'
   });
 }
 
@@ -5836,6 +5866,8 @@ function updateAllActiveValidationBadges() {
     renderScrollPractice();
   } else if (currentAppMode === 'examReview') {
     renderExamReview();
+  } else if (currentAppMode === 'browse') {
+    renderBrowseList(false);
   }
 }
 
