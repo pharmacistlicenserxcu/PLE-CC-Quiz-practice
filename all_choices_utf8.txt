@@ -1,0 +1,283 @@
+[75] ans=1 | note=PLE_CC1_2565_Day1_Key ข้อ 41
+  Q: เปMนผื่นแพลักษณะแบบใด
+  ก: Urticaria
+  ข: Maculopapular rash
+  ค: Angioedema
+  ง: Fix drug eruption
+  จ: Exfoliative CPT I, midterm, CPT1 บรรยาย 2 กย 67 (13 2ง 16 น.) ADR for Pharmacy Practice, page 23
+
+[76] ans=1 | note=PLE_CC1_2565_Day1_Key ข้อ 50
+  Q: ยาที่ใชรักษาคืออะไร ิ โลน
+  ก: Oral ivermectin
+  ข: Permethrin cream
+  ค: Gamma benzene hexachloride
+  ง: Steroid ซักอย;าง
+  จ: 2% ketoconazole cream Hา 1st line ไIไ-ผล ิ 1st line เJอKนLนไIไ-ผล ADR เยอะ (neurptoxic) ลดแFอาการGน?
+
+[77] ans=1 | note=PLE_CC1_2565_Day2_Key ข้อ 32
+  Q: เปQนโรคอะไร ………………………………………………………………………………………………………………………………………………………… ………………………………………………………………………………………………………………………………………………………….. Tinea Pedis
+  ก: Adapalene 0.1% gel
+  ข: Mupirocin 2% ointment
+  ค: Betamethasone dipropionate 0.05% cream
+  ง: Clotrimazole 1% cream
+
+[78] ans=1 | note=PLE_CC1_2565_Day2_Key ข้อ 34
+  Q: กลไกการออกฤทธิ์ของ ketoconazole คืออะไร Regimen ไ>เหมาะสม Fluconazole 150 mg q1week
+  ก: ยับยังการสังเคราะห6 DNA RNA ของเชื้อรา PLE-CC1 Preparation 2565
+  ข: Hydrocortisone 1% cream
+  ค: Triamcinolone acetonide 0.1% cream
+  ง: Clobetasol propionate 0.05% cream
+  จ: ว-านหางจระเข$
+
+[79] ans=1 | note=PLE_CC1_2565_Day2_Key ข้อ 39
+  Q: stiffening agent คืออะไร
+  ก: glycerin
+  ข: Propylene glycol
+  ค: SLS
+  ง: Cetearyl palmitate
+  จ: Mineral oil
+
+[80] ans=1 | note=PLE_CC1_2565_Day2_Key ข้อ 36
+  Q: ยาอะไรไม-เหมาะที่จะใช$ที่หน$า
+  ก: clobetasol propionate
+  ข: hydrocortisone
+  ค: fluticasone
+  ง: ketoconazole shampoo
+  จ: * จำ choice ไม-ได$ *
+
+[81] ans=1 | note=PLE_CC1_2565_Day2_Key ข้อ 7
+  Q: ผื่นลมพิษ ไมUออก UTIs, URIs เลยในป_ 2565 (ธ.ค.)
+  ก: Isotretinoin 10 mg OD
+  ข: Terbinafine 1% cream
+  ค: Adapalene 0.1% gel
+  ง: Mupirocin 2% ointment
+
+[82] ans=1 | note=PLE_CC1_2564_All_Key ข้อ 15
+  Q: กลากเกิดจากเชื้ออะไร (Tinea capitis)
+  ก: M. furfur / b. Trichophyton rubrum / c. aspergillus Tinea capitis เกิดจากเชื้อ Trichophyton และ Microsporum spp. จากช้อยน่าจะตอบ b. Trichophyton rubrum https://emedicine.medscape.com/article/1091351-overviewa7
+  ข: Betamethasone dipropionate 0.05% cream
+  ค: Clotrimazole 1% cream
+  ง: Hydrocortisone 1% cream
+
+[83] ans=1 | note=PLE_CC1_2564_All_Key ข้อ 65
+  Q: Ketoconazole กับ itraconazole strong inhibit CYP 450 ตัวไหน
+  ก: 2C9
+  ข: 2C19
+  ค: 3A4" ข้อ c) 3A4 เพราะ Ketoconazole และ itraconazole เป็น potent CYP3A4 inhibitors จาก:สรุป MCQ CPT1 เรื่องโรคผิวหนัง
+  ง: Ketoconazole 2% shampoo
+
+[84] ans=1 | note=PLE_CC1_2564_All_Key ข้อ 81
+  Q: สาวเป็นสิวหนองมากกว่า 5 จุดบนใบหน้า สิวหนองเป็นตุ่มแบบใด
+  ก: Papule
+  ข: Pustule
+  ค: Nodule
+  ง: Cyst
+
+[85] ans=1 | note=PLE_CC1_2564_All_Key ข้อ 88
+  Q: สถานการณ์วัยรุ่นยกพวกตีกัน จงตอบวิธีการห้ามเลือดที่ถูกต้อง
+  ก: เอาน้ำล้าง
+  ข: ขันชะเนาะ
+  ค: เอาผ้าสะอาดกด
+  ง: เอาเชือกรัด
+
+[86] ans=1 | note=PLE_CC1_2564_All_Key ข้อ 121
+  Q: เด็กน้อย 1 ขวบครึ่ง ผื่นแดงหน้า แขน น้องไม่มีโรคประจำตัว
+  ก: atopic
+  ข: sebderm
+  ค: Mupirocin 2% ointment
+  ง: Betamethasone dipropionate 0.05% cream
+
+[87] ans=1 | note=PLE_CC1_2564_All_Key ข้อ 148
+  Q: แพ้ยา ibuprofen 10 วันถึงจะมีอาการ ผิวหนังลอก มีผื่น เจ็บคอถามว่าเป็นการแพ้ยาแบบ type อะไร + บอกกลไกการแพ้ยา - เมื่อพิจารณาจากระยะเวลาการเกิดผื่น ร่วมกับลักษณะของผื่นที่เกิดขึ้น จะเป็นผื่นแพ้ยา Type IV : Cell-Mediated or delayed hypersensitivity Reaction: T-cell ปฏิกิริยาน้ีเกิดจากยาไปกระตุ้น T-cells lymphocyte ที่ recognized ยาตัวยาที่แพ้ทำให้มีการกระตุ้น Inflammatory mediators ต่าง ๆ ออกมา อาการแสดงทางคลินิกของ Type IV คือ Contact dermatitis, Photoallergy, Fixed drug eruption, Maculopapular, Morbiliform rash, Stevens Johnson syndrome, TEN ซึ่ง อาการข้างต้นจะแสดงนับจากเมื่อมี antibody พร้อมแล้ว มากกว่า 72 ชั่วโมง http://www.prachanath.su.ac.th/DIS/prachanath/answerq/ansform.php?Q_id=150 ............................................................................................................................................................................................................. 149.ยาที่ทำให้เกิด DRESS Syndrome
+  ก: Diclofenec b) Prednisolone c) colchicine d) allopurinol e) febuxostat
+  ข: Clotrimazole 1% cream
+  ค: Hydrocortisone 1% cream
+  ง: allopurinol // ใน micromedex มีรายงาน dress ใน febuxostat ด้วย แต่ allopurinol มีรายงานเคสออกมาชัดเจนมาก
+
+[88] ans=1 | note=PLE_CC1_2563_Q ข้อ 52
+  Q: กลไกขอษ mupirocin
+  ก: ยับยั้ษ transpeptidase ที่ผนัษเอลล์
+  ข: ยับยั้ษ transglycosylase ที่ผนัษเอลล์
+  ค: ยับยั้ษ DNA synthesis ษ. ยับยั้ษ RNA synthesis ส. ยับยั้ษ tRNA
+  ง: Benzoyl peroxide 2.5% gel
+
+[89] ans=1 | note=PLE_CC1_2563_Q ข้อ 53
+  Q: ข้อใดเป็นอาการข้าษเคียษสากยาขี้ผึ้ษ mupirocin
+  ก: Photosensitivity
+  ข: Acneiform eruption
+  ค: Skin irritation ษ. Striae ส. Spider nevi
+  ง: Cetirizine 10 mg OD
+
+[90] ans=1 | note=PLE_CC1_2563_Q ข้อ 54
+  Q: ยาใดสามารถให้แทนยาทา Mupirocin ได้ (ผู้ป่วยหกล้มและมีแผล)
+  ก: Gentamicin
+  ข: Bacitracin
+  ค: Sulfanilamide ษ. Metronidazole
+  ง: Adapalene 0.1% gel
+
+[91] ans=1 | note=PLE_CC1_2563_Q ข้อ 57
+  Q: เฬื้อที่ทำให้เกิดสิวคือ
+  ก: C. albicans
+  ข: H. pylori
+  ค: P. acne ษ. S. pyogenes ส. S. aureus
+  ง: Clotrimazole 1% cream
+
+[92] ans=1 | note=PLE_CC1_2563_Q ข้อ 58
+  Q: Oral isotretinoin ควรให้คำแนะนำอะไรที่เกิดสากผลข้าษเคียษที่สำคัญขอษตัวยา
+  ก: ควรกินก่อนอาหาร30นาที
+  ข: ควรษดผลิตภัณฑ์ที่เป็นฮอร์โมน
+  ค: ควรทาครีมกันแดด ษ. ไม่ควรใฬ้ผลิตภัณฑ์ทาผิวที่มี vitamin A ส. อาหารไม่มีผลต่อการกินยา
+  ง: Clobetasol propionate 0.05% cream
+
+[93] ans=1 | note=ข้อ 21 (PLE_CC1_2562_Key.md)
+  Q: อาการข้างต้นน่าจะเกิดจากยาใดมากที่สุด และเป็นอาการอะไร wasinsider W ↓ X STS
+  ก: Naproxen - angioedema
+  ข: Naproxen - anaphylaxis
+  ค: Simvastatin - urticaria
+  ง: MFM - angioedema
+  จ: MFM ı anaphylaxis
+
+[94] ans=1 | note=ข้อ 27 (PLE_CC1_2562_Key.md)
+  Q: โครงสร้างใดเกิดแพ้ยาข้ามกลุ่ม (cross hypersensitivity) ได้จากการแพ้ยาแบบผิวหนังลอก X
+  ก: Benzoyl peroxide 2.5% gel
+  ข: Acyclovir 5% cream
+  ค: Silver sulfadiazine 1% cream
+  ง: Cetirizine 10 mg OD
+  จ: . sulfonamide & "Jognican hand.energ 0 Whe S -- 1 = หË´มนาÆปทาซËาทืกกรณิ ÂวËนาต้จ²ÆดËรงบ¯นืญ´ต sulfone sulfonamide
+
+[95] ans=1 | note=ข้อ 62 (PLE_CC1_2562_Key.md)
+  Q: ต่อมาพบว่ามีผู้ป่วยรายนี้และผู้ป่วยอีกหลายรายที่ได้รับยาลดระดับน้ำตาลในเลือดตัวนี้และได้รับยารักษาโรคร่วมที่ เหมือนกัน เกิดอาการข้างเคียงที่เหมือนกันคือผื่นรูปร่างแปลกๆ แพทย์คิดว่าน่าจะเกิดจากยาตัวใดตัวหนึ่งแต่ไม่ ทราบว่าเป็นตัวใด จึงอยากทำการศึกษาวิจัยว่ายาตัวใดในกลุ่มที่ผู้ป่วยรายนี้และผู้ป่วยรายอื่นๆได้รับเกิดอาการ ข้างเคียงดังกล่าว หากอยากได้ผลการศึกษาเร็วที่สุด ควรออกแบบการศึกษาแบบใด
+  ก: RCT
+  ข: Prospective case-control
+  ค: Retrospective case-control
+  ง: Prospective cohort
+  จ: Retrospective cohort
+
+[96] ans=1 | note=ข้อ 113 (PLE_CC1_2561_Key.md)
+  Q: ข้อใดคือ indirect cost CUTEagomoline WV225 cut as
+  ก: Adapalene 0.1% gel
+  ข: Mupirocin 2% ointment
+  ค: Betamethasone dipropionate 0.05% cream
+  ง: Clotrimazole 1% cream
+  จ: Hydrocortisone 1% cream
+
+[97] ans=1 | note=ข้อ 1 (PLE_CC1_2560 22 April Set 1.md)
+  Q: ข้อใดต่อไปถูกต้องเกี่ยวกับเกลื อน
+  ก: เกิดจากเชื อ Malassezia furfur
+  ข: ถ้าอาการรุนแรง จะมีขุย แดง คัน
+  ค: ถ้าทดสอบด้วย 10% KOH ไปส่องกล้อง จะเห็น Long pseudohyphae
+  ง: ใช้ยาทา Topical selenium sulfide ในการรักษา
+  จ: ถ้าเป็นบ่อยๆ ควรได้รับยาป้องกัน รวมโดย Phongsathorn Phlaisaithong Rx 9 UP 4 | P a g e
+
+[98] ans=1 | note=ข้อ 2 (PLE_CC1_2560 22 April Set 1.md)
+  Q: ถ้าจะใช้ยากิน ควรใช้ยารับประทานใด
+  ก: Ketoconazole
+  ข: Posaconazole
+  ค: Miconazole
+  ง: Fluconazole
+  จ: Griseofulvin หลังจากนั นสักพักผู้ป่วยอาการไม่ดีขึ นไปพบแพทย์จ่ายยา Itraconazole ให้มารับประทาน
+
+[99] ans=1 | note=ข้อ 7 (PLE_CC1_2560 22 April Set 1.md)
+  Q: กลไกการออกฤทธิ์ของยา Clotrimazole
+  ก: ยับยั งการสังเคราะห์ Ergosterol
+  ข: ยับยั ง Squalene epoxidase
+  ค: Mitotic spindle toxicity
+  ง: Thymidylate synthase inhibitors
+  จ: ยับยั งการสร้าง Glucans
+
+[100] ans=1 | note=ข้อ 1 (PLE_CC1_2560 22 April Set 1.md)
+  Q: ผื่นที่หน้าของผู้ป่วย เรียกว่าอะไร
+  ก: Discoid rash
+  ข: Maculopapular rash
+  ค: Urticaria
+  ง: Malar rash
+  จ: Angioedema
+
+[101] ans=1 | note=ข้อ 3 (PLE_CC1_2560 22 April Set 1.md)
+  Q: แพทย์สั่งจ่ายยา fluocinolone acetonide 0.01 % ส้าหรับทารักษาผื่นบริเวณใบหน้า แต่ทางโรงพยาบาล ไม่มียาดังกล่าว สามารถใช้ยาใดแทนได้
+  ก: Betamethasone dipropionate 0.05%
+  ข: Clobetasol propionate 0.05%
+  ค: Dexosimethasone 0.05%
+  ง: Triamcinolone acetonide 0.1%
+  จ: Hydrocortisone acetate 0.5% รวมโดย Phongsathorn Phlaisaithong Rx 9 UP 21 | P a g e
+
+[102] ans=1 | note=ข้อ 1 (PLE_CC1_2560 22 April Set 2.md)
+  Q: ข้อใดต่อไปถูกต้องเกี่ยวกับเกลื้อน
+  ก: เกิดจากเชื้อ Malassezia furfur
+  ข: ถ้าอาการรุนแรง จะมีขุย แดง คัน
+  ค: ถ้าทดสอบด้วย 10% KOH ไปส่องกล้อง จะเห็น Long pseudohyphae
+  ง: ใช้ยาทา Topical selenium sulfide ในการรักษา
+  จ: ถ้าเป็นบ่อยๆ ควรได้รับยาป้องกัน
+
+[103] ans=1 | note=ข้อ 2 (PLE_CC1_2560 22 April Set 2.md)
+  Q: ค่าแลปใด Specificity สูงสุด สำหรับ SLE
+  ก: ANA
+  ข: Anti-dsDNA
+  ค: Lupus anticoagulant
+  ง: ESR
+  จ: Cetirizine 10 mg OD
+
+[104] ans=1 | note=ข้อ 3 (PLE_CC1_2560 22 April Set 2.md)
+  Q: ถ้าไม่มียา Fluocinolone acetonide 0.01% เภสัชกรจะจ่ายยาใดแทน
+  ก: Betamethasone dipropionate 0.05%
+  ข: Clobetasol propionate 0.05%
+  ค: Dexosimethasone 0.05%
+  ง: Triamcinolone acetonide 0.1%
+  จ: Hydrocortisone acetate 0.5%
+
+[105] ans=1 | note=ข้อ 52 (PLE_CC1_2559.md)
+  Q: หากให้ยา paclitaxel แล้วผู้ป่วยเกิดผื่นคัน จะมีแนวทางป้องกันอย่างไร
+  ก: ให้สารน ้าจ้าพวกน ้าเกลือก่อนให้ยา 1-2 ชั่วโมง
+  ข: ให้ยาคาลาไมด์ โลชันทาเมื่อมีอาการแพ้
+  ค: ให้ยา dexamethasone ก่อนให้ยา 30 นาที
+  ง: ให้ยา famotidine ก่อนให้ยา 1 ชั่วโมง
+  จ: ให้เปลี่ยนตัวท้าละลายเป็น D5W เนื่องจากเกิดผลน้อยที่สุด
+
+[106] ans=1 | note=ข้อ 66 (PLE_CC1_2559.md)
+  Q: จงค้านวณหาปริมาณเบสของยาเหน็บที่ต้องใช้เตรียม 1 แท่ง โดย 1 แท่งหนัก 2 g ก้าหนดให้ยา clotrimazole มี น ้าหนัก 500 mg/แท่ง มีค่า D.V.=1.1
+  ก: 0.45 กรัม
+  ข: 0.55 กรัม
+  ค: 1.45 กรัม
+  ง: 1.55 กรัม
+  จ: 2.00 กรัม
+
+[107] ans=1 | note=ข้อ 19 (PLE_CC1_2558_Key.md)
+  Q: ให้ยาใดเป็น maintenance phase
+  ก: Amphotericin B
+  ข: Fluconazole
+  ค: Itraconazole
+  ง: Bactrim
+  จ: Griseofulvin
+
+[108] ans=1 | note=ข้อ 93 (PLE_CC1_2558_Key.md)
+  Q: ลักษณะอาการที่ผู้ป่วยเป็น เกิดจากเชื้ออะไร
+  ก: Propionebacterium acnes
+  ข: Malassezia furfur
+  ค: Herpes simplex
+  ง: Thichophyton rubum
+  จ: Microsporum
+
+[109] ans=1 | note=ข้อ 94 (PLE_CC1_2558_Key.md)
+  Q: ยาใดที่เหมาะสมสำหรับผู้ป่วย
+  ก: Griseofulvin oral
+  ข: Terbinafine
+  ค: Ketoconazole oral
+  ง: Prednisolone
+  จ: Itraconazole capsule
+
+[110] ans=1 | note=ข้อ 95 (PLE_CC1_2558_Key.md)
+  Q: ยาใดเป็นพิษต่อตับมากที่สุด
+  ก: Griseofulvin oral
+  ข: Terbinafine
+  ค: Ketoconazole oral
+  ง: Prednisolone
+  จ: Itraconazole capsule
+
+[111] ans=1 | note=ข้อ 27 (PLE_CC1_2558_Key.md)
+  Q: ข้อใดไม่เกี่ยวข้องกับการวินิจฉัย TEN
+  ก: มีผื่นผิวหนังลอกมากกว่า 30%
+  ข: มีไข้ เจ็บคอ เริ่มมีผื่นแดงขึ้น
+  ค: ได้รับยาที่มี incidence สูงในการเกิด TEN
+  ง: มีแผลที่อวัยวะต่าง ๆ
+  จ: โรคประจำตัวมาก
+

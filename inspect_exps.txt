@@ -1,0 +1,518 @@
+Key 75 (ans: 1, note: PLE_CC1_2565_Day1_Key ข้อ 41):
+  Q: เปMนผื่นแพลักษณะแบบใด
+  c1: Urticaria
+  c2: Maculopapular rash
+  c3: Angioedema
+  c4: Fix drug eruption
+  c5: Exfoliative CPT I, midterm, CPT1 บรรยาย 2 กย 67 (13 2ง 16 น.) ADR for Pharmacy Practice, page 23
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Urticaria
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Eczema & Dermatitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 76 (ans: 1, note: PLE_CC1_2565_Day1_Key ข้อ 50):
+  Q: ยาที่ใชรักษาคืออะไร ิ โลน
+  c1: Oral ivermectin
+  c2: Permethrin cream
+  c3: Gamma benzene hexachloride
+  c4: Steroid ซักอย;าง
+  c5: 2% ketoconazole cream Hา 1st line ไIไ-ผล ิ 1st line เJอKนLนไIไ-ผล ADR เยอะ (neurptoxic) ลดแFอาการGน?
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Oral ivermectin
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 77 (ans: 1, note: PLE_CC1_2565_Day2_Key ข้อ 32):
+  Q: เปQนโรคอะไร ………………………………………………………………………………………………………………………………………………………… ………………………………………………………………………………………………………………………………………………………….. Tinea Pedis
+  c1: Adapalene 0.1% gel
+  c2: Mupirocin 2% ointment
+  c3: Betamethasone dipropionate 0.05% cream
+  c4: Clotrimazole 1% cream
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Adapalene 0.1% gel
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 78 (ans: 1, note: PLE_CC1_2565_Day2_Key ข้อ 34):
+  Q: กลไกการออกฤทธิ์ของ ketoconazole คืออะไร Regimen ไ>เหมาะสม Fluconazole 150 mg q1week
+  c1: ยับยังการสังเคราะห6 DNA RNA ของเชื้อรา PLE-CC1 Preparation 2565
+  c2: Hydrocortisone 1% cream
+  c3: Triamcinolone acetonide 0.1% cream
+  c4: Clobetasol propionate 0.05% cream
+  c5: ว-านหางจระเข$
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ยับยังการสังเคราะห6 DNA RNA ของเชื้อรา PLE-CC1 Preparation 2565
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 79 (ans: 1, note: PLE_CC1_2565_Day2_Key ข้อ 39):
+  Q: stiffening agent คืออะไร
+  c1: glycerin
+  c2: Propylene glycol
+  c3: SLS
+  c4: Cetearyl palmitate
+  c5: Mineral oil
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. glycerin
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 80 (ans: 1, note: PLE_CC1_2565_Day2_Key ข้อ 36):
+  Q: ยาอะไรไม-เหมาะที่จะใช$ที่หน$า
+  c1: clobetasol propionate
+  c2: hydrocortisone
+  c3: fluticasone
+  c4: ketoconazole shampoo
+  c5: * จำ choice ไม-ได$ *
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. clobetasol propionate
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 81 (ans: 1, note: PLE_CC1_2565_Day2_Key ข้อ 7):
+  Q: ผื่นลมพิษ ไมUออก UTIs, URIs เลยในป_ 2565 (ธ.ค.)
+  c1: Isotretinoin 10 mg OD
+  c2: Terbinafine 1% cream
+  c3: Adapalene 0.1% gel
+  c4: Mupirocin 2% ointment
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Isotretinoin 10 mg OD
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การรักษาโรคติดเชื้อแบคทีเรีย (Eczema & Dermatitis) ต้องเลือก antibiotic ที่ครอบคลุม likely pathogens และมี PK/PD profile เหมาะสมกับตำแหน่งการติดเชื้อ
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 82 (ans: 1, note: PLE_CC1_2564_All_Key ข้อ 15):
+  Q: กลากเกิดจากเชื้ออะไร (Tinea capitis)
+  c1: M. furfur / b. Trichophyton rubrum / c. aspergillus Tinea capitis เกิดจากเชื้อ Trichophyton และ Microsporum spp. จากช้อยน่าจะตอบ b. Trichophyton rubrum https://emedicine.medscape.com/article/1091351-overviewa7
+  c2: Betamethasone dipropionate 0.05% cream
+  c3: Clotrimazole 1% cream
+  c4: Hydrocortisone 1% cream
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. M. furfur / b. Trichophyton rubrum / c. aspergillus Tinea capitis เกิดจากเชื้อ Trichophyton และ Microsporum spp. จากช้อยน่าจะตอบ b. Trichophyton rubrum https://emedicine.medscape.com/article/1091351-overviewa7
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การรักษาโรคติดเชื้อแบคทีเรีย (Superficial fungal) ต้องเลือก antibiotic ที่ครอบคลุม likely pathogens และมี PK/PD profile เหมาะสมกับตำแหน่งการติดเชื้อ
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 83 (ans: 1, note: PLE_CC1_2564_All_Key ข้อ 65):
+  Q: Ketoconazole กับ itraconazole strong inhibit CYP 450 ตัวไหน
+  c1: 2C9
+  c2: 2C19
+  c3: 3A4" ข้อ c) 3A4 เพราะ Ketoconazole และ itraconazole เป็น potent CYP3A4 inhibitors จาก:สรุป MCQ CPT1 เรื่องโรคผิวหนัง
+  c4: Ketoconazole 2% shampoo
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. 2C9
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 84 (ans: 1, note: PLE_CC1_2564_All_Key ข้อ 81):
+  Q: สาวเป็นสิวหนองมากกว่า 5 จุดบนใบหน้า สิวหนองเป็นตุ่มแบบใด
+  c1: Papule
+  c2: Pustule
+  c3: Nodule
+  c4: Cyst
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Papule
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Acne มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 85 (ans: 1, note: PLE_CC1_2564_All_Key ข้อ 88):
+  Q: สถานการณ์วัยรุ่นยกพวกตีกัน จงตอบวิธีการห้ามเลือดที่ถูกต้อง
+  c1: เอาน้ำล้าง
+  c2: ขันชะเนาะ
+  c3: เอาผ้าสะอาดกด
+  c4: เอาเชือกรัด
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. เอาน้ำล้าง
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 86 (ans: 1, note: PLE_CC1_2564_All_Key ข้อ 121):
+  Q: เด็กน้อย 1 ขวบครึ่ง ผื่นแดงหน้า แขน น้องไม่มีโรคประจำตัว
+  c1: atopic
+  c2: sebderm
+  c3: Mupirocin 2% ointment
+  c4: Betamethasone dipropionate 0.05% cream
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. atopic
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Eczema & Dermatitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 87 (ans: 1, note: PLE_CC1_2564_All_Key ข้อ 148):
+  Q: แพ้ยา ibuprofen 10 วันถึงจะมีอาการ ผิวหนังลอก มีผื่น เจ็บคอถามว่าเป็นการแพ้ยาแบบ type อะไร + บอกกลไกการแพ้ยา - เมื่อพิจารณาจากระยะเวลาการเกิดผื่น ร่วมกับลักษณะของผื่นที่เกิดขึ้น จะเป็นผื่นแพ้ยา Type IV : Cell-Mediated or delayed hypersensitivity Reaction: T-cell ปฏิกิริยาน้ีเกิดจากยาไปกระตุ้น T-cells lymphocyte ที่ recognized ยาตัวยาที่แพ้ทำให้มีการกระตุ้น Inflammatory mediators ต่าง ๆ ออกมา อาการแสดงทางคลินิกของ Type IV คือ Contact dermatitis, Photoallergy, Fixed drug eruption, Maculopapular, Morbiliform rash, Stevens Johnson syndrome, TEN ซึ่ง อาการข้างต้นจะแสดงนับจากเมื่อมี antibody พร้อมแล้ว มากกว่า 72 ชั่วโมง http://www.prachanath.su.ac.th/DIS/prachanath/answerq/ansform.php?Q_id=150 ............................................................................................................................................................................................................. 149.ยาที่ทำให้เกิด DRESS Syndrome
+  c1: Diclofenec b) Prednisolone c) colchicine d) allopurinol e) febuxostat
+  c2: Clotrimazole 1% cream
+  c3: Hydrocortisone 1% cream
+  c4: allopurinol // ใน micromedex มีรายงาน dress ใน febuxostat ด้วย แต่ allopurinol มีรายงานเคสออกมาชัดเจนมาก
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Diclofenec b) Prednisolone c) colchicine d) allopurinol e) febuxostat
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Eczema & Dermatitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 88 (ans: 1, note: PLE_CC1_2563_Q ข้อ 52):
+  Q: กลไกขอษ mupirocin
+  c1: ยับยั้ษ transpeptidase ที่ผนัษเอลล์
+  c2: ยับยั้ษ transglycosylase ที่ผนัษเอลล์
+  c3: ยับยั้ษ DNA synthesis ษ. ยับยั้ษ RNA synthesis ส. ยับยั้ษ tRNA
+  c4: Benzoyl peroxide 2.5% gel
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ยับยั้ษ transpeptidase ที่ผนัษเอลล์
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 89 (ans: 1, note: PLE_CC1_2563_Q ข้อ 53):
+  Q: ข้อใดเป็นอาการข้าษเคียษสากยาขี้ผึ้ษ mupirocin
+  c1: Photosensitivity
+  c2: Acneiform eruption
+  c3: Skin irritation ษ. Striae ส. Spider nevi
+  c4: Cetirizine 10 mg OD
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Photosensitivity
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 90 (ans: 1, note: PLE_CC1_2563_Q ข้อ 54):
+  Q: ยาใดสามารถให้แทนยาทา Mupirocin ได้ (ผู้ป่วยหกล้มและมีแผล)
+  c1: Gentamicin
+  c2: Bacitracin
+  c3: Sulfanilamide ษ. Metronidazole
+  c4: Adapalene 0.1% gel
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Gentamicin
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Wound มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 91 (ans: 1, note: PLE_CC1_2563_Q ข้อ 57):
+  Q: เฬื้อที่ทำให้เกิดสิวคือ
+  c1: C. albicans
+  c2: H. pylori
+  c3: P. acne ษ. S. pyogenes ส. S. aureus
+  c4: Clotrimazole 1% cream
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. C. albicans
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Acne มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 92 (ans: 1, note: PLE_CC1_2563_Q ข้อ 58):
+  Q: Oral isotretinoin ควรให้คำแนะนำอะไรที่เกิดสากผลข้าษเคียษที่สำคัญขอษตัวยา
+  c1: ควรกินก่อนอาหาร30นาที
+  c2: ควรษดผลิตภัณฑ์ที่เป็นฮอร์โมน
+  c3: ควรทาครีมกันแดด ษ. ไม่ควรใฬ้ผลิตภัณฑ์ทาผิวที่มี vitamin A ส. อาหารไม่มีผลต่อการกินยา
+  c4: Clobetasol propionate 0.05% cream
+  c5: 
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ควรกินก่อนอาหาร30นาที
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Acne มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 93 (ans: 1, note: ข้อ 21 (PLE_CC1_2562_Key.md)):
+  Q: อาการข้างต้นน่าจะเกิดจากยาใดมากที่สุด และเป็นอาการอะไร wasinsider W ↓ X STS
+  c1: Naproxen - angioedema
+  c2: Naproxen - anaphylaxis
+  c3: Simvastatin - urticaria
+  c4: MFM - angioedema
+  c5: MFM ı anaphylaxis
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Naproxen - angioedema
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 94 (ans: 1, note: ข้อ 27 (PLE_CC1_2562_Key.md)):
+  Q: โครงสร้างใดเกิดแพ้ยาข้ามกลุ่ม (cross hypersensitivity) ได้จากการแพ้ยาแบบผิวหนังลอก X
+  c1: Benzoyl peroxide 2.5% gel
+  c2: Acyclovir 5% cream
+  c3: Silver sulfadiazine 1% cream
+  c4: Cetirizine 10 mg OD
+  c5: . sulfonamide & "Jognican hand.energ 0 Whe S -- 1 = หË´มนาÆปทาซËาทืกกรณิ ÂวËนาต้จ²ÆดËรงบ¯นืญ´ต sulfone sulfonamide
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Benzoyl peroxide 2.5% gel
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 95 (ans: 1, note: ข้อ 62 (PLE_CC1_2562_Key.md)):
+  Q: ต่อมาพบว่ามีผู้ป่วยรายนี้และผู้ป่วยอีกหลายรายที่ได้รับยาลดระดับน้ำตาลในเลือดตัวนี้และได้รับยารักษาโรคร่วมที่ เหมือนกัน เกิดอาการข้างเคียงที่เหมือนกันคือผื่นรูปร่างแปลกๆ แพทย์คิดว่าน่าจะเกิดจากยาตัวใดตัวหนึ่งแต่ไม่ ทราบว่าเป็นตัวใด จึงอยากทำการศึกษาวิจัยว่ายาตัวใดในกลุ่มที่ผู้ป่วยรายนี้และผู้ป่วยรายอื่นๆได้รับเกิดอาการ ข้างเคียงดังกล่าว หากอยากได้ผลการศึกษาเร็วที่สุด ควรออกแบบการศึกษาแบบใด
+  c1: RCT
+  c2: Prospective case-control
+  c3: Retrospective case-control
+  c4: Prospective cohort
+  c5: Retrospective cohort
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. RCT
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Eczema & Dermatitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 96 (ans: 1, note: ข้อ 113 (PLE_CC1_2561_Key.md)):
+  Q: ข้อใดคือ indirect cost CUTEagomoline WV225 cut as
+  c1: Adapalene 0.1% gel
+  c2: Mupirocin 2% ointment
+  c3: Betamethasone dipropionate 0.05% cream
+  c4: Clotrimazole 1% cream
+  c5: Hydrocortisone 1% cream
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Adapalene 0.1% gel
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 97 (ans: 1, note: ข้อ 1 (PLE_CC1_2560 22 April Set 1.md)):
+  Q: ข้อใดต่อไปถูกต้องเกี่ยวกับเกลื อน
+  c1: เกิดจากเชื อ Malassezia furfur
+  c2: ถ้าอาการรุนแรง จะมีขุย แดง คัน
+  c3: ถ้าทดสอบด้วย 10% KOH ไปส่องกล้อง จะเห็น Long pseudohyphae
+  c4: ใช้ยาทา Topical selenium sulfide ในการรักษา
+  c5: ถ้าเป็นบ่อยๆ ควรได้รับยาป้องกัน รวมโดย Phongsathorn Phlaisaithong Rx 9 UP 4 | P a g e
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. เกิดจากเชื อ Malassezia furfur
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 98 (ans: 1, note: ข้อ 2 (PLE_CC1_2560 22 April Set 1.md)):
+  Q: ถ้าจะใช้ยากิน ควรใช้ยารับประทานใด
+  c1: Ketoconazole
+  c2: Posaconazole
+  c3: Miconazole
+  c4: Fluconazole
+  c5: Griseofulvin หลังจากนั นสักพักผู้ป่วยอาการไม่ดีขึ นไปพบแพทย์จ่ายยา Itraconazole ให้มารับประทาน
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Ketoconazole
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 99 (ans: 1, note: ข้อ 7 (PLE_CC1_2560 22 April Set 1.md)):
+  Q: กลไกการออกฤทธิ์ของยา Clotrimazole
+  c1: ยับยั งการสังเคราะห์ Ergosterol
+  c2: ยับยั ง Squalene epoxidase
+  c3: Mitotic spindle toxicity
+  c4: Thymidylate synthase inhibitors
+  c5: ยับยั งการสร้าง Glucans
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ยับยั งการสังเคราะห์ Ergosterol
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 100 (ans: 1, note: ข้อ 1 (PLE_CC1_2560 22 April Set 1.md)):
+  Q: ผื่นที่หน้าของผู้ป่วย เรียกว่าอะไร
+  c1: Discoid rash
+  c2: Maculopapular rash
+  c3: Urticaria
+  c4: Malar rash
+  c5: Angioedema
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Discoid rash
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Eczema & Dermatitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 101 (ans: 1, note: ข้อ 3 (PLE_CC1_2560 22 April Set 1.md)):
+  Q: แพทย์สั่งจ่ายยา fluocinolone acetonide 0.01 % ส้าหรับทารักษาผื่นบริเวณใบหน้า แต่ทางโรงพยาบาล ไม่มียาดังกล่าว สามารถใช้ยาใดแทนได้
+  c1: Betamethasone dipropionate 0.05%
+  c2: Clobetasol propionate 0.05%
+  c3: Dexosimethasone 0.05%
+  c4: Triamcinolone acetonide 0.1%
+  c5: Hydrocortisone acetate 0.5% รวมโดย Phongsathorn Phlaisaithong Rx 9 UP 21 | P a g e
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Betamethasone dipropionate 0.05%
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Eczema & Dermatitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 102 (ans: 1, note: ข้อ 1 (PLE_CC1_2560 22 April Set 2.md)):
+  Q: ข้อใดต่อไปถูกต้องเกี่ยวกับเกลื้อน
+  c1: เกิดจากเชื้อ Malassezia furfur
+  c2: ถ้าอาการรุนแรง จะมีขุย แดง คัน
+  c3: ถ้าทดสอบด้วย 10% KOH ไปส่องกล้อง จะเห็น Long pseudohyphae
+  c4: ใช้ยาทา Topical selenium sulfide ในการรักษา
+  c5: ถ้าเป็นบ่อยๆ ควรได้รับยาป้องกัน
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. เกิดจากเชื้อ Malassezia furfur
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 103 (ans: 1, note: ข้อ 2 (PLE_CC1_2560 22 April Set 2.md)):
+  Q: ค่าแลปใด Specificity สูงสุด สำหรับ SLE
+  c1: ANA
+  c2: Anti-dsDNA
+  c3: Lupus anticoagulant
+  c4: ESR
+  c5: Cetirizine 10 mg OD
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ANA
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 104 (ans: 1, note: ข้อ 3 (PLE_CC1_2560 22 April Set 2.md)):
+  Q: ถ้าไม่มียา Fluocinolone acetonide 0.01% เภสัชกรจะจ่ายยาใดแทน
+  c1: Betamethasone dipropionate 0.05%
+  c2: Clobetasol propionate 0.05%
+  c3: Dexosimethasone 0.05%
+  c4: Triamcinolone acetonide 0.1%
+  c5: Hydrocortisone acetate 0.5%
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Betamethasone dipropionate 0.05%
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 105 (ans: 1, note: ข้อ 52 (PLE_CC1_2559.md)):
+  Q: หากให้ยา paclitaxel แล้วผู้ป่วยเกิดผื่นคัน จะมีแนวทางป้องกันอย่างไร
+  c1: ให้สารน ้าจ้าพวกน ้าเกลือก่อนให้ยา 1-2 ชั่วโมง
+  c2: ให้ยาคาลาไมด์ โลชันทาเมื่อมีอาการแพ้
+  c3: ให้ยา dexamethasone ก่อนให้ยา 30 นาที
+  c4: ให้ยา famotidine ก่อนให้ยา 1 ชั่วโมง
+  c5: ให้เปลี่ยนตัวท้าละลายเป็น D5W เนื่องจากเกิดผลน้อยที่สุด
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ให้สารน ้าจ้าพวกน ้าเกลือก่อนให้ยา 1-2 ชั่วโมง
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Eczema & Dermatitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 106 (ans: 1, note: ข้อ 66 (PLE_CC1_2559.md)):
+  Q: จงค้านวณหาปริมาณเบสของยาเหน็บที่ต้องใช้เตรียม 1 แท่ง โดย 1 แท่งหนัก 2 g ก้าหนดให้ยา clotrimazole มี น ้าหนัก 500 mg/แท่ง มีค่า D.V.=1.1
+  c1: 0.45 กรัม
+  c2: 0.55 กรัม
+  c3: 1.45 กรัม
+  c4: 1.55 กรัม
+  c5: 2.00 กรัม
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. 0.45 กรัม
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 107 (ans: 1, note: ข้อ 19 (PLE_CC1_2558_Key.md)):
+  Q: ให้ยาใดเป็น maintenance phase
+  c1: Amphotericin B
+  c2: Fluconazole
+  c3: Itraconazole
+  c4: Bactrim
+  c5: Griseofulvin
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Amphotericin B
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 108 (ans: 1, note: ข้อ 93 (PLE_CC1_2558_Key.md)):
+  Q: ลักษณะอาการที่ผู้ป่วยเป็น เกิดจากเชื้ออะไร
+  c1: Propionebacterium acnes
+  c2: Malassezia furfur
+  c3: Herpes simplex
+  c4: Thichophyton rubum
+  c5: Microsporum
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Propionebacterium acnes
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 109 (ans: 1, note: ข้อ 94 (PLE_CC1_2558_Key.md)):
+  Q: ยาใดที่เหมาะสมสำหรับผู้ป่วย
+  c1: Griseofulvin oral
+  c2: Terbinafine
+  c3: Ketoconazole oral
+  c4: Prednisolone
+  c5: Itraconazole capsule
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Griseofulvin oral
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 110 (ans: 1, note: ข้อ 95 (PLE_CC1_2558_Key.md)):
+  Q: ยาใดเป็นพิษต่อตับมากที่สุด
+  c1: Griseofulvin oral
+  c2: Terbinafine
+  c3: Ketoconazole oral
+  c4: Prednisolone
+  c5: Itraconazole capsule
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Griseofulvin oral
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+
+Key 111 (ans: 1, note: ข้อ 27 (PLE_CC1_2558_Key.md)):
+  Q: ข้อใดไม่เกี่ยวข้องกับการวินิจฉัย TEN
+  c1: มีผื่นผิวหนังลอกมากกว่า 30%
+  c2: มีไข้ เจ็บคอ เริ่มมีผื่นแดงขึ้น
+  c3: ได้รับยาที่มี incidence สูงในการเกิด TEN
+  c4: มีแผลที่อวัยวะต่าง ๆ
+  c5: โรคประจำตัวมาก
+  exp line 1: ✅ คำตอบที่ถูกต้อง: ข้อ ก. มีผื่นผิวหนังลอกมากกว่า 30%
+  exp line 2: 
+  exp line 3: 💡 Background:
+  exp line 4: การบริบาลผู้ป่วยในกลุ่มโรค Superficial fungal มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+  exp line 5: 
+  exp line 6: 🎯 ทำไมข้อนี้ถึงถูก:
+

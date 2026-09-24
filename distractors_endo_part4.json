@@ -1,0 +1,297 @@
+{
+  "129": {
+    "distractors": {
+      "ข": "Glipizide เป็นยากลุ่ม Sulfonylurea ที่ออกฤทธิ์ปิด K-ATP channel บนเบต้าเซลล์ ทำให้กระตุ้นการหลั่งอินซูลิน ใช้สำหรับเบาหวานชนิดที่ 2 เท่านั้น",
+      "ค": "Empagliflozin เป็นยากลุ่ม SGLT2 inhibitor ออกฤทธิ์ยับยั้งการดูดกลับน้ำตาลที่ท่อไตส่วนต้น ขับน้ำตาลออกทางปัสสาวะ",
+      "ง": "Sitagliptin เป็นยากลุ่ม DPP-4 inhibitor ช่วยยับยั้งเอนไซม์ที่ทำลาย GLP-1 ทำให้ฮอร์โมน Incretin ทำงานได้นานขึ้น",
+      "จ": "Liraglutide เป็น GLP-1 receptor agonist ออกฤทธิ์กระตุ้นการหลั่งอินซูลินตามระดับน้ำตาล ยับยั้งการหลั่ง Glucagon และชะลอการบีบตัวของกระเพาะอาหาร"
+    }
+  },
+  "130": {
+    "distractors": {
+      "ก": "Omeprazole เป็น PPI ยับยั้ง H+/K+ ATPase ปั๊มที่กระเพาะอาหาร ไม่เกี่ยวข้องกับการเสริม Folate",
+      "ข": "Calcium carbonate ใช้เสริมแคลเซียมและจับฟอสเฟตในเลือด ไม่ป้องกันพิษจาก Methotrexate",
+      "ง": "Vitamin K เป็น Co-factor สำหรับปัจจัยการแข็งตัวของเลือดต้านฤทธิ์ Warfarin ไม่ลดผลข้างเคียงของ DMARDs",
+      "จ": "Folic acid ป้องกันและลดพิษต่อไขกระดูกและเยื่อบุจากการใช้ยา Methotrexate"
+    }
+  },
+  "131": {
+    "distractors": {
+      "ข": "Methimazole ออกฤทธิ์ยับยั้งเอนไซม์ Thyroid peroxidase ยับยั้งการสังเคราะห์ฮอร์โมนไทรอยด์ ใช้รักษา Hyperthyroidism",
+      "ค": "Pioglitazone เป็นยากลุ่ม Thiazolidinedione ออกฤทธิ์ผ่าน PPAR-gamma receptor ช่วยเพิ่ม Insulin sensitivity ที่เซลล์กล้ามเนื้อและไขมัน",
+      "ง": "Insulin glargine เป็น Basal insulin ออกฤทธิ์ยาว ไม่มีพีค ใช้เพื่อควบคุมระดับน้ำตาลพื้นฐาน (Fasting blood glucose)",
+      "จ": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)"
+    }
+  },
+  "132": {
+    "distractors": {
+      "ข": "Insulin lispro เป็น short-acting ออกฤทธิ์คุมน้ำตาลหลังอาหาร ทำให้น้ำหนักเพิ่มได้ แต่มักจะน้อยกว่ายาที่มีฤทธิ์ basal",
+      "ค": "Dapagliflozin เป็นยา SGLT2 inhibitor มีผลทำให้สูญเสียกลูโคสผ่านทางปัสสาวะ จึงส่งผลให้น้ำหนักตัวลดลง ไม่ใช่น้ำหนักเพิ่ม",
+      "ง": "Semaglutide เป็น GLP-1 receptor agonist ทำให้กระเพาะอาหารบีบตัวช้าลงและเพิ่มความอิ่ม ส่งผลให้น้ำหนักตัวลดลงอย่างมีนัยสำคัญ",
+      "จ": "Metformin เป็นยาลดระดับน้ำตาลที่มีผลเป็น Weight neutral หรืออาจทำให้น้ำหนักลดลงเล็กน้อย ไม่ทำให้น้ำหนักตัวเพิ่มขึ้น"
+    }
+  },
+  "133": {
+    "distractors": {
+      "ข": "Methimazole มีความเสี่ยงในการเกิด Aplasia cutis และ Choanal atresia ในทารก จึงควรหลีกเลี่ยงในไตรมาสแรกของการตั้งครรภ์",
+      "ค": "Levothyroxine เป็นยารักษา Hypothyroidism ไม่ใช่สำหรับการรักษา Hyperthyroidism ในหญิงตั้งครรภ์",
+      "ง": "ตัวเลือกนี้ผิดเนื่องจาก Methimazole ควรหลีกเลี่ยงในไตรมาสแรกของการตั้งครรภ์",
+      "จ": "ผิดทั้งหมดเนื่องจากมีตัวเลือกที่ไม่เหมาะสมคือ Methimazole และ Levothyroxine"
+    }
+  },
+  "134": {
+    "distractors": {
+      "ข": "ทนร้อนไม่ได้ (Heat intolerance) เป็นอาการของภาวะ Hyperthyroidism (Thyrotoxicosis) ที่เกิดจากการได้รับยาเกินขนาด",
+      "ค": "หัวใจเต้นเร็ว (Tachycardia) เป็นผลจากฤทธิ์กระตุ้นระบบประสาทซิมพาเทติกเมื่อมีไทรอยด์ฮอร์โมนสูงเกิน",
+      "ง": "กระดูกบาง (Osteoporosis) เป็นผลข้างเคียงระยะยาวจากการได้รับ Levothyroxine ขนาดสูงจนกด TSH นานๆ",
+      "จ": "ชัก (Seizure) สามารถถูกกระตุ้นได้จากภาวะ Severe thyrotoxicosis หรือ Thyroid storm"
+    }
+  },
+  "135": {
+    "distractors": {
+      "ข": "ทนต่อความเย็นไม่ได้ (Cold intolerance) เป็นอาการที่พบใน Hypothyroidism เนื่องจากอัตราการเผาผลาญพื้นฐานต่ำลง",
+      "ค": "ซึมเศร้า อ่อนเพลีย เป็นอาการทางประสาทที่พบได้จากภาวะฮอร์โมนไทรอยด์ต่ำ",
+      "ง": "ผิวหนังแห้ง เป็นอาการแสดงคลาสสิกของ Hypothyroidism จากการลดลงของการไหลเวียนเลือดที่ผิวหนัง",
+      "จ": "น้ำหนักลด เป็นอาการของ Hyperthyroidism (Thyrotoxicosis) ผู้ป่วย Hypothyroidism มักจะมีน้ำหนักตัวเพิ่มขึ้น"
+    }
+  },
+  "136": {
+    "distractors": {
+      "ข": "Sucralfate ออกฤทธิ์ขัดขวางการดูดซึม (absorption) ของ Levothyroxine ที่ทางเดินอาหาร ไม่ได้เร่งการทำลายยา",
+      "ค": "Phenytoin เป็น CYP450 inducer ซึ่งจะไปเร่งกระบวนการ Metabolism (การทำลาย) ของฮอร์โมน T4 ทำให้ระดับฮอร์โมนลดลง",
+      "ง": "Cholestyramine เป็น Bile acid sequestrant ขัดขวางการดูดซึมของฮอร์โมน T4 ในลำไส้",
+      "จ": "Sodium polystyrene sulfonate ขัดขวางการดูดซึม T4 จากทางเดินอาหาร"
+    }
+  },
+  "137": {
+    "distractors": {
+      "ข": "Methimazole ยับยั้งการสังเคราะห์ฮอร์โมน แต่ไม่ได้ช่วยลดขนาดและเลือดที่มาเลี้ยงต่อมไทรอยด์ก่อนการผ่าตัด",
+      "ง": "Propranolol ใช้เพื่อควบคุมอาการใจสั่น (Sympathetic overactivity) ไม่มีผลลด Vascularity ของต่อมไทรอยด์",
+      "จ": "Radioactive iodine ใช้ทำลายเนื้อเยื่อไทรอยด์ ไม่ใช่ยาสำหรับเตรียมผ่าตัด (Preoperative preparation)"
+    }
+  },
+  "138": {
+    "distractors": {
+      "ข": "Propylthiouracil (PTU) ขับออกทางน้ำนมในปริมาณน้อย สามารถใช้ได้ แต่ตาม Guidelines ปัจจุบันมักใช้เป็นทางเลือกรองเนื่องจากเสี่ยงต่อภาวะตับวายรุนแรง",
+      "ค": "Radioactive iodine (I-131) มีข้อห้ามใช้เด็ดขาดในสตรีให้นมบุตร เนื่องจากจะถูกขับออกทางน้ำนมและทำลายต่อมไทรอยด์ของทารก",
+      "ง": "ตาม Guidelines ปัจจุบัน Methimazole ถือเป็นยาทางเลือกแรกในสตรีให้นมบุตร (ที่ขนาดน้อยกว่า 20 mg/day) เพื่อลดความเสี่ยง Hepatotoxicity จาก PTU",
+      "จ": "I-131 ห้ามใช้ในหญิงให้นมบุตรอย่างเด็ดขาด จึงไม่สามารถใช้ได้ทุกข้อ"
+    }
+  },
+  "140": {
+    "distractors": {
+      "ข": "Pioglitazone เป็นยากลุ่ม Thiazolidinedione ออกฤทธิ์ผ่าน PPAR-gamma receptor ช่วยเพิ่ม Insulin sensitivity ที่เซลล์กล้ามเนื้อและไขมัน",
+      "ค": "Insulin glargine เป็น Basal insulin ออกฤทธิ์ยาว ไม่มีพีค ใช้เพื่อควบคุมระดับน้ำตาลพื้นฐาน (Fasting blood glucose)",
+      "ง": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)",
+      "จ": "Dapagliflozin เป็นยากลุ่ม SGLT2 inhibitor ขับน้ำตาลออกทางปัสสาวะ มีผลข้างเคียงคือน้ำหนักลด ไม่ใช่น้ำหนักเพิ่ม"
+    }
+  },
+  "141": {
+    "distractors": {
+      "ข": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้",
+      "ค": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้",
+      "ง": "Metformin ออกฤทธิ์ยับยั้ง Gluconeogenesis ที่ตับ ไม่ทำให้น้ำหนักเพิ่ม และเป็น First-line drug สำหรับเบาหวานชนิดที่ 2",
+      "จ": "Glipizide เป็นยากลุ่ม Sulfonylurea ที่ออกฤทธิ์ปิด K-ATP channel บนเบต้าเซลล์ ทำให้กระตุ้นการหลั่งอินซูลิน ใช้สำหรับเบาหวานชนิดที่ 2 เท่านั้น"
+    }
+  },
+  "142": {
+    "distractors": {
+      "ข": "Glipizide เป็นยากลุ่ม Sulfonylurea ที่ออกฤทธิ์ปิด K-ATP channel บนเบต้าเซลล์ ทำให้กระตุ้นการหลั่งอินซูลิน ใช้สำหรับเบาหวานชนิดที่ 2 เท่านั้น",
+      "ค": "Empagliflozin เป็นยากลุ่ม SGLT2 inhibitor ออกฤทธิ์ยับยั้งการดูดกลับน้ำตาลที่ท่อไตส่วนต้น ขับน้ำตาลออกทางปัสสาวะ",
+      "ง": "Sitagliptin เป็นยากลุ่ม DPP-4 inhibitor ช่วยยับยั้งเอนไซม์ที่ทำลาย GLP-1 ทำให้ฮอร์โมน Incretin ทำงานได้นานขึ้น",
+      "จ": "Liraglutide เป็น GLP-1 receptor agonist ออกฤทธิ์กระตุ้นการหลั่งอินซูลินตามระดับน้ำตาล ยับยั้งการหลั่ง Glucagon และชะลอการบีบตัวของกระเพาะอาหาร"
+    }
+  },
+  "143": {
+    "distractors": {
+      "ข": "Liraglutide เป็น GLP-1 receptor agonist ออกฤทธิ์กระตุ้นการหลั่งอินซูลินตามระดับน้ำตาล ยับยั้งการหลั่ง Glucagon และชะลอการบีบตัวของกระเพาะอาหาร",
+      "ค": "Levothyroxine เป็นฮอร์โมน T4 สังเคราะห์ ใช้ทดแทนในผู้ป่วย Hypothyroidism ข้อควรระวังคือการเกิด Thyrotoxicosis หากได้รับขนาดสูงเกินไป",
+      "ง": "Propylthiouracil (PTU) ยับยั้งเอนไซม์ Thyroid peroxidase และยับยั้งการเปลี่ยน T4 เป็น T3 ที่เนื้อเยื่อรอบนอก ใช้รักษาภาวะ Hyperthyroidism",
+      "จ": "Methimazole ออกฤทธิ์ยับยั้งเอนไซม์ Thyroid peroxidase ยับยั้งการสังเคราะห์ฮอร์โมนไทรอยด์ ใช้รักษา Hyperthyroidism"
+    }
+  },
+  "144": {
+    "distractors": {
+      "ข": "Methimazole ออกฤทธิ์ยับยั้งเอนไซม์ Thyroid peroxidase ยับยั้งการสังเคราะห์ฮอร์โมนไทรอยด์ ใช้รักษา Hyperthyroidism",
+      "ค": "Pioglitazone เป็นยากลุ่ม Thiazolidinedione ออกฤทธิ์ผ่าน PPAR-gamma receptor ช่วยเพิ่ม Insulin sensitivity ที่เซลล์กล้ามเนื้อและไขมัน",
+      "ง": "Insulin glargine เป็น Basal insulin ออกฤทธิ์ยาว ไม่มีพีค ใช้เพื่อควบคุมระดับน้ำตาลพื้นฐาน (Fasting blood glucose)",
+      "จ": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)"
+    }
+  },
+  "145": {
+    "distractors": {
+      "ข": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)",
+      "ค": "Dapagliflozin เป็นยากลุ่ม SGLT2 inhibitor ขับน้ำตาลออกทางปัสสาวะ มีผลข้างเคียงคือน้ำหนักลด ไม่ใช่น้ำหนักเพิ่ม",
+      "ง": "Semaglutide เป็น GLP-1 receptor agonist มีทั้งรูปแบบฉีดและกิน ช่วยลดน้ำหนักและคุมน้ำตาล ไม่ทำให้น้ำหนักเพิ่ม",
+      "จ": "Metformin ออกฤทธิ์ยับยั้ง Gluconeogenesis ที่ตับ ไม่ทำให้น้ำหนักเพิ่ม และเป็น First-line drug สำหรับเบาหวานชนิดที่ 2"
+    }
+  },
+  "146": {
+    "distractors": {
+      "ข": "Pilocarpine เป็น Muscarinic agonist กระตุ้นการหดตัวของ Ciliary muscle เพิ่มการระบาย Aqueous humor",
+      "ค": "Acetazolamide เป็น Carbonic anhydrase inhibitor ลดการสร้าง Aqueous humor",
+      "ง": "Betaxolol เป็น Beta-1 selective blocker ลดการสร้าง Aqueous humor",
+      "จ": "Brimonidine เป็น Alpha-2 adrenergic agonist ช่วยลดการสร้างและเพิ่มการระบาย Aqueous humor"
+    }
+  },
+  "147": {
+    "distractors": {
+      "ข": "Pilocarpine เป็นยากลุ่ม Cholinergic agonist ออกฤทธิ์หดตัว Ciliary muscle ทำให้เปิด Trabecular meshwork เพิ่มการไหลเวียน Aqueous humor",
+      "ค": "Acetazolamide เป็นยาลดการสร้าง Aqueous humor ผ่านการยับยั้งเอนไซม์ Carbonic anhydrase ที่ Ciliary epithelium",
+      "ง": "Betaxolol เป็น Beta-1 selective blocker ซึ่งออกฤทธิ์ลดการสร้าง Aqueous humor ผ่านการยับยั้ง Beta receptor ที่ Ciliary body",
+      "จ": "Brimonidine เป็น Alpha-2 agonist ที่ออกฤทธิ์ทั้งลดการสร้าง Aqueous humor และเพิ่ม Uveoscleral outflow"
+    }
+  },
+  "148": {
+    "distractors": {
+      "ข": "Propylthiouracil (PTU) ยับยั้งเอนไซม์ Thyroid peroxidase และยับยั้งการเปลี่ยน T4 เป็น T3 ที่เนื้อเยื่อรอบนอก ใช้รักษาภาวะ Hyperthyroidism",
+      "ค": "Methimazole ออกฤทธิ์ยับยั้งเอนไซม์ Thyroid peroxidase ยับยั้งการสังเคราะห์ฮอร์โมนไทรอยด์ ใช้รักษา Hyperthyroidism",
+      "ง": "Pioglitazone เป็นยากลุ่ม Thiazolidinedione ออกฤทธิ์ผ่าน PPAR-gamma receptor ช่วยเพิ่ม Insulin sensitivity ที่เซลล์กล้ามเนื้อและไขมัน",
+      "จ": "Insulin glargine เป็น Basal insulin ออกฤทธิ์ยาว ไม่มีพีค ใช้เพื่อควบคุมระดับน้ำตาลพื้นฐาน (Fasting blood glucose)"
+    }
+  },
+  "149": {
+    "distractors": {
+      "ข": "Insulin glargine เป็น Basal insulin ออกฤทธิ์ยาว ไม่มีพีค ใช้เพื่อควบคุมระดับน้ำตาลพื้นฐาน (Fasting blood glucose)",
+      "ค": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)",
+      "ง": "Dapagliflozin เป็นยากลุ่ม SGLT2 inhibitor ขับน้ำตาลออกทางปัสสาวะ มีผลข้างเคียงคือน้ำหนักลด ไม่ใช่น้ำหนักเพิ่ม",
+      "จ": "Semaglutide เป็น GLP-1 receptor agonist มีทั้งรูปแบบฉีดและกิน ช่วยลดน้ำหนักและคุมน้ำตาล ไม่ทำให้น้ำหนักเพิ่ม"
+    }
+  },
+  "151": {
+    "distractors": {
+      "ก": "Glipizide เป็นยากลุ่ม Sulfonylurea ที่ออกฤทธิ์ปิด K-ATP channel บนเบต้าเซลล์ ทำให้กระตุ้นการหลั่งอินซูลิน ใช้สำหรับเบาหวานชนิดที่ 2 เท่านั้น",
+      "ข": "Empagliflozin เป็นยากลุ่ม SGLT2 inhibitor ออกฤทธิ์ยับยั้งการดูดกลับน้ำตาลที่ท่อไตส่วนต้น ขับน้ำตาลออกทางปัสสาวะ",
+      "ค": "Sitagliptin เป็นยากลุ่ม DPP-4 inhibitor ช่วยยับยั้งเอนไซม์ที่ทำลาย GLP-1 ทำให้ฮอร์โมน Incretin ทำงานได้นานขึ้น",
+      "ง": "Liraglutide เป็น GLP-1 receptor agonist ออกฤทธิ์กระตุ้นการหลั่งอินซูลินตามระดับน้ำตาล ยับยั้งการหลั่ง Glucagon และชะลอการบีบตัวของกระเพาะอาหาร"
+    }
+  },
+  "153": {
+    "distractors": {
+      "ข": "Pioglitazone เป็นยากลุ่ม Thiazolidinedione ออกฤทธิ์ผ่าน PPAR-gamma receptor ช่วยเพิ่ม Insulin sensitivity ที่เซลล์กล้ามเนื้อและไขมัน",
+      "ค": "Insulin glargine เป็น Basal insulin ออกฤทธิ์ยาว ไม่มีพีค ใช้เพื่อควบคุมระดับน้ำตาลพื้นฐาน (Fasting blood glucose)",
+      "ง": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)",
+      "จ": "Dapagliflozin เป็นยากลุ่ม SGLT2 inhibitor ขับน้ำตาลออกทางปัสสาวะ มีผลข้างเคียงคือน้ำหนักลด ไม่ใช่น้ำหนักเพิ่ม"
+    }
+  },
+  "155": {
+    "distractors": {
+      "ข": "Glipizide เป็นยากลุ่ม Sulfonylurea ที่ออกฤทธิ์ปิด K-ATP channel บนเบต้าเซลล์ ทำให้กระตุ้นการหลั่งอินซูลิน ใช้สำหรับเบาหวานชนิดที่ 2 เท่านั้น",
+      "ค": "Empagliflozin เป็นยากลุ่ม SGLT2 inhibitor ออกฤทธิ์ยับยั้งการดูดกลับน้ำตาลที่ท่อไตส่วนต้น ขับน้ำตาลออกทางปัสสาวะ",
+      "ง": "Sitagliptin เป็นยากลุ่ม DPP-4 inhibitor ช่วยยับยั้งเอนไซม์ที่ทำลาย GLP-1 ทำให้ฮอร์โมน Incretin ทำงานได้นานขึ้น",
+      "จ": "Liraglutide เป็น GLP-1 receptor agonist ออกฤทธิ์กระตุ้นการหลั่งอินซูลินตามระดับน้ำตาล ยับยั้งการหลั่ง Glucagon และชะลอการบีบตัวของกระเพาะอาหาร"
+    }
+  },
+  "156": {
+    "distractors": {
+      "ข": "Calcium carbonate ใช้เสริมแคลเซียมและจับฟอสเฟตในเลือด ไม่ป้องกันพิษจาก Methotrexate",
+      "ค": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้",
+      "ง": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้",
+      "จ": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้"
+    }
+  },
+  "157": {
+    "distractors": {
+      "ก": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้",
+      "ค": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้",
+      "ง": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้",
+      "จ": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้"
+    }
+  },
+  "158": {
+    "distractors": {
+      "ข": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)",
+      "ค": "Dapagliflozin เป็นยากลุ่ม SGLT2 inhibitor ขับน้ำตาลออกทางปัสสาวะ มีผลข้างเคียงคือน้ำหนักลด ไม่ใช่น้ำหนักเพิ่ม",
+      "ง": "Semaglutide เป็น GLP-1 receptor agonist มีทั้งรูปแบบฉีดและกิน ช่วยลดน้ำหนักและคุมน้ำตาล ไม่ทำให้น้ำหนักเพิ่ม",
+      "จ": "Metformin ออกฤทธิ์ยับยั้ง Gluconeogenesis ที่ตับ ไม่ทำให้น้ำหนักเพิ่ม และเป็น First-line drug สำหรับเบาหวานชนิดที่ 2"
+    }
+  },
+  "160": {
+    "distractors": {
+      "ข": "Sitagliptin เป็นยากลุ่ม DPP-4 inhibitor ช่วยยับยั้งเอนไซม์ที่ทำลาย GLP-1 ทำให้ฮอร์โมน Incretin ทำงานได้นานขึ้น",
+      "ค": "Liraglutide เป็น GLP-1 receptor agonist ออกฤทธิ์กระตุ้นการหลั่งอินซูลินตามระดับน้ำตาล ยับยั้งการหลั่ง Glucagon และชะลอการบีบตัวของกระเพาะอาหาร",
+      "ง": "Levothyroxine เป็นฮอร์โมน T4 สังเคราะห์ ใช้ทดแทนในผู้ป่วย Hypothyroidism ข้อควรระวังคือการเกิด Thyrotoxicosis หากได้รับขนาดสูงเกินไป",
+      "จ": "Propylthiouracil (PTU) ยับยั้งเอนไซม์ Thyroid peroxidase และยับยั้งการเปลี่ยน T4 เป็น T3 ที่เนื้อเยื่อรอบนอก ใช้รักษาภาวะ Hyperthyroidism"
+    }
+  },
+  "161": {
+    "distractors": {
+      "ข": "Propylthiouracil (PTU) ยับยั้งเอนไซม์ Thyroid peroxidase และยับยั้งการเปลี่ยน T4 เป็น T3 ที่เนื้อเยื่อรอบนอก ใช้รักษาภาวะ Hyperthyroidism",
+      "ค": "Methimazole ออกฤทธิ์ยับยั้งเอนไซม์ Thyroid peroxidase ยับยั้งการสังเคราะห์ฮอร์โมนไทรอยด์ ใช้รักษา Hyperthyroidism",
+      "ง": "Pioglitazone เป็นยากลุ่ม Thiazolidinedione ออกฤทธิ์ผ่าน PPAR-gamma receptor ช่วยเพิ่ม Insulin sensitivity ที่เซลล์กล้ามเนื้อและไขมัน",
+      "จ": "Insulin glargine เป็น Basal insulin ออกฤทธิ์ยาว ไม่มีพีค ใช้เพื่อควบคุมระดับน้ำตาลพื้นฐาน (Fasting blood glucose)"
+    }
+  },
+  "162": {
+    "distractors": {
+      "ข": "Insulin glargine เป็น Basal insulin ออกฤทธิ์ยาว ไม่มีพีค ใช้เพื่อควบคุมระดับน้ำตาลพื้นฐาน (Fasting blood glucose)",
+      "ค": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)",
+      "ง": "Dapagliflozin เป็นยากลุ่ม SGLT2 inhibitor ขับน้ำตาลออกทางปัสสาวะ มีผลข้างเคียงคือน้ำหนักลด ไม่ใช่น้ำหนักเพิ่ม",
+      "จ": "Semaglutide เป็น GLP-1 receptor agonist มีทั้งรูปแบบฉีดและกิน ช่วยลดน้ำหนักและคุมน้ำตาล ไม่ทำให้น้ำหนักเพิ่ม"
+    }
+  },
+  "164": {
+    "distractors": {
+      "ข": "Empagliflozin เป็นยากลุ่ม SGLT2 inhibitor ออกฤทธิ์ยับยั้งการดูดกลับน้ำตาลที่ท่อไตส่วนต้น ขับน้ำตาลออกทางปัสสาวะ",
+      "ค": "Sitagliptin เป็นยากลุ่ม DPP-4 inhibitor ช่วยยับยั้งเอนไซม์ที่ทำลาย GLP-1 ทำให้ฮอร์โมน Incretin ทำงานได้นานขึ้น",
+      "ง": "Liraglutide เป็น GLP-1 receptor agonist ออกฤทธิ์กระตุ้นการหลั่งอินซูลินตามระดับน้ำตาล ยับยั้งการหลั่ง Glucagon และชะลอการบีบตัวของกระเพาะอาหาร",
+      "จ": "Levothyroxine เป็นฮอร์โมน T4 สังเคราะห์ ใช้ทดแทนในผู้ป่วย Hypothyroidism ข้อควรระวังคือการเกิด Thyrotoxicosis หากได้รับขนาดสูงเกินไป"
+    }
+  },
+  "165": {
+    "distractors": {
+      "ข": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้",
+      "ค": "Repaglinide เป็น Meglitinide กระตุ้นการหลั่งอินซูลินแบบรวดเร็วและสั้น ขับออกทางตับเป็นหลัก สามารถใช้ในผู้ป่วยโรคไตได้",
+      "ง": "Glibenclamide เป็น Sulfonylurea ที่ออกฤทธิ์ยาวและมี active metabolite ขับออกทางไต จึงมีข้อห้ามใช้ในผู้ป่วยโรคไตเสื่อม (CKD)",
+      "จ": "Repaglinide เป็น Meglitinide กระตุ้นการหลั่งอินซูลินแบบรวดเร็วและสั้น ขับออกทางตับเป็นหลัก สามารถใช้ในผู้ป่วยโรคไตได้"
+    }
+  },
+  "166": {
+    "distractors": {
+      "ข": "Pioglitazone เป็นยากลุ่ม Thiazolidinedione ออกฤทธิ์ผ่าน PPAR-gamma receptor ช่วยเพิ่ม Insulin sensitivity ที่เซลล์กล้ามเนื้อและไขมัน",
+      "ค": "Insulin glargine เป็น Basal insulin ออกฤทธิ์ยาว ไม่มีพีค ใช้เพื่อควบคุมระดับน้ำตาลพื้นฐาน (Fasting blood glucose)",
+      "ง": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)",
+      "จ": "Dapagliflozin เป็นยากลุ่ม SGLT2 inhibitor ขับน้ำตาลออกทางปัสสาวะ มีผลข้างเคียงคือน้ำหนักลด ไม่ใช่น้ำหนักเพิ่ม"
+    }
+  },
+  "168": {
+    "distractors": {
+      "ก": "ตัวเลือกนี้ไม่ได้มีกลไกทางเภสัชวิทยาหรือข้อบ่งใช้ที่ตรงกับพยาธิสภาพทางคลินิกที่ระบุในโจทย์ข้อนี้",
+      "ข": "Glipizide เป็นยากลุ่ม Sulfonylurea ที่ออกฤทธิ์ปิด K-ATP channel บนเบต้าเซลล์ ทำให้กระตุ้นการหลั่งอินซูลิน ใช้สำหรับเบาหวานชนิดที่ 2 เท่านั้น",
+      "ง": "Sitagliptin เป็นยากลุ่ม DPP-4 inhibitor ช่วยยับยั้งเอนไซม์ที่ทำลาย GLP-1 ทำให้ฮอร์โมน Incretin ทำงานได้นานขึ้น",
+      "จ": "Liraglutide เป็น GLP-1 receptor agonist ออกฤทธิ์กระตุ้นการหลั่งอินซูลินตามระดับน้ำตาล ยับยั้งการหลั่ง Glucagon และชะลอการบีบตัวของกระเพาะอาหาร"
+    }
+  },
+  "169": {
+    "distractors": {
+      "ข": "Liraglutide เป็น GLP-1 receptor agonist ออกฤทธิ์กระตุ้นการหลั่งอินซูลินตามระดับน้ำตาล ยับยั้งการหลั่ง Glucagon และชะลอการบีบตัวของกระเพาะอาหาร",
+      "ค": "Levothyroxine เป็นฮอร์โมน T4 สังเคราะห์ ใช้ทดแทนในผู้ป่วย Hypothyroidism ข้อควรระวังคือการเกิด Thyrotoxicosis หากได้รับขนาดสูงเกินไป",
+      "ง": "Propylthiouracil (PTU) ยับยั้งเอนไซม์ Thyroid peroxidase และยับยั้งการเปลี่ยน T4 เป็น T3 ที่เนื้อเยื่อรอบนอก ใช้รักษาภาวะ Hyperthyroidism",
+      "จ": "Methimazole ออกฤทธิ์ยับยั้งเอนไซม์ Thyroid peroxidase ยับยั้งการสังเคราะห์ฮอร์โมนไทรอยด์ ใช้รักษา Hyperthyroidism"
+    }
+  },
+  "170": {
+    "distractors": {
+      "ข": "Methimazole ออกฤทธิ์ยับยั้งเอนไซม์ Thyroid peroxidase ยับยั้งการสังเคราะห์ฮอร์โมนไทรอยด์ ใช้รักษา Hyperthyroidism",
+      "ค": "Pioglitazone เป็นยากลุ่ม Thiazolidinedione ออกฤทธิ์ผ่าน PPAR-gamma receptor ช่วยเพิ่ม Insulin sensitivity ที่เซลล์กล้ามเนื้อและไขมัน",
+      "ง": "Insulin glargine เป็น Basal insulin ออกฤทธิ์ยาว ไม่มีพีค ใช้เพื่อควบคุมระดับน้ำตาลพื้นฐาน (Fasting blood glucose)",
+      "จ": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)"
+    }
+  },
+  "171": {
+    "distractors": {
+      "ข": "Insulin lispro เป็น Rapid-acting insulin ออกฤทธิ์เร็ว ใช้ฉีดก่อนอาหารเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร (Postprandial glucose)",
+      "ค": "Dapagliflozin เป็นยากลุ่ม SGLT2 inhibitor ขับน้ำตาลออกทางปัสสาวะ มีผลข้างเคียงคือน้ำหนักลด ไม่ใช่น้ำหนักเพิ่ม",
+      "ง": "Semaglutide เป็น GLP-1 receptor agonist มีทั้งรูปแบบฉีดและกิน ช่วยลดน้ำหนักและคุมน้ำตาล ไม่ทำให้น้ำหนักเพิ่ม",
+      "จ": "Metformin ออกฤทธิ์ยับยั้ง Gluconeogenesis ที่ตับ ไม่ทำให้น้ำหนักเพิ่ม และเป็น First-line drug สำหรับเบาหวานชนิดที่ 2"
+    }
+  },
+  "173": {
+    "distractors": {
+      "ข": "Acarbose ไม่แนะนำให้ใช้ในผู้ป่วยโรคไตเรื้อรังรุนแรง (CrCl น้อยกว่า 25 mL/min)",
+      "ค": "Sitagliptin เป็นยาที่ขับออกทางไตเป็นหลัก จึงต้องปรับขนาดยาตามระดับการทำงานของไต (eGFR)",
+      "ง": "Empagliflozin ห้ามเริ่มใช้เมื่อ eGFR ต่ำกว่า 30 mL/min เนื่องจากประสิทธิภาพในการลดน้ำตาลจะลดลงตามการทำงานของไต",
+      "จ": "Glibenclamide มี Active metabolites ที่ขับออกทางไต จึงมีข้อห้ามใช้ในผู้ป่วยโรคไตเสื่อมเนื่องจากเพิ่มความเสี่ยงภาวะน้ำตาลในเลือดต่ำอย่างรุนแรง"
+    }
+  }
+}
