@@ -2045,6 +2045,14 @@
         <p>คลังข้อสอบปรนัยเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม</p>
       </div>
 
+      <!-- ⚠️ Notice Disclaimer Banner -->
+      <div style="background:rgba(217, 119, 6, 0.08); border:1px solid rgba(217, 119, 6, 0.28); border-radius:10px; padding:10px 12px; margin-bottom:14px; font-size:11.5px; line-height:1.55; color:#92400e;">
+        <div style="font-weight:700; display:flex; align-items:center; gap:6px; margin-bottom:3px; color:#b45309;">
+          <span>⚠️ คำชี้แจงสำคัญก่อนใช้งาน</span>
+        </div>
+        <div>ข้อสอบรวบรวมมาจากแนวข้อสอบจำหลายแหล่ง และใช้ AI สังเคราะห์คำอธิบายเฉลยและจุดเน้น โปรดทบทวนด้วยความระมัดระวัง หากพบจุดผิดพลาดสามารถกดปุ่ม <b>"🚩 แจ้งปัญหาข้อสอบ"</b> เพื่อส่งให้คณะทำงานตรวจสอบแก้ไขต่อไป</div>
+      </div>
+
       <div class="auth-tabs">
         <button class="auth-tab active" id="tabSignIn" onclick="switchAuthTab('signin')">เข้าสู่ระบบ</button>
         <button class="auth-tab" id="tabSignUp" onclick="switchAuthTab('signup')">สมัครสมาชิก</button>
@@ -2187,6 +2195,15 @@
           <h2>สวัสดี, <span id="lobbyGreetingName">ผู้ใช้งาน</span> 👋</h2>
           <p id="lobbyGreetingTrackDesc">เลือกหมวดโรคด้านล่างเพื่อเริ่มทำข้อสอบ หรือเลือกโหมด <b>สุ่มทำข้อสอบ</b> เพื่อจำลองสถานการณ์จริง</p>
           <div class="lobby-streak-badge" id="lobbyStreakBadge">📚 วันนี้ยังไม่ได้เริ่มทำข้อสอบ มาลุยกัน!</div>
+
+          <!-- ⚠️ Lobby Notice Banner (Dismissible) -->
+          <div id="lobbyDisclaimerBanner" style="display:flex; align-items:flex-start; gap:10px; background:rgba(217, 119, 6, 0.08); border:1px solid rgba(217, 119, 6, 0.25); border-radius:10px; padding:10px 12px; margin-top:10px; font-size:12px; line-height:1.5; color:#92400e;">
+            <span style="font-size:16px; line-height:1;">⚠️</span>
+            <div style="flex:1;">
+              <b>ข้อควรทราบ:</b> ข้อสอบรวบรวมมาจากข้อสอบจำหลายสถาบันและใช้ AI สังเคราะห์เฉลย โปรดใช้งานด้วยความระมัดระวัง หากพบข้อที่เฉลยคลาดเคลื่อน สามารถกดปุ่ม <b>"🚩 แจ้งปัญหาข้อสอบ"</b> ได้ตลอดเวลาเพื่อให้ทีมงานตรวจสอบและอัปเดตชีต
+            </div>
+            <button type="button" onclick="document.getElementById('lobbyDisclaimerBanner').style.display='none'" style="background:none; border:none; color:#b45309; cursor:pointer; font-size:14px; font-weight:700; padding:0 4px;" title="ปิดการแจ้งเตือนนี้">✕</button>
+          </div>
         </div>
 
         <!-- ⏱️ Quick Access Simulated Exam (120 Qs, 50:40:10, Subtopic Optimizer) -->
@@ -2296,6 +2313,17 @@
 
           <!-- Tab Panel: Leaderboard Top 5 -->
           <div id="sidePanelRank" class="side-panel-content" style="display:none;">
+            <!-- Privacy Toggle Pill directly accessible in sidebar -->
+            <div style="display:flex; align-items:center; justify-content:space-between; background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:6px 10px; margin-bottom:8px; font-size:11px;">
+              <span style="display:flex; align-items:center; gap:5px; color:var(--ink); font-weight:600;">
+                <span>🔒 ซ่อนชื่อในอันดับ</span>
+              </span>
+              <label style="display:flex; align-items:center; gap:4px; margin:0; cursor:pointer;">
+                <input type="checkbox" id="chkSidebarPrivacy" onchange="toggleLeaderboardPrivacy(this.checked)" style="accent-color:var(--clinic); width:15px; height:15px; cursor:pointer;">
+                <span id="sidebarPrivacyText" style="font-size:10.5px; color:var(--ink-soft);">เปิด</span>
+              </label>
+            </div>
+
             <div class="sidebar-rank-list" id="sidebarRankList">
               <div style="padding:20px 10px; text-align:center; color:var(--ink-faint); font-size:12px;">กำลังโหลดตารางอันดับ...</div>
             </div>
@@ -3242,25 +3270,24 @@ function setAppQuizMode(mode) {
   showToast(msg);
 }
 
-// ─── STRICT EXAM METADATA SANITIZER (NO 'เล่มม่วง' / NO 'Pharma Plus') ───
+// ─── EXAM METADATA SANITIZER (Display as 'เล่มม่วง (Pharma Plus)') ───
 function sanitizeExamMeta(rawType, rawYear) {
   let type = (rawType || '').trim();
   let year = (rawYear || '').trim();
-  if (/เล่มม่วง|pharma\s*plus|pharmaplus/i.test(year)) {
-    year = 'ชุด 1';
+  if (/เล่มม่วง|pharma\s*plus|pharmaplus/i.test(year) || year === 'ชุด 1') {
+    year = 'เล่มม่วง (Pharma Plus)';
     if (!type || type === 'ข้อสอบจริง') type = 'Mock';
   }
   if (/เล่มม่วง|pharma\s*plus|pharmaplus/i.test(type)) {
     type = 'Mock';
-    if (!year) year = 'ชุด 1';
+    if (!year || year === 'ชุด 1') year = 'เล่มม่วง (Pharma Plus)';
   }
   return { type, year };
 }
 
 function sanitizeExamNote(note) {
   if (!note) return '';
-  return note.replace(/pharma\s*plus\s*(?:fight\s*for\s*pharmacy\s*license)?/gi, 'ชุด 1')
-             .replace(/เล่มม่วง/gi, 'ชุด 1');
+  return note.replace(/pharma\s*plus\s*(?:fight\s*for\s*pharmacy\s*license)?/gi, 'เล่มม่วง (Pharma Plus)');
 }
 
 function getExamBadgeInfo(q) {
