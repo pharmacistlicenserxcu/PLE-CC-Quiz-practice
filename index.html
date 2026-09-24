@@ -3741,6 +3741,25 @@ function formatPlainTextToHtml(text, isExplanation) {
   return formatQuestionText(text);
 }
 
+// Clean and normalize image URLs (handles Direct links, Base64 data:, Google Drive, and local assets)
+function normalizeImageUrl(val) {
+  if (!val) return '';
+  const s = String(val).trim();
+  if (!s || s === 'CellImage' || s === 'null' || s === 'undefined') return '';
+  if (s.startsWith('http://') || s.startsWith('https://') || s.startsWith('data:image/') || s.startsWith('images/')) {
+    return s;
+  }
+  // Google drive direct preview/id format
+  if (s.includes('drive.google.com')) {
+    const idMatch = s.match(/\/d\/([a-zA-Z0-9_-]+)/) || s.match(/id=([a-zA-Z0-9_-]+)/);
+    if (idMatch && idMatch[1]) {
+      return `https://drive.google.com/uc?export=view&id=${idMatch[1]}`;
+    }
+    return s;
+  }
+  return '';
+}
+
 // ─── REALTIME FETCH FROM GOOGLE SHEET ───
 async function fetchLiveSheetQuestions(sheetName) {
   try {
@@ -3820,11 +3839,11 @@ async function fetchLiveSheetQuestions(sheetName) {
               examType: examType,
               examYear: examYear,
               question: formatPlainTextToHtml(qText),
-              questionImage: (qImg.startsWith('http') || qImg.startsWith('images/')) ? qImg : '',
+              questionImage: normalizeImageUrl(qImg),
               choices: choices,
               answer: ansKey,
               explanation: formatPlainTextToHtml(explanation),
-              answerImage: (ansImg.startsWith('http') || ansImg.startsWith('images/')) ? ansImg : '',
+              answerImage: normalizeImageUrl(ansImg),
               note: note
             });
           });
@@ -3838,12 +3857,22 @@ async function fetchLiveSheetQuestions(sheetName) {
     // 2. Secondary: Google Apps Script Web App fallback
     if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
       try {
+        let fetchOpts = {};
+        if (typeof AbortController !== 'undefined') {
+          const ctrl = new AbortController();
+          setTimeout(() => ctrl.abort(), 6000);
+          fetchOpts.signal = ctrl.signal;
+        }
         const gasUrl = window.QUIZ_GAS_WEBAPP_URL + '?action=getQuestions&sheet=' + encodeURIComponent(sheetName) + '&_nocache=' + Date.now();
-        const gasResp = await fetch(gasUrl);
+        const gasResp = await fetch(gasUrl, fetchOpts);
         if (gasResp.ok) {
           const gasJson = await gasResp.json();
           if (gasJson.success && gasJson.questions && gasJson.questions.length > 0) {
-            return gasJson.questions;
+            return gasJson.questions.map(q => ({
+              ...q,
+              questionImage: normalizeImageUrl(q.questionImage),
+              answerImage: normalizeImageUrl(q.answerImage)
+            }));
           }
         }
       } catch(gasErr) {
