@@ -4312,7 +4312,14 @@ function handleQuizTimeout() {
 }
 
 function confirmExitQuiz() {
-  if (confirm('คุณกำลังทำแบบทดสอบอยู่ ต้องการออกจากการทำข้อสอบและกลับหน้า Lobby หรือไม่?')) {
+  const isTimedOrExam = (appQuizMode === 'exam') || (quizRemainingSeconds > 0 && quizCountdownTimer);
+  if (isTimedOrExam) {
+    if (confirm('คุณกำลังอยู่ในโหมดจำลองสอบ/จับเวลา ต้องการออกจากการทำข้อสอบและกลับหน้า Lobby หรือไม่?')) {
+      stopQuizCountdownTimer();
+      showLobby();
+    }
+  } else {
+    // โหมดฝึกฝนปกติ (Practice / Scroll): ออกกลับหน้าหลักได้ทันทีโดยไม่เด้ง Popup กวนใจ
     stopQuizCountdownTimer();
     showLobby();
   }
