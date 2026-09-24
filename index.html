@@ -3350,7 +3350,7 @@
 <div id="printContainer"></div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
-<script src="quiz-data-offline.js?v=20260925_v16"></script>
+<script src="quiz-data-offline.js?v=20260925_v17"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
 const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
@@ -3725,20 +3725,103 @@ let sessionResults = {
   wrongQuestions: []
 };
 
-// ─── TOPIC EMOJIS ───
-const CLINIC_EMOJIS = ['❤️', '🦠', '🩸', '🫁', '🧠', '🦴', '🧴', '🫄', '💉', '🛡️', '🧘', '🌸', '👁️', '🎗️', '🫘', '☠️'];
-const PRODUCT_EMOJIS = ['🧪', '📊', '🔬', '🏭', '🧮', '💊', '🧴', '⏳', '💉', '🧬', '🌿', '🥗'];
-const SAP_EMOJIS = ['⚖️', '📋', '💼', '🏥', '🏷️', '📊'];
+// ─── TOPIC EMOJIS (PRECISION TOPIC MAPPING) ───
+const EXACT_CATEGORY_EMOJIS = {
+  // Clinic Topics
+  '1. Musculoskeleton': '🦴',
+  '2. Cardiovascular': '🫀',
+  '3. Dermatologic': '🧴',
+  '4. Endocrine': '🩸',
+  '5. Gastrointestinal': '🫄',
+  '6. Hematologic': '🩸',
+  '7. Immunologic': '🛡️',
+  '8. Infectious diseases': '🦠',
+  '9. Neurologic': '🧠',
+  '10. Psychiatric': '🧘',
+  '11. Pulmonary': '🫁',
+  '12. Gynaecologic/Genitourinary': '🌸',
+  '13. Eye disorder': '👁️',
+  '14. Oncologic': '🎗️',
+  '15. Renal': '🫘',
+  '16. Others & Toxic': '☠️',
+  '17. Herbal Medicine': '🌿',
+  '18. Clinical Nutrition': '🥗',
+
+  // Product Topics
+  '1. Titrations': '🧪',
+  '2. Chromatography': '📊',
+  '3. Spectroscopy & Optics': '🔬',
+  '4. Preformulation & GMP': '🏭',
+  '5. Pharmaceutical Calc': '🧮',
+  '6. Solid Dosage Forms': '💊',
+  '7. Liquid & Semisolids': '🧴',
+  '8. Biopharm & Drug Release': '⏳',
+  '9. Sterile & Special Forms': '💉',
+  '10. Biotech Products': '🧬',
+  '13. Medicinal Chemistry': '⚗️',
+
+  // SAP Topics
+  '1. Pharmacy Laws & Ethics': '⚖️',
+  '2. Pharmacy Administration & System': '🏥',
+  '3. Research & Biostats': '📈'
+};
 
 function getCategoryEmoji(catName, idx, track) {
-  const norm = (track || '').toLowerCase();
-  let numIdx = idx || 0;
-  const match = String(catName).match(/^(\d+)\./);
-  if (match) numIdx = parseInt(match[1], 10) - 1;
+  if (!catName) return '📋';
+  const raw = String(catName).trim();
 
-  if (norm.includes('prod')) return PRODUCT_EMOJIS[numIdx % PRODUCT_EMOJIS.length] || '🧪';
-  if (norm.includes('sap')) return SAP_EMOJIS[numIdx % SAP_EMOJIS.length] || '💼';
-  return CLINIC_EMOJIS[numIdx % CLINIC_EMOJIS.length] || '🩺';
+  // 1. Direct match
+  if (EXACT_CATEGORY_EMOJIS[raw]) return EXACT_CATEGORY_EMOJIS[raw];
+
+  // 2. Name without leading number
+  const cleanName = raw.replace(/^\d+\.\s*/, '').trim();
+  for (const [k, em] of Object.entries(EXACT_CATEGORY_EMOJIS)) {
+    const kClean = k.replace(/^\d+\.\s*/, '').trim();
+    if (kClean.toLowerCase() === cleanName.toLowerCase()) return em;
+  }
+
+  // 3. Keyword-based matching
+  const lower = raw.toLowerCase();
+  if (lower.includes('musculo') || lower.includes('bone') || lower.includes('joint')) return '🦴';
+  if (lower.includes('cardio') || lower.includes('heart') || lower.includes('vascular') || lower.includes('hypertension')) return '🫀';
+  if (lower.includes('dermato') || lower.includes('skin')) return '🧴';
+  if (lower.includes('endocrine') || lower.includes('diabetes') || lower.includes('thyroid')) return '🩸';
+  if (lower.includes('gastro') || lower.includes('gi') || lower.includes('stomach') || lower.includes('bowel')) return '🫄';
+  if (lower.includes('hemato') || lower.includes('blood') || lower.includes('anemia')) return '🩸';
+  if (lower.includes('immuno') || lower.includes('allergy') || lower.includes('autoimmune')) return '🛡️';
+  if (lower.includes('infect') || lower.includes('antimicrobial') || lower.includes('antibiotic') || lower.includes('virus') || lower.includes('bacteria')) return '🦠';
+  if (lower.includes('neuro') || lower.includes('epilepsy') || lower.includes('stroke') || lower.includes('parkinson')) return '🧠';
+  if (lower.includes('psych') || lower.includes('depression') || lower.includes('bipolar') || lower.includes('schizo')) return '🧘';
+  if (lower.includes('pulmon') || lower.includes('respirat') || lower.includes('asthma') || lower.includes('copd') || lower.includes('lung')) return '🫁';
+  if (lower.includes('gyn') || lower.includes('genito') || lower.includes('ob-gyn') || lower.includes('contracep') || lower.includes('reproduct')) return '🌸';
+  if (lower.includes('eye') || lower.includes('ophth') || lower.includes('glaucoma')) return '👁️';
+  if (lower.includes('oncol') || lower.includes('cancer') || lower.includes('tumor') || lower.includes('chemo')) return '🎗️';
+  if (lower.includes('renal') || lower.includes('kidney') || lower.includes('nephro')) return '🫘';
+  if (lower.includes('toxic') || lower.includes('poison') || lower.includes('overdose') || lower.includes('antidote')) return '☠️';
+  if (lower.includes('nutrit') || lower.includes('tpn') || lower.includes('vitamin') || lower.includes('diet')) return '🥗';
+  if (lower.includes('herb') || lower.includes('extract') || lower.includes('botanical') || lower.includes('phytochem')) return '🌿';
+
+  if (lower.includes('titrat') || lower.includes('volumetric') || lower.includes('assay')) return '🧪';
+  if (lower.includes('chromat') || lower.includes('hplc') || lower.includes('gc') || lower.includes('tlc')) return '📊';
+  if (lower.includes('spectro') || lower.includes('optic') || lower.includes('nmr') || lower.includes('uv') || lower.includes('ir')) return '🔬';
+  if (lower.includes('preform') || lower.includes('gmp') || lower.includes('manufactur') || lower.includes('validation')) return '🏭';
+  if (lower.includes('calc') || lower.includes('dose calc') || lower.includes('isotonic')) return '🧮';
+  if (lower.includes('solid') || lower.includes('tablet') || lower.includes('capsule') || lower.includes('granul')) return '💊';
+  if (lower.includes('liquid') || lower.includes('semisolid') || lower.includes('cream') || lower.includes('ointment') || lower.includes('suspension') || lower.includes('emulsion')) return '🧴';
+  if (lower.includes('biopharm') || lower.includes('dissolution') || lower.includes('release') || lower.includes('bioavail') || lower.includes('pk')) return '⏳';
+  if (lower.includes('sterile') || lower.includes('inject') || lower.includes('parenteral') || lower.includes('ophthalmic prep')) return '💉';
+  if (lower.includes('biotech') || lower.includes('biologic') || lower.includes('antibody') || lower.includes('protein') || lower.includes('vaccine')) return '🧬';
+  if (lower.includes('medicinal') || lower.includes('med chem') || lower.includes('sar') || lower.includes('structure')) return '⚗️';
+
+  if (lower.includes('law') || lower.includes('legal') || lower.includes('ethics') || lower.includes('act') || lower.includes('fda')) return '⚖️';
+  if (lower.includes('admin') || lower.includes('system') || lower.includes('hospital') || lower.includes('supply chain') || lower.includes('formulary')) return '🏥';
+  if (lower.includes('research') || lower.includes('stat') || lower.includes('epidemiol') || lower.includes('biostat')) return '📈';
+
+  // Fallback by track
+  const norm = (track || '').toLowerCase();
+  if (norm.includes('prod')) return '🧪';
+  if (norm.includes('sap')) return '💼';
+  return '🩺';
 }
 
 
