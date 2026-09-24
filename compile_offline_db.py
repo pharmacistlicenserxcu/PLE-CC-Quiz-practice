@@ -271,15 +271,20 @@ def main():
             choice_letters = ['ก', 'ข', 'ค', 'ง', 'จ']
             ans_letter = choice_letters[ans_num - 1]
             ans_text = choices[ans_num - 1]
-            exp_html = build_advanced_clinical_explanation(
-                raw_exp=exp_raw,
-                choices=choices,
-                ans_num=ans_num,
-                subtopic=target_sub,
-                track=target_track,
-                q_text=q_clean,
-                for_web=True
-            )
+            
+            # If Google Sheet already has a detailed explanation, use it directly (verbatim) from sheet
+            if exp_raw and len(exp_raw.strip()) > 30 and 'ทำไมข้อนี้ถึงถูก' in exp_raw:
+                exp_html = clean_text_advanced(exp_raw, is_choice=False).replace('\n', '<br>')
+            else:
+                exp_html = build_advanced_clinical_explanation(
+                    raw_exp=exp_raw,
+                    choices=choices,
+                    ans_num=ans_num,
+                    subtopic=target_sub,
+                    track=target_track,
+                    q_text=q_clean,
+                    for_web=True
+                )
 
 
             # Format question with clean line breaks
