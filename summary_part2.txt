@@ -1,0 +1,665 @@
+=== KEY: 35 (ans: 1) ===
+Q: ภายหลังแพทย์มีการจ่ายยา Trazodone ให้ โดยมีข้อระวังเรื่องหน้ามืดเวลาขยับท่าทาง ถามว่าอาการนี้เกิด จากการยับยั้ง receptor ในข้อใด ผู้ป่วยชายอายุ 35 ปี ส่วนสูง 165 ซม. น้ำหนัก – kg มาด้วยอาการนอนไม่หลับ เนื่องจากได้เลื่อน ตำแหน่งจึงทำให้เครียดและกังวลมากกับอาการนอนไม่หลับ ส่งผลต่อการใช้ชีวิตโดยหลับระหว่างทำงานและหลับ ตอนติดไฟแดง ต้องดื่มกาแฟ 3-4 แก้ว ภรรยาแจ้งว่าตอนกลางคืนหลับยาก พลิกตัวไปมานานกว่าจะหลับได้ ต้อง ดื่มแอลกอฮอล์ 1 แก้วก่อนนอน ถ้าหลับได้แล้วจะหลับสนิท ไม่มีละเมอ
+c1: Sertraline 50 mg OD
+c2: Escitalopram 10 mg OD
+c3: Venlafaxine 75 mg OD
+c4: Amitriptyline 10 mg HS
+c5: Bromocriptine
+note: PLE_CC1_2567_Set1_Key ข้อ 22
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Sertraline 50 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+--------------------------------------------------
+
+=== KEY: 37 (ans: 1) ===
+Q: ให้โครงสร้างNicotine gum มาถามว่าควรตรวจหาด้วยtest อะไร. ตัวเลือก
+c1: Psychiatric & Addiction
+c2: Diazepam 5 mg HS
+c3: Zolpidem 10 mg HS
+c4: Nicotine gum 2 mg PRN
+c5: Quetiapine 25 mg HS
+note: PLE-CC1 ปี 2566 Day 2 ข้อ 14
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Psychiatric & Addiction
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psychiatric & Addiction การเลือก Psychiatric & Addiction เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Tobacco dependence โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 39 (ans: 1) ===
+Q: อาการเศร้า หดหู่ (Depression)
+c1: Psychiatric & Addiction
+c2: Sertraline 50 mg OD
+c3: Escitalopram 10 mg OD
+c4: Venlafaxine 75 mg OD
+c5: Amitriptyline 10 mg HS
+note: PLE_CC1_2564_All_Key ข้อ 1
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Psychiatric & Addiction
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psychiatric & Addiction การเลือก Psychiatric & Addiction เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 40 (ans: 1) ===
+Q: Nicotine จับกับ receptor ให้รูปมา ถามว่าพันธะใดแข็งแรงน้อยที่สุด
+c1: Psychiatric & Addiction
+c2: Covalent bond
+c3: H-bond
+c4: Alprazolam 0.5 mg HS
+c5: Diazepam 5 mg HS
+note: PLE_CC1_2564_All_Key ข้อ 103
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Psychiatric & Addiction
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psychiatric & Addiction โจทย์ถามพันธะที่แข็งแรงน้อยสุดเลยคิดว่าเป็น H-bond  https://cen.acs.org/articles/87/i10/Nicotines-Binding-Mystery-Solved.html ..............................................................................................................................................................................................................
+
+--------------------------------------------------
+
+=== KEY: 41 (ans: 1) ===
+Q: ข้อแนะนำในข้อใดผิด สำหรับผู้ป่วยที่ใฬ้ Nortriptyline ในการเลิกบุหรี่ (ฬุดA)
+c1: Psychiatric & Addiction
+c2: ให้เริ่มยาเป็นมื้อแรกขอษวันที่เริ่มเลิกบุหรี่
+c3: ยาทำให้ปากแห้ษคอแห้ษแนะนำให้สิบน้ำบ่อยๆ
+c4: ยาทำให้ษ่วษไม่แนะนำให้ขับขี่ยานพาหนะ ษ. ยาทำให้ท้อษอืด ให้ดื่มน้ำบ่อยๆ กับรับประทานอาหารที่มีกากใยสูษ
+c5: Quetiapine 25 mg HS
+note: PLE_CC1_2563_Q ข้อ 75
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Psychiatric & Addiction
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psychiatric & Addiction การเลือก Psychiatric & Addiction เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Tobacco dependence โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 42 (ans: 1) ===
+Q: ระดับ nicotine ในเลือดแบบใดเป็นขอษ nicotine gum 2 mg 1 ฬิ้น และ nicotine patch 21 mg 1 แผ่น ตามลำดับ
+c1: Psychiatric & Addiction
+c2: A และ B
+c3: B และ C
+c4: C และ D ษ. D และ A ส. B และ D หอบหืด สถานการณ์ คนไข้ได้รับยา Salmeterol + Fluticasone furoate (25/125) 1 x 2 Salbutamol Prn Montelukast
+c5: Sertraline 50 mg OD
+note: PLE_CC1_2563_Q ข้อ 76
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Psychiatric & Addiction
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psychiatric & Addiction การเลือก Psychiatric & Addiction เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Tobacco dependence โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 43 (ans: 1) ===
+Q: ยารายการที่ 3 พบ diazepam มีความผิดหรือไม่
+c1: ไม่ผิด เพราะขายยาอันตราย
+c2: ไม่ผิด เพราะขายยาควบคุมพิเศษ
+c3: ผิด เพราะขายยา วจ 2 โดยไม่มีใบอนุญาต
+c4: ผิด เพราะขายยา วจ 3 โดยไม่มีใบอนุญาต
+c5: ผิด เพราะขายยา วจ 4 โดยไม่มีใบอนุญาต
+note: ข้อ 83 (PLE_CC1_2562_Key.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. ไม่ผิด เพราะขายยาอันตราย
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ไม่ผิด เพราะขายยาอันตราย การเลือก ไม่ผิด เพราะขายยาอันตราย เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก ต้องส่งมอบโดยเภสัชกรชั้นหนึ่ง และต้องมีข้อความ "ยาอันตราย" ในกรอบสีแดงบนฉลาก ไม่จำเป็นต้องมีใบสั่งแพทย์ แต่ห้ามวางในจุดที่ผู้บริโภคหยิบเองได้
+
+--------------------------------------------------
+
+=== KEY: 44 (ans: 1) ===
+Q: ข้อใดคือกลไกของยารักษา depression (er) . we ninascosserotonin Bowling neuroplasticity Bardinan. = dog Nasserotonin X ิ nGneon .Iden . ind neuroplasticity Vosges
+c1: เพิ่ม monoamine
+c2: ยังยั้งการทำงานสมองส่วน amygdala
+c3: ยับยั้งการทำงานของ serotonin
+c4: ลด neuroplasticity ของ neuron
+c5: ยับยั้งการสร้าง neuron ในสมอง
+note: ข้อ 1 (PLE_CC1_2562_Key.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. เพิ่ม monoamine
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+เพิ่ม monoamine การเลือก เพิ่ม monoamine เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 45 (ans: 1) ===
+Q: ข้อใดไม่ใช่อาการที่ไม่พึงประสงค์ที่พบบ่อยของ fluoxetine X 4 - balanci full response G
+c1: Insomnia
+c2: Sexual dysfunction
+c3: Anorexia
+c4: Renal failure
+c5: Diarrhea
+note: ข้อ 4 (PLE_CC1_2562_Key.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Insomnia
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Insomnia การเลือก Insomnia เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 46 (ans: 1) ===
+Q: หลังจากใช้ fluoxetine ไประยะหนึ่งแพทย์พบว่าผู้ป่วยไม่ตอบสนองต่อการรักษา จึงต้องการปรับเปลี่ยนยาโดยแพทย์ ~ - ~ ~ ~ - -X ต้องการรักษาซึมเศร้าที่ช่วยในการนอนหลับและเพิ่มความอยากอาหาร ยาใดเหมาะสมที่สุด
+c1: Sertraline
+c2: Venlafaxine
+c3: Bupropion
+c4: Mirtazapine
+c5: Paroxetine
+note: ข้อ 5 (PLE_CC1_2562_Key.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Sertraline
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Sertraline การเลือก Sertraline เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI ที่มี safety สูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+
+--------------------------------------------------
+
+=== KEY: 47 (ans: 1) ===
+Q: ยาที่ไม่ควรใช้ในการเลิกบุหรี่ของผู้ป่วยรายนี คือ
+c1: Nicotine gum
+c2: Nicotine patch
+c3: Bupropion
+c4: Varenicline
+c5: Nortriptyline
+note: ข้อ 13 (PLE_CC1_2559.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Nicotine gum
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nicotine gum การเลือก Nicotine gum เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+--------------------------------------------------
+
+=== KEY: 48 (ans: 1) ===
+Q: ยาตัวใดที่มีผลข้างเคียงท้าให้ผันร้าย และนอนไม่หลับได้ หลับยาก
+c1: ATV/r
+c2: EFV
+c3: LPV/r
+c4: RPV
+c5: TDF ml ประกอบไปด้วย Enfuvirtide 90 mg Mannitol 22.55 mg Sodium carbonate Sodium hydroxide และ HCl หลังผสม pH = 9.0
+note: ข้อ 48 (PLE_CC1_2559.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. ATV/r
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ATV/r ยา enfuvirtide ผลึกสีขาว, เป็น lyophilized powder, บริหารโดยการให้ทาง SC, reconstitute ด้วย SWFI 1.1 ml ซึ่ง 1
+
+--------------------------------------------------
+
+=== KEY: 49 (ans: 1) ===
+Q: ยากลุ่ม benzodiazepine เกี่ยวข้องกับไอออนใด
+c1: Na+
+c2: K+
+c3: Cl-
+c4: Ca2+
+c5: HCO3- Lot 1 Lot 2 น ้าหนักยาเม็ด Assay 400 390 400 385 %label amount 97-101
+note: ข้อ 90 (PLE_CC1_2559.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Na+
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Na+ การเลือก Na+ เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 50 (ans: 1) ===
+Q: ผู้ป่วยเป็นโรคนอนไม่หลับแบบไหนมีอาการยังไง -
+c1: Short term, difficulty falling asleep
+c2: Short term, difficulty falling asleep, maintaining sleep
+c3: Chronic, difficulty falling asleep
+c4: Chronic, difficulty maintaining sleep
+c5: Chronic, difficulty falling asleep, maintaining sleep
+note: ข้อ 1 (PLE_CC1_2558_Key.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Short term, difficulty falling asleep
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Short term, difficulty falling asleep การเลือก Short term, difficulty falling asleep เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Insomnia โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 51 (ans: 1) ===
+Q: ข้อใดเป็นสาเหตุหลักที่ทำให้นอนไม่หลับ
+c1: อ้วน
+c2: เศร้าเรื่องพ่อตาย
+c3: กังวลเรื่องแม่ป่วย
+c4: เครียดจากหน้าที่การงาน
+c5: อ้วน
+note: ข้อ 2 (PLE_CC1_2558_Key.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. อ้วน
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+อ้วน การเลือก อ้วน เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Insomnia โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 52 (ans: 1) ===
+Q: ข้อใดถูกต้องเกี่ยวกับการแนะนำการเลิกบุหรี่
+c1: ควรหยุดสูบบุหรี่เมื่อมีการใช้ nicotine replacement ทันที
+c2: เมื่อเคี้ยวไว้ห้ามกลืนน้ำลายประมาณ 1 นาที
+c3: เมื่อเคี้ยวหมากฝรั่ง nicotine ควรหลีกเลี่ยงการดื่มน้ำส้ม น้ำอัดลม อย่างน้อย 15 นาที
+c4: การใช้ยา Bupropion อาจจะเพิ่มความเสี่ยงต่อการเกิดการชักได้
+c5: ถูกทุกข้อ
+note: ข้อ 55 (Pharmtutor_2024_Set1.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. ควรหยุดสูบบุหรี่เมื่อมีการใช้ nicotine replacement ทันที
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ควรหยุดสูบบุหรี่เมื่อมีการใช้ nicotine replacement ทันที การเลือก ควรหยุดสูบบุหรี่เมื่อมีการใช้ nicotine replacement ทันที เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+--------------------------------------------------
+
+=== KEY: 53 (ans: 1) ===
+Q: ยาในกลุ่มใดที่เป็นยาทางเลือกแรก ในการรักษาภาวะซึมเศร้าในกลุ่มที่ไม่มีข้อห้ามใช้
+c1: TCA
+c2: SNRI
+c3: SSRI
+c4: BZPs
+c5: SDRI
+note: ข้อ 56 (Pharmtutor_2024_Set1.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. TCA
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+TCA การเลือก TCA เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 54 (ans: 1) ===
+Q: นักศึกษาชายไทยอายุ 21 ปี พบว่า 2 สัปดาห์ที่ผ่านมา มีอาการนอนไม่หลับ รับประทานอาหารน้อยกว่าปกติ รวมถึงมีอาการกระวนกระวายเมื่อต้องเข้าสังคม หรือต้องนำเสนองานหน้าห้องเรียน ซึ่งเมื่อซักประวัติเพิ่มเติมพบว่า ผู้ป่วยรายนี้มีอาการเครียดจากการได้คะแนนสอบน้อยที่สุดในห้อง และเมื่อเข้านอนพบว่ากว่านักศึกษาคนนี้จะหลับใช้เวลานานเป้นชั่วโมง ข้อใดคือยาที่เหมาะสมในการรักษาผู้ป่วยรายนี้
+c1: Clozapine
+c2: Fluoxetine
+c3: Lorazepam
+c4: Clonazepam
+c5: Amitriptyline
+note: ข้อ 58 (Pharmtutor_2024_Set1.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Clozapine
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Clozapine การเลือก Clozapine เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น atypical antipsychotic สำหรับ treatment-resistant schizophrenia ที่มี efficacy สูงสุด แต่มี black box warning เรื่อง agranulocytosis (ต้องตรวจ CBC สม่ำเสมอ), myocarditis และชัก
+
+--------------------------------------------------
+
+=== KEY: 55 (ans: 1) ===
+Q: Fluoxetine จะถูก metabolized ที_x001E_ตำแหน่งใด เพื_x001E_อ เปลี_x001E_ยนเป็น norfluoxetine A B C D E (1) A (2) B (3) C (4) D (5) E
+c1: Fluoxetine 20 mg OD
+c2: Sertraline 50 mg OD
+c3: Escitalopram 10 mg OD
+c4: Venlafaxine 75 mg OD
+c5: Amitriptyline 10 mg HS
+note: ข้อ 55 (PLE_CC1_2557.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+--------------------------------------------------
+
+=== KEY: 57 (ans: 2) ===
+Q: สถานการณ์ที่ 6 (ลูกปลา 024/ ฝน หอวัง 067) ผู้ป่วยชายคู่อายุ 25 ปีมาพบเภสัชกรที่ร้านยาด้วยอาการนอนไม่หลับโดยเล่าว่านอนหลับยากใช้เวลานานกว่าจะหลับแต่เมื่อ 51.หากจะจ่ายยาท่านจะเลือกจ่ายยาในข้อใดจึงจะเหมาะสมที่สุด
+c1: Lorazepam
+c2: Flurazepam
+c3: Temazepam
+c4: Diazepam
+c5: Chlorazepate Temazepamและ Lorazepamเป็น intermediate acting benzodiazepinesเหมาะสำหรับใช้เพื่อเหนี่ยวนำการหลับ แต่จากการค้นฐานข้อมูลพบว่า ไม่มีข้อมูลทะเบียนยา Temazepamในไทย Flurazepam, Diazepam, Chlorazepateเป็น long acting benzodiazepinesเหมาะสำหรับใช้เพื่อให้นอนหลับสนิทตลอดทั้งคืน (Ref: เว็บไซต์สำนักงานอาหารและยา, หนังสือติวพี่แม็ก) (แต่หนังสือ pharmacology ของอ.มหิดลบอกว่า Flurazepamมีฤทธิ์เหนี่ยวนำให้หลับ(sleep induction หรือ ลด latency time เพิ่มระยะเวลาการหลับ) 52.ข้อใดคือกลไกของยากลุ่ม benzodiazepines
+note: ข้อ ๒๕๕๐ (PLE_CC1_2554 SET2.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ข. Flurazepam
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Flurazepam ส่งผลให้เปิด Cl-channel ทำให้เกิดฤทธิ์ในทาง inhibitory process:sedative-hypnotic, anticonvulsant, muscle  ที่ phenyl ring ตำแหน่ง C2,เพิ่ม activity เมื่อ ortho-sub (2’)หรือ di-ortho-sub (2’, 6’) [steric effect] (diluents), silicon dioxide (glidant), talcum (glidant) และ PVP (binder)ต่างใช้ในหน้าที่อื่นของตำรับ แล้วไม่ได้ผลควรใช้ยา specific treatment คือ Ergot alkaloid & deriv. หรือ Serotonin receptor agonist เช่น
+
+--------------------------------------------------
+
+=== KEY: 58 (ans: 1) ===
+Q: ชายไทยคุ้อาย่65 ปีได้รับการวินิจฉัยจากแพทย์วุามีภาวะInsomnia ยาใน ข้อใดตุอไปนี้ไมุใชุยาที่ใช้ในการรักษาภาวะInsomnia
+c1: CPM
+c2: Phenobarbital
+c3: Chloral hydrate
+c4: Clonazepam
+c5: Haloperidol (จ)
+note: ข้อ 5 (PLE_CC1_2547.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. CPM
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+CPM การเลือก CPM เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Insomnia โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 59 (ans: 1) ===
+Q: ข้อใดถ้กต้องเกี่ยวกับโครงสร้างและความสัมพันธ์ในการออกฤทธิ์ของยา นอนหลับDiazepam โครงสร้างDiazepam
+c1: Fluoxetine 20 mg OD
+c2: Sertraline 50 mg OD
+c3: Escitalopram 10 mg OD
+c4: Venlafaxine 75 mg OD
+c5: Amitriptyline 10 mg HS
+note: ข้อ 8 (PLE_CC1_2547.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+--------------------------------------------------
+
+=== KEY: 61 (ans: 1) ===
+Q: มีระยะเวลาในการออกฤทธิ์สั้นกวุาDiazepam เนื่องจากละลายในไข มันได้มากวุา
+c1: Alprazolam 0.5 mg HS
+c2: Diazepam 5 mg HS
+c3: Zolpidem 10 mg HS
+c4: Nicotine gum 2 mg PRN
+c5: Quetiapine 25 mg HS
+note: ข้อ 2 (PLE_CC1_2547.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Alprazolam 0.5 mg HS
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Alprazolam 0.5 mg HS การเลือก Alprazolam 0.5 mg HS เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น intermediate-acting Benzodiazepine ออกฤทธิ์เร็ว เหมาะสำหรับ panic attack แต่มีโอกาสเกิด dependence และ rebound anxiety สูงเมื่อหยุดยา
+
+--------------------------------------------------
+
+=== KEY: 62 (ans: 1) ===
+Q: มีระยะเวลาในการออกฤทธิ์สั้นDiazepam เนื่องจากสามารถถ้กเมตา บอไลต์ได้เร็ว
+c1: Nicotine gum 2 mg PRN
+c2: Quetiapine 25 mg HS
+c3: Risperidone 2 mg OD
+c4: Fluoxetine 20 mg OD
+c5: Sertraline 50 mg OD
+note: ข้อ 3 (PLE_CC1_2547.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Nicotine gum 2 mg PRN
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nicotine gum 2 mg PRN การเลือก Nicotine gum 2 mg PRN เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+--------------------------------------------------
+
+=== KEY: 63 (ans: 1) ===
+Q: มีระยะเวลาที่ยารออกฤทธิ์เร็วกวุาDiazepam เนื่องจากสามารถผุาน BBB ได้ดี
+c1: Fluoxetine 20 mg OD
+c2: Sertraline 50 mg OD
+c3: Escitalopram 10 mg OD
+c4: Venlafaxine 75 mg OD
+c5: Amitriptyline 10 mg HS
+note: ข้อ 4 (PLE_CC1_2547.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+--------------------------------------------------
+
+=== KEY: 65 (ans: 1) ===
+Q: ยาใดถูกถอนจากตลาดเนื่องจากทำให้เกิด serious psychiatric disorders (anxiety, depression, suicidal thinking) และยาใดสามารถจ่ายในร้านยาได้ตามลำดับ
+c1: Sibutramine, Lorcaserin
+c2: Rimonabant, Orlistat
+c3: Phentermine, Orlistat
+c4: Rimonabant, Lorcaserin
+c5: Sibutramine, Orlistat 98 โรคระบบต่อมไร้ท่อ และต่อมมีท่อ นักศึกษาเภสัชศาสตร์รุ่น 8 มหาวิทยาลัยวลัยลักษณ์ สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+note: ข้อ 39 (PLE_CC1_Practice_Exam.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Sibutramine, Lorcaserin
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Sibutramine, Lorcaserin การเลือก Sibutramine, Lorcaserin เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+
+=== KEY: 66 (ans: 1) ===
+Q: ตอบ ข. Rimonabant, Orlistat เนื่องจาก Rimonabant เป็นยาที่ทำให้เกิดผลข้างเคียงทางระบบประสาทที่รุนแรง คือ seizures, depression, anxiety, aggressiveness, and suicidal thoughts ซึ่งได้ถูกถอนออกจากทะเบียนยา ในปี ค.ศ.2007 และยา Orlistat เป็นยาที่สามารถจ่ายในร้านยาได้
+c1: Nicotine gum 2 mg PRN
+c2: Quetiapine 25 mg HS
+c3: Risperidone 2 mg OD
+c4: Fluoxetine 20 mg OD
+c5: Sertraline 50 mg OD
+note: ข้อ 39 (PLE_CC1_Practice_Exam.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Nicotine gum 2 mg PRN
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nicotine gum 2 mg PRN การเลือก Nicotine gum 2 mg PRN เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+--------------------------------------------------
+
+=== KEY: 67 (ans: 1) ===
+Q: Fluoxetine 180 โรคทางระบบประสาทและจิตประสาท นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 9 มหาวิทยาลัยสยาม สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+c1: Fluoxetine 20 mg OD
+c2: Sertraline 50 mg OD
+c3: Escitalopram 10 mg OD
+c4: Venlafaxine 75 mg OD
+c5: Amitriptyline 10 mg HS
+note: ข้อ 5 (PLE_CC1_Practice_Exam.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+--------------------------------------------------
+
+=== KEY: 69 (ans: 1) ===
+Q: การใช้ Nicotine patch ในผู้ป่วยที่สูบบุหรี่ 15 มวนต่อวัน ข้อใดเหมาะสมที่สุด
+c1: Alprazolam 0.5 mg HS
+c2: Diazepam 5 mg HS
+c3: Zolpidem 10 mg HS
+c4: Nicotine gum 2 mg PRN
+c5: Quetiapine 25 mg HS
+note: ข้อ 18 (PLE_CC1_Practice_Exam.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Alprazolam 0.5 mg HS
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Alprazolam 0.5 mg HS การเลือก Alprazolam 0.5 mg HS เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น intermediate-acting Benzodiazepine ออกฤทธิ์เร็ว เหมาะสำหรับ panic attack แต่มีโอกาสเกิด dependence และ rebound anxiety สูงเมื่อหยุดยา
+
+--------------------------------------------------
+
+=== KEY: 70 (ans: 1) ===
+Q: ข้อใดไม่ใช่ยาที่แนะนำให้ใช้ในผู้ป่วยที่ต้องการเลิกบุหรี่
+c1: Nicotine gum 2 mg PRN
+c2: Quetiapine 25 mg HS
+c3: Risperidone 2 mg OD
+c4: Fluoxetine 20 mg OD
+c5: Sertraline 50 mg OD
+note: ข้อ 20 (PLE_CC1_Practice_Exam.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Nicotine gum 2 mg PRN
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nicotine gum 2 mg PRN การเลือก Nicotine gum 2 mg PRN เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+--------------------------------------------------
+
+=== KEY: 71 (ans: 1) ===
+Q: ในผู้ป่วยที่ต้องการเลิกบุหรี่ โดยปกติแล้วสูบบุหรี่วันละ 3 ซอง เคยมีประวัติการเลิกบุหรี่ด้วยการปรับ พฤติกรรมแต่ไม่สำเร็จ และมีโรคร่วมคือโรคซึมเศร้า การรักษาในข้อใดเหมาะสมที่สุดในการเลิกบุหรี่
+c1: Fluoxetine 20 mg OD
+c2: Sertraline 50 mg OD
+c3: Escitalopram 10 mg OD
+c4: Venlafaxine 75 mg OD
+c5: Amitriptyline 10 mg HS
+note: ข้อ 21 (PLE_CC1_Practice_Exam.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+--------------------------------------------------
+
+=== KEY: 73 (ans: 1) ===
+Q: ผู้ป่วยที่ไม่ควรได้รับ Varenicline ในการช่วยเลิกบุหรี่ คือข้อใด
+c1: Alprazolam 0.5 mg HS
+c2: Diazepam 5 mg HS
+c3: Zolpidem 10 mg HS
+c4: Nicotine gum 2 mg PRN
+c5: Quetiapine 25 mg HS
+note: ข้อ 23 (PLE_CC1_Practice_Exam.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Alprazolam 0.5 mg HS
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Alprazolam 0.5 mg HS การเลือก Alprazolam 0.5 mg HS เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น intermediate-acting Benzodiazepine ออกฤทธิ์เร็ว เหมาะสำหรับ panic attack แต่มีโอกาสเกิด dependence และ rebound anxiety สูงเมื่อหยุดยา
+
+--------------------------------------------------
+
+=== KEY: 74 (ans: 1) ===
+Q: มีประวัติโรคซึมเศร้า 183 โรคทางระบบประสาทและจิตประสาท นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 9 มหาวิทยาลัยสยาม สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+c1: Nicotine gum 2 mg PRN
+c2: Quetiapine 25 mg HS
+c3: Risperidone 2 mg OD
+c4: Fluoxetine 20 mg OD
+c5: Sertraline 50 mg OD
+note: ข้อ 1 (PLE_CC1_Practice_Exam.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Nicotine gum 2 mg PRN
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nicotine gum 2 mg PRN การเลือก Nicotine gum 2 mg PRN เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+--------------------------------------------------
+
+=== KEY: 75 (ans: 1) ===
+Q: Zolpidem จากกรณีศึกษาจงตอบคำถามข้อ 25-26 หญิงไทยอายุ 45 ปี ช่วงนี้เครียดนอนไม่หลับมาหลายวัน ต้องใช้เวลานานกว่าจะหลับแต่ถ้าหลับแล้วจะหลับได้ ตลอดทั้งคืน
+c1: Fluoxetine 20 mg OD
+c2: Sertraline 50 mg OD
+c3: Escitalopram 10 mg OD
+c4: Venlafaxine 75 mg OD
+c5: Amitriptyline 10 mg HS
+note: ข้อ 5 (PLE_CC1_Practice_Exam.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+--------------------------------------------------
+
+=== KEY: 76 (ans: 1) ===
+Q: กลไกการออกฤทธิ์ของยากลุ่ม Benzodiazepines คือข้อใด
+c1: . กระตุ้น 5-HT receptor
+c2: . กระตุ้น Dopamine receptor
+c3: . กระตุ้น GABA receptor 184 โรคทางระบบประสาทและจิตประสาท นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 9 มหาวิทยาลัยสยาม สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+c4: . กระตุ้น Glutamate receptor
+c5: Diazepam 5 mg HS
+note: ข้อ 26 (PLE_CC1_Practice_Exam.md)
+exp_start:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. . กระตุ้น 5-HT receptor
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+. กระตุ้น 5-HT receptor การเลือก . กระตุ้น 5-HT receptor เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+--------------------------------------------------
+

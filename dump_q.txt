@@ -1,0 +1,328 @@
+=== IDX: 0 | Ans: 2 ===
+Q: สถานการณ์ที่ 1 ผู้ป่วยหญิงอายุ 35 ปี ญาติพามาพบแพทย์ด้วยอาการซึมเศร้า ไม่พูดไม่จา อยากฆ่าตัวตาย เป็นมานานประมาณ 2 เดือน แพทย์ได้วินิจฉัยว่าเป็น major depressive disorder และได้ให้ยา sertraline 50 mg ครั้งละ 1 เม็ด ในตอนเช้า
+ข้อใดต่อไปนี้ถูกต้องในการรักษาผู้ป่วยโรคซึมเศร้า
+c1: การรักษาต้องเริ่มให้ยาในขนาดที่สูง
+c2: การรักษาต้องให้ยาต่อเนื่องเป็นเวลา 6-8 สัปดาห์ ในระยะแรก
+c3: เป็นโรคที่ไม่สามารถรักษาให้หายขาดได้
+c4: จะใช้ยากลุ่ม benzodiazepines ในผู้ป่วยซึมเศร้าที่มีอาการนอนไม่หลับร่วมด้วย
+c5: สามารถหยุดใช้ยาได้ทันที
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 1 | Ans: 5 ===
+Q: สถานการณ์ที่ 1 ผู้ป่วยหญิงอายุ 35 ปี ญาติพามาพบแพทย์ด้วยอาการซึมเศร้า ไม่พูดไม่จา อยากฆ่าตัวตาย เป็นมานานประมาณ 2 เดือน แพทย์ได้วินิจฉัยว่าเป็น major depressive disorder และได้ให้ยา sertraline 50 mg ครั้งละ 1 เม็ด ในตอนเช้า
+ข้อใดเป็นกลไกของยา sertraline
+c1: ยับยั้ง alpha adrenergic receptor
+c2: ยับยั้ง beta adrenergic receptor
+c3: ยับยั้งการนำ norepinephrine กลับเข้าสู่ปลายประสาท
+c4: ยับยั้งการนำ dopamine กลับเข้าสู่ปลายประสาท
+c5: ยับยั้งการนำ serotonin กลับเข้าสู่ปลายประสาท
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 2 | Ans: 1 ===
+Q: สถานการณ์ที่ 1 ผู้ป่วยหญิงอายุ 35 ปี ญาติพามาพบแพทย์ด้วยอาการซึมเศร้า ไม่พูดไม่จา อยากฆ่าตัวตาย เป็นมานานประมาณ 2 เดือน แพทย์ได้วินิจฉัยว่าเป็น major depressive disorder และได้ให้ยา sertraline 50 mg ครั้งละ 1 เม็ด ในตอนเช้า
+ข้อใดเป็นอาการไม่พึงประสงค์ที่พบได้บ่อยของ sertraline
+c1: Insomnia
+c2: Constipation
+c3: Pancreatitis
+c4: Rhinitis
+c5: Tinnitus
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 3 | Ans: 1 ===
+Q: สถานการณ์ที่ 1 ผู้ป่วยหญิงอายุ 35 ปี ญาติพามาพบแพทย์ด้วยอาการซึมเศร้า ไม่พูดไม่จา อยากฆ่าตัวตาย เป็นมานานประมาณ 2 เดือน แพทย์ได้วินิจฉัยว่าเป็น major depressive disorder และได้ให้ยา sertraline 50 mg ครั้งละ 1 เม็ด ในตอนเช้า
+ข้อใดไม่ใช่ข้อดีของการใช้ sertraline ในการรักษาอาการซึมเศร้า
+c1: เห็นผลการรักษาเร็ว
+c2: มีผลน้อยต่อระบบหัวใจและหลอดเลือด
+c3: ไม่ต้องปรับขนาดยาบ่อยครั้ง
+c4: มีผลต่อ severe adverse effect เช่น suicidal thought น้อย
+c5: ไม่มี cholinergic effect
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 4 | Ans: 2 ===
+Q: สถานการณ์ที่ 1 ผู้ป่วยหญิงอายุ 35 ปี ญาติพามาพบแพทย์ด้วยอาการซึมเศร้า ไม่พูดไม่จา อยากฆ่าตัวตาย เป็นมานานประมาณ 2 เดือน แพทย์ได้วินิจฉัยว่าเป็น major depressive disorder และได้ให้ยา sertraline 50 mg ครั้งละ 1 เม็ด ในตอนเช้า
+ข้อใดเป็นคำแนะนำที่ถูกต้องของผู้ที่ใช้ยา sertraline
+c1: ห้ามรับประทานยาร่วมกับนม
+c2: รับประทานยาในช่วงเดียวกันในแต่ละวัน
+c3: ค่อยๆ เปลี่ยนอิริยาบถ
+c4: จำกัดน้ำ
+c5: รับประทานยาก่อนนอน
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 5 | Ans: 5 ===
+Q: สถานการณ์ที่ 2 ผู้ป่วยชาย อายุ 60 ปี ได้รับการวินิจฉัยจากแพทย์ว่ามีภาวะซึมเศร้า แพทย์สั่งจ่ายยา amitriptyline หลังจากนั้น 3 สัปดาห์ ผู้ป่วยกลับมาพบแพทย์อีกครั้งเนื่องจากอาการไม่ดีขึ้น แพทย์จึงพิจารณาเปลี่ยนยาเป็น fluoxetine
+ยาใดต่อไปนี้ ไม่ใช่ยาที่ใช้ในการรักษาภาวะซึมเศร้า
+c1: Imipramine
+c2: Doxepin
+c3: Phenelzine
+c4: Sertraline
+c5: Carbamazepine
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 6 | Ans: 1 ===
+Q: ข้อใดผิดในการใช้ยาเพื่อรักษาภาวะซึมเศร้า
+c1: การสูบบุหรี่ทำให้ฤทธิ์ของ TCA ลดลง
+c2: ผู้ป่วยที่ได้รับยา MAOI ไม่ควรรับประทานอาหารที่มี tyramine สูง เช่น เนย
+c3: ยากลุ่ม SSRI ไม่ควรใช้ร่วมกับยากลุ่ม MAOI
+c4: เมื่อหยุดยา MAOI แล้วสามารถเริ่มใช้ SSRI ได้ทันที
+c5: อาการข้างเคียงของยากลุ่ม TCA คือ ปากแห้ง ตาพร่า แน่นท้อง ท้องผูก
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 7 | Ans: 3 ===
+Q: St. John's wort ออกฤทธิ์เหมือนยากลุ่มใด
+c1: MOAI
+c2: BZs
+c3: TCA
+c4: α2 Blocker
+c5: Barbiturates
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 8 | Ans: 1 ===
+Q: เพราะเหตุใด St. John's wort จึงทำให้เกิดปฏิกิริยาระหว่างยาหลายกลุ่ม
+c1: เพิ่มการสร้าง isozyme cytochrome P450
+c2: มีความสามารถในการจับกับรีเซ็ปเตอร์ได้หลายชนิด
+c3: กระตุ้นการจับกับโปรตีนในเลือดหลายชนิด
+c4: สามารถทำปฏิกิริยาทางเคมีโดยตรงกับยาหลายชนิด
+c5: เพิ่มอัตราการขับออกของยาที่ไต
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 9 | Ans: 2 ===
+Q: กลไกการออกฤทธิ์ของ amitriptyline คือข้อใด
+c1: ยับยั้งการทำงานของ DA transporter
+c2: ยับยั้งการ reuptake ของ NE ที่ปลายประสาท
+c3: ยับยั้งการทำงานของ MOA enzyme
+c4: กระตุ้น 5-HT receptor
+c5: กระตุ้น α2-adrenergic receptor
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 10 | Ans: 5 ===
+Q: ต่อไปนี้เป็น side effect ที่เกิดจากการใช้ยา amitriptyline ยกเว้น
+c1: Sedation
+c2: Dry mouth
+c3: Orthostatic hypotension
+c4: Urinary retention
+c5: Hyperuricemia
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 11 | Ans: 3 ===
+Q: กลไกการออกฤทธิ์ของ fluoxetine คือข้อใด
+c1: ยับยั้งการทำงานของ DA transporter
+c2: ยับยั้งการทำงานของ NE transporter
+c3: ยับยั้งการทำงานของ 5-HT transporter
+c4: ยับยั้งการทำงานของ MOA-A enzyme
+c5: ยับยั้งการทำงานของ MOA-B enzyme
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 12 | Ans: 5 ===
+Q: สถานการณ์ที่ 3 นายเอกได้รับการวินิจฉัยจากแพทย์ว่าเป็น generalized anxiety disorder เนื่องจากมีอาการวิตกกังวลเกี่ยวกับภรรยาและลูกตลอดเวลาไม่สามารถดำเนินชีวิตประจำวันและทำงานได้เป็นเวลา 6 เดือน
+ท่านคิดว่ายาที่เหมาะสมผู้ป่วย คือ
+c1: Lithium carbonate
+c2: Clozapine
+c3: Chlorpromazine
+c4: Haloperidol
+c5: Diazepam
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 13 | Ans: 3 ===
+Q: น้องชายของนายเอกมีอาการซึมเศร้าตลอดเวลา นายเอกพาไปพบแพทย์ แพทย์วินิจฉัยว่าเป็น major depressive disorder และสั่งจ่ายยาตัวหนึ่งให้ หลังจากที่รับประทานยาแล้วเกิดอาการง่วงนอน ปากคอแห้ง หน้ามืดบ่อยๆ เวลาลุกขึ้น ท่านคิดว่ายาที่น้องชายนายเอกได้รับ คือ
+c1: Venlafaxine
+c2: Paroxetine
+c3: Amitriptyline
+c4: Bupropion
+c5: Sertraline
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 14 | Ans: 5 ===
+Q: หากน้องชายของนายเอกทนอาการข้างเคียงของยาข้างต้น คือ อาการง่วงนอน ปากคอแห้ง หน้ามืดบ่อยๆ เวลาลุกขึ้นไม่ได้แพทย์จึงมาปรึกท่าน ท่านจะให้คำแนะนำเป็นการสั่งยาได้
+c1: Imipramine
+c2: Clomipramine
+c3: Amitriptyline
+c4: Doxepin
+c5: Sertraline
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 15 | Ans: 2 ===
+Q: คำแนะนำในการใช้ยากลุ่ม antidepressant ที่สำคัญเพื่อช่วยเพิ่มความร่วมมือในการใช้ยาของผู้ป่วย คือ
+c1: ควรแนะนำให้ผู้ป่วยใช้ยาหลังอาหารเท่านั้นจะได้ไม่ลืมใช้ยา
+c2: ควรแนะนำผู้ป่วยว่าในการใช้ยาส่วนใหญ่ จะเริ่มเห็นผลลดอาการซึมเศร้าได้ต้องใช้เวลา 2-3 สัปดาห์ เพื่อให้ผู้ป่วยใช้ยาอย่างต่อเนื่อง
+c3: ควรแนะนำให้ผู้ป่วยดื่มน้ำมากๆ เพื่อลดการระคายเคืองกระเพาะอาหาร
+c4: ควรแนะนำการเพิ่มและลดขนาดยาให้ผู้ป่วยเพื่อให้ผู้ป่วยสามารถปรับขนาดยาได้เองตามอาการ
+c5: ควรแนะนำให้ผู้ป่วยหยุดยาทันทีเมื่อเกิดอาการข้างเคียง เช่น นอนไม่หลับ
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 16 | Ans: 4 ===
+Q: กรณีที่ผู้ป่วยได้รับยากลุ่ม benzodiazepine ซึ่งผู้ป่วยรับประทานอย่างสม่ำเสมอเป็นเวลา 6 เดือน อาการของผู้ป่วยกลับมาเป็นปกติ หากท่านต้องการหยุดยากลวดกล่าวควรทำอย่างไร
+c1: สามารถหยุดได้ทันทีโดยไม่ต้องปรับเปลี่ยนขนาดยาใหม่
+c2: ให้ triazolam ก่อนแล้วค่อยๆ ลดขนาดยาที่ผู้ป่วยรับอยู่สัปดาห์ละ 25% ของขนาดยาที่ให้ผลรักษา
+c3: ให้ olanzapine ก่อนแล้วค่อยๆ บดขนาดยาที่ผู้ป่วยได้รับอยู่สัปดาห์ละ 75% ของยาที่ให้ผลรักษา
+c4: ค่อยๆ ลดขนาดยาที่ผู้ป่วยได้รับอยู่สัปดาห์ละ 25% ของขนาดยาที่ให้ผลในการรักษา
+c5: ให้ผู้ป่วยรับประทานยาที่ได้รับต่อไปอีก 1 สัปดาห์ จากนั้นจึงสามารถหยุดยาได้ทันที
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 17 | Ans: 5 ===
+Q: สถานการณ์ที่ 4 หญิงไทยอายุ 45 ปี ช่วงนี้เครียดนอนไม่หลับมาหลายวัน ต้องใช้เวลานานกว่าจะหลับ
+ยาใดเหมาะสมที่สุด เมื่อพิจารณาตามประสิทธิภาพ ข้อบ่งใช้ หรือค่าครึ่งชีวิต
+c1: Clonazepam
+c2: Diazepam
+c3: Flunitrazepam
+c4: Lorazepam
+c5: Temazepam
+subtopic: Insomnia | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 18 | Ans: 3 ===
+Q: กลไการออกฤทธิ์ของยากลุ่ม benzodiazepine คือ
+c1: กระตุ้น 5-HT receptor
+c2: กระตุ้น dopamine receptor
+c3: กระตุ้น GABA receptor
+c4: กระตุ้น glutamate receptor
+c5: กระตุ้น muscarinic receptor
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 19 | Ans: 2 ===
+Q: Benzodiazepine ไม่ใช้ในการรักษาใด
+c1: Anxiety
+c2: OCD
+c3: Epilepsy
+c4: Muscle spasm
+c5: Alcohol withdrawal
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 20 | Ans: 2 ===
+Q: อาการไม่พึงประสงค์ของ benzodiazepine คือ
+c1: ชัก
+c2: Anterograde amnesia
+c3: สั่น
+c4: ปากแห้ง
+c5: ปวดศีรษะ
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 21 | Ans: 5 ===
+Q: ข้อใดไม่ถูกต้องเกี่ยวกับ benzodiazepine
+c1: ประสิทธิผลเท่ากัน diazepam มีราคาถูกกว่า แต่ประสิทธิผลดี
+c2: Pharmacokinetics ต่างกัน แต่ประสิทธิผลไม่ต่างกัน ถ้าไม่มีโรคประจำตัวไต diazepam สามารถใช้ได้
+c3: ยาออกฤทธิ์ต่อจิตประสาท แต่ปลอดภัยมี therapeutic index กว้าง
+c4: ใช้ยาในขนาดสูงเป็นเวลานาน ค่อยๆลดขนาดยาลงใน 1-2 สัปดาห์
+c5: สามารถหยุดยาได้ทันที
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 22 | Ans: 4 ===
+Q: หากใช้ยากลุ่ม benzodiazepine พร้อมกับ alcohol จะเกิดผลอย่างไร
+c1: Flu-like symptoms
+c2: Vasodilation
+c3: เพิ่ม half life ของยา
+c4: Respiratory depressions
+c5: Vomiting
+subtopic: Drug & alcohol abuse | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 23 | Ans: 4 ===
+Q: ข้อใดถูกต้องเกี่ยวกับการใช้ยาในกลุ่ม benzodiazepine เป็นเวลานาน
+c1: สามารถหยุดยาได้ทันที
+c2: หากจะหยุดยา ให้รับประทานต่อในขนาดเดิมอีก 10 วัน แล้วจึงหยุดยา
+c3: หากจะหยุดยา ให้รับประทานต่อในขนาดลดลงครึ่งหนึ่งอีก 10 วัน แล้วจึงหยุดยา
+c4: หากจะหยุดยา ให้ลดขนาดยาลง 25% ทุกๆ 3-7 วัน
+c5: ทำให้ติดยาทางใจ
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 24 | Ans: 4 ===
+Q: สถานการณ์ที่ 5 ผู้ป่วยชายไทย คู่ อายุ 51 ปี ได้รับการวินิจฉัยว่าเป็นโรคจิตเภท (schizophrenia) มีอาการที่สำคัญ ได้แก่ dementia, blunted, inappropriate mood และ catalepsy เป็นมานาน 1 ปีเศษ รับการรักษาอยู่ที่ ร.พ.สงขลานครินทร์
+ข้อใดผิด
+c1: มีอาการทาง negative symptoms
+c2: เกิดจากความผิดปกติของสารสื่อประสาท เช่น dopamine ซึ่งเชื่อว่าอาจเกี่ยวข้องกับพันธุกรรมด้วย
+c3: จำเป็นต้องรักษาสภาพจิตใจร่วมด้วย
+c4: เกิดจากความผิดปกติที่ nigrostriatal tract/extrapyramidal pathway
+c5: มีจำนวนของ D-receptor เพิ่มมากขึ้น
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 25 | Ans: 1 ===
+Q: สถานการณ์ที่ 5 ผู้ป่วยชายไทย คู่ อายุ 51 ปี ได้รับการวินิจฉัยว่าเป็นโรคจิตเภท (schizophrenia) มีอาการที่สำคัญ ได้แก่ dementia, blunted, inappropriate mood และ catalepsy เป็นมานาน 1 ปีเศษ รับการรักษาอยู่ที่ ร.พ.สงขลานครินทร์
+ยาที่เหมาะสมกับผู้ป่วยรายนี้ คือ
+c1: Haloperidol, Clozapine
+c2: Chlorpromazine, Clozapine
+c3: Risperidone, Quetiapine
+c4: Thioridazine, Fluphenazine
+c5: Perphenazine, Olanzapine
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 26 | Ans: 2 ===
+Q: สถานการณ์ที่ 5 ผู้ป่วยชายไทย คู่ อายุ 51 ปี ได้รับการวินิจฉัยว่าเป็นโรคจิตเภท (schizophrenia) มีอาการที่สำคัญ ได้แก่ dementia, blunted, inappropriate mood และ catalepsy เป็นมานาน 1 ปีเศษ รับการรักษาอยู่ที่ ร.พ.สงขลานครินทร์
+ข้อใดไม่ใช่ผลอันไม่พึงประสงค์ของยา clozapine
+c1: Agranulocytosis
+c2: Weight loss
+c3: Orthostatic hypotension
+c4: Sedative
+c5: Potential QT-prolongation
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 27 | Ans: 5 ===
+Q: ข้อมูลเพิ่มเติม: เดิมผู้ป่วยรักษาด้วยยา haloperidol มานานจนกระทั่งตรวจพบว่าเกิดภาวะ pseudo-parkinsonism ขึ้น
+ข้อใดผิด
+c1: เกิดจากการใช้ยากลุ่ม conventional antipsychotic
+c2: สามารถรักษาได้ด้วยการใช้ trihexyphenidyl
+c3: ผู้ป่วยอาจมีอาการ tremor, akathisia, tardive dyskinesia ร่วมด้วยได้
+c4: มักเกิดในช่วง 5-90 วัน หลังจากเริ่มใช้ยา
+c5: เกี่ยวข้องกับ dopamine และ NE
+subtopic: Anxiety/depression | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 28 | Ans: 5 ===
+Q: Lorazepam มีฤทธิ์ต่างๆ ต่อไปนี้นยกเว้น
+c1: Hypnotic effect
+c2: Muscle relaxant effect
+c3: Anticonvulsant effect
+c4: Antianxiety effect
+c5: Antidepressant effect
+subtopic: Insomnia | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 29 | Ans: 4 ===
+Q: ข้อใดต่อไปเกี่ยวกับ lorazepam ผิด
+c1: ออกฤทธิ์โดยกระตุ้น GABA receptor
+c2: Overdose ของ lorazepam สามารถใช้ flumazenil ซึ่งเป็น antidote รักษาได้
+c3: ถ้าใช้เป็นระยะเวลานานแล้วหยุดยา จะก่อให้เกิดให้อาการถอนยาได้
+c4: เป็น Hepatic drug metabolizing enzyme inducer
+c5: ไม่ก่อให้เกิด "hangover effect" ได้มากเหมือน diazepam
+subtopic: Insomnia | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 30 | Ans: 5 ===
+Q: ชายไทยคู่ อายุ 65 ปี ได้รับการวินิจฉัยจากแพทย์ว่ามีภาวะ insomnia
+ยาในข้อใดต่อไปนี้ไม่ใช่ยาที่ใช้ในการรักษาภาวะ insomnia
+c1: CPM
+c2: Phenobarbital
+c3: Chloral hydrate
+c4: Clonazepam
+c5: Haloperidol
+subtopic: Insomnia | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 31 | Ans: 1 ===
+Q: ในกรณีที่ผู้ป่วยมีปัญหานอนหลับยาก (ต้องใช้เวลานานกว่าจะหลับ) ควรเลือกใช้ยาในข้อใดต่อไปนี้
+c1: Midazolam
+c2: Temazepam
+c3: Lorazepam
+c4: Diazepam
+c5: Flurazepam
+subtopic: Insomnia | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 32 | Ans: 5 ===
+Q: ข้อใดต่อไปนี้ไม่ใช่ประโยชน์ของการใช้ยากลุ่ม BZD ในทางคลินิก
+c1: ใช้เป็นยานอนหลับ
+c2: ใช้เป็นยาคลายกังวล
+c3: ใช้เป็นยาคลายกล้ามเนื้อ
+c4: ใช้เป็นยากันชัก
+c5: ใช้เป็นยาสลบ
+subtopic: Insomnia | year_set: Pharma Plus เล่มม่วง
+
+=== IDX: 33 | Ans: 1 ===
+Q: ข้อใดไม่ใช่เกณฑ์ในการวินิจฉัยภาวะนอนไม่หลับตาม DSM5 (ไม่แน่ใจ)
+c1: ต้องกินกาแฟเพิ่ม 3-4 แก้ว
+c2: ถ้าหลับได้จะหลับสนิท
+c3: ต้องกินเหล้า 1 ขวดให้หลับ
+c4: ง่วงตอนกลางวัน
+c5: หลับตอนประชุม/ติดไฟแดง
+subtopic: Insomnia | year_set: ปี 2567
+
+=== IDX: 34 | Ans: 1 ===
+Q: ข้อใดเป็นสารเพิ่มความยืดหยุ่นใน nicotine gum
+c1: Sodium sulfate
+c2: Glycerin
+c3: Sorbitol
+c4: Aspartame
+c5: Polacrilex (cation exchange resin)
+subtopic: Tobacco dependence | year_set: ปี 2567
+

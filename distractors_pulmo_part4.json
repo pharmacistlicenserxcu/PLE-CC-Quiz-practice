@@ -1,0 +1,10 @@
+{
+  "124": {
+    "distractors": {
+      "ก": "ใจสั่น (Palpitations หรือ Tachycardia) เป็นอาการข้างเคียงเด่นของ Salmeterol ซึ่งเป็นยากลุ่ม LABA ที่สามารถกระตุ้น beta-2 receptor และมีผล spillover ข้ามไปกระตุ้น beta-1 adrenergic receptor ที่กล้ามเนื้อหัวใจ จึงถือเป็นผลข้างเคียงจริงของสูตรยานี้",
+      "ข": "มือสั่น (Tremor) เป็นผลข้างเคียงพบบ่อยของ Salmeterol จากการกระตุ้น beta-2 receptor บน skeletal muscle fibers โดยตรง ทำให้เกิด neuromuscular tremor จึงเป็นผลข้างเคียงของยาในสูตรนี้",
+      "ค": "การติดเชื้อราในช่องปาก (Oral candidiasis หรือ thrush) เกิดจากการสะสมเฉพาะที่ของ Inhaled Fluticasone (ICS) บริเวณ oropharynx ซึ่งมีฤทธิ์กดภูมิคุ้มกันเฉพาะที่ เอื้อต่อการเจริญของ Candida albicans จึงเป็นอาการไม่พึงประสงค์จริงของสูตรยานี้",
+      "ง": "เสียงแหบ (Dysphonia) เป็นผลข้างเคียงเฉพาะที่ของ Inhaled Fluticasone (ICS) เกิดจาก myopathy ของกล้ามเนื้อ laryngeal muscle และการระคายเคืองต่อ vocal cords จึงถือเป็นผลข้างเคียงจริงของยานี้"
+    }
+  }
+}

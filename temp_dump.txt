@@ -1,0 +1,865 @@
+=== IDX 32 | ANS: 4 ===
+Q: สถานการณ์ที่ 5 ผู้ป่วยชาย อายุ 25 ปี
+Dx. Tonic-clonic seizer (first diagnosis)
+Rx. Carbamazepine BID 30 F/U 2 wk.
+ระดับยา carbamazepine สามารถเพิ่มได้เมื่อใช้ร่วมกับยาใด
+C1: Folic acid
+C2: Nevirapine
+C3: Phenytoin
+C4: Clarithromycin
+C5: Mebendazole
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Clarithromycin
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Clarithromycin เป็นยาในกลุ่ม Macrolide antibiotics ซึ่งเป็น potent CYP3A4 inhibitor จะยับยั้งการเมแทบอลิซึมของ Carbamazepine ส่งผลให้ระดับยา Carbamazepine ในเลือดเพิ่มสูงขึ้นและอาจเกิดพิษได้ (Toxicity)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Folic acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Nevirapine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Phenytoin): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+• ข้อ จ. (Mebendazole): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• HLA-B*15:02 & Autoinduction: ต้องตรวจ HLA-B*15:02 ก่อนเริ่มยาในคนไทยทุกราย (เสี่ยง SJS/TEN สูงมาก) และมีคุณสมบัติ Autoinduction กระตุ้น CYP3A4 ของตัวเองหลังใช้ 2-4 สัปดาห์
+• Hyponatremia (SIADH): ทำให้เกิด hyponatremia จาก SIADH-like effect และเสี่ยงต่อ agranulocytosis/aplastic anemia
+
+=== IDX 33 | ANS: 1 ===
+Q: ข้อใดคือกลไกการออกฤทธิ์ของ carbamazepine
+C1: จับกับ sodium channel ที่อยู่ใน inactivated state
+C2: จับกับ T-type calcium channel
+C3: ออกฤทธิ์ต่อ GABA receptor/ chloride-ion pore complex
+C4: ออกฤทธิ์ที่ NMDA receptor
+C5: ออกฤทธิ์ยับยั้ง second messengers
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. จับกับ sodium channel ที่อยู่ใน inactivated state
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+จับกับ sodium channel ที่อยู่ใน inactivated state Carbamazepine ออกฤทธิ์หลักโดยการจับและยับยั้ง Voltage-gated sodium channels ในสมองขณะที่ช่องสัญญาณอยู่ในสถานะ Inactivated state ทำให้ลดการยิงกระแสประสาทที่ผิดปกติและป้องกันการแพร่กระจายของกระแสไฟฟ้าในโรค ลมชัก
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (จับกับ T-type calcium channel): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ออกฤทธิ์ต่อ GABA receptor/ chloride-ion pore complex): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ออกฤทธิ์ที่ NMDA receptor): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ออกฤทธิ์ยับยั้ง second messengers): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• HLA-B*15:02 & Autoinduction: ต้องตรวจ HLA-B*15:02 ก่อนเริ่มยาในคนไทยทุกราย (เสี่ยง SJS/TEN สูงมาก) และมีคุณสมบัติ Autoinduction กระตุ้น CYP3A4 ของตัวเองหลังใช้ 2-4 สัปดาห์
+• Hyponatremia (SIADH): ทำให้เกิด hyponatremia จาก SIADH-like effect และเสี่ยงต่อ agranulocytosis/aplastic anemia
+
+=== IDX 34 | ANS: 2 ===
+Q: โรคลมชักมีสาเหตุจากทุกข้อ ยกเว้นข้อใด
+C1: อุบัติเหตุทางสมอง
+C2: การติดเชื้อในหูชั้นกลาง
+C3: Hypoglycemia
+C4: เนื้องอกในสมอง
+C5: ไข้สูงในเด็ก
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ข. การติดเชื้อในหูชั้นกลาง
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+การติดเชื้อในหูชั้นกลาง (Otitis media) เป็นการติดเชื้อเฉพาะที่บริเวณหูชั้นกลาง ไม่ได้ทำให้เกิดการกระตุ้นหรือรบกวนโครงสร้างเนื้อเยื่อสมองโดยตรงเหมือนอุบัติเหตุทางสมอง, ภาวะน้ำตาลในเลือดต่ำ (Hypoglycemia), เนื้องอกในสมอง หรือภาวะไข้สูงในเด็กที่อาจเหนี่ยวนำให้เกิด Febrile seizure ได้
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (อุบัติเหตุทางสมอง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Hypoglycemia): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (เนื้องอกในสมอง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ไข้สูงในเด็ก): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+
+=== IDX 35 | ANS: 3 ===
+Q: ข้อใดคือข้อบ่งใช้ของ carbamazepine นอกเหนือจากรักษาโรคลมชัก
+C1: Anxiety
+C2: Muscle relaxant
+C3: Trigeminal neuralgia
+C4: Anti-arrhythmia
+C5: Febrile Seizure
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Trigeminal neuralgia
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Trigeminal neuralgia นอกจากรักษาโรคชักแบบ Tonic-clonic และ Partial seizures แล้ว Carbamazepine ยังเป็นยาเลือก first-line (First-line drug) ในการรักษาโรคปวดเส้นประสาทสมองคู่ที่ 5 (Trigeminal neuralgia) และใช้รักษา Bipolar disorder ที่ดื้อต่อ Lithium
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Anxiety): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Muscle relaxant): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Anti-arrhythmia): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Febrile Seizure): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• HLA-B*15:02 & Autoinduction: ต้องตรวจ HLA-B*15:02 ก่อนเริ่มยาในคนไทยทุกราย (เสี่ยง SJS/TEN สูงมาก) และมีคุณสมบัติ Autoinduction กระตุ้น CYP3A4 ของตัวเองหลังใช้ 2-4 สัปดาห์
+• Hyponatremia (SIADH): ทำให้เกิด hyponatremia จาก SIADH-like effect และเสี่ยงต่อ agranulocytosis/aplastic anemia
+
+=== IDX 36 | ANS: 5 ===
+Q: สถานการณ์ที่ 6 ผู้ป่วยมาพบท่านที่ร้านยา ซักประวัติแล้วพบว่าในระยะครึ่งปีที่ผ่านมาเป็นลมหมดสติหลายครั้ง มีการชักเกร็งระหว่างหมดสติทุกครั้ง ครั้งนี้ผู้ป่วยต้องการซื้อยารักษา
+ในฐานะเภสัชกรประจำร้านยาท่านทำอย่างไร
+C1: ซักประวัติเพิ่มเติมพบว่า ผู้ป่วยมีแนวโน้มเครียดง่ายจากการทำงาน จึงให้ยาคลายกังวลและนัดพบในอีก 1 เดือน
+C2: ซักประวัติเพิ่มเติมพบว่ามีสุขภาพอ่อนแอ จึงให้่าวิตามินและนัดมาพบในอีก 1 สัปดาห์
+C3: ให้ยาคลายกล้ามเนื้อเพื่อป้องกันอาการชักเกร็งระหว่างหมดสติ
+C4: ซักประวัติเพิ่มเติมพบว่ามีสุขภาพอ่อนแอ จึงแนะนำให้พักผ่อนให้เพียงพอ
+C5: ซักประวัติเพิ่มเติมและแนะนำให้ไปพบแพทย์
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ จ. ซักประวัติเพิ่มเติมและแนะนำให้ไปพบแพทย์
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ซักประวัติเพิ่มเติมและแนะนำให้ไปพบแพทย์ อาการลมหมดสติร่วมกับอาการชักเกร็งซ้ำๆ เป็นอาการแสดงที่รุนแรงและบ่งบอกถึงความผิดปกติทางระบบประสาทที่ต้องได้รับการวินิจฉัยโดยแพทย์ผู้เชี่ยวชาญ (Neurologist) รวมถึงการตรวจวินิจฉัยเพิ่มเติม เช่น EEG เภสัชกรชุมชนจึงควรซักประวัติเบื้องต้นและส่งต่อผู้ป่วยไปพบแพทย์ทันที (Refer)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ซักประวัติเพิ่มเติมพบว่า ผู้ป่วยมีแนวโน้มเครียดง่ายจากการทำงาน จึงให้ยาคลายกังวลและนัดพบในอีก 1 เดือน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ซักประวัติเพิ่มเติมพบว่ามีสุขภาพอ่อนแอ จึงให้่าวิตามินและนัดมาพบในอีก 1 สัปดาห์): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ให้ยาคลายกล้ามเนื้อเพื่อป้องกันอาการชักเกร็งระหว่างหมดสติ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ซักประวัติเพิ่มเติมพบว่ามีสุขภาพอ่อนแอ จึงแนะนำให้พักผ่อนให้เพียงพอ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+
+=== IDX 37 | ANS: 2 ===
+Q: หนึ่งเดือนต่อมาผู้ป่วยได้นำใบสั่งยามาซื้อยา ดังนี้ นางสุดใจ อายุเยาว์ อายุ 25 ปี Dx: F/U Epilepsy Rx Dilantin® 100 mg 3 x 1 hs 30 วัน
+Phenytoin มีกลไกการออกฤทธิ์ในการรักษาโรคลมชักอย่างไร
+C1: Block PTP (post tetanic potentiation)
+C2: Decrease post-synaptic excitation
+C3: Increase GABA activity
+C4: Decrease excitatory neurotransmitter
+C5: Inhibit protein kinase-C
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Decrease post-synaptic excitation
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Decrease post-synaptic excitation Phenytoin ออกฤทธิ์หลักโดยการ block voltage-gated sodium channels ที่สมอง ซึ่งช่วยลด post-tetanic potentiation (PTP) และจำกัดการแพร่กระจายของกระแสไฟฟ้าที่ผิดปกติในสมอง (seizure discharge)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Block PTP (post tetanic potentiation)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Increase GABA activity): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Decrease excitatory neurotransmitter): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Inhibit protein kinase-C): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+
+=== IDX 38 | ANS: 5 ===
+Q: หนึ่งเดือนต่อมาผู้ป่วยได้นำใบสั่งยามาซื้อยา ดังนี้ นางสุดใจ อายุเยาว์ อายุ 25 ปี Dx: F/U Epilepsy Rx Dilantin® 100 mg 3 x 1 hs 30 วัน
+ก่อนจ่ายยานี้ ท่านจะให้คำแนะนำในการใช้ยาแก่ผู้ป่วยรายนี้อย่างไร
+C1: รับประทานยานี้หลังอาหารทันที
+C2: ดื่มน้ำมาก ๆ หลังรับประทานยา
+C3: เมื่ออาการดีขึ้นสามารถปรับลดขนาดยาได้
+C4: ห้ามรับประทานพร้อมนม
+C5: กินยาติดต่อกันเป็นประจำทุกวัน
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ จ. กินยาติดต่อกันเป็นประจำทุกวัน
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+กินยาติดต่อกันเป็นประจำทุกวัน การรับประทานยาต้านชัก (Antiepileptic drugs) เช่น Phenytoin ต้องรับประทานอย่างสม่ำเสมอทุกวันตรงเวลา ห้ามหยุดยาหรือปรับลดขนาดเองเด็ดขาดเพราะอาจทำให้เกิด status epilepticus ได้
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (รับประทานยานี้หลังอาหารทันที): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ดื่มน้ำมาก ๆ หลังรับประทานยา): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (เมื่ออาการดีขึ้นสามารถปรับลดขนาดยาได้): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ห้ามรับประทานพร้อมนม): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+
+=== IDX 39 | ANS: 1 ===
+Q: นางสุดใจมาถามเภสัชกรที่ห้องยาโดยสงสัยว่าในการรับประทานยาแต่ละวัน ไม่เป็นเวลาเดียวกันทุกวันคลาดเคลื่อนไม่เกิน 2-3 ชั่วโมง จะเกิดปัญหาต่อการรักษาหรือไม่ เภสัชกรให้คำตอบว่าไม่เป็นไร ท่านคิดว่าปัจจัยในข้อใดทำให้เภสัชกรตอบเช่นนี้
+ปัจจัยในข้อใดทำให้เภสัชกรตอบเช่นนี้
+C1: ค่าครึ่งชีวิตของ phenytoin ยาว
+C2: Phenytoin ถูกกำจัดทางไตน้อยกว่า 5%
+C3: เภสัชจลนศาสตร์ของยาเป็นแบบไม่เป็นเส้นตรง
+C4: ยามีผลต่อเอนไซม์ Cytochrome P450 system
+C5: Phenytoin ไม่เกิด first pass metabolism
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ค่าครึ่งชีวิตของ phenytoin ยาว
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ค่าครึ่งชีวิตของ phenytoin ยาว Phenytoin มีค่าครึ่งชีวิต (half-life) ค่อนข้างยาว (ประมาณ 22 ชั่วโมง หรือช่วง 10-30 ชั่วโมง) ทำให้ระดับยาในเลือดค่อนข้างคงที่ แม้เวลาทานจะคลาดเคลื่อนเล็กน้อย 2-3 ชั่วโมงก็ยังอยู่ใน therapeutic window
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Phenytoin ถูกกำจัดทางไตน้อยกว่า 5%): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+• ข้อ ค. (เภสัชจลนศาสตร์ของยาเป็นแบบไม่เป็นเส้นตรง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ยามีผลต่อเอนไซม์ Cytochrome P450 system): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Phenytoin ไม่เกิด first pass metabolism): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+
+=== IDX 40 | ANS: 4 ===
+Q: เภสัชจลนศาสตร์ของ phenytoin ที่เป็นแบบไม่เป็นเส้นตรง (non-linear pharmacokinetic) หมายความว่าอย่างไร
+C1: หาก plot graph ระหว่างขนาดยาและความเข้มข้นไม่มีส่วนที่เป็นเส้นตรง
+C2: ยาถูกกำจัดจากร่างกายได้หลายกลไก
+C3: ขนาดยาที่สูงขึ้น จะได้ฤทธิ์ยาเพิ่มขึ้นน้อยกว่าที่ควรจะเป็น
+C4: ความเข้มข้นของยาในกระแสเลือดที่เพิ่มขึ้นไม่เป็นสัดส่วนโดยตรงกับขนาดยา
+C5: เมื่อขนาดยาที่สูงขึ้น ณ จุดหนึ่ง ความสัมพันธ์ของขนาดยาและความเข้มข้นในกระแสเลือดจะเป็นสัดส่วนผกผัน
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ง. ความเข้มข้นของยาในกระแสเลือดที่เพิ่มขึ้นไม่เป็นสัดส่วนโดยตรงกับขนาดยา
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ความเข้มข้นของยาในกระแสเลือดที่เพิ่มขึ้นไม่เป็นสัดส่วนโดยตรงกับขนาดยา Phenytoin มี Michaelis-Menten (saturable) metabolism เมื่อเพิ่มขนาดยาเพียงเล็กน้อยในช่วงที่เอนไซม์เริ่มอิ่มตัว จะทำให้ความเข้มข้นของยาในเลือดเพิ่มขึ้นอย่างไม่เป็นสัดส่วน (disproportionate increase) ซึ่งเสี่ยงต่อการเกิดพิษ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (หาก plot graph ระหว่างขนาดยาและความเข้มข้นไม่มีส่วนที่เป็นเส้นตรง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ยาถูกกำจัดจากร่างกายได้หลายกลไก): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ขนาดยาที่สูงขึ้น จะได้ฤทธิ์ยาเพิ่มขึ้นน้อยกว่าที่ควรจะเป็น): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (เมื่อขนาดยาที่สูงขึ้น ณ จุดหนึ่ง ความสัมพันธ์ของขนาดยาและความเข้มข้นในกระแสเลือดจะเป็นสัดส่วนผกผัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+
+=== IDX 41 | ANS: 1 ===
+Q: ข้อใดเป็นผลข้างเคียงจากการใช้ phenytoin ติดต่อกันเป็นระยะเวลานาน
+C1: Gingival hyperplasia
+C2: Ataxia
+C3: Mental retardation
+C4: Blurred vision
+C5: Hyperactivity
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Gingival hyperplasia
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Gingival hyperplasia (เหงือกบวมโต) เป็น ADR ที่พบบ่อยเมื่อใช้ Phenytoin เป็นเวลานาน ผู้ป่วยจึงควรดูแลสุขอนามัยในช่องปากและพบทันตแพทย์สม่ำเสมอ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Ataxia): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Mental retardation): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Blurred vision): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Hyperactivity): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+
+=== IDX 42 | ANS: 4 ===
+Q: ผู้ป่วยมาพบแพทย์ตามนัด แพทย์พบว่าผู้ป่วยมีอาการตากระตุก (nystagmus) แพทย์สงสัยว่าอาการดังกล่าวเกิดจากพิษของยา เมื่อปรึกษาเภสัชกร ท่านจะให้คำแนะนำต่อไปนี้ ยกเว้น
+ข้อใดคือคำแนะนำที่ไม่ถูกต้องเมื่อผู้ป่วยเกิดอาการตากระตุกจากพิษยา
+C1: ควรตรวจสอบอาการเดินเซ (ataxia) ร่วมด้วย
+C2: สอบถามประวัติการใช้ยาของผู้ป่วย
+C3: ตรวจวัดระดับยาในเลือด
+C4: ใช้ diazepam เพื่อควบคุมอาการ nystagmus ก่อนให้การรักษาต่อไป
+C5: ผู้ป่วยควรหยุดยา phenytoin และรอดูอาการ
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ง. ใช้ diazepam เพื่อควบคุมอาการ nystagmus ก่อนให้การรักษาต่อไป
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ใช้ diazepam เพื่อควบคุมอาการ nystagmus ก่อนให้การรักษาต่อไป Nystagmus, ataxia และ dysarthria เป็นสัญญาณเตือนของพิษจาก phenytoin (dose-dependent toxicity) การจัดการคือการประเมินระดับยาในเลือดและปรับลดขนาดยา ไม่ควรใช้ diazepam เพื่อกดอาการ nystagmus และการหยุดยาทันทีโดยไม่มีการประเมินอย่างละเอียดอาจเสี่ยงต่อการเกิด status epilepticus ได้ ทั้งนี้ข้อ จ. ระบุให้ผู้ป่วยหยุดยาและรอ ซึ่งในความเป็นจริงต้องอยู่ภายใต้ดุลยพินิจของแพทย์และปรับลดอย่างเหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ควรตรวจสอบอาการเดินเซ (ataxia) ร่วมด้วย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (สอบถามประวัติการใช้ยาของผู้ป่วย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ตรวจวัดระดับยาในเลือด): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ผู้ป่วยควรหยุดยา phenytoin และรอดูอาการ): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+
+=== IDX 43 | ANS: 5 ===
+Q: ข้อใดไม่ถูกต้องเกี่ยวกับหลักการใช้ยากันชัก
+C1: ควรเริ่มต้นการรักษาด้วยยาทีละตัว (monotherapy)
+C2: ควรเริ่มต้นด้วยขนาดยาต่ำ ๆ แล้วจึงเพิ่มขนาดยาขึ้น
+C3: การตรวจวัดระดับยาในเลือดอาจไม่จำเป็นในทางปฏิบัติ
+C4: ขนาดของยาไม่จำเป็นต้องเท่ากัน (fixed dose) ในผู้ป่วยทุกราย
+C5: ควรเลือกยากันชักชนิดใหม่เช่น gabapentin เป็นอันดับแรกในการรักษาเนื่องจากมีประสิทธิภาพสูง
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ จ. ควรเลือกยากันชักชนิดใหม่เช่น gabapentin เป็นอันดับแรกในการรักษาเนื่องจากมีประสิทธิภาพสูง
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ควรเลือกยากันชักชนิดใหม่เช่น gabapentin เป็นอันดับแรกในการรักษาเนื่องจากมีประสิทธิภาพสูง ควรเลือกยากันชักชนิดใหม่เช่น gabapentin เป็น first-line ในการรักษาเนื่องจากมี efficacy สูง ควรเลือกยากันชักชนิดใหม่เช่น gabapentin เป็น first-line ในการรักษาเนื่องจากมี efficacy สูง ควรเลือกยากันชักชนิดใหม่เช่น gabapentin เป็น first-line ในการรักษาเนื่องจากมี efficacy สูง ควรเลือกยากันชักชนิดใหม่เช่น gabapentin เป็น first-line ในการรักษาเนื่องจากมี efficacy สูง ตามแนวทางการรักษา epilepsy สากล (เช่น NICE guidelines) การรักษาเริ่มต้นควรใช้ยาเดี่ยว (monotherapy) ด้วยยากันชักรุ่นเก่า (First-generation AEDs เช่น carbamazepine, phenytoin, valproate) เป็น first-line เนื่องจากมีข้อมูล efficacy และความคุ้มค่าชัดเจน ส่วน gabapentin ไม่ใช่ยาเลือกแรกสำหรับรักษา generalized/focal seizures ทั่วไปในปัจจุบัน
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ควรเริ่มต้นการรักษาด้วยยาทีละตัว (monotherapy)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ควรเริ่มต้นด้วยขนาดยาต่ำ ๆ แล้วจึงเพิ่มขนาดยาขึ้น): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (การตรวจวัดระดับยาในเลือดอาจไม่จำเป็นในทางปฏิบัติ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ขนาดของยาไม่จำเป็นต้องเท่ากัน (fixed dose) ในผู้ป่วยทุกราย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+
+=== IDX 44 | ANS: 1 ===
+Q: ข้อใดต่อไปนี้คืออาการข้างเคียงที่จะเกิดจากการได้รับยา phenytoin
+C1: Gum hyperplasia
+C2: Tachycardia
+C3: Dry mouth
+C4: Gastric irritation
+C5: Hair loss
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Gum hyperplasia
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Gum hyperplasia Gingival hyperplasia (เหงือกบวมโต) เป็น ADR ที่พบบ่อยในการใช้ยา phenytoin ระยะยาว นอกจากนี้ยังอาจพบ hirsutism (ขนดก) และ megaloblastic anemia ได้
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Tachycardia): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Dry mouth): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Gastric irritation): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Hair loss): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+
+=== IDX 45 | ANS: 2 ===
+Q: กลไกการออกฤทธิ์ของ phenobarbital คือข้อใด
+C1: กระตุ้น Glutamate neurotransmission
+C2: กระตุ้น GABA neurotransmission
+C3: กระตุ้น Serotonin neurotransmission
+C4: ยับยั้ง Dopamine neurotransmission
+C5: ยับยั้ง Norepinephrine neurotransmission
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ข. กระตุ้น GABA neurotransmission
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+กระตุ้น GABA neurotransmission Phenobarbital เป็นยากลุ่ม barbiturates มีกลไกออกฤทธิ์โดยการจับกับ GABA_A receptor complex ทำให้ช่อง chloride เปิดนานขึ้น เพิ่มการไหลเข้าของ chloride ion ส่งผลให้เกิด hyperpolarization และยับยั้งการทำงานของระบบประสาทส่วนกลาง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (กระตุ้น Glutamate neurotransmission): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (กระตุ้น Serotonin neurotransmission): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ยับยั้ง Dopamine neurotransmission): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ยับยั้ง Norepinephrine neurotransmission): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Headache โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 46 | ANS: 1 ===
+Q: Phenobarbital ให้ผลการรักษา epilepsy ชนิดใดได้ดีที่สุด
+C1: Generalized tonic-clonic (Grand mal) seizure
+C2: Absence (Petit mal) seizure
+C3: Atonic seizure
+C4: Clonic and myoclonic seizure
+C5: Tonic seizure
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Generalized tonic-clonic (Grand mal) seizure
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Generalized tonic-clonic (Grand mal) seizure Phenobarbital มี efficacy ดีในการรักษา generalized tonic-clonic seizures และ focal seizures แต่ไม่ใช้ใน absence seizures เนื่องจากอาจทำให้อาการแย่ลง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Absence (Petit mal) seizure): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Atonic seizure): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Clonic and myoclonic seizure): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Tonic seizure): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+
+=== IDX 47 | ANS: 5 ===
+Q: Lorazepam มีฤทธิ์ต่าง ๆ ต่อไปนี้ ยกเว้น
+C1: Hypnotic effect
+C2: Muscle-relaxing effect
+C3: Anticonvulsant effect
+C4: Antianxiety effect
+C5: Antidepressant effect
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ จ. Antidepressant effect
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Antidepressant effect ยากลุ่ม Benzodiazepines (รวมถึง lorazepam) มีฤทธิ์หลัก 5 ประการ ได้แก่ ลดวิตกกังวล (antianxiety), ทำให้นอนหลับ (hypnotic), คลายกล้ามเนื้อ (muscle-relaxant), กันชัก (anticonvulsant) และทำให้สงบระงับก่อนผ่าตัด แต่ไม่มีฤทธิ์ต้านเศร้า (antidepressant)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Hypnotic effect): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Muscle-relaxing effect): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Anticonvulsant effect): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Antianxiety effect): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Headache โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 48 | ANS: 4 ===
+Q: ข้อความต่อไปนี้ เกี่ยวกับ lorazepam ผิด
+C1: ออกฤทธิ์โดยการกระตุ้น GABA neurotransmission
+C2: Overdose ของ lorazepam สามารถใช้ flumazenil ซึ่งเป็น antidote รักษาได้
+C3: ถ้าใช้เป็นระยะเวลานานแล้วหยุดยา จะก่อให้เกิด withdrawal symptoms ได้
+C4: เป็น hepatic drug-metabolizing enzyme inducer
+C5: ไม่ก่อให้เกิด hang over effect เหมือน diazepam
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ง. เป็น hepatic drug-metabolizing enzyme inducer
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+เป็น hepatic drug-metabolizing enzyme inducer Lorazepam และ Benzodiazepines ส่วนใหญ่ไม่ได้มีฤทธิ์เหนี่ยวนำเอนไซม์ในตับ (hepatic enzyme inducer) แบบที่ยา phenytoin หรือ phenobarbital เป็น นอกจากนี้ lorazepam มีค่าครึ่งชีวิตปานกลางและไม่มี active metabolite ที่ออกฤทธิ์นานเหมือน diazepam จึงมักไม่ค่อยพบ hang over effect ที่รุนแรง และการใช้ติดต่อกันนานแล้วหยุดทันทีอาจเกิดอาการถอนยา (withdrawal symptoms) ได้ ส่วน flumazenil เป็น competitive antagonist ใช้แก้พิษ benzodiazepines
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ออกฤทธิ์โดยการกระตุ้น GABA neurotransmission): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Overdose ของ lorazepam สามารถใช้ flumazenil ซึ่งเป็น antidote รักษาได้): เป็น Benzodiazepine กลุ่ม LOT (Lorazepam, Oxazepam, Temazepam) ที่ผ่าน hepatic Phase II glucuronidation โดยตรง ไม่ผ่าน CYP oxidation จึงปลอดภัยกว่าในผู้สูงอายุและโรคตับ
+• ข้อ ค. (ถ้าใช้เป็นระยะเวลานานแล้วหยุดยา จะก่อให้เกิด withdrawal symptoms ได้): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ไม่ก่อให้เกิด hang over effect เหมือน diazepam): เป็น long-acting Benzodiazepine มี active metabolites (nordiazepam) สะสมในผู้สูงอายุ ทำให้ง่วงซึม หกล้ม เสี่ยง fracture
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Headache โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 49 | ANS: 3 ===
+Q: Alzheimer's disease เป็นโรคของระบบประสาทส่วนกลางชนิดหนึ่งซึ่งทำให้เกิดอาการความจำเสื่อม (dementia) ก่อนวัยอันสมควร เซลล์ประสาทที่พบว่ามีสภาพเสื่อมอย่างเด่นชัดคือ
+C1: Noradrenergic neurons จาก locus ceruleus ไปยัง cerebral cortex
+C2: Serotoninergic neurons จาก raphe nucleus ไปยัง cerebral cortex
+C3: Cholinergic neurons จาก septum ไปยัง hippocampus
+C4: Dopaminergic neurons จาก midbrain ไปยัง limbic system
+C5: GABAergic neurons จาก striatum ไปยัง substantial nigra
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Cholinergic neurons จาก septum ไปยัง hippocampus
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Dementia, Alzheimer's มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Cholinergic neurons จาก septum ไปยัง hippocampus ในผู้ป่วย Alzheimer's disease จะมีการเสื่อมสลายของ cholinergic neurons โดยเฉพาะกลุ่มที่ส่งกระแสประสาทจาก basal nucleus of Meynert และ septum ไปยัง cortex และ hippocampus ส่งผลให้ระดับ acetylcholine ลดลงอย่างมาก สอดคล้องกับ cholinergic hypothesis
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Noradrenergic neurons จาก locus ceruleus ไปยัง cerebral cortex): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Serotoninergic neurons จาก raphe nucleus ไปยัง cerebral cortex): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Dopaminergic neurons จาก midbrain ไปยัง limbic system): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (GABAergic neurons จาก striatum ไปยัง substantial nigra): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+
+=== IDX 50 | ANS: 2 ===
+Q: พยาธิสภาพที่พบในสมองของผู้ป่วย Alzheimer's disease นั้น ได้แก่ลักษณะดังต่อไปนี้
+C1: ปริมาณ choline ในสมองมากกว่าปกติ
+C2: เนื้อสมองมี neurofibrillary tangles และ senile plaque มากกว่าปกติ
+C3: มี enzyme choline acetyltransferase มากกว่าปกติ
+C4: สมองมีขนาดใหญ่กว่าปกติ
+C5: มีปริมาณ enzyme Monoamine oxidase ในสมองมากกว่าปกติ
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ข. เนื้อสมองมี neurofibrillary tangles และ senile plaque มากกว่าปกติ
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Dementia, Alzheimer's มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+เนื้อสมองมี neurofibrillary tangles และ senile plaque มากกว่าปกติ พยาธิสภาพหลักที่จำเพาะต่อการวินิจฉัย Alzheimer's disease คือ การสะสมของ Extracellular amyloid-beta plaques (senile plaques) และ Intracellular neurofibrillary tangles (hyperphosphorylated tau protein) รวมถึงการลดลงของเอนไซม์ Choline acetyltransferase (ChAT)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ปริมาณ choline ในสมองมากกว่าปกติ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (มี enzyme choline acetyltransferase มากกว่าปกติ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (สมองมีขนาดใหญ่กว่าปกติ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (มีปริมาณ enzyme Monoamine oxidase ในสมองมากกว่าปกติ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Dementia, Alzheimer's โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 51 | ANS: 1 ===
+Q: การรักษาผู้ป่วย Alzheimer's disease นั้นได้เพียงการประคับประคองให้ผู้ป่วยมีคุณภาพชีวิตในแต่ละวันดีขึ้น และเน้นการบรรเทาอาการความจำเสื่อมโดยอาจใช้ยาต่อไปนี้ ยกเว้น
+C1: Cholinergic antagonists
+C2: Acetylcholine esterase inhibitors
+C3: Estrogen hormone
+C4: Acetylcholine precursors
+C5: NSAID (Non-Steroidal Anti-inflammatory Drugs)
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Cholinergic antagonists
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Dementia, Alzheimer's มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Cholinergic antagonists การรักษาหลักเน้นการเพิ่มระดับ Acetylcholine เช่น Acetylcholine esterase inhibitors หรือการใช้สารตั้งต้น (precursors) รวมถึงฮอร์โมนและสารต้านอักเสบตามแนวทางการศึกษา ส่วน Cholinergic antagonists จะยิ่งทำให้อาการความจำเสื่อมแย่ลงเนื่องจากไปบล็อกฤทธิ์ของ Acetylcholine เพิ่มเติม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Acetylcholine esterase inhibitors): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Estrogen hormone): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Acetylcholine precursors): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (NSAID (Non-Steroidal Anti-inflammatory Drugs)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Dementia, Alzheimer's โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 52 | ANS: 2 ===
+Q: นายสุรชาติเป็นผู้ป่วย Alzheimer's disease จากการตรวจร่างกายพบว่า เอนไซม์ของตับ (aspartate aminotransferase และ alkaline phosphate) ในเซรั่มสูงกว่าปกติมาก ท่านคิดว่ายาบรรเทาอาการความจำเสื่อมตัวใดไม่ควรใช้
+ยาบรรเทาอาการความจำเสื่อมตัวใดไม่ควรใช้ในผู้ป่วยรายนี้
+C1: Galantamine
+C2: Tacrine
+C3: Donepezil
+C4: Rivastigmine
+C5: ทุกตัวในข้อ ก ถึง ง
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Tacrine
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Dementia, Alzheimer's มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Tacrine เป็น AChEI รุ่นแรกที่มีรายงานการเกิดพิษต่อตับ (hepatotoxicity) สูงมาก ทำให้ค่าเอนไซม์ตับสูงขึ้นอย่างชัดเจน ปัจจุบันจึงไม่แนะนำให้ใช้ Tacrine ในผู้ป่วยที่มีความผิดปกติของตับ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Galantamine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Donepezil): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Rivastigmine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ทุกตัวในข้อ ก ถึง ง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Dementia, Alzheimer's โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 53 | ANS: 1 ===
+Q: ยาใดต่อไปนี้เป็นยารักษาโรคอัลไซเมอร์ ระดับ severe ได้
+C1: Donepezil
+C2: Rivastigmine
+C3: Galantamine
+C4: Tacrine
+C5: Memantine
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Donepezil
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Dementia, Alzheimer's มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Donepezil Memantine เป็น NMDA receptor antagonist ที่ข้อบ่งใช้หลักคือใช้รักษาโรคอัลไซเมอร์ในระดับปานกลางถึงรุนแรง (moderate to severe) ในขณะที่ AChEIs ส่วนใหญ่ใช้ในระดับ mild to moderate
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Rivastigmine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Galantamine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Tacrine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Memantine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Dementia, Alzheimer's โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 54 | ANS: 1 ===
+Q: “Plaques protein” ต้นเหตุของโรคอัลไซเมอร์เกิดจากทำลายโปรตีนใดผิดปกติไป
+C1: β - Amyloid protein
+C2: Intracellular Neurofibrillary Tangles (NFTs)
+C3: Tau protein
+C4: Myelin
+C5: N-acetylgalactosamine-4-sulfatase
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. β - Amyloid protein
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+β - Amyloid protein Senile plaques หรือ Amyloid plaques เกิดจากการสะสมที่ผิดปกติของโปรตีน Beta-amyloid ซึ่งเป็นผลมาจากการตัดโปรตีน Amyloid precursor protein (APP) ด้วยเอนไซม์ Beta และ Gamma secretase ที่ผิดปกติ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Intracellular Neurofibrillary Tangles (NFTs)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Tau protein): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Myelin): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (N-acetylgalactosamine-4-sulfatase): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Headache โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 55 | ANS: 1 ===
+Q: ข้อใดไม่ใช่กลไกการเกิดโรคอัลไซเมอร์
+C1: ขาด serotonin และ dopamine ทำให้ behavioral disturbances
+C2: ขาด Acetylcholine ทำให้ memory loss
+C3: Glutamate มีน้อยเกินไปโดยหลั่งจากการกระตุ้น receptor ด้วย แคลเซียม
+C4: การทำงานของ monoamine oxidase type B เพิ่มขึ้น
+C5: เกิดการสะสมของ plaques และ tangles protein
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ขาด serotonin และ dopamine ทำให้ behavioral disturbances
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Dementia, Alzheimer's มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ขาด serotonin และ dopamine ทำให้ behavioral disturbances พยาธิ生理ของ Alzheimer's disease เกี่ยวข้องกับการลดลงของ Acetylcholine (cholinergic hypothesis), การสะสมของ amyloid plaques และ neurofibrillary tangles (tau protein), รวมถึง excitotoxicity จาก Glutamate ที่ *มากเกินไป• (excessive glutamate) ไม่ใช่น้อยเกินไป ส่วนการขาด serotonin/dopamine และการเพิ่มขึ้นของ MAO-B เกี่ยวข้องกับอาการทางพฤติกรรมและจิตเวชในผู้ป่วยสมองเสื่อม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ขาด Acetylcholine ทำให้ memory loss): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Glutamate มีน้อยเกินไปโดยหลั่งจากการกระตุ้น receptor ด้วย แคลเซียม): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (การทำงานของ monoamine oxidase type B เพิ่มขึ้น): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (เกิดการสะสมของ plaques และ tangles protein): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dementia, Alzheimer's เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Dementia, Alzheimer's โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 56 | ANS: 1 ===
+Q: ชายไทย อายุ 75 ปี มีประวัติเป็นโรคความดันโลหิตสูงมาประมาณ 5 ปี และมักปวดหัวเข่าเป็นประจำ ระยะหลังเริ่มมีอาการ tremor มากขึ้น เดินตัวแข็ง ก้าวช้า ๆ ล้มลง 4 ครั้งในช่วง 2 เดือนที่ผ่านมา ได้รับการวินิจฉัยว่าเป็นโรค Parkinson ยาที่ผู้ป่วยได้รับมีดังนี้ Reserpine 0.1 mg, Hydralazine HCL 25 mg, Hydrochlorothiazide 15 mg tablet 1x2, Naproxen 250 mg 1x2 prn, Selegiline 5 mg 1x1, Benserazide/levodopa 50/200 mg 1x3, Multivitamin 1x3
+ยาตัวที่อาจมีผลทำให้อาการของโรค Parkinson เลวลงในผู้ป่วยรายนี้
+C1: Reserpine
+C2: Hydralazine
+C3: Hydrochlorothiazide
+C4: Naproxen
+C5: Selegiline
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Reserpine
+
+💡 Background:
+ภาวะความดันโลหิตสูงเป็นปัจจัยเสี่ยงหลักของ cardiovascular disease การเลือก first-line antihypertensive agents ต้องพิจารณาตาม compelling indications
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Reserpine มีกลไก deplete catecholamines (รวมถึง dopamine) ในปลายประสาทส่วนกลาง ทำให้เกิดภาวะ drug-induced Parkinsonism หรือทำให้อาการของโรค Parkinson แย่ลงได้อย่างชัดเจน
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Hydralazine): เป็น direct arteriolar vasodilator ใช้ร่วมกับ isosorbide dinitrate ใน HFrEF (โดยเฉพาะคนผิวดำ) หรือรักษา severe HTN ในหญิงตั้งครรภ์ แต่เสี่ยงต่อ drug-induced lupus
+• ข้อ ค. (Hydrochlorothiazide): เป็น Thiazide diuretic ลด plasma volume แต่อาจทำให้เกิด hypokalemia, hyponatremia, hyperuricemia และ hyperglycemia และ efficacy ลดลงมากเมื่อ eGFR < 30 mL/min
+• ข้อ ง. (Naproxen): เป็น non-selective NSAID ที่มี cardiovascular safety profile ดีที่สุด และมี efficacy สูงในการระงับ acute inflammation
+• ข้อ จ. (Selegiline): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคความดันโลหิตสูง ในเวชปฏิบัติทั่วไป พ.ศ. 2562 (สมาคมความดันโลหิตสูงแห่งประเทศไทย) & 2020 International Society of Hypertension (ISH) Global Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Cardiovascular Safety: เป็น non-selective NSAID ที่มีข้อมูลความปลอดภัยต่อระบบหัวใจและหลอดเลือด (CV safety) ดีที่สุดในกลุ่ม NSAIDs เมื่อจำเป็นต้องใช้ในผู้ป่วยที่มี CV risk
+• GI Risk & Protection: มีความเสี่ยงต่อระบบทางเดินอาหาร (GI toxicity/peptic ulcer) สูงกว่า ibuprofen ควรให้ร่วมกับ PPI ในผู้ป่วยที่มี GI risk factor
+
+=== IDX 57 | ANS: 3 ===
+Q: ยา benserazide ที่ผู้ป่วยได้รับ ออกฤทธิ์ยับยั้งที่ enzyme ใด
+C1: Monoamine oxidase-A
+C2: Monoamine oxidase-B
+C3: Dopa decarboxylase
+C4: Catechol-O-methyltransferase
+C5: Acetyltransferase
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Dopa decarboxylase
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Parkinson disease มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Dopa decarboxylase Benserazide เป็นยา peripheral dopa decarboxylase inhibitor (DDI) ซึ่งใช้ร่วมกับ Levodopa เพื่อป้องกันการเปลี่ยน levodopa เป็น dopamine ในกระแสเลือดก่อนเข้าสู่สมอง ช่วยลดผลข้างเคียง peripheral side effects เช่นคลื่นไส้อาเจียน และเพิ่มปริมาณยาที่เข้าสู่สมอง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Monoamine oxidase-A): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Monoamine oxidase-B): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Catechol-O-methyltransferase): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Acetyltransferase): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการวินิจฉัยและรักษาโรคพาร์กินสันสำหรับแพทย์ พ.ศ. 2562 (สถาบันประสาทวิทยา กรมการแพทย์) & MDS Clinical Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Parkinson disease โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 58 | ANS: 5 ===
+Q: ยา selegiline ที่ผู้ป่วยได้รับ มีกลไกการออกฤทธิ์อย่างไร
+C1: Dopamine reuptake inhibitor
+C2: NMDA receptor antagonist
+C3: Catechol-O-methyltransferase inhibitor
+C4: Dopa decarboxylase inhibitor
+C5: Monoamine oxidase-B inhibitor
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ จ. Monoamine oxidase-B inhibitor
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Parkinson disease มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Monoamine oxidase-B inhibitor Selegiline เป็นยาในกลุ่ม selective Monoamine oxidase-B (MAO-B) inhibitor ที่ช่วยยับยั้งการสลายตัวของ dopamine ในสมอง ทำให้ระดับ dopamine ใน CNS เพิ่มขึ้น
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Dopamine reuptake inhibitor): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (NMDA receptor antagonist): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Catechol-O-methyltransferase inhibitor): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Dopa decarboxylase inhibitor): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการวินิจฉัยและรักษาโรคพาร์กินสันสำหรับแพทย์ พ.ศ. 2562 (สถาบันประสาทวิทยา กรมการแพทย์) & MDS Clinical Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+
+=== IDX 59 | ANS: 2 ===
+Q: ยาชนิดใดห้ามใช้ร่วมกับ selegiline
+C1: Pindolol
+C2: Pethidine
+C3: Propranolol
+C4: Pentamidine
+C5: Pentoxifylline
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Pethidine
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Pethidine การใช้ Selegiline ร่วมกับยากลุ่ม opioids โดยเฉพาะ Pethidine (meperidine) หรือ SSRIs/TCAs อาจทำให้เกิดกลุ่มอาการรุนแรง Serotonin syndrome หรือความดันโลหิตสูงวิกฤตได้ เนื่องจากฤทธิ์ยับยั้ง MAO
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Pindolol): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Propranolol): เป็น non-selective beta-blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับ performance anxiety, essential tremor, migraine prophylaxis และ thyroid storm แต่ contraindication ใน asthma
+• ข้อ ง. (Pentamidine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Pentoxifylline): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+
+=== IDX 60 | ANS: 1 ===
+Q: ถ้าช่วงนี้ผู้ป่วยเริ่มมีปัญหาการเกิดอาการของ dyskinesia ควรจะแก้ไขอย่างไร
+C1: หยุดยา selegiline
+C2: ให้ bromocriptine
+C3: ลดขนาดยา benserazide
+C4: หยุดยา selegiline และให้ bromocriptine
+C5: หยุดยา selegiline ร่วมกับการลดขนาดยา benserazide และให้ bromocriptine
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. หยุดยา selegiline
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Parkinson disease มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+หยุดยา selegiline Levodopa-induced dyskinesia (LID) มักเกิดจากการใช้ Levodopa (Benserazide/levodopa) ในขนาดที่สูงเกินไปหรือใช้มาเป็นเวลานาน แนวทางแก้ไขหลักคือการปรับลดขนาดยา levodopa/benserazide ลง หรืออาจแบ่งมื้อยาให้ถี่ขึ้นแต่ขนาดน้อยลง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ให้ bromocriptine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ลดขนาดยา benserazide): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (หยุดยา selegiline และให้ bromocriptine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (หยุดยา selegiline ร่วมกับการลดขนาดยา benserazide และให้ bromocriptine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการวินิจฉัยและรักษาโรคพาร์กินสันสำหรับแพทย์ พ.ศ. 2562 (สถาบันประสาทวิทยา กรมการแพทย์) & MDS Clinical Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Parkinson disease โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+
+=== IDX 61 | ANS: 1 ===
+Q: ผู้ป่วยอายุ 65ปี จะทำอย่างไรเมื่อผู้ป่วยต้องใช้ยาเยอะ ในการให้ฉลากยาหลายตัวในการคำนึงถึง pharmaco
+technology และการออกแบบเพื่อผู้ใช้ universal center design
+C1: เขียนฉลากตัวบรรจงให้ผู้ป่วยอ่าน
+C2: จัด pillbox ตามวันให้ผู้ป่วย และสอนให้ผู้ป่วยทำให้ตัวเองในวันถัดไป
+C3: อ่านฉลากให้ผู้ป่วยฟังอย่างละเอียด ให้ผู้ป่วยซักถามเพิ่มเติม
+C4: บอกให้ผู้ป่วยหาคนมาดูแลเรื่องยา
+C5: ท าแผ่นพับภาษาไทย แนบให้ผู้ป่วยไปใช้ CC มาด้วยอาการปวดศีรษะข้างเดียว HPI ปวดศีรษะบริเวณขมับด้านขวา ปวดแบบตุบๆ pain score 8 ปวดนานประมาณ 5 ชม. เวลาปวดจะมีอาการคลื่นไส้อาเจียนร่วมด้วย ก่อนปวดศีรษะรู้สึกเห็นแสงเป็นเส้นซิกแซกที่ด้านขวา
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. เขียนฉลากตัวบรรจงให้ผู้ป่วยอ่าน
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+เขียนฉลากตัวบรรจงให้ผู้ป่วยอ่าน การเลือก เขียนฉลากตัวบรรจงให้ผู้ป่วยอ่าน เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Headache & Migraine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (จัด pillbox ตามวันให้ผู้ป่วย และสอนให้ผู้ป่วยทำให้ตัวเองในวันถัดไป): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (อ่านฉลากให้ผู้ป่วยฟังอย่างละเอียด ให้ผู้ป่วยซักถามเพิ่มเติม): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (บอกให้ผู้ป่วยหาคนมาดูแลเรื่องยา): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Headache โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+

@@ -1,0 +1,251 @@
+=== 32 (ans: 4) ===
+Q: สถานการณ์ที่ 5 ผู้ป่วยชาย อายุ 25 ปี
+Dx. Tonic-clonic seizer (first diagnosis)
+Rx. Carbamazepine BID 30 F/U 2 wk.
+ระดับยา carbamazepine สามารถเพิ่มได้เมื่อใช้ร่วมกับยาใด
+  1: Folic acid
+  2: Nevirapine
+  3: Phenytoin
+  4: Clarithromycin
+  5: Mebendazole
+
+=== 33 (ans: 1) ===
+Q: ข้อใดคือกลไกการออกฤทธิ์ของ carbamazepine
+  1: จับกับ sodium channel ที่อยู่ใน inactivated state
+  2: จับกับ T-type calcium channel
+  3: ออกฤทธิ์ต่อ GABA receptor/ chloride-ion pore complex
+  4: ออกฤทธิ์ที่ NMDA receptor
+  5: ออกฤทธิ์ยับยั้ง second messengers
+
+=== 34 (ans: 2) ===
+Q: โรคลมชักมีสาเหตุจากทุกข้อ ยกเว้นข้อใด
+  1: อุบัติเหตุทางสมอง
+  2: การติดเชื้อในหูชั้นกลาง
+  3: Hypoglycemia
+  4: เนื้องอกในสมอง
+  5: ไข้สูงในเด็ก
+
+=== 35 (ans: 3) ===
+Q: ข้อใดคือข้อบ่งใช้ของ carbamazepine นอกเหนือจากรักษาโรคลมชัก
+  1: Anxiety
+  2: Muscle relaxant
+  3: Trigeminal neuralgia
+  4: Anti-arrhythmia
+  5: Febrile Seizure
+
+=== 36 (ans: 5) ===
+Q: สถานการณ์ที่ 6 ผู้ป่วยมาพบท่านที่ร้านยา ซักประวัติแล้วพบว่าในระยะครึ่งปีที่ผ่านมาเป็นลมหมดสติหลายครั้ง มีการชักเกร็งระหว่างหมดสติทุกครั้ง ครั้งนี้ผู้ป่วยต้องการซื้อยารักษา
+ในฐานะเภสัชกรประจำร้านยาท่านทำอย่างไร
+  1: ซักประวัติเพิ่มเติมพบว่า ผู้ป่วยมีแนวโน้มเครียดง่ายจากการทำงาน จึงให้ยาคลายกังวลและนัดพบในอีก 1 เดือน
+  2: ซักประวัติเพิ่มเติมพบว่ามีสุขภาพอ่อนแอ จึงให้่าวิตามินและนัดมาพบในอีก 1 สัปดาห์
+  3: ให้ยาคลายกล้ามเนื้อเพื่อป้องกันอาการชักเกร็งระหว่างหมดสติ
+  4: ซักประวัติเพิ่มเติมพบว่ามีสุขภาพอ่อนแอ จึงแนะนำให้พักผ่อนให้เพียงพอ
+  5: ซักประวัติเพิ่มเติมและแนะนำให้ไปพบแพทย์
+
+=== 37 (ans: 2) ===
+Q: หนึ่งเดือนต่อมาผู้ป่วยได้นำใบสั่งยามาซื้อยา ดังนี้ นางสุดใจ อายุเยาว์ อายุ 25 ปี Dx: F/U Epilepsy Rx Dilantin® 100 mg 3 x 1 hs 30 วัน
+Phenytoin มีกลไกการออกฤทธิ์ในการรักษาโรคลมชักอย่างไร
+  1: Block PTP (post tetanic potentiation)
+  2: Decrease post-synaptic excitation
+  3: Increase GABA activity
+  4: Decrease excitatory neurotransmitter
+  5: Inhibit protein kinase-C
+
+=== 38 (ans: 5) ===
+Q: หนึ่งเดือนต่อมาผู้ป่วยได้นำใบสั่งยามาซื้อยา ดังนี้ นางสุดใจ อายุเยาว์ อายุ 25 ปี Dx: F/U Epilepsy Rx Dilantin® 100 mg 3 x 1 hs 30 วัน
+ก่อนจ่ายยานี้ ท่านจะให้คำแนะนำในการใช้ยาแก่ผู้ป่วยรายนี้อย่างไร
+  1: รับประทานยานี้หลังอาหารทันที
+  2: ดื่มน้ำมาก ๆ หลังรับประทานยา
+  3: เมื่ออาการดีขึ้นสามารถปรับลดขนาดยาได้
+  4: ห้ามรับประทานพร้อมนม
+  5: กินยาติดต่อกันเป็นประจำทุกวัน
+
+=== 39 (ans: 1) ===
+Q: นางสุดใจมาถามเภสัชกรที่ห้องยาโดยสงสัยว่าในการรับประทานยาแต่ละวัน ไม่เป็นเวลาเดียวกันทุกวันคลาดเคลื่อนไม่เกิน 2-3 ชั่วโมง จะเกิดปัญหาต่อการรักษาหรือไม่ เภสัชกรให้คำตอบว่าไม่เป็นไร ท่านคิดว่าปัจจัยในข้อใดทำให้เภสัชกรตอบเช่นนี้
+ปัจจัยในข้อใดทำให้เภสัชกรตอบเช่นนี้
+  1: ค่าครึ่งชีวิตของ phenytoin ยาว
+  2: Phenytoin ถูกกำจัดทางไตน้อยกว่า 5%
+  3: เภสัชจลนศาสตร์ของยาเป็นแบบไม่เป็นเส้นตรง
+  4: ยามีผลต่อเอนไซม์ Cytochrome P450 system
+  5: Phenytoin ไม่เกิด first pass metabolism
+
+=== 40 (ans: 4) ===
+Q: เภสัชจลนศาสตร์ของ phenytoin ที่เป็นแบบไม่เป็นเส้นตรง (non-linear pharmacokinetic) หมายความว่าอย่างไร
+  1: หาก plot graph ระหว่างขนาดยาและความเข้มข้นไม่มีส่วนที่เป็นเส้นตรง
+  2: ยาถูกกำจัดจากร่างกายได้หลายกลไก
+  3: ขนาดยาที่สูงขึ้น จะได้ฤทธิ์ยาเพิ่มขึ้นน้อยกว่าที่ควรจะเป็น
+  4: ความเข้มข้นของยาในกระแสเลือดที่เพิ่มขึ้นไม่เป็นสัดส่วนโดยตรงกับขนาดยา
+  5: เมื่อขนาดยาที่สูงขึ้น ณ จุดหนึ่ง ความสัมพันธ์ของขนาดยาและความเข้มข้นในกระแสเลือดจะเป็นสัดส่วนผกผัน
+
+=== 41 (ans: 1) ===
+Q: ข้อใดเป็นผลข้างเคียงจากการใช้ phenytoin ติดต่อกันเป็นระยะเวลานาน
+  1: Gingival hyperplasia
+  2: Ataxia
+  3: Mental retardation
+  4: Blurred vision
+  5: Hyperactivity
+
+=== 42 (ans: 4) ===
+Q: ผู้ป่วยมาพบแพทย์ตามนัด แพทย์พบว่าผู้ป่วยมีอาการตากระตุก (nystagmus) แพทย์สงสัยว่าอาการดังกล่าวเกิดจากพิษของยา เมื่อปรึกษาเภสัชกร ท่านจะให้คำแนะนำต่อไปนี้ ยกเว้น
+ข้อใดคือคำแนะนำที่ไม่ถูกต้องเมื่อผู้ป่วยเกิดอาการตากระตุกจากพิษยา
+  1: ควรตรวจสอบอาการเดินเซ (ataxia) ร่วมด้วย
+  2: สอบถามประวัติการใช้ยาของผู้ป่วย
+  3: ตรวจวัดระดับยาในเลือด
+  4: ใช้ diazepam เพื่อควบคุมอาการ nystagmus ก่อนให้การรักษาต่อไป
+  5: ผู้ป่วยควรหยุดยา phenytoin และรอดูอาการ
+
+=== 43 (ans: 5) ===
+Q: ข้อใดไม่ถูกต้องเกี่ยวกับหลักการใช้ยากันชัก
+  1: ควรเริ่มต้นการรักษาด้วยยาทีละตัว (monotherapy)
+  2: ควรเริ่มต้นด้วยขนาดยาต่ำ ๆ แล้วจึงเพิ่มขนาดยาขึ้น
+  3: การตรวจวัดระดับยาในเลือดอาจไม่จำเป็นในทางปฏิบัติ
+  4: ขนาดของยาไม่จำเป็นต้องเท่ากัน (fixed dose) ในผู้ป่วยทุกราย
+  5: ควรเลือกยากันชักชนิดใหม่เช่น gabapentin เป็นอันดับแรกในการรักษาเนื่องจากมีประสิทธิภาพสูง
+
+=== 44 (ans: 1) ===
+Q: ข้อใดต่อไปนี้คืออาการข้างเคียงที่จะเกิดจากการได้รับยา phenytoin
+  1: Gum hyperplasia
+  2: Tachycardia
+  3: Dry mouth
+  4: Gastric irritation
+  5: Hair loss
+
+=== 45 (ans: 2) ===
+Q: กลไกการออกฤทธิ์ของ phenobarbital คือข้อใด
+  1: กระตุ้น Glutamate neurotransmission
+  2: กระตุ้น GABA neurotransmission
+  3: กระตุ้น Serotonin neurotransmission
+  4: ยับยั้ง Dopamine neurotransmission
+  5: ยับยั้ง Norepinephrine neurotransmission
+
+=== 46 (ans: 1) ===
+Q: Phenobarbital ให้ผลการรักษา epilepsy ชนิดใดได้ดีที่สุด
+  1: Generalized tonic-clonic (Grand mal) seizure
+  2: Absence (Petit mal) seizure
+  3: Atonic seizure
+  4: Clonic and myoclonic seizure
+  5: Tonic seizure
+
+=== 47 (ans: 5) ===
+Q: Lorazepam มีฤทธิ์ต่าง ๆ ต่อไปนี้ ยกเว้น
+  1: Hypnotic effect
+  2: Muscle-relaxing effect
+  3: Anticonvulsant effect
+  4: Antianxiety effect
+  5: Antidepressant effect
+
+=== 48 (ans: 4) ===
+Q: ข้อความต่อไปนี้ เกี่ยวกับ lorazepam ผิด
+  1: ออกฤทธิ์โดยการกระตุ้น GABA neurotransmission
+  2: Overdose ของ lorazepam สามารถใช้ flumazenil ซึ่งเป็น antidote รักษาได้
+  3: ถ้าใช้เป็นระยะเวลานานแล้วหยุดยา จะก่อให้เกิด withdrawal symptoms ได้
+  4: เป็น hepatic drug-metabolizing enzyme inducer
+  5: ไม่ก่อให้เกิด hang over effect เหมือน diazepam
+
+=== 49 (ans: 3) ===
+Q: Alzheimer's disease เป็นโรคของระบบประสาทส่วนกลางชนิดหนึ่งซึ่งทำให้เกิดอาการความจำเสื่อม (dementia) ก่อนวัยอันสมควร เซลล์ประสาทที่พบว่ามีสภาพเสื่อมอย่างเด่นชัดคือ
+  1: Noradrenergic neurons จาก locus ceruleus ไปยัง cerebral cortex
+  2: Serotoninergic neurons จาก raphe nucleus ไปยัง cerebral cortex
+  3: Cholinergic neurons จาก septum ไปยัง hippocampus
+  4: Dopaminergic neurons จาก midbrain ไปยัง limbic system
+  5: GABAergic neurons จาก striatum ไปยัง substantial nigra
+
+=== 50 (ans: 2) ===
+Q: พยาธิสภาพที่พบในสมองของผู้ป่วย Alzheimer's disease นั้น ได้แก่ลักษณะดังต่อไปนี้
+  1: ปริมาณ choline ในสมองมากกว่าปกติ
+  2: เนื้อสมองมี neurofibrillary tangles และ senile plaque มากกว่าปกติ
+  3: มี enzyme choline acetyltransferase มากกว่าปกติ
+  4: สมองมีขนาดใหญ่กว่าปกติ
+  5: มีปริมาณ enzyme Monoamine oxidase ในสมองมากกว่าปกติ
+
+=== 51 (ans: 1) ===
+Q: การรักษาผู้ป่วย Alzheimer's disease นั้นได้เพียงการประคับประคองให้ผู้ป่วยมีคุณภาพชีวิตในแต่ละวันดีขึ้น และเน้นการบรรเทาอาการความจำเสื่อมโดยอาจใช้ยาต่อไปนี้ ยกเว้น
+  1: Cholinergic antagonists
+  2: Acetylcholine esterase inhibitors
+  3: Estrogen hormone
+  4: Acetylcholine precursors
+  5: NSAID (Non-Steroidal Anti-inflammatory Drugs)
+
+=== 52 (ans: 2) ===
+Q: นายสุรชาติเป็นผู้ป่วย Alzheimer's disease จากการตรวจร่างกายพบว่า เอนไซม์ของตับ (aspartate aminotransferase และ alkaline phosphate) ในเซรั่มสูงกว่าปกติมาก ท่านคิดว่ายาบรรเทาอาการความจำเสื่อมตัวใดไม่ควรใช้
+ยาบรรเทาอาการความจำเสื่อมตัวใดไม่ควรใช้ในผู้ป่วยรายนี้
+  1: Galantamine
+  2: Tacrine
+  3: Donepezil
+  4: Rivastigmine
+  5: ทุกตัวในข้อ ก ถึง ง
+
+=== 53 (ans: 1) ===
+Q: ยาใดต่อไปนี้เป็นยารักษาโรคอัลไซเมอร์ ระดับ severe ได้
+  1: Donepezil
+  2: Rivastigmine
+  3: Galantamine
+  4: Tacrine
+  5: Memantine
+
+=== 54 (ans: 1) ===
+Q: “Plaques protein” ต้นเหตุของโรคอัลไซเมอร์เกิดจากทำลายโปรตีนใดผิดปกติไป
+  1: β - Amyloid protein
+  2: Intracellular Neurofibrillary Tangles (NFTs)
+  3: Tau protein
+  4: Myelin
+  5: N-acetylgalactosamine-4-sulfatase
+
+=== 55 (ans: 1) ===
+Q: ข้อใดไม่ใช่กลไกการเกิดโรคอัลไซเมอร์
+  1: ขาด serotonin และ dopamine ทำให้ behavioral disturbances
+  2: ขาด Acetylcholine ทำให้ memory loss
+  3: Glutamate มีน้อยเกินไปโดยหลั่งจากการกระตุ้น receptor ด้วย แคลเซียม
+  4: การทำงานของ monoamine oxidase type B เพิ่มขึ้น
+  5: เกิดการสะสมของ plaques และ tangles protein
+
+=== 56 (ans: 1) ===
+Q: ชายไทย อายุ 75 ปี มีประวัติเป็นโรคความดันโลหิตสูงมาประมาณ 5 ปี และมักปวดหัวเข่าเป็นประจำ ระยะหลังเริ่มมีอาการ tremor มากขึ้น เดินตัวแข็ง ก้าวช้า ๆ ล้มลง 4 ครั้งในช่วง 2 เดือนที่ผ่านมา ได้รับการวินิจฉัยว่าเป็นโรค Parkinson ยาที่ผู้ป่วยได้รับมีดังนี้ Reserpine 0.1 mg, Hydralazine HCL 25 mg, Hydrochlorothiazide 15 mg tablet 1x2, Naproxen 250 mg 1x2 prn, Selegiline 5 mg 1x1, Benserazide/levodopa 50/200 mg 1x3, Multivitamin 1x3
+ยาตัวที่อาจมีผลทำให้อาการของโรค Parkinson เลวลงในผู้ป่วยรายนี้
+  1: Reserpine
+  2: Hydralazine
+  3: Hydrochlorothiazide
+  4: Naproxen
+  5: Selegiline
+
+=== 57 (ans: 3) ===
+Q: ยา benserazide ที่ผู้ป่วยได้รับ ออกฤทธิ์ยับยั้งที่ enzyme ใด
+  1: Monoamine oxidase-A
+  2: Monoamine oxidase-B
+  3: Dopa decarboxylase
+  4: Catechol-O-methyltransferase
+  5: Acetyltransferase
+
+=== 58 (ans: 5) ===
+Q: ยา selegiline ที่ผู้ป่วยได้รับ มีกลไกการออกฤทธิ์อย่างไร
+  1: Dopamine reuptake inhibitor
+  2: NMDA receptor antagonist
+  3: Catechol-O-methyltransferase inhibitor
+  4: Dopa decarboxylase inhibitor
+  5: Monoamine oxidase-B inhibitor
+
+=== 59 (ans: 2) ===
+Q: ยาชนิดใดห้ามใช้ร่วมกับ selegiline
+  1: Pindolol
+  2: Pethidine
+  3: Propranolol
+  4: Pentamidine
+  5: Pentoxifylline
+
+=== 60 (ans: 1) ===
+Q: ถ้าช่วงนี้ผู้ป่วยเริ่มมีปัญหาการเกิดอาการของ dyskinesia ควรจะแก้ไขอย่างไร
+  1: หยุดยา selegiline
+  2: ให้ bromocriptine
+  3: ลดขนาดยา benserazide
+  4: หยุดยา selegiline และให้ bromocriptine
+  5: หยุดยา selegiline ร่วมกับการลดขนาดยา benserazide และให้ bromocriptine
+
+=== 61 (ans: 1) ===
+Q: ผู้ป่วยอายุ 65ปี จะทำอย่างไรเมื่อผู้ป่วยต้องใช้ยาเยอะ ในการให้ฉลากยาหลายตัวในการคำนึงถึง pharmaco
+technology และการออกแบบเพื่อผู้ใช้ universal center design
+  1: เขียนฉลากตัวบรรจงให้ผู้ป่วยอ่าน
+  2: จัด pillbox ตามวันให้ผู้ป่วย และสอนให้ผู้ป่วยทำให้ตัวเองในวันถัดไป
+  3: อ่านฉลากให้ผู้ป่วยฟังอย่างละเอียด ให้ผู้ป่วยซักถามเพิ่มเติม
+  4: บอกให้ผู้ป่วยหาคนมาดูแลเรื่องยา
+  5: ท าแผ่นพับภาษาไทย แนบให้ผู้ป่วยไปใช้ CC มาด้วยอาการปวดศีรษะข้างเดียว HPI ปวดศีรษะบริเวณขมับด้านขวา ปวดแบบตุบๆ pain score 8 ปวดนานประมาณ 5 ชม. เวลาปวดจะมีอาการคลื่นไส้อาเจียนร่วมด้วย ก่อนปวดศีรษะรู้สึกเห็นแสงเป็นเส้นซิกแซกที่ด้านขวา
+

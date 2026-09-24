@@ -1,13 +1,4 @@
-import json
-import re
-
-# Output file path
-output_file = r"C:\Users\thana\Desktop\PLE-CC\PLE CC Quiz\distractors_pulmo_part1.json"
-
-# We will construct the dictionary mapping pulmo_idx to distractors dict.
-# Let's write out all 35 questions' distractors carefully.
-
-distractors_data = {
+{
   "1": {
     "distractors": {
       "ก": "เพื่อให้สามารถดำเนินชีวิตได้ปกติเป็นหนึ่งในเป้าหมายหลักตาม GINA ในด้าน symptom control เพื่อให้ผู้ป่วยทำกิจกรรมประจำวันได้โดยไม่มีอาการรบกวน",
@@ -289,19 +280,3 @@ distractors_data = {
     }
   }
 }
-
-# Verify no asterisks in any values
-has_asterisk = False
-for q_idx, val in distractors_data.items():
-    for c_key, c_val in val["distractors"].items():
-        if "*" in c_val or "**" in c_val:
-            print(f"Error: Asterisk found in {q_idx} choice {c_key}")
-            has_asterisk = True
-
-if not has_asterisk:
-    print("Verification passed: ZERO asterisks found in all rationales!")
-
-with open(output_file, "w", encoding="utf-8") as f:
-    json.dump(distractors_data, f, ensure_ascii=False, indent=2)
-
-print("Saved output to", output_file)

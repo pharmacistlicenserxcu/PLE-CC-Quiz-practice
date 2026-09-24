@@ -1,0 +1,314 @@
+﻿Searching for LAMA in asthma (ID 54)...
+
+Searching for ID 55...
+
+Searching for ID 57...
+
+Searching for ID 58...
+=== Found in ../scripts/extracted_txt\PLE_CC1_2565_Day1_Key.txt ===
+
+ค. BP drop 
+ง. Hyperkalemia 
+จ. * จำ choice ไม;ได้ * 
+ 
+62. ผู้ป่วยอาการไม;ดีขึ้น แพทย์พิจารณาจ;าย antibiotic เพิ่ม ควรให้ตัวไหน ตามเกณฑ์โรคปอดอุดกั้นเรื้อรัง 
+2560 (เปลี่ยน Guideline ในปี 2568 : Guideline FHM@ 2024) 
+ก. Azithromycin 
+ข. Ciprofloxacin 
+ค. Doxycycline 
+ง. * จำ choice ไม;ได้ * 
+จ. * จำ choice ไม;ได้ * 
+ 
+63. สารช;วยในข้อใดช;วยให้ผงยา tiotropium bromide เปhยกง;ายเมื่อผงยาสัมผัสกับของเหลวในทางเดิน
+หายใจ  
+ก. Lecithin 
+ข. citric acid 
+ค. Algi
+----------------------------------------
+=== Found in ../scripts/extracted_txt\PLE_CC1_2565_Day1_Key_Alt.txt ===
+
+ค. BP drop 
+ง. Hyperkalemia 
+จ. * จำ choice ไม;ได้ * 
+ 
+62. ผู้ป่วยอาการไม;ดีขึ้น แพทย์พิจารณาจ;าย antibiotic เพิ่ม ควรให้ตัวไหน ตามเกณฑ์โรคปอดอุดกั้นเรื้อรัง 
+2560 (เปลี่ยน Guideline ในปี 2568 : Guideline FHM@ 2024) 
+ก. Azithromycin 
+ข. Ciprofloxacin 
+ค. Doxycycline 
+ง. * จำ choice ไม;ได้ * 
+จ. * จำ choice ไม;ได้ * 
+ 
+63. สารช;วยในข้อใดช;วยให้ผงยา tiotropium bromide เปhยกง;ายเมื่อผงยาสัมผัสกับของเหลวในทางเดิน
+หายใจ  
+ก. Lecithin 
+ข. citric acid 
+ค. Algi
+----------------------------------------
+=== Found in ../scripts/extracted_txt\PLE_CC1_2565_Day1_Q.txt ===
+
+ค. BP drop 
+ง. Hyperkalemia 
+จ. * จำ choice ไม;ได้ * 
+ 
+62. ผู้ป่วยอาการไม;ดีขึ้น แพทย์พิจารณาจ;าย antibiotic เพิ่ม ควรให้ตัวไหน ตามเกณฑ์โรคปอดอุดกั้นเรื้อรัง 
+2560 (เปลี่ยน Guideline ในปี 2568 : Guideline FHM@ 2024) 
+ก. Azithromycin 
+ข. Ciprofloxacin 
+ค. Doxycycline 
+ง. * จำ choice ไม;ได้ * 
+จ. * จำ choice ไม;ได้ * 
+ 
+63. สารช;วยในข้อใดช;วยให้ผงยา tiotropium bromide เปhยกง;ายเมื่อผงยาสัมผัสกับของเหลวในทางเดิน
+หายใจ  
+ก. Lecithin 
+ข. citric acid 
+ค. Algi
+----------------------------------------
+=== Found in ../scripts/extracted_txt\PLE_CC1_2565_Day1_Q_Verified.txt ===
+
+ค. BP drop 
+ง. Hyperkalemia 
+จ. * จำ choice ไม;ได้ * 
+ 
+62. ผู้ป่วยอาการไม;ดีขึ้น แพทย์พิจารณาจ;าย antibiotic เพิ่ม ควรให้ตัวไหน ตามเกณฑ์โรคปอดอุดกั้นเรื้อรัง 
+2560 (เปลี่ยน Guideline ในปี 2568 : Guideline FHM@ 2024) 
+ก. Azithromycin 
+ข. Ciprofloxacin 
+ค. Doxycycline 
+ง. * จำ choice ไม;ได้ * 
+จ. * จำ choice ไม;ได้ * 
+ 
+63. สารช;วยในข้อใดช;วยให้ผงยา tiotropium bromide เปhยกง;ายเมื่อผงยาสัมผัสกับของเหลวในทางเดิน
+หายใจ  
+ก. Lecithin 
+ข. citric acid 
+ค. Algi
+----------------------------------------
+
+Searching for ID 61...
+
+Searching for ID 63...
+=== Found in ../scripts/extracted_txt\PLE_CC1_2565_Day2_Key.txt ===
+alkalosis 
+ข. drowsiness 
+ค. hyper Mg 
+ง. hyperkalemia 
+จ. tachycardia 
+ 
+47. พบวLา salbutamol เปQน chiral molecule จึงมีทั้ง (R)Lsalbutamol และ (S)Lsalbutamol ขCอใดกลLาว 
+ถูกตCองเกี่ยวกับสารผสม 50:50 ระหวLาง (R)Lsalbutamol และ (S)Lsalbutamol  
+ก. Cis/Trans mixture 
+ข. Chiral mixture 
+ค. Racemic mixture 
+ง. Conformational mixture 
+จ. Mixed form mixture 
+ 
+กรณีศึกษา 16  
+ผูCปEวยมีอาการคลื่นไสCอาเจียน เบื่ออาหาร นำหนักลด 5 กิโลในสองสัปดาห6 ไดCรับการวินิจฉัย
+----------------------------------------
+เปQน chiral molecule จึงมีทั้ง (R)Lsalbutamol และ (S)Lsalbutamol ขCอใดกลLาว 
+ถูกตCองเกี่ยวกับสารผสม 50:50 ระหวLาง (R)Lsalbutamol และ (S)Lsalbutamol  
+ก. Cis/Trans mixture 
+ข. Chiral mixture 
+ค. Racemic mixture 
+ง. Conformational mixture 
+จ. Mixed form mixture 
+ 
+กรณีศึกษา 16  
+ผูCปEวยมีอาการคลื่นไสCอาเจียน เบื่ออาหาร นำหนักลด 5 กิโลในสองสัปดาห6 ไดCรับการวินิจฉัยวLาเปQน
+วัณโรคครั้งแรก ไมLเคยไดCรับยามากLอน ปฏิเสธโรคประจำตัว ไมLมีประวัติแพCยา 
+ 
+
+----------------------------------------
+=== Found in ../scripts/extracted_txt\PLE_CC1_2565_Day2_Key_Alt.txt ===
+alkalosis 
+ข. drowsiness 
+ค. hyper Mg 
+ง. hyperkalemia 
+จ. tachycardia 
+ 
+47. พบวLา salbutamol เปQน chiral molecule จึงมีทั้ง (R)Lsalbutamol และ (S)Lsalbutamol ขCอใดกลLาว 
+ถูกตCองเกี่ยวกับสารผสม 50:50 ระหวLาง (R)Lsalbutamol และ (S)Lsalbutamol  
+ก. Cis/Trans mixture 
+ข. Chiral mixture 
+ค. Racemic mixture 
+ง. Conformational mixture 
+จ. Mixed form mixture 
+ 
+กรณีศึกษา 16  
+ผูCปEวยมีอาการคลื่นไสCอาเจียน เบื่ออาหาร นำหนักลด 5 กิโลในสองสัปดาห6 ไดCรับการวินิจฉัย
+----------------------------------------
+เปQน chiral molecule จึงมีทั้ง (R)Lsalbutamol และ (S)Lsalbutamol ขCอใดกลLาว 
+ถูกตCองเกี่ยวกับสารผสม 50:50 ระหวLาง (R)Lsalbutamol และ (S)Lsalbutamol  
+ก. Cis/Trans mixture 
+ข. Chiral mixture 
+ค. Racemic mixture 
+ง. Conformational mixture 
+จ. Mixed form mixture 
+ 
+กรณีศึกษา 16  
+ผูCปEวยมีอาการคลื่นไสCอาเจียน เบื่ออาหาร นำหนักลด 5 กิโลในสองสัปดาห6 ไดCรับการวินิจฉัยวLาเปQน
+วัณโรคครั้งแรก ไมLเคยไดCรับยามากLอน ปฏิเสธโรคประจำตัว ไมLมีประวัติแพCยา 
+ 
+
+----------------------------------------
+=== Found in ../scripts/extracted_txt\PLE_CC1_2565_Day2_Q.txt ===
+alkalosis 
+ข. drowsiness 
+ค. hyper Mg 
+ง. hyperkalemia 
+จ. tachycardia 
+ 
+47. พบวLา salbutamol เปQน chiral molecule จึงมีทั้ง (R)Lsalbutamol และ (S)Lsalbutamol ขCอใดกลLาว 
+ถูกตCองเกี่ยวกับสารผสม 50:50 ระหวLาง (R)Lsalbutamol และ (S)Lsalbutamol  
+ก. Cis/Trans mixture 
+ข. Chiral mixture 
+ค. Racemic mixture 
+ง. Conformational mixture 
+จ. Mixed form mixture 
+ 
+กรณีศึกษา 16  
+ผูCปEวยมีอาการคลื่นไสCอาเจียน เบื่ออาหาร นำหนักลด 5 กิโลในสองสัปดาห6 ไดCรับการวินิจฉัย
+----------------------------------------
+เปQน chiral molecule จึงมีทั้ง (R)Lsalbutamol และ (S)Lsalbutamol ขCอใดกลLาว 
+ถูกตCองเกี่ยวกับสารผสม 50:50 ระหวLาง (R)Lsalbutamol และ (S)Lsalbutamol  
+ก. Cis/Trans mixture 
+ข. Chiral mixture 
+ค. Racemic mixture 
+ง. Conformational mixture 
+จ. Mixed form mixture 
+ 
+กรณีศึกษา 16  
+ผูCปEวยมีอาการคลื่นไสCอาเจียน เบื่ออาหาร นำหนักลด 5 กิโลในสองสัปดาห6 ไดCรับการวินิจฉัยวLาเปQน
+วัณโรคครั้งแรก ไมLเคยไดCรับยามากLอน ปฏิเสธโรคประจำตัว ไมLมีประวัติแพCยา 
+ 
+
+----------------------------------------
+=== Found in ../scripts/extracted_txt\PLE_CC1_2565_Day2_Q_Verified.txt ===
+alkalosis 
+ข. drowsiness 
+ค. hyper Mg 
+ง. hyperkalemia 
+จ. tachycardia 
+ 
+47. พบวLา salbutamol เปQน chiral molecule จึงมีทั้ง (R)Lsalbutamol และ (S)Lsalbutamol ขCอใดกลLาว 
+ถูกตCองเกี่ยวกับสารผสม 50:50 ระหวLาง (R)Lsalbutamol และ (S)Lsalbutamol  
+ก. Cis/Trans mixture 
+ข. Chiral mixture 
+ค. Racemic mixture 
+ง. Conformational mixture 
+จ. Mixed form mixture 
+ 
+กรณีศึกษา 16  
+ผูCปEวยมีอาการคลื่นไสCอาเจียน เบื่ออาหาร นำหนักลด 5 กิโลในสองสัปดาห6 ไดCรับการวินิจฉัย
+----------------------------------------
+เปQน chiral molecule จึงมีทั้ง (R)Lsalbutamol และ (S)Lsalbutamol ขCอใดกลLาว 
+ถูกตCองเกี่ยวกับสารผสม 50:50 ระหวLาง (R)Lsalbutamol และ (S)Lsalbutamol  
+ก. Cis/Trans mixture 
+ข. Chiral mixture 
+ค. Racemic mixture 
+ง. Conformational mixture 
+จ. Mixed form mixture 
+ 
+กรณีศึกษา 16  
+ผูCปEวยมีอาการคลื่นไสCอาเจียน เบื่ออาหาร นำหนักลด 5 กิโลในสองสัปดาห6 ไดCรับการวินิจฉัยวLาเปQน
+วัณโรคครั้งแรก ไมLเคยไดCรับยามากLอน ปฏิเสธโรคประจำตัว ไมLมีประวัติแพCยา 
+ 
+
+----------------------------------------
+
+Searching for ID 64...
+
+Searching for ID 65...
+
+Searching for ID 66...
+=== Found in ../scripts/extracted_txt\PLE_CC1_2564_All_Key.txt ===
+...................................................................................... 
+3. ข้อใดเป็นผลข้างเคียงของ salbutamol (ไอซ์ 014) 
+ 
+a. Tremor / b. Bradycardia / c. Diarrhea 
+ 
+a. Tremor จาก: https://wwwLmicromedexsolutionsL
+com.ejournal.mahidol.ac.th/micromedex2/librarian/CS/9E4E87/ND_PR/evidencexpert/ND_P/evidencexpert/CTOKHB@SHNMRGHDKCRXMB/94B994
+/ND_PG/evidencexpert/ND_B/evidencexpert/ND_AppProduct/evidencexper
+----------------------------------------
+=== Found in ../scripts/extracted_txt\PLE_CC1_2564_Day1_Key.txt ===
+สูบบุหรีÉ การขาด @@S จะเร่งให้เกิดภาวะถุงลมโป่งพองเร็วขึÊน  
+
+● การติดเชืÊอของระบบทางเดินหายใจ 
+ 
+4.ผลข้างเคียงของ Salbutamol คืออะไร 
+ก.Bradycardia 
+ข.Diarrhea 
+ค.Tremor 
+ง.Oral candidiasis 
+จ.Urinary retention 
+ 
+เฉลย Salbutamol เป็นยาในกลุ่ม ShortLacting beta2 agonist, R@A@ ซึÉงผลข้างเคียงทีÉพบได้บ่อยได้แก่ tremor, 
+anxiety, tachycardia, palpitation, hypokalemia 
+ 
+5.ควรแนะนําให้ผู้ป่วยฉีดวัคซีนอะไร  
+ก. Dengue 
+ข. hae
+----------------------------------------
+
+Searching for ID 68...
+=== Found in ../scripts/extracted_txt\PLE_CC1_2562_Key.txt ===
+etered dose solution for inhaler 
+จ. Nonpressurized metered dose suspension for inhaler 
+69. ขนาดยา aerosol evohaler ดูดซึมเข้าปอดได้ดีที่สุด 
+ก. > 100 ไมโครเมตร 
+ข. 50L100 ไมโครเมตร 
+ค. 31L49 ไมโครเมตร 
+ง. 5L30 ไมโครเมตร 
+จ. <5 ไมโครเมตร 
+70. สารทางเภสัชชนิดใดที่ต้องใส่ในยารูปแบบ evohaler  
+ก. Addutant 
+ข. Glidant 
+ค. Propellant 
+ง. Lubicant 
+จ. Solid carrier 
+ 
+L
+~Usimamstair
+X
+↑Ena
+X
+X
+insuite raarosta Interes
+X
+5 mg
+0 .75 my
+L
+X
+nonL
+----------------------------------------
+=== Found in ../scripts/extracted_txt\PLE_CC1_2562_Q.txt ===
+etered dose solution for inhaler 
+จ. Nonpressurized metered dose suspension for inhaler 
+69. ขนาดยา aerosol evohaler ดูดซึมเข้าปอดได้ดีที่สุด 
+ก. > 100 ไมโครเมตร 
+ข. 50L100 ไมโครเมตร 
+ค. 31L49 ไมโครเมตร 
+ง. 5L30 ไมโครเมตร 
+จ. <5 ไมโครเมตร 
+70. สารทางเภสัชชนิดใดที่ต้องใส่ในยารูปแบบ evohaler  
+ก. Addutant 
+ข. Glidant 
+ค. Propellant 
+ง. Lubicant 
+จ. Solid carrier 
+ 
+
+ 
+หË´มนµÆปทµซËµทºกกรณ· ÂวËนÃตÊจ²ÆดËร³บ¯นºญ´ต 
+ 
+ 
+ 
+479 
+ 
+71. คำแนะนำในข้
+----------------------------------------
+
+Searching for ID 71...

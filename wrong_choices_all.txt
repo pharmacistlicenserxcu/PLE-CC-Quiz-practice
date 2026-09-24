@@ -1,0 +1,209 @@
+ID 74 (Correct: ก)
+  ข: กินยาระบายร่วมด้วย โดยกินหลัง Niclosamide 2 ชั่วโมง เพื่อป้องกัน Cysticercosis
+  ค: หลีกเลี่ยง alcohol ทั้งขณะกินยาหรือหลังกิน 1 วัน
+  ง: อาการข้างเคียง คือ คลื่นไส้ อาเจียน ถ่ายท้อง ไม่สบายท้อง
+  จ: Niclosamide ถูกดูดซึมในลำไส้ได้ดี
+
+ID 75 (Correct: ค)
+  ก: ขัดขวางการสร้างผนังเซลล์
+  ข: ขัดขวางการสร้างผนังหุ้มเซลล์
+  ง: ขัดขวางการสังเคราะห์ nucleic acid
+  จ: Meropenem 1 g IV Q8H
+
+ID 76 (Correct: ค)
+  ก: 14 วัน
+  ข: 2 เดือน
+  ง: 4 เดือน
+  จ: 5 เดือน
+
+ID 77 (Correct: ค)
+  ก: HSV-1 และ 2
+  ข: CMV
+  ง: HPV
+  จ: HHV
+
+ID 78 (Correct: ค)
+  ก: AZT
+  ข: Stavudine
+  ง: Lamivudine
+  จ: ไม่มีข้อใดถูก
+
+ID 79 (Correct: ค)
+  ก: พยาธิตัวตืด
+  ข: พยาธิปากขอ
+  ง: พยาธิใบไม้
+  จ: พยาธิเท้าช้าง
+
+ID 80 (Correct: ค)
+  ก: ขัดขวางการสร้างผนังเซลล์
+  ข: ขัดขวางการสร้างผนังหุ้มเซลล์
+  ง: ขัดขวางการสังเคราะห์ nucleic acid
+  จ: ขัดขวางการสังเคราะห์ polypeptide
+
+ID 81 (Correct: ค)
+  ก: พญายอ
+  ข: ทองพันชั่ง
+  ง: ไพล
+  จ: ขมิ้น
+
+ID 82 (Correct: ค)
+  ก: Acyclovir
+  ข: Ganciclovir
+  ง: Pencyclovir
+  จ: Famciclovir
+
+ID 83 (Correct: ค)
+  ก: Reverse transcriptase
+  ข: Hydroxylase
+  ง: Kinase
+  จ: DNA polymerase
+
+ID 84 (Correct: ค)
+  ก: Praziquantel 5-25 mg/kg/day po once
+  ข: Niclosamide 2 q single dose
+  ง: Mebendazole 500 mg single dose
+  จ: ได้ทั้งข้อ ค และ ข้อ ง
+
+ID 85 (Correct: ข)
+  ก: ขัดขวางการสร้างผนังเซลล์
+  ค: ขัดขวางการสร้าง folic acid
+  ง: ขัดขวางการสังเคราะห์ nucleic acid
+  จ: ขัดขวางการสังเคราะห์ polypeptide
+
+ID 86 (Correct: ข)
+  ก: Valvovaginal candidiasis
+  ค: Non gonococcalurethritis
+  ง: Trichomoniasis
+  จ: Bacterial cystitis
+
+ID 87 (Correct: ข)
+  ก: ยาแคปซูลสกัดใบฟ้าทะลายโจร
+  ค: แคปซูลผงขมิ้นชัน
+  ง: ครีมสกัดจากใบพญายอ
+  จ: ตะไคร้หอม
+
+ID 88 (Correct: ข)
+  ก: Acute HIV infection
+  ค: Clinical latency
+  ง: Primary HIV infection
+  จ: AIDS
+
+ID 89 (Correct: ข)
+  ก: แพ้ ผื่นคัน
+  ค: หลอดลมอักเสบ
+  ง: คันบริเวณรอบทวารหนัก
+  จ: ลำไส้อักเสบ
+
+ID 90 (Correct: จ)
+  ก: ขัดขวางการสร้างผนังเซลล์
+  ข: ทำให้เกิดรูรั่วผนังเซลล์
+  ค: ขัดขวางการสร้าง folic acid
+  ง: ขัดขวางการสังเคราะห์ nucleic acid
+
+ID 91 (Correct: จ)
+  ก: Clotrimazole 500 mg เหน็บช่องคลอดครั้งเดียว
+  ข: Ketoconazole 200 mg รับประทานหลังอาหาร เช้าและเย็น เป็นเวลา 5 วัน
+  ค: Metronidazole 2 g รับประทานครั้งเดียว
+  ง: Doxycycline 100 mg รับประทานหลังอาหาร เช้าและเย็น เป็นเวลา 7 วัน
+
+ID 92 (Correct: จ)
+  ก: Lotions
+  ข: Ointments
+  ค: Creams
+  ง: Pastes
+
+ID 93 (Correct: จ)
+  ก: NVP, d4T, 3TC
+  ข: d4T, 3TC, indinavir/ritonavir
+  ค: AZT, 3TC, indinavir/ritonavir
+  ง: d4T, 3TC, EFV
+
+ID 94 (Correct: จ)
+  ก: อาบน้ำหลังจากตื่นนอนในตอนเช้า
+  ข: ตัดเล็บมือให้สั้น และล้างมือให้สะอาดหลังเข้าห้องน้ำ
+  ค: สวมรองเท้าทุกครั้งที่ออกจากบ้าน
+  ง: รับประทานอาหารที่สุก ดื่มน้ำสะอาด
+
+ID 95 (Correct: ง)
+  ก: Aluminum hydroxide
+  ข: Calcium carbonate
+  ค: Carminative mixture
+  จ: Lithium
+
+ID 96 (Correct: ง)
+  ก: Clotrimazole เหน็บช่องคลอดทำให้เกิด super infection จาก bacteria
+  ข: Ketoconazole ชนิดรับประทานทำให้การรับรู้รสผิดปกติ
+  ค: Metronidazole ทำให้คลื่นไส้ อาเจียน
+  จ: Ciprofloxacin ทำให้ตับอักเสบ
+
+ID 97 (Correct: ง)
+  ก: ยาต้านไวรัสทุกชนิดสามารถขายได้ในร้านยาที่มีเภสัชกรประจำร้าน
+  ข: ยาต้านไวรัสทุกชนิดต้องจ่ายตามใบสั่งแพทย์เท่านั้น
+  ค: ยาต้านไวรัส acyclovir ชนิดรับประทาน เป็นยาควบคุมพิเศษ
+  จ: บุคลากรทางการแพทย์ทุกวิชาชีพสามารถจ่ายยาต้านไวรัส acyclovir ชนิดทาเฉพาะที่ได้
+
+ID 98 (Correct: ง)
+  ก: Steven Johnson syndrome
+  ข: Toxic epidermal necrolysis
+  ค: Rash with blisters
+  จ: ถูกทุกข้อ
+
+ID 99 (Correct: ง)
+  ก: พยาธิตัวตืด
+  ข: พยาธิปากขอ
+  ค: พยาธิเส้นด้าย
+  จ: พยาธิเท้าช้าง
+
+ID 100 (Correct: ง)
+  ก: Diarrhea
+  ข: Fatigue
+  ค: ปัสสาวะสีแดง
+  จ: Megaloblastic anemia
+
+ID 101 (Correct: ง)
+  ก: การรักษาต้องรักษาทั้งผู้ป่วยและสามี แม้ว่าสามีจะไม่มีอาการใดๆ
+  ข: จำเป็นต้องให้ยาเพื่อป้องกันการกลับเป็นซ้ำเนื่องจากผู้ป่วยยังอายุน้อย
+  ค: ห้ามดื่มนมพร้อมยา เนื่องจากนมจะทำให้ยาถูกดูดซึมได้ลดลง
+  จ: ไม่ควรล้างช่องคลอดอย่างพร่ำเพรื่อ
+
+ID 102 (Correct: ง)
+  ก: Indinavir
+  ข: Lamivudine
+  ค: Nevirapine
+  จ: Zidovudine
+
+ID 103 (Correct: ง)
+  ก: Praziquantel 5-25 mg/kg/day po once
+  ข: Niclosamide 2 g single dose
+  ค: Albendazole 400 mg single dose
+  จ: ได้ทั้งข้อ 3 และ ข้อ 4
+
+ID 104 (Correct: ค)
+  ก: Cephalosporin
+  ข: Tetracycline
+  ง: Chloramphenicol
+  จ: Trimethoprim
+
+ID 105 (Correct: ค)
+  ก: Tinea capitis
+  ข: Tinea caporis
+  ง: Tinea versicolor
+  จ: Tinea pedis
+
+ID 106 (Correct: ค)
+  ก: 2HRZE/4HR และทานยาต้าน HIV ตามปกติ
+  ข: 2HRZE/4HR และเพิ่ม ritonavir เป็น 800 mg q 12 hr
+  ง: 2HES/10HE เพื่อป้องกัน rifampicin เกิด drug interaction กับ ritonavir
+  จ: 2HES/10HE เพื่อป้องกัน rifampicin เกิด drug interaction กับ fluconazole
+
+ID 107 (Correct: ค)
+  ก: ควรให้การรักษาซ้ำในสัปดาห์ที่ 2
+  ข: ควรรักษาสมาชิกในครอบครัวทั้งหมดพร้อมกัน
+  ง: หากมีอาการคันมากบริเวณรอบทวารหนักเวลากลางคืน ควรปรึกษาแพทย์หรือเภสัชกรเพื่อรับยาครีมหรือขี้ผึ้งทาแก้คัน
+  จ: รับประทานยาหลังอาหารทันที
+
+ID 108 (Correct: ค)
+  ก: Penicillin
+  ข: Ciprofloxacin
+  ง: Cefazolin
+  จ: Azithromycin

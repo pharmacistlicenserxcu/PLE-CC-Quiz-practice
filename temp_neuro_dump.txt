@@ -1,0 +1,918 @@
+KEY: 62
+Q: อาการของผู้ป่วยรายนี้ถือว่าเป็นการปวดหัวแบบใด
+Ans: 1
+c1: Tension-type headache
+c2: Migraine headache
+c3: Cluster headache
+c4: Sinusitis headache
+c5: Thunderclap headache
+note: Mock PLE-CC 1 ข้อ 108
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Tension-type headache
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Pain management มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Headache & Migraine การเลือก Headache & Migraine เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Pain management โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Tension-type headache): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pain management เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Migraine headache): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pain management เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Cluster headache): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pain management เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Sinusitis headache): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pain management เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Pain management โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+KEY: 63
+Q: ให้บอกแผนการรักษาที่เหมาะสมกับผู้ป่วยรายนี้
+Ans: 1
+c1: Diclofenac
+c2: Paracetamol
+c3: Dexamethasone
+c4: Eleptriptan
+c5: Nortriptyline
+note: Mock PLE-CC 1 ข้อ 109
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Diclofenac
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Headache & Migraine การเลือก Headache & Migraine เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Diclofenac): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Paracetamol): เป็น first-line analgesic บรรเทาอาการปวดเล็กน้อยถึงปานกลาง ไม่มี anti-inflammatory efficacy เด่นชัด ขนาดยาสูงสุดไม่เกิน 4,000 mg/day (หรือ 2,000-3,000 mg/day ในผู้สูงอายุ/โรคตับ)
+• ข้อ ง. (Dexamethasone): เป็น long-acting potent glucocorticoid ไม่มี mineralocorticoid effect จึงไม่ทำให้น้ำคั่ง เหมาะสำหรับ brain edema, antiemetic, และ COVID-19 with hypoxemia
+• ข้อ จ. (Eleptriptan): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Headache โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+KEY: 64
+Q: ผู้ป่วยรายนี้ไม่ควรได้รับยาป้องกันไมเกรนในข้อใด เพราะจะทำให้อาการของโรคซึมเศร้าแย่ลง
+Ans: 1
+c1: Topiramate
+c2: Atenolol
+c3: Vitamin B6
+c4: amitriptyline
+c5: flunarizine
+note: Mock PLE-CC 1 ข้อ 110
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Topiramate
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Headache & Migraine การเลือก Headache & Migraine เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Topiramate): เป็น carbonic anhydrase inhibitor และ glutamate blocker ทำให้เกิดน้ำหนักลด สมาธิลดลง นิ่วในไต และ secondary angle-closure glaucoma
+• ข้อ ค. (Atenolol): เป็น hydrophilic cardioselective beta-1 blocker ขับออกทางไตเป็นหลัก แต่ evidence ในการลด stroke และ cardiovascular events ด้อยกว่า antihypertensive อื่นๆ
+• ข้อ ง. (Vitamin B6): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (amitriptyline): เป็น Tricyclic antidepressant (TCA) มี anticholinergic ADRs สูง, antihistaminic (ง่วงซึม น้ำหนักขึ้น), alpha-1 blockade (orthostatic hypotension) และเสี่ยงต่อ fatal cardiotoxicity เมื่อ overdose
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Major Depressive Disorder Timing: Antidepressants (SSRIs) ใช้เวลาออกฤทธิ์ทางคลินิกเต็มที่ 2-4 สัปดาห์ ต้องแนะนำผู้ป่วยไม่ให้หยุดยาเองและเฝ้าระวัง suicidality ในช่วงแรก
+• Schizophrenia & EPS: First-generation antipsychotics (Haloperidol) เสี่ยงต่อ Extrapyramidal Symptoms (EPS/Dystonia/Akathisia) แก้ไขด้วย Diphenhydramine หรือ Trihexyphenidyl
+• Bipolar Lithium Monitoring: Narrow therapeutic range (0.6-1.2 mEq/L) อาการพิษ: tremor รุนแรง, ataxia, diarrhea; ระวัง DDI กับ NSAIDs, ACEI, Thiazides ที่ลดการขับ Lithium
+============================================================
+KEY: 65
+Q: ผู้ป่วยที่ใช้ NSAIDS (เช่น naproxen) ในการรักษาไมเกรนบ่อยเกินไป อาจทำให้เกิดภาวะใด
+Ans: 1
+c1: rebound hypertension
+c2: Medication overuse headache
+c3: Serotonin syndrome
+c4: orthostatic hypotension
+c5: parkinsonism
+note: Mock PLE-CC 1 ข้อ 112
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. rebound hypertension
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Headache & Migraine การเลือก Headache & Migraine เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (rebound hypertension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Medication overuse headache): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Serotonin syndrome): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (orthostatic hypotension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Cardiovascular Safety: เป็น non-selective NSAID ที่มีข้อมูลความปลอดภัยต่อระบบหัวใจและหลอดเลือด (CV safety) ดีที่สุดในกลุ่ม NSAIDs เมื่อจำเป็นต้องใช้ในผู้ป่วยที่มี CV risk
+• GI Risk & Protection: มีความเสี่ยงต่อระบบทางเดินอาหาร (GI toxicity/peptic ulcer) สูงกว่า ibuprofen ควรให้ร่วมกับ PPI ในผู้ป่วยที่มี GI risk factor
+============================================================
+KEY: 67
+Q: sodium valproate
+Ans: 1
+c1: Neurologic Disorder
+c2: Topiramate 25 mg BID
+c3: Donepezil 5 mg HS
+c4: Alteplase (rtPA) 0.9 mg/kg IV
+c5: Phenytoin 100 mg TID
+note: PLE-CC1 ปี 2566 Day 1 ข้อ 3
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Topiramate 25 mg BID): เป็น carbonic anhydrase inhibitor และ glutamate blocker ทำให้เกิดน้ำหนักลด สมาธิลดลง นิ่วในไต และ secondary angle-closure glaucoma
+• ข้อ ค. (Donepezil 5 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Alteplase (rtPA) 0.9 mg/kg IV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Phenytoin 100 mg TID): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Broad-Spectrum Anticonvulsant: ใช้ได้ทั้ง Generalized และ Focal seizures รวมถึง Bipolar disorder
+• Teratogenicity & Liver Warning: มี teratogenic สูงสุด (Neural tube defects: spina bifida) ห้ามใช้ในหญิงวัยเจริญพันธุ์ และระวัง fatal hepatotoxicity ในเด็กเล็ก
+============================================================
+KEY: 69
+Q: Non linear pharmacokinetics ของphenytoin . ตัวเลือก
+Ans: 1
+c1: Neurologic Disorder
+c2: Lamotrigine 50 mg OD
+c3: Levetiracetam 500 mg BID
+c4: Gabapentin 300 mg TID
+c5: Pregabalin 75 mg BID
+note: PLE-CC1 ปี 2566 Day 1 ข้อ 8
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Epilepsy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Lamotrigine 50 mg OD): เป็น broad-spectrum AED และ mood stabilizer ต้องเริ่มจากขนาดยาต่ำๆ และค่อยๆ titrate ช้าๆ เพื่อป้องกัน severe cutaneous rash (SJS/TEN)
+• ข้อ ค. (Levetiracetam 500 mg BID): เป็น SV2A vesicle protein binder มี drug interactions ต่ำมาก ขับออกทางไตเป็นหลัก ปลอดภัยในหญิงตั้งครรภ์ แต่ต้องระวัง behavioral/mood changes (หงุดหงิด ก้าวร้าว)
+• ข้อ ง. (Gabapentin 300 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Pregabalin 75 mg BID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+============================================================
+KEY: 70
+Q: พิษของphenytoin ตัวเลือก
+Ans: 1
+c1: Neurologic Disorder
+c2: Pregabalin 75 mg BID
+c3: Levodopa/Benserazide 100/25 mg TID
+c4: Sumatriptan 50 mg stat
+c5: Propranolol 40 mg BID
+note: PLE-CC1 ปี 2566 Day 1 ข้อ 31
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Epilepsy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Pregabalin 75 mg BID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Levodopa/Benserazide 100/25 mg TID): เป็น dopamine precursor ร่วมกับ peripheral dopa-decarboxylase inhibitor เป็น gold standard ที่มี efficacy สูงสุดใน Parkinson disease แต่การใช้ระยะยาวเสี่ยงต่อ motor fluctuations และ dyskinesia
+• ข้อ ง. (Sumatriptan 50 mg stat): เป็น 5-HT1B/1D agonist หดหลอดเลือดสมอง ใช้รักษา acute moderate-to-severe migraine attack แต่ contraindication ใน ischemic heart disease, uncontrolled HTN, stroke
+• ข้อ จ. (Propranolol 40 mg BID): เป็น non-selective beta-blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับ performance anxiety, essential tremor, migraine prophylaxis และ thyroid storm แต่ contraindication ใน asthma
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+============================================================
+KEY: 71
+Q: Prophylaxis migraine มีประวัติเศร้าหม่นควรใช้ยาอะไร. ตัวเลือก
+Ans: 1
+c1: Neurologic Disorder
+c2: Propranolol 40 mg BID
+c3: Topiramate 25 mg BID
+c4: Donepezil 5 mg HS
+c5: Alteplase (rtPA) 0.9 mg/kg IV
+note: PLE-CC1 ปี 2566 Day 2 ข้อ 19
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Propranolol 40 mg BID): เป็น non-selective beta-blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับ performance anxiety, essential tremor, migraine prophylaxis และ thyroid storm แต่ contraindication ใน asthma
+• ข้อ ค. (Topiramate 25 mg BID): เป็น carbonic anhydrase inhibitor และ glutamate blocker ทำให้เกิดน้ำหนักลด สมาธิลดลง นิ่วในไต และ secondary angle-closure glaucoma
+• ข้อ ง. (Donepezil 5 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Alteplase (rtPA) 0.9 mg/kg IV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+============================================================
+KEY: 72
+Q: Migraine headaches
+Ans: 1
+c1: Neurologic Disorder
+c2: Alteplase (rtPA) 0.9 mg/kg IV
+c3: Phenytoin 100 mg TID
+c4: Sodium valproate 200 mg TID
+c5: Carbamazepine 200 mg BID
+note: PLE-CC1 ปี 2566 Day 2 ข้อ 1
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Alteplase (rtPA) 0.9 mg/kg IV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Phenytoin 100 mg TID): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+• ข้อ ง. (Sodium valproate 200 mg TID): เป็น broad-spectrum antiepileptic drug แต่มี teratogenicity สูงมาก (neural tube defects) ห้ามใช้ในหญิงวัยเจริญพันธุ์ และเสี่ยงต่อ hepatotoxicity, pancreatitis, weight gain, alopecia
+• ข้อ จ. (Carbamazepine 200 mg BID): เป็น first-line ใน focal seizures และ Trigeminal neuralgia ต้องตรวจคัดกรองยีน HLA-B*15:02 ในคนไทยก่อนเริ่มยาเพื่อป้องกัน SJS/TEN และเป็น auto-inducer ของเอนไซม์ CYP3A4
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+============================================================
+KEY: 73
+Q: Tension headaches
+Ans: 1
+c1: Neurologic Disorder
+c2: Carbamazepine 200 mg BID
+c3: Lamotrigine 50 mg OD
+c4: Levetiracetam 500 mg BID
+c5: Gabapentin 300 mg TID
+note: PLE-CC1 ปี 2566 Day 2 ข้อ 2
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Carbamazepine 200 mg BID): เป็น first-line ใน focal seizures และ Trigeminal neuralgia ต้องตรวจคัดกรองยีน HLA-B*15:02 ในคนไทยก่อนเริ่มยาเพื่อป้องกัน SJS/TEN และเป็น auto-inducer ของเอนไซม์ CYP3A4
+• ข้อ ค. (Lamotrigine 50 mg OD): เป็น broad-spectrum AED และ mood stabilizer ต้องเริ่มจากขนาดยาต่ำๆ และค่อยๆ titrate ช้าๆ เพื่อป้องกัน severe cutaneous rash (SJS/TEN)
+• ข้อ ง. (Levetiracetam 500 mg BID): เป็น SV2A vesicle protein binder มี drug interactions ต่ำมาก ขับออกทางไตเป็นหลัก ปลอดภัยในหญิงตั้งครรภ์ แต่ต้องระวัง behavioral/mood changes (หงุดหงิด ก้าวร้าว)
+• ข้อ จ. (Gabapentin 300 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Headache โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+KEY: 74
+Q: Cluster headaches
+Ans: 1
+c1: Neurologic Disorder
+c2: Gabapentin 300 mg TID
+c3: Pregabalin 75 mg BID
+c4: Levodopa/Benserazide 100/25 mg TID
+c5: Sumatriptan 50 mg stat
+note: PLE-CC1 ปี 2566 Day 2 ข้อ 3
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Gabapentin 300 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Pregabalin 75 mg BID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Levodopa/Benserazide 100/25 mg TID): เป็น dopamine precursor ร่วมกับ peripheral dopa-decarboxylase inhibitor เป็น gold standard ที่มี efficacy สูงสุดใน Parkinson disease แต่การใช้ระยะยาวเสี่ยงต่อ motor fluctuations และ dyskinesia
+• ข้อ จ. (Sumatriptan 50 mg stat): เป็น 5-HT1B/1D agonist หดหลอดเลือดสมอง ใช้รักษา acute moderate-to-severe migraine attack แต่ contraindication ใน ischemic heart disease, uncontrolled HTN, stroke
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Headache โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+KEY: 75
+Q: Secondary headaches
+Ans: 1
+c1: Neurologic Disorder
+c2: Sumatriptan 50 mg stat
+c3: Propranolol 40 mg BID
+c4: Topiramate 25 mg BID
+c5: Donepezil 5 mg HS
+note: PLE-CC1 ปี 2566 Day 2 ข้อ 4
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Sumatriptan 50 mg stat): เป็น 5-HT1B/1D agonist หดหลอดเลือดสมอง ใช้รักษา acute moderate-to-severe migraine attack แต่ contraindication ใน ischemic heart disease, uncontrolled HTN, stroke
+• ข้อ ค. (Propranolol 40 mg BID): เป็น non-selective beta-blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับ performance anxiety, essential tremor, migraine prophylaxis และ thyroid storm แต่ contraindication ใน asthma
+• ข้อ ง. (Topiramate 25 mg BID): เป็น carbonic anhydrase inhibitor และ glutamate blocker ทำให้เกิดน้ำหนักลด สมาธิลดลง นิ่วในไต และ secondary angle-closure glaucoma
+• ข้อ จ. (Donepezil 5 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Headache โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+KEY: 76
+Q: สาเหตุที่ควรprophylaxis migraine. ตัวเลือก
+Ans: 1
+c1: Neurologic Disorder
+c2: Donepezil 5 mg HS
+c3: Alteplase (rtPA) 0.9 mg/kg IV
+c4: Phenytoin 100 mg TID
+c5: Sodium valproate 200 mg TID
+note: PLE-CC1 ปี 2566 Day 2 ข้อ 21
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Donepezil 5 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Alteplase (rtPA) 0.9 mg/kg IV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Phenytoin 100 mg TID): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+• ข้อ จ. (Sodium valproate 200 mg TID): เป็น broad-spectrum antiepileptic drug แต่มี teratogenicity สูงมาก (neural tube defects) ห้ามใช้ในหญิงวัยเจริญพันธุ์ และเสี่ยงต่อ hepatotoxicity, pancreatitis, weight gain, alopecia
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+============================================================
+KEY: 78
+Q: ISDN Sublingual ไม;ตองทดสอบเรื่องอะไร 120-130 / 70-79 mmHg (Thai guideline on the treatment of hypertension 2015)
+Ans: 1
+c1: friability
+c2: Disintegration
+c3: Dissolution time
+c4: Thickness
+c5: Content uniformity ยาเ,น@ปแบบอมใCDน จะเ.ด disintegration แGวเIาJKางกายไLโดยไ"เ.ดการละลาย 0งไ"Oเ,นCองทดสอบการละลาย
+note: PLE_CC1_2565_Day1_Key ข้อ 4
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. friability
+
+💡 Background:
+ภาวะความดันโลหิตสูงเป็นปัจจัยเสี่ยงหลักของ cardiovascular disease การเลือก first-line antihypertensive agents ต้องพิจารณาตาม compelling indications
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (friability): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Disintegration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Dissolution time): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Thickness): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคความดันโลหิตสูง ในเวชปฏิบัติทั่วไป พ.ศ. 2562 (สมาคมความดันโลหิตสูงแห่งประเทศไทย) & 2020 International Society of Hypertension (ISH) Global Guidelines
+
+📌 จุดจำก่อนสอบ:
+• BP Target Standard: เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)
+• First-line Core Classes: 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน
+• Special Populations: ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต
+============================================================
+KEY: 79
+Q: หากแพทย6เลือกใช$ topiramate เพื่อป¢องกันการปวดศีรษะจากไมเกรน ข$อใดถูกต$องเกี่ยวกับยานี้ ไWแcใจ
+Ans: 1
+c1: มีโอกาสเกิด cross allergy กับ cotrimoxazole ได$สูงมาก
+c2: ค-อยๆ ปรับเพิ่มขนาดยาจนถึง target dose หรือจนกว-าจะทนผลข$างเคียงยาไม-ได$
+c3: ใช$เวลา 2-4 สัปดาห6จึงจะเห็นผลการรักษา
+c4: ต$องใช$ยาอย-างน$อย 6 เดือน
+c5: ใช$ Maintain dose น$อยกว-าการให$เพื่อรักษาอาการชัก กรณีศึกษา 7
+note: PLE_CC1_2565_Day2_Key ข้อ 19
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. มีโอกาสเกิด cross allergy กับ cotrimoxazole ได$สูงมาก
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (มีโอกาสเกิด cross allergy กับ cotrimoxazole ได$สูงมาก): เป็นยาผสม Trimethoprim/Sulfamethoxazole (TMP/SMX) เป็น drug of choice สำหรับ PCP/PJP prophylaxis & treatment, Stenotrophomonas และ Nocardia ระวัง hyperkalemia และ SCARs
+• ข้อ ค. (ค-อยๆ ปรับเพิ่มขนาดยาจนถึง target dose หรือจนกว-าจะทนผลข$างเคียงยาไม-ได$): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ใช$เวลา 2-4 สัปดาห6จึงจะเห็นผลการรักษา): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ต$องใช$ยาอย-างน$อย 6 เดือน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Headache โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+KEY: 80
+Q: กินยาคุม ไม่เคยใช้มาก่อนแล้วเจ็บคัดเต้านม ถามว่าจะทำอย่างไร ตัวเลือกมีเปลี่ยนยา ปรับยา แต่ตอบว่าเป็นอาการที่พบได้ในช่วงแรก นาน ๆ ไปจะหายเอง เฉลยข้อสอบ PLE-CC1 ครั้งที่12/2564 วันที่ 1-2 : MUPY 50 เฉลยข้อสอบ PLE-CC1 ครั้งที่12/2564 วันที่ 1-2 : MUPY 50 ผู้ป่วยที่มีประวัติเป็น DVT/PE ที่มีประวัติได้รับ anticoagulant therapy อย่างน้อย 3 เดือนที่มีความเสี่ยงสูงในการเกิดซ้ำของโรค, ผู้ป่วยที่มีการผ่าตัดใหญ่และมี prolonged immobilization ผู้ป่วยที่มี Thrombogenic mutation, ผู้ป่วยที่เป็นหรือมีประวัติการเป็น IHD ผู้ป่วยที่เป็น stroke ผู้ป่วยที่เป็นโรค vulvular heart disease แบบ complicated ผู้ป่วยเป็น OA (แพทย์วินิจฉัยแล้ว) และเป็น hypertension ร่วมด้วย
+Ans: 1
+c1: Neurologic Disorder
+c2: Topiramate 25 mg BID
+c3: Donepezil 5 mg HS
+c4: Alteplase (rtPA) 0.9 mg/kg IV
+c5: Phenytoin 100 mg TID
+note: PLE_CC1_2564_All_Key ข้อ 25
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+โรคข้อเข่าเสื่อม (OA) มีการสึกหรอของกระดูกอ่อนผิวข้อ การรักษาเน้นบรรเทาอาการปวด ฟื้นฟูการเคลื่อนไหว และส่งเสริมคุณภาพชีวิต
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Stroke โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Topiramate 25 mg BID): เป็น carbonic anhydrase inhibitor และ glutamate blocker ทำให้เกิดน้ำหนักลด สมาธิลดลง นิ่วในไต และ secondary angle-closure glaucoma
+• ข้อ ค. (Donepezil 5 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Stroke เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Alteplase (rtPA) 0.9 mg/kg IV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Stroke เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Phenytoin 100 mg TID): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+
+📖 Guideline อ้างอิง:
+2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee & แนวทางเวชปฏิบัติการดูแลรักษาโรคข้อเข่าเสื่อม พ.ศ. 2562 (สมาคมรูมาติสซั่มแห่งประเทศไทย)
+
+📌 จุดจำก่อนสอบ:
+• BP Target Standard: เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)
+• First-line Core Classes: 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน
+• Special Populations: ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต
+============================================================
+KEY: 81
+Q: บอกอาการมา (หัวข้อ migraine) ถามจ่ายยาอะไรบรรเทาอาการดี
+Ans: 1
+c1: Neurologic Disorder
+c2: gabapentin
+c3: sumatriptan" "โจทย์ไม่สมบูรณ์ O O
+c4: Carbamazepine 200 mg BID
+c5: Lamotrigine 50 mg OD
+note: PLE_CC1_2564_All_Key ข้อ 50
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Neurologic Disorder
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Neurologic Disorder การเลือก Neurologic Disorder เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (gabapentin): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (sumatriptan" "โจทย์ไม่สมบูรณ์ O O): เป็น 5-HT1B/1D agonist หดหลอดเลือดสมอง ใช้รักษา acute moderate-to-severe migraine attack แต่ contraindication ใน ischemic heart disease, uncontrolled HTN, stroke
+• ข้อ ง. (Carbamazepine 200 mg BID): เป็น first-line ใน focal seizures และ Trigeminal neuralgia ต้องตรวจคัดกรองยีน HLA-B*15:02 ในคนไทยก่อนเริ่มยาเพื่อป้องกัน SJS/TEN และเป็น auto-inducer ของเอนไซม์ CYP3A4
+• ข้อ จ. (Lamotrigine 50 mg OD): เป็น broad-spectrum AED และ mood stabilizer ต้องเริ่มจากขนาดยาต่ำๆ และค่อยๆ titrate ช้าๆ เพื่อป้องกัน severe cutaneous rash (SJS/TEN)
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+============================================================
+KEY: 82
+Q: อาการข้างเคียงใด ไม่ขึ้นกับระดับยา carbamazepine
+Ans: 1
+c1: Diplopia
+c2: Ataxia
+c3: Maculopapular eruption
+c4: Dizziness
+c5: Seizure
+note: ข้อ 98 (PLE_CC1_2562_Key.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Diplopia
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Diplopia การเลือก Diplopia เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Epilepsy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Ataxia): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Maculopapular eruption): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Dizziness): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Seizure): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• HLA-B*15:02 & Autoinduction: ต้องตรวจ HLA-B*15:02 ก่อนเริ่มยาในคนไทยทุกราย (เสี่ยง SJS/TEN สูงมาก) และมีคุณสมบัติ Autoinduction กระตุ้น CYP3A4 ของตัวเองหลังใช้ 2-4 สัปดาห์
+• Hyponatremia (SIADH): ทำให้เกิด hyponatremia จาก SIADH-like effect และเสี่ยงต่อ agranulocytosis/aplastic anemia
+============================================================
+KEY: 83
+Q: หัวข้อใดของ carbamazepine CR ที่ไม่จำเป็นต้องตรวจตามเภสัชตำรับ controlled release
+Ans: 1
+c1: Dissolution
+c2: Disintegration
+c3: Content uniformity/weight variation
+c4: Assay
+c5: Impurity
+note: ข้อ 104 (PLE_CC1_2562_Key.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Dissolution
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Dissolution การเลือก Dissolution เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Epilepsy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Disintegration): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Content uniformity/weight variation): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Assay): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Impurity): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• HLA-B*15:02 & Autoinduction: ต้องตรวจ HLA-B*15:02 ก่อนเริ่มยาในคนไทยทุกราย (เสี่ยง SJS/TEN สูงมาก) และมีคุณสมบัติ Autoinduction กระตุ้น CYP3A4 ของตัวเองหลังใช้ 2-4 สัปดาห์
+• Hyponatremia (SIADH): ทำให้เกิด hyponatremia จาก SIADH-like effect และเสี่ยงต่อ agranulocytosis/aplastic anemia
+============================================================
+KEY: 84
+Q: ยาใดที่ใช้ร่วมกับ fluoxetine แล้วมีผลต่อการเกิด serotonin syndrome น้อยที่สุด ~ cosiziene seats - Trendlies . -X T ↓jon ending orthostatic hypotension ~ ~ serotonin
+Ans: 1
+c1: Agomelatine
+c2: Haloperidol
+c3: Olanzapine
+c4: Venlafaxine
+c5: Hydroxyzine Liverse ↓ lastanerce serotonin der soos ston Parilara serotonin syndrome snasin DI rileserotonin Jessost หË´มนาÆปทาซËาทืกกรณิ ÂวËนาต้จ²ÆดËรงบ¯นืญ´ต
+note: ข้อ 6 (PLE_CC1_2562_Key.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Agomelatine
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Headache มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Agomelatine การเลือก Agomelatine เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Haloperidol): เป็น First-generation (typical) antipsychotic ยับยั้ง D2 receptor สูง เสี่ยงต่อ Extrapyramidal symptoms (EPS), acute dystonia, akathisia และ tardive dyskinesia สูง
+• ข้อ ค. (Olanzapine): เป็น atypical antipsychotic ที่มี metabolic side effects สูงมาก (น้ำหนักเพิ่มขึ้นรุนแรง, hyperglycemia, dyslipidemia)
+• ข้อ ง. (Venlafaxine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Headache เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Hydroxyzine Liverse ↓ lastanerce serotonin der soos ston Parilara serotonin syndrome snasin DI rileserotonin Jessost หË´มนาÆปทาซËาทืกกรณิ ÂวËนาต้จ²ÆดËรงบ¯นืญ´ต): วัคซีนไข้สมองอักเสบเจอี ชนิดเชื้อเป็น (Live attenuated CD.JEV) ให้ 2 เข็ม ที่อายุ 9-12 เดือน และเข็ม 2 ห่างกัน 3-12 เดือน
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคปวดศีรษะไมเกรนสำหรับแพทย์ พ.ศ. 2563 (สมาคมประสาทวิทยาแห่งประเทศไทย) & American Headache Society (AHS) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Long Half-life SSRI: มี active metabolite คือ norfluoxetine ที่มี half-life ยาวนาน (~7-15 วัน) ต้องเว้นระยะอย่างน้อย 5 สัปดาห์ก่อนเปลี่ยนไปใช้ MAOI เพื่อเลี่ยง Serotonin syndrome
+• Activating Property: มีฤทธิ์ activating effect อาจทำให้นอนไม่หลับ แนะนำรับประทานตอนเช้า
+============================================================
+KEY: 85
+Q: แพทย์สั่งใช้ยา phenobarbital ให้กับผู้ป่วย แต่ผู้ป่วยได้รับยา phenytoin เกิดอาการไม่พึงประสงค์เกี่ยวกับยาจน ต้องเข้ารับการรักษาที่โรงพยาบาลเป็นระยะเวลา 10 วัน แต่หลังการรักษาผู้ป่วยก็หายเป็นปกติ ความคลาดเคลื่อน ทางยาที่เกิดขึ นนี ตาม NCC MERP จัดอยู่ในระดับใด
+Ans: 1
+c1: Donepezil 5 mg HS
+c2: Alteplase (rtPA) 0.9 mg/kg IV
+c3: Phenytoin 100 mg TID
+c4: Sodium valproate 200 mg TID
+c5: Carbamazepine 200 mg BID
+note: ข้อ 29 (PLE_CC1_2559.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Donepezil 5 mg HS
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Donepezil 5 mg HS การเลือก Donepezil 5 mg HS เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Epilepsy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Alteplase (rtPA) 0.9 mg/kg IV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Phenytoin 100 mg TID): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+• ข้อ ง. (Sodium valproate 200 mg TID): เป็น broad-spectrum antiepileptic drug แต่มี teratogenicity สูงมาก (neural tube defects) ห้ามใช้ในหญิงวัยเจริญพันธุ์ และเสี่ยงต่อ hepatotoxicity, pancreatitis, weight gain, alopecia
+• ข้อ จ. (Carbamazepine 200 mg BID): เป็น first-line ใน focal seizures และ Trigeminal neuralgia ต้องตรวจคัดกรองยีน HLA-B*15:02 ในคนไทยก่อนเริ่มยาเพื่อป้องกัน SJS/TEN และเป็น auto-inducer ของเอนไซม์ CYP3A4
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+============================================================
+KEY: 86
+Q: Phenytoin SR มีส่วนผสมคือ phenytoin, lactose, magnesium, sugar แต่การทดสอบพบว่ามีปริมาณตัวยาใน แต่ละเม็ดไม่สม่้าเสมอ ควรเติมสารช่วยอะไร
+Ans: 1
+c1: Silicon dioxide
+c2: Microcrystalline cellulose
+c3: Starch
+c4: Gelatin
+c5: Polyvinyl pyrrolidone ห้ามนำไปทำซ้ำทุกกรณี เว้นแต่จะได้รับอนุญาต พบ hepatitis b virus negative และ anti-HBs positive
+note: ข้อ 32 (PLE_CC1_2559.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Silicon dioxide
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Silicon dioxide กรณีศึกษาที่ 5 หญิงไทยอายุ 28 ปี ตั งครรภ์ได้ 38 สัปดาห์มาคลอดบุตรที่โรงพยาบาลแห่งหนึ่ง พบว่าได้บุตรชายสุขภาพ ร่างกายแข็งแรงดีทั งมารดาและบุตร จากการตรวจสอบประวัติพบว่ามารดาไม่เคยเป็นโรคไวรัสตับอักเสบบี และผลการตรวจ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Microcrystalline cellulose): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Starch): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Gelatin): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Polyvinyl pyrrolidone ห้ามนำไปทำซ้ำทุกกรณี เว้นแต่จะได้รับอนุญาต พบ hepatitis b virus negative และ anti-HBs positive): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+============================================================
+KEY: 89
+Q: ยากันชักชนิดใด สามารถใช้ได้อย่างปลอดภัยในหญิงตั้งครรภ์
+Ans: 1
+c1: Phenytoin Sodium
+c2: Levetiracetam
+c3: Valproic acid
+c4: Diazepam
+c5: Lacosamide
+note: ข้อ 46 (Pharmtutor_2024_Set2.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Phenytoin Sodium
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Phenytoin Sodium การเลือก Phenytoin Sodium เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Levetiracetam): เป็น SV2A vesicle protein binder มี drug interactions ต่ำมาก ขับออกทางไตเป็นหลัก ปลอดภัยในหญิงตั้งครรภ์ แต่ต้องระวัง behavioral/mood changes (หงุดหงิด ก้าวร้าว)
+• ข้อ ค. (Valproic acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Diazepam): เป็น long-acting Benzodiazepine มี active metabolites (nordiazepam) สะสมในผู้สูงอายุ ทำให้ง่วงซึม หกล้ม เสี่ยง fracture
+• ข้อ จ. (Lacosamide): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+============================================================
+KEY: 90
+Q: ข้อใดคือกลไกของ Phenytoin Sodium ที่นำมาใช้ในการรักษาและป้องกันผู้ป่วยที่มีภาวะชักเกิดขึ้น
+Ans: 1
+c1: ยับยั้งการเปิดปิดของช่องเปิดแคลเซียม
+c2: ยับยั้งการเข้าออกออกแคลเซียม
+c3: ยับยั้งการเข้าออกของโซเดียมและแคลเซียมที่จุดว่างของสารสื่อประสาท
+c4: ยับยั้งการเข้าสู่เซลล์ของโซเดียมผ่านช่องทางแคลเซียม-โซเดียม
+c5: ยับยั้งการเปิดปิดของช่องเปิดโซเดียม
+note: ข้อ 47 (Pharmtutor_2024_Set2.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ยับยั้งการเปิดปิดของช่องเปิดแคลเซียม
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ยับยั้งการเปิดปิดของช่องเปิดแคลเซียม เอกสารฉบับนี้รวบรวมข้อสอบขึ้นมา สำหรับนักเรียนคอร์สตะลุยโจทย์ Pharmtutors 2024 ข้อสอบดังกล่าวถือเป็นลิขสิทธิ์ ห้ามทำซ้ำ ดัดแปลง หรือแก้ไข
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ยับยั้งการเข้าออกออกแคลเซียม): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ยับยั้งการเข้าออกของโซเดียมและแคลเซียมที่จุดว่างของสารสื่อประสาท): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ยับยั้งการเข้าสู่เซลล์ของโซเดียมผ่านช่องทางแคลเซียม-โซเดียม): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ยับยั้งการเปิดปิดของช่องเปิดโซเดียม): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+============================================================
+KEY: 91
+Q: ยากันชักในข้อใดสามารถนำมาช่วยบรรเทาอาการปวดบริเวณปลายประสาทได้ และสามารถรักษาได้หายอย่างมีนัยสำคัญ
+Ans: 1
+c1: Lamotrigine
+c2: Valproic acid
+c3: Oxcarbazepine
+c4: Levetiracetam
+c5: Topiramate
+note: ข้อ 51 (Pharmtutor_2024_Set2.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Lamotrigine
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Lamotrigine เอกสารฉบับนี้รวบรวมข้อสอบขึ้นมา สำหรับนักเรียนคอร์สตะลุยโจทย์ Pharmtutors 2024 ข้อสอบดังกล่าวถือเป็นลิขสิทธิ์ ห้ามทำซ้ำ ดัดแปลง หรือแก้ไข
+
+ เป็น broad-spectrum AED และ mood stabilizer ต้องเริ่มจากขนาดยาต่ำๆ และค่อยๆ titrate ช้าๆ เพื่อป้องกัน severe cutaneous rash (SJS/TEN)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Valproic acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Oxcarbazepine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Levetiracetam): เป็น SV2A vesicle protein binder มี drug interactions ต่ำมาก ขับออกทางไตเป็นหลัก ปลอดภัยในหญิงตั้งครรภ์ แต่ต้องระวัง behavioral/mood changes (หงุดหงิด ก้าวร้าว)
+• ข้อ จ. (Topiramate): เป็น carbonic anhydrase inhibitor และ glutamate blocker ทำให้เกิดน้ำหนักลด สมาธิลดลง นิ่วในไต และ secondary angle-closure glaucoma
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+============================================================
+KEY: 92
+Q: จากคุณสมบัติของยา phenytoin ที่มีการกำจัดออกแบบ non-linear kinetics ข้อใดถูกต้อง
+Ans: 1
+c1: ที่ความเข้มข้นสูง จะมีการกำจัดออกแบบ linear kinetics
+c2: ที่ความเข้มข้นต่ำ จะมีการกำจัดออกแบบ non-linear kinetics
+c3: ยามีค่าครึ่งชีวิตเท่าเดิมเสมอ แม้มีความเข้มข้นของยาเพิ่มมากขึ้น
+c4: ยามี therapeutic index แคบ
+c5: ไม่มีข้อใดถูก
+note: ข้อ 87 (Pharmtutor_2024_Set2.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ที่ความเข้มข้นสูง จะมีการกำจัดออกแบบ linear kinetics
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ที่ความเข้มข้นสูง จะมีการกำจัดออกแบบ linear kinetics เอกสารฉบับนี้รวบรวมข้อสอบขึ้นมา สำหรับนักเรียนคอร์สตะลุยโจทย์ Pharmtutors 2024 ข้อสอบดังกล่าวถือเป็นลิขสิทธิ์ ห้ามทำซ้ำ ดัดแปลง หรือแก้ไข
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ที่ความเข้มข้นต่ำ จะมีการกำจัดออกแบบ non-linear kinetics): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ยามีค่าครึ่งชีวิตเท่าเดิมเสมอ แม้มีความเข้มข้นของยาเพิ่มมากขึ้น): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ยามี therapeutic index แคบ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ไม่มีข้อใดถูก): ข้อนี้ไม่ถูกต้องเนื่องจากมีตัวเลือกที่จำเพาะและตรงตามเกณฑ์มาตรฐานเวชปฏิบัติอย่างชัดเจน
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Non-Linear Zero-Order Kinetics: เมื่อระดับยาถึงจุดอิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยทำให้ระดับยาในเลือดพุ่งสูงขึ้นอย่างก้าวกระโดด (เสี่ยง toxicity รุนแรง)
+• Characteristic Toxicities: ระดับยาปกติ 10-20 mcg/mL; อาการพิษสัมพันธ์กับระดับยา: Nystagmus (>20) -> Ataxia (>30) -> Lethargy/Coma (>40); ระยะยาวเกิด Gingival hyperplasia และ Hirsutism
+• HLA-B*15:02 Screening: สัมพันธ์กับ SJS/TEN ในผู้ป่วยชาวไทย แนะนำตรวจคัดกรองก่อนเริ่มยา
+============================================================
+KEY: 93
+Q: ข้อใดไม่ใช่อาการแสดงของผู้ป่วย Parkinson’s disease (1) Hypertension (2) Resting tremor (3) Impaired balance (4) Slowness of movement (5) Stiffness to limb movement MCQ 11 | 1/2557 | Page 11
+Ans: 1
+c1: Propranolol 40 mg BID
+c2: Topiramate 25 mg BID
+c3: Donepezil 5 mg HS
+c4: Alteplase (rtPA) 0.9 mg/kg IV
+c5: Phenytoin 100 mg TID
+note: ข้อ 73 (PLE_CC1_2557.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Propranolol 40 mg BID
+
+💡 Background:
+ภาวะความดันโลหิตสูงเป็นปัจจัยเสี่ยงหลักของ cardiovascular disease การเลือก first-line antihypertensive agents ต้องพิจารณาตาม compelling indications
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Propranolol 40 mg BID การเลือก Propranolol 40 mg BID เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น non-selective beta-blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับ performance anxiety, essential tremor, migraine prophylaxis และ thyroid storm แต่ contraindication ใน asthma
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Topiramate 25 mg BID): เป็น carbonic anhydrase inhibitor และ glutamate blocker ทำให้เกิดน้ำหนักลด สมาธิลดลง นิ่วในไต และ secondary angle-closure glaucoma
+• ข้อ ค. (Donepezil 5 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Alteplase (rtPA) 0.9 mg/kg IV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parkinson disease เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Phenytoin 100 mg TID): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคความดันโลหิตสูง ในเวชปฏิบัติทั่วไป พ.ศ. 2562 (สมาคมความดันโลหิตสูงแห่งประเทศไทย) & 2020 International Society of Hypertension (ISH) Global Guidelines
+
+📌 จุดจำก่อนสอบ:
+• BP Target Standard: เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)
+• First-line Core Classes: 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน
+• Special Populations: ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต
+============================================================
+KEY: 94
+Q: ข้อใดเป็นข้อบ่งใช้อื่นของยา Carbamazepine นอกจากเป็นยากันชัก
+Ans: 1
+c1: ........
+c2: .......
+c3: Trigerminal neuralgia
+c4: ............
+c5: ...............
+note: ข้อ 83 (PLE_CC1_2555 Day 1.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ........
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+........ การเลือก ........ เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Epilepsy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (.......): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Trigerminal neuralgia): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (............): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (...............): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• HLA-B*15:02 & Autoinduction: ต้องตรวจ HLA-B*15:02 ก่อนเริ่มยาในคนไทยทุกราย (เสี่ยง SJS/TEN สูงมาก) และมีคุณสมบัติ Autoinduction กระตุ้น CYP3A4 ของตัวเองหลังใช้ 2-4 สัปดาห์
+• Hyponatremia (SIADH): ทำให้เกิด hyponatremia จาก SIADH-like effect และเสี่ยงต่อ agranulocytosis/aplastic anemia
+============================================================
+KEY: 95
+Q: ยาในข้อใดสามารถเพิ่มระดับยา Carbamazepine ได้
+Ans: 1
+c1: Clarithromycin
+c2: Nevirapine
+c3: Phenytoin
+c4: .....
+c5: ..........
+note: ข้อ 85 (PLE_CC1_2555 Day 1.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Clarithromycin
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Clarithromycin การเลือก Clarithromycin เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Macrolide เป็นแกนหลักในสูตรกำจัด H. pylori และ MAC treatment แต่ยับยั้ง CYP3A4 สูงมาก จึงมี drug-drug interactions รุนแรงกับ statins, colchicine
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Nevirapine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Phenytoin): เป็น sodium channel blocker สำหรับ focal/generalized seizures มี non-linear (Michaelis-Menten) PK เสี่ยง toxicity ได้ง่ายเมื่อปรับ dose และทำให้เกิด gingival hyperplasia, hirsutism, cerebellar ataxia
+• ข้อ ง. (.....): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (..........): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• HLA-B*15:02 & Autoinduction: ต้องตรวจ HLA-B*15:02 ก่อนเริ่มยาในคนไทยทุกราย (เสี่ยง SJS/TEN สูงมาก) และมีคุณสมบัติ Autoinduction กระตุ้น CYP3A4 ของตัวเองหลังใช้ 2-4 สัปดาห์
+• Hyponatremia (SIADH): ทำให้เกิด hyponatremia จาก SIADH-like effect และเสี่ยงต่อ agranulocytosis/aplastic anemia
+============================================================
+KEY: 96
+Q: แช่ตู้เย็น โดยเก็บไว้ในช่องแช่แข็ง Case 5: Epilepsy นางสตรี อายุ 25 ปี Dx Tonic-clonic seizure Carbamazepine 200 mg bid F/U 2 week
+Ans: 1
+c1: Gabapentin 300 mg TID
+c2: Pregabalin 75 mg BID
+c3: Levodopa/Benserazide 100/25 mg TID
+c4: Sumatriptan 50 mg stat
+c5: Propranolol 40 mg BID
+note: ข้อ 4 (PLE_CC1_2555 Day 2.md)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Gabapentin 300 mg TID
+
+💡 Background:
+โรคลมชัก (Epilepsy) ต้องเลือกยากันชักให้ตรงกับชนิดของการชัก โดยคำนึงถึง efficacy, drug interactions และ safety profile ของผู้ป่วย
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Gabapentin 300 mg TID การเลือก Gabapentin 300 mg TID เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Epilepsy โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Pregabalin 75 mg BID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Epilepsy เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Levodopa/Benserazide 100/25 mg TID): เป็น dopamine precursor ร่วมกับ peripheral dopa-decarboxylase inhibitor เป็น gold standard ที่มี efficacy สูงสุดใน Parkinson disease แต่การใช้ระยะยาวเสี่ยงต่อ motor fluctuations และ dyskinesia
+• ข้อ ง. (Sumatriptan 50 mg stat): เป็น 5-HT1B/1D agonist หดหลอดเลือดสมอง ใช้รักษา acute moderate-to-severe migraine attack แต่ contraindication ใน ischemic heart disease, uncontrolled HTN, stroke
+• ข้อ จ. (Propranolol 40 mg BID): เป็น non-selective beta-blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับ performance anxiety, essential tremor, migraine prophylaxis และ thyroid storm แต่ contraindication ใน asthma
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคลมชักสำหรับแพทย์ พ.ศ. 2564 (สมาคมโรคลมชักแห่งประเทศไทย) & International League Against Epilepsy (ILAE) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• HLA-B*15:02 & Autoinduction: ต้องตรวจ HLA-B*15:02 ก่อนเริ่มยาในคนไทยทุกราย (เสี่ยง SJS/TEN สูงมาก) และมีคุณสมบัติ Autoinduction กระตุ้น CYP3A4 ของตัวเองหลังใช้ 2-4 สัปดาห์
+• Hyponatremia (SIADH): ทำให้เกิด hyponatremia จาก SIADH-like effect และเสี่ยงต่อ agranulocytosis/aplastic anemia
+============================================================

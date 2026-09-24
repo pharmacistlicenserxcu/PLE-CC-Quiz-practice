@@ -1,0 +1,280 @@
+=== KEY: 200 (ans: 1) ===
+Q: จงคำนวณ ANC (WBC count 2000, PMN 5%, Band 5%, Eosinophil 1%. Lymphocyte 1) - X reversible
+c1: 50
+c2: 100
+c3: 150
+c4: 200
+c5: 240
+
+=== KEY: 201 (ans: 1) ===
+Q: จากอาการผูป%วยเกิดจากการติดเชื้อใดมากที่สุด
+c1: HSV-1
+c2: HSV-2
+c3: Varicella zoster virus
+c4: Neisseria gonorrhea
+c5: Chlamydia trachomatis I
+
+=== KEY: 202 (ans: 1) ===
+Q: ขอใดคือกลไกการออกฤทธิ์ของยา valacyclovir
+c1: Protease inhibitor
+c2: Integrase inhibitor
+c3: Inhibit cell wall synthesis
+c4: DNA polymerase inhibitor
+c5: Nucleotide reverse transcriptase inhibitor t
+
+=== KEY: 203 (ans: 1) ===
+Q: จาก USP acyclovir contains not less than 98.0 percent and not more than 101.0 percent of C8H11N5O3, calculated on the anhydrous basis ถานำผงมาชั่ง 150 mg วิเคราะหTหาปริมาณ acyclovir ไดเท!ากับ 142 mg ขอใดคือรอยละ ของปริมาณ acyclovir ต!อน้ำหนักผงแหง
+c1: 90.3 %
+c2: 92.4 %
+c3: 93.4 %
+c4: 94.7 %
+c5: 95.6 % o
+
+=== KEY: 204 (ans: 1) ===
+Q: จากกรณีศึกษาขางตนคาดว!าผูป%วยติดเชื้อตัวใด
+c1: Candida albican
+c2: Malassezia furfur
+c3: Tricosporum spp.
+c4: Epidermophyton spp.
+c5: Cryptococcus neoforman
+
+=== KEY: 205 (ans: 1) ===
+Q: สูตรยาต(านไวรัสสูตรใดที่ใช(ในการปqองกันก.อนสัมผัสโรค (PrEP)
+c1: TDF + 3TC
+c2: AZT + 3TC
+c3: TDF + FTC
+c4: TDF + FTC + Lo/r
+c5: TDF + 3TC + EFV
+
+=== KEY: 206 (ans: 1) ===
+Q: จากการคุยเพิ่มเติม ผู้ป่วยทราบว่าการมีเพศสัมพันธ์โดยไม่ได้ป้องกัน มีความเสี่ยงต่อการติดเชื่้อทาง เพศสัมพันธ์ และการใส่ถุงยางอนามัยสามารถป้องกันได้ และทราบว่าถ้าติดโรคแล้วจะรุนแรง เช่น HIV แต่ไม่ใส่ถุงยางเพราะ เพื่อนผู้หญิงเป็นเพื่อนในมหาลัยเดียวกัน ที่คนในกลุ่มนางไม่มีคนติดโรคทาง เพศสัมพันธ์ ถามว่า Health belief model ใด เป็นสาเหตุของการติดโรคครั งนี
+c1: Perceived susceptibility ต่้า
+c2: Perceived barrier ต่้า
+c3: Perceived benefit ต่้า
+c4: Perceived seriousness ต่้า
+c5: ไม่มีปัจจัยกระตุ้นให้ใส่ถุงยาง
+
+=== KEY: 207 (ans: 1) ===
+Q: ข้อใดไม่ถูกต้องเกี่ยวกับการเรียกยาคืน
+c1: ต้องสามารถเรียกยาคืนได้ทันทีเมื่อเกิดปัญหา
+c2: การเรียกยาคืนเป็นหน้าที่ของฝ่ายขายและการตลาดเท่านั้น
+c3: มีระบบการเรียกยาคืนที่เป็นปัจจุบัน
+c4: ถ้าเกิดปัญหาต้องมีการเรียกยาคืน
+c5: การเรียกยาคืนต้องแจ้ง อย. ทุกครั้ง
+
+=== KEY: 208 (ans: 1) ===
+Q: ข้อใดไม่ถูกต้องเกี่ยวกับ amoxicillin/clavulanic acid
+c1: ไม่ถูกทำลายโดย beta lactamase
+c2: เกิดปฏิกิริยา hydrolysis
+c3: เกิดปฏิกิริยา epimerization
+c4: Clavulanic acid ไม่ใช่สารออกฤทธิ์
+c5: เป็นยาในกลุ่ม aminopenicillin กรณีศึกษา 3
+
+=== KEY: 209 (ans: 1) ===
+Q: ข้อใดคือสูตรยารักษาแรก ที่แนะนำให้ใช้ในผู้ติดเชื้อเอชไอวีที่ไม่มีข้อห้ามใช้
+c1: TDF+FTC+RPV
+c2: TDF+3TC+EFV
+c3: TDF+FTC+DTG
+c4: ABC+3TC+DTG
+c5: AZT+FTC+DTG
+
+=== KEY: 210 (ans: 1) ===
+Q: การใช้ยา Amoxicillin+Clavulanic acid สามารถพบผลข้างเคียงใดได้บ่อยที่สุด
+c1: คลื่นไส้ อาเจียน
+c2: กรดไหลย้อน
+c3: ท้องเสีย
+c4: ไอ
+c5: เวียนศีรษะ
+
+=== KEY: 211 (ans: 1) ===
+Q: ผู้ป่วยหญิงไทย วัยเจริญพันธุ์ อายุ 23 ปี มาขอคำปรึกษาเภสัชกร เนื่องจากมีอาการตกขาว มีกลิ่น ร่วมกับมีอาการคันภายในช่องคลอด มีอาการมาประมาณ 2-3 วัน ปฏิเสธประวัติการแพ้ยาและการมีเพศสัมพันธ์ จากอาการข้างต้น ผู้ป่วยดังกล่าว น่าจะมีสาเหตุมาจากการติดเชื้อชนิดใด
+c1: Trichomonas
+c2: Candida Albicans
+c3: Herpes Simplex
+c4: Chlamydia
+c5: Papilloma Virus
+
+=== KEY: 212 (ans: 1) ===
+Q: เชื้อสาเหตุใดที่พบได้มากที่สุดในการติดเชื้อปอกอักเสบชนิด Community-acquired pneumonia (CAP)
+c1: Pseudomonas aeruginosa
+c2: Acinetobacter baumannii
+c3: Klebsiella pneumoniae
+c4: Mycoplasma pneumoniae
+c5: Streptococcus pneumoniae
+
+=== KEY: 213 (ans: 1) ===
+Q: หากผู้ป่วยมีการติดเชื้อ MRSA ยาชนิดใดเหมาะสมมากที่สุด
+c1: Ceftazidime
+c2: Meropenem
+c3: Piperacillin-tazobactam
+c4: Vancomycin
+c5: Levofloxacin
+
+=== KEY: 214 (ans: 1) ===
+Q: ข้อใดต่อไปนี้ คือ specific test ของ dosage form ดังกล่าว
+c1: Minimum fill
+c2: Impurities test
+c3: Sterility tests
+c4: Microbial limit test
+c5: Assay
+
+=== KEY: 215 (ans: 1) ===
+Q: ตำบลแห่งหนึ่งมีประชากรทั้งหมด 1,000 คน ติดเชื้อไวรัสโควิท 19 ทั้งหมด 300 คน พบว่า เมื่อเดือนกรกฎาคม 2566 มีประชากรติดเชื้อเพิ่มอีก 50 คน จงหาอุบัติการณ์ของการติดเชื้อไวรัสโควิท 19 ในเดือนกรกฎาคมที่ผ่านมา มีค่าเท่ากับเท่าใด
+c1: 300/1000
+c2: 350/1000
+c3: 50/700
+c4: 350/700
+c5: 50/1000
+
+=== KEY: 216 (ans: 1) ===
+Q: ข้อใดคือ กลไกการออกฤทธิ์ของ Acyclovir
+c1: ยับยั้ง Viral DNA polymerase
+c2: ยับยั้ง 14-alpha demethylase
+c3: ยับยั้งการสร้าง nucleic acid
+c4: ยับยั้ง DNA gyrase
+c5: ยับยั้ง Nucleoside reverse transcriptase
+
+=== KEY: 217 (ans: 1) ===
+Q: สามีเพิ่งได้รับการวินิจฉัยว่าติดเชื้อ HIV ได้รับประทานยาต้าน HIV ภรรยามาโรงพยาบาลเพื่อรับยาสำหรับป้องกันการติด เชื้อ ข้อใดคือยาทางเลือกแรก
+c1: Tenofovir + Emtricitabine
+c2: Tenofovir + Lamivudine + Dolutegravir
+c3: Tenofovir + Emtricitabine + Zidovudine
+c4: Zidovudine + Lamivudine + Nevirapine
+c5: Abacavir + Lamivudine + Dolutegravir
+
+=== KEY: 218 (ans: 1) ===
+Q: อธิบายความแตกต่างของโรคคอหอยอักเสบ (Pharyngystis) ระหว่างสาเหตุจากการติดเชื้อไวรัสและแบคทีเรีย
+c1: การติดเชื้อไวรัสส่วนมากมีอาการของไข้แสดงเด่น
+c2: การติดเชื้อไวรัสจะมีอาการรุนแรงจำเป้นต้องใช้ยาในการรักษาผู้ป่วยทุกรายโดยเฉพาะกรณีคนไข้เด็กและผู้สูง อายุ
+c3: การตอบสนองต่อการติดเชื้อแบคทีเรีย เมื่อพบว่ามีอาการแสดงแล้วจำเป็นต้องใช้ยาปฏิชีวนะในการรักษาในผู้ป่วยทุกราย
+c4: การที่ผู้ป่วยมีอาการของจุดหนองบริเวณลำคอ ร่วมกับบวมบริเวณลำคอ ส่วนมากมีสาเหตุมาจากการติดเชื้อแบคทีเรีย
+c5: การติดเชื้อแบคทีเรียจะมีอาการคล้ายกับติดเชื้อไวรัส แต่จะพบอาการแสดงที่น้องกว่าการติดเชื้อไวรัสอย่างมีนัยสำคัญ
+
+=== KEY: 219 (ans: 1) ===
+Q: จากกรณีข้างต้น หากผู้ป่วยมีอาการแสดงของอาการคอหอยอักเสบจากการติดเชื้อแบคทีเรีย สาเหตุของการติดเชื้อส่วนมากพบเชื้อชนิดใด
+c1: Group A staphylococcus
+c2: Rotavirus
+c3: Ebstein-Barr
+c4: Group A streptococcus
+c5: Gram negative Bacilli
+
+=== KEY: 239 (ans: 1) ===
+Q: KI+I2 เป็นการเตรียมยาโดยใช้เทคนิคพิเศษที่เรียกว่าอะไร
+c1: complexation
+c2: trituration
+c3: emulsification
+c4: suspension
+c5: levigation 39.การทำ KI+I2 ควรเตรียมโดยข้อใด
+
+=== KEY: 240 (ans: 3) ===
+Q: ผลข้างเคียงจากการใช้ยา acyclovir
+c1: ปวดเมื่อย
+c2: ตาพร่า
+c3: คลื่นไส้ อาเจียน
+c4: หยุดหายใจ อ้างอิง: www.drugs.com
+c5: Meropenem 1 g IV Q8H
+
+=== KEY: 242 (ans: 5) ===
+Q: ท่านควรจ่ายปฏิชีวนะใด แก่ผู้ป่วยรายนี้ เพื่อป้องกันการติดเชื้อข้างต้น ก . ketoconazole
+c1: imipenam ค . tetracycline
+c2: amoxicillin
+c3: cloxacillin carbapenem (MSSA) โดย cloxacillin มีประสิทธิภาพดีที่สุดใน ,cephalosporin ส่วน ketoconazole เป็นยารักษาเชื้อรา (Survival Guide on Pharmacotherapy Vol. 1)
+c4: Azithromycin 500 mg OD
+c5: Doxycycline 100 mg BID
+
+=== KEY: 243 (ans: 2) ===
+Q: ข้อใดถูกต้องเกี่ยวกับกลไกของยา acyclovir
+c1: ยับยั้ง RNA polymerase
+c2: เปลี่ยนเป็น triphosphate เท่านั้น จึงจะออกฤทธิ์
+c3: เป็น product เมื่อเข้าสู่ร่างกายจะกลายเป็น valacyclovir
+c4: มีเฉพาะรูปแบบยารับประทานเท่านั้น
+c5: ยับยั้งขั้นตอน promotion ของ DNA ของเชื้อไวรัส แต่จะต้องถูกนำเข้าไปในเซลล์ หลังจากนั้น ACV จะถูก เปลี่ยนให้อยู่ในรูป ACV-monophosphate (acyclo- GMP) โดยอาศัยเอนไซม์ thymidine kinase ของไวรัส จากนั้นเอนไซม์ของเซลล์เจ้าบ้านจะทำการเปลี่ยน ACV- monophosphate ให้เป็น ACV-diphosphate และ ACVtriphosphate (acyclo-GTP) ในที่สุด Acyclo-GTP ที่เกิดขึ้นจะแย่งกับ deoxyguanosine triphosphate ใน การจับกับ DNA polymerase ของไวรัสทำให้การสร้าง DNA ของไวรัสถูกยับยั้ง Reference: http://pharmacology.md.kku.ac.th/site_data/mykku_pharmacal/11/ANTIVIRAL_AGENTS.pdf
+
+=== KEY: 248 (ans: 1) ===
+Q: ผู้ป่วยควรได้รับการรักษาด้วยยาต้านเชื้อวัณโรคสูตรใด
+c1: 4HRZE/2HR
+c2: 2HRZES/1HRZE/5HRE
+c3: 2HRZE/4HR
+c4: 2RZE/10RE
+c5: 2SHE/16HE
+
+=== KEY: 249 (ans: 1) ===
+Q: ข้อใดต่อไปนี้กล่าวผิดเกี่ยวกับยา Isoniazid
+c1: ยาออกฤทธิ์ต้านเชื้อวัณโรคโดยยับยั้งการสร้าง DNA ของเชื้อวัณโรค
+c2: ในผู้ป่วยรายนี้สามารถได้รับยา Isoniazid ในขนาด 300 mg ต่อวันได้
+c3: ยาลดกรดสามารถลดประสิทธิภาพของยา Isoniazid
+c4: ผู้ป่วยทุกรายที่ได้รับยา Isoniazid ควรต้องได้รับ Pyridoxine
+c5: อาการไม่พึงประสงค์ที่พบได้ คือ เอนไซม์ตับเพิ่มขึ้น 65 โรคติดเชื้อ ฝ่ายวิชาการ สโมสรนิสิตเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+
+=== KEY: 250 (ans: 1) ===
+Q: การให้ยา Quinine ในการรักษาโรคมาลาเรียกรณีติดเชื้อมาลาเรียชนิดฟัลซิพารัมรุนแรง เพราะเหตุใดจึง ไม่ให้แบบ bolus injection
+c1: การให้แบบ bolus injection อาจทำให้เกิด cardiotoxic effects เช่น หัวใจหยุดเต้นได้
+c2: การให้แบบ bolus injection ทำให้ยาอยู่ในกระแสเลือดไม่นานพอที่จะฆ่าเชื้อได้หมด
+c3: การให้แบบ bolus injection ทำให้ยามีค่าครึ่งชีวิตสั้นลง 74 โรคติดเชื้อ ฝ่ายวิชาการ สโมสรนิสิตเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+c4: การให้แบบ bolus injection ทำให้เกิดผลข้างเคียงจากยาโดยทั่วไปลดลง แต่ผลข้างเคียงถึงแก่ชีวิตเพิ่ม มากขึ้นอย่างมาก
+c5: ตำรับของตัวยาอยู่ในรูป emulsion แบบ w/o ไม่สามารถให้แบบ IV ได้
+
+=== KEY: 251 (ans: 1) ===
+Q: ตัวยา Metronidazole สามารถใช้รักษาการติดเชื้อของสิ่งมีชีวิตกลุ่มใดได้บ้าง
+c1: Virus
+c2: Protozoa
+c3: Aerobic bacteria
+c4: Anaerobic bacteria C E A B 77 โรคติดเชื้อ ฝ่ายวิชาการ สโมสรนิสิตเภสัชศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+c5: ถูกต้องทั้งข้อ ข และ ง
+
+=== KEY: 252 (ans: 1) ===
+Q: ผู้ป่วยมาด้วยอาการติดเชื้อที่เล็บ เล็บเปลี่ยนสีเป็นสีเหลือง หรือสีดำ และมีการหนาตัวขึ้น แพทย์วินิจฉัยว่า เป็น Onychomycosis จากเชื้อ Candida spp. ยาใดไม่สามารถใช้ในการรักษาสำหรับผู้ป่วยรายนี้ได้
+c1: Griseofulvin 134 โรคผิวหนัง ฝ่ายวิชาการ สโมสรนักศึกษาคณะเภสัชศาสตร์ มหาวิทยาลัยอุบลราชธานี ปี2560 สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+c2: Ketoconazole
+c3: Fluconazole
+c4: Itraconazole
+c5: Terbinafine
+
+=== KEY: 253 (ans: 1) ===
+Q: ผู้ป่วยชายไทยคู่ อายุ 38 ปี มาพบแพทย์ด้วยอาการเป็นแผลที่อวัยวะเพศ มีตุ่มน้ำพองใส แสบ คัน เป็นมา 3 สัปดาห์ ซึ่งเคยมีอาการดังกล่าวมาก่อนหน้านี้แล้วได้รับการรักษาให้หายแล้วแต่กลับมาเป็นซ้ำอีก แพทย์ วินิจฉัยว่าเป็นเริม ข้อใดกล่าวถูกต้องที่สุดเกี่ยวกับโรคของผู้ป่วยรายนี้
+c1: เกิดจากการติดไวรัส Herpes simplex Type I
+c2: ผู้ป่วยรายนี้จัดเป็น Primary Infection เนื่องจากเป็นการรักษาเริมหลังจากรักษาครั้งแรกหายขาด แล้ว
+c3: เมื่อมีอาการคัน สามารถใช้ยา topical ทาภายใน 48 ชั่วโมง เพื่อลดความรุนแรงของโรค
+c4: การรักษาสำหรับผู้ป่วยรายนี้ สามารถใช้ Valacyclovir 500 mg bid 3 วัน
+c5: การรักษาสำหรับผู้ป่วยรายนี้ สามารถใช้ Valacyclovir 500 mg bid 7 - 10 วัน จากข้อมูลต่อไปนี้ จงตอบคำถามข้อ 34-35
+
+=== KEY: 255 (ans: 1) ===
+Q: หากตรวจพบว่าเกิดจากการติดเชื้อ Pseudomonas aeruginosa ยาในข้อใดที่เหมาะสมในการรักษาที่ ครอบคลุมเชื้อมากที่สุด
+c1: Norfloxacin
+c2: Neomycin
+c3: Polymyxin B
+c4: Vancomycin
+c5: Clarithromycin
+
+=== KEY: 256 (ans: 1) ===
+Q: การประเมินความเสี่ยงเพื่อแยกการติดเชื้อไวรัสหรือแบคทีเรียโดยใช้ตาม Mclsacc Criteria ของผู้ป่วย รายนี้ได้เท่ากับกี่คะแนน
+c1: 1 คะแนน
+c2: 2 คะแนน
+c3: 3 คะแนน
+c4: 4 คะแนน
+c5: 5 คะแนน จากกรณีศึกษาต่อไปนี้ จงตอบคำถามข้อ 38-39 ผู้ป่วยหญิงอายุ 10 ปี น้ำหนัก 35 kg ส่วนสูง 140 cm มาโรงพยาบาล ด้วยอาการเจ็บคอ เมื่อสอง หน้านี้ได้รับประทานแคปซูลยาฟ้าทะลายโจร 4x3 มาแล้ว แต่อาการไม่ดีขึ้นจึงมาโรงพยาบาล ผู้ป่วยมี ประวัติแพ้ยาพาราเซตามอล โดยมีอาการผื่นขึ้นหลังได้รับยาได้รับการวินิจฉัยเบื้องต้นว่าเป็น tonsillitis
+
+=== KEY: 257 (ans: 1) ===
+Q: นายสมศักดิ์ อายุ 40 ปี มาพบท่านซึ่งเป็นเภสัชกรที่ร้านยาแห่งหนึ่งด้วยอาการมีผื่นขึ้นที่บริเวณปลายมือ และปลายเท้า โดยลักษณะผื่นที่พบ คือมีรูปร่างกลม เป็นวง 3 ชั้น ชั้นในสุดจะมีสีแดงเข้มจัดหรือเป็นตุ่มน้ำ พอง ชั้นถัดมาจะมีสีซีดจาง และชั้นนอกสุดจะมีสีแดงจางๆลักษณะคล้ายรูปธนู นอกจากนี้ยังพบแผลที่บริเวณ 236 โรคระบบภูมิคุ้มกัน นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 22 มหาวิทยาลัยนเรศวร สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) ริมฝีปาก โดยมีลักษณะเป็นแผลถลอกตื้นๆ มีเลือดออกและเป็นสะเก็ดสีคล้ำ ซึ่งจากการซักประวัติเพิ่มเติม พบว่าไม่พบปัจจัยเสี่ยงอื่นๆที่ทำให้เกิดผื่นดังกล่าว นอกจากการรับประทานยา penicillin เมื่อ 4 วันก่อนเพื่อ รักษาการติดเชื้อจากแบคทีเรีย ท่านคิดว่านายสมศักดิ์ควรได้รับการวินิจฉัยอย่างไรจึงจะเหมาะสมที่สุด
+c1: Maculopapular rash
+c2: Stevens-Johnson syndrome
+c3: Photosensitivity drug eruption
+c4: Urticaria
+c5: Erythema multiforme
+
+=== KEY: 258 (ans: 1) ===
+Q: Rx. Aromatic Ammonia Spirit, USP XXII – NF XVI Ammonium carbonate 34 g Strong ammonia solution 36 ml Lemon oil 10 ml Lavender oil 1 ml Nutmeg oil 1 ml Alcohol 700 ml Purified water qs. 1000 ml 300 เภสัชภัณฑ์รูปแบบของเหลว (Liquid dosage form) ฝ่ายวิชาการ สโมสรนักศึกษาคณะเภสัชศาสตร์ มหาวิทยาลัยพายัพ สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) จากสูตรตำรับ Strong ammonia solution ทำหน้าที่อะไรในตำรับ
+c1: Active ingredient
+c2: Flavoring agent
+c3: Stabilizing agent
+c4: Co-solvent
+c5: Solvent - คอลลอยด์
+
+=== KEY: 305 (ans: 1) ===
+Q: ผู้ป่วยรายนี้ติดเชื้ออะไร
+c1: Adeno virus
+c2: Influenza virus
+c3: Haemophilus influenza
+c4: streptococcus pyrogenes
+c5: streptococcus pneumonia ตอบ b) Influenza virus เนื่องจากอาการของผู้ป่วยเข้าได้กับไข้หวัดใหญ่ ไข้หวัดใหญ่ (Influenza) เป็นการติดเชื้อไวรัสที่ระบบทางเดินหายใจแบบเฉียบพลัน โดยมีลักษณะทางคลินิกที่สำคัญคือ มีไข้สูงแบบทันทีทันใด ปวดศีรษะ ปวดเมื่อยกล้ามเนื้อ อ่อนเพลีย ไข้หวัดธรรมดา (Common cold) rhinovirus 30–80% ผู้ป่วยมีอาการไข้ต่ำ ๆ รวมไปถึงมีอาการคัดจมูก แน่นจมูก ไอ จาม เจ็บคอ คอแดง ต่อมทอลซินบวมแต่ไม่มีตุ่มหนองอักเสบ โรคฮิบ Haemophilus Influenzae Type B(แบคทีเรีย) อาการอาจมีไข้ ปวดศีรษะอย่างรุนแรง คอแข็ง ชัก เซื่องซึมอย่างรุนแรง ตื่นนอนยาก หายใจลำบาก และหมดสติได้ เยื่อหุ้มสมองทำให้เกิดเยื่อหุ้มสมองอักเสบ Pharyngitis สาเหตุหลัก 40–80% virus (Adenovirus – the most common), ส่วน Bacterial พบไม่บ่อย (most common is Group A streptococcus (Streptococcus pyogenes)) Acute Sinusitis: virus → rhinoviruses, coronaviruses, and influenza viruses bacterier → Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis. gastroenteritis เชื้อไวรัสสาเหตุหลัก Rotavirus, norovirus, adenovirus, astrovirus
+

@@ -1,0 +1,461 @@
+﻿============================================================
+ID: 36 | Ans: 2 | Note: ข้อ 36 Pharma Plus เล่มม่วง (เฉลยข้อ ข)
+Q: สถานการณ์ที่ 7 ผู้ป่วยชายคู่อายุ 45 ปี ได้รับการวินิจฉัยว่าเป็นโรคถุงลมโป่งพอง และได้รับใบสั่งยาลังนี้
+Salmeterol Inhaler 2 puffs bid
+Ipratropium MDI 2 puffs qid
+ผู้ป่วยได้รับยากลับบ้านดังต่อไปนี้
+Salbutamol inhaler พ่น 2 ที วันละ 2 ครั้ง เช้า เย็น
+Ipratropium MDI พ่น 2 ที วันละ 4 ครั้ง เช้า กลางวัน เย็น และก่อนนอน
+ข้อใดถูกต้องเกี่ยวกับความคลาดเคลื่อนทางยา (medication errors) ที่เกิดขึ้น
+  c1: ความคลาดเคลื่อนที่เกิดจากการไม่ระบุวิธีใช้ให้ชัดเจน
+  c2: ความคลาดเคลื่อนจากการจ่ายยาผิดชนิด
+  c3: ความคลาดเคลื่อนที่เกิดจากไม่มียาในบัญชียาของโรงพยาบาล
+  c4: ความคลาดเคลื่อนจากการจ่ายยาผิดความแรง
+  c5: ความคลาดเคลื่อนจากการจ่ายยา ผิดความแรง และผิดวิธีใช้
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ข. ความคลาดเคลื่อนจากการจ่ายยาผิดชนิด
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่...
+============================================================
+ID: 37 | Ans: 4 | Note: ข้อ 37 Pharma Plus เล่มม่วง (เฉลยข้อ ง)
+Q: สถานการณ์ที่ 7 ผู้ป่วยชายคู่อายุ 45 ปี ได้รับการวินิจฉัยว่าเป็นโรคถุงลมโป่งพอง และได้รับใบสั่งยาลังนี้
+Salmeterol Inhaler 2 puffs bid
+Ipratropium MDI 2 puffs qid
+ผู้ป่วยได้รับยากลับบ้านดังต่อไปนี้
+Salbutamol inhaler พ่น 2 ที วันละ 2 ครั้ง เช้า เย็น
+Ipratropium MDI พ่น 2 ที วันละ 4 ครั้ง เช้า กลางวัน เย็น และก่อนนอน
+สิ่งที่ท่านควรบอกผู้ป่วยเกี่ยวกับการใช้ยา ipratropium inhaler คือข้อใด
+  c1: ให้พ่นยาเข้าทางจมูก
+  c2: ยานี้เหมาะสำหรับรักษาอาการเฉียบพลัน
+  c3: หลังจากพ่นครั้งแรก ต้องรออย่างน้อย 10 นาที ก่อนที่จะพ่นครั้งที่สอง
+  c4: เนื่องจากยา-1 ขวด สามารถพ่นได้ 200 ครั้ง จึงสามารถใช้ยานี้ได้นานประมาณ 25 วัน
+  c5: ยานี้เป็นยารักษาอาการอักเสบของหลอดลม จึงควรใช้เป็นประจำติดต่อกัน
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ง. เนื่องจากยา-1 ขวด สามารถพ่นได้ 200 ครั้ง จึงสามารถใช้ยานี้ได้นานประมาณ 25 วัน
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhal...
+============================================================
+ID: 38 | Ans: 1 | Note: ข้อ 38 Pharma Plus เล่มม่วง (เฉลยข้อ ก ค ง จ)
+Q: สถานการณ์ที่ 7 ผู้ป่วยชายคู่อายุ 45 ปี ได้รับการวินิจฉัยว่าเป็นโรคถุงลมโป่งพอง และได้รับใบสั่งยาลังนี้
+Salmeterol Inhaler 2 puffs bid
+Ipratropium MDI 2 puffs qid
+ผู้ป่วยได้รับยากลับบ้านดังต่อไปนี้
+Salbutamol inhaler พ่น 2 ที วันละ 2 ครั้ง เช้า เย็น
+Ipratropium MDI พ่น 2 ที วันละ 4 ครั้ง เช้า กลางวัน เย็น และก่อนนอน
+การกลั้วคอหลังพ่นยา salmeterol inhaler จะช่วยลดความเสี่ยงของการเกิดอาการข้างเคียงได้หลายประการ ยกเว้น
+  c1: ป้องกันเชื้อราในช่องปาก
+  c2: ลดความเสี่ยงของการเกิดเสียงแหบแห้ง
+  c3: ลดโอกาสการเกิดความดันในลูกตาสูง
+  c4: ลดโอกาสการเกิดหัวใจเต้นเร็ว
+  c5: ลดโอกาสการเกิดอาการมือสั่น
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ป้องกันเชื้อราในช่องปาก
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe ...
+============================================================
+ID: 39 | Ans: 1 | Note: ข้อ 39 Pharma Plus เล่มม่วง (เฉลยข้อ )
+Q: สถานการณ์ที่ 7 ผู้ป่วยชายคู่อายุ 45 ปี ได้รับการวินิจฉัยว่าเป็นโรคถุงลมโป่งพอง และได้รับใบสั่งยาลังนี้
+Salmeterol Inhaler 2 puffs bid
+Ipratropium MDI 2 puffs qid
+ผู้ป่วยได้รับยากลับบ้านดังต่อไปนี้
+Salbutamol inhaler พ่น 2 ที วันละ 2 ครั้ง เช้า เย็น
+Ipratropium MDI พ่น 2 ที วันละ 4 ครั้ง เช้า กลางวัน เย็น และก่อนนอน
+ผู้ป่วยสงสัยว่าการรักษาโรคถุงลมโป่งพองที่เหมาะสมเป็นอย่างไร
+  c1: ควรเริ่มการรักษาด้วยยาสเตียรอยด์ชนิดพ่น
+  c2: ควรเริ่มการรักษาด้วยยาขยายหลอดลมชนิด beta-agonist
+  c3: ควรเริ่มการรักษาด้วยยาขยายหลอดลมชนิด anticholinergic
+  c4: ผู้ป่วยทุกรายควรได้รับยาสเตียรอยด์ชนิดพ่น สำหรับควบคุมอาการ
+  c5: ผู้ป่วยทุกคนต้องได้รับยาสเตียรอยด์ชนิดกิน
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ควรเริ่มการรักษาด้วยยาสเตียรอยด์ชนิดพ่น
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสม...
+============================================================
+ID: 40 | Ans: 1 | Note: ข้อ 40 Pharma Plus เล่มม่วง (เฉลยข้อ ก ง จ)
+Q: ข้อใดกล่าวผิดเกี่ยวกับ salmeterol
+  c1: Salmeterol มีข้อบ่งใช้ในการจับหืดที่เกิดขึ้นเฉียบพลัน
+  c2: กลไกการออกฤทธิ์คือกระตุ้นเอนไซม์ adenylate cyclase
+  c3: สามารถใช้กับผู้ป่วยที่มีอาการ nocturnal asthma มากกว่า 1 ครั้ง/สัปดาห์
+  c4: การใช้ยานี้นาน ๆ ทำให้การตอบสนองต่อยาลดลง (tachyphylaxis)
+  c5: หากไม่มี salmeterol สามารถใช้ albuterol แทนได้
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Salmeterol มีข้อบ่งใช้ในการจับหืดที่เกิดขึ้นเฉียบพลัน
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) ...
+============================================================
+ID: 41 | Ans: 3 | Note: ข้อ 41 Pharma Plus เล่มม่วง (เฉลยข้อ ค)
+Q: ข้อใดคือกลไกการออกฤทธิ์ของ ipratropium MDI
+  c1: Selective beta2 - adrenergic receptor agonist
+  c2: Phosphodiesterase enzyme inhibitor
+  c3: Muscarinic cholinergic receptor antagonist
+  c4: Immunosuppressive agent
+  c5: Lipoxygenase enzyme inhibitor
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Muscarinic cholinergic receptor antagonist
+
+💡 Background:
+โรคปอดอุดกั้นเรื้อรัง (COPD) มี airflow limitation ถาวร การรักษาเน้นใช้ bronchodilators (LAMA/LABA) เพื่อลดอาการเหนื...
+============================================================
+ID: 42 | Ans: 2 | Note: ข้อ 42 Pharma Plus เล่มม่วง (เฉลยข้อ ข)
+Q: ชายอายุ 20 ปี มาพบแพทย์ด้วยอาการหวัดมีน้ำมูกใส คัดจมูก คันจมูก จาม ซึ่งเป็นมาประมาณ 5 วัน
+จากอาการดังกล่าว อยากทราบว่าผู้ป่วยรายนี้ก็น่าจะเป็นโรคอะไร
+  c1: Sinusitis
+  c2: Allergic rhinitis
+  c3: Cystitis
+  c4: Common cold
+  c5: Bronchitis
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Allergic rhinitis
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacer...
+============================================================
+ID: 43 | Ans: 4 | Note: ข้อ 43 Pharma Plus เล่มม่วง (เฉลยข้อ ง)
+Q: หลังการตรวจวินิจฉัย แพทย์ได้สั่งจ่ายยารวม 4 รายการ เมื่อผู้ป่วยไปรับยาที่ห้องยาพบว่ารียาคือ Pseudoephedrine ขนาด 60 มิลลิกรัม เภสัชกรจึงได้เขียนใบรับรองยาหมดให้ โดยบอกว่ายานี้ไม่มีจำหน่ายในร้านยา ขอให้ผู้ป่วยมารับยาที่โรงพยาบาลในภายหลัง อยากทราบว่าทำไมยาถึงไม่มีจำหน่ายในร้านยา
+ทำไมยา Pseudoephedrine จึงไม่มีจำหน่ายในร้านยาทั่วไป
+  c1: เนื่องจากจัดเป็นยาควบคุมพิเศษ
+  c2: เนื่องจากจัดเป็นยาที่ลงทะเบียนแบบมีเงื่อนไขต้องติดตามการใช้ในโรงพยาบาล
+  c3: เนื่องจากจัดเป็นยาเสพติดให้โทษ ประเภท 2
+  c4: เนื่องจากจัดเป็นวัตถุออกฤทธิ์ต่อจิตประสาท
+  c5: เนื่องจากจัดเป็นยาอันตราย
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ง. เนื่องจากจัดเป็นวัตถุออกฤทธิ์ต่อจิตประสาท
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเ...
+============================================================
+ID: 44 | Ans: 4 | Note: ข้อ 44 Pharma Plus เล่มม่วง (เฉลยข้อ ง)
+Q: ในระหว่างจ่ายยา เภสัชกรได้ให้คำแนะนำแก่ผู้ป่วยเกี่ยวกับการใช้ยาว่าไม่ควรใช้ยาติดต่อกันนานเกิน 7 วัน อยากทราบว่าเพราะเหตุใด
+ทำไมจึงไม่ควรใช้ยาพ่นหรือยาลดน้ำมูกกลุ่ม Sympathomimetics (เช่น Pseudoephedrine, Oxymetazoline) ติดต่อกันเกิน 7 วัน
+  c1: เพื่อป้องกันปัญหาการดื้อยา
+  c2: เพื่อป้องกันการเกิด hypertension
+  c3: เพื่อป้องกันการเกิด hyperglycemia
+  c4: เพื่อป้องกันการเกิด rebound congestion
+  c5: เพื่อไม่ให้เกิดปัญหา insomnia
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ง. เพื่อป้องกันการเกิด rebound congestion
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอ...
+============================================================
+ID: 45 | Ans: 3 | Note: ข้อ 45 Pharma Plus เล่มม่วง (เฉลยข้อ ค)
+Q: ผู้ป่วยได้สอบถามเภสัชกรว่าสามารถใช้สมุนไพรตัวใดเพื่อลดอาการไอได้บ้าง ท่านจะแนะนำให้ใช้สมุนไพรข้อใด
+สมุนไพรข้อใดที่มีข้อบ่งใช้ในการบรรเทาอาการไอและขับเสมหะตามบัญชียาหลักแห่งชาติ
+  c1: ฟ้าทลายโจร
+  c2: ไพล
+  c3: ขิง
+  c4: ชุมเห็ดเทศ
+  c5: เสลดพังพอน
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ค. ขิง
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbation
+
+🎯 ทำไม...
+============================================================
+ID: 46 | Ans: 3 | Note: ข้อ 46 Pharma Plus เล่มม่วง (เฉลยข้อ ค)
+Q: สมุนไพรแก้ไออื่นๆ นอกจากสมุนไพรข้อข้างต้น
+สมุนไพรข้อใดที่มีสรรพคุณช่วยบรรเทาอาการไอ ขับเสมหะ
+  c1: ข่า
+  c2: ตะไคร้
+  c3: ดีปลี
+  c4: กระเทียม
+  c5: กะเพรา
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ค. ดีปลี
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbation
+
+🎯 ทำ...
+============================================================
+ID: 47 | Ans: 2 | Note: ข้อ 47 Pharma Plus เล่มม่วง (เฉลยข้อ ข ง)
+Q: ข้อใดไม่ใช่อาการข้างเคียงของการใช้ยา salbutamol
+  c1: ใจสั่น
+  c2: ปัสสาวะคั่ง
+  c3: ปากแห้ง
+  c4: รับรสผิดปกติ
+  c5: ปวดศีรษะ
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ข. ปัสสาวะคั่ง
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbation...
+============================================================
+ID: 48 | Ans: 1 | Note: ข้อ 48 Pharma Plus เล่มม่วง (เฉลยข้อ ก)
+Q: การใช้ salbutamol ข้อใดถูกต้อง
+  c1: ใช้ปากอมให้สนิท
+  c2: หายใจเข้าทางจมูก
+  c3: หายใจออกทันที
+  c4: บ้วนปากทันที
+  c5: ไม่ต้องเขย่าขวด
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ใช้ปากอมให้สนิท
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerba...
+============================================================
+ID: 49 | Ans: 5 | Note: ข้อ 49 Pharma Plus เล่มม่วง (เฉลยข้อ จ)
+Q: ข้อใดไม่ถูกต้องเกี่ยวกับ seretide accuhaler
+  c1: พกพาสะดวก
+  c2: ไม่มี propellant
+  c3: ปล่อย 1 dose สูดได้หลายที
+  c4: ไม่อาศัยความสัมพันธ์ระหว่างแรงกดและการหายใจ
+  c5: ใช้ meter dose valve ในการปล่อยตัวยา
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ จ. ใช้ meter dose valve ในการปล่อยตัวยา
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพ...
+============================================================
+ID: 50 | Ans: 4 | Note: ข้อ 50 Pharma Plus เล่มม่วง (เฉลยข้อ ง)
+Q: เมื่อใดที่ต้องหยุดใช้ seretide accuhaler ชั่วคราว
+  c1: อายุมากกว่า 65 ปี
+  c2: ไตผิดปกติ
+  c3: ตับผิดปกติ
+  c4: ปอดติดเชื้อ
+  c5: ระคายเคืองปาก
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ง. ปอดติดเชื้อ
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbation...
+============================================================
+ID: 51 | Ans: 2 | Note: ข้อ 51 Pharma Plus เล่มม่วง (เฉลยข้อ ข)
+Q: สถานการณ์ที่ 10 ผู้ป่วยประวัติประจำตัวเป็นโรคหอบหืด ใช้ยา Theophylline, Salbutamol inhaler, Budesonide inhaler ผู้ป่วยมีอาการกำเริบ 5 ครั้งต่อเดือน
+ข้อใดไม่ใช่พิษของยา theophylline
+  c1: ใจสั่น
+  c2: ปวดท้อง
+  c3: ชัก
+  c4: คลื่นไส้ อาเจียน
+  c5: มองเห็นภาพซ้อน
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ข. ปวดท้อง
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbation
+
+🎯 ...
+============================================================
+ID: 52 | Ans: 1 | Note: ข้อ 52 Pharma Plus เล่มม่วง (เฉลยข้อ ก)
+Q: สถานการณ์ที่ 10 ผู้ป่วยประวัติประจำตัวเป็นโรคหอบหืด ใช้ยา Theophylline, Salbutamol inhaler, Budesonide inhaler ผู้ป่วยมีอาการกำเริบ 5 ครั้งต่อเดือน
+ยาใดสามารถเกิดอันตรกิริยากับ Theophylline ได้
+  c1: Clarithromycin
+  c2: Carbocysteine
+  c3: Ipratropium
+  c4: Montelukast
+  c5: Prednisolone
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Clarithromycin
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbat...
+============================================================
+ID: 53 | Ans: 1 | Note: PLE_CC1_2567_Key ข้อ 25
+Q: ผู้ป่วยเป็นโรค asthma มีอาการหายใจหอบเหนื่อย ไอ แต่ไม่เคยมีอาการกำเริบจนต้องเข้ารพ. Med: Seretide (salmeterol/fluticasone propionate: 50/?) bid, Ventolin (salbutamol) prn, Avamys พ่นจมูก ใช้ยาพ่นถูกต้อง ตาม guideline asthma ไทย 2566 ควรปรับเปลี่ยนการรักษาเป็น regimen ใด ไม่รู้ตอนนี้คนไข้ได้ยาระดับไหนอยู่ ;-;
+  c1: High dose ICS และ as needed SABA
+  c2: Low dose ICS+ LABA และ as need SABA
+  c3: Medium dose ICS-formoterol maintenance and reliever
+  c4: Low dose ICS-formoterol maintenance and reliever
+  c5: Steroid long term? หญิงไทย 50 ปี หนัก 45 สูง 157 อาชีพเย็บผ้าทอในโรงงาน มาด้วยอาการหายใจหอบเหนื่อย โดยเฉพาะ ควบคุมอาการ Seretide (fluticasone/salmeterol) 1 puff BID ร่วมกับ Ventolin และ Avamys Fluticasone furoate 2  puff OD, FEV1 ก่อน 1.65 ลิตร หลัง 2.1 ลิตร แพทย์วินิจฉัยว่าเป็น asthma ควบคุมอาการไม่ได้ (Uncontrolled asthma) ประวัติเดิม: สูบบุหรี่วันละ 20 มวน เป็นเวลา 20 ปี แต่ เลิกบุหรี่มาแล้ว 10 ปี
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. High dose ICS และ as needed SABA
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อล...
+============================================================
+ID: 54 | Ans: 1 | Note: PLE_CC1_2567_Key ข้อ 26
+Q: การใช้ LAMA ในคนไข้ asthma มีประโยชน์อย่างไร
+  c1: เพิ่ม compliance
+  c2: ลดสารคัดหลั่ง
+  c3: เพิ่ม lung function
+  c4: ลด asthma symptoms
+  c5: ลดการใช้ SABA
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. เพิ่ม compliance
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerb...
+============================================================
+ID: 55 | Ans: 1 | Note: PLE-CC1 ปี 2566 Day 1 ข้อ 55
+Q: ผู้ป่วยAsthma กำลังใช้Salmetarol/Fluticasone คุมอาการดีมากๆไม่ใช้Reliever เลย ใช้ชีวิตปกติไม่มีอาการกลางคืนจัดเป็นการควบคุมแบบใด ตัวเลือก
+  c1: COPD / Asthma
+  c2: Well control
+  c3: Partial control
+  c4: uncontroll
+  c5: Fluticasone/Salmeterol 250/50 mcg DPI BID
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. COPD / Asthma
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbati...
+============================================================
+ID: 56 | Ans: 1 | Note: PLE-CC1 ปี 2566 Day 1 ข้อ 57
+Q: ต่อจาก56 non pharmaco asthma ตัวเลือก
+  c1: COPD / Asthma
+  c2: หลีกเลี่ยงสิ่งที่ทำให้แพ้
+  c3: Tiotropium Respimat 2.5 mcg 2 puffs OD
+  c4: Ipratropium/Fenoterol MDI PRN
+  c5: Montelukast 10 mg HS
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. COPD / Asthma
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbati...
+============================================================
+ID: 57 | Ans: 1 | Note: PLE-CC1 ปี 2566 Day 2 ข้อ 9
+Q: Copd ออกstage กับgrade FEV = 35 FEV/FVC = 65% ตัวเลือก
+  c1: COPD / Asthma
+  c2: Montelukast 10 mg HS
+  c3: Theophylline 200 mg BID
+  c4: Prednisolone 40 mg OD x 5 days
+  c5: N-acetylcysteine 600 mg OD
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. COPD / Asthma
+
+💡 Background:
+โรคปอดอุดกั้นเรื้อรัง (COPD) มี airflow limitation ถาวร การรักษาเน้นใช้ bronchodilators (LAMA/LABA) เพื่อลดอาการเหนื่อยและป้องกัน acute exacerbat...
+============================================================
+ID: 58 | Ans: 1 | Note: PLE_CC1_2565_Day1_Key ข้อ 62
+Q: ผูป%วยอาการไม;ดีขึ้น แพทยçพิจารณาจ;าย antibiotic เพิ่ม ควรใหตัวไหน ตามเกณฑçโรคปอดอุดกั้นเรื้อรัง 2560 (เปลี่ยน Guideline ในปh 2568 : Guideline GINA 2024)
+  c1: Azithromycin
+  c2: Ciprofloxacin
+  c3: Doxycycline
+  c4: จำ choice ไม;ได
+  c5: * จำ choice ไม;ได# * อาย antibiotic เ¢อ
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Azithromycin
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbatio...
+============================================================
+ID: 59 | Ans: 4 | Note: PLE_CC1_2565_Day1_Key ข้อ 63
+Q: สารช;วยในขอใดช;วยใหผงยา tiotropium bromide เปhยกง;ายเมื่อผงยาสัมผัสกับของเหลวในทางเดิน หายใจ
+  c1: Lecithin
+  c2: citric acid
+  c3: Alginic acid
+  c4: Calcium stearate
+  c5: titanium oxide Citric acid pH adjustment Alginic acid wetting agent Calcium stearate hydrophobic lubricant Titanium oxide opaciﬁer UV UV blocker
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Calcium stearate
+
+💡 Background:
+โรคปอดอุดกั้นเรื้อรัง (COPD) มี airflow limitation ถาวร การรักษาเน้นใช้ bronchodilators (LAMA/LABA) เพื่อลดอาการเหนื่อยและป้องกัน acute exacer...
+============================================================
+ID: 61 | Ans: 1 | Note: PLE_CC1_2565_Day2_Key ข้อ 20
+Q: การแพ$ยาแบบใดไม-ควร rechallenge ยาอง&นไมเกรน -องใ/เวลา 8–12 2ปดา5 ก6าจะเ9นผล;ดเจน ~ Cross-reactivity between sulfonamide antibiotics and non-antibiotic sulfonamides is unlikely because their antigenic determinants are different. Ref: American Academy of Allergy, Asthma & Immunology (AAAAI) FDA Topamaxห Label Migraine: 100 mg/day Epilepsy: 200–400 mg/day การเ<มยาอง&นไมเกรน-อง “ประเ=นผลห?ง 2–3 เ@อน” หากไAผลBCอยDจารณาใ/ “6–12 เ@อน” เFอควบIมระยะยาว แK ไLใMNอOงPบQหRบ initial trial
+  c1: Maculopapular rash
+  c2: Macular rash
+  c3: Toxic epidermal necrolysis
+  c4: Acneiform drug eruption
+  c5: * จำ choice ไม-ได$ * กรณีศึกษา 8 (TEN) : Life threatening allergic reaction dงไWควร rechallenge ผู$ป&วยปวดข$อฉับพลัน ระดับ uric acid = 9 รับวินิจฉัยเปQน acute gout attack
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Maculopapular rash
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exace...
+============================================================
+ID: 62 | Ans: 1 | Note: PLE_CC1_2565_Day2_Key ข้อ 46
+Q: ข$อใดคืออาการไม-พึงประสงค6ที่พบบ-อย หากผู$ป&วยใช$ salbutamol MDI บ-อยหรือเกินปริมาณที่แนะนำ Phytoestrogen Isoﬂavone Phytoestrogen
+  c1: metabolic alkalosis
+  c2: drowsiness
+  c3: hyper Mg
+  c4: hyperkalemia
+  c5: tachycardia
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. metabolic alkalosis
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exac...
+============================================================
+ID: 63 | Ans: 1 | Note: PLE_CC1_2565_Day2_Key ข้อ 47
+Q: พบว-า salbutamol เปQน chiral molecule จึงมีทั้ง (R)-salbutamol และ (S)-salbutamol ข$อใดกล-าว ถูกต$องเกี่ยวกับสารผสม 50:50 ระหว-าง (R)-salbutamol และ (S)-salbutamol
+  c1: Cis/Trans mixture
+  c2: Chiral mixture
+  c3: Racemic mixture
+  c4: Conformational mixture
+  c5: Mixed form mixture กรณีศึกษา 16 ผู$ป&วยมีอาการคลื่นไส$อาเจียน เบื่ออาหาร นำหนักลด 5 กิโลในสองสัปดาห6 ได$รับการวินิจฉัยว-าเปQน วัณโรคครั้งแรก ไม-เคยได$รับยามาก-อน ปฏิเสธโรคประจำตัว ไม-มีประวัติแพ$ยา PLE-CC1 Preparation 2565 !อ ข. - จ. %ก'วสามารถ.น01บยาลดกรดไ7 8งจะ;จารณาตาม >ณสม?@การแBอาเDยนจากภาวะ'บFกเสบ Diazepam ใHในการIกษา CINV เKาLน, ระMงการใHในNOวยโรค'บ เพราะSาน CYP 2c19 และ CYP 3A4 ไ7 active metabolites 8งไTเUอกใHในกรVW Olanzapine ใHในการIกษา CINV, ระMงการใHในNOวยโรค'บ 8งไTเUอกใHในกรVW Dimenhydrinate ไTX!อYามใH1บNOวย'บ ZาจะใYไ7ในNOวยรายW Pyridoxine Xฤท]ในการแB N/V (ปก@ใHในคน_อง) และ X indication ใน poisoning with isoniazid และ Adverse reaction จากยา 8งเหมาะ1บNOวยรายW
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Cis/Trans mixture
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacer...
+============================================================
+ID: 64 | Ans: 1 | Note: PLE_CC1_2564_All_Key ข้อ 1
+Q: COPD ข้อใดไม่ใช่สาเหตุ เฉลยข้อสอบ PLE-CC1 ครั้งที่12/2564 วันที่ 1-2 : MUPY 50 เฉลยข้อสอบ PLE-CC1 ครั้งที่12/2564 วันที่ 1-2 : MUPY 50
+  c1: COPD / Asthma
+  c2: Theophylline 200 mg BID
+  c3: Prednisolone 40 mg OD x 5 days
+  c4: N-acetylcysteine 600 mg OD
+  c5: Beclomethasone MDI 100 mcg BID
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. COPD / Asthma
+
+💡 Background:
+โรคปอดอุดกั้นเรื้อรัง (COPD) มี airflow limitation ถาวร การรักษาเน้นใช้ bronchodilators (LAMA/LABA) เพื่อลดอาการเหนื่อยและป้องกัน acute exacerbat...
+============================================================
+ID: 65 | Ans: 1 | Note: PLE_CC1_2564_All_Key ข้อ 2
+Q: ข้อไม่ใช่ปัจจัยเสี่ยงกำเริบของ COPD
+  c1: COPD / Asthma
+  c2: การใช้ยาพ่นจมูกแก้แพ้
+  c3: Salbutamol MDI 2 puffs PRN
+  c4: Budesonide/Formoterol 160/4.5 mcg DPI BID
+  c5: Fluticasone/Salmeterol 250/50 mcg DPI BID
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. COPD / Asthma
+
+💡 Background:
+โรคปอดอุดกั้นเรื้อรัง (COPD) มี airflow limitation ถาวร การรักษาเน้นใช้ bronchodilators (LAMA/LABA) เพื่อลดอาการเหนื่อยและป้องกัน acute exacerbat...
+============================================================
+ID: 66 | Ans: 1 | Note: PLE_CC1_2564_All_Key ข้อ 3
+Q: ข้อใดเป็นผลข้างเคียงของ salbutamol
+  c1: COPD / Asthma
+  c2: Tremor / b. Bradycardia / c. Diarrhea
+  c3: Tiotropium Respimat 2.5 mcg 2 puffs OD
+  c4: Ipratropium/Fenoterol MDI PRN
+  c5: Montelukast 10 mg HS
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. COPD / Asthma
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbati...
+============================================================
+ID: 67 | Ans: 1 | Note: ข้อ 67 (PLE_CC1_2562_Key.md)
+Q: ข้อใดเป็นส่วนที่สำคัญที่สุดของ aerosol inhalations X non-selective B-blocker unwise active asthma (equomotair ~
+  c1: Propellant
+  c2: Glidant
+  c3: Cosolvent
+  c4: Antioxidant
+  c5: Wetting agent
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Propellant
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbation
+...
+============================================================
+ID: 68 | Ans: 1 | Note: ข้อ 69 (PLE_CC1_2562_Key.md)
+Q: ขนาดยา aerosol evohaler ดูดซึมเข้าปอดได้ดีที่สุด X X - X ~ -
+  c1: > 100 ไมโครเมตร
+  c2: 50-100 ไมโครเมตร
+  c3: 31-49 ไมโครเมตร
+  c4: 5-30 ไมโครเมตร
+  c5: <5 ไมโครเมตร
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. > 100 ไมโครเมตร
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerba...
+============================================================
+ID: 69 | Ans: 1 | Note: ข้อ 29 (PLE_CC1_2558_Key.md)
+Q: 2 เดือนต่อมาผู้ป่วยยังคงต้องใช้ salbutamol บ่อย ๆ ยาใดไม่ควรให้เสริมในผู้ป่วยรายนี้
+  c1: Salmeterol
+  c2: Formoterol
+  c3: Prednisolone
+  c4: Bambuterol
+  c5: Theophylline ห้ามนำไปทำซ้ำทุกกรณี เว้นแต่จะได้รับอนุญาต
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Salmeterol
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbation
+...
+============================================================
+ID: 70 | Ans: 1 | Note: ข้อ 46 (PLE_CC1_2558_Key.md)
+Q: ยา tiotropium 18 mcg มี half-life 120 hr, BA 20%, volume of distribution 36 L/kg pt. หนัก 50 kg สมมุติว่ายากิน equivalent กับยาฉีด ยานี้ มีระดับยาในเลือดสูงสุดเท่าไหร่
+  c1: 2 ng/L
+  c2: 0.2 ng/L
+  c3: 10 ng/L
+  c4: 18 ng/L
+  c5: 20 ng/L กรณีศึกษา 7 คนไข้อ้วน ชอบกินมื้อเย็นแล้วนอนเลย ชอบดื่มนม สูบบุหรี่ แสบยอดอก ชอบกินอาหารเผ็ดๆ มียาหลายตัว
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. 2 ng/L
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbation
+
+🎯 ท...
+============================================================
+ID: 71 | Ans: 1 | Note: ข้อ 60 (Pharmtutor_2024_Set1.md)
+Q: ผู้ป่วยชายไทยอายุ 65 ปี มีประวัติสูบบุหรี่มา 20 ปี พบว่า 2 เดือนก่อนหน้ามีอาการไอ และหายใจหอบเหนื่อยอยู่บ่อยครั้ง รวมถึงมีเสมหะตลอดเวลา แพทย์จึงส่งตรวจทางห้องปฏิบัติการ และตรวจร่างกาย ผลพบว่าผู้ป่วยรายนี้มีภาวะโรคปอดอุดกั้นเรื้อรัง การตรวจใดจัดเป็น Gold Standard ในการวินิจฉัยโรคนี้
+  c1: Sputum culture
+  c2: Physical Examination
+  c3: Complete blood count
+  c4: Peak flow meter
+  c5: Lung function Spirometry
+Exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Sputum culture
+
+💡 Background:
+โรคหืด (Asthma) มีพยาธิสภาพเป็นการอักเสบเรื้อรังของหลอดลม แนวทาง GINA แนะนำ Inhaled Corticosteroid (ICS) เป็นแกนหลักเสมอเพื่อลด severe exacerbat...

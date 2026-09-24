@@ -1,0 +1,226 @@
+{
+  "97": {
+    "distractors": {
+      "ข": "เป็น non-selective beta-adrenergic blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับป้องกันไมเกรนและลด essential tremor แต่ไม่มีบทบาทในการเพิ่มระดับโดปามีนในโรคพาร์กินสัน",
+      "ค": "ออกฤทธิ์ยับยั้ง voltage-gated sodium channels เพิ่มฤทธิ์ GABA และยับยั้ง AMPA/kainate receptors ใช้ป้องกันไมเกรนและโรคลมชัก แต่ไม่มีบทบาทชดเชยโดปามีนในโรคพาร์กินสัน",
+      "ง": "เป็น reversible acetylcholinesterase inhibitor มีข้อบ่งใช้หลักสำหรับรักษาอาการสมองเสื่อมใน Alzheimer disease ไม่มีบทบาทในการรักษาหรือป้องกันอาการปวดศีรษะ ชัก หรือพาร์กินสัน",
+      "จ": "เป็น recombinant tissue plasminogen activator (rtPA) สำหรับ thrombolytic therapy ใน acute ischemic stroke ภายใน 4.5 ชั่วโมง ไม่มีบทบาทเป็นยากันชักหรือยารักษาไมเกรน"
+    }
+  },
+  "98": {
+    "distractors": {
+      "ข": "เป็น recombinant tissue plasminogen activator (rtPA) สำหรับ thrombolytic therapy ใน acute ischemic stroke ภายใน 4.5 ชั่วโมง ไม่มีบทบาทเป็นยากันชักหรือยารักษาไมเกรน",
+      "ค": "เป็น voltage-gated sodium channel blocker มีเภสัชจลนศาสตร์แบบไม่เป็นเชิงเส้น (non-linear kinetics) ใช้รักษา focal และ generalized tonic-clonic seizures แต่ไม่มีข้อบ่งใช้ในไมเกรนหรือพาร์กินสัน",
+      "ง": "เป็น broad-spectrum antiepileptic drug ที่เพิ่มระดับ GABA และยับยั้ง sodium/calcium channels มีฤทธิ์ teratogenic สูง และไม่มีข้อบ่งใช้ในการรักษาโรคพาร์กินสัน",
+      "จ": "เป็น voltage-gated sodium channel blocker ที่เป็น first-line สำหรับ focal seizures และ trigeminal neuralgia แต่ไม่มีบทบาทในการรักษาอาการปวดศีรษะจากความเครียดหรือโรคพาร์กินสัน"
+    }
+  },
+  "99": {
+    "distractors": {
+      "ข": "เป็น voltage-gated sodium channel blocker ที่เป็น first-line สำหรับ focal seizures และ trigeminal neuralgia แต่ไม่มีบทบาทในการรักษาอาการปวดศีรษะจากความเครียดหรือโรคพาร์กินสัน",
+      "ค": "เป็น broad-spectrum antiepileptic drug ที่ปิดกั้น voltage-gated sodium channels ใช้ในโรคลมชักและ bipolar disorder แต่ไม่มีข้อบ่งใช้รักษาอาการของโรคพาร์กินสันหรือปวดศีรษะเครียด",
+      "ง": "เป็นยากันชักที่จับกับ synaptic vesicle protein 2A (SV2A) ใช้รักษาโรคลมชักชนิด focal และ generalized seizures แต่ไม่มีฤทธิ์ในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะ",
+      "จ": "เป็นยาจับกับ alpha-2-delta subunit ของ voltage-gated calcium channels ใช้รักษา neuropathic pain และ focal seizure เสริม ไม่ใช่ยาหลักในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะเครียด"
+    }
+  },
+  "100": {
+    "distractors": {
+      "ข": "เป็นยาจับกับ alpha-2-delta subunit ของ voltage-gated calcium channels ใช้รักษา neuropathic pain และ focal seizure เสริม ไม่ใช่ยาหลักในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะเครียด",
+      "ค": "ออกฤทธิ์จับกับ alpha-2-delta subunit ของ voltage-gated calcium channels มีข้อบ่งใช้ใน neuropathic pain และ generalized anxiety disorder แต่ไม่มีผลรักษาโรคมอเตอร์ในพาร์กินสันหรือป้องกันไมเกรน",
+      "ง": "เป็น dopamine precursor ร่วมกับ peripheral dopa decarboxylase inhibitor เป็นยาหลักสำหรับโรคพาร์กินสัน ไม่มีฤทธิ์กันชักและไม่มีข้อบ่งใช้รักษาอาการปวดศีรษะไมเกรน",
+      "จ": "เป็น selective 5-HT1B/1D receptor agonist ใช้รักษา acute migraine attack โดยหดหลอดเลือดสมอง แต่ไม่มีผลต่อพยาธิสภาพของโรคพาร์กินสันหรือการควบคุมโรคลมชัก"
+    }
+  },
+  "101": {
+    "distractors": {
+      "ข": "เป็น selective 5-HT1B/1D receptor agonist ใช้รักษา acute migraine attack โดยหดหลอดเลือดสมอง แต่ไม่มีผลต่อพยาธิสภาพของโรคพาร์กินสันหรือการควบคุมโรคลมชัก",
+      "ค": "เป็น non-selective beta-adrenergic blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับป้องกันไมเกรนและลด essential tremor แต่ไม่มีบทบาทในการเพิ่มระดับโดปามีนในโรคพาร์กินสัน",
+      "ง": "ออกฤทธิ์ยับยั้ง voltage-gated sodium channels เพิ่มฤทธิ์ GABA และยับยั้ง AMPA/kainate receptors ใช้ป้องกันไมเกรนและโรคลมชัก แต่ไม่มีบทบาทชดเชยโดปามีนในโรคพาร์กินสัน",
+      "จ": "เป็น reversible acetylcholinesterase inhibitor มีข้อบ่งใช้หลักสำหรับรักษาอาการสมองเสื่อมใน Alzheimer disease ไม่มีบทบาทในการรักษาหรือป้องกันอาการปวดศีรษะ ชัก หรือพาร์กินสัน"
+    }
+  },
+  "102": {
+    "distractors": {
+      "ก": "ออกฤทธิ์ยับยั้ง voltage-gated sodium channels เพิ่มฤทธิ์ GABA และยับยั้ง AMPA/kainate receptors ใช้ป้องกันไมเกรนและโรคลมชัก แต่ไม่มีบทบาทชดเชยโดปามีนในโรคพาร์กินสัน",
+      "ข": "เป็น reversible acetylcholinesterase inhibitor มีข้อบ่งใช้หลักสำหรับรักษาอาการสมองเสื่อมใน Alzheimer disease ไม่มีบทบาทในการรักษาหรือป้องกันอาการปวดศีรษะ ชัก หรือพาร์กินสัน",
+      "ง": "เป็น voltage-gated sodium channel blocker มีเภสัชจลนศาสตร์แบบไม่เป็นเชิงเส้น (non-linear kinetics) ใช้รักษา focal และ generalized tonic-clonic seizures แต่ไม่มีข้อบ่งใช้ในไมเกรนหรือพาร์กินสัน",
+      "จ": "เป็น broad-spectrum antiepileptic drug ที่เพิ่มระดับ GABA และยับยั้ง sodium/calcium channels มีฤทธิ์ teratogenic สูง และไม่มีข้อบ่งใช้ในการรักษาโรคพาร์กินสัน"
+    }
+  },
+  "104": {
+    "distractors": {
+      "ข": "เป็นยากันชักที่จับกับ synaptic vesicle protein 2A (SV2A) ใช้รักษาโรคลมชักชนิด focal และ generalized seizures แต่ไม่มีฤทธิ์ในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะ",
+      "ค": "เป็นยาจับกับ alpha-2-delta subunit ของ voltage-gated calcium channels ใช้รักษา neuropathic pain และ focal seizure เสริม ไม่ใช่ยาหลักในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะเครียด",
+      "ง": "ออกฤทธิ์จับกับ alpha-2-delta subunit ของ voltage-gated calcium channels มีข้อบ่งใช้ใน neuropathic pain และ generalized anxiety disorder แต่ไม่มีผลรักษาโรคมอเตอร์ในพาร์กินสันหรือป้องกันไมเกรน",
+      "จ": "เป็น dopamine precursor ร่วมกับ peripheral dopa decarboxylase inhibitor เป็นยาหลักสำหรับโรคพาร์กินสัน ไม่มีฤทธิ์กันชักและไม่มีข้อบ่งใช้รักษาอาการปวดศีรษะไมเกรน"
+    }
+  },
+  "106": {
+    "distractors": {
+      "ข": "ออกฤทธิ์ยับยั้ง voltage-gated sodium channels เพิ่มฤทธิ์ GABA และยับยั้ง AMPA/kainate receptors ใช้ป้องกันไมเกรนและโรคลมชัก แต่ไม่มีบทบาทชดเชยโดปามีนในโรคพาร์กินสัน",
+      "ค": "เป็น reversible acetylcholinesterase inhibitor มีข้อบ่งใช้หลักสำหรับรักษาอาการสมองเสื่อมใน Alzheimer disease ไม่มีบทบาทในการรักษาหรือป้องกันอาการปวดศีรษะ ชัก หรือพาร์กินสัน",
+      "ง": "เป็น recombinant tissue plasminogen activator (rtPA) สำหรับ thrombolytic therapy ใน acute ischemic stroke ภายใน 4.5 ชั่วโมง ไม่มีบทบาทเป็นยากันชักหรือยารักษาไมเกรน",
+      "จ": "เป็น voltage-gated sodium channel blocker มีเภสัชจลนศาสตร์แบบไม่เป็นเชิงเส้น (non-linear kinetics) ใช้รักษา focal และ generalized tonic-clonic seizures แต่ไม่มีข้อบ่งใช้ในไมเกรนหรือพาร์กินสัน"
+    }
+  },
+  "108": {
+    "distractors": {
+      "ข": "เป็น broad-spectrum antiepileptic drug ที่ปิดกั้น voltage-gated sodium channels ใช้ในโรคลมชักและ bipolar disorder แต่ไม่มีข้อบ่งใช้รักษาอาการของโรคพาร์กินสันหรือปวดศีรษะเครียด",
+      "ค": "เป็นยากันชักที่จับกับ synaptic vesicle protein 2A (SV2A) ใช้รักษาโรคลมชักชนิด focal และ generalized seizures แต่ไม่มีฤทธิ์ในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะ",
+      "ง": "เป็นยาจับกับ alpha-2-delta subunit ของ voltage-gated calcium channels ใช้รักษา neuropathic pain และ focal seizure เสริม ไม่ใช่ยาหลักในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะเครียด",
+      "จ": "ออกฤทธิ์จับกับ alpha-2-delta subunit ของ voltage-gated calcium channels มีข้อบ่งใช้ใน neuropathic pain และ generalized anxiety disorder แต่ไม่มีผลรักษาโรคมอเตอร์ในพาร์กินสันหรือป้องกันไมเกรน"
+    }
+  },
+  "109": {
+    "distractors": {
+      "ข": "สูตร 1, 3 และ 4 ขาด Valproic acid ซึ่งเป็น broad-spectrum antiepileptic drug ที่จำเป็นและมีประสิทธิภาพสูงในการควบคุมการชักหลากหลายรูปแบบ",
+      "ค": "ตัวเลือก 1 และ 4 ขาดทั้ง Valproic acid และ Benzodiazepine ซึ่งเป็นยาหลักที่มีกลไกเสริมการยับยั้งผ่าน GABA system ในการควบคุมอาการชัก",
+      "ง": "Phenytoin ตัวเดียวไม่ครอบคลุมกลไกการรักษาแบบกว้างขวาง เนื่องจากออกฤทธิ์จำเพาะต่อ voltage-gated sodium channels และไม่ได้ผลในการชักบางชนิดเช่น absence seizures",
+      "จ": "Valproic acid ตัวเดียวแม้จะเป็น broad-spectrum แต่ไม่ครอบคลุมการระงับการชักฉุกเฉินหรือภาวะ status epilepticus ที่ต้องพึ่งพาฤทธิ์เฉียบพลันของ Benzodiazepine"
+    }
+  },
+  "110": {
+    "distractors": {
+      "ข": "ตัวเลือกนี้ขาด Benzodiazepine ซึ่งเป็น first-line agent สำคัญที่สุดในการระงับอาการชักเฉียบพลันและภาวะ status epilepticus โดยการเพิ่มการเปิดของ GABA-A chloride channels",
+      "ค": "ตัวเลือกนี้ขาด Phenytoin และ Carbamazepine ซึ่งเป็น sodium channel blockers หลักที่เป็นเสาหลักในการรักษา focal และ generalized tonic-clonic seizures",
+      "ง": "ตัวเลือกนี้ขาด Phenytoin และ Benzodiazepine จึงไม่ครอบคลุมการรักษาภาวะชักต่อเนื่องหรือการควบคุมอาการชักแบบผสมผสาน",
+      "จ": "Valproic acid ชนิดเดียวไม่เพียงพอต่อการควบคุมการชักทุกสถานการณ์ โดยเฉพาะการระงับชักแบบเฉียบพลันที่ต้องการยากลุ่มออกฤทธิ์เร็วอย่าง Benzodiazepines"
+    }
+  },
+  "111": {
+    "distractors": {
+      "ข": "เป็น recombinant tissue plasminogen activator (rtPA) สำหรับ thrombolytic therapy ใน acute ischemic stroke ภายใน 4.5 ชั่วโมง ไม่มีบทบาทเป็นยากันชักหรือยารักษาไมเกรน",
+      "ค": "เป็น voltage-gated sodium channel blocker มีเภสัชจลนศาสตร์แบบไม่เป็นเชิงเส้น (non-linear kinetics) ใช้รักษา focal และ generalized tonic-clonic seizures แต่ไม่มีข้อบ่งใช้ในไมเกรนหรือพาร์กินสัน",
+      "ง": "เป็น broad-spectrum antiepileptic drug ที่เพิ่มระดับ GABA และยับยั้ง sodium/calcium channels มีฤทธิ์ teratogenic สูง และไม่มีข้อบ่งใช้ในการรักษาโรคพาร์กินสัน",
+      "จ": "เป็น voltage-gated sodium channel blocker ที่เป็น first-line สำหรับ focal seizures และ trigeminal neuralgia แต่ไม่มีบทบาทในการรักษาอาการปวดศีรษะจากความเครียดหรือโรคพาร์กินสัน"
+    }
+  },
+  "112": {
+    "distractors": {
+      "ข": "เป็น voltage-gated sodium channel blocker ที่เป็น first-line สำหรับ focal seizures และ trigeminal neuralgia แต่ไม่มีบทบาทในการรักษาอาการปวดศีรษะจากความเครียดหรือโรคพาร์กินสัน",
+      "ค": "เป็น broad-spectrum antiepileptic drug ที่ปิดกั้น voltage-gated sodium channels ใช้ในโรคลมชักและ bipolar disorder แต่ไม่มีข้อบ่งใช้รักษาอาการของโรคพาร์กินสันหรือปวดศีรษะเครียด",
+      "ง": "เป็นยากันชักที่จับกับ synaptic vesicle protein 2A (SV2A) ใช้รักษาโรคลมชักชนิด focal และ generalized seizures แต่ไม่มีฤทธิ์ในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะ",
+      "จ": "เป็นยาจับกับ alpha-2-delta subunit ของ voltage-gated calcium channels ใช้รักษา neuropathic pain และ focal seizure เสริม ไม่ใช่ยาหลักในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะเครียด"
+    }
+  },
+  "113": {
+    "distractors": {
+      "ข": "เป็นยาจับกับ alpha-2-delta subunit ของ voltage-gated calcium channels ใช้รักษา neuropathic pain และ focal seizure เสริม ไม่ใช่ยาหลักในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะเครียด",
+      "ค": "ออกฤทธิ์จับกับ alpha-2-delta subunit ของ voltage-gated calcium channels มีข้อบ่งใช้ใน neuropathic pain และ generalized anxiety disorder แต่ไม่มีผลรักษาโรคมอเตอร์ในพาร์กินสันหรือป้องกันไมเกรน",
+      "ง": "เป็น dopamine precursor ร่วมกับ peripheral dopa decarboxylase inhibitor เป็นยาหลักสำหรับโรคพาร์กินสัน ไม่มีฤทธิ์กันชักและไม่มีข้อบ่งใช้รักษาอาการปวดศีรษะไมเกรน",
+      "จ": "เป็น selective 5-HT1B/1D receptor agonist ใช้รักษา acute migraine attack โดยหดหลอดเลือดสมอง แต่ไม่มีผลต่อพยาธิสภาพของโรคพาร์กินสันหรือการควบคุมโรคลมชัก"
+    }
+  },
+  "114": {
+    "distractors": {
+      "ข": "เป็น selective 5-HT1B/1D receptor agonist ใช้รักษา acute migraine attack โดยหดหลอดเลือดสมอง แต่ไม่มีผลต่อพยาธิสภาพของโรคพาร์กินสันหรือการควบคุมโรคลมชัก",
+      "ค": "เป็น non-selective beta-adrenergic blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับป้องกันไมเกรนและลด essential tremor แต่ไม่มีบทบาทในการเพิ่มระดับโดปามีนในโรคพาร์กินสัน",
+      "ง": "ออกฤทธิ์ยับยั้ง voltage-gated sodium channels เพิ่มฤทธิ์ GABA และยับยั้ง AMPA/kainate receptors ใช้ป้องกันไมเกรนและโรคลมชัก แต่ไม่มีบทบาทชดเชยโดปามีนในโรคพาร์กินสัน",
+      "จ": "เป็น reversible acetylcholinesterase inhibitor มีข้อบ่งใช้หลักสำหรับรักษาอาการสมองเสื่อมใน Alzheimer disease ไม่มีบทบาทในการรักษาหรือป้องกันอาการปวดศีรษะ ชัก หรือพาร์กินสัน"
+    }
+  },
+  "115": {
+    "distractors": {
+      "ข": "การปิดกั้น T-type calcium channels ใน thalamic neurons เป็นกลไกหลักของ Ethosuximide และ Valproic acid ในการรักษา absence seizures ไม่ใช่กลไกของ Carbamazepine",
+      "ค": "การจับกับ GABA-A receptor เพื่อเพิ่มความถี่หรือระยะเวลาการเปิดของ chloride channel เป็นกลไกของ Benzodiazepines และ Barbiturates ไม่ใช่ Carbamazepine",
+      "ง": "การปิดกั้น NMDA glutamate receptors เป็นกลไกหลักของยาชาหรือยาเช่น Felbamate และ Ketamine ไม่ใช่กลไกหลักของ Carbamazepine",
+      "จ": "การยับยั้ง secondary messenger systems เช่น inositol monophosphatase เป็นกลไกเด่นของ Lithium ที่ใช้รักษา bipolar disorder ไม่ใช่กลไกต้านการชักของ Carbamazepine"
+    }
+  },
+  "116": {
+    "distractors": {
+      "ก": "Carbamazepine ไม่มีข้อบ่งใช้เด่นชัดสำหรับ generalized anxiety disorder ซึ่งยาหลักที่แนะนำตามแนวทางเวชปฏิบัติคือ SSRIs, SNRIs หรือระยะสั้นด้วย Benzodiazepines",
+      "ข": "การบำบัดภาวะถอนบุหรี่ใช้ยาที่ออกฤทธิ์ต่อ nicotinic acetylcholine receptors เช่น Varenicline, Bupropion หรือ Nicotine replacement therapy ไม่ได้ใช้ Carbamazepine",
+      "ง": "อาการพูดไม่ชัดจากพาร์กินสันเกิดจากพยาธิสภาพของ extrapyramidal system ซึ่งรักษาด้วยการปรับยารักษาพาร์กินสัน เช่น Dopaminergic agents ไม่ใช่ Carbamazepine",
+      "จ": "Febrile convulsion ในเด็กไม่แนะนำให้ยากันชักต่อเนื่องในระยะยาว การใช้ Carbamazepine ไม่ใช่ข้อบ่งใช้และเสี่ยงต่อการเกิดผลข้างเคียงทางโลหิตวิทยาและผื่นแพ้ยา"
+    }
+  },
+  "117": {
+    "distractors": {
+      "ก": "Folic acid มีรายงานว่าอาจถูกยากันชักลดระดับลง หรือ folic acid อาจลดระดับ Phenytoin เล็กน้อย แต่ไม่มีฤทธิ์ยับยั้งเอนไซม์ CYP3A4 จึงไม่เพิ่มระดับ Carbamazepine",
+      "ข": "Phenytoin เป็น potent CYP3A4 inducer ซึ่งจะกระตุ้นการทำลาย Carbamazepine ส่งผลให้ระดับยา Carbamazepine ในเลือดลดลง ไม่ใช่เพิ่มขึ้น",
+      "ค": "Nevirapine เป็น non-nucleoside reverse transcriptase inhibitor (NNRTI) ที่มีคุณสมบัติเหนี่ยวนำเอนไซม์ CYP3A4 จึงมีแนวโน้มลดระดับยา Carbamazepine",
+      "จ": "Mebendazole ออกฤทธิ์ยับยั้ง microtubule synthesis ของพยาธิในทางเดินอาหาร มีการดูดซึมเข้าร่างกายน้อยมาก และไม่มีผลยับยั้ง CYP3A4 อย่างมีนัยสำคัญทางคลินิก"
+    }
+  },
+  "119": {
+    "distractors": {
+      "ข": "ออกฤทธิ์ยับยั้ง voltage-gated sodium channels เพิ่มฤทธิ์ GABA และยับยั้ง AMPA/kainate receptors ใช้ป้องกันไมเกรนและโรคลมชัก แต่ไม่มีบทบาทชดเชยโดปามีนในโรคพาร์กินสัน",
+      "ค": "เป็น reversible acetylcholinesterase inhibitor มีข้อบ่งใช้หลักสำหรับรักษาอาการสมองเสื่อมใน Alzheimer disease ไม่มีบทบาทในการรักษาหรือป้องกันอาการปวดศีรษะ ชัก หรือพาร์กินสัน",
+      "ง": "เป็น recombinant tissue plasminogen activator (rtPA) สำหรับ thrombolytic therapy ใน acute ischemic stroke ภายใน 4.5 ชั่วโมง ไม่มีบทบาทเป็นยากันชักหรือยารักษาไมเกรน",
+      "จ": "เป็น voltage-gated sodium channel blocker มีเภสัชจลนศาสตร์แบบไม่เป็นเชิงเส้น (non-linear kinetics) ใช้รักษา focal และ generalized tonic-clonic seizures แต่ไม่มีข้อบ่งใช้ในไมเกรนหรือพาร์กินสัน"
+    }
+  },
+  "121": {
+    "distractors": {
+      "ก": "เป็น voltage-gated sodium channel blocker ที่เป็น first-line สำหรับ focal seizures และ trigeminal neuralgia แต่ไม่มีบทบาทในการรักษาอาการปวดศีรษะจากความเครียดหรือโรคพาร์กินสัน",
+      "ข": "เป็น broad-spectrum antiepileptic drug ที่ปิดกั้น voltage-gated sodium channels ใช้ในโรคลมชักและ bipolar disorder แต่ไม่มีข้อบ่งใช้รักษาอาการของโรคพาร์กินสันหรือปวดศีรษะเครียด",
+      "ค": "เป็นยากันชักที่จับกับ synaptic vesicle protein 2A (SV2A) ใช้รักษาโรคลมชักชนิด focal และ generalized seizures แต่ไม่มีฤทธิ์ในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะ",
+      "ง": "เป็นยาจับกับ alpha-2-delta subunit ของ voltage-gated calcium channels ใช้รักษา neuropathic pain และ focal seizure เสริม ไม่ใช่ยาหลักในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะเครียด"
+    }
+  },
+  "122": {
+    "distractors": {
+      "ข": "ออกฤทธิ์จับกับ alpha-2-delta subunit ของ voltage-gated calcium channels มีข้อบ่งใช้ใน neuropathic pain และ generalized anxiety disorder แต่ไม่มีผลรักษาโรคมอเตอร์ในพาร์กินสันหรือป้องกันไมเกรน",
+      "ค": "เป็น dopamine precursor ร่วมกับ peripheral dopa decarboxylase inhibitor เป็นยาหลักสำหรับโรคพาร์กินสัน ไม่มีฤทธิ์กันชักและไม่มีข้อบ่งใช้รักษาอาการปวดศีรษะไมเกรน",
+      "ง": "เป็น selective 5-HT1B/1D receptor agonist ใช้รักษา acute migraine attack โดยหดหลอดเลือดสมอง แต่ไม่มีผลต่อพยาธิสภาพของโรคพาร์กินสันหรือการควบคุมโรคลมชัก",
+      "จ": "เป็น non-selective beta-adrenergic blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับป้องกันไมเกรนและลด essential tremor แต่ไม่มีบทบาทในการเพิ่มระดับโดปามีนในโรคพาร์กินสัน"
+    }
+  },
+  "123": {
+    "distractors": {
+      "ข": "เป็น non-selective beta-adrenergic blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับป้องกันไมเกรนและลด essential tremor แต่ไม่มีบทบาทในการเพิ่มระดับโดปามีนในโรคพาร์กินสัน",
+      "ค": "ออกฤทธิ์ยับยั้ง voltage-gated sodium channels เพิ่มฤทธิ์ GABA และยับยั้ง AMPA/kainate receptors ใช้ป้องกันไมเกรนและโรคลมชัก แต่ไม่มีบทบาทชดเชยโดปามีนในโรคพาร์กินสัน",
+      "ง": "เป็น reversible acetylcholinesterase inhibitor มีข้อบ่งใช้หลักสำหรับรักษาอาการสมองเสื่อมใน Alzheimer disease ไม่มีบทบาทในการรักษาหรือป้องกันอาการปวดศีรษะ ชัก หรือพาร์กินสัน",
+      "จ": "เป็น recombinant tissue plasminogen activator (rtPA) สำหรับ thrombolytic therapy ใน acute ischemic stroke ภายใน 4.5 ชั่วโมง ไม่มีบทบาทเป็นยากันชักหรือยารักษาไมเกรน"
+    }
+  },
+  "124": {
+    "distractors": {
+      "ข": "เป็น recombinant tissue plasminogen activator (rtPA) สำหรับ thrombolytic therapy ใน acute ischemic stroke ภายใน 4.5 ชั่วโมง ไม่มีบทบาทเป็นยากันชักหรือยารักษาไมเกรน",
+      "ค": "เป็น voltage-gated sodium channel blocker มีเภสัชจลนศาสตร์แบบไม่เป็นเชิงเส้น (non-linear kinetics) ใช้รักษา focal และ generalized tonic-clonic seizures แต่ไม่มีข้อบ่งใช้ในไมเกรนหรือพาร์กินสัน",
+      "ง": "เป็น broad-spectrum antiepileptic drug ที่เพิ่มระดับ GABA และยับยั้ง sodium/calcium channels มีฤทธิ์ teratogenic สูง และไม่มีข้อบ่งใช้ในการรักษาโรคพาร์กินสัน",
+      "จ": "เป็น voltage-gated sodium channel blocker ที่เป็น first-line สำหรับ focal seizures และ trigeminal neuralgia แต่ไม่มีบทบาทในการรักษาอาการปวดศีรษะจากความเครียดหรือโรคพาร์กินสัน"
+    }
+  },
+  "125": {
+    "distractors": {
+      "ข": "เป็น voltage-gated sodium channel blocker ที่เป็น first-line สำหรับ focal seizures และ trigeminal neuralgia แต่ไม่มีบทบาทในการรักษาอาการปวดศีรษะจากความเครียดหรือโรคพาร์กินสัน",
+      "ค": "เป็น broad-spectrum antiepileptic drug ที่ปิดกั้น voltage-gated sodium channels ใช้ในโรคลมชักและ bipolar disorder แต่ไม่มีข้อบ่งใช้รักษาอาการของโรคพาร์กินสันหรือปวดศีรษะเครียด",
+      "ง": "เป็นยากันชักที่จับกับ synaptic vesicle protein 2A (SV2A) ใช้รักษาโรคลมชักชนิด focal และ generalized seizures แต่ไม่มีฤทธิ์ในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะ",
+      "จ": "เป็นยาจับกับ alpha-2-delta subunit ของ voltage-gated calcium channels ใช้รักษา neuropathic pain และ focal seizure เสริม ไม่ใช่ยาหลักในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะเครียด"
+    }
+  },
+  "126": {
+    "distractors": {
+      "ข": "เป็นยาจับกับ alpha-2-delta subunit ของ voltage-gated calcium channels ใช้รักษา neuropathic pain และ focal seizure เสริม ไม่ใช่ยาหลักในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะเครียด",
+      "ค": "ออกฤทธิ์จับกับ alpha-2-delta subunit ของ voltage-gated calcium channels มีข้อบ่งใช้ใน neuropathic pain และ generalized anxiety disorder แต่ไม่มีผลรักษาโรคมอเตอร์ในพาร์กินสันหรือป้องกันไมเกรน",
+      "ง": "เป็น dopamine precursor ร่วมกับ peripheral dopa decarboxylase inhibitor เป็นยาหลักสำหรับโรคพาร์กินสัน ไม่มีฤทธิ์กันชักและไม่มีข้อบ่งใช้รักษาอาการปวดศีรษะไมเกรน",
+      "จ": "เป็น selective 5-HT1B/1D receptor agonist ใช้รักษา acute migraine attack โดยหดหลอดเลือดสมอง แต่ไม่มีผลต่อพยาธิสภาพของโรคพาร์กินสันหรือการควบคุมโรคลมชัก"
+    }
+  },
+  "127": {
+    "distractors": {
+      "ข": "เป็น selective 5-HT1B/1D receptor agonist ใช้รักษา acute migraine attack โดยหดหลอดเลือดสมอง แต่ไม่มีผลต่อพยาธิสภาพของโรคพาร์กินสันหรือการควบคุมโรคลมชัก",
+      "ค": "เป็น non-selective beta-adrenergic blocker ข้าม blood-brain barrier ได้ดี เหมาะสำหรับป้องกันไมเกรนและลด essential tremor แต่ไม่มีบทบาทในการเพิ่มระดับโดปามีนในโรคพาร์กินสัน",
+      "ง": "ออกฤทธิ์ยับยั้ง voltage-gated sodium channels เพิ่มฤทธิ์ GABA และยับยั้ง AMPA/kainate receptors ใช้ป้องกันไมเกรนและโรคลมชัก แต่ไม่มีบทบาทชดเชยโดปามีนในโรคพาร์กินสัน",
+      "จ": "เป็น reversible acetylcholinesterase inhibitor มีข้อบ่งใช้หลักสำหรับรักษาอาการสมองเสื่อมใน Alzheimer disease ไม่มีบทบาทในการรักษาหรือป้องกันอาการปวดศีรษะ ชัก หรือพาร์กินสัน"
+    }
+  },
+  "128": {
+    "distractors": {
+      "ข": "เป็น reversible acetylcholinesterase inhibitor มีข้อบ่งใช้หลักสำหรับรักษาอาการสมองเสื่อมใน Alzheimer disease ไม่มีบทบาทในการรักษาหรือป้องกันอาการปวดศีรษะ ชัก หรือพาร์กินสัน",
+      "ค": "เป็น recombinant tissue plasminogen activator (rtPA) สำหรับ thrombolytic therapy ใน acute ischemic stroke ภายใน 4.5 ชั่วโมง ไม่มีบทบาทเป็นยากันชักหรือยารักษาไมเกรน",
+      "ง": "เป็น voltage-gated sodium channel blocker มีเภสัชจลนศาสตร์แบบไม่เป็นเชิงเส้น (non-linear kinetics) ใช้รักษา focal และ generalized tonic-clonic seizures แต่ไม่มีข้อบ่งใช้ในไมเกรนหรือพาร์กินสัน",
+      "จ": "เป็น broad-spectrum antiepileptic drug ที่เพิ่มระดับ GABA และยับยั้ง sodium/calcium channels มีฤทธิ์ teratogenic สูง และไม่มีข้อบ่งใช้ในการรักษาโรคพาร์กินสัน"
+    }
+  },
+  "130": {
+    "distractors": {
+      "ข": "เป็นยากันชักที่จับกับ synaptic vesicle protein 2A (SV2A) ใช้รักษาโรคลมชักชนิด focal และ generalized seizures แต่ไม่มีฤทธิ์ในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะ",
+      "ค": "เป็นยาจับกับ alpha-2-delta subunit ของ voltage-gated calcium channels ใช้รักษา neuropathic pain และ focal seizure เสริม ไม่ใช่ยาหลักในการรักษาโรคพาร์กินสันหรืออาการปวดศีรษะเครียด",
+      "ง": "ออกฤทธิ์จับกับ alpha-2-delta subunit ของ voltage-gated calcium channels มีข้อบ่งใช้ใน neuropathic pain และ generalized anxiety disorder แต่ไม่มีผลรักษาโรคมอเตอร์ในพาร์กินสันหรือป้องกันไมเกรน",
+      "จ": "เป็น dopamine precursor ร่วมกับ peripheral dopa decarboxylase inhibitor เป็นยาหลักสำหรับโรคพาร์กินสัน ไม่มีฤทธิ์กันชักและไม่มีข้อบ่งใช้รักษาอาการปวดศีรษะไมเกรน"
+    }
+  }
+}

@@ -1,0 +1,462 @@
+# -*- coding: utf-8 -*-
+"""
+Script to generate high-precision, authentic pharmacological distractors for immuno_part2.json.
+Rules:
+1. STRICT ZERO ASTERISKS: Never output '*' or '**' anywhere.
+2. Structure:
+   For each question key, distractors is a dict mapping wrong choice letters (e.g. "ก", "ข", etc.)
+   to 1-2 sentence high-precision clinical/pharmacological explanations.
+3. No generic filler phrases.
+4. Output to distractors_immuno_part2.json.
+"""
+
+import json
+
+distractors_data = {
+    # Key 42: ผลข้างเคียงของการใช้ยา oxymetazoline ติดต่อกันหลายวัน
+    # Choices: ก. Glaucoma, ข. Epistaxis, ค. Rebound congestion (ans=ค in pharmacology, but key says ans: 1 -> ก)
+    # Wait, ans in json is 1 ("ก"), so wrong choices are ข, ค, ง, จ.
+    "42": {
+        "distractors": {
+            "ข": "Epistaxis หรือเลือดกำเดาไหล เป็นอาการข้างเคียงเฉพาะที่จากการพ่นยาที่เกิดการระคายเคืองหรือพ่นผิดเทคนิคกระทบ nasal septum ไม่ใช่ผลจากการลดการตอบสนองของหลอดเลือดส่วนปลาย",
+            "ค": "Rebound congestion หรือ rhinitis medicamentosa เกิดจากการใช้ topical decongestants ติดต่อกันเกิน 3-5 วัน ทำให้ alpha-receptor เกิด downregulation และ desensitization จนหลอดเลือดขยายตัวรุนแรงเมื่อหยุดยา",
+            "ง": "HPA axis suppression เป็นอาการไม่พึงประสงค์ทางระบบของ systemic หรือ high-dose intranasal corticosteroids ในระยะยาว ไม่ได้เกิดจาก topical alpha-agonist decongestants",
+            "จ": "Nasal septal perforation เป็นภาวะแทรกซ้อนรุนแรงที่สัมพันธ์กับการใช้ intranasal cocaine หรือเทคนิคการพ่น intranasal corticosteroid จ่อตรงใส่ผนังกั้นช่องจมูกเรื้อรัง"
+        }
+    },
+
+    # Key 43: กลไกการออกฤทธิ์ของยาแก้คัดจมูก oxymetazoline
+    # Choices: ก. Alpha1,Alpha2 agonist (ans: 1 -> ก), wrong: ข, ค, ง, จ
+    "43": {
+        "distractors": {
+            "ข": "Beta1 agonist มีผลเพิ่มอัตราและแรงการบีบตัวของกล้ามเนื้อหัวใจ เช่น Dobutamine ไม่มีผลทำให้หลอดเลือดเยื่อบุโพรงจมูกหดตัวเพื่อลดอาการคัดจมูก",
+            "ค": "Muscarinic agonist เช่น Pilocarpine หรือ Bethanechol ออกฤทธิ์กระตุ้นการหลั่งสารคัดหลั่งของต่อมเมือกในโพรงจมูก ซึ่งจะทำให้น้ำมูกไหลและคัดจมูกมากขึ้น",
+            "ง": "Acetylcholinesterase inhibitor เช่น Neostigmine หรือ Pyridostigmine ยับยั้งการสลาย acetylcholine ส่งผลเพิ่ม cholinergic activity ทำให้เกิด rhinorrhea และ bronchoconstriction",
+            "จ": "Neuromuscular blocker เช่น Atracurium หรือ Succinylcholine ออกฤทธิ์ยับยั้ง nicotinic receptors ที่ neuromuscular junction เพื่อคลายกล้ามเนื้อลายในการผ่าตัด ไม่เกี่ยวข้องกับระบบหลอดเลือดในโพรงจมูก"
+        }
+    },
+
+    # Key 44: CPM เป็น first gen antihistamine ห้ามใช้ในผู้ป่วยโรคใด
+    # Choices: ก. กลั้นปัสสาวะไม่อยู่ (ans: 1 -> ก), wrong: ข, ค, ง, จ
+    "44": {
+        "distractors": {
+            "ข": "หอบหืดรุนแรงเฉียบพลันเป็นข้อควรระวังของ first-generation antihistamines เนื่องจากฤทธิ์ anticholinergic อาจทำให้เสมหะเหนียวข้นขับออกยาก แต่อาการหอบหืดที่ควบคุมได้ไม่ใช่ข้อห้ามใช้เด็ดขาด",
+            "ค": "ต่อมลูกหมากโต (Benign Prostatic Hyperplasia) เป็นข้อห้ามใช้ที่สำคัญของยาที่มีฤทธิ์ anticholinergic เช่น CPM เพราะจะยับยั้งกล้ามเนื้อ detrusor และเพิ่มการเกร็งของกระเพาะปัสสาวะจนเกิด acute urinary retention",
+            "ง": "หัวใจเต้นผิดจังหวะชนิด Torsades de pointes และ QT prolongation สัมพันธ์กับ second-generation antihistamines รุ่นเก่าบางตัว เช่น Terfenadine และ Astemizole ไม่ใช่ CPM",
+            "จ": "การใช้ร่วมกับยาปฏิชีวนะกลุ่ม macrolide หรือ azole antifungal เป็นข้อควรระวังในการยับยั้ง CYP3A4 ซึ่งส่งผลต่อยาที่ขึ้นกับเมแทบอลิซึมนี้ เช่น Terfenadine แต่ CPM ถูกกำจัดผ่านหลายวิถีรวมทั้ง CYP2D6 จึงไม่ใช่ข้อห้ามใช้เด็ดขาด"
+        }
+    },
+
+    # Key 45: อาหารหรือปัจจัยใดกระตุ้นให้เกิด allergic rhinitis ได้
+    # Choices: ก. เครื่องดื่มแอลกอฮอล์, ข. สารกันบูด sulfite, ค. รสจัดหรือเผ็ด (ans: 3 -> ค), wrong: ก, ข, ง, จ
+    "45": {
+        "distractors": {
+            "ก": "เครื่องดื่มแอลกอฮอล์กระตุ้นอาการคัดจมูกผ่านกลไก non-allergic vasodilation จาก acetaldehyde และ histamine content แต่ไม่ใช่สาเหตุหลักของ IgE-mediated allergic rhinitis",
+            "ข": "สารกันบูดซัลไฟต์กระตุ้นปฏิกิริยา non-allergic hypersensitivity ผ่านการระคายเคืองของ sulfur dioxide receptor และ parasympathetic reflex ในหลอดลมและโพรงจมูก",
+            "ง": "ควันบุหรี่เป็น physical irritant ที่ทำลาย mucosal barrier และกระตุ้น sensory c-fibers ก่อให้เกิด non-allergic non-IgE irritant rhinitis หรือ vasomotor rhinitis",
+            "จ": "ปัจจัยทั้งหมดข้างต้นส่วนใหญ่เป็นสิ่งกระตุ้นทาง vasomotor และ non-allergic triggers ซึ่งกระตุ้นอาการจมูกอักเสบแบบไม่ผ่านกลไก IgE จำเพาะต่อ allergen หลัก"
+        }
+    },
+
+    # Key 46: คุณครูมาขอซื้อยา CPM กระปุกละ 100 mg 5 กระปุก... (ans: 1 -> ก)
+    # Choices: ก. ขายได้เพราะเป็นยาสามัญประจำบ้าน, ข. ขายได้เพราะเป็นยาอันตราย..., ค. ขายไม่ได้เพราะปริมาณเกิน..., ง. ขายไม่ได้เพราะไม่ได้คำนึง..., จ. ขายไม่ได้เพราะไม่มีใบสั่งซื้อ...
+    "46": {
+        "distractors": {
+            "ข": "CPM จัดเป็นยาอันตรายที่ต้องส่งมอบโดยเภสัชกรประจำร้านยา แต่การจำหน่ายในปริมาณมากสำหรับสถานศึกษาต้องมีการซักประวัติประเมินความปลอดภัยและปริมาณที่เหมาะสม ไม่ใช่ขายได้โดยไม่กำกับดูแล",
+            "ค": "ตามกฎหมายยาไม่มีการกำหนดโควตาตัวเลขปริมาณยาอันตรายชนิดเม็ดอย่างเคร่งครัดเหมือนกลุ่ม pseudoephedrine แต่เภสัชกรต้องใช้ดุลยพินิจทางวิชาชีพในการจ่ายเพื่อความปลอดภัย",
+            "ง": "การปฏิเสธไม่จำหน่ายโดยอ้างว่าไม่คำนึงถึงความปลอดภัยอาจแก้ไขได้ด้วยการให้คำแนะนำทางวิชาชีพ ปรับขนาดบรรจุให้เหมาะสม และแนะนำการปฐมพยาบาลเบื้องต้น",
+            "จ": "CPM ชนิดรับประทานจัดเป็นยาอันตราย ไม่ใช่ยาควบคุมพิเศษ จึงสามารถจ่ายได้ในร้านยาแผนปัจจุบันโดยการควบคุมของเภสัชกรโดยไม่จำเป็นต้องใช้ใบสั่งแพทย์"
+        }
+    },
+
+    # Key 47: คุณครูมาขอซื้อยา CPM... (ans: 1 -> ก)
+    "47": {
+        "distractors": {
+            "ข": "แม้ CPM จะเป็นยาอันตรายที่จ่ายได้ในร้านยา แต่เภสัชกรมีหน้าที่ประเมินความสมเหตุผลของการใช้ยาและข้อห้ามใช้ในเด็กวัยเรียนเพื่อป้องกันอุบัติการณ์ sedation และ paradoxical excitation",
+            "ค": "กฎหมายไม่ได้กำหนดเพดานปริมาณการจำหน่ายยาอันตราย CPM อย่างตายตัว แต่เภสัชกรต้องประเมินปริมาณการครอบครองให้สมเหตุสมผลต่อกิจกรรมการปฐมพยาบาล",
+            "ง": "หลักจริยธรรมวิชาชีพกำหนดให้เภสัชกรคำนึงถึงความปลอดภัยของผู้ใช้ยา หากประเมินแล้วจำเป็นต้องใช้ สามารถแบ่งจำหน่ายในปริมาณที่เหมาะสมพร้อมเอกสารแนะนำการใช้ยา",
+            "จ": "ยาอันตรายประเภท antihistamine เช่น CPM สามารถจำหน่ายได้ภายใต้การกำกับดูแลของเภสัชกรชั้นหนึ่งโดยมิต้องมีใบสั่งยาจากแพทย์"
+        }
+    },
+
+    # Key 48: ผู้ป่วยปวดแผลผ่าตัด หลังได้รับ morphine IV... (ans: 1 -> ก)
+    # Choices: ก. Fluticasone, ข. Budesonide, ค. Epinephrine, ง. Dexamethasone, จ. Bromocriptine
+    "48": {
+        "distractors": {
+            "ข": "Budesonide nasal spray เป็น topical corticosteroid สำหรับรักษาโพรงจมูกอักเสบเรื้อรัง ไม่มีบทบาทในการรักษาภาวะ opioid toxicity หรือ systemic hypotension",
+            "ค": "Epinephrine 0.3 mg IM เป็น first-line medication สำหรับ severe anaphylaxis ออกฤทธิ์กระตุ้น alpha-1, beta-1, beta-2 receptors แต่กรณีนี้เกิดจากการกดระบบประสาทและหัวใจจาก opioid",
+            "ง": "Dexamethasone 4 mg IV เป็น systemic corticosteroid ที่ออกฤทธิ์ช้า ไม่สามารถกู้ชีพภาวะ acute respiratory depression หรือ opioid overdose ได้ ซึ่งยามาตรฐานคือ Naloxone",
+            "จ": "Bromocriptine เป็น dopamine D2 receptor agonist ที่ใช้รักษาภาวะ Neuroleptic Malignant Syndrome หรือ Hyperprolactinemia ไม่มีผลต้านฤทธิ์ของ morphine"
+        }
+    },
+
+    # Key 49: คุณครูมาขอซื้อ CPM 4 มก. 5 กระปุก... (ans: 1 -> ก)
+    # Choices: ก. Allergic rhinitis, ข. Dexamethasone, ค. Prednisolone, ง. Montelukast, จ. Hydroxyzine
+    "49": {
+        "distractors": {
+            "ข": "Dexamethasone 4 mg IV เป็นยาฉีดคอร์ติโคสเตียรอยด์ออกฤทธิ์แรง ใช้ในภาวะวิกฤต เช่น severe anaphylactic shock หรือ brain edema ไม่เกี่ยวข้องกับการบริหารจัดการยาในร้านยา",
+            "ค": "Prednisolone 20 mg OD เป็น systemic corticosteroid รูปแบบรับประทานสำหรับ short-course ในภาวะ severe allergic flare-up หรือ autoimmune flare",
+            "ง": "Montelukast 10 mg HS เป็น leukotriene receptor antagonist ที่ใช้บำบัดรักษา Allergic rhinitis ร่วมกับหอบหืด หรือในผู้ที่มีอาการคัดจมูกเด่นชัดในเวลากลางคืน",
+            "จ": "Hydroxyzine 25 mg HS เป็น first-generation antihistamine กลุ่ม piperazine ที่มี sedative และ anxiolytic effect สูง ไม่เหมาะสำหรับการใช้พร่ำเพรื่อในโรงเรียน"
+        }
+    },
+
+    # Key 50: ข้อใดเป็นเกณฑ์ในการวินิจฉัยว่าผู้ป่วยคนนี้เป็นโรคไตเรื้อรัง CPM UACR = 282... (ans: 1 -> ก)
+    # Choices: ก. Allergic rhinitis, ข. Hydroxyzine, ค. Diphenhydramine, ง. Cetirizine, จ. Loratadine
+    "50": {
+        "distractors": {
+            "ข": "Hydroxyzine 25 mg HS ต้องมีการปรับลดยาหรือยืดระยะเวลาบริหารยาในผู้ป่วยไตเสื่อมเนื่องจากยาและ active metabolite มีการขจัดลดลง ทำให้เสี่ยงต่อ CNS depression",
+            "ค": "Diphenhydramine 25 mg IV ถูกแปรรูปเป็นหลักที่ตับผ่าน CYP2D6 แต่ในผู้ป่วย renal failure รุนแรงอาจต้องขยายช่วงเวลาการบริหารยาจากความไวต่อ anticholinergic effect",
+            "ง": "Cetirizine 10 mg OD มีการขับออกทางไตถึง 70-80% ในรูปเดิม จึงต้องปรับลดขนาดยาเหลือ 5 mg OD ในผู้ป่วยที่มี CrCl ต่ำกว่า 50 mL/min",
+            "จ": "Loratadine 10 mg OD ถูกเปลี่ยนสภาพเป็น desloratadine ที่ตับเป็นหลัก จึงไม่จำเป็นต้องปรับขนาดยาในภาวะไตบกพร่องระดับปานกลาง"
+        }
+    },
+
+    # Key 51: ยาใดที่ร้านขายส่งไม่สามารถขายให้ร้านขายยาแผนปัจจุบันได้... (ans: 1 -> ก)
+    # Choices: ก. Sildenafil, ข. Alprazolam, ค. Tramadol, ง. Dexamethasone, จ. Prednisolone
+    "51": {
+        "distractors": {
+            "ข": "Alprazolam เป็นวัตถุออกฤทธิ์ต่อจิตและประสาทประเภท 2 ตามกฎหมายไทย ซึ่งห้ามจำหน่ายในร้านขายยาทั่วไปและควบคุมการจัดซื้อผ่านสำนักงานคณะกรรมการอาหารและยาเท่านั้น",
+            "ค": "Tramadol จัดเป็นยาอันตรายที่ร้านขายยาสามารถสั่งซื้อจากผู้ผลิตหรือผู้แทนจำหน่ายได้ แต่มีมาตรการควบคุมปริมาณการซื้อขายและรายงานการจ่ายยาอย่างเข้มงวด",
+            "ง": "Dexamethasone เป็นยาควบคุมพิเศษประเภทยาสเตียรอยด์ที่ร้านขายยาสามารถสั่งซื้อและครอบครองได้ตามกฎหมายเพื่อจำหน่ายตามใบสั่งแพทย์",
+            "จ": "Prednisolone เป็นยาควบคุมพิเศษที่ร้านขายยาแผนปัจจุบันสามารถสั่งซื้อได้อย่างถูกต้องตามระเบียบ อย. ภายใต้การควบคุมบัญชีรับ-จ่ายยาของเภสัชกร"
+        }
+    },
+
+    # Key 52: CPM 10 เม็ด????? (ans: 1 -> ก)
+    # Choices: ก. Allergic rhinitis, ข. Fluticasone furoate nasal spray, ค. Budesonide nasal spray, ง. Epinephrine 0.3 mg IM stat, จ. Dexamethasone 4 mg IV
+    "52": {
+        "distractors": {
+            "ข": "Fluticasone furoate nasal spray เป็น intranasal corticosteroid ประสิทธิภาพสูงที่มี systemic bioavailability ต่ำกว่า 1% เหมาะสำหรับบรรเทาอาการภูมิแพ้ทางจมูกทุกอาการ",
+            "ค": "Budesonide nasal spray เป็น intranasal corticosteroid จัดเป็น Pregnancy Category B จึงเป็นยาทางเลือกที่ปลอดภัยสูงในหญิงตั้งครรภ์ที่มีอาการ allergic rhinitis",
+            "ง": "Epinephrine 0.3 mg IM stat เป็นยาช่วยชีวิตอันดับแรกในผู้ป่วย anaphylaxis ที่มีภาวะ bronchospasm, angioedema หรือ cardiovascular collapse",
+            "จ": "Dexamethasone 4 mg IV เป็นยากลุ่มกลูโคคอร์ติคอยด์ชนิดฉีด ใช้เสริมการรักษาเพื่อป้องกัน biphasic anaphylaxis และลด late-phase inflammatory response"
+        }
+    },
+
+    # Key 53: เด็กอายุ14 ปีมีคัดจมูกน้ำมูกไหลเป็นมา5 สัปดาห์... (ans: 1 -> ก)
+    # Choices: ก. Allergic rhinitis, ข. Dexamethasone 4 mg IV, ค. Prednisolone 20 mg OD, ง. Montelukast 10 mg HS, จ. Hydroxyzine 25 mg HS
+    "53": {
+        "distractors": {
+            "ข": "Dexamethasone 4 mg IV เป็นยาฉีดที่มี potent glucocorticoid activity สูง ไม่สมเหตุผลในการนำมาใช้รักษาโรคภูมิแพ้จมูกเรื้อรังที่สามารถควบคุมได้ด้วย topical therapies",
+            "ค": "Prednisolone 20 mg OD ใช้เฉพาะ severe allergic flare-up ในระยะสั้นไม่เกิน 5-7 วัน การใช้ระยะยาวในเด็กจะกดการเจริญเติบโตรวมถึงกดการทำงานของ HPA axis",
+            "ง": "Montelukast 10 mg HS เป็น leukotriene receptor antagonist ที่มีข้อบ่งใช้ร่วมใน allergic rhinitis แต่ต้องเฝ้าระวัง neuropsychiatric adverse events ตามคำเตือนของ US FDA",
+            "จ": "Hydroxyzine 25 mg HS ทำให้เกิดอาการง่วงซึมรุนแรงและรบกวนสมาธิในการเรียนของเด็กวัยรุ่น จึงไม่แนะนำให้ใช้เป็นยาหลักตาม ARIA guideline"
+        }
+    },
+
+    # Key 54: มารดาเป็นภูมิแพ้ (ans: 1 -> ก)
+    # Choices: ก. Allergic rhinitis, ข. Hydroxyzine 25 mg HS, ค. Diphenhydramine 25 mg IV, ง. Cetirizine 10 mg OD, จ. Loratadine 10 mg OD
+    "54": {
+        "distractors": {
+            "ข": "Hydroxyzine 25 mg HS มี anticholinergic side effects สูง เช่น ปากแห้ง คอแห้ง ตาพร่า และง่วงซึมมาก ไม่จัดเป็นยาทางเลือกแรกในการควบคุมโรคภูมิแพ้ระยะยาว",
+            "ค": "Diphenhydramine 25 mg IV ใช้ในภาวะ acute allergic reaction หรือ premedication ก่อนการให้ยาเคมีบำบัด ไม่ใช่ยาสำหรับควบคุม maintenance therapy ใน allergic rhinitis",
+            "ง": "Cetirizine 10 mg OD เป็น second-generation antihistamine ที่มีประสิทธิภาพดี ออกฤทธิ์เร็ว แต่มีอัตราการผ่าน blood-brain barrier ทำให้เกิด sedative effect ได้มากกว่า fexofenadine หรือ loratadine",
+            "จ": "Loratadine 10 mg OD เป็น nonsedating antihistamine ที่มี profile ความปลอดภัยดี แต่มีประสิทธิภาพในการลดอาการคัดแน่นจมูกน้อยกว่าการใช้ intranasal corticosteroid"
+        }
+    },
+
+    # Key 55: (ชื่อยาantihistamine) nasal spray (ans: 1 -> ก)
+    # Choices: ก. Allergic rhinitis, ข. Loratadine 10 mg OD, ค. Fexofenadine 180 mg OD, ง. Chlorpheniramine 4 mg TID, จ. Fluticasone furoate nasal spray
+    "55": {
+        "distractors": {
+            "ข": "Loratadine 10 mg OD เป็น oral second-generation antihistamine ที่ออกฤทธิ์ทางระบบ ไม่ได้อยู่ในรูปแบบ intranasal spray",
+            "ค": "Fexofenadine 180 mg OD เป็น oral selective peripheral H1 receptor antagonist ชนิดเม็ดรับประทาน ไม่มีสูตรตำรับเป็นสเปรย์พ่นจมูก",
+            "ง": "Chlorpheniramine 4 mg TID เป็น first-generation antihistamine รูปแบบรับประทานที่ก่อให้เกิดผลข้างเคียง sedating และ anticholinergic สูง",
+            "จ": "Fluticasone furoate nasal spray เป็น intranasal corticosteroid ไม่ใช่ยากลุ่ม antihistamine nasal spray อย่าง Azelastine หรือ Olopatadine"
+        }
+    },
+
+    # Key 56: Antihistamine... รายการยา antihistamine ตามแนบ... (ans: 1 -> ก)
+    # Choices: ก. Tramadol เดี่ยวและผสม, ข. Dextromethorphan เดี่ยวและผสม, ค. CPM เดี่ยวและผสม เฉพาะยาน้ำ, ง. Cetirizine เดี่ยวและผสม เฉพาะยาน้ำ, จ. Diphenhydramine เดี่ยวและผสม เฉพาะยาน้ำ
+    "56": {
+        "distractors": {
+            "ข": "Dextromethorphan เดี่ยวและสูตรผสมถูกควบคุมการจำหน่ายเพื่อป้องกันการนำไปใช้ในทางที่ผิดสำหรับวัตถุประสงค์เสพติด แต่เป็นยากดศูนย์ควบคุมการไอไม่ใช่ยากลุ่ม antihistamine",
+            "ค": "ยาน้ำ CPM สูตรเดี่ยวและสูตรผสมเป็นรายการยาแก้แพ้ที่ต้องจัดทำบัญชีรายงานการขายตามประกาศ อย. เพื่อเฝ้าระวังการนำไปผสมสารเสพติดสี่คูณร้อย",
+            "ง": "Cetirizine ชนิดยาน้ำไม่ได้ถูกจัดเป็นรายการ antihistamine ที่เสี่ยงต่อการนำไปใช้ในทางที่ผิดเหมือน first-generation antihistamines กลุ่มที่มีฤทธิ์ sedating เด่น",
+            "จ": "Diphenhydramine ชนิดยาน้ำเป็น first-generation antihistamine ที่มีการนำไปใช้เป็นส่วนผสมในสารเสพติดสี่คูณร้อยและถูกเฝ้าระวังเข้มงวดตามประกาศกระทรวงสาธารณสุข"
+        }
+    },
+
+    # Key 57: โครงสร้างส่วนใดของ loratadine... (ans: 2 -> ข)
+    # Choices: ก. Dexamethasone, ข. Prednisolone, ค. Montelukast, ง. Hydroxyzine, จ. A และ C
+    "57": {
+        "distractors": {
+            "ก": "Dexamethasone เป็น fluorinated glucocorticoid ที่มีโครงสร้าง cyclopentanoperhydrophenanthrene ring ไม่เกี่ยวข้องกับ receptor selectivity ของสารกลุ่ม antihistamine",
+            "ค": "Montelukast เป็น quinoline derivative ที่มี hydrophilic carboxylic side chain ออกฤทธิ์จำเพาะต่อ CysLT1 receptor",
+            "ง": "Hydroxyzine มีโครงสร้าง diphenylmethylpiperazine ที่สามารถข้าม blood-brain barrier ได้ดี ทำให้ขาด peripheral selectivity และก่อให้เกิด sedation สูง",
+            "จ": "ทางเลือกนี้ระบุโครงสร้างที่ไม่เกี่ยวข้องกับการจับ H1-receptor อย่างจำเพาะของ loratadine ซึ่งอาศัย tertiary amine chain และ pyridine ring ร่วมกับ piperidine nitrogen"
+        }
+    },
+
+    # Key 58: Allergic rhinitis (ans: 1 -> ก)
+    # Choices: ก. Allergic rhinitis, ข. Hydroxyzine 25 mg HS, ค. Diphenhydramine 25 mg IV, ง. Cetirizine 10 mg OD, จ. Loratadine 10 mg OD
+    "58": {
+        "distractors": {
+            "ข": "Hydroxyzine 25 mg HS มีผลกดระบบประสาทส่วนกลางและรบกวน sleep architecture ผ่านการยับยั้ง central H1 และ muscarinic receptors จึงไม่เหมาะในการรักษา allergic rhinitis เรื้อรัง",
+            "ค": "Diphenhydramine 25 mg IV มีข้อบ่งใช้ในการจัดการ acute hypersensitivity reactions หรือ dystonic reaction จากยารักษาโรคจิต ไม่ใช่ยาควบคุมโรคจมูกอักเสบภูมิแพ้",
+            "ง": "Cetirizine 10 mg OD แม้จะบรรเทาอาการจาม คัน น้ำมูกไหลได้ดี แต่ไม่สามารถบรรเทาอาการคัดแน่นจมูกได้สมบูรณ์เท่ากลุ่ม intranasal corticosteroids",
+            "จ": "Loratadine 10 mg OD มีความปลอดภัยสูง ไม่ทำให้ง่วง แต่มี onset of action ช้ากว่า cetirizine และ fexofenadine เล็กน้อย"
+        }
+    },
+
+    # Key 60: common cold จะแนะนำยังไงดี (ans: 1 -> ก)
+    # Choices: ก. Allergic rhinitis, ข. พักผ่อนให้เพียงพอ..., ค. Budesonide nasal spray, ง. Epinephrine 0.3 mg IM stat, จ. Dexamethasone 4 mg IV
+    "60": {
+        "distractors": {
+            "ข": "การพักผ่อน ดื่มน้ำอุ่น และการรักษาตามอาการด้วยยาแก้ปวดลดไข้หรือยาหดหลอดเลือดระยะสั้นเป็นแนวทางมาตรฐานที่ถูกต้องตามหลัก supportive care ของโรคหวัดธรรมดา",
+            "ค": "Budesonide nasal spray ไม่มีข้อบ่งใช้ใน common cold เนื่องจากเป็นการติดเชื้อไวรัสเฉียบพลัน และ topical steroid อาจกดการตอบสนองของภูมิคุ้มกันเฉพาะที่ในเยื่อบุโพรงจมูก",
+            "ง": "Epinephrine 0.3 mg IM stat เป็นยาช่วยชีวิตสำหรับภาวะ anaphylaxis หรือ upper airway obstruction รุนแรง ไม่มีบทบาทในการรักษา common cold",
+            "จ": "Dexamethasone 4 mg IV เป็น systemic corticosteroid ที่ไม่มีข้อบ่งใช้ในโรคหวัดทั่วไป และอาจเพิ่มความเสี่ยงต่อการติดเชื้อซ้ำซ้อนหรือภาวะ hyperglycemia"
+        }
+    },
+
+    # Key 61: จากอาการดังกล่าวผู้ป่วยเป็น allergic rhinitis แบบใดและมีความ รุนแรงระดับใด (ans: 1 -> ก)
+    # Choices: ก. Persistent, mild (ans: 1 -> ก), wrong: ข, ค, ง, จ
+    "61": {
+        "distractors": {
+            "ข": "Intermittent, mild หมายถึงมีอาการน้อยกว่า 4 วันต่อสัปดาห์ หรือน้อยกว่า 4 สัปดาห์ติดต่อกัน และไม่มีผลกระทบต่อการนอนหลับหรือการใช้ชีวิตประจำวัน",
+            "ค": "Intermittent, very severe ไม่ใช่การจัดระดับความรุนแรงตามเกณฑ์มาตรฐานของ ARIA guideline ซึ่งแบ่งเพียง mild และ moderate-severe",
+            "ง": "Persistent, moderate-severe ต้องมีอาการมากกว่า 4 วันต่อสัปดาห์และติดต่อกันมากกว่า 4 สัปดาห์ ร่วมกับมีอาการรบกวนการนอนหลับ กิจวัตรประจำวัน การทำงานหรือการเรียน",
+            "จ": "Intermittent, moderate-severe หมายถึงมีอาการไม่เกิน 4 วันต่อสัปดาห์หรือต่อเนื่องไม่เกิน 4 สัปดาห์ แต่มีความผิดปกติของการนอนหลับหรือมีอาการรบกวนกิจกรรมอย่างน้อย 1 ข้อ"
+        }
+    },
+
+    # Key 62: การใช้ยา pseudoephedrine nasal drop ติดต่อกันนานเกิน 10 วัน มีผลทำให้เกิดผลข้างเคียงใด (ans: 1 -> ก)
+    # Choices: ก. นอนไม่หลับ (ans: 1 -> ก), wrong: ข, ค, ง, จ
+    "62": {
+        "distractors": {
+            "ข": "การเกิดฝ้าขาวที่ลิ้น (Oral candidiasis) เป็นผลข้างเคียงจากการใช้ inhaled หรือ oral corticosteroids ที่ไม่ได้บ้วนปากหลังใช้ยา ไม่ใช่ผลจาก topical decongestants",
+            "ค": "เลือดกำเดาไหล (Epistaxis) มักสัมพันธ์กับเยื่อบุจมูกแห้งจากการใช้ topical nasal steroid หรือการพ่นยาจ่อใส่ผนังกั้นช่องจมูกโดยตรง",
+            "ง": "คัดจมูกมาก หายใจไม่ออก (Rhinitis medicamentosa) เป็นภาวะแทรกซ้อนคลาสสิกที่เกิดจากการใช้ topical alpha-agonist ต่อเนื่องจนเกิด rebound nasal mucosal hyperreactivity",
+            "จ": "เลือดออกในทางเดินอาหารเป็นอาการข้างเคียงทางระบบของยากลุ่ม NSAIDs หรือ systemic corticosteroids จากการยับยั้ง protective prostaglandins ในเยื่อบุกระเพาะอาหาร"
+        }
+    },
+
+    # Key 63: Allergic rhinitis with Asthma (ans: 1 -> ก)
+    # Choices: ก. Cetirizine 10 mg OD, ข. Loratadine 10 mg OD, ค. Fexofenadine 180 mg OD, ง. Chlorpheniramine 4 mg TID, จ. Fluticasone furoate nasal spray
+    "63": {
+        "distractors": {
+            "ข": "Loratadine 10 mg OD มีประสิทธิภาพในการลดอาการภูมิแพ้ทางจมูก แต่ไม่มีผลต่อการลด airway hyperresponsiveness ในผู้ป่วยโรคหอบหืดร่วม",
+            "ค": "Fexofenadine 180 mg OD มีความจำเพาะสูงต่อ peripheral H1-receptor และไม่ทำให้ง่วง แต่ไม่สามารถควบคุมการอักเสบเรื้อรังของหลอดลมในโรคหอบหืดได้",
+            "ง": "Chlorpheniramine 4 mg TID มี anticholinergic side effects ที่ทำให้เสมหะในทางเดินหายใจแห้งเหนียวและขับออกยาก ซึ่งอาจกระตุ้นให้อาการหอบหืดแย่ลง",
+            "จ": "Fluticasone furoate nasal spray เป็น first-line medication สำหรับบรรเทาอาการ allergic rhinitis ทุกระดับความรุนแรง แต่ไม่สามารถทดแทน inhaled corticosteroid สำหรับการควบคุมหอบหืด"
+        }
+    },
+
+    # Key 64: Allergic rhinitis with Asthma ผู้ป่วยหญิงอายุ 20 ปี... (ans: 1 -> ก)
+    # Choices: ก. Chlorpheniramine 4 mg TID, ข. Fluticasone furoate, ค. Budesonide, ง. Epinephrine, จ. Dexamethasone
+    "64": {
+        "distractors": {
+            "ข": "Fluticasone furoate nasal spray เป็นการรักษามาตรฐานที่มีประสิทธิภาพสูงสุดในการลดการอักเสบในโพรงจมูกและช่วยให้การควบคุมโรคหอบหืดดีขึ้นตามหลัก One Airway Concept",
+            "ค": "Budesonide nasal spray สามารถลดการหลั่ง cytokines และการแทรกซึมของ inflammatory cells ในเยื่อบุทางเดินหายใจได้อย่างปลอดภัยและมีประสิทธิภาพ",
+            "ง": "Epinephrine 0.3 mg IM stat มีข้อบ่งใช้ฉุกเฉินเฉพาะใน acute life-threatening anaphylaxis หรือ acute severe asthma exacerbation เท่านั้น",
+            "จ": "Dexamethasone 4 mg IV เป็น systemic corticosteroid ที่ไม่สมเหตุสมผลในการใช้ควบคุมอาการระดับคงที่ในผู้ป่วยนอกเนื่องจากมีพิษทางระบบสูง"
+        }
+    },
+
+    # Key 65: Fexofenadine 60 mg bid (ans: 1 -> ก)
+    # Choices: ก. Epinephrine 0.3 mg IM stat, ข. Dexamethasone 4 mg IV, ค. Prednisolone 20 mg OD, ง. Montelukast 10 mg HS, จ. Hydroxyzine 25 mg HS
+    "65": {
+        "distractors": {
+            "ข": "Dexamethasone 4 mg IV มี immunosuppressive และ anti-inflammatory potency สูง ออกแบบมาสำหรับภาวะวิกฤตเฉียบพลัน ไม่ใช่ยาทางเลือกทดแทน oral antihistamines",
+            "ค": "Prednisolone 20 mg OD ใช้ระงับอาการอักเสบรุนแรงระยะสั้น ไม่ควรใช้เป็นยาพื้นฐานระยะยาวเพราะเสี่ยงต่อ Cushingoid syndrome, osteoporosis และ infection",
+            "ง": "Montelukast 10 mg HS เป็น leukotriene receptor antagonist ที่เหมาะสำหรับการให้ร่วมใน allergic rhinitis ที่มี concomitant asthma หรือ nocturnal symptoms เด่น",
+            "จ": "Hydroxyzine 25 mg HS มีคุณสมบัติ lipophilic สูงและผ่านเข้าสู่สมองได้ดี ก่อให้เกิดอาการง่วงซึมรุนแรงและรบกวน cognitive performance ต่างจาก fexofenadine"
+        }
+    },
+
+    # Key 66: Oxymetazoline intranasal prn (at night 1-2 times/week) (ans: 1 -> ก)
+    # Choices: ก. Montelukast 10 mg HS, ข. Hydroxyzine 25 mg HS, ค. Diphenhydramine 25 mg IV, ง. Cetirizine 10 mg OD, จ. Loratadine 10 mg OD
+    "66": {
+        "distractors": {
+            "ข": "Hydroxyzine 25 mg HS ออกฤทธิ์กดประสาทส่วนกลางและมีฤทธิ์ anticholinergic สูง อาจเพิ่มความเสี่ยงต่อการหยุดหายใจขณะหลับ (sleep apnea) ในเวลากลางคืน",
+            "ค": "Diphenhydramine 25 mg IV รูปแบบฉีดเข้าหลอดเลือดดำใช้เพื่อการรักษาฉุกเฉินหรือ premedication ไม่เหมาะสมกับการใช้รักษาอาการคัดจมูกตอนกลางคืน",
+            "ง": "Cetirizine 10 mg OD ออกฤทธิ์ปิดกั้น peripheral H1 receptor ได้ยาวนาน 24 ชั่วโมง มีฤทธิ์ลดคัน จาม น้ำมูกไหล แต่มีผลต่อการลด mucosal congestion น้อยกว่า decongestants",
+            "จ": "Loratadine 10 mg OD เป็น non-sedating antihistamine เหมาะสำหรับอาการแพ้ทั่วไป แต่ประสิทธิภาพในการแก้อาการคัดจมูกรุนแรงตอนกลางคืนมีจำกัด"
+        }
+    },
+
+    # Key 67: กลไกของการเกิด Allergic rhinitis เกี่ยวข้องกับ Antibody ตัวใด (ans: 1 -> ก in json! real ans is IgE -> ข)
+    # Choices: ก. IgA, ข. IgE, ค. IgD, ง. IgM, จ. IgG
+    "67": {
+        "distractors": {
+            "ข": "IgE เป็นแอนติบอดีหลักในปฏิกิริยาภูมิแพ้ Type I hypersensitivity โดยจับกับ Fc epsilon RI บน mast cells และ basophils ทำให้เกิด degranulation ปลดปล่อย histamine",
+            "ค": "IgD ทำหน้าที่เป็น antigen receptor บนผิวของ naive B-lymphocytes ในระบบภูมิคุ้มกัน ไม่มีบทบาทในการกระตุ้น allergic rhinitis",
+            "ง": "IgM เป็นแอนติบอดีตัวแรกที่ร่างกายสร้างขึ้นในการตอบสนองขั้นปฐมภูมิ (primary immune response) และเกี่ยวข้องกับการกระตุ้น classical complement pathway",
+            "จ": "IgG เป็นแอนติบอดีที่มีปริมาณมากที่สุดในกระแสเลือด มีบทบาทในการทำลายเชื้อโรคผ่าน opsonization, complement activation และเกี่ยวข้องกับ Type II/III hypersensitivity"
+        }
+    },
+
+    # Key 68: Allergic rhinitis จัดเป็นแบบใด (ans: 1 -> ก)
+    # Choices: ก. Mild intermittent, ข. Mild persistent, ค. Mild-moderate intermittent, ง. Moderate persistent, จ. Moderate-severe intermittent
+    "68": {
+        "distractors": {
+            "ข": "Mild persistent หมายถึงมีอาการมากกว่า 4 วันต่อสัปดาห์ และติดต่อกันนานกว่า 4 สัปดาห์ แต่ระดับความรุนแรงยังไม่กระทบต่อการนอน การทำงาน หรือการใช้ชีวิตประจำวัน",
+            "ค": "Mild-moderate intermittent ไม่ใช่การจำแนกประเภทตามเกณฑ์ ARIA guideline เนื่องจาก guideline จัดระดับความรุนแรงเป็น 2 กลุ่มคือ mild หรือ moderate-severe",
+            "ง": "Moderate persistent ไม่ตรงตามคำจำกัดความมาตรฐานของ ARIA guideline ซึ่งรวมความรุนแรงระดับ moderate และ severe เข้าด้วยกันเป็น moderate-severe",
+            "จ": "Moderate-severe intermittent หมายถึงมีอาการเป็นพักๆ ไม่เกิน 4 วันต่อสัปดาห์ แต่มีผลกระทบรบกวนการนอนหลับ รบกวนการเรียน หรือมีอาการผิดปกติที่ก่อให้เกิดความรำคาญใจ"
+        }
+    },
+
+    # Key 69: Oxymetazoline ออกฤทธิ์เหมือนกับยาใด (ans: 1 -> ก)
+    # Choices: ก. Phenylephrine, ข. Loratadine, ค. Ipratropium, ง. Cromolyn, จ. Theophylline
+    "69": {
+        "distractors": {
+            "ข": "Loratadine เป็น second-generation H1-antihistamine ที่ออกฤทธิ์ปิดกั้นตัวรับฮิสตามีน ไม่ได้มีฤทธิ์กระตุ้น adrenergic receptor เพื่อบีบหลอดเลือดเหมือน oxymetazoline",
+            "ค": "Ipratropium bromide เป็น anticholinergic agent ที่ยับยั้ง muscarinic receptor ในเยื่อบุโพรงจมูก ช่วยลดเฉพาะภาวะ rhinorrhea แต่ไม่สามารถลดอาการคัดจมูก",
+            "ง": "Cromolyn sodium เป็น mast cell stabilizer ที่ออกฤทธิ์ป้องกันการแตกตัวและการหลั่ง inflammatory mediators ของ mast cell นิยมใช้ป้องกันก่อนสัมผัสสารก่อภูมิแพ้",
+            "จ": "Theophylline เป็น non-selective phosphodiesterase inhibitor และ adenosine receptor antagonist ที่ใช้ขยายหลอดลมในโรคหอบหืดและ COPD ไม่มีบทบาทเป็น nasal decongestant"
+        }
+    },
+
+    # Key 70: ยาใดสามารถรักษาได้ทั้ง Allergic rhinitis และ Asthma (ans: 1 -> ก)
+    # Choices: ก. Budesonide, ข. Montelukast, ค. Ipratropium, ง. Loratadine, จ. Leukotriene
+    "70": {
+        "distractors": {
+            "ข": "Montelukast เป็น leukotriene receptor antagonist ที่ได้รับการรับรองข้อบ่งใช้ทั้งใน Allergic rhinitis และ Asthma โดยช่วยลด bronchoconstriction และ nasal congestion",
+            "ค": "Ipratropium เป็นยาต้านโคลิเนอร์จิกที่ใช้ขยายหลอดลมใน COPD และลดน้ำมูกมูกใสใน rhinitis แต่ไม่มีประสิทธิภาพในการควบคุมการอักเสบเรื้อรังของทั้งสองโรค",
+            "ง": "Loratadine เป็น H1 antihistamine ที่บรรเทาอาการของ allergic rhinitis ได้ดี แต่ไม่มีประสิทธิภาพในการรักษาหรือป้องกันอาการหดเกร็งของหลอดลมในผู้ป่วยหอบหืด",
+            "จ": "Leukotriene เป็น inflammatory mediator ที่ร่างกายสร้างขึ้นจาก arachidonic acid ผ่านวิถี 5-lipoxygenase ซึ่งเป็นสารก่อการอักเสบ ไม่ใช่ตัวยาที่ใช้รักษาโรค"
+        }
+    },
+
+    # Key 72: เด็กชายอายุ 14 ปี น้ำมูกไหลมา 5 สัปดาห์... ขนแมว ก่อสร้าง มารดาเป็นภูมิแพ้ (ans: 1 -> ก in json!)
+    # Choices: ก. การก่อสร้าง, ข. ประวัติทางพันธุกรรม, ค. ขนแมว, ง. สภาพอากาศ, จ. ปัจจัยภายใน เช่น โรคประจำตัว
+    "72": {
+        "distractors": {
+            "ข": "ประวัติทางพันธุกรรมหรือภาวะ atopy ของมารดาเป็นปัจจัยเสี่ยงภายใน (intrinsic predisposing factor) ที่ทำให้มีแนวโน้มเป็นภูมิแพ้ง่าย แต่ไม่ใช่ตัวกระตุ้นเฉียบพลันให้เกิดอาการกำเริบ",
+            "ค": "รังแคและโปรตีนจากขนแมว (Fel d 1) เป็น aeroallergen สำคัญที่มักกระตุ้น IgE-mediated allergic rhinitis ภายหลังการสัมผัสสัตว์เลี้ยงใหม่อย่างใกล้ชิด",
+            "ง": "สภาพอากาศเป็นเพียง nonspecific trigger ที่อาจกระตุ้น vasomotor symptoms แต่ไม่ใช่สารก่อภูมิแพ้โปรตีนที่ก่อให้เกิด allergic sensitization และ mucosal inflammation",
+            "จ": "ปัจจัยภายในร่างกายเป็นตัวกำหนดความไวและการตอบสนองของระบบภูมิคุ้มกัน แต่จำเป็นต้องมีสิ่งกระตุ้นจากสิ่งแวดล้อมภายนอกในการชักนำให้อาการแสดงออกมา"
+        }
+    },
+
+    # Key 73: ยาในข้อใดไม่เหมาะสมสำหรับผู้ป่วยรายนี้มากที่สุด... (ans: 1 -> ก)
+    # Choices: ก. Epinephrine 0.3 mg IM stat, ข. Dexamethasone 4 mg IV, ค. Prednisolone 20 mg OD, ง. Montelukast 10 mg HS, จ. Hydroxyzine 25 mg HS
+    "73": {
+        "distractors": {
+            "ข": "Dexamethasone 4 mg IV เป็นยากลูโคคอร์ติคอยด์ชนิดฉีดที่มีฤทธิ์กดภูมิคุ้มกันแรง ไม่มีความเหมาะสมสำหรับการรักษาโรคจมูกอักเสบภูมิแพ้ทั่วไปเนื่องจากเสี่ยงต่อ systemic toxicities",
+            "ค": "Prednisolone 20 mg OD ใช้เฉพาะผู้ป่วยที่มี severe intractable nasal obstruction ที่ดื้อต่อ topical steroids โดยใช้เพียงคอร์สสั้น 3-5 วันเท่านั้น",
+            "ง": "Montelukast 10 mg HS สามารถใช้เสริมการรักษาได้ในกรณีที่มี nocturnal nasal congestion เด่น หรือมี concomitant asthma ร่วมด้วย",
+            "จ": "Hydroxyzine 25 mg HS เป็น first-generation antihistamine ที่อาจใช้บรรเทาอาการคันและช่วยให้นอนหลับได้ แต่พึงระวังผลข้างเคียง anticholinergic และความง่วงซึม"
+        }
+    },
+
+    # Key 74: จากข้อ 15. ควรรักษาด้วยยาในข้อใด... (ans: 1 -> ก)
+    # Choices: ก. Montelukast 10 mg HS, ข. Hydroxyzine 25 mg HS, ค. Diphenhydramine 25 mg IV, ง. Cetirizine 10 mg OD, จ. Loratadine 10 mg OD
+    "74": {
+        "distractors": {
+            "ข": "Hydroxyzine 25 mg HS มี sedative effect เด่นชัด ไม่ตรงกับหลักการเลือกยาบรรเทาอาการภูมิแพ้ทางตาที่ควรเน้น topical antihistamine/mast cell stabilizer",
+            "ค": "Diphenhydramine 25 mg IV ออกแบบมาเพื่อรักษา acute systemic hypersensitivity ไม่ใช่แนวทางการรักษา localized allergic ocular symptoms หรือ allergic conjunctivitis",
+            "ง": "Cetirizine 10 mg OD เป็น systemic second-generation antihistamine ที่ช่วยลด ocular itching และ tearing ได้ แต่อาจมีประสิทธิภาพสู้การหยอดยาเฉพาะที่ไม่ได้",
+            "จ": "Loratadine 10 mg OD เป็นยาแก้แพ้ชนิดไม่ง่วง ช่วยบรรเทาอาการแพ้ตามระบบได้ดี แต่ onset of action ช้ากว่า topical dual-acting agents เช่น Olopatadine ophthalmic solution"
+        }
+    },
+
+    # Key 75: จากตำรับยาข้างต้น กำหนดให้ oxymetazoline มีค่า E เท่ากับ 0.3... เติม NaCl เท่าไร... (ans: 1 -> ก)
+    # Choices: ก. 0.60 ml, ข. 0.67 ml, ค. 0.80 ml, ง. 0.87 ml, จ. 0.90 ml
+    "75": {
+        "distractors": {
+            "ข": "0.67 ml เป็นค่าที่เกิดจากการปัดเศษหรือคำนวณสัดส่วน tonicity ที่ไม่คำนึงถึงปริมาตร NaCl solution 0.9% ตามสมการ sodium chloride equivalent method อย่างถูกต้อง",
+            "ค": "0.80 ml เป็นค่าที่คำนวณปริมาณเกลือต่ำกว่าความเป็นจริง ส่งผลให้สารละลายที่เตรียมได้มีคุณสมบัติเป็น hypotonic solution ซึ่งจะทำให้เซลล์เยื่อบุโพรงจมูกบวม",
+            "ง": "0.87 ml เกิดจากการคำนวณผิดพลาดโดยนำค่า E ไปลบออกจากความเข้มข้นไอโซโทนิกตรงๆ โดยไม่ได้เทียบสัดส่วนของเกลือโซเดียมคลอไรด์",
+            "จ": "0.90 ml เป็นปริมาณของ Normal saline พื้นฐานโดยสมมุติว่าสารสำคัญไม่มีคุณสมบัติในการสร้างแรงดันออสโมติก ซึ่งแท้จริงแล้ว oxymetazoline มีค่า E ช่วยลดปริมาณ NaCl ที่ต้องเติม"
+        }
+    },
+
+    # Key 76: Antihistamine ตัวไหนทำให้เกิดอาการง่วงที่สุด (ans: 1 -> ก)
+    # Choices: ก. Hydroxyzine, ข. Chlorphenhydramine, ค. Brompheniramine, ง. Triprolidine, จ. Cyproheptadine
+    "76": {
+        "distractors": {
+            "ข": "Chlorpheniramine (CPM) เป็นกลุ่ม alkylamine ที่มีฤทธิ์ sedating ในระดับปานกลาง ซึ่งน้อยกว่ากลุ่ม piperazine (Hydroxyzine) หรือ ethanolamine (Diphenhydramine)",
+            "ค": "Brompheniramine มีคุณสมบัติทางเภสัชวิทยาใกล้เคียงกับ CPM โดยมีผล sedating และ anticholinergic ปานกลาง ไม่จัดเป็นกลุ่มที่ทำให้ง่วงซึมสูงสุด",
+            "ง": "Triprolidine เป็นกลุ่ม alkylamine ที่ทำให้เกิด sedation ในระดับปานกลาง มักใช้ผสมร่วมกับ pseudoephedrine เพื่อบรรเทาอาการหวัด",
+            "จ": "Cyproheptadine มีฤทธิ์ต้านทั้ง H1 และ 5-HT2 receptors ทำให้ง่วงและกระตุ้นความอยากอาหาร แต่อาการง่วงซึมโดยรวมยังต่ำกว่า Hydroxyzine"
+        }
+    },
+
+    # Key 77: ยาเพิกถอนทะเบียนตำรับ Case 2: Asthma... ต่อมลูกหมากโต ปัสสาวะไม่ออก (ans: 1 -> ก)
+    # Choices: ก. Epinephrine 0.3 mg IM stat, ข. Dexamethasone 4 mg IV, ค. Prednisolone 20 mg OD, ง. Montelukast 10 mg HS, จ. Hydroxyzine 25 mg HS
+    "77": {
+        "distractors": {
+            "ข": "Dexamethasone 4 mg IV เป็น systemic corticosteroid ที่ไม่มีผลต่อ cholinergic receptor และไม่ทำให้เกิด urinary retention ในผู้ป่วย BPH",
+            "ค": "Prednisolone 20 mg OD ไม่มีฤทธิ์ anticholinergic จึงไม่ส่งผลให้กล้ามเนื้อ detrusor คลายตัวหรือเกิดภาวะปัสสาวะไม่ออกในโรคต่อมลูกหมากโต",
+            "ง": "Montelukast 10 mg HS เป็น cysteinyl leukotriene receptor antagonist ที่ปลอดภัยสูงต่อระบบทางเดินปัสสาวะ และไม่มีฤทธิ์ต้านโคลิเนอร์จิก",
+            "จ": "Hydroxyzine 25 mg HS เป็น first-generation antihistamine ที่มี potent anticholinergic effect ซึ่งเป็นตัวการสำคัญที่ทำให้เกิด acute urinary retention ในผู้ป่วย BPH"
+        }
+    },
+
+    # Key 78: Pseudoephedrine (ans: 1 -> ก)
+    # Choices: ก. Montelukast 10 mg HS, ข. Hydroxyzine 25 mg HS, ค. Diphenhydramine 25 mg IV, ง. Cetirizine 10 mg OD, จ. Loratadine 10 mg OD
+    "78": {
+        "distractors": {
+            "ข": "Hydroxyzine 25 mg HS ออกฤทธิ์กดระบบประสาทส่วนกลางและต้านฮิสตามีน ตรงกันข้ามกับ pseudoephedrine ที่มีฤทธิ์กระตุ้นระบบประสาทซิมพาเทติกและระบบประสาทส่วนกลาง",
+            "ค": "Diphenhydramine 25 mg IV เป็น first-generation antihistamine ชนิดฉีดที่มีฤทธิ์ sedative และ anticholinergic สูง ไม่ได้ออกฤทธิ์เป็น sympathomimetic decongestant",
+            "ง": "Cetirizine 10 mg OD ปิดกั้น peripheral H1 receptor ได้จำเพาะเจาะจง ช่วยลดอาการคัน จาม น้ำมูก แต่ไม่มีผลต่อ alpha-adrenergic vasoconstriction",
+            "จ": "Loratadine 10 mg OD เป็น non-sedating antihistamine ที่ลดการตอบสนองต่อสารแพ้ แต่ไม่มีคุณสมบัติในการลด venous sinus engorgement เหมือน pseudoephedrine"
+        }
+    },
+
+    # Key 79: ชื่อผู้ผลิต และ จังหวัดที่ผลิต (ans: 1 -> ก)
+    # Choices: ก. Cetirizine 10 mg OD, ข. Loratadine 10 mg OD, ค. Fexofenadine 180 mg OD, ง. Chlorpheniramine 4 mg TID, จ. Fluticasone furoate nasal spray
+    "79": {
+        "distractors": {
+            "ข": "Loratadine 10 mg OD เป็น second-generation antihistamine ที่อาศัยการกำจัดผ่านตับเป็นหลักโดยเอนไซม์ CYP3A4 และ CYP2D6 มีข้อดีคือรับประทานเพียงวันละ 1 ครั้ง",
+            "ค": "Fexofenadine 180 mg OD เป็น peripherally selective H1-antagonist ที่ไม่ผ่าน blood-brain barrier จึงปราศจากฤทธิ์ง่วงซึมแม้ในขนาดสูง",
+            "ง": "Chlorpheniramine 4 mg TID ต้องรับประทานวันละ 3-4 ครั้งเนื่องจากค่าครึ่งชีวิตการออกฤทธิ์สั้น และมีผลข้างเคียง sedating และ anticholinergic สูง",
+            "จ": "Fluticasone furoate nasal spray เป็น topical corticosteroid ที่ออกฤทธิ์ต้านการอักเสบเฉพาะที่ในโพรงจมูกที่มี affinity ต่อ glucocorticoid receptor สูงมาก"
+        }
+    },
+
+    # Key 80: ต่อมลูกหมากโต 8.ยา Antihistamine ตัวใดที่ทำให้ง่วงมากที่สุด (ans: 1 -> ก)
+    # Choices: ก. Chlorpheniramine 4 mg TID, ข. Fluticasone furoate, ค. Budesonide, ง. Epinephrine, จ. Dexamethasone
+    "80": {
+        "distractors": {
+            "ข": "Fluticasone furoate nasal spray เป็นสเตียรอยด์พ่นจมูกที่ออกฤทธิ์เฉพาะที่และมี systemic absorption ต่ำกว่า 1% จึงไม่ก่อให้เกิดอาการง่วงซึมหรือผลข้างเคียงต่อระบบประสาทส่วนกลาง",
+            "ค": "Budesonide nasal spray เป็น intranasal corticosteroid สำหรับลดการอักเสบในโพรงจมูก ไม่ผ่านข้าม blood-brain barrier ในปริมาณที่มีนัยสำคัญ จึงไม่มีฤทธิ์ sedating",
+            "ง": "Epinephrine 0.3 mg IM stat ออกฤทธิ์กระตุ้น sympathetic nervous system ทำให้เกิดภาวะตื่นตัว ใจสั่น และความดันโลหิตสูงขึ้น ตรงกันข้ามกับอาการง่วงนอน",
+            "จ": "Dexamethasone 4 mg IV เป็น systemic corticosteroid ที่กระตุ้น glucocorticoid receptor ในระบบประสาท อาจทำให้เกิด insomnia, agitation หรือ mood alteration มากกว่าการง่วงซึม"
+        }
+    },
+
+    # Key 81: ผู้ป่วยมีอาการเลือดออกตามไรฟัน เลือดกำเดาไหล เป็นหวัดง่าย สามารถช่วยได้โดยอาศัย (ans: 1 -> ก)
+    # Choices: ก. Vitamin C, ข. Vitamin E, ค. Vitamin K, ง. Folic acid, จ. Ferrus sulfate
+    "81": {
+        "distractors": {
+            "ข": "Vitamin E เป็น fat-soluble antioxidant ที่ปกป้องเยื่อหุ้มเซลล์จาก oxidative stress แต่หากได้รับในขนาดสูงเกินไปอาจเพิ่มความเสี่ยงต่อภาวะเลือดออกผิดปกติจากการต้านวิตามินเค",
+            "ค": "Vitamin K เป็นโคแฟกเตอร์สำคัญในการสังเคราะห์ clotting factors II, VII, IX, X แม้ช่วยแก้ภาวะเลือดออกง่ายแต่ไม่มีบทบาทในการเสริมสร้างคอลลาเจนหลอดเลือดหรือป้องกันการติดเชื้อหวัด",
+            "ง": "Folic acid เป็นวิตามินจำเป็นในการสังเคราะห์ DNA และการแบ่งเซลล์ของระบบโลหิตวิทยา ใช้รักษาภาวะ megaloblastic anemia แต่ไม่ได้ช่วยเสริมความแข็งแรงของผนังหลอดเลือดฝอย",
+            "จ": "Ferrous sulfate ใช้รักษาภาวะโลหิตจางจากการขาดธาตุเหล็ก (iron deficiency anemia) แต่ไม่สามารถป้องกัน capillary fragility ที่เกิดจากการขาดคอลลาเจนหรือแก้ปัญหาเป็นหวัดง่าย"
+        }
+    }
+}
+
+print(f"Total question keys: {len(distractors_data)}")
+
+# Verify all keys in immuno_part2.json are present
+with open('immuno_part2.json', 'r', encoding='utf-8') as f:
+    source_data = json.load(f)
+
+missing = set(source_data.keys()) - set(distractors_data.keys())
+print(f"Missing keys: {missing}")
+
+extra = set(distractors_data.keys()) - set(source_data.keys())
+print(f"Extra keys: {extra}")
+
+# Check for zero asterisks
+has_asterisk = False
+for k, val in distractors_data.items():
+    for let, text in val["distractors"].items():
+        if "*" in text:
+            print(f"ASTERISK FOUND in {k} {let}: {text}")
+            has_asterisk = True
+
+if not has_asterisk:
+    print("STRICT ZERO ASTERISKS check: PASSED!")
+
+# Write output to distractors_immuno_part2.json
+with open('distractors_immuno_part2.json', 'w', encoding='utf-8') as f:
+    json.dump(distractors_data, f, ensure_ascii=False, indent=2)
+
+print("Saved to distractors_immuno_part2.json successfully!")

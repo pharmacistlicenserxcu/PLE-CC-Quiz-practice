@@ -1,0 +1,272 @@
+=== KEY 114 | ANS 1 (ก) ===
+Q: ใช้Nicotin gum แล้วรู้สึก… (อาการคล้ายๆพวกGERD) จะ แนะนำอย่างไร ตัวเลือก
+  ก: Peptic Ulcer / GERD [CORRECT]
+  ข: Amoxicillin 1000 mg BID [WRONG]
+  ค: Clarithromycin 500 mg BID [WRONG]
+  ง: Hyoscine butylbromide 10 mg TID [WRONG]
+  จ: Aluminium hydroxide/Magnesium hydroxide suspension [WRONG]
+
+=== KEY 115 | ANS 1 (ก) ===
+Q: อาการที่บ่งบอกว่าเป็นGERD แน่ ตัวเลือก
+  ก: Peptic Ulcer / GERD [CORRECT]
+  ข: Aluminium hydroxide/Magnesium hydroxide suspension [WRONG]
+  ค: Metoclopramide 10 mg TID before meals [WRONG]
+  ง: Omeprazole 20 mg OD [WRONG]
+  จ: Esomeprazole 20 mg OD [WRONG]
+
+=== KEY 116 | ANS 1 (ก) ===
+Q: Dyspepsia ให้ยาอะไร ตัวเลือก
+  ก: Peptic Ulcer / GERD [CORRECT]
+  ข: Esomeprazole 20 mg OD [WRONG]
+  ค: Domperidone 10 mg TID [WRONG]
+  ง: Dimenhydrinate 50 mg TID [WRONG]
+  จ: Loperamide 2 mg PRN [WRONG]
+
+=== KEY 118 | ANS 1 (ก) ===
+Q: ยาต้านอาเจียนที่ทำให้เกิดQT prolongation ตัวเลือก
+  ก: Peptic Ulcer / GERD [CORRECT]
+  ข: Lactulose 15 mL OD [WRONG]
+  ค: Amoxicillin 1000 mg BID [WRONG]
+  ง: Clarithromycin 500 mg BID [WRONG]
+  จ: Hyoscine butylbromide 10 mg TID [WRONG]
+
+=== KEY 119 | ANS 1 (ก) ===
+Q: ยาต้านอาเจียนที่เป็นมาตรฐาน ที่จะบริหารก่อนการให้ยาเคมียำบัด ตัวเลือก
+  ก: Peptic Ulcer / GERD [CORRECT]
+  ข: Hyoscine butylbromide 10 mg TID [WRONG]
+  ค: Aluminium hydroxide/Magnesium hydroxide suspension [WRONG]
+  ง: Metoclopramide 10 mg TID before meals [WRONG]
+  จ: Omeprazole 20 mg OD [WRONG]
+
+=== KEY 120 | ANS 1 (ก) ===
+Q: Gastroesophageal reflux disease (GERD)
+  ก: Peptic Ulcer / GERD [CORRECT]
+  ข: Omeprazole 20 mg OD [WRONG]
+  ค: Esomeprazole 20 mg OD [WRONG]
+  ง: Domperidone 10 mg TID [WRONG]
+  จ: Dimenhydrinate 50 mg TID [WRONG]
+
+=== KEY 121 | ANS 1 (ก) ===
+Q: “แผ-นพับยาแสดงอาการข$างเคียงของยาดังนี้ salivation, urinary incontinence, sweating, diarrhea, Tremor” จากข$อความดังกล-าว หมายถึงยาใด
+  ก: Timolol eye drop [CORRECT]
+  ข: Diclofenac eye drop [WRONG]
+  ค: Pilocarpine eye drop [WRONG]
+  ง: Brinzolamide eye drop [WRONG]
+  จ: Chloramphenicol eye ointment [WRONG]
+
+=== KEY 123 | ANS 1 (ก) ===
+Q: การเกิดแผลในกระเพาะ ยา Sucralfate เทียบยา A OR 0.30 (0.19-0.63) 95% CI ไม่ทับเลข 1 แปลผลได้ยังไง กลุ่มที่ได้รับ Sucralfate เกิดแผลในกระเพาะอาหารน้อยกว่ากลุ่มที่ได้รับยา A อยู่ 70% อย่างมีนัยสำคัญ (OR < 1 แสดงว่ากลุ่ม expose (Sucralfate) เกิด outcome (แผลในกระเพาะ) น้อยกว่ากลุ่ม non-expose (ยา A), ส่วน 70% มาจาก 1- OR = 1-0.3 = 0.7 พอคูณ 100 เลยได้ 70%, มาดูที่ 95% CI ไม่คร่อม 1 ก็แสดงว่า outcome ที่เกิดในกลุ่ม expose กับ non- expose มันต่างกันอย่างมีนัยสำคัญ) จาก: sheet PharmacoEpidem. หัวข้อ Understanding the Result from pharmacoepidemiology 1
+  ก: Peptic Ulcer / GERD [CORRECT]
+  ข: Clarithromycin 500 mg BID [WRONG]
+  ค: Hyoscine butylbromide 10 mg TID [WRONG]
+  ง: Aluminium hydroxide/Magnesium hydroxide suspension [WRONG]
+  จ: Metoclopramide 10 mg TID before meals [WRONG]
+
+=== KEY 125 | ANS 1 (ก) ===
+Q: สาเหตุขอษน้ำหนักขึ้นและคลื่นไส้อาเสียนเกิดสากอะไร
+  ก: Peptic Ulcer / GERD [CORRECT]
+  ข: Androgenic effect สาก levonorgestrel [WRONG]
+  ค: Estrogenic effect สาก ethinyl estradiol [WRONG]
+  ง: Androgenic effect สาก levonorgestrel และ ethinyl estradiol ษ. Estrogenic effect สาก levonorgestrel และ ethinyl estradiol ส. Androgenic effect ที่มักพบในผู้หญิษประเภท estrogenic type [WRONG]
+  จ: Senna 2 tabs HS [WRONG]
+
+=== KEY 126 | ANS 1 (ก) ===
+Q: ยา PPIs ตัวใดไม่แนะนำให้ใช้ในคนท้องจนถึงคลอด ~ - X L -
+  ก: Omeprazole [CORRECT]
+  ข: Esomeprazole [WRONG]
+  ค: Lansoprazole [WRONG]
+  ง: Pantoprazole [WRONG]
+  จ: Rabeprazole + ATPase O Omeprazole E Lansoprazde B Rabeprazole B X Pantoprazole B Esomeprazole B หË´มนาÆปทาซËาทืกกรณิ ÂวËนาต้จ²ÆดËรงบ¯นืญ´ต ~ [WRONG]
+
+=== KEY 127 | ANS 1 (ก) ===
+Q: การให้ความรู้ผู้ป่วยเกี่ยวกับการเกิด GERD เพื่อป้องกันการเกิด จัดเป็นพฤติกรรมแบบใด X sulfone O virvirensaigomeans Ibisoobean casalovesea nu na enginess
+  ก: Health belief model [CORRECT]
+  ข: Self-efficacy model [WRONG]
+  ค: Health Locus of control [WRONG]
+  ง: Theory of reason action [WRONG]
+  จ: Theory of planned health [WRONG]
+
+=== KEY 128 | ANS 1 (ก) ===
+Q: ถ้าผู้ป่วยได้รับ clindamycin capsule แล้วมีเม็ดเลือดขาวสูง ปวดท้องและท้องเสีย อาการดังกล่าวเกิดจากภาวะใด O dicloxa , cloxa X X ~
+  ก: Seizure [CORRECT]
+  ข: Hemolytic anemia [WRONG]
+  ค: Disulfiram like reaction [WRONG]
+  ง: Serum sickness syndrome [WRONG]
+  จ: Pseudomembranous colitis [WRONG]
+
+=== KEY 129 | ANS 1 (ก) ===
+Q: GERD and Peptic ulcer
+  ก: Omeprazole 20 mg OD [CORRECT]
+  ข: Esomeprazole 20 mg OD [WRONG]
+  ค: Domperidone 10 mg TID [WRONG]
+  ง: Dimenhydrinate 50 mg TID [WRONG]
+  จ: Loperamide 2 mg PRN [WRONG]
+
+=== KEY 130 | ANS 1 (ก) ===
+Q: ผู้ป่วยรายนี้ได้ NSAIDs เพื่อบรรเทาอาการปวด ต้องได้รับยาใดเพื่อป้องกันโรคกระเพาะเหมาะสมที่สุด
+  ก: Cimetidine [CORRECT]
+  ข: Omeprazole [WRONG]
+  ค: Sucralfate [WRONG]
+  ง: Antacid [WRONG]
+  จ: Misoprostol ห้ามนำไปทำซ้ำทุกกรณี เว้นแต่จะได้รับอนุญาต [WRONG]
+
+=== KEY 131 | ANS 1 (ก) ===
+Q: ข้อใดคือกลไกของยา Palonosetron ในการรักษาและป้องอาการคลื่นไส้ อาเจียน
+  ก: 5-HT3 receptor antagonist [CORRECT]
+  ข: Dopamine receptor antagonist [WRONG]
+  ค: H1 antihistamine [WRONG]
+  ง: NK1 receptor antagonist [WRONG]
+  จ: Glucocorticoid [WRONG]
+
+=== KEY 132 | ANS 1 (ก) ===
+Q: คำนิยามของ อาการท้องเสียเรื้อรัง (Chronic Diarrhea) คืออะไร
+  ก: มีอาการถ่ายมากกว่า 2 ครั้งต่อ 1 วัน [CORRECT]
+  ข: มีอาการถ่ายมากกว่า 3 ครั้งต่อ 1 วัน [WRONG]
+  ค: มีอาการถ่ายผิดปกติ ติดต่อกันเป็นระยะเวลานานมากกว่า 7 วัน [WRONG]
+  ง: มีอาการถ่ายผิดปกติ ติดต่อกันเป็นระยะเวลานานมากกว่า 14 วัน [WRONG]
+  จ: ข้อ a และ c ถูก [WRONG]
+
+=== KEY 133 | ANS 1 (ก) ===
+Q: ผู้ป่วยหญิง มีอาการปวดท้องหรือไม่สบายท้องที่สัมพันธ์กับการถ่ายอุจจาระ มีอาการท้องผูกสลับท้องเสีย มา 4 เดือน โดยได้รับการวินิจฉัยว่าเป็นโรคลำไส้แปรปรวน ที่มีอาการท้องผูกเป็นอาการเด่น ข้อใดเป็นยารักษาลำดับแรก
+  ก: Psyllium-based product [CORRECT]
+  ข: Bisacodyl [WRONG]
+  ค: Lubiprostone [WRONG]
+  ง: Tegaserod [WRONG]
+  จ: Prucalopride [WRONG]
+
+=== KEY 134 | ANS 1 (ก) ===
+Q: ข้อใดเป็นคำแนะนำที_x001E_ถูกต้อง เมื_x001E_อผู้ป่วยรับประทานยา Alendronate แล้วมีอาการคลื_x001E_นไส้ อาเจียน ปวดท้อง (1) รับประทานยานี_x001B_หลังอาหารทันที แล้วดื_x0003_มนํ_x001B_าตามมาก ๆ (2) รับประทานยานี_x001B_ พร้อมกับยาลดกรด (3) หลังรับประทานยานี_x001B_ ให้อยู่ในท่าตรง เช่น นั_x0003_งตัวตรง หรือเดินอย่างน้อยครึ_x0003_งชั_x0003_วโมง ห้ามเอนตัวนอนทันที (4) รับประทานยานี_x001B_ก่อนนอน เพื_x0003_อลดอาการไม่พึงประสงค์ (5) หยุดรับประทานยา และกลับมาพบแพทย์
+  ก: Domperidone 10 mg TID [CORRECT]
+  ข: Dimenhydrinate 50 mg TID [WRONG]
+  ค: Loperamide 2 mg PRN [WRONG]
+  ง: Senna 2 tabs HS [WRONG]
+  จ: Bisacodyl 5 mg HS [WRONG]
+
+=== KEY 135 | ANS 1 (ก) ===
+Q: ??? --------------------------------------------------------------------------------------------------------------------------------- สถานการณ์ที่ 9 : GERD
+  ก: ผู้ป่วยเพศชาย อายุ 24 ปี มีอาการเรอเปรี้ยว ขย่อน กรดไหลย้อน ควรได้รับยาใด [CORRECT]
+  ข: famotidine [WRONG]
+  ค: bismus [WRONG]
+  ง: salol [WRONG]
+  จ: antacid [WRONG]
+
+=== KEY 136 | ANS 1 (ก) ===
+Q: อาการท้องเสียเกิดจากเชื้ออะไร
+  ก: rotavirus [CORRECT]
+  ข: shigella [WRONG]
+  ค: E.coli [WRONG]
+  ง: Vibrio นํ้ามูกร่วมด้วย โดยลักษณะของอุจจาระมักไม่มีมูกหรือเลือดปน หรืออาจมีมูกปนได้เล็กน้อย หรืออุจจาระของผู้ที่ติดเชื้อ เมื่อเด็กสัมผัสและเอามือเข้าปาก เชื้อโรคก็จะเข้าสู่ร่างกาย [WRONG]
+  จ: coli และ Vibrio ก็ทำให้เกิดการท้องเสียในเด็กได้โดยถ่ายเป็นนํ้าแต่พบไม่บ่อยเท่า rotavirus และนอกจากนี้ Vibrio parahaemolyticus ทำให้ท้องเสีย ทั้งถ่ายเป็นนํ้าและเป็นมูกเลือด ส่วน shigella ทำให้เกิดการท้องเสียโดยถ่ายเป็นมูกเลือด Watery diarrhea Invasive (Inflammatory) diarrhea or dysentery Bacteria - Vibrio cholerae - Enterotoxigenic E.coli (ETEC) - Enteropathogenic E.coli (EPEC) - Aeromonas - Plesiomonas - Vibrio parahaemolyticus - Staphyllococcus aureus - Clostridium perfringens - Bacillus cereus Bacteria - Shigella - Salmonella - Campylobacter jejuni - Enteroinvasive E .coli (EIEC) - Shigatoxin-producing E. coli - Clostridium difficile - Yersinia enterocolitica - Vibrio parahaemolyticus - Aeromonas - Plesiomonas Virus - Rotavirus - Norovirus (Norwalk) - Astrovirus - Enteric adenovirus Protozoa - Giardia lambria - Cryptosporidium - Isospora belli Protozoa - Entamoeba histolytica - Balantidium coli เชื้อบางชนิดสามารถทำให้ผู้ป่วยมีอาการได้ทั้งถ่ายเป็นนํ้าและเป็นมูกเลือด เช่น Salmonella, Campylobacter, Vibrio parahaemolyticus เป็นต้น Ref: Management of acute diarrhea in children : An update บทความวิชาการโดย รศ.พญ.สุพร ตรีพงษ์กรุณา ภาควิชากุมารเวชศาสตร์ คณะแพทยศาสตร์โรงพยาบาลรามาธิบดี มหาวิทยาลัยมหิดล http://www.cdc.gov/rotavirus/ http://www.phyathai.com/medicalarticledetail/3/40/332/th [WRONG]
+
+=== KEY 138 | ANS 1 (ก) ===
+Q: ข้อใดไม่ใช่ปัจจัยเสี่ยงของการเกิดแผลในกระเพาะ
+  ก: อายุ > 65 ปี [CORRECT]
+  ข: มีการใช้ยาในกลุ่ม NSAIDs [WRONG]
+  ค: มีพฤติกรรมดื่มกาแฟและสูบบุหรี่เป็นประจำ [WRONG]
+  ง: อ้วน [WRONG]
+  จ: Osteoarthritis แพทย์พิจารณาสั่งจ่ายยา Omeprazole ขนาด 40 มิลลิกรัม รับประทานวันละ 1 ครั้ง ก่อนอาหารเช้า [WRONG]
+
+=== KEY 139 | ANS 1 (ก) ===
+Q: Domperidone ออกฤทธิ์ต้านการอาเจียนที่ใด
+  ก: Serotonin 5-HT3 ที่ CTZ [CORRECT]
+  ข: GABA receptor ที่ CTZ [WRONG]
+  ค: Nueurokinin-1 receptor ที่ CTZ [WRONG]
+  ง: Dopamine D2 receptor ที่ CTZ [WRONG]
+  จ: Adrenergic receptor ที่ CTZ หัวข้อเรื่อง Peptic ulcer จากกรณีศึกษาต่อไปนี้ ตอบคำถามข้อ 19-20 ชาย อายุ 56 ปี มาพบแพทย์ด้วยอาการปวดท้องบริเวณลิ้นปี่ แน่นท้อง อาหารไม่ย่อย มักปวดหลัง รับประทานอาหาร มีประวัติเป็นแผลที่กระเพาะอาหารเมื่อ 2 ปีก่อนแพทย์วินิจฉัยว่าผู้ป่วยเป็นโรค กระเพาะอาหารจากการติดเชื้อ Helicobacter pylori ผู้ป่วยมีประวัติแพ้ยา Penicillin 47 โรคระบบทางเดินอาหาร ฝ่ายวิชาการ และนิสิตชั้นปีที่ 4 สโมสรนิสิตเภสัชศาสตร์ มหาวิทยาลัยบูรพา สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) [WRONG]
+
+=== KEY 140 | ANS 1 (ก) ===
+Q: ข้อใดเป็นสาเหตุของภาวะท้องเสียในผู้ป่วยรายนี้
+  ก: Salmonella typhi [CORRECT]
+  ข: Shigella dysenteriae [WRONG]
+  ค: Clostridium difficile [WRONG]
+  ง: Enterotoxigenic E.coli [WRONG]
+  จ: Entamoeba histolytica [WRONG]
+
+=== KEY 141 | ANS 1 (ก) ===
+Q: ตอบ ง. ยานี้รับประทานวันละ 3 ครั้ง หลังอาหาร เนื่องมาจากยาระคายเคืองต่อกระเพาะอาหาร และมี ค่าครึ่งชีวิตสั้น เพราะยานี้ให้รับประทานวันละ 1 ครั้ง ในขณะท้องว่าง หรือก่อนอาหารครึ่งชั่วโมงในตอนเช้าของ อาหารมื้อแรก เนื่องมาจากยาจะดูดซึมได้ดีในสภาวะที่เป็นกรด และยานี้มีค่าครึ่งชีวิตยาว 6 วัน
+  ก: Hyoscine butylbromide 10 mg TID [CORRECT]
+  ข: Aluminium hydroxide/Magnesium hydroxide suspension [WRONG]
+  ค: Metoclopramide 10 mg TID before meals [WRONG]
+  ง: Omeprazole 20 mg OD [WRONG]
+  จ: Esomeprazole 20 mg OD [WRONG]
+
+=== KEY 142 | ANS 3 (ค) ===
+Q: หลังจากผู้ป่วยรับประทานยาไประยะหนึ่ง เริ่มมีอาการปวดเต้านม ตึงคัดเต้านม คลื่นไส้อาเจียน เกิดจาก สาเหตุใดและแก้ไขได้อย่างไร
+  ก: เกิดจากยา Estradiol valerateแก้ไขโดยการเปลี่ยนยา เป็น tibolone [WRONG]
+  ข: เกิดจากยา Norethisterone acetate แก้ไขโดยการเปลี่ยนยาเป็น tibolone [WRONG]
+  ค: เกิดจากยา Estradiol valerateแก้ไขโดยการเปลี่ยนยา เป็น Raloxifene [CORRECT]
+  ง: เกิดจากยา Norethisterone acetate แก้ไขโดยการเปลี่ยนยาเป็น Raloxifene [WRONG]
+  จ: เกิดจากยา Estradiol valerateแก้ไขโดยการเปลี่ยนยา เป็น Conjugated estrogen 212 โรคทางนรีเวชวิทยา นักศึกษาชั้นปีที่ 4 รุ่น 36 และสโมสรนักศึกษาเภสัชศาสตร์ มหาวิทยาลัยสงขลานครินทร์ ปีการศึกษา 2560 สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) 35.ข้อใดเป็นข้อบ่งใช้ของยาที่มีโครงสร้างต่อไปนี้ [WRONG]
+
+=== KEY 145 | ANS 1 (ก) ===
+Q: Acute bronchitis คอหอยอักเสบ หรือ Pharyngitis ซึ่งผู้ป่วยมักมาด้วยอาการเจ็บคอ มีไข้ อาจมีอาการปวดหัว คลื่นไส้อาเจียน ปวดท้องได้ รวมถึงอาการอื่นๆ ได้แก่ - ต่อมทอนซิลมักจะบวมแดง อักเสบ โดยอาจมี หรือ ไม่มีจุดหนองก็ได้ - ต่อมน้ำเหลืองที่คอโต - เพดานปากเหนือลิ้นไก่บวมแดง
+  ก: Clarithromycin 500 mg BID [CORRECT]
+  ข: Hyoscine butylbromide 10 mg TID [WRONG]
+  ค: Aluminium hydroxide/Magnesium hydroxide suspension [WRONG]
+  ง: Metoclopramide 10 mg TID before meals [WRONG]
+  จ: Omeprazole 20 mg OD [WRONG]
+
+=== KEY 146 | ANS 1 (ก) ===
+Q: ผู้ป่วยหญิงเป็นโรคกระเพาะจากภาวะเครียดเรื้อรัง
+  ก: Metoclopramide 10 mg TID before meals [CORRECT]
+  ข: Omeprazole 20 mg OD [WRONG]
+  ค: Esomeprazole 20 mg OD [WRONG]
+  ง: Domperidone 10 mg TID [WRONG]
+  จ: Dimenhydrinate 50 mg TID [WRONG]
+
+=== KEY 147 | ANS 1 (ก) ===
+Q: คลื่นไส้อาเจียน
+  ก: Domperidone 10 mg TID [CORRECT]
+  ข: Dimenhydrinate 50 mg TID [WRONG]
+  ค: Loperamide 2 mg PRN [WRONG]
+  ง: Senna 2 tabs HS [WRONG]
+  จ: Bisacodyl 5 mg HS [WRONG]
+
+=== KEY 149 | ANS 1 (ก) ===
+Q: ใช้กับผู้ป่วยที่เป็นนิ่วในกระเพาะปัสสาวะ
+  ก: Amoxicillin 1000 mg BID [CORRECT]
+  ข: Clarithromycin 500 mg BID [WRONG]
+  ค: Hyoscine butylbromide 10 mg TID [WRONG]
+  ง: Aluminium hydroxide/Magnesium hydroxide suspension [WRONG]
+  จ: Metoclopramide 10 mg TID before meals [WRONG]
+
+=== KEY 151 | ANS 1 (ก) ===
+Q: หากเกิดอาการคลื่นไส้ อาเจียน เวียนหัวให้หยุดยาแล้วมาพบแพทย์
+  ก: Esomeprazole 20 mg OD [CORRECT]
+  ข: Domperidone 10 mg TID [WRONG]
+  ค: Dimenhydrinate 50 mg TID [WRONG]
+  ง: Loperamide 2 mg PRN [WRONG]
+  จ: Senna 2 tabs HS [WRONG]
+
+=== KEY 153 | ANS 1 (ก) ===
+Q: ลดอาการคลื่นไส้อาเจียน
+  ก: Lactulose 15 mL OD [CORRECT]
+  ข: Amoxicillin 1000 mg BID [WRONG]
+  ค: Clarithromycin 500 mg BID [WRONG]
+  ง: Hyoscine butylbromide 10 mg TID [WRONG]
+  จ: Aluminium hydroxide/Magnesium hydroxide suspension [WRONG]
+
+=== KEY 154 | ANS 1 (ก) ===
+Q: ตัวอย่างเช่นสารเคมีที่สร้างขึ้นภายในร่างกายเพื่อ ทำลายเชื้อ เช่น กรดในกระเพาะอาหาร
+  ก: Hyoscine butylbromide 10 mg TID [CORRECT]
+  ข: Aluminium hydroxide/Magnesium hydroxide suspension [WRONG]
+  ค: Metoclopramide 10 mg TID before meals [WRONG]
+  ง: Omeprazole 20 mg OD [WRONG]
+  จ: Esomeprazole 20 mg OD [WRONG]
+
+=== KEY 155 | ANS 1 (ก) ===
+Q: ข้อใดไม่ใชปัจจัยเสี่ยงของโรค GERD
+  ก: Omeprazole 20 mg OD [CORRECT]
+  ข: Esomeprazole 20 mg OD [WRONG]
+  ค: Domperidone 10 mg TID [WRONG]
+  ง: Dimenhydrinate 50 mg TID [WRONG]
+  จ: Loperamide 2 mg PRN [WRONG]
+
+=== KEY 157 | ANS 1 (ก) ===
+Q: ยาใดไม่ควรใช้ในผู้ป่วย GERD
+  ก: Bisacodyl 5 mg HS [CORRECT]
+  ข: Lactulose 15 mL OD [WRONG]
+  ค: Amoxicillin 1000 mg BID [WRONG]
+  ง: Clarithromycin 500 mg BID [WRONG]
+  จ: Hyoscine butylbromide 10 mg TID [WRONG]
+

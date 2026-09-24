@@ -1,0 +1,270 @@
+=== 62 ===
+Q: อาการของผู้ป่วยรายนี้ถือว่าเป็นการปวดหัวแบบใด
+ans: 1
+  c1: Tension-type headache
+  c2: Migraine headache
+  c3: Cluster headache
+  c4: Sinusitis headache
+  c5: Thunderclap headache
+
+=== 63 ===
+Q: ให้บอกแผนการรักษาที่เหมาะสมกับผู้ป่วยรายนี้
+ans: 1
+  c1: Diclofenac
+  c2: Paracetamol
+  c3: Dexamethasone
+  c4: Eleptriptan
+  c5: Nortriptyline
+
+=== 64 ===
+Q: ผู้ป่วยรายนี้ไม่ควรได้รับยาป้องกันไมเกรนในข้อใด เพราะจะทำให้อาการของโรคซึมเศร้าแย่ลง
+ans: 1
+  c1: Topiramate
+  c2: Atenolol
+  c3: Vitamin B6
+  c4: amitriptyline
+  c5: flunarizine
+
+=== 65 ===
+Q: ผู้ป่วยที่ใช้ NSAIDS (เช่น naproxen) ในการรักษาไมเกรนบ่อยเกินไป อาจทำให้เกิดภาวะใด
+ans: 1
+  c1: rebound hypertension
+  c2: Medication overuse headache
+  c3: Serotonin syndrome
+  c4: orthostatic hypotension
+  c5: parkinsonism
+
+=== 67 ===
+Q: sodium valproate
+ans: 1
+  c1: Neurologic Disorder
+  c2: Topiramate 25 mg BID
+  c3: Donepezil 5 mg HS
+  c4: Alteplase (rtPA) 0.9 mg/kg IV
+  c5: Phenytoin 100 mg TID
+
+=== 69 ===
+Q: Non linear pharmacokinetics ของphenytoin . ตัวเลือก
+ans: 1
+  c1: Neurologic Disorder
+  c2: Lamotrigine 50 mg OD
+  c3: Levetiracetam 500 mg BID
+  c4: Gabapentin 300 mg TID
+  c5: Pregabalin 75 mg BID
+
+=== 70 ===
+Q: พิษของphenytoin ตัวเลือก
+ans: 1
+  c1: Neurologic Disorder
+  c2: Pregabalin 75 mg BID
+  c3: Levodopa/Benserazide 100/25 mg TID
+  c4: Sumatriptan 50 mg stat
+  c5: Propranolol 40 mg BID
+
+=== 71 ===
+Q: Prophylaxis migraine มีประวัติเศร้าหม่นควรใช้ยาอะไร. ตัวเลือก
+ans: 1
+  c1: Neurologic Disorder
+  c2: Propranolol 40 mg BID
+  c3: Topiramate 25 mg BID
+  c4: Donepezil 5 mg HS
+  c5: Alteplase (rtPA) 0.9 mg/kg IV
+
+=== 72 ===
+Q: Migraine headaches
+ans: 1
+  c1: Neurologic Disorder
+  c2: Alteplase (rtPA) 0.9 mg/kg IV
+  c3: Phenytoin 100 mg TID
+  c4: Sodium valproate 200 mg TID
+  c5: Carbamazepine 200 mg BID
+
+=== 73 ===
+Q: Tension headaches
+ans: 1
+  c1: Neurologic Disorder
+  c2: Carbamazepine 200 mg BID
+  c3: Lamotrigine 50 mg OD
+  c4: Levetiracetam 500 mg BID
+  c5: Gabapentin 300 mg TID
+
+=== 74 ===
+Q: Cluster headaches
+ans: 1
+  c1: Neurologic Disorder
+  c2: Gabapentin 300 mg TID
+  c3: Pregabalin 75 mg BID
+  c4: Levodopa/Benserazide 100/25 mg TID
+  c5: Sumatriptan 50 mg stat
+
+=== 75 ===
+Q: Secondary headaches
+ans: 1
+  c1: Neurologic Disorder
+  c2: Sumatriptan 50 mg stat
+  c3: Propranolol 40 mg BID
+  c4: Topiramate 25 mg BID
+  c5: Donepezil 5 mg HS
+
+=== 76 ===
+Q: สาเหตุที่ควรprophylaxis migraine. ตัวเลือก
+ans: 1
+  c1: Neurologic Disorder
+  c2: Donepezil 5 mg HS
+  c3: Alteplase (rtPA) 0.9 mg/kg IV
+  c4: Phenytoin 100 mg TID
+  c5: Sodium valproate 200 mg TID
+
+=== 78 ===
+Q: ISDN Sublingual ไม;ตองทดสอบเรื่องอะไร 120-130 / 70-79 mmHg (Thai guideline on the treatment of hypertension 2015)
+ans: 1
+  c1: friability
+  c2: Disintegration
+  c3: Dissolution time
+  c4: Thickness
+  c5: Content uniformity ยาเ,น@ปแบบอมใCDน จะเ.ด disintegration แGวเIาJKางกายไLโดยไ"เ.ดการละลาย 0งไ"Oเ,นCองทดสอบการละลาย
+
+=== 79 ===
+Q: หากแพทย6เลือกใช$ topiramate เพื่อป¢องกันการปวดศีรษะจากไมเกรน ข$อใดถูกต$องเกี่ยวกับยานี้ ไWแcใจ
+ans: 1
+  c1: มีโอกาสเกิด cross allergy กับ cotrimoxazole ได$สูงมาก
+  c2: ค-อยๆ ปรับเพิ่มขนาดยาจนถึง target dose หรือจนกว-าจะทนผลข$างเคียงยาไม-ได$
+  c3: ใช$เวลา 2-4 สัปดาห6จึงจะเห็นผลการรักษา
+  c4: ต$องใช$ยาอย-างน$อย 6 เดือน
+  c5: ใช$ Maintain dose น$อยกว-าการให$เพื่อรักษาอาการชัก กรณีศึกษา 7
+
+=== 80 ===
+Q: กินยาคุม ไม่เคยใช้มาก่อนแล้วเจ็บคัดเต้านม ถามว่าจะทำอย่างไร ตัวเลือกมีเปลี่ยนยา ปรับยา แต่ตอบว่าเป็นอาการที่พบได้ในช่วงแรก นาน ๆ ไปจะหายเอง เฉลยข้อสอบ PLE-CC1 ครั้งที่12/2564 วันที่ 1-2 : MUPY 50 เฉลยข้อสอบ PLE-CC1 ครั้งที่12/2564 วันที่ 1-2 : MUPY 50 ผู้ป่วยที่มีประวัติเป็น DVT/PE ที่มีประวัติได้รับ anticoagulant therapy อย่างน้อย 3 เดือนที่มีความเสี่ยงสูงในการเกิดซ้ำของโรค, ผู้ป่วยที่มีการผ่าตัดใหญ่และมี prolonged immobilization ผู้ป่วยที่มี Thrombogenic mutation, ผู้ป่วยที่เป็นหรือมีประวัติการเป็น IHD ผู้ป่วยที่เป็น stroke ผู้ป่วยที่เป็นโรค vulvular heart disease แบบ complicated ผู้ป่วยเป็น OA (แพทย์วินิจฉัยแล้ว) และเป็น hypertension ร่วมด้วย
+ans: 1
+  c1: Neurologic Disorder
+  c2: Topiramate 25 mg BID
+  c3: Donepezil 5 mg HS
+  c4: Alteplase (rtPA) 0.9 mg/kg IV
+  c5: Phenytoin 100 mg TID
+
+=== 81 ===
+Q: บอกอาการมา (หัวข้อ migraine) ถามจ่ายยาอะไรบรรเทาอาการดี
+ans: 1
+  c1: Neurologic Disorder
+  c2: gabapentin
+  c3: sumatriptan" "โจทย์ไม่สมบูรณ์ O O
+  c4: Carbamazepine 200 mg BID
+  c5: Lamotrigine 50 mg OD
+
+=== 82 ===
+Q: อาการข้างเคียงใด ไม่ขึ้นกับระดับยา carbamazepine
+ans: 1
+  c1: Diplopia
+  c2: Ataxia
+  c3: Maculopapular eruption
+  c4: Dizziness
+  c5: Seizure
+
+=== 83 ===
+Q: หัวข้อใดของ carbamazepine CR ที่ไม่จำเป็นต้องตรวจตามเภสัชตำรับ controlled release
+ans: 1
+  c1: Dissolution
+  c2: Disintegration
+  c3: Content uniformity/weight variation
+  c4: Assay
+  c5: Impurity
+
+=== 84 ===
+Q: ยาใดที่ใช้ร่วมกับ fluoxetine แล้วมีผลต่อการเกิด serotonin syndrome น้อยที่สุด ~ cosiziene seats - Trendlies . -X T ↓jon ending orthostatic hypotension ~ ~ serotonin
+ans: 1
+  c1: Agomelatine
+  c2: Haloperidol
+  c3: Olanzapine
+  c4: Venlafaxine
+  c5: Hydroxyzine Liverse ↓ lastanerce serotonin der soos ston Parilara serotonin syndrome snasin DI rileserotonin Jessost หË´มนาÆปทาซËาทืกกรณิ ÂวËนาต้จ²ÆดËรงบ¯นืญ´ต
+
+=== 85 ===
+Q: แพทย์สั่งใช้ยา phenobarbital ให้กับผู้ป่วย แต่ผู้ป่วยได้รับยา phenytoin เกิดอาการไม่พึงประสงค์เกี่ยวกับยาจน ต้องเข้ารับการรักษาที่โรงพยาบาลเป็นระยะเวลา 10 วัน แต่หลังการรักษาผู้ป่วยก็หายเป็นปกติ ความคลาดเคลื่อน ทางยาที่เกิดขึ นนี ตาม NCC MERP จัดอยู่ในระดับใด
+ans: 1
+  c1: Donepezil 5 mg HS
+  c2: Alteplase (rtPA) 0.9 mg/kg IV
+  c3: Phenytoin 100 mg TID
+  c4: Sodium valproate 200 mg TID
+  c5: Carbamazepine 200 mg BID
+
+=== 86 ===
+Q: Phenytoin SR มีส่วนผสมคือ phenytoin, lactose, magnesium, sugar แต่การทดสอบพบว่ามีปริมาณตัวยาใน แต่ละเม็ดไม่สม่้าเสมอ ควรเติมสารช่วยอะไร
+ans: 1
+  c1: Silicon dioxide
+  c2: Microcrystalline cellulose
+  c3: Starch
+  c4: Gelatin
+  c5: Polyvinyl pyrrolidone ห้ามนำไปทำซ้ำทุกกรณี เว้นแต่จะได้รับอนุญาต พบ hepatitis b virus negative และ anti-HBs positive
+
+=== 89 ===
+Q: ยากันชักชนิดใด สามารถใช้ได้อย่างปลอดภัยในหญิงตั้งครรภ์
+ans: 1
+  c1: Phenytoin Sodium
+  c2: Levetiracetam
+  c3: Valproic acid
+  c4: Diazepam
+  c5: Lacosamide
+
+=== 90 ===
+Q: ข้อใดคือกลไกของ Phenytoin Sodium ที่นำมาใช้ในการรักษาและป้องกันผู้ป่วยที่มีภาวะชักเกิดขึ้น
+ans: 1
+  c1: ยับยั้งการเปิดปิดของช่องเปิดแคลเซียม
+  c2: ยับยั้งการเข้าออกออกแคลเซียม
+  c3: ยับยั้งการเข้าออกของโซเดียมและแคลเซียมที่จุดว่างของสารสื่อประสาท
+  c4: ยับยั้งการเข้าสู่เซลล์ของโซเดียมผ่านช่องทางแคลเซียม-โซเดียม
+  c5: ยับยั้งการเปิดปิดของช่องเปิดโซเดียม
+
+=== 91 ===
+Q: ยากันชักในข้อใดสามารถนำมาช่วยบรรเทาอาการปวดบริเวณปลายประสาทได้ และสามารถรักษาได้หายอย่างมีนัยสำคัญ
+ans: 1
+  c1: Lamotrigine
+  c2: Valproic acid
+  c3: Oxcarbazepine
+  c4: Levetiracetam
+  c5: Topiramate
+
+=== 92 ===
+Q: จากคุณสมบัติของยา phenytoin ที่มีการกำจัดออกแบบ non-linear kinetics ข้อใดถูกต้อง
+ans: 1
+  c1: ที่ความเข้มข้นสูง จะมีการกำจัดออกแบบ linear kinetics
+  c2: ที่ความเข้มข้นต่ำ จะมีการกำจัดออกแบบ non-linear kinetics
+  c3: ยามีค่าครึ่งชีวิตเท่าเดิมเสมอ แม้มีความเข้มข้นของยาเพิ่มมากขึ้น
+  c4: ยามี therapeutic index แคบ
+  c5: ไม่มีข้อใดถูก
+
+=== 93 ===
+Q: ข้อใดไม่ใช่อาการแสดงของผู้ป่วย Parkinson’s disease (1) Hypertension (2) Resting tremor (3) Impaired balance (4) Slowness of movement (5) Stiffness to limb movement MCQ 11 | 1/2557 | Page 11
+ans: 1
+  c1: Propranolol 40 mg BID
+  c2: Topiramate 25 mg BID
+  c3: Donepezil 5 mg HS
+  c4: Alteplase (rtPA) 0.9 mg/kg IV
+  c5: Phenytoin 100 mg TID
+
+=== 94 ===
+Q: ข้อใดเป็นข้อบ่งใช้อื่นของยา Carbamazepine นอกจากเป็นยากันชัก
+ans: 1
+  c1: ........
+  c2: .......
+  c3: Trigerminal neuralgia
+  c4: ............
+  c5: ...............
+
+=== 95 ===
+Q: ยาในข้อใดสามารถเพิ่มระดับยา Carbamazepine ได้
+ans: 1
+  c1: Clarithromycin
+  c2: Nevirapine
+  c3: Phenytoin
+  c4: .....
+  c5: ..........
+
+=== 96 ===
+Q: แช่ตู้เย็น โดยเก็บไว้ในช่องแช่แข็ง Case 5: Epilepsy นางสตรี อายุ 25 ปี Dx Tonic-clonic seizure Carbamazepine 200 mg bid F/U 2 week
+ans: 1
+  c1: Gabapentin 300 mg TID
+  c2: Pregabalin 75 mg BID
+  c3: Levodopa/Benserazide 100/25 mg TID
+  c4: Sumatriptan 50 mg stat
+  c5: Propranolol 40 mg BID
+

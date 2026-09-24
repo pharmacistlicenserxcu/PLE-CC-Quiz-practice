@@ -1,0 +1,765 @@
+ID: 74 | ANS: 1 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ก. เคี้ยวยาให้ละเอียดก่อนกลืน
+
+💡 Background:
+การรักษาโรคติดเชื้อแบคทีเรีย (Parasitic infections) ต้องเลือก antibiotic ที่ครอบคลุม likely pathogens และมี PK/PD profile เหมาะสมกับตำแหน่งการติดเชื้อ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+เคี้ยวยาให้ละเอียดก่อนกลืน Niclosamide แทบจะไม่ถูกดูดซึมผ่านทางเดินอาหาร (poorly absorbed from the gastrointestinal tract) ซึ่งเป็นข้อดีเพราะตัวยาจะออกฤทธิ์เฉพาะที่ใน lumen ของลำไส้ต่อตัวพยาธิโดยตรง ดังนั้นข้อ 5 จึงกล่าวผิด
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (กินยาระบายร่วมด้วย โดยกินหลัง Niclosamide 2 ชั่วโมง เพื่อป้องกัน Cysticercosis): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (หลีกเลี่ยง alcohol ทั้งขณะกินยาหรือหลังกิน 1 วัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (อาการข้างเคียง คือ คลื่นไส้ อาเจียน ถ่ายท้อง ไม่สบายท้อง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Niclosamide ถูกดูดซึมในลำไส้ได้ดี): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคติดเชื้อในประเทศไทย (สมาคมโรคติดเชื้อแห่งประเทศไทย) & Infectious Diseases Society of America (IDSA) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Parasitic infections โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+---
+ID: 75 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. ขัดขวางการสร้าง folic acid
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ขัดขวางการสร้าง folic acid ยากลุ่ม Quinolones ออกฤทธิ์ยับยั้งเอนไซม์ DNA gyrase และ topoisomerase IV ของแบคทีเรีย ซึ่งจำเป็นต่อการจำลองและสังเคราะห์ DNA (nucleic acid synthesis)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ขัดขวางการสร้างผนังเซลล์): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ขัดขวางการสร้างผนังหุ้มเซลล์): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ขัดขวางการสังเคราะห์ nucleic acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Meropenem 1 g IV Q8H): เป็น Carbapenem มี broad spectrum ครอบคลุม multidrug-resistant gram-negative รวมทั้ง Pseudomonas aeruginosa และ ESBL-producing bacteria มีความเสี่ยงต่ออาการชักต่ำกว่า imipenem
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 76 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. 3 เดือน
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+3 เดือน การรักษา Tinea capitis ด้วยยากิน Griseofulvin ต้องใช้อย่างต่อเนื่องเป็นเวลานานเนื่องจากเชื้อราฝังลึกถึงรากผม โดยทั่วไปแนะนำอย่างน้อย 6-8 สัปดาห์ หรือประมาณ 2 เดือนขึ้นไป
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (14 วัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (2 เดือน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (4 เดือน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (5 เดือน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 77 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Varicella
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Varicella Acyclovir มีข้อบ่งใช้ในการรักษาการติดเชื้อไวรัสกลุ่ม Herpes simplex virus (HSV-1 และ HSV-2), Varicella-zoster virus (VZV) และ Human herpesvirus (HHV) บางชนิด แต่ไม่มีฤทธิ์ครอบคลุม Cytomegalovirus (CMV) ซึ่งต้องใช้ Ganciclovir หรือ Valganciclovir และไม่มีข้อบ่งใช้สำหรับ Human papillomavirus (HPV)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (HSV-1 และ 2): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (CMV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (HPV): วัคซีนเอชพีวีป้องกันมะเร็งปากมดลูก แนะนำฉีดในเด็กอายุ 9-14 ปี (ให้ 2 เข็ม ห่างกัน 6 เดือน)
+• ข้อ จ. (HHV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Crystal Nephropathy Prevention: การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules
+• Time-Sensitive Initiation: ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด
+---
+ID: 78 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Nevirapine
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nevirapine (NVP) เป็น NNRTIs ที่มีรายงานการเกิดพิษต่อตับอย่างรุนแรง (Severe hepatotoxicity) และผื่นแพ้ยาที่รุนแรง (SJS/TEN) ได้บ่อย โดยเฉพาะในผู้หญิงที่มี CD4 > 250 cell/mm³ หรือผู้ชายที่มี CD4 > 400 cell/mm³
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (AZT): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Stavudine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Lamivudine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ไม่มีข้อใดถูก): ข้อนี้ไม่ถูกต้องเนื่องจากมีตัวเลือกที่จำเพาะและตรงตามเกณฑ์มาตรฐานเวชปฏิบัติอย่างชัดเจน
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 79 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. พยาธิเส้นด้าย
+
+💡 Background:
+การรักษาโรคติดเชื้อแบคทีเรีย (Parasitic infections) ต้องเลือก antibiotic ที่ครอบคลุม likely pathogens และมี PK/PD profile เหมาะสมกับตำแหน่งการติดเชื้อ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+พยาธิเส้นด้าย รอยโรคผิวหนังเป็นทางนูนแดงคดเคี้ยวและคันมาก (creeping eruption) เกิดจากการติดเชื้อตัวอ่อนพยาธิปากขอของสุนัขหรือแมว (เช่น Ancylostoma braziliense) ที่ไชผ่านผิวหนัง เรียกว่า Cutaneous Larva Migrans (CLM)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (พยาธิตัวตืด): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (พยาธิปากขอ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (พยาธิใบไม้): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (พยาธิเท้าช้าง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการรักษาโรคสิวและสะเก็ดเงิน (สมาคมแพทย์ผิวหนังแห่งประเทศไทย) & American Academy of Dermatology (AAD) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Topical Corticosteroid Potency: Class 1 (Clobetasol propionate 0.05%) ห้ามทาใบหน้า ซอกพับ หรือเด็กเล็ก; ผื่นใบหน้า/ข้อพับให้ใช้ Low potency (Hydrocortisone 1%) เพื่อป้องกัน skin atrophy และ striae
+• Acne Vulgaris Hierarchy: Mild comedonal ใช้ Topical Retinoids; Moderate inflammatory เติม Benzoyl Peroxide (BPO) + Topical Clindamycin; Severe cystic acne พิจารณา Oral Isotretinoin (ต้องคุมกำเนิดเข้มงวด)
+• Atopic Dermatitis Care: ใช้ Emollients บำรุงผิวสม่ำเสมอทันทีหลังอาบน้ำ (ภายใน 3 นาที) และใช้ Topical Calcineurin Inhibitors (Tacrolimus) เป็น steroid-sparing agent บนใบหน้า
+---
+ID: 80 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. ขัดขวางการสร้าง folic acid
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ขัดขวางการสร้าง folic acid Chloramphenicol ออกฤทธิ์โดยจับกับหน่วยย่อย 50S ของไรโบโซมแบคทีเรีย ยับยั้งเอนไซม์ peptidyl transferase ทำให้ไม่สามารถสร้างพันธะ peptide ได้ ขัดขวางการสังเคราะห์โปรตีนหรือ polypeptide (ในตัวเลือกข้อ 4 ของภาพอาจซ้ำซ้อนหรือพิมพ์ผิด แต่นิยามหลักคือยับยั้งการสร้างโปรตีน/polypeptide chain)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ขัดขวางการสร้างผนังเซลล์): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ขัดขวางการสร้างผนังหุ้มเซลล์): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ขัดขวางการสังเคราะห์ nucleic acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ขัดขวางการสังเคราะห์ polypeptide): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 81 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. มะแว้งต้น
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+มะแว้งต้น สมุนไพรที่มีสรรพคุณเด่นในการรักษาโรคกลากเกลื้อนและเชื้อราผิวหนังตามตำรับยาไทยคือ 'ทองพันชั่ง' (Rhinacanthus nasutus) ซึ่งมีสาร Rhinacanthin ออกฤทธิ์ต้านเชื้อรา
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (พญายอ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ทองพันชั่ง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ไพล): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ขมิ้น): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 82 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Valacyclovir
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Valacyclovir Ganciclovir เป็นยาหลักในการรักษา Cytomegalovirus (CMV) retinitis โดยสามารถซึมผ่านเข้าสู่ vitreous humor และจอประสาทตาได้ดีเพื่อยับยั้งไวรัส CMV ต่างจาก Acyclovir ที่ไม่มีฤทธิ์ต่อต้าน CMV และยาอื่น ๆ ที่มีการศึกษาหรือข้อบ่งใช้จำกัดกว่าในการรักษา CMV retinitis
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Acyclovir): เป็น Guanosine analog ยับยั้ง HSV และ VZV polymerase ต้องดื่มน้ำมากๆ ระหว่างได้ยา IV เพื่อป้องกัน crystal nephropathy และ obstructive AKI
+• ข้อ ข. (Ganciclovir): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Pencyclovir): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Famciclovir): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Crystal Nephropathy Prevention: การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules
+• Time-Sensitive Initiation: ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด
+---
+ID: 83 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Phosphodiesterase
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Phosphodiesterase NRTIs เช่น AZT (Zidovudine) เป็น Prodrug จำเป็นต้องอาศัย Host cell kinase (เช่น Thymidine kinase) เติมหมู่ฟอสเฟต 3 ครั้ง (Phosphorylation) ให้กลายเป็น Active triphosphate form (Zidovudine triphosphate) จึงจะสามารถออกฤทธิ์ยับยั้งเอนไซม์ Reverse transcriptase ได้
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Reverse transcriptase): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Hydroxylase): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Kinase): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (DNA polymerase): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 84 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Albendazole 400 mg single dose
+
+💡 Background:
+การรักษาโรคติดเชื้อแบคทีเรีย (Parasitic infections) ต้องเลือก antibiotic ที่ครอบคลุม likely pathogens และมี PK/PD profile เหมาะสมกับตำแหน่งการติดเชื้อ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Albendazole 400 mg single dose การรักษา Cutaneous Larva Migrans (CLM) นิ้วใช้ยาในกลุ่ม Benzimidazoles ได้แก่ Albendazole (เช่น 400 mg วันละครั้ง นาน 3 วัน) หรือ Ivermectin โดย Albendazole มี efficacy สูงในการรักษา
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Praziquantel 5-25 mg/kg/day po once): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Niclosamide 2 q single dose): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Mebendazole 500 mg single dose): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ได้ทั้งข้อ ค และ ข้อ ง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการรักษาโรคสิวและสะเก็ดเงิน (สมาคมแพทย์ผิวหนังแห่งประเทศไทย) & American Academy of Dermatology (AAD) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Topical Corticosteroid Potency: Class 1 (Clobetasol propionate 0.05%) ห้ามทาใบหน้า ซอกพับ หรือเด็กเล็ก; ผื่นใบหน้า/ข้อพับให้ใช้ Low potency (Hydrocortisone 1%) เพื่อป้องกัน skin atrophy และ striae
+• Acne Vulgaris Hierarchy: Mild comedonal ใช้ Topical Retinoids; Moderate inflammatory เติม Benzoyl Peroxide (BPO) + Topical Clindamycin; Severe cystic acne พิจารณา Oral Isotretinoin (ต้องคุมกำเนิดเข้มงวด)
+• Atopic Dermatitis Care: ใช้ Emollients บำรุงผิวสม่ำเสมอทันทีหลังอาบน้ำ (ภายใน 3 นาที) และใช้ Topical Calcineurin Inhibitors (Tacrolimus) เป็น steroid-sparing agent บนใบหน้า
+---
+ID: 85 | ANS: 2 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ข. ขัดขวางการสร้างผนังหุ้มเซลล์
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ขัดขวางการสร้างผนังหุ้มเซลล์ Sulfonamides ออกฤทธิ์ยับยั้งเอนไซม์ dihydropteroate synthase ซึ่งเป็นขั้นตอนสำคัญในการสังเคราะห์กรดโฟลิก (folic acid) ของแบคทีเรีย ทำให้แบคทีเรียไม่สามารถเจริญเติบโตและแบ่งตัวได้
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ขัดขวางการสร้างผนังเซลล์): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ขัดขวางการสร้าง folic acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ขัดขวางการสังเคราะห์ nucleic acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ขัดขวางการสังเคราะห์ polypeptide): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 86 | ANS: 2 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Gonorrhoea
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค STDs & vaginitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Gonorrhoea อาการคันในช่องคลอดร่วมกับมีตกขาวจำนวนมาก (มักมีลักษณะขาวข้นคล้ายแป้งเปียกหรือนมโค) เป็นอาการจำเพาะของโรคติดเชื้อราแคนดิดาในช่องคลอด (Vulvovaginal candidiasis) ซึ่งปัจจัยเสี่ยงในผู้ป่วยรายนี้ ได้แก่ การใช้ยาเม็ดคุมกำเนิดและการสวนล้างช่องคลอดที่ทำให้สมดุลของช่องคลอดเปลี่ยนไป
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Valvovaginal candidiasis): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Non gonococcalurethritis): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Trichomoniasis): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Bacterial cystitis): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+---
+ID: 87 | ANS: 2 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ข. ใบชุมเห็ดเทศ
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ใบชุมเห็ดเทศ ใบพญายอ (Clinacanthus nutans) มีการศึกษาวิจัยและถูกบรรจุในบัญชียาหลักแห่งชาติ (ด้านยาสมุนไพร) ในรูปแบบครีมสำหรับทาเพื่อรักษาอาการโรคเริมและงูสวัด โดยมีฤทธิ์ต้านไวรัสและลดการอักเสบ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ยาแคปซูลสกัดใบฟ้าทะลายโจร): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (แคปซูลผงขมิ้นชัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ครีมสกัดจากใบพญายอ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ตะไคร้หอม): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 88 | ANS: 2 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Asymptomatic HIV infection
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Asymptomatic HIV infection ผู้ป่วยติดเชื้อ HIV มีค่า CD4
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Acute HIV infection): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Clinical latency): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Primary HIV infection): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (AIDS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 89 | ANS: 2 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ข. โลหิตจาง
+
+💡 Background:
+การรักษาโรคติดเชื้อแบคทีเรีย (Parasitic infections) ต้องเลือก antibiotic ที่ครอบคลุม likely pathogens และมี PK/PD profile เหมาะสมกับตำแหน่งการติดเชื้อ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+โลหิตจาง อาการคันบริเวณรอบทวารหนักเวลากลางคืนเป็นอาการจำเพาะของการติดเชื้อพยาธิเส้นด้าย (Pinworm/Enterobius vermicularis) ไม่ใช่พยาธิปากขอ ซึ่งพยาธิปากขอจะทำให้เกิดอาการทางผิวหนังบริเวณที่ตัวอ่อนไชเข้า (ground itch) อาการทางปอดจากการ migration ของตัวอ่อน และภาวะโลหิตจางจากการดูดเลือดในลำไส้
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (แพ้ ผื่นคัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (หลอดลมอักเสบ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (คันบริเวณรอบทวารหนัก): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ลำไส้อักเสบ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคติดเชื้อในประเทศไทย (สมาคมโรคติดเชื้อแห่งประเทศไทย) & Infectious Diseases Society of America (IDSA) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Parasitic infections โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+---
+ID: 90 | ANS: 5 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ จ. ขัดขวางการสังเคราะห์ polypeptide
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ขัดขวางการสังเคราะห์ polypeptide Polymyxins (เช่น Polymyxin B, Colistin) ทำหน้าที่เสมือนสารลดแรงตึงผิว (detergent-like) เข้าไปจับกับ phospholipids ในเยื่อหุ้มเซลล์ชั้นนอก (outer membrane) ของแบคทีเรียแกรมลบ ทำให้เยื่อหุ้มเซลล์สูญเสียความสมบูรณ์ เกิดรูรั่ว และสารภายในเซลล์รั่วไหลออกมา
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ขัดขวางการสร้างผนังเซลล์): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ทำให้เกิดรูรั่วผนังเซลล์): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ขัดขวางการสร้าง folic acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ขัดขวางการสังเคราะห์ nucleic acid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 91 | ANS: 5 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ จ. Ciprofloxacin 500 mg รับประทานครั้งเดียว
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค STDs & vaginitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Ciprofloxacin 500 mg รับประทานครั้งเดียว การรักษา VVC ชนิดไม่รุนแรง (uncomplicated VVC) แนะนำให้ใช้ยาต้านเชื้อรากลุ่ม azole เฉพาะที่ เช่น Clotrimazole 500 mg เหน็บช่องคลอดครั้งเดียว หรือยากินกลุ่ม azole (เช่น Fluconazole 150 mg กินครั้งเดียว) ตามแนวทาง CDC Guidelines
+
+ เป็น Fluoroquinolone เด่นต่อ Gram-negative รวมทั้ง Pseudomonas aeruginosa แต่มี black box warning เรื่อง tendon rupture, QT prolongation, aortic aneurysm และ dysglycemia
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Clotrimazole 500 mg เหน็บช่องคลอดครั้งเดียว): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Ketoconazole 200 mg รับประทานหลังอาหาร เช้าและเย็น เป็นเวลา 5 วัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Metronidazole 2 g รับประทานครั้งเดียว): เป็น antianaerobic และ antiprotozoal agent ยับยั้ง Trichomonas vaginalis, Giardia, Amebiasis, และ anaerobes ห้ามดื่มแอลกอฮอล์ระหว่างใช้ยา (disulfiram-like reaction)
+• ข้อ ง. (Doxycycline 100 mg รับประทานหลังอาหาร เช้าและเย็น เป็นเวลา 7 วัน): เป็น Tetracycline ครอบคลุม atypicals, rickettsia, scrub typhus, leptospirosis และ CA-MRSA ห้ามใช้ในเด็กอายุ < 8 ปี และหญิงตั้งครรภ์ (ฟันเหลือง กระดูกเจริญช้า)
+
+📖 Guideline อ้างอิง:
+WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย
+
+📌 จุดจำก่อนสอบ:
+• Tendinitis & QTc Prolongation: มี Black Box Warning เรื่องเอ็นร้อยหวายอักเสบ/ฉีกขาด (tendon rupture), QTc prolongation และ peripheral neuropathy
+• Chelation with Cations: จับกับ Ca2+, Mg2+, Al3+, Fe2+ ในทางเดินอาหาร ทำให้การดูดซึมลดลงอย่างมาก ต้องเว้นระยะห่างอย่างน้อย 2 ชั่วโมง
+---
+ID: 92 | ANS: 5 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ จ. Gels
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Cystitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Gels จากองค์ประกอบในตำรับที่มีส่วนผสมของ Cetostearyl alcohol, Sodium lauryl sulphate, White soft paraffin, Liquid paraffin และ Propylene glycol พร้อมด้วยน้ำบริสุทธิ์ (Purified water) เป็นระบบอิมัลชันชนิดน้ำในน้ำมันหรือน้ำมันในน้ำที่มีตัวประสาน (Emulsifying wax) ซึ่งลักษณะเนื้อครีม (Creams) มักประกอบด้วยสารเหล่านี้เพื่อให้ทาเกลี่ยง่ายและซึมซาบดีเมื่อเทียบกับ ointment
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Lotions): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cystitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Ointments): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cystitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Creams): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cystitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Pastes): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cystitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Crystal Nephropathy Prevention: การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules
+• Time-Sensitive Initiation: ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด
+---
+ID: 93 | ANS: 5 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ จ. AZT, 3TC, NVP
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+AZT, 3TC, NVP GPO-vir Z ประกอบด้วยตัวยา Zidovudine (AZT), Lamivudine (3TC) และ Nevirapine (NVP) โดยปรับเปลี่ยนจาก Stavudine (d4T) เป็น AZT หรือปรับตามสูตรมาตรฐานขององค์การเภสัชกรรมในอดีต (GPO-vir S, Z)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (NVP, d4T, 3TC): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (d4T, 3TC, indinavir/ritonavir): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (AZT, 3TC, indinavir/ritonavir): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (d4T, 3TC, EFV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 94 | ANS: 5 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ จ. ซักเสื้อผ้า และผ้าปูที่นอนให้สะอาด
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ซักเสื้อผ้า และผ้าปูที่นอนให้สะอาด จากบริบทข้อสอบชุดนี้ (ต่อเนื่องกับเคสพยาธิปากขอ/เส้นด้าย แต่ข้อนี้เน้นพยาธิปากขอซึ่งติดต่อโดยตัวอ่อนไชผ่านผิวหนัง) การสวมรองเท้าทุกครั้งที่ออกจากบ้านเป็นมาตรการสำคัญที่สุดในการป้องกันตัวอ่อนพยาธิปากขอจากดินไشเข้าสู่ผิวหนัง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (อาบน้ำหลังจากตื่นนอนในตอนเช้า): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ตัดเล็บมือให้สั้น และล้างมือให้สะอาดหลังเข้าห้องน้ำ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (สวมรองเท้าทุกครั้งที่ออกจากบ้าน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (รับประทานอาหารที่สุก ดื่มน้ำสะอาด): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 95 | ANS: 4 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ง. FBC
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+FBC Fluoroquinolones เกิด chelation กับประจุบวกโลหะ (multivalent cations เช่น Al3+, Mg2+, Ca2+, Fe2+) ส่งผลให้การดูดซึมลดลงอย่างมาก (Aluminum hydroxide, Calcium carbonate, FBC มีธาตุเหล็ก) ส่วน Carminative mixture มักไม่มีส่วนประกอบของโลหะที่เกิด chelation ที่สำคัญ
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Aluminum hydroxide): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Calcium carbonate): เป็น Phosphate binder สำหรับ CKD ต้องเคี้ยวพร้อมอาหารเพื่อจับฟอสเฟตในทางเดินอาหาร และทำหน้าที่เสริมแคลเซียม
+• ข้อ ค. (Carminative mixture): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Lithium): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 96 | ANS: 4 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Doxycycline ทำให้ผมร่วง
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค STDs & vaginitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Doxycycline ทำให้ผมร่วง Metronidazole มี ADR ที่พบบ่อยคือกลื่นไส้ อาเจียน ปวดท้อง และมีรสโลหะในปาก (metallic taste) นอกจากนี้ห้ามดื่มแอลกอฮอล์ร่วมด้วยเพราะจะเกิด disulfiram-like reaction
+
+ เป็น Tetracycline ครอบคลุม atypicals, rickettsia, scrub typhus, leptospirosis และ CA-MRSA ห้ามใช้ในเด็กอายุ < 8 ปี และหญิงตั้งครรภ์ (ฟันเหลือง กระดูกเจริญช้า)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Clotrimazole เหน็บช่องคลอดทำให้เกิด super infection จาก bacteria): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Ketoconazole ชนิดรับประทานทำให้การรับรู้รสผิดปกติ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Metronidazole ทำให้คลื่นไส้ อาเจียน): เป็น antianaerobic และ antiprotozoal agent ยับยั้ง Trichomonas vaginalis, Giardia, Amebiasis, และ anaerobes ห้ามดื่มแอลกอฮอล์ระหว่างใช้ยา (disulfiram-like reaction)
+• ข้อ จ. (Ciprofloxacin ทำให้ตับอักเสบ): เป็น Fluoroquinolone เด่นต่อ Gram-negative รวมทั้ง Pseudomonas aeruginosa แต่มี black box warning เรื่อง tendon rupture, QT prolongation, aortic aneurysm และ dysglycemia
+
+📖 Guideline อ้างอิง:
+WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+---
+ID: 97 | ANS: 4 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ง. ยาต้านไวรัสรักษาโรคเอดส์ จัดเป็นยาอันตราย
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ยาต้านไวรัสรักษาโรคเอดส์ จัดเป็นยาอันตราย ตามกฎหมายยาในประเทศไทย ยาต้านไวรัส acyclovir ชนิดรับประทานจัดเป็น 'ยาควบคุมพิเศษ' ซึ่งต้องมีใบสั่งแพทย์ในการจ่ายยา ขณะที่รูปแบบยาทาอาจเป็นยาอันตรายหรือยาใช้ภายนอกตามเงื่อนไขประกาศกระทรวงสาธารณสุข
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ยาต้านไวรัสทุกชนิดสามารถขายได้ในร้านยาที่มีเภสัชกรประจำร้าน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ยาต้านไวรัสทุกชนิดต้องจ่ายตามใบสั่งแพทย์เท่านั้น): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ยาต้านไวรัส acyclovir ชนิดรับประทาน เป็นยาควบคุมพิเศษ): เป็น Guanosine analog ยับยั้ง HSV และ VZV polymerase ต้องดื่มน้ำมากๆ ระหว่างได้ยา IV เพื่อป้องกัน crystal nephropathy และ obstructive AKI
+• ข้อ จ. (บุคลากรทางการแพทย์ทุกวิชาชีพสามารถจ่ายยาต้านไวรัส acyclovir ชนิดทาเฉพาะที่ได้): เป็น Guanosine analog ยับยั้ง HSV และ VZV polymerase ต้องดื่มน้ำมากๆ ระหว่างได้ยา IV เพื่อป้องกัน crystal nephropathy และ obstructive AKI
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 98 | ANS: 4 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ง. SGPT > 5X
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+SGPT > 5X อาการแพ้ยารุนแรง ได้แก่ Steven Johnson syndrome, Toxic epidermal necrolysis (TEN), Rash with blisters และภาวะตับอักเสบรุนแรง (SGPT/ALT > 5 เท่าของค่าปกติ) ล้วนเป็นข้อบ่งชี้เด็ดขาดในการหยุดยาต้านไวรัส (โดยเฉพาะ Nevirapine ใน GPO-vir)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Steven Johnson syndrome): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Toxic epidermal necrolysis): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Rash with blisters): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ถูกทุกข้อ): ข้อนี้ไม่ถูกต้องเนื่องจากมีตัวเลือกที่จำเพาะและตรงตามเกณฑ์มาตรฐานเวชปฏิบัติอย่างชัดเจน
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 99 | ANS: 4 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ง. พยาธิใบไม้
+
+💡 Background:
+การรักษาโรคติดเชื้อแบคทีเรีย (Parasitic infections) ต้องเลือก antibiotic ที่ครอบคลุม likely pathogens และมี PK/PD profile เหมาะสมกับตำแหน่งการติดเชื้อ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+พยาธิใบไม้ อาการคันรอบทวารหนักเวลากลางคืน (nocturnal perianal pruritus) ร่วมกับนอนหลับไม่สนิทและหงุดหงิดในเด็กเล็ก เป็นลักษณะทางคลินิกที่จำเพาะเจาะจงมากที่สุดของการติดเชื้อพยาธิเส้นด้าย (Enterobius vermicularis) เนื่องจากพยาธิเพศเมียจะคลานออกมาวางไข่บริเวณรอบทวารหนักในช่วงเวลากลางคืน
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (พยาธิตัวตืด): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (พยาธิปากขอ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (พยาธิเส้นด้าย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (พยาธิเท้าช้าง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคติดเชื้อในประเทศไทย (สมาคมโรคติดเชื้อแห่งประเทศไทย) & Infectious Diseases Society of America (IDSA) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Parasitic infections โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+---
+ID: 100 | ANS: 4 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Hypotension
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Hypotension Trimethoprim ยับยั้งเอนไซม์ dihydrofolate reductase ในแบคทีเรียและมีผลต่อมนุษย์ในขนาดสูง ทำให้เกิดการขาดกรดโฟลิก ส่งผลให้เกิดภาวะโลหิตจางชนิด megaloblastic anemia, leukopenia และ thrombocytopenia
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Diarrhea): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Fatigue): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ปัสสาวะสีแดง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Megaloblastic anemia): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 101 | ANS: 4 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ง. อย่ากลั้นปัสสาวะ
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค STDs & vaginitis มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+อย่ากลั้นปัสสาวะ การสวนล้างช่องคลอดบ่อยๆ (douching) เป็นการทำลายจุลชีพประจำถิ่น (Lactobacilli) ที่มีประโยชน์ ทำให้ค่า pH เปลี่ยนแปลงและเกิดเชื้อราเจริญเติบโตได้ง่าย จึงควรแนะนำให้หลีกเลี่ยงการสวนล้างช่องคลอด
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (การรักษาต้องรักษาทั้งผู้ป่วยและสามี แม้ว่าสามีจะไม่มีอาการใดๆ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (จำเป็นต้องให้ยาเพื่อป้องกันการกลับเป็นซ้ำเนื่องจากผู้ป่วยยังอายุน้อย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ห้ามดื่มนมพร้อมยา เนื่องจากนมจะทำให้ยาถูกดูดซึมได้ลดลง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ไม่ควรล้างช่องคลอดอย่างพร่ำเพรื่อ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ STDs & vaginitis เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+---
+ID: 102 | ANS: 4 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Stavudine
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Stavudine อาการตาเหลือง ตัวเหลือง และ ALT สูงขึ้นอย่างมาก (300 unit) หลังเริ่มยา 1 สัปดาห์ สอดคล้องกับภาวะตับอักเสบรุนแรงจาก Nevirapine ซึ่งเป็นส่วนประกอบของ GPO-vir ที่มักเกิดในช่วงสัปดาห์แรกๆ ของการรักษา
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Indinavir): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Lamivudine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Nevirapine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Zidovudine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 103 | ANS: 4 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Mebendazole 100 mg single dose
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Mebendazole 100 mg single dose การรักษาการติดเชื้อพยาธิเส้นด้าย (Enterobiasis) สามารถใช้ยาในกลุ่ม Benzimidazoles ได้แก่ Albendazole ขนาด 400 mg single dose หรือ Mebendazole ขนาด 100 mg single dose (และควรให้ซ้ำอีกครั้งในสัปดาห์ที่ 2 เพื่อป้องกันการติดเชื้อซ้ำจากไข่ที่ตกค้าง)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Praziquantel 5-25 mg/kg/day po once): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Niclosamide 2 g single dose): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Albendazole 400 mg single dose): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ได้ทั้งข้อ 3 และ ข้อ 4): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 104 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Erythromycin
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Erythromycin Cephalosporins เป็นยากลุ่ม beta-lactam ที่ออกฤทธิ์ยับยั้งการสร้างผนังเซลล์ ส่งผลให้แบคทีเรียตาย (Bactericidal) ในขณะที่ Tetracycline, Erythromycin, Chloramphenicol และ Trimethoprim ส่วนใหญ่เป็น Bacteriostatic
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Cephalosporin): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Tetracycline): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Chloramphenicol): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Trimethoprim): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 105 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Tinea curis
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Tinea curis การติดเชื้อรากลาก (dermatophytes) ที่บริเวณหนังศีรษะ เรียกว่า Tinea capitis ส่วน Tinea corporis คือกลากที่ลำตัว Tinea cruris คือกลากที่ขาหนีบ Tinea versicolor คือเกลื้อน และ Tinea pedis คือฮ่องกงฟุตหรือกลากที่เท้า
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Tinea capitis): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Tinea caporis): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Tinea versicolor): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Tinea pedis): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 106 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. 2HRZE/4HR และเปลี่ยน ritonavir เป็น efavarenz
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+2HRZE/4HR และเปลี่ยน ritonavir เป็น efavarenz Rifampicin เป็น potent CYP3A4 inducer ซึ่งจะลดระดับยา protease inhibitors (เช่น ritonavir) อย่างมาก แนวทางปฏิบัติจึงแนะนำให้เปลี่ยนยาสูตรต้าน HIV มาเป็น Efavirenz (NNRTI) หรือเปลี่ยนสูตรยาทูเบอร์คูโลซิสเป็นสูตรที่ไม่มี rifampicin (เช่น 2HES/10HE) ตามความเหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (2HRZE/4HR และทานยาต้าน HIV ตามปกติ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (2HRZE/4HR และเพิ่ม ritonavir เป็น 800 mg q 12 hr): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (2HES/10HE เพื่อป้องกัน rifampicin เกิด drug interaction กับ ritonavir): เป็น Anti-TB agent ยับยั้ง bacterial RNA polymerase ทำให้น้ำคัดหลั่งเปลี่ยนเป็นสีส้มแดง และเป็น strong CYP3A4 inducer ทำให้ระดับยาอื่น (ยาคุม, warfarin, ARV) ลดลงอย่างมาก
+• ข้อ จ. (2HES/10HE เพื่อป้องกัน rifampicin เกิด drug interaction กับ fluconazole): เป็น Anti-TB agent ยับยั้ง bacterial RNA polymerase ทำให้น้ำคัดหลั่งเปลี่ยนเป็นสีส้มแดง และเป็น strong CYP3A4 inducer ทำให้ระดับยาอื่น (ยาคุม, warfarin, ARV) ลดลงอย่างมาก
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+---
+ID: 107 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. ควรรักษาสมาชิกในครอบครัวที่เป็นเด็กพร้อมกัน
+
+💡 Background:
+การรักษาโรคติดเชื้อแบคทีเรีย (Parasitic infections) ต้องเลือก antibiotic ที่ครอบคลุม likely pathogens และมี PK/PD profile เหมาะสมกับตำแหน่งการติดเชื้อ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ควรรักษาสมาชิกในครอบครัวที่เป็นเด็กพร้อมกัน การติดพยาธิเส้นด้ายมักแพร่กระจายได้ง่ายในครอบครัวหรือสถานรับเลี้ยงเด็ก จึงต้องรักษาสมาชิกในครอบครัว ทุกคนพร้อมกัน ไม่ใช่เฉพาะเด็ก เพื่อตัดวงจรการแพร่เชื้อ การจำกัดเฉพาะเด็ก (ข้อ 3 จึงผิดในแง่หลักการรักษาแบบกวาดล้างครอบครัว หรือหากตีความตามตัวเลือก ข้อ 3 กล่าวไม่ครอบคลุมเท่าข้อ 2 ที่ระบุว่าครอบครัวทั้งหมด)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (ควรให้การรักษาซ้ำในสัปดาห์ที่ 2): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (ควรรักษาสมาชิกในครอบครัวทั้งหมดพร้อมกัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (หากมีอาการคันมากบริเวณรอบทวารหนักเวลากลางคืน ควรปรึกษาแพทย์หรือเภสัชกรเพื่อรับยาครีมหรือขี้ผึ้งทาแก้คัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (รับประทานยาหลังอาหารทันที): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parasitic infections เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการรักษาโรคติดเชื้อในประเทศไทย (สมาคมโรคติดเชื้อแห่งประเทศไทย) & Infectious Diseases Society of America (IDSA) Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Parasitic infections โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+---
+ID: 108 | ANS: 3 | EXP: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Erythromycin
+
+💡 Background:
+การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม Antiretroviral Therapy (ART) ทันทีเพื่อกด viral load ให้ undetectable (U=U) และฟื้นฟูระบบภูมิคุ้มกัน
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Erythromycin Fluoroquinolones (เช่น Ciprofloxacin) และ Aminoglycosides แสดงฤทธิ์ฆ่าแบคทีเรียแบบ concentration-dependent คือยิ่งความยาในเลือดสูงขึ้น ความสามารถในการฆ่าเชื้อก็ยิ่งเพิ่มขึ้น (วัดจากค่า Cmax/MIC หรือ AUC/MIC)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Penicillin): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ HIV infection เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (Ciprofloxacin): เป็น Fluoroquinolone เด่นต่อ Gram-negative รวมทั้ง Pseudomonas aeruginosa แต่มี black box warning เรื่อง tendon rupture, QT prolongation, aortic aneurysm และ dysglycemia
+• ข้อ ง. (Cefazolin): เป็น 1st generation cephalosporin เป็น drug of choice สำหรับ surgical antibiotic prophylaxis และ severe MSSA bacteremia/endocarditis
+• ข้อ จ. (Azithromycin): เป็น Macrolide ครอบคลุม atypical pathogens (Mycoplasma, Chlamydia, Legionella) ขจัดออกทางตับเป็นหลัก และมี half-life ยาวนาน (~68 ชม.)
+
+📖 Guideline อ้างอิง:
+แนวทางการตรวจรักษาและป้องกันการติดเชื้อเอชไอวี ประเทศไทย ปี 2564/2565 (กรมควบคุมโรค กระทรวงสาธารณสุข ร่วมกับ สมาคมโรคเอดส์แห่งประเทศไทย) & WHO Consolidated HIV Guidelines
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)

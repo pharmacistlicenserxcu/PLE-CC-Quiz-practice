@@ -1,0 +1,330 @@
+KEY: 32 (ans: 5 -> จ)
+Q: ผู้ป่วยหญิงไทยคู่ อายุ 25 ปี ตั้งครรภ์ 4 เดือน มีอาการซีด เหนื่อยอ่อนเพลีย เวียนศีรษะ มีประวัติเป็นโรคริดสีดวงและโรคกระเพาะอาหาร ไม่มีประวัติแพยา ผลการตรวจ LAB ดังนี้ Hb 10 mg/dl Hct 32% serum ferritin 10 TIBG 400 MCV 60 fl
+ข้อใดไม่เกี่ยวกับการเกิดภาวะโลหิตจางในครั้งนี้
+Correct choice [จ]: กรรมพันธุ์
+Wrong choices to explain:
+  [ก]: ตั้งครรภ์
+  [ข]: ขาดสารอาหาร
+  [ค]: โรคริชสีดวง
+  [ง]: โรคกระเพาะอาหาร
+Note: ข้อ 33 Pharma Plus เล่มม่วง (เฉลยข้อ จ)
+============================================================
+KEY: 33 (ans: 2 -> ข)
+Q: ลักษณะของเม็ดเลือดเป็นอย่างไร
+Correct choice [ข]: เม็ดเลือดแดงติดสีจางและมีขนาดเล็ก
+Wrong choices to explain:
+  [ก]: เม็ดเลือดแดงติดสีเข้มและมีขนาดเล็ก
+  [ค]: เม็ดเลือดแดงติดสีจางและมีขนาดใหญ่
+  [ง]: เม็ดเลือดแดงติดสีเข้มและมีขนาดใหญ่
+  [จ]: เม็ดเลือดแดงติดสีเข้มและมีขนาดปกติ
+Note: ข้อ 34 Pharma Plus เล่มม่วง (เฉลยข้อ ข)
+============================================================
+KEY: 34 (ans: 1 -> ก)
+Q: ยาในข้อใดไม่เหมาะสมในผู้ป่วยรายนี้
+Correct choice [ก]: Cyanocobalamin
+Wrong choices to explain:
+  [ข]: Ferrous fumarate
+  [ค]: Ferrous gluconate
+  [ง]: Folic acid
+  [จ]: Blood transfusion (Packed Red Cells)
+Note: ข้อ 35 Pharma Plus เล่มม่วง (เฉลยข้อ ก ง)
+============================================================
+KEY: 35 (ans: 4 -> ง)
+Q: ยาตัวใดไม่มีผลต่อการดูดซึมธาตุเหล็ก
+Correct choice [ง]: Penicillamine
+Wrong choices to explain:
+  [ก]: Antacid
+  [ข]: Ascorbic acid
+  [ค]: Cimetidine
+  [จ]: Norfloxacin
+Note: ข้อ 36 Pharma Plus เล่มม่วง (เฉลยข้อ ง)
+============================================================
+KEY: 36 (ans: 1 -> ก)
+Q: ยา ferrous sulfate ไม่ควรจ่ายให้ผู้ป่วยในข้อใด
+Correct choice [ก]: Thalassemia
+Wrong choices to explain:
+  [ข]: Thyrotoxicosis
+  [ค]: Leucopenia
+  [ง]: Thrombocytopenia
+  [จ]: Hemophilia
+Note: ข้อ 37 Pharma Plus เล่มม่วง (เฉลยข้อ ก)
+============================================================
+KEY: 37 (ans: 1 -> ก)
+Q: Ferrous supplement ตัวใด ที่มีปริมาณ elemental iron มากที่สุด
+Correct choice [ก]: Ferrous fumarate
+Wrong choices to explain:
+  [ข]: Ferrous sulfate (exsiccated)
+  [ค]: Ferrous gluconate
+  [ง]: Ferrous sulfate
+  [จ]: Ferrous citrate
+Note: ข้อ 38 Pharma Plus เล่มม่วง (เฉลยข้อ ก)
+============================================================
+KEY: 38 (ans: 1 -> ก)
+Q: of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)
+ภาชนะใดเหมาะสมแก่การบรรจุ ferrous sulfate
+Correct choice [ก]: Tight container
+Wrong choices to explain:
+  [ข]: Children resist container
+  [ค]: Glass container
+  [ง]: Amber glass container
+  [จ]: Opaque plastic container
+Note: Mock PLE-CC 1 ข้อ 58
+============================================================
+KEY: 39 (ans: 1 -> ก)
+Q: of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)
+4%w/v Ferrous sulphate จำนวน 100 mg จะมีจำนวน elemental iron ที่ได้รับเท่ากับเท่าใด (กำหนดให้
+molecular weight ของ Ferrous sulphate heptahydrate = 278, Iron = 56)
+Correct choice [ก]: Anemia
+Wrong choices to explain:
+  [ข]: Folic acid 5 mg OD
+  [ค]: Vitamin B12 1000 mcg IM
+  [ง]: Deferoxamine 500 mg SC
+  [จ]: Erythropoietin 4000 units SC
+Note: Mock PLE-CC 1 ข้อ 59
+============================================================
+KEY: 40 (ans: 2 -> ข)
+Q: of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)
+ผู้ป่วยชายอายุ 65 ปี มีอาการอ่อนเพลีย ซึม ชาปลายมือปลายเท้า มีผลกานตรวจเลือด Hb = 8.5 g/dl และ MCV
+110 fL จากการซักประวัติพบว่า กินมังสวิรัติแบบเคร่งครัดตั้งแต่อายุ 50 ปี และกิน Metformin เป็นประจำ
+ผลการตรวจเลือดในข้อใดจำเป็นที่ต้องมีเพิ่มประกอบการวินิจฉัย
+Correct choice [ข]: WBC
+Wrong choices to explain:
+  [ก]: Serum levels of folate and vitamin B12
+  [ค]: Serum Albumin
+  [ง]: Serum Ferritin และ Transferrin Saturation
+  [จ]: Serum Ferritin และ Vitamin C
+Note: Mock PLE-CC 1 ข้อ 60
+============================================================
+KEY: 41 (ans: 3 -> ค)
+Q: of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)
+การศึกษาในผู้ป่วย 500 คนที่สงสัยว่าป่วยเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb)
+ของผู้ป่วยและแบ่งกลุ่มผู้ป่วยตามเพศเพื่อศึกษาระดับ Hb ที่แตกต่างกันในเพศชายและหญิง
+ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับชนิดของตัวแปรและการเลือกใช้การวิเคราะห์ทางสถิติ
+Correct choice [ค]: หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการศึกษาความสัมพันธ์ระหว่างเพศ
+Wrong choices to explain:
+  [ก]: Hb เป็นตัวแปรเชิงกลุ่ม (categorical variable) เสมอ จึงควรใช้ Chi-square test ในการเปรียบเทียบระหว่างเพศ
+  [ข]: Hb เป็นตัวแปรเชิงจำนวน (continuous variable) และควรใช้ Paired-T test ในการเปรียบเทียบระหว่างเพศ
+  [ง]: Hb เป็นข้อมูลเชิงจำนวน แต่ควรใช้ Mann-Whitney U Test ในการวิเคราะห์เนื่องจากข้อมูลทางชีววิทยามักไม่ปกติ
+  [จ]: Hb เป็นตัวแปร ordinal เนื่องจากมีค่าจากต ่าไปสูง
+Note: Mock PLE-CC 1 ข้อ 65
+============================================================
+KEY: 42 (ans: 1 -> ก)
+Q: ผู้ป่วยรายนี้เป็นโลหิตจางประเภทใด
+Correct choice [ก]: megaloblastic anemia
+Wrong choices to explain:
+  [ข]: hemolytic anemia
+  [ค]: microcytic anemia
+  [ง]: macrocytic anemia
+  [จ]: aplastic anemia
+Note: PLE_CC1_2567_Key ข้อ 33
+============================================================
+KEY: 43 (ans: 1 -> ก)
+Q: แพทย์ต้องการให้ได้ elemental iron 180-200 mg จ่าย ferrous sulfate เท่าไร (MW: FeSO4 7H2O = 278, Fe = 56)
+Correct choice [ก]: 100x3
+Wrong choices to explain:
+  [ข]: 300x3
+  [ค]: 100x4
+  [ง]: 200x2
+  [จ]: 200x3 PLE-PC1 Preparation 2567
+Note: PLE_CC1_2567_Key ข้อ 34
+============================================================
+KEY: 44 (ans: 1 -> ก)
+Q: Ferrous Sulfate 7H2O หาน้ำในตำรับต้องใช้วิธีทดสอบใด
+Correct choice [ก]: KARL FISHER
+Wrong choices to explain:
+  [ข]: Loss on drying
+  [ค]: จำ choice ไม่ได้
+  [ง]: จำ choice ไม่ได้
+  [จ]: *จำ choice ไม่ได้*
+Note: PLE_CC1_2567_Key ข้อ 35
+============================================================
+KEY: 45 (ans: 1 -> ก)
+Q: ผู้ป่วยรายนี้ควรจัดการอย่างไร เดิมใช้ยา HCTZ ตัวเดียว
+Correct choice [ก]: หยุด HCTZ เพิ่ม enalapril
+Wrong choices to explain:
+  [ข]: เพิ่มขนาด HCTZ เป็น 1x2
+  [ค]: หยุด HCTZ เพิ่ม CCB
+  [ง]: เปลี่ยน HCTZ เป็น carvedilol
+  [จ]: ใช้ HCTZ เท่าเดิม แต่เพิ่ม amlodipine
+Note: PLE_CC1_2567_Key ข้อ 82
+============================================================
+KEY: 46 (ans: 1 -> ก)
+Q: Ferrous Sulfate 7H2O หาน้ำในตำรับต้องใช้วิธีทดสอบใด
+Correct choice [ก]: โรคนี้ให้รักษาด้วยการใช้น้ำตาเทียม
+Wrong choices to explain:
+  [ข]: ยาป้ายตาสามารถป้ายได้ขณะสวมคอนแทคเลนส์
+  [ค]: สามารถล้างคอนแทคเลนส์ด้วยน้ำเปล่าทุกวัน
+  [ง]: โรคนี้สามารถหายได้เองโดยไม่ต้องพบแพทย์
+  [จ]: หลีกเลี่ยงการใช้น้ำตาเทียมที่มีส่วนประกอบของ benzalkonium chloride เมื่อใช้คอนแทคเลนส์ ผู้ป่วยหญิง มีอาการซีด เหนื่อยมากขึ้นเมื่อทำกิจวัตรประจำวัน แพทย์วินิจฉัยว่าเป็นโลหิตจางเนื่องจาก ขาดธาตุเหล็ก
+Note: PLE_CC1_2567_Set1_Key ข้อ 35
+============================================================
+KEY: 47 (ans: 1 -> ก)
+Q: เพศหญิงโลหิตจางค่าHb ตัวเลือก
+Correct choice [ก]: Anemia
+Wrong choices to explain:
+  [ข]: Ferrous sulfate 300 mg TID
+  [ค]: Vitamin C 500 mg OD
+  [ง]: Pyridoxine 50 mg OD
+  [จ]: Hydroxyurea 500 mg OD
+Note: PLE-CC1 ปี 2566 Day 1 ข้อ 22
+============================================================
+KEY: 48 (ans: 1 -> ก)
+Q: ให้สมการเคมีมาแล้วถามว่าเป็นการtitrate แบบใด ตัวเลือก(น่าจะเป็นCerium กับFerrous)
+Correct choice [ก]: Anemia
+Wrong choices to explain:
+  [ข]: Hydroxyurea 500 mg OD
+  [ค]: Blood transfusion (Packed Red Cells)
+  [ง]: Ferrous fumarate 200 mg TID
+  [จ]: Folic acid 5 mg OD
+Note: PLE-CC1 ปี 2566 Day 1 ข้อ 24
+============================================================
+KEY: 49 (ans: 1 -> ก)
+Q: โรคอ้วน, การดื่มแอลกอฮอล์, HCTZ
+Correct choice [ก]: Anemia
+Wrong choices to explain:
+  [ข]: Folic acid 5 mg OD
+  [ค]: Vitamin B12 1000 mcg IM
+  [ง]: Deferoxamine 500 mg SC
+  [จ]: Erythropoietin 4000 units SC
+Note: PLE-CC1 ปี 2566 Day 1 ข้อ 4
+============================================================
+KEY: 50 (ans: 1 -> ก)
+Q: ขอใดคือกลไกของยา HCTZ
+Correct choice [ก]: ยับยั้ง Na/K/2Cl ที่ loop of Henle
+Wrong choices to explain:
+  [ข]: ยับยั้งการดูดกลับ Na ที่ collecting duct
+  [ค]: ลดการดูดกลับ Na ที่ distal loop
+  [ง]: ยับยั้ง Na/Cl cotransporter
+  [จ]: ยับยั้ง Na/K exchanger กรณีศึกษา 3 MoA: inhibit Na-Cl symporter + distal convoluted tubule 'ใ;เ7มการ<บออกของ Na >บ Cl ผู#ป%วยชาย อายุ 64 ปh มารพ. ด#วยอาการปวดเค#นหน#าอกหลังจากเดินขึ้นบันได 1-2 ชั้นด#วยความเร็ว ตามปกติ อาการดีขึ้นหลังจากนั่งพัก 10 นาที มีโรคประจำตัวเปMน HTN, DM รักษาด#วยการควบคุมอาการ ออกกำลังกาย ปรับพฤติกรรม -วัด BP 120/78 mmHg, HR 84 BPM -ยาที่ใช# aspirin 81 mg 1x1 OD pc มีอาการแสบท#องบ;อย ๆ ทำให#ไม;ค;อยได#กินยา -ผลตรวจ EKG ไม;พบความผิดปกติ -แพทยçวินิจฉัยเปMน chronic coronary syndrome
+Note: PLE_CC1_2565_Day1_Key ข้อ 5
+============================================================
+KEY: 51 (ans: 1 -> ก)
+Q: สารใดช-วยดูดซึมเหล็กดีที่สุด macrocytic anemia microcytic hypochromic anemia + occult blood positive → Iron deﬁciency anemia iron overload ใWใน CKD-related anemia (Z[วย \งไAเLน CKD) macrocytic anemia
+Correct choice [ก]: B6
+Wrong choices to explain:
+  [ข]: vitamin c
+  [ค]: vitamin d
+  [ง]: Ca
+  [จ]: zinc
+Note: PLE_CC1_2565_Day2_Key ข้อ 13
+============================================================
+KEY: 52 (ans: 1 -> ก)
+Q: ระยะเวลาการให$ยาที่จะเห็นผลรักษาได$เต็มที่ Vitamin C ]^ณสม`aเLนกรด SวยเปGยนสภาพธาeเหfกจากUป Ferric (Fe3+) Igดhมยาก ใEเLนUป Ferrous (Fe2+) IละลายiและgดhมIjไkเfกไJMlน mงแนะ/ใEทานยาธาeเหfกพnอมikมหoอpตาXนq
+Correct choice [ก]: 7 วัน
+Wrong choices to explain:
+  [ข]: 14 วัน
+  [ค]: 1 เดือน
+  [ง]: 3 เดือน
+  [จ]: 1 ปç
+Note: PLE_CC1_2565_Day2_Key ข้อ 14
+============================================================
+KEY: 53 (ans: 1 -> ก)
+Q: เปQน Anemia จำได$แค- Hct 20% ถามว-าให$อะไร Hb จะเrมlนใน 2–3 sปดาt แYuองใE iron Yอvก ≈3 เxอน → เyอ replenish iron stores (ferritin) ! zาห{ดเ|ว → Hb MlนแY iron store \งไAเ}ม → relapse PLE-CC1 Preparation 2565
+Correct choice [ก]: vitB12 IV
+Wrong choices to explain:
+  [ข]: VitB12 PO
+  [ค]: จำ choice ไม-ได$
+  [ง]: จำ choice ไม-ได$
+  [จ]: * จำ choice ไม-ได$ * กรณีศึกษา 4 ให$ค-า Lab มา K=5.5, Ca =10.5 (ค-าปกติ 8.5-10.5) , PO4 = สูงกว-าค-าปกติ
+Note: PLE_CC1_2565_Day2_Key ข้อ 15
+============================================================
+KEY: 54 (ans: 1 -> ก)
+Q: Anemia (Ferrous def, B12 def)
+Correct choice [ก]: Anemia
+Wrong choices to explain:
+  [ข]: Vitamin C 500 mg OD
+  [ค]: Pyridoxine 50 mg OD
+  [ง]: Hydroxyurea 500 mg OD
+  [จ]: Blood transfusion (Packed Red Cells)
+Note: PLE_CC1_2565_Day2_Key ข้อ 3
+============================================================
+KEY: 55 (ans: 1 -> ก)
+Q: เป้าหมาย Hb ในการรักษาโลหิตจางของผู้หญิง
+Correct choice [ก]: Anemia
+Wrong choices to explain:
+  [ข]: 12-16 mg/dL
+  [ค]: 13-17 mg/dL
+  [ง]: Folic acid 5 mg OD
+  [จ]: Vitamin B12 1000 mcg IM
+Note: PLE_CC1_2564_All_Key ข้อ 45
+============================================================
+KEY: 56 (ans: 1 -> ก)
+Q: ชายอายุ 50 ปี มารพ. ด้วยอาการแสบร้อนหน้าอก ( heartburn) ร่วมกับมีอาการเรอเปรี้ยว มักมีอาการหลังรับประทานอาหารเสร็จ โดยมีอาการดังกล่าวมาแล้วประมาณ 2 สัปดาห์ HPI: 1 เดือนก่อนหน้านี้ มีอาการปวดแสบท้องเนื่องจากทานอาหารไม่ตรงเวลา PMH: โรคโลหิตจาง ปัจจุบันรับประทานยาบำรุงโลหิต ferrous sulfate (เพื่อนอีกคนบอก ferrous fumarate) 1x3 pc SH: สูบบุหรี่วันละ 1 ซอง, ดื่มแอลกอฮอล์ประจำ 5 ปี ALL: metronidazole (anaphylaxis) ผู้ป่วยควรได้รับยาใดเป็นอันดับแรก
+Correct choice [ก]: Antacid
+Wrong choices to explain:
+  [ข]: prokinetic drug
+  [ค]: H2-receptor antagonists
+  [ง]: Proton pump inhibitors
+  [จ]: H2-receptor antagonists ร่วมกับ Prokinetic drugs
+Note: PLE_CC1_2564_All_Key ข้อ 104
+============================================================
+KEY: 58 (ans: 1 -> ก)
+Q: ผูป%วยรายนี้น!าจะเกิดภาวะโลหิตจางจากสาเหตุใด
+Correct choice [ก]: โรคเรื้อรัง
+Wrong choices to explain:
+  [ข]: ขาดโฟเลต
+  [ค]: ขาดธาตุเหล็ก
+  [ง]: ขาดวิตามินบี 12
+  [จ]: เม็ดเลือดแดงแตก
+Note: ข้อ 12 (PLE_CC1_2561_Key.md)
+============================================================
+KEY: 59 (ans: 1 -> ก)
+Q: ขอใดคือคำแนะนำในการรับประทานยา ferrous sulfate
+Correct choice [ก]: ยาทำใหปtสสาวะสีเหลืองเขม
+Wrong choices to explain:
+  [ข]: หามรับประทานร!วมกับน้ำผลไม
+  [ค]: หากถ!ายดำไม!ตองตกใจ เปEนเพราะตัวยา
+  [ง]: รับประทานพรอมกับนมช!วยเพิ่มการดูดซึม
+  [จ]: รับประทานพรอมกับอาหารจะเพิ่มการดูดซึม t
+Note: ข้อ 15 (PLE_CC1_2561_Key.md)
+============================================================
+KEY: 60 (ans: 1 -> ก)
+Q: ขอใดคือผลขางเคียงจากยา ferrous sulfate
+Correct choice [ก]: Diarrhea
+Wrong choices to explain:
+  [ข]: Headache
+  [ค]: Tachycardia
+  [ง]: Constipation
+  [จ]: Hypokalemia
+Note: ข้อ 14 (PLE_CC1_2561_Key.md)
+============================================================
+KEY: 61 (ans: 1 -> ก)
+Q: ส!วนประกอบของสูตรเคลือบฟuลTมของยา ferrous sulfate ขอใด ถูกตอง
+Correct choice [ก]: Talcum ทำหนาที่เปEนสารก!อฟuลTม
+Wrong choices to explain:
+  [ข]: Ethyl alcohol ทำหนาที่เปEน antioxidant
+  [ค]: Propylene glycol ทำหนาที่เปEน plasticizer
+  [ง]: Titanium dioxide ทำหนาที่เปEน สารก!อฟuลTม
+  [จ]: Hydroxymethylpropyl cellulose ทำหนาที่เปEนสารทึบ แสง
+Note: ข้อ 16 (PLE_CC1_2561_Key.md)
+============================================================
+KEY: 62 (ans: 1 -> ก)
+Q: การสังเคราะห์ HCTZ จงระบุว่า A คือข้อใด
+Correct choice [ก]: H-CO-H
+Wrong choices to explain:
+  [ข]: H-CO-OH
+  [ค]: Cl-C-Cl
+  [ง]: C-CO-H 18 MCQ11 2/2560 By CU Rx73 MCQ11 2/2560 By CU Rx73
+  [จ]: Deferoxamine 500 mg SC
+Note: ข้อ 7 (PLE_CC1_2560 22 April Set 2.md)
+============================================================
+KEY: 63 (ans: 1 -> ก)
+Q: ข้อใดถูกเกี่ยวกับโครงสร้างยา spironolactone กับ canrenone ---------------------------→
+Correct choice [ก]: ตัวยาออกฤทธิ์โดยจับกับ receptor ภายนอกของ Henle loop
+Wrong choices to explain:
+  [ข]: ถ้า lactone ring เปิดออก จะได้สารที่ มีฤทธิ์
+  [ค]: Canrenone เป็น inactive metabolite
+  [ง]: Spironolactone มีความเป็น lipophilic ต่ำกว่า canrenone
+  [จ]: Spironolactone มีฤทธิ์น้อยกว่า canrenone ห้ามนำไปทำซ้ำทุกกรณี เว้นแต่จะได้รับอนุญาต
+Note: ข้อ 91 (PLE_CC1_2558_Key.md)
+============================================================
+KEY: 64 (ans: 1 -> ก)
+Q: Ferrous sulfate กระปุกละ 100 เม็ด เป็นยาประเภทใด
+Correct choice [ก]: ยาเสพติดให้โทษ ประเภทที่ 3
+Wrong choices to explain:
+  [ข]: ยาอันตราย
+  [ค]: ยาควบคุมพิเศษ
+  [ง]: วัตถุออกฤทธิ์ต่อจิตและประสาท ประเภท 3
+  [จ]: ยาสามัญประจำบ้าน ประเภทร้านขายยา ร้านขายยาแผนปัจจุบัน (ข.ย.1) สามารถขายยาอันตราย หรือยาควบคุม พิเศษบางประเภทที่อนุญาตให้เภสัชกรร้านยา ขายได้ ซึ่งยาควบคุมพิเศษต้อง มีใบสั่งแพทย์ ทั้งนี้ ร้านยาประเภทนี้ “ต้องมีเภสัชกร” ควบคุมร้าน ร้านขายยาแผนปัจจุบันเฉพาะยาบรรจุเสร็จ ที่ไม่ใช่ยาอันตรายหรือยา ควบคุมพิเศษ (ข.ย. 2) ยาเหล่านี้ไม่ต้องใช้ใบสั่งแพทย์ และ “ไม่ต้องมี” เภสัชกรคุมร้าน ร้านขายยาแผนปัจจุบันเฉพาะยาบรรจุเสร็จ สำหรับสัตว์ (ข.ย.3) ควบคุม การขายโดยเภสัชกร หรือผู้ประกอบการบำบัดโรคสัตว์ประจำอยู่ตลอดเวลาที่ เปิดทำการ การซื้อยาไม่ต้องใช้ใบสั่งยาของสัตวแพทย์ มาตราสำคัญในพ.ร.บ.ยา 2510 มาตรา 4 บอกนิยาม ผลิต: ทำ ผสม ปรุง แปรสภาพ แบ่งยาโดยมีเจตนาให้เป็นยาบรรจุเสร็จ ขาย : ขายปลีก ขายส่ง จำหน่าย จ่าย แจก แลกเปลี่ยน มาตราสำคัญในพ.ร.บ.ยา 2510 มาตรา 12 ห้ามมิให้ผู้ใดผลิต ขาย หรือนำหรือสั่งเข้ามาในราชอาณาจักรซึ่งยาแผนปัจจุบัน เว้นแต่จะได้รับใบอนุญาตจากผู้อนุญาต ตัวอย่างโจทย์ เจ๊งวงเป็นเจ้าของร้านขายของชำในหมู่บ้าน ที่ร้านชอบมีลูกค้ามาถามหายาคุมไดแอน เจ๊งวงจึงหายาคุมไดแอนมาขายที่ร้านด้วย ถามว่า เจ๊งวงมีความผิดตามกฎหมายหรือไม่ ถ้าผิดมีความผิดตามมาตราใดตามกฎหมาย มาตราสำคัญในพ.ร.บ.ยา 2510 มาตรา 13 เป็นข้อยกเว้นของมาตรา 12 มาตรา 12 จะไม่ใช้เมื่อ… การผลิตยาสำหรับคนไข้เฉพาะรายหรือตามใบสั่งแพทย์ การขายยาสมุนไพรที่ไม่ใช่ยาอันตราย หรือ การขายยาสามัญประจำบ้าน การนำยาติดตัวเข้ามาในราชอาณาจักร ซื่งไม่เกินจำนวนที่สามารถใช้ได้เฉพาะตัว ใน 30 วัน มาตรา 14 วรรค 2 ผู้มีหน้าที่ปฏิบัติการต้องอยู่ประจำ ณ สถานที่ผลิตหรือขายยาได้เพียงแห่งเดียว มาตราสำคัญในพ.ร.บ.ยา 2510 มาตรา 15 ประเภทของใบอนุญาต ผู้มีหน้าที่ปฏิบัติการต้องอยู่ประจำ ณ สถานที่ผลิตหรือขายยาได้เพียงแห่งเดียว (1) ผลิตยาแผนปัจจุบัน (2) ขายยาแผนปัจจุบัน (3) ขายส่งยาแผนปัจจุบัน (4) ขายยาแผนปัจจุบันเฉพาะยาบรรจุเสร็จที่ไม่ใช่ยาอันตรายหรือยาควบคุมพิเศษ (5) ขายยาแผนปัจจุบันเฉพาะยาบรรจุเสร็จสำหรับสัตว์ (6) นำหรือสั่งยาแผนปัจจุบันเข้ามาในราชอาณาจักร ถ้าได้รับอนุญาต (1) หรือ (6) จะได้รับอนุญาต (3) ด้วย ถ้าได้รับอนุญาต (2) จะได้รับอนุญาต (3),(4),(5) ด้วย ถ้าได้รับอนุญาต (3) จะได้รับอนุญาต (4),(5) ด้วย มาตราสำคัญในพ.ร.บ.ยา 2510 มาตรา 16 ใช้คุ้มกันลูกจ้าง ให้ถือว่าการกระทำของลูกจ้างเป็นการกระทำของผู้รับอนุญาตด้วย เว้นแต่ผู้รับ อนุญาตจะพิสูจน์ได้ว่าการกระทำดังกล่าวเป็นการสุดวิสัยที่ตนจะล่วงรู้หรือควบคุมได้ ตัวอย่างโจทย์
+Note: ข้อ 4 (LAW-CU-71.md)
+============================================================

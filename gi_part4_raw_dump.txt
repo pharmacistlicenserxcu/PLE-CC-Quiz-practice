@@ -1,0 +1,1016 @@
+KEY: 114 | ANS: 1
+Q: ใช้Nicotin gum แล้วรู้สึก… (อาการคล้ายๆพวกGERD) จะ แนะนำอย่างไร ตัวเลือก
+c1: Peptic Ulcer / GERD
+c2: Amoxicillin 1000 mg BID
+c3: Clarithromycin 500 mg BID
+c4: Hyoscine butylbromide 10 mg TID
+c5: Aluminium hydroxide/Magnesium hydroxide suspension
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Peptic Ulcer / GERD
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Peptic Ulcer / GERD การเลือก Peptic Ulcer / GERD เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Amoxicillin 1000 mg BID): เป็น Aminopenicillin ยับยั้ง bacterial cell wall synthesis เป็น first-line สำหรับ uncomplicated bacterial infections (เช่น Strep pharyngitis, AOM, sinusitis)
+• ข้อ ค. (Clarithromycin 500 mg BID): เป็น Macrolide เป็นแกนหลักในสูตรกำจัด H. pylori และ MAC treatment แต่ยับยั้ง CYP3A4 สูงมาก จึงมี drug-drug interactions รุนแรงกับ statins, colchicine
+• ข้อ ง. (Hyoscine butylbromide 10 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Aluminium hydroxide/Magnesium hydroxide suspension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 115 | ANS: 1
+Q: อาการที่บ่งบอกว่าเป็นGERD แน่ ตัวเลือก
+c1: Peptic Ulcer / GERD
+c2: Aluminium hydroxide/Magnesium hydroxide suspension
+c3: Metoclopramide 10 mg TID before meals
+c4: Omeprazole 20 mg OD
+c5: Esomeprazole 20 mg OD
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Peptic Ulcer / GERD
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Peptic Ulcer / GERD การเลือก Peptic Ulcer / GERD เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Aluminium hydroxide/Magnesium hydroxide suspension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Metoclopramide 10 mg TID before meals): เป็น central และ peripheral D2 antagonist เพิ่ม gastric emptying และแก้อาเจียน แต่ผ่าน BBB จึงทำให้เกิด acute dystonia และ EPS ได้ง่าย
+• ข้อ ง. (Omeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ จ. (Esomeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 116 | ANS: 1
+Q: Dyspepsia ให้ยาอะไร ตัวเลือก
+c1: Peptic Ulcer / GERD
+c2: Esomeprazole 20 mg OD
+c3: Domperidone 10 mg TID
+c4: Dimenhydrinate 50 mg TID
+c5: Loperamide 2 mg PRN
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Peptic Ulcer / GERD
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Peptic Ulcer / GERD การเลือก Peptic Ulcer / GERD เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Esomeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ ค. (Domperidone 10 mg TID): เป็น peripheral D2 receptor antagonist เพิ่ม GI motility ไม่ผ่าน BBB จึงไม่ทำให้เกิด EPS เด่นชัด แต่ต้องระวัง QT prolongation ในขนาดสูง (> 30 mg/day)
+• ข้อ ง. (Dimenhydrinate 50 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Loperamide 2 mg PRN): เป็น peripheral mu-opioid agonist ลด peristalsis ใช้บรรเทาอาการ acute non-infectious diarrhea แต่ห้ามใช้ใน bloody diarrhea (dysentery) หรือ bacterial enteritis (เสี่ยง toxic megacolon)
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 118 | ANS: 1
+Q: ยาต้านอาเจียนที่ทำให้เกิดQT prolongation ตัวเลือก
+c1: Peptic Ulcer / GERD
+c2: Lactulose 15 mL OD
+c3: Amoxicillin 1000 mg BID
+c4: Clarithromycin 500 mg BID
+c5: Hyoscine butylbromide 10 mg TID
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Peptic Ulcer / GERD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Nausea and vomiting มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Peptic Ulcer / GERD การเลือก Peptic Ulcer / GERD เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Nausea and vomiting โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Lactulose 15 mL OD): เป็น Osmotic disaccharide laxative ดูดซับน้ำเข้าสู่ลำไส้ และเปลี่ยนเป็น lactic acid ดักจับ ammonia (NH4+) ขับออกทางอุจจาระ เป็นแกนหลักใน hepatic encephalopathy
+• ข้อ ค. (Amoxicillin 1000 mg BID): เป็น Aminopenicillin ยับยั้ง bacterial cell wall synthesis เป็น first-line สำหรับ uncomplicated bacterial infections (เช่น Strep pharyngitis, AOM, sinusitis)
+• ข้อ ง. (Clarithromycin 500 mg BID): เป็น Macrolide เป็นแกนหลักในสูตรกำจัด H. pylori และ MAC treatment แต่ยับยั้ง CYP3A4 สูงมาก จึงมี drug-drug interactions รุนแรงกับ statins, colchicine
+• ข้อ จ. (Hyoscine butylbromide 10 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Nausea and vomiting เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Nausea and vomiting โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+==================================================
+
+KEY: 119 | ANS: 1
+Q: ยาต้านอาเจียนที่เป็นมาตรฐาน ที่จะบริหารก่อนการให้ยาเคมียำบัด ตัวเลือก
+c1: Peptic Ulcer / GERD
+c2: Hyoscine butylbromide 10 mg TID
+c3: Aluminium hydroxide/Magnesium hydroxide suspension
+c4: Metoclopramide 10 mg TID before meals
+c5: Omeprazole 20 mg OD
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Peptic Ulcer / GERD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Nausea and vomiting มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Peptic Ulcer / GERD การเลือก Peptic Ulcer / GERD เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Nausea and vomiting โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Hyoscine butylbromide 10 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Nausea and vomiting เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Aluminium hydroxide/Magnesium hydroxide suspension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Nausea and vomiting เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Metoclopramide 10 mg TID before meals): เป็น central และ peripheral D2 antagonist เพิ่ม gastric emptying และแก้อาเจียน แต่ผ่าน BBB จึงทำให้เกิด acute dystonia และ EPS ได้ง่าย
+• ข้อ จ. (Omeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Nausea and vomiting โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+==================================================
+
+KEY: 120 | ANS: 1
+Q: Gastroesophageal reflux disease (GERD)
+c1: Peptic Ulcer / GERD
+c2: Omeprazole 20 mg OD
+c3: Esomeprazole 20 mg OD
+c4: Domperidone 10 mg TID
+c5: Dimenhydrinate 50 mg TID
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Peptic Ulcer / GERD
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Peptic Ulcer / GERD การเลือก Peptic Ulcer / GERD เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Omeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ ค. (Esomeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ ง. (Domperidone 10 mg TID): เป็น peripheral D2 receptor antagonist เพิ่ม GI motility ไม่ผ่าน BBB จึงไม่ทำให้เกิด EPS เด่นชัด แต่ต้องระวัง QT prolongation ในขนาดสูง (> 30 mg/day)
+• ข้อ จ. (Dimenhydrinate 50 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 121 | ANS: 1
+Q: “แผ-นพับยาแสดงอาการข$างเคียงของยาดังนี้ salivation, urinary incontinence, sweating, diarrhea, Tremor” จากข$อความดังกล-าว หมายถึงยาใด
+c1: Timolol eye drop
+c2: Diclofenac eye drop
+c3: Pilocarpine eye drop
+c4: Brinzolamide eye drop
+c5: Chloramphenicol eye ointment
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Timolol eye drop
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Diarrhea & Constipation มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Peptic Ulcer / GERD การเลือก Peptic Ulcer / GERD เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Diarrhea & Constipation โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Timolol eye drop): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diarrhea & Constipation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Diclofenac eye drop): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diarrhea & Constipation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Pilocarpine eye drop): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diarrhea & Constipation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Brinzolamide eye drop): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diarrhea & Constipation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Diarrhea & Constipation โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+==================================================
+
+KEY: 123 | ANS: 1
+Q: การเกิดแผลในกระเพาะ ยา Sucralfate เทียบยา A OR 0.30 (0.19-0.63) 95% CI ไม่ทับเลข 1 แปลผลได้ยังไง กลุ่มที่ได้รับ Sucralfate เกิดแผลในกระเพาะอาหารน้อยกว่ากลุ่มที่ได้รับยา A อยู่ 70% อย่างมีนัยสำคัญ (OR < 1 แสดงว่ากลุ่ม expose (Sucralfate) เกิด outcome (แผลในกระเพาะ) น้อยกว่ากลุ่ม non-expose (ยา A), ส่วน 70% มาจาก 1- OR = 1-0.3 = 0.7 พอคูณ 100 เลยได้ 70%, มาดูที่ 95% CI ไม่คร่อม 1 ก็แสดงว่า outcome ที่เกิดในกลุ่ม expose กับ non- expose มันต่างกันอย่างมีนัยสำคัญ) จาก: sheet PharmacoEpidem. หัวข้อ Understanding the Result from pharmacoepidemiology 1
+c1: Peptic Ulcer / GERD
+c2: Clarithromycin 500 mg BID
+c3: Hyoscine butylbromide 10 mg TID
+c4: Aluminium hydroxide/Magnesium hydroxide suspension
+c5: Metoclopramide 10 mg TID before meals
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Peptic Ulcer / GERD
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Peptic Ulcer / GERD การเลือก Peptic Ulcer / GERD เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Dyspepsia & PUD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Clarithromycin 500 mg BID): เป็น Macrolide เป็นแกนหลักในสูตรกำจัด H. pylori และ MAC treatment แต่ยับยั้ง CYP3A4 สูงมาก จึงมี drug-drug interactions รุนแรงกับ statins, colchicine
+• ข้อ ค. (Hyoscine butylbromide 10 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dyspepsia & PUD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Aluminium hydroxide/Magnesium hydroxide suspension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dyspepsia & PUD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Metoclopramide 10 mg TID before meals): เป็น central และ peripheral D2 antagonist เพิ่ม gastric emptying และแก้อาเจียน แต่ผ่าน BBB จึงทำให้เกิด acute dystonia และ EPS ได้ง่าย
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 125 | ANS: 1
+Q: สาเหตุขอษน้ำหนักขึ้นและคลื่นไส้อาเสียนเกิดสากอะไร
+c1: Peptic Ulcer / GERD
+c2: Androgenic effect สาก levonorgestrel
+c3: Estrogenic effect สาก ethinyl estradiol
+c4: Androgenic effect สาก levonorgestrel และ ethinyl estradiol ษ. Estrogenic effect สาก levonorgestrel และ ethinyl estradiol ส. Androgenic effect ที่มักพบในผู้หญิษประเภท estrogenic type
+c5: Senna 2 tabs HS
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Peptic Ulcer / GERD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Nausea and vomiting มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Peptic Ulcer / GERD การเลือก Peptic Ulcer / GERD เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Nausea and vomiting โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Androgenic effect สาก levonorgestrel): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Nausea and vomiting เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Estrogenic effect สาก ethinyl estradiol): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Nausea and vomiting เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Androgenic effect สาก levonorgestrel และ ethinyl estradiol ษ. Estrogenic effect สาก levonorgestrel และ ethinyl estradiol ส. Androgenic effect ที่มักพบในผู้หญิษประเภท estrogenic type): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Nausea and vomiting เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Senna 2 tabs HS): เป็น Anthraquinone stimulant laxative กระตุ้น myenteric plexus แต่การใช้ระยะยาวอาจทำให้เกิด melanosis coli และ bowel dependence
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Nausea and vomiting โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+==================================================
+
+KEY: 126 | ANS: 1
+Q: ยา PPIs ตัวใดไม่แนะนำให้ใช้ในคนท้องจนถึงคลอด ~ - X L -
+c1: Omeprazole
+c2: Esomeprazole
+c3: Lansoprazole
+c4: Pantoprazole
+c5: Rabeprazole + ATPase O Omeprazole E Lansoprazde B Rabeprazole B X Pantoprazole B Esomeprazole B หË´มนาÆปทาซËาทืกกรณิ ÂวËนาต้จ²ÆดËรงบ¯นืญ´ต ~
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Omeprazole
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Omeprazole การเลือก Omeprazole เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Esomeprazole): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ ค. (Lansoprazole): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Pantoprazole): เป็น PPI ที่มี CYP2C19 inhibition ต่ำที่สุด จึงเป็น PPI ที่ปลอดภัยที่สุดเมื่อต้องใช้ร่วมกับ clopidogrel
+• ข้อ จ. (Rabeprazole + ATPase O Omeprazole E Lansoprazde B Rabeprazole B X Pantoprazole B Esomeprazole B หË´มนาÆปทาซËาทืกกรณิ ÂวËนาต้จ²ÆดËรงบ¯นืญ´ต ~): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 127 | ANS: 1
+Q: การให้ความรู้ผู้ป่วยเกี่ยวกับการเกิด GERD เพื่อป้องกันการเกิด จัดเป็นพฤติกรรมแบบใด X sulfone O virvirensaigomeans Ibisoobean casalovesea nu na enginess
+c1: Health belief model
+c2: Self-efficacy model
+c3: Health Locus of control
+c4: Theory of reason action
+c5: Theory of planned health
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Health belief model
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Health belief model การเลือก Health belief model เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Self-efficacy model): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Health Locus of control): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Theory of reason action): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Theory of planned health): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 128 | ANS: 1
+Q: ถ้าผู้ป่วยได้รับ clindamycin capsule แล้วมีเม็ดเลือดขาวสูง ปวดท้องและท้องเสีย อาการดังกล่าวเกิดจากภาวะใด O dicloxa , cloxa X X ~
+c1: Seizure
+c2: Hemolytic anemia
+c3: Disulfiram like reaction
+c4: Serum sickness syndrome
+c5: Pseudomembranous colitis
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Seizure
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Seizure การเลือก Seizure เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Hemolytic anemia): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Disulfiram like reaction): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Serum sickness syndrome): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Pseudomembranous colitis): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 129 | ANS: 1
+Q: GERD and Peptic ulcer
+c1: Omeprazole 20 mg OD
+c2: Esomeprazole 20 mg OD
+c3: Domperidone 10 mg TID
+c4: Dimenhydrinate 50 mg TID
+c5: Loperamide 2 mg PRN
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Omeprazole 20 mg OD
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Omeprazole 20 mg OD การเลือก Omeprazole 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Esomeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ ค. (Domperidone 10 mg TID): เป็น peripheral D2 receptor antagonist เพิ่ม GI motility ไม่ผ่าน BBB จึงไม่ทำให้เกิด EPS เด่นชัด แต่ต้องระวัง QT prolongation ในขนาดสูง (> 30 mg/day)
+• ข้อ ง. (Dimenhydrinate 50 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Loperamide 2 mg PRN): เป็น peripheral mu-opioid agonist ลด peristalsis ใช้บรรเทาอาการ acute non-infectious diarrhea แต่ห้ามใช้ใน bloody diarrhea (dysentery) หรือ bacterial enteritis (เสี่ยง toxic megacolon)
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 130 | ANS: 1
+Q: ผู้ป่วยรายนี้ได้ NSAIDs เพื่อบรรเทาอาการปวด ต้องได้รับยาใดเพื่อป้องกันโรคกระเพาะเหมาะสมที่สุด
+c1: Cimetidine
+c2: Omeprazole
+c3: Sucralfate
+c4: Antacid
+c5: Misoprostol ห้ามนำไปทำซ้ำทุกกรณี เว้นแต่จะได้รับอนุญาต
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Cimetidine
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Cimetidine การเลือก Cimetidine เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Omeprazole): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ ค. (Sucralfate): เป็น sucrose sulfate-aluminum complex สร้างแผ่นฟิล์มเคลือบแผลในกระเพาะอาหาร ต้องรับประทานตอนท้องว่างก่อนอาหาร 1 ชั่วโมง และลดการดูดซึมยาอื่น เช่น fluoroquinolones, digoxin
+• ข้อ ง. (Antacid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Misoprostol ห้ามนำไปทำซ้ำทุกกรณี เว้นแต่จะได้รับอนุญาต): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• First-line Universal Regimen: สูตรแรกมาตรฐานไทย: TDF + 3TC (หรือ FTC) + DTG (TLD) มี efficacy สูง ทนยาดี และ barrier to resistance สูง
+• PCP Prophylaxis Threshold: เริ่มยาป้องกัน Primary PCP (Cotrimoxazole 1-2 DS daily) เมื่อระดับ CD4 < 200 cells/mm³
+• Undetectable = Untransmittable: ผู้ป่วยที่ได้รับยาต้านไวรัสสม่ำเสมอจนกด Viral Load < 50 copies/mL จะไม่แพร่เชื้อสู่คู่นอนทางเพศสัมพันธ์ (U=U)
+==================================================
+
+KEY: 131 | ANS: 1
+Q: ข้อใดคือกลไกของยา Palonosetron ในการรักษาและป้องอาการคลื่นไส้ อาเจียน
+c1: 5-HT3 receptor antagonist
+c2: Dopamine receptor antagonist
+c3: H1 antihistamine
+c4: NK1 receptor antagonist
+c5: Glucocorticoid
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. 5-HT3 receptor antagonist
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+5-HT3 receptor antagonist การเลือก 5-HT3 receptor antagonist เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Dopamine receptor antagonist): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (H1 antihistamine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (NK1 receptor antagonist): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Glucocorticoid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 132 | ANS: 1
+Q: คำนิยามของ อาการท้องเสียเรื้อรัง (Chronic Diarrhea) คืออะไร
+c1: มีอาการถ่ายมากกว่า 2 ครั้งต่อ 1 วัน
+c2: มีอาการถ่ายมากกว่า 3 ครั้งต่อ 1 วัน
+c3: มีอาการถ่ายผิดปกติ ติดต่อกันเป็นระยะเวลานานมากกว่า 7 วัน
+c4: มีอาการถ่ายผิดปกติ ติดต่อกันเป็นระยะเวลานานมากกว่า 14 วัน
+c5: ข้อ a และ c ถูก
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. มีอาการถ่ายมากกว่า 2 ครั้งต่อ 1 วัน
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+มีอาการถ่ายมากกว่า 2 ครั้งต่อ 1 วัน การเลือก มีอาการถ่ายมากกว่า 2 ครั้งต่อ 1 วัน เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (มีอาการถ่ายมากกว่า 3 ครั้งต่อ 1 วัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (มีอาการถ่ายผิดปกติ ติดต่อกันเป็นระยะเวลานานมากกว่า 7 วัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (มีอาการถ่ายผิดปกติ ติดต่อกันเป็นระยะเวลานานมากกว่า 14 วัน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ข้อ a และ c ถูก): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 133 | ANS: 1
+Q: ผู้ป่วยหญิง มีอาการปวดท้องหรือไม่สบายท้องที่สัมพันธ์กับการถ่ายอุจจาระ มีอาการท้องผูกสลับท้องเสีย มา 4 เดือน โดยได้รับการวินิจฉัยว่าเป็นโรคลำไส้แปรปรวน ที่มีอาการท้องผูกเป็นอาการเด่น ข้อใดเป็นยารักษาลำดับแรก
+c1: Psyllium-based product
+c2: Bisacodyl
+c3: Lubiprostone
+c4: Tegaserod
+c5: Prucalopride
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Psyllium-based product
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psyllium-based product การเลือก Psyllium-based product เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Bisacodyl): เป็น stimulant laxative กระตุ้น peristalsis ในลำไส้ใหญ่ เม็ดเคลือบ enteric-coated ต้องกลืนทั้งเม็ด ห้ามเคี้ยวหรือรับประทานพร้อมนม/ยาลดกรด (ทำให้ระคายเคืองกระเพาะ)
+• ข้อ ค. (Lubiprostone): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Tegaserod): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Prucalopride): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 134 | ANS: 1
+Q: ข้อใดเป็นคำแนะนำที_x001E_ถูกต้อง เมื_x001E_อผู้ป่วยรับประทานยา Alendronate แล้วมีอาการคลื_x001E_นไส้ อาเจียน ปวดท้อง (1) รับประทานยานี_x001B_หลังอาหารทันที แล้วดื_x0003_มนํ_x001B_าตามมาก ๆ (2) รับประทานยานี_x001B_ พร้อมกับยาลดกรด (3) หลังรับประทานยานี_x001B_ ให้อยู่ในท่าตรง เช่น นั_x0003_งตัวตรง หรือเดินอย่างน้อยครึ_x0003_งชั_x0003_วโมง ห้ามเอนตัวนอนทันที (4) รับประทานยานี_x001B_ก่อนนอน เพื_x0003_อลดอาการไม่พึงประสงค์ (5) หยุดรับประทานยา และกลับมาพบแพทย์
+c1: Domperidone 10 mg TID
+c2: Dimenhydrinate 50 mg TID
+c3: Loperamide 2 mg PRN
+c4: Senna 2 tabs HS
+c5: Bisacodyl 5 mg HS
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Domperidone 10 mg TID
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Domperidone 10 mg TID การเลือก Domperidone 10 mg TID เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น peripheral D2 receptor antagonist เพิ่ม GI motility ไม่ผ่าน BBB จึงไม่ทำให้เกิด EPS เด่นชัด แต่ต้องระวัง QT prolongation ในขนาดสูง (> 30 mg/day)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Dimenhydrinate 50 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Loperamide 2 mg PRN): เป็น peripheral mu-opioid agonist ลด peristalsis ใช้บรรเทาอาการ acute non-infectious diarrhea แต่ห้ามใช้ใน bloody diarrhea (dysentery) หรือ bacterial enteritis (เสี่ยง toxic megacolon)
+• ข้อ ง. (Senna 2 tabs HS): เป็น Anthraquinone stimulant laxative กระตุ้น myenteric plexus แต่การใช้ระยะยาวอาจทำให้เกิด melanosis coli และ bowel dependence
+• ข้อ จ. (Bisacodyl 5 mg HS): เป็น stimulant laxative กระตุ้น peristalsis ในลำไส้ใหญ่ เม็ดเคลือบ enteric-coated ต้องกลืนทั้งเม็ด ห้ามเคี้ยวหรือรับประทานพร้อมนม/ยาลดกรด (ทำให้ระคายเคืองกระเพาะ)
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• Strict Patient Counseling: รับประทานตอนเช้าหลังตื่นนอนทันที ก่อนอาหารอย่างน้อย 30 นาที ด้วยน้ำเปล่า 1 แก้วเต็ม (200-250 mL)
+• Esophageal Protection: ห้ามนอนราบ นั่งหรือยืนตัวตรงอย่างน้อย 30 นาทีเพื่อป้องกัน pill-induced chemical esophagitis
+• Rare Long-term Complications: ระวัง Osteonecrosis of the Jaw (ONJ) และ Atypical Femoral Fracture (AFF) พิจารณา Drug Holiday หลังใช้ครบ 3-5 ปี
+==================================================
+
+KEY: 135 | ANS: 1
+Q: ??? --------------------------------------------------------------------------------------------------------------------------------- สถานการณ์ที่ 9 : GERD
+c1: ผู้ป่วยเพศชาย อายุ 24 ปี มีอาการเรอเปรี้ยว ขย่อน กรดไหลย้อน ควรได้รับยาใด
+c2: famotidine
+c3: bismus
+c4: salol
+c5: antacid
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ผู้ป่วยเพศชาย อายุ 24 ปี มีอาการเรอเปรี้ยว ขย่อน กรดไหลย้อน ควรได้รับยาใด
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ผู้ป่วยเพศชาย อายุ 24 ปี มีอาการเรอเปรี้ยว ขย่อน กรดไหลย้อน ควรได้รับยาใด การเลือก ผู้ป่วยเพศชาย อายุ 24 ปี มีอาการเรอเปรี้ยว ขย่อน กรดไหลย้อน ควรได้รับยาใด เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (famotidine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (bismus): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (salol): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (antacid): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 136 | ANS: 1
+Q: อาการท้องเสียเกิดจากเชื้ออะไร
+c1: rotavirus
+c2: shigella
+c3: E.coli
+c4: Vibrio นํ้ามูกร่วมด้วย โดยลักษณะของอุจจาระมักไม่มีมูกหรือเลือดปน หรืออาจมีมูกปนได้เล็กน้อย หรืออุจจาระของผู้ที่ติดเชื้อ เมื่อเด็กสัมผัสและเอามือเข้าปาก เชื้อโรคก็จะเข้าสู่ร่างกาย
+c5: coli และ Vibrio ก็ทำให้เกิดการท้องเสียในเด็กได้โดยถ่ายเป็นนํ้าแต่พบไม่บ่อยเท่า rotavirus และนอกจากนี้ Vibrio parahaemolyticus ทำให้ท้องเสีย ทั้งถ่ายเป็นนํ้าและเป็นมูกเลือด ส่วน shigella ทำให้เกิดการท้องเสียโดยถ่ายเป็นมูกเลือด Watery diarrhea Invasive (Inflammatory) diarrhea or dysentery Bacteria - Vibrio cholerae - Enterotoxigenic E.coli (ETEC) - Enteropathogenic E.coli (EPEC) - Aeromonas - Plesiomonas - Vibrio parahaemolyticus - Staphyllococcus aureus - Clostridium perfringens - Bacillus cereus Bacteria - Shigella - Salmonella - Campylobacter jejuni - Enteroinvasive E .coli (EIEC) - Shigatoxin-producing E. coli - Clostridium difficile - Yersinia enterocolitica - Vibrio parahaemolyticus - Aeromonas - Plesiomonas Virus - Rotavirus - Norovirus (Norwalk) - Astrovirus - Enteric adenovirus Protozoa - Giardia lambria - Cryptosporidium - Isospora belli Protozoa - Entamoeba histolytica - Balantidium coli เชื้อบางชนิดสามารถทำให้ผู้ป่วยมีอาการได้ทั้งถ่ายเป็นนํ้าและเป็นมูกเลือด เช่น Salmonella, Campylobacter, Vibrio parahaemolyticus เป็นต้น Ref: Management of acute diarrhea in children : An update บทความวิชาการโดย รศ.พญ.สุพร ตรีพงษ์กรุณา ภาควิชากุมารเวชศาสตร์ คณะแพทยศาสตร์โรงพยาบาลรามาธิบดี มหาวิทยาลัยมหิดล http://www.cdc.gov/rotavirus/ http://www.phyathai.com/medicalarticledetail/3/40/332/th
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. rotavirus
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+rotavirus โดยเฉพาะอย่างยิ่งไวรัสโรต้า (rotavirus) อาการเด่นได้แก่ ไข้ อาเจียน ท้องเสียถ่ายเป็นนํ้า อาจมีหวัด ไอ การติดต่อเกิดจากเชื้อไวรัสเข้าสู่ปากโดยตรง โดยเชื้ออาจติดมากับมือ หรือของเล่นที่เปื้อนนํ้ามูก นํ้าลาย
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (shigella): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (E.coli): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Vibrio นํ้ามูกร่วมด้วย โดยลักษณะของอุจจาระมักไม่มีมูกหรือเลือดปน หรืออาจมีมูกปนได้เล็กน้อย หรืออุจจาระของผู้ที่ติดเชื้อ เมื่อเด็กสัมผัสและเอามือเข้าปาก เชื้อโรคก็จะเข้าสู่ร่างกาย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (coli และ Vibrio ก็ทำให้เกิดการท้องเสียในเด็กได้โดยถ่ายเป็นนํ้าแต่พบไม่บ่อยเท่า rotavirus และนอกจากนี้ Vibrio parahaemolyticus ทำให้ท้องเสีย ทั้งถ่ายเป็นนํ้าและเป็นมูกเลือด ส่วน shigella ทำให้เกิดการท้องเสียโดยถ่ายเป็นมูกเลือด Watery diarrhea Invasive (Inflammatory) diarrhea or dysentery Bacteria - Vibrio cholerae - Enterotoxigenic E.coli (ETEC) - Enteropathogenic E.coli (EPEC) - Aeromonas - Plesiomonas - Vibrio parahaemolyticus - Staphyllococcus aureus - Clostridium perfringens - Bacillus cereus Bacteria - Shigella - Salmonella - Campylobacter jejuni - Enteroinvasive E .coli (EIEC) - Shigatoxin-producing E. coli - Clostridium difficile - Yersinia enterocolitica - Vibrio parahaemolyticus - Aeromonas - Plesiomonas Virus - Rotavirus - Norovirus (Norwalk) - Astrovirus - Enteric adenovirus Protozoa - Giardia lambria - Cryptosporidium - Isospora belli Protozoa - Entamoeba histolytica - Balantidium coli เชื้อบางชนิดสามารถทำให้ผู้ป่วยมีอาการได้ทั้งถ่ายเป็นนํ้าและเป็นมูกเลือด เช่น Salmonella, Campylobacter, Vibrio parahaemolyticus เป็นต้น Ref: Management of acute diarrhea in children : An update บทความวิชาการโดย รศ.พญ.สุพร ตรีพงษ์กรุณา ภาควิชากุมารเวชศาสตร์ คณะแพทยศาสตร์โรงพยาบาลรามาธิบดี มหาวิทยาลัยมหิดล http://www.cdc.gov/rotavirus/ http://www.phyathai.com/medicalarticledetail/3/40/332/th): วัคซีนไข้สมองอักเสบเจอี ชนิดเชื้อเป็น (Live attenuated CD.JEV) ให้ 2 เข็ม ที่อายุ 9-12 เดือน และเข็ม 2 ห่างกัน 3-12 เดือน
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 138 | ANS: 1
+Q: ข้อใดไม่ใช่ปัจจัยเสี่ยงของการเกิดแผลในกระเพาะ
+c1: อายุ > 65 ปี
+c2: มีการใช้ยาในกลุ่ม NSAIDs
+c3: มีพฤติกรรมดื่มกาแฟและสูบบุหรี่เป็นประจำ
+c4: อ้วน
+c5: Osteoarthritis แพทย์พิจารณาสั่งจ่ายยา Omeprazole ขนาด 40 มิลลิกรัม รับประทานวันละ 1 ครั้ง ก่อนอาหารเช้า
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. อายุ > 65 ปี
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+อายุ > 65 ปี การเลือก อายุ > 65 ปี เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (มีการใช้ยาในกลุ่ม NSAIDs): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (มีพฤติกรรมดื่มกาแฟและสูบบุหรี่เป็นประจำ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (อ้วน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Osteoarthritis แพทย์พิจารณาสั่งจ่ายยา Omeprazole ขนาด 40 มิลลิกรัม รับประทานวันละ 1 ครั้ง ก่อนอาหารเช้า): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 139 | ANS: 1
+Q: Domperidone ออกฤทธิ์ต้านการอาเจียนที่ใด
+c1: Serotonin 5-HT3 ที่ CTZ
+c2: GABA receptor ที่ CTZ
+c3: Nueurokinin-1 receptor ที่ CTZ
+c4: Dopamine D2 receptor ที่ CTZ
+c5: Adrenergic receptor ที่ CTZ หัวข้อเรื่อง Peptic ulcer จากกรณีศึกษาต่อไปนี้ ตอบคำถามข้อ 19-20 ชาย อายุ 56 ปี มาพบแพทย์ด้วยอาการปวดท้องบริเวณลิ้นปี่ แน่นท้อง อาหารไม่ย่อย มักปวดหลัง รับประทานอาหาร มีประวัติเป็นแผลที่กระเพาะอาหารเมื่อ 2 ปีก่อนแพทย์วินิจฉัยว่าผู้ป่วยเป็นโรค กระเพาะอาหารจากการติดเชื้อ Helicobacter pylori ผู้ป่วยมีประวัติแพ้ยา Penicillin 47 โรคระบบทางเดินอาหาร ฝ่ายวิชาการ และนิสิตชั้นปีที่ 4 สโมสรนิสิตเภสัชศาสตร์ มหาวิทยาลัยบูรพา สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Serotonin 5-HT3 ที่ CTZ
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Serotonin 5-HT3 ที่ CTZ การเลือก Serotonin 5-HT3 ที่ CTZ เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (GABA receptor ที่ CTZ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Nueurokinin-1 receptor ที่ CTZ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Dopamine D2 receptor ที่ CTZ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Adrenergic receptor ที่ CTZ หัวข้อเรื่อง Peptic ulcer จากกรณีศึกษาต่อไปนี้ ตอบคำถามข้อ 19-20 ชาย อายุ 56 ปี มาพบแพทย์ด้วยอาการปวดท้องบริเวณลิ้นปี่ แน่นท้อง อาหารไม่ย่อย มักปวดหลัง รับประทานอาหาร มีประวัติเป็นแผลที่กระเพาะอาหารเมื่อ 2 ปีก่อนแพทย์วินิจฉัยว่าผู้ป่วยเป็นโรค กระเพาะอาหารจากการติดเชื้อ Helicobacter pylori ผู้ป่วยมีประวัติแพ้ยา Penicillin 47 โรคระบบทางเดินอาหาร ฝ่ายวิชาการ และนิสิตชั้นปีที่ 4 สโมสรนิสิตเภสัชศาสตร์ มหาวิทยาลัยบูรพา สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 140 | ANS: 1
+Q: ข้อใดเป็นสาเหตุของภาวะท้องเสียในผู้ป่วยรายนี้
+c1: Salmonella typhi
+c2: Shigella dysenteriae
+c3: Clostridium difficile
+c4: Enterotoxigenic E.coli
+c5: Entamoeba histolytica
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Salmonella typhi
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Salmonella typhi การเลือก Salmonella typhi เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Shigella dysenteriae): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Clostridium difficile): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Enterotoxigenic E.coli): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Entamoeba histolytica): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 141 | ANS: 1
+Q: ตอบ ง. ยานี้รับประทานวันละ 3 ครั้ง หลังอาหาร เนื่องมาจากยาระคายเคืองต่อกระเพาะอาหาร และมี ค่าครึ่งชีวิตสั้น เพราะยานี้ให้รับประทานวันละ 1 ครั้ง ในขณะท้องว่าง หรือก่อนอาหารครึ่งชั่วโมงในตอนเช้าของ อาหารมื้อแรก เนื่องมาจากยาจะดูดซึมได้ดีในสภาวะที่เป็นกรด และยานี้มีค่าครึ่งชีวิตยาว 6 วัน
+c1: Hyoscine butylbromide 10 mg TID
+c2: Aluminium hydroxide/Magnesium hydroxide suspension
+c3: Metoclopramide 10 mg TID before meals
+c4: Omeprazole 20 mg OD
+c5: Esomeprazole 20 mg OD
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Hyoscine butylbromide 10 mg TID
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Hyoscine butylbromide 10 mg TID การเลือก Hyoscine butylbromide 10 mg TID เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Aluminium hydroxide/Magnesium hydroxide suspension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Metoclopramide 10 mg TID before meals): เป็น central และ peripheral D2 antagonist เพิ่ม gastric emptying และแก้อาเจียน แต่ผ่าน BBB จึงทำให้เกิด acute dystonia และ EPS ได้ง่าย
+• ข้อ ง. (Omeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ จ. (Esomeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 142 | ANS: 3
+Q: หลังจากผู้ป่วยรับประทานยาไประยะหนึ่ง เริ่มมีอาการปวดเต้านม ตึงคัดเต้านม คลื่นไส้อาเจียน เกิดจาก สาเหตุใดและแก้ไขได้อย่างไร
+c1: เกิดจากยา Estradiol valerateแก้ไขโดยการเปลี่ยนยา เป็น tibolone
+c2: เกิดจากยา Norethisterone acetate แก้ไขโดยการเปลี่ยนยาเป็น tibolone
+c3: เกิดจากยา Estradiol valerateแก้ไขโดยการเปลี่ยนยา เป็น Raloxifene
+c4: เกิดจากยา Norethisterone acetate แก้ไขโดยการเปลี่ยนยาเป็น Raloxifene
+c5: เกิดจากยา Estradiol valerateแก้ไขโดยการเปลี่ยนยา เป็น Conjugated estrogen 212 โรคทางนรีเวชวิทยา นักศึกษาชั้นปีที่ 4 รุ่น 36 และสโมสรนักศึกษาเภสัชศาสตร์ มหาวิทยาลัยสงขลานครินทร์ ปีการศึกษา 2560 สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) 35.ข้อใดเป็นข้อบ่งใช้ของยาที่มีโครงสร้างต่อไปนี้
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ค. เกิดจากยา Estradiol valerateแก้ไขโดยการเปลี่ยนยา เป็น Raloxifene
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+เกิดจากยา Estradiol valerateแก้ไขโดยการเปลี่ยนยา เป็น Raloxifene เกิดจากยา Estradiol valerate แก้ไขโดยการเปลี่ยนยา เป็น Raloxifene เกิดจากยา Estradiol valerate แก้ไขโดยการเปลี่ยนยา เป็น Raloxifene เกิดจากยา Estradiol valerate แก้ไขโดยการเปลี่ยนยา เป็น Raloxifene เกิดจากยา Estradiol valerate แก้ไขโดยการเปลี่ยนยา เป็น Raloxifene ร่วมกับยาสเตียรอยด์เช่น Hydrocortisone อาจทำให้ผู้ป่วยได้รับผลข้างเคียงจากยาสเตียรอยด์ดังกล่าวสูงขึ้น คล้ายมีประจำเดือน หรือส่งผลให้เกิดการตั้งครรภ์โดยมิได้ตั้งใจได้ หากมีความจำเป็นต้องใช้ร่วมกันแพทย์จะ (emergency contraceptive pill หรือ morning-after pill) ใช้ป้องกันการตั้งครรภ์เมื่อมีเพศสัมพันธ์เกิดขึ้น หรือ 4 เม็ดสุดท้าย(กรณี 24+4) เป็นเม็ดแป้งไม่มีฮอร์โมนอยู่แล้ว และปจด.จะมาในเม็ดที่ 2-3 ของช่วงที่กิน
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (เกิดจากยา Estradiol valerateแก้ไขโดยการเปลี่ยนยา เป็น tibolone): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ข. (เกิดจากยา Norethisterone acetate แก้ไขโดยการเปลี่ยนยาเป็น tibolone): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (เกิดจากยา Norethisterone acetate แก้ไขโดยการเปลี่ยนยาเป็น Raloxifene): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (เกิดจากยา Estradiol valerateแก้ไขโดยการเปลี่ยนยา เป็น Conjugated estrogen 212 โรคทางนรีเวชวิทยา นักศึกษาชั้นปีที่ 4 รุ่น 36 และสโมสรนักศึกษาเภสัชศาสตร์ มหาวิทยาลัยสงขลานครินทร์ ปีการศึกษา 2560 สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) 35.ข้อใดเป็นข้อบ่งใช้ของยาที่มีโครงสร้างต่อไปนี้): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 145 | ANS: 1
+Q: Acute bronchitis คอหอยอักเสบ หรือ Pharyngitis ซึ่งผู้ป่วยมักมาด้วยอาการเจ็บคอ มีไข้ อาจมีอาการปวดหัว คลื่นไส้อาเจียน ปวดท้องได้ รวมถึงอาการอื่นๆ ได้แก่ - ต่อมทอนซิลมักจะบวมแดง อักเสบ โดยอาจมี หรือ ไม่มีจุดหนองก็ได้ - ต่อมน้ำเหลืองที่คอโต - เพดานปากเหนือลิ้นไก่บวมแดง
+c1: Clarithromycin 500 mg BID
+c2: Hyoscine butylbromide 10 mg TID
+c3: Aluminium hydroxide/Magnesium hydroxide suspension
+c4: Metoclopramide 10 mg TID before meals
+c5: Omeprazole 20 mg OD
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Clarithromycin 500 mg BID
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Clarithromycin 500 mg BID การเลือก Clarithromycin 500 mg BID เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Macrolide เป็นแกนหลักในสูตรกำจัด H. pylori และ MAC treatment แต่ยับยั้ง CYP3A4 สูงมาก จึงมี drug-drug interactions รุนแรงกับ statins, colchicine
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Hyoscine butylbromide 10 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Aluminium hydroxide/Magnesium hydroxide suspension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Metoclopramide 10 mg TID before meals): เป็น central และ peripheral D2 antagonist เพิ่ม gastric emptying และแก้อาเจียน แต่ผ่าน BBB จึงทำให้เกิด acute dystonia และ EPS ได้ง่าย
+• ข้อ จ. (Omeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 146 | ANS: 1
+Q: ผู้ป่วยหญิงเป็นโรคกระเพาะจากภาวะเครียดเรื้อรัง
+c1: Metoclopramide 10 mg TID before meals
+c2: Omeprazole 20 mg OD
+c3: Esomeprazole 20 mg OD
+c4: Domperidone 10 mg TID
+c5: Dimenhydrinate 50 mg TID
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Metoclopramide 10 mg TID before meals
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Metoclopramide 10 mg TID before meals การเลือก Metoclopramide 10 mg TID before meals เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น central และ peripheral D2 antagonist เพิ่ม gastric emptying และแก้อาเจียน แต่ผ่าน BBB จึงทำให้เกิด acute dystonia และ EPS ได้ง่าย
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Omeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ ค. (Esomeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ ง. (Domperidone 10 mg TID): เป็น peripheral D2 receptor antagonist เพิ่ม GI motility ไม่ผ่าน BBB จึงไม่ทำให้เกิด EPS เด่นชัด แต่ต้องระวัง QT prolongation ในขนาดสูง (> 30 mg/day)
+• ข้อ จ. (Dimenhydrinate 50 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 147 | ANS: 1
+Q: คลื่นไส้อาเจียน
+c1: Domperidone 10 mg TID
+c2: Dimenhydrinate 50 mg TID
+c3: Loperamide 2 mg PRN
+c4: Senna 2 tabs HS
+c5: Bisacodyl 5 mg HS
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Domperidone 10 mg TID
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Domperidone 10 mg TID การเลือก Domperidone 10 mg TID เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น peripheral D2 receptor antagonist เพิ่ม GI motility ไม่ผ่าน BBB จึงไม่ทำให้เกิด EPS เด่นชัด แต่ต้องระวัง QT prolongation ในขนาดสูง (> 30 mg/day)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Dimenhydrinate 50 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Loperamide 2 mg PRN): เป็น peripheral mu-opioid agonist ลด peristalsis ใช้บรรเทาอาการ acute non-infectious diarrhea แต่ห้ามใช้ใน bloody diarrhea (dysentery) หรือ bacterial enteritis (เสี่ยง toxic megacolon)
+• ข้อ ง. (Senna 2 tabs HS): เป็น Anthraquinone stimulant laxative กระตุ้น myenteric plexus แต่การใช้ระยะยาวอาจทำให้เกิด melanosis coli และ bowel dependence
+• ข้อ จ. (Bisacodyl 5 mg HS): เป็น stimulant laxative กระตุ้น peristalsis ในลำไส้ใหญ่ เม็ดเคลือบ enteric-coated ต้องกลืนทั้งเม็ด ห้ามเคี้ยวหรือรับประทานพร้อมนม/ยาลดกรด (ทำให้ระคายเคืองกระเพาะ)
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 149 | ANS: 1
+Q: ใช้กับผู้ป่วยที่เป็นนิ่วในกระเพาะปัสสาวะ
+c1: Amoxicillin 1000 mg BID
+c2: Clarithromycin 500 mg BID
+c3: Hyoscine butylbromide 10 mg TID
+c4: Aluminium hydroxide/Magnesium hydroxide suspension
+c5: Metoclopramide 10 mg TID before meals
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Amoxicillin 1000 mg BID
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Amoxicillin 1000 mg BID การเลือก Amoxicillin 1000 mg BID เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Aminopenicillin ยับยั้ง bacterial cell wall synthesis เป็น first-line สำหรับ uncomplicated bacterial infections (เช่น Strep pharyngitis, AOM, sinusitis)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Clarithromycin 500 mg BID): เป็น Macrolide เป็นแกนหลักในสูตรกำจัด H. pylori และ MAC treatment แต่ยับยั้ง CYP3A4 สูงมาก จึงมี drug-drug interactions รุนแรงกับ statins, colchicine
+• ข้อ ค. (Hyoscine butylbromide 10 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Aluminium hydroxide/Magnesium hydroxide suspension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Metoclopramide 10 mg TID before meals): เป็น central และ peripheral D2 antagonist เพิ่ม gastric emptying และแก้อาเจียน แต่ผ่าน BBB จึงทำให้เกิด acute dystonia และ EPS ได้ง่าย
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 151 | ANS: 1
+Q: หากเกิดอาการคลื่นไส้ อาเจียน เวียนหัวให้หยุดยาแล้วมาพบแพทย์
+c1: Esomeprazole 20 mg OD
+c2: Domperidone 10 mg TID
+c3: Dimenhydrinate 50 mg TID
+c4: Loperamide 2 mg PRN
+c5: Senna 2 tabs HS
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Esomeprazole 20 mg OD
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Esomeprazole 20 mg OD การเลือก Esomeprazole 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Domperidone 10 mg TID): เป็น peripheral D2 receptor antagonist เพิ่ม GI motility ไม่ผ่าน BBB จึงไม่ทำให้เกิด EPS เด่นชัด แต่ต้องระวัง QT prolongation ในขนาดสูง (> 30 mg/day)
+• ข้อ ค. (Dimenhydrinate 50 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Loperamide 2 mg PRN): เป็น peripheral mu-opioid agonist ลด peristalsis ใช้บรรเทาอาการ acute non-infectious diarrhea แต่ห้ามใช้ใน bloody diarrhea (dysentery) หรือ bacterial enteritis (เสี่ยง toxic megacolon)
+• ข้อ จ. (Senna 2 tabs HS): เป็น Anthraquinone stimulant laxative กระตุ้น myenteric plexus แต่การใช้ระยะยาวอาจทำให้เกิด melanosis coli และ bowel dependence
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 153 | ANS: 1
+Q: ลดอาการคลื่นไส้อาเจียน
+c1: Lactulose 15 mL OD
+c2: Amoxicillin 1000 mg BID
+c3: Clarithromycin 500 mg BID
+c4: Hyoscine butylbromide 10 mg TID
+c5: Aluminium hydroxide/Magnesium hydroxide suspension
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Lactulose 15 mL OD
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Lactulose 15 mL OD การเลือก Lactulose 15 mL OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Osmotic disaccharide laxative ดูดซับน้ำเข้าสู่ลำไส้ และเปลี่ยนเป็น lactic acid ดักจับ ammonia (NH4+) ขับออกทางอุจจาระ เป็นแกนหลักใน hepatic encephalopathy
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Amoxicillin 1000 mg BID): เป็น Aminopenicillin ยับยั้ง bacterial cell wall synthesis เป็น first-line สำหรับ uncomplicated bacterial infections (เช่น Strep pharyngitis, AOM, sinusitis)
+• ข้อ ค. (Clarithromycin 500 mg BID): เป็น Macrolide เป็นแกนหลักในสูตรกำจัด H. pylori และ MAC treatment แต่ยับยั้ง CYP3A4 สูงมาก จึงมี drug-drug interactions รุนแรงกับ statins, colchicine
+• ข้อ ง. (Hyoscine butylbromide 10 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Aluminium hydroxide/Magnesium hydroxide suspension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 154 | ANS: 1
+Q: ตัวอย่างเช่นสารเคมีที่สร้างขึ้นภายในร่างกายเพื่อ ทำลายเชื้อ เช่น กรดในกระเพาะอาหาร
+c1: Hyoscine butylbromide 10 mg TID
+c2: Aluminium hydroxide/Magnesium hydroxide suspension
+c3: Metoclopramide 10 mg TID before meals
+c4: Omeprazole 20 mg OD
+c5: Esomeprazole 20 mg OD
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Hyoscine butylbromide 10 mg TID
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Hyoscine butylbromide 10 mg TID การเลือก Hyoscine butylbromide 10 mg TID เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ GERD โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Aluminium hydroxide/Magnesium hydroxide suspension): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Metoclopramide 10 mg TID before meals): เป็น central และ peripheral D2 antagonist เพิ่ม gastric emptying และแก้อาเจียน แต่ผ่าน BBB จึงทำให้เกิด acute dystonia และ EPS ได้ง่าย
+• ข้อ ง. (Omeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ จ. (Esomeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 155 | ANS: 1
+Q: ข้อใดไม่ใชปัจจัยเสี่ยงของโรค GERD
+c1: Omeprazole 20 mg OD
+c2: Esomeprazole 20 mg OD
+c3: Domperidone 10 mg TID
+c4: Dimenhydrinate 50 mg TID
+c5: Loperamide 2 mg PRN
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Omeprazole 20 mg OD
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Omeprazole 20 mg OD การเลือก Omeprazole 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Esomeprazole 20 mg OD): เป็น Proton pump inhibitor (PPI) ยับยั้ง H+/K+ ATPase อย่างจำเพาะเจาะจง ต้องรับประทานก่อนอาหารเช้า 30-60 นาที และยับยั้ง CYP2C19 ซึ่งลดการเปลี่ยน clopidogrel เป็น active form
+• ข้อ ค. (Domperidone 10 mg TID): เป็น peripheral D2 receptor antagonist เพิ่ม GI motility ไม่ผ่าน BBB จึงไม่ทำให้เกิด EPS เด่นชัด แต่ต้องระวัง QT prolongation ในขนาดสูง (> 30 mg/day)
+• ข้อ ง. (Dimenhydrinate 50 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Loperamide 2 mg PRN): เป็น peripheral mu-opioid agonist ลด peristalsis ใช้บรรเทาอาการ acute non-infectious diarrhea แต่ห้ามใช้ใน bloody diarrhea (dysentery) หรือ bacterial enteritis (เสี่ยง toxic megacolon)
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+
+KEY: 157 | ANS: 1
+Q: ยาใดไม่ควรใช้ในผู้ป่วย GERD
+c1: Bisacodyl 5 mg HS
+c2: Lactulose 15 mL OD
+c3: Amoxicillin 1000 mg BID
+c4: Clarithromycin 500 mg BID
+c5: Hyoscine butylbromide 10 mg TID
+exp: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Bisacodyl 5 mg HS
+
+💡 Background:
+โรคแผลในทางเดินอาหารและกรดไหลย้อน เน้นการยับยั้งกรดด้วย PPIs และกำจัด H. pylori เพื่อรักษาแผลและป้องกันการเกิดซ้ำ
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Bisacodyl 5 mg HS การเลือก Bisacodyl 5 mg HS เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น stimulant laxative กระตุ้น peristalsis ในลำไส้ใหญ่ เม็ดเคลือบ enteric-coated ต้องกลืนทั้งเม็ด ห้ามเคี้ยวหรือรับประทานพร้อมนม/ยาลดกรด (ทำให้ระคายเคืองกระเพาะ)
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Lactulose 15 mL OD): เป็น Osmotic disaccharide laxative ดูดซับน้ำเข้าสู่ลำไส้ และเปลี่ยนเป็น lactic acid ดักจับ ammonia (NH4+) ขับออกทางอุจจาระ เป็นแกนหลักใน hepatic encephalopathy
+• ข้อ ค. (Amoxicillin 1000 mg BID): เป็น Aminopenicillin ยับยั้ง bacterial cell wall synthesis เป็น first-line สำหรับ uncomplicated bacterial infections (เช่น Strep pharyngitis, AOM, sinusitis)
+• ข้อ ง. (Clarithromycin 500 mg BID): เป็น Macrolide เป็นแกนหลักในสูตรกำจัด H. pylori และ MAC treatment แต่ยับยั้ง CYP3A4 สูงมาก จึงมี drug-drug interactions รุนแรงกับ statins, colchicine
+• ข้อ จ. (Hyoscine butylbromide 10 mg TID): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ GERD เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางเวชปฏิบัติการดูแลรักษาผู้ป่วยโรคกรดไหลย้อนในประเทศไทย พ.ศ. 2563 (สมาคมแพทย์ระบบทางเดินอาหารแห่งประเทศไทย) & ACG Clinical Guidelines for GERD and H. pylori Infection
+
+📌 จุดจำก่อนสอบ:
+• PUD & H. pylori Quadruple Therapy: สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง
+• GERD Lifestyle & PPI Timing: รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร
+• Constipation & Laxatives: Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon
+==================================================
+

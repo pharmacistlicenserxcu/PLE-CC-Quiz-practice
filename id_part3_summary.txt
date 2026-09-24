@@ -1,0 +1,35 @@
+ID: 74 | ANS: 1 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ก. เคี้ยวยาให้ละเอียดก่อนกลืน  💡 Background: การรักษาโรคต
+ID: 75 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. ขัดขวางการสร้าง folic acid  💡 Background: การดูแลผู้ติ
+ID: 76 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. 3 เดือน  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้นเริ่
+ID: 77 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Varicella  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้นเร
+ID: 78 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Nevirapine  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้นเ
+ID: 79 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. พยาธิเส้นด้าย  💡 Background: การรักษาโรคติดเชื้อแบคทีเ
+ID: 80 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. ขัดขวางการสร้าง folic acid  💡 Background: การดูแลผู้ติ
+ID: 81 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. มะแว้งต้น  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้นเร
+ID: 82 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Valacyclovir  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้
+ID: 83 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Phosphodiesterase  💡 Background: การดูแลผู้ติดเชื้อ HI
+ID: 84 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Albendazole 400 mg single dose  💡 Background: การรักษา
+ID: 85 | ANS: 2 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ข. ขัดขวางการสร้างผนังหุ้มเซลล์  💡 Background: การดูแลผู้
+ID: 86 | ANS: 2 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Gonorrhoea  💡 Background: การบริบาลผู้ป่วยในกลุ่มโรค S
+ID: 87 | ANS: 2 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ข. ใบชุมเห็ดเทศ  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้
+ID: 88 | ANS: 2 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Asymptomatic HIV infection  💡 Background: การดูแลผู้ติ
+ID: 89 | ANS: 2 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ข. โลหิตจาง  💡 Background: การรักษาโรคติดเชื้อแบคทีเรีย (
+ID: 90 | ANS: 5 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ จ. ขัดขวางการสังเคราะห์ polypeptide  💡 Background: การดูแ
+ID: 91 | ANS: 5 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ จ. Ciprofloxacin 500 mg รับประทานครั้งเดียว  💡 Background
+ID: 92 | ANS: 5 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ จ. Gels  💡 Background: การบริบาลผู้ป่วยในกลุ่มโรค Cystiti
+ID: 93 | ANS: 5 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ จ. AZT, 3TC, NVP  💡 Background: การดูแลผู้ติดเชื้อ HIV เน
+ID: 94 | ANS: 5 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ จ. ซักเสื้อผ้า และผ้าปูที่นอนให้สะอาด  💡 Background: การด
+ID: 95 | ANS: 4 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ง. FBC  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้นเริ่ม An
+ID: 96 | ANS: 4 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Doxycycline ทำให้ผมร่วง  💡 Background: การบริบาลผู้ป่ว
+ID: 97 | ANS: 4 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ง. ยาต้านไวรัสรักษาโรคเอดส์ จัดเป็นยาอันตราย  💡 Backgroun
+ID: 98 | ANS: 4 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ง. SGPT > 5X  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้นเร
+ID: 99 | ANS: 4 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ง. พยาธิใบไม้  💡 Background: การรักษาโรคติดเชื้อแบคทีเรีย
+ID: 100 | ANS: 4 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Hypotension  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้น
+ID: 101 | ANS: 4 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ง. อย่ากลั้นปัสสาวะ  💡 Background: การบริบาลผู้ป่วยในกลุ่
+ID: 102 | ANS: 4 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Stavudine  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้นเร
+ID: 103 | ANS: 4 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Mebendazole 100 mg single dose  💡 Background: การดูแลผ
+ID: 104 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Erythromycin  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้
+ID: 105 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Tinea curis  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้น
+ID: 106 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. 2HRZE/4HR และเปลี่ยน ritonavir เป็น efavarenz  💡 Backg
+ID: 107 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. ควรรักษาสมาชิกในครอบครัวที่เป็นเด็กพร้อมกัน  💡 Backgro
+ID: 108 | ANS: 3 | EXP_HEAD: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Erythromycin  💡 Background: การดูแลผู้ติดเชื้อ HIV เน้

@@ -1,0 +1,241 @@
+# -*- coding: utf-8 -*-
+import json
+
+distractors_data = {
+    '77': {
+        'distractors': {
+            'ข': 'Diazepam เป็น long-acting benzodiazepine ที่มี active metabolites หลายชนิดรวมถึง nordiazepam ซึ่งสะสมได้ง่ายในผู้สูงอายุ ทำให้เกิด prolonged sedation และเพิ่มความเสี่ยงต่อการหกล้ม',
+            'ค': 'Zolpidem เป็น non-benzodiazepine GABA-A receptor agonist (Z-drug) ที่ออกฤทธิ์จำเพาะต่อ alpha-1 subunit จึงจัดเป็นยานอนหลับคนละกลุ่มยาแม้จะมีกลไกผ่าน GABA receptor เหมือนกัน',
+            'ง': 'Nicotine gum เป็นยากลุ่ม nicotine replacement therapy ออกฤทธิ์กระตุ้น nicotinic acetylcholine receptors ในระบบประสาทเพื่อช่วยเลิกบุหรี่ ไม่มีผลต่อ GABA-A receptor',
+            'จ': 'Quetiapine เป็น second-generation antipsychotic ที่ออกฤทธิ์ปิดกั้น 5-HT2A และ D2 receptors พร้อมทั้งมีฤทธิ์ H1 antihistamine สูง จึงใช้รักษาจิตเภท อารมณ์สองขั้ว หรือ adjunct ใน depression'
+        }
+    },
+    '78': {
+        'distractors': {
+            'ข': 'Quetiapine เป็น atypical antipsychotic ที่มีฤทธิ์ anticholinergic และ sedative ผ่าน H1 receptor antagonism ซึ่งอาจบดบังการประเมินหรือทำให้ cognitive impairment ใน depression แย่ลงได้',
+            'ค': 'Risperidone เป็น atypical antipsychotic ที่เน้นปิดกั้น D2 และ 5-HT2A receptors ซึ่งในขนาดยาสูงจะเพิ่มความเสี่ยงต่อ extrapyramidal symptoms และ hyperprolactinemia ชัดเจน',
+            'ง': 'Fluoxetine เป็นยากลุ่ม SSRI ที่มีฤทธิ์ยับยั้ง CYP2D6 และ CYP2C19 อย่างแรง รวมทั้งมี active metabolite (norfluoxetine) ที่มีค่าครึ่งชีวิตยาวนาน 1-2 สัปดาห์ จึงต้องระวัง drug interactions',
+            'จ': 'Sertraline เป็น first-line SSRI สำหรับ depression ที่มีรายงานอาการข้างเคียงเด่นทางระบบทางเดินอาหาร เช่น คลื่นไส้และถ่ายเหลว จากการกระตุ้น 5-HT3 receptors บริเวณลำไส้'
+        }
+    },
+    '79': {
+        'distractors': {
+            'ข': 'Sertraline ออกฤทธิ์ยับยั้ง serotonin reuptake เด่นชัด เหมาะกับ depression ในผู้ป่วยโรคหัวใจ แต่มีอุบัติการณ์เกิด gastrointestinal side effects เช่น ท้องเสียและคลื่นไส้สูงกว่า SSRIs ตัวอื่น',
+            'ค': 'Escitalopram เป็น S-enantiomer ของ citalopram ที่มีความจำเพาะต่อ SERT สูงมาก แต่อาจเกิด dose-dependent QTc prolongation จึงมีข้อจำกัดเรื่องการปรับขนาดยาไม่เกิน 20 mg ต่อวัน',
+            'ง': 'Venlafaxine เป็นยากลุ่ม SNRI ที่ยับยั้งทั้ง serotonin และ norepinephrine reuptake ซึ่งในขนาดที่สูงขึ้นอาจส่งผลกระตุ้นระบบประสาทซิมพาเทติกทำให้ความดันโลหิตและชีพจรเพิ่มขึ้น',
+            'จ': 'Amitriptyline เป็น tricyclic antidepressant ที่มีฤทธิ์ปิดกั้น muscarinic, alpha-1 adrenergic และ H1 receptors ก่อให้เกิด anticholinergic side effects รุนแรง ง่วงซึม และเสี่ยงต่อ cardiac toxicity'
+        }
+    },
+    '81': {
+        'distractors': {
+            'ข': 'Diazepam เป็น long-acting BZD ที่แปรสภาพผ่านตับเป็น desmethyldiazepam ซึ่งมี half-life ยาวนาน อาจทำให้เกิด daytime grogginess และไม่สามารถรักษาพยาธิสภาพหลักของ MDD ได้',
+            'ค': 'Zolpidem เป็น GABA-A receptor positive allosteric modulator ที่จำเพาะต่อ alpha-1 subunit ช่วยให้ออกซิเดชันและนอนหลับเร็วขึ้น แต่ไม่มีผลต้านซึมเศร้าหรือกระตุ้นความอยากอาหาร',
+            'ง': 'Nicotine gum เป็นยาทดแทนนิโคตินสำหรับเลิกสูบบุหรี่โดยกระตุ้น nAChRs ไม่มีข้อบ่งใช้หรือบทบาทในการรักษาอาการขาดความกระตือรือร้นและน้ำหนักลดในผู้ป่วยซึมเศร้า',
+            'จ': 'Quetiapine แม้จะมีฤทธิ์ช่วยให้นอนหลับและเพิ่มความอยากอาหารจาก H1 และ 5-HT2C antagonism แต่ตามแนวทาง CANMAT/APA ยังไม่ใช่ first-line monotherapy สำหรับ unipolar depression ที่เริ่มเป็น'
+        }
+    },
+    '82': {
+        'distractors': {
+            'ข': 'Quetiapine เป็น second-generation antipsychotic ที่แปรรูปผ่านเอนไซม์ CYP3A4 เป็นหลัก ใช้รักษา bipolar disorder และ schizophrenia ไม่เกี่ยวข้องกับเทคนิคการใช้ nicotine gum',
+            'ค': 'Risperidone ออกฤทธิ์เป็น D2 และ 5-HT2A antagonist ใช้รักษาโรคจิตและภาวะก้าวร้าว มีความเสี่ยงต่อการเกิด hyperprolactinemia สูง ไม่เกี่ยวข้องกับกระบวนการเคี้ยวหมากฝรั่งนิโคติน',
+            'ง': 'Fluoxetine เป็น SSRI ที่ยับยั้ง CYP2D6 อย่างแรง ใช้รักษา major depressive disorder ไม่ใช่ผลิตภัณฑ์ทดแทนนิโคตินสำหรับช่วยเลิกบุหรี่',
+            'จ': 'Sertraline เป็นยาต้านซึมเศร้าที่ยับยั้ง serotonin reuptake transporter ไม่สามารถใช้แทนการบำบัดทดแทนนิโคตินหรืออธิบายเทคนิค chew and park ได้'
+        }
+    },
+    '83': {
+        'distractors': {
+            'ข': 'Sertraline เป็นยาต้านซึมเศร้ากลุ่ม SSRI ที่ขจัดผ่านตับเป็นหลัก การดื่มเครื่องดื่มที่เป็นกรดไม่ได้ส่งผลต่อชีวประสิทธิผลของ Sertraline ในลักษณะเดียวกับการดูดซึมของนิโคตินในช่องปาก',
+            'ค': 'Escitalopram ยับยั้ง SERT โดยตรง การเปลี่ยนแปลงของ pH ในทางเดินอาหารส่วนบนไม่มีผลกระทบต่อ pharmacological action หรือการดูดซึมของยานี้อย่างมีนัยสำคัญทางคลินิก',
+            'ง': 'Venlafaxine เป็นยากลุ่ม SNRI ที่ถูกเปลี่ยนเป็น O-desmethylvenlafaxine ผ่าน CYP2D6 โดยการดูดซึมเกิดขึ้นที่ลำไส้เล็กและไม่ขึ้นกับภาวะกรดด่างในช่องปาก',
+            'จ': 'Amitriptyline เป็นยากลุ่ม TCA ที่มีฤทธิ์ dry mouth จาก muscarinic receptor blockade แต่อาการปากแห้งนี้ไม่เกี่ยวข้องกับผลของกรดจากกาแฟที่ขัดขวางการดูดซึมสารนิโคติน'
+        }
+    },
+    '85': {
+        'distractors': {
+            'ข': 'Fluticasone propionate spray ร่วมกับ Loratadine เป็นการรักษาระยะยาวสำหรับ moderate-to-severe allergic rhinitis แต่ในกรณีเฉียบพลัน 5 วันที่ต้องบรรเทาอาการจามและน้ำมูกเพื่อให้หลับได้ Clemastine ช่วยลดอาการได้เร็วกว่า',
+            'ค': 'Theophylline เป็น bronchodilator ที่มี narrow therapeutic index และกระตุ้นระบบประสาทส่วนกลาง ทำให้นอนไม่หลับ หัวใจเต้นเร็ว จึงไม่มีข้อบ่งใช้ในโรคจมูกอักเสบภูมิแพ้ทั่วไป',
+            'ง': 'Salbutamol inhaler เป็น short-acting beta-2 agonist สำหรับหลอดลมหดเกร็งในโรคหืดเฉียบพลัน ไม่มีผลลดอาการคัดจมูก น้ำมูกไหล หรือการอักเสบของเยื่อบุโพรงจมูก',
+            'จ': 'Chloramphenicol เป็นยาปฏิชีวนะ broad-spectrum ที่เสี่ยงต่อการเกิด bone marrow suppression และ aplastic anemia จึงห้ามใช้รักษาภาวะ allergic rhinitis ทั่วไป'
+        }
+    },
+    '86': {
+        'distractors': {
+            'ข': 'Quetiapine เป็น atypical antipsychotic ที่ใช้เป็นเพียง adjunctive therapy ใน treatment-resistant depression และมี metabolic side effects เช่น น้ำหนักตัวเพิ่มและไขมันในเลือดสูง',
+            'ค': 'Risperidone มีข้อบ่งใช้หลักใน schizophrenia และ bipolar mania แต่ไม่ใช่ antidepressant monotherapy และอาจก่อให้เกิด dopamine blockade adverse effects ได้',
+            'ง': 'Fluoxetine เป็นยาต้านซึมเศร้าตัวเลือกแรกที่ดี แต่มี half-life ยาวมากและยับยั้ง CYP2D6 สูง จึงต้องใช้ความระมัดระวังในการเปลี่ยนยาข้ามกลุ่มหรือบริหารร่วมกับยาอื่น',
+            'จ': 'Sertraline เป็น first-line antidepressant ที่ปลอดภัยในผู้ป่วยโรคหลอดเลือดหัวใจ แต่อาจทำให้เกิด serotonin-related GI distress ในสัปดาห์แรกของการรักษา'
+        }
+    },
+    '87': {
+        'distractors': {
+            'ข': 'Sertraline เป็น first-line SSRI แต่การเริ่มต้นรักษา depression พร้อม insomnia บางครั้งอาจกระตุ้น serotonin receptor ชั่วคราวจนทำให้นอนไม่หลับมากขึ้นในช่วงแรก',
+            'ค': 'Escitalopram มีฤทธิ์จำเพาะต่อการยับยั้ง SERT สูง ไม่ช่วยรักษาอาการนอนไม่หลับเฉียบพลันทันทีเนื่องจากต้องใช้เวลา 2-4 สัปดาห์ในการออกฤทธิ์ต้านซึมเศร้า',
+            'ง': 'Venlafaxine มีฤทธิ์กระตุ้น adrenergic pathway ร่วมด้วย จึงอาจทำให้อาการ insomnia หรือความวิตกกังวลของผู้ป่วยแย่ลงในระยะเริ่มต้นของการให้ยา',
+            'จ': 'Amitriptyline มี sedative effect สูงจากการปิดกั้น H1 receptor แต่มี anticholinergic side effects และ lethal in overdose จึงไม่แนะนำเป็น first-line agent ในปัจจุบัน'
+        }
+    },
+    '89': {
+        'distractors': {
+            'ข': 'Diazepam เป็นวัตถุออกฤทธิ์ต่อจิตและประสาทประเภท 2 ตามกฎหมายไทย ซึ่งมีข้อจำกัดอย่างเข้มงวดในการจ่ายยาในร้านยา และต้องระวังการเสพติดและการกดการหายใจ',
+            'ค': 'Zolpidem เป็น non-benzodiazepine hypnotic ที่จัดเป็นวัตถุออกฤทธิ์ต่อจิตและประสาทประเภท 2 เช่นกัน จึงไม่สามารถจำหน่ายได้ในร้านยาทั่วไปโดยไม่มีใบสั่งแพทย์เฉพาะ',
+            'ง': 'Nicotine gum เป็นยาเลิกบุหรี่ที่สามารถจำหน่ายในร้านยาได้ แต่ไม่มีฤทธิ์เป็น anxiolytic หรือ sedative ในการบรรเทาความวิตกกังวลหรือต้านอาการชัก',
+            'จ': 'Quetiapine เป็นยาอันตรายกลุ่ม antipsychotic ที่ต้องสั่งจ่ายและติดตามความเสี่ยงด้าน metabolic syndromes และ QTc prolongation อย่างใกล้ชิดโดยแพทย์เฉพาะทาง'
+        }
+    },
+    '90': {
+        'distractors': {
+            'ข': 'Quetiapine มีข้อบ่งใช้ในการรักษาจิตเภทและภาวะอารมณ์สองขั้ว แต่ไม่มีข้อบ่งใช้เป็น muscle relaxant หรือ anticonvulsant ฉุกเฉินเหมือน Diazepam',
+            'ค': 'Risperidone ออกฤทธิ์ปิดกั้นตัวรับโดปามีน ไม่สามารถนำมาใช้แทน Diazepam สำหรับการระงับภาวะชักต่อเนื่องหรืออาการถอนแอลกอฮอล์ได้',
+            'ง': 'Fluoxetine เป็น SSRI ใช้รักษาโรคซึมเศร้าและย้ำคิดย้ำทำ ไม่สามารถออกฤทธิ์บรรเทาอาการตื่นตระหนกแบบเฉียบพลันเนื่องจาก onset of action ช้า',
+            'จ': 'Sertraline ใช้รักษาอาการซึมเศร้าและโรควิตกกังวลเรื้อรัง ไม่มีผลคลายกล้ามเนื้อลายหรือระงับอาการชักเฉียบพลันผ่าน GABA-A receptor'
+        }
+    },
+    '91': {
+        'distractors': {
+            'ข': 'Sertraline เป็น first-line antidepressant แต่มีผลข้างเคียงเด่นเรื่องอุจจาระเหลวและปั่นป่วนทางเดินอาหาร ซึ่งอาจรบกวนสมาธิในการสอบของนักศึกษาได้',
+            'ค': 'Escitalopram ให้ผลการรักษาดีมากในโรควิตกกังวลและซึมเศร้า แต่อาจพบอาการ somnolence หรือ lethargy ได้ในบางรายทำให้ประสิทธิภาพในการอ่านหนังสือลดลง',
+            'ง': 'Venlafaxine เพิ่มระดับ norepinephrine ซึ่งอาจทำให้เกิดอาการใจสั่น ความดันโลหิตสูงขึ้น และกระวนกระวายใจมากกว่า SSRIs ในระยะเริ่มต้น',
+            'จ': 'Amitriptyline ทำให้เกิดอาการง่วงซึมอย่างรุนแรง มึนงง สมาธิสั้นลง และความจำบกพร่องจาก anticholinergic effects ซึ่งส่งผลเสียอย่างยิ่งต่อการสอบ'
+        }
+    },
+    '93': {
+        'distractors': {
+            'ข': 'Diazepam บรรเทาอาการกังวลได้เร็วแต่ไม่มีคุณสมบัติต้านอาการซึมเศร้า การใช้ต่อเนื่องนานอาจทำให้เกิดภาวะพึ่งพายาและกดระบบประสาทส่วนกลางในระยะยาว',
+            'ค': 'Zolpidem ออกฤทธิ์จำเพาะต่อ BZ1 subunit เพื่อช่วยให้นอนหลับเท่านั้น ไม่สามารถปรับสมดุลของ monoamine neurotransmitters เพื่อรักษาโรคซึมเศร้าได้',
+            'ง': 'Nicotine gum ใช้สำหรับบรรเทาความอยากบุหรี่ในการบำบัดเลิกบุหรี่ ไม่มีผลต่อการรักษาภาวะอารมณ์ซึมเศร้าหรือความผิดปกติทางอารมณ์',
+            'จ': 'Quetiapine แม้จะได้รับการรับรองเป็น adjunct ใน depression แต่การใช้ monotherapy มีความเสี่ยงต่อ metabolic disturbances และ extrapyramidal adverse effects'
+        }
+    },
+    '94': {
+        'distractors': {
+            'ข': 'Quetiapine มีฤทธิ์กดประสาทส่วนกลางผ่าน H1 receptor blockade หากให้ในผู้ป่วยที่ได้รับ BZD เกินขนาดจะยิ่งเพิ่มความเสี่ยงต่อการหมดสติและกดการหายใจ',
+            'ค': 'Risperidone เป็น antidopaminergic agent ไม่มีคุณสมบัติเป็น GABA-A receptor antagonist จึงไม่สามารถถอนพิษหรือต้านฤทธิ์ของ Benzodiazepines ได้',
+            'ง': 'Fluoxetine เป็นยาต้านซึมเศร้าที่ยับยั้ง SERT ไม่มีผลยับยั้งการจับของ BZD ที่ตัวรับ จึงไม่สามารถแก้ไขภาวะเป็นพิษเฉียบพลันจาก BZD ได้',
+            'จ': 'Sertraline เป็น SSRI ที่ออกฤทธิ์ทางเภสัชวิทยาช้า และไม่มีกลไกในการแก่งแย่งการจับกับ benzodiazepine binding site บน GABA-A complex'
+        }
+    },
+    '95': {
+        'distractors': {
+            'ข': 'Sertraline ออกฤทธิ์ยับยั้ง serotonin transporter ไม่ได้จับกับ GABA-A receptor จึงไม่สามารถยับยั้งหรือแก่งแย่งฤทธิ์ของ benzodiazepine antagonists ได้',
+            'ค': 'Escitalopram ปรับระดับ 5-HT ที่ synaptic cleft แต่ไม่มีผลต่อ chloride channel gating ที่ควบคุมโดยตัวรับ benzodiazepines ในระบบประสาทส่วนกลาง',
+            'ง': 'Venlafaxine มีกลไกคู่ยับยั้ง SERT และ NET ไม่เกี่ยวข้องกับการจับที่ BZD recognition site จึงไม่แสดงคุณสมบัติเป็นตัวต้านพิษของยานอนหลับกลุ่ม BZD',
+            'จ': 'Amitriptyline เป็น TCA ที่มี anticholinergic และ cardiac sodium channel blocking effects ซึ่งอาจซ้ำเติมความเป็นพิษต่อระบบหัวใจหากใช้ผิดวิธี'
+        }
+    },
+    '97': {
+        'distractors': {
+            'ข': 'Diazepam ไม่มีข้อบ่งใช้สำหรับการช่วยเลิกบุหรี่ และอาจทำให้เกิด fluid retention หรือกดระบบประสาทในผู้ป่วย heart failure ได้',
+            'ค': 'Zolpidem เป็นยานอนหลับระยะสั้น ไม่ได้ช่วยระงับ nicotine craving หรือ withdrawal symptoms ในกระบวนการบำบัดผู้ป่วยติดบุหรี่',
+            'ง': 'Nicotine gum ควรใช้อย่างระมัดระวังเป็นพิเศษในผู้ป่วย heart failure ที่ unstable เนื่องจากกระตุ้นระบบ sympathetic ทำให้หัวใจเต้นเร็วและความดันโลหิตสูงขึ้น',
+            'จ': 'Quetiapine มีผลข้างเคียงทำให้เกิด orthostatic hypotension จาก alpha-1 blockade และเพิ่ม prolonged QTc ซึ่งเป็นอันตรายในผู้ป่วยหัวใจล้มเหลว'
+        }
+    },
+    '98': {
+        'distractors': {
+            'ข': 'Quetiapine ไม่ได้เป็นยาที่ได้รับการรับรองสำหรับ smoking cessation และการใช้โดยไม่มีข้อบ่งใช้ทางจิตเวชจะเพิ่มความเสี่ยงของ dyslipidemia และเบาหวาน',
+            'ค': 'Risperidone ไม่มีกลไกช่วยลดนิโคตินวิธดรอว์วัล และการปิดกั้นตัวรับโดปามีนอาจเพิ่มความเสี่ยงต่อ metabolic syndrome และการเคลื่อนไหวผิดปกติ',
+            'ง': 'Fluoxetine ไม่ใช่ยาช่วยเลิกบุหรี่มาตรฐานตามแนวทางเวชปฏิบัติ การศึกษาพบว่าไม่มีประสิทธิภาพเหนือกว่า placebo ในการเลิกบุหรี่ระยะยาว',
+            'จ': 'Sertraline แม้จะช่วยรักษา depression แต่ไม่มีประสิทธิผลในการเพิ่มอัตราการเลิกบุหรี่ (cessation rate) ในผู้ที่ไม่มีโรควิตกกังวลหรือซึมเศร้าร่วมด้วย'
+        }
+    },
+    '99': {
+        'distractors': {
+            'ข': 'Sertraline เป็นยาอันตรายกลุ่ม SSRI ที่ต้องมีการตรวจวินิจฉัยและสั่งใช้โดยแพทย์ ไม่ใช่ยาช่วยเลิกบุหรี่ที่สามารถแนะนำให้ซื้อไปใช้เองได้ในร้านยา',
+            'ค': 'Escitalopram จัดเป็นยาควบคุมพิเศษหรือยาอันตรายตามกฎหมาย มีข้อบ่งใช้เฉพาะทางจิตเวช ไม่สามารถซื้อใช้เพื่อลดความอยากสูบบุหรี่ได้',
+            'ง': 'Venlafaxine เป็นยากลุ่ม SNRI ที่อาจเพิ่มความดันโลหิตและต้องค่อยๆ ปรับขนาดยา จึงไม่เหมาะสมและไม่มีข้อบ่งใช้สำหรับการซื้อไปเลิกบุหรี่',
+            'จ': 'Amitriptyline มีความเสี่ยงต่อการเกิดพิษต่อหัวใจและผลข้างเคียง anticholinergic สูงมาก จึงห้ามแนะนำให้ซื้อไปรับประทานเองเพื่อเลิกบุหรี่อย่างเด็ดขาด'
+        }
+    },
+    '101': {
+        'distractors': {
+            'ข': 'Diazepam มีจำหน่ายในรูปแบบยาเม็ด ยาฉีด และยาสวนทวาร แต่ไม่มีการผลิตเป็น transdermal delivery system (TDDS) สำหรับการรักษาทั่วไป',
+            'ค': 'Zolpidem มีรูปแบบยาเม็ดรับประทาน ยาพ่นใต้ลิ้น และยาเม็ดอมใต้ลิ้น เพื่อให้ออกฤทธิ์เร็ว ไม่มีรูปแบบ transdermal therapeutic system',
+            'ง': 'Nicotine gum เป็น dosage form แบบ medicated chewing gum สำหรับการดูดซึมผ่าน buccal mucosa ไม่จัดเป็น transdermal delivery system',
+            'จ': 'Quetiapine มีรูปแบบยาเม็ด immediate-release และ extended-release สำหรับการรับประทานทางปากเท่านั้น ไม่มีการนำส่งยาผ่านผิวหนัง'
+        }
+    },
+    '102': {
+        'distractors': {
+            'ข': 'Quetiapine มีผลข้างเคียงเด่นคือความง่วงซึมจากการกด H1 receptor จึงนิยมบริหารยาก่อนนอน (HS) ไม่ควรรับประทานตอนเช้าเหมือน Fluoxetine',
+            'ค': 'Risperidone เป็น atypical antipsychotic ที่มักให้วันละ 1-2 ครั้งเพื่อควบคุมอาการทางจิตเวช ไม่มียุทธวิธีการบริหารแบบกระตุ้นตื่นตัวในตอนเช้าเฉพาะ',
+            'ง': 'Fluoxetine มี activating effect จาก 5-HT2C antagonism ซึ่งอาจทำให้นอนไม่หลับ จึงแนะนำให้รับประทานตอนเช้าเพื่อลดผลรบกวนการนอนหลับ',
+            'จ': 'Sertraline แม้จะสามารถรับประทานตอนเช้าหรือเย็นได้ แต่ไม่มีฤทธิ์ activating effect เด่นชัดเท่า Fluoxetine และมักทำให้ถ่ายเหลวเป็นหลัก'
+        }
+    },
+    '103': {
+        'distractors': {
+            'ก': 'Aromatic hydroxylation เป็นวิถีเมแทบอลิซึมรองของ Fluoxetine แต่ไม่ใช่ปฏิกิริยาหลักในการสร้าง active metabolite สำคัญอย่าง Norfluoxetine',
+            'ค': 'N-demethylation (N-dealkylation) ผ่าน CYP2D6 และ CYP2C9 เป็นวิถีเมแทบอลิซึมหลักที่เปลี่ยน Fluoxetine ไปเป็น Norfluoxetine ที่ยังคงออกฤทธิ์ทางเภสัชวิทยา',
+            'ง': 'Oxidative deamination เป็นปฏิกิริยาที่พบได้น้อยมากในยากลุ่ม aryloxypropylamine และไม่ใช่กระบวนการขจัดยาหลักของ Fluoxetine ในร่างกายมนุษย์',
+            'จ': 'ข้อนี้ไม่ใช่กระบวนการทางชีวเคมีที่ถูกต้องในการขจัดยา Fluoxetine เนื่องจากปฏิกิริยาหลักคือการเกิด N-demethylation ในระยะ Phase I metabolism'
+        }
+    },
+    '105': {
+        'distractors': {
+            'ข': 'Diazepam มีระยะเวลาการออกฤทธิ์ยาวนานและเกิด active metabolites สะสม จึงทำให้เกิดอาการง่วงซึมตกค้างในวันรุ่งขึ้น (hangover effect) ไม่เหมาะกับ acute sleep maintenance',
+            'ค': 'Zolpidem ในรูปแบบ standard immediate-release ช่วยลด sleep onset latency ได้ดีมาก แต่อาจไม่ครอบคลุมการตื่นกลางดึกเนื่องจากมี short half-life เพียง 2-3 ชั่วโมง',
+            'ง': 'Nicotine gum เป็นสารกระตุ้นระบบประสาทส่วนกลางผ่าน nicotinic receptor ซึ่งกระตุ้นให้ร่างกายตื่นตัว จึงทำให้เกิดภาวะนอนไม่หลับอย่างรุนแรงหากใช้ก่อนนอน',
+            'จ': 'Quetiapine แม้จะมีคุณสมบัติ sedating ผ่าน histamine H1 blockade แต่ไม่ได้รับอนุมัติให้ใช้เป็นยานอนหลับเดี่ยวๆ ใน acute insomnia เนื่องจากเสี่ยงต่อ metabolic side effects'
+        }
+    },
+    '106': {
+        'distractors': {
+            'ข': 'Quetiapine ไม่แนะนำให้ใช้เป็น first-line hypnotic ในผู้ป่วยที่ไม่มีโรคร่วมทางจิตเวช เนื่องจากมีความเสี่ยงต่อภาวะน้ำหนักตัวเกินและ metabolic derangements',
+            'ค': 'Risperidone ออกฤทธิ์ปิดกั้นตัวรับ D2 ซึ่งไม่มีข้อบ่งใช้ในการรักษาอาการนอนไม่หลับเฉียบพลันและอาจเพิ่มความเสี่ยงต่อการเกิด akathisia หรือ restlessness ในตอนกลางคืน',
+            'ง': 'Fluoxetine มีฤทธิ์กระตุ้นความตื่นตัว (activating) ผ่าน 5-HT2C antagonism ซึ่งอาจทำให้นอนหลับยากขึ้นและตื่นบ่อยในระยะเริ่มต้นของการรักษา',
+            'จ': 'Sertraline ยับยั้ง SERT เพิ่มระดับ 5-HT ซึ่งอาจรบกวนสถาปัตยกรรมการนอนหลับ (sleep architecture) โดยลด slow wave sleep และ REM sleep ในช่วงแรก'
+        }
+    },
+    '107': {
+        'distractors': {
+            'ข': 'Sertraline สามารถบรรเทาอาการซึมเศร้าที่นำไปสู่อาการนอนไม่หลับได้ แต่ไม่มีฤทธิ์ระงับประสาทโดยตรงที่จะช่วย sleep maintenance ในระยะเฉียบพลัน',
+            'ค': 'Escitalopram ปรับสมดุล serotonin ได้ดี แต่ไม่ได้แก้ปัญหา chronic insomnia ได้ทันทีเนื่องจากขาดฤทธิ์ sedating ผ่านตัวรับฮิสตามีนหรือตัวรับกาบา',
+            'ง': 'Venlafaxine ยับยั้งทั้ง 5-HT และ NE reuptake ซึ่งระดับ NE ที่เพิ่มขึ้นในระบบประสาทอาจกระตุ้นให้เกิดภาวะตื่นตัวและรบกวนการนอนหลับได้มากขึ้น',
+            'จ': 'Amitriptyline แม้จะมี sedative effect สูงจากการปิดกั้น H1 receptor แต่การใช้ระยะยาวใน chronic insomnia เสี่ยงต่อ daytime cognitive impairment และ anticholinergic toxicity'
+        }
+    },
+    '109': {
+        'distractors': {
+            'ข': 'Diazepam เป็นโครงสร้าง 1,4-benzodiazepine มาตรฐานที่มีหมู่คาร์บอนิล (C=O) ที่ตำแหน่งที่ 2 ซึ่งจำเป็นต่อการคงความแรงในการจับกับ BZD receptor',
+            'ค': 'Zolpidem เป็นอนุพันธ์กลุ่ม imidazopyridine ซึ่งมีโครงสร้างทางเคมีที่แตกต่างจาก benzodiazepine core ring อย่างสิ้นเชิง',
+            'ง': 'Nicotine gum เป็นผลิตภัณฑ์สารอัลคาลอยด์ประเภท pyridine-pyrrolidine ไม่มีความเกี่ยวข้องกับโครงสร้าง heterocyclic ring ของ benzodiazepines',
+            'จ': 'Quetiapine เป็นอนุพันธ์ dibenzothiazepine ที่มี side chain จับกับตัวรับชนิดอื่นๆ ไม่จัดอยู่ในกลุ่มโครงสร้าง benzodiazepines'
+        }
+    },
+    '110': {
+        'distractors': {
+            'ก': 'ผู้ป่วยรายนี้ไม่ได้มีเฉพาะปัญหาหลับยาก แต่ยังมีอาการตื่นเร็วในตอนเช้าแล้วหลับต่อไม่ได้ร่วมด้วย จึงไม่ใช่ difficulty falling asleep เพียงอย่างเดียว',
+            'ค': 'อาการของผู้ป่วยเพิ่งเกิดขึ้นต่อเนื่องเป็นเวลา 2 สัปดาห์หลังการสูญเสีย ซึ่งยังไม่เกิน 1-3 เดือน จึงจัดเป็นภาวะ acute หรือ short term insomnia ไม่ใช่ long term',
+            'ง': 'ระยะเวลาการเกิดอาการ 2 สัปดาห์จัดเป็น short term insomnia ตามเกณฑ์การวินิจฉัยสากล จึงไม่ถูกต้องที่จะระบุว่าเป็น chronic หรือ long term insomnia',
+            'จ': 'ผู้ป่วยรายนี้มีปัญหาทั้งระยะเวลาเริ่มต้นในการนอนหลับ (sleep onset latency นาน) ร่วมกับการตื่นเช้าผิดปกติ และระยะเวลายังไม่เข้าเกณฑ์ long term insomnia'
+        }
+    },
+    '111': {
+        'distractors': {
+            'ก': 'การเสียชีวิตของบิดาไม่ได้มีความสัมพันธ์ทางเวลา (temporal relationship) กับอาการนอนไม่หลับที่เพิ่งเกิดขึ้นใหม่อย่างชัดเจนเท่ากับเหตุการณ์ของภรรยา',
+            'ข': 'อาการป่วยของมารดาอาจเป็นความเครียดสะสม แต่ช่วงเวลาของการนอนไม่หลับ 2 สัปดาห์นี้สอดคล้องกับการสูญเสียคู่สมรสซึ่งเป็น major life stressor สูงสุด',
+            'ง': 'ยาลดความดันโลหิตที่ใช้อยู่เดิมไม่มีประวัติการปรับเปลี่ยนขนาดยาหรือมีผลข้างเคียงโดยตรงต่อวงจรการนอนหลับจนทำให้เกิด acute insomnia ทันที',
+            'จ': 'ยารักษาโรคต่อมลูกหมากโตส่วนใหญ่ เช่น alpha-1 blockers ไม่ได้รบกวนสถาปัตยกรรมการนอนหลับ และการรับประทานสม่ำเสมอไม่ได้เป็นตัวกระตุ้นการนอนไม่หลับเฉียบพลัน'
+        }
+    },
+    '112': {
+        'distractors': {
+            'ข': 'Lorazepam มี onset of action ปานกลาง จึงอาจช่วยลดเวลาก่อนนอนหลับได้ช้ากว่า Diazepam และมีค่าครึ่งชีวิตปานกลางซึ่งอาจไม่ครอบคลุมการตื่นเช้าผิดปกติได้ดีเท่า',
+            'ค': 'Alprazolam เป็นยากลุ่ม triazolobenzodiazepine ที่เน้นใช้สำหรับ panic disorder แต่มี half-life สั้นถึงปานกลางและมีความเสี่ยงต่อ rebound anxiety สูงเมื่อหมดฤทธิ์',
+            'ง': 'Triazolam เป็น short-acting benzodiazepine ที่มี onset เร็วมาก เหมาะกับ sleep onset latency แต่มีระยะเวลาออกฤทธิ์สั้นเกินไป ไม่ช่วยปัญหา early morning awakening',
+            'จ': 'Clonazepam แม้จะมีฤทธิ์ยาวนานแต่มี slow-to-intermediate onset of action ทำให้ไม่ตอบสนองต่อปัญหาการเริ่มต้นนอนหลับยาก (difficulty falling asleep) ได้เร็วทันที'
+        }
+    },
+    '113': {
+        'distractors': {
+            'ก': 'Bupropion ออกฤทธิ์ยับยั้ง norepinephrine และ dopamine reuptake (NDRI) ซึ่งมี activating effect เด่นชัด ทำให้นอนไม่หลับและอาจกระตุ้นความกระวนกระวายได้',
+            'ค': 'Amitriptyline แม้จะช่วยให้นอนหลับได้ดีแต่มี anticholinergic side effects รุนแรง เช่น ท้องผูก ปากแห้ง ปัสสาวะคั่ง และมีความเสี่ยง cardiotoxicity สูงในขนาดเกิน',
+            'ง': 'Venlafaxine เป็นยากลุ่ม SNRI ที่เพิ่มระดับนอร์เอพิเนฟริน จึงมีแนวโน้มรบกวนการนอนหลับและเพิ่มความดันโลหิต ไม่เหมาะเป็นยาตัวเลือกแรกสำหรับ insomnia เด่น',
+            'จ': 'Zolpidem เป็น non-benzodiazepine hypnotic ที่ช่วยเรื่องการนอนหลับระยะสั้นเท่านั้น แต่ไม่มีฤทธิ์ต้านอาการซึมเศร้า (antidepressant property) ตามข้อบ่งใช้'
+        }
+    }
+}
+
+target_path = 'C:/Users/thana/Desktop/PLE-CC/PLE CC Quiz/distractors_psych_part3.json'
+with open(target_path, 'w', encoding='utf-8') as f:
+    json.dump(distractors_data, f, ensure_ascii=False, indent=2)

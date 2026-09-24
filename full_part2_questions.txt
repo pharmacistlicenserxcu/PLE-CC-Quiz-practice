@@ -1,0 +1,1096 @@
+=== KEY: 35 | ANS: 1 (ก) ===
+Q: ภายหลังแพทย์มีการจ่ายยา Trazodone ให้ โดยมีข้อระวังเรื่องหน้ามืดเวลาขยับท่าทาง ถามว่าอาการนี้เกิด จากการยับยั้ง receptor ในข้อใด ผู้ป่วยชายอายุ 35 ปี ส่วนสูง 165 ซม. น้ำหนัก – kg มาด้วยอาการนอนไม่หลับ เนื่องจากได้เลื่อน ตำแหน่งจึงทำให้เครียดและกังวลมากกับอาการนอนไม่หลับ ส่งผลต่อการใช้ชีวิตโดยหลับระหว่างทำงานและหลับ ตอนติดไฟแดง ต้องดื่มกาแฟ 3-4 แก้ว ภรรยาแจ้งว่าตอนกลางคืนหลับยาก พลิกตัวไปมานานกว่าจะหลับได้ ต้อง ดื่มแอลกอฮอล์ 1 แก้วก่อนนอน ถ้าหลับได้แล้วจะหลับสนิท ไม่มีละเมอ
+ก: Sertraline 50 mg OD
+ข: Escitalopram 10 mg OD
+ค: Venlafaxine 75 mg OD
+ง: Amitriptyline 10 mg HS
+จ: Bromocriptine
+Note: PLE_CC1_2567_Set1_Key ข้อ 22
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Sertraline 50 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+• ข้อ ค. (Escitalopram 10 mg OD): เป็น highly selective SSRI มี drug interactions ต่ำ แต่มีคำเตือนเรื่อง dose-dependent QT prolongation (ขนาดยาสูงสุด 20 mg/day, หรือ 10 mg/day ในผู้สูงอายุ)
+• ข้อ ง. (Venlafaxine 75 mg OD): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Amitriptyline 10 mg HS): เป็น Tricyclic antidepressant (TCA) มี anticholinergic ADRs สูง, antihistaminic (ง่วงซึม น้ำหนักขึ้น), alpha-1 blockade (orthostatic hypotension) และเสี่ยงต่อ fatal cardiotoxicity เมื่อ overdose
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Long Half-life SSRI: มี active metabolite คือ norfluoxetine ที่มี half-life ยาวนาน (~7-15 วัน) ต้องเว้นระยะอย่างน้อย 5 สัปดาห์ก่อนเปลี่ยนไปใช้ MAOI เพื่อเลี่ยง Serotonin syndrome
+• Activating Property: มีฤทธิ์ activating effect อาจทำให้นอนไม่หลับ แนะนำรับประทานตอนเช้า
+============================================================
+
+=== KEY: 37 | ANS: 1 (ก) ===
+Q: ให้โครงสร้างNicotine gum มาถามว่าควรตรวจหาด้วยtest อะไร. ตัวเลือก
+ก: Psychiatric & Addiction
+ข: Diazepam 5 mg HS
+ค: Zolpidem 10 mg HS
+ง: Nicotine gum 2 mg PRN
+จ: Quetiapine 25 mg HS
+Note: PLE-CC1 ปี 2566 Day 2 ข้อ 14
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Psychiatric & Addiction
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psychiatric & Addiction การเลือก Psychiatric & Addiction เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Tobacco dependence โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Diazepam 5 mg HS): เป็น long-acting Benzodiazepine มี active metabolites (nordiazepam) สะสมในผู้สูงอายุ ทำให้ง่วงซึม หกล้ม เสี่ยง fracture
+• ข้อ ค. (Zolpidem 10 mg HS): เป็น non-benzodiazepine Z-drug จับจำเพาะกับ BZ1 (omega-1) receptor ช่วยเหนี่ยวนำการนอนหลับ แต่ต้องระวัง parasomnia (sleep-walking, sleep-eating)
+• ข้อ ง. (Nicotine gum 2 mg PRN): เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+• ข้อ จ. (Quetiapine 25 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Tobacco dependence โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 39 | ANS: 1 (ก) ===
+Q: อาการเศร้า หดหู่ (Depression)
+ก: Psychiatric & Addiction
+ข: Sertraline 50 mg OD
+ค: Escitalopram 10 mg OD
+ง: Venlafaxine 75 mg OD
+จ: Amitriptyline 10 mg HS
+Note: PLE_CC1_2564_All_Key ข้อ 1
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Psychiatric & Addiction
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psychiatric & Addiction การเลือก Psychiatric & Addiction เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+• ข้อ ค. (Escitalopram 10 mg OD): เป็น highly selective SSRI มี drug interactions ต่ำ แต่มีคำเตือนเรื่อง dose-dependent QT prolongation (ขนาดยาสูงสุด 20 mg/day, หรือ 10 mg/day ในผู้สูงอายุ)
+• ข้อ ง. (Venlafaxine 75 mg OD): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Amitriptyline 10 mg HS): เป็น Tricyclic antidepressant (TCA) มี anticholinergic ADRs สูง, antihistaminic (ง่วงซึม น้ำหนักขึ้น), alpha-1 blockade (orthostatic hypotension) และเสี่ยงต่อ fatal cardiotoxicity เมื่อ overdose
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Major Depressive Disorder Timing: Antidepressants (SSRIs) ใช้เวลาออกฤทธิ์ทางคลินิกเต็มที่ 2-4 สัปดาห์ ต้องแนะนำผู้ป่วยไม่ให้หยุดยาเองและเฝ้าระวัง suicidality ในช่วงแรก
+• Schizophrenia & EPS: First-generation antipsychotics (Haloperidol) เสี่ยงต่อ Extrapyramidal Symptoms (EPS/Dystonia/Akathisia) แก้ไขด้วย Diphenhydramine หรือ Trihexyphenidyl
+• Bipolar Lithium Monitoring: Narrow therapeutic range (0.6-1.2 mEq/L) อาการพิษ: tremor รุนแรง, ataxia, diarrhea; ระวัง DDI กับ NSAIDs, ACEI, Thiazides ที่ลดการขับ Lithium
+============================================================
+
+=== KEY: 40 | ANS: 1 (ก) ===
+Q: Nicotine จับกับ receptor ให้รูปมา ถามว่าพันธะใดแข็งแรงน้อยที่สุด
+ก: Psychiatric & Addiction
+ข: Covalent bond
+ค: H-bond
+ง: Alprazolam 0.5 mg HS
+จ: Diazepam 5 mg HS
+Note: PLE_CC1_2564_All_Key ข้อ 103
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Psychiatric & Addiction
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psychiatric & Addiction โจทย์ถามพันธะที่แข็งแรงน้อยสุดเลยคิดว่าเป็น H-bond  https://cen.acs.org/articles/87/i10/Nicotines-Binding-Mystery-Solved.html ..............................................................................................................................................................................................................
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Covalent bond): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (H-bond): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Alprazolam 0.5 mg HS): เป็น intermediate-acting Benzodiazepine ออกฤทธิ์เร็ว เหมาะสำหรับ panic attack แต่มีโอกาสเกิด dependence และ rebound anxiety สูงเมื่อหยุดยา
+• ข้อ จ. (Diazepam 5 mg HS): เป็น long-acting Benzodiazepine มี active metabolites (nordiazepam) สะสมในผู้สูงอายุ ทำให้ง่วงซึม หกล้ม เสี่ยง fracture
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Major Depressive Disorder Timing: Antidepressants (SSRIs) ใช้เวลาออกฤทธิ์ทางคลินิกเต็มที่ 2-4 สัปดาห์ ต้องแนะนำผู้ป่วยไม่ให้หยุดยาเองและเฝ้าระวัง suicidality ในช่วงแรก
+• Schizophrenia & EPS: First-generation antipsychotics (Haloperidol) เสี่ยงต่อ Extrapyramidal Symptoms (EPS/Dystonia/Akathisia) แก้ไขด้วย Diphenhydramine หรือ Trihexyphenidyl
+• Bipolar Lithium Monitoring: Narrow therapeutic range (0.6-1.2 mEq/L) อาการพิษ: tremor รุนแรง, ataxia, diarrhea; ระวัง DDI กับ NSAIDs, ACEI, Thiazides ที่ลดการขับ Lithium
+============================================================
+
+=== KEY: 41 | ANS: 1 (ก) ===
+Q: ข้อแนะนำในข้อใดผิด สำหรับผู้ป่วยที่ใฬ้ Nortriptyline ในการเลิกบุหรี่ (ฬุดA)
+ก: Psychiatric & Addiction
+ข: ให้เริ่มยาเป็นมื้อแรกขอษวันที่เริ่มเลิกบุหรี่
+ค: ยาทำให้ปากแห้ษคอแห้ษแนะนำให้สิบน้ำบ่อยๆ
+ง: ยาทำให้ษ่วษไม่แนะนำให้ขับขี่ยานพาหนะ ษ. ยาทำให้ท้อษอืด ให้ดื่มน้ำบ่อยๆ กับรับประทานอาหารที่มีกากใยสูษ
+จ: Quetiapine 25 mg HS
+Note: PLE_CC1_2563_Q ข้อ 75
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Psychiatric & Addiction
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psychiatric & Addiction การเลือก Psychiatric & Addiction เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Tobacco dependence โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ให้เริ่มยาเป็นมื้อแรกขอษวันที่เริ่มเลิกบุหรี่): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ยาทำให้ปากแห้ษคอแห้ษแนะนำให้สิบน้ำบ่อยๆ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ยาทำให้ษ่วษไม่แนะนำให้ขับขี่ยานพาหนะ ษ. ยาทำให้ท้อษอืด ให้ดื่มน้ำบ่อยๆ กับรับประทานอาหารที่มีกากใยสูษ): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Quetiapine 25 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Tobacco dependence โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 42 | ANS: 1 (ก) ===
+Q: ระดับ nicotine ในเลือดแบบใดเป็นขอษ nicotine gum 2 mg 1 ฬิ้น และ nicotine patch 21 mg 1 แผ่น ตามลำดับ
+ก: Psychiatric & Addiction
+ข: A และ B
+ค: B และ C
+ง: C และ D ษ. D และ A ส. B และ D หอบหืด สถานการณ์ คนไข้ได้รับยา Salmeterol + Fluticasone furoate (25/125) 1 x 2 Salbutamol Prn Montelukast
+จ: Sertraline 50 mg OD
+Note: PLE_CC1_2563_Q ข้อ 76
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Psychiatric & Addiction
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Psychiatric & Addiction การเลือก Psychiatric & Addiction เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Tobacco dependence โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (A และ B): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (B และ C): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (C และ D ษ. D และ A ส. B และ D หอบหืด สถานการณ์ คนไข้ได้รับยา Salmeterol + Fluticasone furoate (25/125) 1 x 2 Salbutamol Prn Montelukast): เป็น Short-acting beta-2 agonist (SABA) ออกฤทธิ์เร็วเป็น bronchodilator สำหรับ acute relief แต่ CPG (GINA) ปัจจุบันไม่แนะนำให้ใช้เดี่ยวๆ โดยไม่มี ICS เพราะเพิ่มความเสี่ยง severe exacerbation
+• ข้อ จ. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Glaucoma Prostaglandin Analogues: Latanoprost หยอดตาวันละ 1 ครั้งก่อนนอน ผลข้างเคียง: ม่านตาสีคล้ำขึ้น ขนตายาวหนาขึ้น และตาแดง
+• Beta-blocker Eye Drops Caution: Timolol eye drops ถูกดูดซึมเข้าระบบ systemic ได้ ต้องกดหัวตา (Nasolacrimal occlusion) 1-2 นาที และระวังในผู้ป่วย Asthma, Severe COPD, Bradycardia
+• Bacterial Conjunctivitis Treatment: หยอดตาปฏิชีวนะ Broad-spectrum เช่น Fluoroquinolones (Moxifloxacin), Chloramphenicol, หรือ Polymyxin B/Neomycin
+============================================================
+
+=== KEY: 43 | ANS: 1 (ก) ===
+Q: ยารายการที่ 3 พบ diazepam มีความผิดหรือไม่
+ก: ไม่ผิด เพราะขายยาอันตราย
+ข: ไม่ผิด เพราะขายยาควบคุมพิเศษ
+ค: ผิด เพราะขายยา วจ 2 โดยไม่มีใบอนุญาต
+ง: ผิด เพราะขายยา วจ 3 โดยไม่มีใบอนุญาต
+จ: ผิด เพราะขายยา วจ 4 โดยไม่มีใบอนุญาต
+Note: ข้อ 83 (PLE_CC1_2562_Key.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. ไม่ผิด เพราะขายยาอันตราย
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ไม่ผิด เพราะขายยาอันตราย การเลือก ไม่ผิด เพราะขายยาอันตราย เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก ต้องส่งมอบโดยเภสัชกรชั้นหนึ่ง และต้องมีข้อความ "ยาอันตราย" ในกรอบสีแดงบนฉลาก ไม่จำเป็นต้องมีใบสั่งแพทย์ แต่ห้ามวางในจุดที่ผู้บริโภคหยิบเองได้
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ไม่ผิด เพราะขายยาควบคุมพิเศษ): ยาที่ต้องจำหน่ายตามใบสั่งยาของแพทย์เท่านั้น ต้องมีข้อความ "ยาควบคุมพิเศษ" ในกรอบสีแดง และเภสัชกรต้องจัดทำบัญชีการรับ-จ่ายยา
+• ข้อ ค. (ผิด เพราะขายยา วจ 2 โดยไม่มีใบอนุญาต): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ผิด เพราะขายยา วจ 3 โดยไม่มีใบอนุญาต): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ผิด เพราะขายยา วจ 4 โดยไม่มีใบอนุญาต): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Insomnia โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 44 | ANS: 1 (ก) ===
+Q: ข้อใดคือกลไกของยารักษา depression (er) . we ninascosserotonin Bowling neuroplasticity Bardinan. = dog Nasserotonin X ิ nGneon .Iden . ind neuroplasticity Vosges
+ก: เพิ่ม monoamine
+ข: ยังยั้งการทำงานสมองส่วน amygdala
+ค: ยับยั้งการทำงานของ serotonin
+ง: ลด neuroplasticity ของ neuron
+จ: ยับยั้งการสร้าง neuron ในสมอง
+Note: ข้อ 1 (PLE_CC1_2562_Key.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. เพิ่ม monoamine
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+เพิ่ม monoamine การเลือก เพิ่ม monoamine เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (ยังยั้งการทำงานสมองส่วน amygdala): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (ยับยั้งการทำงานของ serotonin): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (ลด neuroplasticity ของ neuron): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (ยับยั้งการสร้าง neuron ในสมอง): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+============================================================
+
+=== KEY: 45 | ANS: 1 (ก) ===
+Q: ข้อใดไม่ใช่อาการที่ไม่พึงประสงค์ที่พบบ่อยของ fluoxetine X 4 - balanci full response G
+ก: Insomnia
+ข: Sexual dysfunction
+ค: Anorexia
+ง: Renal failure
+จ: Diarrhea
+Note: ข้อ 4 (PLE_CC1_2562_Key.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Insomnia
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Insomnia การเลือก Insomnia เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Sexual dysfunction): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Anorexia): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Renal failure): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Diarrhea): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Long Half-life SSRI: มี active metabolite คือ norfluoxetine ที่มี half-life ยาวนาน (~7-15 วัน) ต้องเว้นระยะอย่างน้อย 5 สัปดาห์ก่อนเปลี่ยนไปใช้ MAOI เพื่อเลี่ยง Serotonin syndrome
+• Activating Property: มีฤทธิ์ activating effect อาจทำให้นอนไม่หลับ แนะนำรับประทานตอนเช้า
+============================================================
+
+=== KEY: 46 | ANS: 1 (ก) ===
+Q: หลังจากใช้ fluoxetine ไประยะหนึ่งแพทย์พบว่าผู้ป่วยไม่ตอบสนองต่อการรักษา จึงต้องการปรับเปลี่ยนยาโดยแพทย์ ~ - ~ ~ ~ - -X ต้องการรักษาซึมเศร้าที่ช่วยในการนอนหลับและเพิ่มความอยากอาหาร ยาใดเหมาะสมที่สุด
+ก: Sertraline
+ข: Venlafaxine
+ค: Bupropion
+ง: Mirtazapine
+จ: Paroxetine
+Note: ข้อ 5 (PLE_CC1_2562_Key.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Sertraline
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Sertraline การเลือก Sertraline เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI ที่มี safety สูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Venlafaxine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Bupropion): เป็น NDRI ใช้ช่วยเลิกบุหรี่และรักษาซึมเศร้า แต่มี contraindication ในผู้ป่วยประวัติชัก (seizure disorder) หรือ anorexia/bulimia nervosa
+• ข้อ ง. (Mirtazapine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Paroxetine): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Long Half-life SSRI: มี active metabolite คือ norfluoxetine ที่มี half-life ยาวนาน (~7-15 วัน) ต้องเว้นระยะอย่างน้อย 5 สัปดาห์ก่อนเปลี่ยนไปใช้ MAOI เพื่อเลี่ยง Serotonin syndrome
+• Activating Property: มีฤทธิ์ activating effect อาจทำให้นอนไม่หลับ แนะนำรับประทานตอนเช้า
+============================================================
+
+=== KEY: 47 | ANS: 1 (ก) ===
+Q: ยาที่ไม่ควรใช้ในการเลิกบุหรี่ของผู้ป่วยรายนี คือ
+ก: Nicotine gum
+ข: Nicotine patch
+ค: Bupropion
+ง: Varenicline
+จ: Nortriptyline
+Note: ข้อ 13 (PLE_CC1_2559.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Nicotine gum
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nicotine gum การเลือก Nicotine gum เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Nicotine patch): เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+• ข้อ ค. (Bupropion): เป็น NDRI ใช้ช่วยเลิกบุหรี่และรักษาซึมเศร้า แต่มี contraindication ในผู้ป่วยประวัติชัก (seizure disorder) หรือ anorexia/bulimia nervosa
+• ข้อ ง. (Varenicline): เป็น alpha-4 beta-2 nicotinic acetylcholine receptor partial agonist มี efficacy สูงสุดในการช่วยเลิกบุหรี่ แต่ต้องระวัง neuropsychiatric symptoms และ vivid dreams
+• ข้อ จ. (Nortriptyline): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Tobacco dependence โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 48 | ANS: 1 (ก) ===
+Q: ยาตัวใดที่มีผลข้างเคียงท้าให้ผันร้าย และนอนไม่หลับได้ หลับยาก
+ก: ATV/r
+ข: EFV
+ค: LPV/r
+ง: RPV
+จ: TDF ml ประกอบไปด้วย Enfuvirtide 90 mg Mannitol 22.55 mg Sodium carbonate Sodium hydroxide และ HCl หลังผสม pH = 9.0
+Note: ข้อ 48 (PLE_CC1_2559.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. ATV/r
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ATV/r ยา enfuvirtide ผลึกสีขาว, เป็น lyophilized powder, บริหารโดยการให้ทาง SC, reconstitute ด้วย SWFI 1.1 ml ซึ่ง 1
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (EFV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (LPV/r): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (RPV): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (TDF ml ประกอบไปด้วย Enfuvirtide 90 mg Mannitol 22.55 mg Sodium carbonate Sodium hydroxide และ HCl หลังผสม pH = 9.0): เป็น Diluent ชนิด non-hygroscopic ให้ negative heat of solution (รู้สึกเย็นในปาก) นิยมใช้ใน chewable tablets และ orally disintegrating tablets (ODTs)
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Insomnia โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 49 | ANS: 1 (ก) ===
+Q: ยากลุ่ม benzodiazepine เกี่ยวข้องกับไอออนใด
+ก: Na+
+ข: K+
+ค: Cl-
+ง: Ca2+
+จ: HCO3- Lot 1 Lot 2 น ้าหนักยาเม็ด Assay 400 390 400 385 %label amount 97-101
+Note: ข้อ 90 (PLE_CC1_2559.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Na+
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Na+ การเลือก Na+ เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (K+): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Cl-): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Ca2+): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (HCO3- Lot 1 Lot 2 น ้าหนักยาเม็ด Assay 400 390 400 385 %label amount 97-101): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Major Depressive Disorder Timing: Antidepressants (SSRIs) ใช้เวลาออกฤทธิ์ทางคลินิกเต็มที่ 2-4 สัปดาห์ ต้องแนะนำผู้ป่วยไม่ให้หยุดยาเองและเฝ้าระวัง suicidality ในช่วงแรก
+• Schizophrenia & EPS: First-generation antipsychotics (Haloperidol) เสี่ยงต่อ Extrapyramidal Symptoms (EPS/Dystonia/Akathisia) แก้ไขด้วย Diphenhydramine หรือ Trihexyphenidyl
+• Bipolar Lithium Monitoring: Narrow therapeutic range (0.6-1.2 mEq/L) อาการพิษ: tremor รุนแรง, ataxia, diarrhea; ระวัง DDI กับ NSAIDs, ACEI, Thiazides ที่ลดการขับ Lithium
+============================================================
+
+=== KEY: 50 | ANS: 1 (ก) ===
+Q: ผู้ป่วยเป็นโรคนอนไม่หลับแบบไหนมีอาการยังไง -
+ก: Short term, difficulty falling asleep
+ข: Short term, difficulty falling asleep, maintaining sleep
+ค: Chronic, difficulty falling asleep
+ง: Chronic, difficulty maintaining sleep
+จ: Chronic, difficulty falling asleep, maintaining sleep
+Note: ข้อ 1 (PLE_CC1_2558_Key.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Short term, difficulty falling asleep
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Short term, difficulty falling asleep การเลือก Short term, difficulty falling asleep เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Insomnia โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Short term, difficulty falling asleep, maintaining sleep): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Chronic, difficulty falling asleep): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Chronic, difficulty maintaining sleep): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Chronic, difficulty falling asleep, maintaining sleep): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Insomnia โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 51 | ANS: 1 (ก) ===
+Q: ข้อใดเป็นสาเหตุหลักที่ทำให้นอนไม่หลับ
+ก: อ้วน
+ข: เศร้าเรื่องพ่อตาย
+ค: กังวลเรื่องแม่ป่วย
+ง: เครียดจากหน้าที่การงาน
+จ: อ้วน
+Note: ข้อ 2 (PLE_CC1_2558_Key.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. อ้วน
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+อ้วน การเลือก อ้วน เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Insomnia โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (เศร้าเรื่องพ่อตาย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (กังวลเรื่องแม่ป่วย): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (เครียดจากหน้าที่การงาน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (อ้วน): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Insomnia โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 52 | ANS: 1 (ก) ===
+Q: ข้อใดถูกต้องเกี่ยวกับการแนะนำการเลิกบุหรี่
+ก: ควรหยุดสูบบุหรี่เมื่อมีการใช้ nicotine replacement ทันที
+ข: เมื่อเคี้ยวไว้ห้ามกลืนน้ำลายประมาณ 1 นาที
+ค: เมื่อเคี้ยวหมากฝรั่ง nicotine ควรหลีกเลี่ยงการดื่มน้ำส้ม น้ำอัดลม อย่างน้อย 15 นาที
+ง: การใช้ยา Bupropion อาจจะเพิ่มความเสี่ยงต่อการเกิดการชักได้
+จ: ถูกทุกข้อ
+Note: ข้อ 55 (Pharmtutor_2024_Set1.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. ควรหยุดสูบบุหรี่เมื่อมีการใช้ nicotine replacement ทันที
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+ควรหยุดสูบบุหรี่เมื่อมีการใช้ nicotine replacement ทันที การเลือก ควรหยุดสูบบุหรี่เมื่อมีการใช้ nicotine replacement ทันที เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (เมื่อเคี้ยวไว้ห้ามกลืนน้ำลายประมาณ 1 นาที): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (เมื่อเคี้ยวหมากฝรั่ง nicotine ควรหลีกเลี่ยงการดื่มน้ำส้ม น้ำอัดลม อย่างน้อย 15 นาที): เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+• ข้อ ง. (การใช้ยา Bupropion อาจจะเพิ่มความเสี่ยงต่อการเกิดการชักได้): เป็น NDRI ใช้ช่วยเลิกบุหรี่และรักษาซึมเศร้า แต่มี contraindication ในผู้ป่วยประวัติชัก (seizure disorder) หรือ anorexia/bulimia nervosa
+• ข้อ จ. (ถูกทุกข้อ): ข้อนี้ไม่ถูกต้องเนื่องจากมีตัวเลือกที่จำเพาะและตรงตามเกณฑ์มาตรฐานเวชปฏิบัติอย่างชัดเจน
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Tobacco dependence โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 53 | ANS: 1 (ก) ===
+Q: ยาในกลุ่มใดที่เป็นยาทางเลือกแรก ในการรักษาภาวะซึมเศร้าในกลุ่มที่ไม่มีข้อห้ามใช้
+ก: TCA
+ข: SNRI
+ค: SSRI
+ง: BZPs
+จ: SDRI
+Note: ข้อ 56 (Pharmtutor_2024_Set1.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. TCA
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+TCA การเลือก TCA เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (SNRI): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (SSRI): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (BZPs): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (SDRI): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Major Depressive Disorder Timing: Antidepressants (SSRIs) ใช้เวลาออกฤทธิ์ทางคลินิกเต็มที่ 2-4 สัปดาห์ ต้องแนะนำผู้ป่วยไม่ให้หยุดยาเองและเฝ้าระวัง suicidality ในช่วงแรก
+• Schizophrenia & EPS: First-generation antipsychotics (Haloperidol) เสี่ยงต่อ Extrapyramidal Symptoms (EPS/Dystonia/Akathisia) แก้ไขด้วย Diphenhydramine หรือ Trihexyphenidyl
+• Bipolar Lithium Monitoring: Narrow therapeutic range (0.6-1.2 mEq/L) อาการพิษ: tremor รุนแรง, ataxia, diarrhea; ระวัง DDI กับ NSAIDs, ACEI, Thiazides ที่ลดการขับ Lithium
+============================================================
+
+=== KEY: 54 | ANS: 1 (ก) ===
+Q: นักศึกษาชายไทยอายุ 21 ปี พบว่า 2 สัปดาห์ที่ผ่านมา มีอาการนอนไม่หลับ รับประทานอาหารน้อยกว่าปกติ รวมถึงมีอาการกระวนกระวายเมื่อต้องเข้าสังคม หรือต้องนำเสนองานหน้าห้องเรียน ซึ่งเมื่อซักประวัติเพิ่มเติมพบว่า ผู้ป่วยรายนี้มีอาการเครียดจากการได้คะแนนสอบน้อยที่สุดในห้อง และเมื่อเข้านอนพบว่ากว่านักศึกษาคนนี้จะหลับใช้เวลานานเป้นชั่วโมง ข้อใดคือยาที่เหมาะสมในการรักษาผู้ป่วยรายนี้
+ก: Clozapine
+ข: Fluoxetine
+ค: Lorazepam
+ง: Clonazepam
+จ: Amitriptyline
+Note: ข้อ 58 (Pharmtutor_2024_Set1.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Clozapine
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Clozapine การเลือก Clozapine เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น atypical antipsychotic สำหรับ treatment-resistant schizophrenia ที่มี efficacy สูงสุด แต่มี black box warning เรื่อง agranulocytosis (ต้องตรวจ CBC สม่ำเสมอ), myocarditis และชัก
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Fluoxetine): เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+• ข้อ ค. (Lorazepam): เป็น Benzodiazepine กลุ่ม LOT (Lorazepam, Oxazepam, Temazepam) ที่ผ่าน hepatic Phase II glucuronidation โดยตรง ไม่ผ่าน CYP oxidation จึงปลอดภัยกว่าในผู้สูงอายุและโรคตับ
+• ข้อ ง. (Clonazepam): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Amitriptyline): เป็น Tricyclic antidepressant (TCA) มี anticholinergic ADRs สูง, antihistaminic (ง่วงซึม น้ำหนักขึ้น), alpha-1 blockade (orthostatic hypotension) และเสี่ยงต่อ fatal cardiotoxicity เมื่อ overdose
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Insomnia โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 55 | ANS: 1 (ก) ===
+Q: Fluoxetine จะถูก metabolized ที_x001E_ตำแหน่งใด เพื_x001E_อ เปลี_x001E_ยนเป็น norfluoxetine A B C D E (1) A (2) B (3) C (4) D (5) E
+ก: Fluoxetine 20 mg OD
+ข: Sertraline 50 mg OD
+ค: Escitalopram 10 mg OD
+ง: Venlafaxine 75 mg OD
+จ: Amitriptyline 10 mg HS
+Note: ข้อ 55 (PLE_CC1_2557.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+• ข้อ ค. (Escitalopram 10 mg OD): เป็น highly selective SSRI มี drug interactions ต่ำ แต่มีคำเตือนเรื่อง dose-dependent QT prolongation (ขนาดยาสูงสุด 20 mg/day, หรือ 10 mg/day ในผู้สูงอายุ)
+• ข้อ ง. (Venlafaxine 75 mg OD): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Amitriptyline 10 mg HS): เป็น Tricyclic antidepressant (TCA) มี anticholinergic ADRs สูง, antihistaminic (ง่วงซึม น้ำหนักขึ้น), alpha-1 blockade (orthostatic hypotension) และเสี่ยงต่อ fatal cardiotoxicity เมื่อ overdose
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Long Half-life SSRI: มี active metabolite คือ norfluoxetine ที่มี half-life ยาวนาน (~7-15 วัน) ต้องเว้นระยะอย่างน้อย 5 สัปดาห์ก่อนเปลี่ยนไปใช้ MAOI เพื่อเลี่ยง Serotonin syndrome
+• Activating Property: มีฤทธิ์ activating effect อาจทำให้นอนไม่หลับ แนะนำรับประทานตอนเช้า
+============================================================
+
+=== KEY: 57 | ANS: 2 (ก) ===
+Q: สถานการณ์ที่ 6 (ลูกปลา 024/ ฝน หอวัง 067) ผู้ป่วยชายคู่อายุ 25 ปีมาพบเภสัชกรที่ร้านยาด้วยอาการนอนไม่หลับโดยเล่าว่านอนหลับยากใช้เวลานานกว่าจะหลับแต่เมื่อ 51.หากจะจ่ายยาท่านจะเลือกจ่ายยาในข้อใดจึงจะเหมาะสมที่สุด
+ก: Lorazepam
+ข: Flurazepam
+ค: Temazepam
+ง: Diazepam
+จ: Chlorazepate Temazepamและ Lorazepamเป็น intermediate acting benzodiazepinesเหมาะสำหรับใช้เพื่อเหนี่ยวนำการหลับ แต่จากการค้นฐานข้อมูลพบว่า ไม่มีข้อมูลทะเบียนยา Temazepamในไทย Flurazepam, Diazepam, Chlorazepateเป็น long acting benzodiazepinesเหมาะสำหรับใช้เพื่อให้นอนหลับสนิทตลอดทั้งคืน (Ref: เว็บไซต์สำนักงานอาหารและยา, หนังสือติวพี่แม็ก) (แต่หนังสือ pharmacology ของอ.มหิดลบอกว่า Flurazepamมีฤทธิ์เหนี่ยวนำให้หลับ(sleep induction หรือ ลด latency time เพิ่มระยะเวลาการหลับ) 52.ข้อใดคือกลไกของยากลุ่ม benzodiazepines
+Note: ข้อ ๒๕๕๐ (PLE_CC1_2554 SET2.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ข. Flurazepam
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Flurazepam ส่งผลให้เปิด Cl-channel ทำให้เกิดฤทธิ์ในทาง inhibitory process:sedative-hypnotic, anticonvulsant, muscle  ที่ phenyl ring ตำแหน่ง C2,เพิ่ม activity เมื่อ ortho-sub (2’)หรือ di-ortho-sub (2’, 6’) [steric effect] (diluents), silicon dioxide (glidant), talcum (glidant) และ PVP (binder)ต่างใช้ในหน้าที่อื่นของตำรับ แล้วไม่ได้ผลควรใช้ยา specific treatment คือ Ergot alkaloid & deriv. หรือ Serotonin receptor agonist เช่น
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ก. (Lorazepam): เป็น Benzodiazepine กลุ่ม LOT (Lorazepam, Oxazepam, Temazepam) ที่ผ่าน hepatic Phase II glucuronidation โดยตรง ไม่ผ่าน CYP oxidation จึงปลอดภัยกว่าในผู้สูงอายุและโรคตับ
+• ข้อ ค. (Temazepam): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Diazepam): เป็น long-acting Benzodiazepine มี active metabolites (nordiazepam) สะสมในผู้สูงอายุ ทำให้ง่วงซึม หกล้ม เสี่ยง fracture
+• ข้อ จ. (Chlorazepate Temazepamและ Lorazepamเป็น intermediate acting benzodiazepinesเหมาะสำหรับใช้เพื่อเหนี่ยวนำการหลับ แต่จากการค้นฐานข้อมูลพบว่า ไม่มีข้อมูลทะเบียนยา Temazepamในไทย Flurazepam, Diazepam, Chlorazepateเป็น long acting benzodiazepinesเหมาะสำหรับใช้เพื่อให้นอนหลับสนิทตลอดทั้งคืน (Ref: เว็บไซต์สำนักงานอาหารและยา, หนังสือติวพี่แม็ก) (แต่หนังสือ pharmacology ของอ.มหิดลบอกว่า Flurazepamมีฤทธิ์เหนี่ยวนำให้หลับ(sleep induction หรือ ลด latency time เพิ่มระยะเวลาการหลับ) 52.ข้อใดคือกลไกของยากลุ่ม benzodiazepines): เป็น long-acting Benzodiazepine มี active metabolites (nordiazepam) สะสมในผู้สูงอายุ ทำให้ง่วงซึม หกล้ม เสี่ยง fracture
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Insomnia โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 58 | ANS: 1 (ก) ===
+Q: ชายไทยคุ้อาย่65 ปีได้รับการวินิจฉัยจากแพทย์วุามีภาวะInsomnia ยาใน ข้อใดตุอไปนี้ไมุใชุยาที่ใช้ในการรักษาภาวะInsomnia
+ก: CPM
+ข: Phenobarbital
+ค: Chloral hydrate
+ง: Clonazepam
+จ: Haloperidol (จ)
+Note: ข้อ 5 (PLE_CC1_2547.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. CPM
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+CPM การเลือก CPM เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Insomnia โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Phenobarbital): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Chloral hydrate): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Clonazepam): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Haloperidol (จ)): เป็น First-generation (typical) antipsychotic ยับยั้ง D2 receptor สูง เสี่ยงต่อ Extrapyramidal symptoms (EPS), acute dystonia, akathisia และ tardive dyskinesia สูง
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Insomnia โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 59 | ANS: 1 (ก) ===
+Q: ข้อใดถ้กต้องเกี่ยวกับโครงสร้างและความสัมพันธ์ในการออกฤทธิ์ของยา นอนหลับDiazepam โครงสร้างDiazepam
+ก: Fluoxetine 20 mg OD
+ข: Sertraline 50 mg OD
+ค: Escitalopram 10 mg OD
+ง: Venlafaxine 75 mg OD
+จ: Amitriptyline 10 mg HS
+Note: ข้อ 8 (PLE_CC1_2547.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+• ข้อ ค. (Escitalopram 10 mg OD): เป็น highly selective SSRI มี drug interactions ต่ำ แต่มีคำเตือนเรื่อง dose-dependent QT prolongation (ขนาดยาสูงสุด 20 mg/day, หรือ 10 mg/day ในผู้สูงอายุ)
+• ข้อ ง. (Venlafaxine 75 mg OD): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Amitriptyline 10 mg HS): เป็น Tricyclic antidepressant (TCA) มี anticholinergic ADRs สูง, antihistaminic (ง่วงซึม น้ำหนักขึ้น), alpha-1 blockade (orthostatic hypotension) และเสี่ยงต่อ fatal cardiotoxicity เมื่อ overdose
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Long Half-life SSRI: มี active metabolite คือ norfluoxetine ที่มี half-life ยาวนาน (~7-15 วัน) ต้องเว้นระยะอย่างน้อย 5 สัปดาห์ก่อนเปลี่ยนไปใช้ MAOI เพื่อเลี่ยง Serotonin syndrome
+• Activating Property: มีฤทธิ์ activating effect อาจทำให้นอนไม่หลับ แนะนำรับประทานตอนเช้า
+============================================================
+
+=== KEY: 61 | ANS: 1 (ก) ===
+Q: มีระยะเวลาในการออกฤทธิ์สั้นกวุาDiazepam เนื่องจากละลายในไข มันได้มากวุา
+ก: Alprazolam 0.5 mg HS
+ข: Diazepam 5 mg HS
+ค: Zolpidem 10 mg HS
+ง: Nicotine gum 2 mg PRN
+จ: Quetiapine 25 mg HS
+Note: ข้อ 2 (PLE_CC1_2547.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Alprazolam 0.5 mg HS
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Alprazolam 0.5 mg HS การเลือก Alprazolam 0.5 mg HS เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น intermediate-acting Benzodiazepine ออกฤทธิ์เร็ว เหมาะสำหรับ panic attack แต่มีโอกาสเกิด dependence และ rebound anxiety สูงเมื่อหยุดยา
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Diazepam 5 mg HS): เป็น long-acting Benzodiazepine มี active metabolites (nordiazepam) สะสมในผู้สูงอายุ ทำให้ง่วงซึม หกล้ม เสี่ยง fracture
+• ข้อ ค. (Zolpidem 10 mg HS): เป็น non-benzodiazepine Z-drug จับจำเพาะกับ BZ1 (omega-1) receptor ช่วยเหนี่ยวนำการนอนหลับ แต่ต้องระวัง parasomnia (sleep-walking, sleep-eating)
+• ข้อ ง. (Nicotine gum 2 mg PRN): เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+• ข้อ จ. (Quetiapine 25 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Insomnia โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 62 | ANS: 1 (ก) ===
+Q: มีระยะเวลาในการออกฤทธิ์สั้นDiazepam เนื่องจากสามารถถ้กเมตา บอไลต์ได้เร็ว
+ก: Nicotine gum 2 mg PRN
+ข: Quetiapine 25 mg HS
+ค: Risperidone 2 mg OD
+ง: Fluoxetine 20 mg OD
+จ: Sertraline 50 mg OD
+Note: ข้อ 3 (PLE_CC1_2547.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Nicotine gum 2 mg PRN
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nicotine gum 2 mg PRN การเลือก Nicotine gum 2 mg PRN เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Quetiapine 25 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Risperidone 2 mg OD): เป็น Second-generation (atypical) antipsychotic ยับยั้ง 5-HT2A/D2 เสี่ยง EPS ต่ำกว่า typical APs แต่เพิ่มระดับ prolactin สูงสุดในกลุ่ม atypical (gynecomastia, amenorrhea)
+• ข้อ ง. (Fluoxetine 20 mg OD): เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+• ข้อ จ. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Glaucoma Prostaglandin Analogues: Latanoprost หยอดตาวันละ 1 ครั้งก่อนนอน ผลข้างเคียง: ม่านตาสีคล้ำขึ้น ขนตายาวหนาขึ้น และตาแดง
+• Beta-blocker Eye Drops Caution: Timolol eye drops ถูกดูดซึมเข้าระบบ systemic ได้ ต้องกดหัวตา (Nasolacrimal occlusion) 1-2 นาที และระวังในผู้ป่วย Asthma, Severe COPD, Bradycardia
+• Bacterial Conjunctivitis Treatment: หยอดตาปฏิชีวนะ Broad-spectrum เช่น Fluoroquinolones (Moxifloxacin), Chloramphenicol, หรือ Polymyxin B/Neomycin
+============================================================
+
+=== KEY: 63 | ANS: 1 (ก) ===
+Q: มีระยะเวลาที่ยารออกฤทธิ์เร็วกวุาDiazepam เนื่องจากสามารถผุาน BBB ได้ดี
+ก: Fluoxetine 20 mg OD
+ข: Sertraline 50 mg OD
+ค: Escitalopram 10 mg OD
+ง: Venlafaxine 75 mg OD
+จ: Amitriptyline 10 mg HS
+Note: ข้อ 4 (PLE_CC1_2547.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+• ข้อ ค. (Escitalopram 10 mg OD): เป็น highly selective SSRI มี drug interactions ต่ำ แต่มีคำเตือนเรื่อง dose-dependent QT prolongation (ขนาดยาสูงสุด 20 mg/day, หรือ 10 mg/day ในผู้สูงอายุ)
+• ข้อ ง. (Venlafaxine 75 mg OD): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Amitriptyline 10 mg HS): เป็น Tricyclic antidepressant (TCA) มี anticholinergic ADRs สูง, antihistaminic (ง่วงซึม น้ำหนักขึ้น), alpha-1 blockade (orthostatic hypotension) และเสี่ยงต่อ fatal cardiotoxicity เมื่อ overdose
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Long Half-life SSRI: มี active metabolite คือ norfluoxetine ที่มี half-life ยาวนาน (~7-15 วัน) ต้องเว้นระยะอย่างน้อย 5 สัปดาห์ก่อนเปลี่ยนไปใช้ MAOI เพื่อเลี่ยง Serotonin syndrome
+• Activating Property: มีฤทธิ์ activating effect อาจทำให้นอนไม่หลับ แนะนำรับประทานตอนเช้า
+============================================================
+
+=== KEY: 65 | ANS: 1 (ก) ===
+Q: ยาใดถูกถอนจากตลาดเนื่องจากทำให้เกิด serious psychiatric disorders (anxiety, depression, suicidal thinking) และยาใดสามารถจ่ายในร้านยาได้ตามลำดับ
+ก: Sibutramine, Lorcaserin
+ข: Rimonabant, Orlistat
+ค: Phentermine, Orlistat
+ง: Rimonabant, Lorcaserin
+จ: Sibutramine, Orlistat 98 โรคระบบต่อมไร้ท่อ และต่อมมีท่อ นักศึกษาเภสัชศาสตร์รุ่น 8 มหาวิทยาลัยวลัยลักษณ์ สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+Note: ข้อ 39 (PLE_CC1_Practice_Exam.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Sibutramine, Lorcaserin
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Sibutramine, Lorcaserin การเลือก Sibutramine, Lorcaserin เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Rimonabant, Orlistat): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Phentermine, Orlistat): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (Rimonabant, Lorcaserin): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Sibutramine, Orlistat 98 โรคระบบต่อมไร้ท่อ และต่อมมีท่อ นักศึกษาเภสัชศาสตร์รุ่น 8 มหาวิทยาลัยวลัยลักษณ์ สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Major Depressive Disorder Timing: Antidepressants (SSRIs) ใช้เวลาออกฤทธิ์ทางคลินิกเต็มที่ 2-4 สัปดาห์ ต้องแนะนำผู้ป่วยไม่ให้หยุดยาเองและเฝ้าระวัง suicidality ในช่วงแรก
+• Schizophrenia & EPS: First-generation antipsychotics (Haloperidol) เสี่ยงต่อ Extrapyramidal Symptoms (EPS/Dystonia/Akathisia) แก้ไขด้วย Diphenhydramine หรือ Trihexyphenidyl
+• Bipolar Lithium Monitoring: Narrow therapeutic range (0.6-1.2 mEq/L) อาการพิษ: tremor รุนแรง, ataxia, diarrhea; ระวัง DDI กับ NSAIDs, ACEI, Thiazides ที่ลดการขับ Lithium
+============================================================
+
+=== KEY: 66 | ANS: 1 (ก) ===
+Q: ตอบ ข. Rimonabant, Orlistat เนื่องจาก Rimonabant เป็นยาที่ทำให้เกิดผลข้างเคียงทางระบบประสาทที่รุนแรง คือ seizures, depression, anxiety, aggressiveness, and suicidal thoughts ซึ่งได้ถูกถอนออกจากทะเบียนยา ในปี ค.ศ.2007 และยา Orlistat เป็นยาที่สามารถจ่ายในร้านยาได้
+ก: Nicotine gum 2 mg PRN
+ข: Quetiapine 25 mg HS
+ค: Risperidone 2 mg OD
+ง: Fluoxetine 20 mg OD
+จ: Sertraline 50 mg OD
+Note: ข้อ 39 (PLE_CC1_Practice_Exam.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Nicotine gum 2 mg PRN
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nicotine gum 2 mg PRN การเลือก Nicotine gum 2 mg PRN เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Quetiapine 25 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Risperidone 2 mg OD): เป็น Second-generation (atypical) antipsychotic ยับยั้ง 5-HT2A/D2 เสี่ยง EPS ต่ำกว่า typical APs แต่เพิ่มระดับ prolactin สูงสุดในกลุ่ม atypical (gynecomastia, amenorrhea)
+• ข้อ ง. (Fluoxetine 20 mg OD): เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+• ข้อ จ. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+============================================================
+
+=== KEY: 67 | ANS: 1 (ก) ===
+Q: Fluoxetine 180 โรคทางระบบประสาทและจิตประสาท นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 9 มหาวิทยาลัยสยาม สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+ก: Fluoxetine 20 mg OD
+ข: Sertraline 50 mg OD
+ค: Escitalopram 10 mg OD
+ง: Venlafaxine 75 mg OD
+จ: Amitriptyline 10 mg HS
+Note: ข้อ 5 (PLE_CC1_Practice_Exam.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+• ข้อ ค. (Escitalopram 10 mg OD): เป็น highly selective SSRI มี drug interactions ต่ำ แต่มีคำเตือนเรื่อง dose-dependent QT prolongation (ขนาดยาสูงสุด 20 mg/day, หรือ 10 mg/day ในผู้สูงอายุ)
+• ข้อ ง. (Venlafaxine 75 mg OD): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Amitriptyline 10 mg HS): เป็น Tricyclic antidepressant (TCA) มี anticholinergic ADRs สูง, antihistaminic (ง่วงซึม น้ำหนักขึ้น), alpha-1 blockade (orthostatic hypotension) และเสี่ยงต่อ fatal cardiotoxicity เมื่อ overdose
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Long Half-life SSRI: มี active metabolite คือ norfluoxetine ที่มี half-life ยาวนาน (~7-15 วัน) ต้องเว้นระยะอย่างน้อย 5 สัปดาห์ก่อนเปลี่ยนไปใช้ MAOI เพื่อเลี่ยง Serotonin syndrome
+• Activating Property: มีฤทธิ์ activating effect อาจทำให้นอนไม่หลับ แนะนำรับประทานตอนเช้า
+============================================================
+
+=== KEY: 69 | ANS: 1 (ก) ===
+Q: การใช้ Nicotine patch ในผู้ป่วยที่สูบบุหรี่ 15 มวนต่อวัน ข้อใดเหมาะสมที่สุด
+ก: Alprazolam 0.5 mg HS
+ข: Diazepam 5 mg HS
+ค: Zolpidem 10 mg HS
+ง: Nicotine gum 2 mg PRN
+จ: Quetiapine 25 mg HS
+Note: ข้อ 18 (PLE_CC1_Practice_Exam.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Alprazolam 0.5 mg HS
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Alprazolam 0.5 mg HS การเลือก Alprazolam 0.5 mg HS เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น intermediate-acting Benzodiazepine ออกฤทธิ์เร็ว เหมาะสำหรับ panic attack แต่มีโอกาสเกิด dependence และ rebound anxiety สูงเมื่อหยุดยา
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Diazepam 5 mg HS): เป็น long-acting Benzodiazepine มี active metabolites (nordiazepam) สะสมในผู้สูงอายุ ทำให้ง่วงซึม หกล้ม เสี่ยง fracture
+• ข้อ ค. (Zolpidem 10 mg HS): เป็น non-benzodiazepine Z-drug จับจำเพาะกับ BZ1 (omega-1) receptor ช่วยเหนี่ยวนำการนอนหลับ แต่ต้องระวัง parasomnia (sleep-walking, sleep-eating)
+• ข้อ ง. (Nicotine gum 2 mg PRN): เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+• ข้อ จ. (Quetiapine 25 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Tobacco dependence โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 70 | ANS: 1 (ก) ===
+Q: ข้อใดไม่ใช่ยาที่แนะนำให้ใช้ในผู้ป่วยที่ต้องการเลิกบุหรี่
+ก: Nicotine gum 2 mg PRN
+ข: Quetiapine 25 mg HS
+ค: Risperidone 2 mg OD
+ง: Fluoxetine 20 mg OD
+จ: Sertraline 50 mg OD
+Note: ข้อ 20 (PLE_CC1_Practice_Exam.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Nicotine gum 2 mg PRN
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nicotine gum 2 mg PRN การเลือก Nicotine gum 2 mg PRN เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Quetiapine 25 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Risperidone 2 mg OD): เป็น Second-generation (atypical) antipsychotic ยับยั้ง 5-HT2A/D2 เสี่ยง EPS ต่ำกว่า typical APs แต่เพิ่มระดับ prolactin สูงสุดในกลุ่ม atypical (gynecomastia, amenorrhea)
+• ข้อ ง. (Fluoxetine 20 mg OD): เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+• ข้อ จ. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Tobacco dependence โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 71 | ANS: 1 (ก) ===
+Q: ในผู้ป่วยที่ต้องการเลิกบุหรี่ โดยปกติแล้วสูบบุหรี่วันละ 3 ซอง เคยมีประวัติการเลิกบุหรี่ด้วยการปรับ พฤติกรรมแต่ไม่สำเร็จ และมีโรคร่วมคือโรคซึมเศร้า การรักษาในข้อใดเหมาะสมที่สุดในการเลิกบุหรี่
+ก: Fluoxetine 20 mg OD
+ข: Sertraline 50 mg OD
+ค: Escitalopram 10 mg OD
+ง: Venlafaxine 75 mg OD
+จ: Amitriptyline 10 mg HS
+Note: ข้อ 21 (PLE_CC1_Practice_Exam.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+• ข้อ ค. (Escitalopram 10 mg OD): เป็น highly selective SSRI มี drug interactions ต่ำ แต่มีคำเตือนเรื่อง dose-dependent QT prolongation (ขนาดยาสูงสุด 20 mg/day, หรือ 10 mg/day ในผู้สูงอายุ)
+• ข้อ ง. (Venlafaxine 75 mg OD): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Amitriptyline 10 mg HS): เป็น Tricyclic antidepressant (TCA) มี anticholinergic ADRs สูง, antihistaminic (ง่วงซึม น้ำหนักขึ้น), alpha-1 blockade (orthostatic hypotension) และเสี่ยงต่อ fatal cardiotoxicity เมื่อ overdose
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Long Half-life SSRI: มี active metabolite คือ norfluoxetine ที่มี half-life ยาวนาน (~7-15 วัน) ต้องเว้นระยะอย่างน้อย 5 สัปดาห์ก่อนเปลี่ยนไปใช้ MAOI เพื่อเลี่ยง Serotonin syndrome
+• Activating Property: มีฤทธิ์ activating effect อาจทำให้นอนไม่หลับ แนะนำรับประทานตอนเช้า
+============================================================
+
+=== KEY: 73 | ANS: 1 (ก) ===
+Q: ผู้ป่วยที่ไม่ควรได้รับ Varenicline ในการช่วยเลิกบุหรี่ คือข้อใด
+ก: Alprazolam 0.5 mg HS
+ข: Diazepam 5 mg HS
+ค: Zolpidem 10 mg HS
+ง: Nicotine gum 2 mg PRN
+จ: Quetiapine 25 mg HS
+Note: ข้อ 23 (PLE_CC1_Practice_Exam.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Alprazolam 0.5 mg HS
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Tobacco dependence มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Alprazolam 0.5 mg HS การเลือก Alprazolam 0.5 mg HS เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น intermediate-acting Benzodiazepine ออกฤทธิ์เร็ว เหมาะสำหรับ panic attack แต่มีโอกาสเกิด dependence และ rebound anxiety สูงเมื่อหยุดยา
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Diazepam 5 mg HS): เป็น long-acting Benzodiazepine มี active metabolites (nordiazepam) สะสมในผู้สูงอายุ ทำให้ง่วงซึม หกล้ม เสี่ยง fracture
+• ข้อ ค. (Zolpidem 10 mg HS): เป็น non-benzodiazepine Z-drug จับจำเพาะกับ BZ1 (omega-1) receptor ช่วยเหนี่ยวนำการนอนหลับ แต่ต้องระวัง parasomnia (sleep-walking, sleep-eating)
+• ข้อ ง. (Nicotine gum 2 mg PRN): เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+• ข้อ จ. (Quetiapine 25 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tobacco dependence เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Evidence-Based Selection: ยึดหลักแนวทางเวชปฏิบัติมาตรฐานของภาวะ Tobacco dependence โดยพิจารณาโรคร่วมและข้อห้ามใช้จำเพาะของผู้ป่วย
+• Clinical Monitoring: วางแผนตรวจติดตามทั้งด้าน efficacy และ adverse drug reactions สำคัญอย่างต่อเนื่อง
+============================================================
+
+=== KEY: 74 | ANS: 1 (ก) ===
+Q: มีประวัติโรคซึมเศร้า 183 โรคทางระบบประสาทและจิตประสาท นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 9 มหาวิทยาลัยสยาม สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+ก: Nicotine gum 2 mg PRN
+ข: Quetiapine 25 mg HS
+ค: Risperidone 2 mg OD
+ง: Fluoxetine 20 mg OD
+จ: Sertraline 50 mg OD
+Note: ข้อ 1 (PLE_CC1_Practice_Exam.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Nicotine gum 2 mg PRN
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Nicotine gum 2 mg PRN การเลือก Nicotine gum 2 mg PRN เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Nicotine Replacement Therapy (NRT) ช่วยบรรเทา withdrawal symptoms ใน smoking cessation โดยหลีกเลี่ยงสารก่อมะเร็งในควันบุหรี่
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Quetiapine 25 mg HS): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (Risperidone 2 mg OD): เป็น Second-generation (atypical) antipsychotic ยับยั้ง 5-HT2A/D2 เสี่ยง EPS ต่ำกว่า typical APs แต่เพิ่มระดับ prolactin สูงสุดในกลุ่ม atypical (gynecomastia, amenorrhea)
+• ข้อ ง. (Fluoxetine 20 mg OD): เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+• ข้อ จ. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Status Epilepticus First-line: ยากลุ่มแรกคือ IV Lorazepam 0.1 mg/kg หรือ IV Diazepam 0.15-0.2 mg/kg หากไม่มี IV access ให้ใช้ IM Midazolam หรือ Rectal Diazepam
+• Ischemic Stroke Thrombolysis: IV rt-PA (Alteplase 0.9 mg/kg) ต้องให้ภายใน 4.5 ชั่วโมงหลังมีอาการ (Onset) และควบคุม BP < 185/110 mmHg ก่อนให้ยา
+• Migraine Acute vs Prophylaxis: Acute attack: Triptans (ห้ามใช้ใน ischemic heart disease/uncontrolled HTN); Prophylaxis (เมื่อปวด >= 4 วัน/เดือน): Propranolol, Amitriptyline, Topiramate
+============================================================
+
+=== KEY: 75 | ANS: 1 (ก) ===
+Q: Zolpidem จากกรณีศึกษาจงตอบคำถามข้อ 25-26 หญิงไทยอายุ 45 ปี ช่วงนี้เครียดนอนไม่หลับมาหลายวัน ต้องใช้เวลานานกว่าจะหลับแต่ถ้าหลับแล้วจะหลับได้ ตลอดทั้งคืน
+ก: Fluoxetine 20 mg OD
+ข: Sertraline 50 mg OD
+ค: Escitalopram 10 mg OD
+ง: Venlafaxine 75 mg OD
+จ: Amitriptyline 10 mg HS
+Note: ข้อ 5 (PLE_CC1_Practice_Exam.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Insomnia มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+Fluoxetine 20 mg OD การเลือก Fluoxetine 20 mg OD เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น SSRI มี half-life ยาวที่สุดในกลุ่ม (ร่วมกับ active metabolite norfluoxetine) จึงมี discontinuation syndrome ต่ำ แต่ยับยั้ง CYP2D6 สูง
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (Sertraline 50 mg OD): เป็น SSRI ที่มีความปลอดภัยสูงในผู้ป่วยโรคหัวใจ (cardiovascular safety profile ดีที่สุด) เหมาะสำหรับ post-MI depression
+• ข้อ ค. (Escitalopram 10 mg OD): เป็น highly selective SSRI มี drug interactions ต่ำ แต่มีคำเตือนเรื่อง dose-dependent QT prolongation (ขนาดยาสูงสุด 20 mg/day, หรือ 10 mg/day ในผู้สูงอายุ)
+• ข้อ ง. (Venlafaxine 75 mg OD): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Insomnia เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Amitriptyline 10 mg HS): เป็น Tricyclic antidepressant (TCA) มี anticholinergic ADRs สูง, antihistaminic (ง่วงซึม น้ำหนักขึ้น), alpha-1 blockade (orthostatic hypotension) และเสี่ยงต่อ fatal cardiotoxicity เมื่อ overdose
+
+📖 Guideline อ้างอิง:
+[NEED_REVIEW]
+
+📌 จุดจำก่อนสอบ:
+• Long Half-life SSRI: มี active metabolite คือ norfluoxetine ที่มี half-life ยาวนาน (~7-15 วัน) ต้องเว้นระยะอย่างน้อย 5 สัปดาห์ก่อนเปลี่ยนไปใช้ MAOI เพื่อเลี่ยง Serotonin syndrome
+• Activating Property: มีฤทธิ์ activating effect อาจทำให้นอนไม่หลับ แนะนำรับประทานตอนเช้า
+============================================================
+
+=== KEY: 76 | ANS: 1 (ก) ===
+Q: กลไกการออกฤทธิ์ของยากลุ่ม Benzodiazepines คือข้อใด
+ก: . กระตุ้น 5-HT receptor
+ข: . กระตุ้น Dopamine receptor
+ค: . กระตุ้น GABA receptor 184 โรคทางระบบประสาทและจิตประสาท นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 9 มหาวิทยาลัยสยาม สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+ง: . กระตุ้น Glutamate receptor
+จ: Diazepam 5 mg HS
+Note: ข้อ 26 (PLE_CC1_Practice_Exam.md)
+Exp:
+✅ คำตอบที่ถูกต้อง: ข้อ ก. . กระตุ้น 5-HT receptor
+
+💡 Background:
+การบริบาลผู้ป่วยในกลุ่มโรค Anxiety/depression มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy
+
+🎯 ทำไมข้อนี้ถึงถูก:
+. กระตุ้น 5-HT receptor การเลือก . กระตุ้น 5-HT receptor เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anxiety/depression โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม
+
+🔍 ข้ออื่นผิดเพราะอะไร:
+• ข้อ ข. (. กระตุ้น Dopamine receptor): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ค. (. กระตุ้น GABA receptor 184 โรคทางระบบประสาทและจิตประสาท นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 9 มหาวิทยาลัยสยาม สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ ง. (. กระตุ้น Glutamate receptor): ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Anxiety/depression เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด
+• ข้อ จ. (Diazepam 5 mg HS): เป็น long-acting Benzodiazepine มี active metabolites (nordiazepam) สะสมในผู้สูงอายุ ทำให้ง่วงซึม หกล้ม เสี่ยง fracture
+
+📖 Guideline อ้างอิง:
+แนวทางการดูแลรักษาโรคซึมเศร้า (Major Depressive Disorder) พ.ศ. 2563 กรมสุขภาพจิต กระทรวงสาธารณสุข & APA Practice Guidelines
+
+📌 จุดจำก่อนสอบ:
+• Major Depressive Disorder Timing: Antidepressants (SSRIs) ใช้เวลาออกฤทธิ์ทางคลินิกเต็มที่ 2-4 สัปดาห์ ต้องแนะนำผู้ป่วยไม่ให้หยุดยาเองและเฝ้าระวัง suicidality ในช่วงแรก
+• Schizophrenia & EPS: First-generation antipsychotics (Haloperidol) เสี่ยงต่อ Extrapyramidal Symptoms (EPS/Dystonia/Akathisia) แก้ไขด้วย Diphenhydramine หรือ Trihexyphenidyl
+• Bipolar Lithium Monitoring: Narrow therapeutic range (0.6-1.2 mEq/L) อาการพิษ: tremor รุนแรง, ataxia, diarrhea; ระวัง DDI กับ NSAIDs, ACEI, Thiazides ที่ลดการขับ Lithium
+============================================================
+

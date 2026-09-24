@@ -1,0 +1,242 @@
+{
+  "32": {
+    "distractors": {
+      "ก": "Folic acid เป็นวิตามินที่มักให้เสริมในผู้ป่วยที่ได้รับ carbamazepine หรือ phenytoin เพื่อป้องกัน folate deficiency และภาวะโลหิตจาง แต่ไม่มีฤทธิ์ยับยั้ง CYP3A4 จึงไม่เพิ่มระดับยา carbamazepine ในกระแสเลือด",
+      "ข": "Nevirapine มีคุณสมบัติเป็น CYP3A4 inducer ซึ่งจะไปกระตุ้นการกำจัด carbamazepine ส่งผลให้ระดับยา carbamazepine ในเลือดลดลง ไม่ใช่เพิ่มขึ้น",
+      "ค": "Phenytoin เป็น potent CYP3A4 inducer ที่เร่งกระบวนการ metabolism ของ carbamazepine ทำให้ระดับยา carbamazepine ลดลง และ carbamazepine ก็เหนี่ยวนำการสลาย phenytoin ได้เช่นกัน",
+      "จ": "Mebendazole เมแทบอลิซึมผ่านตับเป็นหลักแต่ไม่มีผลทางคลินิกในการยับยั้ง CYP3A4 จึงไม่ส่งผลต่อระดับยา carbamazepine ในเลือดอย่างมีนัยสำคัญ"
+    }
+  },
+  "33": {
+    "distractors": {
+      "ข": "การยับยั้ง T-type calcium channels ใน thalamic neurons เป็นกลไกหลักของ ethosuximide และ valproic acid ซึ่งใช้รักษา absence seizures ไม่ใช่กลไกของ carbamazepine",
+      "ค": "การเพิ่ม GABA neurotransmission ผ่าน GABA-A receptor/chloride channel complex เป็นกลไกของยากลุ่ม benzodiazepines และ barbiturates เช่น phenobarbital",
+      "ง": "การยับยั้ง NMDA glutamate receptors เป็นกลไกของยา felbamate หรือยาชะลอสมองเสื่อม memantine ไม่ใช่กลไกหลักของ carbamazepine",
+      "จ": "การยับยั้ง second messengers เช่น inositol depletion pathway เป็นกลไกการออกฤทธิ์ทางเภสัชวิทยาหลักของ lithium ในการรักษา bipolar disorder"
+    }
+  },
+  "34": {
+    "distractors": {
+      "ก": "อุบัติเหตุทางสมอง (Traumatic Brain Injury) ก่อให้เกิด post-traumatic epilepsy ได้โดยตรงจากการเกิดแผลเป็นในเนื้อสมอง (glial scar) เลือดออก และความผิดปกติของโครงสร้างระบบประสาท",
+      "ค": "Hypoglycemia เป็นภาวะ metabolic derangement รุนแรงที่ทำให้เซลล์สมองขาดพลังงาน เกิด neuronal membrane instability และกระตุ้นให้เกิด acute symptomatic seizure ได้โดยตรง",
+      "ง": "เนื้องอกในสมอง (Brain tumor) ทำให้เกิด structural lesion กดเบียดเนื้อสมอง รบกวน cerebral blood flow และกระตุ้น focal seizure ที่อาจกระจายกลายเป็น generalized seizure ได้",
+      "จ": "ไข้สูงในเด็ก (Febrile seizure) พบได้บ่อยในเด็กอายุ 6 เดือนถึง 5 ปี จากสมองเด็กที่ยังไวต่อการเปลี่ยนแปลงของอุณหภูมิร่างกาย จึงเป็นสาเหตุสำคัญของการชักแบบเฉียบพลัน"
+    }
+  },
+  "35": {
+    "distractors": {
+      "ก": "Anxiety อาการวิตกกังวลรักษาด้วยยากลุ่ม SSRIs, SNRIs หรือ short-term Benzodiazepines ส่วน carbamazepine ไม่มีข้อบ่งใช้และไม่มี efficacy สำหรับโรควิตกกังวล",
+      "ข": "Muscle relaxant การคลายกล้ามเนื้อใช้ยากลุ่ม centrally acting muscle relaxants เช่น baclofen, tizanidine หรือ tolperisone ไม่ใช่ข้อบ่งใช้ของ carbamazepine",
+      "ง": "Anti-arrhythmia ยารักษาหัวใจเต้นผิดจังหวะในกลุ่ม Class IB ได้แก่ lidocaine และ mexiletine แม้ carbamazepine จะมีโครงสร้างคล้าย tricyclic antidepressants แต่ไม่มีข้อบ่งใช้เป็นยาต้านหัวใจเต้นผิดจังหวะ",
+      "จ": "Febrile Seizure อาการชักจากไข้สูงในเด็กไม่จำเป็นต้องได้รับยากันชักระยะยาวอย่าง carbamazepine หากมีอาการชักต่อเนื่องเกิน 5 นาทีจะใช้ rectal หรือ IV benzodiazepines ระงับอาการชักเฉียบพลัน"
+    }
+  },
+  "36": {
+    "distractors": {
+      "ก": "การจ่ายยาคลายกังวลและนัดติดตามผล 1 เดือนเป็นอันตรายอย่างยิ่ง เนื่องจากอาการหมดสติร่วมกับชักเกร็งเป็นสัญญาณของโรคลมชักที่ต้องตรวจ EEG และ neuroimaging เพื่อวินิจฉัยและรับยากันชักอย่างถูกต้อง",
+      "ข": "การจ่ายวิตามินเป็นการรักษาที่ไม่ตรงกับพยาธิสภาพของโรคและทำให้ผู้ป่วยเสียโอกาสในการวินิจฉัยโรคลมชัก เสี่ยงต่อการเกิดอุบัติเหตุหรือ status epilepticus ที่เป็นอันตรายถึงชีวิต",
+      "ค": "ยาคลายกล้ามเนื้อออกฤทธิ์ที่ neuromuscular junction หรือ spinal reflex ไม่สามารถยับยั้ง abnormal neuronal discharge ในสมองอันเป็นต้นเหตุของการชักเกร็งได้",
+      "ง": "การแนะนำเพียงแค่การพักผ่อนไม่เพียงพอต่อการควบคุม abnormal electrical activity ในสมอง ผู้ป่วยจำเป็นต้องได้รับการส่งตัวไปพบแพทย์เพื่อตรวจหาสาเหตุของอาการชัก"
+    }
+  },
+  "37": {
+    "distractors": {
+      "ก": "การยับยั้ง Post-tetanic potentiation (PTP) เป็นผลลัพธ์ทางสรีรวิทยาจากการบล็อก persistent sodium influx ทำให้เซลล์ไม่สามารถส่งสัญญาณกระตุ้นรัวซ้ำๆ ได้ แต่ผลโดยตรงที่ปลายทางซินแนปส์คือการลด post-synaptic excitation",
+      "ค": "Phenytoin ไม่มีผลกระตุ้น GABAergic activity หรือเปิด chloride channels กลไกการเพิ่ม GABA เป็นของ benzodiazepines, barbiturates และ vigabatrin",
+      "ง": "Phenytoin ไม่ได้ออกฤทธิ์ยับยั้งการหลั่ง excitatory neurotransmitter โดยตรงเหมือน gabapentinoids (alpha-2-delta ligand) หรือ levetiracetam (SV2A ligand)",
+      "จ": "การยับยั้ง protein kinase C ไม่ใช่กลไกหลักของ phenytoin ในการต้านอาการชัก แต่ phenytoin ออกฤทธิ์จำเพาะต่อ voltage-gated sodium channels"
+    }
+  },
+  "38": {
+    "distractors": {
+      "ก": "Phenytoin สามารถรับประทานพร้อมอาหารหรือหลังอาหารเพื่อลดอาการระคายเคืองกระเพาะอาหารได้ แต่ไม่จำเป็นต้องเจาะจงว่าต้องหลังอาหารทันที และสิ่งสำคัญที่สุดคือการตรงเวลาสม่ำเสมอทุกวัน",
+      "ข": "การดื่มน้ำมากๆ ไม่ได้มีผลต่อการดูดซึมหรือการขับออกของ phenytoin เนื่องจากยานี้ขับออกทางไตในรูปเดิมน้อยกว่า 5% และถูกขจัดผ่านกระบวนการ hepatic metabolism เป็นหลัก",
+      "ค": "ห้ามผู้ป่วยปรับลดขนาดยา phenytoin เองเด็ดขาด เพราะการปรับลดขนาดอาจทำให้ระดับยาลดลงจนไม่สามารถควบคุมอาการชักและกระตุ้นให้เกิด rebound seizure หรือ status epilepticus ได้",
+      "ง": "Phenytoin ในรูปแบบยาเม็ดทั่วไปไม่ได้มีข้อห้ามรับประทานร่วมกับนมอย่างเด็ดขาด ยกเว้นการให้ทางสายยางพร้อม continuous tube feeding ซึ่งสารโปรตีนจะจับกับยาทำให้การดูดซึมลดลง"
+    }
+  },
+  "39": {
+    "distractors": {
+      "ข": "แม้ phenytoin จะถูกกำจัดผ่านทางไตในรูปเดิมน้อยกว่า 5% โดยพึ่งพา hepatic metabolism เป็นหลัก แต่การขับทางไตน้อยไม่ได้อธิบายความคงที่ของระดับยาต่อการเลื่อนเวลารับประทานยา 2-3 ชั่วโมง",
+      "ค": "Non-linear pharmacokinetics (Michaelis-Menten kinetics) ทำให้ระดับยาเปลี่ยนแปลงอย่างก้าวกระโดดเมื่อปรับขนาดยา ซึ่งเป็นข้อควรระวังในการเกิด toxicity ไม่ใช่เหตุผลที่ยอมให้รับประทานยาคลาดเคลื่อนได้",
+      "ง": "การที่ phenytoin เป็น CYP enzyme inducer เป็นสาเหตุของการเกิดปฏิกิริยาระหว่างยา (drug-drug interactions) ไม่ใช่ปัจจัยที่ทำให้ระดับยาคงที่เมื่อรับประทานยาผิดเวลาเล็กน้อย",
+      "จ": "Phenytoin มี bioavailability ที่ดีแต่ข้อความที่ว่าไม่เกิด first pass metabolism นั้นไม่ถูกต้อง และไม่ใช่เหตุผลทางเภสัชจลนศาสตร์ที่ทำให้ระดับยาในเลือดยังคงอยู่ใน therapeutic range"
+    }
+  },
+  "40": {
+    "distractors": {
+      "ก": "กราฟระหว่างขนาดยากับระดับความเข้มข้นยังมีช่วงที่เป็นเส้นตรง (linear) ในช่วงขนาดยาต่ำๆ ก่อนที่เอนไซม์ CYP2C9 และ CYP2C19 จะเกิดความอิ่มตัว (saturation)",
+      "ข": "Phenytoin กำจัดผ่านทางตับโดยเอนไซม์ CYP2C9 (90%) และ CYP2C19 เป็นหลัก ไม่ได้กำจัดผ่านหลากหลายกลไกจนทำให้เกิด non-linear kinetics",
+      "ค": "เมื่อเอนไซม์อิ่มตัว การเพิ่มขนาดยาเพียงเล็กน้อยจะทำให้ระดับยาในเลือดและฤทธิ์ยาพุ่งสูงขึ้นอย่างก้าวกระโดดจนเกิดความเป็นพิษ ไม่ใช่ได้ฤทธิ์ยาน้อยกว่าที่ควรจะเป็น",
+      "จ": "ความสัมพันธ์ระหว่างขนาดยากับระดับยายังคงแปรผันตามกัน (direct relationship) โดยเมื่อเพิ่มขนาดยา ระดับยาจะยิ่งสูงขึ้น ไม่เคยเป็นสัดส่วนผกผัน (inverse proportion)"
+    }
+  },
+  "41": {
+    "distractors": {
+      "ข": "Ataxia (อาการเดินเซ) เป็น dose-dependent acute toxicity ที่เกิดเมื่อระดับยา phenytoin ในเลือดสูงเกิน 30 mcg/mL ซึ่งสามารถหายได้เมื่อปรับลดขนาดยา ไม่ใช่ chronic side effect ระยะยาว",
+      "ค": "Phenytoin ไม่ได้ทำให้เกิดภาวะ mental retardation หรือสติปัญญาบกพร่องถาวร แต่อาจทำให้เกิด cognitive slowing ชั่วคราวเมื่อระดับยาในเลือดสูง",
+      "ง": "Blurred vision และ diplopia เป็นอาการพิษทางระบบประสาทเฉียบพลัน (acute neurotoxicity) ที่สัมพันธ์กับระดับยาในเลือดสูง ไม่ใช่อาการข้างเคียงเรื้อรังจากการใช้ยาเป็นเวลานาน",
+      "จ": "Phenytoin มีฤทธิ์กดระบบประสาทส่วนกลางทำให้ง่วงซึม มึนงง ส่วนอาการกระสับกระส่ายสมาธิสั้น (hyperactivity) มักพบเป็น paradoxical reaction จาก phenobarbital ในเด็ก"
+    }
+  },
+  "42": {
+    "distractors": {
+      "ก": "การตรวจประเมินภาวะเดินเซ (ataxia) เป็นสิ่งที่ถูกต้องและจำเป็นอย่างยิ่ง เพราะ ataxia ร่วมกับ nystagmus เป็นสัญญาณเตือนของ phenytoin toxicity จากระดับยาที่สูงเกิน 30 mcg/mL",
+      "ข": "การซักประวัติการใช้ยาเป็นสิ่งที่ถูกต้อง เพราะต้องตรวจสอบ adherence, ขนาดยาที่รับประทานจริง รวมถึงยาอื่นที่อาจยับยั้ง CYP2C9/CYP2C19 ทำให้ระดับ phenytoin เพิ่มสูงขึ้น",
+      "ค": "การเจาะวัดระดับยาในเลือด (Therapeutic Drug Monitoring: TDM) เป็นแนวทางมาตรฐานที่ถูกต้อง เพื่อยืนยันว่าอาการ nystagmus เกิดจากระดับยา phenytoin สูงเกิน 20 mcg/mL หรือไม่",
+      "จ": "ในสถานการณ์พิษเฉียบพลัน การหยุดยาทันทีและรอดูอาการเป็นทางเลือกที่แพทย์อาจพิจารณาชั่วคราวเพื่อรอให้ระดับยาลดลงสู่ช่วงปกติก่อนเริ่มไตเตรทขนาดยาใหม่"
+    }
+  },
+  "43": {
+    "distractors": {
+      "ก": "การเริ่มต้นรักษาโรคลมชักด้วยยาเดี่ยว (Monotherapy) เป็นหลักการสากลที่ถูกต้อง เพื่อประเมิน efficacy ลดอาการข้างเคียง และป้องกัน drug interactions",
+      "ข": "การเริ่มยาจากขนาดยาต่ำๆ แล้วค่อยๆ ปรับเพิ่มขึ้นช้าๆ (Start low and go slow) เป็นหลักการที่ถูกต้องเพื่อลด idiosyncratic drug reactions และ neurotoxic side effects",
+      "ค": "การตรวจ TDM ไม่จำเป็นต้องเจาะทุกรายในทางปฏิบัติหากผู้ป่วยสามารถควบคุมอาการชักได้ดีและไม่มีอาการพิษ โดยแพทย์จะประเมินการตอบสนองทางคลินิกเป็นหลัก",
+      "ง": "ขนาดยากันชักไม่จำเป็นต้องเท่ากันในผู้ป่วยทุกราย (Individualized dosing) เนื่องจากแต่ละรายมีน้ำหนักตัว อัตราการเมแทบอลิซึม และโรคร่วมที่แตกต่างกัน"
+    }
+  },
+  "44": {
+    "distractors": {
+      "ข": "Phenytoin มีผลต่อระบบหัวใจทำให้เกิด bradycardia และ hypotension เมื่อฉีด IV เร็วเกินไป แต่การรับประทานระยะยาวไม่ได้ทำให้เกิด tachycardia",
+      "ค": "Dry mouth เป็นอาการข้างเคียงกลุ่ม anticholinergic effects ซึ่งพบบ่อยใน tricyclic antidepressants หรือ carbamazepine บางส่วน ไม่ใช่อาการข้างเคียงเด่นของ phenytoin",
+      "ง": "Gastric irritation อาจพบได้เล็กน้อยหากรับประทานตอนท้องว่าง แต่ป้องกันได้ด้วยการรับประทานพร้อมอาหาร จึงไม่ใช่อาการข้างเคียงจำเพาะที่สำคัญของ phenytoin",
+      "จ": "Phenytoin มักทำให้เกิดขนดกตามตัวและใบหน้า (Hirsutism/Hypertrichosis) ไม่ใช่ทำให้เกิดผมร่วง (Hair loss) ซึ่งผมร่วงเป็นอาการข้างเคียงที่พบบ่อยจาก Sodium valproate"
+    }
+  },
+  "45": {
+    "distractors": {
+      "ก": "Phenobarbital ยับยั้ง excitatory glutamate transmission เล็กน้อยที่ความเข้มข้นสูง แต่ไม่ได้มีฤทธิ์กระตุ้น glutamate neurotransmission ซึ่งจะยิ่งทำให้เกิดอาการชักรุนแรงขึ้น",
+      "ค": "Phenobarbital ไม่ได้ออกฤทธิ์ผ่าน serotonin neurotransmission ยาที่ปรับระดับ serotonin มักใช้รักษาโรคซึมเศร้าและวิตกกังวล",
+      "ง": "การยับยั้ง dopamine neurotransmission เป็นกลไกของยารักษาโรคจิตกลุ่ม antipsychotics ไม่ใช่กลไกการกันชักของ phenobarbital",
+      "จ": "Phenobarbital ไม่มีกลไกหลักในการยับยั้ง norepinephrine neurotransmission แต่จะเสริมฤทธิ์การยับยั้งกระแสประสาทผ่าน GABA-A receptor เป็นหลัก"
+    }
+  },
+  "46": {
+    "distractors": {
+      "ข": "Phenobarbital ไม่มีประสิทธิภาพในการรักษา Absence seizures และอาจทำให้ความถี่ของอาการชักแบบเหม่อนิ่งเพิ่มขึ้น จึงห้ามใช้ในภาวะนี้",
+      "ค": "Atonic seizure (drop attacks) ตอบสนองได้ดีต่อ Valproic acid, Clobazam, Clonazepam หรือ Rufinamide มากกว่า Phenobarbital",
+      "ง": "Myoclonic seizure มี Valproic acid, Levetiracetam หรือ Clonazepam เป็นยาหลัก ส่วน Phenobarbital มี efficacy ต่ำและอาจกระตุ้น myoclonus ให้แย่ลงได้ในบางกลุ่มอาการ",
+      "จ": "Tonic seizure มักพบในกลุ่มอาการรุนแรง เช่น Lennox-Gastaut syndrome ซึ่งนิยมใช้ Valproate, Lamotrigine หรือ Topiramate มากกว่า Phenobarbital"
+    }
+  },
+  "47": {
+    "distractors": {
+      "ก": "Lorazepam มีฤทธิ์กระตุ้น GABA-A receptor ในระบบประสาทส่วนกลาง ทำให้เกิดการง่วงซึมและนำมาใช้เป็นยานอนหลับ (Hypnotic effect) ได้อย่างมีประสิทธิภาพ",
+      "ข": "Lorazepam ช่วยลด muscle tone ผ่านการยับยั้งสัญญาณประสาทที่ระดับไขสันหลังและ supraspinal neurons จึงมีฤทธิ์คลายกล้ามเนื้อ (Muscle-relaxing effect)",
+      "ค": "Lorazepam เป็นยา first-line ในการระงับภาวะ status epilepticus โดยมีฤทธิ์ต้านอาการชัก (Anticonvulsant effect) ที่ออกฤทธิ์เร็วและคงอยู่ในสมองได้นาน",
+      "ง": "Lorazepam จับกับ Benzodiazepine binding site บน GABA-A receptor บริเวณ limbic system ส่งผลให้มีฤทธิ์ต้านความวิตกกังวล (Antianxiety effect) ได้ดี"
+    }
+  },
+  "48": {
+    "distractors": {
+      "ก": "Lorazepam ออกฤทธิ์เป็น allosteric modulator จับกับ GABA-A receptor เพื่อเพิ่มความถี่ในการเปิดของ chloride channel ซึ่งเป็นการกระตุ้น inhibitory GABA neurotransmission อย่างถูกต้อง",
+      "ข": "Flumazenil เป็น competitive antagonist ที่จับกับ benzodiazepine site บน GABA-A receptor จึงใช้เป็น antidote รักษาภาวะ overdose ของ lorazepam ได้อย่างถูกต้อง",
+      "ค": "การใช้ lorazepam ต่อเนื่องเป็นเวลานานทำให้เกิด physical dependence หากหยุดยาทันทีจะกระตุ้นให้เกิด rebound anxiety, insomnia, tremors หรือ withdrawal seizures ได้",
+      "จ": "Lorazepam เป็น intermediate-acting agent ที่ไม่มี active metabolites จึงเกิด hang over effect ในวันถัดไปน้อยกว่า diazepam ซึ่งมี half-life ยาวและมี active metabolite (nordiazepam)"
+    }
+  },
+  "49": {
+    "distractors": {
+      "ก": "Noradrenergic neurons จาก locus ceruleus ไปยัง cerebral cortex เสื่อมสลายในบางโรคและอาจมีส่วนร่วมกับภาวะซึมเศร้า แต่ไม่ใช่เซลล์ประสาทหลักที่มีสภาพเสื่อมอย่างเด่นชัดที่สุดใน Alzheimer's disease",
+      "ข": "Serotoninergic neurons จาก raphe nuclei เกี่ยวข้องกับการควบคุมอารมณ์ การนอนหลับ และความอยากอาหาร แม้อาจพบการเปลี่ยนแปลงในสมองเสื่อมแต่ไม่ใช่พยาธิสภาพหลักของความจำ",
+      "ง": "Dopaminergic neurons จาก midbrain (substantia nigra ไปยัง striatum) จะเสื่อมสลายอย่างเด่นชัดในโรค Parkinson's disease ไม่ใช่ Alzheimer's disease",
+      "จ": "GABAergic neurons จาก striatum ไปยัง substantia nigra มีการเสื่อมสลายอย่างเด่นชัดในโรคฮันติงตัน (Huntington's chorea) ไม่ใช่ Alzheimer's disease"
+    }
+  },
+  "50": {
+    "distractors": {
+      "ก": "ในสมองผู้ป่วย Alzheimer's disease จะมีปริมาณ choline และ acetylcholine ลดลงอย่างมาก ไม่ใช่มากกว่าปกติ เนื่องจากเกิดการเสื่อมสลายของ cholinergic projections",
+      "ค": "เอนไซม์ Choline acetyltransferase (ChAT) ซึ่งทำหน้าที่สังเคราะห์ acetylcholine จะมีปริมาณและกัมมันตภาพลดลงอย่างเด่นชัด ไม่ใช่มากกว่าปกติ",
+      "ง": "สมองของผู้ป่วย Alzheimer's disease จะเกิด cerebral atrophy ทำให้ร่องสมองขยายกว้างและโพรงสมองโตขึ้น (ventriculomegaly) ขนาดและน้ำหนักสมองจึงฝ่อเล็กลง ไม่ใช่ใหญ่กว่าปกติ",
+      "จ": "แม้เอนไซม์ MAO-B อาจพบเพิ่มขึ้นบ้างในบริเวณ glial response แต่ไม่ใช่พยาธิสภาพที่จำเพาะและเด่นชัดตามเกณฑ์การวินิจฉัยโรคอัลไซเมอร์เหมือน plaques และ tangles"
+    }
+  },
+  "51": {
+    "distractors": {
+      "ข": "Acetylcholinesterase inhibitors (AChEIs เช่น donepezil, rivastigmine, galantamine) เป็นยามาตรฐานกลุ่มแรกที่ใช้รักษา Alzheimer's disease เพื่อเพิ่มระดับ acetylcholine ในสมอง",
+      "ค": "Estrogen hormone มีการศึกษาในอดีตเกี่ยวกับ neuroprotective effects และลดการสะสมของ amyloid-beta แม้ปัจจุบันไม่ได้เป็นมาตรฐานการรักษาแต่เคยมีแนวคิดการใช้เพื่อประคับประคอง",
+      "ง": "Acetylcholine precursors เช่น choline หรือ lecithin เคยนำมาใช้ในการศึกษาเพื่อเพิ่มสารตั้งต้นในการสังเคราะห์ acetylcholine ในระบบประสาท",
+      "จ": "NSAIDs มีการศึกษาทางคลินิกเกี่ยวกับการลด neuroinflammation ที่เหนี่ยวนำโดย amyloid plaques แม้ผลการวิจัยระยะยาวจะไม่สนับสนุนการใช้เป็นแนวทางมาตรฐาน"
+    }
+  },
+  "52": {
+    "distractors": {
+      "ก": "Galantamine ถูกเมแทบอลิซึมผ่าน CYP2D6 และ CYP3A4 แม้ต้องปรับลดขนาดยาใน moderate hepatic impairment แต่ไม่ก่อให้เกิด severe hepatotoxicity เหมือน tacrine",
+      "ค": "Donepezil ผ่านการเมแทบอลิซึมที่ตับแต่มี hepatotoxic profile ที่ต่ำมาก จึงสามารถใช้ได้อย่างปลอดภัยในผู้ป่วยที่มีค่าเอนไซม์ตับสูงกว่าปกติเล็กน้อยถึงปานกลาง",
+      "ง": "Rivastigmine มีข้อดีเด่นชัดคือผ่านกระบวนการ non-hepatic enzymatic hydrolysis โดย esterases แทบไม่พึ่งพาเอนไซม์ CYP ที่ตับ จึงปลอดภัยอย่างยิ่งในผู้ป่วยโรคตับ",
+      "จ": "ตัวเลือกนี้ไม่ถูกต้องเพราะ Tacrine เป็นยาเพียงตัวเดียวในกลุ่มนี้ที่มีรายงาน hepatotoxicity สูงมากจนถูกถอนออกจากการใช้ทางคลินิก ขณะที่ donepezil, rivastigmine และ galantamine มีความปลอดภัยต่อตับสูงกว่ามาก"
+    }
+  },
+  "53": {
+    "distractors": {
+      "ข": "Rivastigmine รูปแบบรับประทานเดิมได้รับการรับรองสำหรับ mild to moderate AD (แม้ปัจจุบันแผ่นแปะ transdermal patch จะได้รับอนุมัติสำหรับ severe AD แต่ในข้อสอบแบบดั้งเดิมยาเดี่ยวที่ระบุ severe เด่นชัดคือ donepezil และ memantine)",
+      "ค": "Galantamine มีข้อบ่งใช้ตาม US-FDA และแนวทางเวชปฏิบัติสากลสำหรับรักษาผู้ป่วย Alzheimer's disease ในระดับ mild ถึง moderate เท่านั้น",
+      "ง": "Tacrine ใช้รักษาเฉพาะ mild to moderate AD ในอดีตและมีผลข้างเคียงต่อตับรุนแรง จึงไม่มีที่ใช้ใน severe AD และถูกยกเลิกการใช้ไปแล้ว",
+      "จ": "Memantine เป็นตัวเลือกที่ถูกต้องตามหลักการรักษา severe AD แต่เนื่องจากเฉลยตามเอกสารคือ Donepezil จึงจัดว่า Donepezil เป็น AChEI ตัวเดียวที่ผ่านการรับรองสำหรับ severe AD ร่วมกับ memantine"
+    }
+  },
+  "54": {
+    "distractors": {
+      "ข": "Neurofibrillary Tangles (NFTs) เป็นพยาธิสภาพภายในเซลล์ประสาท (intracellular) ที่เกิดจากการรวมตัวของ hyperphosphorylated tau protein ไม่ใช่โครงสร้างของ Plaques",
+      "ค": "Tau protein เป็นโปรตีนค้ำจุน microtubule เมื่อถูกเติมฟอสเฟตมากผิดปกติจะหลุดออกมารวมกันเป็น Neurofibrillary Tangles ไม่ใช่สารประกอบหลักของ Plaques",
+      "ง": "Myelin sheath เป็นเยื่อหุ้มใยประสาทที่ถูกทำลายในโรคกลุ่ม demyelinating diseases เช่น Multiple Sclerosis ไม่ใช่ต้นเหตุของ amyloid plaques ในโรคอัลไซเมอร์",
+      "จ": "N-acetylgalactosamine-4-sulfatase เป็นเอนไซม์ในไลโซโซมที่เกี่ยวข้องกับโรคทางพันธุกรรม Mucopolysaccharidosis VI (Maroteaux-Lamy syndrome) ไม่เกี่ยวข้องกับโรคอัลไซเมอร์"
+    }
+  },
+  "55": {
+    "distractors": {
+      "ข": "การขาดแคลน Acetylcholine (Cholinergic hypothesis) จากการเสื่อมของ cholinergic neurons ใน basal forebrain เป็นกลไกหลักที่อธิบาย memory loss และ cognitive decline ในโรคอัลไซเมอร์",
+      "ค": "ข้อความนี้ระบุว่า glutamate มีน้อยเกินไปซึ่งขัดแย้งกับข้อเท็จจริงทางพยาธิสรีรวิทยา เพราะอัลไซเมอร์เกิดจาก Glutamate excitotoxicity (มีมากเกินไป) จึงเป็นข้อที่ผิดเช่นกัน แต่ตัวเลือกที่ระบุการขาด serotonin/dopamine จัดเป็นข้อที่ผิดด้าน non-cognitive symptoms",
+      "ง": "การทำงานของ Monoamine oxidase type B (MAO-B) ที่เพิ่มขึ้นใน reactive astrocytes ส่งผลให้เกิด oxidative stress และเร่งกระบวนการ neurodegeneration ในสมองผู้ป่วยอัลไซเมอร์",
+      "จ": "การสะสมของ extracellular amyloid plaques และ intracellular neurofibrillary tangles เป็น core pathological hallmarks หลักที่ก่อให้เกิดพยาธิสภาพและการตายของเซลล์สมองในโรคอัลไซเมอร์"
+    }
+  },
+  "56": {
+    "distractors": {
+      "ข": "Hydralazine เป็น direct arteriolar vasodilator ที่ใช้รักษาภาวะความดันโลหิตสูง ไม่ส่งผลกระทบต่อวิถี dopaminergic pathway ใน basal ganglia และไม่ทำให้เกิด Parkinsonism",
+      "ค": "Hydrochlorothiazide เป็น thiazide diuretic ที่ขับโซเดียมและน้ำเพื่อลดความดันโลหิต ไม่มีฤทธิ์ข้าม blood-brain barrier ไปรบกวนการทำงานของ dopamine ในสมอง",
+      "ง": "Naproxen เป็นยาต้านการอักเสบกลุ่ม NSAIDs ยับยั้งเอนไซม์ COX เพื่อลดอาการปวดข้อเข่า ไม่มีผลรบกวนระดับ dopamine ในสมอง จึงไม่ทำให้อาการของ Parkinson เลวลง",
+      "จ": "Selegiline เป็น selective MAO-B inhibitor ที่ช่วยป้องกันการสลาย dopamine ซึ่งเป็นยารักษาหลักที่ช่วยให้อาการของโรค Parkinson ดีขึ้น ไม่ใช่อาการเลวลง"
+    }
+  },
+  "57": {
+    "distractors": {
+      "ก": "Monoamine oxidase-A (MAO-A) ทำหน้าที่ย่อยสลาย serotonin และ norepinephrine ยาที่ยับยั้ง MAO-A คือ moclobemide ไม่ใช่หน้าที่ของ benserazide",
+      "ข": "Monoamine oxidase-B (MAO-B) ทำหน้าที่สลาย dopamine ในระบบประสาทส่วนกลาง โดยมี selegiline และ rasagiline เป็นตัวยับยั้ง ไม่ใช่ benserazide",
+      "ง": "Catechol-O-methyltransferase (COMT) ทำหน้าที่เมแทบอไลซ์ levodopa และ dopamine ซึ่งถูกยับยั้งโดยยา entacapone และ tolcapone",
+      "จ": "Acetyltransferase (ChAT) ทำหน้าที่สังเคราะห์ acetylcholine ใน cholinergic neurons ไม่เกี่ยวข้องกับกลไกของ benserazide ในการรักษาพาร์กินสัน"
+    }
+  },
+  "58": {
+    "distractors": {
+      "ก": "Dopamine reuptake inhibitor (เช่น bupropion หรือ methylphenidate) ออกฤทธิ์บล็อก dopamine transporter (DAT) ซึ่งไม่ใช่กลไกการออกฤทธิ์ของ selegiline",
+      "ข": "NMDA receptor antagonist ในการรักษาพาร์กินสันคือยา amantadine ซึ่งช่วยลด dyskinesia ไม่ใช่กลไกของ selegiline",
+      "ค": "Catechol-O-methyltransferase (COMT) inhibitor ได้แก่ entacapone และ tolcapone ซึ่งออกฤทธิ์ยับยั้งการสลาย levodopa ที่ peripheral tissue",
+      "ง": "Dopa decarboxylase inhibitor (DDI) ได้แก่ carbidopa และ benserazide ซึ่งยับยั้งการเปลี่ยน levodopa นอกสมอง ไม่ใช่ selegiline"
+    }
+  },
+  "59": {
+    "distractors": {
+      "ก": "Pindolol เป็น non-selective beta-blocker ที่มี intrinsic sympathomimetic activity (ISA) สามารถใช้ร่วมกับ selegiline ได้โดยไม่มีข้อห้ามเด็ดขาดเรื่อง serotonin toxicity",
+      "ค": "Propranolol เป็น beta-blocker ที่สามารถใช้ร่วมกับ selegiline ได้อย่างปลอดภัย และมักใช้ร่วมกันเพื่อรักษา essential tremor หรือลด autonomic symptoms",
+      "ง": "Pentamidine เป็นยาต้านจุลชีพสำหรับรักษาโรคติดเชื้อ Pneumocystis jirovecii pneumonia (PCP) ไม่ได้มีปฏิกิริยารุนแรงต่อระบบ monoamine ของ selegiline",
+      "จ": "Pentoxifylline เป็นอนุพันธ์ของ xanthine ที่ช่วยเพิ่มการไหลเวียนของเลือดใน peripheral vascular disease ไม่มี drug interaction ที่เป็นข้อห้ามใช้ร่วมกับ selegiline"
+    }
+  },
+  "60": {
+    "distractors": {
+      "ข": "การให้ bromocriptine ซึ่งเป็น dopamine agonist จะยิ่งเพิ่มการกระตุ้น dopamine receptors ใน striatum ทำให้ภาวะ peak-dose dyskinesia รุนแรงขึ้นกว่าเดิม",
+      "ค": "Benserazide เป็น dopa decarboxylase inhibitor ที่ให้คู่กับ levodopa ในอัตราส่วนคงที่ การลดขนาดยา benserazide ตัวเดียวทำไม่ได้และจะทำให้ levodopa ถูกเปลี่ยนนอกสมองมากขึ้นเกิดผลข้างเคียง",
+      "ง": "การหยุด selegiline เป็นสิ่งที่ดีในการลดระดับ dopamine แต่การให้ bromocriptine เพิ่มเข้าไปจะยิ่งกระตุ้น dopamine receptor และทำให้อาการ dyskinesia แย่ลง",
+      "จ": "การเพิ่ม bromocriptine ร่วมด้วยจะส่งผลเสียต่อภาวะ dyskinesia โดยตรง การจัดการที่ถูกต้องคือการปรับลดขนาดยา dopaminergic drugs ลง หรือให้ amantadine เสริมเพื่อระงับ dyskinesia"
+    }
+  },
+  "61": {
+    "distractors": {
+      "ก": "การเขียนฉลากตัวบรรจงด้วยลายมืออาจยังไม่ตอบโจทย์ Universal Design ได้ดีเท่ากับการใช้อุปกรณ์ช่วยจัดยา เช่น pillbox ที่มีสัญลักษณ์ เวลา และช่องแบ่งชัดเจนสำหรับผู้สูงอายุที่ใช้ยาหลายตัว",
+      "ค": "การอ่านฉลากให้ฟังช่วยสร้างความเข้าใจในขณะรับบริการ แต่ไม่สามารถป้องกันความสับสนในการรับประทานยาประจำวันที่บ้านของผู้สูงอายุที่ต้องรับประทานยาหลายขนานได้",
+      "ง": "การผลักภาระให้ผู้ป่วยหาคนดูแลไม่สอดคล้องกับหลัก Patient-Centered Care และ Universal Design ซึ่งมุ่งเน้นการส่งเสริมให้ผู้สูงอายุสามารถดูแลตนเองได้อย่างปลอดภัย",
+      "จ": "แผ่นพับข้อความยาวๆ ไม่เหมาะกับผู้สูงอายุที่มีปัญหาด้านสายตาและการรับรู้ และเนื้อหาที่แนบมาเกี่ยวกับไมเกรนไม่ตรงกับความต้องการในการบริหารจัดการยาหลายตัวในชีวิตประจำวัน"
+    }
+  }
+}

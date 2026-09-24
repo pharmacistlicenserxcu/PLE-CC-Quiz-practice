@@ -1,0 +1,396 @@
+=== ID: 82 ===
+Q: ผู้ป่วยชายอายุ 27 ปีเดินมาขอซื้อยาลดน้ำมูกที่ร้านขายยา เมื่อซักประวัติพบว่า มีน้ำมูกใส คัดแน่น จมูก คันจมูก และจามเกือบตลอดเวลา ไม่มีไข้ เป็นมาแล้ว 4 วัน อาการเริ่มเป็นตั้งแต่ไปเที่ยวสวนดอกไม้ที่เขา ใหญ่ ซึ่งก่อนหน้านี้ไม่เคยเป็นมาก่อน และเมื่อกลับมาอาการก็ยังไม่ดีขึ้น ทำให้รู้สึกรำคาญจึงมาขอซื้อยา
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Montelukast 10 mg HS
+note: ข้อ 2 (PLE_CC1_Practice_Exam.md)
+c1: Montelukast 10 mg HS
+c2: Hydroxyzine 25 mg HS
+c3: Diphenhydramine 25 mg IV
+c4: Cetirizine 10 mg OD
+c5: Loratadine 10 mg OD
+
+=== ID: 83 ===
+Q: ข้อใดผิดเกี่ยวกับยากลุ่ม anti-leukotrienes กับการรักษาโรค allergic rhinitis
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. เมื่อใช้เป็นยาเดี่ยวมีฤทธิ์เทียบเท่ากับ second generation antihistamines
+note: ข้อ 7 (PLE_CC1_Practice_Exam.md)
+c1: เมื่อใช้เป็นยาเดี่ยวมีฤทธิ์เทียบเท่ากับ second generation antihistamines
+c2: ใช้ได้ผลดีกับคนที่มีโรคหืดร่วมด้วย
+c3: มีประสิทธิภาพด้อยกว่า INCS
+c4: ถ้าใช้ anti-leukotrienes ร่วมกับ antihistamines จะมีประสิทธิภาพด้อยกว่ายาเดี่ยว
+c5: สำหรับอาการคัดจมูกได้ผลดีเทียบเท่ากับ pseudoephrine 20 โรคระบบหายใจ นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 28 มหาวิทยาลัยรังสิต สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+
+=== ID: 84 ===
+Q: การปฏิบัติตนในข้อใดสามารถลดอาการทางจมูกอักเสบภูมิแพ้ได้
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. การใช้ผ้าปูที่นอน ปลอกหมอนกันไรฝุ่น
+note: ข้อ 10 (PLE_CC1_Practice_Exam.md)
+c1: การใช้ผ้าปูที่นอน ปลอกหมอนกันไรฝุ่น
+c2: ซักผ้าในน้ำร้อน 55-60 องศาเซลเซียสเป็นประจำ
+c3: กำจัด หรือหลีกเลี่ยงสารก่อภูมิแพ้ที่ตนเองแพ้
+c4: อาบน้ำอุ่นเป็นประจำทุกวัน
+c5: ถูกทั้งข้อ ก. ข. และ ค.
+
+=== ID: 85 ===
+Q: อาการใดไม่เข้ากับโรคจมูกอักเสบภูมิแพ้
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. คันจมูก จามติดๆกัน
+note: ข้อ 11 (PLE_CC1_Practice_Exam.md)
+c1: คันจมูก จามติดๆกัน
+c2: น้ำมูกไหลลงคอ ไอเรื้อรัง
+c3: น้ำมูกใส และคัดแน่นจมูก
+c4: ไอเป็นเลือด
+c5: การรับกลิ่นลดลง 21 โรคระบบหายใจ นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 28 มหาวิทยาลัยรังสิต สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+
+=== ID: 86 ===
+Q: ลักษณะที่สามารถพบได้ในผู้ป่วยโรคจมูกอักเสบภูมิแพ้ ยกเว้นข้อใด
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Long face syndrome
+note: ข้อ 12 (PLE_CC1_Practice_Exam.md)
+c1: Long face syndrome
+c2: Allergic shiner
+c3: Allergic nasal crease/line
+c4: Allergic salute
+c5: Butterfly rash
+
+=== ID: 87 ===
+Q: ยาในข้อใดที่ได้ผลดีกับผู้ป่วยที่เป็นโรคหืดร่วมกับโรคจมูกอักเสบภูมิแพ้
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Cromolyn sodium
+note: ข้อ 13 (PLE_CC1_Practice_Exam.md)
+c1: Cromolyn sodium
+c2: Montelukast
+c3: Phenylephrine
+c4: Oxymetazoline
+c5: Levocetirizine
+
+=== ID: 88 ===
+Q: ก่อนหน้านี้ผู้ป่วยหญิงรายนี้ได้รับประทานยา oral antihistamine มาก่อน จากโครงสร้าง Oral antihistamine ตัวใด ออกฤทธิ์ได้ยาวนานที่สุด
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Chlorpheniramine 4 mg TID
+note: ข้อ 17 (PLE_CC1_Practice_Exam.md)
+c1: Chlorpheniramine 4 mg TID
+c2: Fluticasone furoate nasal spray
+c3: Budesonide nasal spray
+c4: Epinephrine 0.3 mg IM stat
+c5: 132 โรคผิวหนัง ฝ่ายวิชาการ สโมสรนักศึกษาคณะเภสัชศาสตร์ มหาวิทยาลัยอุบลราชธานี ปี2560 สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+
+=== ID: 89 ===
+Q: นาย ก นำใบสั่งยาที่ได้รับจากโรงพยาบาลเพื่อมาขอซื้อยาจากร้านขายยาที่ท่านเป็นเภสัชกรประจำอยู่ 5 วันต่อมา นาย ก มาพบท่านที่ร้านยา เนื่องจากมีอาการของโรคภูมิแพ้แย่ลงโดยเฉพาะอาการคัดจมูก ที่เป็นมากขึ้น จึงพ่นยา Oxymetazoline เพิ่มเป็นวันละ 3 ครั้ง แต่อาการยังไม่ดีขึ้น จึงมาปรึกษาเภสัชกรเพื่อ ขอคำแนะนำ ท่านจะแนะนำผู้ป่วยอย่างไร
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. แนะนำให้ผู้ป่วยเปลี่ยนไปใช้ยาพ่นยี่ห่ออื่น
+note: ข้อ 31 (PLE_CC1_Practice_Exam.md)
+c1: แนะนำให้ผู้ป่วยเปลี่ยนไปใช้ยาพ่นยี่ห่ออื่น
+c2: แนะนำให้ผู้ป่วยใช้ยาพ่นจมูกที่มีตัวยา ephedrine ร่วมด้วย
+c3: แนะนำให้ผู้ป่วยเพิ่มขนาดยาพ่นจมูกเป็น 2 spray วันละ 3 ครั้ง
+c4: แนะนำให้ผู้ป่วยรับประทานยาที่บรรเทาอาการคัดจมูกร่วมด้วย
+c5: แนะนำให้ผู้ป่วยหยุดใช้ยาพ่นชั่วคราว
+
+=== ID: 90 ===
+Q: สถานการณ์ที่ 1 หญิงไทย อายุ 32 ปี มาขอซื้อยาให้ลูกชาย อายุ 3 ปี 6 เดือน น้ำหนัก 15 กิโลกรัม มี อาการไอ มีเสมหะ มีน้ำมูกไหลเล็กน้อย ไม่มีไข้ (วัดอุณหภูมิร่างกายแล้วได้ 36.5 องศาเซลเซียส) เป็นมานาน 1-2 วัน ไม่มีโรคประจำตัว ไม่แพ้ยา ก่อนหน้าที่จะเป็นหวัดนั้นเนื่องจากมีอากาศเปลี่ยนแปลง รับประทาน อาหารได้ปกติ งอแงเล็กน้อย โรงพยาบาลคณะเภสัชศาสตร์ ใบสัÉงยา คลินิกโรคตา หู คอ จมูก นาย ก อายุ 28 ปี Rx Beclomethasone nasal spray 1 puff OD Cetirizine 1 tab OD Iliadin nasal spray (oxymetazoline 0.05%) 1 puff OD ผู้ป่วยรายนี้จำเป็นต้องได้รับการรักษาด้วยยาหรือไม่ และหากควรได้รับ ต้องได้รับการรักษาด้วยยา อะไร และมี dosage regimen เท่าไหร่จึงจะเหมาะสม
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ไม่จำเป็น เนื่องจากผู้ป่วยยังอายุน้อย ควรหลีกเลี่ยงการรักษาด้วยยา แนะนำให้พักผ่อนให้เพียงพอ ดื่มน้ำอุ่น รักษาร่างกายให้อบอุ่นเท่านั้น 160 โรคตา หู จมูก คอ นิสิตเภสัชชั้นปีที่4 รุ่นที่15 ร่วมกับ ฝ่ายวิชาการและวิชาชีพ สโมสรนิสิตคณะเภสัชศาสตร์ มหาวิทยาลัยมหาสารคาม สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+note: ข้อ 32 (PLE_CC1_Practice_Exam.md)
+c1: ไม่จำเป็น เนื่องจากผู้ป่วยยังอายุน้อย ควรหลีกเลี่ยงการรักษาด้วยยา แนะนำให้พักผ่อนให้เพียงพอ ดื่มน้ำอุ่น รักษาร่างกายให้อบอุ่นเท่านั้น 160 โรคตา หู จมูก คอ นิสิตเภสัชชั้นปีที่4 รุ่นที่15 ร่วมกับ ฝ่ายวิชาการและวิชาชีพ สโมสรนิสิตคณะเภสัชศาสตร์ มหาวิทยาลัยมหาสารคาม สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+c2: ควรได้รับ เนื่องจากโรคที่ผู้ป่วยเป็นคือ Acute pharyngitis จึงควรได้รับยาปฏิชีวนะคือ Amoxicillin dry syrup (125 mg/5 ml) ปริมาณ 30 ml/day นาน 10 วัน
+c3: ควรได้รับ เนื่องจากโรคที่ผู้ป่วยเป็นคือ Acute bacterial rhinosinusitis จึงควรได้รับยาปฏิชีวนะ คือ Amoxicillin dry syrup (125 mg/5 ml) ปริมาณ 48 ml/day นาน 10 วัน
+c4: ควรได้รับ เนื่องจากโรคที่ผู้ป่วยเป็นคือ common cold จึงควรได้รับยา Carbocysteine (100 mg/5 ml) ปริมาณ 15 ml/day
+c5: ควรได้รับ เนื่องจากโรคที่ผู้ป่วยเป็นคือ common cold จึงควรได้รับยา Carbocysteine (100 mg/5 ml) ปริมาณ 15 ml/day และยา Cetirizine (1 mg/ml) ปริมาณ 4 ml/day จากกรณีศึกษาต่อไปนี้ จงตอบคำถามข้อ 33-35 ผู้ป่วยชายไทยอายุ 47 ปี หนัก 87 kg สูง 176 cm รอบเอว 88 cm CC: มาด้วยอาการไข้สูง เจ็บคอ มีน้ำมูกใสไหล ไอ PI: 3 day PTA มีอาการไข้สูง เจ็บคอมากจนไม่สามารถรับประทานอาหารได้มีน้ำมูกใสไหล ไอ PMH: T2DM, HTN , Dyslipidemia Med PTA: metformin 500 mg 13 pc glypizide 5 mg 12 ac enalapril 5 mg 11 pc simvastatin 40 mg 11 hs Lab: BP 135/81 mmHg, BT 38.1 c Physical examination เมื่อส่องกล้องพบจุดหนองบริเวณคอและต่อมน้ำเหลืองโต SH: - ALL: amoxicillin
+
+=== ID: 91 ===
+Q: ทุกโครงสร้างยาออกฤทธิ์แบบ non-sedative antihistamine ข้อใดต่อไปนี้ถูกต้อง
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. เฉพาะ ข้อความ 1
+note: ข้อ 3 (PLE_CC1_Practice_Exam.md)
+c1: เฉพาะ ข้อความ 1
+c2: เฉพาะข้อความ 2
+c3: ข้อความ 1 และ 2
+c4: ข้อความ 1 และ 3
+c5: ถูกทั้ง 1 2 และ 3
+
+=== ID: 92 ===
+Q: หญิงอายุ 60 ปี เพิ่งเกษียรอายุราชการ มาโรงพยาบาลด้วยอาการ น้ำมูกใส จามรุนแรง คันจมูกมากมา 2 วัน หลังจากนำสุนัขเข้ามาเลี้ยงในห้องนอน แพทย์วินิจฉัย ว่าเป็น allergic rhinitis ยาในข้อใดเหมาะสมที่สุด สำหรับผู้ป่วยรายนี้
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluticasone furoate
+note: ข้อ 30 (PLE_CC1_Practice_Exam.md)
+c1: Fluticasone furoate
+c2: Loratadine
+c3: montelukast
+c4: Phenylephrine
+c5: 0.025% oxymetazoline
+
+=== ID: 93 ===
+Q: พันธะ disulfide กับ NAPQI (toxic metabolite ของ paracetamol) โดยดูได้จากโครงสร้างเคมี ดังนี้ ทำให้ สามารถขับออกทางไตได้ จึงใช้เป็น antidote พ N-acetyl-L-cysteine 245 โรคระบบภูมิคุ้มกัน นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 22 มหาวิทยาลัยนเรศวร สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) Beta-lactams cross Hypersensitivity ของยากลุ่ม Penicillins ผู้ป่วยอาจเกิดการแพ้จากโครงสร้างของยา ดังนั้นการดูยาที่เหมาะสมที่สุดจะต้องเลือกโครงสร้างยาที่มีหมู่ –R ที่แตกต่างจากยาที่มีประวัติว่าเกิดอาการแพ้ โครงสร้างยา Amoxycillin โครงสร้างยา ข้อ ง. ซึ่งยาข้อ ง. เป็นยากลุ่ม Cephalosporins ที่มีหมู่ -R แตกต่างอย่างชัดเจนกับโครงสร้างยา Amoxycillin จึง เลือกยาข้อ ง. เป็นยาที่เหมาะสมที่สุดในผู้ป่วยรายนี้ อาการที่ผู้ป่วยเข้ามาขอซื้อยาในร้านขายยาคือ การเป็น อาการคันจมูก จาม มีน้ำมูกไหล ซึ่งยาที่จะ จ่ายให้เหมาะสมกับอาการของผู้ป่วยรายนี้คือ antihistamine ( H1 antagonists) โดยอาการดังกล่าวเกิดจาก การที่มีสิ่งแปลกปลอมเข้าสู่ร่างกาย แล้ว mast cell และ basophil จะปลดปล่อย histamine ออกมาเพื่อ กระตุ้นระบบภูมิคุ้มกัน ขบวนการที่ histamine ถูกปลดปล่อยออกมาเรียกว่าอาการแพ้ เช่น เกิดผื่นแดง คัน จมูก จาม มีน้ำมูกไหล เป็นต้น ซึ่งการเปลี่ยนแปลงในร่างกายที่กล่าวข้างต้นจะเกิดขึ้นได้เมื่อ histamine จับ กับ histamine receptor ซึ่งปัจจุบัน มี 4 ชนิด ดังนั้นเพื่อการรักษาอาการแพ้ที่เกิดขึ้นจึงต้องใช้ยาที่เป็น H1 246 โรคระบบภูมิคุ้มกัน นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 22 มหาวิทยาลัยนเรศวร สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) antagonists ซึ่งเป็นสารที่สามารถยับยั้ง histamine H1 receptor โดยการขัดขว้างการจับกันของ Histamine กับ histamine H1 receptor ส่งผลให้ไม่เกิดการจับกันแล้วส่งผลให้เกิดอาการแพ้ตามมาได้นั่นเอง Ethylamine side โครงสร้าง Histamine Imidazole ring ยากลุ่ม H1 antagonists แบ่งได้
+ans: 2
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Dexamethasone 4 mg IV
+note: ข้อ 22 (PLE_CC1_Practice_Exam.md)
+c1: Epinephrine 0.3 mg IM stat
+c2: Dexamethasone 4 mg IV
+c3: Prednisolone 20 mg OD
+c4: Montelukast 10 mg HS
+c5: Hydroxyzine 25 mg HS
+
+=== ID: 94 ===
+Q: Non sedative H1 antagonists ประกอบด้วย กลุ่ม zwitterions derivatives กลุ่ม benzimidazole derivatives กลุ่ม tricyclic derivative 247 โรคระบบภูมิคุ้มกัน นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 22 มหาวิทยาลัยนเรศวร สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) โครงสร้าง Betahistine โครงสร้าง Histamine รูป A คือโครงสร้างของ ยา Betahistine ซึ่งเป็นยากลุ่ม H1 agonists จะเห็นว่ามีโครงสร้างคล้ายกับ Histamine aminoalkyl ether รูป B คือโครงสร้างของยา Diphenhydramine ซึ่งเป็น Classical (sedative ) H1 antagonists กลุ่ม aminoalkyl ether x = CH-O (ที่ทำสี่เหลี่ยมไว้) monoaminopropyl รูป. C คือโครงสร้างของยา Chlorpheniramine ซึ่งเป็น Classical (sedative ) H1 antagonists กลุ่ม monoaminopropyl X = CH หรือ X-CH2=C=CH carboxylic group amino group รูป. D คือโครงสร้างของยา Cetirizine ซึ่งเป็น Non sedative H1 antagonists กลุ่ม zwitterions derivatives 248 โรคระบบภูมิคุ้มกัน นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 22 มหาวิทยาลัยนเรศวร สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) บริเวณที่เป็นสีแดงคือส่วนที่เป็น ด่าง amino group ส่วนบริเวณที่เป็นน้ำเงินคือส่วนที่เป็น กรด carboxylic group โปรตรอนจาก carboxylic groupสามารถมา protonated ให้กับ amino nitrogen จึง ทำให้ Nitrogen มีประจุบวก ส่วน Oxygen ที่ carboxylic group มีประจุดลบ โครงสร้าง Cetirizine เกิดเป็น zwitterions จึงทำให้มีความเป็น hydrophobicity ลดลงทำให้ไม่สามารถผ่านเข้าสู่สมองได้จึงทำให้ (ผ่าน BBB ได้ไม่ดี)จึงทำให้อาการง่วงลดลง รูป E. คือโครงสร้างของยา Ranitidine ซึ่งเป็น Histamine H2 receptor antagonists ซึ่งมีข้อบ่งใช้ใน การรักษาโรคกระเพาะอาหาร (สามารถยับยั้งการหลั่งกรด) sulfamethoxazole เนื่องจาก ต้องมีหมู่ R ที่เหมือนกันจึงจะเกิดการเเพ้เเบบ sulfonamide cross hypersentivity ได้ จากตำเเหน่ง 1 2 หรือ 3 ไม่มี หมู่ R ของ Celecoxib ที่เหมือนกับหมู่ R ของ Sulfamethoxazole
+ans: 2
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Hydroxyzine 25 mg HS
+note: ข้อ 2 (PLE_CC1_Practice_Exam.md)
+c1: Montelukast 10 mg HS
+c2: Hydroxyzine 25 mg HS
+c3: Diphenhydramine 25 mg IV
+c4: Cetirizine 10 mg OD
+c5: Loratadine 10 mg OD
+
+=== ID: 95 ===
+Q: จากอาการของผู้ป่วยเป็นอาการของโรค Allergic rhinitis ซึ่งมีปัจจัยที่กระตุ้นอาการคือฝุ่นจากการ สร้างถนน มีอาการน้อยกว่า 4 ครั้งต่อสัปดาห์ จัดเป็น intermittent AR และความรุนแรงของโรคอยู่ในระดับ รุนแรงน้อย เนื่องจากไม่ได้รบกวนคุณภาพชีวิต ดังนั้นยาที่ควรให้แก่ผู้ป่วยรายนี้คือ oral antihistamine ซึ่งจะ เลือก Antihistamine generation 2 หรือ 3 เนื่องจากผู้ป่วยอยู่ในช่วงสอบไม่ต้องการรับประทานยาที่ทำให้ ง่วง ในข้อนี้เลือกจ่าย คือ Fexofenidine ซึ่งยาไม่ผ่าน BBB จึงไม่ทำให้ง่วงนอน
+ans: 5
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ จ. Fluticasone furoate nasal spray
+note: ข้อ 26 (PLE_CC1_Practice_Exam.md)
+c1: Dimenhydrinateเป็นanti histamineมีข้อบ่งใช้ใน motion sickness
+c2: Chlorpeniramine สามารถเลือกใช้ได้ แต่มีผลทำให้ง่วง ดังนั้นจึงไม่ควรเลือกใช้ในกรณีนี้ 249 โรคระบบภูมิคุ้มกัน นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 22 มหาวิทยาลัยนเรศวร สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+c3: Intranasal Budesonide จะใช้ในรายที่มีอาการคัดจมูกมาก ซึ่งผู้ป่วยรายนี้ไม่มีอาการรุนแรงมาก และ อาการไม่ได้รบกวนคุณภาพชีวิต
+c4: terfenadine เป็นยากลุ่ม antihistamine ที่ถูกเพิกถอนทะเบียนตำรับยาเนื่องจากมีอาการไม่พึงประสงค์ที่ เรียกว่า torsade de pointes อ้างอิง: https://basicmedicalkey.com/autacoid-drugs-2/ 250 โรคระบบภูมิคุ้มกัน นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 22 มหาวิทยาลัยนเรศวร สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.) 251 โรคระบบภูมิคุ้มกัน นักศึกษาเภสัชศาสตร์ชั้นปีที่ 4 รุ่นที่ 22 มหาวิทยาลัยนเรศวร สหพันธ์นิสิตนักศึกษาเภสัชศาสตร์แห่งประเทศไทย (สนภท.)
+c5: Fluticasone furoate nasal spray
+
+=== ID: 96 ===
+Q: เนื่องจากผู้ป่วยเป็น Allergic Rhinitis และมีอาการน้ำมูกไหล คันและคัดจมูก จามบ่อยๆ แต่มี อาการประมาณ 2 ครั้งต่อสัปดาห์ ซึ่งจัดเป็น Intermittent AR และเนื่องจากอาการไม่มีผลรบกวนคุณภาพ ชีวิติของผู้ป่วย จึงอยู่ในระดับ Mild และผู้ป่วยควรได้รับยา Oral antihistamine แต่เนื่องจากผู้ป่วยมีโรค ร่วมคือต้อหิน ซึ่งไม่ควรใช้ยาที่มีฤทธิ์ Anticholinergic ดังนั้นยาที่สามารถใช้ได้คือ Fexofenadine เพราะ เป็นยา Antihistamine generation 2 ที่ไม่มีฤทธิ์ Anticholinergic ส่วนยาในข้ออื่นๆเป็นยา Antihistamine generation 1 ซึ่งมีทั้งฤทธิ์ Antihistamine และ Anticholinergic
+ans: 2
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Fluticasone furoate nasal spray
+note: ข้อ 27 (PLE_CC1_Practice_Exam.md)
+c1: Chlorpheniramine 4 mg TID
+c2: Fluticasone furoate nasal spray
+c3: Budesonide nasal spray
+c4: Epinephrine 0.3 mg IM stat
+c5: Dexamethasone 4 mg IV
+
+=== ID: 97 ===
+Q: จ่ายยา Fluticasone furaote spray เนื่องจากอาการแสดงของผู้ป่วยคือ น้ำมูกไหล จาม มีรอยคล้ำ ใต้ตา คัดจมูกมาก แต่มีอาการเป็นเวลา 2 วัน ซึ่งจัดว่าเป็น intermittent AR(มีอาการน้อยกว่า 4ครั้ง/สัปดาห์) และจากข้อมูลพบว่าอาการที่เกิดขึ้นรบกวนคุณภาพชีวิต (รบกวนการนอนหลับ) ซึ่งความรุนแรงจัดอยู่ระดับ severeดังนั้นยาที่ผู้ป่วยควรจะได้รับคือ Intranasal corticosteroid(INS) ซึ่งไม่พบว่ามีการกดการเจริญเติบโต ของเด็กเมื่อใช้นาน 1-3 ปี สรุป ผู้ป่วยมีอาการแสดงของ allergic rhinitis ที่รุนแรง แต่ยังเป็นลักษณะเป็น intermittent ดังนั้น ยาที่ผู้ป่วยควรได้รับคือ INS
+ans: 2
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Dexamethasone 4 mg IV
+note: ข้อ 28 (PLE_CC1_Practice_Exam.md)
+c1: Epinephrine 0.3 mg IM stat
+c2: Dexamethasone 4 mg IV
+c3: Prednisolone 20 mg OD
+c4: Montelukast 10 mg HS
+c5: Hydroxyzine 25 mg HS
+
+=== ID: 98 ===
+Q: เป็นยาที่เหมาะสมที่สุดสำหรับผู้ป่วยรายนี้ จากอาการของผู้ป่วยที่มี น้ำมูกใส จามรุนแรง คันจมูก หลังจากนำ สุนัขเข้ามาเลี้ยงในห้องนอน ทำให้ทราบว่าผู้ป่วยเป็น allergic rhinitis และผู้ป่วยเพิ่งเป็นมาระยะเวลานาน 2 วัน จึงถือว่าเป็น intermittent(น้อยกว่า 4ครั้ง/สัปดาห์) ประกอบกับผู้ป่วยเป็นผู้เกษียรอายุราชการ อาศ ยอยู่ บ้านไม่ได้ทำงาน อาการป่วยจึงไม่ได้มีผลต่อคุณภาพชีวิตมากนัก จึงเลือกให้ Oral antihistamine คือ Loratadine
+ans: 2
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Hydroxyzine 25 mg HS
+note: ข้อ 30 (PLE_CC1_Practice_Exam.md)
+c1: Montelukast 10 mg HS
+c2: Hydroxyzine 25 mg HS
+c3: Diphenhydramine 25 mg IV
+c4: Cetirizine 10 mg OD
+c5: Loratadine 10 mg OD
+
+=== ID: 99 ===
+Q: นายวิบูลย์จะขายยาแผนปัจจุบัน ที่จังหวัดนนทบุรี จึงได้มายื่นขอใบอนุญาตที่สำนักงานคณะกรรมการ อาหารและยา เพื่อให้เลขาธิการสำนักงานคณะกรรมการอาหารและยาเป็นผู้อนุญาต ให้วินิจฉัยว่านายวิบูลย์ ปฏิบัติถูกต้องหรือไม่
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. ถูกต้อง เพราะเลขาธิการสำนักงานคณะกรรมการอาหาร และยาเป็นผู้อนุญาตสำหรับการออกทุก ชนิดทั่วราชอาณาจักร
+note: ข้อ 11 (PLE_CC1_Practice_Exam.md)
+c1: ถูกต้อง เพราะเลขาธิการสำนักงานคณะกรรมการอาหาร และยาเป็นผู้อนุญาตสำหรับการออกทุก ชนิดทั่วราชอาณาจักร
+c2: ถูกต้อง เพราะการอนุญาตสำหรับการขายยาผู้อนุญาตอาจเป็นเลขาธิการ หรือผู้ว่าราชการจังหวัดก็ ได้
+c3: ไม่ถูกต้อง เพราะผู้อนุญาตสำหรับการขายยาในต่างจังหวัดต้องเป็นผู้ว่าราชการจังหวัดที่อยู่ในเขต จังหวัดนั้น
+c4: ไม่ถูกต้อง เพราะผู้อนุญาตสำหรับการขายยาคือ ปลัดกระทรวงสาธารณสุขไม่ใช่เลขาธิการ สำนักงานคณะกรรมการอาหารและยา
+c5: ไม่สามารถตัดสินใจได้จากข้อมูลที่ให้มา
+
+=== ID: 100 ===
+Q: ผู้ป่วยมาร้านยาเพื่อขอซื้อยา Pseudoephedrine ขนาด 60 มิลลิกรัม เภสัชกรบอกยานี้ไม่มีขาย อยาก ทราบว่าทำไมยานี้จึงไม่มีจำหน่ายในร้านยา
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. เนื่องจากเป็นยาอันตราย
+note: ข้อ 27 (PLE_CC1_Practice_Exam.md)
+c1: เนื่องจากเป็นยาอันตราย
+c2: เนื่องจากเป็นยาควบคุมพิเศษ
+c3: เนื่องจากเป็นยาเสพติดให้โทษ ประเภทที่ 2
+c4: เนื่องจากเป็นวัตถุออกฤทธิ์ต่อจิตและประสาท ประเภทที่ 2
+c5: เนื่องจากไม่มียานี้จำหน่ายในประเทศไทย
+
+=== ID: 101 ===
+Q: Oral antihistamine ลดน้ำมูก + คัดจมูก
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Epinephrine 0.3 mg IM stat
+note: ข้อ 2 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Epinephrine 0.3 mg IM stat
+c2: Dexamethasone 4 mg IV
+c3: Prednisolone 20 mg OD
+c4: Montelukast 10 mg HS
+c5: Hydroxyzine 25 mg HS
+
+=== ID: 102 ===
+Q: ยาเพิกถอนทะเบียนตำรับ เรื่องที่ 2 Asthma ผู้ป่วยเป็นโรคภูมิแพ้ มักมีอาการเมื่ออากาศเปลี่ยน มีอาการคล้ายหวัด จาม คัดจมูก น้ำมูกไหล มักเป็นในช่วงเช้า ไม่มีไข้ ได้รับยาแก้แพ้อย่างต่อเนื่อง 3 เดือนต่อมา ผู้ป่วยไปพบแพทย์ แพทย์วินิจฉัยว่าเป็นโรคต่อมลูกหมากโต ได้รับยาแล้วควบคุมอาการได้ดี แต่ช่วงนี้ปัสสาวะไม่ออก
+ans: 4
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ง. Cetirizine 10 mg OD
+note: ข้อ 5 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Montelukast 10 mg HS
+c2: Hydroxyzine 25 mg HS
+c3: Diphenhydramine 25 mg IV
+c4: Cetirizine 10 mg OD
+c5: Loratadine 10 mg OD
+
+=== ID: 103 ===
+Q: ... การใช้ยาหดหลอดเลือดชนิดทีใช้พ่นจมูกต่อเนืองกันนานกว่าสัปดาห์ อาจทำให้เกิดภาวะเยือบุจมูกอักเสบจากยา (rhinitis medicamentosa) ได้ จึงไม่แนะนำให้ผู้ป่วยใช้ยาหดหลอดเลือดชนิดทีใช้พ่นจมูกนีนานเกินไป ยาหดหลอดเลือดชนิดทีใช้พ่น หรือหยอดจมูกแบ่งออกได้เป็ น กลุ่ม คือ 1. Imidazoline derivatives ยาในกลุ่มนี ได้แก่ oxymetazoline, xylometazoline, tetrahydrozoline และ naphazoline เป็นต้น 2. Beta phenylethylamine derivatives ยาในกลุ่มนี ได้แก่ ephedrine, phenylephrine เป็นต้น
+ans: 3
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ค. Fexofenadine 180 mg OD
+note: ข้อ 5 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Cetirizine 10 mg OD
+c2: Loratadine 10 mg OD
+c3: Fexofenadine 180 mg OD
+c4: Chlorpheniramine 4 mg TID
+c5: Fluticasone furoate nasal spray
+
+=== ID: 104 ===
+Q: ยา Antihistamine ตัวใดที่ทำให้ง่วงมากที่สุด
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Chlorpheniramine 4 mg TID
+note: ข้อ 8 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Chlorpheniramine 4 mg TID
+c2: Fluticasone furoate nasal spray
+c3: Budesonide nasal spray
+c4: Epinephrine 0.3 mg IM stat
+c5: Dexamethasone 4 mg IV
+
+=== ID: 105 ===
+Q: ใช้ยาเดิมต่อไป แต่ให้ antihistamine และ paracetamol
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Epinephrine 0.3 mg IM stat
+note: ข้อ 1 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Epinephrine 0.3 mg IM stat
+c2: Dexamethasone 4 mg IV
+c3: Prednisolone 20 mg OD
+c4: Montelukast 10 mg HS
+c5: Hydroxyzine 25 mg HS
+
+=== ID: 106 ===
+Q: Loratadine (minor) ระดับ lora ลดลง
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Montelukast 10 mg HS
+note: ข้อ 3 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Montelukast 10 mg HS
+c2: Hydroxyzine 25 mg HS
+c3: Diphenhydramine 25 mg IV
+c4: Cetirizine 10 mg OD
+c5: Loratadine 10 mg OD
+
+=== ID: 107 ===
+Q: ไม่เหมาะสม เพราะ ควรใช้ยา Loratadine จะได้ผลดีกว่า
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Cetirizine 10 mg OD
+note: ข้อ 4 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Cetirizine 10 mg OD
+c2: Loratadine 10 mg OD
+c3: Fexofenadine 180 mg OD
+c4: Chlorpheniramine 4 mg TID
+c5: Fluticasone furoate nasal spray
+
+=== ID: 108 ===
+Q: ไม่เหมาะสม เพราะ ไม่ควรใช้ First generation antihistamine และ Decongestant ในผู้สูงอายุ
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Chlorpheniramine 4 mg TID
+note: ข้อ 5 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Chlorpheniramine 4 mg TID
+c2: Fluticasone furoate nasal spray
+c3: Budesonide nasal spray
+c4: Epinephrine 0.3 mg IM stat
+c5: Dexamethasone 4 mg IV
+
+=== ID: 109 ===
+Q: – สถานการณ) 7 ผู$ป&วยชาย อายุ 40 ป3 น้ำหนัก 60 กิโลกรัม โรคประจำตัวคือ Allergic rhinitis และ CKD stage 4 มีอาการ ไข$ เจ็บคอ มีเสมหะ ไมGไอ มีน้ำมูก เปญนมาสามวัน วันนี้มาร$านยา เภสัชกรสGองคอพบจุดหนองที่คอด$านซ$าย จGายยาคือ Amoxicillin 1x3 Ibuprofen 1x3 pc Chlorpheniramine (4) 1x3 pc prn
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Epinephrine 0.3 mg IM stat
+note: ข้อ 60 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Epinephrine 0.3 mg IM stat
+c2: Dexamethasone 4 mg IV
+c3: Prednisolone 20 mg OD
+c4: Montelukast 10 mg HS
+c5: Hydroxyzine 25 mg HS
+
+=== ID: 110 ===
+Q: Antihistamine eye drops
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Montelukast 10 mg HS
+note: ข้อ 3 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Montelukast 10 mg HS
+c2: Hydroxyzine 25 mg HS
+c3: Diphenhydramine 25 mg IV
+c4: Cetirizine 10 mg OD
+c5: Loratadine 10 mg OD
+
+=== ID: 111 ===
+Q: Fexofenadine 60 mg 1 tab bid
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Cetirizine 10 mg OD
+note: ข้อ 2 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Cetirizine 10 mg OD
+c2: Loratadine 10 mg OD
+c3: Fexofenadine 180 mg OD
+c4: Chlorpheniramine 4 mg TID
+c5: Fluticasone furoate nasal spray
+
+=== ID: 112 ===
+Q: Oxymetazoline intranasal 0.5 mg/ml 1 puff prn (at night 1-2 times/week)
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Chlorpheniramine 4 mg TID
+note: ข้อ 3 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Chlorpheniramine 4 mg TID
+c2: Fluticasone furoate nasal spray
+c3: Budesonide nasal spray
+c4: Epinephrine 0.3 mg IM stat
+c5: Dexamethasone 4 mg IV
+
+=== ID: 113 ===
+Q: Pseudoephedrine 60 mg/triprolidine 2.5 mg 1 tab bid pc
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Epinephrine 0.3 mg IM stat
+note: ข้อ 4 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Epinephrine 0.3 mg IM stat
+c2: Dexamethasone 4 mg IV
+c3: Prednisolone 20 mg OD
+c4: Montelukast 10 mg HS
+c5: Hydroxyzine 25 mg HS
+
+=== ID: 114 ===
+Q: Allergic rhinitis ของผู้ป่วยรายนี้มีความรุนแรงระดับใด
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Mild intermittent
+note: ข้อ 2 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Mild intermittent
+c2: Mild persistent
+c3: Mild-moderate persistent
+c4: Moderate-severe persistent
+c5: Moderate-severe intermittent และผู้ป่วยเพิ่งมีอาการมา 2 สัปดาห์ ดังแสดงในแผนภูมิด้านล่างนี้
+
+=== ID: 115 ===
+Q: Fexofenadine มีการ metabolism ได้ metabolite ดังภาพ ซึ่งเกิดขึ้นจากปฏิกิริยาใด
+ans: 2
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ข. Dealkylation
+note: ข้อ 7 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Deamination
+c2: Dealkylation
+c3: Deacetylation
+c4: Decarboxylation
+c5: Dehydrogenation
+
+=== ID: 116 ===
+Q: ข้อใดมีผลต่อความสม่ำเสมอของยา fexofenadine
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. มุมทรงตัว
+note: ข้อ 8 (PLE_CC1_Key_Rx20_UBU.md)
+c1: มุมทรงตัว
+c2: ความพรุนของผงยา
+c3: การทำเป็นแกรนูล
+c4: ความสามารถในการตอกอัด
+c5: การใส่สาร glidant ลงไปในตำรับ
+
+=== ID: 117 ===
+Q: จากรูป โครงสร้างหรือคุณสมบัติใดของ cetirizine ที่ทำให้กินยานี้แล้วไม่ง่วง
+ans: 1
+exp_first: ✅ คำตอบที่ถูกต้อง: ข้อ ก. Acid property
+note: ข้อ 106 (PLE_CC1_Key_Rx20_UBU.md)
+c1: Acid property
+c2: Basic property
+c3: Amphoteric property
+c4: Aromatic ring
+c5: Electron withdrawing และทำให้ผ่าน BBB น้อยจึงทำให้ส่งผลต่อ CNS side น้อย
+

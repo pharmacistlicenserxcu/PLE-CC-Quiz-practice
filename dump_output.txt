@@ -1,0 +1,304 @@
+=== KEY: 42 (ans: 1 -> ก) ===
+Q: ผลข้างเคียงของการใช้ยา oxymetazoline ติดต่อกันหลายวัน
+  ก. Glaucoma [CORRECT]
+  ข. Epistaxis
+  ค. Rebound congestion
+  ง. HPA axis suppression
+  จ. nasal septal perforation
+
+=== KEY: 43 (ans: 1 -> ก) ===
+Q: กลไกการออกฤทธิ์ของยาแก้คัดจมูก oxymetazoline
+  ก. Alpha1,Alpha2 agonist [CORRECT]
+  ข. Beta1 agonist
+  ค. Muscarinic agonist
+  ง. Acetylcholinesterase inhibitor
+  จ. Neuromuscular blocker
+
+=== KEY: 44 (ans: 1 -> ก) ===
+Q: CPM เป็น first gen antihistamine ห้ามใช้ในผู้ป่วยโรคใด
+  ก. กลั้นปัสสาวะไม่อยู่ [CORRECT]
+  ข. หอบหืด
+  ค. ต่อมลูกหมากโต
+  ง. หัวใจเต้นผิดจังหวะ
+  จ. ใช้ยาปฏิชีวนะ (erythromycin,fluconazole)
+
+=== KEY: 45 (ans: 3 -> ค) ===
+Q: อาหารหรือปัจจัยใดกระตุ้นให้เกิด allergic rhinitis ได้
+  ก. เครื่องดื่มแอลกอฮอล์
+  ข. อาหารที่มีสารกันบูด sulfite เช่น ไวน์ อาหารแปรรูป
+  ค. อาหารที่มีรสจัดหรือเผ็ดที่กระตุ้นอาการคัดจมูก [CORRECT]
+  ง. สูบบุหรี่และควันบุหรี่
+  จ. ถูกทุกข้อ
+
+=== KEY: 46 (ans: 1 -> ก) ===
+Q: คุณครูมาขอซื้อยา CPM กระปุกละ 100 mg 5 กระปุก ซื้อมาไว้ให้เด็กเผื่อไปทัศนศึกษา สามารถขายได้ หรือไม่ ถ้าขายเภสัชจะมีความผิดไหม - CPM จดเปนยาอนตรายลดบท 32
+  ก. ขายได้เพราะเป็นยาสามัญประจำบ้าน [CORRECT]
+  ข. ขายได้เพราะเป็นยาอันตรายตามกฎหมาย
+  ค. ขายไม่ได้เพราะปริมาณเกินกฎหมายกำหนดไว้
+  ง. ขายไม่ได้เพราะไม่ได้คำนึงถึงความปลอดภัยผู้มาซื้อ
+  จ. ขายไม่ได้เพราะไม่มีใบสั่งซื้อจากแพทย์
+
+=== KEY: 47 (ans: 1 -> ก) ===
+Q: คุณครูมาขอซื้อยา CPM กระปุกละ 100 mg 5 กระปุก ซื้อมาไว้ให้เด็กเผื่อไปทัศนศึกษา สามารถขายได้ หรือไม่ ถ้าขายเภสัชจะมีความผิดไหม ชายอายุ 69 ปี สูง 170 ซม. น้ำหนัก 90 กก. เข้าโรงพยาบาลด้วยอาการปวดท้องส่วนบน แสบร้อนกลาง อก มีคลื่นไส้บางครั้งอาเจียน เป็นมา 5 วัน อาการหนักหลังมื้ออาหาร มีอาการตอนกลางคืน ชอบทานของทอด และของเผ็ด ทานมื้อดึกเป็นมื้อหนัก ทานยา naproxen แก้ปวด และทาน aspirin 81 mg ใช้เพื่อป้องกันโรค หลอดเลือดสมอง 2 วันก่อนมาโรงพยาบาล ปวดท้องจึงทาน naproxen แต่ไม่ดีขึ้นจึงมาโรงพยาบาล ดื่มสุราและ สูบบุหรี่ ส่องกล้องพบแผลในกระเพาะอาหารขนาดใหญ่และมีเลือดออก ผลเลือดและอุจจาระ ไม่พบภาวะโลหิต จางแต่พบเลือดปนในอุจจาระ ผล urea breath test positive
+  ก. ขายได้เพราะเป็นยาสามัญประจำบ้าน [CORRECT]
+  ข. ขายได้เพราะเป็นยาอันตรายตามกฎหมาย
+  ค. ขายไม่ได้เพราะปริมาณเกินกฎหมายกำหนดไว้
+  ง. ขายไม่ได้เพราะไม่ได้คำนึงถึงความปลอดภัยผู้มาซื้อ
+  จ. ขายไม่ได้เพราะไม่มีใบสั่งซื้อจากแพทย์
+
+=== KEY: 48 (ans: 1 -> ก) ===
+Q: ผู้ป่วยปวดแผลผ่าตัด หลังได้รับ morphine IV ผู้ป่วยมีอาการหัวใจเต้นช้า ซึมลง ไม่พูด ไม่ดื่ม ผู้ป่วยควรได้รับ ยาอะไรในการรักษา - CPM kดเ"นยาlนตรายmnบ 32
+  ก. Fluticasone furoate nasal spray [CORRECT]
+  ข. Budesonide nasal spray
+  ค. Epinephrine 0.3 mg IM stat
+  ง. Dexamethasone 4 mg IV
+  จ. Bromocriptine
+
+=== KEY: 49 (ans: 1 -> ก) ===
+Q: คุณครูมาขอซื้อ CPM 4 มก. 5 กระปุก กระปุกละ 100 เม็ด เนื่องจากกำลังจะเปิดเรียน เภสัชกรขายให้ เภสัช กรผิดหรือไม่
+  ก. Allergic rhinitis [CORRECT]
+  ข. Dexamethasone 4 mg IV
+  ค. Prednisolone 20 mg OD
+  ง. Montelukast 10 mg HS
+  จ. Hydroxyzine 25 mg HS
+
+=== KEY: 50 (ans: 1 -> ก) ===
+Q: ข้อใดเป็นเกณฑ์ในการวินิจฉัยว่าผู้ป่วยคนนี้เป็นโรคไตเรื้อรัง CPM UACR = 282 ☆
+  ก. Allergic rhinitis [CORRECT]
+  ข. Hydroxyzine 25 mg HS
+  ค. Diphenhydramine 25 mg IV
+  ง. Cetirizine 10 mg OD
+  จ. Loratadine 10 mg OD
+
+=== KEY: 51 (ans: 1 -> ก) ===
+Q: ยาใดที่ร้านขายส่งไม่สามารถขายให้ร้านขายยาแผนปัจจุบันได้ 4อ6จ8งๆ :เฉลย=าง>งตามการ,กษา anaphylaxis เBนหEกFงเBนการแ"แบบ IgE-mediated เGนเHยว3น FงสามารถใLยา Antihistamine, Corticosteroids และอาจรวมไปNง Epinephrine หOอยาอPาง bronchodilators Fง patho การแ"แบบ Type I QนจะR mediators อPาง Histamine ปลดปTอยออกมาUงสามารถใVยาอPาง antihistamine ไ+
+  ก. Sildenafil [CORRECT]
+  ข. Alprazolam
+  ค. Tramadol
+  ง. Dexamethasone
+  จ. Prednisolone eดfา combine 3นเอา synergistic effect เลยHกfา gก เหhผลjงkอ:lวยR Na mUงไnอยากเ^มขนาด HCTZ
+
+=== KEY: 52 (ans: 1 -> ก) ===
+Q: CPM 10 เม็ด?????
+  ก. Allergic rhinitis [CORRECT]
+  ข. Fluticasone furoate nasal spray
+  ค. Budesonide nasal spray
+  ง. Epinephrine 0.3 mg IM stat
+  จ. Dexamethasone 4 mg IV
+
+=== KEY: 53 (ans: 1 -> ก) ===
+Q: เด็กอายุ14 ปีมีคัดจมูกน้ำมูกไหลเป็นมา5 สัปดาห์ติดต้องตื่นมากลางดึกประวัติเป็นโรคภูมิแพ้เมื่อ2 เดือนก่อนได้รับแมวมาเลี้ยง ข้างบ้านมีการก่อสร้างมา1 ปีมารดาเป็นโรคภูมิแพ้ปัจจัยใดที่กระตุ้นให้เกิดอาการนี้มากที่สุด ตัวเลือก
+  ก. Allergic rhinitis [CORRECT]
+  ข. Dexamethasone 4 mg IV
+  ค. Prednisolone 20 mg OD
+  ง. Montelukast 10 mg HS
+  จ. Hydroxyzine 25 mg HS
+
+=== KEY: 54 (ans: 1 -> ก) ===
+Q: มารดาเป็นภูมิแพ้
+  ก. Allergic rhinitis [CORRECT]
+  ข. Hydroxyzine 25 mg HS
+  ค. Diphenhydramine 25 mg IV
+  ง. Cetirizine 10 mg OD
+  จ. Loratadine 10 mg OD
+
+=== KEY: 55 (ans: 1 -> ก) ===
+Q: (ชื่อยาantihistamine) nasal spray
+  ก. Allergic rhinitis [CORRECT]
+  ข. Loratadine 10 mg OD
+  ค. Fexofenadine 180 mg OD
+  ง. Chlorpheniramine 4 mg TID
+  จ. Fluticasone furoate nasal spray
+
+=== KEY: 56 (ans: 1 -> ก) ===
+Q: Antihistamine =ง>ตรเ?ยวและ>ตรผสม เฉพาะFปแบบยาH รายการยา antihistamine ตามแนบIายประกาศJKงL
+  ก. Tramadol เดี่ยวและผสม [CORRECT]
+  ข. Dextromethorphan เดี่ยวและผสม
+  ค. CPM เดี่ยวและผสม เฉพาะยาน้ำ
+  ง. Cetirizine เดี่ยวและผสม เฉพาะยาน้ำ
+  จ. Diphenhydramine เดี่ยวและผสม เฉพาะยาน้ำ
+
+=== KEY: 57 (ans: 2 -> ข) ===
+Q: โครงสรางส;วนใดของ loratadine ที่ทำใหยามีความ selective ต;อ histamine 1 receptor N = 5.54 x (4/0.1)^2 N = 8,864 !งไ$%อยก)า 8,000 +ง,น.อ)า/านเกณ2 H1 เ"น Gq receptor $ง G protein จะ( 7 transmembrane โครงส-างของ Antihistamine จะเ1าไป4บ receptor 6ง7 - tertiary amine 4บ8แห;ง 3 >> D - imidazole ring ห> C
+  ก. Dexamethasone 4 mg IV
+  ข. Prednisolone 20 mg OD [CORRECT]
+  ค. Montelukast 10 mg HS
+  ง. Hydroxyzine 25 mg HS
+  จ. A และ C C เ"น Pyridine ring ไAใC imidazole แD EดGา;าจะเ"น8แห;ง4บ HางIงจากKป7 (เส=ม) ?ห@บ H2 receptor (Slide medchem)
+
+=== KEY: 58 (ans: 1 -> ก) ===
+Q: Allergic rhinitis
+  ก. Allergic rhinitis [CORRECT]
+  ข. Hydroxyzine 25 mg HS
+  ค. Diphenhydramine 25 mg IV
+  ง. Cetirizine 10 mg OD
+  จ. Loratadine 10 mg OD
+
+=== KEY: 60 (ans: 1 -> ก) ===
+Q: common cold จะแนะนำยังไงดี
+  ก. Allergic rhinitis [CORRECT]
+  ข. พักผ่อนให้เพียงพอ / อื่น ๆ เป็นเพิ่มยา เปลี่ยนยา ร่วมกับการใช้ยาบรรเทาอาการ เช่น การใช้ยาลดไข้แก้ปวด การใช้ยาแก้แพ้ชนิดง่วงเพื่อลดน้ำมูก การใช้ยาหดหลอดเลือดเพื่อบรรเทาอาการคัดจมูก และการใช้ยาแก้ไอกลุ่มต่าง ๆ https://ccpe.pharmacycouncil.org/index.php?option=article_detail&subpage=article_detail&id=1133
+  ค. Budesonide nasal spray
+  ง. Epinephrine 0.3 mg IM stat
+  จ. Dexamethasone 4 mg IV
+
+=== KEY: 61 (ans: 1 -> ก) ===
+Q: จากอาการดังกล.าวผู(ปcวยเป5น allergic rhinitis แบบใดและมีความ รุนแรงระดับใด
+  ก. Persistent, mild [CORRECT]
+  ข. Intermittent, mild
+  ค. Intermittent, very severe
+  ง. Persistent, moderate-severe
+  จ. Intermittent, moderate-severe
+
+=== KEY: 62 (ans: 1 -> ก) ===
+Q: การใช(ยา pseudoephedrine nasal drop ติดต.อกันนานเกิน 10 วัน มีผลทำให(เกิดผลข(างเคียงใด
+  ก. นอนไม.หลับ [CORRECT]
+  ข. เกิดฝqาขาวที่ลิ้น
+  ค. เลือดกำเดาไหล
+  ง. คัดจมูกมาก หายใจไม.ออก
+  จ. เลือดออกในทางเดินอาหาร
+
+=== KEY: 63 (ans: 1 -> ก) ===
+Q: Allergic rhinitis with Asthma
+  ก. Cetirizine 10 mg OD [CORRECT]
+  ข. Loratadine 10 mg OD
+  ค. Fexofenadine 180 mg OD
+  ง. Chlorpheniramine 4 mg TID
+  จ. Fluticasone furoate nasal spray
+
+=== KEY: 64 (ans: 1 -> ก) ===
+Q: กฏหมาย หมายเหตุ: แนวข้อสอบนี้ทั้งหมดเกิดจากการจำ และอาจเกิดจากการตีโจทย์มาก่อนเพื่อให้ จำออกมาได้ จึงอาจได้โจทย์ไม่สมบูรณ์ แต่ผู้จัดทำได้พยายามให้ทำให้สมบูรณ์และเสมือน จริงมากที่สุด ขอบคุณ Rx. UP NU PYU และ CU73 รวมโดย Phongsathorn Phlaisaithong Rx 9 UP 2 | P a g e สถานการณ์ที่ 1 Allergic rhinitis with Asthma ผู้ป่วยหญิงอายุ 20 ปี มีอาการคัดจมูก น ้ามูกไหล ไปเรียนได้ปกติ เป็นมาแล้ว 2 สัปดาห์ ได้ยาดังนี
+  ก. Chlorpheniramine 4 mg TID [CORRECT]
+  ข. Fluticasone furoate nasal spray
+  ค. Budesonide nasal spray
+  ง. Epinephrine 0.3 mg IM stat
+  จ. Dexamethasone 4 mg IV
+
+=== KEY: 65 (ans: 1 -> ก) ===
+Q: Fexofenadine 60 mg bid
+  ก. Epinephrine 0.3 mg IM stat [CORRECT]
+  ข. Dexamethasone 4 mg IV
+  ค. Prednisolone 20 mg OD
+  ง. Montelukast 10 mg HS
+  จ. Hydroxyzine 25 mg HS
+
+=== KEY: 66 (ans: 1 -> ก) ===
+Q: Oxymetazoline intranasal prn (at night 1-2 times/week)
+  ก. Montelukast 10 mg HS [CORRECT]
+  ข. Hydroxyzine 25 mg HS
+  ค. Diphenhydramine 25 mg IV
+  ง. Cetirizine 10 mg OD
+  จ. Loratadine 10 mg OD
+
+=== KEY: 67 (ans: 1 -> ก) ===
+Q: กลไกของการเกิด Allergic rhinitis เกี่ยวข้องกับ Antibody ตัวใด
+  ก. IgA [CORRECT]
+  ข. IgE
+  ค. IgD
+  ง. IgM
+  จ. IgG
+
+=== KEY: 68 (ans: 1 -> ก) ===
+Q: Allergic rhinitis จัดเป็นแบบใด
+  ก. Mild intermittent [CORRECT]
+  ข. Mild persistent
+  ค. Mild-moderate intermittent
+  ง. Moderate persistent
+  จ. Moderate-severe intermittent
+
+=== KEY: 69 (ans: 1 -> ก) ===
+Q: Oxymetazoline ออกฤทธิ์เหมือนกับยาใด
+  ก. Phenylephrine [CORRECT]
+  ข. Loratadine
+  ค. Ipratopium
+  ง. Cromolyn
+  จ. Theophylline
+
+=== KEY: 70 (ans: 1 -> ก) ===
+Q: ยาใดสามารถรักษาได้ทั ง Allergic rhinitis และ Asthma
+  ก. Budesonide [CORRECT]
+  ข. Montelukast
+  ค. Ipratopium
+  ง. Loratadine
+  จ. Leukotriene
+
+=== KEY: 72 (ans: 1 -> ก) ===
+Q: เด็กชายอายุ 14 ปี น้ำมูกไหลมา 5 สัปดาห์ มีอาการตื่นกลางดึกเพราะคัดจมูก หายใจไม่ออก ซักประวัติเพิ่มเติม 2 เดือนก่อนเพิ่งรับแมวมาเลี้ยง และข้างบ้านก่อสร้างมาเป็นระยะเวลา 1 ปี โดยผู้ปกครองเล่าว่า แม่มีอาการของภูมิแพ้ภูมิแพ้เหมือนกัน และยังจำเป้นต้องใช้ยาในการรักษา ข้อใดเป้นสาเหตุที่ทำให้ผู้ป่วยรายนี้มีอาการกำเริบของภูมิแพ้มากที่สุดc
+  ก. การก่อสร้าง [CORRECT]
+  ข. ประวัติทางพันธุกรรม
+  ค. ขนแมว
+  ง. สภาพอากาศ
+  จ. ปัจจัยภายใน เช่น โรคประจำตัว
+
+=== KEY: 73 (ans: 1 -> ก) ===
+Q: ยาในข้อใดไม่เหมาะสมสำหรับผู้ป่วยรายนี%มากที_x001E_สุด (1) Loratadine (2) Amoxicillin (3) Ibuprofen (4) Phenylephrine (5) Chlorpheniramine maleate
+  ก. Epinephrine 0.3 mg IM stat [CORRECT]
+  ข. Dexamethasone 4 mg IV
+  ค. Prednisolone 20 mg OD
+  ง. Montelukast 10 mg HS
+  จ. Hydroxyzine 25 mg HS
+
+=== KEY: 74 (ans: 1 -> ก) ===
+Q: จากข้อ 15. ควรรักษาด้วยยาในข้อใด จำตัวเลือกไม่ได้ แต่ตัวเลือกส่วนใหญ่จะเป็น combination antibiotic eye drops มีบ้างที_x0003_เป็น antibiotics eye drop ร่วมกับ ophthalmic decongestant/antihistamines พี_x0003_ตอบ ceftazidime ED + gentamicin ED ไปอ่ะ ฝากเช็คคำตอบด้วยนะว่าถูกมั_x001B_ย ถ้าผิดจะต้องใช้ตัวไหน Final version | Maximum’2017 Rx30 | Prince of Songkla University สถานการณ์ที_x001E_ 3 ผู้ป่วยหญิงไทย อายุ 50 ปี นํ_x001B_าหนัก 48 กิโลกรัม มา โรงพยาบาลด้วยอาการไอเป็นเลือด ไอเรื_x001B_อรังมานานกว่า 1 เดือน มีไข้ตํ_x0003_า ๆ นํ_x001B_าหนักลด 5 กิโลกรัมในระยะเวลา 3 สัปดาห์ อ่อนเพลีย ไอเป็นเลือด ผลการทำ acid fast bacilli staining พบ AFB 3+ แพทย์จึงวินิจฉัยว่าเป็น pulmonary tuberculosis จากการทบทวนประวัติพบว่า ผู้ป่วยเคยเป็น pulmonary tuberculosis เมื_x0003_อ 8 เดือนที_x0003_ผ่านมา และได้รับการ รักษาด้วยยาต้านวัณโรคสูตรมาตรฐานครบถ้วนแล้ว 6 เดือน
+  ก. Montelukast 10 mg HS [CORRECT]
+  ข. Hydroxyzine 25 mg HS
+  ค. Diphenhydramine 25 mg IV
+  ง. Cetirizine 10 mg OD
+  จ. Loratadine 10 mg OD
+
+=== KEY: 75 (ans: 1 -> ก) ===
+Q: จากตำรับยาข้างต้น กำหนดให้ oxymetazoline มีค่า E เท่ากับ 0.3 ดังนั้นจะต้องเติม NaCl ลงไปเท่าไรจึง จะทำให้ตำรับมีความเป็น isotonic
+  ก. 0.60 ml [CORRECT]
+  ข. 0.67 ml
+  ค. 0.80 ml
+  ง. 0.87 ml
+  จ. 0.90 ml คณะเภสัชศาสตร์ มหาวิทยาลัยเชียงใหม่ Rx 44 CMU
+
+=== KEY: 76 (ans: 1 -> ก) ===
+Q: Antihistamine ตัวไหนทำให้เกิดอาการง่วงที่สุด
+  ก. Hydroxyzine [CORRECT]
+  ข. Chlorphenhydramine
+  ค. Brompheniramine
+  ง. Triprolidine
+  จ. Cyproheptadine
+
+=== KEY: 77 (ans: 1 -> ก) ===
+Q: ยาเพิกถอนทะเบียนตำรับ Case 2: Asthma ผู้ป่วยเป็นโรคภูมิแพ้ มักมีอาการเมื่ออากาศเปลี่ยน มีอาการคล้ายหวัด จาม คัดจมูก น ้ามูกไหล มักเป็นในช่วงเช้า ไม่มีไข้_x0003_ ได้รับยาแก้แพ้อย่างต่อเนื่อง 3 เดือนต่อมา ผู้ป่วยไปพบแพทย์ แพทย์วินิจฉัยว่าเป็นโรคต่อมลูกหมากโต ได้รับยาแล้วตวบ คุมอาการได้ดี แต่ช่วงนี้ปัสสาวะไม่ออก
+  ก. Epinephrine 0.3 mg IM stat [CORRECT]
+  ข. Dexamethasone 4 mg IV
+  ค. Prednisolone 20 mg OD
+  ง. Montelukast 10 mg HS
+  จ. Hydroxyzine 25 mg HS
+
+=== KEY: 78 (ans: 1 -> ก) ===
+Q: Pseudoephedrine
+  ก. Montelukast 10 mg HS [CORRECT]
+  ข. Hydroxyzine 25 mg HS
+  ค. Diphenhydramine 25 mg IV
+  ง. Cetirizine 10 mg OD
+  จ. Loratadine 10 mg OD
+
+=== KEY: 79 (ans: 1 -> ก) ===
+Q: ชื่อผู้ผลิต และ จังหวัดที่ผลิต
+  ก. Cetirizine 10 mg OD [CORRECT]
+  ข. Loratadine 10 mg OD
+  ค. Fexofenadine 180 mg OD
+  ง. Chlorpheniramine 4 mg TID
+  จ. Fluticasone furoate nasal spray
+
+=== KEY: 80 (ans: 1 -> ก) ===
+Q: ต่อมลูกหมากโต 8.ยา Antihistamine ตัวใดที่ทำให้ง่วงมากที่สุด
+  ก. Chlorpheniramine 4 mg TID [CORRECT]
+  ข. Fluticasone furoate nasal spray
+  ค. Budesonide nasal spray
+  ง. Epinephrine 0.3 mg IM stat
+  จ. Dexamethasone 4 mg IV
+
+=== KEY: 81 (ans: 1 -> ก) ===
+Q: ผู้ป่วยมีอาการเลือดออกตามไรฟัน เลือดกำเดาไหล เป็นหวัดง่าย สามารถช่วยได้โดยอาศัย
+  ก. Vitamin C [CORRECT]
+  ข. Vitamin E
+  ค. Vitamin K
+  ง. Folic acid
+  จ. Ferrus sulfate ตอบ a
+
