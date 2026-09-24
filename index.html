@@ -3047,6 +3047,37 @@
     </div>
   </div>
 
+  <!-- Question Validation Confirmation Modal (Double Check) -->
+  <div class="modal-overlay" id="confirmValidateModal">
+    <div class="modal-box" style="max-width:440px;">
+      <div class="modal-head">
+        <h3 style="color:#047857; display:flex; align-items:center; gap:6px;">
+          <span>✅</span>
+          <span>ยืนยันความถูกต้องของข้อสอบ</span>
+        </h3>
+        <button class="modal-close" onclick="closeConfirmValidateModal()">✕</button>
+      </div>
+
+      <div style="background:rgba(16, 185, 129, 0.08); border:1px solid rgba(16, 185, 129, 0.25); border-radius:12px; padding:12px 14px; margin-bottom:14px; font-size:12.5px; line-height:1.55; color:#065f46;">
+        <div style="font-weight:700; margin-bottom:4px; color:#047857;" id="confirmValModalLoc">📌 ข้อที่: -</div>
+        <div style="color:var(--ink); font-style:italic; font-size:12px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;" id="confirmValModalQuestion">❓ คำถาม: -</div>
+      </div>
+
+      <p style="font-size:13px; color:var(--ink); line-height:1.55; margin-bottom:18px;">
+        คุณได้ตรวจสอบโจทย์ ตัวเลือก และคำอธิบายเฉลยแล้วว่า <b>มีความถูกต้อง ครบถ้วน และสอดคล้องกับแนวทางเวชปฏิบัติ</b> ใช่หรือไม่?
+      </p>
+
+      <div style="display:flex; gap:10px;">
+        <button class="lobby-tool-btn" onclick="closeConfirmValidateModal()" style="flex:1; padding:10px; font-weight:700;">
+          ยกเลิก
+        </button>
+        <button class="submit-btn" onclick="executePendingValidation()" style="flex:1.4; background:#059669; color:#fff; padding:10px; font-weight:700; box-shadow:0 3px 10px rgba(5,150,105,0.25);">
+          ✅ ยืนยันว่าถูกต้อง
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Report Issue Modal -->
   <div class="modal-overlay" id="reportIssueModal">
     <div class="modal-box">
@@ -3319,7 +3350,7 @@
 <div id="printContainer"></div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
-<script src="quiz-data-offline.js?v=20260925_v15"></script>
+<script src="quiz-data-offline.js?v=20260925_v16"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
 const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
@@ -5722,7 +5753,60 @@ function isQuestionValidatedByUser(qId) {
   return !!userValidatedQuestions[qId];
 }
 
+let pendingValidationState = null;
+
+function openConfirmValidateModal(q, btnEls, countEls) {
+  if (!q || !q.id) return;
+  const qId = q.id;
+
+  if (isQuestionValidatedByUser(qId)) {
+    showToast('✨ คุณได้ร่วมยืนยันความถูกต้องของข้อสอบนี้ไปแล้ว ขอบคุณมากครับ! 💖');
+    return;
+  }
+
+  pendingValidationState = {
+    q: q,
+    btnEls: btnEls,
+    countEls: countEls
+  };
+
+  const itemNo = q.itemNo || (typeof currentQuestionIndex !== 'undefined' ? (currentQuestionIndex + 1) : '-');
+  const locEl = document.getElementById('confirmValModalLoc');
+  const qEl = document.getElementById('confirmValModalQuestion');
+
+  if (locEl) {
+    locEl.textContent = `📌 ข้อที่ ${itemNo} · หมวด ${q.track || 'Clinic'} (${q.subtopic || q.category || '-'})`;
+  }
+  if (qEl) {
+    const cleanQ = (q.question || '').replace(/<[^>]*>/g, '').trim();
+    qEl.textContent = `❓ คำถาม: ${cleanQ || '-'}`;
+  }
+
+  const modal = document.getElementById('confirmValidateModal');
+  if (modal) modal.classList.add('show');
+}
+
+function closeConfirmValidateModal() {
+  pendingValidationState = null;
+  const modal = document.getElementById('confirmValidateModal');
+  if (modal) modal.classList.remove('show');
+}
+
+function executePendingValidation() {
+  if (!pendingValidationState || !pendingValidationState.q) {
+    closeConfirmValidateModal();
+    return;
+  }
+  const { q, btnEls, countEls } = pendingValidationState;
+  closeConfirmValidateModal();
+  commitValidateQuestion(q, btnEls, countEls);
+}
+
 function handleValidateQuestion(q, btnEls, countEls) {
+  openConfirmValidateModal(q, btnEls, countEls);
+}
+
+function commitValidateQuestion(q, btnEls, countEls) {
   if (!q || !q.id) return;
   const qId = q.id;
 
