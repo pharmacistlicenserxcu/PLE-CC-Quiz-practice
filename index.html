@@ -984,6 +984,34 @@
     }
     .btn-report-card:hover { color: #dc2626; border-color: #fca5a5; background: #fef2f2; }
 
+    .btn-validate-card {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 8px; border: 1px solid rgba(16, 185, 129, 0.45); border-radius: 6px;
+      background: #ecfdf5; color: #047857; font-family: inherit;
+      font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.16s ease;
+      user-select: none;
+    }
+    .btn-validate-card:hover {
+      border-color: #10b981; background: #d1fae5; color: #065f46; transform: translateY(-1px);
+    }
+    .btn-validate-card.validated {
+      background: #10b981; color: #ffffff; border-color: #059669; font-weight: 700;
+      box-shadow: 0 1px 3px rgba(16, 185, 129, 0.35);
+    }
+    .btn-validate-card .val-count {
+      background: rgba(16, 185, 129, 0.18); color: #047857; padding: 0.5px 5px; border-radius: 10px;
+      font-size: 10.5px; font-family: 'IBM Plex Mono', monospace; font-weight: 700;
+    }
+    .btn-validate-card.validated .val-count {
+      background: rgba(255, 255, 255, 0.28); color: #ffffff;
+    }
+
+    .beta-notice-box {
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(2, 132, 199, 0.08) 100%);
+      border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px;
+      padding: 12px 14px; margin-bottom: 14px; font-size: 12px; line-height: 1.55; color: #065f46;
+    }
+
     .question-img-wrap { display: none; text-align: center; margin: 8px 0 12px; }
     .question-img-wrap.show { display: block; }
     .question-img { max-width: 100%; max-height: 240px; border-radius: 10px; border: 1px solid var(--border); object-fit: contain; cursor: pointer; }
@@ -2079,11 +2107,14 @@
       </div>
 
       <!-- ⚠️ Notice Disclaimer Banner -->
-      <div style="background:rgba(217, 119, 6, 0.08); border:1px solid rgba(217, 119, 6, 0.28); border-radius:10px; padding:10px 12px; margin-bottom:14px; font-size:11.5px; line-height:1.55; color:#92400e;">
-        <div style="font-weight:700; display:flex; align-items:center; gap:6px; margin-bottom:3px; color:#b45309;">
-          <span>⚠️ คำชี้แจงสำคัญก่อนใช้งาน</span>
+      <div style="background:rgba(2, 132, 199, 0.06); border:1px solid rgba(2, 132, 199, 0.25); border-radius:12px; padding:11px 13px; margin-bottom:14px; font-size:11.8px; line-height:1.55; color:#0369a1;">
+        <div style="font-weight:700; display:flex; align-items:center; gap:6px; margin-bottom:4px; color:#0284c7;">
+          <span style="background:#e0f2fe; color:#0369a1; padding:2px 6px; border-radius:6px; font-size:10.5px;">🧪 Version ทดลอง</span>
+          <span>ข้อความชี้แจงจากทีมงาน</span>
         </div>
-        <div>ข้อสอบรวบรวมมาจากแนวข้อสอบจำหลายแหล่ง และใช้ AI สังเคราะห์คำอธิบายเฉลยและจุดเน้น โปรดทบทวนด้วยความระมัดระวัง หากพบจุดผิดพลาดสามารถกดปุ่ม <b>"🚩 แจ้งปัญหาข้อสอบ"</b> เพื่อส่งให้คณะทำงานตรวจสอบแก้ไขต่อไป</div>
+        <div>
+          ✨ <b>"ช่วยกันตรวจ ช่วยกันทำ ก็จะมีข้อสอบดีๆ ให้ทำจ้า"</b> ระบบนี้อยู่ในช่วง Version ทดลอง ทีมงานกำลังทยอยตรวจสอบ ปรับปรุง และแก้ไขให้เรื่อยๆ อย่างต่อเนื่อง หากข้อไหนตรวจสอบแล้วว่าถูกต้อง สามารถกดปุ่ม <b>✅ "ข้อสอบถูกต้อง"</b> หรือหากพบจุดผิดพลาดสามารถกด <b>🚩 "แจ้งปัญหาข้อสอบ"</b> ได้เลยครับ
+        </div>
       </div>
 
       <div class="auth-tabs">
@@ -2230,12 +2261,22 @@
           <div class="lobby-streak-badge" id="lobbyStreakBadge">📚 วันนี้ยังไม่ได้เริ่มทำข้อสอบ มาลุยกัน!</div>
 
           <!-- ⚠️ Lobby Notice Banner (Dismissible) -->
-          <div id="lobbyDisclaimerBanner" style="display:flex; align-items:flex-start; gap:10px; background:rgba(217, 119, 6, 0.08); border:1px solid rgba(217, 119, 6, 0.25); border-radius:10px; padding:10px 12px; margin-top:10px; font-size:12px; line-height:1.5; color:#92400e;">
-            <span style="font-size:16px; line-height:1;">⚠️</span>
+          <div id="lobbyDisclaimerBanner" style="display:flex; align-items:flex-start; gap:12px; background:linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%); border:1px solid rgba(2, 132, 199, 0.25); border-radius:12px; padding:12px 14px; margin-top:12px; font-size:12.5px; line-height:1.55; color:#0f172a;">
+            <div style="font-size:22px; line-height:1; flex-shrink:0;">🧪</div>
             <div style="flex:1;">
-              <b>ข้อควรทราบ:</b> ข้อสอบรวบรวมมาจากข้อสอบจำหลายสถาบันและใช้ AI สังเคราะห์เฉลย โปรดใช้งานด้วยความระมัดระวัง หากพบข้อที่เฉลยคลาดเคลื่อน สามารถกดปุ่ม <b>"🚩 แจ้งปัญหาข้อสอบ"</b> ได้ตลอดเวลาเพื่อให้ทีมงานตรวจสอบและอัปเดตชีต
+              <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px; flex-wrap:wrap;">
+                <span style="background:#0284c7; color:#fff; font-size:10.5px; font-weight:700; padding:2px 7px; border-radius:6px; letter-spacing:0.3px;">VERSION ทดลอง</span>
+                <span style="font-weight:700; color:#0369a1;">โครงการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC)</span>
+              </div>
+              <div style="color:#334155;">
+                ✨ <b>"ช่วยกันตรวจ ช่วยกันทำ ก็จะมีข้อสอบดีๆ ให้ทำจ้า"</b> ระบบนี้อยู่ในช่วงทดสอบใช้งาน ทีมงานกำลังทยอยตรวจสอบ ปรับปรุง และแก้ไขข้อสอบ/เฉลยให้เรื่อยๆ อย่างต่อเนื่อง
+              </div>
+              <div style="margin-top:5px; font-size:11.8px; color:#475569; display:flex; gap:14px; flex-wrap:wrap;">
+                <span>• ถ้าข้อไหนโอเคถูกต้องแล้ว กดปุ่ม <b style="color:#047857;">✅ "ข้อสอบถูกต้อง"</b> เพื่อยืนยันความถูกต้อง</span>
+                <span>• ถ้าพบจุดผิดพลาด กดปุ่ม <b style="color:#b91c1c;">🚩 "แจ้งปัญหา"</b> ได้ตลอดเวลาครับ</span>
+              </div>
             </div>
-            <button type="button" onclick="document.getElementById('lobbyDisclaimerBanner').style.display='none'" style="background:none; border:none; color:#b45309; cursor:pointer; font-size:14px; font-weight:700; padding:0 4px;" title="ปิดการแจ้งเตือนนี้">✕</button>
+            <button type="button" onclick="document.getElementById('lobbyDisclaimerBanner').style.display='none'" style="background:none; border:none; color:#64748b; cursor:pointer; font-size:15px; font-weight:700; padding:2px 6px;" title="ปิดการแจ้งเตือนนี้">✕</button>
           </div>
         </div>
 
@@ -2459,10 +2500,17 @@
       <div class="quiz-card" id="quizCard">
         <div class="quiz-card-head">
           <span class="tag clinic-tag" id="quizCardTag">Clinic · Cardiovascular</span>
-          <button class="btn-report-card" onclick="openReportIssueModal()" title="แจ้งปัญหาข้อนี้">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-            <span>แจ้งปัญหา</span>
-          </button>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <button class="btn-validate-card" id="btnValidateCard" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
+              <span class="val-icon">✅</span>
+              <span class="val-label">ถูกต้อง</span>
+              <span class="val-count" id="valCountCard">0</span>
+            </button>
+            <button class="btn-report-card" onclick="openReportIssueModal()" title="แจ้งปัญหาข้อนี้">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              <span>แจ้งปัญหา</span>
+            </button>
+          </div>
         </div>
 
         <div class="question-img-wrap" id="qImgWrap">
@@ -2488,6 +2536,16 @@
             <img class="exp-img" id="ansImg" src="" alt="รูปเฉลย" onclick="openImgLightbox(this.src)">
           </div>
           <div class="exp-note" id="expNote" style="display:none;"></div>
+          
+          <div class="exp-validate-bar" style="margin-top:12px; padding-top:10px; border-top:1px dashed rgba(0,0,0,0.1); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+            <div style="font-size:11.5px; color:var(--ink-soft);">
+              ✨ ช่วยกันตรวจช่วยกันทำ หากข้อนี้ถูกต้องแล้ว กดร่วมยืนยันได้เลยจ้า
+            </div>
+            <button class="btn-validate-card" id="btnValidateCardExp" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
+              <span>✅ ข้อสอบถูกต้อง</span>
+              <span class="val-count" id="valCountCardExp">0</span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -2769,7 +2827,18 @@
         </div>
       </div>
 
-      <div style="display:flex; gap:10px; margin-top:18px;">
+      <!-- 🧪 Beta Collaborative Notice -->
+      <div style="background:rgba(16, 185, 129, 0.08); border:1px solid rgba(16, 185, 129, 0.28); border-radius:10px; padding:9px 12px; margin-top:14px; font-size:11.8px; line-height:1.5; color:#065f46;">
+        <div style="font-weight:700; display:flex; align-items:center; gap:5px; margin-bottom:2px;">
+          <span>🧪 Version ทดลอง</span>
+          <span style="font-weight:normal; opacity:0.85;">· ช่วยกันตรวจ ช่วยกันทำ ก็จะมีข้อสอบดีๆ ให้ทำจ้า</span>
+        </div>
+        <div>
+          ทีมงานกำลังทยอยตรวจสอบและแก้ไขข้อสอบให้เรื่อยๆ หากทำข้อไหนแล้วพบว่าถูกต้อง สามารถกดปุ่ม <b>✅ "ข้อสอบถูกต้อง"</b> เพื่อร่วมยืนยันความถูกต้องให้เพื่อนๆ หรือกด <b>🚩 "แจ้งปัญหา"</b> ได้ตลอดเวลาครับ 🥰
+        </div>
+      </div>
+
+      <div style="display:flex; gap:10px; margin-top:16px;">
         <button class="lobby-tool-btn" onclick="closeQuizSetupModal()" style="flex:1;">ยกเลิก</button>
         <button class="submit-btn" onclick="startConfiguredQuiz()" style="flex:2;">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -2917,6 +2986,17 @@
             <option value="45">⏱️ 45 นาที</option>
             <option value="0">♾️ ไม่จำกัดเวลา</option>
           </select>
+        </div>
+      </div>
+
+      <!-- 🧪 Beta Collaborative Notice -->
+      <div style="background:rgba(16, 185, 129, 0.08); border:1px solid rgba(16, 185, 129, 0.28); border-radius:10px; padding:9px 12px; margin-bottom:14px; font-size:11.8px; line-height:1.5; color:#065f46;">
+        <div style="font-weight:700; display:flex; align-items:center; gap:5px; margin-bottom:2px;">
+          <span>🧪 Version ทดลอง</span>
+          <span style="font-weight:normal; opacity:0.85;">· ช่วยกันตรวจ ช่วยกันทำ ก็จะมีข้อสอบดีๆ ให้ทำจ้า</span>
+        </div>
+        <div>
+          ทีมงานกำลังตรวจสอบและแก้ไขข้อสอบให้เรื่อยๆ ระหว่างทำข้อสอบหรือทบทวนหลังส่ง สามารถกดปุ่ม <b>✅ "ข้อสอบถูกต้อง"</b> เพื่อยืนยันความถูกต้อง หรือ <b>🚩 "แจ้งปัญหา"</b> ได้เลยครับ 🥰
         </div>
       </div>
 
@@ -3239,7 +3319,7 @@
 <div id="printContainer"></div>
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
-<script src="quiz-data-offline.js?v=20260924_v11"></script>
+<script src="quiz-data-offline.js?v=20260925_v12"></script>
 <script>
 // ─── USER & SESSION STORAGE ───
 const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
@@ -4080,6 +4160,7 @@ function isSystemCategory(name) {
 function loadInitialData() {
   categories = (window.QUIZ_OFFLINE_CATEGORIES || []).filter(c => !isSystemCategory(c.name));
   allQuestionsMap = window.QUIZ_OFFLINE_QUESTIONS || {};
+  if (typeof initQuestionValidationEngine === 'function') initQuestionValidationEngine();
   showLobby();
   if (typeof loadLeaderboardData === 'function') loadLeaderboardData();
   if (typeof loadCommunityMessagesLive === 'function') loadCommunityMessagesLive();
@@ -5575,6 +5656,174 @@ function openReportIssueModalForQ(qIdx) {
   openReportIssueModal();
 }
 
+// ═══════════════════════════════════════════════════════════════════
+// 🌟 QUESTION VALIDATION ENGINE (ระบบยืนยันข้อสอบถูกต้อง & จำนวนการกด)
+// ═══════════════════════════════════════════════════════════════════
+let questionValidationCounts = {};
+let userValidatedQuestions = {};
+
+function initQuestionValidationEngine() {
+  try {
+    const cachedCounts = localStorage.getItem('ple_question_validation_counts');
+    if (cachedCounts) questionValidationCounts = JSON.parse(cachedCounts) || {};
+  } catch(e) {}
+
+  try {
+    const cachedUser = localStorage.getItem('ple_validated_questions');
+    if (cachedUser) userValidatedQuestions = JSON.parse(cachedUser) || {};
+  } catch(e) {}
+
+  fetchValidationCountsFromGas();
+}
+
+function fetchValidationCountsFromGas() {
+  if (!GAS_WEBAPP_URL || GAS_WEBAPP_URL.includes('PASTE_YOUR_')) return;
+  fetch(`${GAS_WEBAPP_URL}?action=getValidationCounts`)
+    .then(res => res.json())
+    .then(data => {
+      if (data && data.success && data.counts) {
+        questionValidationCounts = Object.assign({}, questionValidationCounts, data.counts);
+        try {
+          localStorage.setItem('ple_question_validation_counts', JSON.stringify(questionValidationCounts));
+        } catch(e) {}
+        updateAllActiveValidationBadges();
+      }
+    })
+    .catch(() => {});
+}
+
+function getQuestionValidationCount(qId) {
+  if (!qId) return 0;
+  return Number(questionValidationCounts[qId] || 0);
+}
+
+function isQuestionValidatedByUser(qId) {
+  if (!qId) return false;
+  return !!userValidatedQuestions[qId];
+}
+
+function handleValidateQuestion(q, btnEls, countEls) {
+  if (!q || !q.id) return;
+  const qId = q.id;
+
+  if (isQuestionValidatedByUser(qId)) {
+    showToast('✨ คุณได้ร่วมยืนยันความถูกต้องของข้อสอบนี้ไปแล้ว ขอบคุณมากครับ! 💖');
+    return;
+  }
+
+  userValidatedQuestions[qId] = true;
+  const currentCount = getQuestionValidationCount(qId);
+  const newCount = currentCount + 1;
+  questionValidationCounts[qId] = newCount;
+
+  try {
+    localStorage.setItem('ple_validated_questions', JSON.stringify(userValidatedQuestions));
+    localStorage.setItem('ple_question_validation_counts', JSON.stringify(questionValidationCounts));
+  } catch(e) {}
+
+  const btnArr = Array.isArray(btnEls) ? btnEls : [btnEls];
+  const cntArr = Array.isArray(countEls) ? countEls : [countEls];
+
+  btnArr.forEach(btn => {
+    if (btn) btn.classList.add('validated');
+  });
+  cntArr.forEach(el => {
+    if (el) el.textContent = newCount;
+  });
+
+  showToast('✅ ขอบคุณที่ช่วยตรวจและยืนยันความถูกต้องของข้อสอบนี้ครับ! 💖');
+
+  const now = new Date();
+  const pad = (n) => String(n).padStart(2, '0');
+  const bkk = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Bangkok' }));
+  const thaiTimestamp = `${pad(bkk.getDate())}/${pad(bkk.getMonth() + 1)}/${bkk.getFullYear()} ${pad(bkk.getHours())}:${pad(bkk.getMinutes())}:${pad(bkk.getSeconds())}`;
+
+  sendGasPostRequest({
+    action: 'validateQuestion',
+    timestamp: thaiTimestamp,
+    user: currentUser ? currentUser.displayName : 'Anonymous',
+    category: q.category || currentCategory || '-',
+    questionId: qId,
+    question: (q.question || '').replace(/<[^>]*>/g, '').substring(0, 150)
+  });
+}
+
+function handleValidateCurrentCardQuestion() {
+  const q = activeQuizQuestions ? activeQuizQuestions[currentQuestionIndex] : null;
+  if (!q) return;
+  handleValidateQuestion(
+    q,
+    [document.getElementById('btnValidateCard'), document.getElementById('btnValidateCardExp')],
+    [document.getElementById('valCountCard'), document.getElementById('valCountCardExp')]
+  );
+}
+
+function updateCardValidationBtnState(q) {
+  if (!q) return;
+  const qId = q.id;
+  const isValid = isQuestionValidatedByUser(qId);
+  const cnt = getQuestionValidationCount(qId);
+
+  const btnCard = document.getElementById('btnValidateCard');
+  const countCard = document.getElementById('valCountCard');
+  if (btnCard) btnCard.classList.toggle('validated', isValid);
+  if (countCard) countCard.textContent = cnt;
+
+  const btnExp = document.getElementById('btnValidateCardExp');
+  const countExp = document.getElementById('valCountCardExp');
+  if (btnExp) btnExp.classList.toggle('validated', isValid);
+  if (countExp) countExp.textContent = cnt;
+}
+
+function handleValidateScrollQuestion(idx) {
+  const q = activeQuizQuestions ? activeQuizQuestions[idx] : null;
+  if (!q) return;
+  handleValidateQuestion(
+    q,
+    document.getElementById(`btnValScroll_${idx}`),
+    document.getElementById(`valCountScroll_${idx}`)
+  );
+}
+
+function handleValidateReviewQuestion(idx) {
+  const q = activeQuizQuestions ? activeQuizQuestions[idx] : null;
+  if (!q) return;
+  handleValidateQuestion(
+    q,
+    document.getElementById(`btnValRev_${idx}`),
+    document.getElementById(`valCountRev_${idx}`)
+  );
+}
+
+function handleValidateBrowseQuestion(sliceIdx) {
+  const q = browseFilteredList ? browseFilteredList[sliceIdx] : null;
+  if (!q) return;
+  handleValidateQuestion(
+    q,
+    document.getElementById(`btnValBrowse_${sliceIdx}`),
+    document.getElementById(`valCountBrowse_${sliceIdx}`)
+  );
+}
+
+function openReportIssueModalForBrowseQ(sliceIdx) {
+  if (browseFilteredList && browseFilteredList[sliceIdx]) {
+    activeReportQuestion = browseFilteredList[sliceIdx];
+  }
+  openReportIssueModal();
+}
+
+function updateAllActiveValidationBadges() {
+  if (typeof currentAppMode === 'undefined') return;
+  if (currentAppMode === 'quiz' && practiceViewStyle === 'card') {
+    const q = activeQuizQuestions ? activeQuizQuestions[currentQuestionIndex] : null;
+    if (q) updateCardValidationBtnState(q);
+  } else if (currentAppMode === 'quiz' && practiceViewStyle === 'scroll') {
+    renderScrollPractice();
+  } else if (currentAppMode === 'examReview') {
+    renderExamReview();
+  }
+}
+
 function renderScrollPractice() {
   const container = document.getElementById('scrollQuestionsList');
   if (!container) return;
@@ -5681,6 +5930,8 @@ function renderScrollPractice() {
     }
 
     const expText = q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
+    const valCount = getQuestionValidationCount(q.id);
+    const isValidated = isQuestionValidatedByUser(q.id);
 
     html += `
       <div class="${cardClass}" id="scrollCard_${idx}">
@@ -5693,6 +5944,11 @@ function renderScrollPractice() {
           </div>
           <div style="display:flex; align-items:center; gap:6px;">
             ${statusBadge}
+            <button class="btn-validate-card ${isValidated ? 'validated' : ''}" id="btnValScroll_${idx}" onclick="handleValidateScrollQuestion(${idx})" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
+              <span>✅</span>
+              <span>ถูกต้อง</span>
+              <span class="val-count" id="valCountScroll_${idx}">${valCount}</span>
+            </button>
             <button class="btn-report-card" onclick="openReportIssueModalForQ(${idx})" title="แจ้งปัญหาข้อนี้">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
             </button>
@@ -5881,6 +6137,7 @@ function renderCurrentQuestion() {
 
   updateQuizNav();
   renderExamPalette();
+  updateCardValidationBtnState(q);
 }
 
 function selectChoice(choiceNum) {
@@ -6315,6 +6572,9 @@ function renderExamReview() {
         </div>`;
     });
 
+    const valCount = getQuestionValidationCount(q.id);
+    const isValidated = isQuestionValidatedByUser(q.id);
+
     html += `
       <div class="browse-card" style="border-left: 5px solid ${isCorrect ? '#16A34A' : '#DC2626'};">
         <div class="browse-card-head">
@@ -6325,8 +6585,16 @@ function renderExamReview() {
               ? '<span style="background:#DCFCE7; color:#166534; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:6px; border:1px solid #BBF7D0;">✅ คุณตอบถูก (ข้อ ' + userLetter + ')</span>' 
               : '<span style="background:#FEE2E2; color:#991B1B; font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:6px; border:1px solid #FECACA;">❌ คุณตอบผิด (คุณตอบ ' + userLetter + ' / เฉลย ' + correctLetter + ')</span>'}
           </div>
-          <div class="browse-card-tags">
+          <div class="browse-card-tags" style="display:flex; align-items:center; gap:6px;">
             ${examBadge.html}
+            <button class="btn-validate-card ${isValidated ? 'validated' : ''}" id="btnValRev_${idx}" onclick="handleValidateReviewQuestion(${idx})" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
+              <span>✅</span>
+              <span>ถูกต้อง</span>
+              <span class="val-count" id="valCountRev_${idx}">${valCount}</span>
+            </button>
+            <button class="btn-report-card" onclick="openReportIssueModalForQ(${idx})" title="แจ้งปัญหาข้อนี้">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+            </button>
           </div>
         </div>
 
@@ -6506,6 +6774,9 @@ function renderBrowseList(reset = true) {
         </div>`;
     });
 
+    const valCount = getQuestionValidationCount(q.id);
+    const isValidated = isQuestionValidatedByUser(q.id);
+
     html += `
       <div class="browse-card" id="browseCard_${idx}">
         <div class="browse-card-head">
@@ -6513,8 +6784,16 @@ function renderBrowseList(reset = true) {
             <span class="browse-item-num-badge">ข้อที่ ${itemNo}</span>
             <span class="tag ${trackBadgeClass}">${q.track || 'Clinic'} · ${getQuestionSubtopics(q).length ? getQuestionSubtopics(q).join(' / ') : (q.subtopic || q.category)}</span>
           </div>
-          <div class="browse-card-tags">
+          <div class="browse-card-tags" style="display:flex; align-items:center; gap:6px;">
             ${examBadge.html}
+            <button class="btn-validate-card ${isValidated ? 'validated' : ''}" id="btnValBrowse_${idx}" onclick="handleValidateBrowseQuestion(${idx})" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
+              <span>✅</span>
+              <span>ถูกต้อง</span>
+              <span class="val-count" id="valCountBrowse_${idx}">${valCount}</span>
+            </button>
+            <button class="btn-report-card" onclick="openReportIssueModalForBrowseQ(${idx})" title="แจ้งปัญหาข้อนี้">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+            </button>
           </div>
         </div>
 

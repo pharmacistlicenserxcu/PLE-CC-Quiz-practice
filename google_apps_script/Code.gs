@@ -255,6 +255,27 @@ function doGet(e) {
       });
     }
 
+    // 6. ดึงข้อมูลจำนวนการยืนยันข้อสอบถูกต้อง (Question Validation Counts)
+    if (action === 'getValidationCounts') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const sheet = ss.getSheetByName('Question_Validation_Counts');
+      const counts = {};
+      if (sheet) {
+        const lastRow = sheet.getLastRow();
+        if (lastRow >= 2) {
+          const rows = sheet.getRange(2, 1, lastRow - 1, 3).getValues();
+          rows.forEach(r => {
+            const qId = String(r[0] || '').trim();
+            const cnt = Number(r[2] || 0);
+            if (qId) {
+              counts[qId] = cnt;
+            }
+          });
+        }
+      }
+      return jsonResponse_({ success: true, counts: counts });
+    }
+
     return jsonResponse_({ success: true, message: 'PLE-CC Quiz API ready.' });
   } catch (err) {
     return jsonResponse_({ success: false, error: err.toString() });
@@ -303,6 +324,64 @@ function doPost(e) {
       ]);
 
       return jsonResponse_({ success: true, message: 'บันทึกรายงานปัญหาเรียบร้อย' });
+    }
+
+    // บันทึกการยืนยันข้อสอบถูกต้อง (Question Validation / Upvote)
+    if (action === 'validateQuestion') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      let sheet = ss.getSheetByName('Log_Question_Validations');
+      if (!sheet) {
+        sheet = ss.insertSheet('Log_Question_Validations');
+        sheet.appendRow([
+          "Timestamp (เวลาไทย)", "User", "Category", "Question ID", "Question Text"
+        ]);
+        sheet.getRange(1, 1, 1, 5).setFontWeight("bold").setBackground("#059669").setFontColor("#ffffff");
+        sheet.setFrozenRows(1);
+      }
+
+      const thaiTimestamp = data.timestamp || Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+      const qId = String(data.questionId || '').trim();
+      sheet.appendRow([
+        thaiTimestamp,
+        String(data.user || 'Anonymous'),
+        String(data.category || ''),
+        qId,
+        String(data.question || '').substring(0, 150)
+      ]);
+
+      // อัปเดตชีตสรุปยอด Validate สะสมต่อข้อ (Question_Validation_Counts)
+      let countSheet = ss.getSheetByName('Question_Validation_Counts');
+      if (!countSheet) {
+        countSheet = ss.insertSheet('Question_Validation_Counts');
+        countSheet.appendRow(["Question ID", "Category", "Validation Count", "Last Validated"]);
+        countSheet.getRange(1, 1, 1, 4).setFontWeight("bold").setBackground("#047857").setFontColor("#ffffff");
+        countSheet.setFrozenRows(1);
+      }
+
+      let newCount = 1;
+      const lastRow = countSheet.getLastRow();
+      let foundRow = -1;
+      if (lastRow >= 2) {
+        const ids = countSheet.getRange(2, 1, lastRow - 1, 1).getValues();
+        for (let i = 0; i < ids.length; i++) {
+          if (String(ids[i][0]).trim() === qId) {
+            foundRow = i + 2;
+            break;
+          }
+        }
+      }
+
+      if (foundRow > 0) {
+        const curCount = Number(countSheet.getRange(foundRow, 3).getValue()) || 0;
+        newCount = curCount + 1;
+        countSheet.getRange(foundRow, 3).setValue(newCount);
+        countSheet.getRange(foundRow, 4).setValue(thaiTimestamp);
+      } else {
+        countSheet.appendRow([qId, String(data.category || ''), 1, thaiTimestamp]);
+        newCount = 1;
+      }
+
+      return jsonResponse_({ success: true, count: newCount, message: 'บันทึกการยืนยันข้อสอบถูกต้องเรียบร้อย' });
     }
 
     // บันทึกสถิติการทำข้อสอบ (Exam Log)
