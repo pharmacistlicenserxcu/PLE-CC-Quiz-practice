@@ -4250,8 +4250,11 @@ async function syncDataFromSheet() {
       if (isSystemCategory(cat.name)) continue;
       const live = await fetchLiveSheetQuestions(cat.name);
       if (live && live.length > 0) {
-        allQuestionsMap[cat.name] = live;
-        cat.count = live.length;
+        const existingIngested = (allQuestionsMap[cat.name] || []).filter(q => q.fromIngestion || (q.id && (q.id.includes('📥') || q.id.includes('QI_'))));
+        const liveIds = new Set(live.map(q => q.id));
+        const preserved = existingIngested.filter(q => !liveIds.has(q.id));
+        allQuestionsMap[cat.name] = live.concat(preserved);
+        cat.count = allQuestionsMap[cat.name].length;
       }
     }
     buildLobby();
@@ -4419,7 +4422,17 @@ function enterQuizCategoryDirectly(catName, track) {
   // Background Live Sync: ดึงข้อมูลล่าสุดจากชีตสด (รวมรูปภาพที่เพิ่งแทรกในเซลล์) แบบไม่ค้างหน้าจอ
   fetchLiveSheetQuestions(catName).then(liveQs => {
     if (liveQs && liveQs.length > 0 && currentCategory === catName && currentAppMode === 'quiz') {
-      allQuestionsMap[catName] = liveQs;
+      // สงวนรักษาข้อสอบที่มาจากแท็บ "📥 รวมข้อสอบด่วน" ไม่ให้ถูกข้อมูลชีตหลักเขียนทับจนหายไป
+      const existingIngested = (allQuestionsMap[catName] || []).filter(q => q.fromIngestion || (q.id && (q.id.includes('📥') || q.id.includes('QI_'))));
+      const liveIds = new Set(liveQs.map(q => q.id));
+      const preserved = existingIngested.filter(q => !liveIds.has(q.id));
+
+      allQuestionsMap[catName] = liveQs.concat(preserved);
+      
+      // อัปเดต Dropdown หัวข้อย่อยและประเภทข้อสอบให้ครอบคลุมข้อที่มาจาก Ingestion ด้วย
+      populatePracticeSubtopicDropdowns(allQuestionsMap[catName]);
+      populatePracticeExamTypeDropdowns(allQuestionsMap[catName]);
+
       const filtered = applyPracticeFilters();
       activeQuizQuestions = filtered.slice();
       if (practiceViewStyle === 'scroll') {
