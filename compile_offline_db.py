@@ -153,7 +153,7 @@ def main():
     
     # Initialize all target category buckets
     for s in sheet_names:
-        if s not in SYSTEM_SHEETS and not s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍')):
+        if s not in SYSTEM_SHEETS and not s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📥', 'QI_')):
             offline_questions[s] = []
 
     for s_name in sheet_names:
@@ -161,8 +161,10 @@ def main():
             continue
 
         print(f"  -> Reading sheet: '{s_name}'...")
+        is_ingestion_sheet = s_name.startswith('📥') or s_name.startswith('QI_')
+        read_range = f"'{s_name}'!A3:Q" if is_ingestion_sheet else f"'{s_name}'!A3:P"
         try:
-            val_res = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=f"'{s_name}'!A3:P").execute()
+            val_res = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=read_range).execute()
             rows = val_res.get('values', [])
         except Exception as e:
             print(f"     [WARN] values.get failed for '{s_name}': {e}")
@@ -170,7 +172,8 @@ def main():
 
         for idx, r in enumerate(rows):
             row_num = idx + 3
-            while len(r) < 16:
+            needed_cols = 17 if is_ingestion_sheet else 16
+            while len(r) < needed_cols:
                 r.append('')
 
             q_num_raw = str(r[0] or '').strip()
@@ -189,9 +192,10 @@ def main():
             note_raw = str(r[13] or '').strip()
             exam_type = str(r[14] or '').strip()
             exam_year = str(r[15] or '').strip()
+            category_tag = str(r[16] or '').strip() if is_ingestion_sheet else ''
 
-            # Exam Set & Type: Keep strictly as entered in Google Sheets
-            # (No forced override to 'เล่มม่วง (Pharma Plus)')
+            if is_ingestion_sheet and not category_tag:
+                continue
 
             if not q_text_raw and not c1_raw:
                 continue
@@ -203,10 +207,10 @@ def main():
             if not q_clean:
                 q_clean = f"แบบทดสอบความรู้ทางเภสัชกรรม ข้อที่ {idx+1}"
 
-            # 2. Category & Subtopic strictly faithful to Google Sheet tab
-            target_sheet = s_name
-            target_sub = subtopic_raw or determine_standard_subtopic(s_name, q_clean, subtopic_raw)
-            target_track = track_raw or ('Product' if any(p in s_name for p in ['Titration', 'Chromatography', 'Spectroscopy', 'Preformulation', 'Calc', 'Solid', 'Liquid', 'Biopharm', 'Sterile', 'Biotech', 'Chemistry', 'Herbal', 'Food']) else ('SAP' if any(s in s_name for s in ['Laws', 'Administration', 'Research']) else 'Clinic'))
+            # 2. Category & Subtopic strictly faithful to Google Sheet tab (or Category Tag if from ingestion tab)
+            target_sheet = category_tag if (is_ingestion_sheet and category_tag) else s_name
+            target_sub = subtopic_raw or determine_standard_subtopic(target_sheet, q_clean, subtopic_raw)
+            target_track = track_raw or ('Product' if any(p in target_sheet for p in ['Titration', 'Chromatography', 'Spectroscopy', 'Preformulation', 'Calc', 'Solid', 'Liquid', 'Biopharm', 'Sterile', 'Biotech', 'Chemistry', 'Herbal', 'Food']) else ('SAP' if any(s in target_sheet for s in ['Laws', 'Administration', 'Research']) else 'Clinic'))
 
             # In Musculoskeleton, strictly normalize subtopic (support multiple separated by /)
             if 'musculo' in target_sheet.lower():
