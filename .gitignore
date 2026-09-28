@@ -1,0 +1,10 @@
+# Scratch and archive
+_archive_scratch/
+__pycache__/
+*.pyc
+
+# Local system/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
