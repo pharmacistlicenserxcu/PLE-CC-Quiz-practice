@@ -5,24 +5,216 @@
  * Script ID: 1LB8brFu49jQwb5xR3WeeyW2Su_M8e1X2XX3mxD6sxlO7yVwWpDPwG-tS
  * Sheet ID: 1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w
  * 
- * Column Layout (A - M):
- *  A: คำถาม (Question)
- *  B: รูปถาม (Question Image URL)
- *  C: ตัวเลือก 1 (Choice 1)
- *  D: ตัวเลือก 2 (Choice 2)
- *  E: ตัวเลือก 3 (Choice 3)
- *  F: ตัวเลือก 4 (Choice 4)
- *  G: ตัวเลือก 5 (Choice 5)
- *  H: เฉลย (Answer Key - 1-5)
- *  I: คำอธิบายเฉลย (Explanation)
- *  J: รูปเฉลย (Answer Image URL)
- *  K: Filter หมวด/Subtopic
- *  L: Product / Clinic (Track)
- *  M: หมายเหตุ (Note)
+ * Standard Sheet Column Layout (A=ข้อที่, B-P = 15 data cols, row1=Banner, row2=Header):
+ *  A: ข้อที่
+ *  B: คำถาม (Question)
+ *  C: รูปถาม (Question Image URL)
+ *  D: ตัวเลือก 1 (Choice 1)
+ *  E: ตัวเลือก 2 (Choice 2)
+ *  F: ตัวเลือก 3 (Choice 3)
+ *  G: ตัวเลือก 4 (Choice 4)
+ *  H: ตัวเลือก 5 (Choice 5)
+ *  I: เฉลย (Answer Key 1-5)
+ *  J: คำอธิบายเฉลย (Explanation)
+ *  K: รูปเฉลย (Answer Image URL)
+ *  L: Filter หมวด/Subtopic
+ *  M: Product / Clinic (Track)
+ *  N: หมายเหตุ (Note)
+ *  O: ประเภทข้อสอบ (Exam Type)
+ *  P: ปี / เลขชุด (Exam Year/Set)
+ * 
+ * Quick Ingestion Sheet (📥 prefix) — Extra column:
+ *  Q: หมวดวิชา/ชีตปลายทาง (Category Tag — routes question to correct category)
  * =========================================================================
  */
 
+// ────────────────────────────────────────────────────────────────────────────
+// HELPER: ตรวจสอบว่า sheet เป็น Quick Ingestion Tab หรือไม่
+// ────────────────────────────────────────────────────────────────────────────
+function isIngestionSheet_(name) {
+  return name.startsWith('📥') || name.startsWith('QI_');
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+// HELPER: ตรวจสอบว่า sheet ควรถูกข้ามไป (Log, Report, Eval, สารบัญ, Config)
+// ────────────────────────────────────────────────────────────────────────────
+function isSystemSheet_(name) {
+  return name.startsWith('Log_') || name.startsWith('Report_') ||
+         name.startsWith('Eval_') || name === 'สารบัญ' ||
+         name.startsWith('Config_') || name.startsWith('User_') ||
+         name.startsWith('Community_') || name.startsWith('Question_');
+}
+
+
+// ────────────────────────────────────────────────────────────────────────────
+// Custom Menu — แสดงขึ้นบน Google Sheets เมื่อเปิดไฟล์
+// ────────────────────────────────────────────────────────────────────────────
+function onOpen() {
+  SpreadsheetApp.getUi()
+    .createMenu('⚡ ระบบคลังข้อสอบ PLE')
+    .addItem('📥 สร้าง/รีเซ็ต Tab นำเข้าข้อสอบด่วน', 'setupQuickIngestionTab')
+    .addToUi();
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+// setupQuickIngestionTab — สร้าง Tab "📥 รวมข้อสอบด่วน" พร้อม Dropdown
+// รันฟังก์ชันนี้ครั้งเดียวจาก Apps Script Editor หรือผ่านเมนู
+// ────────────────────────────────────────────────────────────────────────────
+function setupQuickIngestionTab() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const TAB_NAME = '📥 รวมข้อสอบด่วน';
+
+  // ──── สร้างหรือเปิด Tab ────
+  let sheet = ss.getSheetByName(TAB_NAME);
+  if (!sheet) {
+    sheet = ss.insertSheet(TAB_NAME);
+    // ย้ายให้เป็น Tab แรกหลังหน้าแรก (ถ้ามี)
+    try { ss.moveActiveSheet(1); } catch(e) {}
+  } else {
+    sheet.clearContents();
+    sheet.clearFormats();
+  }
+
+  // ──── ดึงรายชื่อชีตวิชาทั้งหมด (ใช้เป็น Category Tag dropdown) ────
+  const allCategoryNames = ss.getSheets()
+    .map(s => s.getName())
+    .filter(n => !isSystemSheet_(n) && !isIngestionSheet_(n));
+
+  // ──── Row 1: Banner กลับหน้าแรก ────
+  const homeSheet = ss.getSheets()[0];
+  const homeGid   = homeSheet.getSheetId();
+  sheet.getRange('A1').setFormula(
+    '=HYPERLINK("#gid=' + homeGid + '","🏠 กลับสู่หน้าแรก (Go to Home Page)")'
+  );
+  sheet.getRange('A1:Q1').merge()
+    .setBackground('#E3F2FD')
+    .setFontFamily('Bai Jamjuree')
+    .setFontSize(11)
+    .setFontWeight('bold')
+    .setHorizontalAlignment('center')
+    .setVerticalAlignment('middle')
+    .setFontColor('#0D47A1');
+  sheet.setRowHeight(1, 36);
+
+  // ──── Row 2: Headers ────
+  const headers = [
+    'ข้อที่',
+    'คำถาม',
+    'รูปถาม',
+    'ตัวเลือก 1 (ก)',
+    'ตัวเลือก 2 (ข)',
+    'ตัวเลือก 3 (ค)',
+    'ตัวเลือก 4 (ง)',
+    'ตัวเลือก 5 (จ)',
+    'เฉลย (1-5)',
+    'คำอธิบายเฉลย',
+    'รูปเฉลย',
+    'Filter หมวด/Subtopic',
+    'Track (Product/Clinic/SAP)',
+    'หมายเหตุ',
+    'ประเภทข้อสอบ',
+    'ปี / เลขชุด',
+    'หมวดวิชา/ชีตปลายทาง ★'   // คอลัมน์ Q — Category Tag (ใช้ route ข้อสอบไปหมวดวิชาในเว็บ)
+  ];
+  sheet.getRange(2, 1, 1, headers.length).setValues([headers])
+    .setBackground('#1565C0')
+    .setFontColor('#FFFFFF')
+    .setFontFamily('Bai Jamjuree')
+    .setFontSize(10)
+    .setFontWeight('bold')
+    .setHorizontalAlignment('center')
+    .setVerticalAlignment('middle');
+  sheet.setRowHeight(2, 40);
+
+  // ──── กำหนดความกว้างคอลัมน์ ────
+  const colWidths = [50, 350, 100, 160, 160, 160, 160, 160, 80, 400, 100, 140, 100, 120, 120, 180, 220];
+  colWidths.forEach((w, i) => sheet.setColumnWidth(i + 1, w));
+
+  // ──── Data Validation Dropdowns (เริ่มที่ Row 3 ลงไป 200 แถว) ────
+  const dataRows = sheet.getRange(3, 1, 200, 17);
+
+  // Col M (13): Track
+  sheet.getRange(3, 13, 200, 1).setDataValidation(
+    SpreadsheetApp.newDataValidation()
+      .requireValueInList(['Clinic', 'Product', 'SAP'], true)
+      .setAllowInvalid(false)
+      .build()
+  );
+
+  // Col O (15): ประเภทข้อสอบ
+  sheet.getRange(3, 15, 200, 1).setDataValidation(
+    SpreadsheetApp.newDataValidation()
+      .requireValueInList(['Mock', 'ข้อสอบจริง', 'ข้อสอบเก่า', 'แบบฝึกหัด'], true)
+      .setAllowInvalid(false)
+      .build()
+  );
+
+  // Col P (16): ปี / เลขชุด
+  sheet.getRange(3, 16, 200, 1).setDataValidation(
+    SpreadsheetApp.newDataValidation()
+      .requireValueInList([
+        '2567', '2566', '2565', '2564', '2563', '2562', '2561',
+        '2560', '2559', '2558', '2557',
+        'เล่มม่วง (Pharma Plus)', 'Mock RxCU84', 'Mock RxCU85',
+        'ข้อสอบรวม'
+      ], true)
+      .setAllowInvalid(true) // อนุญาตพิมพ์เองได้
+      .build()
+  );
+
+  // Col Q (17): หมวดวิชา/ชีตปลายทาง (Category Tag) ★ สำคัญที่สุด
+  if (allCategoryNames.length > 0) {
+    sheet.getRange(3, 17, 200, 1).setDataValidation(
+      SpreadsheetApp.newDataValidation()
+        .requireValueInList(allCategoryNames, true)
+        .setAllowInvalid(false)
+        .build()
+    );
+  }
+
+  // Col I (9): เฉลย (1-5)
+  sheet.getRange(3, 9, 200, 1).setDataValidation(
+    SpreadsheetApp.newDataValidation()
+      .requireValueInList(['1', '2', '3', '4', '5'], true)
+      .setAllowInvalid(false)
+      .build()
+  );
+
+  // ──── Freeze แถว 1-2 ────
+  sheet.setFrozenRows(2);
+  // Freeze คอลัมน์ Q (17) — ไม่ freeze เพราะไม่ถือเป็น fixed column
+  // แต่ freeze คอลัมน์ A (ข้อที่)
+  sheet.setFrozenColumns(1);
+
+  // ──── สีแถบ Tab ────
+  sheet.setTabColor('#1E88E5');
+
+  // ──── สร้างแถวตัวอย่างว่าง (Row 3) เพื่อให้เห็นโครงสร้าง ────
+  sheet.getRange(3, 1, 1, 17)
+    .setBackground('#F0F8FF')
+    .setVerticalAlignment('middle');
+
+  // ──── Conditional Formatting: ไฮไลต์แถวที่ยังไม่มี Category Tag (คอลัมน์ Q ว่าง) ────
+  const cfRange = sheet.getRange('Q3:Q202');
+  const cfRule  = SpreadsheetApp.newConditionalFormatRule()
+    .whenTextEqualTo('')
+    .setBackground('#FFF9C4') // สีเหลืองอ่อน = ยังไม่ได้ระบุหมวดวิชา
+    .setRanges([sheet.getRange('A3:Q202')])
+    .build();
+  sheet.setConditionalFormatRules([cfRule]);
+
+  SpreadsheetApp.getUi().alert(
+    '✅ สร้าง Tab "' + TAB_NAME + '" สำเร็จแล้ว!\n\n' +
+    'คำแนะนำการใช้งาน:\n' +
+    '1. กรอกข้อสอบตั้งแต่แถวที่ 3 ลงไปได้เลย\n' +
+    '2. คอลัมน์ Q "หมวดวิชา/ชีตปลายทาง ★" สำคัญมาก ต้องเลือกจาก Dropdown เสมอ\n' +
+    '3. เว็บจะอ่านจาก Tab นี้และกระจายข้อสอบเข้าหมวดวิชาตามคอลัมน์ Q อัตโนมัติ\n' +
+    '4. แถวที่สีเหลือง = ยังไม่ได้เลือกหมวดวิชา → เว็บจะยังไม่แสดง'
+  );
+}
+
 function doGet(e) {
+
   try {
     const params = e ? e.parameter : {};
     const action = params.action || 'ping';
@@ -37,7 +229,7 @@ function doGet(e) {
       });
     }
 
-    // 2. ดึงรายชื่อหมวดหมู่ / Tabs ทั้งหมด
+    // 2. ดึงรายชื่อหมวดหมู่ / Tabs ทั้งหมด (ข้าม Log, Report, Eval, สารบัญ, Config และ 📥 Ingestion Tabs)
     if (action === 'getCategories' || action === 'getSheetList') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
       const sheets = ss.getSheets();
@@ -45,8 +237,8 @@ function doGet(e) {
 
       sheets.forEach(sheet => {
         const title = sheet.getName();
-        // ข้าม sheet บันทึกผลหรือ log หรือ สารบัญ
-        if (title.startsWith('Log_') || title.startsWith('Report_') || title.startsWith('Eval_') || title === 'สารบัญ') return;
+        // ข้าม System sheets และ Quick Ingestion tabs (📥) — ข้อสอบจาก 📥 จะกระจายเข้าหมวดวิชาอัตโนมัติผ่าน Category Tag
+        if (isSystemSheet_(title) || isIngestionSheet_(title)) return;
 
         const lastRow = sheet.getLastRow();
         let count = 0;
@@ -54,7 +246,8 @@ function doGet(e) {
         if (lastRow >= 3) {
           count = lastRow - 2; // ลบ banner row 1 และ header row 2
           try {
-            const sampleTrack = sheet.getRange(3, 12).getValue();
+            // Track อยู่ที่คอลัมน์ M (index 13 = col 13)
+            const sampleTrack = sheet.getRange(3, 13).getValue();
             if (sampleTrack) track = String(sampleTrack).trim();
           } catch(err) {}
         }
@@ -73,6 +266,7 @@ function doGet(e) {
       });
     }
 
+
     // 3. ดึงข้อสอบจาก Sheet ที่ระบุ หรือดึงทุก Sheet
     if (action === 'getQuestions') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -83,10 +277,9 @@ function doGet(e) {
         if (!s) return jsonResponse_({ success: false, error: 'Sheet not found: ' + sheetName });
         targetSheets = [s];
       } else {
-        targetSheets = ss.getSheets().filter(s => {
-          const n = s.getName();
-          return !n.startsWith('Log_') && !n.startsWith('Report_') && !n.startsWith('Eval_') && n !== 'สารบัญ';
-        });
+        // รวมชีตข้อสอบปกติ + ชีต 📥 Quick Ingestion (เพื่อให้ข้อสอบจาก 📥 กระจายไปหมวดวิชาตาม Category Tag)
+        // ข้ามเฉพาะ System sheets เช่น Log_, Report_, Eval_, สารบัญ, Config_, User_, Community_, Question_
+        targetSheets = ss.getSheets().filter(s => !isSystemSheet_(s.getName()));
       }
 
       const allQuestions = [];
@@ -97,16 +290,19 @@ function doGet(e) {
         const lastRow = sheet.getLastRow();
         if (lastRow < 3) return; // แถว 1=Banner, แถว 2=Header
 
-        // อ่าน A3:P(lastRow) -> 16 คอลัมน์ (รองรับคอลัมน์ A เป็น "ข้อที่")
-        const values = sheet.getRange(3, 1, lastRow - 2, 16).getValues();
+        // Quick Ingestion Tab (📥) มีคอลัมน์ Q พิเศษสำหรับ Category Tag → อ่าน 17 คอลัมน์
+        // Sheet ปกติอ่าน 16 คอลัมน์ (A-P)
+        const isIngest = isIngestionSheet_(sName);
+        const numCols  = isIngest ? 17 : 16;
+        const values   = sheet.getRange(3, 1, lastRow - 2, numCols).getValues();
 
         values.forEach((row, idx) => {
-          const rowNum = idx + 3;
+          const rowNum   = idx + 3;
           const firstVal = String(row[0] || '').trim();
-          
+
           let offset = 0;
           let itemNo = allQuestions.length + 1;
-          if (/^\d+$/.test(firstVal) || (row.length >= 16 && firstVal.length <= 4)) {
+          if (/^\d+$/.test(firstVal) || (row.length >= numCols && firstVal.length <= 4)) {
             offset = 1;
             itemNo = parseInt(firstVal, 10) || (allQuestions.length + 1);
           }
@@ -121,39 +317,48 @@ function doGet(e) {
           const answerKey    = parseInt(row[offset + 7], 10) || 1;
           const explanation  = String(row[offset + 8] || '').trim();
           const rawAImg      = row[offset + 9];
-          const subtopic     = String(row[offset + 10] || '').trim() || sName;
+          const subtopic     = String(row[offset + 10] || '').trim();
           const track        = String(row[offset + 11] || 'Clinic').trim();
           const note         = String(row[offset + 12] || '').trim();
           const examType     = String(row[offset + 13] || '').trim();
           const examYear     = String(row[offset + 14] || '').trim();
 
+          // ─── Quick Ingestion: อ่าน Category Tag จากคอลัมน์ Q (offset+16) ───
+          // ถ้ามี Tag → ใช้ Tag เป็น category (ข้อสอบจะไปโผล่ในหมวดวิชานั้นในเว็บ)
+          // ถ้าไม่มี Tag → ข้ามแถวนี้ (ยังไม่ได้จัดหมวด)
+          let category = sName;
+          if (isIngest) {
+            const categoryTag = String(row[offset + 16] || '').trim();
+            if (!categoryTag) return; // ข้ามแถวที่ยังไม่ได้ระบุหมวดวิชา
+            category = categoryTag;
+          }
+
           if (!questionText && !c1) return;
 
-          // ดึง Image URL สำหรับคำถาม (Col B หรือ C ตาม offset) และเฉลย (Col J หรือ K ตาม offset)
-          const qImgColIdx = offset + 1; // 0-indexed column
-          const aImgColIdx = offset + 9;
+          const qImgColIdx  = offset + 1;
+          const aImgColIdx  = offset + 9;
           const questionImg = resolveImageUrl_(rawQImg, sName, rowNum, qImgColIdx, inCellImages);
           const answerImg   = resolveImageUrl_(rawAImg, sName, rowNum, aImgColIdx, inCellImages);
 
-          // รวม choices ที่ไม่ว่าง
           const choices = [c1, c2, c3, c4];
           if (c5) choices.push(c5);
 
           allQuestions.push({
-            id: sName + '::' + rowNum,
-            itemNo: itemNo,
-            category: sName,
-            subtopic: subtopic,
-            track: track,
-            examType: examType,
-            examYear: examYear,
-            question: questionText,
+            id:            sName + '::' + rowNum,
+            itemNo:        itemNo,
+            category:      category,                         // ← ใช้ Category Tag สำหรับ 📥, ชื่อชีตสำหรับชีตปกติ
+            subtopic:      subtopic || category,
+            track:         track,
+            examType:      examType,
+            examYear:      examYear,
+            question:      questionText,
             questionImage: questionImg,
-            choices: choices,
-            answer: answerKey,
-            explanation: explanation,
-            answerImage: answerImg,
-            note: note
+            choices:       choices,
+            answer:        answerKey,
+            explanation:   explanation,
+            answerImage:   answerImg,
+            note:          note,
+            fromIngestion: isIngest                          // ← flag บอกว่ามาจาก 📥 tab
           });
         });
       });
@@ -165,6 +370,7 @@ function doGet(e) {
         questions: allQuestions
       });
     }
+
 
     // 4. ดึงข้อมูลตารางอันดับคนขยัน (Leaderboard Top 10) & สถิติจำนวนสมาชิก
     if (action === 'getLeaderboard') {
