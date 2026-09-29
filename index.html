@@ -3910,19 +3910,18 @@ function formatExplanationHtml(text) {
 
     resultHtml += `<div style="
       background:${def.bg};
-      border-left: 4px solid ${def.border};
-      border-radius: 0 10px 10px 0;
-      padding: 10px 13px;
-      margin: 8px 0;
-      font-size: 12.5px;
-      line-height: 1.7;
+      border-left: 3px solid ${def.border};
+      border-radius: 0 8px 8px 0;
+      padding: 7px 11px;
+      margin: 5px 0;
+      font-size: 12px;
+      line-height: 1.6;
       color: ${def.textColor};
     ">
-      <div style="font-weight:700; font-size:12.5px; color:${def.iconColor}; margin-bottom:5px; display:flex; align-items:center; gap:5px;">
-        ${def.icon} ${def.label}
-      </div>
+      <div style="font-weight:700; font-size:11.5px; color:${def.iconColor}; margin-bottom:3px;">${def.icon} ${def.label}</div>
       <div>${formattedContent}</div>
     </div>`;
+
   }
 
   return resultHtml || _baseFormatExp(text);
