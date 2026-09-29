@@ -1272,6 +1272,20 @@
       background: var(--bg); animation: fadeSlideUp 0.22s ease;
     }
     #simExamView.show { display: flex; }
+    
+    /* ─── sim-source-chip (multi-select exam source chips) ─── */
+    .sim-source-chip {
+      display: inline-flex; align-items: center; gap: 4px;
+      border: 1.5px solid var(--border); border-radius: 8px;
+      background: var(--bg); color: var(--ink-soft);
+      font-family: inherit; cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .sim-source-chip:hover { border-color: var(--clinic); color: var(--ink); }
+    .sim-source-chip.selected {
+      background: #dbeafe; border-color: #3b82f6; color: #1d4ed8; font-weight: 700;
+    }
+
     .sim-panel-header {
       background: var(--card); border-bottom: 1px solid var(--border);
       padding: 14px 20px; display: flex; align-items: center; gap: 12px;
@@ -2863,17 +2877,18 @@
     <!-- Scrollable Body -->
     <div class="sim-panel-body">
 
-      <!-- ① แหล่งข้อสอบ — SELECT dropdown -->
+      <!-- ① แหล่งข้อสอบ — MULTI-SELECT CHIPS -->
       <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px;">
-        <div class="sim-section-label">① แหล่งข้อสอบที่ใช้สุ่ม</div>
-        <select id="simExamSetSelect" onchange="onSimExamSetSelectChange()" style="width:100%; padding:9px 12px; border:1.5px solid var(--border); border-radius:10px; font-size:13px; font-family:inherit; background:var(--bg); color:var(--ink); outline:none; cursor:pointer; margin-bottom:8px;">
-          <option value="all">🌟 ทั้งหมดในระบบ</option>
-          <!-- Dynamic options populated by JS -->
-        </select>
-        <!-- Selected source badge -->
-        <div id="simSourceBadge" style="font-size:11.5px; color:var(--ink-soft); display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
-          <span style="background:var(--clinic-soft); color:var(--clinic); border-radius:6px; padding:2px 8px; font-weight:600;" id="simSourceBadgeText">สุ่มจากทุกข้อสอบในระบบ</span>
-          <span id="simSourceCountBadge" style="background:var(--bg); border:1px solid var(--border); color:var(--ink-soft); border-radius:6px; padding:2px 8px;"></span>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+          <div class="sim-section-label" style="margin-bottom:0;">① แหล่งข้อสอบที่ใช้สุ่ม</div>
+          <span style="font-size:10.5px; color:var(--ink-soft); background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:2px 7px;">เลือกได้หลายชุด</span>
+        </div>
+        <!-- Chips container (rendered by JS) -->
+        <div id="simSourceChipsContainer" style="display:flex; flex-direction:column; gap:7px;"></div>
+        <!-- Summary badge -->
+        <div id="simSourceBadge" style="margin-top:8px; font-size:11.5px; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+          <span id="simSourceBadgeText" style="background:#dbeafe; color:#1d4ed8; border-radius:6px; padding:2px 9px; font-weight:600;"></span>
+          <span id="simSourceCountBadge" style="color:var(--ink-soft);"></span>
         </div>
       </div>
 
@@ -4951,13 +4966,11 @@ function toggleSimSubtopicOptimizer() {
 
 function initSimSubtopicPicker() {
   const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
-  const examFilter = (typeof _selectedSimExamSet !== 'undefined') ? _selectedSimExamSet : 'all';
-
-  // Always reset selection to match current exam set
+    // Always reset selection to match current exam set
   selectedSimSubtopics = new Set();
   Object.keys(map).forEach(cat => {
     if (typeof isSystemCategory === 'function' && isSystemCategory(cat)) return;
-    const qs = filterQuestionsByExamType(map[cat] || [], examFilter);
+    const qs = filterQuestionsByExamSets(map[cat] || []);
     if (!qs.length) return; // skip categories with no questions in this set
     selectedSimSubtopics.add(cat);
     qs.forEach(q => {
@@ -4976,8 +4989,7 @@ function renderSimSubtopicPicker() {
   if (!container) return;
 
   const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
-  const examFilter = (typeof _selectedSimExamSet !== 'undefined') ? _selectedSimExamSet : 'all';
-  const filterText = (document.getElementById('simSubSearchInput')?.value || '').toLowerCase().trim();
+    const filterText = (document.getElementById('simSubSearchInput')?.value || '').toLowerCase().trim();
 
   let html = '';
   let totalSubCount = 0;
@@ -5001,7 +5013,7 @@ function renderSimSubtopicPicker() {
     cats.forEach(c => {
       const catName = c.name;
       // Filter questions by current exam set
-      const qs = filterQuestionsByExamType(map[catName] || [], examFilter);
+      const qs = filterQuestionsByExamSets(map[catName] || []);
       if (!qs.length) return; // hide categories with no questions in this set
 
       const subMap = {};
@@ -5192,40 +5204,18 @@ function updateSimSubtopicStats(poolSize = 0) {
 // ═══════════════════════════════════════════════
 // SIMULATED EXAM — FULL PAGE PANEL
 // ═══════════════════════════════════════════════
-let _selectedSimExamSet = 'all'; // 'all' | 'type:X' | 'combo:X::Y'
+// ─── MULTI-SELECT EXAM SOURCE ───────────────────────────────────────────────
+// _selectedSimExamSets: Set of filter keys, e.g. {'all'} or {'type:ข้อสอบจริง', 'combo:Mock::RxCU83'}
+let _selectedSimExamSets = new Set(['all']);
+// backward-compat alias (single value — last clicked, used by legacy code)
+let _selectedSimExamSet = 'all';
 
-function openSimExamPanel() {
-  // Hide other views, show simExamView
-  const panel = document.getElementById('simExamView');
-  if (!panel) return;
-  document.getElementById('lobbyView')  && (document.getElementById('lobbyView').style.display  = 'none');
-  document.getElementById('quizView')   && (document.getElementById('quizView').style.display   = 'none');
-  document.getElementById('browseView') && (document.getElementById('browseView').style.display = 'none');
-  panel.classList.add('show');
-  window.scrollTo(0, 0);
-  recalcSimProportions();
-  initSimSubtopicPicker();
-  renderSimExamSetCards();
-}
+function renderSimExamSetCards() { renderSimSourceChips(); }
+function renderSimExamSetSelect()  { renderSimSourceChips(); }
 
-function closeSimExamPanel() {
-  const panel = document.getElementById('simExamView');
-  if (panel) panel.classList.remove('show');
-  const lobby = document.getElementById('lobbyView');
-  if (lobby) lobby.style.display = '';
-}
-
-// Keep backward-compat aliases
-function openRandomModal()  { openSimExamPanel(); }
-function closeRandomModal() { closeSimExamPanel(); }
-
-function renderSimExamSetCards() {
-  renderSimExamSetSelect();
-}
-
-function renderSimExamSetSelect() {
-  const sel = document.getElementById('simExamSetSelect');
-  if (!sel) return;
+function renderSimSourceChips() {
+  const container = document.getElementById('simSourceChipsContainer');
+  if (!container) return;
 
   const typeMap = getAllUniqueExamTypes();
   const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length)
@@ -5253,73 +5243,141 @@ function renderSimExamSetSelect() {
     return a.localeCompare(b, 'th');
   });
 
-  let html = '<option value="all">\ud83c\udf1f \u0e17\u0e31\u0e49\u0e07\u0e2b\u0e21\u0e14\u0e43\u0e19\u0e23\u0e30\u0e1a\u0e1a (' + totalAll + ' \u0e02\u0e49\u0e2d)</option>';
+  // Store metadata for later
+  container._totalAll = totalAll;
+  container._countPerType = countPerType;
+  container._countPerCombo = countPerCombo;
+
+  // Build chips HTML
+  let html = '';
+
+  // "ทั้งหมด" chip
+  html += `<div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+    <button type="button" id="simChip_all" onclick="toggleSimSourceChip('all',this)"
+      class="sim-source-chip${_selectedSimExamSets.has('all') ? ' selected' : ''}"
+      style="padding:6px 14px; font-size:12.5px; font-weight:700;">
+      \ud83c\udf1f \u0e17\u0e31\u0e49\u0e07\u0e2b\u0e21\u0e14 <span style="font-size:10.5px; opacity:0.7;">(${totalAll} \u0e02\u0e49\u0e2d)</span>
+    </button>
+  </div>`;
 
   sortedTypes.forEach(type => {
     const isReal = type.includes('\u0e08\u0e23\u0e34\u0e07'), isMock = type.toLowerCase().includes('mock');
     const icon = isReal ? '\ud83c\udfaf' : isMock ? '\ud83d\udcdd' : '\ud83d\udccc';
     const yearsSet = typeMap.get(type) || new Set();
     const years = Array.from(yearsSet).sort((a, b) => {
-      const nA = parseInt((a.match(/\d+/) || [0])[0], 10);
-      const nB = parseInt((b.match(/\d+/) || [0])[0], 10);
-      return (nA && nB) ? nB - nA : b.localeCompare(a, 'th', { numeric: true });
+      const nA = parseInt((a.match(/\d+/)||[0])[0],10), nB = parseInt((b.match(/\d+/)||[0])[0],10);
+      return (nA&&nB) ? nB-nA : b.localeCompare(a,'th',{numeric:true});
     });
+    const typeKey = 'type:' + type;
     const typeCnt = countPerType[type] || 0;
-    if (years.length > 0) {
-      html += '<option value="type:' + type + '">' + icon + ' ' + type + ' \u2014 \u0e17\u0e38\u0e01\u0e1b\u0e35 (' + typeCnt + ' \u0e02\u0e49\u0e2d)</option>';
-      years.forEach(y => {
-        const ck = type + '::' + y;
-        const cnt = countPerCombo[ck] || 0;
-        html += '<option value="combo:' + type + '::' + y + '">  \u21b3 ' + y + ' (' + cnt + ' \u0e02\u0e49\u0e2d)</option>';
-      });
-    } else {
-      html += '<option value="type:' + type + '">' + icon + ' ' + type + ' (' + typeCnt + ' \u0e02\u0e49\u0e2d)</option>';
-    }
+
+    html += `<div style="border:1px solid var(--border); border-radius:10px; overflow:hidden;">
+      <div style="background:var(--bg); padding:6px 10px; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+        <button type="button" id="simChip_${typeKey}" onclick="toggleSimSourceChip('${typeKey.replace(/'/g,"\\'")}',this)"
+          class="sim-source-chip${_selectedSimExamSets.has(typeKey) ? ' selected' : ''}"
+          style="padding:4px 11px; font-size:12px; font-weight:700;">
+          ${icon} ${type} <span style="font-size:10px; opacity:0.7;">(${typeCnt} \u0e02\u0e49\u0e2d)</span>
+        </button>`;
+
+    years.forEach(y => {
+      const comboKey = 'combo:' + type + '::' + y;
+      const cnt = countPerCombo[type+'::'+y] || 0;
+      html += `<button type="button" id="simChip_${comboKey}" onclick="toggleSimSourceChip('${comboKey.replace(/'/g,"\\'")}',this)"
+          class="sim-source-chip${_selectedSimExamSets.has(comboKey) ? ' selected' : ''}"
+          style="padding:3px 9px; font-size:11.5px;">
+          \ud83d\udcc5 ${y} <span style="font-size:10px; opacity:0.7;">(${cnt} \u0e02\u0e49\u0e2d)</span>
+        </button>`;
+    });
+
+    html += `</div></div>`;
   });
 
-  sel.innerHTML = html;
-  sel._totalAll = totalAll;
-  sel._countPerType = countPerType;
-  sel._countPerCombo = countPerCombo;
-
-  _selectedSimExamSet = 'all';
-  updateSimSourceBadge('all', totalAll, '');
-  updateSimPresetAllCount(totalAll);
+  container.innerHTML = html;
+  updateSimSourceSummaryBadge();
 }
 
-function onSimExamSetSelectChange() {
-  const sel = document.getElementById('simExamSetSelect');
-  if (!sel) return;
-  const val = sel.value;
-  _selectedSimExamSet = val;
+function toggleSimSourceChip(key, el) {
+  const isAll = key === 'all';
+
+  if (isAll) {
+    // Select ONLY "ทั้งหมด", deselect everything else
+    _selectedSimExamSets = new Set(['all']);
+  } else {
+    // Deselect "all" when specific set is clicked
+    _selectedSimExamSets.delete('all');
+    const chip_all = document.getElementById('simChip_all');
+    if (chip_all) chip_all.classList.remove('selected');
+
+    if (_selectedSimExamSets.has(key)) {
+      _selectedSimExamSets.delete(key);
+      // If nothing left, revert to "all"
+      if (_selectedSimExamSets.size === 0) {
+        _selectedSimExamSets.add('all');
+        const chip_all2 = document.getElementById('simChip_all');
+        if (chip_all2) chip_all2.classList.add('selected');
+      }
+    } else {
+      _selectedSimExamSets.add(key);
+    }
+  }
+
+  // Sync chip visuals
+  document.querySelectorAll('.sim-source-chip').forEach(b => {
+    const k = b.id.replace(/^simChip_/, '');
+    b.classList.toggle('selected', _selectedSimExamSets.has(k));
+  });
+
+  // Backward compat: _selectedSimExamSet = first key or 'all'
+  _selectedSimExamSet = _selectedSimExamSets.has('all') ? 'all'
+    : Array.from(_selectedSimExamSets)[0];
+
+  updateSimSourceSummaryBadge();
+  // Refresh subtopic picker to match
+  if (document.getElementById('simSubtopicPanel') && document.getElementById('simSubtopicPanel').style.display !== 'none') {
+    initSimSubtopicPicker();
+  } else {
+    // reset so next open it syncs
+    selectedSimSubtopics = null;
+  }
+}
+
+function filterQuestionsByExamSets(qs) {
+  // Filter questions that match ANY of the selected sets
+  if (_selectedSimExamSets.has('all') || _selectedSimExamSets.size === 0) return qs;
+  return qs.filter(q => {
+    return Array.from(_selectedSimExamSets).some(f => filterQuestionsByExamType([q], f).length > 0);
+  });
+}
+
+function updateSimSourceSummaryBadge() {
+  const badge = document.getElementById('simSourceBadgeText');
+  const countBadge = document.getElementById('simSourceCountBadge');
+
+  // Count total questions in current selection
   const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length)
     ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
   let cnt = 0;
-  Object.values(map).forEach(qs => { cnt += filterQuestionsByExamType(qs, val).length; });
-  const labelEl = sel.options[sel.selectedIndex];
-  updateSimSourceBadge(val, cnt, labelEl ? labelEl.text : '');
-  updateSimPresetAllCount(cnt);
-  initSimSubtopicPicker();
-}
+  Object.values(map).forEach(qs => { cnt += filterQuestionsByExamSets(qs).length; });
 
-function updateSimSourceBadge(val, count, labelText) {
-  const badge = document.getElementById('simSourceBadgeText');
-  const countBadge = document.getElementById('simSourceCountBadge');
-  if (!badge) return;
-  if (val === 'all') {
-    badge.textContent = '\u0e2a\u0e38\u0e48\u0e21\u0e08\u0e32\u0e01\u0e17\u0e38\u0e01\u0e02\u0e49\u0e2d\u0e2a\u0e2d\u0e1a\u0e43\u0e19\u0e23\u0e30\u0e1a\u0e1a';
-  } else if (labelText) {
-    badge.textContent = '\u2705 \u0e40\u0e25\u0e37\u0e2d\u0e01: ' + labelText.replace(/^[\s\ud83c\udfaf\ud83d\udcdd\ud83d\udccc \u21b3]+/, '').split('(')[0].trim();
+  if (_selectedSimExamSets.has('all')) {
+    if (badge) badge.textContent = '\ud83c\udf1f \u0e2a\u0e38\u0e48\u0e21\u0e08\u0e32\u0e01\u0e17\u0e38\u0e01\u0e0a\u0e38\u0e14 (' + cnt + ' \u0e02\u0e49\u0e2d)';
+  } else {
+    const n = _selectedSimExamSets.size;
+    if (badge) badge.textContent = '\u2705 \u0e40\u0e25\u0e37\u0e2d\u0e01\u0e41\u0e25\u0e49\u0e27 ' + n + ' \u0e0a\u0e38\u0e14 | \u0e23\u0e27\u0e21 ' + cnt + ' \u0e02\u0e49\u0e2d';
   }
-  if (countBadge) countBadge.textContent = count > 0 ? (count + ' \u0e02\u0e49\u0e2d\u0e17\u0e35\u0e48\u0e21\u0e35\u0e43\u0e19\u0e0a\u0e38\u0e14\u0e19\u0e35\u0e49') : '';
+  if (countBadge) countBadge.textContent = '';
+
+  // Update "ทุกข้อ" preset count
+  updateSimPresetAllCount(cnt);
 }
 
-function updateSimPresetAllCount(count) {
-  const el = document.getElementById('simPresetAllCount');
-  if (el) el.textContent = count > 0 ? (count + ' \u0e02\u0e49\u0e2d') : '\u2014';
-  const sel = document.getElementById('simExamSetSelect');
-  if (sel) sel._currentSetCount = count;
+function onSimExamSetSelectChange() {
+  // Legacy — no-op now (select replaced by chips)
 }
+function updateSimSourceBadge() { updateSimSourceSummaryBadge(); }
+function selectSimExamSet(el, setKey) { _selectedSimExamSet = setKey; }
+function selectSimSetType() {}
+function selectSimSetCombo() {}
 
 function applySimPresetAll() {
   const sel = document.getElementById('simExamSetSelect');
@@ -5465,7 +5523,7 @@ function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter, all
   const subtopicMap = {};
   trackCats.forEach(c => {
     let qs = (allQuestionsMap[c.name] || []).slice();
-    qs = filterQuestionsByExamType(qs, examTypeFilter);
+    qs = filterQuestionsByExamSets(qs);
     qs.forEach(q => {
       const subs = getQuestionSubtopics(q);
       const subList = subs.length ? subs : [c.name];
@@ -5517,8 +5575,6 @@ function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter, all
 
 function executeSimulatedExam() {
   const totalCount = parseInt(document.getElementById('simTotalCount').value, 10) || 120;
-  // Read exam set filter from card picker (_selectedSimExamSet) or fall back to 'all'
-  const examSetKey = _selectedSimExamSet || 'all';
   const chosenMode = document.getElementById('simModeSelect').value;
   const timerOption = document.getElementById('simTimerSelect').value;
 
@@ -5526,22 +5582,13 @@ function executeSimulatedExam() {
   const pTarget = Math.round((simProductPct / 100) * totalCount);
   const sTarget = Math.max(0, totalCount - cTarget - pTarget);
 
-  // Convert examSetKey to filter function
-  let examTypeFilter = 'all';
-  if (examSetKey !== 'all') {
-    if (examSetKey.startsWith('type:')) {
-      examTypeFilter = examSetKey.slice(5); // the type string
-    } else if (examSetKey.startsWith('combo:')) {
-      examTypeFilter = examSetKey.slice(6); // "type::year"
-    }
-  }
-
-  // Check if user selected subtopics
+  // filterQuestionsByExamSets() handles multi-set filtering from _selectedSimExamSets
   const allowed = (selectedSimSubtopics && selectedSimSubtopics.size > 0) ? selectedSimSubtopics : null;
 
-  const clinicQuestions = sampleStratifiedFromTrack('clinic', cTarget, examTypeFilter, allowed);
-  const productQuestions = sampleStratifiedFromTrack('product', pTarget, examTypeFilter, allowed);
-  const sapQuestions = sampleStratifiedFromTrack('sap', sTarget, examTypeFilter, allowed);
+  const clinicQuestions  = sampleStratifiedFromTrack('clinic',  cTarget, 'all', allowed);
+  const productQuestions = sampleStratifiedFromTrack('product', pTarget, 'all', allowed);
+  const sapQuestions     = sampleStratifiedFromTrack('sap',     sTarget, 'all', allowed);
+
 
   let combined = [...clinicQuestions, ...productQuestions, ...sapQuestions];
   if (!combined.length) {
