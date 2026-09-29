@@ -2247,10 +2247,8 @@
         <button class="mode-seg-btn scroll" id="btnModeScroll" onclick="setAppQuizMode('scroll')" title="ฝึกฝนและอ่านข้อสอบแบบเลื่อนยาวต่อเนื่อง">
           📜 เลื่อนอ่าน (Scroll Down)
         </button>
-        <button class="mode-seg-btn exam" id="btnModeExam" onclick="setAppQuizMode('exam')" title="โหมดจำลองสอบจริง จับเวลาและส่งรวมท้ายชุด">
-          ⏱️ สอบจริง (Exam)
-        </button>
       </div>
+
     </div>
 
     <!-- ══ SPLIT LOBBY: Main Content (Left) + Community Sidebar (Right) ══ -->
@@ -2852,48 +2850,46 @@
 
   <!-- ══ SIMULATED EXAM — FULL PAGE VIEW ══ -->
   <div id="simExamView">
-    <!-- Compact Sticky Header -->
-    <div class="sim-panel-header">
+    <!-- Sticky Header — compact single row -->
+    <div class="sim-panel-header" style="gap:10px;">
       <button class="back-home-btn" onclick="closeSimExamPanel()" style="flex-shrink:0; white-space:nowrap;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
         กลับ
       </button>
-      <div style="flex:1; min-width:0;">
-        <div style="font-size:14px; font-weight:700; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">⏱️ จำลองสอบจริง PLE-CC1</div>
-        <div style="font-size:10.5px; color:var(--ink-soft);">120 ข้อ · Clinic 50% / Product 40% / SAP 10%</div>
-      </div>
-      <button class="submit-btn" onclick="executeSimulatedExam()" style="padding:7px 14px; font-size:12.5px; flex-shrink:0; white-space:nowrap; gap:5px;">
-        ▶ เริ่มสอบ
-      </button>
+      <span style="font-size:14px; font-weight:700; color:var(--ink); flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">⏱️ จำลองสอบจริง PLE-CC1</span>
+      <button class="submit-btn" onclick="executeSimulatedExam()" style="padding:7px 16px; font-size:12.5px; flex-shrink:0; white-space:nowrap;">▶ เริ่มสอบ</button>
     </div>
 
     <!-- Scrollable Body -->
     <div class="sim-panel-body">
 
-      <!-- ① EXAM SET PICKER — 2-level: type tabs → year chips -->
+      <!-- ① แหล่งข้อสอบ — SELECT dropdown -->
       <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px;">
         <div class="sim-section-label">① แหล่งข้อสอบที่ใช้สุ่ม</div>
-
-        <!-- Type row (large buttons) -->
-        <div id="simSetTypeRow" style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;"></div>
-
-        <!-- Year chips (shown when a type is selected) -->
-        <div id="simSetYearRow" style="display:none; flex-wrap:wrap; gap:5px; padding-top:8px; border-top:1px dashed var(--border);"></div>
-        <div id="simSetSelectedLabel" style="font-size:11px; color:var(--ink-soft); margin-top:6px; display:none;"></div>
+        <select id="simExamSetSelect" onchange="onSimExamSetSelectChange()" style="width:100%; padding:9px 12px; border:1.5px solid var(--border); border-radius:10px; font-size:13px; font-family:inherit; background:var(--bg); color:var(--ink); outline:none; cursor:pointer; margin-bottom:8px;">
+          <option value="all">🌟 ทั้งหมดในระบบ</option>
+          <!-- Dynamic options populated by JS -->
+        </select>
+        <!-- Selected source badge -->
+        <div id="simSourceBadge" style="font-size:11.5px; color:var(--ink-soft); display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+          <span style="background:var(--clinic-soft); color:var(--clinic); border-radius:6px; padding:2px 8px; font-weight:600;" id="simSourceBadgeText">สุ่มจากทุกข้อสอบในระบบ</span>
+          <span id="simSourceCountBadge" style="background:var(--bg); border:1px solid var(--border); color:var(--ink-soft); border-radius:6px; padding:2px 8px;"></span>
+        </div>
       </div>
 
-      <!-- ② PRESET + COUNT + MODE (รวมกันในกล่องเดียว) -->
+      <!-- ② PRESET + COUNT + MODE -->
       <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px; display:flex; flex-direction:column; gap:12px;">
 
         <!-- Preset chips -->
         <div>
           <div class="sim-section-label">② จำนวนข้อ</div>
-          <div style="display:flex; gap:6px;">
-            <button type="button" class="setup-chip-btn active" id="simPreset120" onclick="applySimPreset(120,50,40,10,180)" style="flex:1; padding:8px 4px; font-size:12px;">🎯 120 ข้อ<br><span style="font-size:10px; font-weight:500; opacity:0.75;">สอบจริง 3 ชม.</span></button>
-            <button type="button" class="setup-chip-btn" id="simPreset60" onclick="applySimPreset(60,50,40,10,90)" style="flex:1; padding:8px 4px; font-size:12px;">⚡ 60 ข้อ<br><span style="font-size:10px; font-weight:500; opacity:0.75;">1.5 ชม.</span></button>
-            <button type="button" class="setup-chip-btn" id="simPreset30" onclick="applySimPreset(30,50,40,10,45)" style="flex:1; padding:8px 4px; font-size:12px;">🚀 30 ข้อ<br><span style="font-size:10px; font-weight:500; opacity:0.75;">45 นาที</span></button>
-            <div style="display:flex; align-items:center; gap:4px; background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:4px 8px; min-width:70px;">
-              <input type="number" id="simTotalCount" value="120" min="10" max="240" oninput="recalcSimProportions()" style="width:40px; border:none; background:transparent; font-weight:700; font-family:'IBM Plex Mono'; font-size:14px; text-align:center; outline:none;">
+          <div style="display:flex; gap:6px; flex-wrap:wrap;">
+            <button type="button" class="setup-chip-btn active" id="simPreset120" onclick="applySimPreset(120,50,40,10,180)" style="flex:1; min-width:70px; padding:8px 4px; font-size:12px; line-height:1.4;">🎯 120 ข้อ<br><span style="font-size:10px; opacity:0.75;">สอบจริง 3 ชม.</span></button>
+            <button type="button" class="setup-chip-btn" id="simPreset60" onclick="applySimPreset(60,50,40,10,90)" style="flex:1; min-width:70px; padding:8px 4px; font-size:12px; line-height:1.4;">⚡ 60 ข้อ<br><span style="font-size:10px; opacity:0.75;">1.5 ชม.</span></button>
+            <button type="button" class="setup-chip-btn" id="simPreset30" onclick="applySimPreset(30,50,40,10,45)" style="flex:1; min-width:70px; padding:8px 4px; font-size:12px; line-height:1.4;">🚀 30 ข้อ<br><span style="font-size:10px; opacity:0.75;">45 นาที</span></button>
+            <button type="button" class="setup-chip-btn" id="simPresetAll" onclick="applySimPresetAll()" style="flex:1; min-width:70px; padding:8px 4px; font-size:12px; line-height:1.4;">📚 ทุกข้อ<br><span style="font-size:10px; opacity:0.75;" id="simPresetAllCount">—</span></button>
+            <div style="display:flex; align-items:center; gap:4px; background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:4px 8px; min-width:72px;">
+              <input type="number" id="simTotalCount" value="120" min="1" max="9999" oninput="recalcSimProportions(); clearSimPresetActive();" style="width:44px; border:none; background:transparent; font-weight:700; font-family:'IBM Plex Mono'; font-size:14px; text-align:center; outline:none;">
               <span style="font-size:11px; color:var(--ink-soft);">ข้อ</span>
             </div>
           </div>
@@ -4955,21 +4951,20 @@ function toggleSimSubtopicOptimizer() {
 
 function initSimSubtopicPicker() {
   const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
-  
-  if (selectedSimSubtopics === null) {
-    selectedSimSubtopics = new Set();
-    Object.keys(map).forEach(cat => {
-      if (typeof isSystemCategory === 'function' && isSystemCategory(cat)) return;
-      selectedSimSubtopics.add(cat);
-      const qs = map[cat] || [];
-      qs.forEach(q => {
-        const subs = getQuestionSubtopics(q);
-        subs.forEach(s => {
-          selectedSimSubtopics.add(`${cat}::${s}`);
-        });
-      });
+  const examFilter = (typeof _selectedSimExamSet !== 'undefined') ? _selectedSimExamSet : 'all';
+
+  // Always reset selection to match current exam set
+  selectedSimSubtopics = new Set();
+  Object.keys(map).forEach(cat => {
+    if (typeof isSystemCategory === 'function' && isSystemCategory(cat)) return;
+    const qs = filterQuestionsByExamType(map[cat] || [], examFilter);
+    if (!qs.length) return; // skip categories with no questions in this set
+    selectedSimSubtopics.add(cat);
+    qs.forEach(q => {
+      const subs = getQuestionSubtopics(q);
+      subs.forEach(s => { selectedSimSubtopics.add(`${cat}::${s}`); });
     });
-  }
+  });
 
   renderSimSubtopicPicker();
 }
@@ -4981,6 +4976,7 @@ function renderSimSubtopicPicker() {
   if (!container) return;
 
   const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+  const examFilter = (typeof _selectedSimExamSet !== 'undefined') ? _selectedSimExamSet : 'all';
   const filterText = (document.getElementById('simSubSearchInput')?.value || '').toLowerCase().trim();
 
   let html = '';
@@ -5004,14 +5000,16 @@ function renderSimSubtopicPicker() {
     const cats = trackMap[tr] || [];
     cats.forEach(c => {
       const catName = c.name;
-      const qs = map[catName] || [];
-      if (!qs.length) return;
+      // Filter questions by current exam set
+      const qs = filterQuestionsByExamType(map[catName] || [], examFilter);
+      if (!qs.length) return; // hide categories with no questions in this set
 
       const subMap = {};
       qs.forEach(q => {
         const subs = getQuestionSubtopics(q);
         if (!subs.length) {
           subMap[catName] = (subMap[catName] || 0) + 1;
+
         } else {
           subs.forEach(s => {
             subMap[s] = (subMap[s] || 0) + 1;
@@ -5222,134 +5220,134 @@ function openRandomModal()  { openSimExamPanel(); }
 function closeRandomModal() { closeSimExamPanel(); }
 
 function renderSimExamSetCards() {
-  const typeRow = document.getElementById('simSetTypeRow');
-  if (!typeRow) return;
+  renderSimExamSetSelect();
+}
+
+function renderSimExamSetSelect() {
+  const sel = document.getElementById('simExamSetSelect');
+  if (!sel) return;
 
   const typeMap = getAllUniqueExamTypes();
-  const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+  const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length)
+    ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
 
-  // Count per type and per combo
   const countPerType = {}, countPerCombo = {};
-  Object.values(map).forEach(qs => qs.forEach(q => {
-    const { type, year } = sanitizeExamMeta(q.examType, q.examYear);
-    if (!type && !year) return;
-    const t = type || '';
-    countPerType[t] = (countPerType[t] || 0) + 1;
-    if (year) countPerCombo[`${t}::${year}`] = (countPerCombo[`${t}::${year}`] || 0) + 1;
-  }));
-
-  const totalAll = Object.values(map).reduce((s, qs) => s + qs.length, 0);
+  let totalAll = 0;
+  Object.values(map).forEach(qs => {
+    totalAll += qs.length;
+    qs.forEach(q => {
+      const { type, year } = sanitizeExamMeta(q.examType, q.examYear);
+      if (!type && !year) return;
+      const t = type || '';
+      countPerType[t] = (countPerType[t] || 0) + 1;
+      if (year) countPerCombo[t+'::'+year] = (countPerCombo[t+'::'+year] || 0) + 1;
+    });
+  });
 
   const sortedTypes = Array.from(typeMap.keys()).sort((a, b) => {
-    if (a.includes('จริง') && !b.includes('จริง')) return -1;
-    if (!a.includes('จริง') && b.includes('จริง')) return 1;
+    if (a.includes('\u0e08\u0e23\u0e34\u0e07') && !b.includes('\u0e08\u0e23\u0e34\u0e07')) return -1;
+    if (!a.includes('\u0e08\u0e23\u0e34\u0e07') && b.includes('\u0e08\u0e23\u0e34\u0e07')) return 1;
     const aMock = a.toLowerCase().includes('mock'), bMock = b.toLowerCase().includes('mock');
     if (aMock && !bMock) return -1;
     if (!aMock && bMock) return 1;
     return a.localeCompare(b, 'th');
   });
 
-  // Build type buttons (large)
-  let html = `<button type="button" class="setup-chip-btn active" data-type="all" onclick="selectSimSetType(this,'all')" style="padding:7px 14px; font-size:12px;">🌟 ทั้งหมด <span style="font-size:10px; font-weight:500; opacity:0.7;">${totalAll} ข้อ</span></button>`;
+  let html = '<option value="all">\ud83c\udf1f \u0e17\u0e31\u0e49\u0e07\u0e2b\u0e21\u0e14\u0e43\u0e19\u0e23\u0e30\u0e1a\u0e1a (' + totalAll + ' \u0e02\u0e49\u0e2d)</option>';
+
   sortedTypes.forEach(type => {
-    const isReal = type.includes('จริง'), isMock = type.toLowerCase().includes('mock');
-    const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
-    const cnt = countPerType[type] || 0;
-    html += `<button type="button" class="setup-chip-btn" data-type="${type}" onclick="selectSimSetType(this,'${type.replace(/'/g,"\\'")}')">
-      ${icon} ${type} <span style="font-size:10px; font-weight:500; opacity:0.7;">${cnt} ข้อ</span>
-    </button>`;
+    const isReal = type.includes('\u0e08\u0e23\u0e34\u0e07'), isMock = type.toLowerCase().includes('mock');
+    const icon = isReal ? '\ud83c\udfaf' : isMock ? '\ud83d\udcdd' : '\ud83d\udccc';
+    const yearsSet = typeMap.get(type) || new Set();
+    const years = Array.from(yearsSet).sort((a, b) => {
+      const nA = parseInt((a.match(/\d+/) || [0])[0], 10);
+      const nB = parseInt((b.match(/\d+/) || [0])[0], 10);
+      return (nA && nB) ? nB - nA : b.localeCompare(a, 'th', { numeric: true });
+    });
+    const typeCnt = countPerType[type] || 0;
+    if (years.length > 0) {
+      html += '<option value="type:' + type + '">' + icon + ' ' + type + ' \u2014 \u0e17\u0e38\u0e01\u0e1b\u0e35 (' + typeCnt + ' \u0e02\u0e49\u0e2d)</option>';
+      years.forEach(y => {
+        const ck = type + '::' + y;
+        const cnt = countPerCombo[ck] || 0;
+        html += '<option value="combo:' + type + '::' + y + '">  \u21b3 ' + y + ' (' + cnt + ' \u0e02\u0e49\u0e2d)</option>';
+      });
+    } else {
+      html += '<option value="type:' + type + '">' + icon + ' ' + type + ' (' + typeCnt + ' \u0e02\u0e49\u0e2d)</option>';
+    }
   });
-  typeRow.innerHTML = html;
 
-  // Store for later use
-  typeRow._typeMap = typeMap;
-  typeRow._countPerCombo = countPerCombo;
+  sel.innerHTML = html;
+  sel._totalAll = totalAll;
+  sel._countPerType = countPerType;
+  sel._countPerCombo = countPerCombo;
+
   _selectedSimExamSet = 'all';
-
-  // Hide year row
-  const yr = document.getElementById('simSetYearRow');
-  const lb = document.getElementById('simSetSelectedLabel');
-  if (yr) yr.style.display = 'none';
-  if (lb) lb.style.display = 'none';
+  updateSimSourceBadge('all', totalAll, '');
+  updateSimPresetAllCount(totalAll);
 }
 
-function selectSimSetType(el, typeKey) {
-  const typeRow = document.getElementById('simSetTypeRow');
-  const yearRow = document.getElementById('simSetYearRow');
-  const label  = document.getElementById('simSetSelectedLabel');
+function onSimExamSetSelectChange() {
+  const sel = document.getElementById('simExamSetSelect');
+  if (!sel) return;
+  const val = sel.value;
+  _selectedSimExamSet = val;
+  const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length)
+    ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+  let cnt = 0;
+  Object.values(map).forEach(qs => { cnt += filterQuestionsByExamType(qs, val).length; });
+  const labelEl = sel.options[sel.selectedIndex];
+  updateSimSourceBadge(val, cnt, labelEl ? labelEl.text : '');
+  updateSimPresetAllCount(cnt);
+  initSimSubtopicPicker();
+}
 
-  typeRow.querySelectorAll('button').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
-
-  if (typeKey === 'all') {
-    _selectedSimExamSet = 'all';
-    if (yearRow) yearRow.style.display = 'none';
-    if (label) label.style.display = 'none';
-    return;
+function updateSimSourceBadge(val, count, labelText) {
+  const badge = document.getElementById('simSourceBadgeText');
+  const countBadge = document.getElementById('simSourceCountBadge');
+  if (!badge) return;
+  if (val === 'all') {
+    badge.textContent = '\u0e2a\u0e38\u0e48\u0e21\u0e08\u0e32\u0e01\u0e17\u0e38\u0e01\u0e02\u0e49\u0e2d\u0e2a\u0e2d\u0e1a\u0e43\u0e19\u0e23\u0e30\u0e1a\u0e1a';
+  } else if (labelText) {
+    badge.textContent = '\u2705 \u0e40\u0e25\u0e37\u0e2d\u0e01: ' + labelText.replace(/^[\s\ud83c\udfaf\ud83d\udcdd\ud83d\udccc \u21b3]+/, '').split('(')[0].trim();
   }
-
-  // Show year chips
-  const typeMap = typeRow._typeMap;
-  const countPerCombo = typeRow._countPerCombo || {};
-  const yearsSet = typeMap ? (typeMap.get(typeKey) || new Set()) : new Set();
-  const years = Array.from(yearsSet).sort((a, b) => {
-    const nA = parseInt((a.match(/\d+/) || [0])[0], 10);
-    const nB = parseInt((b.match(/\d+/) || [0])[0], 10);
-    return (nA && nB) ? nB - nA : b.localeCompare(a, 'th', { numeric: true });
-  });
-
-  if (years.length === 0) {
-    // No years — select whole type
-    _selectedSimExamSet = 'type:' + typeKey;
-    if (yearRow) yearRow.style.display = 'none';
-    if (label) { label.style.display = 'block'; label.textContent = '✅ เลือก: ' + typeKey + ' (ทุกชุด)'; }
-    return;
-  }
-
-  // Build year chips
-  let html = `<button type="button" class="setup-chip-btn active" data-combo="type:${typeKey}" onclick="selectSimSetCombo(this,'type:${typeKey.replace(/'/g,"\\'")}')">ทุกปี/ทุกชุด</button>`;
-  years.forEach(y => {
-    const ck = `${typeKey}::${y}`;
-    const cnt = countPerCombo[ck] || 0;
-    html += `<button type="button" class="setup-chip-btn" data-combo="combo:${ck}" onclick="selectSimSetCombo(this,'combo:${ck.replace(/'/g,"\\'")}')">📅 ${y} <span style="opacity:0.7; font-size:10px;">${cnt} ข้อ</span></button>`;
-  });
-
-  if (yearRow) { yearRow.innerHTML = html; yearRow.style.display = 'flex'; }
-  _selectedSimExamSet = 'type:' + typeKey;
-  if (label) { label.style.display = 'block'; label.textContent = '✅ เลือก: ' + typeKey + ' (ทุกปี)'; }
+  if (countBadge) countBadge.textContent = count > 0 ? (count + ' \u0e02\u0e49\u0e2d\u0e17\u0e35\u0e48\u0e21\u0e35\u0e43\u0e19\u0e0a\u0e38\u0e14\u0e19\u0e35\u0e49') : '';
 }
 
-function selectSimSetCombo(el, comboKey) {
-  const yearRow = document.getElementById('simSetYearRow');
-  const label   = document.getElementById('simSetSelectedLabel');
-  if (yearRow) yearRow.querySelectorAll('button').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
-  _selectedSimExamSet = comboKey;
-
-  // Update label
-  const parts = comboKey.replace(/^(type:|combo:)/, '').split('::');
-  const displayText = parts[1] ? `✅ เลือก: ${parts[0]} · ${parts[1]}` : `✅ เลือก: ${parts[0]} (ทุกปี)`;
-  if (label) { label.style.display = 'block'; label.textContent = displayText; }
+function updateSimPresetAllCount(count) {
+  const el = document.getElementById('simPresetAllCount');
+  if (el) el.textContent = count > 0 ? (count + ' \u0e02\u0e49\u0e2d') : '\u2014';
+  const sel = document.getElementById('simExamSetSelect');
+  if (sel) sel._currentSetCount = count;
 }
 
-// Backward compat (old card-based function no longer needed but keep stub)
+function applySimPresetAll() {
+  const sel = document.getElementById('simExamSetSelect');
+  const count = (sel && sel._currentSetCount) ? sel._currentSetCount
+    : (sel && sel._totalAll) ? sel._totalAll : 0;
+  if (!count) return;
+  const inp = document.getElementById('simTotalCount');
+  if (inp) inp.value = count;
+  recalcSimProportions();
+  ['simPreset120','simPreset60','simPreset30','simPresetAll'].forEach(id => {
+    const b = document.getElementById(id);
+    if (b) b.classList.toggle('active', id === 'simPresetAll');
+  });
+  const t0 = document.getElementById('simTimer0');
+  if (t0) selectSimTimer('0', t0);
+}
+
+function clearSimPresetActive() {
+  ['simPreset120','simPreset60','simPreset30','simPresetAll'].forEach(id => {
+    const b = document.getElementById(id);
+    if (b) b.classList.remove('active');
+  });
+}
+
+// Backward compat stubs
+function selectSimSetType() {}
+function selectSimSetCombo() {}
 function selectSimExamSet(el, setKey) { _selectedSimExamSet = setKey; }
-
-// Mode chip selector
-function selectSimMode(val, el) {
-  document.querySelectorAll('#simModeExam, #simModePractice').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
-  const sel = document.getElementById('simModeSelect');
-  if (sel) sel.value = val;
-}
-
-// Timer chip selector
-function selectSimTimer(val, el) {
-  document.querySelectorAll('#simTimerAuto,#simTimer180,#simTimer90,#simTimer45,#simTimer0').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
-  const sel = document.getElementById('simTimerSelect');
-  if (sel) sel.value = val;
-}
 
 
 function applySimPreset(total, cPct, pPct, sPct, mins) {
