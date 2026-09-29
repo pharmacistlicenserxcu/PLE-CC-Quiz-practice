@@ -1088,7 +1088,8 @@
     
     .exp-title { font-size: 13.5px; font-weight: 700; color: #14532D; margin-bottom: 4px; }
     .explanation-box.is-wrong .exp-title { color: #92400E; }
-    .exp-text { font-size: 13.5px; line-height: 1.6; color: #1F2937; }
+    .exp-text { font-size: 12px; line-height: 1.55; color: #1F2937; }
+
     .exp-note {
       font-size: 12px; color: var(--ink-soft); margin-top: 8px; padding-top: 6px;
       border-top: 1px dashed var(--border-dark);
@@ -3893,10 +3894,18 @@ function formatExplanationHtml(text) {
 
   let resultHtml = '';
 
-  // Preamble (before first section) — still render with base formatter
+  // Helper: collapse excessive blank lines / br tags in formatted content
+  function collapseBreaks(html) {
+    return html
+      .replace(/(\s*<br\s*\/?>\s*){3,}/gi, '<br><br>') // max 2 consecutive br
+      .replace(/^(\s*<br\s*\/?>\s*)+/i, '')             // strip leading br
+      .replace(/(\s*<br\s*\/?>\s*)+$/i, '');            // strip trailing br
+  }
+
+  // Preamble (before first section)
   const preamble = parts[0] ? parts[0].trim() : '';
   if (preamble) {
-    resultHtml += '<div style="font-size:13px; line-height:1.65; color:var(--ink); margin-bottom:10px;">' + _baseFormatExp(preamble) + '</div>';
+    resultHtml += '<div style="margin-bottom:6px;">' + collapseBreaks(_baseFormatExp(preamble)) + '</div>';
   }
 
   // Process pairs: parts[i] = section header, parts[i+1] = content
@@ -3906,19 +3915,10 @@ function formatExplanationHtml(text) {
     const def = SECTION_PATTERNS.find(p => p.key === headerKey);
     if (!def) continue;
 
-    const formattedContent = _baseFormatExp(content);
+    const formattedContent = collapseBreaks(_baseFormatExp(content));
 
-    resultHtml += `<div style="
-      background:${def.bg};
-      border-left: 3px solid ${def.border};
-      border-radius: 0 8px 8px 0;
-      padding: 7px 11px;
-      margin: 5px 0;
-      font-size: 12px;
-      line-height: 1.6;
-      color: ${def.textColor};
-    ">
-      <div style="font-weight:700; font-size:11.5px; color:${def.iconColor}; margin-bottom:3px;">${def.icon} ${def.label}</div>
+    resultHtml += `<div style="background:${def.bg}; border-left:3px solid ${def.border}; border-radius:0 7px 7px 0; padding:5px 10px; margin:4px 0; color:${def.textColor};">
+      <div style="font-weight:700; font-size:11px; color:${def.iconColor}; margin-bottom:2px;">${def.icon} ${def.label}</div>
       <div>${formattedContent}</div>
     </div>`;
 
