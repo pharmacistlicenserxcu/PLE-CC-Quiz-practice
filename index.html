@@ -5203,6 +5203,46 @@ function updateSimSubtopicStats(poolSize = 0) {
 // ═══════════════════════════════════════════════
 // SIMULATED EXAM — FULL PAGE PANEL
 // ═══════════════════════════════════════════════
+function openSimExamPanel() {
+  const panel = document.getElementById('simExamView');
+  if (!panel) return;
+  document.getElementById('lobbyView')  && (document.getElementById('lobbyView').style.display  = 'none');
+  document.getElementById('quizView')   && (document.getElementById('quizView').style.display   = 'none');
+  document.getElementById('browseView') && (document.getElementById('browseView').style.display = 'none');
+  panel.classList.add('show');
+  window.scrollTo(0, 0);
+  recalcSimProportions();
+  renderSimSourceChips();
+  initSimSubtopicPicker();
+}
+
+function closeSimExamPanel() {
+  const panel = document.getElementById('simExamView');
+  if (panel) panel.classList.remove('show');
+  const lobby = document.getElementById('lobbyView');
+  if (lobby) lobby.style.display = '';
+}
+
+// Keep backward-compat aliases
+function openRandomModal()  { openSimExamPanel(); }
+function closeRandomModal() { closeSimExamPanel(); }
+
+// Mode chip selector
+function selectSimMode(val, el) {
+  document.querySelectorAll('#simModeExam, #simModePractice').forEach(b => b.classList.remove('active'));
+  if (el) el.classList.add('active');
+  const sel = document.getElementById('simModeSelect');
+  if (sel) sel.value = val;
+}
+
+// Timer chip selector
+function selectSimTimer(val, el) {
+  document.querySelectorAll('#simTimerAuto,#simTimer180,#simTimer90,#simTimer45,#simTimer0').forEach(b => b.classList.remove('active'));
+  if (el) el.classList.add('active');
+  const sel = document.getElementById('simTimerSelect');
+  if (sel) sel.value = val;
+}
+
 // ─── MULTI-SELECT EXAM SOURCE ───────────────────────────────────────────────
 // _selectedSimExamSets: Set of filter keys, e.g. {'all'} or {'type:ข้อสอบจริง', 'combo:Mock::RxCU83'}
 let _selectedSimExamSets = new Set(['all']);
@@ -5401,10 +5441,6 @@ function clearSimPresetActive() {
   });
 }
 
-// Backward compat stubs
-function selectSimSetType() {}
-function selectSimSetCombo() {}
-function selectSimExamSet(el, setKey) { _selectedSimExamSet = setKey; }
 
 
 function applySimPreset(total, cPct, pPct, sPct, mins) {
