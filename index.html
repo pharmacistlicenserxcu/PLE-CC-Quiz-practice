@@ -7258,9 +7258,20 @@ function renderBrowseList(reset = true) {
       });
     }
 
+    // Sort order: Main category sheet rows first (by itemNo), followed by extra/ingestion questions
+    if (selectedCat !== 'all') {
+      list.sort((a, b) => {
+        const aIsMain = (a.id && a.id.startsWith(selectedCat)) ? 0 : 1;
+        const bIsMain = (b.id && b.id.startsWith(selectedCat)) ? 0 : 1;
+        if (aIsMain !== bIsMain) return aIsMain - bIsMain;
+        return (a.itemNo || 0) - (b.itemNo || 0);
+      });
+    }
+
     browseFilteredList = list;
     container.innerHTML = '';
   }
+
 
   const list = browseFilteredList;
   document.getElementById('browseResultCount').textContent = `พบ ${list.length} ข้อ`;

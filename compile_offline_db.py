@@ -156,7 +156,11 @@ def main():
         if s not in SYSTEM_SHEETS and not s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📥', 'QI_')):
             offline_questions[s] = []
 
-    for s_name in sheet_names:
+    regular_sheets = [s for s in sheet_names if not (s in SYSTEM_SHEETS or s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📥', 'QI_')))]
+    ingestion_sheets = [s for s in sheet_names if s.startswith(('📥', 'QI_'))]
+    sorted_sheet_names = regular_sheets + ingestion_sheets
+
+    for s_name in sorted_sheet_names:
         if s_name in SYSTEM_SHEETS or s_name.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍')):
             continue
 
@@ -239,10 +243,16 @@ def main():
             # 3. Clean Images (Remove Medium/Easy/Hard)
             q_img = clean_image_field(q_img_raw)
             ans_img = clean_image_field(ans_img_raw)
-            if not q_img and (s_name, row_num, 1) in images_map:
-                q_img = images_map[(s_name, row_num, 1)]
-            if not ans_img and (s_name, row_num, 9) in images_map:
-                ans_img = images_map[(s_name, row_num, 9)]
+            if not q_img:
+                for c in [2, 1, 0, 3]:
+                    if (s_name, row_num, c) in images_map:
+                        q_img = images_map[(s_name, row_num, c)]
+                        break
+            if not ans_img:
+                for c in [10, 9, 8, 11]:
+                    if (s_name, row_num, c) in images_map:
+                        ans_img = images_map[(s_name, row_num, c)]
+                        break
 
             # 4. Standardize Answer (1-5)
             ans_map = {'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5, 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5}
