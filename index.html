@@ -3875,57 +3875,65 @@ function formatQuestionText(text) {
 function formatExplanationHtml(text) {
   if (!text) return '';
 
-  // ─── SECTION CARD STYLES ───────────────────────────────────────────────────
-  // Split on the 5 known section headers, keeping the delimiter
-  const SECTION_PATTERNS = [
-    { key: '💡 Background:',            bg: '#FFFBEB', border: '#F59E0B', icon: '💡', label: 'Background', iconColor: '#92400E', textColor: '#451A03' },
-    { key: '🎯 ทำไมข้อนี้ถึงถูก:',      bg: '#F0FDF4', border: '#22C55E', icon: '🎯', label: 'ทำไมข้อนี้ถึงถูก',  iconColor: '#15803D', textColor: '#14532D' },
-    { key: '🔍 ข้ออื่นผิดเพราะอะไร:',  bg: '#EFF6FF', border: '#60A5FA', icon: '🔍', label: 'ข้ออื่นผิดเพราะอะไร', iconColor: '#1D4ED8', textColor: '#1E3A5F' },
-    { key: '📖 Guideline อ้างอิง:',      bg: '#EEF2FF', border: '#818CF8', icon: '📖', label: 'Guideline อ้างอิง',  iconColor: '#4338CA', textColor: '#312E81' },
-    { key: '📌 จุดจำก่อนสอบ:',         bg: '#FFF1F2', border: '#FB7185', icon: '📌', label: 'จุดจำก่อนสอบ',     iconColor: '#BE123C', textColor: '#4C0519' },
+  // 1. Pre-clean: strip wrapper div tags and standalone unclosed divs
+  let cleaned = text.replace(/<\/?div[^>]*>/gi, '\n');
+
+  // 2. Remove b/span/strong tags directly wrapping section headers
+  cleaned = cleaned.replace(/<[a-z0-9]+[^>]*>(\s*[💡🎯🔍📖📌][^<:]*?:?\s*)<\/[a-z0-9]+>/gi, '$1');
+
+  // 3. Define section patterns with regex
+  const SECTION_DEFS = [
+    { regex: /💡\s*Background\s*:?/i, bg: '#FFFBEB', border: '#F59E0B', icon: '💡', label: 'Background', iconColor: '#92400E', textColor: '#451A03' },
+    { regex: /🎯\s*ทำไมข้อนี้ถึงถูก\s*:?/i, bg: '#F0FDF4', border: '#22C55E', icon: '🎯', label: 'ทำไมข้อนี้ถึงถูก', iconColor: '#15803D', textColor: '#14532D' },
+    { regex: /🔍\s*ข้ออื่นผิดเพราะอะไร\s*:?/i, bg: '#EFF6FF', border: '#60A5FA', icon: '🔍', label: 'ข้ออื่นผิดเพราะอะไร', iconColor: '#1D4ED8', textColor: '#1E3A5F' },
+    { regex: /(?:📖|📚)\s*(?:Guideline|แนวทางเวชปฏิบัติ)(?:\s*อ้างอิง)?\s*:?/i, bg: '#EEF2FF', border: '#818CF8', icon: '📖', label: 'Guideline อ้างอิง', iconColor: '#4338CA', textColor: '#312E81' },
+    { regex: /📌\s*(?:จุดจำก่อนสอบ|สรุปจุดจำก่อนสอบ|High-yield summary)\s*:?/i, bg: '#FFF1F2', border: '#FB7185', icon: '📌', label: 'จุดจำก่อนสอบ', iconColor: '#BE123C', textColor: '#4C0519' },
   ];
 
-  // Build a regex that splits on any section header
-  const escaped_keys = SECTION_PATTERNS.map(p => p.key.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-  const splitRe = new RegExp('(' + escaped_keys.join('|') + ')', 'g');
+  // Combined split regex
+  const splitRe = /(💡\s*Background\s*:?|🎯\s*ทำไมข้อนี้ถึงถูก\s*:?|🔍\s*ข้ออื่นผิดเพราะอะไร\s*:?|(?:📖|📚)\s*(?:Guideline|แนวทางเวชปฏิบัติ)(?:\s*อ้างอิง)?\s*:?|📌\s*(?:จุดจำก่อนสอบ|สรุปจุดจำก่อนสอบ|High-yield summary)\s*:?)/gi;
 
-  const parts = text.split(splitRe);
-  // parts[0] = preamble (text before first section), then alternating header|content
-
+  const parts = cleaned.split(splitRe);
   let resultHtml = '';
 
-  // Helper: collapse excessive blank lines / br tags in formatted content
-  function collapseBreaks(html) {
-    return html
-      .replace(/(\s*<br\s*\/?>\s*){3,}/gi, '<br><br>') // max 2 consecutive br
-      .replace(/^(\s*<br\s*\/?>\s*)+/i, '')             // strip leading br
-      .replace(/(\s*<br\s*\/?>\s*)+$/i, '');            // strip trailing br
+  function cleanInner(str) {
+    if (!str) return '';
+    let s = str
+      .replace(/<br\s*\/?>\s*<br\s*\/?>(\s*<br\s*\/?>)+/gi, '<br>')
+      .replace(/^(\s*<br\s*\/?>\s*|\n)+/i, '')
+      .replace(/(\s*<br\s*\/?>\s*|\n)+$/i, '')
+      .trim();
+    return s;
   }
 
   // Preamble (before first section)
-  const preamble = parts[0] ? parts[0].trim() : '';
+  const preamble = cleanInner(_baseFormatExp(parts[0]));
   if (preamble) {
-    resultHtml += '<div style="margin-bottom:6px;">' + collapseBreaks(_baseFormatExp(preamble)) + '</div>';
+    resultHtml += '<div style="margin-bottom:6px; line-height:1.6;">' + preamble + '</div>';
   }
 
-  // Process pairs: parts[i] = section header, parts[i+1] = content
+  // Process pairs
   for (let i = 1; i < parts.length; i += 2) {
-    const headerKey = parts[i];
-    const content   = (parts[i + 1] || '').trim();
-    const def = SECTION_PATTERNS.find(p => p.key === headerKey);
+    const headerStr = parts[i];
+    const rawContent = parts[i + 1] || '';
+    const content = cleanInner(_baseFormatExp(rawContent));
+    if (!content) continue; // skip empty section
+
+    // Find matching definition
+    const def = SECTION_DEFS.find(d => d.regex.test(headerStr));
     if (!def) continue;
 
-    const formattedContent = collapseBreaks(_baseFormatExp(content));
-
-    resultHtml += `<div style="background:${def.bg}; border-left:3px solid ${def.border}; border-radius:0 7px 7px 0; padding:5px 10px; margin:4px 0; color:${def.textColor};">
-      <div style="font-weight:700; font-size:11px; color:${def.iconColor}; margin-bottom:2px;">${def.icon} ${def.label}</div>
-      <div>${formattedContent}</div>
+    resultHtml += `<div style="background:${def.bg}; border-left:3px solid ${def.border}; border-radius:0 8px 8px 0; padding:6px 12px; margin:5px 0; font-size:12px; line-height:1.6; color:${def.textColor};">
+      <div style="font-weight:700; font-size:11.5px; color:${def.iconColor}; margin-bottom:3px; display:flex; align-items:center; gap:5px;">
+        ${def.icon} ${def.label}
+      </div>
+      <div>${content}</div>
     </div>`;
-
   }
 
   return resultHtml || _baseFormatExp(text);
 }
+
 
 // Internal helper: apply base rich-text formatting (math, bullets, badges) to a content chunk
 function _baseFormatExp(text) {
