@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.0 Clean Edition)
- * Total Questions: 4232 across 43 Categories
- * Build Timestamp: 2026-09-30 00:47:59
+ * Total Questions: 4232 across 34 Categories
+ * Build Timestamp: 2026-09-30 01:00:23
  */
 
 window.QUIZ_GOOGLE_SHEET_ID = "1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w";
@@ -10,13 +10,8 @@ window.QUIZ_GAS_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycby14F6sdMW
 
 window.QUIZ_OFFLINE_CATEGORIES = [
   {
-    "name": "1. Musculoskeletal",
-    "count": 5,
-    "track": "Clinic"
-  },
-  {
     "name": "1. Musculoskeleton",
-    "count": 217,
+    "count": 222,
     "track": "Clinic"
   },
   {
@@ -25,13 +20,13 @@ window.QUIZ_OFFLINE_CATEGORIES = [
     "track": "Clinic"
   },
   {
-    "name": "12. Gynaecologic/GU",
-    "count": 4,
+    "name": "11. Herbal Products",
+    "count": 40,
     "track": "Clinic"
   },
   {
     "name": "12. GynaecologicGenitourinary",
-    "count": 158,
+    "count": 162,
     "track": "Clinic"
   },
   {
@@ -60,11 +55,6 @@ window.QUIZ_OFFLINE_CATEGORIES = [
     "track": "Clinic"
   },
   {
-    "name": "18. Pharmacognosy & Herbal Medicine",
-    "count": 7,
-    "track": "Clinic"
-  },
-  {
     "name": "2. Cardiovascular",
     "count": 251,
     "track": "Clinic"
@@ -76,12 +66,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "4. Endocrine",
-    "count": 171,
-    "track": "Clinic"
-  },
-  {
-    "name": "4. Endocrinology",
-    "count": 5,
+    "count": 176,
     "track": "Clinic"
   },
   {
@@ -111,12 +96,12 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "1. Titrations",
-    "count": 80,
+    "count": 102,
     "track": "Product"
   },
   {
-    "name": "11. Herbal Products",
-    "count": 33,
+    "name": "10. Biotech Products",
+    "count": 122,
     "track": "Product"
   },
   {
@@ -126,27 +111,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "13. Medicinal Chemistry",
-    "count": 80,
-    "track": "Product"
-  },
-  {
-    "name": "17. Quality Assurance & Analysis",
-    "count": 22,
-    "track": "Product"
-  },
-  {
-    "name": "19. Dosage Form & Drug Delivery",
-    "count": 26,
-    "track": "Product"
-  },
-  {
-    "name": "20. Biotechnology",
-    "count": 5,
-    "track": "Product"
-  },
-  {
-    "name": "20. Pharmaceutical Chemistry",
-    "count": 3,
+    "count": 83,
     "track": "Product"
   },
   {
@@ -161,7 +126,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "6. Solid Dosage Forms",
-    "count": 267,
+    "count": 293,
     "track": "Product"
   },
   {
@@ -176,23 +141,13 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "2. Pharmacy Administration & Sy",
-    "count": 3,
-    "track": "SAP"
-  },
-  {
-    "name": "21. Social and Administrative Pharmacy (SAP)",
-    "count": 10,
+    "count": 13,
     "track": "SAP"
   },
   {
     "name": "3. Research & Biostats",
     "count": 74,
     "track": "SAP"
-  },
-  {
-    "name": "10. Biotech Products",
-    "count": 117,
-    "track": "Biotech Products"
   },
   {
     "name": "11. Pulmonary",
@@ -228,6 +183,116 @@ window.QUIZ_OFFLINE_CATEGORIES = [
 
 window.QUIZ_OFFLINE_QUESTIONS = {
   "1. Musculoskeleton": [
+    {
+      "id": "📥 รวมข้อสอบด่วน::3",
+      "itemNo": 1,
+      "category": "1. Musculoskeleton",
+      "subtopic": "Gout",
+      "track": "Clinic",
+      "question": "ผู้ป่วยชายอายุ 58 ปี มีประวัติโรคเกาต์มา 5 ปี กำเริบเฉียบพลันประมาณ 2 ครั้ง/ปี บริเวณข้อเท้าและหัวแม่เท้า ปัจจุบันได้รับยา allopurinol 300 mg 1x1 ตรวจเลือดล่าสุด 3 เดือนก่อนได้ค่า serum uric acid 7.2 mg/dL และมีโรคประจำตัวคือ type 2 DM, HTN ใช้ยา losartan, metformin, aspirin เมื่อ 2 วันก่อนมีอาการปวด บวม แดง ที่ข้อเท้าขวา ไม่มีไข้ ผู้ป่วยแจ้งว่าไม่ได้หยุดยา allopurinol ปัจจัย/สาเหตุใดที่ส่งผลต่อการเกิดอาการปวดขอกำเริบ",
+      "questionImage": "",
+      "choices": [
+        "ใช้ Allopurinol เป็นเวลานานอย่างต่อเนื่อง",
+        "ได้รับ Aspirin",
+        "ได้รับ Metformin",
+        "ได้รับ Losartan",
+        "Uric acid ในเลือดสูงกว่าค่าปกติ"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. ได้รับ Aspirin</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ได้รับ Aspirin Low-dose aspirin ยับยั้งการหลั่งกรดยูริกที่ท่อไตสวนปลาย (renal tubular secretion) ทำให้ขับยูริกลดลงจนเกิดการคั่งและกระตุ้น acute gout flare ได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ใช้ Allopurinol เป็นเวลานานอย่างต่อเนื่อง):</b> เป็น Xanthine Oxidase Inhibitor สำหรับ Urate-Lowering Therapy (ULT) ระยะยาว ห้ามเริ่มใช้ขณะ acute gout flare กำเริบเฉียบพลัน และต้องระวัง severe cutaneous ADR (SCARs) โดยเฉพาะผู้ที่มี HLA-B*58:01<br>• <b>ข้อ ค. (ได้รับ Metformin):</b> เป็น Biguanide ที่เป็น first-line drug of choice ใน T2DM ลด hepatic gluconeogenesis ไม่ทำให้น้ำหนักเพิ่มและไม่ทำให้เกิด hypoglycemia แต่ contraindication เมื่อ eGFR < 30 mL/min (เสี่ยง lactic acidosis)<br>• <b>ข้อ ง. (ได้รับ Losartan):</b> เป็น ARB ปิดกั้น AT1 receptor โดยตรง เหมาะสำหรับผู้ป่วยที่ทนต่ออาการไอแห้งจาก ACEI ไม่ได้ และมี uricosuric effect เล็กน้อยในการลดกรดยูริก<br>• <b>ข้อ จ. (Uric acid ในเลือดสูงกว่าค่าปกติ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Renal Safety Limit:</b> ห้ามใช้ (contraindication) เมื่อ eGFR < 30 mL/min/1.73 m² และไม่ควรเริ่มยาเมื่อ eGFR 30-44 mL/min เนื่องจากเสี่ยงต่อ fatal Lactic Acidosis<br>• <b>Contrast Procedure:</b> ต้องหยุดยาก่อนหรือในวันที่ฉีดสารทึบรังสีชนิด iodinated radiocontrast และประเมิน eGFR ซ้ำหลังตรวจ 48 ชม. ก่อนเริ่มยาใหม่<br>• <b>Long-term Monitoring:</b> การใช้ระยะยาวลดการดูดซึม Vitamin B12 ควรตรวจติดตาม CBC และระดับวิตามินบี 12 เป็นระยะ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::4",
+      "itemNo": 2,
+      "category": "1. Musculoskeleton",
+      "subtopic": "Gout",
+      "track": "Clinic",
+      "question": "ทางเลือกการใช้ยาของโรคเกาต์เฉียบพลันในผู้ป่วยรายนี้",
+      "questionImage": "",
+      "choices": [
+        "Colchicine 0.6 mg BID",
+        "Ibuprofen 400 mg TID",
+        "Prednisolone 20 mg OD",
+        "Naproxen 250 mg BID",
+        "A+C"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. A+C</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>A+C ผู้ป่วยมีโรคร่วม DM และ HTN ควรหลีกเลี่ยง NSAIDs เพื่อลดความเสี่ยงไตเสื่อมและความดันขึ้น การเลือก Colchicine ขนาดปรับลด หรือ Short-course systemic steroid (Prednisolone) จึงเหมาะสมที่สุด</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Colchicine 0.6 mg BID):</b> ยับยั้ง microtubule polymerization และ neutrophil chemotaxis เป็น first-line ใน acute gout flare และ flare prophylaxis แต่มี ADR เด่นทาง GI (ท้องเสีย คลื่นไส้)<br>• <b>ข้อ ข. (Ibuprofen 400 mg TID):</b> เป็น non-selective NSAID ใช้บรรเทาอาการปวดและอักเสบระดับเล็กน้อยถึงปานกลาง มี GI toxicity ต่ำกว่า piroxicam/indomethacin แต่ต้องระวังใน CKD และ active PUD<br>• <b>ข้อ ค. (Prednisolone 20 mg OD):</b> เป็น intermediate-acting systemic corticosteroid ขนาดยอดนิยมสำหรับ immunosuppressive & anti-inflammatory therapy ต้องระวัง Cushingoid, infection, osteoporosis, peptic ulcer<br>• <b>ข้อ ง. (Naproxen 250 mg BID):</b> เป็น non-selective NSAID ที่มี cardiovascular safety profile ดีที่สุด และมี efficacy สูงในการระงับ acute inflammation</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Urate-Lowering Target:</b> เป้าหมาย Serum Uric Acid < 6.0 mg/dL ในผู้ป่วยทั่วไป (หรือ < 5.0 mg/dL ในรายที่มี tophi รุนแรง)<br>• <b>Prophylaxis Duration:</b> ต้องให้ anti-inflammatory prophylaxis (Colchicine หรือ low-dose NSAID) ควบคู่กับ ULT ต่อเนื่องอย่างน้อย 3-6 เดือน<br>• <b>Allopurinol Genetic Rule:</b> ตรวจ HLA-B*58:01 ในคนไทยก่อนเริ่ม Allopurinol ทุกรายเพื่อป้องกัน SJS/TEN</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::5",
+      "itemNo": 3,
+      "category": "1. Musculoskeleton",
+      "subtopic": "Gout",
+      "track": "Clinic",
+      "question": "ควรดำเนินการอย่างไรในการใช้ยา allopurinol ในระหว่างอาการกำเริบเฉียบพลัน",
+      "questionImage": "",
+      "choices": [
+        "ใช้เหมือนเดิม",
+        "ลดขนาดยา",
+        "เพิ่มขนาดยาทันที",
+        "หยุดยา",
+        "เปลี่ยนไปใช้ febuxostat"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ใช้เหมือนเดิม</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ใช้เหมือนเดิม หากผู้ป่วยรับประทาน Urate-Lowering Therapy (ULT) อยู่เดิมแล้วเกิด acute flare ไม่ควรหยุดหรือปรับขนาดยา ให้คงขนาดยาเดิมไว้และให้ยารักษาอาการอักเสบเฉียบพลันร่วมด้วย</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (ลดขนาดยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (เพิ่มขนาดยาทันที):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (หยุดยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เปลี่ยนไปใช้ febuxostat):</b> เป็น non-purine selective xanthine oxidase inhibitor ใช้เป็น alternative ULT ในผู้ที่ไม่ทนต่อ allopurinol หรือมี HLA-B*58:01 positive แต่ต้องระวังในผู้ป่วย ischemic heart disease</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Genetic Testing HLA-B*58:01:</b> คนไทยมีความชุกของ HLA-B*58:01 สูง แนะนำตรวจก่อนเริ่มยาเพื่อป้องกัน Severe Cutaneous Adverse Reactions (SCARs/SJS/TEN)<br>• <b>Acute Gout Timing:</b> ห้ามเริ่มยาขณะ acute flare กำเริบเฉียบพลัน ให้รอ 2-4 สัปดาห์หลังอาการสงบ หรือให้ prophylactic colchicine/NSAID ร่วมด้วย<br>• <b>Renal Adjustment:</b> ต้องปรับขนาดยาเริ่มต้นตามค่า eGFR (เช่น eGFR < 30 เริ่มต้น 50 mg/day) เพื่อป้องกัน allopurinol hypersensitivity syndrome (AHS)</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::6",
+      "itemNo": 4,
+      "category": "1. Musculoskeleton",
+      "subtopic": "Gout",
+      "track": "Clinic",
+      "question": "จากทางเลือกที่เหมาะสมในการใช้รักษาเกาต์เฉียบพลัน ยาที่เลือกมีกลไกการออกฤทธิ์อย่างไร",
+      "questionImage": "",
+      "choices": [
+        "ลดการสร้าง uric acid โดยตรง",
+        "เพิ่มการขับ uric acid โดยยับยั้งการดูดกลับที่ proximal tubule",
+        "ยับยั้งการรวม microtubule → ลดการรวมตัว/เคลื่อนไหวและกลืนกินของ neutrophil",
+        "ยับยั้ง COX2 ลดการอักเสบ",
+        "เพิ่มการสลาย uric acid"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. ยับยั้งการรวม microtubule → ลดการรวมตัว/เคลื่อนไหวและกลืนกินของ neutrophil</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยับยั้งการรวม microtubule → ลดการรวมตัว/เคลื่อนไหวและกลืนกินของ neutrophil Colchicine ออกฤทธิ์จับกับ tubulin ยับยั้ง microtubule polymerization ทำให้ขัดขวางการเคลื่อนที่ (chemotaxis) และ phagocytosis ของ neutrophil บริเวณข้อที่อักเสบ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ลดการสร้าง uric acid โดยตรง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (เพิ่มการขับ uric acid โดยยับยั้งการดูดกลับที่ proximal tubule):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ยับยั้ง COX2 ลดการอักเสบ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพิ่มการสลาย uric acid):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Urate-Lowering Target:</b> เป้าหมาย Serum Uric Acid < 6.0 mg/dL ในผู้ป่วยทั่วไป (หรือ < 5.0 mg/dL ในรายที่มี tophi รุนแรง)<br>• <b>Prophylaxis Duration:</b> ต้องให้ anti-inflammatory prophylaxis (Colchicine หรือ low-dose NSAID) ควบคู่กับ ULT ต่อเนื่องอย่างน้อย 3-6 เดือน<br>• <b>Allopurinol Genetic Rule:</b> ตรวจ HLA-B*58:01 ในคนไทยก่อนเริ่ม Allopurinol ทุกรายเพื่อป้องกัน SJS/TEN</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::7",
+      "itemNo": 5,
+      "category": "1. Musculoskeleton",
+      "subtopic": "Gout",
+      "track": "Clinic",
+      "question": "ADR ของ Allopurinol ที่พบได้บ่อย/สำคัญ",
+      "questionImage": "",
+      "choices": [
+        "ตับอักเสบ",
+        "Hypoglycemia",
+        "ต้อกระจก",
+        "บวมน้ำ",
+        "SJS/TEN (รุนแรงทางผิวหนัง)"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. SJS/TEN (รุนแรงทางผิวหนัง)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>SJS/TEN (รุนแรงทางผิวหนัง) Allopurinol มีความเสี่ยงสำคัญต่อการเกิดภาวะ Severe Cutaneous Adverse Reactions (SCARs) เช่น SJS/TEN โดยเฉพาะในผู้ที่มีอัลลีล HLA-B*58:01</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ตับอักเสบ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Hypoglycemia):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ต้อกระจก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (บวมน้ำ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Genetic Testing HLA-B*58:01:</b> คนไทยมีความชุกของ HLA-B*58:01 สูง แนะนำตรวจก่อนเริ่มยาเพื่อป้องกัน Severe Cutaneous Adverse Reactions (SCARs/SJS/TEN)<br>• <b>Acute Gout Timing:</b> ห้ามเริ่มยาขณะ acute flare กำเริบเฉียบพลัน ให้รอ 2-4 สัปดาห์หลังอาการสงบ หรือให้ prophylactic colchicine/NSAID ร่วมด้วย<br>• <b>Renal Adjustment:</b> ต้องปรับขนาดยาเริ่มต้นตามค่า eGFR (เช่น eGFR < 30 เริ่มต้น 50 mg/day) เพื่อป้องกัน allopurinol hypersensitivity syndrome (AHS)</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
     {
       "id": "1. Musculoskeleton::3",
       "itemNo": 1,
@@ -15524,6 +15589,116 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     }
   ],
   "4. Endocrine": [
+    {
+      "id": "📥 รวมข้อสอบด่วน::28",
+      "itemNo": 26,
+      "category": "4. Endocrine",
+      "subtopic": "Diabetes mellitus",
+      "track": "Clinic",
+      "question": "ผู้ป่วยชายอายุ 60 ปี โรคประจำตัว T2DM มา 10 ปี ได้รับ Metformin 500 mg 2x2 pc, Glipizide 5 mg 2x2 ac, Pioglitazone 30 mg 1x1 pc ไม่มีโรคร่วมอื่นและยังไม่มีภาวะแทรกซ้อน เป้าหมายระดับ HbA1c ของผู้ป่วยรายนี้ตามแนวทางเวชปฏิบัติส่วนใหญ่ควรเป็นเท่าใด",
+      "questionImage": "",
+      "choices": [
+        "< 5.5%",
+        "< 6.0%",
+        "< 7.0%",
+        "< 8.0%",
+        "< 8.5%"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. < 7.0%</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยเบาหวานชนิดที่ 2 (T2DM) เน้นควบคุม HbA1c ควบคู่กับการเลือกยาที่มี cardiorenal protection ในผู้ป่วยที่มีโรคร่วม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>< 7.0% ตาม ADA guidelines ผู้ป่วยเบาหวานส่วนใหญ่ที่เป็นผู้ใหญ่ทั่วไป ไม่มีโรคร่วมรุนแรง และไม่มีประวัติ hypoglycemia บ่อย เป้าหมาย HbA1c ทั่วไปแนะนำที่ < 7.0%</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (< 5.5%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (< 6.0%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (< 8.0%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (< 8.5%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566 (สมาคมโรคเบาหวานแห่งประเทศไทย) & American Diabetes Association (ADA) Standards of Care in Diabetes 2024</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Renal Safety Limit:</b> ห้ามใช้ (contraindication) เมื่อ eGFR < 30 mL/min/1.73 m² และไม่ควรเริ่มยาเมื่อ eGFR 30-44 mL/min เนื่องจากเสี่ยงต่อ fatal Lactic Acidosis<br>• <b>Contrast Procedure:</b> ต้องหยุดยาก่อนหรือในวันที่ฉีดสารทึบรังสีชนิด iodinated radiocontrast และประเมิน eGFR ซ้ำหลังตรวจ 48 ชม. ก่อนเริ่มยาใหม่<br>• <b>Long-term Monitoring:</b> การใช้ระยะยาวลดการดูดซึม Vitamin B12 ควรตรวจติดตาม CBC และระดับวิตามินบี 12 เป็นระยะ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::29",
+      "itemNo": 27,
+      "category": "4. Endocrine",
+      "subtopic": "Diabetes mellitus",
+      "track": "Clinic",
+      "question": "ผลตรวจทางห้องปฏิบัติการ HbA1c ของผู้ป่วยรายนี้มีค่าเท่ากับ 9.0% ตามแนวทาง ADA guideline ยาลดระดับน้ำตาลในเลือดกลุ่มถัดไปที่ควรพิจารณาเพิ่มที่มีประสิทธิภาพลดระดับน้ำตาลได้สูงมากและส่งเสริมการลดน้ำหนัก",
+      "questionImage": "",
+      "choices": [
+        "Sitagliptin",
+        "Empagliflozin",
+        "Acarbose",
+        "Semaglutide SC",
+        "Insulin SC"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Semaglutide SC</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยเบาหวานชนิดที่ 2 (T2DM) เน้นควบคุม HbA1c ควบคู่กับการเลือกยาที่มี cardiorenal protection ในผู้ป่วยที่มีโรคร่วม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Semaglutide SC เมื่อผู้ป่วยยังไม่ถึงเป้าหมายและต้องการยาที่มี glycemic efficacy สูงมาก (Very High) พร้อมทั้งชะลอการเพิ่มของน้ำหนัก/ช่วยลดน้ำหนัก GLP-1 receptor agonist (เช่น Semaglutide SC) เป็นตัวเลือกที่แนะนำเป็น first-line ก่อนการเริ่มอินซูลิน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Sitagliptin):</b> เป็น DPP-4 inhibitor เพิ่ม active GLP-1 แบบ glucose-dependent มี neutral effect ต่อน้ำหนักตัว และความเสี่ยงต่อ hypoglycemia ต่ำมาก แต่ต้องปรับ dose ตาม CrCl<br>• <b>ข้อ ข. (Empagliflozin):</b> เป็น SGLT2 inhibitor ยับยั้งการดูดกลับ glucose ที่ไต มี cardiorenal benefit ชัดเจน (ลด HF hospitalization และชะลอ CKD progression) แต่เสี่ยงต่อ mycotic genital infection และ euglycemic DKA<br>• <b>ข้อ ค. (Acarbose):</b> เป็น Alpha-glucosidase inhibitor ชะลอการย่อยคาร์โบไฮเดรตในทางเดินอาหาร ลด postprandial glucose แต่อาจเกิดท้องอืด ผายลม (flatulence) หากเกิด hypoglycemia ต้องแก้ด้วย pure glucose เท่านั้น<br>• <b>ข้อ จ. (Insulin SC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566 (สมาคมโรคเบาหวานแห่งประเทศไทย) & American Diabetes Association (ADA) Standards of Care in Diabetes 2024</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Potent Efficacy:</b> มี efficacy สูงมากในการลด HbA1c และลดน้ำหนัก มีทั้งรูปแบบฉีด SC สัปดาห์ละครั้งและเม็ดรับประทาน (Rybelsus)<br>• <b>Oral Administration:</b> รูปแบบเม็ดต้องรับประทานตอนตื่นนอนตอนท้องว่าง ดื่มน้ำเปล่าไม่เกิน 120 mL และรออย่างน้อย 30 นาทีก่อนรับประทานอาหาร</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::30",
+      "itemNo": 28,
+      "category": "4. Endocrine",
+      "subtopic": "Diabetes mellitus",
+      "track": "Clinic",
+      "question": "หากแพทย์ต้องการเริ่ม insulin แก่ผู้ป่วยรายนี้ ผู้ป่วยควรได้รับ insulin ชนิดใดจึงจะเหมาะสมที่สุดสำหรับการเริ่มต้น (Initial insulin therapy) ตามแนวทางปฏิบัติ",
+      "questionImage": "",
+      "choices": [
+        "Lispro insulin SC",
+        "Lispro insulin SC + insulin glargine SC",
+        "RI insulin SC",
+        "RI insulin SC + NPH insulin SC",
+        "Insulin glargine SC"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. Insulin glargine SC</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยเบาหวานชนิดที่ 2 (T2DM) เน้นควบคุม HbA1c ควบคู่กับการเลือกยาที่มี cardiorenal protection ในผู้ป่วยที่มีโรคร่วม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Insulin glargine SC การเริ่มต้นการรักษาด้วยอินซูลินใน T2DM แนะนำให้เริ่มด้วย Basal insulin วันละ 1 ครั้ง (เช่น Insulin glargine หรือ Degludec) เพื่อควบคุมระดับ Fasting plasma glucose โดยมีความเสี่ยงต่อ hypoglycemia ต่ำกว่า NPH</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Lispro insulin SC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Lispro insulin SC + insulin glargine SC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (RI insulin SC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (RI insulin SC + NPH insulin SC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566 (สมาคมโรคเบาหวานแห่งประเทศไทย) & American Diabetes Association (ADA) Standards of Care in Diabetes 2024</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::31",
+      "itemNo": 29,
+      "category": "4. Endocrine",
+      "subtopic": "Diabetes mellitus",
+      "track": "Clinic",
+      "question": "ยาลดระดับน้ำตาลในเลือดในข้อใด ไม่มีผล ในการเพิ่มการหลั่งฮอร์โมนอินซูลินจากตับอ่อน",
+      "questionImage": "",
+      "choices": [
+        "Glipizide",
+        "Repaglinide",
+        "Pioglitazone",
+        "Saxagliptin",
+        "Liraglutide"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Pioglitazone</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยเบาหวานชนิดที่ 2 (T2DM) เน้นควบคุม HbA1c ควบคู่กับการเลือกยาที่มี cardiorenal protection ในผู้ป่วยที่มีโรคร่วม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Pioglitazone จัดอยู่ในกลุ่ม Thiazolidinediones (TZDs) ออกฤทธิ์ผ่าน PPAR-gamma เพื่อเพิ่ม Insulin sensitivity ที่กล้ามเนื้อและตับ โดยไม่ได้ออกฤทธิ์กระตุ้นการหลั่งอินซูลินจากบีตาเซลล์ของตับอ่อน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Glipizide):</b> เป็น Second-generation Sulfonylurea กระตุ้น insulin secretion เสี่ยงต่อ hypoglycemia และ weight gain ขับออกทางตับเด่นกว่า glibenclamide จึงปลอดภัยกว่าในผู้สูงอายุ/CKD<br>• <b>ข้อ ข. (Repaglinide):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Saxagliptin):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Liraglutide):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566 (สมาคมโรคเบาหวานแห่งประเทศไทย) & American Diabetes Association (ADA) Standards of Care in Diabetes 2024</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Thiazolidinedione Warning:</b> เป็น PPAR-gamma agonist เพิ่ม insulin sensitivity แต่ทำให้เกิด fluid retention ห้ามใช้ใน Heart Failure (NYHA Class III-IV) และเสี่ยงกระดูกหัก/มะเร็งกระเพาะปัสสาวะ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::32",
+      "itemNo": 30,
+      "category": "4. Endocrine",
+      "subtopic": "Diabetes mellitus",
+      "track": "Clinic",
+      "question": "กลไกการออกฤทธิ์หลักของยา semaglutide คือข้อใด",
+      "questionImage": "",
+      "choices": [
+        "กระตุ้น PPAR-γ receptor",
+        "กระตุ้น GLP-1 receptor",
+        "ยับยั้งการดูดกลับกลูโคสที่ท่อไตส่วนต้น",
+        "กระตุ้น sulfonylurea receptor type 1",
+        "ยับยั้งเอนไซม์ α-glucosidase"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. กระตุ้น GLP-1 receptor</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยเบาหวานชนิดที่ 2 (T2DM) เน้นควบคุม HbA1c ควบคู่กับการเลือกยาที่มี cardiorenal protection ในผู้ป่วยที่มีโรคร่วม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>กระตุ้น GLP-1 receptor Semaglutide เป็นยากลุ่ม GLP-1 receptor agonist (GLP-1 RA) ออกฤทธิ์เลียนแบบฮอร์โมน Incretin โดยจับและกระตุ้น GLP-1 receptor ส่งเสริมการหลั่งอินซูลินตามระดับน้ำตาลและยับยั้งการหลั่งกลูคากอน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (กระตุ้น PPAR-γ receptor):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ยับยั้งการดูดกลับกลูโคสที่ท่อไตส่วนต้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (กระตุ้น sulfonylurea receptor type 1):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ยับยั้งเอนไซม์ α-glucosidase):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566 (สมาคมโรคเบาหวานแห่งประเทศไทย) & American Diabetes Association (ADA) Standards of Care in Diabetes 2024</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Potent Efficacy:</b> มี efficacy สูงมากในการลด HbA1c และลดน้ำหนัก มีทั้งรูปแบบฉีด SC สัปดาห์ละครั้งและเม็ดรับประทาน (Rybelsus)<br>• <b>Oral Administration:</b> รูปแบบเม็ดต้องรับประทานตอนตื่นนอนตอนท้องว่าง ดื่มน้ำเปล่าไม่เกิน 120 mL และรออย่างน้อย 30 นาทีก่อนรับประทานอาหาร</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
     {
       "id": "4. Endocrine::3",
       "itemNo": 1,
@@ -43503,6 +43678,94 @@ window.QUIZ_OFFLINE_QUESTIONS = {
   ],
   "12. GynaecologicGenitourinary": [
     {
+      "id": "📥 รวมข้อสอบด่วน::86",
+      "itemNo": 84,
+      "category": "12. GynaecologicGenitourinary",
+      "subtopic": "Oral contraceptive",
+      "track": "Clinic",
+      "question": "หญิงอายุ 32 ปี น้ำหนัก 60 กก. เพิ่งคลอดบุตรได้ 4 สัปดาห์ ให้นมบุตร ต้องการคุมกำเนิด ควรเลือกใช้ยาคุมกำเนิดชนิดใดที่ปลอดภัยและไม่รบกวนน้ำนม",
+      "questionImage": "",
+      "choices": [
+        "Norethisterone 5 mg",
+        "Levonorgestrel 1.5 mg",
+        "Dienogest 2 mg",
+        "Desogestrel 75 mcg (Progestin-only pill)",
+        "Ethinylestradiol 30 mcg + Drospirenone 3 mg"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Desogestrel 75 mcg (Progestin-only pill)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Oral contraceptive มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Desogestrel 75 mcg (Progestin-only pill) หญิงให้นมบุตรหลังคลอดควรหลีกเลี่ยงฮอร์โมนเอสโตรเจนเพราะลดการหลั่งน้ำนมและเพิ่มความเสี่ยง VTE ยาคุมกำเนิดชนิดฮอร์โมนเดี่ยว Progestin-only pills (POPs) ชนิด Desogestrel 75 mcg มี efficacy สูง ยับยั้งการตกไข่ได้ดี และปลอดภัยต่อการให้นมบุตร</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Norethisterone 5 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Levonorgestrel 1.5 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Dienogest 2 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Ethinylestradiol 30 mcg + Drospirenone 3 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Pregnancy HTN Treatment:</b> ยาลดความดันที่ปลอดภัย: Methyldopa, Labetalol, Nifedipine; ห้ามใช้ ACEI, ARB, Direct renin inhibitors เด็ดขาด (Fetotoxicity)<br>• <b>Emergency Contraception Timing:</b> Levonorgestrel 1.5 mg ทานให้เร็วที่สุดภายใน 72 ชั่วโมง (หรือ Ulipristal acetate 30 mg ภายใน 120 ชั่วโมง) หลังมีเพศสัมพันธ์ที่ไม่ได้ป้องกัน<br>• <b>Vulvovaginal Candidiasis:</b> สตรีตั้งครรภ์ที่เป็นเชื้อราในช่องคลอด ให้ใช้เฉพาะ Topical Clotrimazole vaginal tablet/suppository 7 วัน ห้ามใช้ Oral Fluconazole</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::87",
+      "itemNo": 85,
+      "category": "12. GynaecologicGenitourinary",
+      "subtopic": "Oral contraceptive",
+      "track": "Clinic",
+      "question": "ข้อใด ไม่ใช่ อาการข้างเคียงรุนแรงที่ต้องเฝ้าระวัง (Severe warning signs / ACHES) ของยาเม็ดคุมกำเนิดชนิดฮอร์โมนรวม",
+      "questionImage": "",
+      "choices": [
+        "ปวดศีรษะรุนแรง (Severe headache)",
+        "ปวดท้องรุนแรง (Severe abdominal pain)",
+        "การมองเห็นผิดปกติ (Eye problems/Blurry vision)",
+        "คัดตึงเต้านม (Breast tenderness)",
+        "หายใจลำบากหรือเจ็บหน้าอกรุนแรง (Chest pain/SOB)"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. คัดตึงเต้านม (Breast tenderness)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Oral contraceptive มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>คัดตึงเต้านม (Breast tenderness) อาการสัญญาณเตือนภาวะลิ่มเลือดอุดตันรุนแรงจำด้วย ACHES (Abdominal pain, Chest pain, Headaches, Eye problems, Severe leg pain) ส่วนอาการคัดตึงเต้านมเป็นผลข้างเคียงทั่วไปจากเอสโตรเจนที่พบได้บ่อยและไม่อันตรายถึงชีวิต</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ปวดศีรษะรุนแรง (Severe headache)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ปวดท้องรุนแรง (Severe abdominal pain)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (การมองเห็นผิดปกติ (Eye problems/Blurry vision)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (หายใจลำบากหรือเจ็บหน้าอกรุนแรง (Chest pain/SOB)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::89",
+      "itemNo": 87,
+      "category": "12. GynaecologicGenitourinary",
+      "subtopic": "Oral contraceptive",
+      "track": "Clinic",
+      "question": "ข้อใดอธิบายกลไกหลักของยาคุมกำเนิดชนิดฮอร์โมนรวม (Combined hormonal contraceptives) ในการป้องกันการตั้งครรภ์",
+      "questionImage": "",
+      "choices": [
+        "Prevention of endometrial proliferation and maturation",
+        "Negative feedback inhibition to suppress LH and FSH surge ป้องกันการตกไข่",
+        "Sensitize hypothalamus to the positive feedback of estrogen",
+        "Delay implantation โดยตรง",
+        "Reduce chance of conception by sperm lysis"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Negative feedback inhibition to suppress LH and FSH surge ป้องกันการตกไข่</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Oral contraceptive มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Negative feedback inhibition to suppress LH and FSH surge ป้องกันการตกไข่ เอสโตรเจนและโปรเจสตินออกฤทธิ์ยับยั้งแบบป้อนกลับเชิงลบ (Negative feedback) ที่ต่อมใต้สมองส่วนหน้า ยับยั้งการหลั่ง FSH และขัดขวาง LH surge ทำให้ไม่เกิดการตกไข่ (Inhibition of ovulation) ซึ่งเป็นกลไกหลักที่สุด</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Prevention of endometrial proliferation and maturation):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Sensitize hypothalamus to the positive feedback of estrogen):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Delay implantation โดยตรง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Reduce chance of conception by sperm lysis):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Pregnancy HTN Treatment:</b> ยาลดความดันที่ปลอดภัย: Methyldopa, Labetalol, Nifedipine; ห้ามใช้ ACEI, ARB, Direct renin inhibitors เด็ดขาด (Fetotoxicity)<br>• <b>Emergency Contraception Timing:</b> Levonorgestrel 1.5 mg ทานให้เร็วที่สุดภายใน 72 ชั่วโมง (หรือ Ulipristal acetate 30 mg ภายใน 120 ชั่วโมง) หลังมีเพศสัมพันธ์ที่ไม่ได้ป้องกัน<br>• <b>Vulvovaginal Candidiasis:</b> สตรีตั้งครรภ์ที่เป็นเชื้อราในช่องคลอด ให้ใช้เฉพาะ Topical Clotrimazole vaginal tablet/suppository 7 วัน ห้ามใช้ Oral Fluconazole</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::90",
+      "itemNo": 88,
+      "category": "12. GynaecologicGenitourinary",
+      "subtopic": "Oral contraceptive",
+      "track": "Clinic",
+      "question": "ข้อใด ไม่ใช่ เหตุผลในการเลือกจ่ายยาคุมชนิดโปรเจสตินเดี่ยว (Progestin-only) แทนการจ่ายยาคุมกำเนิดชนิดฮอร์โมนรวม",
+      "questionImage": "",
+      "choices": [
+        "มีภาวะปวดไมเกรนรุนแรงร่วมกับมีอาการเตือน (Migraine with aura)",
+        "อยู่ระหว่างการให้นมบุตร",
+        "มีเลือดออกกระปริดกระปรอยทางช่องคลอดโดยไม่ทราบสาเหตุ",
+        "มีประวัติโรคเกี่ยวกับหลอดเลือดหัวใจหรือลิ่มเลือดอุดตัน",
+        "มีอาการคลื่นไส้อาเจียนรุนแรงจากเอสโตรเจน"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. มีเลือดออกกระปริดกระปรอยทางช่องคลอดโดยไม่ทราบสาเหตุ</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Oral contraceptive มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>มีเลือดออกกระปริดกระปรอยทางช่องคลอดโดยไม่ทราบสาเหตุ เลือดออกผิดปกติทางช่องคลอดโดยยังไม่ได้รับการวินิจฉัยหาสาเหตุ เป็น contraindication ทั้งยาคุมฮอร์โมนรวมและฮอร์โมนเดี่ยว ส่วนข้ออื่นๆ เป็นข้อบ่งชี้ที่ควรเลี่ยงเอสโตรเจนและหันมาใช้โปรเจสตินเดี่ยวแทน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (มีภาวะปวดไมเกรนรุนแรงร่วมกับมีอาการเตือน (Migraine with aura)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (อยู่ระหว่างการให้นมบุตร):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (มีประวัติโรคเกี่ยวกับหลอดเลือดหัวใจหรือลิ่มเลือดอุดตัน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (มีอาการคลื่นไส้อาเจียนรุนแรงจากเอสโตรเจน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Pregnancy HTN Treatment:</b> ยาลดความดันที่ปลอดภัย: Methyldopa, Labetalol, Nifedipine; ห้ามใช้ ACEI, ARB, Direct renin inhibitors เด็ดขาด (Fetotoxicity)<br>• <b>Emergency Contraception Timing:</b> Levonorgestrel 1.5 mg ทานให้เร็วที่สุดภายใน 72 ชั่วโมง (หรือ Ulipristal acetate 30 mg ภายใน 120 ชั่วโมง) หลังมีเพศสัมพันธ์ที่ไม่ได้ป้องกัน<br>• <b>Vulvovaginal Candidiasis:</b> สตรีตั้งครรภ์ที่เป็นเชื้อราในช่องคลอด ให้ใช้เฉพาะ Topical Clotrimazole vaginal tablet/suppository 7 วัน ห้ามใช้ Oral Fluconazole</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
       "id": "12. GynaecologicGenitourinary::3",
       "itemNo": 1,
       "category": "12. GynaecologicGenitourinary",
@@ -52467,6 +52730,490 @@ window.QUIZ_OFFLINE_QUESTIONS = {
   ],
   "1. Titrations": [
     {
+      "id": "📥 รวมข้อสอบด่วน::12",
+      "itemNo": 10,
+      "category": "1. Titrations",
+      "subtopic": "Product Group 3: Spectroscopy & Optics",
+      "track": "Product",
+      "question": "จากการพิจารณาคุณสมบัติโครงสร้างของยา febuxostat วิธีการข้อใด ไม่เหมาะสมที่สุด ในการพัฒนาวิธีวิเคราะห์เพื่อควบคุมคุณภาพยา (หาปริมาณตัวยาสำคัญ หรือ พิสูจน์อัตลักษณ์)",
+      "questionImage": "",
+      "choices": [
+        "HPLC-UV",
+        "Mass spectroscopy",
+        "FT-IR spectroscopy",
+        "Spectrofluorometer",
+        "UV spectroscopy"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Spectrofluorometer</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Spectrofluorometer แม้โครงสร้างจะมี aromatic ring แต่ febuxostat ไม่ได้เป็น fluorophore ธรรมชาติที่มี native fluorescence สูงหรือจำเพาะพอที่จะเป็นวิธีหลักตาม Pharmacopoeia เมื่อเทียบกับ chromatographic methods และ spectroscopy อื่นๆ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (HPLC-UV):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Product Group 3: Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Mass spectroscopy):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Product Group 3: Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (FT-IR spectroscopy):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Product Group 3: Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (UV spectroscopy):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Product Group 3: Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Alternative Non-Purine ULT:</b> ใช้เป็นทางเลือกในผู้ที่แพ้ allopurinol หรือ HLA-B*58:01 positive ไม่ต้องปรับ dose ใน mild-moderate renal impairment<br>• <b>Cardiovascular Precaution:</b> มีคำเตือนระวังการใช้ในผู้ป่วยที่มีประวัติ ischemic heart disease หรือ severe heart failure</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::23",
+      "itemNo": 21,
+      "category": "1. Titrations",
+      "subtopic": "Proximate Analysis of food",
+      "track": "Product",
+      "question": "การวิเคราะห์ปริมาณโซเดียมในผลิตภัณฑ์อาหาร สำหรับประเมินความเสี่ยงโรคความดันโลหิตสูง วิธีวิเคราะห์ใดมีความแม่นยำและถูกต้องมากที่สุด",
+      "questionImage": "",
+      "choices": [
+        "UV-vis",
+        "ICP-OES / ICP-MS",
+        "FTIR",
+        "TLC",
+        "NMR"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. ICP-OES / ICP-MS</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ICP-OES / ICP-MS การวิเคราะห์แร่ธาตุและโลหะระดับ trace elements เช่น Sodium (Na) วิธี Inductively Coupled Plasma (ICP-OES / ICP-MS) หรือ Atomic Absorption Spectroscopy (AAS) มีความไว (sensitivity) ความแม่นยำ และความจำเพาะสูงที่สุด</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (UV-vis):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Proximate Analysis of food เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (FTIR):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Proximate Analysis of food เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (TLC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Proximate Analysis of food เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (NMR):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Proximate Analysis of food เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> พระราชบัญญัติอาหาร พ.ศ. 2522 และประกาศกระทรวงสาธารณสุข (ฉบับมาตรฐานอาหารและโภชนาการ)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>BP Target Standard:</b> เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)<br>• <b>First-line Core Classes:</b> 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน<br>• <b>Special Populations:</b> ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::24",
+      "itemNo": 22,
+      "category": "1. Titrations",
+      "subtopic": "Dissolution testing",
+      "track": "Product",
+      "question": "ห้องปฏิบัติการทดสอบยาเม็ด Amlodipine 3 lot ในหัวข้อ Dissolution ตาม USP (Q = 75% ที่เวลาที่กำหนด) พบว่าไม่มี lot ใดผ่านใน Stage 1 (S1, n=6) จึงทดสอบต่อใน Stage 2 (S2, เพิ่มอีก 6 เม็ด รวมเป็น 12 เม็ด): lot 1 เฉลี่ย 81.0% (ต่ำสุด 59%), lot 2 เฉลี่ย 76.3% (ต่ำสุด 58%), lot 3 เฉลี่ย 82.0% (ต่ำสุด 65%) ให้สรุปผลตามเกณฑ์ USP S2 (เกณฑ์: ค่าเฉลี่ย 12 เม็ด ≥ Q (75%) และไม่มีเม็ดใดน้อยกว่า Q-15% (60%))",
+      "questionImage": "",
+      "choices": [
+        "ทุก lot ผ่านหมด",
+        "ผ่านเฉพาะ lot 1",
+        "ผ่านเฉพาะ lot 3",
+        "ผ่านเฉพาะ lot 1 และ 3",
+        "ไม่มี lot ไหนผ่าน"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. ผ่านเฉพาะ lot 3</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ผ่านเฉพาะ lot 3 เกณฑ์ USP Stage 2 (n=12): ค่าเฉลี่ย ≥ Q (75%) และต้องไม่มีเม็ดใดต่ำกว่า Q - 15% (คือ < 60%) — Lot 1 มีเม็ด 59% (<60%) ตก; Lot 2 มีเม็ด 58% (<60%) ตก; มีเพียง Lot 3 ที่เฉลี่ย 82.0% (≥75%) และค่าต่ำสุดคือ 65% (≥60%) จึงผ่านเกณฑ์ S2 เพียง lot เดียว</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ทุก lot ผ่านหมด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dissolution testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ผ่านเฉพาะ lot 1):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dissolution testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ผ่านเฉพาะ lot 1 และ 3):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dissolution testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ไม่มี lot ไหนผ่าน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dissolution testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1088> In Vitro and In Vivo Evaluation of Dosage Forms & US FDA Guidance: The Biopharmaceutics Classification System (BCS)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Peripheral Edema:</b> ขยาย pre-capillary arteriolar เด่นชัด ทำให้เกิด non-allergic pedal edema (บวมข้อเท้า) แก้ไขโดยลด dose หรือใช้ร่วมกับ ACEI/ARB<br>• <b>CYP3A4 Metabolism:</b> เปลี่ยนสภาพผ่าน CYP3A4 หลีกเลี่ยงน้ำเกรปฟรุต และระวังระดับยาเพิ่มขึ้นเมื่อใช้ร่วมกับ diltiazem/azole antifungals</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::36",
+      "itemNo": 34,
+      "category": "1. Titrations",
+      "subtopic": "Biosimilars & Quality Control",
+      "track": "Product",
+      "question": "Certificate of Analysis (COA) ของยาชีววัตถุคล้ายคลึง Insulin biosimilar glargine หัวข้อการทดสอบใด ไม่จำเป็นต้องมี ในข้อกำหนดมาตรฐาน",
+      "questionImage": "",
+      "choices": [
+        "Assay",
+        "Identification",
+        "Bacterial endotoxin",
+        "Impurity / Related substances",
+        "Dissolution"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. Dissolution</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Dissolution การทดสอบ Dissolution (การละลายของตัวยา) เป็นข้อกำหนดเฉพาะของยารูปแบบของแข็งรับประทาน (Solid dosage forms เช่น ยาเม็ด/แคปซูล) แต่ Insulin glargine เป็นยาเตรียมรูปแบบสารละลายฉีด (Solution for injection) จึงไม่มีหัวข้อนี้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Assay):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Identification):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Bacterial endotoxin):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Impurity / Related substances):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::37",
+      "itemNo": 35,
+      "category": "1. Titrations",
+      "subtopic": "Biosimilars & Quality Control",
+      "track": "Product",
+      "question": "ความท้าทายสำคัญในการควบคุมคุณภาพยาชีววัตถุ (Biologics) เมื่อเปรียบเทียบกับยาเคมีสังเคราะห์โมเลกุลขนาดเล็ก (Small molecules) คือข้อใด",
+      "questionImage": "",
+      "choices": [
+        "Biologics มีโครงสร้างซับซ้อน ไวต่อสภาพแวดล้อม เช่น pH และความร้อนสูง และมีความไม่เป็นเนื้อเดียวกันระดับโมเลกุล",
+        "Biologics มีสูตรเคมีที่ง่ายต่อการสังเคราะห์มากกว่า",
+        "Small molecules ต้องเก็บรักษาในตู้เย็นทุกชนิด",
+        "Small molecules มีผลข้างเคียงมากกว่าเสมอ",
+        "Biologics ละลายในน้ำได้ง่ายกว่าทุกสภาวะ"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. Biologics มีโครงสร้างซับซ้อน ไวต่อสภาพแวดล้อม เช่น pH และความร้อนสูง และมีความไม่เป็นเนื้อเดียวกันระดับโมเลกุล</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Biologics มีโครงสร้างซับซ้อน ไวต่อสภาพแวดล้อม เช่น pH และความร้อนสูง และมีความไม่เป็นเนื้อเดียวกันระดับโมเลกุล ยาชีววัตถุมีโครงสร้างโมเลกุลขนาดใหญ่ มีโครงสร้างระดับตติยภูมิและจตุรภูมิที่ซับซ้อน (Higher-order structure) มีความผันแปรทางชีวภาพ (Microheterogeneity) และสลายตัวได้ง่ายเมื่อสัมผัสการเปลี่ยนแปลงของ pH อุณหภูมิ หรือแรงเฉือน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (Biologics มีสูตรเคมีที่ง่ายต่อการสังเคราะห์มากกว่า):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Small molecules ต้องเก็บรักษาในตู้เย็นทุกชนิด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Small molecules มีผลข้างเคียงมากกว่าเสมอ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Biologics ละลายในน้ำได้ง่ายกว่าทุกสภาวะ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>PUD & H. pylori Quadruple Therapy:</b> สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง<br>• <b>GERD Lifestyle & PPI Timing:</b> รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร<br>• <b>Constipation & Laxatives:</b> Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::39",
+      "itemNo": 37,
+      "category": "1. Titrations",
+      "subtopic": "Stability testing",
+      "track": "Product",
+      "question": "Regular Insulin มีความเสี่ยงต่อการสูญเสียความคงตัวผ่านกระบวนการ Deamidation ในระหว่างการเก็บรักษา ปัจจัยหลักที่กระตุ้นให้เกิดปฏิกิริยาดังกล่าวคือข้อใด",
+      "questionImage": "",
+      "choices": [
+        "อุณหภูมิต่ำกว่าจุดเยือกแข็ง (freezing)",
+        "สภาวะ pH กรดอ่อน หรือ ด่าง และอุณหภูมิที่สูงขึ้น",
+        "การสัมผัสแสงแดดจ้า",
+        "การเขย่าขวดอย่างแรง",
+        "การดูดซับกับผนังหลอดฉีด"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. สภาวะ pH กรดอ่อน หรือ ด่าง และอุณหภูมิที่สูงขึ้น</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>สภาวะ pH กรดอ่อน หรือ ด่าง และอุณหภูมิที่สูงขึ้น ปฏิกิริยา Deamidation ของอินซูลิน (โดยเฉพาะตำแหน่ง Asn-A21 ในสภาวะกรด และ Asn-B3 ในสภาวะเป็นกลาง/ด่าง) ถูกเร่งได้ด้วยค่า pH ที่เบี่ยงเบนไปจากช่วงคงตัวและอุณหภูมิที่สูงขึ้น</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (อุณหภูมิต่ำกว่าจุดเยือกแข็ง (freezing)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Stability testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (การสัมผัสแสงแดดจ้า):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Stability testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (การเขย่าขวดอย่างแรง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Stability testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (การดูดซับกับผนังหลอดฉีด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Stability testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::50",
+      "itemNo": 48,
+      "category": "1. Titrations",
+      "subtopic": "Liquid & Semisolids",
+      "track": "Product",
+      "question": "ข้อใดไม่จำเป็นต้องกำหนดในการควบคุมคุณภาพของผลิตภัณฑ์ยาพ่นจมูกรูปแบบสารละลาย",
+      "questionImage": "",
+      "choices": [
+        "Description",
+        "Assay",
+        "Moisture content",
+        "Microbial limit",
+        "Mean delivered dose"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Moisture content</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Moisture content (ปริมาณความชื้น) เป็นข้อกำหนดคุณภาพของยาเตรียมรูปแบบของแข็ง (Solid dosage form/Dry powder) แต่ยาพ่นจมูกชนิดสารละลายเป็นยาน้ำที่มีน้ำเป็นกระสายยาหลัก จึงไม่มีข้อกำหนดนี้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Description):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Assay):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Microbial limit):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Mean delivered dose):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::64",
+      "itemNo": 62,
+      "category": "1. Titrations",
+      "subtopic": "Redox titration",
+      "track": "Product",
+      "question": "วิธีคำนวณหาปริมาณธาตุเหล็กของ ferrous fumarate / ferrous sulfate ที่แนะนำตามมาตรฐาน Pharmacopoeia มักใช้วิธีการไทเทรตแบบใด",
+      "questionImage": "",
+      "choices": [
+        "Acid-base titration",
+        "Redox titration (Permanganometry / Cerimetry)",
+        "Complexometric titration",
+        "Gravimetric titration",
+        "Colorimetric titration"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Redox titration (Permanganometry / Cerimetry)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Redox titration (Permanganometry / Cerimetry) การหาปริมาณตัวยาสำคัญของเกลือธาตุเหล็ก (Fe2+) ตามเภสัชตำรับ (Pharmacopoeia) ใช้วิธี Oxidation-Reduction (Redox) titration เช่น การใช้สารละลายมาตรฐาน Cerium (IV) หรือ Potassium permanganate เป็นตัวไทแทรนต์</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Acid-base titration):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Complexometric titration):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Gravimetric titration):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Colorimetric titration):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Iron Deficiency Anemia Dosing:</b> Elemental iron 100-200 mg/day แบ่งรับประทานตอนท้องว่าง (หรือพร้อมวิตามินซีเพื่อเพิ่มการดูดซึม) และทานต่อเนื่อง 3-6 เดือนหลัง Hb ปกติเพื่อเติม iron store<br>• <b>Thalassemia Precaution:</b> ห้ามให้ธาตุเหล็กเสริมในผู้ป่วย Thalassemia เด็ดขาดเว้นแต่พิสูจน์แล้วว่ามีภาวะ Iron deficiency ร่วมด้วย เพราะเสี่ยงต่อ iron overload<br>• <b>Neutropenic Fever Protocol:</b> ในผู้ป่วยเคมีบำบัดที่มี Absolute Neutrophil Count (ANC) < 500 cells/uL ร่วมกับมีไข้ ต้องเริ่ม broad-spectrum antipseudomonal beta-lactam (Ceftazidime, Cefepime, Meropenem) ทันทีภายใน 1 ชม.</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::66",
+      "itemNo": 64,
+      "category": "1. Titrations",
+      "subtopic": "Biosimilars & Quality Control",
+      "track": "Product",
+      "question": "ข้อใด ไม่ใช่ ปัจจัยที่ส่งผลต่อการเกิด Biological Immunogenicity (การกระตุ้นภูมิคุ้มกันต้านยาชีววัตถุ)",
+      "questionImage": "",
+      "choices": [
+        "โครงสร้างโปรตีนที่ไม่คล้ายกับ Human endogenous protein",
+        "การเกิดการเสื่อมสลายหรือจับกลุ่มของโปรตีน (Aggregation)",
+        "Excipient ในตำรับที่ส่งผลต่อ conformational change",
+        "ขนาดยาและความถี่ในการบริหารยา",
+        "อัตราการให้ยาเข้าสู่ systematic circulation น้อยกว่า IV bolus โดยตรง"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. อัตราการให้ยาเข้าสู่ systematic circulation น้อยกว่า IV bolus โดยตรง</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>อัตราการให้ยาเข้าสู่ systematic circulation น้อยกว่า IV bolus โดยตรง เส้นทางการให้ยาใต้ผิวหนัง (SC) หรือกล้ามเนื้อ (IM) จะกระตุ้นภูมิคุ้มกัน (Immunogenicity) ได้สูงกว่าการให้ทางหลอดเลือดดำ (IV) เนื่องจากสัมผัสกับ Antigen-presenting cells (Dendritic cells) บริเวณผิวหนังมากกว่า</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (โครงสร้างโปรตีนที่ไม่คล้ายกับ Human endogenous protein):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (การเกิดการเสื่อมสลายหรือจับกลุ่มของโปรตีน (Aggregation)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Excipient ในตำรับที่ส่งผลต่อ conformational change):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ขนาดยาและความถี่ในการบริหารยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>PUD & H. pylori Quadruple Therapy:</b> สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง<br>• <b>GERD Lifestyle & PPI Timing:</b> รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร<br>• <b>Constipation & Laxatives:</b> Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::74",
+      "itemNo": 72,
+      "category": "1. Titrations",
+      "subtopic": "Biosimilars & Quality Control",
+      "track": "Product",
+      "question": "ข้อใดส่งผลกระทบต่อความไม่คงตัวของ pembrolizumab ในรูปแบบสารละลายสำหรับยาฉีดมากที่สุดในระหว่างการเตรียมและการจัดเก็บ",
+      "questionImage": "",
+      "choices": [
+        "Hydrolysis ที่ตำแหน่ง ester bond",
+        "Aggregation (การรวมกลุ่มของโปรตีน) เมื่อเกิดการเปลี่ยนแปลง pH หรือการเขย่าอย่างรุนแรง",
+        "Oxidation ที่ sulfhydryl ของ excipient",
+        "Crystallization เมื่ออุณหภูมิลดต่ำลง",
+        "Racemization ที่ chiral center"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Aggregation (การรวมกลุ่มของโปรตีน) เมื่อเกิดการเปลี่ยนแปลง pH หรือการเขย่าอย่างรุนแรง</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Aggregation (การรวมกลุ่มของโปรตีน) เมื่อเกิดการเปลี่ยนแปลง pH หรือการเขย่าอย่างรุนแรง ยาชีววัตถุกลุ่มโปรตีนและ mAb ไวต่อแรงเฉือนเชิงกล (Shear stress จากการเขย่า) และการเปลี่ยนแปลงประจุ/pH ซึ่งจะเหนี่ยวนำให้โปรตีนคลายตัวและเกิดการรวมกลุ่มกันเป็นตะกอน (Protein aggregation)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Hydrolysis ที่ตำแหน่ง ester bond):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Oxidation ที่ sulfhydryl ของ excipient):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Crystallization เมื่ออุณหภูมิลดต่ำลง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Racemization ที่ chiral center):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::76",
+      "itemNo": 74,
+      "category": "1. Titrations",
+      "subtopic": "Polarimetry",
+      "track": "Product",
+      "question": "ข้อใดเป็นเทคนิคที่เหมาะสมในการพิสูจน์ Chirality / อัตลักษณ์การหมุนระนาบแสงของวัตถุดิบยา Paclitaxel",
+      "questionImage": "",
+      "choices": [
+        "NIR (Near infrared spectroscopy)",
+        "Karl Fischer titration",
+        "Polarimeter (การวัด Optical rotation)",
+        "Refractometer",
+        "Mass spectrometry"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Polarimeter (การวัด Optical rotation)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Polarimeter (การวัด Optical rotation) Paclitaxel เป็นโมเลกุลที่มีศูนย์ไครัล (Chiral centers) หลายตำแหน่ง การวัดความสามารถในการหมุนระนาบของแสงโพลาไรซ์ (Optical rotation / Specific rotation) ด้วยเครื่อง Polarimeter จึงเป็นวิธีจำเพาะในการตรวจสอบ Chiral purity และอัตลักษณ์</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (NIR (Near infrared spectroscopy)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Karl Fischer titration):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Refractometer):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Mass spectrometry):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::77",
+      "itemNo": 75,
+      "category": "1. Titrations",
+      "subtopic": "Sterility & Pyrogen testing",
+      "track": "Product",
+      "question": "เหตุผลหลักในการตรวจวิเคราะห์ Bacterial Endotoxin Test (BET) ในยาฉีด Paclitaxel injection คือข้อใด",
+      "questionImage": "",
+      "choices": [
+        "เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา",
+        "เพื่อป้องกันการเกิดปฏิกิริยาไข้ (Pyrogenic reaction / Endotoxin shock) ในผู้ป่วย",
+        "เพื่อวัดความเข้มข้นของสารกันเสีย",
+        "เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง",
+        "เพื่อวัดความแรงในการออกฤทธิ์ต้านมะเร็ง"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. เพื่อป้องกันการเกิดปฏิกิริยาไข้ (Pyrogenic reaction / Endotoxin shock) ในผู้ป่วย</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>เพื่อป้องกันการเกิดปฏิกิริยาไข้ (Pyrogenic reaction / Endotoxin shock) ในผู้ป่วย เอนโดท็อกซินจากแบคทีเรียแกรมลบ (Lipopolysaccharide) เป็นสารก่อไข้รุนแรง (Pyrogen) หากปนเปื้อนในยาฉีดจะกระตุ้นเม็ดเลือดขาวให้หลั่งไซโตไคน์จนเกิดภาวะไข้ หนาวสั่น ช็อก หรือเสียชีวิตได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (เพื่อวัดความเข้มข้นของสารกันเสีย):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพื่อวัดความแรงในการออกฤทธิ์ต้านมะเร็ง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <71> Sterility Tests, <85> Bacterial Endotoxins Test & WHO Good Manufacturing Practices for Sterile Pharmaceutical Products</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Autoclave Standard Parameters:</b> การนึ่งฆ่าเชื้อด้วยไอน้ำภายใต้ความดัน: 121°C (250°F), ความดัน 15 psi, เป็นเวลาอย่างน้อย 15-20 นาที<br>• <b>Endotoxin & Pyrogen Limits:</b> LAL (Limulus Amebocyte Lysate) test ไวต่อการตรวจจับ Gram-negative endotoxin (Lipopolysaccharide)<br>• <b>Cleanroom Air Quality:</b> Grade A (Class 100 / ISO 5) ภายใต้ Laminar Air Flow ใช้สำหรับขั้นตอน Critical Aseptic filling</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::92",
+      "itemNo": 90,
+      "category": "1. Titrations",
+      "subtopic": "Tablet Coating",
+      "track": "Product",
+      "question": "ข้อใดคือการควบคุมคุณภาพระหว่างกระบวนการผลิต (In-process control: IPC) ที่สำคัญในการติดตามการพอกตัวของชั้นยาเคลือบน้ำตาล",
+      "questionImage": "",
+      "choices": [
+        "Uniformity of dosage units",
+        "Weight gain (การเพิ่มขึ้นของน้ำหนักเม็ดยา)",
+        "Friability test",
+        "Dissolution test",
+        "Microbial limit test"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Weight gain (การเพิ่มขึ้นของน้ำหนักเม็ดยา)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Weight gain (การเพิ่มขึ้นของน้ำหนักเม็ดยา) ในการเคลือบน้ำตาลแต่ละขั้นตอน (Subcoating, Smoothing, Coloring) ต้องติดตามการเพิ่มขึ้นของน้ำหนักเม็ดยา (Percent weight gain) อย่างใกล้ชิดเพื่อควบคุมความหนาและการเจริญเติบโตของขนาดเม็ดยาให้ได้มาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Uniformity of dosage units):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Friability test):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Dissolution test):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Microbial limit test):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::94",
+      "itemNo": 92,
+      "category": "1. Titrations",
+      "subtopic": "Spectroscopy & Optics",
+      "track": "Product",
+      "question": "เทคนิคการวิเคราะห์ในข้อใด ไม่เหมาะสม ในการทำ Identification ตัวยา Ethinyl estradiol ในยาเม็ดคุมกำเนิด",
+      "questionImage": "",
+      "choices": [
+        "HPLC-UV",
+        "HPLC-MS",
+        "FTIR",
+        "ICP-OES / ICP-MS",
+        "NMR"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. ICP-OES / ICP-MS</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ICP-OES / ICP-MS Ethinyl estradiol เป็นสารอินทรีย์โมเลกุลสังเคราะห์ (Organic molecule) ไม่ใช่แร่ธาตุหรือธาตุโลหะ เทคนิค ICP-OES/MS ซึ่งใช้วิเคราะห์โลหะและธาตุอนินทรีย์จึงไม่สามารถนำมาใช้ในการระบุอัตลักษณ์ของตัวยานี้ได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (HPLC-UV):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (HPLC-MS):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (FTIR):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (NMR):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::95",
+      "itemNo": 93,
+      "category": "1. Titrations",
+      "subtopic": "Transdermal Delivery (TDS)",
+      "track": "Product",
+      "question": "ข้อใด ไม่จัดเป็น เกณฑ์ข้อกำหนดใน Certificate of Analysis (COA) สำหรับแผ่นแปะยาคุมกำเนิด (Transdermal patch)",
+      "questionImage": "",
+      "choices": [
+        "Identification",
+        "Assay",
+        "In vitro drug release",
+        "Adhesion (การยึดติดผิว)",
+        "Disintegration test"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. Disintegration test</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Disintegration test การทดสอบการแตกตัว (Disintegration test) ใช้สำหรับยาเม็ดหรือแคปซูลรับประทาน แผ่นแปะผิวหนัง (Transdermal patch) จะมีการทดสอบ Adhesive properties, Release rate, Assay และ Uniformity of dosage unit แทน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Identification):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Assay):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (In vitro drug release):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Adhesion (การยึดติดผิว)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Topical Corticosteroid Potency:</b> Class 1 (Clobetasol propionate 0.05%) ห้ามทาใบหน้า ซอกพับ หรือเด็กเล็ก; ผื่นใบหน้า/ข้อพับให้ใช้ Low potency (Hydrocortisone 1%) เพื่อป้องกัน skin atrophy และ striae<br>• <b>Acne Vulgaris Hierarchy:</b> Mild comedonal ใช้ Topical Retinoids; Moderate inflammatory เติม Benzoyl Peroxide (BPO) + Topical Clindamycin; Severe cystic acne พิจารณา Oral Isotretinoin (ต้องคุมกำเนิดเข้มงวด)<br>• <b>Atopic Dermatitis Care:</b> ใช้ Emollients บำรุงผิวสม่ำเสมอทันทีหลังอาบน้ำ (ภายใน 3 นาที) และใช้ Topical Calcineurin Inhibitors (Tacrolimus) เป็น steroid-sparing agent บนใบหน้า</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::104",
+      "itemNo": 102,
+      "category": "1. Titrations",
+      "subtopic": "Inhalation devices",
+      "track": "Product",
+      "question": "ข้อใด ไม่จัดเป็น หัวข้อการทดสอบคุณภาพของยาในรูปแบบสารละลายสำหรับพ่นละออง (Nebulized solution)",
+      "questionImage": "",
+      "choices": [
+        "Assay",
+        "Sterility",
+        "Content uniformity",
+        "Particle size",
+        "Impurity"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Particle size</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Particle size สารละลายสำหรับพ่นยา (Nebulized solution) ตัวยาละลายเป็นเนื้อเดียวกันสมบูรณ์ จึงไม่มีอนุภาคของแข็งแขวนลอย (ไม่ต้องทดสอบ Particle size ของผงยา แต่จะวัด Aerodynamic droplet size distribution แทน)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Assay):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Sterility):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Content uniformity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Impurity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::107",
+      "itemNo": 105,
+      "category": "1. Titrations",
+      "subtopic": "Sterility & Pyrogen testing",
+      "track": "Product",
+      "question": "Isoniazid injection จัดเป็น sterile product ต้องมีการทดสอบ bacterial endotoxin ตาม USP กำหนดเกณฑ์ NMT 0.3 EU/mg of isoniazid เมื่อทดสอบ isoniazid injection 1000 mg/10 mL ได้ endotoxin = 25 EU/mL พิจารณาผลการทดสอบถือว่าผ่านหรือไม่",
+      "questionImage": "",
+      "choices": [
+        "ผ่าน เพราะต่ำกว่า limit",
+        "ไม่ผ่าน เพราะเกิน limit",
+        "ผ่านได้ถ้าเจือจางเพิ่ม",
+        "ไม่ผ่าน ต้องทดสอบ sterility test ใหม่",
+        "ไม่ผ่านตั้งแต่การเจือจางขวดแรก"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ผ่าน เพราะต่ำกว่า limit</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ผ่าน เพราะต่ำกว่า limit คำนวณความเข้มข้นตัวยา: 1000 mg / 10 mL = 100 mg/mL; ปริมาณเอนโดท็อกซินที่ตรวจพบ = 25 EU/mL; คิดเป็น 25 EU / 100 mg = 0.25 EU/mg ซึ่งต่ำกว่าเกณฑ์มาตรฐานที่กำหนดไม่เกิน 0.3 EU/mg ดังนั้นผลการทดสอบจึง \"ผ่านเกณฑ์\"</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (ไม่ผ่าน เพราะเกิน limit):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ผ่านได้ถ้าเจือจางเพิ่ม):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ไม่ผ่าน ต้องทดสอบ sterility test ใหม่):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ไม่ผ่านตั้งแต่การเจือจางขวดแรก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <71> Sterility Tests, <85> Bacterial Endotoxins Test & WHO Good Manufacturing Practices for Sterile Pharmaceutical Products</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Pyridoxine (B6) Co-prescription:</b> ต้องให้ Vitamin B6 (Pyridoxine 50-100 mg/day) ร่วมด้วยในหญิงตั้งครรภ์, ผู้ติดเชื้อ HIV, เบาหวาน, ดื่มสุรา หรือไตวาย เพื่อป้องกัน peripheral neuropathy<br>• <b>Hepatotoxicity Monitoring:</b> ติดตามอาการเบื่ออาหาร คลื่นไส้ ตาเหลือง ตัวเหลือง หาก ALT/AST > 5 เท่า (ไม่มีอาการ) หรือ > 3 เท่า (มีอาการ) ต้องหยุดยาทันที</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::118",
+      "itemNo": 116,
+      "category": "1. Titrations",
+      "subtopic": "Chromatography",
+      "track": "Product",
+      "question": "บริษัทแห่งหนึ่งต้องการปรับปรุงสูตรตำรับยาแก้ปวดสูตรผสมและตรวจสอบความถูกต้องของวิธีวิเคราะห์ (Method Validation) ด้วย HPLC ข้อใดกำหนดหัวข้อหรือเกณฑ์ ไม่เหมาะสม",
+      "questionImage": "",
+      "choices": [
+        "Specificity ด้วยวิธี Forced degradation",
+        "Linearity ที่ 95%, 105%, 110% ของ Label claim",
+        "Precision และ Intermediate precision พร้อมกำหนดเกณฑ์ %RSD ≤ 2.0%",
+        "Accuracy โดยการ Spike สารมาตรฐานลงใน Placebo ที่ 80%, 100%, 120%",
+        "Robustness ด้วยการเปลี่ยนสัดส่วน Mobile phase และอุณหภูมิของคอลัมน์"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Linearity ที่ 95%, 105%, 110% ของ Label claim</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Linearity ที่ 95%, 105%, 110% ของ Label claim การทดสอบ Linearity ตาม ICH Q2 Guideline สำหรับการหาปริมาณตัวยา (Assay) ต้องครอบคลุมช่วงความเข้มข้นอย่างน้อย 80% ถึง 120% ของ Test concentration (และต้องมีอย่างน้อย 5 จุดความเข้มข้น) การทำเพียง 3 จุดที่ช่วงแคบ (95-110%) จึงไม่ถูกต้องและไม่ครอบคลุม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Specificity ด้วยวิธี Forced degradation):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Precision และ Intermediate precision พร้อมกำหนดเกณฑ์ %RSD ≤ 2.0%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Accuracy โดยการ Spike สารมาตรฐานลงใน Placebo ที่ 80%, 100%, 120%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Robustness ด้วยการเปลี่ยนสัดส่วน Mobile phase และอุณหภูมิของคอลัมน์):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <621> Chromatography & British Pharmacopoeia (BP 2024) Appendix III</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Reversed-Phase Chromatography:</b> Stationary phase ไม่มีขั้ว (Non-polar: C18/C8), Mobile phase มีขั้ว (Polar: Water, Methanol, Acetonitrile); สารมีขั้วสูงจะ elute ออกมาก่อน<br>• <b>System Suitability Parameters:</b> เกณฑ์มาตรฐาน USP: Theoretical plates (N) > 2,000, Tailing factor (T) 0.9-1.5, Resolution (Rs) > 1.5, %RSD < 2.0%<br>• <b>Gradient vs Isocratic:</b> Gradient elution ปรับเปลี่ยนสัดส่วน mobile phase ระหว่างรัน เหมาะสำหรับตัวอย่างที่มีสารขั้วต่างกันมาก เพื่อลดเวลาการวิเคราะห์</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::119",
+      "itemNo": 117,
+      "category": "1. Titrations",
+      "subtopic": "Chromatography",
+      "track": "Product",
+      "question": "ทำ HPLC ยา Amitriptyline tablet ใช้คอลัมน์ C18 (Octadecylsilane) และ Mobile phase เป็น Acetonitrile : Buffer pH 2.5 (42:58) หากเปลี่ยนสัดส่วนเป็น Acetonitrile : Buffer (60:40) จะส่งผลต่อ Retention time (RT) อย่างไร",
+      "questionImage": "",
+      "choices": [
+        "RT นานขึ้น เนื่องจาก Organic phase เพิ่ม ทำให้ Analyte ติดอยู่นานขึ้น",
+        "RT ลดลง เนื่องจาก Organic phase เพิ่ม ทำให้ความแรงในการชะ (Elution strength) สูงขึ้น และชะตัวยาออกเร็วขึ้น",
+        "RT ไม่เปลี่ยนแปลง เพราะการเพิ่มตัวทำละลายอินทรีย์ไม่มีผลต่อ C18",
+        "RT นานขึ้น เพราะสัดส่วน Buffer ลดลงทำให้ Analyte อยู่ในรูป Unionized",
+        "RT ลดลง เพราะสัดส่วน Buffer ลดลงทำให้ Analyte อยู่ในรูป Ionized"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. RT ลดลง เนื่องจาก Organic phase เพิ่ม ทำให้ความแรงในการชะ (Elution strength) สูงขึ้น และชะตัวยาออกเร็วขึ้น</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>RT ลดลง เนื่องจาก Organic phase เพิ่ม ทำให้ความแรงในการชะ (Elution strength) สูงขึ้น และชะตัวยาออกเร็วขึ้น ในระบบ Reversed-Phase HPLC เมื่อเพิ่มสัดส่วนตัวทำละลายอินทรีย์ (Organic modifier เช่น Acetonitrile) ความมีขั้วของ Mobile phase จะลดลง ส่งผลให้ Elution strength สูงขึ้น ตัวยาถูกชะออกจากคอลัมน์เร็วขึ้น ค่า Retention time จึงลดลง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (RT นานขึ้น เนื่องจาก Organic phase เพิ่ม ทำให้ Analyte ติดอยู่นานขึ้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (RT ไม่เปลี่ยนแปลง เพราะการเพิ่มตัวทำละลายอินทรีย์ไม่มีผลต่อ C18):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (RT นานขึ้น เพราะสัดส่วน Buffer ลดลงทำให้ Analyte อยู่ในรูป Unionized):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (RT ลดลง เพราะสัดส่วน Buffer ลดลงทำให้ Analyte อยู่ในรูป Ionized):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <621> Chromatography & British Pharmacopoeia (BP 2024) Appendix III</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::128",
+      "itemNo": 126,
+      "category": "1. Titrations",
+      "subtopic": "Chromatography",
+      "track": "Product",
+      "question": "ในการตรวจสอบความบริสุทธิ์ของผลิตภัณฑ์ยา Acyclovir ทางห้องปฏิบัติการนิยมใช้เทคนิคการวิเคราะห์ตามข้อใดในการแยกสิ่งเจือปนและสารสลายตัว (Related substances)",
+      "questionImage": "",
+      "choices": [
+        "Simple titrimetric method",
+        "Thin Layer Chromatography เท่านั้น",
+        "Reversed-Phase High-Performance Liquid Chromatography (RP-HPLC)",
+        "Polarimetry",
+        "Refractometry"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Reversed-Phase High-Performance Liquid Chromatography (RP-HPLC)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Reversed-Phase High-Performance Liquid Chromatography (RP-HPLC) เภสัชตำรับสากลกำหนดให้ใช้วิธี RP-HPLC เป็นวิธีมาตรฐานในการวิเคราะห์หาปริมาณสิ่งเจือปนและสารสลายตัว (Impurity and related substances) ของยา Acyclovir เนื่องจากมีความจำเพาะและการแยกที่ดีเยี่ยม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Simple titrimetric method):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Thin Layer Chromatography เท่านั้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Polarimetry):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Refractometry):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <621> Chromatography & British Pharmacopoeia (BP 2024) Appendix III</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::129",
+      "itemNo": 127,
+      "category": "1. Titrations",
+      "subtopic": "Chromatography",
+      "track": "Product",
+      "question": "การทดสอบสารปนเปื้อน (Impurity) ในยา Acyclovir ด้วย HPLC: สาร Guanine มี peak area 500, Acyclovir 19,300, สิ่งเจือปนอื่นๆ 200 กำหนดเกณฑ์ผ่าน: Guanine < 2.0% และสิ่งเจือปนอื่น < 0.5% พิจารณาผลการทดสอบ",
+      "questionImage": "",
+      "choices": [
+        "Guanine 2.5% และ อื่นๆ 1.0% ไม่ผ่านเกณฑ์",
+        "Guanine 1.5% และ อื่นๆ 0.2% ผ่านเกณฑ์",
+        "Guanine 0.5% ผ่าน แต่ตัวอื่นไม่ผ่าน",
+        "ทุกตัวผ่านเกณฑ์มาตรฐาน",
+        "ผลการวิเคราะห์ไม่สามารถคำนวณได้"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. Guanine 2.5% และ อื่นๆ 1.0% ไม่ผ่านเกณฑ์</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Guanine 2.5% และ อื่นๆ 1.0% ไม่ผ่านเกณฑ์ คำนวณร้อยละสารปนเปื้อน Guanine = (500 / 19,300) * 100 ≈ 2.59% (ซึ่งเกินเกณฑ์มาตรฐาน < 2.0%) และสารเจือปนอื่น = (200 / 19,300) * 100 ≈ 1.03% (เกินเกณฑ์ < 0.5%) จึงสรุปว่า \"ไม่ผ่านเกณฑ์มาตรฐาน\"</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (Guanine 1.5% และ อื่นๆ 0.2% ผ่านเกณฑ์):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Guanine 0.5% ผ่าน แต่ตัวอื่นไม่ผ่าน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ทุกตัวผ่านเกณฑ์มาตรฐาน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ผลการวิเคราะห์ไม่สามารถคำนวณได้):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <621> Chromatography & British Pharmacopoeia (BP 2024) Appendix III</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::130",
+      "itemNo": 128,
+      "category": "1. Titrations",
+      "subtopic": "Liquid & Semisolids",
+      "track": "Product",
+      "question": "หัวข้อการทดสอบคุณภาพของยาครีม Acyclovir cream ในข้อใดต่อไปนี้ ไม่ต้องทดสอบ ตามเภสัชตำรับทั่วไป",
+      "questionImage": "",
+      "choices": [
+        "Assay",
+        "Identification",
+        "Dissolution test",
+        "Minimum fill",
+        "Microbial limit test"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Dissolution test</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Dissolution test การทดสอบ Dissolution (การละลายตัวยา) เป็นข้อกำหนดเฉพาะของยาเม็ด/แคปซูลของแข็ง ส่วนยาครีมที่เป็น Semisolid dosage form จะไม่มีหัวข้อ Dissolution (แต่จะควบคุม Assay, Microbial limit, Minimum fill, Viscosity เป็นต้น)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Assay):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Identification):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Minimum fill):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Microbial limit test):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
       "id": "1. Titrations::3",
       "itemNo": 1,
       "category": "1. Titrations",
@@ -60770,6 +61517,578 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     }
   ],
   "6. Solid Dosage Forms": [
+    {
+      "id": "📥 รวมข้อสอบด่วน::8",
+      "itemNo": 6,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "6.1 Tablet Manufacturing",
+      "track": "Product",
+      "question": "ยาเม็ดเคลือบฟิล์มที่มีตัวยาสำคัญน้อยกว่า 25 mg ใช้วิธีการผลิตใดเหมาะสมที่สุด",
+      "questionImage": "",
+      "choices": [
+        "Direct compression",
+        "Extrusion and spheronization",
+        "Rolling compaction",
+        "Slugging",
+        "Wet granulation"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. Wet granulation</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Wet granulation ตัวยาที่มีปริมาณน้อย (low dose / < 25 mg หรือ < 25% w/w) มีความเสี่ยงต่อปัญหาความสม่ำเสมอของตัวยา (Content Uniformity) วิธีการแกรนูลเปียก (Wet granulation) จะช่วยกระจายตัวยาให้เกาะกับสารช่วยสม่ำเสมอที่สุด</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Direct compression):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 6.1 Tablet Manufacturing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Extrusion and spheronization):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 6.1 Tablet Manufacturing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Rolling compaction):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 6.1 Tablet Manufacturing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Slugging):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 6.1 Tablet Manufacturing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::9",
+      "itemNo": 7,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "4.1 Excipients classification",
+      "track": "Product",
+      "question": "ในสูตรตำรับยาเม็ด allopurinol มีส่วนประกอบ pregelatinized starch, microcrystalline cellulose, Mg stearate, Titanium oxide, PEG, Lactose monohydrate และ Sodium starch glycolate (SSG) มีหน้าที่อะไรในสูตรตำรับ",
+      "questionImage": "",
+      "choices": [
+        "เพื่อเทลงเบ้าได้ดี (Glidant)",
+        "เพื่อให้ไม่ติดหน้าสาก (Anti-adherent)",
+        "เพื่อให้ film เคลือบหนาเหมาะสม (Coating agent)",
+        "เพื่อให้ละลายน้ำ/ลงน้ำ แล้วกระจายตัวได้เหมาะสม (Superdisintegrant)",
+        "เพื่อให้ film ยืดหยุ่นได้เหมาะสม (Plasticizer)"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. เพื่อให้ละลายน้ำ/ลงน้ำ แล้วกระจายตัวได้เหมาะสม (Superdisintegrant)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>เพื่อให้ละลายน้ำ/ลงน้ำ แล้วกระจายตัวได้เหมาะสม (Superdisintegrant) Sodium starch glycolate จัดเป็น Superdisintegrant ช่วยดูดซับน้ำและพองตัวอย่างรวดเร็ว ทำให้เมดยาแตกตัวและกระจายตัวได้ดีเมื่อสัมผัสน้ำ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เพื่อเทลงเบ้าได้ดี (Glidant)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.1 Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (เพื่อให้ไม่ติดหน้าสาก (Anti-adherent)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.1 Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (เพื่อให้ film เคลือบหนาเหมาะสม (Coating agent)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.1 Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพื่อให้ film ยืดหยุ่นได้เหมาะสม (Plasticizer)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.1 Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Genetic Testing HLA-B*58:01:</b> คนไทยมีความชุกของ HLA-B*58:01 สูง แนะนำตรวจก่อนเริ่มยาเพื่อป้องกัน Severe Cutaneous Adverse Reactions (SCARs/SJS/TEN)<br>• <b>Acute Gout Timing:</b> ห้ามเริ่มยาขณะ acute flare กำเริบเฉียบพลัน ให้รอ 2-4 สัปดาห์หลังอาการสงบ หรือให้ prophylactic colchicine/NSAID ร่วมด้วย<br>• <b>Renal Adjustment:</b> ต้องปรับขนาดยาเริ่มต้นตามค่า eGFR (เช่น eGFR < 30 เริ่มต้น 50 mg/day) เพื่อป้องกัน allopurinol hypersensitivity syndrome (AHS)</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::10",
+      "itemNo": 8,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "4.4 Good Manufacturing Practice",
+      "track": "Product",
+      "question": "การผลิตยาเคลือบฟิล์ม allopurinol มีการบันทึกลง BMR แต่ผู้ปฏิบัติงานลืมบันทึกแล้วมาบันทึกหลังจากกระบวนการเสร็จแล้ว เป็นการปฏิบัติผิด Data integrity ด้านใดตามหลัก ALCOA",
+      "questionImage": "",
+      "choices": [
+        "Accurate",
+        "Contemporary",
+        "Enduring",
+        "Legible",
+        "Original"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Contemporary</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Contemporary หลัก ALCOA ตัว 'C' หมายถึง Contemporaneous คือต้องบันทึกข้อมูลแบบเรียลไทม์ขณะที่เกิดกิจกรรมนั้นทันที การมาบันทึกย้อนหลังหลังเสร็จสิ้นกระบวนการจึงผิดหลักด้าน Contemporary</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Accurate):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.4 Good Manufacturing Practice เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Enduring):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.4 Good Manufacturing Practice เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Legible):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.4 Good Manufacturing Practice เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Original):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.4 Good Manufacturing Practice เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Genetic Testing HLA-B*58:01:</b> คนไทยมีความชุกของ HLA-B*58:01 สูง แนะนำตรวจก่อนเริ่มยาเพื่อป้องกัน Severe Cutaneous Adverse Reactions (SCARs/SJS/TEN)<br>• <b>Acute Gout Timing:</b> ห้ามเริ่มยาขณะ acute flare กำเริบเฉียบพลัน ให้รอ 2-4 สัปดาห์หลังอาการสงบ หรือให้ prophylactic colchicine/NSAID ร่วมด้วย<br>• <b>Renal Adjustment:</b> ต้องปรับขนาดยาเริ่มต้นตามค่า eGFR (เช่น eGFR < 30 เริ่มต้น 50 mg/day) เพื่อป้องกัน allopurinol hypersensitivity syndrome (AHS)</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::20",
+      "itemNo": 18,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Excipients classification",
+      "track": "Product",
+      "question": "Ramipril 5 mg เป็นแคปซูลเจลาตินแข็งสีขาว/แดง ผงสีขาวถึงเกือบขาว ในเมดยาประกอบไปด้วย Ramipril, Colloidal anhydrous silica, Pregelatinized starch สาร Pregelatinized starch (แป้งข้าวโพดพรีเจลาติไนซ์) มีหน้าที่หลักอะไรในสูตรตำรับนี้",
+      "questionImage": "",
+      "choices": [
+        "สารหล่อลื่น (Lubricant)",
+        "สารช่วยการไหล (Glidant)",
+        "สารช่วยยึดเกาะ (Binder)",
+        "สารเพิ่มปริมาณ (Diluent/Filler)",
+        "สารช่วยให้เปลือกแคปซูลแตก"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. สารเพิ่มปริมาณ (Diluent/Filler)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>สารเพิ่มปริมาณ (Diluent/Filler) ในสูตรตำรับแคปซูลเจลาตินแข็งที่ตัวยามีปริมาณน้อย (Ramipril 5 mg) แป้ง Pregelatinized starch มีบทบาทหลักเป็น Diluent/Filler เพื่อเพิ่มปริมาณผงยาให้เต็มขนาดเบอร์ของแคปซูล และยังมีคุณสมบัติช่วยแตกตัวร่วมด้วย</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (สารหล่อลื่น (Lubricant)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (สารช่วยการไหล (Glidant)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (สารช่วยยึดเกาะ (Binder)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (สารช่วยให้เปลือกแคปซูลแตก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::21",
+      "itemNo": 19,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Hard & Soft Gelatin Capsules",
+      "track": "Product",
+      "question": "ข้อใดคือเหตุผลของการใช้ยา ramipril ในรูปแบบแคปซูลเจลาตินแข็ง แทนรูปแบบยาเม็ด (Tablet)",
+      "questionImage": "",
+      "choices": [
+        "ป้องกันแสง",
+        "ป้องกันความชื้น",
+        "ลดความแปรปรวนของอัตราการละลาย",
+        "แก้ปัญหาผงยาตอกอัดไม่ดี (Poor compressibility)",
+        "เพิ่มการออกฤทธิ์เนิ่นโดยไม่ต้องเคลือบ"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. แก้ปัญหาผงยาตอกอัดไม่ดี (Poor compressibility)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>แก้ปัญหาผงยาตอกอัดไม่ดี (Poor compressibility) ผงยาหรือสูตรตำรับบางชนิดมีสมบัติการตอกอัดไม่ดี (Poor compressibility) หรือไวต่อแรงกดดันทางกล การบรรจุลงแคปซูลเจลาตินแข็งจึงเป็นทางเลือกที่ดีเพื่อหลีกเลี่ยงกระบวนการตอกอัด</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ป้องกันแสง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Hard & Soft Gelatin Capsules เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ป้องกันความชื้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Hard & Soft Gelatin Capsules เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ลดความแปรปรวนของอัตราการละลาย):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Hard & Soft Gelatin Capsules เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพิ่มการออกฤทธิ์เนิ่นโดยไม่ต้องเคลือบ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Hard & Soft Gelatin Capsules เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::22",
+      "itemNo": 20,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Container & Closure Systems",
+      "track": "Product",
+      "question": "เหตุใดจึงต้องเก็บรักษา ramipril capsule ไว้ในบรรจุภัณฑ์ดั้งเดิม (Original package / Blister pack)",
+      "questionImage": "",
+      "choices": [
+        "กันแตกหักจากแรงกด",
+        "กันดูดความชื้นและการเสื่อมสลายของเจลาตินและตัวยา",
+        "กันปนเปื้อนเชื้อจุลชีพ",
+        "กันตัวยาเปลี่ยนรูปผลึก",
+        "กันการเปลี่ยนแปลงของรสชาติตัวยา"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. กันดูดความชื้นและการเสื่อมสลายของเจลาตินและตัวยา</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>กันดูดความชื้นและการเสื่อมสลายของเจลาตินและตัวยา เปลือกแคปซูลเจลาตินแข็งและตัวยา Ramipril ไวต่อความชื้นสูง การสัมผัสความชื้นจะทำให้เปลือกนิ่ม/เหนียวและเร่งปฏิกิริยา Hydrolysis ของ Ramipril จึงต้องเก็บในบรรจุภัณฑ์เดิมที่มีคุณสมบัติ Barrier ป้องกันความชื้น</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (กันแตกหักจากแรงกด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (กันปนเปื้อนเชื้อจุลชีพ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (กันตัวยาเปลี่ยนรูปผลึก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (กันการเปลี่ยนแปลงของรสชาติตัวยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>PUD & H. pylori Quadruple Therapy:</b> สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง<br>• <b>GERD Lifestyle & PPI Timing:</b> รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร<br>• <b>Constipation & Laxatives:</b> Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::33",
+      "itemNo": 31,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Parenterals & Ophthalmic",
+      "track": "Product",
+      "question": "การเติม Zinc chloride หรือ Zinc acetate ในสูตรตำรับ NPH insulin มีส่วนช่วยอะไรในสูตรตำรับ",
+      "questionImage": "",
+      "choices": [
+        "เสริมฤทธิ์การกันเสีย (preservative) ร่วมกับ phenol",
+        "ป้องกันการตกตะกอนของ insulin",
+        "ทำให้เกิดสารประกอบเชิงซ้อน (Complex) กับ insulin ส่งผลต่อการชะลอการออกฤทธิ์เนิ่น",
+        "ป้องกันการดูดซับของ insulin บนพื้นผิวภาชนะแก้ว type 1",
+        "เพื่อเพิ่มความคงตัวของ pH ในการผลิตและเก็บรักษา"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. ทำให้เกิดสารประกอบเชิงซ้อน (Complex) กับ insulin ส่งผลต่อการชะลอการออกฤทธิ์เนิ่น</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ทำให้เกิดสารประกอบเชิงซ้อน (Complex) กับ insulin ส่งผลต่อการชะลอการออกฤทธิ์เนิ่น ไอออนสังกะสี (Zinc ions) ช่วยประสานให้โมเลกุลอินซูลินกับโปรตามีน (Protamine) เกิดเป็นผลึกสารประกอบเชิงซ้อน (Isophane complex) ซึ่งช่วยชะลอการละลายและยืดระยะเวลาการออกฤทธิ์ (Intermediate-acting)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เสริมฤทธิ์การกันเสีย (preservative) ร่วมกับ phenol):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ป้องกันการตกตะกอนของ insulin):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ป้องกันการดูดซับของ insulin บนพื้นผิวภาชนะแก้ว type 1):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพื่อเพิ่มความคงตัวของ pH ในการผลิตและเก็บรักษา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::34",
+      "itemNo": 32,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Autoclave & Sterilization",
+      "track": "Product",
+      "question": "กระบวนการ Sterilization ที่เหมาะสมที่สุดกับผลิตภัณฑ์สำเร็จรูปยาฉีด Insulin injection ได้แก่ข้อใด",
+      "questionImage": "",
+      "choices": [
+        "Dry heat sterilization",
+        "Sterile filtration (การกรองปราศจากเชื้อ)",
+        "Steam sterilization (Autoclave)",
+        "Ethylene oxide gas sterilization",
+        "Gamma radiation sterilization"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Sterile filtration (การกรองปราศจากเชื้อ)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Sterile filtration (การกรองปราศจากเชื้อ) อินซูลินเป็นสารชีววัตถุประเภทโปรตีนที่ไวต่อความร้อนสูง (Thermolabile) จึงไม่สามารถทนความร้อนจากการ Autoclave หรือ Dry heat ได้ จึงต้องใช้วิธี Membrane filtration (0.22 ไมครอน) ในสภาวะ Aseptic processing</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Dry heat sterilization):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Autoclave & Sterilization เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Steam sterilization (Autoclave)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Autoclave & Sterilization เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Ethylene oxide gas sterilization):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Autoclave & Sterilization เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Gamma radiation sterilization):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Autoclave & Sterilization เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <71> Sterility Tests, <85> Bacterial Endotoxins Test & WHO Good Manufacturing Practices for Sterile Pharmaceutical Products</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::35",
+      "itemNo": 33,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Parenterals & Ophthalmic",
+      "track": "Product",
+      "question": "ข้อใดคือแนวทางแก้ปัญหาที่มักพบในการผลิตยาฉีด insulin injection แล้วเกิดฟองและการรวมกลุ่ม (Aggregation) ของโปรตีน",
+      "questionImage": "",
+      "choices": [
+        "ลดอุณหภูมิระหว่างการผลิตให้ต่ำกว่า 0 °C",
+        "เพิ่มสารลดแรงตึงผิวชนิด non-ionic เช่น polysorbate 20",
+        "เติม zinc รูป zinc chloride เพิ่มขึ้น",
+        "ใช้ nitrogen purging ไล่ออกซิเจน",
+        "เปลี่ยนสูตรตำรับเป็น acetate buffer แทน phosphate buffer"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. เพิ่มสารลดแรงตึงผิวชนิด non-ionic เช่น polysorbate 20</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>เพิ่มสารลดแรงตึงผิวชนิด non-ionic เช่น polysorbate 20 การเติม Non-ionic surfactant เช่น Polysorbate 20 หรือ Polysorbate 80 จะช่วยลดแรงตึงผิวที่รอยต่อระหว่างของเหลวกับอากาศ ขัดขวางไม่ให้สายโปรตีนคลายตัวและจับกลุ่มกัน (anti-aggregation) จากการกวนหรือเขย่า</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ลดอุณหภูมิระหว่างการผลิตให้ต่ำกว่า 0 °C):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (เติม zinc รูป zinc chloride เพิ่มขึ้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ใช้ nitrogen purging ไล่ออกซิเจน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เปลี่ยนสูตรตำรับเป็น acetate buffer แทน phosphate buffer):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::48",
+      "itemNo": 46,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Liquid & Semisolids",
+      "track": "Product",
+      "question": "ในการพัฒนาสูตรตำรับยาพ่นจมูกในรูปแบบสารละลาย (Non-pressurized Multiple Dose Nasal Spray Solution) ไม่จำเป็นต้องทำการทดสอบใด",
+      "questionImage": "",
+      "choices": [
+        "Uniformity of dosage unit / delivered dose uniformity",
+        "Droplet size distribution",
+        "Actuator deposition",
+        "Shake requirement",
+        "Plume geometry / spray pattern"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Shake requirement</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Shake requirement สูตรตำรับยาพ่นจมูกที่เป็น \"สารละลายเนื้อเดียว\" (Nasal solution) ตัวยาละลายสมบูรณ์เป็นเฟสเดียว จึงไม่จำเป็นต้องเขย่าก่อนใช้ (ไม่ต้องทดสอบ Shake requirement แตกต่างจากรูปแบบ Nasal suspension)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Uniformity of dosage unit / delivered dose uniformity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Droplet size distribution):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Actuator deposition):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Plume geometry / spray pattern):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::49",
+      "itemNo": 47,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Liquid & Semisolids",
+      "track": "Product",
+      "question": "ข้อใดไม่ใช่ปัจจัยที่นำมาพิจารณาการตั้งตำรับผลิตภัณฑ์ยาพ่นจมูกรูปแบบสารละลาย",
+      "questionImage": "",
+      "choices": [
+        "Particle size",
+        "Solvent",
+        "Viscosity",
+        "Osmolarity",
+        "pH"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. Particle size</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Particle size เนื่องจากเป็นรูปแบบ \"สารละลาย\" (Solution) ตัวยาละลายหมดไม่มีอนุภาคแขวนลอย จึงไม่ต้องควบคุม Particle size (จะควบคุมเฉพาะในยาพ่นรูปแบบ Suspension หรือ Dry powder)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (Solvent):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Viscosity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Osmolarity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (pH):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::59",
+      "itemNo": 57,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Solutions, Syrups & Elixirs",
+      "track": "Product",
+      "question": "สารช่วยในข้อใด ไม่จำเป็น สำหรับการตั้งตำรับยาน้ำเชื่อม ferrous sulfate syrup",
+      "questionImage": "",
+      "choices": [
+        "Citric acid",
+        "Disodium EDTA",
+        "Paraben (Methyl/Propyl paraben)",
+        "Sodium metabisulfite",
+        "Sucrose"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Disodium EDTA</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Disodium EDTA ในตำรับยาน้ำ ferrous sulfate ต้องมีสารต้านออกซิเดชัน (Antioxidant เช่น Sodium metabisulfite, Citric acid/Ascorbic acid) เพื่อป้องกันการเปลี่ยนรูป Fe2+ เป็น Fe3+, มีสารกันเสีย (Paraben) และสารให้ความหวาน (Sucrose) ส่วน Disodium EDTA จัดเป็น Strong Chelating agent ซึ่งจะไปจับกับประจุ Fe2+ ทำให้ขัดขวางการปลดปล่อยและการดูดซึมของตัวยาสำคัญ จึงไม่ใส่ในตำรับนี้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Citric acid):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Solutions, Syrups & Elixirs เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Paraben (Methyl/Propyl paraben)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Solutions, Syrups & Elixirs เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Sodium metabisulfite):</b> เป็น Water-soluble antioxidant สำหรับตำรับยาฉีดหรือยาน้ำที่ไวต่อการเกิด oxidation ในสภาวะกรด (acidic pH)<br>• <b>ข้อ จ. (Sucrose):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Solutions, Syrups & Elixirs เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::60",
+      "itemNo": 58,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Container & Closure Systems",
+      "track": "Product",
+      "question": "ภาชนะบรรจุชนิดใดเหมาะสมที่สุดแก่การบรรจุยาน้ำเชื่อม ferrous sulfate syrup เพื่อรักษาความคงตัวของตัวยา",
+      "questionImage": "",
+      "choices": [
+        "Tight container ทั่วไป",
+        "Children resistant container",
+        "Glass container แบบใส",
+        "Amber glass container (ขวดแก้วสีชา)",
+        "Opaque plastic container แบบโปร่งแสง"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Amber glass container (ขวดแก้วสีชา)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Amber glass container (ขวดแก้วสีชา) สารละลายธาตุเหล็ก ferrous ไวต่อแสงและออกซิเจนสูง (เกิด Photo-oxidation เปลี่ยนเป็น ferric oxide ตกตะกอนสีน้ำตาลแดง) จึงจำเป็นต้องบรรจุในขวดแก้วสีชา (Amber glass container) ที่มีคุณสมบัติป้องกันแสงและทึบอากาศ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Tight container ทั่วไป):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Children resistant container):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Glass container แบบใส):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Opaque plastic container แบบโปร่งแสง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::61",
+      "itemNo": 59,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Compounding adjustments",
+      "track": "Product",
+      "question": "ผลิตภัณฑ์สารละลาย 4% w/v Ferrous sulphate (Heptahydrate, MW = 278) หากรับประทานปริมาณ 100 mg จะได้รับปริมาณ Elemental iron (Fe, MW = 56) คิดเป็นกี่มิลลิกรัม",
+      "questionImage": "",
+      "choices": [
+        "10.1 mg",
+        "14.2 mg",
+        "20.1 mg",
+        "25.0 mg",
+        "30.0 mg"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. 20.1 mg</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>20.1 mg คำนวณตามสัดส่วน MW: (MW Fe / MW Ferrous sulfate heptahydrate) * ขนาดยา = (56 / 278) * 100 mg = 0.2014 * 100 mg ≈ 20.1 mg ของ Elemental iron (หรือคิดเป็นประมาณร้อยละ 20 โดยน้ำหนัก)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (10.1 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Compounding adjustments เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (14.2 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Compounding adjustments เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (25.0 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Compounding adjustments เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (30.0 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Compounding adjustments เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Iron Deficiency Anemia Dosing:</b> Elemental iron 100-200 mg/day แบ่งรับประทานตอนท้องว่าง (หรือพร้อมวิตามินซีเพื่อเพิ่มการดูดซึม) และทานต่อเนื่อง 3-6 เดือนหลัง Hb ปกติเพื่อเติม iron store<br>• <b>Thalassemia Precaution:</b> ห้ามให้ธาตุเหล็กเสริมในผู้ป่วย Thalassemia เด็ดขาดเว้นแต่พิสูจน์แล้วว่ามีภาวะ Iron deficiency ร่วมด้วย เพราะเสี่ยงต่อ iron overload<br>• <b>Neutropenic Fever Protocol:</b> ในผู้ป่วยเคมีบำบัดที่มี Absolute Neutrophil Count (ANC) < 500 cells/uL ร่วมกับมีไข้ ต้องเริ่ม broad-spectrum antipseudomonal beta-lactam (Ceftazidime, Cefepime, Meropenem) ทันทีภายใน 1 ชม.</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::75",
+      "itemNo": 73,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Excipients classification",
+      "track": "Product",
+      "question": "ข้อใดเป็นสารช่วย (Excipients) ที่นิยมใช้ใน formulation ของยาฉีด monoclonal antibody เพื่อลดการเกิด aggregation และเพิ่ม stability ของโปรตีน",
+      "questionImage": "",
+      "choices": [
+        "Sorbitol",
+        "Mannitol",
+        "Polysorbate 80 (Surfactant)",
+        "Sodium Chloride",
+        "PEG 400"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Polysorbate 80 (Surfactant)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Polysorbate 80 (Surfactant) Polysorbate 80 หรือ Polysorbate 20 เป็นนอนไอออนิกเซอร์แฟกแทนต์ที่ช่วยแย่งจับที่รอยต่อระหว่างของเหลวกับอากาศ/ผิวภาชนะ ป้องกันไม่ให้โปรตีนสัมผัสพื้นผิวและลดการเกิดการรวมกลุ่ม (Anti-aggregation)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Sorbitol):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Mannitol):</b> เป็น Diluent ชนิด non-hygroscopic ให้ negative heat of solution (รู้สึกเย็นในปาก) นิยมใช้ใน chewable tablets และ orally disintegrating tablets (ODTs)<br>• <b>ข้อ ง. (Sodium Chloride):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (PEG 400):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::88",
+      "itemNo": 86,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Transdermal Delivery (TDS)",
+      "track": "Product",
+      "question": "ข้อใดเป็นคำแนะนำการใช้ยาคุมกำเนิดชนิดแผ่นแปะผิวหนัง (Transdermal contraceptive patch) ที่ถูกต้อง",
+      "questionImage": "",
+      "choices": [
+        "เปลี่ยนแผ่นใหม่ทุก 3 วัน",
+        "แปะซ้อน 2 แผ่นเพื่อกันหลุด",
+        "สามารถตัดแบ่งครึ่งแผ่นได้หากน้ำหนักตัวน้อย",
+        "แปะบริเวณเต้านมเพื่อเพิ่มการดูดซึม",
+        "แปะสัปดาห์ละ 1 แผ่นต่อเนื่อง 3 สัปดาห์ แล้วเว้นไม่แปะ 1 สัปดาห์"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. แปะสัปดาห์ละ 1 แผ่นต่อเนื่อง 3 สัปดาห์ แล้วเว้นไม่แปะ 1 สัปดาห์</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>แปะสัปดาห์ละ 1 แผ่นต่อเนื่อง 3 สัปดาห์ แล้วเว้นไม่แปะ 1 สัปดาห์ การใช้แผ่นแปะคุมกำเนิดฮอร์โมนรวม ให้แปะแผ่นละ 7 วัน (เปลี่ยนแผ่นใหม่สัปดาห์ละ 1 ครั้ง) ติดต่อกัน 3 สัปดาห์ (3 แผ่น) และสัปดาห์ที่ 4 เป็นสัปดาห์ที่เว้นการแปะเพื่อให้มีประจำเดือน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เปลี่ยนแผ่นใหม่ทุก 3 วัน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (แปะซ้อน 2 แผ่นเพื่อกันหลุด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (สามารถตัดแบ่งครึ่งแผ่นได้หากน้ำหนักตัวน้อย):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (แปะบริเวณเต้านมเพื่อเพิ่มการดูดซึม):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Topical Corticosteroid Potency:</b> Class 1 (Clobetasol propionate 0.05%) ห้ามทาใบหน้า ซอกพับ หรือเด็กเล็ก; ผื่นใบหน้า/ข้อพับให้ใช้ Low potency (Hydrocortisone 1%) เพื่อป้องกัน skin atrophy และ striae<br>• <b>Acne Vulgaris Hierarchy:</b> Mild comedonal ใช้ Topical Retinoids; Moderate inflammatory เติม Benzoyl Peroxide (BPO) + Topical Clindamycin; Severe cystic acne พิจารณา Oral Isotretinoin (ต้องคุมกำเนิดเข้มงวด)<br>• <b>Atopic Dermatitis Care:</b> ใช้ Emollients บำรุงผิวสม่ำเสมอทันทีหลังอาบน้ำ (ภายใน 3 นาที) และใช้ Topical Calcineurin Inhibitors (Tacrolimus) เป็น steroid-sparing agent บนใบหน้า</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::91",
+      "itemNo": 89,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Tablet Coating",
+      "track": "Product",
+      "question": "ข้อใด ไม่ใช่ สารที่นำมาใช้เป็นสารช่วยในกระบวนการเคลือบน้ำตาลของยาเม็ด (Sugar coating process)",
+      "questionImage": "",
+      "choices": [
+        "Calcium carbonate (Subcoating powder)",
+        "Wax (Carnuba/Beeswax สำหรับขัดเงา)",
+        "Gelatin (Binder ในน้ำเชื่อม)",
+        "Colloidal silicon dioxide (CSD)",
+        "Acrylate polymer (Film former สำหรับฟิล์มโค้ต)"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. Acrylate polymer (Film former สำหรับฟิล์มโค้ต)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Acrylate polymer (Film former สำหรับฟิล์มโค้ต) Acrylate polymer (เช่น Eudragit) หรือ Cellulose derivatives เป็นสารก่อฟิล์มหลักในกระบวนการเคลือบฟิล์ม (Film coating) ไม่ได้ใช้ในขั้นตอนการเคลือบน้ำตาลแบบดั้งเดิม (Sugar coating)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Calcium carbonate (Subcoating powder)):</b> เป็น Phosphate binder สำหรับ CKD ต้องเคี้ยวพร้อมอาหารเพื่อจับฟอสเฟตในทางเดินอาหาร และทำหน้าที่เสริมแคลเซียม<br>• <b>ข้อ ข. (Wax (Carnuba/Beeswax สำหรับขัดเงา)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Gelatin (Binder ในน้ำเชื่อม)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Colloidal silicon dioxide (CSD)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::93",
+      "itemNo": 91,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Tablet Coating",
+      "track": "Product",
+      "question": "ข้อใด ไม่ถูกต้อง สำหรับยาเม็ดเคลือบน้ำตาล (Sugar-coated tablet)",
+      "questionImage": "",
+      "choices": [
+        "เป็นยาในรูปแบบ immediate release",
+        "ถ้าผู้ป่วยมือเปียกและไปสัมผัสกับเม็ดยา จะทำให้ชั้นนอกของเม็ดเคลือบเกิดการเปลี่ยนแปลงทันที",
+        "ผู้ป่วยที่เป็นโรคเบาหวาน สามารถทานยาเม็ดเคลือบน้ำตาลได้ตามปกติ",
+        "ใช้ sucrose, lactose, mannitol ในสูตรยา",
+        "ยาเม็ดเคลือบน้ำตาล เหมาะกับสูตรตำรับตัวยาที่ไวต่อความชื้นและแสงได้ดีกว่าการเคลือบฟิล์มทุกประเภท"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. ยาเม็ดเคลือบน้ำตาล เหมาะกับสูตรตำรับตัวยาที่ไวต่อความชื้นและแสงได้ดีกว่าการเคลือบฟิล์มทุกประเภท</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยาเม็ดเคลือบน้ำตาล เหมาะกับสูตรตำรับตัวยาที่ไวต่อความชื้นและแสงได้ดีกว่าการเคลือบฟิล์มทุกประเภท การเคลือบน้ำตาลใช้กระบวนการพอกด้วยน้ำเชื่อมหลายรอบ ซึ่งใช้ความร้อนและความชื้นในกระบวนการผลิตสูงมาก จึงไม่เหมาะกับตัวยาสำคัญที่ไวต่อความชื้นและความร้อนสูง (Moisture/Heat labile drugs)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เป็นยาในรูปแบบ immediate release):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ถ้าผู้ป่วยมือเปียกและไปสัมผัสกับเม็ดยา จะทำให้ชั้นนอกของเม็ดเคลือบเกิดการเปลี่ยนแปลงทันที):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ผู้ป่วยที่เป็นโรคเบาหวาน สามารถทานยาเม็ดเคลือบน้ำตาลได้ตามปกติ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ใช้ sucrose, lactose, mannitol ในสูตรยา):</b> เป็น Diluent / Filler ยอดนิยม ละลายน้ำได้ดี ให้ mouthfeel ที่ดี แต่เกิด Maillard reaction (เม็ดยาเปลี่ยนเป็นสีน้ำตาล) เมื่อผสมกับ primary amine drugs</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::102",
+      "itemNo": 100,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Inhalation devices",
+      "track": "Product",
+      "question": "ผู้ป่วยไม่สามารถรับประทานยาเม็ดได้และแพทย์ต้องการให้ยาในรูปแบบพ่นสูดชนิดสารละลาย (Nebulized solution) ข้อใดต่อไปนี้กล่าวผิดเกี่ยวกับยารูปแบบดังกล่าว",
+      "questionImage": "",
+      "choices": [
+        "เป็นการบริหารยาแบบ Non-invasive",
+        "ยาออกฤทธิ์เฉพาะที่อวัยวะเป้าหมายเท่านั้น ไม่เข้าสู่กระแสเลือดเลยในทุกกรณี",
+        "ยาที่สูดเข้าปอดโดยตรงไม่ต้องผ่าน hepatic first-pass metabolism",
+        "ผลข้างเคียงทั่วร่างกาย (Systemic side effects) มักน้อยกว่ายารูปแบบรับประทาน",
+        "สามารถปรับขนาดยาได้เมื่อเทียบกับยารูปแบบรับประทาน"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. ยาออกฤทธิ์เฉพาะที่อวัยวะเป้าหมายเท่านั้น ไม่เข้าสู่กระแสเลือดเลยในทุกกรณี</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยาออกฤทธิ์เฉพาะที่อวัยวะเป้าหมายเท่านั้น ไม่เข้าสู่กระแสเลือดเลยในทุกกรณี แม้ยาพ่นสูดจะมีเป้าหมายการออกฤทธิ์ที่ทางเดินหายใจ แต่ตัวยาบางส่วนที่ถูกกลืนลงทางเดินอาหารหรือดูดซึมผ่านเยื่อบุถุงลมปอดสามารถเข้าสู่กระแสเลือดได้ ไม่ได้จำกัดอยู่เฉพาะที่ 100% โดยไม่เข้าสู่กระแสเลือดเลย</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เป็นการบริหารยาแบบ Non-invasive):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ยาที่สูดเข้าปอดโดยตรงไม่ต้องผ่าน hepatic first-pass metabolism):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ผลข้างเคียงทั่วร่างกาย (Systemic side effects) มักน้อยกว่ายารูปแบบรับประทาน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (สามารถปรับขนาดยาได้เมื่อเทียบกับยารูปแบบรับประทาน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::103",
+      "itemNo": 101,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Inhalation devices",
+      "track": "Product",
+      "question": "หากต้องการเปลี่ยนแปลงยาเม็ดของผู้ป่วยเป็นรูปแบบชนิดพ่นสูด (Nebulized solution) ข้อใดต่อไปนี้ ไม่ใช่ ส่วนประกอบของสูตรตำรับดังกล่าว",
+      "questionImage": "",
+      "choices": [
+        "Solvent",
+        "Propellant (สารขับดัน)",
+        "Tonicity agent",
+        "Preservative",
+        "Solubilizer"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Propellant (สารขับดัน)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Propellant (สารขับดัน) สารขับดัน (Propellant เช่น HFA) ใช้เฉพาะในยาพ่นสูดชนิดพ่นอัดก๊าซ (Pressurized Metered-Dose Inhaler: pMDI) ส่วนยาพ่นละอองชนิด Nebulized solution เป็นสารละลายน้ำที่อาศัยแรงลมหรืออัลตราซาวด์จากเครื่องพ่น ไม่ต้องใช้ Propellant</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Solvent):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Tonicity agent):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Preservative):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Solubilizer):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::115",
+      "itemNo": 113,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Tablet Coating",
+      "track": "Product",
+      "question": "ยาเม็ดหนึ่งประกอบด้วย inactive ingredients: Magnesium stearate, Croscarmellose sodium, Titanium dioxide, Hypromellose, FD&C yellow no. 6 aluminum lake, Crystalline hydroxycellulose, Triacetin จากสูตรตำรับจัดเป็นยาเม็ดรูปแบบใด",
+      "questionImage": "",
+      "choices": [
+        "Effervescent tablet",
+        "Enteric coated tablet",
+        "Plain tablet",
+        "Film coated tablet",
+        "Compression coated tablet"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Film coated tablet</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Film coated tablet ในสูตรตำรับมี Hypromellose (Polymer ก่อฟิล์ม), Triacetin (Plasticizer), Titanium dioxide (Opacifier) และ Color lake ซึ่งเป็นองค์ประกอบมาตรฐานของฟิล์มเคลือบ จึงจัดเป็นยาเม็ดเคลือบฟิล์ม (Film coated tablet)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Effervescent tablet):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Enteric coated tablet):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Plain tablet):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Compression coated tablet):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::116",
+      "itemNo": 114,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Excipients classification",
+      "track": "Product",
+      "question": "ผู้ป่วยนำเมดยาออกจากแผงบรรจุ Alu-Alu แล้วนำมาใส่กล่องพลาสติก PVC เพื่อพกพาติดตัวไปทำงาน เมื่อถึงเวลารับประทานพบว่าเมดยาติดกันเป็นพวง Excipient ใดเป็นปัจจัยสำคัญที่ดูดความชื้นจนทำให้เกิดปัญหาดังกล่าว",
+      "questionImage": "",
+      "choices": [
+        "Microcrystalline cellulose",
+        "Lactose",
+        "Croscarmellose sodium (Superdisintegrant)",
+        "Magnesium stearate",
+        "Triacetin"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Croscarmellose sodium (Superdisintegrant)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Croscarmellose sodium (Superdisintegrant) Croscarmellose sodium เป็น Superdisintegrant ชนิด cross-linked carboxymethylcellulose ที่มีคุณสมบัติดูดซับความชื้นจากอากาศได้อย่างรวดเร็วและพองตัวสูง เมื่อนำออกจากแผงกันชื้น Alu-Alu มาใส่กล่องพลาสติกจึงดูดความชื้นจนเม็ดยาเหนียวติดกัน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Microcrystalline cellulose):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Lactose):</b> เป็น Diluent / Filler ยอดนิยม ละลายน้ำได้ดี ให้ mouthfeel ที่ดี แต่เกิด Maillard reaction (เม็ดยาเปลี่ยนเป็นสีน้ำตาล) เมื่อผสมกับ primary amine drugs<br>• <b>ข้อ ง. (Magnesium stearate):</b> เป็น Boundary lubricant ลดแรงเสียดทานระหว่างเม็ดยากับผนัง die wall แต่หาก over-mixing นานเกินไปจะทำให้เม็ดยากันน้ำ ละลายช้า และความแข็งของเม็ดยาลดลง<br>• <b>ข้อ จ. (Triacetin):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::117",
+      "itemNo": 115,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Preformulation & GMP",
+      "track": "Product",
+      "question": "รูปสัณฐาน (Polymorph) ของตัวยาสำคัญที่เหมาะสมและเสถียรที่สุดในการนำมาใช้เตรียมยาเม็ดในระดับอุตสาหกรรมคือรูปใด",
+      "questionImage": "",
+      "choices": [
+        "Monotropic polymorphs (Stable form)",
+        "Enantiotropic polymorphs",
+        "Amorphous anhydrates",
+        "Crystalline hydrates",
+        "Mixed solvates"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. Monotropic polymorphs (Stable form)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Monotropic polymorphs (Stable form) การผลิตยาเม็ดต้องการความคงตัวทางกายภาพและเคมีสูงสุด ไม่เกิดการเปลี่ยนรูปผลึกระหว่างการเก็บรักษา จึงนิยมใช้ผลึกในรูปที่เสถียรที่สุดในระบบสัณฐานเดี่ยว (Stable monotropic polymorph) เพื่อให้อัตราการละลายและการออกฤทธิ์คงที่ตลอดอายุยา</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (Enantiotropic polymorphs):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Preformulation & GMP เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Amorphous anhydrates):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Preformulation & GMP เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Crystalline hydrates):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Preformulation & GMP เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Mixed solvates):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Preformulation & GMP เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::126",
+      "itemNo": 124,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Pharmaceutical Calc",
+      "track": "Product",
+      "question": "ผลิตภัณฑ์ Acyclovir cream 5% w/w ในเนื้อครีม 1 g จะมีตัวยาสำคัญกี่มิลลิกรัม และถ้าต้องการตัวยา acyclovir ปริมาณ 25 mg ต้องชั่งเนื้อครีมนี้กี่กรัม",
+      "questionImage": "",
+      "choices": [
+        "0.5 mg/g, 0.0125 g",
+        "5 mg/g, 0.0125 g",
+        "5 mg/g, 0.125 g",
+        "50 mg/g, 0.5 g",
+        "50 mg/g, 1.25 g"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. 50 mg/g, 0.5 g</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>50 mg/g, 0.5 g ครีม 5% w/w คือ มีตัวยา 5 g ในเนื้อครีม 100 g หรือเท่ากับ 5,000 mg ใน 100 g -> ใน 1 g จะมีตัวยา = 50 mg/g และหากต้องการตัวยา 25 mg จะต้องใช้เนื้อครีม = 25 / 50 = 0.5 g</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (0.5 mg/g, 0.0125 g):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmaceutical Calc เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (5 mg/g, 0.0125 g):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmaceutical Calc เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (5 mg/g, 0.125 g):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmaceutical Calc เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (50 mg/g, 1.25 g):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmaceutical Calc เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::131",
+      "itemNo": 129,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Excipients classification",
+      "track": "Product",
+      "question": "หากพบว่าเนื้อยาครีม acyclovir มีความหนืดต่ำเกินไปหรือเหลวเกินไป ควรเติมสารช่วยปรับความข้นหนืด (Stiffening agent) ในข้อใดเพื่อเพิ่มความคงรูป",
+      "questionImage": "",
+      "choices": [
+        "Sodium lauryl sulfate",
+        "Mineral oil",
+        "Cetostearyl alcohol",
+        "Propylene glycol",
+        "Purified water"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Cetostearyl alcohol</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Cetostearyl alcohol (หรือ Stearyl alcohol, Cetyl alcohol) จัดเป็น Stiffening agent และ Consistency modifier ในตำรับยาครีม ช่วยเพิ่มความหนืด สร้างโครงสร้างอิมัลชัน และเพิ่มความคงรูปของเนื้อครีม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Sodium lauryl sulfate):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Mineral oil):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Propylene glycol):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Purified water):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::134",
+      "itemNo": 132,
+      "category": "6. Solid Dosage Forms",
+      "subtopic": "Liquid & Semisolids",
+      "track": "Product",
+      "question": "Acyclovir มีคุณสมบัติ MW 225 และละลายน้ำได้จำกัด (Solubility ประมาณ 2.5 mg/mL) ในขั้นตอนการเตรียม Acyclovir cream ควรมีเทคนิคการกระจายตัวยาลงในเบสครีมอย่างไร",
+      "questionImage": "",
+      "choices": [
+        "ละลายตัวยาทั้งหมดในน้ำแล้วค่อยเตรียมครีม",
+        "ละลายตัวยาใน Phase น้ำโดยใช้ความร้อนสูงแล้วค่อยผสมกับ Base",
+        "นำผงยาไปบดกระจายกับ Mineral oil ก่อนนำไปผสม Base",
+        "นำผงยาไตรจูเรตกระจายตัวกับตัวทำละลายและสารช่วยดูดซึม เช่น Propylene glycol (Levigating agent) ก่อนนำไปผสมเข้ากับเนื้อครีม",
+        "เทผงยาแห้งลงผสมกับเนื้อครีมโดยตรงทันที"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. นำผงยาไตรจูเรตกระจายตัวกับตัวทำละลายและสารช่วยดูดซึม เช่น Propylene glycol (Levigating agent) ก่อนนำไปผสมเข้ากับเนื้อครีม</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>นำผงยาไตรจูเรตกระจายตัวกับตัวทำละลายและสารช่วยดูดซึม เช่น Propylene glycol (Levigating agent) ก่อนนำไปผสมเข้ากับเนื้อครีม เนื่องจาก Acyclovir ละลายน้ำได้น้อย เทคนิคที่ถูกต้องในการเตรียมแบบ Suspension cream คือการใช้ Propylene glycol หรือสารตัวพาที่เหมาะสมเป็น Levigating agent บดลดขนาดอนุภาคผงยาให้เนียนละเอียดก่อน จึงค่อยนำไป Incorporation รวมกับเบสครีม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ละลายตัวยาทั้งหมดในน้ำแล้วค่อยเตรียมครีม):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ละลายตัวยาใน Phase น้ำโดยใช้ความร้อนสูงแล้วค่อยผสมกับ Base):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (นำผงยาไปบดกระจายกับ Mineral oil ก่อนนำไปผสม Base):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เทผงยาแห้งลงผสมกับเนื้อครีมโดยตรงทันที):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
     {
       "id": "6. Solid Dosage Forms::3",
       "itemNo": 1,
@@ -75629,6 +76948,116 @@ window.QUIZ_OFFLINE_QUESTIONS = {
   ],
   "10. Biotech Products": [
     {
+      "id": "📥 รวมข้อสอบด่วน::38",
+      "itemNo": 36,
+      "category": "10. Biotech Products",
+      "subtopic": "Recombinant DNA",
+      "track": "Product",
+      "question": "การผลิต insulin ในระดับอุตสาหกรรมในปัจจุบัน ข้อใดมีความเป็นไปได้และเป็นกระบวนการหลักที่ใช้จริงมากที่สุด",
+      "questionImage": "",
+      "choices": [
+        "สกัดโดยตรงจากตับอ่อนสุกรแล้วนำมาสังเคราะห์ต่อ",
+        "ใช้ E. coli หรือ Saccharomyces cerevisiae สังเคราะห์ recombinant preproinsulin/proinsulin แล้วตัดสายด้วยเอนไซม์",
+        "สังเคราะห์ด้วยเทคนิค Solid Phase Peptide Synthesis (SPPS) ใน bioreactor",
+        "ใช้ hybridoma technology ผลิตออกมาเป็น monoclonal antibody",
+        "เพาะเลี้ยง stem cell ของ human beta cell แล้วสกัด insulin ออกมา"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. ใช้ E. coli หรือ Saccharomyces cerevisiae สังเคราะห์ recombinant preproinsulin/proinsulin แล้วตัดสายด้วยเอนไซม์</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ใช้ E. coli หรือ Saccharomyces cerevisiae สังเคราะห์ recombinant preproinsulin/proinsulin แล้วตัดสายด้วยเอนไซม์ การผลิตอินซูลินในระดับอุตสาหกรรมใช้เทคโนโลยี Recombinant DNA โดยใช้เซลล์โฮสต์ เช่น E. coli หรือ ยีสต์ (S. cerevisiae) ในการแสดงออกของโปรตีน Proinsulin จากนั้นจึงผ่านกระบวนการ enzymatic cleavage (เช่น Trypsin/Carboxypeptidase B) เพื่อให้ได้โมเลกุลอินซูลินที่สมบูรณ์</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (สกัดโดยตรงจากตับอ่อนสุกรแล้วนำมาสังเคราะห์ต่อ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Recombinant DNA เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (สังเคราะห์ด้วยเทคนิค Solid Phase Peptide Synthesis (SPPS) ใน bioreactor):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Recombinant DNA เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ใช้ hybridoma technology ผลิตออกมาเป็น monoclonal antibody):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Recombinant DNA เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพาะเลี้ยง stem cell ของ human beta cell แล้วสกัด insulin ออกมา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Recombinant DNA เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::73",
+      "itemNo": 71,
+      "category": "10. Biotech Products",
+      "subtopic": "Biotech Products",
+      "track": "Product",
+      "question": "ลักษณะสำคัญของ Monoclonal antibody (mAb) ที่ทำให้ต้องเตรียมในรูปแบบยาฉีด (Injectable dosage form) เท่านั้น คือข้อใด",
+      "questionImage": "",
+      "choices": [
+        "ขนาดโมเลกุลเล็ก ดูดซึมผ่าน GI tract ได้ดี",
+        "เป็นโปรตีนโมเลกุลใหญ่ ไวต่อเอนไซม์ protease และถูกทำลายในทางเดินอาหารเมื่อให้โดยการรับประทาน",
+        "คงตัวสูงในสภาวะ pH ที่เป็นกรดของกระเพาะอาหาร",
+        "ผ่าน hepatic first-pass metabolism ได้ดีมาก",
+        "มีค่า Log P สูงมากจึงดูดซึมได้รวดเร็ว"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. เป็นโปรตีนโมเลกุลใหญ่ ไวต่อเอนไซม์ protease และถูกทำลายในทางเดินอาหารเมื่อให้โดยการรับประทาน</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>เป็นโปรตีนโมเลกุลใหญ่ ไวต่อเอนไซม์ protease และถูกทำลายในทางเดินอาหารเมื่อให้โดยการรับประทาน สารชีววัตถุประเภทแอนติบอดีเป็นโปรตีนโมเลกุลขนาดใหญ่ ซึ่งจะถูกกรดในกระเพาะอาหารทำให้เสียสภาพ (Denaturation) และถูกย่อยสลายด้วยเอนไซม์ Protease ในทางเดินอาหารจนหมด จึงไม่สามารถบริหารโดยการรับประทานได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ขนาดโมเลกุลเล็ก ดูดซึมผ่าน GI tract ได้ดี):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biotech Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (คงตัวสูงในสภาวะ pH ที่เป็นกรดของกระเพาะอาหาร):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biotech Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ผ่าน hepatic first-pass metabolism ได้ดีมาก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biotech Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (มีค่า Log P สูงมากจึงดูดซึมได้รวดเร็ว):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biotech Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::80",
+      "itemNo": 78,
+      "category": "10. Biotech Products",
+      "subtopic": "Cell culture & fermentation",
+      "track": "Product",
+      "question": "ข้อใดเป็นกระบวนการที่เกี่ยวข้องกับ Upstream process ของการผลิตยาชีววัตถุ เช่น Monoclonal antibody",
+      "questionImage": "",
+      "choices": [
+        "การเตรียมสูตรตำรับ (formulation) และบรรจุปราศจากเชื้อ",
+        "การทำให้บริสุทธิ์ด้วย affinity chromatography",
+        "การเพาะเลี้ยงเซลล์และหมักเชื้อภายใน bioreactor เพื่อผลิตโปรตีน",
+        "การทดสอบความคงตัวของผลิตภัณฑ์หลังบรรจุ",
+        "การกรองเพื่อความบริสุทธิ์ (Ultrafiltration / Diafiltration)"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. การเพาะเลี้ยงเซลล์และหมักเชื้อภายใน bioreactor เพื่อผลิตโปรตีน</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>การเพาะเลี้ยงเซลล์และหมักเชื้อภายใน bioreactor เพื่อผลิตโปรตีน Upstream processing ครอบคลุมตั้งแต่ขั้นตอนการเตรียมสายพันธุ์เซลล์ (Cell banking), การขยายขนาดเพาะเลี้ยง (Inoculum expansion) ไปจนถึงการเพาะเลี้ยงเซลล์ใน Bioreactor เพื่อให้เซลล์ผลิตโปรตีนเป้าหมาย</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (การเตรียมสูตรตำรับ (formulation) และบรรจุปราศจากเชื้อ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (การทำให้บริสุทธิ์ด้วย affinity chromatography):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (การทดสอบความคงตัวของผลิตภัณฑ์หลังบรรจุ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (การกรองเพื่อความบริสุทธิ์ (Ultrafiltration / Diafiltration)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::81",
+      "itemNo": 79,
+      "category": "10. Biotech Products",
+      "subtopic": "Cell culture & fermentation",
+      "track": "Product",
+      "question": "ในการเพาะเลี้ยงเซลล์เพื่อผลิต mAb ใน Bioreactor ปัจจัยวิกฤตใดที่ต้องควบคุมอย่างเคร่งครัดเพื่อให้เซลล์เจริญเติบโตได้ดีและสังเคราะห์โปรตีนได้อย่างมีประสิทธิภาพ",
+      "questionImage": "",
+      "choices": [
+        "ควบคุม pH, อุณหภูมิ (Temperature) และระดับออกซิเจนละลาย (Dissolved O2)",
+        "ใส่ตัวทำละลายอินทรีย์เพื่อเร่งให้โปรตีนพับตัว",
+        "ใส่ reducing agent ความเข้มข้นสูงเพื่อป้องกันพันธะไดซัลไฟด์",
+        "สเตอไรล์ด้วยการฉายแสงยูวีตลอดเวลาของการเพาะเลี้ยง",
+        "ใส่เอนไซม์ protease เพื่อย่อยสลายโปรตีนที่พับตัวผิดรูป"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ควบคุม pH, อุณหภูมิ (Temperature) และระดับออกซิเจนละลาย (Dissolved O2)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ควบคุม pH, อุณหภูมิ (Temperature) และระดับออกซิเจนละลาย (Dissolved O2) สภาวะแวดล้อมที่เหมาะสมสำหรับการเจริญของเซลล์สัตว์เลี้ยงลูกด้วยนม (เช่น CHO cells) ต้องควบคุม pH (~6.8-7.2), อุณหภูมิ (~36.5-37 °C) และ Dissolved Oxygen (DO) ให้อยู่ในช่วงที่จำเพาะเพื่อคงความมีชีวิตของเซลล์</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (ใส่ตัวทำละลายอินทรีย์เพื่อเร่งให้โปรตีนพับตัว):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ใส่ reducing agent ความเข้มข้นสูงเพื่อป้องกันพันธะไดซัลไฟด์):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (สเตอไรล์ด้วยการฉายแสงยูวีตลอดเวลาของการเพาะเลี้ยง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ใส่เอนไซม์ protease เพื่อย่อยสลายโปรตีนที่พับตัวผิดรูป):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::84",
+      "itemNo": 82,
+      "category": "10. Biotech Products",
+      "subtopic": "Biosimilars & Quality Control",
+      "track": "Product",
+      "question": "ข้อใดคือลักษณะที่ถูกต้องของยาชีววัตถุคล้ายคลึง (Biosimilar) เปรียบเทียบกับยาชีววัตถุอ้างอิง (Reference biological drug)",
+      "questionImage": "",
+      "choices": [
+        "มีโครงสร้างเหมือนกันทุกประการ 100%",
+        "ต้องแสดงข้อมูลความคล้ายคลึง (Biosimilarity) ด้านคุณภาพ ความปลอดภัย และประสิทธิภาพ (Quality, safety, efficacy)",
+        "ไม่ต้องทำการทดสอบทางคลินิก (clinical trials)",
+        "ไม่ต้องแสดงข้อมูล Immunogenicity เพราะถือว่าโครงสร้างเหมือนกัน",
+        "ถือว่าเป็นยาชื่อสามัญ (Generic drug) ทั่วไป"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. ต้องแสดงข้อมูลความคล้ายคลึง (Biosimilarity) ด้านคุณภาพ ความปลอดภัย และประสิทธิภาพ (Quality, safety, efficacy)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ต้องแสดงข้อมูลความคล้ายคลึง (Biosimilarity) ด้านคุณภาพ ความปลอดภัย และประสิทธิภาพ (Quality, safety, efficacy) ยาชีววัตถุคล้ายคลึงไม่สามารถเหมือนยาต้นแบบได้ 100% เนื่องจากกระบวนการผลิตทางชีวภาพ จึงต้องมีการศึกษาเปรียบเทียบ (Comparability exercise) ครอบคลุมทั้งคุณภาพ safety ฤทธิ์ทางคลินิก และการเกิดภูมิคุ้มกันต้านยา</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (มีโครงสร้างเหมือนกันทุกประการ 100%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ไม่ต้องทำการทดสอบทางคลินิก (clinical trials)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ไม่ต้องแสดงข้อมูล Immunogenicity เพราะถือว่าโครงสร้างเหมือนกัน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ถือว่าเป็นยาชื่อสามัญ (Generic drug) ทั่วไป):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>PUD & H. pylori Quadruple Therapy:</b> สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง<br>• <b>GERD Lifestyle & PPI Timing:</b> รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร<br>• <b>Constipation & Laxatives:</b> Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
       "id": "10. Biotech Products::3",
       "itemNo": 2,
       "category": "10. Biotech Products",
@@ -78205,6 +79634,160 @@ window.QUIZ_OFFLINE_QUESTIONS = {
   ],
   "11. Herbal Products": [
     {
+      "id": "📥 รวมข้อสอบด่วน::14",
+      "itemNo": 12,
+      "category": "11. Herbal Products",
+      "subtopic": "Herbal Medicine",
+      "track": "Clinic",
+      "question": "สมุนไพรในข้อใดมีสารออกฤทธิ์สำหรับรักษาโรค gout",
+      "questionImage": "",
+      "choices": [
+        "ระย่อม",
+        "ไพล",
+        "ขมิ้นชัน",
+        "ดองดึง",
+        "เถาวัลย์เปรียง"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. ดองดึง</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ดองดึง (Gloriosa superba) มีสารสำคัญคือ Colchicine ซึ่งมีฤทธิ์ยับยั้ง microtubule assembly และลดการอักเสบในโรคเกาต์เฉียบพลัน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ระย่อม):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ไพล):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ขมิ้นชัน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เถาวัลย์เปรียง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Urate-Lowering Target:</b> เป้าหมาย Serum Uric Acid < 6.0 mg/dL ในผู้ป่วยทั่วไป (หรือ < 5.0 mg/dL ในรายที่มี tophi รุนแรง)<br>• <b>Prophylaxis Duration:</b> ต้องให้ anti-inflammatory prophylaxis (Colchicine หรือ low-dose NSAID) ควบคู่กับ ULT ต่อเนื่องอย่างน้อย 3-6 เดือน<br>• <b>Allopurinol Genetic Rule:</b> ตรวจ HLA-B*58:01 ในคนไทยก่อนเริ่ม Allopurinol ทุกรายเพื่อป้องกัน SJS/TEN</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::26",
+      "itemNo": 24,
+      "category": "11. Herbal Products",
+      "subtopic": "Herbal Medicine",
+      "track": "Clinic",
+      "question": "Reserpine เป็นสารธรรมชาติที่นำมาใช้บำบัดภาวะความดันโลหิตสูง พบได้ในพืชสมุนไพรชนิดใด",
+      "questionImage": "",
+      "choices": [
+        "ระย่อม",
+        "พริกไทย",
+        "กาแฟ",
+        "โคคา",
+        "เถาวัลย์เปรียง"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ระย่อม</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ภาวะความดันโลหิตสูงเป็นปัจจัยเสี่ยงหลักของ cardiovascular disease การเลือก first-line antihypertensive agents ต้องพิจารณาตาม compelling indications</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ระย่อม Reserpine เป็นสารกลุ่ม indole alkaloid สกัดได้จากรากระย่อม (Rauvolfia serpentina) มีกลไกยับยั้ง VMAT ลดระดับ catecholamine ทำให้ความดันโลหิตลดลง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (พริกไทย):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (กาแฟ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (โคคา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เถาวัลย์เปรียง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางการรักษาโรคความดันโลหิตสูง ในเวชปฏิบัติทั่วไป พ.ศ. 2562 (สมาคมความดันโลหิตสูงแห่งประเทศไทย) & 2020 International Society of Hypertension (ISH) Global Guidelines</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>BP Target Standard:</b> เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)<br>• <b>First-line Core Classes:</b> 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน<br>• <b>Special Populations:</b> ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::27",
+      "itemNo": 25,
+      "category": "11. Herbal Products",
+      "subtopic": "Herbal Medicine",
+      "track": "Clinic",
+      "question": "สมุนไพรต่างประเทศข้อใดมีผลช่วยขยายหลอดเลือดและลดความดันโลหิต",
+      "questionImage": "",
+      "choices": [
+        "Horse Chestnut",
+        "Hawthorn",
+        "Ginkgo",
+        "ฮวยซัว",
+        "St. John's wort"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Hawthorn</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ภาวะความดันโลหิตสูงเป็นปัจจัยเสี่ยงหลักของ cardiovascular disease การเลือก first-line antihypertensive agents ต้องพิจารณาตาม compelling indications</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Hawthorn (Crataegus spp.) มีสารกลุ่ม flavonoids และ oligomeric proanthocyanidins ที่มีฤทธิ์ขยายหลอดเลือดหัวใจและหลอดเลือดส่วนปลาย และช่วยลดความดันโลหิต</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Horse Chestnut):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Ginkgo):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ฮวยซัว):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (St. John's wort):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางการรักษาโรคความดันโลหิตสูง ในเวชปฏิบัติทั่วไป พ.ศ. 2562 (สมาคมความดันโลหิตสูงแห่งประเทศไทย) & 2020 International Society of Hypertension (ISH) Global Guidelines</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>BP Target Standard:</b> เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)<br>• <b>First-line Core Classes:</b> 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน<br>• <b>Special Populations:</b> ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::41",
+      "itemNo": 39,
+      "category": "11. Herbal Products",
+      "subtopic": "Herbal Medicine",
+      "track": "Clinic",
+      "question": "พืชผักพื้นบ้านในข้อใดมีหลักฐานทางวิชาการชัดเจนว่ามีผลช่วยลดระดับน้ำตาลในเลือด",
+      "questionImage": "",
+      "choices": [
+        "ยอดฟักแม้ว",
+        "ใบกะหล่ำปลี",
+        "ผลบวบงู",
+        "ผลมะระขี้นก",
+        "ช่อดอกบรอกโคลี"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. ผลมะระขี้นก</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Herbal Medicine มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ผลมะระขี้นก มะระขี้นก (Momordica charantia) มีสารสำคัญ เช่น Charantin, Vicine และ Polypeptide-p ซึ่งมีฤทธิ์กระตุ้นการหลั่งและเสริมการทำงานของอินซูลิน ช่วยลดระดับน้ำตาลในเลือดได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ยอดฟักแม้ว):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ใบกะหล่ำปลี):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ผลบวบงู):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ช่อดอกบรอกโคลี):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Glaucoma Prostaglandin Analogues:</b> Latanoprost หยอดตาวันละ 1 ครั้งก่อนนอน ผลข้างเคียง: ม่านตาสีคล้ำขึ้น ขนตายาวหนาขึ้น และตาแดง<br>• <b>Beta-blocker Eye Drops Caution:</b> Timolol eye drops ถูกดูดซึมเข้าระบบ systemic ได้ ต้องกดหัวตา (Nasolacrimal occlusion) 1-2 นาที และระวังในผู้ป่วย Asthma, Severe COPD, Bradycardia<br>• <b>Bacterial Conjunctivitis Treatment:</b> หยอดตาปฏิชีวนะ Broad-spectrum เช่น Fluoroquinolones (Moxifloxacin), Chloramphenicol, หรือ Polymyxin B/Neomycin</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::42",
+      "itemNo": 40,
+      "category": "11. Herbal Products",
+      "subtopic": "Herbal Medicine",
+      "track": "Clinic",
+      "question": "ยาพัฒนาจากสมุนไพรที่มีฤทธิ์ขับปัสสาวะในข้อใด ที่มีโอกาสเกิดปฏิกิริยาเสริมฤทธิ์ (Synergistic effect) กับยาลดระดับน้ำตาลในเลือดหรืออินซูลิน จนอาจทำให้ระดับน้ำตาลต่ำ",
+      "questionImage": "",
+      "choices": [
+        "ยาหญ้าหนวดแมว",
+        "ยากระเจี๊ยบแดง",
+        "ยารางจืด",
+        "ยาหญ้าปักกิ่ง",
+        "ยาหญ้าดอกขาว"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ยาหญ้าหนวดแมว</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Herbal Medicine มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยาหญ้าหนวดแมว หญ้าหนวดแมว (Orthosiphon stamineus) นอกจากมีฤทธิ์ขับปัสสาวะและขับกรดยูริกแล้ว ยังมีรายงานฤทธิ์ลดน้ำตาลในเลือด (Hypoglycemic effect) ซึ่งอาจเสริมฤทธิ์กับยารักษาเบาหวานได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (ยากระเจี๊ยบแดง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ยารางจืด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ยาหญ้าปักกิ่ง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ยาหญ้าดอกขาว):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>PUD & H. pylori Quadruple Therapy:</b> สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง<br>• <b>GERD Lifestyle & PPI Timing:</b> รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร<br>• <b>Constipation & Laxatives:</b> Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::132",
+      "itemNo": 130,
+      "category": "11. Herbal Products",
+      "subtopic": "Herbal Products",
+      "track": "Product",
+      "question": "ยาสมุนไพรในบัญชียาหลักแห่งชาติที่มีข้อบ่งใช้สำหรับรักษาโรคเริมและงูสวัดคือสมุนไพรในข้อใด",
+      "questionImage": "",
+      "choices": [
+        "ยาพญายอ (เสลดพังพอนตัวเมีย)",
+        "ยาเปลือกมังคุด",
+        "ยาบัวบก",
+        "ยาทิงเจอร์พลู",
+        "ยาทิงเจอร์ทองพันชั่ง"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ยาพญายอ (เสลดพังพอนตัวเมีย)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยาพญายอ (เสลดพังพอนตัวเมีย) สารสกัดจากพญายอ (Clinacanthus nutans หรือเสลดพังพอนตัวเมีย) ในรูปแบบครีมหรือสารละลาย มีฤทธิ์ต้านเชื้อไวรัสเริม (Anti-HSV) และระงับอาการอักเสบ บรรจุอยู่ในบัญชียาหลักแห่งชาติด้านสมุนไพร</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (ยาเปลือกมังคุด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ยาบัวบก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ยาทิงเจอร์พลู):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ยาทิงเจอร์ทองพันชั่ง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> Thai Herbal Pharmacopoeia (THP 2021) สำนักยาและวัตถุเสพติด กรมวิทยาศาสตร์การแพทย์ กระทรวงสาธารณสุข & บัญชียาหลักแห่งชาติด้านสมุนไพร พ.ศ. 2566</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::133",
+      "itemNo": 131,
+      "category": "11. Herbal Products",
+      "subtopic": "Herbal Products",
+      "track": "Product",
+      "question": "ส่วนของสมุนไพรพญายอ (เสลดพังพอนตัวเมีย) ที่นำมาใช้ในการสกัดเพื่อทำยารักษาโรคเริมคือนำส่วนใดมาใช้",
+      "questionImage": "",
+      "choices": [
+        "ใบ (Leaves)",
+        "เถา (Stems)",
+        "ราก (Roots)",
+        "เมล็ด (Seeds)",
+        "เปลือกผล (Rinds)"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ใบ (Leaves)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ใบ (Leaves) การเตรียมยาแผนไทยและสารสกัดพญายอสำหรับต้านไวรัสเริมและงูสวัด จะใช้ส่วนของ \"ใบสดหรือใบแห้ง\" ซึ่งอุดมไปด้วยสารกลุ่มฟลาโวนอยด์และสารสำคัญในการออกฤทธิ์ต้านไวรัส</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (เถา (Stems)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ราก (Roots)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (เมล็ด (Seeds)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เปลือกผล (Rinds)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> Thai Herbal Pharmacopoeia (THP 2021) สำนักยาและวัตถุเสพติด กรมวิทยาศาสตร์การแพทย์ กระทรวงสาธารณสุข & บัญชียาหลักแห่งชาติด้านสมุนไพร พ.ศ. 2566</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
       "id": "11. Herbal Products::3",
       "itemNo": 1,
       "category": "11. Herbal Products",
@@ -78956,6 +80539,72 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     }
   ],
   "13. Medicinal Chemistry": [
+    {
+      "id": "📥 รวมข้อสอบด่วน::11",
+      "itemNo": 9,
+      "category": "13. Medicinal Chemistry",
+      "subtopic": "13. Medicinal Chemistry",
+      "track": "Product",
+      "question": "รูปโครงสร้าง allopurinol ข้อใดถูกต้องที่สุด: (1) purine analog ยับยั้ง xanthine oxidase (2) log P -1.8 แปลว่าชอบน้ำ (hydrophilic) สูง ผ่านเยื่อหุ้มเซลล์ได้ไม่ดี (3) pKa 10.2 ใน physiological pH 7.4 อยู่ในรูปไม่แตกตัว (unionized)",
+      "questionImage": "",
+      "choices": [
+        "Structure-Activity Relationship (SAR) Optimization",
+        "2 และ 3",
+        "1 และ 2",
+        "1 และ 3",
+        "ถูกทุกข้อ"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. ถูกทุกข้อ</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ถูกทุกข้อ โครงสร้าง Allopurinol เป็นไอโซเมอร์ของ hypoxanthine (purine analog) ยับยั้ง xanthine oxidase, มีค่า log P เป็นลบจึงชอบน้ำสูง และมี pKa 10.2 (weak acid) เมื่ออยู่ใน pH 7.4 จึงส่วนใหญ่อยู่ในรูปไม่แตกตัว (unionized form ~99.8%)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Structure-Activity Relationship (SAR) Optimization):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 13. Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (2 และ 3):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 13. Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (1 และ 2):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 13. Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (1 และ 3):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 13. Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> Wilson and Gisvold's Textbook of Organic Medicinal and Pharmaceutical Chemistry (12th Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Genetic Testing HLA-B*58:01:</b> คนไทยมีความชุกของ HLA-B*58:01 สูง แนะนำตรวจก่อนเริ่มยาเพื่อป้องกัน Severe Cutaneous Adverse Reactions (SCARs/SJS/TEN)<br>• <b>Acute Gout Timing:</b> ห้ามเริ่มยาขณะ acute flare กำเริบเฉียบพลัน ให้รอ 2-4 สัปดาห์หลังอาการสงบ หรือให้ prophylactic colchicine/NSAID ร่วมด้วย<br>• <b>Renal Adjustment:</b> ต้องปรับขนาดยาเริ่มต้นตามค่า eGFR (เช่น eGFR < 30 เริ่มต้น 50 mg/day) เพื่อป้องกัน allopurinol hypersensitivity syndrome (AHS)</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::51",
+      "itemNo": 49,
+      "category": "13. Medicinal Chemistry",
+      "subtopic": "Medicinal Chemistry",
+      "track": "Product",
+      "question": "Cetirizine เป็น racemate (R/S 1:1) Levocetirizine เป็น R-enantiomer บริสุทธิ์ที่มีฤทธิ์ต้านตัวรับฮิสตามีนชนิด H1 สูงกว่า S-enantiomer และอาจลดผลข้างเคียงเมื่อใช้ขนาดเทียบเท่า ภาพใดคือโครงสร้าง levocetirizine",
+      "questionImage": "",
+      "choices": [
+        "โครงสร้าง A",
+        "โครงสร้าง B",
+        "โครงสร้าง A และ B",
+        "ไม่ใช่ทั้ง A และ B",
+        "ตัดสินไม่ได้"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. โครงสร้าง A</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>โครงสร้าง A Levocetirizine มี configuration ของ chiral center (คาร์บอนที่ต่อกับวงฟีนิลสองวง) เป็นรูปแบบ (R)-enantiomer ตามโครงสร้างแบบจำลอง stereochemistry A</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (โครงสร้าง B):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (โครงสร้าง A และ B):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ไม่ใช่ทั้ง A และ B):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ตัดสินไม่ได้):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Glaucoma Prostaglandin Analogues:</b> Latanoprost หยอดตาวันละ 1 ครั้งก่อนนอน ผลข้างเคียง: ม่านตาสีคล้ำขึ้น ขนตายาวหนาขึ้น และตาแดง<br>• <b>Beta-blocker Eye Drops Caution:</b> Timolol eye drops ถูกดูดซึมเข้าระบบ systemic ได้ ต้องกดหัวตา (Nasolacrimal occlusion) 1-2 นาที และระวังในผู้ป่วย Asthma, Severe COPD, Bradycardia<br>• <b>Bacterial Conjunctivitis Treatment:</b> หยอดตาปฏิชีวนะ Broad-spectrum เช่น Fluoroquinolones (Moxifloxacin), Chloramphenicol, หรือ Polymyxin B/Neomycin</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::105",
+      "itemNo": 103,
+      "category": "13. Medicinal Chemistry",
+      "subtopic": "Medicinal Chemistry",
+      "track": "Product",
+      "question": "ข้อใดถูกต้องเกี่ยวกับคุณสมบัติและเมแทบอลิซึมของยา Isoniazid",
+      "questionImage": "",
+      "choices": [
+        "ยานี้มีกลไกยับยั้งการสังเคราะห์ DNA โดยตรง",
+        "ทำให้ปัสสาวะมีสีส้มแดง",
+        "สารเมแทบอไลต์ Acetylhydrazine เกิดพิษต่อตับ (Hepatotoxicity)",
+        "สารเมแทบอไลต์ Diacetylhydrazine มีพิษต่อตับมากกว่า",
+        "เป็นสารเหนี่ยวนำเอนไซม์ CYP450 ที่แรงที่สุด"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. สารเมแทบอไลต์ Acetylhydrazine เกิดพิษต่อตับ (Hepatotoxicity)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>สารเมแทบอไลต์ Acetylhydrazine เกิดพิษต่อตับ (Hepatotoxicity) Isoniazid ถูก acetylated ในตับกลายเป็น Acetylisoniazid และสลายตัวต่อเป็น Acetylhydrazine ซึ่งเป็นสาร intermediate ที่มีพิษทำลายเซลล์ตับ (Hepatotoxicity) ในขณะที่ Diacetylhydrazine เป็นสารที่ไม่มีพิษ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ยานี้มีกลไกยับยั้งการสังเคราะห์ DNA โดยตรง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ทำให้ปัสสาวะมีสีส้มแดง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (สารเมแทบอไลต์ Diacetylhydrazine มีพิษต่อตับมากกว่า):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เป็นสารเหนี่ยวนำเอนไซม์ CYP450 ที่แรงที่สุด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> Wilson and Gisvold's Textbook of Organic Medicinal and Pharmaceutical Chemistry (12th Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Pyridoxine (B6) Co-prescription:</b> ต้องให้ Vitamin B6 (Pyridoxine 50-100 mg/day) ร่วมด้วยในหญิงตั้งครรภ์, ผู้ติดเชื้อ HIV, เบาหวาน, ดื่มสุรา หรือไตวาย เพื่อป้องกัน peripheral neuropathy<br>• <b>Hepatotoxicity Monitoring:</b> ติดตามอาการเบื่ออาหาร คลื่นไส้ ตาเหลือง ตัวเหลือง หาก ALT/AST > 5 เท่า (ไม่มีอาการ) หรือ > 3 เท่า (มีอาการ) ต้องหยุดยาทันที</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
     {
       "id": "13. Medicinal Chemistry::3",
       "itemNo": 1,
@@ -87409,6 +89058,226 @@ window.QUIZ_OFFLINE_QUESTIONS = {
   ],
   "2. Pharmacy Administration & Sy": [
     {
+      "id": "📥 รวมข้อสอบด่วน::13",
+      "itemNo": 11,
+      "category": "2. Pharmacy Administration & Sy",
+      "subtopic": "Pharmacy Laws & Ethics",
+      "track": "SAP",
+      "question": "หากคนไข้ปัจจุบันเป็นพนักงานในบริษัทเอกชนที่มีการจ้างงานตามกฎหมายแรงงานไทย ผู้ป่วยจะอยู่ภายใต้สิทธิการรักษาพยาบาลใดตามหลักประกันสุขภาพของประเทศไทย",
+      "questionImage": "",
+      "choices": [
+        "สิทธิประกันสุขภาพแห่งชาติ",
+        "สิทธิประกันสังคม",
+        "สิทธิข้าราชการ",
+        "สิทธิ 30 บาท",
+        "สิทธิบัตรทอง"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. สิทธิประกันสังคม</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>สิทธิประกันสังคม ลูกจ้าง/พนักงานบริษัทเอกชนที่ทำงานตาม พ.ร.บ. คุ้มครองแรงงาน จะได้รับความคุ้มครองและขึ้นทะเบียนสิทธิรักษาพยาบาลตามกองทุนประกันสังคม (มาตรา 33)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (สิทธิประกันสุขภาพแห่งชาติ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (สิทธิข้าราชการ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (สิทธิ 30 บาท):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (สิทธิบัตรทอง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Drug Classification:</b> ยาควบคุมพิเศษ (ต้องมีใบสั่งยาเท่านั้น บันทึก ข.ย.11), ยาอันตราย (ขายได้เฉพาะในร้านยาที่มีเภสัชกร), ยาสามัญประจำบ้าน (ขายนอกร้านยาได้)<br>• <b>Pharmacy Licensing (ข.ย.):</b> ข.ย.1 (ขายยาแผนปัจจุบัน), ข.ย.2 (ขายยาแผนปัจจุบันเฉพาะยาบรรจุเสร็จที่ไม่ใช่ยาอันตรายหรือยาควบคุมพิเศษ), ข.ย.3 (ขายยาควบคุมพิเศษ), ข.ย.4 (ขายส่ง)<br>• <b>GPP Evaluation Standard:</b> หลักเกณฑ์วิธีปฏิบัติทางเภสัชกรรมชุมชน (GPP) ครอบคลุม: สถานที่ อุปกรณ์ บุคลากร การควบคุมคุณภาพยา และการให้คำปรึกษา</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::25",
+      "itemNo": 23,
+      "category": "2. Pharmacy Administration & Sy",
+      "subtopic": "Pharmacy Laws & Ethics",
+      "track": "SAP",
+      "question": "ยารักษาโรคความดันโลหิตชนิดหนึ่ง จัดอยู่ในบัญชียาหลักแห่งชาติ \"บัญชี ก\" ข้อใดถูกต้องเกี่ยวกับคุณสมบัติของยานี้",
+      "questionImage": "",
+      "choices": [
+        "ต้องจ่ายโดยผู้ชำนาญการเฉพาะโรคเท่านั้น",
+        "ต้องสำรองจ่ายค่ายาก่อนนำใบเสร็จไปเบิกกับต้นสังกัด",
+        "ต้องร่วมจ่าย 30 บาทต่อหนึ่งรายการยา",
+        "เป็นยาที่ใช้รักษาและป้องกันโรคที่พบบ่อย มีความคุ้มค่า และใช้เป็นอันดับแรกๆ ในสถานพยาบาลทุกระดับ",
+        "ต้องมีแบบฟอร์มกำกับการใช้ยาและติดตามผลตลอดการรักษา"
+      ],
+      "answer": 4,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. เป็นยาที่ใช้รักษาและป้องกันโรคที่พบบ่อย มีความคุ้มค่า และใช้เป็นอันดับแรกๆ ในสถานพยาบาลทุกระดับ</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>เป็นยาที่ใช้รักษาและป้องกันโรคที่พบบ่อย มีความคุ้มค่า และใช้เป็นอันดับแรกๆ ในสถานพยาบาลทุกระดับ ยาในบัญชี ก ตามบัญชียาหลักแห่งชาติ คือ ยาสำหรับโรคที่พบบ่อย มีหลักฐานสนับสนุน efficacy ชัดเจน มี safety และคุ้มค่า เป็นยา first-line ในการรักษาและสามารถใช้ได้ในสถานพยาบาลทุกระดับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ต้องจ่ายโดยผู้ชำนาญการเฉพาะโรคเท่านั้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ต้องสำรองจ่ายค่ายาก่อนนำใบเสร็จไปเบิกกับต้นสังกัด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ต้องร่วมจ่าย 30 บาทต่อหนึ่งรายการยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ต้องมีแบบฟอร์มกำกับการใช้ยาและติดตามผลตลอดการรักษา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>BP Target Standard:</b> เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)<br>• <b>First-line Core Classes:</b> 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน<br>• <b>Special Populations:</b> ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::40",
+      "itemNo": 38,
+      "category": "2. Pharmacy Administration & Sy",
+      "subtopic": "Research & Biostats",
+      "track": "SAP",
+      "question": "ถ้ายา Pioglitazone ได้รับอนุมัติให้วางจำหน่ายในไทย หากต้องการติดตามอาการไม่พึงประสงค์จากการใช้ยาหลังออกสู่ตลาด (Post-marketing surveillance / Pharmacovigilance) รูปแบบการวิจัยเชิงสังเกตใดเหมาะสมที่สุด",
+      "questionImage": "",
+      "choices": [
+        "Ecological study",
+        "Cross-sectional study",
+        "Cohort study (เช่น Prospective/Registry-based cohort)",
+        "Randomized controlled trial (RCT)",
+        "Systematic review and meta-analysis"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Cohort study (เช่น Prospective/Registry-based cohort)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การประเมินหลักฐานเชิงประจักษ์ (Evidence-Based Practice) อาศัย study design, statistical parameters (p-value, 95% CI, RR/OR) เพื่อการตัดสินใจอย่างแม่นยำ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Cohort study (เช่น Prospective/Registry-based cohort) การติดตาม safety ระยะยาวของยาในประชากรจริงหลังวางจำหน่าย (Phase IV / Post-marketing surveillance) มักใช้การออกแบบการศึกษาแบบ Cohort study หรือ Registry data เพื่อติดตามกลุ่มผู้ใช้ยาเทียบกับผู้ไม่ใช้ยาในชีวิตจริง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Ecological study):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Cross-sectional study):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Randomized controlled trial (RCT)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Systematic review and meta-analysis):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials & คู่มือการประเมินเทคโนโลยีด้านสุขภาพสำหรับประเทศไทย (HITAP)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Thiazolidinedione Warning:</b> เป็น PPAR-gamma agonist เพิ่ม insulin sensitivity แต่ทำให้เกิด fluid retention ห้ามใช้ใน Heart Failure (NYHA Class III-IV) และเสี่ยงกระดูกหัก/มะเร็งกระเพาะปัสสาวะ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::53",
+      "itemNo": 51,
+      "category": "2. Pharmacy Administration & Sy",
+      "subtopic": "Pharmacy Laws & Ethics",
+      "track": "SAP",
+      "question": "Oxymetazoline เป็นยาในบัญชียาหลักแห่งชาติ บัญชี ข ข้อใดถูกต้องเกี่ยวกับข้อกำหนดการสั่งใช้",
+      "questionImage": "",
+      "choices": [
+        "ยานี้อยู่ภายใต้ระบบการควบคุมและติดตามการใช้ยาให้เหมาะสม (Authorized system)",
+        "ยานี้เบิกจ่ายของผ่านกระทรวง ทบวง กรม หน่วยงานรัฐ",
+        "ยานี้มีการใช้งานที่ซับซ้อน ต้องใช้ร่วมกับยาในบัญชียาหลักแห่งชาติตัวอื่น อย่างน้อย 2 ชนิดขึ้นไป",
+        "ยานี้ต้องสั่งใช้โดยผู้เชี่ยวชาญเฉพาะทาง ENT เท่านั้น",
+        "ยาที่เบิกจ่ายได้ในโรงพยาบาลชุมชนขึ้นไป และเบิกจ่ายได้ทุกสิทธิการรักษา"
+      ],
+      "answer": 5,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. ยาที่เบิกจ่ายได้ในโรงพยาบาลชุมชนขึ้นไป และเบิกจ่ายได้ทุกสิทธิการรักษา</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยาที่เบิกจ่ายได้ในโรงพยาบาลชุมชนขึ้นไป และเบิกจ่ายได้ทุกสิทธิการรักษา ยาบัญชี ข เป็นยาที่ใช้สำหรับข้อบ่งใช้หรือเงื่อนไขเฉพาะเจาะจง มีความจำเป็นและมีทางเลือกจำกัด สามารถจัดหาและสั่งจ่ายได้ตั้งแต่ระดับโรงพยาบาลชุมชน (รพช.) ขึ้นไปตามสิทธิการรักษาพยาบาลขั้นพื้นฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ยานี้อยู่ภายใต้ระบบการควบคุมและติดตามการใช้ยาให้เหมาะสม (Authorized system)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ยานี้เบิกจ่ายของผ่านกระทรวง ทบวง กรม หน่วยงานรัฐ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ยานี้มีการใช้งานที่ซับซ้อน ต้องใช้ร่วมกับยาในบัญชียาหลักแห่งชาติตัวอื่น อย่างน้อย 2 ชนิดขึ้นไป):</b> National List of Essential Medicines (NLEM) บัญชียาจำเป็นที่รัฐประกันการเข้าถึง แบ่งเป็นบัญชี ก, ข, ค, ง, จ เพื่อความคุ้มค่าและความเท่าเทียม<br>• <b>ข้อ ง. (ยานี้ต้องสั่งใช้โดยผู้เชี่ยวชาญเฉพาะทาง ENT เท่านั้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Legal Responsibilities:</b> จำแนกประเภทตามกฎหมายยา พ.ศ. 2510 และพระราชบัญญัติวิชาชีพเภสัชกรรม เพื่อปฏิบัติงานตามมาตรฐาน GPP เคร่งครัด<br>• <b>Regulatory Compliance:</b> ตรวจสอบเงื่อนไขการส่งมอบยา การบันทึกบัญชี และขอบเขตอำนาจหน้าที่ของเภสัชกรผู้มีหน้าที่ปฏิบัติการ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::67",
+      "itemNo": 65,
+      "category": "2. Pharmacy Administration & Sy",
+      "subtopic": "Research & Biostats",
+      "track": "SAP",
+      "question": "การศึกษาในผู้ป่วย 500 คนที่สงสัยว่าเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb, g/dL) ของผู้ป่วย และแบ่งกลุ่มผู้ป่วยตามเพศ (ชาย/หญิง) เพื่อศึกษาระดับ Hb ที่แตกต่างกันระหว่างเพศ ข้อใดถูกต้องเกี่ยวกับชนิดของตัวแปรและการเลือกใช้การวิเคราะห์ทางสถิติ",
+      "questionImage": "",
+      "choices": [
+        "Hb เป็นตัวแปรเชิงกลุ่ม (categorical variable) เสมอ จึงควรใช้ Chi-square test ในการเปรียบเทียบระหว่างเพศ",
+        "Hb เป็นตัวแปรเชิงจำนวนต่อเนื่อง (continuous variable) หากมีการกระจายแบบปกติ ควรใช้ Independent t-test (หากไม่ปกติใช้ Mann-Whitney U test)",
+        "หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการหาความสัมพันธ์ระหว่างเพศได้",
+        "Hb เป็นข้อมูลเชิงจำนวน แต่ควรใช้ Mann-Whitney U Test ในการวิเคราะห์เสมอเนื่องจากข้อมูลชีววิทยามักไม่ปกติ",
+        "Hb เป็นตัวแปร ordinal เนื่องจากมีค่าจากต่ำไปสูง"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการหาความสัมพันธ์ระหว่างเพศได้</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การประเมินหลักฐานเชิงประจักษ์ (Evidence-Based Practice) อาศัย study design, statistical parameters (p-value, 95% CI, RR/OR) เพื่อการตัดสินใจอย่างแม่นยำ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการหาความสัมพันธ์ระหว่างเพศได้ ระดับ Hemoglobin ที่ถูกจำแนกออกเป็นกลุ่ม (เช่น ซีด vs ไม่ซีด) จะกลายเป็นตัวแปรประเภท Categorical variable ซึ่งสามารถทดสอบความสัมพันธ์กับกลุ่มเพศ (ชาย/หญิง) โดยใช้ Chi-square test ได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Hb เป็นตัวแปรเชิงกลุ่ม (categorical variable) เสมอ จึงควรใช้ Chi-square test ในการเปรียบเทียบระหว่างเพศ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Hb เป็นตัวแปรเชิงจำนวนต่อเนื่อง (continuous variable) หากมีการกระจายแบบปกติ ควรใช้ Independent t-test (หากไม่ปกติใช้ Mann-Whitney U test)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Hb เป็นข้อมูลเชิงจำนวน แต่ควรใช้ Mann-Whitney U Test ในการวิเคราะห์เสมอเนื่องจากข้อมูลชีววิทยามักไม่ปกติ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Hb เป็นตัวแปร ordinal เนื่องจากมีค่าจากต่ำไปสูง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials & คู่มือการประเมินเทคโนโลยีด้านสุขภาพสำหรับประเทศไทย (HITAP)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Study Hierarchy & Causality:</b> Systematic Review/Meta-analysis > Randomized Controlled Trial (RCT) > Cohort > Case-Control > Cross-Sectional<br>• <b>Effect Measures:</b> Relative Risk (RR) คำนวณได้เฉพาะใน Cohort Study และ RCT; Odds Ratio (OR) ใช้ใน Case-Control Study<br>• <b>Health Economics (ICER):</b> ICER = (Cost A - Cost B) / (Effect A - Effect B); หากต่ำกว่าเกณฑ์ความคุ้มค่า (WTP threshold ของไทย 160,000 บาท/QALY) ถือว่าคุ้มค่า</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::85",
+      "itemNo": 83,
+      "category": "2. Pharmacy Administration & Sy",
+      "subtopic": "Research & Biostats",
+      "track": "SAP",
+      "question": "จากรูป Kaplan-Meier curve ของการศึกษาเปรียบเทียบ treatment A และ B ในการรักษา Lung cancer พบว่า Hazard Ratio (HR) ของ Overall survival ของ treatment B เทียบกับ A คือ 0.65 (95% CI: 0.50–0.85) ข้อใดกล่าวถูกต้อง",
+      "questionImage": "",
+      "choices": [
+        "B ลดความเสี่ยงการเสียชีวิต (Death risk) ได้ 35% เมื่อเทียบกับ A",
+        "HR ใกล้เคียง 1 หมายความว่าไม่มีความแตกต่างอย่างมีนัยสำคัญ",
+        "Median OS ของ A แปลว่าคนไข้ที่ใช้ A มีมัธยฐานอัตราการรอดชีวิต 28%",
+        "A ลดความเสี่ยงการเสียชีวิตได้ 65% เมื่อเทียบกับ B",
+        "Median OS ของ B มากกว่า 18 เดือนแต่ไม่มีนัยสำคัญทางสถิติ"
+      ],
+      "answer": 1,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. B ลดความเสี่ยงการเสียชีวิต (Death risk) ได้ 35% เมื่อเทียบกับ A</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การประเมินหลักฐานเชิงประจักษ์ (Evidence-Based Practice) อาศัย study design, statistical parameters (p-value, 95% CI, RR/OR) เพื่อการตัดสินใจอย่างแม่นยำ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>B ลดความเสี่ยงการเสียชีวิต (Death risk) ได้ 35% เมื่อเทียบกับ A ค่า Hazard Ratio (HR) = 0.65 แปลว่าความเสี่ยงของการเกิดเหตุการณ์ (การเสียชีวิต) ในกลุ่ม B คิดเป็น 65% ของกลุ่ม A หรือกลุ่ม B สามารถลดความเสี่ยงของการเสียชีวิตลงได้ 100% - 65% = 35% อย่างมีนัยสำคัญทางสถิติ (ช่วง 95% CI ไม่คร่อม 1)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (HR ใกล้เคียง 1 หมายความว่าไม่มีความแตกต่างอย่างมีนัยสำคัญ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Median OS ของ A แปลว่าคนไข้ที่ใช้ A มีมัธยฐานอัตราการรอดชีวิต 28%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (A ลดความเสี่ยงการเสียชีวิตได้ 65% เมื่อเทียบกับ B):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Median OS ของ B มากกว่า 18 เดือนแต่ไม่มีนัยสำคัญทางสถิติ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials & คู่มือการประเมินเทคโนโลยีด้านสุขภาพสำหรับประเทศไทย (HITAP)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Study Hierarchy & Causality:</b> Systematic Review/Meta-analysis > Randomized Controlled Trial (RCT) > Cohort > Case-Control > Cross-Sectional<br>• <b>Effect Measures:</b> Relative Risk (RR) คำนวณได้เฉพาะใน Cohort Study และ RCT; Odds Ratio (OR) ใช้ใน Case-Control Study<br>• <b>Health Economics (ICER):</b> ICER = (Cost A - Cost B) / (Effect A - Effect B); หากต่ำกว่าเกณฑ์ความคุ้มค่า (WTP threshold ของไทย 160,000 บาท/QALY) ถือว่าคุ้มค่า</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::96",
+      "itemNo": 94,
+      "category": "2. Pharmacy Administration & Sy",
+      "subtopic": "Pharmacy Administration & System",
+      "track": "SAP",
+      "question": "หญิงตั้งครรภ์รู้ว่าตนเองต้องระมัดระวังในการเลือกยาคุมกำเนิดชนิดเม็ด จึงเดินทางมาปรึกษาเภสัชกรที่ร้านยาเรื่องการใช้ยาคุมกำเนิด พฤติกรรมดังกล่าวจัดเป็นองค์ประกอบใดตามแบบจำลองความเชื่อด้านสุขภาพ (Health Belief Model: HBM)",
+      "questionImage": "",
+      "choices": [
+        "Perceived susceptibility",
+        "Perceived severity",
+        "Perceived benefits",
+        "Perceived barriers",
+        "Cues to action"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Perceived benefits</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Perceived benefits การที่ผู้ป่วยตระหนักว่าการมาปรึกษาเภสัชกรจะช่วยให้เลือกใช้ยาได้อย่างถูกต้อง ปลอดภัย และป้องกันอันตรายได้ จัดเป็น \"การรับรู้ประโยชน์ของการปฏิบัติตัว (Perceived benefits)\"</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Perceived susceptibility):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Perceived severity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Perceived barriers):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Cues to action):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> กฎกระทรวงการขออนุญาตและการออกใบอนุญาตขายยาแผนปัจจุบัน พ.ศ. 2556 และ ประกาศกระทรวงสาธารณสุข เรื่อง การกำหนดรายละเอียดเกี่ยวกับหลักเกณฑ์ วิธีการ และเงื่อนไขการตรวจประเมินวิธีปฏิบัติทางเภสัชกรรมชุมชน (GPP)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::108",
+      "itemNo": 106,
+      "category": "2. Pharmacy Administration & Sy",
+      "subtopic": "Pharmacy Administration & System",
+      "track": "SAP",
+      "question": "ผู้ป่วยมีความกังวลจากการต้องทานยาจำนวนมากเป็นประจำ ซึ่งอาจส่งผลต่อ Adherence ในฐานะเภสัชกรท่านจะใช้วิธีการสื่อสารเช่นใดกับผู้ป่วยรายนี้",
+      "questionImage": "",
+      "choices": [
+        "ให้คำแนะนำที่ตรงไปตรงมา เน้นย้ำถึงอันตรายของการเกิดเชื้อดื้อยา",
+        "ให้คำแนะนำตามหลักวิชาการเพื่อให้ดูน่าเชื่อถือ",
+        "สร้างเสริมพลังอำนาจแก่ผู้ป่วย (Empowerment) เปิดโอกาสให้ซักถามความกังวล และร่วมวางแผนการทานยากับผู้ป่วย",
+        "ให้คำแนะนำที่กระชับ และเน้นความสำคัญของการใช้ยาในการรักษาอาการป่วย",
+        "ให้คำแนะนำเท่าที่จำเป็น เพื่อให้ผู้ป่วยไม่สับสนและกลัวการใช้ยา"
+      ],
+      "answer": 3,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. สร้างเสริมพลังอำนาจแก่ผู้ป่วย (Empowerment) เปิดโอกาสให้ซักถามความกังวล และร่วมวางแผนการทานยากับผู้ป่วย</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>สร้างเสริมพลังอำนาจแก่ผู้ป่วย (Empowerment) เปิดโอกาสให้ซักถามความกังวล และร่วมวางแผนการทานยากับผู้ป่วย การส่งเสริมความร่วมมือในการใช้ยา (Medication Adherence) อย่างมี efficacy สูงสุดคือการใช้ Patient-centered communication และกระบวนการเสริมพลังอำนาจ (Empowerment) ให้ผู้ป่วยมีส่วนร่วมในการตัดสินใจและวางตารางการกินยาที่เข้ากับวิถีชีวิต</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ให้คำแนะนำที่ตรงไปตรงมา เน้นย้ำถึงอันตรายของการเกิดเชื้อดื้อยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ให้คำแนะนำตามหลักวิชาการเพื่อให้ดูน่าเชื่อถือ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ให้คำแนะนำที่กระชับ และเน้นความสำคัญของการใช้ยาในการรักษาอาการป่วย):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ให้คำแนะนำเท่าที่จำเป็น เพื่อให้ผู้ป่วยไม่สับสนและกลัวการใช้ยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::109",
+      "itemNo": 107,
+      "category": "2. Pharmacy Administration & Sy",
+      "subtopic": "Pharmacy Administration & System",
+      "track": "SAP",
+      "question": "ผู้ป่วยอายุ 65 ปี มีปัญหาต้องใช้ยาหลายตัว ในการคำนึงถึง Pharmaco-technology และการออกแบบเพื่อผู้ใช้ (Universal center design) ควรดำเนินการอย่างไรเพื่อป้องกันความคลาดเคลื่อน",
+      "questionImage": "",
+      "choices": [
+        "เขียนฉลากตัวบรรจงให้ผู้ป่วยอ่าน",
+        "จัด Pillbox แบ่งตามวัน/มื้อให้ผู้ป่วย และสอนให้ผู้ป่วยฝึกจัดเตรียมเองในวันถัดไป",
+        "อ่านฉลากให้ผู้ป่วยฟังอย่างละเอียด",
+        "บอกให้ผู้ป่วยหาคนมาดูแลเรื่องยา",
+        "ทำแผ่นพับภาษาไทยแนบให้ผู้ป่วยไปอ่านเอง"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. จัด Pillbox แบ่งตามวัน/มื้อให้ผู้ป่วย และสอนให้ผู้ป่วยฝึกจัดเตรียมเองในวันถัดไป</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>จัด Pillbox แบ่งตามวัน/มื้อให้ผู้ป่วย และสอนให้ผู้ป่วยฝึกจัดเตรียมเองในวันถัดไป การใช้อุปกรณ์ช่วยจัดยา (Pillbox/Medication organizer) ที่แบ่งช่องชัดเจนตามวันและมื้ออาหาร พร้อมสอนและเสริมทักษะให้ผู้ป่วยดูแลตนเองได้ เป็นการออกแบบเชิง Universal Design ที่ช่วยลด Medication errors ในผู้สูงอายุได้อย่างยั่งยืน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เขียนฉลากตัวบรรจงให้ผู้ป่วยอ่าน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (อ่านฉลากให้ผู้ป่วยฟังอย่างละเอียด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (บอกให้ผู้ป่วยหาคนมาดูแลเรื่องยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ทำแผ่นพับภาษาไทยแนบให้ผู้ป่วยไปอ่านเอง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
+      "id": "📥 รวมข้อสอบด่วน::127",
+      "itemNo": 125,
+      "category": "2. Pharmacy Administration & Sy",
+      "subtopic": "Pharmacy Administration & System",
+      "track": "SAP",
+      "question": "ข้อใดเป็นการแนะนำเพื่อป้องกันการกำเริบของโรคตามพฤติกรรมสุขภาพของผู้บริโภคได้อย่างถูกต้องที่สุด",
+      "questionImage": "",
+      "choices": [
+        "ให้รับประทานยาปฏิชีวนะต่อเนื่อง",
+        "แนะนำการปฏิบัติตัว การพักผ่อน และการหลีกเลี่ยงปัจจัยกระตุ้น เช่น แสงแดดจัด และความเครียด",
+        "แนะนำให้ผู้ป่วยเปลี่ยนสายอาชีพ",
+        "แนะนำให้ใช้ยาทาสเตียรอยด์เข้มข้นทาทันทีที่รู้สึกคัน",
+        "ให้ทายาปฏิชีวนะแผลเปิดเป็นประจำ"
+      ],
+      "answer": 2,
+      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. แนะนำการปฏิบัติตัว การพักผ่อน และการหลีกเลี่ยงปัจจัยกระตุ้น เช่น แสงแดดจัด และความเครียด</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>แนะนำการปฏิบัติตัว การพักผ่อน และการหลีกเลี่ยงปัจจัยกระตุ้น เช่น แสงแดดจัด และความเครียด การป้องกันการกลับเป็นซ้ำของโรคเริมต้องเน้นการปรับพฤติกรรมสุขภาพ รักษาสุขอนามัย พักผ่อนให้เพียงพอ จัดการความเครียด และทาครีมกันแดดบริเวณริมฝีปากเพื่อหลีกเลี่ยงแสง UV</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ให้รับประทานยาปฏิชีวนะต่อเนื่อง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (แนะนำให้ผู้ป่วยเปลี่ยนสายอาชีพ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (แนะนำให้ใช้ยาทาสเตียรอยด์เข้มข้นทาทันทีที่รู้สึกคัน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ให้ทายาปฏิชีวนะแผลเปิดเป็นประจำ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
+      "answerImage": "",
+      "note": "[TEST] Quick Ingestion",
+      "examType": "Mock",
+      "examYear": "Mock RxCU83 ครั้งที่ 1"
+    },
+    {
       "id": "2. Pharmacy Administration & Sy::3",
       "itemNo": 9,
       "category": "2. Pharmacy Administration & Sy",
@@ -91483,1938 +93352,6 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "note": "ข้อ 108 (PLE_CC1_Key_Rx20_UBU.md)",
       "examType": "",
       "examYear": ""
-    }
-  ],
-  "1. Musculoskeletal": [
-    {
-      "id": "📥 รวมข้อสอบด่วน::3",
-      "itemNo": 1,
-      "category": "1. Musculoskeletal",
-      "subtopic": "Gout",
-      "track": "Clinic",
-      "question": "ผู้ป่วยชายอายุ 58 ปี มีประวัติโรคเกาต์มา 5 ปี กำเริบเฉียบพลันประมาณ 2 ครั้ง/ปี บริเวณข้อเท้าและหัวแม่เท้า ปัจจุบันได้รับยา allopurinol 300 mg 1x1 ตรวจเลือดล่าสุด 3 เดือนก่อนได้ค่า serum uric acid 7.2 mg/dL และมีโรคประจำตัวคือ type 2 DM, HTN ใช้ยา losartan, metformin, aspirin เมื่อ 2 วันก่อนมีอาการปวด บวม แดง ที่ข้อเท้าขวา ไม่มีไข้ ผู้ป่วยแจ้งว่าไม่ได้หยุดยา allopurinol ปัจจัย/สาเหตุใดที่ส่งผลต่อการเกิดอาการปวดขอกำเริบ",
-      "questionImage": "",
-      "choices": [
-        "ใช้ Allopurinol เป็นเวลานานอย่างต่อเนื่อง",
-        "ได้รับ Aspirin",
-        "ได้รับ Metformin",
-        "ได้รับ Losartan",
-        "Uric acid ในเลือดสูงกว่าค่าปกติ"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. ได้รับ Aspirin</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ได้รับ Aspirin Low-dose aspirin ยับยั้งการหลั่งกรดยูริกที่ท่อไตสวนปลาย (renal tubular secretion) ทำให้ขับยูริกลดลงจนเกิดการคั่งและกระตุ้น acute gout flare ได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ใช้ Allopurinol เป็นเวลานานอย่างต่อเนื่อง):</b> เป็น Xanthine Oxidase Inhibitor สำหรับ Urate-Lowering Therapy (ULT) ระยะยาว ห้ามเริ่มใช้ขณะ acute gout flare กำเริบเฉียบพลัน และต้องระวัง severe cutaneous ADR (SCARs) โดยเฉพาะผู้ที่มี HLA-B*58:01<br>• <b>ข้อ ค. (ได้รับ Metformin):</b> เป็น Biguanide ที่เป็น first-line drug of choice ใน T2DM ลด hepatic gluconeogenesis ไม่ทำให้น้ำหนักเพิ่มและไม่ทำให้เกิด hypoglycemia แต่ contraindication เมื่อ eGFR < 30 mL/min (เสี่ยง lactic acidosis)<br>• <b>ข้อ ง. (ได้รับ Losartan):</b> เป็น ARB ปิดกั้น AT1 receptor โดยตรง เหมาะสำหรับผู้ป่วยที่ทนต่ออาการไอแห้งจาก ACEI ไม่ได้ และมี uricosuric effect เล็กน้อยในการลดกรดยูริก<br>• <b>ข้อ จ. (Uric acid ในเลือดสูงกว่าค่าปกติ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Renal Safety Limit:</b> ห้ามใช้ (contraindication) เมื่อ eGFR < 30 mL/min/1.73 m² และไม่ควรเริ่มยาเมื่อ eGFR 30-44 mL/min เนื่องจากเสี่ยงต่อ fatal Lactic Acidosis<br>• <b>Contrast Procedure:</b> ต้องหยุดยาก่อนหรือในวันที่ฉีดสารทึบรังสีชนิด iodinated radiocontrast และประเมิน eGFR ซ้ำหลังตรวจ 48 ชม. ก่อนเริ่มยาใหม่<br>• <b>Long-term Monitoring:</b> การใช้ระยะยาวลดการดูดซึม Vitamin B12 ควรตรวจติดตาม CBC และระดับวิตามินบี 12 เป็นระยะ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::4",
-      "itemNo": 2,
-      "category": "1. Musculoskeletal",
-      "subtopic": "Gout",
-      "track": "Clinic",
-      "question": "ทางเลือกการใช้ยาของโรคเกาต์เฉียบพลันในผู้ป่วยรายนี้",
-      "questionImage": "",
-      "choices": [
-        "Colchicine 0.6 mg BID",
-        "Ibuprofen 400 mg TID",
-        "Prednisolone 20 mg OD",
-        "Naproxen 250 mg BID",
-        "A+C"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. A+C</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>A+C ผู้ป่วยมีโรคร่วม DM และ HTN ควรหลีกเลี่ยง NSAIDs เพื่อลดความเสี่ยงไตเสื่อมและความดันขึ้น การเลือก Colchicine ขนาดปรับลด หรือ Short-course systemic steroid (Prednisolone) จึงเหมาะสมที่สุด</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Colchicine 0.6 mg BID):</b> ยับยั้ง microtubule polymerization และ neutrophil chemotaxis เป็น first-line ใน acute gout flare และ flare prophylaxis แต่มี ADR เด่นทาง GI (ท้องเสีย คลื่นไส้)<br>• <b>ข้อ ข. (Ibuprofen 400 mg TID):</b> เป็น non-selective NSAID ใช้บรรเทาอาการปวดและอักเสบระดับเล็กน้อยถึงปานกลาง มี GI toxicity ต่ำกว่า piroxicam/indomethacin แต่ต้องระวังใน CKD และ active PUD<br>• <b>ข้อ ค. (Prednisolone 20 mg OD):</b> เป็น intermediate-acting systemic corticosteroid ขนาดยอดนิยมสำหรับ immunosuppressive & anti-inflammatory therapy ต้องระวัง Cushingoid, infection, osteoporosis, peptic ulcer<br>• <b>ข้อ ง. (Naproxen 250 mg BID):</b> เป็น non-selective NSAID ที่มี cardiovascular safety profile ดีที่สุด และมี efficacy สูงในการระงับ acute inflammation</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Urate-Lowering Target:</b> เป้าหมาย Serum Uric Acid < 6.0 mg/dL ในผู้ป่วยทั่วไป (หรือ < 5.0 mg/dL ในรายที่มี tophi รุนแรง)<br>• <b>Prophylaxis Duration:</b> ต้องให้ anti-inflammatory prophylaxis (Colchicine หรือ low-dose NSAID) ควบคู่กับ ULT ต่อเนื่องอย่างน้อย 3-6 เดือน<br>• <b>Allopurinol Genetic Rule:</b> ตรวจ HLA-B*58:01 ในคนไทยก่อนเริ่ม Allopurinol ทุกรายเพื่อป้องกัน SJS/TEN</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::5",
-      "itemNo": 3,
-      "category": "1. Musculoskeletal",
-      "subtopic": "Gout",
-      "track": "Clinic",
-      "question": "ควรดำเนินการอย่างไรในการใช้ยา allopurinol ในระหว่างอาการกำเริบเฉียบพลัน",
-      "questionImage": "",
-      "choices": [
-        "ใช้เหมือนเดิม",
-        "ลดขนาดยา",
-        "เพิ่มขนาดยาทันที",
-        "หยุดยา",
-        "เปลี่ยนไปใช้ febuxostat"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ใช้เหมือนเดิม</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ใช้เหมือนเดิม หากผู้ป่วยรับประทาน Urate-Lowering Therapy (ULT) อยู่เดิมแล้วเกิด acute flare ไม่ควรหยุดหรือปรับขนาดยา ให้คงขนาดยาเดิมไว้และให้ยารักษาอาการอักเสบเฉียบพลันร่วมด้วย</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (ลดขนาดยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (เพิ่มขนาดยาทันที):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (หยุดยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เปลี่ยนไปใช้ febuxostat):</b> เป็น non-purine selective xanthine oxidase inhibitor ใช้เป็น alternative ULT ในผู้ที่ไม่ทนต่อ allopurinol หรือมี HLA-B*58:01 positive แต่ต้องระวังในผู้ป่วย ischemic heart disease</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Genetic Testing HLA-B*58:01:</b> คนไทยมีความชุกของ HLA-B*58:01 สูง แนะนำตรวจก่อนเริ่มยาเพื่อป้องกัน Severe Cutaneous Adverse Reactions (SCARs/SJS/TEN)<br>• <b>Acute Gout Timing:</b> ห้ามเริ่มยาขณะ acute flare กำเริบเฉียบพลัน ให้รอ 2-4 สัปดาห์หลังอาการสงบ หรือให้ prophylactic colchicine/NSAID ร่วมด้วย<br>• <b>Renal Adjustment:</b> ต้องปรับขนาดยาเริ่มต้นตามค่า eGFR (เช่น eGFR < 30 เริ่มต้น 50 mg/day) เพื่อป้องกัน allopurinol hypersensitivity syndrome (AHS)</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::6",
-      "itemNo": 4,
-      "category": "1. Musculoskeletal",
-      "subtopic": "Gout",
-      "track": "Clinic",
-      "question": "จากทางเลือกที่เหมาะสมในการใช้รักษาเกาต์เฉียบพลัน ยาที่เลือกมีกลไกการออกฤทธิ์อย่างไร",
-      "questionImage": "",
-      "choices": [
-        "ลดการสร้าง uric acid โดยตรง",
-        "เพิ่มการขับ uric acid โดยยับยั้งการดูดกลับที่ proximal tubule",
-        "ยับยั้งการรวม microtubule → ลดการรวมตัว/เคลื่อนไหวและกลืนกินของ neutrophil",
-        "ยับยั้ง COX2 ลดการอักเสบ",
-        "เพิ่มการสลาย uric acid"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. ยับยั้งการรวม microtubule → ลดการรวมตัว/เคลื่อนไหวและกลืนกินของ neutrophil</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยับยั้งการรวม microtubule → ลดการรวมตัว/เคลื่อนไหวและกลืนกินของ neutrophil Colchicine ออกฤทธิ์จับกับ tubulin ยับยั้ง microtubule polymerization ทำให้ขัดขวางการเคลื่อนที่ (chemotaxis) และ phagocytosis ของ neutrophil บริเวณข้อที่อักเสบ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ลดการสร้าง uric acid โดยตรง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (เพิ่มการขับ uric acid โดยยับยั้งการดูดกลับที่ proximal tubule):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ยับยั้ง COX2 ลดการอักเสบ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพิ่มการสลาย uric acid):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Urate-Lowering Target:</b> เป้าหมาย Serum Uric Acid < 6.0 mg/dL ในผู้ป่วยทั่วไป (หรือ < 5.0 mg/dL ในรายที่มี tophi รุนแรง)<br>• <b>Prophylaxis Duration:</b> ต้องให้ anti-inflammatory prophylaxis (Colchicine หรือ low-dose NSAID) ควบคู่กับ ULT ต่อเนื่องอย่างน้อย 3-6 เดือน<br>• <b>Allopurinol Genetic Rule:</b> ตรวจ HLA-B*58:01 ในคนไทยก่อนเริ่ม Allopurinol ทุกรายเพื่อป้องกัน SJS/TEN</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::7",
-      "itemNo": 5,
-      "category": "1. Musculoskeletal",
-      "subtopic": "Gout",
-      "track": "Clinic",
-      "question": "ADR ของ Allopurinol ที่พบได้บ่อย/สำคัญ",
-      "questionImage": "",
-      "choices": [
-        "ตับอักเสบ",
-        "Hypoglycemia",
-        "ต้อกระจก",
-        "บวมน้ำ",
-        "SJS/TEN (รุนแรงทางผิวหนัง)"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. SJS/TEN (รุนแรงทางผิวหนัง)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>SJS/TEN (รุนแรงทางผิวหนัง) Allopurinol มีความเสี่ยงสำคัญต่อการเกิดภาวะ Severe Cutaneous Adverse Reactions (SCARs) เช่น SJS/TEN โดยเฉพาะในผู้ที่มีอัลลีล HLA-B*58:01</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ตับอักเสบ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Hypoglycemia):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ต้อกระจก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (บวมน้ำ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Gout เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Genetic Testing HLA-B*58:01:</b> คนไทยมีความชุกของ HLA-B*58:01 สูง แนะนำตรวจก่อนเริ่มยาเพื่อป้องกัน Severe Cutaneous Adverse Reactions (SCARs/SJS/TEN)<br>• <b>Acute Gout Timing:</b> ห้ามเริ่มยาขณะ acute flare กำเริบเฉียบพลัน ให้รอ 2-4 สัปดาห์หลังอาการสงบ หรือให้ prophylactic colchicine/NSAID ร่วมด้วย<br>• <b>Renal Adjustment:</b> ต้องปรับขนาดยาเริ่มต้นตามค่า eGFR (เช่น eGFR < 30 เริ่มต้น 50 mg/day) เพื่อป้องกัน allopurinol hypersensitivity syndrome (AHS)</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    }
-  ],
-  "19. Dosage Form & Drug Delivery": [
-    {
-      "id": "📥 รวมข้อสอบด่วน::8",
-      "itemNo": 6,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "6.1 Tablet Manufacturing",
-      "track": "Product",
-      "question": "ยาเม็ดเคลือบฟิล์มที่มีตัวยาสำคัญน้อยกว่า 25 mg ใช้วิธีการผลิตใดเหมาะสมที่สุด",
-      "questionImage": "",
-      "choices": [
-        "Direct compression",
-        "Extrusion and spheronization",
-        "Rolling compaction",
-        "Slugging",
-        "Wet granulation"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. Wet granulation</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Wet granulation ตัวยาที่มีปริมาณน้อย (low dose / < 25 mg หรือ < 25% w/w) มีความเสี่ยงต่อปัญหาความสม่ำเสมอของตัวยา (Content Uniformity) วิธีการแกรนูลเปียก (Wet granulation) จะช่วยกระจายตัวยาให้เกาะกับสารช่วยสม่ำเสมอที่สุด</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Direct compression):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 6.1 Tablet Manufacturing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Extrusion and spheronization):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 6.1 Tablet Manufacturing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Rolling compaction):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 6.1 Tablet Manufacturing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Slugging):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 6.1 Tablet Manufacturing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::9",
-      "itemNo": 7,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "4.1 Excipients classification",
-      "track": "Product",
-      "question": "ในสูตรตำรับยาเม็ด allopurinol มีส่วนประกอบ pregelatinized starch, microcrystalline cellulose, Mg stearate, Titanium oxide, PEG, Lactose monohydrate และ Sodium starch glycolate (SSG) มีหน้าที่อะไรในสูตรตำรับ",
-      "questionImage": "",
-      "choices": [
-        "เพื่อเทลงเบ้าได้ดี (Glidant)",
-        "เพื่อให้ไม่ติดหน้าสาก (Anti-adherent)",
-        "เพื่อให้ film เคลือบหนาเหมาะสม (Coating agent)",
-        "เพื่อให้ละลายน้ำ/ลงน้ำ แล้วกระจายตัวได้เหมาะสม (Superdisintegrant)",
-        "เพื่อให้ film ยืดหยุ่นได้เหมาะสม (Plasticizer)"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. เพื่อให้ละลายน้ำ/ลงน้ำ แล้วกระจายตัวได้เหมาะสม (Superdisintegrant)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>เพื่อให้ละลายน้ำ/ลงน้ำ แล้วกระจายตัวได้เหมาะสม (Superdisintegrant) Sodium starch glycolate จัดเป็น Superdisintegrant ช่วยดูดซับน้ำและพองตัวอย่างรวดเร็ว ทำให้เมดยาแตกตัวและกระจายตัวได้ดีเมื่อสัมผัสน้ำ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เพื่อเทลงเบ้าได้ดี (Glidant)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.1 Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (เพื่อให้ไม่ติดหน้าสาก (Anti-adherent)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.1 Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (เพื่อให้ film เคลือบหนาเหมาะสม (Coating agent)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.1 Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพื่อให้ film ยืดหยุ่นได้เหมาะสม (Plasticizer)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.1 Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Genetic Testing HLA-B*58:01:</b> คนไทยมีความชุกของ HLA-B*58:01 สูง แนะนำตรวจก่อนเริ่มยาเพื่อป้องกัน Severe Cutaneous Adverse Reactions (SCARs/SJS/TEN)<br>• <b>Acute Gout Timing:</b> ห้ามเริ่มยาขณะ acute flare กำเริบเฉียบพลัน ให้รอ 2-4 สัปดาห์หลังอาการสงบ หรือให้ prophylactic colchicine/NSAID ร่วมด้วย<br>• <b>Renal Adjustment:</b> ต้องปรับขนาดยาเริ่มต้นตามค่า eGFR (เช่น eGFR < 30 เริ่มต้น 50 mg/day) เพื่อป้องกัน allopurinol hypersensitivity syndrome (AHS)</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::10",
-      "itemNo": 8,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "4.4 Good Manufacturing Practice",
-      "track": "Product",
-      "question": "การผลิตยาเคลือบฟิล์ม allopurinol มีการบันทึกลง BMR แต่ผู้ปฏิบัติงานลืมบันทึกแล้วมาบันทึกหลังจากกระบวนการเสร็จแล้ว เป็นการปฏิบัติผิด Data integrity ด้านใดตามหลัก ALCOA",
-      "questionImage": "",
-      "choices": [
-        "Accurate",
-        "Contemporary",
-        "Enduring",
-        "Legible",
-        "Original"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Contemporary</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Contemporary หลัก ALCOA ตัว 'C' หมายถึง Contemporaneous คือต้องบันทึกข้อมูลแบบเรียลไทม์ขณะที่เกิดกิจกรรมนั้นทันที การมาบันทึกย้อนหลังหลังเสร็จสิ้นกระบวนการจึงผิดหลักด้าน Contemporary</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Accurate):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.4 Good Manufacturing Practice เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Enduring):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.4 Good Manufacturing Practice เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Legible):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.4 Good Manufacturing Practice เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Original):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 4.4 Good Manufacturing Practice เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Genetic Testing HLA-B*58:01:</b> คนไทยมีความชุกของ HLA-B*58:01 สูง แนะนำตรวจก่อนเริ่มยาเพื่อป้องกัน Severe Cutaneous Adverse Reactions (SCARs/SJS/TEN)<br>• <b>Acute Gout Timing:</b> ห้ามเริ่มยาขณะ acute flare กำเริบเฉียบพลัน ให้รอ 2-4 สัปดาห์หลังอาการสงบ หรือให้ prophylactic colchicine/NSAID ร่วมด้วย<br>• <b>Renal Adjustment:</b> ต้องปรับขนาดยาเริ่มต้นตามค่า eGFR (เช่น eGFR < 30 เริ่มต้น 50 mg/day) เพื่อป้องกัน allopurinol hypersensitivity syndrome (AHS)</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::20",
-      "itemNo": 18,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Excipients classification",
-      "track": "Product",
-      "question": "Ramipril 5 mg เป็นแคปซูลเจลาตินแข็งสีขาว/แดง ผงสีขาวถึงเกือบขาว ในเมดยาประกอบไปด้วย Ramipril, Colloidal anhydrous silica, Pregelatinized starch สาร Pregelatinized starch (แป้งข้าวโพดพรีเจลาติไนซ์) มีหน้าที่หลักอะไรในสูตรตำรับนี้",
-      "questionImage": "",
-      "choices": [
-        "สารหล่อลื่น (Lubricant)",
-        "สารช่วยการไหล (Glidant)",
-        "สารช่วยยึดเกาะ (Binder)",
-        "สารเพิ่มปริมาณ (Diluent/Filler)",
-        "สารช่วยให้เปลือกแคปซูลแตก"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. สารเพิ่มปริมาณ (Diluent/Filler)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>สารเพิ่มปริมาณ (Diluent/Filler) ในสูตรตำรับแคปซูลเจลาตินแข็งที่ตัวยามีปริมาณน้อย (Ramipril 5 mg) แป้ง Pregelatinized starch มีบทบาทหลักเป็น Diluent/Filler เพื่อเพิ่มปริมาณผงยาให้เต็มขนาดเบอร์ของแคปซูล และยังมีคุณสมบัติช่วยแตกตัวร่วมด้วย</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (สารหล่อลื่น (Lubricant)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (สารช่วยการไหล (Glidant)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (สารช่วยยึดเกาะ (Binder)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (สารช่วยให้เปลือกแคปซูลแตก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::21",
-      "itemNo": 19,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Hard & Soft Gelatin Capsules",
-      "track": "Product",
-      "question": "ข้อใดคือเหตุผลของการใช้ยา ramipril ในรูปแบบแคปซูลเจลาตินแข็ง แทนรูปแบบยาเม็ด (Tablet)",
-      "questionImage": "",
-      "choices": [
-        "ป้องกันแสง",
-        "ป้องกันความชื้น",
-        "ลดความแปรปรวนของอัตราการละลาย",
-        "แก้ปัญหาผงยาตอกอัดไม่ดี (Poor compressibility)",
-        "เพิ่มการออกฤทธิ์เนิ่นโดยไม่ต้องเคลือบ"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. แก้ปัญหาผงยาตอกอัดไม่ดี (Poor compressibility)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>แก้ปัญหาผงยาตอกอัดไม่ดี (Poor compressibility) ผงยาหรือสูตรตำรับบางชนิดมีสมบัติการตอกอัดไม่ดี (Poor compressibility) หรือไวต่อแรงกดดันทางกล การบรรจุลงแคปซูลเจลาตินแข็งจึงเป็นทางเลือกที่ดีเพื่อหลีกเลี่ยงกระบวนการตอกอัด</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ป้องกันแสง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Hard & Soft Gelatin Capsules เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ป้องกันความชื้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Hard & Soft Gelatin Capsules เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ลดความแปรปรวนของอัตราการละลาย):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Hard & Soft Gelatin Capsules เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพิ่มการออกฤทธิ์เนิ่นโดยไม่ต้องเคลือบ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Hard & Soft Gelatin Capsules เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::22",
-      "itemNo": 20,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Container & Closure Systems",
-      "track": "Product",
-      "question": "เหตุใดจึงต้องเก็บรักษา ramipril capsule ไว้ในบรรจุภัณฑ์ดั้งเดิม (Original package / Blister pack)",
-      "questionImage": "",
-      "choices": [
-        "กันแตกหักจากแรงกด",
-        "กันดูดความชื้นและการเสื่อมสลายของเจลาตินและตัวยา",
-        "กันปนเปื้อนเชื้อจุลชีพ",
-        "กันตัวยาเปลี่ยนรูปผลึก",
-        "กันการเปลี่ยนแปลงของรสชาติตัวยา"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. กันดูดความชื้นและการเสื่อมสลายของเจลาตินและตัวยา</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>กันดูดความชื้นและการเสื่อมสลายของเจลาตินและตัวยา เปลือกแคปซูลเจลาตินแข็งและตัวยา Ramipril ไวต่อความชื้นสูง การสัมผัสความชื้นจะทำให้เปลือกนิ่ม/เหนียวและเร่งปฏิกิริยา Hydrolysis ของ Ramipril จึงต้องเก็บในบรรจุภัณฑ์เดิมที่มีคุณสมบัติ Barrier ป้องกันความชื้น</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (กันแตกหักจากแรงกด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (กันปนเปื้อนเชื้อจุลชีพ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (กันตัวยาเปลี่ยนรูปผลึก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (กันการเปลี่ยนแปลงของรสชาติตัวยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>PUD & H. pylori Quadruple Therapy:</b> สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง<br>• <b>GERD Lifestyle & PPI Timing:</b> รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร<br>• <b>Constipation & Laxatives:</b> Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::33",
-      "itemNo": 31,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Parenterals & Ophthalmic",
-      "track": "Product",
-      "question": "การเติม Zinc chloride หรือ Zinc acetate ในสูตรตำรับ NPH insulin มีส่วนช่วยอะไรในสูตรตำรับ",
-      "questionImage": "",
-      "choices": [
-        "เสริมฤทธิ์การกันเสีย (preservative) ร่วมกับ phenol",
-        "ป้องกันการตกตะกอนของ insulin",
-        "ทำให้เกิดสารประกอบเชิงซ้อน (Complex) กับ insulin ส่งผลต่อการชะลอการออกฤทธิ์เนิ่น",
-        "ป้องกันการดูดซับของ insulin บนพื้นผิวภาชนะแก้ว type 1",
-        "เพื่อเพิ่มความคงตัวของ pH ในการผลิตและเก็บรักษา"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. ทำให้เกิดสารประกอบเชิงซ้อน (Complex) กับ insulin ส่งผลต่อการชะลอการออกฤทธิ์เนิ่น</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ทำให้เกิดสารประกอบเชิงซ้อน (Complex) กับ insulin ส่งผลต่อการชะลอการออกฤทธิ์เนิ่น ไอออนสังกะสี (Zinc ions) ช่วยประสานให้โมเลกุลอินซูลินกับโปรตามีน (Protamine) เกิดเป็นผลึกสารประกอบเชิงซ้อน (Isophane complex) ซึ่งช่วยชะลอการละลายและยืดระยะเวลาการออกฤทธิ์ (Intermediate-acting)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เสริมฤทธิ์การกันเสีย (preservative) ร่วมกับ phenol):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ป้องกันการตกตะกอนของ insulin):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ป้องกันการดูดซับของ insulin บนพื้นผิวภาชนะแก้ว type 1):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพื่อเพิ่มความคงตัวของ pH ในการผลิตและเก็บรักษา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::34",
-      "itemNo": 32,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Autoclave & Sterilization",
-      "track": "Product",
-      "question": "กระบวนการ Sterilization ที่เหมาะสมที่สุดกับผลิตภัณฑ์สำเร็จรูปยาฉีด Insulin injection ได้แก่ข้อใด",
-      "questionImage": "",
-      "choices": [
-        "Dry heat sterilization",
-        "Sterile filtration (การกรองปราศจากเชื้อ)",
-        "Steam sterilization (Autoclave)",
-        "Ethylene oxide gas sterilization",
-        "Gamma radiation sterilization"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Sterile filtration (การกรองปราศจากเชื้อ)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Sterile filtration (การกรองปราศจากเชื้อ) อินซูลินเป็นสารชีววัตถุประเภทโปรตีนที่ไวต่อความร้อนสูง (Thermolabile) จึงไม่สามารถทนความร้อนจากการ Autoclave หรือ Dry heat ได้ จึงต้องใช้วิธี Membrane filtration (0.22 ไมครอน) ในสภาวะ Aseptic processing</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Dry heat sterilization):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Autoclave & Sterilization เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Steam sterilization (Autoclave)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Autoclave & Sterilization เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Ethylene oxide gas sterilization):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Autoclave & Sterilization เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Gamma radiation sterilization):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Autoclave & Sterilization เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <71> Sterility Tests, <85> Bacterial Endotoxins Test & WHO Good Manufacturing Practices for Sterile Pharmaceutical Products</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::35",
-      "itemNo": 33,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Parenterals & Ophthalmic",
-      "track": "Product",
-      "question": "ข้อใดคือแนวทางแก้ปัญหาที่มักพบในการผลิตยาฉีด insulin injection แล้วเกิดฟองและการรวมกลุ่ม (Aggregation) ของโปรตีน",
-      "questionImage": "",
-      "choices": [
-        "ลดอุณหภูมิระหว่างการผลิตให้ต่ำกว่า 0 °C",
-        "เพิ่มสารลดแรงตึงผิวชนิด non-ionic เช่น polysorbate 20",
-        "เติม zinc รูป zinc chloride เพิ่มขึ้น",
-        "ใช้ nitrogen purging ไล่ออกซิเจน",
-        "เปลี่ยนสูตรตำรับเป็น acetate buffer แทน phosphate buffer"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. เพิ่มสารลดแรงตึงผิวชนิด non-ionic เช่น polysorbate 20</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>เพิ่มสารลดแรงตึงผิวชนิด non-ionic เช่น polysorbate 20 การเติม Non-ionic surfactant เช่น Polysorbate 20 หรือ Polysorbate 80 จะช่วยลดแรงตึงผิวที่รอยต่อระหว่างของเหลวกับอากาศ ขัดขวางไม่ให้สายโปรตีนคลายตัวและจับกลุ่มกัน (anti-aggregation) จากการกวนหรือเขย่า</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ลดอุณหภูมิระหว่างการผลิตให้ต่ำกว่า 0 °C):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (เติม zinc รูป zinc chloride เพิ่มขึ้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ใช้ nitrogen purging ไล่ออกซิเจน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เปลี่ยนสูตรตำรับเป็น acetate buffer แทน phosphate buffer):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Parenterals & Ophthalmic เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::48",
-      "itemNo": 46,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Liquid & Semisolids",
-      "track": "Product",
-      "question": "ในการพัฒนาสูตรตำรับยาพ่นจมูกในรูปแบบสารละลาย (Non-pressurized Multiple Dose Nasal Spray Solution) ไม่จำเป็นต้องทำการทดสอบใด",
-      "questionImage": "",
-      "choices": [
-        "Uniformity of dosage unit / delivered dose uniformity",
-        "Droplet size distribution",
-        "Actuator deposition",
-        "Shake requirement",
-        "Plume geometry / spray pattern"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Shake requirement</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Shake requirement สูตรตำรับยาพ่นจมูกที่เป็น \"สารละลายเนื้อเดียว\" (Nasal solution) ตัวยาละลายสมบูรณ์เป็นเฟสเดียว จึงไม่จำเป็นต้องเขย่าก่อนใช้ (ไม่ต้องทดสอบ Shake requirement แตกต่างจากรูปแบบ Nasal suspension)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Uniformity of dosage unit / delivered dose uniformity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Droplet size distribution):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Actuator deposition):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Plume geometry / spray pattern):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::49",
-      "itemNo": 47,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Liquid & Semisolids",
-      "track": "Product",
-      "question": "ข้อใดไม่ใช่ปัจจัยที่นำมาพิจารณาการตั้งตำรับผลิตภัณฑ์ยาพ่นจมูกรูปแบบสารละลาย",
-      "questionImage": "",
-      "choices": [
-        "Particle size",
-        "Solvent",
-        "Viscosity",
-        "Osmolarity",
-        "pH"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. Particle size</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Particle size เนื่องจากเป็นรูปแบบ \"สารละลาย\" (Solution) ตัวยาละลายหมดไม่มีอนุภาคแขวนลอย จึงไม่ต้องควบคุม Particle size (จะควบคุมเฉพาะในยาพ่นรูปแบบ Suspension หรือ Dry powder)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (Solvent):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Viscosity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Osmolarity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (pH):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::59",
-      "itemNo": 57,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Solutions, Syrups & Elixirs",
-      "track": "Product",
-      "question": "สารช่วยในข้อใด ไม่จำเป็น สำหรับการตั้งตำรับยาน้ำเชื่อม ferrous sulfate syrup",
-      "questionImage": "",
-      "choices": [
-        "Citric acid",
-        "Disodium EDTA",
-        "Paraben (Methyl/Propyl paraben)",
-        "Sodium metabisulfite",
-        "Sucrose"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Disodium EDTA</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Disodium EDTA ในตำรับยาน้ำ ferrous sulfate ต้องมีสารต้านออกซิเดชัน (Antioxidant เช่น Sodium metabisulfite, Citric acid/Ascorbic acid) เพื่อป้องกันการเปลี่ยนรูป Fe2+ เป็น Fe3+, มีสารกันเสีย (Paraben) และสารให้ความหวาน (Sucrose) ส่วน Disodium EDTA จัดเป็น Strong Chelating agent ซึ่งจะไปจับกับประจุ Fe2+ ทำให้ขัดขวางการปลดปล่อยและการดูดซึมของตัวยาสำคัญ จึงไม่ใส่ในตำรับนี้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Citric acid):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Solutions, Syrups & Elixirs เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Paraben (Methyl/Propyl paraben)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Solutions, Syrups & Elixirs เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Sodium metabisulfite):</b> เป็น Water-soluble antioxidant สำหรับตำรับยาฉีดหรือยาน้ำที่ไวต่อการเกิด oxidation ในสภาวะกรด (acidic pH)<br>• <b>ข้อ จ. (Sucrose):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Solutions, Syrups & Elixirs เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::60",
-      "itemNo": 58,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Container & Closure Systems",
-      "track": "Product",
-      "question": "ภาชนะบรรจุชนิดใดเหมาะสมที่สุดแก่การบรรจุยาน้ำเชื่อม ferrous sulfate syrup เพื่อรักษาความคงตัวของตัวยา",
-      "questionImage": "",
-      "choices": [
-        "Tight container ทั่วไป",
-        "Children resistant container",
-        "Glass container แบบใส",
-        "Amber glass container (ขวดแก้วสีชา)",
-        "Opaque plastic container แบบโปร่งแสง"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Amber glass container (ขวดแก้วสีชา)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Amber glass container (ขวดแก้วสีชา) สารละลายธาตุเหล็ก ferrous ไวต่อแสงและออกซิเจนสูง (เกิด Photo-oxidation เปลี่ยนเป็น ferric oxide ตกตะกอนสีน้ำตาลแดง) จึงจำเป็นต้องบรรจุในขวดแก้วสีชา (Amber glass container) ที่มีคุณสมบัติป้องกันแสงและทึบอากาศ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Tight container ทั่วไป):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Children resistant container):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Glass container แบบใส):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Opaque plastic container แบบโปร่งแสง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Container & Closure Systems เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::61",
-      "itemNo": 59,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Compounding adjustments",
-      "track": "Product",
-      "question": "ผลิตภัณฑ์สารละลาย 4% w/v Ferrous sulphate (Heptahydrate, MW = 278) หากรับประทานปริมาณ 100 mg จะได้รับปริมาณ Elemental iron (Fe, MW = 56) คิดเป็นกี่มิลลิกรัม",
-      "questionImage": "",
-      "choices": [
-        "10.1 mg",
-        "14.2 mg",
-        "20.1 mg",
-        "25.0 mg",
-        "30.0 mg"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. 20.1 mg</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>20.1 mg คำนวณตามสัดส่วน MW: (MW Fe / MW Ferrous sulfate heptahydrate) * ขนาดยา = (56 / 278) * 100 mg = 0.2014 * 100 mg ≈ 20.1 mg ของ Elemental iron (หรือคิดเป็นประมาณร้อยละ 20 โดยน้ำหนัก)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (10.1 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Compounding adjustments เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (14.2 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Compounding adjustments เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (25.0 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Compounding adjustments เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (30.0 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Compounding adjustments เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Iron Deficiency Anemia Dosing:</b> Elemental iron 100-200 mg/day แบ่งรับประทานตอนท้องว่าง (หรือพร้อมวิตามินซีเพื่อเพิ่มการดูดซึม) และทานต่อเนื่อง 3-6 เดือนหลัง Hb ปกติเพื่อเติม iron store<br>• <b>Thalassemia Precaution:</b> ห้ามให้ธาตุเหล็กเสริมในผู้ป่วย Thalassemia เด็ดขาดเว้นแต่พิสูจน์แล้วว่ามีภาวะ Iron deficiency ร่วมด้วย เพราะเสี่ยงต่อ iron overload<br>• <b>Neutropenic Fever Protocol:</b> ในผู้ป่วยเคมีบำบัดที่มี Absolute Neutrophil Count (ANC) < 500 cells/uL ร่วมกับมีไข้ ต้องเริ่ม broad-spectrum antipseudomonal beta-lactam (Ceftazidime, Cefepime, Meropenem) ทันทีภายใน 1 ชม.</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::75",
-      "itemNo": 73,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Excipients classification",
-      "track": "Product",
-      "question": "ข้อใดเป็นสารช่วย (Excipients) ที่นิยมใช้ใน formulation ของยาฉีด monoclonal antibody เพื่อลดการเกิด aggregation และเพิ่ม stability ของโปรตีน",
-      "questionImage": "",
-      "choices": [
-        "Sorbitol",
-        "Mannitol",
-        "Polysorbate 80 (Surfactant)",
-        "Sodium Chloride",
-        "PEG 400"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Polysorbate 80 (Surfactant)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Polysorbate 80 (Surfactant) Polysorbate 80 หรือ Polysorbate 20 เป็นนอนไอออนิกเซอร์แฟกแทนต์ที่ช่วยแย่งจับที่รอยต่อระหว่างของเหลวกับอากาศ/ผิวภาชนะ ป้องกันไม่ให้โปรตีนสัมผัสพื้นผิวและลดการเกิดการรวมกลุ่ม (Anti-aggregation)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Sorbitol):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Mannitol):</b> เป็น Diluent ชนิด non-hygroscopic ให้ negative heat of solution (รู้สึกเย็นในปาก) นิยมใช้ใน chewable tablets และ orally disintegrating tablets (ODTs)<br>• <b>ข้อ ง. (Sodium Chloride):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (PEG 400):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::88",
-      "itemNo": 86,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Transdermal Delivery (TDS)",
-      "track": "Product",
-      "question": "ข้อใดเป็นคำแนะนำการใช้ยาคุมกำเนิดชนิดแผ่นแปะผิวหนัง (Transdermal contraceptive patch) ที่ถูกต้อง",
-      "questionImage": "",
-      "choices": [
-        "เปลี่ยนแผ่นใหม่ทุก 3 วัน",
-        "แปะซ้อน 2 แผ่นเพื่อกันหลุด",
-        "สามารถตัดแบ่งครึ่งแผ่นได้หากน้ำหนักตัวน้อย",
-        "แปะบริเวณเต้านมเพื่อเพิ่มการดูดซึม",
-        "แปะสัปดาห์ละ 1 แผ่นต่อเนื่อง 3 สัปดาห์ แล้วเว้นไม่แปะ 1 สัปดาห์"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. แปะสัปดาห์ละ 1 แผ่นต่อเนื่อง 3 สัปดาห์ แล้วเว้นไม่แปะ 1 สัปดาห์</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>แปะสัปดาห์ละ 1 แผ่นต่อเนื่อง 3 สัปดาห์ แล้วเว้นไม่แปะ 1 สัปดาห์ การใช้แผ่นแปะคุมกำเนิดฮอร์โมนรวม ให้แปะแผ่นละ 7 วัน (เปลี่ยนแผ่นใหม่สัปดาห์ละ 1 ครั้ง) ติดต่อกัน 3 สัปดาห์ (3 แผ่น) และสัปดาห์ที่ 4 เป็นสัปดาห์ที่เว้นการแปะเพื่อให้มีประจำเดือน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เปลี่ยนแผ่นใหม่ทุก 3 วัน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (แปะซ้อน 2 แผ่นเพื่อกันหลุด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (สามารถตัดแบ่งครึ่งแผ่นได้หากน้ำหนักตัวน้อย):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (แปะบริเวณเต้านมเพื่อเพิ่มการดูดซึม):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Topical Corticosteroid Potency:</b> Class 1 (Clobetasol propionate 0.05%) ห้ามทาใบหน้า ซอกพับ หรือเด็กเล็ก; ผื่นใบหน้า/ข้อพับให้ใช้ Low potency (Hydrocortisone 1%) เพื่อป้องกัน skin atrophy และ striae<br>• <b>Acne Vulgaris Hierarchy:</b> Mild comedonal ใช้ Topical Retinoids; Moderate inflammatory เติม Benzoyl Peroxide (BPO) + Topical Clindamycin; Severe cystic acne พิจารณา Oral Isotretinoin (ต้องคุมกำเนิดเข้มงวด)<br>• <b>Atopic Dermatitis Care:</b> ใช้ Emollients บำรุงผิวสม่ำเสมอทันทีหลังอาบน้ำ (ภายใน 3 นาที) และใช้ Topical Calcineurin Inhibitors (Tacrolimus) เป็น steroid-sparing agent บนใบหน้า</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::91",
-      "itemNo": 89,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Tablet Coating",
-      "track": "Product",
-      "question": "ข้อใด ไม่ใช่ สารที่นำมาใช้เป็นสารช่วยในกระบวนการเคลือบน้ำตาลของยาเม็ด (Sugar coating process)",
-      "questionImage": "",
-      "choices": [
-        "Calcium carbonate (Subcoating powder)",
-        "Wax (Carnuba/Beeswax สำหรับขัดเงา)",
-        "Gelatin (Binder ในน้ำเชื่อม)",
-        "Colloidal silicon dioxide (CSD)",
-        "Acrylate polymer (Film former สำหรับฟิล์มโค้ต)"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. Acrylate polymer (Film former สำหรับฟิล์มโค้ต)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Acrylate polymer (Film former สำหรับฟิล์มโค้ต) Acrylate polymer (เช่น Eudragit) หรือ Cellulose derivatives เป็นสารก่อฟิล์มหลักในกระบวนการเคลือบฟิล์ม (Film coating) ไม่ได้ใช้ในขั้นตอนการเคลือบน้ำตาลแบบดั้งเดิม (Sugar coating)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Calcium carbonate (Subcoating powder)):</b> เป็น Phosphate binder สำหรับ CKD ต้องเคี้ยวพร้อมอาหารเพื่อจับฟอสเฟตในทางเดินอาหาร และทำหน้าที่เสริมแคลเซียม<br>• <b>ข้อ ข. (Wax (Carnuba/Beeswax สำหรับขัดเงา)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Gelatin (Binder ในน้ำเชื่อม)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Colloidal silicon dioxide (CSD)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::93",
-      "itemNo": 91,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Tablet Coating",
-      "track": "Product",
-      "question": "ข้อใด ไม่ถูกต้อง สำหรับยาเม็ดเคลือบน้ำตาล (Sugar-coated tablet)",
-      "questionImage": "",
-      "choices": [
-        "เป็นยาในรูปแบบ immediate release",
-        "ถ้าผู้ป่วยมือเปียกและไปสัมผัสกับเม็ดยา จะทำให้ชั้นนอกของเม็ดเคลือบเกิดการเปลี่ยนแปลงทันที",
-        "ผู้ป่วยที่เป็นโรคเบาหวาน สามารถทานยาเม็ดเคลือบน้ำตาลได้ตามปกติ",
-        "ใช้ sucrose, lactose, mannitol ในสูตรยา",
-        "ยาเม็ดเคลือบน้ำตาล เหมาะกับสูตรตำรับตัวยาที่ไวต่อความชื้นและแสงได้ดีกว่าการเคลือบฟิล์มทุกประเภท"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. ยาเม็ดเคลือบน้ำตาล เหมาะกับสูตรตำรับตัวยาที่ไวต่อความชื้นและแสงได้ดีกว่าการเคลือบฟิล์มทุกประเภท</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยาเม็ดเคลือบน้ำตาล เหมาะกับสูตรตำรับตัวยาที่ไวต่อความชื้นและแสงได้ดีกว่าการเคลือบฟิล์มทุกประเภท การเคลือบน้ำตาลใช้กระบวนการพอกด้วยน้ำเชื่อมหลายรอบ ซึ่งใช้ความร้อนและความชื้นในกระบวนการผลิตสูงมาก จึงไม่เหมาะกับตัวยาสำคัญที่ไวต่อความชื้นและความร้อนสูง (Moisture/Heat labile drugs)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เป็นยาในรูปแบบ immediate release):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ถ้าผู้ป่วยมือเปียกและไปสัมผัสกับเม็ดยา จะทำให้ชั้นนอกของเม็ดเคลือบเกิดการเปลี่ยนแปลงทันที):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ผู้ป่วยที่เป็นโรคเบาหวาน สามารถทานยาเม็ดเคลือบน้ำตาลได้ตามปกติ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ใช้ sucrose, lactose, mannitol ในสูตรยา):</b> เป็น Diluent / Filler ยอดนิยม ละลายน้ำได้ดี ให้ mouthfeel ที่ดี แต่เกิด Maillard reaction (เม็ดยาเปลี่ยนเป็นสีน้ำตาล) เมื่อผสมกับ primary amine drugs</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::102",
-      "itemNo": 100,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Inhalation devices",
-      "track": "Product",
-      "question": "ผู้ป่วยไม่สามารถรับประทานยาเม็ดได้และแพทย์ต้องการให้ยาในรูปแบบพ่นสูดชนิดสารละลาย (Nebulized solution) ข้อใดต่อไปนี้กล่าวผิดเกี่ยวกับยารูปแบบดังกล่าว",
-      "questionImage": "",
-      "choices": [
-        "เป็นการบริหารยาแบบ Non-invasive",
-        "ยาออกฤทธิ์เฉพาะที่อวัยวะเป้าหมายเท่านั้น ไม่เข้าสู่กระแสเลือดเลยในทุกกรณี",
-        "ยาที่สูดเข้าปอดโดยตรงไม่ต้องผ่าน hepatic first-pass metabolism",
-        "ผลข้างเคียงทั่วร่างกาย (Systemic side effects) มักน้อยกว่ายารูปแบบรับประทาน",
-        "สามารถปรับขนาดยาได้เมื่อเทียบกับยารูปแบบรับประทาน"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. ยาออกฤทธิ์เฉพาะที่อวัยวะเป้าหมายเท่านั้น ไม่เข้าสู่กระแสเลือดเลยในทุกกรณี</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยาออกฤทธิ์เฉพาะที่อวัยวะเป้าหมายเท่านั้น ไม่เข้าสู่กระแสเลือดเลยในทุกกรณี แม้ยาพ่นสูดจะมีเป้าหมายการออกฤทธิ์ที่ทางเดินหายใจ แต่ตัวยาบางส่วนที่ถูกกลืนลงทางเดินอาหารหรือดูดซึมผ่านเยื่อบุถุงลมปอดสามารถเข้าสู่กระแสเลือดได้ ไม่ได้จำกัดอยู่เฉพาะที่ 100% โดยไม่เข้าสู่กระแสเลือดเลย</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เป็นการบริหารยาแบบ Non-invasive):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ยาที่สูดเข้าปอดโดยตรงไม่ต้องผ่าน hepatic first-pass metabolism):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ผลข้างเคียงทั่วร่างกาย (Systemic side effects) มักน้อยกว่ายารูปแบบรับประทาน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (สามารถปรับขนาดยาได้เมื่อเทียบกับยารูปแบบรับประทาน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::103",
-      "itemNo": 101,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Inhalation devices",
-      "track": "Product",
-      "question": "หากต้องการเปลี่ยนแปลงยาเม็ดของผู้ป่วยเป็นรูปแบบชนิดพ่นสูด (Nebulized solution) ข้อใดต่อไปนี้ ไม่ใช่ ส่วนประกอบของสูตรตำรับดังกล่าว",
-      "questionImage": "",
-      "choices": [
-        "Solvent",
-        "Propellant (สารขับดัน)",
-        "Tonicity agent",
-        "Preservative",
-        "Solubilizer"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Propellant (สารขับดัน)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Propellant (สารขับดัน) สารขับดัน (Propellant เช่น HFA) ใช้เฉพาะในยาพ่นสูดชนิดพ่นอัดก๊าซ (Pressurized Metered-Dose Inhaler: pMDI) ส่วนยาพ่นละอองชนิด Nebulized solution เป็นสารละลายน้ำที่อาศัยแรงลมหรืออัลตราซาวด์จากเครื่องพ่น ไม่ต้องใช้ Propellant</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Solvent):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Tonicity agent):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Preservative):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Solubilizer):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::115",
-      "itemNo": 113,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Tablet Coating",
-      "track": "Product",
-      "question": "ยาเม็ดหนึ่งประกอบด้วย inactive ingredients: Magnesium stearate, Croscarmellose sodium, Titanium dioxide, Hypromellose, FD&C yellow no. 6 aluminum lake, Crystalline hydroxycellulose, Triacetin จากสูตรตำรับจัดเป็นยาเม็ดรูปแบบใด",
-      "questionImage": "",
-      "choices": [
-        "Effervescent tablet",
-        "Enteric coated tablet",
-        "Plain tablet",
-        "Film coated tablet",
-        "Compression coated tablet"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Film coated tablet</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Film coated tablet ในสูตรตำรับมี Hypromellose (Polymer ก่อฟิล์ม), Triacetin (Plasticizer), Titanium dioxide (Opacifier) และ Color lake ซึ่งเป็นองค์ประกอบมาตรฐานของฟิล์มเคลือบ จึงจัดเป็นยาเม็ดเคลือบฟิล์ม (Film coated tablet)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Effervescent tablet):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Enteric coated tablet):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Plain tablet):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Compression coated tablet):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::116",
-      "itemNo": 114,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Excipients classification",
-      "track": "Product",
-      "question": "ผู้ป่วยนำเมดยาออกจากแผงบรรจุ Alu-Alu แล้วนำมาใส่กล่องพลาสติก PVC เพื่อพกพาติดตัวไปทำงาน เมื่อถึงเวลารับประทานพบว่าเมดยาติดกันเป็นพวง Excipient ใดเป็นปัจจัยสำคัญที่ดูดความชื้นจนทำให้เกิดปัญหาดังกล่าว",
-      "questionImage": "",
-      "choices": [
-        "Microcrystalline cellulose",
-        "Lactose",
-        "Croscarmellose sodium (Superdisintegrant)",
-        "Magnesium stearate",
-        "Triacetin"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Croscarmellose sodium (Superdisintegrant)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Croscarmellose sodium (Superdisintegrant) Croscarmellose sodium เป็น Superdisintegrant ชนิด cross-linked carboxymethylcellulose ที่มีคุณสมบัติดูดซับความชื้นจากอากาศได้อย่างรวดเร็วและพองตัวสูง เมื่อนำออกจากแผงกันชื้น Alu-Alu มาใส่กล่องพลาสติกจึงดูดความชื้นจนเม็ดยาเหนียวติดกัน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Microcrystalline cellulose):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Lactose):</b> เป็น Diluent / Filler ยอดนิยม ละลายน้ำได้ดี ให้ mouthfeel ที่ดี แต่เกิด Maillard reaction (เม็ดยาเปลี่ยนเป็นสีน้ำตาล) เมื่อผสมกับ primary amine drugs<br>• <b>ข้อ ง. (Magnesium stearate):</b> เป็น Boundary lubricant ลดแรงเสียดทานระหว่างเม็ดยากับผนัง die wall แต่หาก over-mixing นานเกินไปจะทำให้เม็ดยากันน้ำ ละลายช้า และความแข็งของเม็ดยาลดลง<br>• <b>ข้อ จ. (Triacetin):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::117",
-      "itemNo": 115,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Preformulation & GMP",
-      "track": "Product",
-      "question": "รูปสัณฐาน (Polymorph) ของตัวยาสำคัญที่เหมาะสมและเสถียรที่สุดในการนำมาใช้เตรียมยาเม็ดในระดับอุตสาหกรรมคือรูปใด",
-      "questionImage": "",
-      "choices": [
-        "Monotropic polymorphs (Stable form)",
-        "Enantiotropic polymorphs",
-        "Amorphous anhydrates",
-        "Crystalline hydrates",
-        "Mixed solvates"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. Monotropic polymorphs (Stable form)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Monotropic polymorphs (Stable form) การผลิตยาเม็ดต้องการความคงตัวทางกายภาพและเคมีสูงสุด ไม่เกิดการเปลี่ยนรูปผลึกระหว่างการเก็บรักษา จึงนิยมใช้ผลึกในรูปที่เสถียรที่สุดในระบบสัณฐานเดี่ยว (Stable monotropic polymorph) เพื่อให้อัตราการละลายและการออกฤทธิ์คงที่ตลอดอายุยา</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (Enantiotropic polymorphs):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Preformulation & GMP เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Amorphous anhydrates):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Preformulation & GMP เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Crystalline hydrates):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Preformulation & GMP เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Mixed solvates):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Preformulation & GMP เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::126",
-      "itemNo": 124,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Pharmaceutical Calc",
-      "track": "Product",
-      "question": "ผลิตภัณฑ์ Acyclovir cream 5% w/w ในเนื้อครีม 1 g จะมีตัวยาสำคัญกี่มิลลิกรัม และถ้าต้องการตัวยา acyclovir ปริมาณ 25 mg ต้องชั่งเนื้อครีมนี้กี่กรัม",
-      "questionImage": "",
-      "choices": [
-        "0.5 mg/g, 0.0125 g",
-        "5 mg/g, 0.0125 g",
-        "5 mg/g, 0.125 g",
-        "50 mg/g, 0.5 g",
-        "50 mg/g, 1.25 g"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. 50 mg/g, 0.5 g</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>50 mg/g, 0.5 g ครีม 5% w/w คือ มีตัวยา 5 g ในเนื้อครีม 100 g หรือเท่ากับ 5,000 mg ใน 100 g -> ใน 1 g จะมีตัวยา = 50 mg/g และหากต้องการตัวยา 25 mg จะต้องใช้เนื้อครีม = 25 / 50 = 0.5 g</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (0.5 mg/g, 0.0125 g):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmaceutical Calc เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (5 mg/g, 0.0125 g):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmaceutical Calc เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (5 mg/g, 0.125 g):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmaceutical Calc เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (50 mg/g, 1.25 g):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmaceutical Calc เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::131",
-      "itemNo": 129,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Excipients classification",
-      "track": "Product",
-      "question": "หากพบว่าเนื้อยาครีม acyclovir มีความหนืดต่ำเกินไปหรือเหลวเกินไป ควรเติมสารช่วยปรับความข้นหนืด (Stiffening agent) ในข้อใดเพื่อเพิ่มความคงรูป",
-      "questionImage": "",
-      "choices": [
-        "Sodium lauryl sulfate",
-        "Mineral oil",
-        "Cetostearyl alcohol",
-        "Propylene glycol",
-        "Purified water"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Cetostearyl alcohol</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Cetostearyl alcohol (หรือ Stearyl alcohol, Cetyl alcohol) จัดเป็น Stiffening agent และ Consistency modifier ในตำรับยาครีม ช่วยเพิ่มความหนืด สร้างโครงสร้างอิมัลชัน และเพิ่มความคงรูปของเนื้อครีม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Sodium lauryl sulfate):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Mineral oil):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Propylene glycol):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Purified water):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Excipients classification เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::134",
-      "itemNo": 132,
-      "category": "19. Dosage Form & Drug Delivery",
-      "subtopic": "Liquid & Semisolids",
-      "track": "Product",
-      "question": "Acyclovir มีคุณสมบัติ MW 225 และละลายน้ำได้จำกัด (Solubility ประมาณ 2.5 mg/mL) ในขั้นตอนการเตรียม Acyclovir cream ควรมีเทคนิคการกระจายตัวยาลงในเบสครีมอย่างไร",
-      "questionImage": "",
-      "choices": [
-        "ละลายตัวยาทั้งหมดในน้ำแล้วค่อยเตรียมครีม",
-        "ละลายตัวยาใน Phase น้ำโดยใช้ความร้อนสูงแล้วค่อยผสมกับ Base",
-        "นำผงยาไปบดกระจายกับ Mineral oil ก่อนนำไปผสม Base",
-        "นำผงยาไตรจูเรตกระจายตัวกับตัวทำละลายและสารช่วยดูดซึม เช่น Propylene glycol (Levigating agent) ก่อนนำไปผสมเข้ากับเนื้อครีม",
-        "เทผงยาแห้งลงผสมกับเนื้อครีมโดยตรงทันที"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. นำผงยาไตรจูเรตกระจายตัวกับตัวทำละลายและสารช่วยดูดซึม เช่น Propylene glycol (Levigating agent) ก่อนนำไปผสมเข้ากับเนื้อครีม</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>นำผงยาไตรจูเรตกระจายตัวกับตัวทำละลายและสารช่วยดูดซึม เช่น Propylene glycol (Levigating agent) ก่อนนำไปผสมเข้ากับเนื้อครีม เนื่องจาก Acyclovir ละลายน้ำได้น้อย เทคนิคที่ถูกต้องในการเตรียมแบบ Suspension cream คือการใช้ Propylene glycol หรือสารตัวพาที่เหมาะสมเป็น Levigating agent บดลดขนาดอนุภาคผงยาให้เนียนละเอียดก่อน จึงค่อยนำไป Incorporation รวมกับเบสครีม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ละลายตัวยาทั้งหมดในน้ำแล้วค่อยเตรียมครีม):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ละลายตัวยาใน Phase น้ำโดยใช้ความร้อนสูงแล้วค่อยผสมกับ Base):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (นำผงยาไปบดกระจายกับ Mineral oil ก่อนนำไปผสม Base):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เทผงยาแห้งลงผสมกับเนื้อครีมโดยตรงทันที):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    }
-  ],
-  "20. Pharmaceutical Chemistry": [
-    {
-      "id": "📥 รวมข้อสอบด่วน::11",
-      "itemNo": 9,
-      "category": "20. Pharmaceutical Chemistry",
-      "subtopic": "13. Medicinal Chemistry",
-      "track": "Product",
-      "question": "รูปโครงสร้าง allopurinol ข้อใดถูกต้องที่สุด: (1) purine analog ยับยั้ง xanthine oxidase (2) log P -1.8 แปลว่าชอบน้ำ (hydrophilic) สูง ผ่านเยื่อหุ้มเซลล์ได้ไม่ดี (3) pKa 10.2 ใน physiological pH 7.4 อยู่ในรูปไม่แตกตัว (unionized)",
-      "questionImage": "",
-      "choices": [
-        "Prednisolone 5 mg OD",
-        "2 และ 3",
-        "1 และ 2",
-        "1 และ 3",
-        "ถูกทุกข้อ"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. ถูกทุกข้อ</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ถูกทุกข้อ โครงสร้าง Allopurinol เป็นไอโซเมอร์ของ hypoxanthine (purine analog) ยับยั้ง xanthine oxidase, มีค่า log P เป็นลบจึงชอบน้ำสูง และมี pKa 10.2 (weak acid) เมื่ออยู่ใน pH 7.4 จึงส่วนใหญ่อยู่ในรูปไม่แตกตัว (unionized form ~99.8%)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Prednisolone 5 mg OD):</b> เป็น intermediate-acting systemic corticosteroid ขนาดยอดนิยมสำหรับ immunosuppressive & anti-inflammatory therapy ต้องระวัง Cushingoid, infection, osteoporosis, peptic ulcer<br>• <b>ข้อ ข. (2 และ 3):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 13. Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (1 และ 2):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 13. Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (1 และ 3):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ 13. Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> Wilson and Gisvold's Textbook of Organic Medicinal and Pharmaceutical Chemistry (12th Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Genetic Testing HLA-B*58:01:</b> คนไทยมีความชุกของ HLA-B*58:01 สูง แนะนำตรวจก่อนเริ่มยาเพื่อป้องกัน Severe Cutaneous Adverse Reactions (SCARs/SJS/TEN)<br>• <b>Acute Gout Timing:</b> ห้ามเริ่มยาขณะ acute flare กำเริบเฉียบพลัน ให้รอ 2-4 สัปดาห์หลังอาการสงบ หรือให้ prophylactic colchicine/NSAID ร่วมด้วย<br>• <b>Renal Adjustment:</b> ต้องปรับขนาดยาเริ่มต้นตามค่า eGFR (เช่น eGFR < 30 เริ่มต้น 50 mg/day) เพื่อป้องกัน allopurinol hypersensitivity syndrome (AHS)</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::51",
-      "itemNo": 49,
-      "category": "20. Pharmaceutical Chemistry",
-      "subtopic": "Medicinal Chemistry",
-      "track": "Product",
-      "question": "Cetirizine เป็น racemate (R/S 1:1) Levocetirizine เป็น R-enantiomer บริสุทธิ์ที่มีฤทธิ์ต้านตัวรับฮิสตามีนชนิด H1 สูงกว่า S-enantiomer และอาจลดผลข้างเคียงเมื่อใช้ขนาดเทียบเท่า ภาพใดคือโครงสร้าง levocetirizine",
-      "questionImage": "",
-      "choices": [
-        "โครงสร้าง A",
-        "โครงสร้าง B",
-        "โครงสร้าง A และ B",
-        "ไม่ใช่ทั้ง A และ B",
-        "ตัดสินไม่ได้"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. โครงสร้าง A</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>โครงสร้าง A Levocetirizine มี configuration ของ chiral center (คาร์บอนที่ต่อกับวงฟีนิลสองวง) เป็นรูปแบบ (R)-enantiomer ตามโครงสร้างแบบจำลอง stereochemistry A</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (โครงสร้าง B):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (โครงสร้าง A และ B):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ไม่ใช่ทั้ง A และ B):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ตัดสินไม่ได้):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Glaucoma Prostaglandin Analogues:</b> Latanoprost หยอดตาวันละ 1 ครั้งก่อนนอน ผลข้างเคียง: ม่านตาสีคล้ำขึ้น ขนตายาวหนาขึ้น และตาแดง<br>• <b>Beta-blocker Eye Drops Caution:</b> Timolol eye drops ถูกดูดซึมเข้าระบบ systemic ได้ ต้องกดหัวตา (Nasolacrimal occlusion) 1-2 นาที และระวังในผู้ป่วย Asthma, Severe COPD, Bradycardia<br>• <b>Bacterial Conjunctivitis Treatment:</b> หยอดตาปฏิชีวนะ Broad-spectrum เช่น Fluoroquinolones (Moxifloxacin), Chloramphenicol, หรือ Polymyxin B/Neomycin</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::105",
-      "itemNo": 103,
-      "category": "20. Pharmaceutical Chemistry",
-      "subtopic": "Medicinal Chemistry",
-      "track": "Product",
-      "question": "ข้อใดถูกต้องเกี่ยวกับคุณสมบัติและเมแทบอลิซึมของยา Isoniazid",
-      "questionImage": "",
-      "choices": [
-        "ยานี้มีกลไกยับยั้งการสังเคราะห์ DNA โดยตรง",
-        "ทำให้ปัสสาวะมีสีส้มแดง",
-        "สารเมแทบอไลต์ Acetylhydrazine เกิดพิษต่อตับ (Hepatotoxicity)",
-        "สารเมแทบอไลต์ Diacetylhydrazine มีพิษต่อตับมากกว่า",
-        "เป็นสารเหนี่ยวนำเอนไซม์ CYP450 ที่แรงที่สุด"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. สารเมแทบอไลต์ Acetylhydrazine เกิดพิษต่อตับ (Hepatotoxicity)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>สารเมแทบอไลต์ Acetylhydrazine เกิดพิษต่อตับ (Hepatotoxicity) Isoniazid ถูก acetylated ในตับกลายเป็น Acetylisoniazid และสลายตัวต่อเป็น Acetylhydrazine ซึ่งเป็นสาร intermediate ที่มีพิษทำลายเซลล์ตับ (Hepatotoxicity) ในขณะที่ Diacetylhydrazine เป็นสารที่ไม่มีพิษ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ยานี้มีกลไกยับยั้งการสังเคราะห์ DNA โดยตรง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ทำให้ปัสสาวะมีสีส้มแดง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (สารเมแทบอไลต์ Diacetylhydrazine มีพิษต่อตับมากกว่า):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เป็นสารเหนี่ยวนำเอนไซม์ CYP450 ที่แรงที่สุด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Medicinal Chemistry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> Wilson and Gisvold's Textbook of Organic Medicinal and Pharmaceutical Chemistry (12th Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Pyridoxine (B6) Co-prescription:</b> ต้องให้ Vitamin B6 (Pyridoxine 50-100 mg/day) ร่วมด้วยในหญิงตั้งครรภ์, ผู้ติดเชื้อ HIV, เบาหวาน, ดื่มสุรา หรือไตวาย เพื่อป้องกัน peripheral neuropathy<br>• <b>Hepatotoxicity Monitoring:</b> ติดตามอาการเบื่ออาหาร คลื่นไส้ ตาเหลือง ตัวเหลือง หาก ALT/AST > 5 เท่า (ไม่มีอาการ) หรือ > 3 เท่า (มีอาการ) ต้องหยุดยาทันที</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    }
-  ],
-  "17. Quality Assurance & Analysis": [
-    {
-      "id": "📥 รวมข้อสอบด่วน::12",
-      "itemNo": 10,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Product Group 3: Spectroscopy & Optics",
-      "track": "Product",
-      "question": "จากการพิจารณาคุณสมบัติโครงสร้างของยา febuxostat วิธีการข้อใด ไม่เหมาะสมที่สุด ในการพัฒนาวิธีวิเคราะห์เพื่อควบคุมคุณภาพยา (หาปริมาณตัวยาสำคัญ หรือ พิสูจน์อัตลักษณ์)",
-      "questionImage": "",
-      "choices": [
-        "HPLC-UV",
-        "Mass spectroscopy",
-        "FT-IR spectroscopy",
-        "Spectrofluorometer",
-        "UV spectroscopy"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Spectrofluorometer</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Spectrofluorometer แม้โครงสร้างจะมี aromatic ring แต่ febuxostat ไม่ได้เป็น fluorophore ธรรมชาติที่มี native fluorescence สูงหรือจำเพาะพอที่จะเป็นวิธีหลักตาม Pharmacopoeia เมื่อเทียบกับ chromatographic methods และ spectroscopy อื่นๆ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (HPLC-UV):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Product Group 3: Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Mass spectroscopy):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Product Group 3: Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (FT-IR spectroscopy):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Product Group 3: Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (UV spectroscopy):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Product Group 3: Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Alternative Non-Purine ULT:</b> ใช้เป็นทางเลือกในผู้ที่แพ้ allopurinol หรือ HLA-B*58:01 positive ไม่ต้องปรับ dose ใน mild-moderate renal impairment<br>• <b>Cardiovascular Precaution:</b> มีคำเตือนระวังการใช้ในผู้ป่วยที่มีประวัติ ischemic heart disease หรือ severe heart failure</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::23",
-      "itemNo": 21,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Proximate Analysis of food",
-      "track": "Product",
-      "question": "การวิเคราะห์ปริมาณโซเดียมในผลิตภัณฑ์อาหาร สำหรับประเมินความเสี่ยงโรคความดันโลหิตสูง วิธีวิเคราะห์ใดมีความแม่นยำและถูกต้องมากที่สุด",
-      "questionImage": "",
-      "choices": [
-        "UV-vis",
-        "ICP-OES / ICP-MS",
-        "FTIR",
-        "TLC",
-        "NMR"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. ICP-OES / ICP-MS</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ICP-OES / ICP-MS การวิเคราะห์แร่ธาตุและโลหะระดับ trace elements เช่น Sodium (Na) วิธี Inductively Coupled Plasma (ICP-OES / ICP-MS) หรือ Atomic Absorption Spectroscopy (AAS) มีความไว (sensitivity) ความแม่นยำ และความจำเพาะสูงที่สุด</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (UV-vis):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Proximate Analysis of food เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (FTIR):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Proximate Analysis of food เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (TLC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Proximate Analysis of food เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (NMR):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Proximate Analysis of food เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> พระราชบัญญัติอาหาร พ.ศ. 2522 และประกาศกระทรวงสาธารณสุข (ฉบับมาตรฐานอาหารและโภชนาการ)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>BP Target Standard:</b> เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)<br>• <b>First-line Core Classes:</b> 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน<br>• <b>Special Populations:</b> ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::24",
-      "itemNo": 22,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Dissolution testing",
-      "track": "Product",
-      "question": "ห้องปฏิบัติการทดสอบยาเม็ด Amlodipine 3 lot ในหัวข้อ Dissolution ตาม USP (Q = 75% ที่เวลาที่กำหนด) พบว่าไม่มี lot ใดผ่านใน Stage 1 (S1, n=6) จึงทดสอบต่อใน Stage 2 (S2, เพิ่มอีก 6 เม็ด รวมเป็น 12 เม็ด): lot 1 เฉลี่ย 81.0% (ต่ำสุด 59%), lot 2 เฉลี่ย 76.3% (ต่ำสุด 58%), lot 3 เฉลี่ย 82.0% (ต่ำสุด 65%) ให้สรุปผลตามเกณฑ์ USP S2 (เกณฑ์: ค่าเฉลี่ย 12 เม็ด ≥ Q (75%) และไม่มีเม็ดใดน้อยกว่า Q-15% (60%))",
-      "questionImage": "",
-      "choices": [
-        "ทุก lot ผ่านหมด",
-        "ผ่านเฉพาะ lot 1",
-        "ผ่านเฉพาะ lot 3",
-        "ผ่านเฉพาะ lot 1 และ 3",
-        "ไม่มี lot ไหนผ่าน"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. ผ่านเฉพาะ lot 3</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ผ่านเฉพาะ lot 3 เกณฑ์ USP Stage 2 (n=12): ค่าเฉลี่ย ≥ Q (75%) และต้องไม่มีเม็ดใดต่ำกว่า Q - 15% (คือ < 60%) — Lot 1 มีเม็ด 59% (<60%) ตก; Lot 2 มีเม็ด 58% (<60%) ตก; มีเพียง Lot 3 ที่เฉลี่ย 82.0% (≥75%) และค่าต่ำสุดคือ 65% (≥60%) จึงผ่านเกณฑ์ S2 เพียง lot เดียว</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ทุก lot ผ่านหมด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dissolution testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ผ่านเฉพาะ lot 1):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dissolution testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ผ่านเฉพาะ lot 1 และ 3):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dissolution testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ไม่มี lot ไหนผ่าน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Dissolution testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1088> In Vitro and In Vivo Evaluation of Dosage Forms & US FDA Guidance: The Biopharmaceutics Classification System (BCS)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Peripheral Edema:</b> ขยาย pre-capillary arteriolar เด่นชัด ทำให้เกิด non-allergic pedal edema (บวมข้อเท้า) แก้ไขโดยลด dose หรือใช้ร่วมกับ ACEI/ARB<br>• <b>CYP3A4 Metabolism:</b> เปลี่ยนสภาพผ่าน CYP3A4 หลีกเลี่ยงน้ำเกรปฟรุต และระวังระดับยาเพิ่มขึ้นเมื่อใช้ร่วมกับ diltiazem/azole antifungals</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::36",
-      "itemNo": 34,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Biosimilars & Quality Control",
-      "track": "Product",
-      "question": "Certificate of Analysis (COA) ของยาชีววัตถุคล้ายคลึง Insulin biosimilar glargine หัวข้อการทดสอบใด ไม่จำเป็นต้องมี ในข้อกำหนดมาตรฐาน",
-      "questionImage": "",
-      "choices": [
-        "Assay",
-        "Identification",
-        "Bacterial endotoxin",
-        "Impurity / Related substances",
-        "Dissolution"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. Dissolution</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Dissolution การทดสอบ Dissolution (การละลายของตัวยา) เป็นข้อกำหนดเฉพาะของยารูปแบบของแข็งรับประทาน (Solid dosage forms เช่น ยาเม็ด/แคปซูล) แต่ Insulin glargine เป็นยาเตรียมรูปแบบสารละลายฉีด (Solution for injection) จึงไม่มีหัวข้อนี้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Assay):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Identification):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Bacterial endotoxin):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Impurity / Related substances):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::37",
-      "itemNo": 35,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Biosimilars & Quality Control",
-      "track": "Product",
-      "question": "ความท้าทายสำคัญในการควบคุมคุณภาพยาชีววัตถุ (Biologics) เมื่อเปรียบเทียบกับยาเคมีสังเคราะห์โมเลกุลขนาดเล็ก (Small molecules) คือข้อใด",
-      "questionImage": "",
-      "choices": [
-        "Biologics มีโครงสร้างซับซ้อน ไวต่อสภาพแวดล้อม เช่น pH และความร้อนสูง และมีความไม่เป็นเนื้อเดียวกันระดับโมเลกุล",
-        "Biologics มีสูตรเคมีที่ง่ายต่อการสังเคราะห์มากกว่า",
-        "Small molecules ต้องเก็บรักษาในตู้เย็นทุกชนิด",
-        "Small molecules มีผลข้างเคียงมากกว่าเสมอ",
-        "Biologics ละลายในน้ำได้ง่ายกว่าทุกสภาวะ"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. Biologics มีโครงสร้างซับซ้อน ไวต่อสภาพแวดล้อม เช่น pH และความร้อนสูง และมีความไม่เป็นเนื้อเดียวกันระดับโมเลกุล</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Biologics มีโครงสร้างซับซ้อน ไวต่อสภาพแวดล้อม เช่น pH และความร้อนสูง และมีความไม่เป็นเนื้อเดียวกันระดับโมเลกุล ยาชีววัตถุมีโครงสร้างโมเลกุลขนาดใหญ่ มีโครงสร้างระดับตติยภูมิและจตุรภูมิที่ซับซ้อน (Higher-order structure) มีความผันแปรทางชีวภาพ (Microheterogeneity) และสลายตัวได้ง่ายเมื่อสัมผัสการเปลี่ยนแปลงของ pH อุณหภูมิ หรือแรงเฉือน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (Biologics มีสูตรเคมีที่ง่ายต่อการสังเคราะห์มากกว่า):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Small molecules ต้องเก็บรักษาในตู้เย็นทุกชนิด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Small molecules มีผลข้างเคียงมากกว่าเสมอ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Biologics ละลายในน้ำได้ง่ายกว่าทุกสภาวะ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>PUD & H. pylori Quadruple Therapy:</b> สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง<br>• <b>GERD Lifestyle & PPI Timing:</b> รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร<br>• <b>Constipation & Laxatives:</b> Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::39",
-      "itemNo": 37,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Stability testing",
-      "track": "Product",
-      "question": "Regular Insulin มีความเสี่ยงต่อการสูญเสียความคงตัวผ่านกระบวนการ Deamidation ในระหว่างการเก็บรักษา ปัจจัยหลักที่กระตุ้นให้เกิดปฏิกิริยาดังกล่าวคือข้อใด",
-      "questionImage": "",
-      "choices": [
-        "อุณหภูมิต่ำกว่าจุดเยือกแข็ง (freezing)",
-        "สภาวะ pH กรดอ่อน หรือ ด่าง และอุณหภูมิที่สูงขึ้น",
-        "การสัมผัสแสงแดดจ้า",
-        "การเขย่าขวดอย่างแรง",
-        "การดูดซับกับผนังหลอดฉีด"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. สภาวะ pH กรดอ่อน หรือ ด่าง และอุณหภูมิที่สูงขึ้น</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>สภาวะ pH กรดอ่อน หรือ ด่าง และอุณหภูมิที่สูงขึ้น ปฏิกิริยา Deamidation ของอินซูลิน (โดยเฉพาะตำแหน่ง Asn-A21 ในสภาวะกรด และ Asn-B3 ในสภาวะเป็นกลาง/ด่าง) ถูกเร่งได้ด้วยค่า pH ที่เบี่ยงเบนไปจากช่วงคงตัวและอุณหภูมิที่สูงขึ้น</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (อุณหภูมิต่ำกว่าจุดเยือกแข็ง (freezing)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Stability testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (การสัมผัสแสงแดดจ้า):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Stability testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (การเขย่าขวดอย่างแรง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Stability testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (การดูดซับกับผนังหลอดฉีด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Stability testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::50",
-      "itemNo": 48,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Liquid & Semisolids",
-      "track": "Product",
-      "question": "ข้อใดไม่จำเป็นต้องกำหนดในการควบคุมคุณภาพของผลิตภัณฑ์ยาพ่นจมูกรูปแบบสารละลาย",
-      "questionImage": "",
-      "choices": [
-        "Description",
-        "Assay",
-        "Moisture content",
-        "Microbial limit",
-        "Mean delivered dose"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Moisture content</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Moisture content (ปริมาณความชื้น) เป็นข้อกำหนดคุณภาพของยาเตรียมรูปแบบของแข็ง (Solid dosage form/Dry powder) แต่ยาพ่นจมูกชนิดสารละลายเป็นยาน้ำที่มีน้ำเป็นกระสายยาหลัก จึงไม่มีข้อกำหนดนี้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Description):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Assay):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Microbial limit):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Mean delivered dose):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1151> Pharmaceutical Dosage Forms & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::64",
-      "itemNo": 62,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Redox titration",
-      "track": "Product",
-      "question": "วิธีคำนวณหาปริมาณธาตุเหล็กของ ferrous fumarate / ferrous sulfate ที่แนะนำตามมาตรฐาน Pharmacopoeia มักใช้วิธีการไทเทรตแบบใด",
-      "questionImage": "",
-      "choices": [
-        "Acid-base titration",
-        "Redox titration (Permanganometry / Cerimetry)",
-        "Complexometric titration",
-        "Gravimetric titration",
-        "Colorimetric titration"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Redox titration (Permanganometry / Cerimetry)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Redox titration (Permanganometry / Cerimetry) การหาปริมาณตัวยาสำคัญของเกลือธาตุเหล็ก (Fe2+) ตามเภสัชตำรับ (Pharmacopoeia) ใช้วิธี Oxidation-Reduction (Redox) titration เช่น การใช้สารละลายมาตรฐาน Cerium (IV) หรือ Potassium permanganate เป็นตัวไทแทรนต์</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Acid-base titration):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Complexometric titration):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Gravimetric titration):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Colorimetric titration):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Redox titration เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <541> Titrimetry & British Pharmacopoeia (BP 2024) Appendix VIII</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Iron Deficiency Anemia Dosing:</b> Elemental iron 100-200 mg/day แบ่งรับประทานตอนท้องว่าง (หรือพร้อมวิตามินซีเพื่อเพิ่มการดูดซึม) และทานต่อเนื่อง 3-6 เดือนหลัง Hb ปกติเพื่อเติม iron store<br>• <b>Thalassemia Precaution:</b> ห้ามให้ธาตุเหล็กเสริมในผู้ป่วย Thalassemia เด็ดขาดเว้นแต่พิสูจน์แล้วว่ามีภาวะ Iron deficiency ร่วมด้วย เพราะเสี่ยงต่อ iron overload<br>• <b>Neutropenic Fever Protocol:</b> ในผู้ป่วยเคมีบำบัดที่มี Absolute Neutrophil Count (ANC) < 500 cells/uL ร่วมกับมีไข้ ต้องเริ่ม broad-spectrum antipseudomonal beta-lactam (Ceftazidime, Cefepime, Meropenem) ทันทีภายใน 1 ชม.</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::66",
-      "itemNo": 64,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Biosimilars & Quality Control",
-      "track": "Product",
-      "question": "ข้อใด ไม่ใช่ ปัจจัยที่ส่งผลต่อการเกิด Biological Immunogenicity (การกระตุ้นภูมิคุ้มกันต้านยาชีววัตถุ)",
-      "questionImage": "",
-      "choices": [
-        "โครงสร้างโปรตีนที่ไม่คล้ายกับ Human endogenous protein",
-        "การเกิดการเสื่อมสลายหรือจับกลุ่มของโปรตีน (Aggregation)",
-        "Excipient ในตำรับที่ส่งผลต่อ conformational change",
-        "ขนาดยาและความถี่ในการบริหารยา",
-        "อัตราการให้ยาเข้าสู่ systematic circulation น้อยกว่า IV bolus โดยตรง"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. อัตราการให้ยาเข้าสู่ systematic circulation น้อยกว่า IV bolus โดยตรง</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>อัตราการให้ยาเข้าสู่ systematic circulation น้อยกว่า IV bolus โดยตรง เส้นทางการให้ยาใต้ผิวหนัง (SC) หรือกล้ามเนื้อ (IM) จะกระตุ้นภูมิคุ้มกัน (Immunogenicity) ได้สูงกว่าการให้ทางหลอดเลือดดำ (IV) เนื่องจากสัมผัสกับ Antigen-presenting cells (Dendritic cells) บริเวณผิวหนังมากกว่า</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (โครงสร้างโปรตีนที่ไม่คล้ายกับ Human endogenous protein):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (การเกิดการเสื่อมสลายหรือจับกลุ่มของโปรตีน (Aggregation)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Excipient ในตำรับที่ส่งผลต่อ conformational change):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ขนาดยาและความถี่ในการบริหารยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>PUD & H. pylori Quadruple Therapy:</b> สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง<br>• <b>GERD Lifestyle & PPI Timing:</b> รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร<br>• <b>Constipation & Laxatives:</b> Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::74",
-      "itemNo": 72,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Biosimilars & Quality Control",
-      "track": "Product",
-      "question": "ข้อใดส่งผลกระทบต่อความไม่คงตัวของ pembrolizumab ในรูปแบบสารละลายสำหรับยาฉีดมากที่สุดในระหว่างการเตรียมและการจัดเก็บ",
-      "questionImage": "",
-      "choices": [
-        "Hydrolysis ที่ตำแหน่ง ester bond",
-        "Aggregation (การรวมกลุ่มของโปรตีน) เมื่อเกิดการเปลี่ยนแปลง pH หรือการเขย่าอย่างรุนแรง",
-        "Oxidation ที่ sulfhydryl ของ excipient",
-        "Crystallization เมื่ออุณหภูมิลดต่ำลง",
-        "Racemization ที่ chiral center"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Aggregation (การรวมกลุ่มของโปรตีน) เมื่อเกิดการเปลี่ยนแปลง pH หรือการเขย่าอย่างรุนแรง</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Aggregation (การรวมกลุ่มของโปรตีน) เมื่อเกิดการเปลี่ยนแปลง pH หรือการเขย่าอย่างรุนแรง ยาชีววัตถุกลุ่มโปรตีนและ mAb ไวต่อแรงเฉือนเชิงกล (Shear stress จากการเขย่า) และการเปลี่ยนแปลงประจุ/pH ซึ่งจะเหนี่ยวนำให้โปรตีนคลายตัวและเกิดการรวมกลุ่มกันเป็นตะกอน (Protein aggregation)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Hydrolysis ที่ตำแหน่ง ester bond):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Oxidation ที่ sulfhydryl ของ excipient):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Crystallization เมื่ออุณหภูมิลดต่ำลง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Racemization ที่ chiral center):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::76",
-      "itemNo": 74,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Polarimetry",
-      "track": "Product",
-      "question": "ข้อใดเป็นเทคนิคที่เหมาะสมในการพิสูจน์ Chirality / อัตลักษณ์การหมุนระนาบแสงของวัตถุดิบยา Paclitaxel",
-      "questionImage": "",
-      "choices": [
-        "NIR (Near infrared spectroscopy)",
-        "Karl Fischer titration",
-        "Polarimeter (การวัด Optical rotation)",
-        "Refractometer",
-        "Mass spectrometry"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Polarimeter (การวัด Optical rotation)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Polarimeter (การวัด Optical rotation) Paclitaxel เป็นโมเลกุลที่มีศูนย์ไครัล (Chiral centers) หลายตำแหน่ง การวัดความสามารถในการหมุนระนาบของแสงโพลาไรซ์ (Optical rotation / Specific rotation) ด้วยเครื่อง Polarimeter จึงเป็นวิธีจำเพาะในการตรวจสอบ Chiral purity และอัตลักษณ์</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (NIR (Near infrared spectroscopy)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Karl Fischer titration):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Refractometer):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Mass spectrometry):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Polarimetry เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::77",
-      "itemNo": 75,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Sterility & Pyrogen testing",
-      "track": "Product",
-      "question": "เหตุผลหลักในการตรวจวิเคราะห์ Bacterial Endotoxin Test (BET) ในยาฉีด Paclitaxel injection คือข้อใด",
-      "questionImage": "",
-      "choices": [
-        "เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา",
-        "เพื่อป้องกันการเกิดปฏิกิริยาไข้ (Pyrogenic reaction / Endotoxin shock) ในผู้ป่วย",
-        "เพื่อวัดความเข้มข้นของสารกันเสีย",
-        "เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง",
-        "เพื่อวัดความแรงในการออกฤทธิ์ต้านมะเร็ง"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. เพื่อป้องกันการเกิดปฏิกิริยาไข้ (Pyrogenic reaction / Endotoxin shock) ในผู้ป่วย</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>เพื่อป้องกันการเกิดปฏิกิริยาไข้ (Pyrogenic reaction / Endotoxin shock) ในผู้ป่วย เอนโดท็อกซินจากแบคทีเรียแกรมลบ (Lipopolysaccharide) เป็นสารก่อไข้รุนแรง (Pyrogen) หากปนเปื้อนในยาฉีดจะกระตุ้นเม็ดเลือดขาวให้หลั่งไซโตไคน์จนเกิดภาวะไข้ หนาวสั่น ช็อก หรือเสียชีวิตได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (เพื่อวัดความเข้มข้นของสารกันเสีย):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพื่อวัดความแรงในการออกฤทธิ์ต้านมะเร็ง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <71> Sterility Tests, <85> Bacterial Endotoxins Test & WHO Good Manufacturing Practices for Sterile Pharmaceutical Products</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Autoclave Standard Parameters:</b> การนึ่งฆ่าเชื้อด้วยไอน้ำภายใต้ความดัน: 121°C (250°F), ความดัน 15 psi, เป็นเวลาอย่างน้อย 15-20 นาที<br>• <b>Endotoxin & Pyrogen Limits:</b> LAL (Limulus Amebocyte Lysate) test ไวต่อการตรวจจับ Gram-negative endotoxin (Lipopolysaccharide)<br>• <b>Cleanroom Air Quality:</b> Grade A (Class 100 / ISO 5) ภายใต้ Laminar Air Flow ใช้สำหรับขั้นตอน Critical Aseptic filling</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::92",
-      "itemNo": 90,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Tablet Coating",
-      "track": "Product",
-      "question": "ข้อใดคือการควบคุมคุณภาพระหว่างกระบวนการผลิต (In-process control: IPC) ที่สำคัญในการติดตามการพอกตัวของชั้นยาเคลือบน้ำตาล",
-      "questionImage": "",
-      "choices": [
-        "Uniformity of dosage units",
-        "Weight gain (การเพิ่มขึ้นของน้ำหนักเม็ดยา)",
-        "Friability test",
-        "Dissolution test",
-        "Microbial limit test"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Weight gain (การเพิ่มขึ้นของน้ำหนักเม็ดยา)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Weight gain (การเพิ่มขึ้นของน้ำหนักเม็ดยา) ในการเคลือบน้ำตาลแต่ละขั้นตอน (Subcoating, Smoothing, Coloring) ต้องติดตามการเพิ่มขึ้นของน้ำหนักเม็ดยา (Percent weight gain) อย่างใกล้ชิดเพื่อควบคุมความหนาและการเจริญเติบโตของขนาดเม็ดยาให้ได้มาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Uniformity of dosage units):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Friability test):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Dissolution test):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Microbial limit test):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Tablet Coating เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <701> Disintegration, <711> Dissolution, <905> Uniformity of Dosage Units & Remington: The Science and Practice of Pharmacy (23rd Edition)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::94",
-      "itemNo": 92,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Spectroscopy & Optics",
-      "track": "Product",
-      "question": "เทคนิคการวิเคราะห์ในข้อใด ไม่เหมาะสม ในการทำ Identification ตัวยา Ethinyl estradiol ในยาเม็ดคุมกำเนิด",
-      "questionImage": "",
-      "choices": [
-        "HPLC-UV",
-        "HPLC-MS",
-        "FTIR",
-        "ICP-OES / ICP-MS",
-        "NMR"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. ICP-OES / ICP-MS</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ICP-OES / ICP-MS Ethinyl estradiol เป็นสารอินทรีย์โมเลกุลสังเคราะห์ (Organic molecule) ไม่ใช่แร่ธาตุหรือธาตุโลหะ เทคนิค ICP-OES/MS ซึ่งใช้วิเคราะห์โลหะและธาตุอนินทรีย์จึงไม่สามารถนำมาใช้ในการระบุอัตลักษณ์ของตัวยานี้ได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (HPLC-UV):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (HPLC-MS):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (FTIR):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (NMR):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Spectroscopy & Optics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::95",
-      "itemNo": 93,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Transdermal Delivery (TDS)",
-      "track": "Product",
-      "question": "ข้อใด ไม่จัดเป็น เกณฑ์ข้อกำหนดใน Certificate of Analysis (COA) สำหรับแผ่นแปะยาคุมกำเนิด (Transdermal patch)",
-      "questionImage": "",
-      "choices": [
-        "Identification",
-        "Assay",
-        "In vitro drug release",
-        "Adhesion (การยึดติดผิว)",
-        "Disintegration test"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. Disintegration test</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Disintegration test การทดสอบการแตกตัว (Disintegration test) ใช้สำหรับยาเม็ดหรือแคปซูลรับประทาน แผ่นแปะผิวหนัง (Transdermal patch) จะมีการทดสอบ Adhesive properties, Release rate, Assay และ Uniformity of dosage unit แทน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Identification):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Assay):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (In vitro drug release):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Adhesion (การยึดติดผิว)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Transdermal Delivery (TDS) เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Topical Corticosteroid Potency:</b> Class 1 (Clobetasol propionate 0.05%) ห้ามทาใบหน้า ซอกพับ หรือเด็กเล็ก; ผื่นใบหน้า/ข้อพับให้ใช้ Low potency (Hydrocortisone 1%) เพื่อป้องกัน skin atrophy และ striae<br>• <b>Acne Vulgaris Hierarchy:</b> Mild comedonal ใช้ Topical Retinoids; Moderate inflammatory เติม Benzoyl Peroxide (BPO) + Topical Clindamycin; Severe cystic acne พิจารณา Oral Isotretinoin (ต้องคุมกำเนิดเข้มงวด)<br>• <b>Atopic Dermatitis Care:</b> ใช้ Emollients บำรุงผิวสม่ำเสมอทันทีหลังอาบน้ำ (ภายใน 3 นาที) และใช้ Topical Calcineurin Inhibitors (Tacrolimus) เป็น steroid-sparing agent บนใบหน้า</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::104",
-      "itemNo": 102,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Inhalation devices",
-      "track": "Product",
-      "question": "ข้อใด ไม่จัดเป็น หัวข้อการทดสอบคุณภาพของยาในรูปแบบสารละลายสำหรับพ่นละออง (Nebulized solution)",
-      "questionImage": "",
-      "choices": [
-        "Assay",
-        "Sterility",
-        "Content uniformity",
-        "Particle size",
-        "Impurity"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Particle size</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Particle size สารละลายสำหรับพ่นยา (Nebulized solution) ตัวยาละลายเป็นเนื้อเดียวกันสมบูรณ์ จึงไม่มีอนุภาคของแข็งแขวนลอย (ไม่ต้องทดสอบ Particle size ของผงยา แต่จะวัด Aerodynamic droplet size distribution แทน)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Assay):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Sterility):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Content uniformity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Impurity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Inhalation devices เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::107",
-      "itemNo": 105,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Sterility & Pyrogen testing",
-      "track": "Product",
-      "question": "Isoniazid injection จัดเป็น sterile product ต้องมีการทดสอบ bacterial endotoxin ตาม USP กำหนดเกณฑ์ NMT 0.3 EU/mg of isoniazid เมื่อทดสอบ isoniazid injection 1000 mg/10 mL ได้ endotoxin = 25 EU/mL พิจารณาผลการทดสอบถือว่าผ่านหรือไม่",
-      "questionImage": "",
-      "choices": [
-        "ผ่าน เพราะต่ำกว่า limit",
-        "ไม่ผ่าน เพราะเกิน limit",
-        "ผ่านได้ถ้าเจือจางเพิ่ม",
-        "ไม่ผ่าน ต้องทดสอบ sterility test ใหม่",
-        "ไม่ผ่านตั้งแต่การเจือจางขวดแรก"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ผ่าน เพราะต่ำกว่า limit</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ผ่าน เพราะต่ำกว่า limit คำนวณความเข้มข้นตัวยา: 1000 mg / 10 mL = 100 mg/mL; ปริมาณเอนโดท็อกซินที่ตรวจพบ = 25 EU/mL; คิดเป็น 25 EU / 100 mg = 0.25 EU/mg ซึ่งต่ำกว่าเกณฑ์มาตรฐานที่กำหนดไม่เกิน 0.3 EU/mg ดังนั้นผลการทดสอบจึง \"ผ่านเกณฑ์\"</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (ไม่ผ่าน เพราะเกิน limit):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ผ่านได้ถ้าเจือจางเพิ่ม):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ไม่ผ่าน ต้องทดสอบ sterility test ใหม่):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ไม่ผ่านตั้งแต่การเจือจางขวดแรก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Sterility & Pyrogen testing เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapters <71> Sterility Tests, <85> Bacterial Endotoxins Test & WHO Good Manufacturing Practices for Sterile Pharmaceutical Products</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Pyridoxine (B6) Co-prescription:</b> ต้องให้ Vitamin B6 (Pyridoxine 50-100 mg/day) ร่วมด้วยในหญิงตั้งครรภ์, ผู้ติดเชื้อ HIV, เบาหวาน, ดื่มสุรา หรือไตวาย เพื่อป้องกัน peripheral neuropathy<br>• <b>Hepatotoxicity Monitoring:</b> ติดตามอาการเบื่ออาหาร คลื่นไส้ ตาเหลือง ตัวเหลือง หาก ALT/AST > 5 เท่า (ไม่มีอาการ) หรือ > 3 เท่า (มีอาการ) ต้องหยุดยาทันที</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::118",
-      "itemNo": 116,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Chromatography",
-      "track": "Product",
-      "question": "บริษัทแห่งหนึ่งต้องการปรับปรุงสูตรตำรับยาแก้ปวดสูตรผสมและตรวจสอบความถูกต้องของวิธีวิเคราะห์ (Method Validation) ด้วย HPLC ข้อใดกำหนดหัวข้อหรือเกณฑ์ ไม่เหมาะสม",
-      "questionImage": "",
-      "choices": [
-        "Specificity ด้วยวิธี Forced degradation",
-        "Linearity ที่ 95%, 105%, 110% ของ Label claim",
-        "Precision และ Intermediate precision พร้อมกำหนดเกณฑ์ %RSD ≤ 2.0%",
-        "Accuracy โดยการ Spike สารมาตรฐานลงใน Placebo ที่ 80%, 100%, 120%",
-        "Robustness ด้วยการเปลี่ยนสัดส่วน Mobile phase และอุณหภูมิของคอลัมน์"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Linearity ที่ 95%, 105%, 110% ของ Label claim</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Linearity ที่ 95%, 105%, 110% ของ Label claim การทดสอบ Linearity ตาม ICH Q2 Guideline สำหรับการหาปริมาณตัวยา (Assay) ต้องครอบคลุมช่วงความเข้มข้นอย่างน้อย 80% ถึง 120% ของ Test concentration (และต้องมีอย่างน้อย 5 จุดความเข้มข้น) การทำเพียง 3 จุดที่ช่วงแคบ (95-110%) จึงไม่ถูกต้องและไม่ครอบคลุม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Specificity ด้วยวิธี Forced degradation):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Precision และ Intermediate precision พร้อมกำหนดเกณฑ์ %RSD ≤ 2.0%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Accuracy โดยการ Spike สารมาตรฐานลงใน Placebo ที่ 80%, 100%, 120%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Robustness ด้วยการเปลี่ยนสัดส่วน Mobile phase และอุณหภูมิของคอลัมน์):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <621> Chromatography & British Pharmacopoeia (BP 2024) Appendix III</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Reversed-Phase Chromatography:</b> Stationary phase ไม่มีขั้ว (Non-polar: C18/C8), Mobile phase มีขั้ว (Polar: Water, Methanol, Acetonitrile); สารมีขั้วสูงจะ elute ออกมาก่อน<br>• <b>System Suitability Parameters:</b> เกณฑ์มาตรฐาน USP: Theoretical plates (N) > 2,000, Tailing factor (T) 0.9-1.5, Resolution (Rs) > 1.5, %RSD < 2.0%<br>• <b>Gradient vs Isocratic:</b> Gradient elution ปรับเปลี่ยนสัดส่วน mobile phase ระหว่างรัน เหมาะสำหรับตัวอย่างที่มีสารขั้วต่างกันมาก เพื่อลดเวลาการวิเคราะห์</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::119",
-      "itemNo": 117,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Chromatography",
-      "track": "Product",
-      "question": "ทำ HPLC ยา Amitriptyline tablet ใช้คอลัมน์ C18 (Octadecylsilane) และ Mobile phase เป็น Acetonitrile : Buffer pH 2.5 (42:58) หากเปลี่ยนสัดส่วนเป็น Acetonitrile : Buffer (60:40) จะส่งผลต่อ Retention time (RT) อย่างไร",
-      "questionImage": "",
-      "choices": [
-        "RT นานขึ้น เนื่องจาก Organic phase เพิ่ม ทำให้ Analyte ติดอยู่นานขึ้น",
-        "RT ลดลง เนื่องจาก Organic phase เพิ่ม ทำให้ความแรงในการชะ (Elution strength) สูงขึ้น และชะตัวยาออกเร็วขึ้น",
-        "RT ไม่เปลี่ยนแปลง เพราะการเพิ่มตัวทำละลายอินทรีย์ไม่มีผลต่อ C18",
-        "RT นานขึ้น เพราะสัดส่วน Buffer ลดลงทำให้ Analyte อยู่ในรูป Unionized",
-        "RT ลดลง เพราะสัดส่วน Buffer ลดลงทำให้ Analyte อยู่ในรูป Ionized"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. RT ลดลง เนื่องจาก Organic phase เพิ่ม ทำให้ความแรงในการชะ (Elution strength) สูงขึ้น และชะตัวยาออกเร็วขึ้น</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>RT ลดลง เนื่องจาก Organic phase เพิ่ม ทำให้ความแรงในการชะ (Elution strength) สูงขึ้น และชะตัวยาออกเร็วขึ้น ในระบบ Reversed-Phase HPLC เมื่อเพิ่มสัดส่วนตัวทำละลายอินทรีย์ (Organic modifier เช่น Acetonitrile) ความมีขั้วของ Mobile phase จะลดลง ส่งผลให้ Elution strength สูงขึ้น ตัวยาถูกชะออกจากคอลัมน์เร็วขึ้น ค่า Retention time จึงลดลง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (RT นานขึ้น เนื่องจาก Organic phase เพิ่ม ทำให้ Analyte ติดอยู่นานขึ้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (RT ไม่เปลี่ยนแปลง เพราะการเพิ่มตัวทำละลายอินทรีย์ไม่มีผลต่อ C18):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (RT นานขึ้น เพราะสัดส่วน Buffer ลดลงทำให้ Analyte อยู่ในรูป Unionized):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (RT ลดลง เพราะสัดส่วน Buffer ลดลงทำให้ Analyte อยู่ในรูป Ionized):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <621> Chromatography & British Pharmacopoeia (BP 2024) Appendix III</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::128",
-      "itemNo": 126,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Chromatography",
-      "track": "Product",
-      "question": "ในการตรวจสอบความบริสุทธิ์ของผลิตภัณฑ์ยา Acyclovir ทางห้องปฏิบัติการนิยมใช้เทคนิคการวิเคราะห์ตามข้อใดในการแยกสิ่งเจือปนและสารสลายตัว (Related substances)",
-      "questionImage": "",
-      "choices": [
-        "Simple titrimetric method",
-        "Thin Layer Chromatography เท่านั้น",
-        "Reversed-Phase High-Performance Liquid Chromatography (RP-HPLC)",
-        "Polarimetry",
-        "Refractometry"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Reversed-Phase High-Performance Liquid Chromatography (RP-HPLC)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Reversed-Phase High-Performance Liquid Chromatography (RP-HPLC) เภสัชตำรับสากลกำหนดให้ใช้วิธี RP-HPLC เป็นวิธีมาตรฐานในการวิเคราะห์หาปริมาณสิ่งเจือปนและสารสลายตัว (Impurity and related substances) ของยา Acyclovir เนื่องจากมีความจำเพาะและการแยกที่ดีเยี่ยม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Simple titrimetric method):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Thin Layer Chromatography เท่านั้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Polarimetry):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Refractometry):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <621> Chromatography & British Pharmacopoeia (BP 2024) Appendix III</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::129",
-      "itemNo": 127,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Chromatography",
-      "track": "Product",
-      "question": "การทดสอบสารปนเปื้อน (Impurity) ในยา Acyclovir ด้วย HPLC: สาร Guanine มี peak area 500, Acyclovir 19,300, สิ่งเจือปนอื่นๆ 200 กำหนดเกณฑ์ผ่าน: Guanine < 2.0% และสิ่งเจือปนอื่น < 0.5% พิจารณาผลการทดสอบ",
-      "questionImage": "",
-      "choices": [
-        "Guanine 2.5% และ อื่นๆ 1.0% ไม่ผ่านเกณฑ์",
-        "Guanine 1.5% และ อื่นๆ 0.2% ผ่านเกณฑ์",
-        "Guanine 0.5% ผ่าน แต่ตัวอื่นไม่ผ่าน",
-        "ทุกตัวผ่านเกณฑ์มาตรฐาน",
-        "ผลการวิเคราะห์ไม่สามารถคำนวณได้"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. Guanine 2.5% และ อื่นๆ 1.0% ไม่ผ่านเกณฑ์</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การวิเคราะห์และการควบคุมคุณภาพทางเภสัชกรรม (QC) ต้องเลือกเทคนิคที่ให้ accuracy, precision และ specificity ตามเกณฑ์มาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Guanine 2.5% และ อื่นๆ 1.0% ไม่ผ่านเกณฑ์ คำนวณร้อยละสารปนเปื้อน Guanine = (500 / 19,300) * 100 ≈ 2.59% (ซึ่งเกินเกณฑ์มาตรฐาน < 2.0%) และสารเจือปนอื่น = (200 / 19,300) * 100 ≈ 1.03% (เกินเกณฑ์ < 0.5%) จึงสรุปว่า \"ไม่ผ่านเกณฑ์มาตรฐาน\"</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (Guanine 1.5% และ อื่นๆ 0.2% ผ่านเกณฑ์):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Guanine 0.5% ผ่าน แต่ตัวอื่นไม่ผ่าน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ทุกตัวผ่านเกณฑ์มาตรฐาน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ผลการวิเคราะห์ไม่สามารถคำนวณได้):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Chromatography เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <621> Chromatography & British Pharmacopoeia (BP 2024) Appendix III</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::130",
-      "itemNo": 128,
-      "category": "17. Quality Assurance & Analysis",
-      "subtopic": "Liquid & Semisolids",
-      "track": "Product",
-      "question": "หัวข้อการทดสอบคุณภาพของยาครีม Acyclovir cream ในข้อใดต่อไปนี้ ไม่ต้องทดสอบ ตามเภสัชตำรับทั่วไป",
-      "questionImage": "",
-      "choices": [
-        "Assay",
-        "Identification",
-        "Dissolution test",
-        "Minimum fill",
-        "Microbial limit test"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Dissolution test</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ตำรับยาน้ำและกึ่งแข็ง (Liquid & Semisolid dosage forms) ต้องควบคุม physical stability, zeta potential และการเลือกใช้ surfactants/suspending agents ให้เหมาะสม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Dissolution test การทดสอบ Dissolution (การละลายตัวยา) เป็นข้อกำหนดเฉพาะของยาเม็ด/แคปซูลของแข็ง ส่วนยาครีมที่เป็น Semisolid dosage form จะไม่มีหัวข้อ Dissolution (แต่จะควบคุม Assay, Microbial limit, Minimum fill, Viscosity เป็นต้น)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Assay):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Identification):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Minimum fill):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Microbial limit test):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Liquid & Semisolids เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <851> Spectrophotometry and Light-Scattering & British Pharmacopoeia (BP 2024)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Crystal Nephropathy Prevention:</b> การให้ยาทางหลอดเลือดดำ (IV) ต้องฉีดช้าๆ (infusion > 1 ชม.) และให้ hydration อย่างเพียงพอเพื่อป้องกัน acyclovir crystal precipitation ใน renal tubules<br>• <b>Time-Sensitive Initiation:</b> ใน Herpes zoster หรือ Herpes simplex ต้องเริ่มยาภายใน 48-72 ชั่วโมงหลังเกิดรอยโรคจึงจะได้ efficacy สูงสุด</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    }
-  ],
-  "21. Social and Administrative Pharmacy (SAP)": [
-    {
-      "id": "📥 รวมข้อสอบด่วน::13",
-      "itemNo": 11,
-      "category": "21. Social and Administrative Pharmacy (SAP)",
-      "subtopic": "Pharmacy Laws & Ethics",
-      "track": "SAP",
-      "question": "หากคนไข้ปัจจุบันเป็นพนักงานในบริษัทเอกชนที่มีการจ้างงานตามกฎหมายแรงงานไทย ผู้ป่วยจะอยู่ภายใต้สิทธิการรักษาพยาบาลใดตามหลักประกันสุขภาพของประเทศไทย",
-      "questionImage": "",
-      "choices": [
-        "สิทธิประกันสุขภาพแห่งชาติ",
-        "สิทธิประกันสังคม",
-        "สิทธิข้าราชการ",
-        "สิทธิ 30 บาท",
-        "สิทธิบัตรทอง"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. สิทธิประกันสังคม</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>สิทธิประกันสังคม ลูกจ้าง/พนักงานบริษัทเอกชนที่ทำงานตาม พ.ร.บ. คุ้มครองแรงงาน จะได้รับความคุ้มครองและขึ้นทะเบียนสิทธิรักษาพยาบาลตามกองทุนประกันสังคม (มาตรา 33)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (สิทธิประกันสุขภาพแห่งชาติ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (สิทธิข้าราชการ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (สิทธิ 30 บาท):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (สิทธิบัตรทอง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Drug Classification:</b> ยาควบคุมพิเศษ (ต้องมีใบสั่งยาเท่านั้น บันทึก ข.ย.11), ยาอันตราย (ขายได้เฉพาะในร้านยาที่มีเภสัชกร), ยาสามัญประจำบ้าน (ขายนอกร้านยาได้)<br>• <b>Pharmacy Licensing (ข.ย.):</b> ข.ย.1 (ขายยาแผนปัจจุบัน), ข.ย.2 (ขายยาแผนปัจจุบันเฉพาะยาบรรจุเสร็จที่ไม่ใช่ยาอันตรายหรือยาควบคุมพิเศษ), ข.ย.3 (ขายยาควบคุมพิเศษ), ข.ย.4 (ขายส่ง)<br>• <b>GPP Evaluation Standard:</b> หลักเกณฑ์วิธีปฏิบัติทางเภสัชกรรมชุมชน (GPP) ครอบคลุม: สถานที่ อุปกรณ์ บุคลากร การควบคุมคุณภาพยา และการให้คำปรึกษา</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::25",
-      "itemNo": 23,
-      "category": "21. Social and Administrative Pharmacy (SAP)",
-      "subtopic": "Pharmacy Laws & Ethics",
-      "track": "SAP",
-      "question": "ยารักษาโรคความดันโลหิตชนิดหนึ่ง จัดอยู่ในบัญชียาหลักแห่งชาติ \"บัญชี ก\" ข้อใดถูกต้องเกี่ยวกับคุณสมบัติของยานี้",
-      "questionImage": "",
-      "choices": [
-        "ต้องจ่ายโดยผู้ชำนาญการเฉพาะโรคเท่านั้น",
-        "ต้องสำรองจ่ายค่ายาก่อนนำใบเสร็จไปเบิกกับต้นสังกัด",
-        "ต้องร่วมจ่าย 30 บาทต่อหนึ่งรายการยา",
-        "เป็นยาที่ใช้รักษาและป้องกันโรคที่พบบ่อย มีความคุ้มค่า และใช้เป็นอันดับแรกๆ ในสถานพยาบาลทุกระดับ",
-        "ต้องมีแบบฟอร์มกำกับการใช้ยาและติดตามผลตลอดการรักษา"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. เป็นยาที่ใช้รักษาและป้องกันโรคที่พบบ่อย มีความคุ้มค่า และใช้เป็นอันดับแรกๆ ในสถานพยาบาลทุกระดับ</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>เป็นยาที่ใช้รักษาและป้องกันโรคที่พบบ่อย มีความคุ้มค่า และใช้เป็นอันดับแรกๆ ในสถานพยาบาลทุกระดับ ยาในบัญชี ก ตามบัญชียาหลักแห่งชาติ คือ ยาสำหรับโรคที่พบบ่อย มีหลักฐานสนับสนุน efficacy ชัดเจน มี safety และคุ้มค่า เป็นยา first-line ในการรักษาและสามารถใช้ได้ในสถานพยาบาลทุกระดับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ต้องจ่ายโดยผู้ชำนาญการเฉพาะโรคเท่านั้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ต้องสำรองจ่ายค่ายาก่อนนำใบเสร็จไปเบิกกับต้นสังกัด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ต้องร่วมจ่าย 30 บาทต่อหนึ่งรายการยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ต้องมีแบบฟอร์มกำกับการใช้ยาและติดตามผลตลอดการรักษา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>BP Target Standard:</b> เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)<br>• <b>First-line Core Classes:</b> 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน<br>• <b>Special Populations:</b> ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::40",
-      "itemNo": 38,
-      "category": "21. Social and Administrative Pharmacy (SAP)",
-      "subtopic": "Research & Biostats",
-      "track": "SAP",
-      "question": "ถ้ายา Pioglitazone ได้รับอนุมัติให้วางจำหน่ายในไทย หากต้องการติดตามอาการไม่พึงประสงค์จากการใช้ยาหลังออกสู่ตลาด (Post-marketing surveillance / Pharmacovigilance) รูปแบบการวิจัยเชิงสังเกตใดเหมาะสมที่สุด",
-      "questionImage": "",
-      "choices": [
-        "Ecological study",
-        "Cross-sectional study",
-        "Cohort study (เช่น Prospective/Registry-based cohort)",
-        "Randomized controlled trial (RCT)",
-        "Systematic review and meta-analysis"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Cohort study (เช่น Prospective/Registry-based cohort)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การประเมินหลักฐานเชิงประจักษ์ (Evidence-Based Practice) อาศัย study design, statistical parameters (p-value, 95% CI, RR/OR) เพื่อการตัดสินใจอย่างแม่นยำ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Cohort study (เช่น Prospective/Registry-based cohort) การติดตาม safety ระยะยาวของยาในประชากรจริงหลังวางจำหน่าย (Phase IV / Post-marketing surveillance) มักใช้การออกแบบการศึกษาแบบ Cohort study หรือ Registry data เพื่อติดตามกลุ่มผู้ใช้ยาเทียบกับผู้ไม่ใช้ยาในชีวิตจริง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Ecological study):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Cross-sectional study):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Randomized controlled trial (RCT)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Systematic review and meta-analysis):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials & คู่มือการประเมินเทคโนโลยีด้านสุขภาพสำหรับประเทศไทย (HITAP)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Thiazolidinedione Warning:</b> เป็น PPAR-gamma agonist เพิ่ม insulin sensitivity แต่ทำให้เกิด fluid retention ห้ามใช้ใน Heart Failure (NYHA Class III-IV) และเสี่ยงกระดูกหัก/มะเร็งกระเพาะปัสสาวะ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::53",
-      "itemNo": 51,
-      "category": "21. Social and Administrative Pharmacy (SAP)",
-      "subtopic": "Pharmacy Laws & Ethics",
-      "track": "SAP",
-      "question": "Oxymetazoline เป็นยาในบัญชียาหลักแห่งชาติ บัญชี ข ข้อใดถูกต้องเกี่ยวกับข้อกำหนดการสั่งใช้",
-      "questionImage": "",
-      "choices": [
-        "ยานี้อยู่ภายใต้ระบบการควบคุมและติดตามการใช้ยาให้เหมาะสม (Authorized system)",
-        "ยานี้เบิกจ่ายของผ่านกระทรวง ทบวง กรม หน่วยงานรัฐ",
-        "ยานี้มีการใช้งานที่ซับซ้อน ต้องใช้ร่วมกับยาในบัญชียาหลักแห่งชาติตัวอื่น อย่างน้อย 2 ชนิดขึ้นไป",
-        "ยานี้ต้องสั่งใช้โดยผู้เชี่ยวชาญเฉพาะทาง ENT เท่านั้น",
-        "ยาที่เบิกจ่ายได้ในโรงพยาบาลชุมชนขึ้นไป และเบิกจ่ายได้ทุกสิทธิการรักษา"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. ยาที่เบิกจ่ายได้ในโรงพยาบาลชุมชนขึ้นไป และเบิกจ่ายได้ทุกสิทธิการรักษา</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยาที่เบิกจ่ายได้ในโรงพยาบาลชุมชนขึ้นไป และเบิกจ่ายได้ทุกสิทธิการรักษา ยาบัญชี ข เป็นยาที่ใช้สำหรับข้อบ่งใช้หรือเงื่อนไขเฉพาะเจาะจง มีความจำเป็นและมีทางเลือกจำกัด สามารถจัดหาและสั่งจ่ายได้ตั้งแต่ระดับโรงพยาบาลชุมชน (รพช.) ขึ้นไปตามสิทธิการรักษาพยาบาลขั้นพื้นฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ยานี้อยู่ภายใต้ระบบการควบคุมและติดตามการใช้ยาให้เหมาะสม (Authorized system)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ยานี้เบิกจ่ายของผ่านกระทรวง ทบวง กรม หน่วยงานรัฐ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ยานี้มีการใช้งานที่ซับซ้อน ต้องใช้ร่วมกับยาในบัญชียาหลักแห่งชาติตัวอื่น อย่างน้อย 2 ชนิดขึ้นไป):</b> National List of Essential Medicines (NLEM) บัญชียาจำเป็นที่รัฐประกันการเข้าถึง แบ่งเป็นบัญชี ก, ข, ค, ง, จ เพื่อความคุ้มค่าและความเท่าเทียม<br>• <b>ข้อ ง. (ยานี้ต้องสั่งใช้โดยผู้เชี่ยวชาญเฉพาะทาง ENT เท่านั้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Laws & Ethics เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Legal Responsibilities:</b> จำแนกประเภทตามกฎหมายยา พ.ศ. 2510 และพระราชบัญญัติวิชาชีพเภสัชกรรม เพื่อปฏิบัติงานตามมาตรฐาน GPP เคร่งครัด<br>• <b>Regulatory Compliance:</b> ตรวจสอบเงื่อนไขการส่งมอบยา การบันทึกบัญชี และขอบเขตอำนาจหน้าที่ของเภสัชกรผู้มีหน้าที่ปฏิบัติการ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::67",
-      "itemNo": 65,
-      "category": "21. Social and Administrative Pharmacy (SAP)",
-      "subtopic": "Research & Biostats",
-      "track": "SAP",
-      "question": "การศึกษาในผู้ป่วย 500 คนที่สงสัยว่าเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb, g/dL) ของผู้ป่วย และแบ่งกลุ่มผู้ป่วยตามเพศ (ชาย/หญิง) เพื่อศึกษาระดับ Hb ที่แตกต่างกันระหว่างเพศ ข้อใดถูกต้องเกี่ยวกับชนิดของตัวแปรและการเลือกใช้การวิเคราะห์ทางสถิติ",
-      "questionImage": "",
-      "choices": [
-        "Hb เป็นตัวแปรเชิงกลุ่ม (categorical variable) เสมอ จึงควรใช้ Chi-square test ในการเปรียบเทียบระหว่างเพศ",
-        "Hb เป็นตัวแปรเชิงจำนวนต่อเนื่อง (continuous variable) หากมีการกระจายแบบปกติ ควรใช้ Independent t-test (หากไม่ปกติใช้ Mann-Whitney U test)",
-        "หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการหาความสัมพันธ์ระหว่างเพศได้",
-        "Hb เป็นข้อมูลเชิงจำนวน แต่ควรใช้ Mann-Whitney U Test ในการวิเคราะห์เสมอเนื่องจากข้อมูลชีววิทยามักไม่ปกติ",
-        "Hb เป็นตัวแปร ordinal เนื่องจากมีค่าจากต่ำไปสูง"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการหาความสัมพันธ์ระหว่างเพศได้</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การประเมินหลักฐานเชิงประจักษ์ (Evidence-Based Practice) อาศัย study design, statistical parameters (p-value, 95% CI, RR/OR) เพื่อการตัดสินใจอย่างแม่นยำ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการหาความสัมพันธ์ระหว่างเพศได้ ระดับ Hemoglobin ที่ถูกจำแนกออกเป็นกลุ่ม (เช่น ซีด vs ไม่ซีด) จะกลายเป็นตัวแปรประเภท Categorical variable ซึ่งสามารถทดสอบความสัมพันธ์กับกลุ่มเพศ (ชาย/หญิง) โดยใช้ Chi-square test ได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Hb เป็นตัวแปรเชิงกลุ่ม (categorical variable) เสมอ จึงควรใช้ Chi-square test ในการเปรียบเทียบระหว่างเพศ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Hb เป็นตัวแปรเชิงจำนวนต่อเนื่อง (continuous variable) หากมีการกระจายแบบปกติ ควรใช้ Independent t-test (หากไม่ปกติใช้ Mann-Whitney U test)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Hb เป็นข้อมูลเชิงจำนวน แต่ควรใช้ Mann-Whitney U Test ในการวิเคราะห์เสมอเนื่องจากข้อมูลชีววิทยามักไม่ปกติ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Hb เป็นตัวแปร ordinal เนื่องจากมีค่าจากต่ำไปสูง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials & คู่มือการประเมินเทคโนโลยีด้านสุขภาพสำหรับประเทศไทย (HITAP)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Study Hierarchy & Causality:</b> Systematic Review/Meta-analysis > Randomized Controlled Trial (RCT) > Cohort > Case-Control > Cross-Sectional<br>• <b>Effect Measures:</b> Relative Risk (RR) คำนวณได้เฉพาะใน Cohort Study และ RCT; Odds Ratio (OR) ใช้ใน Case-Control Study<br>• <b>Health Economics (ICER):</b> ICER = (Cost A - Cost B) / (Effect A - Effect B); หากต่ำกว่าเกณฑ์ความคุ้มค่า (WTP threshold ของไทย 160,000 บาท/QALY) ถือว่าคุ้มค่า</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::85",
-      "itemNo": 83,
-      "category": "21. Social and Administrative Pharmacy (SAP)",
-      "subtopic": "Research & Biostats",
-      "track": "SAP",
-      "question": "จากรูป Kaplan-Meier curve ของการศึกษาเปรียบเทียบ treatment A และ B ในการรักษา Lung cancer พบว่า Hazard Ratio (HR) ของ Overall survival ของ treatment B เทียบกับ A คือ 0.65 (95% CI: 0.50–0.85) ข้อใดกล่าวถูกต้อง",
-      "questionImage": "",
-      "choices": [
-        "B ลดความเสี่ยงการเสียชีวิต (Death risk) ได้ 35% เมื่อเทียบกับ A",
-        "HR ใกล้เคียง 1 หมายความว่าไม่มีความแตกต่างอย่างมีนัยสำคัญ",
-        "Median OS ของ A แปลว่าคนไข้ที่ใช้ A มีมัธยฐานอัตราการรอดชีวิต 28%",
-        "A ลดความเสี่ยงการเสียชีวิตได้ 65% เมื่อเทียบกับ B",
-        "Median OS ของ B มากกว่า 18 เดือนแต่ไม่มีนัยสำคัญทางสถิติ"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. B ลดความเสี่ยงการเสียชีวิต (Death risk) ได้ 35% เมื่อเทียบกับ A</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การประเมินหลักฐานเชิงประจักษ์ (Evidence-Based Practice) อาศัย study design, statistical parameters (p-value, 95% CI, RR/OR) เพื่อการตัดสินใจอย่างแม่นยำ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>B ลดความเสี่ยงการเสียชีวิต (Death risk) ได้ 35% เมื่อเทียบกับ A ค่า Hazard Ratio (HR) = 0.65 แปลว่าความเสี่ยงของการเกิดเหตุการณ์ (การเสียชีวิต) ในกลุ่ม B คิดเป็น 65% ของกลุ่ม A หรือกลุ่ม B สามารถลดความเสี่ยงของการเสียชีวิตลงได้ 100% - 65% = 35% อย่างมีนัยสำคัญทางสถิติ (ช่วง 95% CI ไม่คร่อม 1)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (HR ใกล้เคียง 1 หมายความว่าไม่มีความแตกต่างอย่างมีนัยสำคัญ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Median OS ของ A แปลว่าคนไข้ที่ใช้ A มีมัธยฐานอัตราการรอดชีวิต 28%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (A ลดความเสี่ยงการเสียชีวิตได้ 65% เมื่อเทียบกับ B):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Median OS ของ B มากกว่า 18 เดือนแต่ไม่มีนัยสำคัญทางสถิติ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Research & Biostats เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials & คู่มือการประเมินเทคโนโลยีด้านสุขภาพสำหรับประเทศไทย (HITAP)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Study Hierarchy & Causality:</b> Systematic Review/Meta-analysis > Randomized Controlled Trial (RCT) > Cohort > Case-Control > Cross-Sectional<br>• <b>Effect Measures:</b> Relative Risk (RR) คำนวณได้เฉพาะใน Cohort Study และ RCT; Odds Ratio (OR) ใช้ใน Case-Control Study<br>• <b>Health Economics (ICER):</b> ICER = (Cost A - Cost B) / (Effect A - Effect B); หากต่ำกว่าเกณฑ์ความคุ้มค่า (WTP threshold ของไทย 160,000 บาท/QALY) ถือว่าคุ้มค่า</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::96",
-      "itemNo": 94,
-      "category": "21. Social and Administrative Pharmacy (SAP)",
-      "subtopic": "Pharmacy Administration & System",
-      "track": "SAP",
-      "question": "หญิงตั้งครรภ์รู้ว่าตนเองต้องระมัดระวังในการเลือกยาคุมกำเนิดชนิดเม็ด จึงเดินทางมาปรึกษาเภสัชกรที่ร้านยาเรื่องการใช้ยาคุมกำเนิด พฤติกรรมดังกล่าวจัดเป็นองค์ประกอบใดตามแบบจำลองความเชื่อด้านสุขภาพ (Health Belief Model: HBM)",
-      "questionImage": "",
-      "choices": [
-        "Perceived susceptibility",
-        "Perceived severity",
-        "Perceived benefits",
-        "Perceived barriers",
-        "Cues to action"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Perceived benefits</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Perceived benefits การที่ผู้ป่วยตระหนักว่าการมาปรึกษาเภสัชกรจะช่วยให้เลือกใช้ยาได้อย่างถูกต้อง ปลอดภัย และป้องกันอันตรายได้ จัดเป็น \"การรับรู้ประโยชน์ของการปฏิบัติตัว (Perceived benefits)\"</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Perceived susceptibility):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Perceived severity):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Perceived barriers):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Cues to action):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> กฎกระทรวงการขออนุญาตและการออกใบอนุญาตขายยาแผนปัจจุบัน พ.ศ. 2556 และ ประกาศกระทรวงสาธารณสุข เรื่อง การกำหนดรายละเอียดเกี่ยวกับหลักเกณฑ์ วิธีการ และเงื่อนไขการตรวจประเมินวิธีปฏิบัติทางเภสัชกรรมชุมชน (GPP)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::108",
-      "itemNo": 106,
-      "category": "21. Social and Administrative Pharmacy (SAP)",
-      "subtopic": "Pharmacy Administration & System",
-      "track": "SAP",
-      "question": "ผู้ป่วยมีความกังวลจากการต้องทานยาจำนวนมากเป็นประจำ ซึ่งอาจส่งผลต่อ Adherence ในฐานะเภสัชกรท่านจะใช้วิธีการสื่อสารเช่นใดกับผู้ป่วยรายนี้",
-      "questionImage": "",
-      "choices": [
-        "ให้คำแนะนำที่ตรงไปตรงมา เน้นย้ำถึงอันตรายของการเกิดเชื้อดื้อยา",
-        "ให้คำแนะนำตามหลักวิชาการเพื่อให้ดูน่าเชื่อถือ",
-        "สร้างเสริมพลังอำนาจแก่ผู้ป่วย (Empowerment) เปิดโอกาสให้ซักถามความกังวล และร่วมวางแผนการทานยากับผู้ป่วย",
-        "ให้คำแนะนำที่กระชับ และเน้นความสำคัญของการใช้ยาในการรักษาอาการป่วย",
-        "ให้คำแนะนำเท่าที่จำเป็น เพื่อให้ผู้ป่วยไม่สับสนและกลัวการใช้ยา"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. สร้างเสริมพลังอำนาจแก่ผู้ป่วย (Empowerment) เปิดโอกาสให้ซักถามความกังวล และร่วมวางแผนการทานยากับผู้ป่วย</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>สร้างเสริมพลังอำนาจแก่ผู้ป่วย (Empowerment) เปิดโอกาสให้ซักถามความกังวล และร่วมวางแผนการทานยากับผู้ป่วย การส่งเสริมความร่วมมือในการใช้ยา (Medication Adherence) อย่างมี efficacy สูงสุดคือการใช้ Patient-centered communication และกระบวนการเสริมพลังอำนาจ (Empowerment) ให้ผู้ป่วยมีส่วนร่วมในการตัดสินใจและวางตารางการกินยาที่เข้ากับวิถีชีวิต</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ให้คำแนะนำที่ตรงไปตรงมา เน้นย้ำถึงอันตรายของการเกิดเชื้อดื้อยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ให้คำแนะนำตามหลักวิชาการเพื่อให้ดูน่าเชื่อถือ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ให้คำแนะนำที่กระชับ และเน้นความสำคัญของการใช้ยาในการรักษาอาการป่วย):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ให้คำแนะนำเท่าที่จำเป็น เพื่อให้ผู้ป่วยไม่สับสนและกลัวการใช้ยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::109",
-      "itemNo": 107,
-      "category": "21. Social and Administrative Pharmacy (SAP)",
-      "subtopic": "Pharmacy Administration & System",
-      "track": "SAP",
-      "question": "ผู้ป่วยอายุ 65 ปี มีปัญหาต้องใช้ยาหลายตัว ในการคำนึงถึง Pharmaco-technology และการออกแบบเพื่อผู้ใช้ (Universal center design) ควรดำเนินการอย่างไรเพื่อป้องกันความคลาดเคลื่อน",
-      "questionImage": "",
-      "choices": [
-        "เขียนฉลากตัวบรรจงให้ผู้ป่วยอ่าน",
-        "จัด Pillbox แบ่งตามวัน/มื้อให้ผู้ป่วย และสอนให้ผู้ป่วยฝึกจัดเตรียมเองในวันถัดไป",
-        "อ่านฉลากให้ผู้ป่วยฟังอย่างละเอียด",
-        "บอกให้ผู้ป่วยหาคนมาดูแลเรื่องยา",
-        "ทำแผ่นพับภาษาไทยแนบให้ผู้ป่วยไปอ่านเอง"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. จัด Pillbox แบ่งตามวัน/มื้อให้ผู้ป่วย และสอนให้ผู้ป่วยฝึกจัดเตรียมเองในวันถัดไป</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>จัด Pillbox แบ่งตามวัน/มื้อให้ผู้ป่วย และสอนให้ผู้ป่วยฝึกจัดเตรียมเองในวันถัดไป การใช้อุปกรณ์ช่วยจัดยา (Pillbox/Medication organizer) ที่แบ่งช่องชัดเจนตามวันและมื้ออาหาร พร้อมสอนและเสริมทักษะให้ผู้ป่วยดูแลตนเองได้ เป็นการออกแบบเชิง Universal Design ที่ช่วยลด Medication errors ในผู้สูงอายุได้อย่างยั่งยืน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (เขียนฉลากตัวบรรจงให้ผู้ป่วยอ่าน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (อ่านฉลากให้ผู้ป่วยฟังอย่างละเอียด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (บอกให้ผู้ป่วยหาคนมาดูแลเรื่องยา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ทำแผ่นพับภาษาไทยแนบให้ผู้ป่วยไปอ่านเอง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::127",
-      "itemNo": 125,
-      "category": "21. Social and Administrative Pharmacy (SAP)",
-      "subtopic": "Pharmacy Administration & System",
-      "track": "SAP",
-      "question": "ข้อใดเป็นการแนะนำเพื่อป้องกันการกำเริบของโรคตามพฤติกรรมสุขภาพของผู้บริโภคได้อย่างถูกต้องที่สุด",
-      "questionImage": "",
-      "choices": [
-        "ให้รับประทานยาปฏิชีวนะต่อเนื่อง",
-        "แนะนำการปฏิบัติตัว การพักผ่อน และการหลีกเลี่ยงปัจจัยกระตุ้น เช่น แสงแดดจัด และความเครียด",
-        "แนะนำให้ผู้ป่วยเปลี่ยนสายอาชีพ",
-        "แนะนำให้ใช้ยาทาสเตียรอยด์เข้มข้นทาทันทีที่รู้สึกคัน",
-        "ให้ทายาปฏิชีวนะแผลเปิดเป็นประจำ"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. แนะนำการปฏิบัติตัว การพักผ่อน และการหลีกเลี่ยงปัจจัยกระตุ้น เช่น แสงแดดจัด และความเครียด</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> กฎหมายยาและจรรยาบรรณวิชาชีพมีขึ้นเพื่อคุ้มครองความปลอดภัยของผู้บริโภคตามมาตรฐาน Good Pharmacy Practice (GPP)</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>แนะนำการปฏิบัติตัว การพักผ่อน และการหลีกเลี่ยงปัจจัยกระตุ้น เช่น แสงแดดจัด และความเครียด การป้องกันการกลับเป็นซ้ำของโรคเริมต้องเน้นการปรับพฤติกรรมสุขภาพ รักษาสุขอนามัย พักผ่อนให้เพียงพอ จัดการความเครียด และทาครีมกันแดดบริเวณริมฝีปากเพื่อหลีกเลี่ยงแสง UV</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ให้รับประทานยาปฏิชีวนะต่อเนื่อง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (แนะนำให้ผู้ป่วยเปลี่ยนสายอาชีพ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (แนะนำให้ใช้ยาทาสเตียรอยด์เข้มข้นทาทันทีที่รู้สึกคัน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ให้ทายาปฏิชีวนะแผลเปิดเป็นประจำ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Pharmacy Administration & System เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    }
-  ],
-  "18. Pharmacognosy & Herbal Medicine": [
-    {
-      "id": "📥 รวมข้อสอบด่วน::14",
-      "itemNo": 12,
-      "category": "18. Pharmacognosy & Herbal Medicine",
-      "subtopic": "Herbal Medicine",
-      "track": "Clinic",
-      "question": "สมุนไพรในข้อใดมีสารออกฤทธิ์สำหรับรักษาโรค gout",
-      "questionImage": "",
-      "choices": [
-        "ระย่อม",
-        "ไพล",
-        "ขมิ้นชัน",
-        "ดองดึง",
-        "เถาวัลย์เปรียง"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. ดองดึง</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ผู้ป่วยมีภาวะ Acute Gout Flare จากการตกผลึกของ Monosodium urate (MSU) ในข้อ ทำให้เกิดการอักเสบเฉียบพลัน ปวด บวม แดง ร้อนอย่างรุนแรง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ดองดึง (Gloriosa superba) มีสารสำคัญคือ Colchicine ซึ่งมีฤทธิ์ยับยั้ง microtubule assembly และลดการอักเสบในโรคเกาต์เฉียบพลัน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ระย่อม):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ไพล):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ขมิ้นชัน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เถาวัลย์เปรียง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> 2020 American College of Rheumatology (ACR) Guideline for the Management of Gout & แนวทางเวชปฏิบัติการดูแลรักษาโรคเกาต์ พ.ศ. 2555 (สมาคมรูมาติสซั่มแห่งประเทศไทย)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Urate-Lowering Target:</b> เป้าหมาย Serum Uric Acid < 6.0 mg/dL ในผู้ป่วยทั่วไป (หรือ < 5.0 mg/dL ในรายที่มี tophi รุนแรง)<br>• <b>Prophylaxis Duration:</b> ต้องให้ anti-inflammatory prophylaxis (Colchicine หรือ low-dose NSAID) ควบคู่กับ ULT ต่อเนื่องอย่างน้อย 3-6 เดือน<br>• <b>Allopurinol Genetic Rule:</b> ตรวจ HLA-B*58:01 ในคนไทยก่อนเริ่ม Allopurinol ทุกรายเพื่อป้องกัน SJS/TEN</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::26",
-      "itemNo": 24,
-      "category": "18. Pharmacognosy & Herbal Medicine",
-      "subtopic": "Herbal Medicine",
-      "track": "Clinic",
-      "question": "Reserpine เป็นสารธรรมชาติที่นำมาใช้บำบัดภาวะความดันโลหิตสูง พบได้ในพืชสมุนไพรชนิดใด",
-      "questionImage": "",
-      "choices": [
-        "ระย่อม",
-        "พริกไทย",
-        "กาแฟ",
-        "โคคา",
-        "เถาวัลย์เปรียง"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ระย่อม</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ภาวะความดันโลหิตสูงเป็นปัจจัยเสี่ยงหลักของ cardiovascular disease การเลือก first-line antihypertensive agents ต้องพิจารณาตาม compelling indications</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ระย่อม Reserpine เป็นสารกลุ่ม indole alkaloid สกัดได้จากรากระย่อม (Rauvolfia serpentina) มีกลไกยับยั้ง VMAT ลดระดับ catecholamine ทำให้ความดันโลหิตลดลง</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (พริกไทย):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (กาแฟ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (โคคา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เถาวัลย์เปรียง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางการรักษาโรคความดันโลหิตสูง ในเวชปฏิบัติทั่วไป พ.ศ. 2562 (สมาคมความดันโลหิตสูงแห่งประเทศไทย) & 2020 International Society of Hypertension (ISH) Global Guidelines</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>BP Target Standard:</b> เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)<br>• <b>First-line Core Classes:</b> 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน<br>• <b>Special Populations:</b> ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::27",
-      "itemNo": 25,
-      "category": "18. Pharmacognosy & Herbal Medicine",
-      "subtopic": "Herbal Medicine",
-      "track": "Clinic",
-      "question": "สมุนไพรต่างประเทศข้อใดมีผลช่วยขยายหลอดเลือดและลดความดันโลหิต",
-      "questionImage": "",
-      "choices": [
-        "Horse Chestnut",
-        "Hawthorn",
-        "Ginkgo",
-        "ฮวยซัว",
-        "St. John's wort"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Hawthorn</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> ภาวะความดันโลหิตสูงเป็นปัจจัยเสี่ยงหลักของ cardiovascular disease การเลือก first-line antihypertensive agents ต้องพิจารณาตาม compelling indications</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Hawthorn (Crataegus spp.) มีสารกลุ่ม flavonoids และ oligomeric proanthocyanidins ที่มีฤทธิ์ขยายหลอดเลือดหัวใจและหลอดเลือดส่วนปลาย และช่วยลดความดันโลหิต</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Horse Chestnut):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Ginkgo):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ฮวยซัว):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (St. John's wort):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางการรักษาโรคความดันโลหิตสูง ในเวชปฏิบัติทั่วไป พ.ศ. 2562 (สมาคมความดันโลหิตสูงแห่งประเทศไทย) & 2020 International Society of Hypertension (ISH) Global Guidelines</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>BP Target Standard:</b> เป้าหมายความดันโลหิตทั่วไป < 130/80 mmHg (สมาคมความดันโลหิตแห่งประเทศไทย 2024 / ACC/AHA)<br>• <b>First-line Core Classes:</b> 4 กลุ่มยาหลัก: ACEI, ARB, DHP-CCB, Thiazide diuretic; ห้ามใช้ ACEI ร่วมกับ ARB พร้อมกัน<br>• <b>Special Populations:</b> ผู้ป่วย DM with Albuminuria หรือ CKD ต้องมี ACEI หรือ ARB เป็นแกนหลักเสมอเพื่อชะลอการเสื่อมของไต</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::41",
-      "itemNo": 39,
-      "category": "18. Pharmacognosy & Herbal Medicine",
-      "subtopic": "Herbal Medicine",
-      "track": "Clinic",
-      "question": "พืชผักพื้นบ้านในข้อใดมีหลักฐานทางวิชาการชัดเจนว่ามีผลช่วยลดระดับน้ำตาลในเลือด",
-      "questionImage": "",
-      "choices": [
-        "ยอดฟักแม้ว",
-        "ใบกะหล่ำปลี",
-        "ผลบวบงู",
-        "ผลมะระขี้นก",
-        "ช่อดอกบรอกโคลี"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. ผลมะระขี้นก</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Herbal Medicine มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ผลมะระขี้นก มะระขี้นก (Momordica charantia) มีสารสำคัญ เช่น Charantin, Vicine และ Polypeptide-p ซึ่งมีฤทธิ์กระตุ้นการหลั่งและเสริมการทำงานของอินซูลิน ช่วยลดระดับน้ำตาลในเลือดได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ยอดฟักแม้ว):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ใบกะหล่ำปลี):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ผลบวบงู):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ช่อดอกบรอกโคลี):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Glaucoma Prostaglandin Analogues:</b> Latanoprost หยอดตาวันละ 1 ครั้งก่อนนอน ผลข้างเคียง: ม่านตาสีคล้ำขึ้น ขนตายาวหนาขึ้น และตาแดง<br>• <b>Beta-blocker Eye Drops Caution:</b> Timolol eye drops ถูกดูดซึมเข้าระบบ systemic ได้ ต้องกดหัวตา (Nasolacrimal occlusion) 1-2 นาที และระวังในผู้ป่วย Asthma, Severe COPD, Bradycardia<br>• <b>Bacterial Conjunctivitis Treatment:</b> หยอดตาปฏิชีวนะ Broad-spectrum เช่น Fluoroquinolones (Moxifloxacin), Chloramphenicol, หรือ Polymyxin B/Neomycin</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::42",
-      "itemNo": 40,
-      "category": "18. Pharmacognosy & Herbal Medicine",
-      "subtopic": "Herbal Medicine",
-      "track": "Clinic",
-      "question": "ยาพัฒนาจากสมุนไพรที่มีฤทธิ์ขับปัสสาวะในข้อใด ที่มีโอกาสเกิดปฏิกิริยาเสริมฤทธิ์ (Synergistic effect) กับยาลดระดับน้ำตาลในเลือดหรืออินซูลิน จนอาจทำให้ระดับน้ำตาลต่ำ",
-      "questionImage": "",
-      "choices": [
-        "ยาหญ้าหนวดแมว",
-        "ยากระเจี๊ยบแดง",
-        "ยารางจืด",
-        "ยาหญ้าปักกิ่ง",
-        "ยาหญ้าดอกขาว"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ยาหญ้าหนวดแมว</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Herbal Medicine มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยาหญ้าหนวดแมว หญ้าหนวดแมว (Orthosiphon stamineus) นอกจากมีฤทธิ์ขับปัสสาวะและขับกรดยูริกแล้ว ยังมีรายงานฤทธิ์ลดน้ำตาลในเลือด (Hypoglycemic effect) ซึ่งอาจเสริมฤทธิ์กับยารักษาเบาหวานได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (ยากระเจี๊ยบแดง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ยารางจืด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ยาหญ้าปักกิ่ง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ยาหญ้าดอกขาว):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Medicine เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>PUD & H. pylori Quadruple Therapy:</b> สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง<br>• <b>GERD Lifestyle & PPI Timing:</b> รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร<br>• <b>Constipation & Laxatives:</b> Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::132",
-      "itemNo": 130,
-      "category": "18. Pharmacognosy & Herbal Medicine",
-      "subtopic": "Herbal Products",
-      "track": "Product",
-      "question": "ยาสมุนไพรในบัญชียาหลักแห่งชาติที่มีข้อบ่งใช้สำหรับรักษาโรคเริมและงูสวัดคือสมุนไพรในข้อใด",
-      "questionImage": "",
-      "choices": [
-        "ยาพญายอ (เสลดพังพอนตัวเมีย)",
-        "ยาเปลือกมังคุด",
-        "ยาบัวบก",
-        "ยาทิงเจอร์พลู",
-        "ยาทิงเจอร์ทองพันชั่ง"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ยาพญายอ (เสลดพังพอนตัวเมีย)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ยาพญายอ (เสลดพังพอนตัวเมีย) สารสกัดจากพญายอ (Clinacanthus nutans หรือเสลดพังพอนตัวเมีย) ในรูปแบบครีมหรือสารละลาย มีฤทธิ์ต้านเชื้อไวรัสเริม (Anti-HSV) และระงับอาการอักเสบ บรรจุอยู่ในบัญชียาหลักแห่งชาติด้านสมุนไพร</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (ยาเปลือกมังคุด):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ยาบัวบก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ยาทิงเจอร์พลู):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ยาทิงเจอร์ทองพันชั่ง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> Thai Herbal Pharmacopoeia (THP 2021) สำนักยาและวัตถุเสพติด กรมวิทยาศาสตร์การแพทย์ กระทรวงสาธารณสุข & บัญชียาหลักแห่งชาติด้านสมุนไพร พ.ศ. 2566</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::133",
-      "itemNo": 131,
-      "category": "18. Pharmacognosy & Herbal Medicine",
-      "subtopic": "Herbal Products",
-      "track": "Product",
-      "question": "ส่วนของสมุนไพรพญายอ (เสลดพังพอนตัวเมีย) ที่นำมาใช้ในการสกัดเพื่อทำยารักษาโรคเริมคือนำส่วนใดมาใช้",
-      "questionImage": "",
-      "choices": [
-        "ใบ (Leaves)",
-        "เถา (Stems)",
-        "ราก (Roots)",
-        "เมล็ด (Seeds)",
-        "เปลือกผล (Rinds)"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ใบ (Leaves)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ใบ (Leaves) การเตรียมยาแผนไทยและสารสกัดพญายอสำหรับต้านไวรัสเริมและงูสวัด จะใช้ส่วนของ \"ใบสดหรือใบแห้ง\" ซึ่งอุดมไปด้วยสารกลุ่มฟลาโวนอยด์และสารสำคัญในการออกฤทธิ์ต้านไวรัส</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (เถา (Stems)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ราก (Roots)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (เมล็ด (Seeds)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เปลือกผล (Rinds)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Herbal Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> Thai Herbal Pharmacopoeia (THP 2021) สำนักยาและวัตถุเสพติด กรมวิทยาศาสตร์การแพทย์ กระทรวงสาธารณสุข & บัญชียาหลักแห่งชาติด้านสมุนไพร พ.ศ. 2566</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    }
-  ],
-  "4. Endocrinology": [
-    {
-      "id": "📥 รวมข้อสอบด่วน::28",
-      "itemNo": 26,
-      "category": "4. Endocrinology",
-      "subtopic": "Diabetes mellitus",
-      "track": "Clinic",
-      "question": "ผู้ป่วยชายอายุ 60 ปี โรคประจำตัว T2DM มา 10 ปี ได้รับ Metformin 500 mg 2x2 pc, Glipizide 5 mg 2x2 ac, Pioglitazone 30 mg 1x1 pc ไม่มีโรคร่วมอื่นและยังไม่มีภาวะแทรกซ้อน เป้าหมายระดับ HbA1c ของผู้ป่วยรายนี้ตามแนวทางเวชปฏิบัติส่วนใหญ่ควรเป็นเท่าใด",
-      "questionImage": "",
-      "choices": [
-        "< 5.5%",
-        "< 6.0%",
-        "< 7.0%",
-        "< 8.0%",
-        "< 8.5%"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. < 7.0%</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยเบาหวานชนิดที่ 2 (T2DM) เน้นควบคุม HbA1c ควบคู่กับการเลือกยาที่มี cardiorenal protection ในผู้ป่วยที่มีโรคร่วม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>< 7.0% ตาม ADA guidelines ผู้ป่วยเบาหวานส่วนใหญ่ที่เป็นผู้ใหญ่ทั่วไป ไม่มีโรคร่วมรุนแรง และไม่มีประวัติ hypoglycemia บ่อย เป้าหมาย HbA1c ทั่วไปแนะนำที่ < 7.0%</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (< 5.5%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (< 6.0%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (< 8.0%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (< 8.5%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566 (สมาคมโรคเบาหวานแห่งประเทศไทย) & American Diabetes Association (ADA) Standards of Care in Diabetes 2024</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Renal Safety Limit:</b> ห้ามใช้ (contraindication) เมื่อ eGFR < 30 mL/min/1.73 m² และไม่ควรเริ่มยาเมื่อ eGFR 30-44 mL/min เนื่องจากเสี่ยงต่อ fatal Lactic Acidosis<br>• <b>Contrast Procedure:</b> ต้องหยุดยาก่อนหรือในวันที่ฉีดสารทึบรังสีชนิด iodinated radiocontrast และประเมิน eGFR ซ้ำหลังตรวจ 48 ชม. ก่อนเริ่มยาใหม่<br>• <b>Long-term Monitoring:</b> การใช้ระยะยาวลดการดูดซึม Vitamin B12 ควรตรวจติดตาม CBC และระดับวิตามินบี 12 เป็นระยะ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::29",
-      "itemNo": 27,
-      "category": "4. Endocrinology",
-      "subtopic": "Diabetes mellitus",
-      "track": "Clinic",
-      "question": "ผลตรวจทางห้องปฏิบัติการ HbA1c ของผู้ป่วยรายนี้มีค่าเท่ากับ 9.0% ตามแนวทาง ADA guideline ยาลดระดับน้ำตาลในเลือดกลุ่มถัดไปที่ควรพิจารณาเพิ่มที่มีประสิทธิภาพลดระดับน้ำตาลได้สูงมากและส่งเสริมการลดน้ำหนัก",
-      "questionImage": "",
-      "choices": [
-        "Sitagliptin",
-        "Empagliflozin",
-        "Acarbose",
-        "Semaglutide SC",
-        "Insulin SC"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Semaglutide SC</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยเบาหวานชนิดที่ 2 (T2DM) เน้นควบคุม HbA1c ควบคู่กับการเลือกยาที่มี cardiorenal protection ในผู้ป่วยที่มีโรคร่วม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Semaglutide SC เมื่อผู้ป่วยยังไม่ถึงเป้าหมายและต้องการยาที่มี glycemic efficacy สูงมาก (Very High) พร้อมทั้งชะลอการเพิ่มของน้ำหนัก/ช่วยลดน้ำหนัก GLP-1 receptor agonist (เช่น Semaglutide SC) เป็นตัวเลือกที่แนะนำเป็น first-line ก่อนการเริ่มอินซูลิน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Sitagliptin):</b> เป็น DPP-4 inhibitor เพิ่ม active GLP-1 แบบ glucose-dependent มี neutral effect ต่อน้ำหนักตัว และความเสี่ยงต่อ hypoglycemia ต่ำมาก แต่ต้องปรับ dose ตาม CrCl<br>• <b>ข้อ ข. (Empagliflozin):</b> เป็น SGLT2 inhibitor ยับยั้งการดูดกลับ glucose ที่ไต มี cardiorenal benefit ชัดเจน (ลด HF hospitalization และชะลอ CKD progression) แต่เสี่ยงต่อ mycotic genital infection และ euglycemic DKA<br>• <b>ข้อ ค. (Acarbose):</b> เป็น Alpha-glucosidase inhibitor ชะลอการย่อยคาร์โบไฮเดรตในทางเดินอาหาร ลด postprandial glucose แต่อาจเกิดท้องอืด ผายลม (flatulence) หากเกิด hypoglycemia ต้องแก้ด้วย pure glucose เท่านั้น<br>• <b>ข้อ จ. (Insulin SC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566 (สมาคมโรคเบาหวานแห่งประเทศไทย) & American Diabetes Association (ADA) Standards of Care in Diabetes 2024</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Potent Efficacy:</b> มี efficacy สูงมากในการลด HbA1c และลดน้ำหนัก มีทั้งรูปแบบฉีด SC สัปดาห์ละครั้งและเม็ดรับประทาน (Rybelsus)<br>• <b>Oral Administration:</b> รูปแบบเม็ดต้องรับประทานตอนตื่นนอนตอนท้องว่าง ดื่มน้ำเปล่าไม่เกิน 120 mL และรออย่างน้อย 30 นาทีก่อนรับประทานอาหาร</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::30",
-      "itemNo": 28,
-      "category": "4. Endocrinology",
-      "subtopic": "Diabetes mellitus",
-      "track": "Clinic",
-      "question": "หากแพทย์ต้องการเริ่ม insulin แก่ผู้ป่วยรายนี้ ผู้ป่วยควรได้รับ insulin ชนิดใดจึงจะเหมาะสมที่สุดสำหรับการเริ่มต้น (Initial insulin therapy) ตามแนวทางปฏิบัติ",
-      "questionImage": "",
-      "choices": [
-        "Lispro insulin SC",
-        "Lispro insulin SC + insulin glargine SC",
-        "RI insulin SC",
-        "RI insulin SC + NPH insulin SC",
-        "Insulin glargine SC"
-      ],
-      "answer": 5,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ จ. Insulin glargine SC</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยเบาหวานชนิดที่ 2 (T2DM) เน้นควบคุม HbA1c ควบคู่กับการเลือกยาที่มี cardiorenal protection ในผู้ป่วยที่มีโรคร่วม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Insulin glargine SC การเริ่มต้นการรักษาด้วยอินซูลินใน T2DM แนะนำให้เริ่มด้วย Basal insulin วันละ 1 ครั้ง (เช่น Insulin glargine หรือ Degludec) เพื่อควบคุมระดับ Fasting plasma glucose โดยมีความเสี่ยงต่อ hypoglycemia ต่ำกว่า NPH</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Lispro insulin SC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Lispro insulin SC + insulin glargine SC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (RI insulin SC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (RI insulin SC + NPH insulin SC):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566 (สมาคมโรคเบาหวานแห่งประเทศไทย) & American Diabetes Association (ADA) Standards of Care in Diabetes 2024</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::31",
-      "itemNo": 29,
-      "category": "4. Endocrinology",
-      "subtopic": "Diabetes mellitus",
-      "track": "Clinic",
-      "question": "ยาลดระดับน้ำตาลในเลือดในข้อใด ไม่มีผล ในการเพิ่มการหลั่งฮอร์โมนอินซูลินจากตับอ่อน",
-      "questionImage": "",
-      "choices": [
-        "Glipizide",
-        "Repaglinide",
-        "Pioglitazone",
-        "Saxagliptin",
-        "Liraglutide"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. Pioglitazone</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยเบาหวานชนิดที่ 2 (T2DM) เน้นควบคุม HbA1c ควบคู่กับการเลือกยาที่มี cardiorenal protection ในผู้ป่วยที่มีโรคร่วม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Pioglitazone จัดอยู่ในกลุ่ม Thiazolidinediones (TZDs) ออกฤทธิ์ผ่าน PPAR-gamma เพื่อเพิ่ม Insulin sensitivity ที่กล้ามเนื้อและตับ โดยไม่ได้ออกฤทธิ์กระตุ้นการหลั่งอินซูลินจากบีตาเซลล์ของตับอ่อน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Glipizide):</b> เป็น Second-generation Sulfonylurea กระตุ้น insulin secretion เสี่ยงต่อ hypoglycemia และ weight gain ขับออกทางตับเด่นกว่า glibenclamide จึงปลอดภัยกว่าในผู้สูงอายุ/CKD<br>• <b>ข้อ ข. (Repaglinide):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Saxagliptin):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Liraglutide):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566 (สมาคมโรคเบาหวานแห่งประเทศไทย) & American Diabetes Association (ADA) Standards of Care in Diabetes 2024</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Thiazolidinedione Warning:</b> เป็น PPAR-gamma agonist เพิ่ม insulin sensitivity แต่ทำให้เกิด fluid retention ห้ามใช้ใน Heart Failure (NYHA Class III-IV) และเสี่ยงกระดูกหัก/มะเร็งกระเพาะปัสสาวะ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::32",
-      "itemNo": 30,
-      "category": "4. Endocrinology",
-      "subtopic": "Diabetes mellitus",
-      "track": "Clinic",
-      "question": "กลไกการออกฤทธิ์หลักของยา semaglutide คือข้อใด",
-      "questionImage": "",
-      "choices": [
-        "กระตุ้น PPAR-γ receptor",
-        "กระตุ้น GLP-1 receptor",
-        "ยับยั้งการดูดกลับกลูโคสที่ท่อไตส่วนต้น",
-        "กระตุ้น sulfonylurea receptor type 1",
-        "ยับยั้งเอนไซม์ α-glucosidase"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. กระตุ้น GLP-1 receptor</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยเบาหวานชนิดที่ 2 (T2DM) เน้นควบคุม HbA1c ควบคู่กับการเลือกยาที่มี cardiorenal protection ในผู้ป่วยที่มีโรคร่วม</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>กระตุ้น GLP-1 receptor Semaglutide เป็นยากลุ่ม GLP-1 receptor agonist (GLP-1 RA) ออกฤทธิ์เลียนแบบฮอร์โมน Incretin โดยจับและกระตุ้น GLP-1 receptor ส่งเสริมการหลั่งอินซูลินตามระดับน้ำตาลและยับยั้งการหลั่งกลูคากอน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (กระตุ้น PPAR-γ receptor):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ยับยั้งการดูดกลับกลูโคสที่ท่อไตส่วนต้น):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (กระตุ้น sulfonylurea receptor type 1):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ยับยั้งเอนไซม์ α-glucosidase):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Diabetes mellitus เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> แนวทางเวชปฏิบัติสำหรับโรคเบาหวาน พ.ศ. 2566 (สมาคมโรคเบาหวานแห่งประเทศไทย) & American Diabetes Association (ADA) Standards of Care in Diabetes 2024</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Potent Efficacy:</b> มี efficacy สูงมากในการลด HbA1c และลดน้ำหนัก มีทั้งรูปแบบฉีด SC สัปดาห์ละครั้งและเม็ดรับประทาน (Rybelsus)<br>• <b>Oral Administration:</b> รูปแบบเม็ดต้องรับประทานตอนตื่นนอนตอนท้องว่าง ดื่มน้ำเปล่าไม่เกิน 120 mL และรออย่างน้อย 30 นาทีก่อนรับประทานอาหาร</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    }
-  ],
-  "20. Biotechnology": [
-    {
-      "id": "📥 รวมข้อสอบด่วน::38",
-      "itemNo": 36,
-      "category": "20. Biotechnology",
-      "subtopic": "Recombinant DNA",
-      "track": "Product",
-      "question": "การผลิต insulin ในระดับอุตสาหกรรมในปัจจุบัน ข้อใดมีความเป็นไปได้และเป็นกระบวนการหลักที่ใช้จริงมากที่สุด",
-      "questionImage": "",
-      "choices": [
-        "สกัดโดยตรงจากตับอ่อนสุกรแล้วนำมาสังเคราะห์ต่อ",
-        "ใช้ E. coli หรือ Saccharomyces cerevisiae สังเคราะห์ recombinant preproinsulin/proinsulin แล้วตัดสายด้วยเอนไซม์",
-        "สังเคราะห์ด้วยเทคนิค Solid Phase Peptide Synthesis (SPPS) ใน bioreactor",
-        "ใช้ hybridoma technology ผลิตออกมาเป็น monoclonal antibody",
-        "เพาะเลี้ยง stem cell ของ human beta cell แล้วสกัด insulin ออกมา"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. ใช้ E. coli หรือ Saccharomyces cerevisiae สังเคราะห์ recombinant preproinsulin/proinsulin แล้วตัดสายด้วยเอนไซม์</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ใช้ E. coli หรือ Saccharomyces cerevisiae สังเคราะห์ recombinant preproinsulin/proinsulin แล้วตัดสายด้วยเอนไซม์ การผลิตอินซูลินในระดับอุตสาหกรรมใช้เทคโนโลยี Recombinant DNA โดยใช้เซลล์โฮสต์ เช่น E. coli หรือ ยีสต์ (S. cerevisiae) ในการแสดงออกของโปรตีน Proinsulin จากนั้นจึงผ่านกระบวนการ enzymatic cleavage (เช่น Trypsin/Carboxypeptidase B) เพื่อให้ได้โมเลกุลอินซูลินที่สมบูรณ์</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (สกัดโดยตรงจากตับอ่อนสุกรแล้วนำมาสังเคราะห์ต่อ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Recombinant DNA เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (สังเคราะห์ด้วยเทคนิค Solid Phase Peptide Synthesis (SPPS) ใน bioreactor):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Recombinant DNA เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ใช้ hybridoma technology ผลิตออกมาเป็น monoclonal antibody):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Recombinant DNA เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (เพาะเลี้ยง stem cell ของ human beta cell แล้วสกัด insulin ออกมา):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Recombinant DNA เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> [NEED_REVIEW]</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Comprehensive Glycemic Targets:</b> เป้าหมายทั่วไป: HbA1c < 7.0%, FPG 80-130 mg/dL, Postprandial < 180 mg/dL<br>• <b>Organ Protection First:</b> ผู้ป่วย DM ที่มี ASCVD, CKD หรือ Heart Failure ให้เลือก SGLT2i หรือ GLP-1RA ที่มีพิสูจน์ benefit โดยไม่ต้องคำนึงถึงระดับ baseline HbA1c<br>• <b>Hypoglycemia Management:</b> กฎ Rule of 15: ค่าน้ำตาล < 70 mg/dL ให้ทานคาร์โบไฮเดรตเร็ว 15 g (น้ำส้ม 120 mL) รอ 15 นาทีแล้วตรวจซ้ำ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::73",
-      "itemNo": 71,
-      "category": "20. Biotechnology",
-      "subtopic": "Biotech Products",
-      "track": "Product",
-      "question": "ลักษณะสำคัญของ Monoclonal antibody (mAb) ที่ทำให้ต้องเตรียมในรูปแบบยาฉีด (Injectable dosage form) เท่านั้น คือข้อใด",
-      "questionImage": "",
-      "choices": [
-        "ขนาดโมเลกุลเล็ก ดูดซึมผ่าน GI tract ได้ดี",
-        "เป็นโปรตีนโมเลกุลใหญ่ ไวต่อเอนไซม์ protease และถูกทำลายในทางเดินอาหารเมื่อให้โดยการรับประทาน",
-        "คงตัวสูงในสภาวะ pH ที่เป็นกรดของกระเพาะอาหาร",
-        "ผ่าน hepatic first-pass metabolism ได้ดีมาก",
-        "มีค่า Log P สูงมากจึงดูดซึมได้รวดเร็ว"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. เป็นโปรตีนโมเลกุลใหญ่ ไวต่อเอนไซม์ protease และถูกทำลายในทางเดินอาหารเมื่อให้โดยการรับประทาน</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การผลิตและควบคุมคุณภาพยาปราศจากเชื้อ (Sterile Products) ต้องควบคุม pyrogen, endotoxin และกระบวนการ sterilization ตามมาตรฐานเภสัชตำรับ</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>เป็นโปรตีนโมเลกุลใหญ่ ไวต่อเอนไซม์ protease และถูกทำลายในทางเดินอาหารเมื่อให้โดยการรับประทาน สารชีววัตถุประเภทแอนติบอดีเป็นโปรตีนโมเลกุลขนาดใหญ่ ซึ่งจะถูกกรดในกระเพาะอาหารทำให้เสียสภาพ (Denaturation) และถูกย่อยสลายด้วยเอนไซม์ Protease ในทางเดินอาหารจนหมด จึงไม่สามารถบริหารโดยการรับประทานได้</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ขนาดโมเลกุลเล็ก ดูดซึมผ่าน GI tract ได้ดี):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biotech Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (คงตัวสูงในสภาวะ pH ที่เป็นกรดของกระเพาะอาหาร):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biotech Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ผ่าน hepatic first-pass metabolism ได้ดีมาก):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biotech Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (มีค่า Log P สูงมากจึงดูดซึมได้รวดเร็ว):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biotech Products เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::80",
-      "itemNo": 78,
-      "category": "20. Biotechnology",
-      "subtopic": "Cell culture & fermentation",
-      "track": "Product",
-      "question": "ข้อใดเป็นกระบวนการที่เกี่ยวข้องกับ Upstream process ของการผลิตยาชีววัตถุ เช่น Monoclonal antibody",
-      "questionImage": "",
-      "choices": [
-        "การเตรียมสูตรตำรับ (formulation) และบรรจุปราศจากเชื้อ",
-        "การทำให้บริสุทธิ์ด้วย affinity chromatography",
-        "การเพาะเลี้ยงเซลล์และหมักเชื้อภายใน bioreactor เพื่อผลิตโปรตีน",
-        "การทดสอบความคงตัวของผลิตภัณฑ์หลังบรรจุ",
-        "การกรองเพื่อความบริสุทธิ์ (Ultrafiltration / Diafiltration)"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. การเพาะเลี้ยงเซลล์และหมักเชื้อภายใน bioreactor เพื่อผลิตโปรตีน</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>การเพาะเลี้ยงเซลล์และหมักเชื้อภายใน bioreactor เพื่อผลิตโปรตีน Upstream processing ครอบคลุมตั้งแต่ขั้นตอนการเตรียมสายพันธุ์เซลล์ (Cell banking), การขยายขนาดเพาะเลี้ยง (Inoculum expansion) ไปจนถึงการเพาะเลี้ยงเซลล์ใน Bioreactor เพื่อให้เซลล์ผลิตโปรตีนเป้าหมาย</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (การเตรียมสูตรตำรับ (formulation) และบรรจุปราศจากเชื้อ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (การทำให้บริสุทธิ์ด้วย affinity chromatography):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (การทดสอบความคงตัวของผลิตภัณฑ์หลังบรรจุ):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (การกรองเพื่อความบริสุทธิ์ (Ultrafiltration / Diafiltration)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::81",
-      "itemNo": 79,
-      "category": "20. Biotechnology",
-      "subtopic": "Cell culture & fermentation",
-      "track": "Product",
-      "question": "ในการเพาะเลี้ยงเซลล์เพื่อผลิต mAb ใน Bioreactor ปัจจัยวิกฤตใดที่ต้องควบคุมอย่างเคร่งครัดเพื่อให้เซลล์เจริญเติบโตได้ดีและสังเคราะห์โปรตีนได้อย่างมีประสิทธิภาพ",
-      "questionImage": "",
-      "choices": [
-        "ควบคุม pH, อุณหภูมิ (Temperature) และระดับออกซิเจนละลาย (Dissolved O2)",
-        "ใส่ตัวทำละลายอินทรีย์เพื่อเร่งให้โปรตีนพับตัว",
-        "ใส่ reducing agent ความเข้มข้นสูงเพื่อป้องกันพันธะไดซัลไฟด์",
-        "สเตอไรล์ด้วยการฉายแสงยูวีตลอดเวลาของการเพาะเลี้ยง",
-        "ใส่เอนไซม์ protease เพื่อย่อยสลายโปรตีนที่พับตัวผิดรูป"
-      ],
-      "answer": 1,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ก. ควบคุม pH, อุณหภูมิ (Temperature) และระดับออกซิเจนละลาย (Dissolved O2)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ควบคุม pH, อุณหภูมิ (Temperature) และระดับออกซิเจนละลาย (Dissolved O2) สภาวะแวดล้อมที่เหมาะสมสำหรับการเจริญของเซลล์สัตว์เลี้ยงลูกด้วยนม (เช่น CHO cells) ต้องควบคุม pH (~6.8-7.2), อุณหภูมิ (~36.5-37 °C) และ Dissolved Oxygen (DO) ให้อยู่ในช่วงที่จำเพาะเพื่อคงความมีชีวิตของเซลล์</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ข. (ใส่ตัวทำละลายอินทรีย์เพื่อเร่งให้โปรตีนพับตัว):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ใส่ reducing agent ความเข้มข้นสูงเพื่อป้องกันพันธะไดซัลไฟด์):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (สเตอไรล์ด้วยการฉายแสงยูวีตลอดเวลาของการเพาะเลี้ยง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ใส่เอนไซม์ protease เพื่อย่อยสลายโปรตีนที่พับตัวผิดรูป):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Cell culture & fermentation เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Quality Standard:</b> ตรวจสอบเกณฑ์การยอมรับตามเภสัชตำรับ (USP/BP) ทั้งด้าน Dissolution, Uniformity of Dosage Units และ Stability<br>• <b>Formulation Troubleshooting:</b> วิเคราะห์ปฏิสัมพันธ์ระหว่างตัวยากับสารช่วย (Drug-Excipient Compatibility) เพื่อแก้ไขปัญหาความไม่คงตัวของตำรับ</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::84",
-      "itemNo": 82,
-      "category": "20. Biotechnology",
-      "subtopic": "Biosimilars & Quality Control",
-      "track": "Product",
-      "question": "ข้อใดคือลักษณะที่ถูกต้องของยาชีววัตถุคล้ายคลึง (Biosimilar) เปรียบเทียบกับยาชีววัตถุอ้างอิง (Reference biological drug)",
-      "questionImage": "",
-      "choices": [
-        "มีโครงสร้างเหมือนกันทุกประการ 100%",
-        "ต้องแสดงข้อมูลความคล้ายคลึง (Biosimilarity) ด้านคุณภาพ ความปลอดภัย และประสิทธิภาพ (Quality, safety, efficacy)",
-        "ไม่ต้องทำการทดสอบทางคลินิก (clinical trials)",
-        "ไม่ต้องแสดงข้อมูล Immunogenicity เพราะถือว่าโครงสร้างเหมือนกัน",
-        "ถือว่าเป็นยาชื่อสามัญ (Generic drug) ทั่วไป"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. ต้องแสดงข้อมูลความคล้ายคลึง (Biosimilarity) ด้านคุณภาพ ความปลอดภัย และประสิทธิภาพ (Quality, safety, efficacy)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การพัฒนาสูตรตำรับยาเม็ด (Tablet formulation) ต้องควบคุม powder flowability, compressibility และเลือก excipients เพื่อป้องกัน tablet defects และให้ dissolution rate ตามมาตรฐาน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>ต้องแสดงข้อมูลความคล้ายคลึง (Biosimilarity) ด้านคุณภาพ ความปลอดภัย และประสิทธิภาพ (Quality, safety, efficacy) ยาชีววัตถุคล้ายคลึงไม่สามารถเหมือนยาต้นแบบได้ 100% เนื่องจากกระบวนการผลิตทางชีวภาพ จึงต้องมีการศึกษาเปรียบเทียบ (Comparability exercise) ครอบคลุมทั้งคุณภาพ safety ฤทธิ์ทางคลินิก และการเกิดภูมิคุ้มกันต้านยา</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (มีโครงสร้างเหมือนกันทุกประการ 100%):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (ไม่ต้องทำการทดสอบทางคลินิก (clinical trials)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (ไม่ต้องแสดงข้อมูล Immunogenicity เพราะถือว่าโครงสร้างเหมือนกัน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (ถือว่าเป็นยาชื่อสามัญ (Generic drug) ทั่วไป):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Biosimilars & Quality Control เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> The United States Pharmacopeia (USP-NF 2024) General Chapter <1055> Biotechnology-Derived Articles & WHO Guidelines on Evaluation of Similar Biotherapeutic Products (SBPs)</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>PUD & H. pylori Quadruple Therapy:</b> สูตร Bismuth Quadruple Therapy 14 วัน (PPI + Bismuth + Metronidazole + Tetracycline) เป็น first-line ในพื้นที่ที่มี clarithromycin resistance สูง<br>• <b>GERD Lifestyle & PPI Timing:</b> รับประทาน PPI ก่อนอาหารมื้อแรก 30-60 นาที และหลีกเลี่ยงการนอนราบภายใน 2-3 ชั่วโมงหลังรับประทานอาหาร<br>• <b>Constipation & Laxatives:</b> Bulk-forming (Psyllium) ต้องดื่มน้ำตามมากๆ; Stimulant laxatives (Senna, Bisacodyl) เลี่ยงการใช้ต่อเนื่องระยะยาวป้องกัน cathartic colon</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    }
-  ],
-  "12. Gynaecologic/GU": [
-    {
-      "id": "📥 รวมข้อสอบด่วน::86",
-      "itemNo": 84,
-      "category": "12. Gynaecologic/GU",
-      "subtopic": "Oral contraceptive",
-      "track": "Clinic",
-      "question": "หญิงอายุ 32 ปี น้ำหนัก 60 กก. เพิ่งคลอดบุตรได้ 4 สัปดาห์ ให้นมบุตร ต้องการคุมกำเนิด ควรเลือกใช้ยาคุมกำเนิดชนิดใดที่ปลอดภัยและไม่รบกวนน้ำนม",
-      "questionImage": "",
-      "choices": [
-        "Norethisterone 5 mg",
-        "Levonorgestrel 1.5 mg",
-        "Dienogest 2 mg",
-        "Desogestrel 75 mcg (Progestin-only pill)",
-        "Ethinylestradiol 30 mcg + Drospirenone 3 mg"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. Desogestrel 75 mcg (Progestin-only pill)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Oral contraceptive มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Desogestrel 75 mcg (Progestin-only pill) หญิงให้นมบุตรหลังคลอดควรหลีกเลี่ยงฮอร์โมนเอสโตรเจนเพราะลดการหลั่งน้ำนมและเพิ่มความเสี่ยง VTE ยาคุมกำเนิดชนิดฮอร์โมนเดี่ยว Progestin-only pills (POPs) ชนิด Desogestrel 75 mcg มี efficacy สูง ยับยั้งการตกไข่ได้ดี และปลอดภัยต่อการให้นมบุตร</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Norethisterone 5 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (Levonorgestrel 1.5 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Dienogest 2 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Ethinylestradiol 30 mcg + Drospirenone 3 mg):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Pregnancy HTN Treatment:</b> ยาลดความดันที่ปลอดภัย: Methyldopa, Labetalol, Nifedipine; ห้ามใช้ ACEI, ARB, Direct renin inhibitors เด็ดขาด (Fetotoxicity)<br>• <b>Emergency Contraception Timing:</b> Levonorgestrel 1.5 mg ทานให้เร็วที่สุดภายใน 72 ชั่วโมง (หรือ Ulipristal acetate 30 mg ภายใน 120 ชั่วโมง) หลังมีเพศสัมพันธ์ที่ไม่ได้ป้องกัน<br>• <b>Vulvovaginal Candidiasis:</b> สตรีตั้งครรภ์ที่เป็นเชื้อราในช่องคลอด ให้ใช้เฉพาะ Topical Clotrimazole vaginal tablet/suppository 7 วัน ห้ามใช้ Oral Fluconazole</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::87",
-      "itemNo": 85,
-      "category": "12. Gynaecologic/GU",
-      "subtopic": "Oral contraceptive",
-      "track": "Clinic",
-      "question": "ข้อใด ไม่ใช่ อาการข้างเคียงรุนแรงที่ต้องเฝ้าระวัง (Severe warning signs / ACHES) ของยาเม็ดคุมกำเนิดชนิดฮอร์โมนรวม",
-      "questionImage": "",
-      "choices": [
-        "ปวดศีรษะรุนแรง (Severe headache)",
-        "ปวดท้องรุนแรง (Severe abdominal pain)",
-        "การมองเห็นผิดปกติ (Eye problems/Blurry vision)",
-        "คัดตึงเต้านม (Breast tenderness)",
-        "หายใจลำบากหรือเจ็บหน้าอกรุนแรง (Chest pain/SOB)"
-      ],
-      "answer": 4,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ง. คัดตึงเต้านม (Breast tenderness)</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Oral contraceptive มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>คัดตึงเต้านม (Breast tenderness) อาการสัญญาณเตือนภาวะลิ่มเลือดอุดตันรุนแรงจำด้วย ACHES (Abdominal pain, Chest pain, Headaches, Eye problems, Severe leg pain) ส่วนอาการคัดตึงเต้านมเป็นผลข้างเคียงทั่วไปจากเอสโตรเจนที่พบได้บ่อยและไม่อันตรายถึงชีวิต</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (ปวดศีรษะรุนแรง (Severe headache)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (ปวดท้องรุนแรง (Severe abdominal pain)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (การมองเห็นผิดปกติ (Eye problems/Blurry vision)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (หายใจลำบากหรือเจ็บหน้าอกรุนแรง (Chest pain/SOB)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Direct Compression vs Granulation:</b> Direct Compression เหมาะสำหรับตัวยาที่ทนความร้อนและความชื้นไม่ได้และไหลดี; Wet Granulation ให้ความสม่ำเสมอของตัวยาสูงสุด<br>• <b>Excipient Classification:</b> Diluent (Lactose, MCC), Binder (PVP, Starch paste), Disintegrant (SSG, Croscarmellose), Lubricant (Magnesium stearate 0.5-1%)<br>• <b>Lubricant Overmixing:</b> การผสม Magnesium stearate นานเกินไปทำให้เกิด hydrophobic film คลุมผงยา ส่งผลให้เม็ดยาแตกตัวช้าลงและ dissolution ลดลง</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::89",
-      "itemNo": 87,
-      "category": "12. Gynaecologic/GU",
-      "subtopic": "Oral contraceptive",
-      "track": "Clinic",
-      "question": "ข้อใดอธิบายกลไกหลักของยาคุมกำเนิดชนิดฮอร์โมนรวม (Combined hormonal contraceptives) ในการป้องกันการตั้งครรภ์",
-      "questionImage": "",
-      "choices": [
-        "Prevention of endometrial proliferation and maturation",
-        "Negative feedback inhibition to suppress LH and FSH surge ป้องกันการตกไข่",
-        "Sensitize hypothalamus to the positive feedback of estrogen",
-        "Delay implantation โดยตรง",
-        "Reduce chance of conception by sperm lysis"
-      ],
-      "answer": 2,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ข. Negative feedback inhibition to suppress LH and FSH surge ป้องกันการตกไข่</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Oral contraceptive มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>Negative feedback inhibition to suppress LH and FSH surge ป้องกันการตกไข่ เอสโตรเจนและโปรเจสตินออกฤทธิ์ยับยั้งแบบป้อนกลับเชิงลบ (Negative feedback) ที่ต่อมใต้สมองส่วนหน้า ยับยั้งการหลั่ง FSH และขัดขวาง LH surge ทำให้ไม่เกิดการตกไข่ (Inhibition of ovulation) ซึ่งเป็นกลไกหลักที่สุด</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (Prevention of endometrial proliferation and maturation):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ค. (Sensitize hypothalamus to the positive feedback of estrogen):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (Delay implantation โดยตรง):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (Reduce chance of conception by sperm lysis):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Pregnancy HTN Treatment:</b> ยาลดความดันที่ปลอดภัย: Methyldopa, Labetalol, Nifedipine; ห้ามใช้ ACEI, ARB, Direct renin inhibitors เด็ดขาด (Fetotoxicity)<br>• <b>Emergency Contraception Timing:</b> Levonorgestrel 1.5 mg ทานให้เร็วที่สุดภายใน 72 ชั่วโมง (หรือ Ulipristal acetate 30 mg ภายใน 120 ชั่วโมง) หลังมีเพศสัมพันธ์ที่ไม่ได้ป้องกัน<br>• <b>Vulvovaginal Candidiasis:</b> สตรีตั้งครรภ์ที่เป็นเชื้อราในช่องคลอด ให้ใช้เฉพาะ Topical Clotrimazole vaginal tablet/suppository 7 วัน ห้ามใช้ Oral Fluconazole</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
-    },
-    {
-      "id": "📥 รวมข้อสอบด่วน::90",
-      "itemNo": 88,
-      "category": "12. Gynaecologic/GU",
-      "subtopic": "Oral contraceptive",
-      "track": "Clinic",
-      "question": "ข้อใด ไม่ใช่ เหตุผลในการเลือกจ่ายยาคุมชนิดโปรเจสตินเดี่ยว (Progestin-only) แทนการจ่ายยาคุมกำเนิดชนิดฮอร์โมนรวม",
-      "questionImage": "",
-      "choices": [
-        "มีภาวะปวดไมเกรนรุนแรงร่วมกับมีอาการเตือน (Migraine with aura)",
-        "อยู่ระหว่างการให้นมบุตร",
-        "มีเลือดออกกระปริดกระปรอยทางช่องคลอดโดยไม่ทราบสาเหตุ",
-        "มีประวัติโรคเกี่ยวกับหลอดเลือดหัวใจหรือลิ่มเลือดอุดตัน",
-        "มีอาการคลื่นไส้อาเจียนรุนแรงจากเอสโตรเจน"
-      ],
-      "answer": 3,
-      "explanation": "<div style='font-size:1.02em; font-weight:700; color:#15803d; margin-bottom:8px;'>✅ คำตอบที่ถูกต้อง: ข้อ ค. มีเลือดออกกระปริดกระปรอยทางช่องคลอดโดยไม่ทราบสาเหตุ</div><div style='background:#f8fafc; border-left:3px solid #3b82f6; padding:6px 12px; border-radius:0 6px 6px 0; margin-bottom:12px; font-size:0.95em; color:#1e293b;'><b>💡 Background:</b> การบริบาลผู้ป่วยในกลุ่มโรค Oral contraceptive มุ่งเน้นการควบคุมโรคและลดความเสี่ยงต่อภาวะแทรกซ้อนด้วย evidence-based pharmacotherapy</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#0369a1;'>🎯 ทำไมข้อนี้ถึงถูก:</b><br>มีเลือดออกกระปริดกระปรอยทางช่องคลอดโดยไม่ทราบสาเหตุ เลือดออกผิดปกติทางช่องคลอดโดยยังไม่ได้รับการวินิจฉัยหาสาเหตุ เป็น contraindication ทั้งยาคุมฮอร์โมนรวมและฮอร์โมนเดี่ยว ส่วนข้ออื่นๆ เป็นข้อบ่งชี้ที่ควรเลี่ยงเอสโตรเจนและหันมาใช้โปรเจสตินเดี่ยวแทน</div><div style='margin-bottom:12px; line-height:1.6;'><b style='color:#b91c1c;'>🔍 ข้ออื่นผิดเพราะอะไร:</b><br>• <b>ข้อ ก. (มีภาวะปวดไมเกรนรุนแรงร่วมกับมีอาการเตือน (Migraine with aura)):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ข. (อยู่ระหว่างการให้นมบุตร):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ ง. (มีประวัติโรคเกี่ยวกับหลอดเลือดหัวใจหรือลิ่มเลือดอุดตัน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด<br>• <b>ข้อ จ. (มีอาการคลื่นไส้อาเจียนรุนแรงจากเอสโตรเจน):</b> ข้อนี้ไม่ใช่คำตอบที่ถูกต้องสำหรับภาวะ Oral contraceptive เนื่องจากกลไกการออกฤทธิ์, efficacy หรือข้อบ่งใช้ไม่ตรงกับโจทย์ที่กำหนด</div><div style='margin-bottom:10px; font-size:0.92em; color:#475569;'><b>📖 Guideline อ้างอิง:</b> WHO Medical Eligibility Criteria for Contraceptive Use (5th Edition) & แนวทางการให้บริการวางแผนครอบครัว ราชวิทยาลัยสูตินรีแพทย์แห่งประเทศไทย</div><div style='background:#fffbeb; border:1px solid #fef3c7; border-left:3px solid #f59e0b; padding:8px 12px; border-radius:0 6px 6px 0; font-size:0.93em; color:#92400e; line-height:1.6;'><b style='color:#b45309;'>📌 จุดจำก่อนสอบ:</b><br>• <b>Pregnancy HTN Treatment:</b> ยาลดความดันที่ปลอดภัย: Methyldopa, Labetalol, Nifedipine; ห้ามใช้ ACEI, ARB, Direct renin inhibitors เด็ดขาด (Fetotoxicity)<br>• <b>Emergency Contraception Timing:</b> Levonorgestrel 1.5 mg ทานให้เร็วที่สุดภายใน 72 ชั่วโมง (หรือ Ulipristal acetate 30 mg ภายใน 120 ชั่วโมง) หลังมีเพศสัมพันธ์ที่ไม่ได้ป้องกัน<br>• <b>Vulvovaginal Candidiasis:</b> สตรีตั้งครรภ์ที่เป็นเชื้อราในช่องคลอด ให้ใช้เฉพาะ Topical Clotrimazole vaginal tablet/suppository 7 วัน ห้ามใช้ Oral Fluconazole</div>",
-      "answerImage": "",
-      "note": "[TEST] Quick Ingestion",
-      "examType": "Mock",
-      "examYear": "Mock RxCU83 ครั้งที่ 1"
     }
   ]
 };
