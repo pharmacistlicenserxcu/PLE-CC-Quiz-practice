@@ -2852,149 +2852,150 @@
 
   <!-- ══ SIMULATED EXAM — FULL PAGE VIEW ══ -->
   <div id="simExamView">
-    <!-- Sticky Header -->
+    <!-- Compact Sticky Header -->
     <div class="sim-panel-header">
-      <button class="back-home-btn" onclick="closeSimExamPanel()" style="flex-shrink:0;">
+      <button class="back-home-btn" onclick="closeSimExamPanel()" style="flex-shrink:0; white-space:nowrap;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
         กลับ
       </button>
-      <div style="flex:1;">
-        <h2>⏱️ จำลองสอบจริง PLE-CC1 (Simulated Exam)</h2>
-        <div class="sim-header-sub">มาตรฐาน 120 ข้อ (Clinic 50% / Product 40% / SAP 10%) · จับเวลา 180 นาที</div>
+      <div style="flex:1; min-width:0;">
+        <div style="font-size:14px; font-weight:700; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">⏱️ จำลองสอบจริง PLE-CC1</div>
+        <div style="font-size:10.5px; color:var(--ink-soft);">120 ข้อ · Clinic 50% / Product 40% / SAP 10%</div>
       </div>
-      <button class="submit-btn" onclick="executeSimulatedExam()" style="padding:8px 18px; font-size:13px; flex-shrink:0;">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        เริ่มสอบ
+      <button class="submit-btn" onclick="executeSimulatedExam()" style="padding:7px 14px; font-size:12.5px; flex-shrink:0; white-space:nowrap; gap:5px;">
+        ▶ เริ่มสอบ
       </button>
     </div>
 
     <!-- Scrollable Body -->
     <div class="sim-panel-body">
 
-      <!-- ① EXAM SET PICKER -->
-      <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px;">
-        <div class="sim-section-label">① เลือกชุดข้อสอบที่จะใช้สุ่ม</div>
-        <p style="font-size:12px; color:var(--ink-soft); margin:0 0 12px;">เลือกชุดข้อสอบจริงหรือ Mock ที่ต้องการ หรือใช้ "ทั้งหมดในระบบ" เพื่อสุ่มข้ามชุด</p>
+      <!-- ① EXAM SET PICKER — 2-level: type tabs → year chips -->
+      <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px;">
+        <div class="sim-section-label">① แหล่งข้อสอบที่ใช้สุ่ม</div>
 
-        <!-- Card: ทั้งหมด -->
-        <div class="sim-set-grid" id="simExamSetGrid">
-          <div class="sim-set-card selected" data-set="all" onclick="selectSimExamSet(this,'all')">
-            <div class="sim-set-card-label">🌟 ทั้งหมดในระบบ</div>
-            <div class="sim-set-card-count">สุ่มจากทุกข้อสอบ</div>
-          </div>
-          <!-- Dynamic cards populated by JS -->
-        </div>
+        <!-- Type row (large buttons) -->
+        <div id="simSetTypeRow" style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px;"></div>
+
+        <!-- Year chips (shown when a type is selected) -->
+        <div id="simSetYearRow" style="display:none; flex-wrap:wrap; gap:5px; padding-top:8px; border-top:1px dashed var(--border);"></div>
+        <div id="simSetSelectedLabel" style="font-size:11px; color:var(--ink-soft); margin-top:6px; display:none;"></div>
       </div>
 
-      <!-- ② PRESETS + TOTAL COUNT -->
-      <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px;">
-        <div class="sim-section-label">② จำนวนข้อและรูปแบบชุดสอบ</div>
-        <div style="display:flex; gap:6px; margin-bottom:12px; background:var(--bg); padding:4px; border-radius:10px; border:1px solid var(--border);">
-          <button type="button" class="setup-chip-btn active" id="simPreset120" onclick="applySimPreset(120,50,40,10,180)" style="flex:1; padding:6px 4px; font-size:11.5px;">🎯 มาตรฐาน 120 ข้อ (สอบจริง)</button>
-          <button type="button" class="setup-chip-btn" id="simPreset60" onclick="applySimPreset(60,50,40,10,90)" style="flex:1; padding:6px 4px; font-size:11.5px;">⚡ ชุดย่อ 60 ข้อ</button>
-          <button type="button" class="setup-chip-btn" id="simPreset30" onclick="applySimPreset(30,50,40,10,45)" style="flex:1; padding:6px 4px; font-size:11.5px;">🚀 เร่งรัด 30 ข้อ</button>
-        </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-          <div class="form-group" style="margin-bottom:0;">
-            <label>จำนวนข้อทั้งหมด</label>
-            <div style="display:flex; align-items:center; gap:6px;">
-              <input type="number" id="simTotalCount" value="120" min="10" max="240" oninput="recalcSimProportions()" style="width:100%; padding:8px 10px; border:1px solid var(--border); border-radius:8px; font-weight:700; font-family:'IBM Plex Mono'; font-size:14px; text-align:center;">
-              <span style="font-size:12px; color:var(--ink-soft); font-weight:600;">ข้อ</span>
+      <!-- ② PRESET + COUNT + MODE (รวมกันในกล่องเดียว) -->
+      <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px; display:flex; flex-direction:column; gap:12px;">
+
+        <!-- Preset chips -->
+        <div>
+          <div class="sim-section-label">② จำนวนข้อ</div>
+          <div style="display:flex; gap:6px;">
+            <button type="button" class="setup-chip-btn active" id="simPreset120" onclick="applySimPreset(120,50,40,10,180)" style="flex:1; padding:8px 4px; font-size:12px;">🎯 120 ข้อ<br><span style="font-size:10px; font-weight:500; opacity:0.75;">สอบจริง 3 ชม.</span></button>
+            <button type="button" class="setup-chip-btn" id="simPreset60" onclick="applySimPreset(60,50,40,10,90)" style="flex:1; padding:8px 4px; font-size:12px;">⚡ 60 ข้อ<br><span style="font-size:10px; font-weight:500; opacity:0.75;">1.5 ชม.</span></button>
+            <button type="button" class="setup-chip-btn" id="simPreset30" onclick="applySimPreset(30,50,40,10,45)" style="flex:1; padding:8px 4px; font-size:12px;">🚀 30 ข้อ<br><span style="font-size:10px; font-weight:500; opacity:0.75;">45 นาที</span></button>
+            <div style="display:flex; align-items:center; gap:4px; background:var(--bg); border:1px solid var(--border); border-radius:8px; padding:4px 8px; min-width:70px;">
+              <input type="number" id="simTotalCount" value="120" min="10" max="240" oninput="recalcSimProportions()" style="width:40px; border:none; background:transparent; font-weight:700; font-family:'IBM Plex Mono'; font-size:14px; text-align:center; outline:none;">
+              <span style="font-size:11px; color:var(--ink-soft);">ข้อ</span>
             </div>
           </div>
-          <div class="form-group" style="margin-bottom:0;">
-            <label>รูปแบบการทำ</label>
-            <select class="form-input" id="simModeSelect">
-              <option value="exam">⏱️ โหมดสอบจริง (ส่งรวมท้ายชุด)</option>
-              <option value="practice">📖 โหมดฝึกฝน (ตรวจทีละข้อ)</option>
-            </select>
+        </div>
+
+        <!-- Mode chips -->
+        <div>
+          <div class="sim-section-label">รูปแบบการทำ</div>
+          <div style="display:flex; gap:6px;">
+            <button type="button" class="setup-chip-btn active" id="simModeExam" onclick="selectSimMode('exam',this)" style="flex:1; padding:7px 6px; font-size:12px;">⏱️ โหมดสอบจริง</button>
+            <button type="button" class="setup-chip-btn" id="simModePractice" onclick="selectSimMode('practice',this)" style="flex:1; padding:7px 6px; font-size:12px;">📖 ฝึกฝนทีละข้อ</button>
           </div>
+          <!-- Hidden select for JS compat -->
+          <select id="simModeSelect" style="display:none;">
+            <option value="exam">exam</option>
+            <option value="practice">practice</option>
+          </select>
+        </div>
+
+        <!-- Timer chips -->
+        <div>
+          <div class="sim-section-label">เวลา</div>
+          <div style="display:flex; gap:5px; flex-wrap:wrap;">
+            <button type="button" class="setup-chip-btn active" id="simTimerAuto" onclick="selectSimTimer('auto',this)" style="padding:5px 10px; font-size:11.5px;">⏱️ อัตโนมัติ</button>
+            <button type="button" class="setup-chip-btn" id="simTimer180" onclick="selectSimTimer('180',this)" style="padding:5px 10px; font-size:11.5px;">180 นาที</button>
+            <button type="button" class="setup-chip-btn" id="simTimer90" onclick="selectSimTimer('90',this)" style="padding:5px 10px; font-size:11.5px;">90 นาที</button>
+            <button type="button" class="setup-chip-btn" id="simTimer45" onclick="selectSimTimer('45',this)" style="padding:5px 10px; font-size:11.5px;">45 นาที</button>
+            <button type="button" class="setup-chip-btn" id="simTimer0" onclick="selectSimTimer('0',this)" style="padding:5px 10px; font-size:11.5px;">♾️ ไม่จำกัด</button>
+          </div>
+          <!-- Hidden select for JS compat -->
+          <select id="simTimerSelect" style="display:none;">
+            <option value="auto">auto</option>
+            <option value="180">180</option>
+            <option value="90">90</option>
+            <option value="45">45</option>
+            <option value="0">0</option>
+          </select>
         </div>
       </div>
 
       <!-- ③ PROPORTIONS -->
-      <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-          <div class="sim-section-label" style="margin-bottom:0;">③ สัดส่วนสายวิชา (Proportions)</div>
+      <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+          <div class="sim-section-label" style="margin-bottom:0;">③ สัดส่วนสายวิชา</div>
           <span id="simTotalPctBadge" style="font-size:11px; font-weight:700; color:var(--clinic); background:var(--bg); padding:2px 8px; border-radius:6px; border:1px solid var(--border);">รวม: 100% (120 ข้อ)</span>
         </div>
-        <div style="margin-bottom:10px;">
+        <div style="margin-bottom:8px;">
           <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
-            <span style="color:#0284C7; font-weight:700;">🩺 Clinic (บริบาลเภสัชกรรม):</span>
+            <span style="color:#0284C7; font-weight:700;">🩺 Clinic:</span>
             <span id="simClinicLabel" style="font-weight:700; font-family:'IBM Plex Mono';">50% (60 ข้อ)</span>
           </div>
           <input type="range" id="simClinicRange" min="0" max="100" value="50" oninput="onSimSliderChange('clinic')" style="width:100%; accent-color:#0284C7;">
         </div>
-        <div style="margin-bottom:10px;">
+        <div style="margin-bottom:8px;">
           <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
-            <span style="color:#D97706; font-weight:700;">🧪 Product (วิทยาศาสตร์เภสัชกรรม):</span>
+            <span style="color:#D97706; font-weight:700;">🧪 Product:</span>
             <span id="simProductLabel" style="font-weight:700; font-family:'IBM Plex Mono';">40% (48 ข้อ)</span>
           </div>
           <input type="range" id="simProductRange" min="0" max="100" value="40" oninput="onSimSliderChange('product')" style="width:100%; accent-color:#D97706;">
         </div>
         <div>
           <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
-            <span style="color:#059669; font-weight:700;">💼 SAP (สังคมและการบริหาร/กฎหมาย):</span>
+            <span style="color:#059669; font-weight:700;">💼 SAP:</span>
             <span id="simSapLabel" style="font-weight:700; font-family:'IBM Plex Mono';">10% (12 ข้อ)</span>
           </div>
           <input type="range" id="simSapRange" min="0" max="100" value="10" oninput="onSimSliderChange('sap')" style="width:100%; accent-color:#059669;">
         </div>
       </div>
 
-      <!-- ④ TIMER -->
-      <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px;">
-        <div class="sim-section-label">④ เวลาในการทำ</div>
-        <select class="form-input" id="simTimerSelect">
-          <option value="auto">⏱️ คำนวณอัตโนมัติ (1.5 นาที/ข้อ)</option>
-          <option value="180">⏱️ 180 นาที (3 ชั่วโมงเต็ม)</option>
-          <option value="90">⏱️ 90 นาที (1.5 ชั่วโมง)</option>
-          <option value="45">⏱️ 45 นาที</option>
-          <option value="0">♾️ ไม่จำกัดเวลา</option>
-        </select>
-      </div>
-
-      <!-- ⑤ SUBTOPIC OPTIMIZATION (Accordion) -->
+      <!-- ④ SUBTOPIC (Accordion) -->
       <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; overflow:hidden;">
         <div onclick="toggleSimSubtopicOptimizer()" style="display:flex; justify-content:space-between; align-items:center; padding:12px 16px; cursor:pointer; user-select:none;">
           <div style="display:flex; align-items:center; gap:8px;">
-            <span style="font-size:16px;">🎯</span>
+            <span>🎯</span>
             <div>
-              <span style="font-size:12.5px; font-weight:700; color:var(--ink);">⑤ ปรับแต่งเรื่องย่อย &amp; หมวดวิชา (Subtopic Optimization)</span>
-              <div style="font-size:11px; color:var(--ink-soft);"><span id="simSubtopicSummaryText">เลือกทั้งหมด (34 หมวดวิชา)</span></div>
+              <span style="font-size:12.5px; font-weight:700; color:var(--ink);">④ เลือกเรื่องย่อย (Subtopic)</span>
+              <div style="font-size:11px; color:var(--ink-soft);"><span id="simSubtopicSummaryText">เลือกทั้งหมด</span></div>
             </div>
           </div>
-          <span id="simSubtopicToggleIcon" style="font-size:12px; color:var(--ink-soft); transition:transform 0.2s;">▼</span>
+          <span id="simSubtopicToggleIcon" style="font-size:12px; color:var(--ink-soft);">▼</span>
         </div>
         <div id="simSubtopicPanel" style="display:none; padding:12px; border-top:1px solid var(--border);">
           <div style="display:flex; gap:8px; margin-bottom:10px; align-items:center; flex-wrap:wrap;">
-            <div style="position:relative; flex:1; min-width:180px;">
-              <input type="text" id="simSubSearchInput" placeholder="🔍 ค้นหาเรื่องย่อย / หมวดวิชา..." oninput="filterSimSubtopicsList()" style="width:100%; padding:6px 10px; font-size:12px; border:1px solid var(--border); border-radius:6px; background:var(--bg);">
-            </div>
-            <div style="display:flex; gap:4px;">
-              <button type="button" class="setup-chip-btn" onclick="setAllSimSubtopics(true)" style="padding:4px 8px; font-size:11px;">✅ เลือกทั้งหมด</button>
-              <button type="button" class="setup-chip-btn" onclick="setAllSimSubtopics(false)" style="padding:4px 8px; font-size:11px;">🔄 ล้าง</button>
-            </div>
+            <input type="text" id="simSubSearchInput" placeholder="🔍 ค้นหาเรื่องย่อย..." oninput="filterSimSubtopicsList()" style="flex:1; min-width:160px; padding:6px 10px; font-size:12px; border:1px solid var(--border); border-radius:6px; background:var(--bg);">
+            <button type="button" class="setup-chip-btn" onclick="setAllSimSubtopics(true)" style="padding:4px 8px; font-size:11px;">✅ ทั้งหมด</button>
+            <button type="button" class="setup-chip-btn" onclick="setAllSimSubtopics(false)" style="padding:4px 8px; font-size:11px;">🔄 ล้าง</button>
           </div>
-          <div style="display:flex; gap:4px; margin-bottom:8px;">
-            <button type="button" class="setup-chip-btn active" id="simSubTaball" onclick="switchSimSubTab('all')" style="padding:3px 8px; font-size:11px;">🌐 ทั้งหมด</button>
+          <div style="display:flex; gap:4px; margin-bottom:8px; flex-wrap:wrap;">
+            <button type="button" class="setup-chip-btn active" id="simSubTaball" onclick="switchSimSubTab('all')" style="padding:3px 8px; font-size:11px;">ทั้งหมด</button>
             <button type="button" class="setup-chip-btn" id="simSubTabClinic" onclick="switchSimSubTab('Clinic')" style="padding:3px 8px; font-size:11px; color:#0284c7;">🩺 Clinic</button>
             <button type="button" class="setup-chip-btn" id="simSubTabProduct" onclick="switchSimSubTab('Product')" style="padding:3px 8px; font-size:11px; color:#d97706;">🧪 Product</button>
             <button type="button" class="setup-chip-btn" id="simSubTabSAP" onclick="switchSimSubTab('SAP')" style="padding:3px 8px; font-size:11px; color:#059669;">💼 SAP</button>
           </div>
-          <div id="simSubtopicsContainer" style="max-height:360px; overflow-y:auto; padding-right:4px; display:flex; flex-direction:column; gap:6px;"></div>
-          <div style="margin-top:8px; display:flex; justify-content:space-between; align-items:center; font-size:11px; color:var(--ink-soft); border-top:1px dashed var(--border); padding-top:6px;">
+          <div id="simSubtopicsContainer" style="max-height:320px; overflow-y:auto; display:flex; flex-direction:column; gap:6px;"></div>
+          <div style="margin-top:8px; display:flex; justify-content:space-between; font-size:11px; color:var(--ink-soft); border-top:1px dashed var(--border); padding-top:6px;">
             <span id="simSelectedCountBadge">เลือกแล้ว 0 เรื่องย่อย</span>
             <span id="simAvailablePoolBadge" style="font-weight:600; color:var(--clinic);">พร้อมสุ่ม: 0 ข้อ</span>
           </div>
         </div>
       </div>
 
-      <!-- Beta notice -->
-      <div style="background:rgba(16,185,129,0.08); border:1px solid rgba(16,185,129,0.28); border-radius:10px; padding:9px 12px; font-size:11.8px; line-height:1.5; color:#065f46;">
-        🧪 <b>Version ทดลอง</b> · ทีมงานกำลังตรวจสอบและแก้ไขข้อสอบให้อย่างต่อเนื่อง สามารถกดปุ่ม <b>✅ ข้อสอบถูกต้อง</b> หรือ <b>🚩 แจ้งปัญหา</b> ระหว่างทำข้อสอบได้ตลอดครับ
-      </div>
-
-      <!-- Start Button (bottom) -->
+      <!-- Start Button -->
       <button class="submit-btn" onclick="executeSimulatedExam()" style="width:100%; padding:14px; font-size:15px; border-radius:12px;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         เริ่มจำลองสอบทันที
@@ -5164,90 +5165,138 @@ function openRandomModal()  { openSimExamPanel(); }
 function closeRandomModal() { closeSimExamPanel(); }
 
 function renderSimExamSetCards() {
-  const grid = document.getElementById('simExamSetGrid');
-  if (!grid) return;
+  const typeRow = document.getElementById('simSetTypeRow');
+  if (!typeRow) return;
 
   const typeMap = getAllUniqueExamTypes();
+  const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+
+  // Count per type and per combo
+  const countPerType = {}, countPerCombo = {};
+  Object.values(map).forEach(qs => qs.forEach(q => {
+    const { type, year } = sanitizeExamMeta(q.examType, q.examYear);
+    if (!type && !year) return;
+    const t = type || '';
+    countPerType[t] = (countPerType[t] || 0) + 1;
+    if (year) countPerCombo[`${t}::${year}`] = (countPerCombo[`${t}::${year}`] || 0) + 1;
+  }));
+
+  const totalAll = Object.values(map).reduce((s, qs) => s + qs.length, 0);
+
   const sortedTypes = Array.from(typeMap.keys()).sort((a, b) => {
-    const aReal = a.includes('จริง'), bReal = b.includes('จริง');
-    if (aReal && !bReal) return -1;
-    if (!aReal && bReal) return 1;
+    if (a.includes('จริง') && !b.includes('จริง')) return -1;
+    if (!a.includes('จริง') && b.includes('จริง')) return 1;
     const aMock = a.toLowerCase().includes('mock'), bMock = b.toLowerCase().includes('mock');
     if (aMock && !bMock) return -1;
     if (!aMock && bMock) return 1;
     return a.localeCompare(b, 'th');
   });
 
-  // Count questions per type/year
-  const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length) ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
-  const countPerKey = {};
-  Object.values(map).forEach(qs => qs.forEach(q => {
-    const { type, year } = sanitizeExamMeta(q.examType, q.examYear);
-    if (!type && !year) return;
-    const tk = 'type:' + (type || '');
-    countPerKey[tk] = (countPerKey[tk] || 0) + 1;
-    if (year) {
-      const ck = `combo:${type || ''}::${year}`;
-      countPerKey[ck] = (countPerKey[ck] || 0) + 1;
-    }
-  }));
-
-  // Build HTML
-  let html = `<div class="sim-set-card selected" data-set="all" onclick="selectSimExamSet(this,'all')">
-    <div class="sim-set-card-label">🌟 ทั้งหมดในระบบ</div>
-    <div class="sim-set-card-count">สุ่มจากทุกข้อสอบ</div>
-  </div>`;
-
+  // Build type buttons (large)
+  let html = `<button type="button" class="setup-chip-btn active" data-type="all" onclick="selectSimSetType(this,'all')" style="padding:7px 14px; font-size:12px;">🌟 ทั้งหมด <span style="font-size:10px; font-weight:500; opacity:0.7;">${totalAll} ข้อ</span></button>`;
   sortedTypes.forEach(type => {
-    const yearsSet = typeMap.get(type) || new Set();
-    const years = Array.from(yearsSet).sort((a, b) => {
-      const nA = parseInt((a.match(/\d+/) || [0])[0], 10);
-      const nB = parseInt((b.match(/\d+/) || [0])[0], 10);
-      return (nA && nB) ? nB - nA : b.localeCompare(a, 'th', { numeric: true });
-    });
-    const isReal = type.includes('จริง');
-    const isMock = type.toLowerCase().includes('mock');
+    const isReal = type.includes('จริง'), isMock = type.toLowerCase().includes('mock');
     const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
+    const cnt = countPerType[type] || 0;
+    html += `<button type="button" class="setup-chip-btn" data-type="${type}" onclick="selectSimSetType(this,'${type.replace(/'/g,"\\'")}')">
+      ${icon} ${type} <span style="font-size:10px; font-weight:500; opacity:0.7;">${cnt} ข้อ</span>
+    </button>`;
+  });
+  typeRow.innerHTML = html;
 
-    if (years.length > 1) {
-      const tk = 'type:' + type;
-      const cnt = countPerKey[tk] || 0;
-      html += `<div class="sim-set-card" data-set="${tk}" onclick="selectSimExamSet(this,'${tk}')">
-        <div class="sim-set-card-label">${icon} ${type}</div>
-        <div class="sim-set-card-count">ทุกปี · ${cnt} ข้อ</div>
-      </div>`;
-      years.forEach(y => {
-        const ck = `combo:${type}::${y}`;
-        const cnt2 = countPerKey[ck] || 0;
-        html += `<div class="sim-set-card" data-set="${ck}" onclick="selectSimExamSet(this,'${ck.replace(/'/g,"\\'")}')">
-          <div class="sim-set-card-label">${icon} ${type}</div>
-          <div class="sim-set-card-count">📅 ${y} · ${cnt2} ข้อ</div>
-        </div>`;
-      });
-    } else {
-      const key = (years.length === 1 && years[0]) ? `combo:${type}::${years[0]}` : `type:${type}`;
-      const cnt = countPerKey[key] || 0;
-      const label = (years.length === 1 && years[0]) ? `${icon} ${type} · ${years[0]}` : `${icon} ${type}`;
-      html += `<div class="sim-set-card" data-set="${key}" onclick="selectSimExamSet(this,'${key.replace(/'/g,"\\'")}')">
-        <div class="sim-set-card-label">${label}</div>
-        <div class="sim-set-card-count">${cnt} ข้อ</div>
-      </div>`;
-    }
+  // Store for later use
+  typeRow._typeMap = typeMap;
+  typeRow._countPerCombo = countPerCombo;
+  _selectedSimExamSet = 'all';
+
+  // Hide year row
+  const yr = document.getElementById('simSetYearRow');
+  const lb = document.getElementById('simSetSelectedLabel');
+  if (yr) yr.style.display = 'none';
+  if (lb) lb.style.display = 'none';
+}
+
+function selectSimSetType(el, typeKey) {
+  const typeRow = document.getElementById('simSetTypeRow');
+  const yearRow = document.getElementById('simSetYearRow');
+  const label  = document.getElementById('simSetSelectedLabel');
+
+  typeRow.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+
+  if (typeKey === 'all') {
+    _selectedSimExamSet = 'all';
+    if (yearRow) yearRow.style.display = 'none';
+    if (label) label.style.display = 'none';
+    return;
+  }
+
+  // Show year chips
+  const typeMap = typeRow._typeMap;
+  const countPerCombo = typeRow._countPerCombo || {};
+  const yearsSet = typeMap ? (typeMap.get(typeKey) || new Set()) : new Set();
+  const years = Array.from(yearsSet).sort((a, b) => {
+    const nA = parseInt((a.match(/\d+/) || [0])[0], 10);
+    const nB = parseInt((b.match(/\d+/) || [0])[0], 10);
+    return (nA && nB) ? nB - nA : b.localeCompare(a, 'th', { numeric: true });
   });
 
-  grid.innerHTML = html;
-  _selectedSimExamSet = 'all';
+  if (years.length === 0) {
+    // No years — select whole type
+    _selectedSimExamSet = 'type:' + typeKey;
+    if (yearRow) yearRow.style.display = 'none';
+    if (label) { label.style.display = 'block'; label.textContent = '✅ เลือก: ' + typeKey + ' (ทุกชุด)'; }
+    return;
+  }
+
+  // Build year chips
+  let html = `<button type="button" class="setup-chip-btn active" data-combo="type:${typeKey}" onclick="selectSimSetCombo(this,'type:${typeKey.replace(/'/g,"\\'")}')">ทุกปี/ทุกชุด</button>`;
+  years.forEach(y => {
+    const ck = `${typeKey}::${y}`;
+    const cnt = countPerCombo[ck] || 0;
+    html += `<button type="button" class="setup-chip-btn" data-combo="combo:${ck}" onclick="selectSimSetCombo(this,'combo:${ck.replace(/'/g,"\\'")}')">📅 ${y} <span style="opacity:0.7; font-size:10px;">${cnt} ข้อ</span></button>`;
+  });
+
+  if (yearRow) { yearRow.innerHTML = html; yearRow.style.display = 'flex'; }
+  _selectedSimExamSet = 'type:' + typeKey;
+  if (label) { label.style.display = 'block'; label.textContent = '✅ เลือก: ' + typeKey + ' (ทุกปี)'; }
 }
 
-function selectSimExamSet(el, setKey) {
-  document.querySelectorAll('#simExamSetGrid .sim-set-card').forEach(c => c.classList.remove('selected'));
-  el.classList.add('selected');
-  _selectedSimExamSet = setKey;
+function selectSimSetCombo(el, comboKey) {
+  const yearRow = document.getElementById('simSetYearRow');
+  const label   = document.getElementById('simSetSelectedLabel');
+  if (yearRow) yearRow.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  _selectedSimExamSet = comboKey;
+
+  // Update label
+  const parts = comboKey.replace(/^(type:|combo:)/, '').split('::');
+  const displayText = parts[1] ? `✅ เลือก: ${parts[0]} · ${parts[1]}` : `✅ เลือก: ${parts[0]} (ทุกปี)`;
+  if (label) { label.style.display = 'block'; label.textContent = displayText; }
 }
 
+// Backward compat (old card-based function no longer needed but keep stub)
+function selectSimExamSet(el, setKey) { _selectedSimExamSet = setKey; }
+
+// Mode chip selector
+function selectSimMode(val, el) {
+  document.querySelectorAll('#simModeExam, #simModePractice').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  const sel = document.getElementById('simModeSelect');
+  if (sel) sel.value = val;
+}
+
+// Timer chip selector
+function selectSimTimer(val, el) {
+  document.querySelectorAll('#simTimerAuto,#simTimer180,#simTimer90,#simTimer45,#simTimer0').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  const sel = document.getElementById('simTimerSelect');
+  if (sel) sel.value = val;
+}
 
 
 function applySimPreset(total, cPct, pPct, sPct, mins) {
+
   document.getElementById('simTotalCount').value = total;
   simClinicPct = cPct;
   simProductPct = pPct;
@@ -5261,12 +5310,16 @@ function applySimPreset(total, cPct, pPct, sPct, mins) {
   if (rS) rS.value = sPct;
 
   const tSel = document.getElementById('simTimerSelect');
-  if (tSel) {
-    if (mins === 180) tSel.value = '180';
-    else if (mins === 90) tSel.value = '90';
-    else if (mins === 45) tSel.value = '45';
-    else tSel.value = 'auto';
-  }
+  let timerVal = 'auto';
+  if (mins === 180) timerVal = '180';
+  else if (mins === 90) timerVal = '90';
+  else if (mins === 45) timerVal = '45';
+  if (tSel) tSel.value = timerVal;
+  // Sync timer chip buttons
+  ['simTimerAuto','simTimer180','simTimer90','simTimer45','simTimer0'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) btn.classList.toggle('active', btn.id === 'simTimer' + (timerVal === 'auto' ? 'Auto' : timerVal));
+  });
 
   const p120 = document.getElementById('simPreset120');
   const p60 = document.getElementById('simPreset60');
