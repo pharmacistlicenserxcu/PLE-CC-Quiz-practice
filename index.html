@@ -1322,25 +1322,10 @@
       transform: scale(0.97);
     }
     .sim-chips-scroll {
-      max-height: 340px;
-      overflow-y: scroll !important;
-      padding-right: 6px;
-      scrollbar-width: thin;
-      scrollbar-color: #0E7490 #f1f5f9;
-    }
-    .sim-chips-scroll::-webkit-scrollbar {
-      width: 7px;
-    }
-    .sim-chips-scroll::-webkit-scrollbar-track {
-      background: #f1f5f9;
-      border-radius: 6px;
-    }
-    .sim-chips-scroll::-webkit-scrollbar-thumb {
-      background: #0E7490;
-      border-radius: 6px;
-    }
-    .sim-chips-scroll::-webkit-scrollbar-thumb:hover {
-      background: #0891b2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      /* Full natural height - NO restrictive scrollbars! */
     }
     .sim-panel-body {
       flex: 1; max-width: 760px; width: 100%; margin: 0 auto;
@@ -2963,13 +2948,17 @@
           </div>
         </div>
 
-        <!-- Collapsible Multi-Select Drawer (Hidden by default) -->
+        <!-- Collapsible Multi-Select Drawer (Hidden by default, expands completely when opened) -->
         <div id="simSourceDrawer" style="display:none; margin-top:12px; padding-top:12px; border-top:1px dashed var(--border);">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-            <span style="font-size:11px; color:var(--ink-soft);">💡 ติ๊กเลือกชุดข้อสอบหรือปีที่ต้องการผสมกันได้อิสระ (มี Scrollbar เลื่อนดูได้ครบทุกชุด):</span>
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:10px;">
+            <span style="font-size:11.5px; font-weight:600; color:var(--ink-soft);">💡 ติ๊กเลือกชุดข้อสอบหรือปีที่ต้องการผสมกันได้อิสระ (แสดงครบทุกชุด ทุกปี ไม่ถูกจำกัดความสูง):</span>
+            <div style="display:flex; gap:6px;">
+              <button type="button" onclick="selectAllSimSourceChips()" style="font-size:11px; padding:4px 9px; border-radius:6px; border:1px solid var(--border); background:var(--card); color:var(--clinic); cursor:pointer; font-weight:700;">🌟 เลือกทั้งหมด</button>
+              <button type="button" onclick="clearAllSimSourceChips()" style="font-size:11px; padding:4px 9px; border-radius:6px; border:1px solid var(--border); background:var(--card); color:#dc2626; cursor:pointer; font-weight:700;">✕ ล้างการเลือก</button>
+            </div>
           </div>
-          <!-- Chips container (with visible styled scrollbar) -->
-          <div id="simSourceChipsContainer" class="sim-chips-scroll" style="display:flex; flex-direction:column; gap:8px;"></div>
+          <!-- Chips container (Fully expanded, all sets visible at once) -->
+          <div id="simSourceChipsContainer" class="sim-chips-scroll"></div>
         </div>
       </div>
 
@@ -5433,23 +5422,23 @@ function renderSimSourceChips() {
     const typeCnt = countPerType[type] || 0;
 
     html += `<div style="border:1px solid var(--border); border-radius:10px; overflow:hidden; background:var(--card);">
-      <div style="background:var(--bg); padding:6px 10px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border);">
+      <div style="background:var(--bg); padding:8px 12px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border);">
         <button type="button" id="simChip_${typeKey}" onclick="toggleSimSourceChip('${typeKey.replace(/'/g,"\\'")}',this)"
           class="sim-source-chip${_selectedSimExamSets.has(typeKey) ? ' selected' : ''}"
-          style="padding:4px 10px; font-size:12px; font-weight:700;">
-          ${icon} ${type} <span style="font-size:10px; opacity:0.75;">(${typeCnt.toLocaleString()} ข้อ)</span>
+          style="padding:5px 12px; font-size:12px; font-weight:700;">
+          ${icon} ${type} <span style="font-size:10.5px; opacity:0.8;">(${typeCnt.toLocaleString()} ข้อ)</span>
         </button>
         <span style="font-size:11px; color:var(--ink-soft); font-weight:600;">${years.length} ชุดย่อย</span>
       </div>
-      <div style="padding:8px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; max-height:160px; overflow-y:auto;">`;
+      <div style="padding:10px; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">`;
 
     years.forEach(y => {
       const comboKey = 'combo:' + type + '::' + y;
       const cnt = countPerCombo[type+'::'+y] || 0;
       html += `<button type="button" id="simChip_${comboKey}" onclick="toggleSimSourceChip('${comboKey.replace(/'/g,"\\'")}',this)"
           class="sim-source-chip${_selectedSimExamSets.has(comboKey) ? ' selected' : ''}"
-          style="padding:3px 9px; font-size:11px;">
-          📅 ${y} <span style="font-size:9.5px; opacity:0.7;">(${cnt})</span>
+          style="padding:4px 10px; font-size:11px;">
+          📅 ${y} <span style="font-size:9.5px; opacity:0.75;">(${cnt})</span>
         </button>`;
     });
 
@@ -5459,6 +5448,24 @@ function renderSimSourceChips() {
   container.innerHTML = html;
   syncSimDropdownsFromSelection();
   updateSimSourceSummaryBadge();
+}
+
+function selectAllSimSourceChips() {
+  _selectedSimExamSets = new Set(['all']);
+  _selectedSimExamSet = 'all';
+  syncSimChipsFromSelection();
+  syncSimDropdownsFromSelection();
+  updateSimSourceSummaryBadge();
+  if (selectedSimSubtopics) selectedSimSubtopics = null;
+}
+
+function clearAllSimSourceChips() {
+  _selectedSimExamSets.clear();
+  _selectedSimExamSet = 'none';
+  syncSimChipsFromSelection();
+  syncSimDropdownsFromSelection();
+  updateSimSourceSummaryBadge();
+  if (selectedSimSubtopics) selectedSimSubtopics = null;
 }
 
 function populateSubDropdownOptions(filterType = null) {
