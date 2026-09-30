@@ -133,7 +133,7 @@
     }
     body.mode-phone .phone-notch { display: block; }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       body { padding: 0 !important; background: var(--bg) !important; }
       body.mode-phone { padding: 0 !important; }
       .app-shell {
@@ -152,17 +152,35 @@
       .question-text { font-size: 16px !important; line-height: 1.55 !important; }
     }
 
+    @media (hover: none) and (pointer: coarse) {
+      body { padding: 0 !important; background: var(--bg) !important; }
+      body.mode-phone { padding: 0 !important; }
+      .app-shell {
+        max-width: 100% !important; border-radius: 0 !important;
+        min-height: 100dvh !important; box-shadow: none !important; border: none !important;
+      }
+      body.mode-phone .app-shell {
+        max-width: 100% !important; border-radius: 0 !important;
+        min-height: 100dvh !important; box-shadow: none !important; border: none !important;
+      }
+      .phone-notch { display: none !important; }
+      .kbd-hints-bar { display: none !important; }
+    }
+
     :fullscreen,
     :fullscreen body,
-    body.fullscreen-active {
+    body.fullscreen-active,
+    body.fullscreen-active.mode-phone {
       padding: 0 !important;
       margin: 0 !important;
       background: var(--bg) !important;
       width: 100% !important;
-      height: 100% !important;
+      min-height: 100vh !important;
+      min-height: 100dvh !important;
     }
     :fullscreen .app-shell,
-    body.fullscreen-active .app-shell {
+    body.fullscreen-active .app-shell,
+    body.fullscreen-active.mode-phone .app-shell {
       max-width: 100% !important;
       width: 100% !important;
       border-radius: 0 !important;
@@ -178,6 +196,8 @@
       margin: 0 auto;
       width: 100%;
     }
+    body.fullscreen-active .phone-notch { display: none !important; }
+    body.fullscreen-active .kbd-hints-bar { display: none !important; }
 
     /* ══ EXAM REVIEW VIEW STYLES ══ */
     .review-choice-item {
@@ -2351,7 +2371,7 @@
         <button class="icon-btn" id="toggleViewModeBtnLobby" onclick="toggleAppViewMode()" title="สลับ Desktop / Mobile">
           <span id="viewModeIconLobby">📱</span>
         </button>
-        <button class="icon-btn" onclick="toggleFullscreen()" title="โหมดเต็มจอ">
+        <button class="icon-btn" id="btnFullscreenLobby" onclick="toggleFullscreen()" title="โหมดเต็มจอ">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
         </button>
         <button class="icon-btn" onclick="syncDataFromSheet()" title="อัปเดตข้อมูลจาก Google Sheet">
@@ -2595,7 +2615,7 @@
         <button class="icon-btn" id="toggleViewModeBtnQuiz" onclick="toggleAppViewMode()" title="สลับ Desktop / Mobile">
           <span id="viewModeIconQuiz">📱</span>
         </button>
-        <button class="icon-btn" onclick="toggleFullscreen()" title="เต็มจอ">
+        <button class="icon-btn" id="btnFullscreenQuiz" onclick="toggleFullscreen()" title="เต็มจอ">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
         </button>
       </div>
@@ -4425,6 +4445,7 @@ function isUserAllowedAdmin(username) {
 // ─── INITIALIZATION ───
 window.addEventListener('load', () => {
   initViewMode();
+  updateFullscreenBtnUI();
   const savedTrack = localStorage.getItem(LS_TRACK);
   if (savedTrack) currentTrack = savedTrack;
 
@@ -4467,6 +4488,7 @@ function showApp() {
   document.getElementById('lobbyGreetingName').textContent = dn;
   setAppQuizMode(appQuizMode);
   updateAnimBtnUI();
+  updateFullscreenBtnUI();
   loadInitialData();
   if (typeof syncCurrentUserProfile === 'function') syncCurrentUserProfile();
 }
@@ -8400,19 +8422,117 @@ function updateViewModeUI(isPhone) {
   if (iconQ) iconQ.textContent = isPhone ? '🖥️' : '📱';
 }
 
+const FS_EXPAND_SVG = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>`;
+const FS_COMPRESS_SVG = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/><line x1="14" y1="10" x2="21" y2="3"/><line x1="3" y1="21" x2="10" y2="14"/></svg>`;
+
+function isFullscreenActive() {
+  return !!(
+    document.fullscreenElement ||
+    document.webkitFullscreenElement ||
+    document.mozFullScreenElement ||
+    document.msFullscreenElement ||
+    document.body.classList.contains('fullscreen-active')
+  );
+}
+
+function updateFullscreenBtnUI() {
+  const isFs = isFullscreenActive();
+  const btns = [
+    { el: document.getElementById('btnFullscreenLobby'), titleExp: 'โหมดเต็มจอ', titleComp: 'ย่อหน้าจอปกติ' },
+    { el: document.getElementById('btnFullscreenQuiz'), titleExp: 'เต็มจอ', titleComp: 'ย่อหน้าจอปกติ' }
+  ];
+  btns.forEach(({ el, titleExp, titleComp }) => {
+    if (!el) return;
+    el.innerHTML = isFs ? FS_COMPRESS_SVG : FS_EXPAND_SVG;
+    el.title = isFs ? titleComp : titleExp;
+    if (isFs) {
+      el.style.background = 'var(--accent-soft)';
+      el.style.borderColor = 'var(--accent)';
+      el.style.color = 'var(--accent)';
+    } else {
+      el.style.background = '';
+      el.style.borderColor = '';
+      el.style.color = '';
+    }
+  });
+}
+
 function toggleFullscreen() {
-  if (!document.fullscreenElement) {
-    document.documentElement.requestFullscreen().catch(() => {});
+  const isFs = isFullscreenActive();
+  const docEl = document.documentElement;
+
+  if (!isFs) {
+    let nativeAttempted = false;
+    const reqMethod = docEl.requestFullscreen ||
+                      docEl.webkitRequestFullscreen ||
+                      docEl.webkitRequestFullScreen ||
+                      docEl.mozRequestFullScreen ||
+                      docEl.msRequestFullscreen;
+
+    if (typeof reqMethod === 'function') {
+      try {
+        const res = reqMethod.call(docEl);
+        nativeAttempted = true;
+        if (res && typeof res.then === 'function') {
+          res.then(() => {
+            document.body.classList.add('fullscreen-active');
+            updateFullscreenBtnUI();
+            if (typeof showToast === 'function') showToast('⛶ เข้าสู่โหมดเต็มหน้าจอ');
+          }).catch(() => {
+            // Native rejected (e.g. iOS Safari / iframe / permission) -> Fallback to CSS fullscreen
+            document.body.classList.add('fullscreen-active');
+            updateFullscreenBtnUI();
+            if (typeof showToast === 'function') showToast('⛶ ขยายเต็มหน้าจอเรียบร้อย');
+          });
+        } else {
+          document.body.classList.add('fullscreen-active');
+          updateFullscreenBtnUI();
+          if (typeof showToast === 'function') showToast('⛶ เข้าสู่โหมดเต็มหน้าจอ');
+        }
+      } catch (e) {
+        nativeAttempted = false;
+      }
+    }
+
+    if (!nativeAttempted) {
+      // iOS Safari or browser without Fullscreen API
+      document.body.classList.add('fullscreen-active');
+      updateFullscreenBtnUI();
+      if (typeof showToast === 'function') showToast('⛶ ขยายเต็มหน้าจอเรียบร้อย');
+    }
   } else {
-    document.exitFullscreen().catch(() => {});
+    const exitMethod = document.exitFullscreen ||
+                       document.webkitExitFullscreen ||
+                       document.webkitCancelFullScreen ||
+                       document.mozCancelFullScreen ||
+                       document.msExitFullscreen;
+
+    if (typeof exitMethod === 'function' && (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement)) {
+      try {
+        const res = exitMethod.call(document);
+        if (res && typeof res.then === 'function') res.catch(() => {});
+      } catch (e) {}
+    }
+    document.body.classList.remove('fullscreen-active');
+    updateFullscreenBtnUI();
+    if (typeof showToast === 'function') showToast('ขนาดย่อหน้าจอปกติ');
   }
 }
 
-document.addEventListener('fullscreenchange', () => {
-  document.body.classList.toggle('fullscreen-active', !!document.fullscreenElement);
-});
-document.addEventListener('webkitfullscreenchange', () => {
-  document.body.classList.toggle('fullscreen-active', !!document.webkitFullscreenElement);
+['fullscreenchange', 'webkitfullscreenchange', 'mozfullscreenchange', 'MSFullscreenChange'].forEach(evt => {
+  document.addEventListener(evt, () => {
+    const isNativeFs = !!(
+      document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement ||
+      document.msFullscreenElement
+    );
+    if (!isNativeFs) {
+      // If native fullscreen was exited by Esc or system gesture
+      document.body.classList.remove('fullscreen-active');
+    }
+    updateFullscreenBtnUI();
+  });
 });
 
 async function forceClearCacheAndReload() {

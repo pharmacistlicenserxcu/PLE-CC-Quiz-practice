@@ -6,5 +6,6 @@ __pycache__/
 # Local system/editor
 .DS_Store
 Thumbs.db
+~$*
 .vscode/
 .idea/
