@@ -154,19 +154,22 @@ def main():
     offline_questions = {}
     total_q_count = 0
 
-    SYSTEM_SHEETS = {'สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template', '🔍 รวมข้อสอบ & กรองข้อมูล'}
+    SYSTEM_SHEETS = {'สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template', '🔍 รวมข้อสอบ & กรองข้อมูล', '📑 ทะเบียนรหัสเคส'}
     
+    def is_sys_sheet(name):
+        return name in SYSTEM_SHEETS or name.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📑')) or 'ทะเบียน' in name
+
     # Initialize all target category buckets
     for s in sheet_names:
-        if s not in SYSTEM_SHEETS and not s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📥', 'QI_')) and 'ด่วน' not in s:
+        if not is_sys_sheet(s) and not s.startswith(('📥', 'QI_')) and 'ด่วน' not in s:
             offline_questions[s] = []
 
-    regular_sheets = [s for s in sheet_names if not (s in SYSTEM_SHEETS or s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📥', 'QI_')) or 'ด่วน' in s)]
+    regular_sheets = [s for s in sheet_names if not (is_sys_sheet(s) or s.startswith(('📥', 'QI_')) or 'ด่วน' in s)]
     ingestion_sheets = [s for s in sheet_names if s.startswith(('📥', 'QI_')) or 'ด่วน' in s]
     sorted_sheet_names = regular_sheets + ingestion_sheets
 
     for s_name in sorted_sheet_names:
-        if s_name in SYSTEM_SHEETS or s_name.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍')):
+        if is_sys_sheet(s_name):
             continue
 
         print(f"  -> Reading sheet: '{s_name}'...")

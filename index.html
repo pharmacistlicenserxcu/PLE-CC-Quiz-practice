@@ -4485,9 +4485,9 @@ function doLogout() {
 function isSystemCategory(name) {
   if (!name) return true;
   const n = String(name).trim();
-  const sys = ['สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template'];
-  if (sys.includes(n)) return true;
-  if (/^(User_|Community_|Report_|Log_|Eval_)/i.test(n)) return true;
+  const sys = ['สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template', '🔍 รวมข้อสอบ & กรองข้อมูล', '📑 ทะเบียนรหัสเคส'];
+  if (sys.includes(n) || n.includes('ทะเบียน')) return true;
+  if (/^(User_|Community_|Report_|Log_|Eval_|📑|🔍)/i.test(n)) return true;
   return false;
 }
 
