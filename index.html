@@ -958,12 +958,75 @@
     }
 
     /* ══ QUESTION CARD & CHOICES ══ */
+    .card-scene {
+      perspective: 1200px;
+      width: 100%;
+      max-width: 720px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
     .quiz-card {
       width: 100%; max-width: 720px; background: var(--card); border: 1px solid var(--border);
       border-radius: var(--r-lg); padding: 22px 20px; display: flex; flex-direction: column;
       box-shadow: var(--shadow-sm); margin-bottom: 12px;
-      transition: box-shadow 0.2s;
+      transform-style: preserve-3d;
+      transition: background-color 0.28s ease, border-color 0.28s ease, box-shadow 0.2s, transform 0.32s cubic-bezier(0.2, 0.9, 0.3, 1);
     }
+
+    /* ── Subtle 3D Card Flip / Slide Animation ── */
+    .quiz-card.anim-flip-next {
+      animation: cardFlipNext 0.32s cubic-bezier(0.2, 0.9, 0.3, 1);
+    }
+    .quiz-card.anim-flip-prev {
+      animation: cardFlipPrev 0.32s cubic-bezier(0.2, 0.9, 0.3, 1);
+    }
+    @keyframes cardFlipNext {
+      0% {
+        opacity: 0.35;
+        transform: translateX(22px) rotateY(-10deg) scale(0.98);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) rotateY(0deg) scale(1);
+      }
+    }
+    @keyframes cardFlipPrev {
+      0% {
+        opacity: 0.35;
+        transform: translateX(-22px) rotateY(10deg) scale(0.98);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0) rotateY(0deg) scale(1);
+      }
+    }
+
+    /* ── Card Background Color Shift on Answer Reveal (Soft Tint) ── */
+    .quiz-card.answered-correct {
+      background: #F0FDF4 !important; /* Soft mint green */
+      border-color: #86EFAC !important;
+    }
+    .quiz-card.answered-wrong {
+      background: #FEF2F2 !important; /* Soft blush rose */
+      border-color: #FECACA !important;
+    }
+    [data-theme="dark"] .quiz-card.answered-correct {
+      background: #064E3B !important;
+      border-color: #059669 !important;
+    }
+    [data-theme="dark"] .quiz-card.answered-wrong {
+      background: #450A0A !important;
+      border-color: #991B1B !important;
+    }
+
+    /* ── Disable Animation Mode ── */
+    body.no-card-anim .quiz-card {
+      animation: none !important;
+      transition: none !important;
+      transform: none !important;
+    }
+
     .quiz-card-head {
       display: flex; align-items: center; justify-content: space-between;
       margin-bottom: 12px;
@@ -2282,6 +2345,9 @@
         <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
           <span style="font-size:13px;">📖</span>
         </button>
+        <button class="icon-btn" id="btnToggleAnimLobby" onclick="toggleCardAnimation()" title="แอนิเมชันพลิกการ์ด (เปิด/ปิด)">
+          <span id="animIconLobby" style="font-size:13px;">🎬</span>
+        </button>
         <button class="icon-btn" id="toggleViewModeBtnLobby" onclick="toggleAppViewMode()" title="สลับ Desktop / Mobile">
           <span id="viewModeIconLobby">📱</span>
         </button>
@@ -2523,6 +2589,9 @@
         <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
           <span style="font-size:13px;">📖</span>
         </button>
+        <button class="icon-btn" id="btnToggleAnim" onclick="toggleCardAnimation()" title="แอนิเมชันพลิกการ์ด (เปิด/ปิด)">
+          <span id="animIcon" style="font-size:13px;">🎬</span>
+        </button>
         <button class="icon-btn" id="toggleViewModeBtnQuiz" onclick="toggleAppViewMode()" title="สลับ Desktop / Mobile">
           <span id="viewModeIconQuiz">📱</span>
         </button>
@@ -2572,7 +2641,8 @@
       </div>
 
       <!-- Main Quiz Card -->
-      <div class="quiz-card" id="quizCard">
+      <div class="card-scene">
+        <div class="quiz-card" id="quizCard">
         <div class="quiz-card-head">
           <span class="tag clinic-tag" id="quizCardTag">Clinic · Cardiovascular</span>
           <div style="display:flex; align-items:center; gap:6px;">
@@ -2625,6 +2695,7 @@
           </div>
         </div>
       </div>
+      </div><!-- end card-scene -->
 
       <!-- Navigation & Action Buttons -->
       <div class="quiz-nav-row">
@@ -4395,6 +4466,7 @@ function showApp() {
   document.getElementById('lobbyUserNameBadge').textContent = dn;
   document.getElementById('lobbyGreetingName').textContent = dn;
   setAppQuizMode(appQuizMode);
+  updateAnimBtnUI();
   loadInitialData();
   if (typeof syncCurrentUserProfile === 'function') syncCurrentUserProfile();
 }
@@ -4485,9 +4557,9 @@ function doLogout() {
 function isSystemCategory(name) {
   if (!name) return true;
   const n = String(name).trim();
-  const sys = ['สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template', '🔍 รวมข้อสอบ & กรองข้อมูล', '📑 ทะเบียนรหัสเคส'];
-  if (sys.includes(n) || n.includes('ทะเบียน')) return true;
-  if (/^(User_|Community_|Report_|Log_|Eval_|📑|🔍)/i.test(n)) return true;
+  const sys = ['สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template', '🔍 รวมข้อสอบ & กรองข้อมูล', '📑 ทะเบียนรหัสเคส', '📖 System Guideline (คู่มือระบบ)'];
+  if (sys.includes(n) || n.includes('ทะเบียน') || n.includes('Guideline') || n.includes('คู่มือ')) return true;
+  if (/^(User_|Community_|Report_|Log_|Eval_|📑|🔍|📖)/i.test(n)) return true;
   return false;
 }
 
@@ -6775,6 +6847,39 @@ function updateScrollPracticeStats() {
   if (elAcc) elAcc.textContent = acc + '%';
 }
 
+// ─── CARD ANIMATION TOGGLE ───
+let isCardAnimEnabled = (localStorage.getItem('ple_card_anim') !== 'false');
+
+function updateAnimBtnUI() {
+  if (!isCardAnimEnabled) {
+    document.body.classList.add('no-card-anim');
+  } else {
+    document.body.classList.remove('no-card-anim');
+  }
+  const icons = ['animIcon', 'animIconLobby'];
+  const btns = ['btnToggleAnim', 'btnToggleAnimLobby'];
+  btns.forEach((id, i) => {
+    const el = document.getElementById(id);
+    const icon = document.getElementById(icons[i]);
+    if (el) {
+      el.title = isCardAnimEnabled ? 'แอนิเมชันพลิกการ์ด: เปิดอยู่ (คลิกเพื่อปิด)' : 'แอนิเมชันพลิกการ์ด: ปิดอยู่ (คลิกเพื่อเปิด)';
+      el.style.opacity = isCardAnimEnabled ? '1' : '0.45';
+    }
+    if (icon) {
+      icon.textContent = isCardAnimEnabled ? '🎬' : '⏹️';
+    }
+  });
+}
+
+function toggleCardAnimation() {
+  isCardAnimEnabled = !isCardAnimEnabled;
+  localStorage.setItem('ple_card_anim', isCardAnimEnabled ? 'true' : 'false');
+  updateAnimBtnUI();
+  if (typeof showToast === 'function') {
+    showToast(isCardAnimEnabled ? '🎬 เปิดแอนิเมชันพลิกการ์ดแล้ว' : '⏹️ ปิดแอนิเมชันพลิกการ์ดแล้ว');
+  }
+}
+
 function togglePracticeViewStyle() {
   if (appQuizMode === 'exam') {
     showToast('⏱️ โหมดสอบจริงไม่อนุญาตให้สลับมุมมองระหว่างสอบ');
@@ -7380,7 +7485,7 @@ function updateSingleScrollCardDOM(qIdx) {
 }
 
 // ─── RENDER QUESTION ───
-function renderCurrentQuestion() {
+function renderCurrentQuestion(direction) {
   if (currentQuestionIndex >= activeQuizQuestions.length) {
     if (appQuizMode === 'exam') {
       submitExamModeWholeSession();
@@ -7388,6 +7493,17 @@ function renderCurrentQuestion() {
       showQuizResultSummary();
     }
     return;
+  }
+
+  // Handle Card Animation & Reset background tint
+  const cardEl = document.getElementById('quizCard');
+  if (cardEl) {
+    cardEl.classList.remove('answered-correct', 'answered-wrong');
+    if (isCardAnimEnabled && direction) {
+      cardEl.classList.remove('anim-flip-next', 'anim-flip-prev');
+      void cardEl.offsetWidth;
+      cardEl.classList.add(direction === 'next' ? 'anim-flip-next' : 'anim-flip-prev');
+    }
   }
 
   const q = activeQuizQuestions[currentQuestionIndex];
@@ -7574,6 +7690,13 @@ function submitAnswerPracticeMode() {
   const correctLabel = document.getElementById('correctChoiceLabel');
 
   expBox.classList.add('show');
+
+  // Card background tint on answer reveal
+  const cardEl = document.getElementById('quizCard');
+  if (cardEl && isCardAnimEnabled) {
+    cardEl.classList.remove('answered-correct', 'answered-wrong');
+    cardEl.classList.add(isCorrect ? 'answered-correct' : 'answered-wrong');
+  }
   const correctLetter = THAI_CHOICE_LETTERS[q.answer - 1] || q.answer;
   if (isCorrect) {
     expBox.classList.remove('is-wrong');
@@ -7688,14 +7811,14 @@ function jumpToExamQuestion(idx) {
 function goPrevQuestion() {
   if (currentQuestionIndex > 0) {
     currentQuestionIndex--;
-    renderCurrentQuestion();
+    renderCurrentQuestion('prev');
   }
 }
 
 function goNextQuestion() {
   if (currentQuestionIndex + 1 < activeQuizQuestions.length) {
     currentQuestionIndex++;
-    renderCurrentQuestion();
+    renderCurrentQuestion('next');
   } else {
     if (appQuizMode === 'exam') {
       submitExamModeWholeSession();

@@ -154,10 +154,14 @@ def main():
     offline_questions = {}
     total_q_count = 0
 
-    SYSTEM_SHEETS = {'สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template', '🔍 รวมข้อสอบ & กรองข้อมูล', '📑 ทะเบียนรหัสเคส'}
+    SYSTEM_SHEETS = {'สารบัญ', 'User_Profiles', 'Community_Chat', 'Report_Quiz_Issues', 'Log_Quiz_Results', 'Template', '🔍 รวมข้อสอบ & กรองข้อมูล', '📑 ทะเบียนรหัสเคส', '📖 System Guideline (คู่มือระบบ)'}
     
     def is_sys_sheet(name):
-        return name in SYSTEM_SHEETS or name.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📑')) or 'ทะเบียน' in name
+        return (name in SYSTEM_SHEETS or 
+                name.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📑', '📖')) or 
+                'ทะเบียน' in name or 
+                'Guideline' in name or 
+                'คู่มือ' in name)
 
     # Initialize all target category buckets
     for s in sheet_names:
