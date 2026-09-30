@@ -399,7 +399,7 @@ def main():
             offline_questions[target_sheet].append(q_obj)
             total_q_count += 1
 
-    # Post-process Case Clusters: Auto-assign order and sort Type INT by Track Priority
+    # Post-process Case Clusters: Auto-Split duplicate Q1s, auto-assign order, and sort Type INT by Track Priority
     case_clusters = {}
     for cat_name, q_list in offline_questions.items():
         for q in q_list:
@@ -411,7 +411,32 @@ def main():
                 case_clusters[scoped_key].append(q)
 
     track_priority = {'clinic': 1, 'product': 2, 'sap': 3}
+    final_split_clusters = []
+
     for scoped_key, cluster_qs in case_clusters.items():
+        # Auto-Split Safeguard: Check if multiple Q1s exist under the same caseGroupId
+        q1_count = sum(1 for q in cluster_qs if q.get('caseOrder') == 1)
+        if q1_count > 1:
+            chunks = []
+            curr_chunk = []
+            for q in cluster_qs:
+                if q.get('caseOrder') == 1 and curr_chunk:
+                    chunks.append(curr_chunk)
+                    curr_chunk = []
+                curr_chunk.append(q)
+            if curr_chunk:
+                chunks.append(curr_chunk)
+
+            for chunk_idx, chunk in enumerate(chunks, 1):
+                split_suffix = f"__p{chunk_idx}"
+                for q in chunk:
+                    if not q['caseGroupId'].endswith(split_suffix):
+                        q['caseGroupId'] = f"{q['caseGroupId']}{split_suffix}"
+                final_split_clusters.append(chunk)
+        else:
+            final_split_clusters.append(cluster_qs)
+
+    for cluster_qs in final_split_clusters:
         is_int = any(q.get('caseType') == 'INT' or '_INT_' in q.get('caseGroupId', '') for q in cluster_qs)
         if is_int:
             for q in cluster_qs:
