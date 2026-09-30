@@ -133,7 +133,7 @@
     }
     body.mode-phone .phone-notch { display: block; }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1024px), (hover: none) and (pointer: coarse) {
       body { padding: 0 !important; background: var(--bg) !important; }
       body.mode-phone { padding: 0 !important; }
       .app-shell {
@@ -146,25 +146,116 @@
       }
       .phone-notch { display: none !important; }
       .kbd-hints-bar { display: none !important; }
-      .quiz-viewport { padding: 8px 12px 14px !important; }
-      .topbar { padding: 10px 12px !important; }
-      .quiz-card { padding: 18px 14px !important; }
-      .question-text { font-size: 16px !important; line-height: 1.55 !important; }
+
+      .topbar { padding: 10px 14px !important; }
+      .quiz-viewport {
+        padding: 10px 14px 16px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        flex: 1 1 auto !important;
+        min-height: 0 !important;
+        width: 100% !important;
+      }
+
+      .card-scene {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 1 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+      .quiz-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 20px 18px 22px !important;
+        border-radius: 20px !important;
+        flex: 1 0 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.04) !important;
+      }
+      .question-text {
+        font-size: 18.5px !important;
+        line-height: 1.65 !important;
+        letter-spacing: -0.01em !important;
+        margin-bottom: 20px !important;
+      }
+      .choices-list {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 11px !important;
+        margin-bottom: 18px !important;
+        flex: 1 0 auto !important;
+        justify-content: flex-start !important;
+      }
+      .choice-item {
+        padding: 14px 16px !important;
+        border-radius: 14px !important;
+        min-height: 52px !important;
+        gap: 13px !important;
+      }
+      .choice-num {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 14px !important;
+        border-radius: 9px !important;
+      }
+      .choice-text {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+      }
+      .quiz-nav-row {
+        max-width: 100% !important;
+        margin: 12px auto 6px !important;
+        padding-top: 4px !important;
+      }
+      .nav-arrow-btn {
+        padding: 12px 16px !important;
+        font-size: 13.5px !important;
+        border-radius: 14px !important;
+      }
+      .btn-submit-answer {
+        padding: 12px 24px !important;
+        font-size: 15px !important;
+        border-radius: 14px !important;
+      }
     }
 
-    @media (hover: none) and (pointer: coarse) {
-      body { padding: 0 !important; background: var(--bg) !important; }
-      body.mode-phone { padding: 0 !important; }
-      .app-shell {
-        max-width: 100% !important; border-radius: 0 !important;
-        min-height: 100dvh !important; box-shadow: none !important; border: none !important;
-      }
-      body.mode-phone .app-shell {
-        max-width: 100% !important; border-radius: 0 !important;
-        min-height: 100dvh !important; box-shadow: none !important; border: none !important;
-      }
-      .phone-notch { display: none !important; }
-      .kbd-hints-bar { display: none !important; }
+    /* ── DYNAMIC FONT SIZE SCALING PRESETS ── */
+    body.font-scale-lg .question-text {
+      font-size: 21px !important;
+      line-height: 1.7 !important;
+    }
+    body.font-scale-lg .choice-text {
+      font-size: 18px !important;
+      line-height: 1.55 !important;
+    }
+    body.font-scale-lg .choice-num {
+      width: 36px !important;
+      height: 36px !important;
+      font-size: 15px !important;
+    }
+    body.font-scale-lg .exp-text {
+      font-size: 14.5px !important;
+      line-height: 1.65 !important;
+    }
+
+    body.font-scale-xl .question-text {
+      font-size: 23.5px !important;
+      line-height: 1.75 !important;
+    }
+    body.font-scale-xl .choice-text {
+      font-size: 20px !important;
+      line-height: 1.6 !important;
+    }
+    body.font-scale-xl .choice-num {
+      width: 40px !important;
+      height: 40px !important;
+      font-size: 16px !important;
+    }
+    body.font-scale-xl .exp-text {
+      font-size: 16px !important;
+      line-height: 1.7 !important;
     }
 
     :fullscreen,
@@ -2368,6 +2459,9 @@
         <button class="icon-btn" id="btnToggleAnimLobby" onclick="toggleCardAnimation()" title="แอนิเมชันพลิกการ์ด (เปิด/ปิด)">
           <span id="animIconLobby" style="font-size:13px;">🎬</span>
         </button>
+        <button class="icon-btn" id="btnToggleFontSizeLobby" onclick="cycleFontSizeScale()" title="ขนาดตัวอักษร: ปกติ (คลิกเพื่อขยายใหญ่)">
+          <span style="font-size:12px; font-weight:700; font-family:'IBM Plex Mono', monospace;">Aa</span>
+        </button>
         <button class="icon-btn" id="toggleViewModeBtnLobby" onclick="toggleAppViewMode()" title="สลับ Desktop / Mobile">
           <span id="viewModeIconLobby">📱</span>
         </button>
@@ -2611,6 +2705,9 @@
         </button>
         <button class="icon-btn" id="btnToggleAnim" onclick="toggleCardAnimation()" title="แอนิเมชันพลิกการ์ด (เปิด/ปิด)">
           <span id="animIcon" style="font-size:13px;">🎬</span>
+        </button>
+        <button class="icon-btn" id="btnToggleFontSizeQuiz" onclick="cycleFontSizeScale()" title="ขนาดตัวอักษร: ปกติ (คลิกเพื่อขยายใหญ่)">
+          <span style="font-size:12px; font-weight:700; font-family:'IBM Plex Mono', monospace;">Aa</span>
         </button>
         <button class="icon-btn" id="toggleViewModeBtnQuiz" onclick="toggleAppViewMode()" title="สลับ Desktop / Mobile">
           <span id="viewModeIconQuiz">📱</span>
@@ -4446,6 +4543,7 @@ function isUserAllowedAdmin(username) {
 window.addEventListener('load', () => {
   initViewMode();
   updateFullscreenBtnUI();
+  applyFontScale(currentFontScale, false);
   const savedTrack = localStorage.getItem(LS_TRACK);
   if (savedTrack) currentTrack = savedTrack;
 
@@ -4489,6 +4587,7 @@ function showApp() {
   setAppQuizMode(appQuizMode);
   updateAnimBtnUI();
   updateFullscreenBtnUI();
+  applyFontScale(currentFontScale, false);
   loadInitialData();
   if (typeof syncCurrentUserProfile === 'function') syncCurrentUserProfile();
 }
@@ -8420,6 +8519,51 @@ function updateViewModeUI(isPhone) {
   const iconQ = document.getElementById('viewModeIconQuiz');
   if (iconL) iconL.textContent = isPhone ? '🖥️' : '📱';
   if (iconQ) iconQ.textContent = isPhone ? '🖥️' : '📱';
+}
+
+// ─── DYNAMIC FONT SIZE SCALING ───
+const FONT_SCALES = ['md', 'lg', 'xl'];
+const FONT_SCALE_LABELS = {
+  md: 'ปกติ (100%)',
+  lg: 'ใหญ่ (115%)',
+  xl: 'ใหญ่พิเศษ (130%)'
+};
+let currentFontScale = localStorage.getItem('ple_font_scale') || 'md';
+
+function applyFontScale(scale, notify = false) {
+  if (!FONT_SCALES.includes(scale)) scale = 'md';
+  currentFontScale = scale;
+  localStorage.setItem('ple_font_scale', scale);
+
+  document.body.classList.remove('font-scale-lg', 'font-scale-xl');
+  if (scale === 'lg') document.body.classList.add('font-scale-lg');
+  if (scale === 'xl') document.body.classList.add('font-scale-xl');
+
+  const btns = ['btnToggleFontSizeQuiz', 'btnToggleFontSizeLobby'];
+  btns.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.title = 'ขนาดตัวอักษร: ' + FONT_SCALE_LABELS[scale] + ' (คลิกเพื่อเปลี่ยน)';
+    if (scale !== 'md') {
+      el.style.background = 'var(--accent-soft)';
+      el.style.borderColor = 'var(--accent)';
+      el.style.color = 'var(--accent)';
+    } else {
+      el.style.background = '';
+      el.style.borderColor = '';
+      el.style.color = '';
+    }
+  });
+
+  if (notify && typeof showToast === 'function') {
+    showToast('🔤 ขนาดตัวอักษร: ' + FONT_SCALE_LABELS[scale]);
+  }
+}
+
+function cycleFontSizeScale() {
+  const currentIdx = FONT_SCALES.indexOf(currentFontScale);
+  const nextIdx = (currentIdx + 1) % FONT_SCALES.length;
+  applyFontScale(FONT_SCALES[nextIdx], true);
 }
 
 const FS_EXPAND_SVG = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>`;
