@@ -3027,31 +3027,37 @@
       </div>
 
       <!-- ③ PROPORTIONS -->
-      <div style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px;">
+      <div id="simProportionsSection" style="background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px;">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
           <div class="sim-section-label" style="margin-bottom:0;">③ สัดส่วนสายวิชา</div>
           <span id="simTotalPctBadge" style="font-size:11px; font-weight:700; color:var(--clinic); background:var(--bg); padding:2px 8px; border-radius:6px; border:1px solid var(--border);">รวม: 100% (120 ข้อ)</span>
         </div>
-        <div style="margin-bottom:8px;">
-          <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
-            <span style="color:#0284C7; font-weight:700;">🩺 Clinic:</span>
-            <span id="simClinicLabel" style="font-weight:700; font-family:'IBM Plex Mono';">50% (60 ข้อ)</span>
-          </div>
-          <input type="range" id="simClinicRange" min="0" max="100" value="50" oninput="onSimSliderChange('clinic')" style="width:100%; accent-color:#0284C7;">
+        <!-- Banner shown when 'ทุกข้อ' is active -->
+        <div id="simAllQuestionsNotice" style="display:none; background:#ecfdf5; border:1px solid #a7f3d0; border-radius:8px; padding:8px 12px; margin-bottom:12px; font-size:12px; color:#065f46; font-weight:600;">
+          ⚡ โหมดดึงครบทุกข้อตามชุดข้อสอบจริง (ดึงครบ 100% ตามข้อสอบต้นฉบับ ไม่จำกัดสัดส่วน)
         </div>
-        <div style="margin-bottom:8px;">
-          <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
-            <span style="color:#D97706; font-weight:700;">🧪 Product:</span>
-            <span id="simProductLabel" style="font-weight:700; font-family:'IBM Plex Mono';">40% (48 ข้อ)</span>
+        <div id="simProportionsSlidersWrap">
+          <div style="margin-bottom:8px;">
+            <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
+              <span style="color:#0284C7; font-weight:700;">🩺 Clinic:</span>
+              <span id="simClinicLabel" style="font-weight:700; font-family:'IBM Plex Mono';">50% (60 ข้อ)</span>
+            </div>
+            <input type="range" id="simClinicRange" min="0" max="100" value="50" oninput="onSimSliderChange('clinic')" style="width:100%; accent-color:#0284C7;">
           </div>
-          <input type="range" id="simProductRange" min="0" max="100" value="40" oninput="onSimSliderChange('product')" style="width:100%; accent-color:#D97706;">
-        </div>
-        <div>
-          <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
-            <span style="color:#059669; font-weight:700;">💼 SAP:</span>
-            <span id="simSapLabel" style="font-weight:700; font-family:'IBM Plex Mono';">10% (12 ข้อ)</span>
+          <div style="margin-bottom:8px;">
+            <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
+              <span style="color:#D97706; font-weight:700;">🧪 Product:</span>
+              <span id="simProductLabel" style="font-weight:700; font-family:'IBM Plex Mono';">40% (48 ข้อ)</span>
+            </div>
+            <input type="range" id="simProductRange" min="0" max="100" value="40" oninput="onSimSliderChange('product')" style="width:100%; accent-color:#D97706;">
           </div>
-          <input type="range" id="simSapRange" min="0" max="100" value="10" oninput="onSimSliderChange('sap')" style="width:100%; accent-color:#059669;">
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:11.5px; margin-bottom:2px;">
+              <span style="color:#059669; font-weight:700;">💼 SAP:</span>
+              <span id="simSapLabel" style="font-weight:700; font-family:'IBM Plex Mono';">10% (12 ข้อ)</span>
+            </div>
+            <input type="range" id="simSapRange" min="0" max="100" value="10" oninput="onSimSliderChange('sap')" style="width:100%; accent-color:#059669;">
+          </div>
         </div>
       </div>
 
@@ -5638,7 +5644,10 @@ function updateSimSourceSummaryBadge() {
   const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length)
     ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
   let cnt = 0;
-  Object.values(map).forEach(qs => { cnt += filterQuestionsByExamSets(qs).length; });
+  Object.keys(map).forEach(cat => {
+    if (typeof isSystemCategory === 'function' && isSystemCategory(cat)) return;
+    cnt += filterQuestionsByExamSets(map[cat] || []).length;
+  });
 
   if (_selectedSimExamSets.has('all')) {
     if (badge) badge.textContent = `🌟 สุ่มจากทุกชุด (${cnt.toLocaleString()} ข้อ)`;
@@ -5667,6 +5676,12 @@ function updateSimPresetAllCount(cnt) {
   if (el) el.textContent = cnt ? `${cnt} ข้อ` : 'ทุกข้อ';
   const btn = document.getElementById('simPresetAll');
   if (btn) btn._totalCount = cnt;
+  if (btn && btn.classList.contains('active')) {
+    const inp = document.getElementById('simTotalCount');
+    if (inp) inp.value = cnt;
+    const badge = document.getElementById('simTotalPctBadge');
+    if (badge) badge.textContent = `⚡ ดึงครบทุกข้อ (${cnt} ข้อ)`;
+  }
 }
 
 function onSimExamSetSelectChange() {
@@ -5688,11 +5703,23 @@ function applySimPresetAll() {
   if (!count) return;
   const inp = document.getElementById('simTotalCount');
   if (inp) inp.value = count;
-  recalcSimProportions();
+
   ['simPreset120','simPreset60','simPreset30','simPresetAll'].forEach(id => {
     const b = document.getElementById(id);
     if (b) b.classList.toggle('active', id === 'simPresetAll');
   });
+
+  // Show notice and dim proportions sliders
+  const notice = document.getElementById('simAllQuestionsNotice');
+  const slidersWrap = document.getElementById('simProportionsSlidersWrap');
+  if (notice) notice.style.display = 'block';
+  if (slidersWrap) {
+    slidersWrap.style.opacity = '0.45';
+    slidersWrap.style.pointerEvents = 'none';
+  }
+  const badge = document.getElementById('simTotalPctBadge');
+  if (badge) badge.textContent = `⚡ ดึงครบทุกข้อ (${count} ข้อ)`;
+
   const t0 = document.getElementById('simTimer0');
   if (t0) selectSimTimer('0', t0);
 }
@@ -5702,12 +5729,16 @@ function clearSimPresetActive() {
     const b = document.getElementById(id);
     if (b) b.classList.remove('active');
   });
+  const notice = document.getElementById('simAllQuestionsNotice');
+  const slidersWrap = document.getElementById('simProportionsSlidersWrap');
+  if (notice) notice.style.display = 'none';
+  if (slidersWrap) {
+    slidersWrap.style.opacity = '1';
+    slidersWrap.style.pointerEvents = 'auto';
+  }
 }
 
-
-
 function applySimPreset(total, cPct, pPct, sPct, mins) {
-
   document.getElementById('simTotalCount').value = total;
   simClinicPct = cPct;
   simProductPct = pPct;
@@ -5719,6 +5750,14 @@ function applySimPreset(total, cPct, pPct, sPct, mins) {
   if (rC) rC.value = cPct;
   if (rP) rP.value = pPct;
   if (rS) rS.value = sPct;
+
+  const notice = document.getElementById('simAllQuestionsNotice');
+  const slidersWrap = document.getElementById('simProportionsSlidersWrap');
+  if (notice) notice.style.display = 'none';
+  if (slidersWrap) {
+    slidersWrap.style.opacity = '1';
+    slidersWrap.style.pointerEvents = 'auto';
+  }
 
   const tSel = document.getElementById('simTimerSelect');
   let timerVal = 'auto';
@@ -5735,9 +5774,11 @@ function applySimPreset(total, cPct, pPct, sPct, mins) {
   const p120 = document.getElementById('simPreset120');
   const p60 = document.getElementById('simPreset60');
   const p30 = document.getElementById('simPreset30');
+  const pAll = document.getElementById('simPresetAll');
   if (p120) p120.classList.toggle('active', total === 120);
   if (p60) p60.classList.toggle('active', total === 60);
   if (p30) p30.classList.toggle('active', total === 30);
+  if (pAll) pAll.classList.remove('active');
 
   recalcSimProportions();
 }
@@ -5876,22 +5917,56 @@ function executeSimulatedExam() {
   const chosenMode = document.getElementById('simModeSelect').value;
   const timerOption = document.getElementById('simTimerSelect').value;
 
-  const cTarget = Math.round((simClinicPct / 100) * totalCount);
-  const pTarget = Math.round((simProductPct / 100) * totalCount);
-  const sTarget = Math.max(0, totalCount - cTarget - pTarget);
-
   // filterQuestionsByExamSets() handles multi-set filtering from _selectedSimExamSets
   const allowed = (selectedSimSubtopics && selectedSimSubtopics.size > 0) ? selectedSimSubtopics : null;
+  const isAllPreset = document.getElementById('simPresetAll') && document.getElementById('simPresetAll').classList.contains('active');
 
-  const clinicQuestions  = sampleStratifiedFromTrack('clinic',  cTarget, 'all', allowed);
-  const productQuestions = sampleStratifiedFromTrack('product', pTarget, 'all', allowed);
-  const sapQuestions     = sampleStratifiedFromTrack('sap',     sTarget, 'all', allowed);
+  // Collect all eligible questions across non-system categories
+  const allMatching = [];
+  categories.filter(c => !isSystemCategory(c.name)).forEach(c => {
+    let qs = (allQuestionsMap[c.name] || []).slice();
+    qs = filterQuestionsByExamSets(qs);
+    if (allowed) {
+      qs = qs.filter(q => {
+        const subs = getQuestionSubtopics(q);
+        const subList = subs.length ? subs : [c.name];
+        return subList.some(s => allowed.has(`${c.name}::${s}`) || allowed.has(s) || allowed.has(c.name));
+      });
+    }
+    allMatching.push(...qs);
+  });
 
-
-  let combined = [...clinicQuestions, ...productQuestions, ...sapQuestions];
-  if (!combined.length) {
+  if (!allMatching.length) {
     alert('ไม่พบข้อสอบที่ตรงกับชุดที่เลือก กรุณาเลือกชุดข้อสอบอื่น หรือใช้ "ทั้งหมดในระบบ"');
     return;
+  }
+
+  let combined = [];
+  if (isAllPreset || totalCount >= allMatching.length) {
+    // Mode "ทุกข้อ": bypass track proportions, take all matching questions
+    combined = allMatching.slice();
+  } else {
+    const cTarget = Math.round((simClinicPct / 100) * totalCount);
+    const pTarget = Math.round((simProductPct / 100) * totalCount);
+    const sTarget = Math.max(0, totalCount - cTarget - pTarget);
+
+    const clinicQuestions  = sampleStratifiedFromTrack('clinic',  cTarget, 'all', allowed);
+    const productQuestions = sampleStratifiedFromTrack('product', pTarget, 'all', allowed);
+    const sapQuestions     = sampleStratifiedFromTrack('sap',     sTarget, 'all', allowed);
+
+    combined = [...clinicQuestions, ...productQuestions, ...sapQuestions];
+
+    // Backfill if any track had a deficit
+    if (combined.length < totalCount && combined.length < allMatching.length) {
+      const selectedSet = new Set(combined);
+      const leftovers = allMatching.filter(q => !selectedSet.has(q));
+      for (let i = leftovers.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [leftovers[i], leftovers[j]] = [leftovers[j], leftovers[i]];
+      }
+      const needed = Math.min(totalCount - combined.length, leftovers.length);
+      combined.push(...leftovers.slice(0, needed));
+    }
   }
 
   // Shuffle
