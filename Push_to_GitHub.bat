@@ -1,29 +1,29 @@
 @echo off
-chcp 65001 >nul
+setlocal enabledelayedexpansion
 cd /d "%~dp0"
 
 echo.
 echo ================================================================
-echo   🚀 PLE-CC Quiz Practice - Full Deploy (Compile + Push)
+echo   PLE-CC Quiz Practice - Full Deploy (Compile + Push)
 echo   Target: pharmacistlicenserxcu/PLE-CC-Quiz-practice
 echo ================================================================
 echo.
 
-REM ─── STEP 1: Compile ───────────────────────────────────────────
+REM --- STEP 1: Compile offline database ---
 echo [1/2] Compiling offline database from Google Sheets...
 echo.
 python compile_offline_db.py
-if %ERRORLEVEL% NEQ 0 (
+if errorlevel 1 (
     echo.
     echo [ERROR] Compilation failed! Push aborted.
-    echo         Fix the error above and try again.
+    echo Please fix the error above and try again.
     echo.
     pause
     exit /b 1
 )
 echo.
 
-REM ─── STEP 2: Git add, commit, push ────────────────────────────
+REM --- STEP 2: Git add, commit, push ---
 echo [2/2] Pushing to GitHub...
 echo.
 
@@ -61,13 +61,13 @@ git push -u origin main
 
 :FINISH
 echo.
-if %ERRORLEVEL%==0 (
+if errorlevel 1 (
+    echo [ERROR] Push failed. Check internet or git permissions.
+) else (
     echo ================================================================
     echo   [SUCCESS] Deploy complete!
     echo   Live at: https://pharmacistlicenserxcu.github.io/PLE-CC-Quiz-practice/
     echo ================================================================
-) else (
-    echo [ERROR] Push failed. Check internet or git permissions.
 )
 echo.
 pause
