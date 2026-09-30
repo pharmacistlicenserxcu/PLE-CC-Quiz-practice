@@ -127,9 +127,15 @@ def extract_in_cell_images():
                     img_zip_path = media_map[embed_id]
                     if img_zip_path in z.namelist():
                         img_data = z.read(img_zip_path)
-                        ext = os.path.splitext(img_zip_path)[1]
-                        safe_sheet = re.sub(r'[^\w\-_\. ]', '_', sheet_name)
-                        out_fname = f"{safe_sheet}_r{row_idx}_c{col_idx}{ext}"
+                        ext = os.path.splitext(img_zip_path)[1].lower()
+                        if not ext: ext = '.png'
+                        if 'รวม' in sheet_name or 'ด่วน' in sheet_name or 'QI_' in sheet_name:
+                            safe_sheet = 'quick_ingest'
+                        elif 'Medicinal' in sheet_name:
+                            safe_sheet = 'medchem'
+                        else:
+                            safe_sheet = re.sub(r'[^a-zA-Z0-9_]', '_', sheet_name).strip('_') or 'sheet'
+                        out_fname = f"qimg_{safe_sheet}_r{row_idx}_c{col_idx}{ext}"
                         out_fpath = os.path.join(IMAGES_DIR, out_fname)
                         with open(out_fpath, 'wb') as img_out:
                             img_out.write(img_data)

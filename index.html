@@ -1321,6 +1321,27 @@
     .sim-header-start-btn:active {
       transform: scale(0.97);
     }
+    .sim-chips-scroll {
+      max-height: 340px;
+      overflow-y: scroll !important;
+      padding-right: 6px;
+      scrollbar-width: thin;
+      scrollbar-color: #0E7490 #f1f5f9;
+    }
+    .sim-chips-scroll::-webkit-scrollbar {
+      width: 7px;
+    }
+    .sim-chips-scroll::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 6px;
+    }
+    .sim-chips-scroll::-webkit-scrollbar-thumb {
+      background: #0E7490;
+      border-radius: 6px;
+    }
+    .sim-chips-scroll::-webkit-scrollbar-thumb:hover {
+      background: #0891b2;
+    }
     .sim-panel-body {
       flex: 1; max-width: 760px; width: 100%; margin: 0 auto;
       padding: 20px 16px 40px; display: flex; flex-direction: column; gap: 16px;
@@ -2913,16 +2934,18 @@
 
         <!-- Clean Dropdown Controls Row -->
         <div style="display:flex; flex-direction:column; gap:8px;">
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
             <!-- Primary Type Dropdown -->
-            <div style="flex:1; min-width:180px;">
-              <select id="simSourceTypeDropdown" onchange="onSimSourceTypeDropdownChange()" style="width:100%; padding:9px 12px; border-radius:10px; border:1px solid var(--border); background:var(--bg); color:var(--ink); font-family:inherit; font-size:13px; font-weight:600; outline:none; cursor:pointer;">
+            <div style="flex:1; min-width:220px;">
+              <label style="font-size:11px; font-weight:700; color:var(--ink-soft); margin-bottom:4px; display:block;">📂 หมวดชุดข้อสอบ</label>
+              <select id="simSourceTypeDropdown" onchange="onSimSourceTypeDropdownChange()" style="width:100%; padding:9px 12px; border-radius:10px; border:1.5px solid var(--border); background:var(--bg); color:var(--ink); font-family:inherit; font-size:13px; font-weight:600; outline:none; cursor:pointer;">
                 <!-- Populated dynamically -->
               </select>
             </div>
-            <!-- Sub / Year Dropdown (Appears when specific category chosen) -->
-            <div id="simSourceSubWrap" style="flex:1; min-width:180px; display:none;">
-              <select id="simSourceSubDropdown" onchange="onSimSourceSubDropdownChange()" style="width:100%; padding:9px 12px; border-radius:10px; border:1px solid var(--border); background:var(--bg); color:var(--ink); font-family:inherit; font-size:13px; font-weight:600; outline:none; cursor:pointer;">
+            <!-- Sub / Year Dropdown (Always visible!) -->
+            <div id="simSourceSubWrap" style="flex:1; min-width:220px;">
+              <label style="font-size:11px; font-weight:700; color:var(--ink-soft); margin-bottom:4px; display:block;">📅 รหัสปี / ชุดข้อสอบย่อย</label>
+              <select id="simSourceSubDropdown" onchange="onSimSourceSubDropdownChange()" style="width:100%; padding:9px 12px; border-radius:10px; border:1.5px solid var(--border); background:var(--bg); color:var(--ink); font-family:inherit; font-size:13px; font-weight:600; outline:none; cursor:pointer;">
                 <!-- Populated dynamically -->
               </select>
             </div>
@@ -2933,7 +2956,7 @@
             <div id="simSourceBadge" style="display:flex; align-items:center; gap:6px;">
               <span id="simSourceBadgeText" style="background:#dbeafe; color:#1d4ed8; border-radius:6px; padding:3px 9px; font-size:11.5px; font-weight:600;"></span>
             </div>
-            <button type="button" id="simToggleDrawerBtn" onclick="toggleSimSourceDrawer()" style="background:transparent; border:none; color:var(--ink-soft); font-family:inherit; font-size:11.5px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:4px; padding:4px 6px; border-radius:6px;">
+            <button type="button" id="simToggleDrawerBtn" onclick="toggleSimSourceDrawer()" style="background:var(--bg); border:1px solid var(--border); color:var(--ink-soft); font-family:inherit; font-size:11.5px; font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:4px; padding:5px 10px; border-radius:8px;">
               <span>⚙️ ปรับแต่งเลือกหลายชุดพร้อมกัน</span>
               <span id="simDrawerArrow" style="transition:transform 0.2s;">▼</span>
             </button>
@@ -2942,9 +2965,11 @@
 
         <!-- Collapsible Multi-Select Drawer (Hidden by default) -->
         <div id="simSourceDrawer" style="display:none; margin-top:12px; padding-top:12px; border-top:1px dashed var(--border);">
-          <div style="font-size:11px; color:var(--ink-soft); margin-bottom:8px;">💡 ติ๊กเลือกชุดข้อสอบหรือปีที่ต้องการผสมกันได้อิสระ:</div>
-          <!-- Chips container (rendered by JS) -->
-          <div id="simSourceChipsContainer" style="display:flex; flex-direction:column; gap:8px; max-height:280px; overflow-y:auto; padding-right:4px;"></div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <span style="font-size:11px; color:var(--ink-soft);">💡 ติ๊กเลือกชุดข้อสอบหรือปีที่ต้องการผสมกันได้อิสระ (มี Scrollbar เลื่อนดูได้ครบทุกชุด):</span>
+          </div>
+          <!-- Chips container (with visible styled scrollbar) -->
+          <div id="simSourceChipsContainer" class="sim-chips-scroll" style="display:flex; flex-direction:column; gap:8px;"></div>
         </div>
       </div>
 
@@ -5329,6 +5354,7 @@ function toggleSimSourceDrawer() {
 function renderSimSourceChips() {
   const container = document.getElementById('simSourceChipsContainer');
   const typeDropdown = document.getElementById('simSourceTypeDropdown');
+  const subDropdown = document.getElementById('simSourceSubDropdown');
   if (!container) return;
 
   const typeMap = getAllUniqueExamTypes();
@@ -5363,7 +5389,7 @@ function renderSimSourceChips() {
   _simCachedCountPerCombo = countPerCombo;
   _simCachedTotalAll = totalAll;
 
-  // 1. Populate Primary Dropdown
+  // 1. Populate Primary Type Dropdown
   if (typeDropdown) {
     let dHtml = `<option value="all">🌟 ทุกชุดข้อสอบในระบบ (${totalAll.toLocaleString()} ข้อ)</option>`;
     sortedTypes.forEach(type => {
@@ -5376,12 +5402,15 @@ function renderSimSourceChips() {
     typeDropdown.innerHTML = dHtml;
   }
 
-  // 2. Build the Multi-select Drawer Chips (Hidden by default in drawer)
+  // 2. Populate Sub Dropdown (Always visible!)
+  populateSubDropdownOptions();
+
+  // 3. Build the Multi-select Drawer Chips with collapsible category sections
   let html = '';
   html += `<div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-bottom:4px;">
     <button type="button" id="simChip_all" onclick="toggleSimSourceChip('all',this)"
       class="sim-source-chip${_selectedSimExamSets.has('all') ? ' selected' : ''}"
-      style="padding:5px 12px; font-size:12px; font-weight:700;">
+      style="padding:6px 14px; font-size:12px; font-weight:700;">
       🌟 ทั้งหมด (${totalAll.toLocaleString()} ข้อ)
     </button>
   </div>`;
@@ -5398,19 +5427,22 @@ function renderSimSourceChips() {
     const typeCnt = countPerType[type] || 0;
 
     html += `<div style="border:1px solid var(--border); border-radius:10px; overflow:hidden; background:var(--card);">
-      <div style="background:var(--bg); padding:5px 8px; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+      <div style="background:var(--bg); padding:6px 10px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border);">
         <button type="button" id="simChip_${typeKey}" onclick="toggleSimSourceChip('${typeKey.replace(/'/g,"\\'")}',this)"
           class="sim-source-chip${_selectedSimExamSets.has(typeKey) ? ' selected' : ''}"
-          style="padding:3px 10px; font-size:11.5px; font-weight:700;">
-          ${icon} ${type} <span style="font-size:10px; opacity:0.7;">(${typeCnt.toLocaleString()} ข้อ)</span>
-        </button>`;
+          style="padding:4px 10px; font-size:12px; font-weight:700;">
+          ${icon} ${type} <span style="font-size:10px; opacity:0.75;">(${typeCnt.toLocaleString()} ข้อ)</span>
+        </button>
+        <span style="font-size:11px; color:var(--ink-soft); font-weight:600;">${years.length} ชุดย่อย</span>
+      </div>
+      <div style="padding:8px; display:flex; align-items:center; gap:6px; flex-wrap:wrap; max-height:160px; overflow-y:auto;">`;
 
     years.forEach(y => {
       const comboKey = 'combo:' + type + '::' + y;
       const cnt = countPerCombo[type+'::'+y] || 0;
       html += `<button type="button" id="simChip_${comboKey}" onclick="toggleSimSourceChip('${comboKey.replace(/'/g,"\\'")}',this)"
           class="sim-source-chip${_selectedSimExamSets.has(comboKey) ? ' selected' : ''}"
-          style="padding:2px 8px; font-size:11px;">
+          style="padding:3px 9px; font-size:11px;">
           📅 ${y} <span style="font-size:9.5px; opacity:0.7;">(${cnt})</span>
         </button>`;
     });
@@ -5423,43 +5455,69 @@ function renderSimSourceChips() {
   updateSimSourceSummaryBadge();
 }
 
-function onSimSourceTypeDropdownChange() {
-  const typeDropdown = document.getElementById('simSourceTypeDropdown');
-  const subWrap = document.getElementById('simSourceSubWrap');
+function populateSubDropdownOptions(filterType = null) {
   const subDropdown = document.getElementById('simSourceSubDropdown');
-  if (!typeDropdown) return;
+  if (!subDropdown) return;
 
-  const val = typeDropdown.value;
-
-  if (val === 'all') {
-    if (subWrap) subWrap.style.display = 'none';
-    _selectedSimExamSets = new Set(['all']);
-    _selectedSimExamSet = 'all';
-  } else if (val === 'custom') {
-    const drawer = document.getElementById('simSourceDrawer');
-    if (drawer && drawer.style.display === 'none') toggleSimSourceDrawer();
-  } else if (val.startsWith('type:')) {
-    const type = val.replace(/^type:/, '');
+  let sHtml = '';
+  if (!filterType || filterType === 'all') {
+    sHtml += `<option value="all">🌟 สุ่มรวมทุกชุด / ทุกปี (${_simCachedTotalAll.toLocaleString()} ข้อ)</option>`;
+    _simCachedTypes.forEach(type => {
+      const isReal = type.includes('จริง'), isMock = type.toLowerCase().includes('mock');
+      const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
+      const yearsSet = _simCachedTypeMap.get(type) || new Set();
+      const years = Array.from(yearsSet).sort((a, b) => {
+        const nA = parseInt((a.match(/\d+/)||[0])[0],10), nB = parseInt((b.match(/\d+/)||[0])[0],10);
+        return (nA&&nB) ? nB-nA : b.localeCompare(a,'th',{numeric:true});
+      });
+      sHtml += `<optgroup label="${icon} ${type}">`;
+      sHtml += `<option value="type:${type}">👉 ทั้งหมดใน ${type} (${(_simCachedCountPerType[type]||0).toLocaleString()} ข้อ)</option>`;
+      years.forEach(y => {
+        const cKey = `combo:${type}::${y}`;
+        const cnt = _simCachedCountPerCombo[`${type}::${y}`] || 0;
+        sHtml += `<option value="${cKey}">${y} (${cnt} ข้อ)</option>`;
+      });
+      sHtml += `</optgroup>`;
+    });
+  } else {
+    const type = filterType.replace(/^type:/, '');
+    const isReal = type.includes('จริง'), isMock = type.toLowerCase().includes('mock');
+    const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
     const yearsSet = _simCachedTypeMap.get(type) || new Set();
     const years = Array.from(yearsSet).sort((a, b) => {
       const nA = parseInt((a.match(/\d+/)||[0])[0],10), nB = parseInt((b.match(/\d+/)||[0])[0],10);
       return (nA&&nB) ? nB-nA : b.localeCompare(a,'th',{numeric:true});
     });
 
-    if (years.length > 0 && subWrap && subDropdown) {
-      subWrap.style.display = 'block';
-      let sHtml = `<option value="${val}">📅 ทุกปี / ทุกชุดย่อย (${(_simCachedCountPerType[type]||0).toLocaleString()} ข้อ)</option>`;
-      years.forEach(y => {
-        const cKey = `combo:${type}::${y}`;
-        const cnt = _simCachedCountPerCombo[`${type}::${y}`] || 0;
-        sHtml += `<option value="${cKey}">${y} (${cnt.toLocaleString()} ข้อ)</option>`;
-      });
-      subDropdown.innerHTML = sHtml;
-      subDropdown.value = val;
-    } else if (subWrap) {
-      subWrap.style.display = 'none';
-    }
+    sHtml += `<option value="type:${type}">${icon} รวมทุกปีใน ${type} (${(_simCachedCountPerType[type]||0).toLocaleString()} ข้อ)</option>`;
+    years.forEach(y => {
+      const cKey = `combo:${type}::${y}`;
+      const cnt = _simCachedCountPerCombo[`${type}::${y}`] || 0;
+      sHtml += `<option value="${cKey}">${y} (${cnt} ข้อ)</option>`;
+    });
+  }
 
+  subDropdown.innerHTML = sHtml;
+}
+
+function onSimSourceTypeDropdownChange() {
+  const typeDropdown = document.getElementById('simSourceTypeDropdown');
+  const subDropdown = document.getElementById('simSourceSubDropdown');
+  if (!typeDropdown) return;
+
+  const val = typeDropdown.value;
+
+  if (val === 'all') {
+    populateSubDropdownOptions('all');
+    if (subDropdown) subDropdown.value = 'all';
+    _selectedSimExamSets = new Set(['all']);
+    _selectedSimExamSet = 'all';
+  } else if (val === 'custom') {
+    const drawer = document.getElementById('simSourceDrawer');
+    if (drawer && drawer.style.display === 'none') toggleSimSourceDrawer();
+  } else if (val.startsWith('type:')) {
+    populateSubDropdownOptions(val);
+    if (subDropdown) subDropdown.value = val;
     _selectedSimExamSets = new Set([val]);
     _selectedSimExamSet = val;
   }
@@ -5470,11 +5528,27 @@ function onSimSourceTypeDropdownChange() {
 }
 
 function onSimSourceSubDropdownChange() {
+  const typeDropdown = document.getElementById('simSourceTypeDropdown');
   const subDropdown = document.getElementById('simSourceSubDropdown');
   if (!subDropdown) return;
+
   const val = subDropdown.value;
-  _selectedSimExamSets = new Set([val]);
-  _selectedSimExamSet = val;
+
+  if (val === 'all') {
+    if (typeDropdown) typeDropdown.value = 'all';
+    _selectedSimExamSets = new Set(['all']);
+    _selectedSimExamSet = 'all';
+  } else if (val.startsWith('type:')) {
+    if (typeDropdown) typeDropdown.value = val;
+    _selectedSimExamSets = new Set([val]);
+    _selectedSimExamSet = val;
+  } else if (val.startsWith('combo:')) {
+    const parts = val.replace(/^combo:/, '').split('::');
+    const parentTypeKey = `type:${parts[0]}`;
+    if (typeDropdown) typeDropdown.value = parentTypeKey;
+    _selectedSimExamSets = new Set([val]);
+    _selectedSimExamSet = val;
+  }
 
   syncSimChipsFromSelection();
   updateSimSourceSummaryBadge();
@@ -5483,13 +5557,12 @@ function onSimSourceSubDropdownChange() {
 
 function syncSimDropdownsFromSelection() {
   const typeDropdown = document.getElementById('simSourceTypeDropdown');
-  const subWrap = document.getElementById('simSourceSubWrap');
   const subDropdown = document.getElementById('simSourceSubDropdown');
-  if (!typeDropdown) return;
+  if (!typeDropdown || !subDropdown) return;
 
   if (_selectedSimExamSets.has('all')) {
     typeDropdown.value = 'all';
-    if (subWrap) subWrap.style.display = 'none';
+    subDropdown.value = 'all';
     return;
   }
 
@@ -5497,37 +5570,15 @@ function syncSimDropdownsFromSelection() {
     const onlyKey = Array.from(_selectedSimExamSets)[0];
     if (onlyKey.startsWith('type:')) {
       typeDropdown.value = onlyKey;
-      const type = onlyKey.replace(/^type:/, '');
-      const yearsSet = _simCachedTypeMap.get(type) || new Set();
-      if (yearsSet.size > 0 && subWrap && subDropdown) {
-        subWrap.style.display = 'block';
-        let sHtml = `<option value="${onlyKey}">📅 ทุกปี / ทุกชุดย่อย (${(_simCachedCountPerType[type]||0).toLocaleString()} ข้อ)</option>`;
-        Array.from(yearsSet).forEach(y => {
-          const cKey = `combo:${type}::${y}`;
-          const cnt = _simCachedCountPerCombo[`${type}::${y}`] || 0;
-          sHtml += `<option value="${cKey}">${y} (${cnt} ข้อ)</option>`;
-        });
-        subDropdown.innerHTML = sHtml;
-        subDropdown.value = onlyKey;
-      }
+      populateSubDropdownOptions(onlyKey);
+      subDropdown.value = onlyKey;
       return;
     } else if (onlyKey.startsWith('combo:')) {
       const parts = onlyKey.replace(/^combo:/, '').split('::');
-      const type = parts[0], year = parts[1];
-      const typeKey = `type:${type}`;
-      typeDropdown.value = typeKey;
-      const yearsSet = _simCachedTypeMap.get(type) || new Set();
-      if (subWrap && subDropdown) {
-        subWrap.style.display = 'block';
-        let sHtml = `<option value="${typeKey}">📅 ทุกปี / ทุกชุดย่อย (${(_simCachedCountPerType[type]||0).toLocaleString()} ข้อ)</option>`;
-        Array.from(yearsSet).forEach(y => {
-          const cKey = `combo:${type}::${y}`;
-          const cnt = _simCachedCountPerCombo[`${type}::${y}`] || 0;
-          sHtml += `<option value="${cKey}">${y} (${cnt} ข้อ)</option>`;
-        });
-        subDropdown.innerHTML = sHtml;
-        subDropdown.value = onlyKey;
-      }
+      const parentTypeKey = `type:${parts[0]}`;
+      typeDropdown.value = parentTypeKey;
+      populateSubDropdownOptions(parentTypeKey);
+      subDropdown.value = onlyKey;
       return;
     }
   }
