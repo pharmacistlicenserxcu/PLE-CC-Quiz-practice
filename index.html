@@ -5311,8 +5311,24 @@ let _selectedSimExamSet = 'all';
 function renderSimExamSetCards() { renderSimSourceChips(); }
 function renderSimExamSetSelect()  { renderSimSourceChips(); }
 
+let _simCachedTypes = [];
+let _simCachedTypeMap = new Map();
+let _simCachedCountPerType = {};
+let _simCachedCountPerCombo = {};
+let _simCachedTotalAll = 0;
+
+function toggleSimSourceDrawer() {
+  const drawer = document.getElementById('simSourceDrawer');
+  const arrow = document.getElementById('simDrawerArrow');
+  if (!drawer) return;
+  const isHidden = (drawer.style.display === 'none' || !drawer.style.display);
+  drawer.style.display = isHidden ? 'block' : 'none';
+  if (arrow) arrow.textContent = isHidden ? '▲' : '▼';
+}
+
 function renderSimSourceChips() {
   const container = document.getElementById('simSourceChipsContainer');
+  const typeDropdown = document.getElementById('simSourceTypeDropdown');
   if (!container) return;
 
   const typeMap = getAllUniqueExamTypes();
@@ -5333,34 +5349,46 @@ function renderSimSourceChips() {
   });
 
   const sortedTypes = Array.from(typeMap.keys()).sort((a, b) => {
-    if (a.includes('\u0e08\u0e23\u0e34\u0e07') && !b.includes('\u0e08\u0e23\u0e34\u0e07')) return -1;
-    if (!a.includes('\u0e08\u0e23\u0e34\u0e07') && b.includes('\u0e08\u0e23\u0e34\u0e07')) return 1;
+    if (a.includes('จริง') && !b.includes('จริง')) return -1;
+    if (!a.includes('จริง') && b.includes('จริง')) return 1;
     const aMock = a.toLowerCase().includes('mock'), bMock = b.toLowerCase().includes('mock');
     if (aMock && !bMock) return -1;
     if (!aMock && bMock) return 1;
     return a.localeCompare(b, 'th');
   });
 
-  // Store metadata for later
-  container._totalAll = totalAll;
-  container._countPerType = countPerType;
-  container._countPerCombo = countPerCombo;
+  _simCachedTypes = sortedTypes;
+  _simCachedTypeMap = typeMap;
+  _simCachedCountPerType = countPerType;
+  _simCachedCountPerCombo = countPerCombo;
+  _simCachedTotalAll = totalAll;
 
-  // Build chips HTML
+  // 1. Populate Primary Dropdown
+  if (typeDropdown) {
+    let dHtml = `<option value="all">🌟 ทุกชุดข้อสอบในระบบ (${totalAll.toLocaleString()} ข้อ)</option>`;
+    sortedTypes.forEach(type => {
+      const isReal = type.includes('จริง'), isMock = type.toLowerCase().includes('mock');
+      const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
+      const cnt = countPerType[type] || 0;
+      dHtml += `<option value="type:${type}">${icon} ${type} (รวม ${cnt.toLocaleString()} ข้อ)</option>`;
+    });
+    dHtml += `<option value="custom">⚙️ กำหนดหลายชุดเอง (Custom Multi-select)</option>`;
+    typeDropdown.innerHTML = dHtml;
+  }
+
+  // 2. Build the Multi-select Drawer Chips (Hidden by default in drawer)
   let html = '';
-
-  // "ทั้งหมด" chip
-  html += `<div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+  html += `<div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap; margin-bottom:4px;">
     <button type="button" id="simChip_all" onclick="toggleSimSourceChip('all',this)"
       class="sim-source-chip${_selectedSimExamSets.has('all') ? ' selected' : ''}"
-      style="padding:6px 14px; font-size:12.5px; font-weight:700;">
-      \ud83c\udf1f \u0e17\u0e31\u0e49\u0e07\u0e2b\u0e21\u0e14 <span style="font-size:10.5px; opacity:0.7;">(${totalAll} \u0e02\u0e49\u0e2d)</span>
+      style="padding:5px 12px; font-size:12px; font-weight:700;">
+      🌟 ทั้งหมด (${totalAll.toLocaleString()} ข้อ)
     </button>
   </div>`;
 
   sortedTypes.forEach(type => {
-    const isReal = type.includes('\u0e08\u0e23\u0e34\u0e07'), isMock = type.toLowerCase().includes('mock');
-    const icon = isReal ? '\ud83c\udfaf' : isMock ? '\ud83d\udcdd' : '\ud83d\udccc';
+    const isReal = type.includes('จริง'), isMock = type.toLowerCase().includes('mock');
+    const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
     const yearsSet = typeMap.get(type) || new Set();
     const years = Array.from(yearsSet).sort((a, b) => {
       const nA = parseInt((a.match(/\d+/)||[0])[0],10), nB = parseInt((b.match(/\d+/)||[0])[0],10);
@@ -5369,12 +5397,12 @@ function renderSimSourceChips() {
     const typeKey = 'type:' + type;
     const typeCnt = countPerType[type] || 0;
 
-    html += `<div style="border:1px solid var(--border); border-radius:10px; overflow:hidden;">
-      <div style="background:var(--bg); padding:6px 10px; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+    html += `<div style="border:1px solid var(--border); border-radius:10px; overflow:hidden; background:var(--card);">
+      <div style="background:var(--bg); padding:5px 8px; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
         <button type="button" id="simChip_${typeKey}" onclick="toggleSimSourceChip('${typeKey.replace(/'/g,"\\'")}',this)"
           class="sim-source-chip${_selectedSimExamSets.has(typeKey) ? ' selected' : ''}"
-          style="padding:4px 11px; font-size:12px; font-weight:700;">
-          ${icon} ${type} <span style="font-size:10px; opacity:0.7;">(${typeCnt} \u0e02\u0e49\u0e2d)</span>
+          style="padding:3px 10px; font-size:11.5px; font-weight:700;">
+          ${icon} ${type} <span style="font-size:10px; opacity:0.7;">(${typeCnt.toLocaleString()} ข้อ)</span>
         </button>`;
 
     years.forEach(y => {
@@ -5382,8 +5410,8 @@ function renderSimSourceChips() {
       const cnt = countPerCombo[type+'::'+y] || 0;
       html += `<button type="button" id="simChip_${comboKey}" onclick="toggleSimSourceChip('${comboKey.replace(/'/g,"\\'")}',this)"
           class="sim-source-chip${_selectedSimExamSets.has(comboKey) ? ' selected' : ''}"
-          style="padding:3px 9px; font-size:11.5px;">
-          \ud83d\udcc5 ${y} <span style="font-size:10px; opacity:0.7;">(${cnt} \u0e02\u0e49\u0e2d)</span>
+          style="padding:2px 8px; font-size:11px;">
+          📅 ${y} <span style="font-size:9.5px; opacity:0.7;">(${cnt})</span>
         </button>`;
     });
 
@@ -5391,56 +5419,161 @@ function renderSimSourceChips() {
   });
 
   container.innerHTML = html;
+  syncSimDropdownsFromSelection();
   updateSimSourceSummaryBadge();
+}
+
+function onSimSourceTypeDropdownChange() {
+  const typeDropdown = document.getElementById('simSourceTypeDropdown');
+  const subWrap = document.getElementById('simSourceSubWrap');
+  const subDropdown = document.getElementById('simSourceSubDropdown');
+  if (!typeDropdown) return;
+
+  const val = typeDropdown.value;
+
+  if (val === 'all') {
+    if (subWrap) subWrap.style.display = 'none';
+    _selectedSimExamSets = new Set(['all']);
+    _selectedSimExamSet = 'all';
+  } else if (val === 'custom') {
+    const drawer = document.getElementById('simSourceDrawer');
+    if (drawer && drawer.style.display === 'none') toggleSimSourceDrawer();
+  } else if (val.startsWith('type:')) {
+    const type = val.replace(/^type:/, '');
+    const yearsSet = _simCachedTypeMap.get(type) || new Set();
+    const years = Array.from(yearsSet).sort((a, b) => {
+      const nA = parseInt((a.match(/\d+/)||[0])[0],10), nB = parseInt((b.match(/\d+/)||[0])[0],10);
+      return (nA&&nB) ? nB-nA : b.localeCompare(a,'th',{numeric:true});
+    });
+
+    if (years.length > 0 && subWrap && subDropdown) {
+      subWrap.style.display = 'block';
+      let sHtml = `<option value="${val}">📅 ทุกปี / ทุกชุดย่อย (${(_simCachedCountPerType[type]||0).toLocaleString()} ข้อ)</option>`;
+      years.forEach(y => {
+        const cKey = `combo:${type}::${y}`;
+        const cnt = _simCachedCountPerCombo[`${type}::${y}`] || 0;
+        sHtml += `<option value="${cKey}">${y} (${cnt.toLocaleString()} ข้อ)</option>`;
+      });
+      subDropdown.innerHTML = sHtml;
+      subDropdown.value = val;
+    } else if (subWrap) {
+      subWrap.style.display = 'none';
+    }
+
+    _selectedSimExamSets = new Set([val]);
+    _selectedSimExamSet = val;
+  }
+
+  syncSimChipsFromSelection();
+  updateSimSourceSummaryBadge();
+  if (selectedSimSubtopics) selectedSimSubtopics = null;
+}
+
+function onSimSourceSubDropdownChange() {
+  const subDropdown = document.getElementById('simSourceSubDropdown');
+  if (!subDropdown) return;
+  const val = subDropdown.value;
+  _selectedSimExamSets = new Set([val]);
+  _selectedSimExamSet = val;
+
+  syncSimChipsFromSelection();
+  updateSimSourceSummaryBadge();
+  if (selectedSimSubtopics) selectedSimSubtopics = null;
+}
+
+function syncSimDropdownsFromSelection() {
+  const typeDropdown = document.getElementById('simSourceTypeDropdown');
+  const subWrap = document.getElementById('simSourceSubWrap');
+  const subDropdown = document.getElementById('simSourceSubDropdown');
+  if (!typeDropdown) return;
+
+  if (_selectedSimExamSets.has('all')) {
+    typeDropdown.value = 'all';
+    if (subWrap) subWrap.style.display = 'none';
+    return;
+  }
+
+  if (_selectedSimExamSets.size === 1) {
+    const onlyKey = Array.from(_selectedSimExamSets)[0];
+    if (onlyKey.startsWith('type:')) {
+      typeDropdown.value = onlyKey;
+      const type = onlyKey.replace(/^type:/, '');
+      const yearsSet = _simCachedTypeMap.get(type) || new Set();
+      if (yearsSet.size > 0 && subWrap && subDropdown) {
+        subWrap.style.display = 'block';
+        let sHtml = `<option value="${onlyKey}">📅 ทุกปี / ทุกชุดย่อย (${(_simCachedCountPerType[type]||0).toLocaleString()} ข้อ)</option>`;
+        Array.from(yearsSet).forEach(y => {
+          const cKey = `combo:${type}::${y}`;
+          const cnt = _simCachedCountPerCombo[`${type}::${y}`] || 0;
+          sHtml += `<option value="${cKey}">${y} (${cnt} ข้อ)</option>`;
+        });
+        subDropdown.innerHTML = sHtml;
+        subDropdown.value = onlyKey;
+      }
+      return;
+    } else if (onlyKey.startsWith('combo:')) {
+      const parts = onlyKey.replace(/^combo:/, '').split('::');
+      const type = parts[0], year = parts[1];
+      const typeKey = `type:${type}`;
+      typeDropdown.value = typeKey;
+      const yearsSet = _simCachedTypeMap.get(type) || new Set();
+      if (subWrap && subDropdown) {
+        subWrap.style.display = 'block';
+        let sHtml = `<option value="${typeKey}">📅 ทุกปี / ทุกชุดย่อย (${(_simCachedCountPerType[type]||0).toLocaleString()} ข้อ)</option>`;
+        Array.from(yearsSet).forEach(y => {
+          const cKey = `combo:${type}::${y}`;
+          const cnt = _simCachedCountPerCombo[`${type}::${y}`] || 0;
+          sHtml += `<option value="${cKey}">${y} (${cnt} ข้อ)</option>`;
+        });
+        subDropdown.innerHTML = sHtml;
+        subDropdown.value = onlyKey;
+      }
+      return;
+    }
+  }
+
+  typeDropdown.value = 'custom';
+}
+
+function syncSimChipsFromSelection() {
+  document.querySelectorAll('.sim-source-chip').forEach(b => {
+    const k = b.id.replace(/^simChip_/, '');
+    b.classList.toggle('selected', _selectedSimExamSets.has(k));
+  });
 }
 
 function toggleSimSourceChip(key, el) {
   const isAll = key === 'all';
 
   if (isAll) {
-    // Select ONLY "ทั้งหมด", deselect everything else
     _selectedSimExamSets = new Set(['all']);
   } else {
-    // Deselect "all" when specific set is clicked
     _selectedSimExamSets.delete('all');
-    const chip_all = document.getElementById('simChip_all');
-    if (chip_all) chip_all.classList.remove('selected');
-
     if (_selectedSimExamSets.has(key)) {
       _selectedSimExamSets.delete(key);
-      // If nothing left, revert to "all"
       if (_selectedSimExamSets.size === 0) {
         _selectedSimExamSets.add('all');
-        const chip_all2 = document.getElementById('simChip_all');
-        if (chip_all2) chip_all2.classList.add('selected');
       }
     } else {
       _selectedSimExamSets.add(key);
     }
   }
 
-  // Sync chip visuals
-  document.querySelectorAll('.sim-source-chip').forEach(b => {
-    const k = b.id.replace(/^simChip_/, '');
-    b.classList.toggle('selected', _selectedSimExamSets.has(k));
-  });
+  syncSimChipsFromSelection();
+  syncSimDropdownsFromSelection();
 
-  // Backward compat: _selectedSimExamSet = first key or 'all'
   _selectedSimExamSet = _selectedSimExamSets.has('all') ? 'all'
     : Array.from(_selectedSimExamSets)[0];
 
   updateSimSourceSummaryBadge();
-  // Refresh subtopic picker to match
   if (document.getElementById('simSubtopicPanel') && document.getElementById('simSubtopicPanel').style.display !== 'none') {
     initSimSubtopicPicker();
   } else {
-    // reset so next open it syncs
     selectedSimSubtopics = null;
   }
 }
 
 function filterQuestionsByExamSets(qs) {
-  // Filter questions that match ANY of the selected sets
   if (_selectedSimExamSets.has('all') || _selectedSimExamSets.size === 0) return qs;
   return qs.filter(q => {
     return Array.from(_selectedSimExamSets).some(f => filterQuestionsByExamType([q], f).length > 0);
@@ -5451,21 +5584,30 @@ function updateSimSourceSummaryBadge() {
   const badge = document.getElementById('simSourceBadgeText');
   const countBadge = document.getElementById('simSourceCountBadge');
 
-  // Count total questions in current selection
   const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length)
     ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
   let cnt = 0;
   Object.values(map).forEach(qs => { cnt += filterQuestionsByExamSets(qs).length; });
 
   if (_selectedSimExamSets.has('all')) {
-    if (badge) badge.textContent = '\ud83c\udf1f \u0e2a\u0e38\u0e48\u0e21\u0e08\u0e32\u0e01\u0e17\u0e38\u0e01\u0e0a\u0e38\u0e14 (' + cnt + ' \u0e02\u0e49\u0e2d)';
+    if (badge) badge.textContent = `🌟 สุ่มจากทุกชุด (${cnt.toLocaleString()} ข้อ)`;
+  } else if (_selectedSimExamSets.size === 1) {
+    const k = Array.from(_selectedSimExamSets)[0];
+    if (k.startsWith('type:')) {
+      const t = k.replace(/^type:/, '');
+      if (badge) badge.textContent = `🎯 ${t} ทั้งหมด (${cnt.toLocaleString()} ข้อ)`;
+    } else if (k.startsWith('combo:')) {
+      const parts = k.replace(/^combo:/, '').split('::');
+      if (badge) badge.textContent = `📅 ${parts[0]} ${parts[1]} (${cnt.toLocaleString()} ข้อ)`;
+    } else {
+      if (badge) badge.textContent = `✅ เลือก ${cnt.toLocaleString()} ข้อ`;
+    }
   } else {
     const n = _selectedSimExamSets.size;
-    if (badge) badge.textContent = '\u2705 \u0e40\u0e25\u0e37\u0e2d\u0e01\u0e41\u0e25\u0e49\u0e27 ' + n + ' \u0e0a\u0e38\u0e14 | \u0e23\u0e27\u0e21 ' + cnt + ' \u0e02\u0e49\u0e2d';
+    if (badge) badge.textContent = `✅ เลือกแล้ว ${n} ชุด | รวม ${cnt.toLocaleString()} ข้อ`;
   }
-  if (countBadge) countBadge.textContent = '';
+  if (countBadge) countBadge.textContent = `${cnt.toLocaleString()} ข้อในระบบ`;
 
-  // Update "ทุกข้อ" preset count
   updateSimPresetAllCount(cnt);
 }
 
