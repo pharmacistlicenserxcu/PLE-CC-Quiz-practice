@@ -976,6 +976,37 @@
     .tag.product-tag { color: var(--product-pill); background: var(--product-soft); border: 1px solid var(--product-border); }
     .tag.sap-tag { color: var(--sap-pill); background: var(--sap-soft); border: 1px solid var(--sap-border); }
 
+    /* ══ CASE SCENARIO CLUSTER BANNER ══ */
+    .case-cluster-banner {
+      display: flex; align-items: center; justify-content: space-between;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(99, 102, 241, 0.1));
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-left: 4px solid #2563eb;
+      border-radius: var(--r-md); padding: 8px 12px; margin-bottom: 14px;
+      font-size: 13px; color: var(--ink-dark); font-family: inherit;
+    }
+    .case-cluster-banner-scroll {
+      display: flex; align-items: center; justify-content: space-between;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.06), rgba(99, 102, 241, 0.08));
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-left: 3.5px solid #2563eb;
+      border-radius: 6px; padding: 6px 10px; margin-bottom: 10px;
+      font-size: 12px; color: var(--ink-dark); font-family: inherit;
+    }
+    .case-cluster-left {
+      display: flex; align-items: center; gap: 6px; font-weight: 600;
+    }
+    .case-cluster-icon { font-size: 14px; }
+    .case-cluster-order { font-size: 12px; color: var(--ink-soft); font-weight: 500; }
+    .case-cluster-type-int {
+      background: #ede9fe; color: #6d28d9; font-size: 11px; font-weight: 700;
+      padding: 2.5px 8px; border-radius: 6px; border: 1px solid #ddd6fe; white-space: nowrap;
+    }
+    .case-cluster-type-std {
+      background: #e0f2fe; color: #0369a1; font-size: 11px; font-weight: 600;
+      padding: 2.5px 8px; border-radius: 6px; border: 1px solid #bae6fd; white-space: nowrap;
+    }
+
     .btn-report-card {
       display: inline-flex; align-items: center; gap: 4px;
       padding: 3px 8px; border: 1px solid var(--border); border-radius: 6px;
@@ -2556,6 +2587,8 @@
             </button>
           </div>
         </div>
+
+        <div class="case-cluster-banner" id="caseClusterBanner" style="display:none;"></div>
 
         <div class="question-img-wrap" id="qImgWrap">
           <img class="question-img" id="qImg" src="" alt="รูปคำถาม" onclick="openImgLightbox(this.src)">
@@ -4199,6 +4232,49 @@ async function fetchLiveSheetQuestions(sheetName) {
             const examType = getVal(offset + 13) || '';
             const examYear = getVal(offset + 14) || '';
 
+            // Case ID extraction (supports tab รวมข้อสอบด่วน, normal sheets, sniffing CASE_, and note fallback)
+            const isIngestion = sheetName.includes('ด่วน') || sheetName.startsWith('📥') || sheetName.startsWith('QI_');
+            let caseIdRaw = isIngestion ? getVal(offset + 16) : getVal(offset + 15);
+            if (!caseIdRaw) {
+              for (let colI = 0; colI < c.length; colI++) {
+                const cv = getVal(colI);
+                if (/^CASE_/i.test(cv)) {
+                  caseIdRaw = cv;
+                  break;
+                }
+              }
+            }
+            if (!caseIdRaw && note) {
+              const mCase = note.match(/\[CASE:\s*([^\]]+)\]/i);
+              if (mCase) caseIdRaw = mCase[1].trim();
+            }
+
+            let caseGroupId = '';
+            let caseOrder = 0;
+            let caseType = '';
+            if (caseIdRaw) {
+              const cleanCase = caseIdRaw.replace(/\s+/g, '').toUpperCase();
+              const mQ = cleanCase.match(/^(.*?)(?:[_\-]Q(\d+))?$/);
+              if (mQ) {
+                caseGroupId = mQ[1];
+                caseOrder = mQ[2] ? parseInt(mQ[2], 10) : 0;
+              } else {
+                caseGroupId = cleanCase;
+                caseOrder = 0;
+              }
+              if (caseGroupId.includes('_INT_') || caseGroupId.startsWith('CASE_INT')) {
+                caseType = 'INT';
+              } else if (caseGroupId.includes('_CLN_') || caseGroupId.startsWith('CASE_CLN')) {
+                caseType = 'CLN';
+              } else if (caseGroupId.includes('_PRD_') || caseGroupId.startsWith('CASE_PRD')) {
+                caseType = 'PRD';
+              } else if (caseGroupId.includes('_SAP_') || caseGroupId.startsWith('CASE_SAP')) {
+                caseType = 'SAP';
+              } else {
+                caseType = 'STD';
+              }
+            }
+
             if (!qText && !c1) return;
             if (qText.includes('คำถาม') || qText.includes('กลับหน้าแรก')) return;
 
@@ -4238,6 +4314,9 @@ async function fetchLiveSheetQuestions(sheetName) {
               track: track,
               examType: examType,
               examYear: examYear,
+              caseGroupId: caseGroupId,
+              caseOrder: caseOrder,
+              caseType: caseType,
               question: formatPlainTextToHtml(qText),
               questionImage: finalQImg,
               choices: choices,
@@ -4247,6 +4326,7 @@ async function fetchLiveSheetQuestions(sheetName) {
               note: note
             });
           });
+          normalizeCaseClusters(qs);
           if (qs.length > 0) return qs;
         }
       }
@@ -4906,59 +4986,83 @@ function onSetupTimerSelectChange() {
 
 function getStratifiedBalancedPool(categoriesList, targetTotal, examTypeFilter) {
   if (!categoriesList || !categoriesList.length) return [];
-  const catPools = {};
+  const catClusters = {};
   let totalAvailable = 0;
 
   categoriesList.forEach(c => {
     let list = (allQuestionsMap[c.name] || []).slice();
     list = filterQuestionsByExamType(list, examTypeFilter);
-    // Shuffle individual category pool
-    for (let i = list.length - 1; i > 0; i--) {
+    const clusters = groupQuestionsIntoClusters(list);
+    for (let i = clusters.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [list[i], list[j]] = [list[j], list[i]];
+      [clusters[i], clusters[j]] = [clusters[j], clusters[i]];
     }
-    catPools[c.name] = list;
+    catClusters[c.name] = clusters;
     totalAvailable += list.length;
   });
 
   if (targetTotal >= totalAvailable) {
-    let combined = [];
-    Object.values(catPools).forEach(list => { combined = combined.concat(list); });
-    for (let i = combined.length - 1; i > 0; i--) {
+    let combinedClusters = [];
+    Object.values(catClusters).forEach(cl => { combinedClusters = combinedClusters.concat(cl); });
+    for (let i = combinedClusters.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [combined[i], combined[j]] = [combined[j], combined[i]];
+      [combinedClusters[i], combinedClusters[j]] = [combinedClusters[j], combinedClusters[i]];
     }
-    return combined;
+    return combinedClusters.flatMap(c => c.questions);
   }
 
   const numCats = categoriesList.length;
-  const perCatBase = Math.floor(targetTotal / numCats);
-  const selected = [];
-  const leftovers = [];
+  const perCatBase = Math.floor(targetTotal / numCats) || 1;
+  const selectedClusters = [];
+  const leftoverClusters = [];
 
   categoriesList.forEach(c => {
-    const list = catPools[c.name] || [];
-    const takeCount = Math.min(list.length, perCatBase);
-    selected.push(...list.slice(0, takeCount));
-    leftovers.push(...list.slice(takeCount));
+    const list = catClusters[c.name] || [];
+    let countInCat = 0;
+    list.forEach(cl => {
+      if (countInCat + cl.questions.length <= perCatBase) {
+        selectedClusters.push(cl);
+        countInCat += cl.questions.length;
+      } else {
+        leftoverClusters.push(cl);
+      }
+    });
   });
 
-  const deficit = targetTotal - selected.length;
-  if (deficit > 0 && leftovers.length > 0) {
-    for (let i = leftovers.length - 1; i > 0; i--) {
+  let currentCount = selectedClusters.reduce((sum, cl) => sum + cl.questions.length, 0);
+  const deficit = targetTotal - currentCount;
+  if (deficit > 0 && leftoverClusters.length > 0) {
+    for (let i = leftoverClusters.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [leftovers[i], leftovers[j]] = [leftovers[j], leftovers[i]];
+      [leftoverClusters[i], leftoverClusters[j]] = [leftoverClusters[j], leftoverClusters[i]];
     }
-    selected.push(...leftovers.slice(0, deficit));
+    for (const cl of leftoverClusters) {
+      if (currentCount >= targetTotal) break;
+      const rem = targetTotal - currentCount;
+      if (cl.questions.length <= rem) {
+        selectedClusters.push(cl);
+        currentCount += cl.questions.length;
+      } else {
+        const trunc = truncateClusterProportionally(cl.questions, rem, null);
+        selectedClusters.push({
+          isCluster: true,
+          caseGroupId: cl.caseGroupId,
+          caseType: cl.caseType,
+          questions: trunc
+        });
+        currentCount += trunc.length;
+        break;
+      }
+    }
   }
 
-  // Shuffle final combined result so categories are intermingled
-  for (let i = selected.length - 1; i > 0; i--) {
+  // Shuffle final clusters so categories are intermingled while case questions stay strictly consecutive
+  for (let i = selectedClusters.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [selected[i], selected[j]] = [selected[j], selected[i]];
+    [selectedClusters[i], selectedClusters[j]] = [selectedClusters[j], selectedClusters[i]];
   }
 
-  return selected;
+  return selectedClusters.flatMap(cl => cl.questions).slice(0, targetTotal);
 }
 
 function startConfiguredQuiz() {
@@ -4982,14 +5086,34 @@ function startConfiguredQuiz() {
     const visCats = getVisibleCategories();
     finalQuestions = getStratifiedBalancedPool(visCats, targetCount, setupExamType);
   } else {
-    finalQuestions = pool.slice();
+    const poolClusters = groupQuestionsIntoClusters(pool);
     if (setupIsRandom || setupQuestionCount !== 'all') {
-      for (let i = finalQuestions.length - 1; i > 0; i--) {
+      for (let i = poolClusters.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [finalQuestions[i], finalQuestions[j]] = [finalQuestions[j], finalQuestions[i]];
+        [poolClusters[i], poolClusters[j]] = [poolClusters[j], poolClusters[i]];
       }
     }
-    finalQuestions = finalQuestions.slice(0, targetCount);
+    const pickedClusters = [];
+    let countSoFar = 0;
+    for (const c of poolClusters) {
+      if (countSoFar >= targetCount) break;
+      const rem = targetCount - countSoFar;
+      if (c.questions.length <= rem) {
+        pickedClusters.push(c);
+        countSoFar += c.questions.length;
+      } else {
+        const trunc = truncateClusterProportionally(c.questions, rem, null);
+        pickedClusters.push({
+          isCluster: true,
+          caseGroupId: c.caseGroupId,
+          caseType: c.caseType,
+          questions: trunc
+        });
+        countSoFar += trunc.length;
+        break;
+      }
+    }
+    finalQuestions = pickedClusters.flatMap(c => c.questions);
   }
 
   // Timer Calculation
@@ -5860,7 +5984,166 @@ function recalcSimProportions() {
   if (badge) badge.textContent = `รวม: ${simClinicPct + simProductPct + simSapPct}% (${total} ข้อ)`;
 }
 
-function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter, allowedSubtopics = null) {
+// ─── CASE CLUSTER SYSTEM & PROPORTIONAL SAMPLER ───
+
+function normalizeCaseClusters(questions) {
+  if (!questions || !questions.length) return questions;
+  const clusters = {};
+  questions.forEach(q => {
+    if (q.caseGroupId) {
+      const key = (q.examYear || 'all') + '__' + q.caseGroupId;
+      if (!clusters[key]) clusters[key] = [];
+      clusters[key].push(q);
+    }
+  });
+
+  const trackPriority = { 'clinic': 1, 'product': 2, 'sap': 3 };
+  Object.keys(clusters).forEach(key => {
+    const list = clusters[key];
+    const isInt = list.some(q => q.caseType === 'INT' || (q.caseGroupId && q.caseGroupId.includes('_INT_')));
+    if (isInt) {
+      list.forEach(q => q.caseType = 'INT');
+      list.sort((a, b) => {
+        const pa = trackPriority[(a.track || '').toLowerCase()] || 99;
+        const pb = trackPriority[(b.track || '').toLowerCase()] || 99;
+        if (pa !== pb) return pa - pb;
+        return (a.caseOrder || 0) - (b.caseOrder || 0);
+      });
+    } else {
+      list.sort((a, b) => (a.caseOrder || 0) - (b.caseOrder || 0));
+    }
+    const total = list.length;
+    list.forEach((q, idx) => {
+      q.caseOrder = idx + 1;
+      q.caseTotal = total;
+    });
+  });
+  return questions;
+}
+
+function groupQuestionsIntoClusters(questions) {
+  if (!questions || !questions.length) return [];
+  const clusterMap = new Map();
+  const clusters = [];
+
+  questions.forEach(q => {
+    const gid = q.caseGroupId ? `${q.examYear || 'all'}__${q.caseGroupId}` : null;
+    if (gid) {
+      if (!clusterMap.has(gid)) {
+        const newCluster = {
+          id: gid,
+          isCluster: true,
+          caseType: q.caseType || 'STD',
+          caseGroupId: q.caseGroupId,
+          questions: []
+        };
+        clusterMap.set(gid, newCluster);
+        clusters.push(newCluster);
+      }
+      clusterMap.get(gid).questions.push(q);
+    } else {
+      // Standalone single question
+      clusters.push({
+        id: q.id || ('solo_' + Math.random()),
+        isCluster: false,
+        caseType: 'SOLO',
+        caseGroupId: '',
+        questions: [q]
+      });
+    }
+  });
+
+  // Ensure internal sorting for each cluster
+  const trackPriority = { 'clinic': 1, 'product': 2, 'sap': 3 };
+  clusters.forEach(c => {
+    if (c.isCluster) {
+      if (c.caseType === 'INT' || (c.caseGroupId && c.caseGroupId.includes('_INT_'))) {
+        c.questions.sort((a, b) => {
+          const pa = trackPriority[(a.track || '').toLowerCase()] || 99;
+          const pb = trackPriority[(b.track || '').toLowerCase()] || 99;
+          if (pa !== pb) return pa - pb;
+          return (a.caseOrder || 0) - (b.caseOrder || 0);
+        });
+      } else {
+        c.questions.sort((a, b) => (a.caseOrder || 0) - (b.caseOrder || 0));
+      }
+      const total = c.questions.length;
+      c.questions.forEach((q, idx) => {
+        q.caseOrder = idx + 1;
+        q.caseTotal = total;
+      });
+    }
+  });
+
+  return clusters;
+}
+
+function truncateClusterProportionally(clusterQuestions, maxAllowed, targetCounts) {
+  if (clusterQuestions.length <= maxAllowed) return clusterQuestions;
+
+  // Separate subquestions by track
+  const clinicQs = clusterQuestions.filter(q => (q.track || '').toLowerCase().includes('clin'));
+  const productQs = clusterQuestions.filter(q => (q.track || '').toLowerCase().includes('prod'));
+  const sapQs = clusterQuestions.filter(q => (q.track || '').toLowerCase().includes('sap'));
+
+  // If single track cluster
+  if (!productQs.length && !sapQs.length) return clinicQs.slice(0, maxAllowed);
+  if (!clinicQs.length && !sapQs.length) return productQs.slice(0, maxAllowed);
+  if (!clinicQs.length && !productQs.length) return sapQs.slice(0, maxAllowed);
+
+  // Multi-track cluster (Type INT): Allocate quota proportionally according to remaining targets
+  let needC = targetCounts ? Math.max(0, targetCounts.clinic || 0) : 0;
+  let needP = targetCounts ? Math.max(0, targetCounts.product || 0) : 0;
+  let needS = targetCounts ? Math.max(0, targetCounts.sap || 0) : 0;
+  let totalNeed = needC + needP + needS;
+
+  let takeC = 0, takeP = 0, takeS = 0;
+  if (totalNeed > 0) {
+    takeC = Math.min(clinicQs.length, Math.round((needC / totalNeed) * maxAllowed));
+    takeP = Math.min(productQs.length, Math.round((needP / totalNeed) * maxAllowed));
+    takeS = Math.min(sapQs.length, maxAllowed - takeC - takeP);
+    if (takeS < 0) {
+      takeS = 0;
+      if (takeP > 0) takeP = Math.min(productQs.length, maxAllowed - takeC);
+    }
+  } else {
+    const cRatio = clinicQs.length / clusterQuestions.length;
+    const pRatio = productQs.length / clusterQuestions.length;
+    takeC = Math.min(clinicQs.length, Math.max(1, Math.round(cRatio * maxAllowed)));
+    takeP = Math.min(productQs.length, Math.max(1, Math.round(pRatio * maxAllowed)));
+    takeS = Math.max(0, maxAllowed - takeC - takeP);
+  }
+
+  // Adjust to ensure exactly maxAllowed while protecting SAP representation
+  while ((takeC + takeP + takeS) < maxAllowed) {
+    if (takeS < sapQs.length && (needS > takeS || takeS === 0)) takeS++;
+    else if (takeC < clinicQs.length) takeC++;
+    else if (takeP < productQs.length) takeP++;
+    else if (takeS < sapQs.length) takeS++;
+    else break;
+  }
+  while ((takeC + takeP + takeS) > maxAllowed) {
+    if (takeC > 1 && takeC > clinicQs.length) takeC--;
+    else if (takeP > 1 && takeP > productQs.length) takeP--;
+    else if (takeC > 1 && (takeC - 1) >= (needC || 1)) takeC--;
+    else if (takeP > 1 && (takeP - 1) >= (needP || 1)) takeP--;
+    else if (takeS > 1) takeS--;
+    else if (takeP > 1) takeP--;
+    else if (takeC > 1) takeC--;
+    else if (takeS > 0) takeS--;
+    else break;
+  }
+
+  // Preserve canonical sequence: CLINIC -> PRODUCT -> SAP
+  const result = [
+    ...clinicQs.slice(0, takeC),
+    ...productQs.slice(0, takeP),
+    ...sapQs.slice(0, takeS)
+  ];
+  return result.slice(0, maxAllowed);
+}
+
+function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter, allowedSubtopics = null, excludedQuestionIds = null) {
   if (targetCount <= 0) return [];
   const trackCats = categories.filter(c => !isSystemCategory(c.name) && getCategoryTrack(c) === targetTrack);
   if (!trackCats.length) return [];
@@ -5870,6 +6153,9 @@ function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter, all
   trackCats.forEach(c => {
     let qs = (allQuestionsMap[c.name] || []).slice();
     qs = filterQuestionsByExamSets(qs);
+    if (excludedQuestionIds && excludedQuestionIds.size > 0) {
+      qs = qs.filter(q => !excludedQuestionIds.has(q.id));
+    }
     qs.forEach(q => {
       const subs = getQuestionSubtopics(q);
       const subList = subs.length ? subs : [c.name];
@@ -5886,37 +6172,64 @@ function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter, all
   const subtopics = Object.keys(subtopicMap);
   if (!subtopics.length) return [];
 
-  // Shuffle questions inside each subtopic
+  // Group into clusters inside each subtopic so linked cases remain consecutive
+  const subtopicClusters = {};
   subtopics.forEach(sub => {
-    const list = subtopicMap[sub];
-    for (let i = list.length - 1; i > 0; i--) {
+    const clusters = groupQuestionsIntoClusters(subtopicMap[sub]);
+    for (let i = clusters.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [list[i], list[j]] = [list[j], list[i]];
+      [clusters[i], clusters[j]] = [clusters[j], clusters[i]];
     }
+    subtopicClusters[sub] = clusters;
   });
 
-  const selected = [];
-  const leftovers = [];
+  const selectedClusters = [];
+  const leftoverClusters = [];
   const perSubBase = Math.floor(targetCount / subtopics.length) || 1;
 
   subtopics.forEach(sub => {
-    const list = subtopicMap[sub];
-    const take = Math.min(list.length, perSubBase);
-    selected.push(...list.slice(0, take));
-    leftovers.push(...list.slice(take));
+    const clusters = subtopicClusters[sub];
+    let countInSub = 0;
+    clusters.forEach(c => {
+      if (countInSub + c.questions.length <= perSubBase) {
+        selectedClusters.push(c);
+        countInSub += c.questions.length;
+      } else {
+        leftoverClusters.push(c);
+      }
+    });
   });
 
-  // Fill deficit if needed
-  const deficit = targetCount - selected.length;
-  if (deficit > 0 && leftovers.length > 0) {
-    for (let i = leftovers.length - 1; i > 0; i--) {
+  let currentCount = selectedClusters.reduce((sum, c) => sum + c.questions.length, 0);
+
+  // Fill deficit from leftovers
+  if (currentCount < targetCount && leftoverClusters.length > 0) {
+    for (let i = leftoverClusters.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [leftovers[i], leftovers[j]] = [leftovers[j], leftovers[i]];
+      [leftoverClusters[i], leftoverClusters[j]] = [leftoverClusters[j], leftoverClusters[i]];
     }
-    selected.push(...leftovers.slice(0, deficit));
+
+    for (const c of leftoverClusters) {
+      if (currentCount >= targetCount) break;
+      const rem = targetCount - currentCount;
+      if (c.questions.length <= rem) {
+        selectedClusters.push(c);
+        currentCount += c.questions.length;
+      } else {
+        const trunc = truncateClusterProportionally(c.questions, rem, null);
+        selectedClusters.push({
+          isCluster: true,
+          caseGroupId: c.caseGroupId,
+          caseType: c.caseType,
+          questions: trunc
+        });
+        currentCount += trunc.length;
+        break;
+      }
+    }
   }
 
-  return selected.slice(0, targetCount);
+  return selectedClusters;
 }
 
 function executeSimulatedExam() {
@@ -5924,11 +6237,9 @@ function executeSimulatedExam() {
   const chosenMode = document.getElementById('simModeSelect').value;
   const timerOption = document.getElementById('simTimerSelect').value;
 
-  // filterQuestionsByExamSets() handles multi-set filtering from _selectedSimExamSets
   const allowed = (selectedSimSubtopics && selectedSimSubtopics.size > 0) ? selectedSimSubtopics : null;
   const isAllPreset = document.getElementById('simPresetAll') && document.getElementById('simPresetAll').classList.contains('active');
 
-  // Collect all eligible questions across non-system categories
   const allMatching = [];
   categories.filter(c => !isSystemCategory(c.name)).forEach(c => {
     let qs = (allQuestionsMap[c.name] || []).slice();
@@ -5948,38 +6259,133 @@ function executeSimulatedExam() {
     return;
   }
 
-  let combined = [];
+  let finalClusters = [];
+
   if (isAllPreset || totalCount >= allMatching.length) {
-    // Mode "ทุกข้อ": bypass track proportions, take all matching questions
-    combined = allMatching.slice();
+    // Mode "ทุกข้อ": group into clusters, shuffle clusters, take all
+    const allClusters = groupQuestionsIntoClusters(allMatching);
+    for (let i = allClusters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [allClusters[i], allClusters[j]] = [allClusters[j], allClusters[i]];
+    }
+    finalClusters = allClusters;
   } else {
-    const cTarget = Math.round((simClinicPct / 100) * totalCount);
-    const pTarget = Math.round((simProductPct / 100) * totalCount);
-    const sTarget = Math.max(0, totalCount - cTarget - pTarget);
+    let cTarget = Math.round((simClinicPct / 100) * totalCount);
+    let pTarget = Math.round((simProductPct / 100) * totalCount);
+    let sTarget = Math.max(0, totalCount - cTarget - pTarget);
 
-    const clinicQuestions  = sampleStratifiedFromTrack('clinic',  cTarget, 'all', allowed);
-    const productQuestions = sampleStratifiedFromTrack('product', pTarget, 'all', allowed);
-    const sapQuestions     = sampleStratifiedFromTrack('sap',     sTarget, 'all', allowed);
+    const allClusters = groupQuestionsIntoClusters(allMatching);
+    // Find multi-track INT clusters
+    const intClusters = allClusters.filter(c => c.caseType === 'INT' || (c.caseGroupId && c.caseGroupId.includes('_INT_')));
+    
+    // Shuffle INT clusters
+    for (let i = intClusters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [intClusters[i], intClusters[j]] = [intClusters[j], intClusters[i]];
+    }
 
-    combined = [...clinicQuestions, ...productQuestions, ...sapQuestions];
+    const selectedIntClusters = [];
+    const usedQuestionIds = new Set();
+    let currentCounts = { clinic: 0, product: 0, sap: 0 };
 
-    // Backfill if any track had a deficit
-    if (combined.length < totalCount && combined.length < allMatching.length) {
-      const selectedSet = new Set(combined);
-      const leftovers = allMatching.filter(q => !selectedSet.has(q));
-      for (let i = leftovers.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [leftovers[i], leftovers[j]] = [leftovers[j], leftovers[i]];
+    for (const ic of intClusters) {
+      if ((currentCounts.clinic + currentCounts.product + currentCounts.sap) >= totalCount) break;
+
+      const cC = ic.questions.filter(q => (q.track || '').toLowerCase().includes('clin')).length;
+      const pC = ic.questions.filter(q => (q.track || '').toLowerCase().includes('prod')).length;
+      const sC = ic.questions.filter(q => (q.track || '').toLowerCase().includes('sap')).length;
+
+      const remC = cTarget - currentCounts.clinic;
+      const remP = pTarget - currentCounts.product;
+      const remS = sTarget - currentCounts.sap;
+      const remTotal = totalCount - (currentCounts.clinic + currentCounts.product + currentCounts.sap);
+
+      if (remTotal <= 0) break;
+
+      // If whole INT cluster fits into remaining quotas
+      if (cC <= remC && pC <= remP && sC <= remS) {
+        selectedIntClusters.push(ic);
+        ic.questions.forEach(q => usedQuestionIds.add(q.id));
+        currentCounts.clinic += cC;
+        currentCounts.product += pC;
+        currentCounts.sap += sC;
+      } else if (remTotal > 0 && (selectedIntClusters.length === 0 || remTotal < ic.questions.length)) {
+        // Cluster exceeds quota: truncate proportionally across tracks so SAP is never eliminated!
+        const maxToTake = Math.min(remTotal, ic.questions.length);
+        const truncated = truncateClusterProportionally(ic.questions, maxToTake, { clinic: remC, product: remP, sap: remS });
+        selectedIntClusters.push({
+          isCluster: true,
+          caseGroupId: ic.caseGroupId,
+          caseType: 'INT',
+          questions: truncated
+        });
+        truncated.forEach(q => {
+          usedQuestionIds.add(q.id);
+          const trk = (q.track || '').toLowerCase();
+          if (trk.includes('clin')) currentCounts.clinic++;
+          else if (trk.includes('prod')) currentCounts.product++;
+          else if (trk.includes('sap')) currentCounts.sap++;
+        });
+        break;
       }
-      const needed = Math.min(totalCount - combined.length, leftovers.length);
-      combined.push(...leftovers.slice(0, needed));
+    }
+
+    // Now sample remaining quotas for Clinic, Product, SAP from track categories
+    const remClinicTarget  = Math.max(0, cTarget - currentCounts.clinic);
+    const remProductTarget = Math.max(0, pTarget - currentCounts.product);
+    const remSapTarget     = Math.max(0, sTarget - currentCounts.sap);
+
+    const clinicClusters  = sampleStratifiedFromTrack('clinic',  remClinicTarget,  'all', allowed, usedQuestionIds);
+    const productClusters = sampleStratifiedFromTrack('product', remProductTarget, 'all', allowed, usedQuestionIds);
+    const sapClusters     = sampleStratifiedFromTrack('sap',     remSapTarget,     'all', allowed, usedQuestionIds);
+
+    finalClusters = [
+      ...selectedIntClusters,
+      ...clinicClusters,
+      ...productClusters,
+      ...sapClusters
+    ];
+
+    // Backfill deficit if any
+    let currentTotalSelected = finalClusters.reduce((sum, c) => sum + c.questions.length, 0);
+    if (currentTotalSelected < totalCount && currentTotalSelected < allMatching.length) {
+      finalClusters.forEach(c => c.questions.forEach(q => usedQuestionIds.add(q.id)));
+      const leftoverQs = allMatching.filter(q => !usedQuestionIds.has(q.id));
+      const leftoverClusters = groupQuestionsIntoClusters(leftoverQs);
+      for (let i = leftoverClusters.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [leftoverClusters[i], leftoverClusters[j]] = [leftoverClusters[j], leftoverClusters[i]];
+      }
+      for (const lc of leftoverClusters) {
+        if (currentTotalSelected >= totalCount) break;
+        const rem = totalCount - currentTotalSelected;
+        if (lc.questions.length <= rem) {
+          finalClusters.push(lc);
+          currentTotalSelected += lc.questions.length;
+        } else {
+          const trunc = truncateClusterProportionally(lc.questions, rem, null);
+          finalClusters.push({
+            isCluster: true,
+            caseGroupId: lc.caseGroupId,
+            caseType: lc.caseType,
+            questions: trunc
+          });
+          currentTotalSelected += trunc.length;
+          break;
+        }
+      }
     }
   }
 
-  // Shuffle
-  for (let i = combined.length - 1; i > 0; i--) {
+  // Shuffle clusters (keeping subquestions inside each cluster strictly consecutive!)
+  for (let i = finalClusters.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [combined[i], combined[j]] = [combined[j], combined[i]];
+    [finalClusters[i], finalClusters[j]] = [finalClusters[j], finalClusters[i]];
+  }
+
+  let combined = finalClusters.flatMap(c => c.questions);
+  if (combined.length > totalCount) {
+    combined = combined.slice(0, totalCount);
   }
 
   closeSimExamPanel();
@@ -6797,6 +7203,24 @@ function renderScrollPractice() {
     const valCount = getQuestionValidationCount(q.id);
     const isValidated = isQuestionValidatedByUser(q.id);
 
+    let caseBannerHtml = '';
+    if (q.caseGroupId) {
+      const isInt = (q.caseType === 'INT' || (q.caseGroupId && q.caseGroupId.includes('_INT_')));
+      const typeBadge = isInt 
+        ? `<span class="case-cluster-type-int">🔗 Integrated (${q.track || 'Clinic'})</span>` 
+        : `<span class="case-cluster-type-std">หมวด ${q.track || 'Clinic'}</span>`;
+      caseBannerHtml = `
+        <div class="case-cluster-banner-scroll">
+          <div class="case-cluster-left">
+            <span class="case-cluster-icon">📋</span>
+            <span class="case-cluster-title">กรณีศึกษาต่อเนื่อง</span>
+            <span class="case-cluster-order">(ข้อ ${q.caseOrder || 1} จากทั้งหมด ${q.caseTotal || '?'} ข้อ)</span>
+          </div>
+          ${typeBadge}
+        </div>
+      `;
+    }
+
     html += `
       <div class="${cardClass}" id="scrollCard_${idx}">
         <div class="scroll-q-head">
@@ -6819,6 +7243,7 @@ function renderScrollPractice() {
           </div>
         </div>
 
+        ${caseBannerHtml}
         <div class="scroll-q-text">${formatPlainTextToHtml(q.question || '')}</div>
         ${imgHtml}
 
@@ -6945,6 +7370,28 @@ function renderCurrentQuestion() {
     tagEl.innerHTML = `<span>${q.track || 'Clinic'} · ${subStr} · ข้อที่ ${currentDisplayNumber}</span>${refBadge} ${examBadge.html}`;
   }
   tagEl.className = `tag ${norm.includes('prod') ? 'product-tag' : norm.includes('sap') ? 'sap-tag' : 'clinic-tag'}`;
+
+  // Case Cluster Banner
+  const caseBanner = document.getElementById('caseClusterBanner');
+  if (caseBanner) {
+    if (q.caseGroupId) {
+      const isInt = (q.caseType === 'INT' || (q.caseGroupId && q.caseGroupId.includes('_INT_')));
+      const typeBadge = isInt 
+        ? `<span class="case-cluster-type-int">🔗 Integrated (${q.track || 'Clinic'})</span>` 
+        : `<span class="case-cluster-type-std">หมวด ${q.track || 'Clinic'}</span>`;
+      caseBanner.innerHTML = `
+        <div class="case-cluster-left">
+          <span class="case-cluster-icon">📋</span>
+          <span class="case-cluster-title">ข้อสอบกรณีศึกษาต่อเนื่อง</span>
+          <span class="case-cluster-order">(ข้อ ${q.caseOrder || 1} จากทั้งหมด ${q.caseTotal || '?'} ข้อ)</span>
+        </div>
+        ${typeBadge}
+      `;
+      caseBanner.style.display = 'flex';
+    } else {
+      caseBanner.style.display = 'none';
+    }
+  }
 
   // Question Image
   const qImgWrap = document.getElementById('qImgWrap');

@@ -158,11 +158,11 @@ def main():
     
     # Initialize all target category buckets
     for s in sheet_names:
-        if s not in SYSTEM_SHEETS and not s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📥', 'QI_')):
+        if s not in SYSTEM_SHEETS and not s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📥', 'QI_')) and 'ด่วน' not in s:
             offline_questions[s] = []
 
-    regular_sheets = [s for s in sheet_names if not (s in SYSTEM_SHEETS or s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📥', 'QI_')))]
-    ingestion_sheets = [s for s in sheet_names if s.startswith(('📥', 'QI_'))]
+    regular_sheets = [s for s in sheet_names if not (s in SYSTEM_SHEETS or s.startswith(('Log_', 'Report_', 'Eval_', 'User_', 'Community_', '🔍', '📥', 'QI_')) or 'ด่วน' in s)]
+    ingestion_sheets = [s for s in sheet_names if s.startswith(('📥', 'QI_')) or 'ด่วน' in s]
     sorted_sheet_names = regular_sheets + ingestion_sheets
 
     for s_name in sorted_sheet_names:
@@ -170,8 +170,8 @@ def main():
             continue
 
         print(f"  -> Reading sheet: '{s_name}'...")
-        is_ingestion_sheet = s_name.startswith('📥') or s_name.startswith('QI_')
-        read_range = f"'{s_name}'!A3:Q" if is_ingestion_sheet else f"'{s_name}'!A3:P"
+        is_ingestion_sheet = s_name.startswith(('📥', 'QI_')) or 'ด่วน' in s_name
+        read_range = f"'{s_name}'!A2:Z"
         try:
             val_res = service.spreadsheets().values().get(spreadsheetId=SPREADSHEET_ID, range=read_range).execute()
             rows = val_res.get('values', [])
@@ -179,9 +179,30 @@ def main():
             print(f"     [WARN] values.get failed for '{s_name}': {e}")
             continue
 
-        for idx, r in enumerate(rows):
+        if not rows:
+            continue
+
+        # Inspect Row 2 header for column detection
+        header_row = [str(x or '').strip().lower() for x in rows[0]]
+        case_col_idx = -1
+        category_tag_col_idx = -1
+        for h_idx, h_text in enumerate(header_row):
+            if 'case' in h_text or 'เคส' in h_text:
+                case_col_idx = h_idx
+            elif 'ปลายทาง' in h_text or 'หมวดวิชา/ชีต' in h_text:
+                category_tag_col_idx = h_idx
+
+        # Ingestion sheets default to Col 17 (Column R) for Case ID, regular sheets to Col 16 (Column Q)
+        if case_col_idx == -1:
+            case_col_idx = 17 if is_ingestion_sheet else 16
+        if category_tag_col_idx == -1 and is_ingestion_sheet:
+            category_tag_col_idx = 16
+
+        data_rows = rows[1:]
+
+        for idx, r in enumerate(data_rows):
             row_num = idx + 3
-            needed_cols = 17 if is_ingestion_sheet else 16
+            needed_cols = max(18, case_col_idx + 1)
             while len(r) < needed_cols:
                 r.append('')
 
@@ -201,7 +222,55 @@ def main():
             note_raw = str(r[13] or '').strip()
             exam_type = str(r[14] or '').strip()
             exam_year = str(r[15] or '').strip()
-            category_tag = str(r[16] or '').strip() if is_ingestion_sheet else ''
+            
+            category_tag = ''
+            if is_ingestion_sheet:
+                if category_tag_col_idx != -1 and category_tag_col_idx < len(r):
+                    category_tag = str(r[category_tag_col_idx] or '').strip()
+                elif len(r) > 16:
+                    category_tag = str(r[16] or '').strip()
+
+            case_id_raw = ''
+            if case_col_idx != -1 and case_col_idx < len(r):
+                case_id_raw = str(r[case_col_idx] or '').strip()
+
+            # Sniffing across all cells in this row for CASE_ prefix
+            if not case_id_raw:
+                for cell in r:
+                    val_str = str(cell or '').strip()
+                    if re.match(r'^CASE_', val_str, re.I):
+                        case_id_raw = val_str
+                        break
+
+            # Fallback: check note for [CASE:...] tag
+            if not case_id_raw and note_raw:
+                m_case = re.search(r'\[CASE:\s*([^\]]+)\]', note_raw, re.I)
+                if m_case:
+                    case_id_raw = m_case.group(1).strip()
+
+            case_group_id = ''
+            case_order = 0
+            case_type = ''
+            if case_id_raw:
+                clean_case = re.sub(r'\s+', '', case_id_raw.upper())
+                m_q = re.search(r'^(.*?)(?:[_\-]Q(\d+))?$', clean_case)
+                if m_q:
+                    case_group_id = m_q.group(1)
+                    case_order = int(m_q.group(2)) if m_q.group(2) else 0
+                else:
+                    case_group_id = clean_case
+                    case_order = 0
+
+                if '_INT_' in case_group_id or case_group_id.startswith('CASE_INT'):
+                    case_type = 'INT'
+                elif '_CLN_' in case_group_id or case_group_id.startswith('CASE_CLN'):
+                    case_type = 'CLN'
+                elif '_PRD_' in case_group_id or case_group_id.startswith('CASE_PRD'):
+                    case_type = 'PRD'
+                elif '_SAP_' in case_group_id or case_group_id.startswith('CASE_SAP'):
+                    case_type = 'SAP'
+                else:
+                    case_type = 'STD'
 
             if is_ingestion_sheet and not category_tag:
                 continue
@@ -319,13 +388,43 @@ def main():
                 'answerImage': ans_img,
                 'note': note_raw.replace('\n', '<br>'),
                 'examType': exam_type,
-                'examYear': exam_year
+                'examYear': exam_year,
+                'caseGroupId': case_group_id,
+                'caseOrder': case_order,
+                'caseType': case_type
             }
 
             if target_sheet not in offline_questions:
                 offline_questions[target_sheet] = []
             offline_questions[target_sheet].append(q_obj)
             total_q_count += 1
+
+    # Post-process Case Clusters: Auto-assign order and sort Type INT by Track Priority
+    case_clusters = {}
+    for cat_name, q_list in offline_questions.items():
+        for q in q_list:
+            gid = q.get('caseGroupId')
+            if gid:
+                scoped_key = f"{q.get('examYear') or 'all'}__{gid}"
+                if scoped_key not in case_clusters:
+                    case_clusters[scoped_key] = []
+                case_clusters[scoped_key].append(q)
+
+    track_priority = {'clinic': 1, 'product': 2, 'sap': 3}
+    for scoped_key, cluster_qs in case_clusters.items():
+        is_int = any(q.get('caseType') == 'INT' or '_INT_' in q.get('caseGroupId', '') for q in cluster_qs)
+        if is_int:
+            for q in cluster_qs:
+                q['caseType'] = 'INT'
+            # Sort Clinic -> Product -> SAP, then caseOrder
+            cluster_qs.sort(key=lambda x: (track_priority.get(x.get('track', '').lower(), 99), x.get('caseOrder') or 0))
+        else:
+            cluster_qs.sort(key=lambda x: x.get('caseOrder') or 0)
+
+        # Normalize caseOrder and record caseTotal
+        for idx, q in enumerate(cluster_qs):
+            q['caseOrder'] = idx + 1
+            q['caseTotal'] = len(cluster_qs)
 
     # Build offline categories list
     offline_categories = []
