@@ -25,7 +25,6 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from scratch.master_cleaner import clean_text_advanced, clean_image_field, clean_explanation_field, classify_question_precise
 from scratch.quality_overhaul_engine import DISTRACTOR_POOLS
 from scratch.subtopic_classifier import determine_standard_subtopic
-from scratch.advanced_explanation_builder import build_advanced_clinical_explanation
 
 CREDS_FILE = 'C:/Users/thana/Desktop/PLE-CC/gemini-sheets-editor-497118-060a7f15daf9.json'
 SPREADSHEET_ID = '1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w'
@@ -292,19 +291,13 @@ def main():
             ans_letter = choice_letters[ans_num - 1]
             ans_text = choices[ans_num - 1]
             
-            # If Google Sheet already has a detailed explanation, use it directly (verbatim) from sheet
-            if exp_raw and len(exp_raw.strip()) > 30 and 'ทำไมข้อนี้ถึงถูก' in exp_raw:
-                exp_html = clean_text_advanced(exp_raw, is_choice=False).replace('\n', '<br>')
+            # If Google Sheet has an explanation, use it directly (verbatim) from sheet!
+            # Never hallucinate or synthesize fake sections (Background, why wrong, pearls) if not in source.
+            if exp_raw and exp_raw.strip():
+                clean_exp = clean_text_advanced(exp_raw.strip(), is_choice=False)
+                exp_html = clean_exp.replace('\n', '<br>')
             else:
-                exp_html = build_advanced_clinical_explanation(
-                    raw_exp=exp_raw,
-                    choices=choices,
-                    ans_num=ans_num,
-                    subtopic=target_sub,
-                    track=target_track,
-                    q_text=q_clean,
-                    for_web=True
-                )
+                exp_html = f"✅ คำตอบที่ถูกต้อง: ข้อ {ans_letter}. {ans_text}"
 
 
             # Format question with clean line breaks
