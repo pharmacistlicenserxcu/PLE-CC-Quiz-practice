@@ -2324,15 +2324,11 @@
         
         <!-- Minimal, Prioritized Bottom Tools -->
         <div class="minimal-tools-panel">
-          <!-- Row 1: Primary Actions -->
+          <!-- Row 1: Primary Actions (Unified Simulated / Custom Exam) -->
           <div class="tools-primary-row">
-            <button class="tools-btn-main primary" onclick="openQuizSetupModal('__all__', currentTrack)" title="ทำข้อสอบทั้งหมดในหมวดวิชานี้">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span>ทำข้อสอบทั้งหมด</span>
-            </button>
-            <button class="tools-btn-main accent" onclick="openRandomModal()" title="จำลองสอบจริง PLE-CC1 (120 ข้อ / 180 นาที สัดส่วน 50:40:10)">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
-              <span>⏱️ จำลองสอบจริง (120 ข้อ)</span>
+            <button class="tools-btn-main accent" style="flex:1;" onclick="openSimExamPanel()" title="จำลองสอบจริง PLE-CC1 / สุ่มทำข้อสอบตามชุดหรือหมวดหมู่">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>⏱️ สุ่ม / จำลองสอบจริง (Simulated Exam)</span>
             </button>
           </div>
 
@@ -3424,10 +3420,6 @@ function setAppQuizMode(mode) {
   if (mode === 'scroll') msg = '📜 สลับเป็นโหมดฝึกฝนเลื่อนอ่าน (Scroll Down)';
   else if (mode === 'exam') {
     msg = '⏱️ สลับเป็นโหมดสอบจริง (ส่งคะแนนตอนท้าย)';
-    // Prompt to open Simulated Exam modal directly when in Lobby
-    if (typeof currentAppMode === 'undefined' || currentAppMode === 'lobby') {
-      openRandomModal();
-    }
   }
   showToast(msg);
 }
@@ -5418,6 +5410,13 @@ function updateSimSourceSummaryBadge() {
   updateSimPresetAllCount(cnt);
 }
 
+function updateSimPresetAllCount(cnt) {
+  const el = document.getElementById('simPresetAllCount');
+  if (el) el.textContent = cnt ? `${cnt} ข้อ` : 'ทุกข้อ';
+  const btn = document.getElementById('simPresetAll');
+  if (btn) btn._totalCount = cnt;
+}
+
 function onSimExamSetSelectChange() {
   // Legacy — no-op now (select replaced by chips)
 }
@@ -5427,9 +5426,13 @@ function selectSimSetType() {}
 function selectSimSetCombo() {}
 
 function applySimPresetAll() {
-  const sel = document.getElementById('simExamSetSelect');
-  const count = (sel && sel._currentSetCount) ? sel._currentSetCount
-    : (sel && sel._totalAll) ? sel._totalAll : 0;
+  const btn = document.getElementById('simPresetAll');
+  let count = (btn && btn._totalCount) ? btn._totalCount : 0;
+  if (!count) {
+    const map = (typeof allQuestionsMap !== 'undefined' && Object.keys(allQuestionsMap).length)
+      ? allQuestionsMap : (window.QUIZ_OFFLINE_QUESTIONS || {});
+    Object.values(map).forEach(qs => { count += filterQuestionsByExamSets(qs).length; });
+  }
   if (!count) return;
   const inp = document.getElementById('simTotalCount');
   if (inp) inp.value = count;
