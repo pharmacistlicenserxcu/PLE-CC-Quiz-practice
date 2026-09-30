@@ -1926,9 +1926,9 @@
 
     .scroll-exp-content {
       font-size: 13px;
-      line-height: 1.5;
+      line-height: 1.55;
       color: var(--ink);
-      white-space: pre-wrap;
+      white-space: normal !important;
     }
 
     .scroll-exp-note {
@@ -4193,9 +4193,9 @@ function formatExplanationHtml(text) {
   function cleanInner(str) {
     if (!str) return '';
     let s = str
-      .replace(/<br\s*\/?>\s*<br\s*\/?>(\s*<br\s*\/?>)+/gi, '<br>')
-      .replace(/^(\s*<br\s*\/?>\s*|\n)+/i, '')
-      .replace(/(\s*<br\s*\/?>\s*|\n)+$/i, '')
+      .replace(/(?:<br\s*\/?>\s*){2,}/gi, '<br>')
+      .replace(/^(\s*<br\s*\/?>\s*|\n|\r|&nbsp;|\u00a0)+/gi, '')
+      .replace(/(\s*<br\s*\/?>\s*|\n|\r|&nbsp;|\u00a0)+$/gi, '')
       .trim();
     return s;
   }
@@ -4217,12 +4217,10 @@ function formatExplanationHtml(text) {
     const def = SECTION_DEFS.find(d => d.regex.test(headerStr));
     if (!def) continue;
 
-    resultHtml += `<div style="background:${def.bg}; border-left:3px solid ${def.border}; border-radius:0 8px 8px 0; padding:6px 12px; margin:5px 0; font-size:12px; line-height:1.6; color:${def.textColor};">
-      <div style="font-weight:700; font-size:11.5px; color:${def.iconColor}; margin-bottom:3px; display:flex; align-items:center; gap:5px;">
-        ${def.icon} ${def.label}
-      </div>
-      <div>${content}</div>
-    </div>`;
+    resultHtml += `<div class="exp-section-card" style="background:${def.bg}; border-left:3.5px solid ${def.border}; border-radius:0 10px 10px 0; padding:8px 12px; margin:6px 0; font-size:12.5px; line-height:1.6; color:${def.textColor};">` +
+      `<div style="font-weight:700; font-size:12px; color:${def.iconColor}; margin-bottom:4px; display:flex; align-items:center; gap:5px;">${def.icon} ${def.label}</div>` +
+      `<div>${content}</div>` +
+    `</div>`;
   }
 
   return resultHtml || _baseFormatExp(text);
