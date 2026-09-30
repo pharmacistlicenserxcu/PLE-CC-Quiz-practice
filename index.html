@@ -219,6 +219,25 @@
         font-size: 15px !important;
         border-radius: 14px !important;
       }
+      .quiz-nav-row.quiz-nav-top {
+        margin: 4px auto 8px !important;
+        padding-top: 0 !important;
+      }
+      .quiz-nav-row.quiz-nav-top .nav-arrow-btn {
+        padding: 9px 12px !important;
+        font-size: 12.5px !important;
+        border-radius: 10px !important;
+      }
+      .quiz-nav-row.quiz-nav-top .btn-submit-answer {
+        padding: 9px 14px !important;
+        font-size: 13.5px !important;
+        border-radius: 10px !important;
+      }
+      .btn-exp-next {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+        border-radius: 8px !important;
+      }
     }
 
     /* ── DYNAMIC FONT SIZE SCALING PRESETS ── */
@@ -1323,6 +1342,43 @@
     }
     .btn-submit-answer:hover:not(:disabled) { background: #0E7490; transform: translateY(-1px); }
     .btn-submit-answer:disabled { opacity: 0.4; cursor: not-allowed; }
+    
+    .quiz-nav-row.quiz-nav-top {
+      margin: 4px auto 10px;
+    }
+    .quiz-nav-row.quiz-nav-top .nav-arrow-btn {
+      padding: 8px 14px;
+      font-size: 12.5px;
+    }
+    .quiz-nav-row.quiz-nav-top .btn-submit-answer {
+      padding: 9px 16px;
+      font-size: 13.5px;
+    }
+    .btn-exp-next {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border: none;
+      border-radius: 9px;
+      background: var(--clinic);
+      color: #fff;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(13, 148, 136, 0.25);
+      transition: all 0.15s cubic-bezier(0.2, 0.9, 0.3, 1);
+      flex-shrink: 0;
+    }
+    .btn-exp-next:hover {
+      background: #0b7c72;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(13, 148, 136, 0.35);
+    }
+    .btn-exp-next:active {
+      transform: translateY(0);
+    }
 
     .kbd-hints-bar {
       display: flex; align-items: center; justify-content: center; gap: 12px;
@@ -2757,6 +2813,21 @@
         <div class="exam-palette-grid" id="examPaletteGrid"></div>
       </div>
 
+      <!-- Top Navigation & Action Buttons (Quick Access) -->
+      <div class="quiz-nav-row quiz-nav-top" id="quizNavTop">
+        <button class="nav-arrow-btn" id="btnPrevQTop" onclick="goPrevQuestion()" title="ข้อก่อนหน้า (←)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          <span>ข้อก่อนหน้า</span>
+        </button>
+        <button class="btn-submit-answer" id="btnActionTop" onclick="handleActionButton()">
+          ตรวจคำตอบ
+        </button>
+        <button class="nav-arrow-btn" id="btnNextQTop" onclick="goNextQuestion()" title="ข้อถัดไป (→)">
+          <span>ข้อถัดไป</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
       <!-- Main Quiz Card -->
       <div class="card-scene">
         <div class="quiz-card" id="quizCard">
@@ -2790,9 +2861,14 @@
 
         <!-- Explanation & Reveal Box -->
         <div class="explanation-box" id="explanationBox">
-          <div style="display:flex; align-items:center; justify-content:space-between;">
-            <span class="exp-badge badge-correct" id="expBadge">✅ ตอบถูกต้อง</span>
-            <span id="correctChoiceLabel" style="font-size:12px; font-weight:700; color:var(--ink-soft);"></span>
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+              <span class="exp-badge badge-correct" id="expBadge">✅ ตอบถูกต้อง</span>
+              <span id="correctChoiceLabel" style="font-size:12px; font-weight:700; color:var(--ink-soft);"></span>
+            </div>
+            <button class="btn-exp-next" id="btnExpNext" onclick="handleActionButton()" title="ไปทำข้อถัดไปทันที">
+              <span>ข้อถัดไป →</span>
+            </button>
           </div>
           <div class="exp-title" id="expTitle">💡 คำอธิบายเฉลย:</div>
           <div class="exp-text" id="explanationText">-</div>
@@ -7713,16 +7789,19 @@ function renderCurrentQuestion(direction) {
   expBox.className = 'explanation-box';
   expBox.classList.remove('show');
 
-  // Update Action Button
-  const btnAction = document.getElementById('btnAction');
-  if (appQuizMode === 'exam') {
-    const isLast = (currentQuestionIndex + 1 >= activeQuizQuestions.length);
-    btnAction.textContent = isLast ? '📥 ส่งข้อสอบทั้งหมด' : 'ข้อถัดไป →';
-    btnAction.disabled = false;
-  } else {
-    btnAction.textContent = 'ตรวจคำตอบ';
-    btnAction.disabled = (selectedChoiceIndex == null);
-  }
+  // Update Action Buttons
+  const isExam = (appQuizMode === 'exam');
+  const isLast = (currentQuestionIndex + 1 >= activeQuizQuestions.length);
+  const actionText = isExam ? (isLast ? '📥 ส่งข้อสอบทั้งหมด' : 'ข้อถัดไป →') : 'ตรวจคำตอบ';
+  const actionDisabled = isExam ? false : (selectedChoiceIndex == null);
+
+  ['btnAction', 'btnActionTop'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.textContent = actionText;
+      btn.disabled = actionDisabled;
+    }
+  });
 
   updateQuizNav();
   renderExamPalette();
@@ -7744,8 +7823,10 @@ function selectChoice(choiceNum) {
     item.classList.toggle('selected', (idx + 1) === choiceNum);
   });
 
-  const btnAction = document.getElementById('btnAction');
-  btnAction.disabled = false;
+  ['btnAction', 'btnActionTop'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) btn.disabled = false;
+  });
 
   renderExamPalette();
 }
@@ -7852,10 +7933,15 @@ function submitAnswerPracticeMode() {
     expNote.style.display = 'none';
   }
 
-  // Change action button to "Next Question"
-  const btnAction = document.getElementById('btnAction');
-  btnAction.textContent = (currentQuestionIndex + 1 < activeQuizQuestions.length) ? 'ข้อถัดไป →' : 'ดูผลคะแนน 🏆';
-  btnAction.disabled = false;
+  // Change action buttons to "Next Question"
+  const nextText = (currentQuestionIndex + 1 < activeQuizQuestions.length) ? 'ข้อถัดไป →' : 'ดูผลคะแนน 🏆';
+  ['btnAction', 'btnActionTop', 'btnExpNext'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.textContent = nextText;
+      btn.disabled = false;
+    }
+  });
 
   updateQuizNav();
 }
@@ -7969,8 +8055,15 @@ function updateQuizNav() {
     fill.className = 'progress-fill ' + (norm.includes('prod') ? 'product-fill' : norm.includes('sap') ? 'sap-fill' : '');
   }
 
-  document.getElementById('btnPrevQ').disabled = (currentQuestionIndex <= 0);
-  document.getElementById('btnNextQ').disabled = false;
+  const isFirst = (currentQuestionIndex <= 0);
+  ['btnPrevQ', 'btnPrevQTop'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.disabled = isFirst;
+  });
+  ['btnNextQ', 'btnNextQTop'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.disabled = false;
+  });
 }
 
 // ─── RESULT SUMMARY ───
