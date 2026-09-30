@@ -3956,6 +3956,8 @@ function formatChoiceText(text) {
 function formatQuestionText(text) {
   if (!text) return '';
   var str = String(text);
+  // Strip markdown asterisks per strict plain text guidelines
+  str = str.replace(/\*\*/g, '');
   // Strip student recollection tags e.g. (ไอซ์ 010), (ข้อสอบจำรุ่น)
   str = str.replace(/\((?:ไอซ์|ice)\s*\d+[^)]*\)/gi, '');
   str = str.replace(/\((?:เฉลย|ตัวเลือกที่ไฮไลต์)[^)]*\)/gi, '');
@@ -4706,6 +4708,7 @@ const THAI_CHOICE_LETTERS = ['ก.', 'ข.', 'ค.', 'ง.', 'จ.'];
 function cleanChoiceString(text) {
   if (!text && text !== 0) return '';
   let str = String(text);
+  str = str.replace(/\*\*/g, '');
   str = str.replace(/<\s*br\s*\/?>/gi, ' ');
   str = str.replace(/---/g, '');
   return str.replace(/\s+/g, ' ').trim();
@@ -7244,7 +7247,7 @@ function renderScrollPractice() {
     const isValidated = isQuestionValidatedByUser(q.id);
 
     let caseBannerHtml = '';
-    if (q.caseGroupId) {
+    if (q.caseGroupId && (q.caseTotal > 1 || q.caseType === 'INT')) {
       const isInt = (q.caseType === 'INT' || (q.caseGroupId && q.caseGroupId.includes('_INT_')));
       const typeBadge = isInt 
         ? `<span class="case-cluster-type-int">🔗 Integrated (${q.track || 'Clinic'})</span>` 
@@ -7414,7 +7417,7 @@ function renderCurrentQuestion() {
   // Case Cluster Banner
   const caseBanner = document.getElementById('caseClusterBanner');
   if (caseBanner) {
-    if (q.caseGroupId) {
+    if (q.caseGroupId && (q.caseTotal > 1 || q.caseType === 'INT')) {
       const isInt = (q.caseType === 'INT' || (q.caseGroupId && q.caseGroupId.includes('_INT_')));
       const typeBadge = isInt 
         ? `<span class="case-cluster-type-int">🔗 Integrated (${q.track || 'Clinic'})</span>` 
