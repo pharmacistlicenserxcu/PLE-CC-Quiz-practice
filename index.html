@@ -9346,6 +9346,9 @@ function showToast(msg) {
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2600);
 }
+
+// Initial card animation state
+if (typeof updateAnimBtnUI === 'function') updateAnimBtnUI();
 </script>
 </body>
 </html>
