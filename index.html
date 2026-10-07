@@ -1510,7 +1510,7 @@
       position: fixed; inset: 0;
       background: rgba(15, 23, 42, 0.78);
       display: none; align-items: flex-start; justify-content: center;
-      z-index: 1000; padding: 24px 16px;
+      z-index: 2000; padding: 24px 16px;
       backdrop-filter: blur(6px);
       overflow-y: auto;
     }
@@ -4004,6 +4004,10 @@
               </select>
             </div>
           </div>
+          <div style="margin-top:10px;">
+            <label class="paper-label">📄 เนื้อหาบริบทโจทย์เคสส่วนกลาง (Case Stem / Patient Vignette)</label>
+            <textarea class="paper-textarea" id="peCaseStemInput" rows="3" placeholder="ระบุเนื้อหาเคสผู้ป่วยส่วนกลางสำหรับข้อในเคสนี้..."></textarea>
+          </div>
         </div>
       </div>
 
@@ -5075,7 +5079,7 @@ async function fetchLiveSheetQuestions(sheetName) {
 
 // ─── MAINTENANCE MODE & ACCESS CONTROL (Maxnum/Maxnux only) ───
 const MAINTENANCE_MODE = true;
-const ALLOWED_ADMIN_USERS = ['maxnum', 'maxnux', 'thanadol', 'max'];
+const ALLOWED_ADMIN_USERS = ['maxnum', 'maxnux', 'thanadol', 'max', 'admin', 'administrator', 'root'];
 
 function isUserAllowedAdmin(username) {
   if (!username) return false;
@@ -9408,7 +9412,7 @@ function escapeAttr(str) {
 }
 
 function togglePaperCaseFields(isChecked) {
-  const fields = document.getElementById('paperCaseFields');
+  const fields = document.getElementById('peCaseClusterFieldsWrap');
   if (fields) {
     fields.style.display = isChecked ? 'block' : 'none';
   }
@@ -9416,14 +9420,12 @@ function togglePaperCaseFields(isChecked) {
 
 function selectPaperAnswer(ansNum) {
   const parsed = parseInt(ansNum, 10);
-  const hiddenInput = document.getElementById('paperEditAnswer');
+  const hiddenInput = document.getElementById('peCorrectAnswerInput');
   if (hiddenInput) {
-    hiddenInput.value = isNaN(parsed) ? '' : String(parsed);
+    hiddenInput.value = isNaN(parsed) ? '1' : String(parsed);
   }
   for (let i = 1; i <= 5; i++) {
-    const radio = document.getElementById('paperAnsRadio_' + i);
-    const item = document.getElementById('paperChoiceItem_' + i);
-    if (radio) radio.checked = (i === parsed);
+    const item = document.getElementById('peChoiceItem_' + i);
     if (item) {
       if (i === parsed) {
         item.classList.add('correct-choice');
@@ -9435,15 +9437,15 @@ function selectPaperAnswer(ansNum) {
 }
 
 function updatePaperImagePreview(type) {
-  const urlInput = document.getElementById(type === 'question' ? 'paperEditQuestionImg' : 'paperEditAnswerImg');
-  const previewBox = document.getElementById(type === 'question' ? 'paperQImgPreview' : 'paperAImgPreview');
-  const imgElem = document.getElementById(type === 'question' ? 'paperQImgElem' : 'paperAImgElem');
+  const urlInput = document.getElementById(type === 'question' ? 'peQuestionImgInput' : 'peAnswerImgInput');
+  const previewBox = document.getElementById(type === 'question' ? 'peQuestionImgPreviewWrap' : 'peAnswerImgPreviewWrap');
+  const imgElem = document.getElementById(type === 'question' ? 'peQuestionImgPreview' : 'peAnswerImgPreview');
   if (!urlInput || !previewBox || !imgElem) return;
 
   const url = (urlInput.value || '').trim();
   if (url) {
     imgElem.src = url;
-    previewBox.style.display = 'block';
+    previewBox.style.display = 'flex';
   } else {
     imgElem.src = '';
     previewBox.style.display = 'none';
@@ -9451,22 +9453,23 @@ function updatePaperImagePreview(type) {
 }
 
 function clearPaperImage(type) {
-  const urlInput = document.getElementById(type === 'question' ? 'paperEditQuestionImg' : 'paperEditAnswerImg');
+  const urlInput = document.getElementById(type === 'question' ? 'peQuestionImgInput' : 'peAnswerImgInput');
   if (urlInput) urlInput.value = '';
   updatePaperImagePreview(type);
 }
 
 function insertPaperTemplate(tmplKey) {
-  const expArea = document.getElementById('paperEditExplanation');
+  const expArea = document.getElementById('peExplanationInput');
   if (!expArea) return;
 
   const templates = {
     standard: "✅ คำตอบที่ถูกต้อง: ข้อ ก. \n\n💡 Background:\n\n🎯 ทำไมข้อนี้ถึงถูก:\n\n🔍 ข้ออื่นผิดเพราะอะไร:\n• ข. \n• ค. \n• ง. \n• จ. \n\n📖 Guideline อ้างอิง:\n\n📌 จุดจำก่อนสอบ:",
-    bg: "\n\n💡 Background:\n",
-    why: "\n\n🎯 ทำไมข้อนี้ถึงถูก:\n",
-    other: "\n\n🔍 ข้ออื่นผิดเพราะอะไร:\n• ข. \n• ค. \n• ง. \n• จ. \n",
-    guide: "\n\n📖 Guideline อ้างอิง:\n",
-    pearl: "\n\n📌 จุดจำก่อนสอบ:\n"
+    correct: "✅ คำตอบที่ถูกต้อง: ข้อ ก. \n",
+    background: "\n💡 Background:\n",
+    why_right: "\n🎯 ทำไมข้อนี้ถึงถูก:\n",
+    why_wrong: "\n🔍 ข้ออื่นผิดเพราะอะไร:\n• ข. \n• ค. \n• ง. \n• จ. \n",
+    guideline: "\n📖 Guideline อ้างอิง:\n",
+    pearl: "\n📌 จุดจำก่อนสอบ:\n"
   };
 
   const toInsert = templates[tmplKey] || '';
@@ -9475,9 +9478,9 @@ function insertPaperTemplate(tmplKey) {
   if (tmplKey === 'standard' && (!expArea.value || expArea.value.trim() === '')) {
     expArea.value = toInsert;
   } else {
-    const start = expArea.selectionStart;
-    const end = expArea.selectionEnd;
-    const currentVal = expArea.value;
+    const start = expArea.selectionStart || 0;
+    const end = expArea.selectionEnd || 0;
+    const currentVal = expArea.value || '';
     expArea.value = currentVal.substring(0, start) + toInsert + currentVal.substring(end);
     expArea.selectionStart = expArea.selectionEnd = start + toInsert.length;
   }
@@ -9489,7 +9492,7 @@ function openPaperEditorForCurrentCard() {
     showToast('⚠️ สิทธิ์ Admin เท่านั้นที่สามารถแก้ไขชุดข้อสอบได้');
     return;
   }
-  const q = activeQuizQuestions[currentQuestionIndex];
+  const q = activeQuizQuestions ? activeQuizQuestions[currentQuestionIndex] : null;
   if (!q) {
     showToast('⚠️ ไม่พบข้อมูลคำถามในขณะนี้');
     return;
@@ -9521,39 +9524,52 @@ function openPaperEditorModalByQuestionId(qId) {
 
 function openPaperEditorModal(q) {
   if (!q) return;
-  currentEditingQuestion = q;
+  try {
+    currentEditingQuestion = q;
 
-  // Header badges & identifiers
-  document.getElementById('paperEditorSheetBadge').textContent = '📂 ' + (q.sheetName || q.category || 'General');
-  document.getElementById('paperEditorRowBadge').textContent = '📍 Row ' + (q.rowIndex || '-');
-  document.getElementById('paperEditorIdBadge').textContent = '🏷️ ID: ' + (q.id || '-');
+    // Header badges & identifiers
+    const sBadge = document.getElementById('peSheetNameBadge');
+  if (sBadge) sBadge.textContent = q.sheetName || q.category || '-';
+  const rBadge = document.getElementById('peRowNumBadge');
+  if (rBadge) rBadge.textContent = q.rowIndex || '-';
+  const iBadge = document.getElementById('peItemNoBadge');
+  if (iBadge) iBadge.textContent = q.itemNo || '-';
+  const tBadge = document.getElementById('peTrackBadge');
+  if (tBadge) tBadge.textContent = (q.track || currentTrack || 'Clinic').toUpperCase();
 
-  document.getElementById('paperEditQuestionId').value = q.id || '';
-  document.getElementById('paperEditSheetName').value = q.sheetName || q.category || '';
-  document.getElementById('paperEditRowIndex').value = q.rowIndex || '';
-  document.getElementById('paperEditItemNo').value = q.itemNo || '';
+  const idInput = document.getElementById('peQuestionIdHidden');
+  if (idInput) idInput.value = q.id || '';
+
+  const itemInput = document.getElementById('peItemNoInput');
+  if (itemInput) itemInput.value = q.itemNo || '';
 
   // Case Scenario
   const hasCase = !!(q.caseGroupId || q.caseStem);
-  const caseCheck = document.getElementById('paperEditHasCase');
+  const caseCheck = document.getElementById('peIsCaseClusterCheckbox');
   if (caseCheck) caseCheck.checked = hasCase;
   togglePaperCaseFields(hasCase);
 
-  document.getElementById('paperEditCaseGroupId').value = q.caseGroupId || '';
-  document.getElementById('paperEditCaseOrder').value = q.caseOrder || '1';
-  document.getElementById('paperEditCaseType').value = q.caseType || 'CLSD';
-  document.getElementById('paperEditCaseStem').value = q.caseStem || '';
+  const cgInput = document.getElementById('peCaseGroupIdInput');
+  if (cgInput) cgInput.value = q.caseGroupId || '';
+  const coInput = document.getElementById('peCaseOrderInput');
+  if (coInput) coInput.value = q.caseOrder || '1';
+  const ctSelect = document.getElementById('peCaseTypeSelect');
+  if (ctSelect) ctSelect.value = q.caseType || 'CLSD';
+  const csInput = document.getElementById('peCaseStemInput');
+  if (csInput) csInput.value = q.caseStem || '';
 
   // Question & Media
-  document.getElementById('paperEditQuestionText').value = q.question || '';
-  document.getElementById('paperEditQuestionImg').value = q.questionImage || '';
+  const qInput = document.getElementById('peQuestionInput');
+  if (qInput) qInput.value = q.question || '';
+  const qImgInput = document.getElementById('peQuestionImgInput');
+  if (qImgInput) qImgInput.value = q.questionImage || '';
   updatePaperImagePreview('question');
 
   // Choices 1-5
   const choices = Array.isArray(q.choices) ? q.choices : [];
   for (let i = 1; i <= 5; i++) {
     const val = choices[i - 1] || '';
-    const choiceInput = document.getElementById('paperEditChoice_' + i);
+    const choiceInput = document.getElementById('peChoiceInput_' + i);
     if (choiceInput) choiceInput.value = val;
   }
 
@@ -9577,17 +9593,32 @@ function openPaperEditorModal(q) {
   selectPaperAnswer(ansNum);
 
   // Explanation & Media
-  document.getElementById('paperEditExplanation').value = q.explanation || '';
-  document.getElementById('paperEditAnswerImg').value = q.answerImage || '';
+  const expInput = document.getElementById('peExplanationInput');
+  if (expInput) expInput.value = q.explanation || '';
+  const aImgInput = document.getElementById('peAnswerImgInput');
+  if (aImgInput) aImgInput.value = q.answerImage || '';
   updatePaperImagePreview('answer');
 
   // Metadata
   const subVal = Array.isArray(q.subtopics) ? q.subtopics.join(', ') : (q.subtopic || '');
-  document.getElementById('paperEditSubtopic').value = subVal;
-  document.getElementById('paperEditTrack').value = q.track || currentTrack || 'clinic';
-  document.getElementById('paperEditExamType').value = q.examType || 'General';
-  document.getElementById('paperEditExamYear').value = q.examYear || '';
-  document.getElementById('paperEditNote').value = q.note || '';
+  const subInput = document.getElementById('peSubtopicInput');
+  if (subInput) subInput.value = subVal;
+  const trkSelect = document.getElementById('peTrackSelect');
+  if (trkSelect) {
+    const trkVal = (q.track || currentTrack || 'clinic').toLowerCase();
+    trkSelect.value = trkVal === 'product' ? 'Product' : (trkVal === 'sap' ? 'SAP' : 'Clinic');
+  }
+  const exTypeInput = document.getElementById('peExamTypeInput');
+  if (exTypeInput) exTypeInput.value = q.examType || 'General';
+  const exYearInput = document.getElementById('peExamYearInput');
+  if (exYearInput) exYearInput.value = q.examYear || '';
+  const noteInput = document.getElementById('peNoteInput');
+  if (noteInput) noteInput.value = q.note || '';
+
+  const editorName = document.getElementById('peEditorNameDisplay');
+  if (editorName) {
+    editorName.textContent = currentUser?.name ? `${currentUser.name} (${currentUser.username})` : 'Maxnum (ประธานโครงการ)';
+  }
 
   // Show modal
   const modal = document.getElementById('adminPaperEditorModal');
@@ -9596,6 +9627,10 @@ function openPaperEditorModal(q) {
     const paperSheet = modal.querySelector('.exam-paper-sheet');
     if (paperSheet) paperSheet.scrollTop = 0;
   }
+} catch (err) {
+  console.error('Error opening paper editor modal:', err);
+  showToast('⚠️ เกิดข้อผิดพลาดในการเปิดหน้าต่างแก้ไข: ' + err.message);
+}
 }
 
 function closePaperEditorModal() {
@@ -9610,19 +9645,19 @@ async function savePaperEditorData() {
     return;
   }
 
-  const qId = document.getElementById('paperEditQuestionId').value;
-  const sheetName = document.getElementById('paperEditSheetName').value;
-  const rowIndex = parseInt(document.getElementById('paperEditRowIndex').value, 10);
-  const itemNo = (document.getElementById('paperEditItemNo').value || '').trim();
+  const qId = document.getElementById('peQuestionIdHidden')?.value || (currentEditingQuestion?.id || '');
+  const sheetName = currentEditingQuestion?.sheetName || currentEditingQuestion?.category || '';
+  const rowIndex = parseInt(currentEditingQuestion?.rowIndex, 10);
+  const itemNo = (document.getElementById('peItemNoInput')?.value || '').trim();
 
-  const hasCase = document.getElementById('paperEditHasCase')?.checked || false;
-  const caseGroupId = hasCase ? (document.getElementById('paperEditCaseGroupId').value || '').trim() : '';
-  const caseOrder = hasCase ? (document.getElementById('paperEditCaseOrder').value || '').trim() : '';
-  const caseType = hasCase ? (document.getElementById('paperEditCaseType').value || '').trim() : '';
-  const caseStem = hasCase ? (document.getElementById('paperEditCaseStem').value || '').trim() : '';
+  const hasCase = document.getElementById('peIsCaseClusterCheckbox')?.checked || false;
+  const caseGroupId = hasCase ? (document.getElementById('peCaseGroupIdInput')?.value || '').trim() : '';
+  const caseOrder = hasCase ? (document.getElementById('peCaseOrderInput')?.value || '').trim() : '';
+  const caseType = hasCase ? (document.getElementById('peCaseTypeSelect')?.value || '').trim() : '';
+  const caseStem = hasCase ? (document.getElementById('peCaseStemInput')?.value || '').trim() : '';
 
-  let questionText = (document.getElementById('paperEditQuestionText').value || '').trim();
-  const questionImg = (document.getElementById('paperEditQuestionImg').value || '').trim();
+  let questionText = (document.getElementById('peQuestionInput')?.value || '').trim();
+  const questionImg = (document.getElementById('peQuestionImgInput')?.value || '').trim();
 
   if (!questionText) {
     showToast('⚠️ กรุณาระบุข้อความโจทย์ก่อนบันทึก');
@@ -9631,18 +9666,18 @@ async function savePaperEditorData() {
 
   const choices = [];
   for (let i = 1; i <= 5; i++) {
-    choices.push((document.getElementById('paperEditChoice_' + i)?.value || '').trim());
+    choices.push((document.getElementById('peChoiceInput_' + i)?.value || '').trim());
   }
 
-  const ansNum = parseInt(document.getElementById('paperEditAnswer')?.value || '1', 10);
-  let explanation = (document.getElementById('paperEditExplanation')?.value || '').trim();
-  const answerImg = (document.getElementById('paperEditAnswerImg')?.value || '').trim();
+  const ansNum = parseInt(document.getElementById('peCorrectAnswerInput')?.value || '1', 10);
+  let explanation = (document.getElementById('peExplanationInput')?.value || '').trim();
+  const answerImg = (document.getElementById('peAnswerImgInput')?.value || '').trim();
 
-  const subtopic = (document.getElementById('paperEditSubtopic')?.value || '').trim();
-  const track = (document.getElementById('paperEditTrack')?.value || 'clinic').trim();
-  const examType = (document.getElementById('paperEditExamType')?.value || 'General').trim();
-  const examYear = (document.getElementById('paperEditExamYear')?.value || '').trim();
-  const note = (document.getElementById('paperEditNote')?.value || '').trim();
+  const subtopic = (document.getElementById('peSubtopicInput')?.value || '').trim();
+  const track = (document.getElementById('peTrackSelect')?.value || 'Clinic').trim();
+  const examType = (document.getElementById('peExamTypeInput')?.value || 'General').trim();
+  const examYear = (document.getElementById('peExamYearInput')?.value || '').trim();
+  const note = (document.getElementById('peNoteInput')?.value || '').trim();
 
   // Rule 3.6 Cleaning: Strip double asterisks ** and single asterisks if used as markdown bold
   const stripMarkdownAsterisks = (txt) => {
