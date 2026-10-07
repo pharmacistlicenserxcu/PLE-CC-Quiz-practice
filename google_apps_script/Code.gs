@@ -572,8 +572,21 @@ function doPost(e) {
       const c4 = String(choices[3] || '').replace(/\*\*/g, '').trim();
       const c5 = String(choices[4] || '').replace(/\*\*/g, '').trim();
 
-      const qImg = String(data.questionImage || '').trim();
-      const aImg = String(data.answerImage || '').trim();
+      let qImg = String(data.questionImage || '').trim();
+      let aImg = String(data.answerImage || '').trim();
+
+      if (qImg.startsWith('data:image/')) {
+        qImg = saveBase64ImageToDrive_(qImg, sheetName, rowNum, 'Q');
+      }
+      if (aImg.startsWith('data:image/')) {
+        aImg = saveBase64ImageToDrive_(aImg, sheetName, rowNum, 'A');
+      }
+
+      // Format for Google Sheets cell:
+      // If we have a direct URL, format as =IMAGE("url") so Google Sheets renders the real picture!
+      const qImgCellValue = (qImg && qImg.startsWith('http')) ? `=IMAGE("${qImg}")` : qImg;
+      const aImgCellValue = (aImg && aImg.startsWith('http')) ? `=IMAGE("${aImg}")` : aImg;
+
       const subtopic = String(data.subtopic || '').replace(/\*\*/g, '').trim();
       const track = String(data.track || '').trim();
       
@@ -592,7 +605,7 @@ function doPost(e) {
       // เขียนทับคอลัมน์ B ถึง P (15 คอลัมน์: col 2 ถึง 16)
       const updateData = [
         newQuestion,      // Col B (2)
-        qImg,             // Col C (3)
+        qImgCellValue,    // Col C (3)
         c1,               // Col D (4)
         c2,               // Col E (5)
         c3,               // Col F (6)
@@ -600,7 +613,7 @@ function doPost(e) {
         c5,               // Col H (8)
         newAns,           // Col I (9)
         newExplanation,   // Col J (10)
-        aImg,             // Col K (11)
+        aImgCellValue,    // Col K (11)
         subtopic,         // Col L (12)
         track,            // Col M (13)
         note,             // Col N (14)
@@ -609,6 +622,14 @@ function doPost(e) {
       ];
 
       targetSheet.getRange(rowNum, 2, 1, 15).setValues([updateData]);
+
+      // Add direct URL in Cell Note for quick reference
+      if (qImg && qImg.startsWith('http')) {
+        try { targetSheet.getRange(rowNum, 3).setNote(qImg); } catch(e) {}
+      }
+      if (aImg && aImg.startsWith('http')) {
+        try { targetSheet.getRange(rowNum, 11).setNote(aImg); } catch(e) {}
+      }
 
       // ถ้ามีการแก้ไขเลขข้อ (ItemNo) ในคอลัมน์ A
       if (data.itemNo != null && String(data.itemNo).trim() !== '') {
@@ -628,7 +649,9 @@ function doPost(e) {
         message: `บันทึกข้อสอบลง Google Sheet แถวที่ ${rowNum} สำเร็จแล้ว`,
         questionId: qId,
         sheet: sheetName,
-        row: rowNum
+        row: rowNum,
+        questionImage: qImg,
+        answerImage: aImg
       });
     }
 
@@ -668,8 +691,20 @@ function doPost(e) {
       const c5 = String(choices[4] || '').replace(/\*\*/g, '').trim();
 
       const newQuestion = String(data.question || '').replace(/\*\*/g, '').trim();
-      const qImg = String(data.questionImage || '').trim();
-      const aImg = String(data.answerImage || '').trim();
+      let qImg = String(data.questionImage || '').trim();
+      let aImg = String(data.answerImage || '').trim();
+
+      const nextRowEstimate = targetSheet.getLastRow() + 1;
+      if (qImg.startsWith('data:image/')) {
+        qImg = saveBase64ImageToDrive_(qImg, sheetName, nextRowEstimate, 'Q');
+      }
+      if (aImg.startsWith('data:image/')) {
+        aImg = saveBase64ImageToDrive_(aImg, sheetName, nextRowEstimate, 'A');
+      }
+
+      const qImgCellValue = (qImg && qImg.startsWith('http')) ? `=IMAGE("${qImg}")` : qImg;
+      const aImgCellValue = (aImg && aImg.startsWith('http')) ? `=IMAGE("${aImg}")` : aImg;
+
       const newAns = parseInt(data.correctAnswer || data.answer, 10) || 1;
       const newExplanation = String(data.explanation || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
 
@@ -690,7 +725,7 @@ function doPost(e) {
       const rowData = [
         nextItemNo,       // Col A (1)
         newQuestion,      // Col B (2)
-        qImg,             // Col C (3)
+        qImgCellValue,    // Col C (3)
         c1,               // Col D (4)
         c2,               // Col E (5)
         c3,               // Col F (6)
@@ -698,7 +733,7 @@ function doPost(e) {
         c5,               // Col H (8)
         newAns,           // Col I (9)
         newExplanation,   // Col J (10)
-        aImg,             // Col K (11)
+        aImgCellValue,    // Col K (11)
         subtopic,         // Col L (12)
         track,            // Col M (13)
         note,             // Col N (14)
@@ -709,6 +744,13 @@ function doPost(e) {
       targetSheet.appendRow(rowData);
       const actualRow = targetSheet.getLastRow();
       const newQId = `${sheetName}::${actualRow}`;
+
+      if (qImg && qImg.startsWith('http')) {
+        try { targetSheet.getRange(actualRow, 3).setNote(qImg); } catch(e) {}
+      }
+      if (aImg && aImg.startsWith('http')) {
+        try { targetSheet.getRange(actualRow, 11).setNote(aImg); } catch(e) {}
+      }
 
       // บันทึกลง Audit Trail
       let logSheet = ss.getSheetByName('Log_Question_Edits');
@@ -736,7 +778,9 @@ function doPost(e) {
         questionId: newQId,
         sheet: sheetName,
         row: actualRow,
-        itemNo: nextItemNo
+        itemNo: nextItemNo,
+        questionImage: qImg,
+        answerImage: aImg
       });
     }
 
@@ -1143,7 +1187,55 @@ function jsonResponse_(obj) {
 }
 
 /**
- * ดึง Image URL อย่างฉลาด (รองรับทั้ง Object CellImage, URL ตรง, และ In-Cell Image Map จาก XLSX)
+ * บันทึกรูปภาพ Base64 ลงใน Google Drive โฟลเดอร์ PLE_Quiz_Images พร้อมตั้งสิทธิ์ Public View
+ * คืนค่าเป็น Direct Image URL: https://lh3.googleusercontent.com/d/{fileId}
+ */
+function saveBase64ImageToDrive_(base64Data, sheetName, rowNum, prefix) {
+  if (!base64Data) return '';
+  const s = String(base64Data).trim();
+  if (!s.startsWith('data:image/')) {
+    return s;
+  }
+
+  try {
+    const parts = s.split(',');
+    if (parts.length < 2) return '';
+    const header = parts[0];
+    const rawBase64 = parts[1];
+    const mimeMatch = header.match(/:(.*?);/);
+    const mimeType = mimeMatch ? mimeMatch[1] : 'image/jpeg';
+    const ext = (mimeType.split('/')[1] || 'jpg').replace('jpeg', 'jpg');
+    const bytes = Utilities.base64Decode(rawBase64);
+    const fileName = `PLE_${prefix}_${sheetName.replace(/[^\w]/g, '_')}_R${rowNum}_${Date.now()}.${ext}`;
+    const blob = Utilities.newBlob(bytes, mimeType, fileName);
+
+    let folder = null;
+    const folderName = 'PLE_Quiz_Images';
+    const iter = DriveApp.getFoldersByName(folderName);
+    if (iter.hasNext()) {
+      folder = iter.next();
+    } else {
+      folder = DriveApp.createFolder(folderName);
+      try {
+        folder.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+      } catch(e) {}
+    }
+
+    const file = folder.createFile(blob);
+    try {
+      file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+    } catch(e) {}
+
+    const fileId = file.getId();
+    return `https://lh3.googleusercontent.com/d/${fileId}`;
+  } catch(err) {
+    console.error('Error saving image to Drive:', err);
+    return '';
+  }
+}
+
+/**
+ * ดึง Image URL อย่างฉลาด (รองรับทั้ง Object CellImage, สูตร IMAGE, URL ตรง, และ In-Cell Image Map จาก XLSX)
  */
 function resolveImageUrl_(val, sheetName, rowNum, colIdx, inCellImages) {
   if (!val) return (inCellImages && inCellImages[sheetName + '_r' + rowNum + '_c' + colIdx]) || '';
@@ -1166,6 +1258,12 @@ function resolveImageUrl_(val, sheetName, rowNum, colIdx, inCellImages) {
   const sVal = String(val).trim();
   if (sVal === 'CellImage') {
     return (inCellImages && inCellImages[sheetName + '_r' + rowNum + '_c' + colIdx]) || '';
+  }
+
+  // 1.5 ถ้าเป็นสูตร =IMAGE("...") หรือ IMAGE("...")
+  if (sVal.toUpperCase().indexOf('IMAGE(') !== -1) {
+    const m = sVal.match(/IMAGE\(\s*["']([^"']+)["']/i);
+    if (m && m[1]) return m[1];
   }
 
   // 2. ถ้าเป็น URL หรือ Path หรือ Base64 ตรง

@@ -4329,6 +4329,104 @@ function getQuizProgress() {
   } catch(e) { return {}; }
 }
 
+// ─── ADMIN QUESTION LOCAL OVERRIDES STORAGE (Persistent Across Page Reloads) ───
+const LS_ADMIN_OVERRIDES = 'ple_quiz_admin_overrides_v1';
+
+function getAdminOverrides() {
+  try {
+    const raw = localStorage.getItem(LS_ADMIN_OVERRIDES);
+    if (!raw) return { edits: {}, deleted: [] };
+    const parsed = JSON.parse(raw);
+    return {
+      edits: (parsed && typeof parsed.edits === 'object') ? parsed.edits : {},
+      deleted: (parsed && Array.isArray(parsed.deleted)) ? parsed.deleted : []
+    };
+  } catch(e) {
+    return { edits: {}, deleted: [] };
+  }
+}
+
+function saveAdminLocalOverride(qObj) {
+  if (!qObj || !qObj.id) return;
+  try {
+    const data = getAdminOverrides();
+    data.deleted = (data.deleted || []).filter(id => id !== qObj.id && String(id) !== String(qObj.id));
+    data.edits[qObj.id] = qObj;
+    localStorage.setItem(LS_ADMIN_OVERRIDES, JSON.stringify(data));
+  } catch(e) {
+    console.warn('saveAdminLocalOverride storage warning:', e);
+  }
+}
+
+function deleteAdminLocalOverride(qId) {
+  if (!qId) return;
+  try {
+    const data = getAdminOverrides();
+    if (data.edits && data.edits[qId]) delete data.edits[qId];
+    if (!data.deleted) data.deleted = [];
+    if (!data.deleted.includes(qId)) data.deleted.push(qId);
+    localStorage.setItem(LS_ADMIN_OVERRIDES, JSON.stringify(data));
+  } catch(e) {
+    console.warn('deleteAdminLocalOverride storage warning:', e);
+  }
+}
+
+function applyAdminLocalOverrides() {
+  try {
+    const overrides = getAdminOverrides();
+    if (!overrides) return;
+    const deletedSet = new Set(overrides.deleted || []);
+    const editsMap = overrides.edits || {};
+    const editedIds = Object.keys(editsMap);
+
+    if (deletedSet.size === 0 && editedIds.length === 0) return;
+
+    // 1. Remove deleted questions
+    if (deletedSet.size > 0) {
+      for (const cat in allQuestionsMap) {
+        if (Array.isArray(allQuestionsMap[cat])) {
+          allQuestionsMap[cat] = allQuestionsMap[cat].filter(q => q && !deletedSet.has(q.id) && !deletedSet.has(String(q.id)));
+        }
+      }
+    }
+
+    // 2. Apply edited & added questions
+    for (const qId of editedIds) {
+      const editedQ = editsMap[qId];
+      if (!editedQ) continue;
+      const targetCat = editedQ.sheetName || editedQ.category;
+      if (!targetCat) continue;
+
+      if (!allQuestionsMap[targetCat]) allQuestionsMap[targetCat] = [];
+      const catList = allQuestionsMap[targetCat];
+      const idx = catList.findIndex(item => item && (item.id === qId || String(item.id) === String(qId)));
+
+      if (idx !== -1) {
+        catList[idx] = Object.assign({}, catList[idx], editedQ);
+      } else {
+        // Clean up from other categories if moved
+        for (const otherCat in allQuestionsMap) {
+          if (otherCat !== targetCat && Array.isArray(allQuestionsMap[otherCat])) {
+            allQuestionsMap[otherCat] = allQuestionsMap[otherCat].filter(item => item && item.id !== qId && String(item.id) !== String(qId));
+          }
+        }
+        catList.push(editedQ);
+      }
+    }
+
+    // 3. Update category counts
+    if (Array.isArray(categories)) {
+      categories.forEach(c => {
+        if (allQuestionsMap[c.name]) {
+          c.count = allQuestionsMap[c.name].length;
+        }
+      });
+    }
+  } catch(err) {
+    console.error('applyAdminLocalOverrides error:', err);
+  }
+}
+
 function saveQuestionProgress(qId, selectedChoice, isCorrect, category) {
   try {
     const p = getQuizProgress();
@@ -5376,6 +5474,7 @@ function isSystemCategory(name) {
 function loadInitialData() {
   categories = (window.QUIZ_OFFLINE_CATEGORIES || []).filter(c => !isSystemCategory(c.name));
   allQuestionsMap = window.QUIZ_OFFLINE_QUESTIONS || {};
+  applyAdminLocalOverrides();
   if (typeof initQuestionValidationEngine === 'function') initQuestionValidationEngine();
   showLobby();
   if (typeof loadLeaderboardData === 'function') loadLeaderboardData();
@@ -5396,6 +5495,7 @@ async function syncDataFromSheet() {
         cat.count = allQuestionsMap[cat.name].length;
       }
     }
+    applyAdminLocalOverrides();
     buildLobby();
     showToast('🟢 ซิงค์ข้อมูลข้อสอบจาก Google Sheet สำเร็จ!');
   } catch(e) {
@@ -10183,6 +10283,7 @@ async function deleteCurrentPaperQuestion() {
   }
 
   // Optimistic local deletion
+  deleteAdminLocalOverride(qId);
   if (typeof allQuestionsMap !== 'undefined' && allQuestionsMap[sheetName]) {
     allQuestionsMap[sheetName] = allQuestionsMap[sheetName].filter(item => item && item.id !== qId && String(item.id) !== String(qId));
   }
@@ -10351,6 +10452,8 @@ async function savePaperEditorData() {
         const actualRow = res?.row || ((allQuestionsMap[selectedCat]?.length || 0) + 3);
         const actualItemNo = res?.itemNo || itemNo || ((allQuestionsMap[selectedCat]?.length || 0) + 1);
         const newQId = res?.questionId || `${selectedCat}::${actualRow}`;
+        const finalQImg = res?.questionImage || questionImg;
+        const finalAImg = res?.answerImage || answerImg;
 
         const newQObj = {
           id: newQId,
@@ -10363,12 +10466,12 @@ async function savePaperEditorData() {
           caseType: caseType,
           caseStem: caseStem,
           question: questionText,
-          questionImage: questionImg,
+          questionImage: finalQImg,
           choices: choices,
           answer: ansNum,
           correctAnswer: ansNum,
           explanation: explanation,
-          answerImage: answerImg,
+          answerImage: finalAImg,
           subtopic: subtopic,
           subtopics: subtopic.split(/[,;\n]/).map(s => s.trim()).filter(Boolean),
           track: track,
@@ -10379,6 +10482,7 @@ async function savePaperEditorData() {
 
         if (!allQuestionsMap[selectedCat]) allQuestionsMap[selectedCat] = [];
         allQuestionsMap[selectedCat].push(newQObj);
+        saveAdminLocalOverride(newQObj);
 
         if (typeof categories !== 'undefined' && Array.isArray(categories)) {
           const catObj = categories.find(c => c.name === selectedCat);
@@ -10436,6 +10540,11 @@ async function savePaperEditorData() {
       try {
         const res = await sendGasPostRequest(payload);
         const newQId = res?.newQuestionId || `${selectedCat}::${(allQuestionsMap[selectedCat]?.length || 0) + 3}`;
+        const finalQImg = res?.questionImage || questionImg;
+        const finalAImg = res?.answerImage || answerImg;
+
+        // Remove old question from local overrides
+        deleteAdminLocalOverride(qId);
 
         // Remove from originalSheet, add to selectedCat
         if (allQuestionsMap[originalSheet]) {
@@ -10447,12 +10556,17 @@ async function savePaperEditorData() {
           sheetName: selectedCat,
           category: selectedCat,
           itemNo: res?.destItemNo || itemNo,
-          rowIndex: res?.destRow || ((allQuestionsMap[selectedCat]?.length || 0) + 3)
+          rowIndex: res?.destRow || ((allQuestionsMap[selectedCat]?.length || 0) + 3),
+          questionImage: finalQImg,
+          answerImage: finalAImg
         });
         patchQuestionObject(movedQObj);
+        movedQObj.questionImage = finalQImg;
+        movedQObj.answerImage = finalAImg;
 
         if (!allQuestionsMap[selectedCat]) allQuestionsMap[selectedCat] = [];
         allQuestionsMap[selectedCat].push(movedQObj);
+        saveAdminLocalOverride(movedQObj);
 
         // Adjust counts
         if (typeof categories !== 'undefined' && Array.isArray(categories)) {
@@ -10515,11 +10629,14 @@ async function savePaperEditorData() {
       const found = activeQuizQuestions.find(item => item && (item.id === qId || String(item.id) === String(qId)));
       if (found) patchQuestionObject(found);
     }
+    let foundInMap = null;
     if (typeof allQuestionsMap !== 'undefined' && allQuestionsMap[originalSheet]) {
-      const found = allQuestionsMap[originalSheet].find(item => item && (item.id === qId || String(item.id) === String(qId)));
-      if (found) patchQuestionObject(found);
+      foundInMap = allQuestionsMap[originalSheet].find(item => item && (item.id === qId || String(item.id) === String(qId)));
+      if (foundInMap) patchQuestionObject(foundInMap);
     }
 
+    // Persist immediately in localStorage so changes survive page reload
+    saveAdminLocalOverride(currentEditingQuestion || foundInMap);
     refreshAppViewsAfterQuestionEdit();
 
     if (saveBtn) {
@@ -10530,6 +10647,16 @@ async function savePaperEditorData() {
     try {
       const res = await sendGasPostRequest(payload);
       if (res && res.success) {
+        if (res.questionImage) {
+          if (currentEditingQuestion) currentEditingQuestion.questionImage = res.questionImage;
+          if (foundInMap) foundInMap.questionImage = res.questionImage;
+        }
+        if (res.answerImage) {
+          if (currentEditingQuestion) currentEditingQuestion.answerImage = res.answerImage;
+          if (foundInMap) foundInMap.answerImage = res.answerImage;
+        }
+        saveAdminLocalOverride(currentEditingQuestion || foundInMap);
+        refreshAppViewsAfterQuestionEdit();
         showToast('✅ อัปเดต Google Sheet และระบบสำเร็จเรียบร้อย!');
         closePaperEditorModal();
       } else {
