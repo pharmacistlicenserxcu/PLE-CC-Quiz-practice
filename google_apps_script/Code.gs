@@ -521,7 +521,7 @@ function doPost(e) {
         return jsonResponse_({ success: false, error: 'เลขแถวไม่ถูกต้อง (ต้องเป็นแถวที่ 3 ขึ้นไป): ' + rowNum });
       }
 
-      const targetSheet = ss.getSheetByName(sheetName);
+      const targetSheet = findSheetSafely_(ss, sheetName);
       if (!targetSheet) {
         return jsonResponse_({ success: false, error: 'ไม่พบชีตเป้าหมาย: ' + sheetName });
       }
@@ -642,7 +642,7 @@ function doPost(e) {
         return jsonResponse_({ success: false, error: 'กรุณาระบุชื่อชีต / หมวดวิชาเป้าหมาย' });
       }
 
-      const targetSheet = ss.getSheetByName(sheetName);
+      const targetSheet = findSheetSafely_(ss, sheetName);
       if (!targetSheet) {
         return jsonResponse_({ success: false, error: 'ไม่พบชีตเป้าหมาย: ' + sheetName });
       }
@@ -758,7 +758,7 @@ function doPost(e) {
         return jsonResponse_({ success: false, error: 'เลขแถวไม่ถูกต้อง (ต้อง >= 3): ' + rowNum });
       }
 
-      const targetSheet = ss.getSheetByName(sheetName);
+      const targetSheet = findSheetSafely_(ss, sheetName);
       if (!targetSheet) {
         return jsonResponse_({ success: false, error: 'ไม่พบชีตเป้าหมาย: ' + sheetName });
       }
@@ -803,8 +803,8 @@ function doPost(e) {
     // ════════════════════════════════════════════════════════════════════════
     if (action === 'moveQuestion') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
-      const qId = String(data.questionId || '').trim();
-      const targetSheetName = String(data.targetSheetName || '').trim();
+      const qId = String(data.questionId || data.sourceQuestionId || '').trim();
+      const targetSheetName = String(data.targetSheetName || data.destSheetName || '').trim();
 
       if (!qId || !qId.includes('::') || !targetSheetName) {
         return jsonResponse_({ success: false, error: 'ข้อมูลสำหรับย้ายหมวดไม่ครบถ้วน' });
@@ -818,8 +818,8 @@ function doPost(e) {
         return jsonResponse_({ success: false, error: 'ชีตปลายทางตรงกับชีตต้นทาง ไม่จำเป็นต้องย้าย' });
       }
 
-      const sourceSheet = ss.getSheetByName(sourceSheetName);
-      const destSheet = ss.getSheetByName(targetSheetName);
+      const sourceSheet = findSheetSafely_(ss, sourceSheetName);
+      const destSheet = findSheetSafely_(ss, targetSheetName);
 
       if (!sourceSheet || !destSheet) {
         return jsonResponse_({ success: false, error: 'ไม่พบชีตต้นทางหรือปลายทาง' });
@@ -1110,6 +1110,32 @@ function doPost(e) {
   } catch (err) {
     return jsonResponse_({ success: false, error: err.toString() });
   }
+}
+
+function findSheetSafely_(ss, sheetName) {
+  if (!sheetName) return null;
+  const direct = ss.getSheetByName(sheetName);
+  if (direct) return direct;
+  
+  const allSheets = ss.getSheets();
+  const cleanName = String(sheetName).trim().toLowerCase();
+  
+  // 1. Try matching by exact number prefix (e.g. "1." or "12.")
+  const prefixMatch = cleanName.match(/^(\d+)\./);
+  if (prefixMatch) {
+    const numPrefix = prefixMatch[1] + '.';
+    const match = allSheets.find(s => s.getName().trim().toLowerCase().startsWith(numPrefix));
+    if (match) return match;
+  }
+  
+  // 2. Try substring match
+  const subMatch = allSheets.find(s => {
+    const sn = s.getName().trim().toLowerCase();
+    return sn.includes(cleanName) || cleanName.includes(sn);
+  });
+  if (subMatch) return subMatch;
+  
+  return null;
 }
 
 function jsonResponse_(obj) {
