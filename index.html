@@ -9878,6 +9878,32 @@ function openPaperEditorModalByQuestionId(qId) {
   openPaperEditorModal(q);
 }
 
+function resetPaperEditorSaveButtonUI() {
+  const saveBtn = document.getElementById('btnSavePaperEditor');
+  if (saveBtn) {
+    saveBtn.disabled = false;
+    saveBtn.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg><span id="btnSavePaperEditorText">💾 บันทึก & ซิงค์ลง Google Sheet</span>`;
+  }
+}
+
+function refreshAppViewsAfterQuestionEdit() {
+  try {
+    if (typeof currentAppMode === 'string' && currentAppMode === 'quiz') {
+      if (typeof practiceViewStyle === 'string' && practiceViewStyle === 'scroll' && typeof renderScrollPractice === 'function') {
+        renderScrollPractice();
+      } else if (typeof renderCurrentQuestion === 'function') {
+        renderCurrentQuestion();
+      }
+    } else if (typeof currentAppMode === 'string' && currentAppMode === 'browse' && typeof renderBrowseList === 'function') {
+      renderBrowseList();
+    } else if (typeof currentAppMode === 'string' && currentAppMode === 'examReview' && typeof renderExamReview === 'function') {
+      renderExamReview();
+    }
+  } catch (err) {
+    console.warn('refreshAppViewsAfterQuestionEdit non-fatal error:', err);
+  }
+}
+
 function openPaperEditorForNewQuestion(defaultCat) {
   if (!isUserAllowedAdmin(currentUser?.username)) {
     showToast('⚠️ สิทธิ์ Admin เท่านั้นที่สามารถเพิ่มข้อสอบได้');
@@ -9978,6 +10004,7 @@ function openPaperEditorForNewQuestion(defaultCat) {
   }
 
   setupPaperPasteZones();
+  resetPaperEditorSaveButtonUI();
 
   const modal = document.getElementById('adminPaperEditorModal');
   if (modal) {
@@ -9991,13 +10018,15 @@ function openPaperEditorModal(q) {
   if (!q) return;
   try {
     currentEditingQuestion = q;
+    resetPaperEditorSaveButtonUI();
 
     // Header badges & identifiers
-    const catName = q.sheetName || q.category || '';
+    const catName = q.sheetName || q.category || (q.id && q.id.includes('::') ? q.id.split('::')[0].trim() : '') || '';
     populatePaperCategorySelect(catName);
 
+    const rowNum = q.rowIndex || (q.id && q.id.includes('::') ? parseInt(q.id.split('::')[1], 10) : null);
     const rBadge = document.getElementById('peRowNumBadge');
-    if (rBadge) rBadge.textContent = q.rowIndex || '-';
+    if (rBadge) rBadge.textContent = (rowNum && !isNaN(rowNum)) ? rowNum : '-';
     const iBadge = document.getElementById('peItemNoBadge');
     if (iBadge) iBadge.textContent = q.itemNo || '-';
     const tBadge = document.getElementById('peTrackBadge');
@@ -10050,8 +10079,8 @@ function openPaperEditorModal(q) {
       if (choiceInput) choiceInput.value = val;
     }
 
-    // Answer selection
-    const rawAns = q.correctAnswer;
+    // Answer selection (support both correctAnswer and answer)
+    const rawAns = (q.correctAnswer !== undefined) ? q.correctAnswer : q.answer;
     let ansNum = 1;
     if (typeof rawAns === 'number') {
       ansNum = rawAns;
@@ -10121,6 +10150,7 @@ function closePaperEditorModal() {
   const modal = document.getElementById('adminPaperEditorModal');
   if (modal) modal.classList.remove('show');
   currentEditingQuestion = null;
+  resetPaperEditorSaveButtonUI();
 }
 
 async function deleteCurrentPaperQuestion() {
@@ -10135,7 +10165,10 @@ async function deleteCurrentPaperQuestion() {
     return;
   }
 
-  const sheetName = currentEditingQuestion?.sheetName || currentEditingQuestion?.category || '';
+  let sheetName = currentEditingQuestion?.sheetName || currentEditingQuestion?.category || '';
+  if (!sheetName && qId && qId.includes('::')) {
+    sheetName = qId.split('::')[0].trim();
+  }
   const qSnippet = (currentEditingQuestion?.question || '').substring(0, 80);
 
   if (!confirm(`⚠️ ยืนยันการลบข้อสอบข้อนี้หรือไม่?\n\nหมวด: ${sheetName}\nรหัส: ${qId}\nโจทย์: ${qSnippet}...\n\n*ระบบจะลบข้อสอบออกจาก Google Sheet และบันทึกประวัติการลบไว้ในชีต Log*`)) {
@@ -10164,16 +10197,12 @@ async function deleteCurrentPaperQuestion() {
   closePaperEditorModal();
   showToast('🗑️ ลบข้อสอบออกจากระบบแล้ว กำลังซิงค์กับ Google Sheet...');
 
-  if (activeView === 'quiz' && currentMode === 'single') {
+  if (typeof currentQuestionIndex === 'number' && Array.isArray(activeQuizQuestions)) {
     if (currentQuestionIndex >= activeQuizQuestions.length) {
       currentQuestionIndex = Math.max(0, activeQuizQuestions.length - 1);
     }
-    renderCurrentQuestion();
-  } else if (activeView === 'quiz' && currentMode === 'scroll') {
-    renderScrollPractice();
-  } else if (activeView === 'browse') {
-    renderBrowseList();
   }
+  refreshAppViewsAfterQuestionEdit();
 
   try {
     const payload = {
@@ -10207,120 +10236,97 @@ async function savePaperEditorData() {
     return;
   }
 
-  const qId = document.getElementById('peQuestionIdHidden')?.value || (currentEditingQuestion?.id || '');
-  const isNewQuestion = (!qId || qId === 'new');
-
-  const selectedCat = document.getElementById('peCategorySelect')?.value || currentEditingQuestion?.sheetName || currentEditingQuestion?.category || currentCategory || '';
-  const originalSheet = currentEditingQuestion?.sheetName || currentEditingQuestion?.category || '';
-  const isMoveCategory = (!isNewQuestion && originalSheet && selectedCat && selectedCat !== originalSheet);
-
-  const rowIndex = parseInt(currentEditingQuestion?.rowIndex, 10);
-  const itemNo = (document.getElementById('peItemNoInput')?.value || '').trim();
-
-  const hasCase = document.getElementById('peIsCaseClusterCheckbox')?.checked || false;
-  const caseGroupId = hasCase ? (document.getElementById('peCaseGroupIdInput')?.value || '').trim() : '';
-  const caseOrder = hasCase ? (document.getElementById('peCaseOrderInput')?.value || '').trim() : '';
-  const caseType = hasCase ? (document.getElementById('peCaseTypeSelect')?.value || '').trim() : '';
-  const caseStem = hasCase ? (document.getElementById('peCaseStemInput')?.value || '').trim() : '';
-
-  let questionText = (document.getElementById('peQuestionInput')?.value || '').trim();
-  const questionImg = (document.getElementById('peQuestionImgInput')?.value || '').trim();
-
-  if (!questionText) {
-    showToast('⚠️ กรุณาระบุข้อความโจทย์ก่อนบันทึก');
-    return;
-  }
-
-  const choices = [];
-  for (let i = 1; i <= 5; i++) {
-    choices.push((document.getElementById('peChoiceInput_' + i)?.value || '').trim());
-  }
-
-  const ansNum = parseInt(document.getElementById('peCorrectAnswerInput')?.value || '1', 10);
-  let explanation = (document.getElementById('peExplanationInput')?.value || '').trim();
-  const answerImg = (document.getElementById('peAnswerImgInput')?.value || '').trim();
-
-  const subtopic = (document.getElementById('peSubtopicInput')?.value || '').trim();
-  const track = (document.getElementById('peTrackSelect')?.value || 'Clinic').trim();
-  const examType = (document.getElementById('peExamTypeInput')?.value || 'General').trim();
-  const examYear = (document.getElementById('peExamYearInput')?.value || '').trim();
-  const note = (document.getElementById('peNoteInput')?.value || '').trim();
-
-  // Rule 3.6 Cleaning: Strip double asterisks ** and convert <br> to \n
-  const stripMarkdownAsterisks = (txt) => {
-    if (!txt) return '';
-    return txt.replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n');
-  };
-
-  questionText = stripMarkdownAsterisks(questionText);
-  explanation = stripMarkdownAsterisks(explanation);
-
-  const patchQuestionObject = (target) => {
-    if (!target) return;
-    target.itemNo = itemNo;
-    target.caseGroupId = caseGroupId;
-    target.caseOrder = caseOrder;
-    target.caseType = caseType;
-    target.caseStem = caseStem;
-    target.question = questionText;
-    target.questionImage = questionImg;
-    target.choices = choices;
-    target.correctAnswer = ansNum;
-    target.explanation = explanation;
-    target.answerImage = answerImg;
-    target.subtopic = subtopic;
-    target.subtopics = subtopic.split(/[,;\n]/).map(s => s.trim()).filter(Boolean);
-    target.track = track;
-    target.examType = examType;
-    target.examYear = examYear;
-    target.note = note;
-  };
-
   const saveBtn = document.getElementById('btnSavePaperEditor');
   const originalBtnHtml = saveBtn ? saveBtn.innerHTML : '';
 
-  // CASE 1: ➕ เพิ่มข้อสอบใหม่ (Add New Question)
-  if (isNewQuestion) {
-    if (saveBtn) {
-      saveBtn.disabled = true;
-      saveBtn.innerHTML = '⏳ กำลังเพิ่มข้อสอบลง Google Sheet...';
+  try {
+    const qId = document.getElementById('peQuestionIdHidden')?.value || (currentEditingQuestion?.id || '');
+    const isNewQuestion = (!qId || qId === 'new');
+
+    const selectedCat = document.getElementById('peCategorySelect')?.value || currentEditingQuestion?.sheetName || currentEditingQuestion?.category || currentCategory || '';
+    let originalSheet = currentEditingQuestion?.sheetName || currentEditingQuestion?.category || '';
+    if (!originalSheet && qId && qId.includes('::')) {
+      originalSheet = qId.split('::')[0].trim();
+    }
+    const isMoveCategory = (!isNewQuestion && originalSheet && selectedCat && selectedCat !== originalSheet);
+
+    let rowIndex = parseInt(currentEditingQuestion?.rowIndex, 10);
+    if ((isNaN(rowIndex) || rowIndex < 3) && qId && qId.includes('::')) {
+      rowIndex = parseInt(qId.split('::')[1], 10);
+    }
+    const itemNo = (document.getElementById('peItemNoInput')?.value || '').trim();
+
+    const hasCase = document.getElementById('peIsCaseClusterCheckbox')?.checked || false;
+    const caseGroupId = hasCase ? (document.getElementById('peCaseGroupIdInput')?.value || '').trim() : '';
+    const caseOrder = hasCase ? (document.getElementById('peCaseOrderInput')?.value || '').trim() : '';
+    const caseType = hasCase ? (document.getElementById('peCaseTypeSelect')?.value || '').trim() : '';
+    const caseStem = hasCase ? (document.getElementById('peCaseStemInput')?.value || '').trim() : '';
+
+    let questionText = (document.getElementById('peQuestionInput')?.value || '').trim();
+    const questionImg = (document.getElementById('peQuestionImgInput')?.value || '').trim();
+
+    if (!questionText) {
+      showToast('⚠️ กรุณาระบุข้อความโจทย์ก่อนบันทึก');
+      return;
     }
 
-    const payload = {
-      action: 'addQuestion',
-      sheetName: selectedCat,
-      itemNo: itemNo,
-      caseGroupId: caseGroupId,
-      caseOrder: caseOrder,
-      caseType: caseType,
-      caseStem: caseStem,
-      question: questionText,
-      questionImage: questionImg,
-      choices: choices,
-      correctAnswer: ansNum,
-      explanation: explanation,
-      answerImage: answerImg,
-      subtopic: subtopic,
-      track: track,
-      note: note,
-      examType: examType,
-      examYear: examYear,
-      editorUsername: currentUser?.username || 'admin',
-      editorName: currentUser?.name || 'Administrator'
+    const choices = [];
+    for (let i = 1; i <= 5; i++) {
+      choices.push((document.getElementById('peChoiceInput_' + i)?.value || '').trim());
+    }
+
+    const ansNum = parseInt(document.getElementById('peCorrectAnswerInput')?.value || '1', 10);
+    let explanation = (document.getElementById('peExplanationInput')?.value || '').trim();
+    const answerImg = (document.getElementById('peAnswerImgInput')?.value || '').trim();
+
+    const subtopic = (document.getElementById('peSubtopicInput')?.value || '').trim();
+    const track = (document.getElementById('peTrackSelect')?.value || 'Clinic').trim();
+    const examType = (document.getElementById('peExamTypeInput')?.value || 'General').trim();
+    const examYear = (document.getElementById('peExamYearInput')?.value || '').trim();
+    const note = (document.getElementById('peNoteInput')?.value || '').trim();
+
+    // Rule 3.6 Cleaning: Strip double asterisks ** and convert <br> to \n
+    const stripMarkdownAsterisks = (txt) => {
+      if (!txt) return '';
+      return txt.replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n');
     };
 
-    try {
-      const res = await sendGasPostRequest(payload);
-      const actualRow = res?.row || ((allQuestionsMap[selectedCat]?.length || 0) + 3);
-      const actualItemNo = res?.itemNo || itemNo || ((allQuestionsMap[selectedCat]?.length || 0) + 1);
-      const newQId = res?.questionId || `${selectedCat}::${actualRow}`;
+    questionText = stripMarkdownAsterisks(questionText);
+    explanation = stripMarkdownAsterisks(explanation);
 
-      const newQObj = {
-        id: newQId,
-        itemNo: actualItemNo,
-        rowIndex: actualRow,
+    const patchQuestionObject = (target) => {
+      if (!target) return;
+      target.itemNo = itemNo;
+      target.caseGroupId = caseGroupId;
+      target.caseOrder = caseOrder;
+      target.caseType = caseType;
+      target.caseStem = caseStem;
+      target.question = questionText;
+      target.questionImage = questionImg;
+      target.choices = choices;
+      target.answer = ansNum;
+      target.correctAnswer = ansNum;
+      target.explanation = explanation;
+      target.answerImage = answerImg;
+      target.subtopic = subtopic;
+      target.subtopics = subtopic.split(/[,;\n]/).map(s => s.trim()).filter(Boolean);
+      target.track = track;
+      target.examType = examType;
+      target.examYear = examYear;
+      target.note = note;
+    };
+
+    // CASE 1: ➕ เพิ่มข้อสอบใหม่ (Add New Question)
+    if (isNewQuestion) {
+      if (saveBtn) {
+        saveBtn.disabled = true;
+        saveBtn.innerHTML = '⏳ กำลังเพิ่มข้อสอบลง Google Sheet...';
+      }
+
+      const payload = {
+        action: 'addQuestion',
         sheetName: selectedCat,
-        category: selectedCat,
+        itemNo: itemNo,
         caseGroupId: caseGroupId,
         caseOrder: caseOrder,
         caseType: caseType,
@@ -10332,59 +10338,158 @@ async function savePaperEditorData() {
         explanation: explanation,
         answerImage: answerImg,
         subtopic: subtopic,
-        subtopics: subtopic.split(/[,;\n]/).map(s => s.trim()).filter(Boolean),
         track: track,
+        note: note,
         examType: examType,
         examYear: examYear,
-        note: note
+        editorUsername: currentUser?.username || 'admin',
+        editorName: currentUser?.name || 'Administrator'
       };
 
-      if (!allQuestionsMap[selectedCat]) allQuestionsMap[selectedCat] = [];
-      allQuestionsMap[selectedCat].push(newQObj);
+      try {
+        const res = await sendGasPostRequest(payload);
+        const actualRow = res?.row || ((allQuestionsMap[selectedCat]?.length || 0) + 3);
+        const actualItemNo = res?.itemNo || itemNo || ((allQuestionsMap[selectedCat]?.length || 0) + 1);
+        const newQId = res?.questionId || `${selectedCat}::${actualRow}`;
 
-      if (typeof categories !== 'undefined' && Array.isArray(categories)) {
-        const catObj = categories.find(c => c.name === selectedCat);
-        if (catObj) catObj.count = (catObj.count || 0) + 1;
+        const newQObj = {
+          id: newQId,
+          itemNo: actualItemNo,
+          rowIndex: actualRow,
+          sheetName: selectedCat,
+          category: selectedCat,
+          caseGroupId: caseGroupId,
+          caseOrder: caseOrder,
+          caseType: caseType,
+          caseStem: caseStem,
+          question: questionText,
+          questionImage: questionImg,
+          choices: choices,
+          answer: ansNum,
+          correctAnswer: ansNum,
+          explanation: explanation,
+          answerImage: answerImg,
+          subtopic: subtopic,
+          subtopics: subtopic.split(/[,;\n]/).map(s => s.trim()).filter(Boolean),
+          track: track,
+          examType: examType,
+          examYear: examYear,
+          note: note
+        };
+
+        if (!allQuestionsMap[selectedCat]) allQuestionsMap[selectedCat] = [];
+        allQuestionsMap[selectedCat].push(newQObj);
+
+        if (typeof categories !== 'undefined' && Array.isArray(categories)) {
+          const catObj = categories.find(c => c.name === selectedCat);
+          if (catObj) catObj.count = (catObj.count || 0) + 1;
+        }
+
+        if (currentCategory === selectedCat && Array.isArray(activeQuizQuestions)) {
+          activeQuizQuestions.push(newQObj);
+        }
+
+        showToast('✅ เพิ่มข้อสอบใหม่ในหมวด ' + selectedCat + ' สำเร็จแล้ว!');
+        closePaperEditorModal();
+        refreshAppViewsAfterQuestionEdit();
+      } catch (err) {
+        console.error('Error adding question:', err);
+        showToast('⚠️ เพิ่มข้อสอบไม่สำเร็จ: ' + err.message);
+      } finally {
+        resetPaperEditorSaveButtonUI();
       }
+      return;
+    }
 
-      if (currentCategory === selectedCat && Array.isArray(activeQuizQuestions)) {
-        activeQuizQuestions.push(newQObj);
-      }
-
-      showToast('✅ เพิ่มข้อสอบใหม่ในหมวด ' + selectedCat + ' สำเร็จแล้ว!');
-      closePaperEditorModal();
-
-      if (activeView === 'quiz' && currentMode === 'single') {
-        renderCurrentQuestion();
-      } else if (activeView === 'quiz' && currentMode === 'scroll') {
-        renderScrollPractice();
-      } else if (activeView === 'browse') {
-        renderBrowseList();
-      }
-    } catch (err) {
-      console.error('Error adding question:', err);
-      showToast('⚠️ เพิ่มข้อสอบไม่สำเร็จ: ' + err.message);
-    } finally {
+    // CASE 2: 🔀 ย้ายหมวดวิชา / ชีต (Move Question to another Category)
+    if (isMoveCategory) {
       if (saveBtn) {
-        saveBtn.disabled = false;
-        saveBtn.innerHTML = originalBtnHtml;
+        saveBtn.disabled = true;
+        saveBtn.innerHTML = '⏳ กำลังย้ายหมวดข้อสอบใน Google Sheet...';
       }
-    }
-    return;
-  }
 
-  // CASE 2: 🔀 ย้ายหมวดวิชา / ชีต (Move Question to another Category)
-  if (isMoveCategory) {
-    if (saveBtn) {
-      saveBtn.disabled = true;
-      saveBtn.innerHTML = '⏳ กำลังย้ายหมวดข้อสอบใน Google Sheet...';
+      const payload = {
+        action: 'moveQuestion',
+        sourceQuestionId: qId,
+        sourceSheetName: originalSheet,
+        destSheetName: selectedCat,
+        itemNo: itemNo,
+        caseGroupId: caseGroupId,
+        caseOrder: caseOrder,
+        caseType: caseType,
+        caseStem: caseStem,
+        question: questionText,
+        questionImage: questionImg,
+        choices: choices,
+        correctAnswer: ansNum,
+        explanation: explanation,
+        answerImage: answerImg,
+        subtopic: subtopic,
+        track: track,
+        note: note,
+        examType: examType,
+        examYear: examYear,
+        editorUsername: currentUser?.username || 'admin',
+        editorName: currentUser?.name || 'Administrator'
+      };
+
+      try {
+        const res = await sendGasPostRequest(payload);
+        const newQId = res?.newQuestionId || `${selectedCat}::${(allQuestionsMap[selectedCat]?.length || 0) + 3}`;
+
+        // Remove from originalSheet, add to selectedCat
+        if (allQuestionsMap[originalSheet]) {
+          allQuestionsMap[originalSheet] = allQuestionsMap[originalSheet].filter(item => item && item.id !== qId && String(item.id) !== String(qId));
+        }
+
+        const movedQObj = Object.assign({}, currentEditingQuestion || {}, {
+          id: newQId,
+          sheetName: selectedCat,
+          category: selectedCat,
+          itemNo: res?.destItemNo || itemNo,
+          rowIndex: res?.destRow || ((allQuestionsMap[selectedCat]?.length || 0) + 3)
+        });
+        patchQuestionObject(movedQObj);
+
+        if (!allQuestionsMap[selectedCat]) allQuestionsMap[selectedCat] = [];
+        allQuestionsMap[selectedCat].push(movedQObj);
+
+        // Adjust counts
+        if (typeof categories !== 'undefined' && Array.isArray(categories)) {
+          const srcCat = categories.find(c => c.name === originalSheet);
+          if (srcCat && srcCat.count > 0) srcCat.count--;
+          const dstCat = categories.find(c => c.name === selectedCat);
+          if (dstCat) dstCat.count = (dstCat.count || 0) + 1;
+        }
+
+        if (currentCategory === originalSheet && Array.isArray(activeQuizQuestions)) {
+          activeQuizQuestions = activeQuizQuestions.filter(item => item && item.id !== qId && String(item.id) !== String(qId));
+        }
+
+        showToast('✅ ย้ายข้อสอบไปยังหมวด ' + selectedCat + ' สำเร็จแล้ว!');
+        closePaperEditorModal();
+
+        if (typeof currentQuestionIndex === 'number' && Array.isArray(activeQuizQuestions)) {
+          if (currentQuestionIndex >= activeQuizQuestions.length) {
+            currentQuestionIndex = Math.max(0, activeQuizQuestions.length - 1);
+          }
+        }
+        refreshAppViewsAfterQuestionEdit();
+      } catch (err) {
+        console.error('Error moving question:', err);
+        showToast('⚠️ ย้ายข้อสอบไม่สำเร็จ: ' + err.message);
+      } finally {
+        resetPaperEditorSaveButtonUI();
+      }
+      return;
     }
 
+    // CASE 3: ✏️ อัปเดตข้อสอบในหมวดเดิม (Update Question & Subtopic)
     const payload = {
-      action: 'moveQuestion',
-      sourceQuestionId: qId,
-      sourceSheetName: originalSheet,
-      destSheetName: selectedCat,
+      action: 'updateQuestion',
+      questionId: qId,
+      sheetName: originalSheet,
+      rowIndex: rowIndex,
       itemNo: itemNo,
       caseGroupId: caseGroupId,
       caseOrder: caseOrder,
@@ -10405,132 +10510,44 @@ async function savePaperEditorData() {
       editorName: currentUser?.name || 'Administrator'
     };
 
+    if (currentEditingQuestion) patchQuestionObject(currentEditingQuestion);
+    if (typeof activeQuizQuestions !== 'undefined' && Array.isArray(activeQuizQuestions)) {
+      const found = activeQuizQuestions.find(item => item && (item.id === qId || String(item.id) === String(qId)));
+      if (found) patchQuestionObject(found);
+    }
+    if (typeof allQuestionsMap !== 'undefined' && allQuestionsMap[originalSheet]) {
+      const found = allQuestionsMap[originalSheet].find(item => item && (item.id === qId || String(item.id) === String(qId)));
+      if (found) patchQuestionObject(found);
+    }
+
+    refreshAppViewsAfterQuestionEdit();
+
+    if (saveBtn) {
+      saveBtn.disabled = true;
+      saveBtn.innerHTML = '⏳ กำลังส่งข้อมูลไปยัง Google Sheets...';
+    }
+
     try {
       const res = await sendGasPostRequest(payload);
-      const newQId = res?.newQuestionId || `${selectedCat}::${(allQuestionsMap[selectedCat]?.length || 0) + 3}`;
-
-      // Remove from originalSheet, add to selectedCat
-      if (allQuestionsMap[originalSheet]) {
-        allQuestionsMap[originalSheet] = allQuestionsMap[originalSheet].filter(item => item && item.id !== qId && String(item.id) !== String(qId));
-      }
-
-      const movedQObj = Object.assign({}, currentEditingQuestion || {}, {
-        id: newQId,
-        sheetName: selectedCat,
-        category: selectedCat,
-        itemNo: res?.destItemNo || itemNo,
-        rowIndex: res?.destRow || ((allQuestionsMap[selectedCat]?.length || 0) + 3)
-      });
-      patchQuestionObject(movedQObj);
-
-      if (!allQuestionsMap[selectedCat]) allQuestionsMap[selectedCat] = [];
-      allQuestionsMap[selectedCat].push(movedQObj);
-
-      // Adjust counts
-      if (typeof categories !== 'undefined' && Array.isArray(categories)) {
-        const srcCat = categories.find(c => c.name === originalSheet);
-        if (srcCat && srcCat.count > 0) srcCat.count--;
-        const dstCat = categories.find(c => c.name === selectedCat);
-        if (dstCat) dstCat.count = (dstCat.count || 0) + 1;
-      }
-
-      if (currentCategory === originalSheet && Array.isArray(activeQuizQuestions)) {
-        activeQuizQuestions = activeQuizQuestions.filter(item => item && item.id !== qId && String(item.id) !== String(qId));
-      }
-
-      showToast('✅ ย้ายข้อสอบไปยังหมวด ' + selectedCat + ' สำเร็จแล้ว!');
-      closePaperEditorModal();
-
-      if (activeView === 'quiz' && currentMode === 'single') {
-        if (currentQuestionIndex >= activeQuizQuestions.length) {
-          currentQuestionIndex = Math.max(0, activeQuizQuestions.length - 1);
-        }
-        renderCurrentQuestion();
-      } else if (activeView === 'quiz' && currentMode === 'scroll') {
-        renderScrollPractice();
-      } else if (activeView === 'browse') {
-        renderBrowseList();
+      if (res && res.success) {
+        showToast('✅ อัปเดต Google Sheet และระบบสำเร็จเรียบร้อย!');
+        closePaperEditorModal();
+      } else {
+        console.warn('Google Apps Script response warning:', res);
+        showToast('⚠️ บันทึกในระบบเรียบร้อย (ระบบชีตส่งข้อความ: ' + (res?.message || 'บันทึกสำเร็จ') + ')');
+        closePaperEditorModal();
       }
     } catch (err) {
-      console.error('Error moving question:', err);
-      showToast('⚠️ ย้ายข้อสอบไม่สำเร็จ: ' + err.message);
+      console.error('Error saving question to Google Sheet:', err);
+      showToast('⚠️ บันทึกในระบบเว็บแล้ว แต่การเชื่อมต่อ Google Sheets ขัดข้อง: ' + err.message);
+      closePaperEditorModal();
     } finally {
-      if (saveBtn) {
-        saveBtn.disabled = false;
-        saveBtn.innerHTML = originalBtnHtml;
-      }
+      resetPaperEditorSaveButtonUI();
     }
-    return;
-  }
-
-  // CASE 3: ✏️ อัปเดตข้อสอบในหมวดเดิม (Update Question & Subtopic)
-  const payload = {
-    action: 'updateQuestion',
-    questionId: qId,
-    sheetName: originalSheet,
-    rowIndex: rowIndex,
-    itemNo: itemNo,
-    caseGroupId: caseGroupId,
-    caseOrder: caseOrder,
-    caseType: caseType,
-    caseStem: caseStem,
-    question: questionText,
-    questionImage: questionImg,
-    choices: choices,
-    correctAnswer: ansNum,
-    explanation: explanation,
-    answerImage: answerImg,
-    subtopic: subtopic,
-    track: track,
-    note: note,
-    examType: examType,
-    examYear: examYear,
-    editorUsername: currentUser?.username || 'admin',
-    editorName: currentUser?.name || 'Administrator'
-  };
-
-  if (currentEditingQuestion) patchQuestionObject(currentEditingQuestion);
-  if (typeof activeQuizQuestions !== 'undefined' && Array.isArray(activeQuizQuestions)) {
-    const found = activeQuizQuestions.find(item => item && (item.id === qId || String(item.id) === String(qId)));
-    if (found) patchQuestionObject(found);
-  }
-  if (typeof allQuestionsMap !== 'undefined' && allQuestionsMap[originalSheet]) {
-    const found = allQuestionsMap[originalSheet].find(item => item && (item.id === qId || String(item.id) === String(qId)));
-    if (found) patchQuestionObject(found);
-  }
-
-  if (activeView === 'quiz' && currentMode === 'single') {
-    renderCurrentQuestion();
-  } else if (activeView === 'quiz' && currentMode === 'scroll') {
-    renderScrollPractice();
-  } else if (activeView === 'browse') {
-    renderBrowseList();
-  }
-
-  if (saveBtn) {
-    saveBtn.disabled = true;
-    saveBtn.innerHTML = '⏳ กำลังส่งข้อมูลไปยัง Google Sheets...';
-  }
-
-  try {
-    const res = await sendGasPostRequest(payload);
-    if (res && res.success) {
-      showToast('✅ อัปเดต Google Sheet และระบบสำเร็จเรียบร้อย!');
-      closePaperEditorModal();
-    } else {
-      console.warn('Google Apps Script response warning:', res);
-      showToast('⚠️ บันทึกในระบบเรียบร้อย (ระบบชีตส่งข้อความ: ' + (res?.message || 'บันทึกสำเร็จ') + ')');
-      closePaperEditorModal();
-    }
-  } catch (err) {
-    console.error('Error saving question to Google Sheet:', err);
-    showToast('⚠️ บันทึกในระบบเว็บแล้ว แต่การเชื่อมต่อ Google Sheets ขัดข้อง: ' + err.message);
-    closePaperEditorModal();
-  } finally {
-    if (saveBtn) {
-      saveBtn.disabled = false;
-      saveBtn.innerHTML = originalBtnHtml;
-    }
+  } catch (outerErr) {
+    console.error('Fatal error in savePaperEditorData:', outerErr);
+    showToast('⚠️ เกิดข้อผิดพลาดในการบันทึก: ' + outerErr.message);
+    resetPaperEditorSaveButtonUI();
   }
 }
 
