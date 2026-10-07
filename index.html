@@ -2783,9 +2783,6 @@
         </div>
       </div>
       <div style="display:flex; align-items:center; gap:5px;">
-        <button class="btn-admin-add-lobby" id="btnAdminAddLobby" onclick="openPaperEditorForNewQuestion()" title="➕ เพิ่มข้อสอบใหม่ลงในคลัง (Admin Only)" style="display:none; align-items:center; gap:6px; background:linear-gradient(135deg, #10b981, #059669); color:#fff; border:none; padding:6px 14px; border-radius:20px; font-weight:700; font-size:12px; cursor:pointer; box-shadow:0 2px 8px rgba(16,185,129,0.3); margin-right:4px;">
-          <span>➕ เพิ่มข้อสอบ</span>
-        </button>
         <div class="lobby-user-pill">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           <span id="lobbyUserNameBadge">ผู้ใช้งาน</span>
@@ -2862,11 +2859,8 @@
           </div>
         </div>
 
-        <div class="lobby-section-head" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+        <div class="lobby-section-head">
           <h3 id="lobbySectionDeckTitle" style="margin:0;">เลือกหมวดโรคทำข้อสอบ</h3>
-          <button class="btn-admin-add-lobby-section" id="btnAdminAddLobbySection" onclick="openPaperEditorForNewQuestion()" title="➕ เพิ่มข้อสอบใหม่ลงในคลัง (Admin Only)" style="display:none; align-items:center; gap:6px; background:linear-gradient(135deg, #10b981, #059669); color:#fff; border:none; padding:7px 16px; border-radius:10px; font-weight:700; font-size:12.5px; cursor:pointer; box-shadow:0 2px 8px rgba(16,185,129,0.25);">
-            <span>➕ เพิ่มข้อสอบใหม่</span>
-          </button>
         </div>
 
         <div class="deck-grid" id="lobbyDeckGrid">
@@ -5591,12 +5585,10 @@ function getVisibleCategories() {
 // ─── LOBBY VIEW ───
 function updateLobbyAdminUI() {
   const isAdmin = (typeof isUserAllowedAdmin === 'function') && currentUser && isUserAllowedAdmin(currentUser.username);
-  const addLobbyBtn = document.getElementById('btnAdminAddLobby');
-  if (addLobbyBtn) addLobbyBtn.style.display = isAdmin ? 'inline-flex' : 'none';
-  const addSectionBtn = document.getElementById('btnAdminAddLobbySection');
-  if (addSectionBtn) addSectionBtn.style.display = isAdmin ? 'inline-flex' : 'none';
   const addToolsBtn = document.getElementById('btnAdminAddLobbyTools');
   if (addToolsBtn) addToolsBtn.style.display = isAdmin ? 'flex' : 'none';
+  const addBrowseBtn = document.getElementById('btnAdminAddBrowse');
+  if (addBrowseBtn) addBrowseBtn.style.display = isAdmin ? 'inline-flex' : 'none';
 }
 
 function showLobby() {
@@ -7071,14 +7063,26 @@ function normalizeCaseClusters(questions) {
   return questions;
 }
 
+function getEffectiveCaseGroupId(q) {
+  if (!q) return null;
+  if (q.caseGroupId && String(q.caseGroupId).trim()) return String(q.caseGroupId).trim();
+  if (q.note) {
+    const m = String(q.note).match(/\[CASE:\s*([^\]_]+)/i);
+    if (m) return m[1].trim();
+  }
+  return null;
+}
+
 function groupQuestionsIntoClusters(questions) {
   if (!questions || !questions.length) return [];
   const clusterMap = new Map();
   const clusters = [];
 
   questions.forEach(q => {
-    let gid = q.caseGroupId ? `${q.examYear || 'all'}__${q.caseGroupId}` : null;
+    const effCaseId = getEffectiveCaseGroupId(q);
+    let gid = effCaseId ? `${q.examYear || 'all'}__${effCaseId}` : null;
     if (gid) {
+      if (!q.caseGroupId) q.caseGroupId = effCaseId;
       // Auto-Split Safeguard: If a second Q1 arrives under the same gid, start an independent split cluster
       let targetCluster = clusterMap.get(gid);
       if (targetCluster && q.caseOrder === 1 && targetCluster.questions.some(x => x.caseOrder === 1)) {
@@ -7096,7 +7100,7 @@ function groupQuestionsIntoClusters(questions) {
           id: gid,
           isCluster: true,
           caseType: q.caseType || 'STD',
-          caseGroupId: q.caseGroupId,
+          caseGroupId: effCaseId,
           questions: []
         };
         clusterMap.set(gid, newCluster);
@@ -7138,6 +7142,22 @@ function groupQuestionsIntoClusters(questions) {
   });
 
   return clusters;
+}
+
+function shuffleClusterAwareQuestions(questions) {
+  if (!questions || questions.length <= 1) return questions ? [...questions] : [];
+  const clusters = groupQuestionsIntoClusters(questions);
+  for (let i = clusters.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [clusters[i], clusters[j]] = [clusters[j], clusters[i]];
+  }
+  const flattened = [];
+  clusters.forEach(c => {
+    if (c.questions && c.questions.length) {
+      flattened.push(...c.questions);
+    }
+  });
+  return flattened;
 }
 
 function truncateClusterProportionally(clusterQuestions, maxAllowed, targetCounts) {
@@ -7704,10 +7724,7 @@ function shuffleCurrentQuizDeck() {
     showToast('มีข้อสอบเพียง 1 ข้อ ไม่จำเป็นต้องสลับ');
     return;
   }
-  for (let i = activeQuizQuestions.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [activeQuizQuestions[i], activeQuizQuestions[j]] = [activeQuizQuestions[j], activeQuizQuestions[i]];
-  }
+  activeQuizQuestions = shuffleClusterAwareQuestions(activeQuizQuestions);
   currentQuestionIndex = 0;
   selectedChoiceIndex = null;
   isAnswerSubmitted = false;
@@ -7719,7 +7736,7 @@ function shuffleCurrentQuizDeck() {
   } else {
     renderCurrentQuestion();
   }
-  showToast('🔀 สลับลำดับข้อสอบสุ่มใหม่เรียบร้อยแล้ว!');
+  showToast('🔀 สุ่มสลับข้อสอบ (เคสต่อเนื่องอยู่ติดกันเป็นกลุ่ม) เรียบร้อยแล้ว!');
 }
 
 // ─── SCROLL DOWN PRACTICE MODE CONTROLLERS ───
@@ -9242,7 +9259,7 @@ function renderBrowseList(reset = true) {
         return (a.itemNo || 0) - (b.itemNo || 0);
       });
     } else if (selectedSort === 'random') {
-      list.sort(() => Math.random() - 0.5);
+      list = shuffleClusterAwareQuestions(list);
     } else {
       // Default: 'item_asc' (เรียงตามเลขข้อ 1 -> มาก)
       list.sort((a, b) => {
@@ -10457,6 +10474,7 @@ async function savePaperEditorData() {
         question: questionText,
         questionImage: questionImg,
         choices: choices,
+        answer: ansNum,
         correctAnswer: ansNum,
         explanation: explanation,
         answerImage: answerImg,
@@ -10547,6 +10565,7 @@ async function savePaperEditorData() {
         question: questionText,
         questionImage: questionImg,
         choices: choices,
+        answer: ansNum,
         correctAnswer: ansNum,
         explanation: explanation,
         answerImage: answerImg,
@@ -10634,6 +10653,7 @@ async function savePaperEditorData() {
       question: questionText,
       questionImage: questionImg,
       choices: choices,
+      answer: ansNum,
       correctAnswer: ansNum,
       explanation: explanation,
       answerImage: answerImg,

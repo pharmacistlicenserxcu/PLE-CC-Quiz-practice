@@ -546,7 +546,7 @@ function doPost(e) {
       const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
       const editor = String(data.editorName || 'Admin');
       const newQuestion = String(data.question || '').replace(/\*\*/g, '').trim();
-      const newAns = parseInt(data.answer, 10) || 1;
+      const newAns = parseInt(data.correctAnswer != null ? data.correctAnswer : data.answer, 10) || 1;
       const newExplanation = String(data.explanation || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
 
       logSheet.appendRow([
@@ -893,7 +893,7 @@ function doPost(e) {
           rowValues[3 + c] = String(data.choices[c] || '').replace(/\*\*/g, '').trim();
         }
       }
-      if (data.correctAnswer != null) rowValues[8] = parseInt(data.correctAnswer, 10) || 1;
+      if (data.correctAnswer != null || data.answer != null) rowValues[8] = parseInt(data.correctAnswer != null ? data.correctAnswer : data.answer, 10) || 1;
       if (data.explanation) rowValues[9] = String(data.explanation).replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
       if (data.answerImage != null) rowValues[10] = String(data.answerImage).trim();
       if (data.subtopic != null) rowValues[11] = String(data.subtopic).replace(/\*\*/g, '').trim();
