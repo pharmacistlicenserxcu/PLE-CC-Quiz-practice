@@ -2757,6 +2757,9 @@
         </div>
       </div>
       <div style="display:flex; align-items:center; gap:5px;">
+        <button class="btn-admin-add-lobby" id="btnAdminAddLobby" onclick="openPaperEditorForNewQuestion()" title="➕ เพิ่มข้อสอบใหม่ลงในคลัง (Admin Only)" style="display:none; align-items:center; gap:6px; background:linear-gradient(135deg, #10b981, #059669); color:#fff; border:none; padding:6px 14px; border-radius:20px; font-weight:700; font-size:12px; cursor:pointer; box-shadow:0 2px 8px rgba(16,185,129,0.3); margin-right:4px;">
+          <span>➕ เพิ่มข้อสอบ</span>
+        </button>
         <div class="lobby-user-pill">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           <span id="lobbyUserNameBadge">ผู้ใช้งาน</span>
@@ -2848,8 +2851,11 @@
           </button>
         </div>
 
-        <div class="lobby-section-head">
-          <h3 id="lobbySectionDeckTitle">เลือกหมวดโรคทำข้อสอบ</h3>
+        <div class="lobby-section-head" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+          <h3 id="lobbySectionDeckTitle" style="margin:0;">เลือกหมวดโรคทำข้อสอบ</h3>
+          <button class="btn-admin-add-lobby-section" id="btnAdminAddLobbySection" onclick="openPaperEditorForNewQuestion()" title="➕ เพิ่มข้อสอบใหม่ลงในคลัง (Admin Only)" style="display:none; align-items:center; gap:6px; background:linear-gradient(135deg, #10b981, #059669); color:#fff; border:none; padding:7px 16px; border-radius:10px; font-weight:700; font-size:12.5px; cursor:pointer; box-shadow:0 2px 8px rgba(16,185,129,0.25);">
+            <span>➕ เพิ่มข้อสอบใหม่</span>
+          </button>
         </div>
 
         <div class="deck-grid" id="lobbyDeckGrid">
@@ -2872,6 +2878,10 @@
 
           <!-- Row 2: Secondary Utilities (Unified Minimal Aesthetic) -->
           <div class="tools-secondary-row">
+            <button class="tools-btn-sub" id="btnAdminAddLobbyTools" onclick="openPaperEditorForNewQuestion()" title="➕ เพิ่มข้อสอบใหม่ลงในคลัง (Admin Only)" style="display:none; color:#059669; font-weight:700; border-color:#a7f3d0; background:#ecfdf5;">
+              <span style="font-size:13px;">➕</span>
+              <span>เพิ่มข้อสอบ</span>
+            </button>
             <button class="tools-btn-sub" onclick="switchAppMode('browse')" title="ดูคลังข้อสอบทั้งหมดพร้อมเฉลย">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
               <span>Browse คลัง</span>
@@ -3089,9 +3099,6 @@
             <button class="btn-admin-edit-card" id="btnAdminEditCard" onclick="openPaperEditorForCurrentCard()" title="✏️ แก้ไขข้อสอบบนแผ่นกระดาษ (Admin Only)" style="display:none;">
               <span>✏️ แก้ไข</span>
             </button>
-            <button class="btn-admin-edit-card" id="btnAdminAddCard" onclick="openPaperEditorForNewQuestion(currentCategory)" title="➕ เพิ่มข้อสอบใหม่ในหมวดนี้ (Admin Only)" style="display:none; background:linear-gradient(135deg, #10b981, #059669); border-color:#059669; color:#fff;">
-              <span>➕ เพิ่มข้อสอบ</span>
-            </button>
           </div>
         </div>
 
@@ -3179,9 +3186,6 @@
             </button>
             <button class="scroll-action-btn" onclick="resetScrollAnswers()" title="ล้างคำตอบที่ตอบไปเพื่อเริ่มทำใหม่">
               <span>🔄 ล้างคำตอบ</span>
-            </button>
-            <button class="scroll-action-btn btn-admin-add-scroll" id="btnAdminAddScroll" onclick="openPaperEditorForNewQuestion(currentCategory)" title="➕ เพิ่มข้อสอบใหม่ในหมวดนี้ (Admin Only)" style="display:none; background:linear-gradient(135deg, #10b981, #059669); color:#fff; border-color:#059669; font-weight:700;">
-              <span>➕ เพิ่มข้อสอบ</span>
             </button>
             <div class="mode-switch-segmented" id="quizModeSwitchInScroll" style="margin-left:4px; flex-shrink:0;">
               <button class="mode-seg-btn" id="btnScrollSegCard" onclick="showCardViewport()" title="โหมดฝึกฝนทีละข้อ (Card)">
@@ -5253,6 +5257,7 @@ function showApp() {
   const dn = currentUser ? currentUser.displayName : 'Maxnum (ประธานโครงการ)';
   document.getElementById('lobbyUserNameBadge').textContent = dn;
   document.getElementById('lobbyGreetingName').textContent = dn;
+  if (typeof updateLobbyAdminUI === 'function') updateLobbyAdminUI();
   setAppQuizMode(appQuizMode);
   updateAnimBtnUI();
   updateFullscreenBtnUI();
@@ -5447,6 +5452,16 @@ function getVisibleCategories() {
 }
 
 // ─── LOBBY VIEW ───
+function updateLobbyAdminUI() {
+  const isAdmin = (typeof isUserAllowedAdmin === 'function') && currentUser && isUserAllowedAdmin(currentUser.username);
+  const addLobbyBtn = document.getElementById('btnAdminAddLobby');
+  if (addLobbyBtn) addLobbyBtn.style.display = isAdmin ? 'inline-flex' : 'none';
+  const addSectionBtn = document.getElementById('btnAdminAddLobbySection');
+  if (addSectionBtn) addSectionBtn.style.display = isAdmin ? 'inline-flex' : 'none';
+  const addToolsBtn = document.getElementById('btnAdminAddLobbyTools');
+  if (addToolsBtn) addToolsBtn.style.display = isAdmin ? 'flex' : 'none';
+}
+
 function showLobby() {
   currentAppMode = 'lobby';
   appQuizMode = 'practice';
@@ -5457,6 +5472,7 @@ function showLobby() {
   document.getElementById('browseView').style.display = 'none';
   const rev = document.getElementById('examReviewView');
   if (rev) rev.style.display = 'none';
+  updateLobbyAdminUI();
   switchTrack(currentTrack);
 }
 
@@ -5467,6 +5483,7 @@ function buildLobby() {
   if (!visCats.length) {
     grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; color:var(--ink-faint); padding:24px;">ยังไม่มีข้อมูลในสายวิชานี้</div>';
     if (typeof renderSidebarCommunity === 'function') renderSidebarCommunity();
+    updateLobbyAdminUI();
     return;
   }
 
@@ -5505,6 +5522,7 @@ function buildLobby() {
   if (typeof renderSidebarCommunity === 'function') {
     renderSidebarCommunity();
   }
+  updateLobbyAdminUI();
 }
 
 function handleDeckCardClick(catName, track) {
@@ -7637,12 +7655,6 @@ function updateScrollPracticeStats() {
   if (elCorr) elCorr.textContent = correct;
   if (elWrong) elWrong.textContent = wrong;
   if (elAcc) elAcc.textContent = acc + '%';
-
-  const btnAddScroll = document.getElementById('btnAdminAddScroll');
-  if (btnAddScroll) {
-    const isAdmin = (typeof isUserAllowedAdmin === 'function') && currentUser && isUserAllowedAdmin(currentUser.username);
-    btnAddScroll.style.display = (isAdmin && appQuizMode !== 'exam') ? 'inline-flex' : 'none';
-  }
 }
 
 // ─── CARD ANIMATION TOGGLE ───
@@ -8437,10 +8449,6 @@ function renderCurrentQuestion(direction) {
   const btnEditCard = document.getElementById('btnAdminEditCard');
   if (btnEditCard) {
     btnEditCard.style.display = (isAdmin && appQuizMode !== 'exam') ? 'inline-flex' : 'none';
-  }
-  const btnAddCard = document.getElementById('btnAdminAddCard');
-  if (btnAddCard) {
-    btnAddCard.style.display = (isAdmin && appQuizMode !== 'exam') ? 'inline-flex' : 'none';
   }
 }
 
