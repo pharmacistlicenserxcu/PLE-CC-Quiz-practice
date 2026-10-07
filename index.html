@@ -2705,24 +2705,16 @@
         <p>คลังข้อสอบปรนัยเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม</p>
       </div>
 
-      <!-- 🔒 Maintenance Mode Notice Banner -->
-      <div style="background:rgba(239, 68, 68, 0.08); border:1.5px solid rgba(239, 68, 68, 0.35); border-radius:14px; padding:14px 16px; margin-bottom:18px; font-size:12.5px; line-height:1.6; color:#991b1b; text-align:center;">
-        <div style="font-size:24px; margin-bottom:4px;">🚧</div>
-        <div style="font-weight:700; font-size:14.5px; color:#b91c1c; margin-bottom:4px;">ระบบปิดปรับปรุงชั่วคราว</div>
-        <div style="color:#7f1d1d; font-size:12.2px;">
-          ขณะนี้ระบบกำลังอยู่ระหว่างการตรวจสอบและปรับปรุงแก้ไขข้อมูลครั้งใหญ่<br>
-          <b>มีกำหนดการเปิดให้บริการอย่างเป็นทางการในเดือนตุลาคม 2569 ครับ</b>
-        </div>
-        <div style="margin-top:8px; padding-top:8px; border-top:1px dashed rgba(239, 68, 68, 0.3); font-size:11px; color:#991b1b; opacity:0.85;">
-          🔒 อนุญาตเฉพาะผู้ดูแลระบบและประธานโครงการเข้าตรวจสอบงานเท่านั้น
-        </div>
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tabSignIn" onclick="switchAuthTab('signin')">เข้าสู่ระบบ</button>
+        <button class="auth-tab" id="tabSignUp" onclick="switchAuthTab('signup')">สร้างบัญชี</button>
       </div>
 
       <div class="auth-panel active" id="panelSignIn">
         <div class="auth-error" id="signinError"></div>
         <div class="form-group">
-          <label style="font-size:12px; font-weight:700;">ชื่อผู้ใช้ผู้ดูแลระบบ (Admin Username)</label>
-          <input class="form-input" type="text" id="siUsername" placeholder="Username ผู้ดูแลระบบ" autocomplete="username">
+          <label style="font-size:12px; font-weight:700;">ชื่อผู้ใช้ (Username)</label>
+          <input class="form-input" type="text" id="siUsername" placeholder="เช่น somchai84" autocomplete="username">
         </div>
         <div class="form-group">
           <label style="font-size:12px; font-weight:700;">รหัสผ่าน (Password)</label>
@@ -2733,9 +2725,43 @@
             </button>
           </div>
         </div>
-        <button class="submit-btn" id="signinBtn" onclick="doSignIn()" style="background:#0284c7;">
-          <span id="signinBtnText">🔑 เข้าสู่ระบบเพื่อตรวจสอบงาน</span>
+        <button class="submit-btn" id="signinBtn" onclick="doSignIn()" style="background:var(--clinic);">
+          <span id="signinBtnText">เข้าสู่ระบบ</span>
         </button>
+        <div class="auth-anon" style="margin-top:14px; text-align:center;">
+          <button class="btn-anon" type="button" onclick="doAnonymousLogin()" style="background:none; border:1px dashed var(--border); padding:8px 16px; border-radius:8px; color:var(--ink-soft); font-size:12px; cursor:pointer; width:100%;">เข้าใช้งานแบบไม่ระบุตัวตน (บุคคลทั่วไป)</button>
+        </div>
+      </div>
+
+      <div class="auth-panel" id="panelSignUp">
+        <div class="auth-error" id="signupError"></div>
+        <div class="form-group">
+          <label style="font-size:12px; font-weight:700;">ชื่อผู้ใช้ (Username)</label>
+          <input class="form-input" type="text" id="suUsername" placeholder="ตัวอักษรภาษาอังกฤษหรือตัวเลข">
+        </div>
+        <div class="form-group">
+          <label style="font-size:12px; font-weight:700;">ชื่อที่ใช้แสดง (Display Name)</label>
+          <input class="form-input" type="text" id="suDisplayName" placeholder="เช่น สมชาย (RxCU84)">
+        </div>
+        <div class="form-group">
+          <label style="font-size:12px; font-weight:700;">รหัสผ่าน (Password)</label>
+          <div class="input-wrap">
+            <input class="form-input has-icon" type="password" id="suPassword" placeholder="อย่างน้อย 6 ตัวอักษร">
+            <button class="input-icon" type="button" onclick="togglePasswordVisibility('suPassword')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label style="font-size:12px; font-weight:700;">ยืนยันรหัสผ่าน</label>
+          <input class="form-input" type="password" id="suConfirm" placeholder="พิมพ์รหัสผ่านอีกครั้ง">
+        </div>
+        <button class="submit-btn" id="signupBtn" onclick="doSignUp()" style="background:var(--clinic);">
+          <span id="signupBtnText">สร้างบัญชี</span>
+        </button>
+        <div class="auth-anon" style="margin-top:14px; text-align:center;">
+          <button class="btn-anon" type="button" onclick="doAnonymousLogin()" style="background:none; border:1px dashed var(--border); padding:8px 16px; border-radius:8px; color:var(--ink-soft); font-size:12px; cursor:pointer; width:100%;">เข้าใช้งานแบบไม่ระบุตัวตน (บุคคลทั่วไป)</button>
+        </div>
       </div>
     </div>
   </div>
@@ -2834,21 +2860,6 @@
             </div>
             <button type="button" onclick="document.getElementById('lobbyDisclaimerBanner').style.display='none'" style="background:none; border:none; color:#64748b; cursor:pointer; font-size:15px; font-weight:700; padding:2px 6px;" title="ปิดการแจ้งเตือนนี้">✕</button>
           </div>
-        </div>
-
-        <!-- ⏱️ Quick Access Simulated Exam (120 Qs, 50:40:10, Subtopic Optimizer) -->
-        <div class="sim-quick-card" onclick="openRandomModal()" title="คลิกเพื่อตั้งค่าและเริ่มจำลองสอบจริง PLE-CC1 (120 ข้อ / 180 นาที)">
-          <div class="sim-quick-left">
-            <div class="sim-quick-icon">⏱️</div>
-            <div class="sim-quick-info">
-              <div class="sim-quick-title">จำลองสอบจริง PLE-CC1 (Simulated Exam)</div>
-              <div class="sim-quick-sub">มาตรฐาน 120 ข้อ (Clinic 50% / Product 40% / SAP 10%) · จับเวลา 180 นาที · <b>ปรับแต่งเรื่องย่อยได้</b></div>
-            </div>
-          </div>
-          <button type="button" class="sim-quick-btn">
-            <span>เข้าสู่การจำลองสอบ</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          </button>
         </div>
 
         <div class="lobby-section-head" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
@@ -5316,8 +5327,8 @@ async function fetchLiveSheetQuestions(sheetName) {
   }
 }
 
-// ─── MAINTENANCE MODE & ACCESS CONTROL (Maxnum/Maxnux only) ───
-const MAINTENANCE_MODE = true;
+// ─── MAINTENANCE MODE & ACCESS CONTROL (Maxnum/Maxnux only for Admin functions) ───
+const MAINTENANCE_MODE = false;
 const ALLOWED_ADMIN_USERS = ['maxnum', 'maxnux', 'thanadol', 'max', 'admin', 'administrator', 'root'];
 
 function isUserAllowedAdmin(username) {
@@ -5336,16 +5347,11 @@ window.addEventListener('load', () => {
   const savedToken = localStorage.getItem(LS_SESSION_KEY);
   if (savedToken) {
     const sessions = JSON.parse(localStorage.getItem(SESSIONS_STORAGE_KEY) || '{}');
-    if (sessions[savedToken] && isUserAllowedAdmin(sessions[savedToken].username)) {
+    if (sessions[savedToken]) {
       sessionToken = savedToken;
-      currentUser = { username: sessions[savedToken].username, displayName: sessions[savedToken].displayName || 'Maxnum (ประธาน)' };
+      currentUser = { username: sessions[savedToken].username, displayName: sessions[savedToken].displayName || sessions[savedToken].username || 'ผู้ใช้งาน' };
       showApp();
       return;
-    } else {
-      // Clear non-admin cached session
-      localStorage.removeItem(LS_SESSION_KEY);
-      sessionToken = null;
-      currentUser = null;
     }
   }
   showAuth();
@@ -5361,13 +5367,9 @@ function showAuth() {
 }
 
 function showApp() {
-  if (!currentUser || !isUserAllowedAdmin(currentUser.username)) {
-    showAuth();
-    return;
-  }
   document.getElementById('authOverlay').classList.add('hide');
   setTimeout(() => document.getElementById('authOverlay').style.display = 'none', 300);
-  const dn = currentUser ? currentUser.displayName : 'Maxnum (ประธานโครงการ)';
+  const dn = currentUser ? (currentUser.displayName || currentUser.username) : 'ผู้ใช้งาน';
   document.getElementById('lobbyUserNameBadge').textContent = dn;
   document.getElementById('lobbyGreetingName').textContent = dn;
   if (typeof updateLobbyAdminUI === 'function') updateLobbyAdminUI();
@@ -5380,7 +5382,10 @@ function showApp() {
 }
 
 function switchAuthTab(tab) {
-  // Disabled during maintenance mode
+  document.getElementById('tabSignIn').classList.toggle('active', tab === 'signin');
+  document.getElementById('tabSignUp').classList.toggle('active', tab === 'signup');
+  document.getElementById('panelSignIn').classList.toggle('active', tab === 'signin');
+  document.getElementById('panelSignUp').classList.toggle('active', tab === 'signup');
 }
 
 function togglePasswordVisibility(id) {
@@ -5400,13 +5405,6 @@ function doSignIn() {
     return;
   }
 
-  // Strict maintenance check: Only allow Maxnum / Maxnux
-  if (!isUserAllowedAdmin(u)) {
-    errEl.textContent = '⛔ ขออภัยครับ ระบบกำลังปิดปรับปรุงชั่วคราวเพื่อแก้ไขและตรวจสอบข้อมูลใหญ่ อนุญาตเฉพาะผู้ดูแลระบบ (Maxnum) เข้าใช้งานเท่านั้นครับ มีกำหนดเปิดให้บริการเดือนตุลาคม 2569';
-    errEl.classList.add('show');
-    return;
-  }
-
   const users = getLocalUsers();
   if (users[u] && users[u].pass && users[u].pass !== p) {
     errEl.textContent = 'Password ไม่ถูกต้อง';
@@ -5414,13 +5412,13 @@ function doSignIn() {
     return;
   }
 
-  const disp = (u === 'maxnux' || u === 'maxnum') ? 'Maxnum (ประธานโครงการ) 👑' : (users[u] ? users[u].displayName : 'Maxnum 👑');
+  const disp = (u === 'maxnux' || u === 'maxnum') ? 'Maxnum (ประธานโครงการ) 👑' : (users[u] ? users[u].displayName : (u.charAt(0).toUpperCase() + u.slice(1)));
   if (!users[u]) {
     users[u] = { username: u, displayName: disp, pass: p };
     saveLocalUsers(users);
   }
 
-  const token = 'tok_admin_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6);
+  const token = 'tok_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6);
   const sessions = JSON.parse(localStorage.getItem(SESSIONS_STORAGE_KEY) || '{}');
   sessions[token] = { username: u, displayName: disp, time: Date.now() };
   localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(sessions));
@@ -5432,19 +5430,43 @@ function doSignIn() {
 }
 
 function doSignUp() {
-  const errEl = document.getElementById('signinError');
-  if (errEl) {
-    errEl.textContent = 'ระบบปิดรับสมัครสมาชิกชั่วคราวเพื่อปรับปรุงข้อมูล';
+  const u = document.getElementById('suUsername').value.trim().toLowerCase();
+  const dn = document.getElementById('suDisplayName').value.trim() || u;
+  const p = document.getElementById('suPassword').value.trim();
+  const c = document.getElementById('suConfirm').value.trim();
+  const errEl = document.getElementById('signupError');
+  errEl.classList.remove('show');
+
+  if (!u || !p || !c) {
+    errEl.textContent = 'กรุณากรอกข้อมูลให้ครบถ้วน';
     errEl.classList.add('show');
+    return;
   }
+  if (p !== c) {
+    errEl.textContent = 'รหัสผ่านไม่ตรงกัน';
+    errEl.classList.add('show');
+    return;
+  }
+
+  const users = getLocalUsers();
+  users[u] = { username: u, displayName: dn, pass: p };
+  saveLocalUsers(users);
+
+  const token = 'tok_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6);
+  const sessions = JSON.parse(localStorage.getItem(SESSIONS_STORAGE_KEY) || '{}');
+  sessions[token] = { username: u, displayName: dn, time: Date.now() };
+  localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(sessions));
+  localStorage.setItem(LS_SESSION_KEY, token);
+
+  sessionToken = token;
+  currentUser = { username: u, displayName: dn };
+  showApp();
 }
 
 function doAnonymousLogin() {
-  const errEl = document.getElementById('signinError');
-  if (errEl) {
-    errEl.textContent = '⛔ ระบบปิดปรับปรุงชั่วคราว ไม่อนุญาตให้บุคคลทั่วไปเข้าใช้งาน (เปิดระบบเดือนตุลาคม 2569)';
-    errEl.classList.add('show');
-  }
+  sessionToken = null;
+  currentUser = { username: 'anonymous', displayName: 'บุคคลทั่วไป' };
+  showApp();
 }
 
 function doLogout() {
