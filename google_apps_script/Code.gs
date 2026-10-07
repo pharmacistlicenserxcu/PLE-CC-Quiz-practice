@@ -503,6 +503,135 @@ function doPost(e) {
 
     const action = data.action || '';
 
+    // ════════════════════════════════════════════════════════════════════════
+    // ✏️ อัปเดตและแก้ไขข้อสอบแบบ Real-time (Admin Only) พร้อม Audit Trail
+    // ════════════════════════════════════════════════════════════════════════
+    if (action === 'updateQuestion') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const qId = String(data.questionId || '').trim();
+      if (!qId || !qId.includes('::')) {
+        return jsonResponse_({ success: false, error: 'Question ID รูปแบบไม่ถูกต้อง (ต้องมี SheetName::Row)' });
+      }
+
+      const parts = qId.split('::');
+      const sheetName = parts[0].trim();
+      const rowNum = parseInt(parts[1], 10);
+
+      if (isNaN(rowNum) || rowNum < 3) {
+        return jsonResponse_({ success: false, error: 'เลขแถวไม่ถูกต้อง (ต้องเป็นแถวที่ 3 ขึ้นไป): ' + rowNum });
+      }
+
+      const targetSheet = ss.getSheetByName(sheetName);
+      if (!targetSheet) {
+        return jsonResponse_({ success: false, error: 'ไม่พบชีตเป้าหมาย: ' + sheetName });
+      }
+
+      // ดึงข้อมูลเดิมเพื่อทำ Audit Snapshot
+      const lastCol = Math.max(targetSheet.getLastColumn(), 16);
+      const oldValues = targetSheet.getRange(rowNum, 1, 1, Math.min(lastCol, 17)).getValues()[0];
+
+      // บันทึกลง Log_Question_Edits (Audit Trail)
+      let logSheet = ss.getSheetByName('Log_Question_Edits');
+      if (!logSheet) {
+        logSheet = ss.insertSheet('Log_Question_Edits');
+        logSheet.appendRow([
+          "Timestamp (เวลาไทย)", "Editor", "Question ID", "Sheet Name", "Row Number",
+          "Old Question", "New Question", "Old Answer", "New Answer",
+          "Old Explanation", "New Explanation", "Status"
+        ]);
+        logSheet.getRange(1, 1, 1, 12).setFontWeight("bold").setBackground("#1e3a8a").setFontColor("#ffffff");
+        logSheet.setFrozenRows(1);
+      }
+
+      const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+      const editor = String(data.editorName || 'Admin');
+      const newQuestion = String(data.question || '').replace(/\*\*/g, '').trim();
+      const newAns = parseInt(data.answer, 10) || 1;
+      const newExplanation = String(data.explanation || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
+
+      logSheet.appendRow([
+        thaiTimestamp,
+        editor,
+        qId,
+        sheetName,
+        rowNum,
+        String(oldValues[1] || '').substring(0, 200),
+        newQuestion.substring(0, 200),
+        String(oldValues[8] || ''),
+        String(newAns),
+        String(oldValues[9] || '').substring(0, 200),
+        newExplanation.substring(0, 200),
+        "Updated"
+      ]);
+
+      // เตรียมข้อมูลเขียนทับลงชีตเป้าหมาย (คอลัมน์ B ถึง P)
+      const choices = Array.isArray(data.choices) ? data.choices : [];
+      const c1 = String(choices[0] || '').replace(/\*\*/g, '').trim();
+      const c2 = String(choices[1] || '').replace(/\*\*/g, '').trim();
+      const c3 = String(choices[2] || '').replace(/\*\*/g, '').trim();
+      const c4 = String(choices[3] || '').replace(/\*\*/g, '').trim();
+      const c5 = String(choices[4] || '').replace(/\*\*/g, '').trim();
+
+      const qImg = String(data.questionImage || '').trim();
+      const aImg = String(data.answerImage || '').trim();
+      const subtopic = String(data.subtopic || '').replace(/\*\*/g, '').trim();
+      const track = String(data.track || '').trim();
+      
+      // Note: ถ้ามี caseGroupId ให้ผนวกแท็ก [CASE: ...] ลงไปใน Note ด้วย
+      let note = String(data.note || '').replace(/\*\*/g, '').trim();
+      if (data.caseGroupId) {
+        const caseTag = `[CASE: ${data.caseGroupId}${data.caseOrder ? '_Q' + data.caseOrder : ''}]`;
+        if (!note.includes('[CASE:')) {
+          note = note ? `${note} ${caseTag}` : caseTag;
+        }
+      }
+
+      const examType = String(data.examType || '').trim();
+      const examYear = String(data.examYear || '').trim();
+
+      // เขียนทับคอลัมน์ B ถึง P (15 คอลัมน์: col 2 ถึง 16)
+      const updateData = [
+        newQuestion,      // Col B (2)
+        qImg,             // Col C (3)
+        c1,               // Col D (4)
+        c2,               // Col E (5)
+        c3,               // Col F (6)
+        c4,               // Col G (7)
+        c5,               // Col H (8)
+        newAns,           // Col I (9)
+        newExplanation,   // Col J (10)
+        aImg,             // Col K (11)
+        subtopic,         // Col L (12)
+        track,            // Col M (13)
+        note,             // Col N (14)
+        examType,         // Col O (15)
+        examYear          // Col P (16)
+      ];
+
+      targetSheet.getRange(rowNum, 2, 1, 15).setValues([updateData]);
+
+      // ถ้ามีการแก้ไขเลขข้อ (ItemNo) ในคอลัมน์ A
+      if (data.itemNo != null && String(data.itemNo).trim() !== '') {
+        const itemNo = parseInt(data.itemNo, 10);
+        if (!isNaN(itemNo)) {
+          targetSheet.getRange(rowNum, 1).setValue(itemNo);
+        }
+      }
+
+      // ถ้าเป็นชีต Quick Ingestion (📥) และมีส่ง categoryTag
+      if (isIngestionSheet_(sheetName) && data.categoryTag) {
+        targetSheet.getRange(rowNum, 17).setValue(String(data.categoryTag).trim());
+      }
+
+      return jsonResponse_({
+        success: true,
+        message: `บันทึกข้อสอบลง Google Sheet แถวที่ ${rowNum} สำเร็จแล้ว`,
+        questionId: qId,
+        sheet: sheetName,
+        row: rowNum
+      });
+    }
+
     // บันทึกรายงานข้อสอบผิดพลาด
     if (action === 'reportIssue') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
