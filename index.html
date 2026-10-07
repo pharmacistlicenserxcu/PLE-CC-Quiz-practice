@@ -3756,15 +3756,22 @@ function saveQuestionProgress(qId, selectedChoice, isCorrect, category) {
 // ─── QUIZ MODE & EXAM HISTORY ───
 const EXAM_HISTORY_KEY = 'ple_quiz_exam_history_v1';
 const LS_APP_QUIZ_MODE = 'ple_quiz_app_mode';
-let appQuizMode = localStorage.getItem(LS_APP_QUIZ_MODE) || 'practice'; // 'practice' | 'scroll' | 'exam'
-let practiceViewStyle = (appQuizMode === 'scroll') ? 'scroll' : 'card'; // 'card' | 'scroll'
+const LS_PRACTICE_VIEW_STYLE = 'ple_quiz_practice_view_style';
+let appQuizMode = 'practice'; // default is always 'practice' (แบบอ่านทบทวน)
+let practiceViewStyle = localStorage.getItem(LS_PRACTICE_VIEW_STYLE) || (localStorage.getItem(LS_APP_QUIZ_MODE) === 'scroll' ? 'scroll' : 'card'); // 'card' | 'scroll'
 let scrollUserAnswers = {}; // { qIndex: { choice: cNum, isCorrect: bool } }
 let currentExamTypeFilter = 'all'; // 'all' | exact string from Column O
 let userAnswersExamMode = {}; // { qIndex: choiceNum }
 
 function setAppQuizMode(mode) {
   appQuizMode = mode;
-  practiceViewStyle = (mode === 'scroll') ? 'scroll' : 'card';
+  if (mode === 'scroll') {
+    practiceViewStyle = 'scroll';
+    try { localStorage.setItem(LS_PRACTICE_VIEW_STYLE, 'scroll'); } catch(e) {}
+  } else if (mode === 'practice') {
+    practiceViewStyle = 'card';
+    try { localStorage.setItem(LS_PRACTICE_VIEW_STYLE, 'card'); } catch(e) {}
+  }
   try { localStorage.setItem(LS_APP_QUIZ_MODE, mode); } catch(e) {}
   const btnP = document.getElementById('btnModePractice');
   const btnS = document.getElementById('btnModeScroll');
@@ -4836,6 +4843,8 @@ function getVisibleCategories() {
 // ─── LOBBY VIEW ───
 function showLobby() {
   currentAppMode = 'lobby';
+  appQuizMode = 'practice';
+  try { localStorage.setItem(LS_APP_QUIZ_MODE, 'practice'); } catch(e) {}
   document.getElementById('lobbyView').style.display = 'flex';
   document.getElementById('quizView').style.display = 'none';
   document.getElementById('resultView').style.display = 'none';
@@ -4893,16 +4902,14 @@ function buildLobby() {
 }
 
 function handleDeckCardClick(catName, track) {
-  if (appQuizMode === 'practice' || appQuizMode === 'scroll') {
-    enterQuizCategoryDirectly(catName, track);
-  } else {
-    openQuizSetupModal(catName, track, false);
-  }
+  appQuizMode = 'practice';
+  enterQuizCategoryDirectly(catName, track);
 }
 
 let practiceExamTypeFilter = 'all';
 
 function enterQuizCategoryDirectly(catName, track) {
+  appQuizMode = 'practice';
   currentCategory = catName;
   currentTrack = track || currentTrack;
   currentSubtopic = '__all__';
@@ -5112,6 +5119,7 @@ function onSetupModeSelectChange() {
 
 function closeQuizSetupModal() {
   document.getElementById('quizSetupModal').classList.remove('show');
+  appQuizMode = 'practice';
 }
 
 function populateSetupCategories() {
@@ -5674,6 +5682,7 @@ function openSimExamPanel() {
 function closeSimExamPanel() {
   const panel = document.getElementById('simExamView');
   if (panel) panel.classList.remove('show');
+  appQuizMode = 'practice';
   const lobby = document.getElementById('lobbyView');
   if (lobby) lobby.style.display = '';
 }
@@ -7073,6 +7082,7 @@ function togglePracticeViewStyle() {
 
 function showScrollViewport() {
   practiceViewStyle = 'scroll';
+  try { localStorage.setItem(LS_PRACTICE_VIEW_STYLE, 'scroll'); } catch(e) {}
   const cardVp = document.getElementById('cardPracticeViewport');
   const scrollVp = document.getElementById('scrollPracticeViewport');
   if (cardVp) cardVp.style.display = 'none';
@@ -7100,6 +7110,7 @@ function showScrollViewport() {
 
 function showCardViewport() {
   practiceViewStyle = 'card';
+  try { localStorage.setItem(LS_PRACTICE_VIEW_STYLE, 'card'); } catch(e) {}
   const cardVp = document.getElementById('cardPracticeViewport');
   const scrollVp = document.getElementById('scrollPracticeViewport');
   if (cardVp) cardVp.style.display = 'flex';
