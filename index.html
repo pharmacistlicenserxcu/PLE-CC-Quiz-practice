@@ -90,61 +90,37 @@
     
     body {
       font-family: 'Bai Jamjuree', sans-serif;
-      background: #D4D2C8;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
       min-height: 100vh;
       min-height: 100dvh;
-      padding: 20px 12px;
-      color: var(--ink);
-      -webkit-font-smoothing: antialiased;
-      transition: background 0.3s ease, padding 0.3s ease;
-    }
-
-    /* ══ APP SHELL ══ */
-    .app-shell {
-      width: 100%;
-      max-width: 1120px;
-      background: var(--bg);
-      border-radius: 28px;
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      position: relative;
-      min-height: 820px;
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
-      border: 1px solid var(--border);
-      transition: all 0.3s cubic-bezier(0.2, 0.9, 0.3, 1);
+      align-items: stretch;
+      justify-content: flex-start;
+      -webkit-font-smoothing: antialiased;
     }
 
-    body.mode-phone { padding: 16px 8px; background: #C8C5BA; }
-    body.mode-phone .app-shell {
-      max-width: 420px !important;
-      border-radius: 36px !important;
-      min-height: 780px !important;
-      box-shadow: 0 0 0 8px #1E2320, 0 24px 50px rgba(0,0,0,0.25) !important;
-      border: 2px solid #333C37 !important;
+    /* ══ APP SHELL — Modern Fluid Full-Bleed Layout (OSPE Practice Hub Reference) ══ */
+    .app-shell {
+      width: 100%;
+      max-width: 100%;
+      background: var(--bg);
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      overflow: visible;
+      position: relative;
     }
-    
-    .phone-notch {
-      display: none; width: 100px; height: 20px; background: #1E2320;
-      border-radius: 20px; margin: 8px auto 2px; z-index: 100; flex-shrink: 0;
-    }
-    body.mode-phone .phone-notch { display: block; }
 
     @media (max-width: 1024px), (hover: none) and (pointer: coarse) {
-      body { padding: 0 !important; background: var(--bg) !important; }
-      body.mode-phone { padding: 0 !important; }
-      .app-shell {
-        max-width: 100% !important; border-radius: 0 !important;
-        min-height: 100dvh !important; box-shadow: none !important; border: none !important;
-      }
-      body.mode-phone .app-shell {
-        max-width: 100% !important; border-radius: 0 !important;
-        min-height: 100dvh !important; box-shadow: none !important; border: none !important;
-      }
-      .phone-notch { display: none !important; }
       .kbd-hints-bar { display: none !important; }
 
       .topbar { padding: 10px 14px !important; }
@@ -279,8 +255,7 @@
 
     :fullscreen,
     :fullscreen body,
-    body.fullscreen-active,
-    body.fullscreen-active.mode-phone {
+    body.fullscreen-active {
       padding: 0 !important;
       margin: 0 !important;
       background: var(--bg) !important;
@@ -289,8 +264,7 @@
       min-height: 100dvh !important;
     }
     :fullscreen .app-shell,
-    body.fullscreen-active .app-shell,
-    body.fullscreen-active.mode-phone .app-shell {
+    body.fullscreen-active .app-shell {
       max-width: 100% !important;
       width: 100% !important;
       border-radius: 0 !important;
@@ -306,7 +280,6 @@
       margin: 0 auto;
       width: 100%;
     }
-    body.fullscreen-active .phone-notch { display: none !important; }
     body.fullscreen-active .kbd-hints-bar { display: none !important; }
 
     /* ══ EXAM REVIEW VIEW STYLES ══ */
@@ -485,8 +458,16 @@
     }
 
     /* ══ LOBBY VIEW ══ */
-    #lobbyView { padding: 20px 22px 24px; flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
-    body.mode-phone #lobbyView { padding: 14px 14px 20px; }
+    #lobbyView {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 22px 24px;
+      flex: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
 
     .lobby-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 8px; }
     .lobby-logo { display: flex; align-items: center; gap: 8px; }
@@ -518,7 +499,9 @@
     .lobby-section-head h3 { font-size: 12px; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.6px; }
 
     .deck-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin-bottom: 20px; }
-    body.mode-phone .deck-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 8px; }
+    @media (max-width: 600px) {
+      .deck-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    }
 
     .deck-card {
       background: var(--card); border: 1.5px solid var(--border); border-radius: 15px; padding: 14px 12px; cursor: pointer;
@@ -589,14 +572,6 @@
         height: 280px;
       }
     }
-    body.mode-phone .lobby-split-layout {
-      flex-direction: column;
-      gap: 16px;
-    }
-    body.mode-phone .lobby-community-sidebar {
-      width: 100%;
-      position: static;
-    }
 
     /* ══ MINIMAL TOOLS PANEL ══ */
     .minimal-tools-panel {
@@ -655,9 +630,6 @@
       .tools-secondary-row {
         grid-template-columns: repeat(2, 1fr);
       }
-    }
-    body.mode-phone .tools-secondary-row {
-      grid-template-columns: repeat(2, 1fr) !important;
     }
 
     .tools-btn-sub {
@@ -2442,7 +2414,6 @@
 <body>
 
 <div class="app-shell" id="appShell">
-  <div class="phone-notch"></div>
 
   <!-- ══ AUTH OVERLAY ══ -->
   <div id="authOverlay">
@@ -2517,9 +2488,6 @@
         </button>
         <button class="icon-btn" id="btnToggleFontSizeLobby" onclick="cycleFontSizeScale()" title="ขนาดตัวอักษร: ปกติ (คลิกเพื่อขยายใหญ่)">
           <span style="font-size:12px; font-weight:700; font-family:'IBM Plex Mono', monospace;">Aa</span>
-        </button>
-        <button class="icon-btn" id="toggleViewModeBtnLobby" onclick="toggleAppViewMode()" title="สลับ Desktop / Mobile">
-          <span id="viewModeIconLobby">📱</span>
         </button>
         <button class="icon-btn" id="btnFullscreenLobby" onclick="toggleFullscreen()" title="โหมดเต็มจอ">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
@@ -2764,9 +2732,6 @@
         </button>
         <button class="icon-btn" id="btnToggleFontSizeQuiz" onclick="cycleFontSizeScale()" title="ขนาดตัวอักษร: ปกติ (คลิกเพื่อขยายใหญ่)">
           <span style="font-size:12px; font-weight:700; font-family:'IBM Plex Mono', monospace;">Aa</span>
-        </button>
-        <button class="icon-btn" id="toggleViewModeBtnQuiz" onclick="toggleAppViewMode()" title="สลับ Desktop / Mobile">
-          <span id="viewModeIconQuiz">📱</span>
         </button>
         <button class="icon-btn" id="btnFullscreenQuiz" onclick="toggleFullscreen()" title="เต็มจอ">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
@@ -3734,7 +3699,6 @@ const USERS_STORAGE_KEY = 'ple_quiz_users_db_v2';
 const SESSIONS_STORAGE_KEY = 'ple_quiz_sessions_db_v2';
 const PROGRESS_STORAGE_KEY = 'ple_quiz_progress_v1';
 const LS_SESSION_KEY = 'ple_quiz_session_token_v2';
-const LS_VIEW_MODE = 'ple_quiz_view_mode';
 const LS_TRACK = 'ple_quiz_current_track';
 
 function getLocalUsers() {
@@ -4615,7 +4579,6 @@ function isUserAllowedAdmin(username) {
 
 // ─── INITIALIZATION ───
 window.addEventListener('load', () => {
-  initViewMode();
   updateFullscreenBtnUI();
   applyFontScale(currentFontScale, false);
   const savedTrack = localStorage.getItem(LS_TRACK);
@@ -8589,28 +8552,6 @@ window.addEventListener('keydown', (e) => {
     goNextQuestion();
   }
 });
-
-// ─── VIEW MODE (PHONE / DESKTOP) ───
-function initViewMode() {
-  const saved = localStorage.getItem(LS_VIEW_MODE);
-  const isPhone = (saved === 'phone');
-  document.body.classList.toggle('mode-phone', isPhone);
-  updateViewModeUI(isPhone);
-}
-
-function toggleAppViewMode() {
-  const isPhone = document.body.classList.toggle('mode-phone');
-  localStorage.setItem(LS_VIEW_MODE, isPhone ? 'phone' : 'desktop');
-  updateViewModeUI(isPhone);
-  showToast(isPhone ? '📱 Smartphone View (420px)' : '🖥️ Desktop View (960px)');
-}
-
-function updateViewModeUI(isPhone) {
-  const iconL = document.getElementById('viewModeIconLobby');
-  const iconQ = document.getElementById('viewModeIconQuiz');
-  if (iconL) iconL.textContent = isPhone ? '🖥️' : '📱';
-  if (iconQ) iconQ.textContent = isPhone ? '🖥️' : '📱';
-}
 
 // ─── DYNAMIC FONT SIZE SCALING ───
 const FONT_SCALES = ['md', 'lg', 'xl'];
