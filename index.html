@@ -126,11 +126,16 @@
       .topbar { padding: 10px 14px !important; }
       .quiz-viewport {
         padding: 10px 14px 16px !important;
-        display: flex !important;
         flex-direction: column !important;
         flex: 1 1 auto !important;
         min-height: 0 !important;
         width: 100% !important;
+      }
+      #cardPracticeViewport[style*="display: none"],
+      #cardPracticeViewport[style*="display:none"],
+      #scrollPracticeViewport[style*="display: none"],
+      #scrollPracticeViewport[style*="display:none"] {
+        display: none !important;
       }
 
       .card-scene {
@@ -2521,18 +2526,7 @@
     </div>
 
     
-    <!-- Quiz Mode Switch Row (3 Modes) -->
-    <div style="display:flex; align-items:center; justify-content:center; margin-bottom:14px;">
-      <div class="mode-switch-segmented">
-        <button class="mode-seg-btn active" id="btnModePractice" onclick="setAppQuizMode('practice')" title="ฝึกฝนทีละข้อ ตรวจคำตอบทันที">
-          📖 ฝึกทีละข้อ (Card)
-        </button>
-        <button class="mode-seg-btn scroll" id="btnModeScroll" onclick="setAppQuizMode('scroll')" title="ฝึกฝนและอ่านข้อสอบแบบเลื่อนยาวต่อเนื่อง">
-          📜 เลื่อนอ่าน (Scroll Down)
-        </button>
-      </div>
 
-    </div>
 
     <!-- ══ SPLIT LOBBY: Main Content (Left) + Community Sidebar (Right) ══ -->
     <div class="lobby-split-layout">
@@ -2754,6 +2748,14 @@
           </select>
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
+        <div class="mode-switch-segmented" id="quizModeSwitchInQuiz" style="margin-left:auto; flex-shrink:0;">
+          <button class="mode-seg-btn active" id="btnQuizSegCard" onclick="showCardViewport()" title="โหมดฝึกฝนทีละข้อ (Card)">
+            📖 ทีละข้อ
+          </button>
+          <button class="mode-seg-btn" id="btnQuizSegScroll" onclick="showScrollViewport()" title="โหมดเลื่อนอ่านยาว (Scroll Down)">
+            📜 เลื่อนอ่าน
+          </button>
+        </div>
       </div>
 
       <div class="progress-row">
@@ -2896,9 +2898,14 @@
             <button class="scroll-action-btn" onclick="resetScrollAnswers()" title="ล้างคำตอบที่ตอบไปเพื่อเริ่มทำใหม่">
               <span>🔄 ล้างคำตอบ</span>
             </button>
-            <button class="scroll-action-btn" onclick="togglePracticeViewStyle()" title="สลับกลับไปทำแบบทีละข้อ (Card View)">
-              <span>🃏 โหมดทีละข้อ</span>
-            </button>
+            <div class="mode-switch-segmented" id="quizModeSwitchInScroll" style="margin-left:4px; flex-shrink:0;">
+              <button class="mode-seg-btn" id="btnScrollSegCard" onclick="showCardViewport()" title="โหมดฝึกฝนทีละข้อ (Card)">
+                📖 ทีละข้อ
+              </button>
+              <button class="mode-seg-btn active" id="btnScrollSegScroll" onclick="showScrollViewport()" title="โหมดเลื่อนอ่านยาว (Scroll Down)">
+                📜 เลื่อนอ่าน
+              </button>
+            </div>
           </div>
         </div>
 
@@ -3039,8 +3046,20 @@
         <select class="browse-select" id="browseSubtopicFilter" onchange="renderBrowseList()">
           <option value="all">📂 ทุกหัวข้อย่อย</option>
         </select>
+        <select class="browse-select" id="browseCaseFilter" onchange="renderBrowseList()">
+          <option value="all">📋 ทุกข้อสอบ (เดี่ยว + เคส)</option>
+          <option value="case_only">🔗 เฉพาะข้อสอบกรณีศึกษา (Case Clusters)</option>
+          <option value="standalone_only">📄 เฉพาะข้อสอบเดี่ยว (Standalone)</option>
+        </select>
         <select class="browse-select" id="browseExamTypeFilter" onchange="renderBrowseList()">
           <option value="all">🎯 ทุกประเภทข้อสอบ</option>
+        </select>
+        <select class="browse-select" id="browseSortFilter" onchange="renderBrowseList()" style="font-weight:700; color:var(--clinic);">
+          <option value="item_asc">🔢 เรียงตามเลขข้อ (1 → มาก)</option>
+          <option value="item_desc">🔢 เรียงตามเลขข้อ (มาก → 1)</option>
+          <option value="case_group">📋 เรียงตามกลุ่มเคส (Case Scenario)</option>
+          <option value="subtopic">🔤 เรียงตามหัวข้อย่อย / เรื่อง</option>
+          <option value="random">🔀 สุ่มลำดับข้อสอบ</option>
         </select>
       </div>
     </div>
@@ -7063,6 +7082,16 @@ function showScrollViewport() {
   const btn = document.getElementById('btnTogglePracticeViewStyle');
   if (btn) btn.title = 'สลับมุมมอง: โหมดทีละข้อ (Card View)';
 
+  const segC = document.getElementById('btnQuizSegCard');
+  const segS = document.getElementById('btnQuizSegScroll');
+  if (segC) segC.classList.remove('active');
+  if (segS) segS.classList.add('active');
+
+  const segScrollC = document.getElementById('btnScrollSegCard');
+  const segScrollS = document.getElementById('btnScrollSegScroll');
+  if (segScrollC) segScrollC.classList.remove('active');
+  if (segScrollS) segScrollS.classList.add('active');
+
   populatePracticeSubtopicDropdowns();
   populatePracticeExamTypeDropdowns();
   updateScrollPracticeStats();
@@ -7079,6 +7108,16 @@ function showCardViewport() {
   if (icon) icon.textContent = '📜';
   const btn = document.getElementById('btnTogglePracticeViewStyle');
   if (btn) btn.title = 'สลับมุมมอง: โหมดเลื่อนอ่านยาว (Scroll Down)';
+
+  const segC = document.getElementById('btnQuizSegCard');
+  const segS = document.getElementById('btnQuizSegScroll');
+  if (segC) segC.classList.add('active');
+  if (segS) segS.classList.remove('active');
+
+  const segScrollC = document.getElementById('btnScrollSegCard');
+  const segScrollS = document.getElementById('btnScrollSegScroll');
+  if (segScrollC) segScrollC.classList.add('active');
+  if (segScrollS) segScrollS.classList.remove('active');
 
   populatePracticeSubtopicDropdowns();
   populatePracticeExamTypeDropdowns();
@@ -8364,9 +8403,21 @@ function renderBrowseList(reset = true) {
       list = (allQuestionsMap[selectedCat] || []).slice();
     }
 
+    const caseFilterSel = document.getElementById('browseCaseFilter');
+    const selectedCaseFilter = caseFilterSel ? caseFilterSel.value : 'all';
+    const sortSel = document.getElementById('browseSortFilter');
+    const selectedSort = sortSel ? sortSel.value : 'item_asc';
+
     // Filter Subtopic
     if (selectedSub !== 'all') {
       list = list.filter(q => questionMatchesSubtopic(q, selectedSub));
+    }
+
+    // Filter Case Scenario
+    if (selectedCaseFilter === 'case_only') {
+      list = list.filter(q => q.caseGroupId || q.caseOrder || q.caseType === 'INT');
+    } else if (selectedCaseFilter === 'standalone_only') {
+      list = list.filter(q => !q.caseGroupId && !q.caseOrder && q.caseType !== 'INT');
     }
 
     // Filter Exam Type (Dynamic from Column O)
@@ -8379,16 +8430,44 @@ function renderBrowseList(reset = true) {
         const expText = (q.explanation || '').toLowerCase();
         const sub = (q.subtopic || '').toLowerCase();
         const choicesText = (q.choices || []).join(' ').toLowerCase();
-        return qText.includes(term) || expText.includes(term) || sub.includes(term) || choicesText.includes(term);
+        const caseG = (q.caseGroupId || '').toLowerCase();
+        return qText.includes(term) || expText.includes(term) || sub.includes(term) || choicesText.includes(term) || caseG.includes(term);
       });
     }
 
-    // Sort order: Main category sheet rows first (by itemNo), followed by extra/ingestion questions
-    if (selectedCat !== 'all') {
+    // Sort order
+    if (selectedSort === 'item_desc') {
+      list.sort((a, b) => (b.itemNo || 0) - (a.itemNo || 0));
+    } else if (selectedSort === 'case_group') {
       list.sort((a, b) => {
-        const aIsMain = (a.id && a.id.startsWith(selectedCat)) ? 0 : 1;
-        const bIsMain = (b.id && b.id.startsWith(selectedCat)) ? 0 : 1;
-        if (aIsMain !== bIsMain) return aIsMain - bIsMain;
+        const aHasCase = a.caseGroupId ? 0 : 1;
+        const bHasCase = b.caseGroupId ? 0 : 1;
+        if (aHasCase !== bHasCase) return aHasCase - bHasCase;
+        if (a.caseGroupId && b.caseGroupId && a.caseGroupId !== b.caseGroupId) {
+          return a.caseGroupId.localeCompare(b.caseGroupId);
+        }
+        if ((a.caseOrder || 0) !== (b.caseOrder || 0)) {
+          return (a.caseOrder || 0) - (b.caseOrder || 0);
+        }
+        return (a.itemNo || 0) - (b.itemNo || 0);
+      });
+    } else if (selectedSort === 'subtopic') {
+      list.sort((a, b) => {
+        const subA = (a.subtopic || a.category || '').toLowerCase();
+        const subB = (b.subtopic || b.category || '').toLowerCase();
+        if (subA !== subB) return subA.localeCompare(subB, 'th');
+        return (a.itemNo || 0) - (b.itemNo || 0);
+      });
+    } else if (selectedSort === 'random') {
+      list.sort(() => Math.random() - 0.5);
+    } else {
+      // Default: 'item_asc' (เรียงตามเลขข้อ 1 -> มาก)
+      list.sort((a, b) => {
+        if (selectedCat !== 'all') {
+          const aIsMain = (a.id && a.id.startsWith(selectedCat)) ? 0 : 1;
+          const bIsMain = (b.id && b.id.startsWith(selectedCat)) ? 0 : 1;
+          if (aIsMain !== bIsMain) return aIsMain - bIsMain;
+        }
         return (a.itemNo || 0) - (b.itemNo || 0);
       });
     }
