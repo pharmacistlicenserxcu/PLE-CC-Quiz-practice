@@ -632,6 +632,271 @@ function doPost(e) {
       });
     }
 
+    // ════════════════════════════════════════════════════════════════════════
+    // ➕ เพิ่มข้อสอบใหม่ลงในหมวดหมู่เป้าหมาย (Admin Only)
+    // ════════════════════════════════════════════════════════════════════════
+    if (action === 'addQuestion') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const sheetName = String(data.sheetName || '').trim();
+      if (!sheetName) {
+        return jsonResponse_({ success: false, error: 'กรุณาระบุชื่อชีต / หมวดวิชาเป้าหมาย' });
+      }
+
+      const targetSheet = ss.getSheetByName(sheetName);
+      if (!targetSheet) {
+        return jsonResponse_({ success: false, error: 'ไม่พบชีตเป้าหมาย: ' + sheetName });
+      }
+
+      // คำนวณแถวใหม่และเลขข้อ
+      const nextRow = targetSheet.getLastRow() + 1;
+      let nextItemNo = 1;
+      if (nextRow > 3) {
+        const lastItemVal = targetSheet.getRange(nextRow - 1, 1).getValue();
+        const parsed = parseInt(lastItemVal, 10);
+        nextItemNo = isNaN(parsed) ? (nextRow - 2) : (parsed + 1);
+      }
+      if (data.itemNo != null && String(data.itemNo).trim() !== '') {
+        const customItemNo = parseInt(data.itemNo, 10);
+        if (!isNaN(customItemNo)) nextItemNo = customItemNo;
+      }
+
+      const choices = Array.isArray(data.choices) ? data.choices : [];
+      const c1 = String(choices[0] || '').replace(/\*\*/g, '').trim();
+      const c2 = String(choices[1] || '').replace(/\*\*/g, '').trim();
+      const c3 = String(choices[2] || '').replace(/\*\*/g, '').trim();
+      const c4 = String(choices[3] || '').replace(/\*\*/g, '').trim();
+      const c5 = String(choices[4] || '').replace(/\*\*/g, '').trim();
+
+      const newQuestion = String(data.question || '').replace(/\*\*/g, '').trim();
+      const qImg = String(data.questionImage || '').trim();
+      const aImg = String(data.answerImage || '').trim();
+      const newAns = parseInt(data.correctAnswer || data.answer, 10) || 1;
+      const newExplanation = String(data.explanation || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
+
+      const subtopic = String(data.subtopic || '').replace(/\*\*/g, '').trim();
+      const track = String(data.track || '').trim();
+
+      let note = String(data.note || '').replace(/\*\*/g, '').trim();
+      if (data.caseGroupId) {
+        const caseTag = `[CASE: ${data.caseGroupId}${data.caseOrder ? '_Q' + data.caseOrder : ''}]`;
+        if (!note.includes('[CASE:')) {
+          note = note ? `${note} ${caseTag}` : caseTag;
+        }
+      }
+
+      const examType = String(data.examType || '').trim();
+      const examYear = String(data.examYear || '').trim();
+
+      const rowData = [
+        nextItemNo,       // Col A (1)
+        newQuestion,      // Col B (2)
+        qImg,             // Col C (3)
+        c1,               // Col D (4)
+        c2,               // Col E (5)
+        c3,               // Col F (6)
+        c4,               // Col G (7)
+        c5,               // Col H (8)
+        newAns,           // Col I (9)
+        newExplanation,   // Col J (10)
+        aImg,             // Col K (11)
+        subtopic,         // Col L (12)
+        track,            // Col M (13)
+        note,             // Col N (14)
+        examType,         // Col O (15)
+        examYear          // Col P (16)
+      ];
+
+      targetSheet.appendRow(rowData);
+      const actualRow = targetSheet.getLastRow();
+      const newQId = `${sheetName}::${actualRow}`;
+
+      // บันทึกลง Audit Trail
+      let logSheet = ss.getSheetByName('Log_Question_Edits');
+      if (logSheet) {
+        const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+        logSheet.appendRow([
+          thaiTimestamp,
+          String(data.editorName || 'Admin'),
+          newQId,
+          sheetName,
+          actualRow,
+          "-",
+          newQuestion.substring(0, 200),
+          "-",
+          String(newAns),
+          "-",
+          newExplanation.substring(0, 200),
+          "Created"
+        ]);
+      }
+
+      return jsonResponse_({
+        success: true,
+        message: `เพิ่มข้อสอบใหม่ลงในหมวด ${sheetName} แถวที่ ${actualRow} สำเร็จแล้ว`,
+        questionId: newQId,
+        sheet: sheetName,
+        row: actualRow,
+        itemNo: nextItemNo
+      });
+    }
+
+    // ════════════════════════════════════════════════════════════════════════
+    // 🗑️ ลบข้อสอบออกจากชีต (Admin Only) พร้อมบันทึก Snapshot กู้คืนได้
+    // ════════════════════════════════════════════════════════════════════════
+    if (action === 'deleteQuestion') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const qId = String(data.questionId || '').trim();
+      if (!qId || !qId.includes('::')) {
+        return jsonResponse_({ success: false, error: 'Question ID ไม่ถูกต้อง' });
+      }
+
+      const parts = qId.split('::');
+      const sheetName = parts[0].trim();
+      const rowNum = parseInt(parts[1], 10);
+
+      if (isNaN(rowNum) || rowNum < 3) {
+        return jsonResponse_({ success: false, error: 'เลขแถวไม่ถูกต้อง (ต้อง >= 3): ' + rowNum });
+      }
+
+      const targetSheet = ss.getSheetByName(sheetName);
+      if (!targetSheet) {
+        return jsonResponse_({ success: false, error: 'ไม่พบชีตเป้าหมาย: ' + sheetName });
+      }
+
+      // Snapshot ข้อมูลก่อนลบ
+      const lastCol = Math.max(targetSheet.getLastColumn(), 16);
+      const oldValues = targetSheet.getRange(rowNum, 1, 1, Math.min(lastCol, 17)).getValues()[0];
+
+      let logSheet = ss.getSheetByName('Log_Question_Edits');
+      if (logSheet) {
+        const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+        logSheet.appendRow([
+          thaiTimestamp,
+          String(data.editorName || 'Admin'),
+          qId,
+          sheetName,
+          rowNum,
+          String(oldValues[1] || '').substring(0, 200),
+          "[DELETED]",
+          String(oldValues[8] || ''),
+          "-",
+          String(oldValues[9] || '').substring(0, 200),
+          "-",
+          "Deleted"
+        ]);
+      }
+
+      // ลบแถวออกจากชีต
+      targetSheet.deleteRow(rowNum);
+
+      return jsonResponse_({
+        success: true,
+        message: `ลบข้อสอบรหัส ${qId} ออกจาก Google Sheet สำเร็จแล้ว`,
+        questionId: qId,
+        sheet: sheetName,
+        row: rowNum
+      });
+    }
+
+    // ════════════════════════════════════════════════════════════════════════
+    // 📦 ย้ายข้อสอบข้ามหมวดหมู่ใหญ่ (Move Category / Sheet) (Admin Only)
+    // ════════════════════════════════════════════════════════════════════════
+    if (action === 'moveQuestion') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const qId = String(data.questionId || '').trim();
+      const targetSheetName = String(data.targetSheetName || '').trim();
+
+      if (!qId || !qId.includes('::') || !targetSheetName) {
+        return jsonResponse_({ success: false, error: 'ข้อมูลสำหรับย้ายหมวดไม่ครบถ้วน' });
+      }
+
+      const parts = qId.split('::');
+      const sourceSheetName = parts[0].trim();
+      const sourceRowNum = parseInt(parts[1], 10);
+
+      if (sourceSheetName === targetSheetName) {
+        return jsonResponse_({ success: false, error: 'ชีตปลายทางตรงกับชีตต้นทาง ไม่จำเป็นต้องย้าย' });
+      }
+
+      const sourceSheet = ss.getSheetByName(sourceSheetName);
+      const destSheet = ss.getSheetByName(targetSheetName);
+
+      if (!sourceSheet || !destSheet) {
+        return jsonResponse_({ success: false, error: 'ไม่พบชีตต้นทางหรือปลายทาง' });
+      }
+
+      // อ่านข้อมูลจากชีตต้นทาง
+      const lastCol = Math.max(sourceSheet.getLastColumn(), 16);
+      const rowValues = sourceSheet.getRange(sourceRowNum, 1, 1, Math.min(lastCol, 17)).getValues()[0];
+
+      // คำนวณ Item No ในชีตปลายทาง
+      const destNextRow = destSheet.getLastRow() + 1;
+      let destItemNo = 1;
+      if (destNextRow > 3) {
+        const lastItemVal = destSheet.getRange(destNextRow - 1, 1).getValue();
+        const parsed = parseInt(lastItemVal, 10);
+        destItemNo = isNaN(parsed) ? (destNextRow - 2) : (parsed + 1);
+      }
+
+      // ปรับปรุง Item No สำหรับชีตใหม่
+      rowValues[0] = destItemNo;
+
+      // ถ้ามีการส่งข้อมูลแก้ไขล่าสุดมาด้วย ให้ใช้ข้อมูลใหม่
+      if (data.question) rowValues[1] = String(data.question).replace(/\*\*/g, '').trim();
+      if (data.questionImage != null) rowValues[2] = String(data.questionImage).trim();
+      if (Array.isArray(data.choices)) {
+        for (let c = 0; c < 5; c++) {
+          rowValues[3 + c] = String(data.choices[c] || '').replace(/\*\*/g, '').trim();
+        }
+      }
+      if (data.correctAnswer != null) rowValues[8] = parseInt(data.correctAnswer, 10) || 1;
+      if (data.explanation) rowValues[9] = String(data.explanation).replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
+      if (data.answerImage != null) rowValues[10] = String(data.answerImage).trim();
+      if (data.subtopic != null) rowValues[11] = String(data.subtopic).replace(/\*\*/g, '').trim();
+      if (data.track != null) rowValues[12] = String(data.track).trim();
+      if (data.note != null) rowValues[13] = String(data.note).replace(/\*\*/g, '').trim();
+      if (data.examType != null) rowValues[14] = String(data.examType).trim();
+      if (data.examYear != null) rowValues[15] = String(data.examYear).trim();
+
+      // เขียนลงชีตปลายทาง
+      destSheet.appendRow(rowValues.slice(0, 16));
+      const newRowNum = destSheet.getLastRow();
+      const newQId = `${targetSheetName}::${newRowNum}`;
+
+      // ลบแถวเดิมออกจากชีตต้นทาง
+      sourceSheet.deleteRow(sourceRowNum);
+
+      // บันทึกลง Log_Question_Edits
+      let logSheet = ss.getSheetByName('Log_Question_Edits');
+      if (logSheet) {
+        const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+        logSheet.appendRow([
+          thaiTimestamp,
+          String(data.editorName || 'Admin'),
+          qId,
+          sourceSheetName,
+          sourceRowNum,
+          String(rowValues[1] || '').substring(0, 100),
+          `[MOVED to ${newQId}]`,
+          "-",
+          "-",
+          "-",
+          `Moved from ${sourceSheetName}::${sourceRowNum} to ${newQId}`,
+          "Moved"
+        ]);
+      }
+
+      return jsonResponse_({
+        success: true,
+        message: `ย้ายข้อสอบจาก ${sourceSheetName} ไปยัง ${targetSheetName} แถวที่ ${newRowNum} สำเร็จแล้ว`,
+        oldQuestionId: qId,
+        newQuestionId: newQId,
+        sheet: targetSheetName,
+        row: newRowNum,
+        itemNo: destItemNo
+      });
+    }
+
     // บันทึกรายงานข้อสอบผิดพลาด
     if (action === 'reportIssue') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
