@@ -144,7 +144,7 @@ function setupQuickIngestionTab() {
   // Col O (15): ประเภทข้อสอบ
   sheet.getRange(3, 15, 200, 1).setDataValidation(
     SpreadsheetApp.newDataValidation()
-      .requireValueInList(['Mock', 'ข้อสอบจริง', 'ข้อสอบเก่า', 'แบบฝึกหัด'], true)
+      .requireValueInList(['ข้อสอบจริง', 'ข้อสอบจำลอง', 'Mock', 'ข้อสอบเก่า', 'แบบฝึกหัด'], true)
       .setAllowInvalid(false)
       .build()
   );

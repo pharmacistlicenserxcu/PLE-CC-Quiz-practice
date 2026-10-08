@@ -4264,7 +4264,7 @@
             <label class="paper-label">ประเภทข้อสอบ (Exam Type)</label>
             <select class="paper-input" id="peExamTypeSelect">
               <option value="ข้อสอบจริง">ข้อสอบจริง</option>
-              <option value="Mock">Mock</option>
+              <option value="ข้อสอบจำลอง">ข้อสอบจำลอง</option>
               <option value="แบบฝึกหัด">แบบฝึกหัด</option>
             </select>
           </div>
@@ -9932,7 +9932,7 @@ function populatePaperSubtopicDatalist(catName) {
 function populatePaperExamTypeSelect(currentVal) {
   const sel = document.getElementById('peExamTypeSelect');
   if (!sel) return;
-  const standardTypes = ['ข้อสอบจริง', 'Mock', 'แบบฝึกหัด'];
+  const standardTypes = ['ข้อสอบจริง', 'ข้อสอบจำลอง', 'แบบฝึกหัด'];
   sel.innerHTML = '';
   standardTypes.forEach(t => {
     const opt = document.createElement('option');
@@ -9940,7 +9940,10 @@ function populatePaperExamTypeSelect(currentVal) {
     opt.textContent = t;
     sel.appendChild(opt);
   });
-  const val = (currentVal || '').trim();
+  let val = (currentVal || '').trim();
+  if (val.toLowerCase() === 'mock' || val === 'Mock Exam' || val === 'ข้อสอบ Mock') {
+    val = 'ข้อสอบจำลอง';
+  }
   if (val && !standardTypes.includes(val)) {
     const opt = document.createElement('option');
     opt.value = val;
