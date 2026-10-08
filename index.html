@@ -4261,15 +4261,12 @@
             </select>
           </div>
           <div>
-            <label class="paper-label">ประเภทข้อสอบ (Exam Type - Dropdown)</label>
-            <input type="text" class="paper-input" id="peExamTypeInput" list="peExamTypeDatalist" placeholder="เลือกหรือพิมพ์ประเภท..." autocomplete="off">
-            <datalist id="peExamTypeDatalist">
-              <option value="ข้อสอบจริง">
-              <option value="Mock เล่มม่วง (Pharma Plus)">
-              <option value="Mock Exam ทั่วไป">
-              <option value="ข้อสอบสภาเภสัชกรรม (PLE)">
-              <option value="General">
-            </datalist>
+            <label class="paper-label">ประเภทข้อสอบ (Exam Type)</label>
+            <select class="paper-input" id="peExamTypeSelect">
+              <option value="ข้อสอบจริง">ข้อสอบจริง</option>
+              <option value="Mock">Mock</option>
+              <option value="แบบฝึกหัด">แบบฝึกหัด</option>
+            </select>
           </div>
           <div>
             <label class="paper-label">ปี / เลขชุด (Exam Year/Set)</label>
@@ -9931,21 +9928,30 @@ function populatePaperSubtopicDatalist(catName) {
   });
 }
 
-// Populate Exam Type datalist
-function populatePaperExamTypeDatalist() {
-  const dl = document.getElementById('peExamTypeDatalist');
-  if (!dl) return;
-  const existingTypes = new Set(['ข้อสอบจริง', 'Mock เล่มม่วง (Pharma Plus)', 'Mock Exam ทั่วไป', 'ข้อสอบสภาเภสัชกรรม (PLE)', 'General']);
-  if (typeof getAllUniqueExamTypes === 'function') {
-    const tm = getAllUniqueExamTypes();
-    tm.forEach((v, k) => { if (k) existingTypes.add(k); });
-  }
-  dl.innerHTML = '';
-  Array.from(existingTypes).forEach(t => {
+// Populate Exam Type select dropdown
+function populatePaperExamTypeSelect(currentVal) {
+  const sel = document.getElementById('peExamTypeSelect');
+  if (!sel) return;
+  const standardTypes = ['ข้อสอบจริง', 'Mock', 'แบบฝึกหัด'];
+  sel.innerHTML = '';
+  standardTypes.forEach(t => {
     const opt = document.createElement('option');
     opt.value = t;
-    dl.appendChild(opt);
+    opt.textContent = t;
+    sel.appendChild(opt);
   });
+  const val = (currentVal || '').trim();
+  if (val && !standardTypes.includes(val)) {
+    const opt = document.createElement('option');
+    opt.value = val;
+    opt.textContent = val;
+    sel.appendChild(opt);
+  }
+  if (val) {
+    sel.value = val;
+  } else {
+    sel.value = 'ข้อสอบจริง';
+  }
 }
 
 function populatePaperCategorySelect(selectedCat) {
@@ -10122,7 +10128,7 @@ function openPaperEditorForNewQuestion(defaultCat) {
 
   // Metadata datalists
   populatePaperSubtopicDatalist(cat);
-  populatePaperExamTypeDatalist();
+  populatePaperExamTypeSelect('ข้อสอบจริง');
   const subInput = document.getElementById('peSubtopicInput');
   if (subInput) subInput.value = '';
   const trkSelect = document.getElementById('peTrackSelect');
@@ -10130,8 +10136,6 @@ function openPaperEditorForNewQuestion(defaultCat) {
     const trkVal = (currentTrack || 'clinic').toLowerCase();
     trkSelect.value = trkVal === 'product' ? 'Product' : (trkVal === 'sap' ? 'SAP' : 'Clinic');
   }
-  const exTypeInput = document.getElementById('peExamTypeInput');
-  if (exTypeInput) exTypeInput.value = 'General';
   const exYearInput = document.getElementById('peExamYearInput');
   if (exYearInput) exYearInput.value = '';
   const noteInput = document.getElementById('peNoteInput');
@@ -10248,7 +10252,7 @@ function openPaperEditorModal(q) {
 
     // Metadata & Dynamic Searchable Datalists
     populatePaperSubtopicDatalist(catName);
-    populatePaperExamTypeDatalist();
+    populatePaperExamTypeSelect(q.examType || 'ข้อสอบจริง');
 
     const subVal = Array.isArray(q.subtopics) ? q.subtopics.join(', ') : (q.subtopic || '');
     const subInput = document.getElementById('peSubtopicInput');
@@ -10258,8 +10262,6 @@ function openPaperEditorModal(q) {
       const trkVal = (q.track || currentTrack || 'clinic').toLowerCase();
       trkSelect.value = trkVal === 'product' ? 'Product' : (trkVal === 'sap' ? 'SAP' : 'Clinic');
     }
-    const exTypeInput = document.getElementById('peExamTypeInput');
-    if (exTypeInput) exTypeInput.value = q.examType || 'General';
     const exYearInput = document.getElementById('peExamYearInput');
     if (exYearInput) exYearInput.value = q.examYear || '';
     const noteInput = document.getElementById('peNoteInput');
@@ -10421,7 +10423,7 @@ async function savePaperEditorData() {
 
     const subtopic = (document.getElementById('peSubtopicInput')?.value || '').trim();
     const track = (document.getElementById('peTrackSelect')?.value || 'Clinic').trim();
-    const examType = (document.getElementById('peExamTypeInput')?.value || 'General').trim();
+    const examType = (document.getElementById('peExamTypeSelect')?.value || document.getElementById('peExamTypeInput')?.value || 'ข้อสอบจริง').trim();
     const examYear = (document.getElementById('peExamYearInput')?.value || '').trim();
     const note = (document.getElementById('peNoteInput')?.value || '').trim();
 
