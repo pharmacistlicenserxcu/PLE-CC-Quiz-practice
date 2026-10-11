@@ -1,0 +1,65 @@
+name: 🚀 Remote Compile Quiz Offline Database
+
+on:
+  workflow_dispatch:
+    inputs:
+      filter_mode:
+        description: 'เลือกโหมดการ Compile'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - 'all'
+          - 'category'
+          - 'track'
+      filter_query:
+        description: 'คำค้นหา/ชื่อหมวด (เช่น Cardio, Musculo, Calc หรือ Clinic/Product/SAP)'
+        required: false
+        default: ''
+        type: string
+      commit_msg:
+        description: 'ข้อความกำกับ Git Commit'
+        required: false
+        default: 'Auto sync quiz offline database from Google Sheets'
+        type: string
+
+jobs:
+  compile_and_deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: ⚙️ Compile Quiz Data from Google Sheets
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY || secrets.COMPILE_AND_PUSH }}
+        run: |
+          python compile_offline_db.py --mode "${{ github.event.inputs.filter_mode }}" --query "${{ github.event.inputs.filter_query }}"
+
+      - name: 🚀 Commit & Push ONLY Quiz Offline Data & SW
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add quiz-data-offline.js sw.js
+          if git diff --staged --quiet; then
+            echo "No quiz data changes detected to commit."
+          else
+            git commit -m "${{ github.event.inputs.commit_msg }} [mode: ${{ github.event.inputs.filter_mode }}, query: '${{ github.event.inputs.filter_query }}']"
+            git push origin main
+          fi
