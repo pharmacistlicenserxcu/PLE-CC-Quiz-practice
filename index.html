@@ -1627,6 +1627,124 @@
     }
     .modal-overlay.show { display: flex; }
 
+    /* ══ EXPLANATION POPUP MODAL (IMPECCABLE) ══ */
+    .exp-modal-box {
+      width: 100%;
+      max-width: 640px;
+      max-height: 86vh;
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-lg);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      animation: expModalPopIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow: hidden;
+      margin: auto;
+    }
+
+    @keyframes expModalPopIn {
+      from {
+        opacity: 0;
+        transform: scale(0.96) translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .exp-modal-box {
+        animation: none !important;
+      }
+    }
+
+    .exp-modal-header {
+      padding: 13px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--bg);
+      flex-shrink: 0;
+    }
+
+    .exp-modal-content {
+      padding: 18px 20px;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      flex: 1;
+      font-size: 13.5px;
+      line-height: 1.65;
+    }
+
+    .exp-modal-content::-webkit-scrollbar {
+      width: 6px;
+    }
+    .exp-modal-content::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+    }
+
+    .exp-modal-footer {
+      padding: 12px 18px;
+      border-top: 1px solid var(--border);
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .btn-exp-mode-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 9px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--ink-soft);
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn-exp-mode-toggle:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .btn-reopen-exp {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      padding: 10px 16px;
+      border-radius: 11px;
+      border: 1.5px dashed rgba(16, 185, 129, 0.45);
+      background: #ecfdf5;
+      color: #047857;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all 0.16s ease;
+    }
+    .btn-reopen-exp:hover {
+      background: #d1fae5;
+      border-color: #10b981;
+      transform: translateY(-1px);
+    }
+
+
     /* ══ REALISTIC EXAM PAPER SHEET MODAL (ADMIN ONLY) ══ */
     .paper-modal-overlay {
       position: fixed; inset: 0;
@@ -3128,6 +3246,9 @@
         <button class="icon-btn" id="btnTogglePracticeViewStyle" onclick="togglePracticeViewStyle()" title="สลับมุมมอง: ทีละข้อ (Card) / เลื่อนยาว (Scroll Down)">
           <span id="practiceViewStyleIcon" style="font-size:13px;">📜</span>
         </button>
+        <button class="icon-btn" id="btnToggleExpMode" onclick="toggleExpDisplayMode()" title="โหมดแสดงเฉลย: 🎯 ป๊อปอัปกลางจอ (คลิกเพื่อเปลี่ยนเป็นแสดงด้านล่าง)">
+          <span id="expModeIcon" style="font-size:13px;">🎯</span>
+        </button>
         <button class="icon-btn" id="btnShufflePractice" onclick="shuffleCurrentQuizDeck()" title="🔀 สลับลำดับข้อสอบ (Shuffle)">
           <span style="font-size:13px;">🔀</span>
         </button>
@@ -3246,6 +3367,11 @@
           <!-- Choices rendered dynamically -->
         </div>
 
+        <!-- Reopen Popup Explanation button (shown when modal is dismissed) -->
+        <button class="btn-reopen-exp" id="btnReopenExpCard" onclick="reopenExplanationModal()" style="display:none;" title="เปิดดูเฉลยละเอียดแบบป๊อปอัปอีกครั้ง">
+          <span>💡 ดูเฉลยป๊อปอัปอีกครั้ง (หรือกด Enter เพื่อไปข้อถัดไป)</span>
+        </button>
+
         <!-- Explanation & Reveal Box -->
         
             <!-- In-Column Split View Navigation & Action Row -->
@@ -3269,9 +3395,14 @@
               <span class="exp-badge badge-correct" id="expBadge">✅ ตอบถูกต้อง</span>
               <span id="correctChoiceLabel" style="font-size:12px; font-weight:700; color:var(--ink-soft);"></span>
             </div>
-            <button class="btn-exp-next" id="btnExpNext" onclick="handleActionButton()" title="ไปทำข้อถัดไปทันที">
-              <span>ข้อถัดไป →</span>
-            </button>
+            <div style="display:flex; align-items:center; gap:6px;">
+              <button class="btn-exp-mode-toggle" onclick="toggleExpDisplayMode()" title="สลับเป็นโหมดป๊อปอัปกลางจอ">
+                <span>🎯 ป๊อปอัป</span>
+              </button>
+              <button class="btn-exp-next" id="btnExpNext" onclick="handleActionButton()" title="ไปทำข้อถัดไปทันที">
+                <span>ข้อถัดไป →</span>
+              </button>
+            </div>
           </div>
           <div class="exp-title" id="expTitle">💡 คำอธิบายเฉลย:</div>
           <div class="exp-text" id="explanationText">-</div>
@@ -3514,6 +3645,49 @@
   </div>
 
   <!-- ══ MODALS ══ -->
+
+  <!-- Centered Explanation Pop up Modal (Impeccable Ergonomic) -->
+  <div class="modal-overlay" id="explanationModal" onclick="handleExpModalBackdropClick(event)" style="z-index: 850;">
+    <div class="exp-modal-box" onclick="event.stopPropagation()">
+      <div class="exp-modal-header">
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span class="exp-badge badge-correct" id="modalExpBadge">✅ ตอบถูกต้อง!</span>
+          <span id="modalCorrectChoiceLabel" style="font-size:12.5px; font-weight:700; color:var(--ink-soft);"></span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button class="btn-exp-mode-toggle" id="btnExpModeInModal" onclick="toggleExpDisplayMode()" title="สลับเป็นโหมดแสดงเฉลยด้านล่าง">
+            <span>⏬ แสดงด้านล่าง</span>
+          </button>
+          <button class="modal-close-btn" onclick="closeExplanationModal()" title="ปิดหน้าต่างเฉลย (Esc)">✕</button>
+        </div>
+      </div>
+
+      <div class="exp-modal-content">
+        <div class="exp-title" id="modalExpTitle">💡 คำอธิบายเฉลย:</div>
+        <div class="exp-text" id="modalExplanationText">-</div>
+
+        <div class="exp-img-wrap" id="modalAnsImgWrap" style="display:none;">
+          <img class="exp-img" id="modalAnsImg" src="" alt="รูปเฉลย" onclick="openImgLightbox(this.src)">
+        </div>
+
+        <div class="exp-note" id="modalExpNote" style="display:none;"></div>
+      </div>
+
+      <div class="exp-modal-footer">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <button class="btn-validate-card" id="btnValidateCardModal" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง (คลิกเพื่อยืนยัน)">
+            <span class="val-icon">✅</span>
+            <span class="val-label">ข้อสอบถูกต้อง</span>
+            <span class="val-count" id="valCountCardModal">0</span>
+          </button>
+        </div>
+        <button class="btn-submit-answer" id="btnModalNext" onclick="handleModalNextAction()" style="max-width:none; padding:10px 22px;">
+          <span>ข้อถัดไป →</span>
+          <span style="font-size:11px; opacity:0.8; font-weight:normal; margin-left:4px;">(Enter)</span>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- Pre-Quiz Setup Modal -->
   <div class="modal-overlay" id="quizSetupModal">
@@ -5476,6 +5650,7 @@ function isUserAllowedAdmin(username) {
 window.addEventListener('load', () => {
   updateFullscreenBtnUI();
   applyFontScale(currentFontScale, false);
+  updateExpModeUI();
   const savedTrack = localStorage.getItem(LS_TRACK);
   if (savedTrack) currentTrack = savedTrack;
 
@@ -8349,6 +8524,11 @@ function updateCardValidationBtnState(q) {
   const countExp = document.getElementById('valCountCardExp');
   if (btnExp) btnExp.classList.toggle('validated', isValid);
   if (countExp) countExp.textContent = cnt;
+
+  const btnModal = document.getElementById('btnValidateCardModal');
+  const countModal = document.getElementById('valCountCardModal');
+  if (btnModal) btnModal.classList.toggle('validated', isValid);
+  if (countModal) countModal.textContent = cnt;
 }
 
 function handleValidateScrollQuestion(idx) {
@@ -8749,7 +8929,11 @@ function renderCurrentQuestion(direction) {
   });
   container.innerHTML = cHtml;
 
-  // Explanation Box
+  // Explanation Box & Popup Modal reset
+  closeExplanationModal();
+  const reopenBtn = document.getElementById('btnReopenExpCard');
+  if (reopenBtn) reopenBtn.style.display = 'none';
+
   const expBox = document.getElementById('explanationBox');
   expBox.className = 'explanation-box';
   expBox.classList.remove('show');
@@ -8860,7 +9044,15 @@ function submitAnswerPracticeMode() {
   const expText = document.getElementById('explanationText');
   const correctLabel = document.getElementById('correctChoiceLabel');
 
-  expBox.classList.add('show');
+  const expMode = getExpDisplayMode();
+  if (expMode === 'popup') {
+    expBox.classList.remove('show');
+    openExplanationModal(q, isCorrect, correctLetter);
+  } else {
+    expBox.classList.add('show');
+    const reopenBtn = document.getElementById('btnReopenExpCard');
+    if (reopenBtn) reopenBtn.style.display = 'none';
+  }
 
   // Card background tint on answer reveal
   const cardEl = document.getElementById('quizCard');
@@ -9584,6 +9776,151 @@ function clearBrowseSearch() {
   renderBrowseList();
 }
 
+
+// ─── EXPLANATION DISPLAY MODE (POPUP VS INLINE) ───
+const LS_EXP_DISPLAY_MODE = 'ple_quiz_exp_display_mode';
+
+function getExpDisplayMode() {
+  return localStorage.getItem(LS_EXP_DISPLAY_MODE) || 'popup'; // default to 'popup' as requested
+}
+
+function updateExpModeUI() {
+  const mode = getExpDisplayMode();
+  const btn = document.getElementById('btnToggleExpMode');
+  const icon = document.getElementById('expModeIcon');
+  if (icon) icon.textContent = (mode === 'popup') ? '🎯' : '⏬';
+  if (btn) {
+    btn.title = (mode === 'popup')
+      ? 'โหมดแสดงเฉลย: 🎯 ป๊อปอัปกลางจอ (คลิกเพื่อเปลี่ยนเป็นแสดงด้านล่าง)'
+      : 'โหมดแสดงเฉลย: ⏬ เลื่อนแสดงด้านล่าง (คลิกเพื่อเปลี่ยนเป็นป๊อปอัปกลางจอ)';
+    btn.style.color = (mode === 'popup') ? 'var(--clinic)' : '';
+  }
+}
+
+function toggleExpDisplayMode() {
+  const current = getExpDisplayMode();
+  const next = (current === 'popup') ? 'inline' : 'popup';
+  try { localStorage.setItem(LS_EXP_DISPLAY_MODE, next); } catch(e) {}
+  updateExpModeUI();
+
+  // If answer is already submitted on current question, switch active display immediately
+  if (isAnswerSubmitted && currentQuestionIndex < activeQuizQuestions.length) {
+    const q = activeQuizQuestions[currentQuestionIndex];
+    const isCorrect = (selectedChoiceIndex === q.answer);
+    const correctLetter = THAI_CHOICE_LETTERS[q.answer - 1] || q.answer;
+
+    const inlineBox = document.getElementById('explanationBox');
+    const modal = document.getElementById('explanationModal');
+
+    if (next === 'popup') {
+      if (inlineBox) inlineBox.classList.remove('show');
+      openExplanationModal(q, isCorrect, correctLetter);
+    } else {
+      closeExplanationModal();
+      if (inlineBox) inlineBox.classList.add('show');
+      const reopenBtn = document.getElementById('btnReopenExpCard');
+      if (reopenBtn) reopenBtn.style.display = 'none';
+    }
+  }
+
+  if (typeof showToast === 'function') {
+    showToast(next === 'popup' ? '🎯 โหมดเฉลย: ป๊อปอัปกลางจอ' : '⏬ โหมดเฉลย: เลื่อนแสดงด้านล่าง');
+  }
+}
+
+function openExplanationModal(q, isCorrect, correctLetter) {
+  if (!q) return;
+  const modal = document.getElementById('explanationModal');
+  if (!modal) return;
+
+  const modalBadge = document.getElementById('modalExpBadge');
+  const modalLabel = document.getElementById('modalCorrectChoiceLabel');
+  const modalTitle = document.getElementById('modalExpTitle');
+  const modalText = document.getElementById('modalExplanationText');
+  const modalImgWrap = document.getElementById('modalAnsImgWrap');
+  const modalImg = document.getElementById('modalAnsImg');
+  const modalNote = document.getElementById('modalExpNote');
+
+  if (isCorrect) {
+    modalBadge.className = 'exp-badge badge-correct';
+    modalBadge.innerHTML = '✅ ตอบถูกต้อง!';
+    modalTitle.textContent = '💡 คำอธิบายเฉลย:';
+  } else {
+    modalBadge.className = 'exp-badge badge-wrong';
+    modalBadge.innerHTML = `❌ ยังไม่ถูกต้อง (เฉลยข้อ ${correctLetter})`;
+    modalTitle.textContent = '💡 คำอธิบายข้อที่ถูกต้อง:';
+  }
+
+  if (modalLabel) modalLabel.textContent = `ข้อที่ถูก: ตัวเลือกที่ ${correctLetter}`;
+  if (modalText) modalText.innerHTML = q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
+
+  if (q.answerImage) {
+    modalImg.src = q.answerImage;
+    modalImgWrap.style.display = 'block';
+  } else {
+    modalImg.src = '';
+    modalImgWrap.style.display = 'none';
+  }
+
+  if (q.note) {
+    modalNote.innerHTML = `📌 หมายเหตุ: ${sanitizeExamNote(q.note)}`;
+    modalNote.style.display = 'block';
+  } else {
+    modalNote.style.display = 'none';
+  }
+
+  // Update modal validate button state
+  const btnModal = document.getElementById('btnValidateCardModal');
+  const countModal = document.getElementById('valCountCardModal');
+  const isValid = isQuestionValidatedByUser(q.id);
+  const cnt = getQuestionValidationCount(q.id);
+  if (btnModal) btnModal.classList.toggle('validated', isValid);
+  if (countModal) countModal.textContent = cnt;
+
+  // Show modal
+  modal.classList.add('show');
+  modal.style.display = 'flex';
+
+  // Show reopen button on card so user can re-open after closing
+  const reopenBtn = document.getElementById('btnReopenExpCard');
+  if (reopenBtn) reopenBtn.style.display = 'inline-flex';
+}
+
+function closeExplanationModal() {
+  const modal = document.getElementById('explanationModal');
+  if (modal) {
+    modal.classList.remove('show');
+    modal.style.display = 'none';
+  }
+}
+
+function reopenExplanationModal() {
+  if (!isAnswerSubmitted || currentQuestionIndex >= activeQuizQuestions.length) return;
+  const q = activeQuizQuestions[currentQuestionIndex];
+  const isCorrect = (selectedChoiceIndex === q.answer);
+  const correctLetter = THAI_CHOICE_LETTERS[q.answer - 1] || q.answer;
+  openExplanationModal(q, isCorrect, correctLetter);
+}
+
+function handleExpModalBackdropClick(e) {
+  if (e.target.id === 'explanationModal') {
+    closeExplanationModal();
+  }
+}
+
+function handleModalNextAction() {
+  closeExplanationModal();
+  if (appQuizMode === 'exam') {
+    if (currentQuestionIndex + 1 < activeQuizQuestions.length) {
+      goNextQuestion();
+    } else {
+      submitExamModeWholeSession();
+    }
+  } else {
+    goNextQuestion();
+  }
+}
+
 // ─── KEYBOARD SHORTCUTS ───
 const KEY_TO_CHOICE = {
   '1': 1, '2': 2, '3': 3, '4': 4, '5': 5,
@@ -9601,6 +9938,22 @@ const CODE_TO_CHOICE = {
 window.addEventListener('keydown', (e) => {
   const tag = (e.target.tagName || '').toLowerCase();
   if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
+
+  // If Explanation Popup Modal is open, handle Enter/Space to next question, Esc to dismiss
+  const expModal = document.getElementById('explanationModal');
+  const isExpModalOpen = expModal && (expModal.classList.contains('show') || expModal.style.display === 'flex');
+  if (isExpModalOpen) {
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeExplanationModal();
+      return;
+    }
+    if (e.key === 'Enter' || e.code === 'Space') {
+      e.preventDefault();
+      handleModalNextAction();
+      return;
+    }
+  }
   if (currentAppMode !== 'quiz' || (typeof practiceViewStyle !== 'undefined' && practiceViewStyle === 'scroll' && appQuizMode !== 'exam')) return;
 
   const choiceNum = CODE_TO_CHOICE[e.code] || KEY_TO_CHOICE[e.key];
