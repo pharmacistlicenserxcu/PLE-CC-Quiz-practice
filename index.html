@@ -3311,7 +3311,7 @@
       </div>
 
       <div class="kbd-hints-bar">
-        <span class="kbd-chip"><kbd>1-5</kbd> เลือกตัวเลือก</span>
+        <span class="kbd-chip"><kbd>1-5</kbd> หรือ <kbd>Z-B</kbd> เลือกตัวเลือก</span>
         <span class="kbd-chip"><kbd>Enter/Space</kbd> ตรวจคำตอบ/ข้อถัดไป</span>
         <span class="kbd-chip"><kbd>←</kbd> <kbd>→</kbd> เลื่อนข้อ</span>
       </div>
@@ -9585,14 +9585,28 @@ function clearBrowseSearch() {
 }
 
 // ─── KEYBOARD SHORTCUTS ───
+const KEY_TO_CHOICE = {
+  '1': 1, '2': 2, '3': 3, '4': 4, '5': 5,
+  'z': 1, 'x': 2, 'c': 3, 'v': 4, 'b': 5,
+  'Z': 1, 'X': 2, 'C': 3, 'V': 4, 'B': 5,
+  'ผ': 1, 'ป': 2, 'แ': 3, 'อ': 4, 'ิ': 5
+};
+
+const CODE_TO_CHOICE = {
+  'Digit1': 1, 'Digit2': 2, 'Digit3': 3, 'Digit4': 4, 'Digit5': 5,
+  'Numpad1': 1, 'Numpad2': 2, 'Numpad3': 3, 'Numpad4': 4, 'Numpad5': 5,
+  'KeyZ': 1, 'KeyX': 2, 'KeyC': 3, 'KeyV': 4, 'KeyB': 5
+};
+
 window.addEventListener('keydown', (e) => {
   const tag = (e.target.tagName || '').toLowerCase();
   if (tag === 'input' || tag === 'textarea' || tag === 'select') return;
   if (currentAppMode !== 'quiz' || (typeof practiceViewStyle !== 'undefined' && practiceViewStyle === 'scroll' && appQuizMode !== 'exam')) return;
 
-  if (['1', '2', '3', '4', '5'].includes(e.key)) {
+  const choiceNum = CODE_TO_CHOICE[e.code] || KEY_TO_CHOICE[e.key];
+  if (choiceNum) {
     e.preventDefault();
-    selectChoice(parseInt(e.key, 10));
+    selectChoice(choiceNum);
   } else if (e.key === 'Enter' || e.code === 'Space') {
     e.preventDefault();
     handleActionButton();
