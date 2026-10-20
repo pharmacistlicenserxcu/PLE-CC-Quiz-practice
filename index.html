@@ -156,10 +156,11 @@
         box-shadow: 0 2px 10px rgba(0,0,0,0.04) !important;
       }
       .question-text {
-        font-size: 18.5px !important;
-        line-height: 1.65 !important;
+        font-size: 15.5px !important;
+        line-height: 1.55 !important;
         letter-spacing: -0.01em !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 12px !important;
+        font-weight: 600 !important;
       }
       .choices-list {
         display: flex !important;
@@ -170,20 +171,20 @@
         justify-content: flex-start !important;
       }
       .choice-item {
-        padding: 14px 16px !important;
-        border-radius: 14px !important;
-        min-height: 52px !important;
-        gap: 13px !important;
+        padding: 10px 13px !important;
+        border-radius: 12px !important;
+        min-height: 44px !important;
+        gap: 11px !important;
       }
       .choice-num {
-        width: 32px !important;
-        height: 32px !important;
-        font-size: 14px !important;
-        border-radius: 9px !important;
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 12.5px !important;
+        border-radius: 8px !important;
       }
       .choice-text {
-        font-size: 16px !important;
-        line-height: 1.5 !important;
+        font-size: 14px !important;
+        line-height: 1.45 !important;
       }
       .quiz-nav-row {
         max-width: 100% !important;
@@ -222,40 +223,63 @@
     }
 
     /* ── DYNAMIC FONT SIZE SCALING PRESETS ── */
+    body.font-scale-sm .question-text {
+      font-size: 13.5px !important;
+      line-height: 1.5 !important;
+      margin-bottom: 10px !important;
+    }
+    body.font-scale-sm .choice-text {
+      font-size: 12.5px !important;
+      line-height: 1.4 !important;
+    }
+    body.font-scale-sm .choice-num {
+      width: 24px !important;
+      height: 24px !important;
+      font-size: 11px !important;
+    }
+    body.font-scale-sm .choice-item {
+      padding: 8px 11px !important;
+      min-height: 38px !important;
+    }
+    body.font-scale-sm .exp-text {
+      font-size: 11px !important;
+      line-height: 1.5 !important;
+    }
+
     body.font-scale-lg .question-text {
-      font-size: 21px !important;
-      line-height: 1.7 !important;
+      font-size: 17.5px !important;
+      line-height: 1.65 !important;
     }
     body.font-scale-lg .choice-text {
-      font-size: 18px !important;
-      line-height: 1.55 !important;
+      font-size: 15.5px !important;
+      line-height: 1.5 !important;
     }
     body.font-scale-lg .choice-num {
+      width: 32px !important;
+      height: 32px !important;
+      font-size: 14px !important;
+    }
+    body.font-scale-lg .exp-text {
+      font-size: 13.5px !important;
+      line-height: 1.6 !important;
+    }
+
+    body.font-scale-xl .question-text {
+      font-size: 19.5px !important;
+      line-height: 1.7 !important;
+    }
+    body.font-scale-xl .choice-text {
+      font-size: 17px !important;
+      line-height: 1.55 !important;
+    }
+    body.font-scale-xl .choice-num {
       width: 36px !important;
       height: 36px !important;
       font-size: 15px !important;
     }
-    body.font-scale-lg .exp-text {
-      font-size: 14.5px !important;
-      line-height: 1.65 !important;
-    }
-
-    body.font-scale-xl .question-text {
-      font-size: 23.5px !important;
-      line-height: 1.75 !important;
-    }
-    body.font-scale-xl .choice-text {
-      font-size: 20px !important;
-      line-height: 1.6 !important;
-    }
-    body.font-scale-xl .choice-num {
-      width: 40px !important;
-      height: 40px !important;
-      font-size: 16px !important;
-    }
     body.font-scale-xl .exp-text {
-      font-size: 16px !important;
-      line-height: 1.7 !important;
+      font-size: 15px !important;
+      line-height: 1.65 !important;
     }
 
     :fullscreen,
@@ -1081,6 +1105,104 @@
       transition: background-color 0.28s ease, border-color 0.28s ease, box-shadow 0.2s, transform 0.32s cubic-bezier(0.2, 0.9, 0.3, 1);
     }
 
+    /* ════ 2-COLUMN SPLIT VIEW MODE (IMPECCABLE RESPONSIVE) ════ */
+    .quiz-card-body-split {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .quiz-card-col-left {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .quiz-card-col-right {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .quiz-split-action-row {
+      display: none;
+    }
+
+    @media (min-width: 880px) {
+      body.quiz-split-mode .subtopic-selector-row,
+      body.quiz-split-mode .progress-row,
+      body.quiz-split-mode .exam-palette-toggle-bar,
+      body.quiz-split-mode .exam-nav-palette,
+      body.quiz-split-mode .card-scene,
+      body.quiz-split-mode .quiz-card,
+      body.quiz-split-mode .quiz-nav-row {
+        max-width: min(1200px, 96vw) !important;
+      }
+
+      body.quiz-split-mode .quiz-card {
+        padding: 22px 24px 24px !important;
+      }
+
+      body.quiz-split-mode .quiz-card-body-split {
+        display: grid !important;
+        grid-template-columns: 1.15fr 1fr;
+        gap: 26px;
+        align-items: start;
+      }
+
+      body.quiz-split-mode .quiz-card-col-left {
+        padding-right: 20px;
+        border-right: 1.5px solid var(--border);
+        position: sticky;
+        top: 10px;
+        max-height: calc(100vh - 130px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+      }
+
+      body.quiz-split-mode .quiz-card-col-left::-webkit-scrollbar {
+        width: 5px;
+      }
+      body.quiz-split-mode .quiz-card-col-left::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+      }
+
+      body.quiz-split-mode .quiz-card-col-right {
+        min-width: 0;
+        position: sticky;
+        top: 10px;
+        max-height: calc(100vh - 130px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        padding-right: 2px;
+      }
+
+      body.quiz-split-mode .quiz-card-col-right::-webkit-scrollbar {
+        width: 5px;
+      }
+      body.quiz-split-mode .quiz-card-col-right::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+      }
+
+      body.quiz-split-mode .quiz-split-action-row {
+        display: flex !important;
+        align-items: center;
+        gap: 8px;
+        margin-top: 14px;
+        padding-top: 12px;
+        border-top: 1px dashed var(--border);
+      }
+
+      body.quiz-split-mode .quiz-nav-row:not(.quiz-nav-top) {
+        display: none !important;
+      }
+
+      body.fullscreen-active.quiz-split-mode .quiz-viewport,
+      :fullscreen body.quiz-split-mode .quiz-viewport {
+        max-width: 1260px !important;
+      }
+    }
+
+
     /* ── Subtle 3D Card Flip / Slide Animation ── */
     .quiz-card.anim-flip-next {
       animation: cardFlipNext 0.32s cubic-bezier(0.2, 0.9, 0.3, 1);
@@ -1218,7 +1340,7 @@
     .question-img { max-width: 100%; max-height: 240px; border-radius: 10px; border: 1px solid var(--border); object-fit: contain; cursor: pointer; }
 
     .question-text {
-      font-size: 17px; font-weight: 700; line-height: 1.6; color: var(--ink); margin-bottom: 16px;
+      font-size: 15.5px; font-weight: 600; line-height: 1.55; color: var(--ink); margin-bottom: 14px;
     }
 
     /* Choices list */
@@ -1233,13 +1355,13 @@
       border-color: var(--choice-hover-border); background: var(--choice-hover-bg); transform: translateX(2px);
     }
     .choice-num {
-      width: 28px; height: 28px; border-radius: 8px; background: var(--bg);
+      width: 26px; height: 26px; border-radius: 7px; background: var(--bg);
       border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
-      font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; font-weight: 700;
+      font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 700;
       color: var(--ink-soft); flex-shrink: 0; transition: all 0.15s;
     }
     .choice-text {
-      font-size: 14.5px; font-weight: 500; color: var(--ink); line-height: 1.45; flex: 1;
+      font-size: 14px; font-weight: 500; color: var(--ink); line-height: 1.45; flex: 1;
     }
 
     /* Selected states */
@@ -3040,10 +3162,13 @@
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
         <div class="mode-switch-segmented" id="quizModeSwitchInQuiz" style="margin-left:auto; flex-shrink:0;">
-          <button class="mode-seg-btn active" id="btnQuizSegCard" onclick="showCardViewport()" title="โหมดฝึกฝนทีละข้อ (Card)">
-            📖 ทีละข้อ
+          <button class="mode-seg-btn" id="btnQuizSegCard" onclick="setPracticeViewLayout('single')" title="โหมดทีละข้อ 1 คอลัมน์">
+            📖 1 คอลัมน์
           </button>
-          <button class="mode-seg-btn" id="btnQuizSegScroll" onclick="showScrollViewport()" title="โหมดเลื่อนอ่านยาว (Scroll Down)">
+          <button class="mode-seg-btn active" id="btnQuizSegSplit" onclick="setPracticeViewLayout('split')" title="โหมดทีละข้อ 2 คอลัมน์ (แยกโจทย์-ตัวเลือก)">
+            📑 2 คอลัมน์
+          </button>
+          <button class="mode-seg-btn" id="btnQuizSegScroll" onclick="setPracticeViewLayout('scroll')" title="โหมดเลื่อนอ่านยาว (Scroll Down)">
             📜 เลื่อนอ่าน
           </button>
         </div>
@@ -3089,63 +3214,84 @@
       <!-- Main Quiz Card -->
       <div class="card-scene">
         <div class="quiz-card" id="quizCard">
-        <div class="quiz-card-head">
-          <span class="tag clinic-tag" id="quizCardTag">Clinic · Cardiovascular</span>
-          <div style="display:flex; align-items:center; gap:6px;">
-            <button class="btn-validate-card" id="btnValidateCard" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
-              <span class="val-icon">✅</span>
-              <span class="val-label">ข้อสอบถูกต้อง</span>
-              <span class="val-count" id="valCountCard">0</span>
-            </button>
-            <button class="btn-report-card" onclick="openReportIssueModal()" title="แจ้งปัญหาข้อนี้">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-              <span>แจ้งปัญหา</span>
-            </button>
-            <button class="btn-admin-edit-card" id="btnAdminEditCard" onclick="openPaperEditorForCurrentCard()" title="✏️ แก้ไขข้อสอบบนแผ่นกระดาษ (Admin Only)" style="display:none;">
-              <span>✏️ แก้ไข</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="case-cluster-banner" id="caseClusterBanner" style="display:none;"></div>
-
-        <div class="question-img-wrap" id="qImgWrap">
-          <img class="question-img" id="qImg" src="" alt="รูปคำถาม" onclick="openImgLightbox(this.src)">
-        </div>
-
+        <div class="quiz-card-body-split">
+          <div class="quiz-card-col-left">
+            <div class="quiz-card-head">
+          <span class="tag clinic-tag" id="quizCardTag">Clinic · Cardiovascular</span>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <button class="btn-validate-card" id="btnValidateCard" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
+              <span class="val-icon">✅</span>
+              <span class="val-label">ข้อสอบถูกต้อง</span>
+              <span class="val-count" id="valCountCard">0</span>
+            </button>
+            <button class="btn-report-card" onclick="openReportIssueModal()" title="แจ้งปัญหาข้อนี้">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              <span>แจ้งปัญหา</span>
+            </button>
+            <button class="btn-admin-edit-card" id="btnAdminEditCard" onclick="openPaperEditorForCurrentCard()" title="✏️ แก้ไขข้อสอบบนแผ่นกระดาษ (Admin Only)" style="display:none;">
+              <span>✏️ แก้ไข</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="case-cluster-banner" id="caseClusterBanner" style="display:none;"></div>
+
+        <div class="question-img-wrap" id="qImgWrap">
+          <img class="question-img" id="qImg" src="" alt="รูปคำถาม" onclick="openImgLightbox(this.src)">
+        </div>
+
         <div class="question-text" id="questionText">กำลังโหลดโจทย์...</div>
-
-        <!-- 5 Choices List -->
-        <div class="choices-list" id="choicesContainer">
-          <!-- Choices rendered dynamically -->
+          </div>
+          <div class="quiz-card-col-right">
+            <!-- 5 Choices List -->
+        <div class="choices-list" id="choicesContainer">
+          <!-- Choices rendered dynamically -->
+        </div>
+
+        <!-- Explanation & Reveal Box -->
+        
+            <!-- In-Column Split View Navigation & Action Row -->
+            <div class="quiz-split-action-row" id="quizSplitActionRow">
+              <button class="nav-arrow-btn" id="btnPrevQSplit" onclick="goPrevQuestion()" title="ข้อก่อนหน้า (←)" style="padding:10px 14px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                <span>ก่อนหน้า</span>
+              </button>
+              <button class="btn-submit-answer" id="btnActionSplit" onclick="handleActionButton()" style="flex:1; max-width:none; padding:11px 18px;">
+                ตรวจคำตอบ
+              </button>
+              <button class="nav-arrow-btn" id="btnNextQSplit" onclick="goNextQuestion()" title="ข้อถัดไป (→)" style="padding:10px 14px;">
+                <span>ถัดไป</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+
+        <div class="explanation-box" id="explanationBox">
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+              <span class="exp-badge badge-correct" id="expBadge">✅ ตอบถูกต้อง</span>
+              <span id="correctChoiceLabel" style="font-size:12px; font-weight:700; color:var(--ink-soft);"></span>
+            </div>
+            <button class="btn-exp-next" id="btnExpNext" onclick="handleActionButton()" title="ไปทำข้อถัดไปทันที">
+              <span>ข้อถัดไป →</span>
+            </button>
+          </div>
+          <div class="exp-title" id="expTitle">💡 คำอธิบายเฉลย:</div>
+          <div class="exp-text" id="explanationText">-</div>
+          <div class="exp-img-wrap" id="ansImgWrap" style="display:none;">
+            <img class="exp-img" id="ansImg" src="" alt="รูปเฉลย" onclick="openImgLightbox(this.src)">
+          </div>
+          <div class="exp-note" id="expNote" style="display:none;"></div>
+          
+          <div class="exp-validate-bar" style="margin-top:12px; padding-top:10px; border-top:1px dashed rgba(0,0,0,0.1); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+            <div style="font-size:11.5px; color:var(--ink-soft);">
+              ✨ หากตรวจสอบแล้วว่าข้อนี้และเฉลยถูกต้อง สามารถร่วมกดยืนยันได้เลยครับ
+            </div>
+            <button class="btn-validate-card" id="btnValidateCardExp" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
+              <span>✅ ข้อสอบถูกต้อง</span>
+              <span class="val-count" id="valCountCardExp">0</span>
+            </button>
+          </div>
         </div>
-
-        <!-- Explanation & Reveal Box -->
-        <div class="explanation-box" id="explanationBox">
-          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
-            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-              <span class="exp-badge badge-correct" id="expBadge">✅ ตอบถูกต้อง</span>
-              <span id="correctChoiceLabel" style="font-size:12px; font-weight:700; color:var(--ink-soft);"></span>
-            </div>
-            <button class="btn-exp-next" id="btnExpNext" onclick="handleActionButton()" title="ไปทำข้อถัดไปทันที">
-              <span>ข้อถัดไป →</span>
-            </button>
-          </div>
-          <div class="exp-title" id="expTitle">💡 คำอธิบายเฉลย:</div>
-          <div class="exp-text" id="explanationText">-</div>
-          <div class="exp-img-wrap" id="ansImgWrap" style="display:none;">
-            <img class="exp-img" id="ansImg" src="" alt="รูปเฉลย" onclick="openImgLightbox(this.src)">
-          </div>
-          <div class="exp-note" id="expNote" style="display:none;"></div>
-          
-          <div class="exp-validate-bar" style="margin-top:12px; padding-top:10px; border-top:1px dashed rgba(0,0,0,0.1); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
-            <div style="font-size:11.5px; color:var(--ink-soft);">
-              ✨ หากตรวจสอบแล้วว่าข้อนี้และเฉลยถูกต้อง สามารถร่วมกดยืนยันได้เลยครับ
-            </div>
-            <button class="btn-validate-card" id="btnValidateCardExp" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
-              <span>✅ ข้อสอบถูกต้อง</span>
-              <span class="val-count" id="valCountCardExp">0</span>
-            </button>
           </div>
         </div>
       </div>
@@ -3193,10 +3339,13 @@
               <span>🔄 ล้างคำตอบ</span>
             </button>
             <div class="mode-switch-segmented" id="quizModeSwitchInScroll" style="margin-left:4px; flex-shrink:0;">
-              <button class="mode-seg-btn" id="btnScrollSegCard" onclick="showCardViewport()" title="โหมดฝึกฝนทีละข้อ (Card)">
-                📖 ทีละข้อ
+              <button class="mode-seg-btn" id="btnScrollSegCard" onclick="setPracticeViewLayout('single')" title="โหมดทีละข้อ 1 คอลัมน์">
+                📖 1 คอลัมน์
               </button>
-              <button class="mode-seg-btn active" id="btnScrollSegScroll" onclick="showScrollViewport()" title="โหมดเลื่อนอ่านยาว (Scroll Down)">
+              <button class="mode-seg-btn" id="btnScrollSegSplit" onclick="setPracticeViewLayout('split')" title="โหมดทีละข้อ 2 คอลัมน์">
+                📑 2 คอลัมน์
+              </button>
+              <button class="mode-seg-btn active" id="btnScrollSegScroll" onclick="setPracticeViewLayout('scroll')" title="โหมดเลื่อนอ่านยาว (Scroll Down)">
                 📜 เลื่อนอ่าน
               </button>
             </div>
@@ -5362,6 +5511,8 @@ function showApp() {
   document.getElementById('lobbyGreetingName').textContent = dn;
   if (typeof updateLobbyAdminUI === 'function') updateLobbyAdminUI();
   setAppQuizMode(appQuizMode);
+  const initialLayout = localStorage.getItem(LS_PRACTICE_VIEW_STYLE) || (window.innerWidth >= 880 ? 'split' : 'single');
+  setPracticeViewLayout(initialLayout);
   updateAnimBtnUI();
   updateFullscreenBtnUI();
   applyFontScale(currentFontScale, false);
@@ -7837,71 +7988,105 @@ function toggleCardAnimation() {
 
 function togglePracticeViewStyle() {
   if (appQuizMode === 'exam') {
-    showToast('⏱️ โหมดสอบจริงไม่อนุญาตให้สลับมุมมองระหว่างสอบ');
+    if (typeof showToast === 'function') showToast('⚠️ ในโหมดสอบจับเวลาจำลอง บังคับใช้มุมมองทีละข้อ');
+    const next = (practiceViewStyle === 'split') ? 'single' : 'split';
+    setPracticeViewLayout(next);
+    if (typeof showToast === 'function') showToast(next === 'split' ? '📑 สลับเป็น 2 คอลัมน์' : '📖 สลับเป็น 1 คอลัมน์');
     return;
   }
-  if (practiceViewStyle === 'scroll') {
-    showCardViewport();
-    showToast('🃏 สลับเป็นมุมมองทีละข้อ');
+  let next = 'split';
+  if (practiceViewStyle === 'single') next = 'split';
+  else if (practiceViewStyle === 'split') next = 'scroll';
+  else if (practiceViewStyle === 'scroll') next = 'single';
+  else next = (window.innerWidth >= 880 ? 'split' : 'single');
+
+  setPracticeViewLayout(next);
+  const labels = { single: '📖 โหมดทีละข้อ 1 คอลัมน์', split: '📑 โหมดทีละข้อ 2 คอลัมน์ (โจทย์ | ตัวเลือก)', scroll: '📜 โหมดเลื่อนอ่านยาว' };
+  if (typeof showToast === 'function') showToast(labels[next]);
+}
+
+function setPracticeViewLayout(layout) {
+  if (appQuizMode === 'exam' && layout === 'scroll') {
+    if (typeof showToast === 'function') showToast('⚠️ ในโหมดสอบจับเวลาจำลอง บังคับใช้มุมมองทีละข้อ');
+    layout = 'split';
+  }
+
+  // Normalize: 'card' maps to 'split' on desktop/tablet (>=880px), or 'single'
+  if (layout === 'card') {
+    layout = (window.innerWidth >= 880) ? 'split' : 'single';
+  }
+  if (!['single', 'split', 'scroll'].includes(layout)) {
+    layout = (window.innerWidth >= 880) ? 'split' : 'single';
+  }
+
+  practiceViewStyle = layout;
+  try { localStorage.setItem(LS_PRACTICE_VIEW_STYLE, layout); } catch(e) {}
+
+  const cardVp = document.getElementById('cardPracticeViewport');
+  const scrollVp = document.getElementById('scrollPracticeViewport');
+
+  if (layout === 'scroll') {
+    document.body.classList.remove('quiz-split-mode');
+    if (cardVp) cardVp.style.display = 'none';
+    if (scrollVp) scrollVp.style.display = 'flex';
   } else {
-    showScrollViewport();
-    showToast('📜 สลับเป็นมุมมองเลื่อนอ่านยาว');
+    if (scrollVp) scrollVp.style.display = 'none';
+    if (cardVp) cardVp.style.display = 'flex';
+
+    if (layout === 'split') {
+      document.body.classList.add('quiz-split-mode');
+    } else {
+      document.body.classList.remove('quiz-split-mode');
+    }
+  }
+
+  // Update topbar icon
+  const icon = document.getElementById('practiceViewStyleIcon');
+  const btn = document.getElementById('btnTogglePracticeViewStyle');
+  const iconMap = { single: '📖', split: '📑', scroll: '📜' };
+  const titleMap = {
+    single: 'มุมมองปัจจุบัน: 1 คอลัมน์ (คลิกเพื่อสลับ)',
+    split: 'มุมมองปัจจุบัน: 2 คอลัมน์ (คลิกเพื่อสลับ)',
+    scroll: 'มุมมองปัจจุบัน: เลื่อนอ่าน (คลิกเพื่อสลับ)'
+  };
+  if (icon) icon.textContent = iconMap[layout] || '📑';
+  if (btn) btn.title = titleMap[layout] || 'สลับมุมมอง';
+
+  // Update segmented buttons in Quiz Viewport
+  const segSingle = document.getElementById('btnQuizSegCard');
+  const segSplit = document.getElementById('btnQuizSegSplit');
+  const segScroll = document.getElementById('btnQuizSegScroll');
+  if (segSingle) segSingle.classList.toggle('active', layout === 'single');
+  if (segSplit) segSplit.classList.toggle('active', layout === 'split');
+  if (segScroll) segScroll.classList.toggle('active', layout === 'scroll');
+
+  // Update segmented buttons in Scroll Viewport
+  const scrollSegSingle = document.getElementById('btnScrollSegCard');
+  const scrollSegSplit = document.getElementById('btnScrollSegSplit');
+  const scrollSegScroll = document.getElementById('btnScrollSegScroll');
+  if (scrollSegSingle) scrollSegSingle.classList.toggle('active', layout === 'single');
+  if (scrollSegSplit) scrollSegSplit.classList.toggle('active', layout === 'split');
+  if (scrollSegScroll) scrollSegScroll.classList.toggle('active', layout === 'scroll');
+
+  populatePracticeSubtopicDropdowns();
+  populatePracticeExamTypeDropdowns();
+
+  if (layout === 'scroll') {
+    updateScrollPracticeStats();
+    renderScrollPractice();
+  } else {
+    renderCurrentQuestion();
   }
 }
 
 function showScrollViewport() {
-  practiceViewStyle = 'scroll';
-  try { localStorage.setItem(LS_PRACTICE_VIEW_STYLE, 'scroll'); } catch(e) {}
-  const cardVp = document.getElementById('cardPracticeViewport');
-  const scrollVp = document.getElementById('scrollPracticeViewport');
-  if (cardVp) cardVp.style.display = 'none';
-  if (scrollVp) scrollVp.style.display = 'flex';
-  const icon = document.getElementById('practiceViewStyleIcon');
-  if (icon) icon.textContent = '🃏';
-  const btn = document.getElementById('btnTogglePracticeViewStyle');
-  if (btn) btn.title = 'สลับมุมมอง: โหมดทีละข้อ (Card View)';
-
-  const segC = document.getElementById('btnQuizSegCard');
-  const segS = document.getElementById('btnQuizSegScroll');
-  if (segC) segC.classList.remove('active');
-  if (segS) segS.classList.add('active');
-
-  const segScrollC = document.getElementById('btnScrollSegCard');
-  const segScrollS = document.getElementById('btnScrollSegScroll');
-  if (segScrollC) segScrollC.classList.remove('active');
-  if (segScrollS) segScrollS.classList.add('active');
-
-  populatePracticeSubtopicDropdowns();
-  populatePracticeExamTypeDropdowns();
-  updateScrollPracticeStats();
-  renderScrollPractice();
+  setPracticeViewLayout('scroll');
 }
 
 function showCardViewport() {
-  practiceViewStyle = 'card';
-  try { localStorage.setItem(LS_PRACTICE_VIEW_STYLE, 'card'); } catch(e) {}
-  const cardVp = document.getElementById('cardPracticeViewport');
-  const scrollVp = document.getElementById('scrollPracticeViewport');
-  if (cardVp) cardVp.style.display = 'flex';
-  if (scrollVp) scrollVp.style.display = 'none';
-  const icon = document.getElementById('practiceViewStyleIcon');
-  if (icon) icon.textContent = '📜';
-  const btn = document.getElementById('btnTogglePracticeViewStyle');
-  if (btn) btn.title = 'สลับมุมมอง: โหมดเลื่อนอ่านยาว (Scroll Down)';
-
-  const segC = document.getElementById('btnQuizSegCard');
-  const segS = document.getElementById('btnQuizSegScroll');
-  if (segC) segC.classList.add('active');
-  if (segS) segS.classList.remove('active');
-
-  const segScrollC = document.getElementById('btnScrollSegCard');
-  const segScrollS = document.getElementById('btnScrollSegScroll');
-  if (segScrollC) segScrollC.classList.add('active');
-  if (segScrollS) segScrollS.classList.remove('active');
-
-  populatePracticeSubtopicDropdowns();
-  populatePracticeExamTypeDropdowns();
-  renderCurrentQuestion();
+  const saved = localStorage.getItem(LS_PRACTICE_VIEW_STYLE);
+  const target = (saved === 'single' || saved === 'split') ? saved : (window.innerWidth >= 880 ? 'split' : 'single');
+  setPracticeViewLayout(target);
 }
 
 function toggleAllScrollExp() {
@@ -8578,7 +8763,7 @@ function renderCurrentQuestion(direction) {
   const actionText = isExam ? (isLast ? '📥 ส่งข้อสอบทั้งหมด' : 'ข้อถัดไป →') : 'ตรวจคำตอบ';
   const actionDisabled = isExam ? false : (selectedChoiceIndex == null);
 
-  ['btnAction', 'btnActionTop'].forEach(id => {
+  ['btnAction', 'btnActionTop', 'btnActionSplit'].forEach(id => {
     const btn = document.getElementById(id);
     if (btn) {
       btn.textContent = actionText;
@@ -8612,7 +8797,7 @@ function selectChoice(choiceNum) {
     item.classList.toggle('selected', (idx + 1) === choiceNum);
   });
 
-  ['btnAction', 'btnActionTop'].forEach(id => {
+  ['btnAction', 'btnActionTop', 'btnActionSplit'].forEach(id => {
     const btn = document.getElementById(id);
     if (btn) btn.disabled = false;
   });
@@ -8724,7 +8909,7 @@ function submitAnswerPracticeMode() {
 
   // Change action buttons to "Next Question"
   const nextText = (currentQuestionIndex + 1 < activeQuizQuestions.length) ? 'ข้อถัดไป →' : 'ดูผลคะแนน 🏆';
-  ['btnAction', 'btnActionTop', 'btnExpNext'].forEach(id => {
+  ['btnAction', 'btnActionTop', 'btnExpNext', 'btnActionSplit'].forEach(id => {
     const btn = document.getElementById(id);
     if (btn) {
       btn.textContent = nextText;
@@ -8845,11 +9030,11 @@ function updateQuizNav() {
   }
 
   const isFirst = (currentQuestionIndex <= 0);
-  ['btnPrevQ', 'btnPrevQTop'].forEach(id => {
+  ['btnPrevQ', 'btnPrevQTop', 'btnPrevQSplit'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.disabled = isFirst;
   });
-  ['btnNextQ', 'btnNextQTop'].forEach(id => {
+  ['btnNextQ', 'btnNextQTop', 'btnNextQSplit'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.disabled = false;
   });
@@ -9425,8 +9610,9 @@ window.addEventListener('keydown', (e) => {
 });
 
 // ─── DYNAMIC FONT SIZE SCALING ───
-const FONT_SCALES = ['md', 'lg', 'xl'];
+const FONT_SCALES = ['sm', 'md', 'lg', 'xl'];
 const FONT_SCALE_LABELS = {
+  sm: 'กะทัดรัด (88%)',
   md: 'ปกติ (100%)',
   lg: 'ใหญ่ (115%)',
   xl: 'ใหญ่พิเศษ (130%)'
@@ -9438,7 +9624,8 @@ function applyFontScale(scale, notify = false) {
   currentFontScale = scale;
   localStorage.setItem('ple_font_scale', scale);
 
-  document.body.classList.remove('font-scale-lg', 'font-scale-xl');
+  document.body.classList.remove('font-scale-sm', 'font-scale-lg', 'font-scale-xl');
+  if (scale === 'sm') document.body.classList.add('font-scale-sm');
   if (scale === 'lg') document.body.classList.add('font-scale-lg');
   if (scale === 'xl') document.body.classList.add('font-scale-xl');
 
