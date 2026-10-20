@@ -1300,19 +1300,19 @@
     }
 
     .btn-report-card {
-      display: inline-flex; align-items: center; gap: 4px;
-      padding: 3px 8px; border: 1px solid var(--border); border-radius: 6px;
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px; padding: 0; border: 1px solid var(--border); border-radius: 7px;
       background: var(--card); color: var(--ink-faint); font-family: inherit;
-      font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.15s;
+      font-size: 13px; cursor: pointer; transition: all 0.15s ease; flex-shrink: 0;
     }
-    .btn-report-card:hover { color: #dc2626; border-color: #fca5a5; background: #fef2f2; }
+    .btn-report-card:hover { color: #dc2626; border-color: #fca5a5; background: #fef2f2; transform: translateY(-1px); }
 
     .btn-validate-card {
-      display: inline-flex; align-items: center; gap: 5px;
-      padding: 3px 8px; border: 1px solid rgba(16, 185, 129, 0.45); border-radius: 6px;
+      display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+      height: 28px; padding: 0 7px; border: 1px solid rgba(16, 185, 129, 0.45); border-radius: 7px;
       background: #ecfdf5; color: #047857; font-family: inherit;
-      font-size: 11px; font-weight: 600; cursor: pointer; transition: all 0.16s ease;
-      user-select: none;
+      font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.16s ease;
+      user-select: none; flex-shrink: 0;
     }
     .btn-validate-card:hover {
       border-color: #10b981; background: #d1fae5; color: #065f46; transform: translateY(-1px);
@@ -1322,7 +1322,7 @@
       box-shadow: 0 1px 3px rgba(16, 185, 129, 0.35);
     }
     .btn-validate-card .val-count {
-      background: rgba(16, 185, 129, 0.18); color: #047857; padding: 0.5px 5px; border-radius: 10px;
+      background: rgba(16, 185, 129, 0.18); color: #047857; padding: 1px 5px; border-radius: 10px;
       font-size: 10.5px; font-family: 'IBM Plex Mono', monospace; font-weight: 700;
     }
     .btn-validate-card.validated .val-count {
@@ -1883,12 +1883,12 @@
 
     .btn-admin-edit-card {
       background: #fef3c7; border: 1px solid #fde68a; color: #92400e;
-      border-radius: var(--r-sm); padding: 3px 9px; font-size: 11px;
-      font-weight: 700; cursor: pointer; display: inline-flex;
-      align-items: center; gap: 4px; transition: all 0.15s ease;
+      border-radius: 7px; width: 28px; height: 28px; padding: 0; font-size: 13px;
+      cursor: pointer; display: inline-flex; justify-content: center;
+      align-items: center; transition: all 0.15s ease; flex-shrink: 0;
     }
     .btn-admin-edit-card:hover {
-      background: #fde68a; border-color: #f59e0b; color: #78350f;
+      background: #fde68a; border-color: #f59e0b; color: #78350f; transform: translateY(-1px);
     }
     .btn-admin-edit-icon {
       background: #fef3c7; border: 1px solid #fde68a; color: #92400e;
@@ -3216,81 +3216,79 @@
         <div class="quiz-card" id="quizCard">
         <div class="quiz-card-body-split">
           <div class="quiz-card-col-left">
-            <div class="quiz-card-head">
-          <span class="tag clinic-tag" id="quizCardTag">Clinic · Cardiovascular</span>
-          <div style="display:flex; align-items:center; gap:6px;">
-            <button class="btn-validate-card" id="btnValidateCard" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
-              <span class="val-icon">✅</span>
-              <span class="val-label">ข้อสอบถูกต้อง</span>
-              <span class="val-count" id="valCountCard">0</span>
-            </button>
-            <button class="btn-report-card" onclick="openReportIssueModal()" title="แจ้งปัญหาข้อนี้">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-              <span>แจ้งปัญหา</span>
-            </button>
-            <button class="btn-admin-edit-card" id="btnAdminEditCard" onclick="openPaperEditorForCurrentCard()" title="✏️ แก้ไขข้อสอบบนแผ่นกระดาษ (Admin Only)" style="display:none;">
-              <span>✏️ แก้ไข</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="case-cluster-banner" id="caseClusterBanner" style="display:none;"></div>
-
-        <div class="question-img-wrap" id="qImgWrap">
-          <img class="question-img" id="qImg" src="" alt="รูปคำถาม" onclick="openImgLightbox(this.src)">
-        </div>
-
+            <div class="quiz-card-head">
+          <span class="tag clinic-tag" id="quizCardTag">Clinic · Cardiovascular</span>
+          <div style="display:flex; align-items:center; gap:5px; flex-shrink:0;">
+            <button class="btn-validate-card" id="btnValidateCard" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง (คลิกเพื่อยืนยัน)">
+              <span class="val-icon">✅</span>
+              <span class="val-count" id="valCountCard">0</span>
+            </button>
+            <button class="btn-report-card" onclick="openReportIssueModal()" title="แจ้งปัญหาข้อนี้">
+              <span>🚩</span>
+            </button>
+            <button class="btn-admin-edit-card" id="btnAdminEditCard" onclick="openPaperEditorForCurrentCard()" title="✏️ แก้ไขข้อสอบบนแผ่นกระดาษ (Admin Only)" style="display:none;">
+              <span>✏️</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="case-cluster-banner" id="caseClusterBanner" style="display:none;"></div>
+
+        <div class="question-img-wrap" id="qImgWrap">
+          <img class="question-img" id="qImg" src="" alt="รูปคำถาม" onclick="openImgLightbox(this.src)">
+        </div>
+
         <div class="question-text" id="questionText">กำลังโหลดโจทย์...</div>
           </div>
           <div class="quiz-card-col-right">
-            <!-- 5 Choices List -->
-        <div class="choices-list" id="choicesContainer">
-          <!-- Choices rendered dynamically -->
-        </div>
-
-        <!-- Explanation & Reveal Box -->
-        
-            <!-- In-Column Split View Navigation & Action Row -->
-            <div class="quiz-split-action-row" id="quizSplitActionRow">
-              <button class="nav-arrow-btn" id="btnPrevQSplit" onclick="goPrevQuestion()" title="ข้อก่อนหน้า (←)" style="padding:10px 14px;">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-                <span>ก่อนหน้า</span>
-              </button>
-              <button class="btn-submit-answer" id="btnActionSplit" onclick="handleActionButton()" style="flex:1; max-width:none; padding:11px 18px;">
-                ตรวจคำตอบ
-              </button>
-              <button class="nav-arrow-btn" id="btnNextQSplit" onclick="goNextQuestion()" title="ข้อถัดไป (→)" style="padding:10px 14px;">
-                <span>ถัดไป</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-              </button>
-            </div>
-
-        <div class="explanation-box" id="explanationBox">
-          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
-            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-              <span class="exp-badge badge-correct" id="expBadge">✅ ตอบถูกต้อง</span>
-              <span id="correctChoiceLabel" style="font-size:12px; font-weight:700; color:var(--ink-soft);"></span>
-            </div>
-            <button class="btn-exp-next" id="btnExpNext" onclick="handleActionButton()" title="ไปทำข้อถัดไปทันที">
-              <span>ข้อถัดไป →</span>
-            </button>
-          </div>
-          <div class="exp-title" id="expTitle">💡 คำอธิบายเฉลย:</div>
-          <div class="exp-text" id="explanationText">-</div>
-          <div class="exp-img-wrap" id="ansImgWrap" style="display:none;">
-            <img class="exp-img" id="ansImg" src="" alt="รูปเฉลย" onclick="openImgLightbox(this.src)">
-          </div>
-          <div class="exp-note" id="expNote" style="display:none;"></div>
-          
-          <div class="exp-validate-bar" style="margin-top:12px; padding-top:10px; border-top:1px dashed rgba(0,0,0,0.1); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
-            <div style="font-size:11.5px; color:var(--ink-soft);">
-              ✨ หากตรวจสอบแล้วว่าข้อนี้และเฉลยถูกต้อง สามารถร่วมกดยืนยันได้เลยครับ
-            </div>
-            <button class="btn-validate-card" id="btnValidateCardExp" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
-              <span>✅ ข้อสอบถูกต้อง</span>
-              <span class="val-count" id="valCountCardExp">0</span>
-            </button>
-          </div>
+            <!-- 5 Choices List -->
+        <div class="choices-list" id="choicesContainer">
+          <!-- Choices rendered dynamically -->
+        </div>
+
+        <!-- Explanation & Reveal Box -->
+        
+            <!-- In-Column Split View Navigation & Action Row -->
+            <div class="quiz-split-action-row" id="quizSplitActionRow">
+              <button class="nav-arrow-btn" id="btnPrevQSplit" onclick="goPrevQuestion()" title="ข้อก่อนหน้า (←)" style="padding:10px 14px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                <span>ก่อนหน้า</span>
+              </button>
+              <button class="btn-submit-answer" id="btnActionSplit" onclick="handleActionButton()" style="flex:1; max-width:none; padding:11px 18px;">
+                ตรวจคำตอบ
+              </button>
+              <button class="nav-arrow-btn" id="btnNextQSplit" onclick="goNextQuestion()" title="ข้อถัดไป (→)" style="padding:10px 14px;">
+                <span>ถัดไป</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+
+        <div class="explanation-box" id="explanationBox">
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+              <span class="exp-badge badge-correct" id="expBadge">✅ ตอบถูกต้อง</span>
+              <span id="correctChoiceLabel" style="font-size:12px; font-weight:700; color:var(--ink-soft);"></span>
+            </div>
+            <button class="btn-exp-next" id="btnExpNext" onclick="handleActionButton()" title="ไปทำข้อถัดไปทันที">
+              <span>ข้อถัดไป →</span>
+            </button>
+          </div>
+          <div class="exp-title" id="expTitle">💡 คำอธิบายเฉลย:</div>
+          <div class="exp-text" id="explanationText">-</div>
+          <div class="exp-img-wrap" id="ansImgWrap" style="display:none;">
+            <img class="exp-img" id="ansImg" src="" alt="รูปเฉลย" onclick="openImgLightbox(this.src)">
+          </div>
+          <div class="exp-note" id="expNote" style="display:none;"></div>
+          
+          <div class="exp-validate-bar" style="margin-top:12px; padding-top:10px; border-top:1px dashed rgba(0,0,0,0.1); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+            <div style="font-size:11.5px; color:var(--ink-soft);">
+              ✨ หากตรวจสอบแล้วว่าข้อนี้และเฉลยถูกต้อง สามารถร่วมกดยืนยันได้เลยครับ
+            </div>
+            <button class="btn-validate-card" id="btnValidateCardExp" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
+              <span>✅ ข้อสอบถูกต้อง</span>
+              <span class="val-count" id="valCountCardExp">0</span>
+            </button>
+          </div>
         </div>
           </div>
         </div>
@@ -5512,7 +5510,7 @@ function showApp() {
   if (typeof updateLobbyAdminUI === 'function') updateLobbyAdminUI();
   setAppQuizMode(appQuizMode);
   const initialLayout = localStorage.getItem(LS_PRACTICE_VIEW_STYLE) || (window.innerWidth >= 880 ? 'split' : 'single');
-  setPracticeViewLayout(initialLayout);
+  setPracticeViewLayout(initialLayout);
   updateAnimBtnUI();
   updateFullscreenBtnUI();
   applyFontScale(currentFontScale, false);
@@ -8542,13 +8540,12 @@ function renderScrollPractice() {
           </div>
           <div style="display:flex; align-items:center; gap:6px;">
             ${statusBadge}
-            <button class="btn-validate-card ${isValidated ? 'validated' : ''}" id="btnValScroll_${idx}" onclick="handleValidateScrollQuestion(${idx})" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
+            <button class="btn-validate-card ${isValidated ? 'validated' : ''}" id="btnValScroll_${idx}" onclick="handleValidateScrollQuestion(${idx})" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง (คลิกเพื่อยืนยัน)">
               <span>✅</span>
-              <span>ข้อสอบถูกต้อง</span>
               <span class="val-count" id="valCountScroll_${idx}">${valCount}</span>
             </button>
             <button class="btn-report-card" onclick="openReportIssueModalForQ(${idx})" title="แจ้งปัญหาข้อนี้">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              <span>🚩</span>
             </button>
             ${(typeof isUserAllowedAdmin === 'function' && currentUser && isUserAllowedAdmin(currentUser.username)) ? `<button class="btn-admin-edit-icon" onclick="openPaperEditorModalByQuestionId('${escapeAttr(q.id)}')" title="✏️ แก้ไขข้อสอบบนแผ่นกระดาษ (Admin)">✏️</button>` : ''}
           </div>
@@ -9504,15 +9501,14 @@ function renderBrowseList(reset = true) {
           </div>
           <div class="browse-card-tags" style="display:flex; align-items:center; gap:6px;">
             ${examBadge.html}
-            <button class="btn-validate-card ${isValidated ? 'validated' : ''}" id="btnValBrowse_${idx}" onclick="handleValidateBrowseQuestion(${idx})" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง">
+            <button class="btn-validate-card ${isValidated ? 'validated' : ''}" id="btnValBrowse_${idx}" onclick="handleValidateBrowseQuestion(${idx})" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง (คลิกเพื่อยืนยัน)">
               <span>✅</span>
-              <span>ข้อสอบถูกต้อง</span>
               <span class="val-count" id="valCountBrowse_${idx}">${valCount}</span>
             </button>
             <button class="btn-report-card" onclick="openReportIssueModalForBrowseQ(${idx})" title="แจ้งปัญหาข้อนี้">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              <span>🚩</span>
             </button>
-            ${(typeof isUserAllowedAdmin === 'function' && currentUser && isUserAllowedAdmin(currentUser.username)) ? `<button class="btn-admin-edit-browse" onclick="openPaperEditorModalByQuestionId('${escapeAttr(q.id)}')" title="✏️ แก้ไขข้อสอบบนแผ่นกระดาษ (Admin)">✏️ แก้ไข</button>` : ''}
+            ${(typeof isUserAllowedAdmin === 'function' && currentUser && isUserAllowedAdmin(currentUser.username)) ? `<button class="btn-admin-edit-icon" onclick="openPaperEditorModalByQuestionId('${escapeAttr(q.id)}')" title="✏️ แก้ไขข้อสอบบนแผ่นกระดาษ (Admin)">✏️</button>` : ''}
           </div>
         </div>
 
