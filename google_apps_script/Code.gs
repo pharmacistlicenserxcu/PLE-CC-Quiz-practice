@@ -53,6 +53,10 @@ function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('⚡ ระบบคลังข้อสอบ PLE')
     .addItem('📥 สร้าง/รีเซ็ต Tab นำเข้าข้อสอบด่วน', 'setupQuickIngestionTab')
+    .addSeparator()
+    .addItem('🤖 ตั้งค่าชีตรายงานปัญหา (Setup Report_Quiz_Issues)', 'setupReportIssuesSheet')
+    .addItem('⚡ ประมวลผล AI ข้อที่ยังค้างอยู่ (Process Pending Reports)', 'processPendingReports')
+    .addItem('✅ อนุมัติข้อที่เลือกทั้งหมดลงชีตจริง (Apply All Approved Reports)', 'applyAllApprovedReports')
     .addToUi();
 }
 
@@ -949,33 +953,104 @@ function doPost(e) {
       });
     }
 
-    // บันทึกรายงานข้อสอบผิดพลาด
+    // บันทึกรายงานข้อสอบผิดพลาด พร้อมเรียก AI วิเคราะห์และร่างเฉลยให้อัตโนมัติ (AI Quiz Report Auto-Resolver)
     if (action === 'reportIssue') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
       let sheet = ss.getSheetByName('Report_Quiz_Issues');
       if (!sheet) {
-        sheet = ss.insertSheet('Report_Quiz_Issues');
-        sheet.appendRow([
-          "Timestamp (เวลาไทย)", "User", "Category", "Question ID", "Question Text",
-          "Issue Type", "Detail", "Status"
-        ]);
-        sheet.getRange(1, 1, 1, 8).setFontWeight("bold").setBackground("#991b1b").setFontColor("#ffffff");
-        sheet.setFrozenRows(1);
+        sheet = setupReportIssuesSheet();
       }
 
       const thaiTimestamp = data.timestamp || Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
-      sheet.appendRow([
-        thaiTimestamp,
-        String(data.user || 'Anonymous'),
-        String(data.category || ''),
-        String(data.questionId || ''),
-        String(data.question || '').substring(0, 150),
-        String(data.issueType || 'ทั่วไป'),
-        String(data.detail || ''),
-        "Pending (รอดำเนินการ)"
-      ]);
+      const user = String(data.user || 'Anonymous');
+      const cat = String(data.category || '').trim();
+      const qId = String(data.questionId || '').trim();
+      const issueType = String(data.issueType || 'ทั่วไป').trim();
+      const detail = String(data.detail || '').trim();
 
-      return jsonResponse_({ success: true, message: 'บันทึกรายงานปัญหาเรียบร้อย' });
+      // ดึงข้อมูลข้อสอบเดิมจากชีตวิชาหรือจาก payload
+      let originalQ = {
+        question: String(data.question || ''),
+        choices: Array.isArray(data.choices) ? data.choices : [],
+        answer: data.answer || '',
+        explanation: String(data.explanation || '')
+      };
+
+      let targetSheetName = cat;
+      let targetRowNum = 0;
+
+      if (qId.includes('::')) {
+        const parts = qId.split('::');
+        targetSheetName = parts[0].trim();
+        targetRowNum = parseInt(parts[1], 10);
+      }
+
+      if (targetSheetName && targetRowNum >= 3) {
+        const targetSheet = findSheetSafely_(ss, targetSheetName);
+        if (targetSheet && targetRowNum <= targetSheet.getLastRow()) {
+          const rowVals = targetSheet.getRange(targetRowNum, 1, 1, 12).getValues()[0];
+          if (!originalQ.question) originalQ.question = String(rowVals[1] || '');
+          if (!originalQ.choices.length) {
+            originalQ.choices = [
+              String(rowVals[3] || ''),
+              String(rowVals[4] || ''),
+              String(rowVals[5] || ''),
+              String(rowVals[6] || ''),
+              String(rowVals[7] || '')
+            ].filter(Boolean);
+          }
+          if (!originalQ.answer) originalQ.answer = rowVals[8];
+          if (!originalQ.explanation) originalQ.explanation = String(rowVals[9] || '');
+        }
+      }
+
+      // สรุปข้อสอบและเฉลยเดิม
+      const currentExamSnippet = 
+        'โจทย์: ' + originalQ.question.substring(0, 100) + '\n' +
+        'ตัวเลือก: 1.' + (originalQ.choices[0] || '-') + ' | 2.' + (originalQ.choices[1] || '-') + ' | 3.' + (originalQ.choices[2] || '-') + '\n' +
+        'เฉลยเดิม: ข้อ ' + (originalQ.answer || '-');
+
+      // เรียก Gemini AI วินิจฉัยข้อสอบ
+      let aiResult = null;
+      try {
+        aiResult = callGeminiQuizResolver(targetSheetName, qId, originalQ, {
+          issueType: issueType,
+          detail: detail
+        });
+      } catch (aiErr) {
+        Logger.log('AI resolver call error: ' + aiErr.toString());
+      }
+
+      const aiDiagnosis = aiResult ? ('[' + aiResult.verdict + '] ' + aiResult.diagnosis) : 'AI อยู่ระหว่างเตรียมประมวลผล หรือกรุณากดเมนูเพื่อรันย้อนหลัง';
+      const aiProposedAns = aiResult ? (aiResult.proposedAnswer || '') : '';
+      const aiProposedExp = aiResult ? (aiResult.proposedExplanation || '') : '';
+
+      const newRow = [
+        thaiTimestamp,
+        user,
+        targetSheetName,
+        qId,
+        issueType,
+        detail,
+        currentExamSnippet,
+        aiDiagnosis,
+        aiProposedAns,
+        aiProposedExp,
+        '⏳ รอประธานอนุมัติ (Pending)',
+        ''
+      ];
+
+      sheet.appendRow(newRow);
+      const lastRow = sheet.getLastRow();
+
+      // ใส่ Data Validation Dropdown ที่ Column K
+      applyStatusValidationToRow_(sheet, lastRow);
+
+      return jsonResponse_({
+        success: true,
+        message: 'บันทึกรายงานปัญหาและ AI วิเคราะห์เรียบร้อย',
+        aiResult: aiResult
+      });
     }
 
     // บันทึกการยืนยันข้อสอบถูกต้อง (Question Validation / Upvote)
@@ -1404,3 +1479,368 @@ function extractInCellImagesFromXlsx_() {
   return imagesMap;
 }
 
+
+
+// ────────────────────────────────────────────────────────────────────────────
+// AI QUIZ REPORT AUTO-RESOLVER & ONE-CLICK APPROVAL SYSTEM
+// ────────────────────────────────────────────────────────────────────────────
+
+const DEFAULT_GEMINI_API_KEY = ''; // ระบุใน Script Properties ชื่อ GEMINI_API_KEY เพื่อความปลอดภัย
+
+function getGeminiApiKey_() {
+  try {
+    const propKey = PropertiesService.getScriptProperties().getProperty('GEMINI_API_KEY');
+    if (propKey && propKey.trim()) return propKey.trim();
+  } catch (e) {}
+  return DEFAULT_GEMINI_API_KEY;
+}
+
+function callGeminiQuizResolver(category, questionId, originalQ, studentReport) {
+  const apiKey = getGeminiApiKey_();
+  if (!apiKey) return null;
+
+  const candidateModels = [
+    'gemini-flash-lite-latest',
+    'gemini-3.5-flash-lite',
+    'gemini-3.8-flash',
+    'gemini-flash-latest'
+  ];
+
+  const systemInstruction = 
+    "คุณเป็นเภสัชกรผู้เชี่ยวชาญ คณะกรรมการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC)\n" +
+    "หน้าที่ของคุณคือ วิเคราะห์รายงานปัญหาข้อสอบที่นิสิตส่งเข้ามา ตรวจสอบกับแนวทางเวชปฏิบัติสากล (CPG เช่น GINA, GOLD, CPG HTN, ADA, IDSA, CINV) หรือเภสัชตำรับ (USP, BP, Thai Pharmacopoeia)\n" +
+    "กฎเหล็ก:\n" +
+    "1. ห้ามใช้เครื่องหมายดอกจัน (*) หรือ (**) ในคำตอบเด็ดขาด ให้ใช้ข้อความธรรมดา (Plain text)\n" +
+    "2. ใช้ภาษาอังกฤษสำหรับคำศัพท์ทางการแพทย์และชื่อยา (เช่น hydrolyze, prodrug, active metabolite, first-line)\n" +
+    "3. คำอธิบายเฉลยต้องมีโครงสร้าง 3 ส่วนอย่างเคร่งครัด:\n" +
+    "   ✅ คำตอบที่ถูกต้อง: ข้อ [ก-จ]. [ข้อความตัวเลือก]\n\n" +
+    "   🎯 ทำไมข้อนี้ถึงถูก:\n" +
+    "   [เหตุผลตรงประเด็น อ้างอิง Guideline 1-3 บรรทัด]\n\n" +
+    "   🔍 ข้ออื่นผิดเพราะอะไร:\n" +
+    "   • ข้อ [ก-จ].: [เหตุผลที่ผิด แยกทีละข้อ ห้ามรวมย่อหน้า]\n" +
+    "4. proposedAnswer ต้องเป็นตัวเลขลำดับตัวเลือกที่ถูกต้อง 1 ถึง 5 (1=ก, 2=ข, 3=ค, 4=ง, 5=จ)\n" +
+    "5. ตอบกลับเป็น JSON เท่านั้น";
+
+  const userPrompt = 
+    'หมวดวิชา: ' + (category || 'ไม่ระบุ') + '\n' +
+    'รหัสข้อสอบ: ' + (questionId || 'ไม่ระบุ') + '\n' +
+    'ข้อสอบและตัวเลือกเดิม:\n' + JSON.stringify(originalQ, null, 2) + '\n\n' +
+    'สิ่งที่นิสิตรายงานปัญหา:\n' +
+    '- ประเภทปัญหา: ' + (studentReport.issueType || 'ทั่วไป') + '\n' +
+    '- รายละเอียด: ' + (studentReport.detail || 'ไม่มี') + '\n\n' +
+    'กรุณาวินิจฉัยและส่งออก JSON ในรูปแบบนี้เท่านั้น:\n' +
+    '{\n' +
+    '  "verdict": "AGREE / DISAGREE / PARTIAL",\n' +
+    '  "diagnosis": "สรุปผลการวินิจฉัยและ CPG อ้างอิง สั้นกระชับ 1-3 บรรทัด",\n' +
+    '  "proposedAnswer": 1,\n' +
+    '  "proposedQuestion": "ข้อความโจทย์ใหม่",\n' +
+    '  "proposedExplanation": "คำอธิบายเฉลย 3 ส่วนตามกฎเหล็กโดยไม่มีดอกจัน",\n' +
+    '  "confidence": "HIGH / MEDIUM / LOW"\n' +
+    '}';
+
+  for (let i = 0; i < candidateModels.length; i++) {
+    const model = candidateModels[i];
+    const url = 'https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + apiKey;
+    try {
+      const response = UrlFetchApp.fetch(url, {
+        method: 'post',
+        contentType: 'application/json',
+        payload: JSON.stringify({
+          systemInstruction: { parts: [{ text: systemInstruction }] },
+          contents: [{ parts: [{ text: userPrompt }] }],
+          generationConfig: {
+            responseMimeType: 'application/json',
+            temperature: 0.1
+          }
+        }),
+        muteHttpExceptions: true
+      });
+
+      if (response.getResponseCode() === 200) {
+        const json = JSON.parse(response.getContentText());
+        if (json.candidates && json.candidates[0] && json.candidates[0].content) {
+          const rawText = json.candidates[0].content.parts[0].text;
+          const parsed = JSON.parse(rawText);
+          if (parsed.diagnosis) parsed.diagnosis = parsed.diagnosis.replace(/\*\*/g, '').replace(/\*/g, '');
+          if (parsed.proposedExplanation) parsed.proposedExplanation = parsed.proposedExplanation.replace(/\*\*/g, '').replace(/\*/g, '');
+          if (parsed.proposedQuestion) parsed.proposedQuestion = parsed.proposedQuestion.replace(/\*\*/g, '').replace(/\*/g, '');
+
+          // ตรวจสอบความสอดคล้องของตัวเลขเฉลย (ก=1, ข=2, ค=3, ง=4, จ=5)
+          const mChoice = (parsed.proposedExplanation || '').match(/คำตอบที่ถูกต้อง:\s*ข้อ\s*([ก-จ])/);
+          if (mChoice) {
+            const letterMap = { 'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5 };
+            if (letterMap[mChoice[1]]) {
+              parsed.proposedAnswer = letterMap[mChoice[1]];
+            }
+          }
+
+          return parsed;
+        }
+      }
+    } catch (err) {
+      Logger.log('Gemini model ' + model + ' error: ' + err.toString());
+    }
+  }
+  return null;
+}
+
+function onEdit(e) {
+  if (!e || !e.range) return;
+  try {
+    const sheet = e.range.getSheet();
+    if (sheet.getName() !== 'Report_Quiz_Issues') return;
+
+    const row = e.range.getRow();
+    const col = e.range.getColumn();
+
+    // Column K (11) คือ Status
+    if (col === 11 && row > 1) {
+      const val = String(e.value || e.range.getValue() || '').trim();
+      if (val.includes('อนุมัติ') || val.includes('Approved')) {
+        applyReportIssueApproved(row);
+      }
+    }
+  } catch (err) {
+    Logger.log('onEdit error: ' + err.toString());
+  }
+}
+
+function applyReportIssueApproved(rowNum) {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const reportSheet = ss.getSheetByName('Report_Quiz_Issues');
+  if (!reportSheet) return { success: false, error: 'ไม่พบชีต Report_Quiz_Issues' };
+
+  const rowVals = reportSheet.getRange(rowNum, 1, 1, 12).getValues()[0];
+  const cat = String(rowVals[2] || '').trim();
+  const qId = String(rowVals[3] || '').trim();
+  const proposedAns = parseInt(rowVals[8], 10);
+  const proposedExp = String(rowVals[9] || '').trim();
+
+  let targetSheetName = cat;
+  let targetRowNum = 0;
+
+  if (qId.includes('::')) {
+    const parts = qId.split('::');
+    targetSheetName = parts[0].trim();
+    targetRowNum = parseInt(parts[1], 10);
+  }
+
+  if (!targetSheetName || targetRowNum < 3) {
+    reportSheet.getRange(rowNum, 12).setValue('ข้อผิดพลาด: ไม่พบตำแหน่งแถวในชีตต้นทาง (qId: ' + qId + ')');
+    return { success: false, error: 'ตำแหน่งแถวไม่ถูกต้อง' };
+  }
+
+  const targetSheet = findSheetSafely_(ss, targetSheetName);
+  if (!targetSheet) {
+    reportSheet.getRange(rowNum, 12).setValue('ข้อผิดพลาด: ไม่พบชีต ' + targetSheetName);
+    return { success: false, error: 'ไม่พบชีตเป้าหมาย' };
+  }
+
+  // ดึงข้อมูลเดิมเพื่อทำ Audit Trail
+  const oldVals = targetSheet.getRange(targetRowNum, 1, 1, 12).getValues()[0];
+  const oldAns = oldVals[8];
+  const oldExp = oldVals[9];
+
+  // อัปเดตชีตเป้าหมาย: Col I (9) = เฉลย, Col J (10) = คำอธิบาย
+  if (!isNaN(proposedAns) && proposedAns >= 1 && proposedAns <= 5) {
+    targetSheet.getRange(targetRowNum, 9).setValue(proposedAns);
+  }
+  if (proposedExp) {
+    targetSheet.getRange(targetRowNum, 10).setValue(proposedExp);
+  }
+
+  // บันทึกลง Log_Question_Edits
+  let logSheet = ss.getSheetByName('Log_Question_Edits');
+  if (logSheet) {
+    const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+    logSheet.appendRow([
+      thaiTimestamp,
+      'AI Auto-Resolver (Approved)',
+      qId,
+      targetSheetName,
+      targetRowNum,
+      String(oldVals[1] || '').substring(0, 150),
+      String(oldVals[1] || '').substring(0, 150),
+      String(oldAns || ''),
+      String(proposedAns || oldAns),
+      String(oldExp || '').substring(0, 150),
+      proposedExp.substring(0, 150),
+      'Approved from Report'
+    ]);
+  }
+
+  const thaiTime = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+  reportSheet.getRange(rowNum, 11).setValue('🚀 นำไปใช้ในชีตข้อสอบแล้ว (Applied)');
+  reportSheet.getRange(rowNum, 12).setValue('อัปเดตชีต ' + targetSheetName + ' แถว ' + targetRowNum + ' สำเร็จ เมื่อ ' + thaiTime);
+
+  return { success: true };
+}
+
+function setupReportIssuesSheet() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  let sheet = ss.getSheetByName('Report_Quiz_Issues');
+  if (!sheet) {
+    sheet = ss.insertSheet('Report_Quiz_Issues');
+  }
+
+  const headers = [
+    "Timestamp (เวลาไทย)",
+    "User (ผู้แจ้ง)",
+    "Category (หมวดวิชา)",
+    "Question ID (รหัสข้อ)",
+    "Issue Type (ประเภทปัญหา)",
+    "Student Detail (สิ่งที่นิสิตแจ้ง)",
+    "Current Exam & Key (โจทย์และเฉลยเดิม)",
+    "AI Diagnosis & Reason (AI วินิจฉัย & CPG อ้างอิง)",
+    "AI Proposed Answer (เฉลยใหม่ 1-5)",
+    "AI Proposed Explanation (เฉลย 3 ส่วนใหม่)",
+    "Status (สถานะการอนุมัติ)",
+    "Applied Log (บันทึกการนำไปใช้)"
+  ];
+
+  sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
+  sheet.getRange(1, 1, 1, headers.length)
+    .setFontWeight("bold")
+    .setBackground("#831843")
+    .setFontColor("#ffffff")
+    .setFontFamily("Bai Jamjuree");
+
+  sheet.setFrozenRows(1);
+
+  // กำหนดความกว้างคอลัมน์ให้อ่านง่าย
+  sheet.setColumnWidth(1, 140); // Timestamp
+  sheet.setColumnWidth(2, 100); // User
+  sheet.setColumnWidth(3, 130); // Category
+  sheet.setColumnWidth(4, 130); // Question ID
+  sheet.setColumnWidth(5, 120); // Issue Type
+  sheet.setColumnWidth(6, 250); // Student Detail
+  sheet.setColumnWidth(7, 250); // Current Exam
+  sheet.setColumnWidth(8, 300); // AI Diagnosis
+  sheet.setColumnWidth(9, 100); // Proposed Ans
+  sheet.setColumnWidth(10, 350); // Proposed Exp
+  sheet.setColumnWidth(11, 200); // Status Dropdown
+  sheet.setColumnWidth(12, 220); // Applied Log
+
+  // ตั้ง Data Validation สำหรับ Status Dropdown (Col K)
+  const rule = SpreadsheetApp.newDataValidation()
+    .requireValueInList([
+      '⏳ รอประธานอนุมัติ (Pending)',
+      '✅ อนุมัติ (Approved)',
+      '❌ ปฏิเสธ (Rejected)',
+      '✏️ แก้ไขเองแล้ว (Manual Fixed)',
+      '🚀 นำไปใช้ในชีตข้อสอบแล้ว (Applied)'
+    ], true)
+    .setAllowInvalid(false)
+    .build();
+
+  sheet.getRange(2, 11, 500, 1).setDataValidation(rule);
+
+  return sheet;
+}
+
+function applyStatusValidationToRow_(sheet, rowNum) {
+  try {
+    const rule = SpreadsheetApp.newDataValidation()
+      .requireValueInList([
+        '⏳ รอประธานอนุมัติ (Pending)',
+        '✅ อนุมัติ (Approved)',
+        '❌ ปฏิเสธ (Rejected)',
+        '✏️ แก้ไขเองแล้ว (Manual Fixed)',
+        '🚀 นำไปใช้ในชีตข้อสอบแล้ว (Applied)'
+      ], true)
+      .setAllowInvalid(false)
+      .build();
+    sheet.getRange(rowNum, 11).setDataValidation(rule);
+  } catch (e) {}
+}
+
+function processPendingReports() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = ss.getSheetByName('Report_Quiz_Issues');
+  if (!sheet) {
+    SpreadsheetApp.getUi().alert('ไม่พบชีต Report_Quiz_Issues');
+    return;
+  }
+
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) {
+    SpreadsheetApp.getUi().alert('ไม่มีข้อมูลรายงานในชีต');
+    return;
+  }
+
+  const data = sheet.getRange(2, 1, lastRow - 1, 12).getValues();
+  let count = 0;
+
+  for (let i = 0; i < data.length; i++) {
+    const rowNum = i + 2;
+    const cat = String(data[i][2] || '').trim();
+    const qId = String(data[i][3] || '').trim();
+    const issueType = String(data[i][4] || '').trim();
+    const detail = String(data[i][5] || '').trim();
+    const currentExp = String(data[i][7] || '').trim();
+    const status = String(data[i][10] || '').trim();
+
+    if ((!currentExp || currentExp.includes('อยู่ระหว่างเตรียม')) && (!status || status.includes('Pending') || status.includes('รอดำเนินการ'))) {
+      let originalQ = { question: '', choices: [], answer: '', explanation: '' };
+      let targetSheetName = cat;
+      let targetRowNum = 0;
+      if (qId.includes('::')) {
+        const parts = qId.split('::');
+        targetSheetName = parts[0].trim();
+        targetRowNum = parseInt(parts[1], 10);
+      }
+      if (targetSheetName && targetRowNum >= 3) {
+        const targetSheet = findSheetSafely_(ss, targetSheetName);
+        if (targetSheet && targetRowNum <= targetSheet.getLastRow()) {
+          const rowVals = targetSheet.getRange(targetRowNum, 1, 1, 12).getValues()[0];
+          originalQ = {
+            question: String(rowVals[1] || ''),
+            choices: [String(rowVals[3] || ''), String(rowVals[4] || ''), String(rowVals[5] || ''), String(rowVals[6] || ''), String(rowVals[7] || '')].filter(Boolean),
+            answer: rowVals[8],
+            explanation: String(rowVals[9] || '')
+          };
+        }
+      }
+
+      const ai = callGeminiQuizResolver(targetSheetName, qId, originalQ, { issueType, detail });
+      if (ai) {
+        sheet.getRange(rowNum, 8).setValue('[' + ai.verdict + '] ' + ai.diagnosis);
+        if (ai.proposedAnswer) sheet.getRange(rowNum, 9).setValue(ai.proposedAnswer);
+        if (ai.proposedExplanation) sheet.getRange(rowNum, 10).setValue(ai.proposedExplanation);
+        sheet.getRange(rowNum, 11).setValue('⏳ รอประธานอนุมัติ (Pending)');
+        count++;
+      }
+    }
+  }
+
+  SpreadsheetApp.getUi().alert('🤖 ประมวลผลข้อที่ค้างสำเร็จทั้งหมด ' + count + ' ข้อ');
+}
+
+function applyAllApprovedReports() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = ss.getSheetByName('Report_Quiz_Issues');
+  if (!sheet) {
+    SpreadsheetApp.getUi().alert('ไม่พบชีต Report_Quiz_Issues');
+    return;
+  }
+
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) {
+    SpreadsheetApp.getUi().alert('ไม่มีข้อมูลรายงานในชีต');
+    return;
+  }
+
+  const data = sheet.getRange(2, 1, lastRow - 1, 12).getValues();
+  let count = 0;
+
+  for (let i = 0; i < data.length; i++) {
+    const rowNum = i + 2;
+    const status = String(data[i][10] || '').trim();
+    if (status.includes('อนุมัติ') || status.includes('Approved')) {
+      const res = applyReportIssueApproved(rowNum);
+      if (res && res.success) count++;
+    }
+  }
+
+  SpreadsheetApp.getUi().alert('✅ อัปเดตข้อสอบลงชีตหลักสำเร็จทั้งหมด ' + count + ' ข้อ');
+}

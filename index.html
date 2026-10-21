@@ -19766,24 +19766,22 @@ function submitReportIssue() {
 
 
 
+    const cleanChoices = currentQ && Array.isArray(currentQ.choices) ? currentQ.choices.map(c => String(c).replace(/<[^>]*>/g, '').trim()) : [];
+  const cleanAns = currentQ ? (currentQ.answer || 1) : 1;
+  const cleanExp = currentQ ? (currentQ.explanation || '').replace(/<[^>]*>/g, '').trim() : '';
+
   sendGasPostRequest({
-
     action: 'reportIssue',
-
     timestamp: thaiTimestamp,
-
     user: currentUser ? currentUser.displayName : 'Anonymous',
-
     category: cat,
-
     questionId: qId,
-
     question: qText,
-
+    choices: cleanChoices,
+    answer: cleanAns,
+    explanation: cleanExp,
     issueType: type,
-
     detail: detail
-
   });
 
 
