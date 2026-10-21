@@ -9266,7 +9266,7 @@
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
 
-<script src="quiz-data-offline.js?v=20261021_v78"></script>
+<script src="quiz-data-offline.js?v=20261021_v79"></script>
 
 <script>
 
@@ -9627,6 +9627,16 @@ function sanitizeExamMeta(rawType, rawYear) {
   let type = (rawType || '').trim();
 
   let year = (rawYear || '').trim();
+
+  // Normalize legacy types into unified categories
+  if (type === 'ข้อสอบเก่า' || /^\d{4}$/.test(type)) {
+    if (/^\d{4}$/.test(type) && !year) {
+      year = type;
+    }
+    type = 'ข้อสอบจริง';
+  } else if (type.toLowerCase() === 'mock') {
+    type = 'ข้อสอบจำลอง';
+  }
 
   return { type, year };
 
@@ -12676,167 +12686,96 @@ function onSetupTimerSelectChange() {
 
 
 function getStratifiedBalancedPool(categoriesList, targetTotal, examTypeFilter) {
-
   if (!categoriesList || !categoriesList.length) return [];
-
   const catClusters = {};
-
   let totalAvailable = 0;
 
-
-
   categoriesList.forEach(c => {
-
     let list = (allQuestionsMap[c.name] || []).slice();
-
     list = filterQuestionsByExamType(list, examTypeFilter);
-
     const clusters = groupQuestionsIntoClusters(list);
-
     for (let i = clusters.length - 1; i > 0; i--) {
-
       const j = Math.floor(Math.random() * (i + 1));
-
       [clusters[i], clusters[j]] = [clusters[j], clusters[i]];
-
     }
-
     catClusters[c.name] = clusters;
-
     totalAvailable += list.length;
-
   });
-
-
 
   if (targetTotal >= totalAvailable) {
-
     let combinedClusters = [];
-
     Object.values(catClusters).forEach(cl => { combinedClusters = combinedClusters.concat(cl); });
-
     for (let i = combinedClusters.length - 1; i > 0; i--) {
-
       const j = Math.floor(Math.random() * (i + 1));
-
       [combinedClusters[i], combinedClusters[j]] = [combinedClusters[j], combinedClusters[i]];
-
     }
-
     return combinedClusters.flatMap(c => c.questions);
-
   }
-
-
-
-  const numCats = categoriesList.length;
-
-  const perCatBase = Math.floor(targetTotal / numCats) || 1;
 
   const selectedClusters = [];
-
   const leftoverClusters = [];
+  let currentCount = 0;
 
-
-
-  categoriesList.forEach(c => {
-
+  // Round 1: Try to pick 1 fitting whole cluster per category
+  for (const c of categoriesList) {
+    if (currentCount >= targetTotal) break;
     const list = catClusters[c.name] || [];
-
-    let countInCat = 0;
-
-    list.forEach(cl => {
-
-      if (countInCat + cl.questions.length <= perCatBase) {
-
+    let pickedInCat = false;
+    for (const cl of list) {
+      if (!pickedInCat && (currentCount + cl.questions.length <= targetTotal)) {
         selectedClusters.push(cl);
-
-        countInCat += cl.questions.length;
-
-      } else {
-
-        leftoverClusters.push(cl);
-
-      }
-
-    });
-
-  });
-
-
-
-  let currentCount = selectedClusters.reduce((sum, cl) => sum + cl.questions.length, 0);
-
-  const deficit = targetTotal - currentCount;
-
-  if (deficit > 0 && leftoverClusters.length > 0) {
-
-    for (let i = leftoverClusters.length - 1; i > 0; i--) {
-
-      const j = Math.floor(Math.random() * (i + 1));
-
-      [leftoverClusters[i], leftoverClusters[j]] = [leftoverClusters[j], leftoverClusters[i]];
-
-    }
-
-    for (const cl of leftoverClusters) {
-
-      if (currentCount >= targetTotal) break;
-
-      const rem = targetTotal - currentCount;
-
-      if (cl.questions.length <= rem) {
-
-        selectedClusters.push(cl);
-
         currentCount += cl.questions.length;
-
+        pickedInCat = true;
       } else {
-
-        const trunc = truncateClusterProportionally(cl.questions, rem, null);
-
-        selectedClusters.push({
-
-          isCluster: true,
-
-          caseGroupId: cl.caseGroupId,
-
-          caseType: cl.caseType,
-
-          questions: trunc
-
-        });
-
-        currentCount += trunc.length;
-
-        break;
-
+        leftoverClusters.push(cl);
       }
-
     }
-
   }
 
+  // Round 2: Fill remaining quota from leftovers
+  if (currentCount < targetTotal && leftoverClusters.length > 0) {
+    for (let i = leftoverClusters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [leftoverClusters[i], leftoverClusters[j]] = [leftoverClusters[j], leftoverClusters[i]];
+    }
 
+    const unpicked = [];
+    // Pass A: Whole clusters that fit
+    for (const cl of leftoverClusters) {
+      if (currentCount >= targetTotal) break;
+      const rem = targetTotal - currentCount;
+      if (cl.questions.length <= rem) {
+        selectedClusters.push(cl);
+        currentCount += cl.questions.length;
+      } else {
+        unpicked.push(cl);
+      }
+    }
+
+    // Pass B: If still deficit (e.g. user selected 5 questions total but case has 6), truncate sequentially
+    if (currentCount < targetTotal && unpicked.length > 0) {
+      for (const cl of unpicked) {
+        if (currentCount >= targetTotal) break;
+        const rem = targetTotal - currentCount;
+        const slicedQs = cl.questions.slice(0, rem);
+        selectedClusters.push({
+          ...cl,
+          questions: slicedQs
+        });
+        currentCount += slicedQs.length;
+        break;
+      }
+    }
+  }
 
   // Shuffle final clusters so categories are intermingled while case questions stay strictly consecutive
-
   for (let i = selectedClusters.length - 1; i > 0; i--) {
-
     const j = Math.floor(Math.random() * (i + 1));
-
     [selectedClusters[i], selectedClusters[j]] = [selectedClusters[j], selectedClusters[i]];
-
   }
 
-
-
-  return selectedClusters.flatMap(cl => cl.questions).slice(0, targetTotal);
-
+  return selectedClusters.flatMap(cl => cl.questions);
 }
-
-
-
 function startConfiguredQuiz() {
 
   const pool = getSetupFilteredPool();
@@ -15146,543 +15085,300 @@ function truncateClusterProportionally(clusterQuestions, maxAllowed, targetCount
 
 
 function sampleStratifiedFromTrack(targetTrack, targetCount, examTypeFilter, allowedSubtopics = null, excludedQuestionIds = null) {
-
   if (targetCount <= 0) return [];
-
   const trackCats = categories.filter(c => !isSystemCategory(c.name) && getCategoryTrack(c) === targetTrack);
-
   if (!trackCats.length) return [];
 
-
-
-  // Group questions by subtopic within each category of this track
-
-  const subtopicMap = {};
-
+  let trackQs = [];
   trackCats.forEach(c => {
-
     let qs = (allQuestionsMap[c.name] || []).slice();
-
     qs = filterQuestionsByExamSets(qs);
-
     if (excludedQuestionIds && excludedQuestionIds.size > 0) {
-
       qs = qs.filter(q => !excludedQuestionIds.has(q.id));
-
     }
-
-    qs.forEach(q => {
-
-      const subs = getQuestionSubtopics(q);
-
-      const subList = subs.length ? subs : [c.name];
-
-      if (allowedSubtopics && allowedSubtopics.size > 0) {
-
-        const isAllowed = subList.some(s => allowedSubtopics.has(`${c.name}::${s}`) || allowedSubtopics.has(s) || allowedSubtopics.has(c.name));
-
-        if (!isAllowed) return;
-
-      }
-
-      const primarySub = subList[0];
-
-      if (!subtopicMap[primarySub]) subtopicMap[primarySub] = [];
-
-      subtopicMap[primarySub].push(q);
-
-    });
-
+    if (allowedSubtopics && allowedSubtopics.size > 0) {
+      qs = qs.filter(q => {
+        const subs = getQuestionSubtopics(q);
+        const subList = subs.length ? subs : [c.name];
+        return subList.some(s => allowedSubtopics.has(`${c.name}::${s}`) || allowedSubtopics.has(s) || allowedSubtopics.has(c.name));
+      });
+    }
+    trackQs.push(...qs);
   });
 
+  if (!trackQs.length) return [];
 
+  // Group into clusters FIRST across the entire track so cases stay intact!
+  const allClusters = groupQuestionsIntoClusters(trackQs);
 
-  const subtopics = Object.keys(subtopicMap);
+  for (let i = allClusters.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [allClusters[i], allClusters[j]] = [allClusters[j], allClusters[i]];
+  }
 
+  // Group clusters by primary subtopic
+  const subtopicClusters = {};
+  allClusters.forEach(cl => {
+    const firstQ = cl.questions[0];
+    const subs = firstQ ? getQuestionSubtopics(firstQ) : [];
+    const primarySub = subs.length ? subs[0] : (firstQ?.category || 'General');
+    if (!subtopicClusters[primarySub]) subtopicClusters[primarySub] = [];
+    subtopicClusters[primarySub].push(cl);
+  });
+
+  const subtopics = Object.keys(subtopicClusters);
   if (!subtopics.length) return [];
 
-
-
-  // Group into clusters inside each subtopic so linked cases remain consecutive
-
-  const subtopicClusters = {};
-
-  subtopics.forEach(sub => {
-
-    const clusters = groupQuestionsIntoClusters(subtopicMap[sub]);
-
-    for (let i = clusters.length - 1; i > 0; i--) {
-
-      const j = Math.floor(Math.random() * (i + 1));
-
-      [clusters[i], clusters[j]] = [clusters[j], clusters[i]];
-
-    }
-
-    subtopicClusters[sub] = clusters;
-
-  });
-
-
+  // Shuffle subtopic order
+  for (let i = subtopics.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [subtopics[i], subtopics[j]] = [subtopics[j], subtopics[i]];
+  }
 
   const selectedClusters = [];
-
   const leftoverClusters = [];
+  let currentCount = 0;
 
-  const perSubBase = Math.floor(targetCount / subtopics.length) || 1;
-
-
-
-  subtopics.forEach(sub => {
-
+  // Round 1: Try to pick 1 fitting whole cluster per subtopic
+  for (const sub of subtopics) {
+    if (currentCount >= targetCount) break;
     const clusters = subtopicClusters[sub];
-
-    let countInSub = 0;
-
-    clusters.forEach(c => {
-
-      if (countInSub + c.questions.length <= perSubBase) {
-
+    let pickedInSub = false;
+    for (const c of clusters) {
+      if (!pickedInSub && (currentCount + c.questions.length <= targetCount)) {
         selectedClusters.push(c);
-
-        countInSub += c.questions.length;
-
-      } else {
-
-        leftoverClusters.push(c);
-
-      }
-
-    });
-
-  });
-
-
-
-  let currentCount = selectedClusters.reduce((sum, c) => sum + c.questions.length, 0);
-
-
-
-  // Fill deficit from leftovers
-
-  if (currentCount < targetCount && leftoverClusters.length > 0) {
-
-    for (let i = leftoverClusters.length - 1; i > 0; i--) {
-
-      const j = Math.floor(Math.random() * (i + 1));
-
-      [leftoverClusters[i], leftoverClusters[j]] = [leftoverClusters[j], leftoverClusters[i]];
-
-    }
-
-
-
-    for (const c of leftoverClusters) {
-
-      if (currentCount >= targetCount) break;
-
-      const rem = targetCount - currentCount;
-
-      if (c.questions.length <= rem) {
-
-        selectedClusters.push(c);
-
         currentCount += c.questions.length;
-
+        pickedInSub = true;
       } else {
-
-        const trunc = truncateClusterProportionally(c.questions, rem, null);
-
-        selectedClusters.push({
-
-          isCluster: true,
-
-          caseGroupId: c.caseGroupId,
-
-          caseType: c.caseType,
-
-          questions: trunc
-
-        });
-
-        currentCount += trunc.length;
-
-        break;
-
+        leftoverClusters.push(c);
       }
-
     }
-
   }
 
+  // Round 2: Fill remaining quota from leftovers
+  if (currentCount < targetCount && leftoverClusters.length > 0) {
+    for (let i = leftoverClusters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [leftoverClusters[i], leftoverClusters[j]] = [leftoverClusters[j], leftoverClusters[i]];
+    }
 
+    const unpicked = [];
+    // Pass A: Whole clusters that fit remaining quota
+    for (const c of leftoverClusters) {
+      if (currentCount >= targetCount) break;
+      const rem = targetCount - currentCount;
+      if (c.questions.length <= rem) {
+        selectedClusters.push(c);
+        currentCount += c.questions.length;
+      } else {
+        unpicked.push(c);
+      }
+    }
+
+    // Pass B: If still deficit (e.g. user asked for 5 questions, but available case has 6),
+    // truncate to exact targetCount sequentially per user instruction
+    if (currentCount < targetCount && unpicked.length > 0) {
+      for (const c of unpicked) {
+        if (currentCount >= targetCount) break;
+        const rem = targetCount - currentCount;
+        const slicedQs = c.questions.slice(0, rem);
+        selectedClusters.push({
+          ...c,
+          questions: slicedQs
+        });
+        currentCount += slicedQs.length;
+        break;
+      }
+    }
+  }
 
   return selectedClusters;
-
 }
-
-
-
 function executeSimulatedExam() {
-
   const totalCount = parseInt(document.getElementById('simTotalCount').value, 10) || 120;
-
   const chosenMode = document.getElementById('simModeSelect').value;
-
   const timerOption = document.getElementById('simTimerSelect').value;
 
-
-
   const allowed = (selectedSimSubtopics && selectedSimSubtopics.size > 0) ? selectedSimSubtopics : null;
-
   const isAllPreset = document.getElementById('simPresetAll') && document.getElementById('simPresetAll').classList.contains('active');
 
-
-
   const allMatching = [];
-
   categories.filter(c => !isSystemCategory(c.name)).forEach(c => {
-
     let qs = (allQuestionsMap[c.name] || []).slice();
-
     qs = filterQuestionsByExamSets(qs);
-
     if (allowed) {
-
       qs = qs.filter(q => {
-
         const subs = getQuestionSubtopics(q);
-
         const subList = subs.length ? subs : [c.name];
-
         return subList.some(s => allowed.has(`${c.name}::${s}`) || allowed.has(s) || allowed.has(c.name));
-
       });
-
     }
-
     allMatching.push(...qs);
-
   });
 
-
-
   if (!allMatching.length) {
-
     alert('ไม่พบข้อสอบที่ตรงกับชุดที่เลือก กรุณาเลือกชุดข้อสอบอื่น หรือใช้ "ทั้งหมดในระบบ"');
-
     return;
-
   }
-
-
 
   let finalClusters = [];
 
-
-
   if (isAllPreset || totalCount >= allMatching.length) {
-
     // Mode "ทุกข้อ": group into clusters, shuffle clusters, take all
-
     const allClusters = groupQuestionsIntoClusters(allMatching);
-
     for (let i = allClusters.length - 1; i > 0; i--) {
-
       const j = Math.floor(Math.random() * (i + 1));
-
       [allClusters[i], allClusters[j]] = [allClusters[j], allClusters[i]];
-
     }
-
     finalClusters = allClusters;
-
   } else {
-
     let cTarget = Math.round((simClinicPct / 100) * totalCount);
-
     let pTarget = Math.round((simProductPct / 100) * totalCount);
-
     let sTarget = Math.max(0, totalCount - cTarget - pTarget);
 
-
-
     const allClusters = groupQuestionsIntoClusters(allMatching);
-
     // Find multi-track INT clusters
-
     const intClusters = allClusters.filter(c => c.caseType === 'INT' || (c.caseGroupId && c.caseGroupId.includes('_INT_')));
-
     
-
     // Shuffle INT clusters
-
     for (let i = intClusters.length - 1; i > 0; i--) {
-
       const j = Math.floor(Math.random() * (i + 1));
-
       [intClusters[i], intClusters[j]] = [intClusters[j], intClusters[i]];
-
     }
 
-
-
     const selectedIntClusters = [];
-
     const usedQuestionIds = new Set();
-
     let currentCounts = { clinic: 0, product: 0, sap: 0 };
 
-
-
     for (const ic of intClusters) {
-
       if ((currentCounts.clinic + currentCounts.product + currentCounts.sap) >= totalCount) break;
 
-
-
       const cC = ic.questions.filter(q => (q.track || '').toLowerCase().includes('clin')).length;
-
       const pC = ic.questions.filter(q => (q.track || '').toLowerCase().includes('prod')).length;
-
       const sC = ic.questions.filter(q => (q.track || '').toLowerCase().includes('sap')).length;
 
-
-
       const remC = cTarget - currentCounts.clinic;
-
       const remP = pTarget - currentCounts.product;
-
       const remS = sTarget - currentCounts.sap;
-
       const remTotal = totalCount - (currentCounts.clinic + currentCounts.product + currentCounts.sap);
-
-
 
       if (remTotal <= 0) break;
 
-
-
       // If whole INT cluster fits into remaining quotas
-
       if (cC <= remC && pC <= remP && sC <= remS) {
-
         selectedIntClusters.push(ic);
-
         ic.questions.forEach(q => usedQuestionIds.add(q.id));
-
         currentCounts.clinic += cC;
-
         currentCounts.product += pC;
-
         currentCounts.sap += sC;
-
-      } else if (remTotal > 0 && (selectedIntClusters.length === 0 || remTotal < ic.questions.length)) {
-
-        // Cluster exceeds quota: truncate proportionally across tracks so SAP is never eliminated!
-
+      } else if (remTotal < ic.questions.length && selectedIntClusters.length === 0 && totalCount <= 10) {
+        // User requested small target (e.g. 5 questions from a 6-question case)
         const maxToTake = Math.min(remTotal, ic.questions.length);
-
-        const truncated = truncateClusterProportionally(ic.questions, maxToTake, { clinic: remC, product: remP, sap: remS });
-
+        const truncated = ic.questions.slice(0, maxToTake);
         selectedIntClusters.push({
-
-          isCluster: true,
-
-          caseGroupId: ic.caseGroupId,
-
-          caseType: 'INT',
-
+          ...ic,
           questions: truncated
-
         });
-
         truncated.forEach(q => {
-
           usedQuestionIds.add(q.id);
-
           const trk = (q.track || '').toLowerCase();
-
           if (trk.includes('clin')) currentCounts.clinic++;
-
           else if (trk.includes('prod')) currentCounts.product++;
-
           else if (trk.includes('sap')) currentCounts.sap++;
-
         });
-
         break;
-
       }
-
     }
-
-
 
     // Now sample remaining quotas for Clinic, Product, SAP from track categories
-
     const remClinicTarget  = Math.max(0, cTarget - currentCounts.clinic);
-
     const remProductTarget = Math.max(0, pTarget - currentCounts.product);
-
     const remSapTarget     = Math.max(0, sTarget - currentCounts.sap);
 
-
-
     const clinicClusters  = sampleStratifiedFromTrack('clinic',  remClinicTarget,  'all', allowed, usedQuestionIds);
-
     const productClusters = sampleStratifiedFromTrack('product', remProductTarget, 'all', allowed, usedQuestionIds);
-
     const sapClusters     = sampleStratifiedFromTrack('sap',     remSapTarget,     'all', allowed, usedQuestionIds);
 
-
-
     finalClusters = [
-
       ...selectedIntClusters,
-
       ...clinicClusters,
-
       ...productClusters,
-
       ...sapClusters
-
     ];
 
-
-
     // Backfill deficit if any
-
     let currentTotalSelected = finalClusters.reduce((sum, c) => sum + c.questions.length, 0);
-
     if (currentTotalSelected < totalCount && currentTotalSelected < allMatching.length) {
-
       finalClusters.forEach(c => c.questions.forEach(q => usedQuestionIds.add(q.id)));
-
       const leftoverQs = allMatching.filter(q => !usedQuestionIds.has(q.id));
-
       const leftoverClusters = groupQuestionsIntoClusters(leftoverQs);
-
       for (let i = leftoverClusters.length - 1; i > 0; i--) {
-
         const j = Math.floor(Math.random() * (i + 1));
-
         [leftoverClusters[i], leftoverClusters[j]] = [leftoverClusters[j], leftoverClusters[i]];
-
       }
 
+      // Pass A: prefer whole clusters that fit remaining
+      const unpicked = [];
       for (const lc of leftoverClusters) {
-
         if (currentTotalSelected >= totalCount) break;
-
         const rem = totalCount - currentTotalSelected;
-
         if (lc.questions.length <= rem) {
-
           finalClusters.push(lc);
-
           currentTotalSelected += lc.questions.length;
-
         } else {
-
-          const trunc = truncateClusterProportionally(lc.questions, rem, null);
-
-          finalClusters.push({
-
-            isCluster: true,
-
-            caseGroupId: lc.caseGroupId,
-
-            caseType: lc.caseType,
-
-            questions: trunc
-
-          });
-
-          currentTotalSelected += trunc.length;
-
-          break;
-
+          unpicked.push(lc);
         }
-
       }
 
+      // Pass B: if still deficit, cut sequentially to exact totalCount
+      if (currentTotalSelected < totalCount && unpicked.length > 0) {
+        for (const lc of unpicked) {
+          if (currentTotalSelected >= totalCount) break;
+          const rem = totalCount - currentTotalSelected;
+          const slicedQs = lc.questions.slice(0, rem);
+          finalClusters.push({
+            ...lc,
+            questions: slicedQs
+          });
+          currentTotalSelected += slicedQs.length;
+          break;
+        }
+      }
     }
-
   }
-
-
 
   // Shuffle clusters (keeping subquestions inside each cluster strictly consecutive!)
-
   for (let i = finalClusters.length - 1; i > 0; i--) {
-
     const j = Math.floor(Math.random() * (i + 1));
-
     [finalClusters[i], finalClusters[j]] = [finalClusters[j], finalClusters[i]];
-
   }
-
-
 
   let combined = finalClusters.flatMap(c => c.questions);
-
   if (combined.length > totalCount) {
-
     combined = combined.slice(0, totalCount);
-
   }
-
-
 
   closeSimExamPanel();
-
   setAppQuizMode(chosenMode);
 
-
-
   let totalSeconds = 0;
-
   if (timerOption === 'auto') {
-
     totalSeconds = Math.round(combined.length * 1.5 * 60);
-
   } else if (timerOption !== '0') {
-
     totalSeconds = parseInt(timerOption, 10) * 60;
-
   }
-
-
 
   const title = `⏱️ จำลองสอบจริง PLE-CC1 (${combined.length} ข้อ)`;
-
   const subRow = document.getElementById('quizSubtopicRow');
-
   if (subRow) subRow.style.display = 'none';
 
-
-
   startQuizWithQuestions(combined, title);
-
   if (totalSeconds > 0) {
-
     startQuizCountdownTimer(totalSeconds);
-
   } else {
-
     stopQuizCountdownTimer();
-
   }
-
 }
-
-
-
-// ─── START QUIZ ───
-
-
-
 function enterQuizCategory(catName) {
 
   openQuizSetupModal(catName, currentTrack);
