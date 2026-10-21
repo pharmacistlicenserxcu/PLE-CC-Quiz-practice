@@ -4362,6 +4362,12 @@
 
     }
 
+    .tag-exercise-exam {
+
+      background: #FAF5FF; color: #7E22CE; border: 1px solid #E9D5FF;
+
+    }
+
 
 
     /* ══ SCROLL-DOWN PRACTICE VIEWPORT ══ */
@@ -9261,7 +9267,7 @@
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
 
-<script src="quiz-data-offline.js?v=20260925_v18"></script>
+<script src="quiz-data-offline.js?v=20261021_v74"></script>
 
 <script>
 
@@ -9679,7 +9685,7 @@ function getExamBadgeInfo(q) {
 
   const lower = (type + ' ' + year).toLowerCase();
 
-  if (lower.includes('จริง') || lower.includes('real')) {
+  if (lower.includes('จริง') || lower.includes('real') || lower.includes('เก่า')) {
 
     cssClass = 'tag-real-exam';
 
@@ -9690,6 +9696,12 @@ function getExamBadgeInfo(q) {
     cssClass = 'tag-mock-exam';
 
     icon = '📝';
+
+  } else if (lower.includes('แบบฝึกหัด') || lower.includes('exercise') || lower.includes('เล่มม่วง')) {
+
+    cssClass = 'tag-exercise-exam';
+
+    icon = '📚';
 
   }
 
@@ -13664,15 +13676,13 @@ function renderSimSourceChips() {
 
   const sortedTypes = Array.from(typeMap.keys()).sort((a, b) => {
 
-    if (a.includes('จริง') && !b.includes('จริง')) return -1;
+    const order = { 'ข้อสอบเก่า': 1, 'ข้อสอบจริง': 1, 'ข้อสอบจำลอง': 2, 'แบบฝึกหัด': 3 };
 
-    if (!a.includes('จริง') && b.includes('จริง')) return 1;
+    const orderA = order[a] || (a.includes('เก่า') || a.includes('จริง') ? 1 : a.includes('จำลอง') ? 2 : a.includes('แบบฝึกหัด') ? 3 : 4);
 
-    const aMock = a.toLowerCase().includes('mock'), bMock = b.toLowerCase().includes('mock');
+    const orderB = order[b] || (b.includes('เก่า') || b.includes('จริง') ? 1 : b.includes('จำลอง') ? 2 : b.includes('แบบฝึกหัด') ? 3 : 4);
 
-    if (aMock && !bMock) return -1;
-
-    if (!aMock && bMock) return 1;
+    if (orderA !== orderB) return orderA - orderB;
 
     return a.localeCompare(b, 'th');
 
@@ -13700,9 +13710,13 @@ function renderSimSourceChips() {
 
     sortedTypes.forEach(type => {
 
-      const isReal = type.includes('จริง'), isMock = type.toLowerCase().includes('mock');
+      const isPast = type.includes('เก่า') || type.includes('จริง');
 
-      const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
+      const isMock = type.toLowerCase().includes('mock') || type.includes('จำลอง');
+
+      const isExercise = type.includes('แบบฝึกหัด');
+
+      const icon = isPast ? '🎯' : isMock ? '📝' : isExercise ? '📚' : '📌';
 
       const cnt = countPerType[type] || 0;
 
@@ -13746,9 +13760,13 @@ function renderSimSourceChips() {
 
   sortedTypes.forEach(type => {
 
-    const isReal = type.includes('จริง'), isMock = type.toLowerCase().includes('mock');
+    const isPast = type.includes('เก่า') || type.includes('จริง');
 
-    const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
+    const isMock = type.toLowerCase().includes('mock') || type.includes('จำลอง');
+
+    const isExercise = type.includes('แบบฝึกหัด');
+
+    const icon = isPast ? '🎯' : isMock ? '📝' : isExercise ? '📚' : '📌';
 
     const yearsSet = typeMap.get(type) || new Set();
 
@@ -13876,9 +13894,13 @@ function populateSubDropdownOptions(filterType = null) {
 
     _simCachedTypes.forEach(type => {
 
-      const isReal = type.includes('จริง'), isMock = type.toLowerCase().includes('mock');
+      const isPast = type.includes('เก่า') || type.includes('จริง');
 
-      const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
+      const isMock = type.toLowerCase().includes('mock') || type.includes('จำลอง');
+
+      const isExercise = type.includes('แบบฝึกหัด');
+
+      const icon = isPast ? '🎯' : isMock ? '📝' : isExercise ? '📚' : '📌';
 
       const yearsSet = _simCachedTypeMap.get(type) || new Set();
 
@@ -13912,9 +13934,13 @@ function populateSubDropdownOptions(filterType = null) {
 
     const type = filterType.replace(/^type:/, '');
 
-    const isReal = type.includes('จริง'), isMock = type.toLowerCase().includes('mock');
+    const isPast = type.includes('เก่า') || type.includes('จริง');
 
-    const icon = isReal ? '🎯' : isMock ? '📝' : '📌';
+    const isMock = type.toLowerCase().includes('mock') || type.includes('จำลอง');
+
+    const isExercise = type.includes('แบบฝึกหัด');
+
+    const icon = isPast ? '🎯' : isMock ? '📝' : isExercise ? '📚' : '📌';
 
     const yearsSet = _simCachedTypeMap.get(type) || new Set();
 

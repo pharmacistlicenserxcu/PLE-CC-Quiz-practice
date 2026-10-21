@@ -632,21 +632,9 @@ def main():
             q_html = q_clean.replace('\n', '<br>')
             item_no = int(q_num_raw) if q_num_raw.isdigit() else len(offline_questions.get(target_sheet, [])) + 1
 
-            # Exam type auto mapping & normalization
+            # Direct 1:1 fidelity from Google Sheet (Col P: ประเภทข้อสอบ, Col Q: ปีที่ออกข้อสอบ)
             clean_exam_type = exam_type.strip()
-            if any(m in clean_exam_type.lower() for m in ['mock', 'จำลอง']):
-                clean_exam_type = 'ข้อสอบจำลอง'
-            elif any(r_word in clean_exam_type.lower() for r_word in ['จริง', 'เก่า']):
-                clean_exam_type = 'ข้อสอบเก่า'
-            elif any(e in clean_exam_type.lower() for e in ['แบบฝึกหัด', 'ฝึกหัด', 'exercise']):
-                clean_exam_type = 'แบบฝึกหัด'
-            elif not clean_exam_type:
-                if 'mock' in exam_year.lower() or 'จำลอง' in exam_year.lower():
-                    clean_exam_type = 'ข้อสอบจำลอง'
-                elif 'เล่มม่วง' in exam_year.lower():
-                    clean_exam_type = 'แบบฝึกหัด'
-                else:
-                    clean_exam_type = 'ข้อสอบเก่า'
+            clean_exam_year = exam_year.strip()
 
             q_obj = {
                 'id': f"{s_name}::{row_num}",
