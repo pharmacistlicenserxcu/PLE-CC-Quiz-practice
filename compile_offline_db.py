@@ -267,6 +267,61 @@ def post_process_cases(offline_questions):
             q['caseOrder'] = idx + 1
             q['caseTotal'] = len(cluster_qs)
 
+TOPIC_TO_SHEET_MAP = {
+    'musculoskeletal': '1. Musculoskeleton',
+    'musculoskeleton': '1. Musculoskeleton',
+    'cardiovascular': '2. Cardiovascular',
+    'dermatologic': '3. Dermatologic',
+    'endocrine': '4. Endocrine',
+    'gastrointestinal': '5. Gastrointestinal',
+    'hematologic': '6. Hematologic',
+    'immunologic': '7. Immunologic',
+    'infectious diseases': '8. Infectious diseases',
+    'infectious': '8. Infectious diseases',
+    'neurologic': '9. Neurologic',
+    'psychiatric': '10. Psychiatric',
+    'pulmonary': '11. Pulmonary',
+    'gynaecologic & genitourinary': '12. GynaecologicGenitourinary',
+    'gynaecologicgenitourinary': '12. GynaecologicGenitourinary',
+    'gynaecologic': '12. GynaecologicGenitourinary',
+    'eye disorder': '13. Eye disorder',
+    'eye': '13. Eye disorder',
+    'oncologic': '14. Oncologic',
+    'renal': '15. Renal',
+    'toxicology & poisoning': '16. Toxicology & Poisoning',
+    'toxicology': '16. Toxicology & Poisoning',
+    'clinical nutrition': '18. Clinical Nutrition',
+    'nutrition': '18. Clinical Nutrition',
+    'herbal medicine & products': '17. Herbal Medicine & Products',
+    'herbal medicine': '17. Herbal Medicine & Products',
+    'titrations': '1. Titrations',
+    'chromatography': '2. Chromatography',
+    'spectroscopy & optics': '3. Spectroscopy & Optics',
+    'spectroscopy': '3. Spectroscopy & Optics',
+    'preformulation & gmp': '4. Preformulation & GMP',
+    'preformulation': '4. Preformulation & GMP',
+    'pharmaceutical calc': '5. Pharmaceutical Calc',
+    'solid dosage forms': '6. Solid Dosage Forms',
+    'solid': '6. Solid Dosage Forms',
+    'liquid & semisolids': '7. Liquid & Semisolids',
+    'liquid': '7. Liquid & Semisolids',
+    'biopharm & drug release': '8. Biopharm & Drug Release',
+    'biopharm': '8. Biopharm & Drug Release',
+    'sterile & special forms': '9. Sterile & Special Forms',
+    'sterile': '9. Sterile & Special Forms',
+    'biotech products': '10. Biotech Products',
+    'biotech': '10. Biotech Products',
+    'food products & qa': '12. Food Products & QA',
+    'food': '12. Food Products & QA',
+    'medicinal chemistry': '13. Medicinal Chemistry',
+    'pharmacy laws & ethics': '1. Pharmacy Laws & Ethics',
+    'laws': '1. Pharmacy Laws & Ethics',
+    'pharmacy administration & sy': '2. Pharmacy Administration & Sy',
+    'administration': '2. Pharmacy Administration & Sy',
+    'research & biostats': '3. Research & Biostats',
+    'research': '3. Research & Biostats',
+}
+
 def main():
     parser = argparse.ArgumentParser(description='PLE-CC Quiz Offline Database Compiler (v2.1 Pro)')
     parser.add_argument('--mode', choices=['all', 'category', 'track'], default='all',
@@ -478,7 +533,10 @@ def main():
                 if cat_idx < len(r):
                     category_tag = str(r[cat_idx] or '').strip()
 
-            target_sheet = category_tag if (is_ingestion_sheet and category_tag) else s_name
+            # TOPIC_TO_SHEET_MAP: Route questions by Column L (Topic / Group)
+            topic_clean = re.sub(r'^\d+\.\s*', '', topic_raw).strip().lower()
+            topic_mapped_sheet = TOPIC_TO_SHEET_MAP.get(topic_clean)
+            target_sheet = category_tag if (is_ingestion_sheet and category_tag) else (topic_mapped_sheet if (is_ingestion_sheet and topic_mapped_sheet) else s_name)
 
             # In selective mode, skip questions not belonging to target sheets
             if is_selective and target_sheet not in target_content_sheets:
@@ -702,6 +760,10 @@ def main():
         f.write(";\n\n")
         f.write("window.QUIZ_OFFLINE_QUESTIONS = ")
         f.write(json.dumps(offline_questions, ensure_ascii=False, indent=2))
+        f.write(";\n\n")
+        all_flat = [q for qs in offline_questions.values() for q in qs]
+        f.write("window.QUIZ_OFFLINE_DB = ")
+        f.write(json.dumps(all_flat, ensure_ascii=False, indent=2))
         f.write(";\n")
 
     # 9. Bump Service Worker cache

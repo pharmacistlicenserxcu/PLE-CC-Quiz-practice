@@ -319,20 +319,19 @@ function doGet(e) {
           const answerKey    = parseInt(row[offset + 7], 10) || 1;
           const explanation  = String(row[offset + 8] || '').trim();
           const rawAImg      = row[offset + 9];
-          const subtopic     = String(row[offset + 10] || '').trim();
-          const track        = String(row[offset + 11] || 'Clinic').trim();
-          const note         = String(row[offset + 12] || '').trim();
-          const examType     = String(row[offset + 13] || '').trim();
-          const examYear     = String(row[offset + 14] || '').trim();
+          const topic        = String(row[offset + 10] || '').trim();
+          const subtopic     = String(row[offset + 11] || '').trim();
+          const track        = String(row[offset + 12] || 'Clinic').trim();
+          const note         = String(row[offset + 13] || '').trim();
+          const examType     = String(row[offset + 14] || '').trim();
+          const examYear     = String(row[offset + 15] || '').trim();
+          const caseIdRaw    = String(row[offset + 16] || '').trim();
 
-          // ─── Quick Ingestion: อ่าน Category Tag จากคอลัมน์ Q (offset+16) ───
-          // ถ้ามี Tag → ใช้ Tag เป็น category (ข้อสอบจะไปโผล่ในหมวดวิชานั้นในเว็บ)
-          // ถ้าไม่มี Tag → ข้ามแถวนี้ (ยังไม่ได้จัดหมวด)
+          // ─── Quick Ingestion / Flexible Tab: อ่าน Category Tag หรือจับคู่จาก Topic (Col L) ───
           let category = sName;
           if (isIngest) {
-            const categoryTag = String(row[offset + 16] || '').trim();
-            if (!categoryTag) return; // ข้ามแถวที่ยังไม่ได้ระบุหมวดวิชา
-            category = categoryTag;
+            const categoryTag = String(row[offset + 17] || '').trim();
+            category = categoryTag || topic || sName;
           }
 
           if (!questionText && !c1) return;
@@ -348,8 +347,9 @@ function doGet(e) {
           allQuestions.push({
             id:            sName + '::' + rowNum,
             itemNo:        itemNo,
-            category:      category,                         // ← ใช้ Category Tag สำหรับ 📥, ชื่อชีตสำหรับชีตปกติ
-            subtopic:      subtopic || category,
+            category:      category,
+            topic:         topic || category,
+            subtopic:      subtopic || topic || category,
             track:         track,
             examType:      examType,
             examYear:      examYear,

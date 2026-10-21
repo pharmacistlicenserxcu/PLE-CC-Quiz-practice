@@ -9267,7 +9267,7 @@
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
 
-<script src="quiz-data-offline.js?v=20261021_v74"></script>
+<script src="quiz-data-offline.js?v=20261021_v76"></script>
 
 <script>
 
@@ -11070,15 +11070,17 @@ async function fetchLiveSheetQuestions(sheetName) {
 
             const ansImg = getVal(offset + 9);
 
-            let subtopic = getVal(offset + 10);
+            const topic = getVal(offset + 10);
 
-            const track = getVal(offset + 11) || 'Clinic';
+            let subtopic = getVal(offset + 11);
 
-            const note = getVal(offset + 12);
+            const track = getVal(offset + 12) || 'Clinic';
 
-            const examType = getVal(offset + 13) || '';
+            const note = getVal(offset + 13);
 
-            const examYear = getVal(offset + 14) || '';
+            const examType = getVal(offset + 14) || '';
+
+            const examYear = getVal(offset + 15) || '';
 
 
 
@@ -11086,7 +11088,7 @@ async function fetchLiveSheetQuestions(sheetName) {
 
             const isIngestion = sheetName.includes('ด่วน') || sheetName.startsWith('📥') || sheetName.startsWith('QI_');
 
-            let caseIdRaw = isIngestion ? getVal(offset + 16) : getVal(offset + 15);
+            let caseIdRaw = isIngestion ? getVal(offset + 17) : getVal(offset + 16);
 
             if (!caseIdRaw) {
 
@@ -11238,7 +11240,9 @@ async function fetchLiveSheetQuestions(sheetName) {
 
               category: sheetName,
 
-              subtopic: subtopic || sheetName,
+              topic: topic || sheetName,
+
+              subtopic: subtopic || topic || sheetName,
 
               track: track,
 
@@ -11635,6 +11639,16 @@ function isSystemCategory(name) {
 
 
 function loadInitialData() {
+
+  if ((!window.QUIZ_OFFLINE_QUESTIONS || Object.keys(window.QUIZ_OFFLINE_QUESTIONS).length === 0) && window.QUIZ_OFFLINE_DB && Array.isArray(window.QUIZ_OFFLINE_DB)) {
+    window.QUIZ_OFFLINE_QUESTIONS = {};
+    window.QUIZ_OFFLINE_DB.forEach(q => {
+      if (!q) return;
+      const cat = q.category || 'Unknown';
+      if (!window.QUIZ_OFFLINE_QUESTIONS[cat]) window.QUIZ_OFFLINE_QUESTIONS[cat] = [];
+      window.QUIZ_OFFLINE_QUESTIONS[cat].push(q);
+    });
+  }
 
   categories = (window.QUIZ_OFFLINE_CATEGORIES || []).filter(c => !isSystemCategory(c.name));
 
@@ -15712,7 +15726,7 @@ function populatePracticeSubtopicDropdowns(poolQs) {
 
     if (cardSubWrap) {
 
-      cardSubWrap.style.display = (subs.length > 1) ? 'block' : 'none';
+      cardSubWrap.style.display = (subs.length > 0) ? 'block' : 'none';
 
     }
 
@@ -15744,7 +15758,7 @@ function populatePracticeSubtopicDropdowns(poolQs) {
 
     if (scrollSubWrap) {
 
-      scrollSubWrap.style.display = (subs.length > 1) ? 'block' : 'none';
+      scrollSubWrap.style.display = (subs.length > 0) ? 'block' : 'none';
 
     }
 
