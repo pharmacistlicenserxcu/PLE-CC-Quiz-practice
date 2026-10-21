@@ -9266,7 +9266,7 @@
 
 <!-- ══ SCRIPT INCLUSION & RUNTIME LOGIC ══ -->
 
-<script src="quiz-data-offline.js?v=20261021_v77"></script>
+<script src="quiz-data-offline.js?v=20261021_v78"></script>
 
 <script>
 
@@ -15887,6 +15887,111 @@ function onQuizExamYearFilterChange() {
   showToast('🔍 ปรับตัวกรองชุด/ปีข้อสอบแล้ว (' + filtered.length + ' ข้อ)');
 }
 
+function startQuizWithQuestions(qs, titleText) {
+  activeQuizQuestions = qs.slice();
+  currentQuestionIndex = 0;
+  userAnswersExamMode = {};
+  selectedChoiceIndex = null;
+  isAnswerSubmitted = false;
+  scrollUserAnswers = {};
+  scrollShowAllExp = false;
+  scrollFilterSubtopic = '__all__';
+  scrollSearchQuery = '';
+
+  sessionResults = {
+    total: activeQuizQuestions.length,
+    score: 0,
+    wrongQuestions: []
+  };
+
+  currentAppMode = 'quiz';
+  // Ensure all setting / setup modals are completely closed
+  if (typeof closeRandomModal === 'function') closeRandomModal();
+  if (typeof closeQuizSetupModal === 'function') closeQuizSetupModal();
+  document.querySelectorAll('.modal-overlay.show').forEach(m => m.classList.remove('show'));
+
+  document.getElementById('lobbyView').style.display = 'none';
+  document.getElementById('quizView').style.display = 'flex';
+  document.getElementById('resultView').style.display = 'none';
+  document.getElementById('browseView').style.display = 'none';
+  const revView = document.getElementById('examReviewView');
+  if (revView) revView.style.display = 'none';
+
+  // Scroll to top of window and quiz view
+  window.scrollTo({ top: 0, behavior: 'instant' });
+  const qv = document.getElementById('quizView');
+  if (qv) qv.scrollTop = 0;
+
+  const modeBadge = appQuizMode === 'exam' ? '⏱️ โหมดสอบจริง' : (appQuizMode === 'scroll' ? '📜 เลื่อนอ่านโหมด' : '📖 โหมดฝึกฝน');
+  document.getElementById('quizCategoryTitle').textContent = titleText;
+  document.getElementById('quizCategorySub').textContent = `${modeBadge} (${activeQuizQuestions.length} ข้อ)`;
+
+  // Palette toggle bar visibility
+  const toggleBar = document.getElementById('examPaletteToggleBar');
+  if (toggleBar) toggleBar.classList.toggle('show', appQuizMode === 'exam');
+
+  // Shuffle button in practice and scroll mode
+  const shuffleBtn = document.getElementById('btnShufflePractice');
+  if (shuffleBtn) {
+    shuffleBtn.style.display = (appQuizMode !== 'exam') ? 'inline-flex' : 'none';
+  }
+
+  // Toggle button between card and scroll view
+  const viewToggleBtn = document.getElementById('btnTogglePracticeViewStyle');
+  if (viewToggleBtn) {
+    viewToggleBtn.style.display = (appQuizMode !== 'exam') ? 'inline-flex' : 'none';
+  }
+
+  // Collapse palette by default
+  isPaletteOpen = false;
+  const pal = document.getElementById('examNavPalette');
+  if (pal) pal.classList.remove('is-open');
+  const arrow = document.getElementById('examPaletteArrow');
+  if (arrow) arrow.textContent = '▼';
+  const label = document.getElementById('examPaletteToggleLabel');
+  if (label) label.textContent = 'แสดงผัง';
+
+  if (appQuizMode === 'scroll' || (appQuizMode === 'practice' && practiceViewStyle === 'scroll')) {
+    showScrollViewport();
+  } else {
+    showCardViewport();
+  }
+}
+
+function shuffleCurrentQuizDeck() {
+  if (!activeQuizQuestions || activeQuizQuestions.length <= 1) {
+    showToast('มีข้อสอบเพียง 1 ข้อ ไม่จำเป็นต้องสลับ');
+    return;
+  }
+  activeQuizQuestions = shuffleClusterAwareQuestions(activeQuizQuestions);
+  currentQuestionIndex = 0;
+  selectedChoiceIndex = null;
+  isAnswerSubmitted = false;
+  scrollUserAnswers = {};
+
+  if (practiceViewStyle === 'scroll' && appQuizMode !== 'exam') {
+    renderScrollPractice();
+    updateScrollPracticeStats();
+  } else {
+    renderCurrentQuestion();
+  }
+  showToast('🔀 สุ่มสลับข้อสอบ (เคสต่อเนื่องอยู่ติดกันเป็นกลุ่ม) เรียบร้อยแล้ว!');
+}
+
+// ─── SCROLL DOWN PRACTICE MODE CONTROLLERS ───
+let scrollShowAllExp = false;
+let scrollFilterSubtopic = '__all__';
+let scrollFilterExamType = 'all';
+let scrollFilterExamYear = 'all';
+let scrollSearchQuery = '';
+let activeReportQuestion = null;
+
+function populateScrollSubtopicDropdown() {
+  populatePracticeSubtopicDropdowns();
+  populatePracticeExamTypeDropdowns();
+  populatePracticeExamYearDropdowns();
+}
+
 function onScrollSubtopicChange() {
   const subSel = document.getElementById('scrollSubtopicSelect');
   if (subSel) {
@@ -15932,12 +16037,6 @@ function onScrollExamYearFilterChange() {
   updateScrollPracticeStats();
   renderScrollPractice();
   showToast('🔍 ปรับตัวกรองชุด/ปีข้อสอบแล้ว (' + filtered.length + ' ข้อ)');
-}
-
-function populateScrollSubtopicDropdown() {
-  populatePracticeSubtopicDropdowns();
-  populatePracticeExamTypeDropdowns();
-  populatePracticeExamYearDropdowns();
 }
 
 function onScrollSearchChange() {

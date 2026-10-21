@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ple-cc-quiz-practice-v77';
+const CACHE_NAME = 'ple-cc-quiz-practice-v78';
 const ASSETS = [
   './',
   './index.html',
@@ -8,7 +8,9 @@ const ASSETS = [
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS)).catch((err) => {
+      console.warn('[SW] Cache addAll warning:', err);
+    })
   );
   self.skipWaiting();
 });
@@ -39,17 +41,19 @@ self.addEventListener('fetch', (e) => {
       fetch(e.request)
         .then((networkRes) => {
           if (networkRes && networkRes.status === 200) {
-            const resClone = networkRes.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(e.request, resClone));
+            try {
+              const resClone = networkRes.clone();
+              caches.open(CACHE_NAME).then((cache) => cache.put(e.request, resClone).catch(() => {}));
+            } catch (_) {}
           }
           return networkRes;
         })
-        .catch(() => caches.match(e.request))
+        .catch(() => caches.match(e.request, { ignoreSearch: true }))
     );
   } else {
     // Cache-First for static assets/images
     e.respondWith(
-      caches.match(e.request).then((res) => {
+      caches.match(e.request, { ignoreSearch: true }).then((res) => {
         return res || fetch(e.request);
       })
     );
