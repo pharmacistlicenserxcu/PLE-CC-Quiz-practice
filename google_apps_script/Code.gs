@@ -86,7 +86,7 @@ function setupQuickIngestionTab() {
   sheet.getRange('A1').setFormula(
     '=HYPERLINK("#gid=' + homeGid + '","🏠 กลับสู่หน้าแรก (Go to Home Page)")'
   );
-  sheet.getRange('A1:Q1').merge()
+  sheet.getRange('A1:S1').merge()
     .setBackground('#E3F2FD')
     .setFontFamily('Bai Jamjuree')
     .setFontSize(11)
@@ -109,12 +109,14 @@ function setupQuickIngestionTab() {
     'เฉลย (1-5)',
     'คำอธิบายเฉลย',
     'รูปเฉลย',
-    'Filter หมวด/Subtopic',
-    'Track (Product/Clinic/SAP)',
+    'หัวข้อโรคสภาฯ (Topic)',
+    'หัวข้อย่อย (Subtopic)',
+    'Product / Clinic (Track)',
     'หมายเหตุ',
     'ประเภทข้อสอบ',
     'ปี / เลขชุด',
-    'หมวดวิชา/ชีตปลายทาง ★'   // คอลัมน์ Q — Category Tag (ใช้ route ข้อสอบไปหมวดวิชาในเว็บ)
+    'Case ID (รหัสเคส)',
+    'หมวดวิชา/ชีตปลายทาง ★'   // คอลัมน์ S — Category Tag
   ];
   sheet.getRange(2, 1, 1, headers.length).setValues([headers])
     .setBackground('#1565C0')
@@ -599,10 +601,12 @@ function doPost(e) {
         }
       }
 
+      const topic = String(data.topic || '').trim();
       const examType = String(data.examType || '').trim();
       const examYear = String(data.examYear || '').trim();
+      const caseId = String(data.caseId || data.caseGroupId || '').trim();
 
-      // เขียนทับคอลัมน์ B ถึง P (15 คอลัมน์: col 2 ถึง 16)
+      // เขียนทับคอลัมน์ B ถึง R (17 คอลัมน์: col 2 ถึง 18)
       const updateData = [
         newQuestion,      // Col B (2)
         qImgCellValue,    // Col C (3)
@@ -614,14 +618,16 @@ function doPost(e) {
         newAns,           // Col I (9)
         newExplanation,   // Col J (10)
         aImgCellValue,    // Col K (11)
-        subtopic,         // Col L (12)
-        track,            // Col M (13)
-        note,             // Col N (14)
-        examType,         // Col O (15)
-        examYear          // Col P (16)
+        topic,            // Col L (12)
+        subtopic,         // Col M (13)
+        track,            // Col N (14)
+        note,             // Col O (15)
+        examType,         // Col P (16)
+        examYear,         // Col Q (17)
+        caseId            // Col R (18)
       ];
 
-      targetSheet.getRange(rowNum, 2, 1, 15).setValues([updateData]);
+      targetSheet.getRange(rowNum, 2, 1, 17).setValues([updateData]);
 
       // Add direct URL in Cell Note for quick reference
       if (qImg && qImg.startsWith('http')) {
@@ -641,7 +647,7 @@ function doPost(e) {
 
       // ถ้าเป็นชีต Quick Ingestion (📥) และมีส่ง categoryTag
       if (isIngestionSheet_(sheetName) && data.categoryTag) {
-        targetSheet.getRange(rowNum, 17).setValue(String(data.categoryTag).trim());
+        targetSheet.getRange(rowNum, 19).setValue(String(data.categoryTag).trim());
       }
 
       return jsonResponse_({
@@ -734,11 +740,13 @@ function doPost(e) {
         newAns,           // Col I (9)
         newExplanation,   // Col J (10)
         aImgCellValue,    // Col K (11)
-        subtopic,         // Col L (12)
-        track,            // Col M (13)
-        note,             // Col N (14)
-        examType,         // Col O (15)
-        examYear          // Col P (16)
+        topic,            // Col L (12)
+        subtopic,         // Col M (13)
+        track,            // Col N (14)
+        note,             // Col O (15)
+        examType,         // Col P (16)
+        examYear,         // Col Q (17)
+        caseId            // Col R (18)
       ];
 
       targetSheet.appendRow(rowData);

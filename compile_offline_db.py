@@ -399,60 +399,90 @@ def main():
 
         # Inspect Row 2 header
         header_row = [str(x or '').strip().lower() for x in rows[0]]
-        case_col_idx = -1
-        category_tag_col_idx = -1
-        for h_idx, h_text in enumerate(header_row):
-            if 'case' in h_text or 'เคส' in h_text:
-                case_col_idx = h_idx
-            elif 'ปลายทาง' in h_text or 'หมวดวิชา/ชีต' in h_text:
-                category_tag_col_idx = h_idx
+        
+        # Standard 18-column mapping (A-R: 0-17)
+        col_map = {
+            'q_num': 0,        # Col A: ข้อที่
+            'q_text': 1,       # Col B: คำถาม
+            'q_img': 2,        # Col C: รูปถาม
+            'c1': 3,           # Col D: ตัวเลือก 1
+            'c2': 4,           # Col E: ตัวเลือก 2
+            'c3': 5,           # Col F: ตัวเลือก 3
+            'c4': 6,           # Col G: ตัวเลือก 4
+            'c5': 7,           # Col H: ตัวเลือก 5
+            'ans': 8,          # Col I: เฉลย (ตัวเลข 1-5)
+            'exp': 9,          # Col J: คำอธิบายเฉลย
+            'ans_img': 10,     # Col K: รูปเฉลย
+            'topic': 11,       # Col L: หัวข้อโรคสภาฯ (Topic)
+            'subtopic': 12,    # Col M: หัวข้อย่อย (Subtopic)
+            'track': 13,       # Col N: Product / Clinic (Track)
+            'note': 14,        # Col O: หมายเหตุ (Note)
+            'exam_type': 15,   # Col P: ประเภทข้อสอบ (Exam Type)
+            'exam_year': 16,   # Col Q: ปี / เลขชุด (Exam Year/Set)
+            'case_id': 17,     # Col R: Case ID (รหัสเคส)
+            'category_tag': 18 # Col S (ถ้ามี ใน Ingestion sheet)
+        }
 
-        if case_col_idx == -1:
-            case_col_idx = 17 if is_ingestion_sheet else 16
-        if category_tag_col_idx == -1 and is_ingestion_sheet:
-            category_tag_col_idx = 16
+        # Auto-detect column headers dynamically
+        for h_idx, h_text in enumerate(header_row):
+            if not h_text: continue
+            if 'คำถาม' in h_text or 'question' in h_text: col_map['q_text'] = h_idx
+            elif 'รูปถาม' in h_text or 'q_img' in h_text: col_map['q_img'] = h_idx
+            elif 'ตัวเลือก 1' in h_text or 'choice 1' in h_text: col_map['c1'] = h_idx
+            elif 'ตัวเลือก 2' in h_text or 'choice 2' in h_text: col_map['c2'] = h_idx
+            elif 'ตัวเลือก 3' in h_text or 'choice 3' in h_text: col_map['c3'] = h_idx
+            elif 'ตัวเลือก 4' in h_text or 'choice 4' in h_text: col_map['c4'] = h_idx
+            elif 'ตัวเลือก 5' in h_text or 'choice 5' in h_text: col_map['c5'] = h_idx
+            elif 'เฉลย' in h_text and ('ตัวเลข' in h_text or '1-5' in h_text or 'answer' in h_text or 'key' in h_text): col_map['ans'] = h_idx
+            elif 'คำอธิบาย' in h_text or 'explanation' in h_text: col_map['exp'] = h_idx
+            elif 'รูปเฉลย' in h_text or 'ans_img' in h_text: col_map['ans_img'] = h_idx
+            elif 'หัวข้อย่อย' in h_text or 'subtopic' in h_text: col_map['subtopic'] = h_idx
+            elif 'หัวข้อโรค' in h_text or 'topic' in h_text: col_map['topic'] = h_idx
+            elif 'product / clinic' in h_text or 'clinic' in h_text or 'track' in h_text: col_map['track'] = h_idx
+            elif 'หมายเหตุ' in h_text or 'note' in h_text: col_map['note'] = h_idx
+            elif 'ประเภท' in h_text or 'exam type' in h_text or 'examtype' in h_text: col_map['exam_type'] = h_idx
+            elif 'ปี' in h_text or 'เลขชุด' in h_text or 'year' in h_text or 'examyear' in h_text: col_map['exam_year'] = h_idx
+            elif 'case' in h_text or 'รหัสเคส' in h_text or 'เคส' in h_text: col_map['case_id'] = h_idx
+            elif 'ปลายทาง' in h_text or 'หมวดวิชา/ชีต' in h_text or 'หมวดวิชา' in h_text: col_map['category_tag'] = h_idx
 
         data_rows = rows[1:]
 
         for idx, r in enumerate(data_rows):
             row_num = idx + 3
-            needed_cols = max(18, case_col_idx + 1)
+            needed_cols = max(19, max(col_map.values()) + 1)
             while len(r) < needed_cols:
                 r.append('')
 
-            q_num_raw = str(r[0] or '').strip()
-            q_text_raw = str(r[1] or '').strip()
-            q_img_raw = str(r[2] or '').strip()
-            c1_raw = str(r[3] or '').strip()
-            c2_raw = str(r[4] or '').strip()
-            c3_raw = str(r[5] or '').strip()
-            c4_raw = str(r[6] or '').strip()
-            c5_raw = str(r[7] or '').strip()
-            ans_raw = str(r[8] or '').strip()
-            exp_raw = str(r[9] or '').strip()
-            ans_img_raw = str(r[10] or '').strip()
-            subtopic_raw = str(r[11] or '').strip()
-            track_raw = str(r[12] or '').strip()
-            note_raw = str(r[13] or '').strip()
-            exam_type = str(r[14] or '').strip()
-            exam_year = str(r[15] or '').strip()
+            q_num_raw = str(r[col_map['q_num']] or '').strip()
+            q_text_raw = str(r[col_map['q_text']] or '').strip()
+            q_img_raw = str(r[col_map['q_img']] or '').strip()
+            c1_raw = str(r[col_map['c1']] or '').strip()
+            c2_raw = str(r[col_map['c2']] or '').strip()
+            c3_raw = str(r[col_map['c3']] or '').strip()
+            c4_raw = str(r[col_map['c4']] or '').strip()
+            c5_raw = str(r[col_map['c5']] or '').strip()
+            ans_raw = str(r[col_map['ans']] or '').strip()
+            exp_raw = str(r[col_map['exp']] or '').strip()
+            ans_img_raw = str(r[col_map['ans_img']] or '').strip()
+            topic_raw = str(r[col_map['topic']] or '').strip()
+            subtopic_raw = str(r[col_map['subtopic']] or '').strip()
+            track_raw = str(r[col_map['track']] or '').strip()
+            note_raw = str(r[col_map['note']] or '').strip()
+            exam_type = str(r[col_map['exam_type']] or '').strip()
+            exam_year = str(r[col_map['exam_year']] or '').strip()
+            case_id_raw = str(r[col_map['case_id']] or '').strip()
             
             category_tag = ''
             if is_ingestion_sheet:
-                if category_tag_col_idx != -1 and category_tag_col_idx < len(r):
-                    category_tag = str(r[category_tag_col_idx] or '').strip()
-                elif len(r) > 16:
-                    category_tag = str(r[16] or '').strip()
+                cat_idx = col_map.get('category_tag', 18)
+                if cat_idx < len(r):
+                    category_tag = str(r[cat_idx] or '').strip()
 
             target_sheet = category_tag if (is_ingestion_sheet and category_tag) else s_name
 
             # In selective mode, skip questions not belonging to target sheets
             if is_selective and target_sheet not in target_content_sheets:
                 continue
-
-            case_id_raw = ''
-            if case_col_idx != -1 and case_col_idx < len(r):
-                case_id_raw = str(r[case_col_idx] or '').strip()
 
             if not case_id_raw:
                 for cell in r:
@@ -495,17 +525,27 @@ def main():
 
             if not q_text_raw and not c1_raw:
                 continue
-            if q_text_raw == 'คำถาม' or 'กลับหน้าแรก' in q_text_raw or 'กลับสู่หน้าแรก' in q_text_raw:
+            if q_text_raw in ['คำถาม', 'Question'] or 'กลับสู่หน้าแรก' in q_text_raw:
                 continue
 
             # 1. Clean Question Text
             q_clean = clean_text_advanced(q_text_raw, is_choice=False)
             if not q_clean:
-                q_clean = f"แบบทดสอบความรู้ทางเภสัชกรรม ข้อที่ {idx+1}"
+                q_clean = f"แบบทดสอบรายข้อ {idx+1}"
 
-            # 2. Subtopic & Track
+            # 2. Subtopic, Topic & Track
+            target_topic = topic_raw or target_sheet
             target_sub = subtopic_raw or determine_standard_subtopic(target_sheet, q_clean, subtopic_raw)
-            target_track = track_raw or get_track_for_sheet(target_sheet)
+            
+            target_track = track_raw.strip()
+            if target_track.lower() in ['clinic', 'คลินิก']:
+                target_track = 'Clinic'
+            elif target_track.lower() in ['product', 'ผลิตภัณฑ์', 'titration', 'solid', 'liquid']:
+                target_track = 'Product'
+            elif target_track.lower() in ['sap', 'สังคม', 'กฎหมาย']:
+                target_track = 'SAP'
+            else:
+                target_track = get_track_for_sheet(target_sheet)
 
             # Musculoskeleton subtopic normalization
             if 'musculo' in target_sheet.lower():
@@ -518,7 +558,7 @@ def main():
                         st_low = p.lower()
                         if 'gout' in st_low or 'เกาต์' in st_low:
                             norm_parts.append('Gout')
-                        elif 'osteoarthritis' in st_low or 'ข้อเสื่อม' in st_low or 'ข้อเข่า' in st_low or st_low == 'oa':
+                        elif 'osteoarthritis' in st_low or 'ข้อเสื่อม' in st_low or st_low == 'oa':
                             norm_parts.append('OA')
                         elif 'osteoporosis' in st_low or 'กระดูกพรุน' in st_low or 'กระดูกบาง' in st_low:
                             norm_parts.append('Osteoporosis')
@@ -545,22 +585,29 @@ def main():
                         ans_img = images_map[(s_name, row_num, c)]
                         break
 
-            # 4. Standardize Answer (1-5)
-            ans_map = {'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5, 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5}
-            ans_num = ans_map.get(ans_raw.lower())
-            if not ans_num:
-                m = re.search(r'[1-5]', ans_raw)
-                ans_num = int(m.group(0)) if m else 1
-
-            # 5. Clean Choices
+            # 4. Clean Choices
             raw_choices = [c1_raw, c2_raw, c3_raw, c4_raw, c5_raw]
-            choices = [clean_text_advanced(c, is_choice=True) for c in raw_choices]
-            
-            # Distractor guarantee
-            if target_sheet != '16. Others & Toxic' and any(k in c.lower() for c in choices for k in ['sodium thiosulfate', 'dimercaprol', 'calcium disodium edta']):
-                choices = ['', '', '', '', '']
-                
-            pool = DISTRACTOR_POOLS.get(target_sheet, DISTRACTOR_POOLS.get(s_name, DISTRACTOR_POOLS['1. Musculoskeleton']))
+            choices = []
+            for c_i, c_val in enumerate(raw_choices):
+                cleaned_c = clean_text_advanced(c_val, is_choice=True)
+                choices.append(cleaned_c)
+
+            # 5. Validate Answer Key (1-5)
+            ans_num = 1
+            if ans_raw.isdigit():
+                val = int(ans_raw)
+                if 1 <= val <= 5:
+                    ans_num = val
+            elif ans_raw.upper() in ['A', 'B', 'C', 'D', 'E']:
+                ans_num = ord(ans_raw.upper()) - ord('A') + 1
+            elif any(ans_raw.startswith(k) for k in ['ก', 'ข', 'ค', 'ง', 'จ']):
+                th_map = {'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5}
+                ans_num = th_map.get(ans_raw[0], 1)
+
+            # Distractor Pool fallback
+            pool = DISTRACTOR_POOLS.get(target_sheet, DISTRACTOR_POOLS.get('General Therapeutics', []))
+            if not pool:
+                pool = ['ตัวเลือก ก', 'ตัวเลือก ข', 'ตัวเลือก ค', 'ตัวเลือก ง', 'ตัวเลือก จ']
             pool_idx = (idx * 3) % len(pool)
             invalid_dummies = {'', 'ไม่มีข้อใดถูกต้อง', 'ถูกทุกข้อที่กล่าวมาข้างต้น', 'ข้อมูลไม่เพียงพอในการสรุปผล', '-', 'Osteoarthritis / Gout', 'Cardiovascular', 'Infectious diseases', 'General Therapeutics'}
             for c_i in range(5):
@@ -576,7 +623,6 @@ def main():
             choice_letters = ['ก', 'ข', 'ค', 'ง', 'จ']
             ans_letter = choice_letters[ans_num - 1]
             ans_text = choices[ans_num - 1]
-            
             if exp_raw and exp_raw.strip():
                 clean_exp = clean_text_advanced(exp_raw.strip(), is_choice=False)
                 exp_html = clean_exp.replace('\n', '<br>')
@@ -586,15 +632,27 @@ def main():
             q_html = q_clean.replace('\n', '<br>')
             item_no = int(q_num_raw) if q_num_raw.isdigit() else len(offline_questions.get(target_sheet, [])) + 1
 
-            # Exam type auto mapping
-            clean_exam_type = exam_type
-            if clean_exam_type.lower() == 'mock' or clean_exam_type == 'Mock Exam' or clean_exam_type == 'ข้อสอบ Mock':
+            # Exam type auto mapping & normalization
+            clean_exam_type = exam_type.strip()
+            if any(m in clean_exam_type.lower() for m in ['mock', 'จำลอง']):
                 clean_exam_type = 'ข้อสอบจำลอง'
+            elif any(r_word in clean_exam_type.lower() for r_word in ['จริง', 'เก่า']):
+                clean_exam_type = 'ข้อสอบเก่า'
+            elif any(e in clean_exam_type.lower() for e in ['แบบฝึกหัด', 'ฝึกหัด', 'exercise']):
+                clean_exam_type = 'แบบฝึกหัด'
+            elif not clean_exam_type:
+                if 'mock' in exam_year.lower() or 'จำลอง' in exam_year.lower():
+                    clean_exam_type = 'ข้อสอบจำลอง'
+                elif 'เล่มม่วง' in exam_year.lower():
+                    clean_exam_type = 'แบบฝึกหัด'
+                else:
+                    clean_exam_type = 'ข้อสอบเก่า'
 
             q_obj = {
                 'id': f"{s_name}::{row_num}",
                 'itemNo': item_no,
                 'category': target_sheet,
+                'topic': target_topic,
                 'subtopic': target_sub,
                 'track': target_track,
                 'question': q_html,
@@ -625,7 +683,11 @@ def main():
 
     for cat_name, q_list in offline_questions.items():
         if not q_list: continue
-        cat_track = q_list[0]['track'] if q_list else get_track_for_sheet(cat_name)
+        q_track = q_list[0].get('track') if q_list else ''
+        if q_track in ['Clinic', 'Product', 'SAP']:
+            cat_track = q_track
+        else:
+            cat_track = get_track_for_sheet(cat_name)
         total_q_count += len(q_list)
         offline_categories.append({
             'name': cat_name,
