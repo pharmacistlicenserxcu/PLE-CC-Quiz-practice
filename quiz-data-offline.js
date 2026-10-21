@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.1 Pro Edition)
  * Total Questions: 5738 across 32 Categories
- * Build Timestamp: 2026-10-21 23:46:37
+ * Build Timestamp: 2026-10-22 00:03:40
  * Build Mode: all (query: '')
  */
 
@@ -127149,7 +127149,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "subtopic": "SAR & Drug Design",
       "track": "Product",
       "question": "จากสูตรโครงสร้างของ cimetidine และ ranitidine พบว่า ranitidine มีฤทธิ์แรงกว่า cimetidine ถึง 10 เท่า เนื่องจาก ranitidine มีโครงสร้างที่เรียกว่าอะไรแทนที่โครงสร้าง imidazole ring ใน cimetidine",
-      "questionImage": "",
+      "questionImage": "images/qimg_medchem_r3_c2.png",
       "choices": [
         "Methyl cyanide",
         "Nitro",
@@ -276740,7 +276740,7 @@ window.QUIZ_OFFLINE_DB = [
     "subtopic": "SAR & Drug Design",
     "track": "Product",
     "question": "จากสูตรโครงสร้างของ cimetidine และ ranitidine พบว่า ranitidine มีฤทธิ์แรงกว่า cimetidine ถึง 10 เท่า เนื่องจาก ranitidine มีโครงสร้างที่เรียกว่าอะไรแทนที่โครงสร้าง imidazole ring ใน cimetidine",
-    "questionImage": "",
+    "questionImage": "images/qimg_medchem_r3_c2.png",
     "choices": [
       "Methyl cyanide",
       "Nitro",
