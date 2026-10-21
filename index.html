@@ -6566,7 +6566,19 @@
 
         </div>
 
-        <div class="mode-switch-segmented" id="quizModeSwitchInQuiz" style="margin-left:auto; flex-shrink:0;">
+        <div class="quiz-controls-group" style="display:flex; align-items:center; gap:6px; margin-left:auto; flex-shrink:0;">
+          <!-- Explanation Mode Segmented Switch -->
+          <div class="mode-switch-segmented" id="expModeSwitchInQuiz" title="โหมดการแสดงเฉลย">
+            <button class="mode-seg-btn active" id="btnSegExpPopup" onclick="setExpDisplayMode('popup')" title="🎯 เฉลยเด้งป๊อปอัปกลางหน้าจอ">
+              <span>🎯 ป๊อปอัป</span>
+            </button>
+            <button class="mode-seg-btn" id="btnSegExpInline" onclick="setExpDisplayMode('inline')" title="⏬ เฉลยเลื่อนแสดงต่อท้ายด้านล่าง">
+              <span>⏬ เลื่อนลง</span>
+            </button>
+          </div>
+
+          <!-- View Layout Segmented Switch -->
+          <div class="mode-switch-segmented" id="quizModeSwitchInQuiz" style="flex-shrink:0;">
 
           <button class="mode-seg-btn" id="btnQuizSegCard" onclick="setPracticeViewLayout('single')" title="โหมดทีละข้อ 1 คอลัมน์">
 
@@ -6586,6 +6598,7 @@
 
           </button>
 
+        </div>
         </div>
 
       </div>
@@ -6682,10 +6695,6 @@
 
           <div style="display:flex; align-items:center; gap:5px; flex-shrink:0;">
 
-            <button class="btn-exp-mode-pill" id="btnToggleExpModePill" onclick="toggleExpDisplayMode()" title="สลับโหมดเฉลย (ป๊อปอัปกลางจอ / เลื่อนแสดงด้านล่าง)">
-              <span id="expModePillIcon">🎯</span>
-              <span id="expModePillLabel">เฉลย: ป๊อปอัป</span>
-            </button>
             <button class="btn-validate-card" id="btnValidateCard" onclick="handleValidateCurrentCardQuestion()" title="ยืนยันว่าข้อสอบและเฉลยนี้ถูกต้อง (คลิกเพื่อยืนยัน)">
 
               <span class="val-icon">✅</span>
@@ -6792,9 +6801,7 @@
 
               <span class="exp-badge badge-correct" id="expBadge">✅ ตอบถูกต้อง</span>
 
-              <span id="correctChoiceLabel" style="font-size:12px; font-weight:700; color:var(--ink-soft);"></span>
-
-            </div>
+              </div>
 
             <div style="display:flex; align-items:center; gap:6px;">
 
@@ -7310,9 +7317,7 @@
 
           <span class="exp-badge badge-correct" id="modalExpBadge">✅ ตอบถูกต้อง!</span>
 
-          <span id="modalCorrectChoiceLabel" style="font-size:12.5px; font-weight:700; color:var(--ink-soft);"></span>
-
-        </div>
+          </div>
 
         <div style="display:flex; align-items:center; gap:8px;">
 
@@ -18081,7 +18086,7 @@ function submitAnswerPracticeMode() {
     if (expTitle) expTitle.textContent = '💡 คำอธิบายข้อที่ถูกต้อง:';
   }
 
-  if (correctLabel) correctLabel.textContent = `ข้อที่ถูก: ตัวเลือกที่ ${correctLetter}`;
+  
   if (expText) expText.innerHTML = q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
 
   // Answer Image
@@ -19475,15 +19480,13 @@ const LS_EXP_DISPLAY_MODE = 'ple_quiz_exp_display_mode';
 
 
 function getExpDisplayMode() {
-
-  return localStorage.getItem(LS_EXP_DISPLAY_MODE) || 'popup'; // default to 'popup' as requested
-
+  return localStorage.getItem(LS_EXP_DISPLAY_MODE) || 'popup';
 }
-
-
 
 function updateExpModeUI() {
   const mode = getExpDisplayMode();
+
+  // Topbar icon
   const btn = document.getElementById('btnToggleExpMode');
   const icon = document.getElementById('expModeIcon');
   if (icon) icon.textContent = (mode === 'popup') ? '🎯' : '⏬';
@@ -19493,196 +19496,116 @@ function updateExpModeUI() {
       : 'โหมดแสดงเฉลย: ⏬ เลื่อนแสดงด้านล่าง (คลิกเพื่อเปลี่ยนเป็นป๊อปอัป)';
   }
 
-  // Update card header pill button
-  const pillBtn = document.getElementById('btnToggleExpModePill');
-  const pillIcon = document.getElementById('expModePillIcon');
-  const pillLabel = document.getElementById('expModePillLabel');
-  if (pillIcon) pillIcon.textContent = (mode === 'popup') ? '🎯' : '⏬';
-  if (pillLabel) pillLabel.textContent = (mode === 'popup') ? 'เฉลย: ป๊อปอัป' : 'เฉลย: ด้านล่าง';
-  if (pillBtn) {
-    pillBtn.classList.toggle('mode-inline', mode === 'inline');
-    pillBtn.title = (mode === 'popup')
-      ? 'โหมดปัจจุบัน: 🎯 ป๊อปอัปกลางจอ (คลิกเพื่อสลับเป็นเลื่อนแสดงด้านล่าง)'
-      : 'โหมดปัจจุบัน: ⏬ เลื่อนแสดงด้านล่าง (คลิกเพื่อสลับเป็นป๊อปอัปกลางจอ)';
+  // Segmented buttons in Quiz view
+  const segPopup = document.getElementById('btnSegExpPopup');
+  const segInline = document.getElementById('btnSegExpInline');
+  if (segPopup) segPopup.classList.toggle('active', mode === 'popup');
+  if (segInline) segInline.classList.toggle('active', mode === 'inline');
+
+  // Toggle button in modal
+  const btnModalToggle = document.getElementById('btnExpModeInModal');
+  if (btnModalToggle) {
+    btnModalToggle.innerHTML = '<span>⏬ แสดงด้านล่าง</span>';
   }
 }
 
-
-
-function toggleExpDisplayMode() {
-
-  const current = getExpDisplayMode();
-
-  const next = (current === 'popup') ? 'inline' : 'popup';
-
-  try { localStorage.setItem(LS_EXP_DISPLAY_MODE, next); } catch(e) {}
-
+function setExpDisplayMode(targetMode) {
+  if (targetMode !== 'popup' && targetMode !== 'inline') return;
+  try { localStorage.setItem(LS_EXP_DISPLAY_MODE, targetMode); } catch(e) {}
   updateExpModeUI();
 
-
-
   // If answer is already submitted on current question, switch active display immediately
-
   if (isAnswerSubmitted && currentQuestionIndex < activeQuizQuestions.length) {
-
     const q = activeQuizQuestions[currentQuestionIndex];
-
     const isCorrect = (selectedChoiceIndex === q.answer);
-
     const correctLetter = THAI_CHOICE_LETTERS[q.answer - 1] || q.answer;
-
-
 
     const inlineBox = document.getElementById('explanationBox');
 
-    const modal = document.getElementById('explanationModal');
-
-
-
-    if (next === 'popup') {
-
+    if (targetMode === 'popup') {
       if (inlineBox) inlineBox.classList.remove('show');
-
       openExplanationModal(q, isCorrect, correctLetter);
-
     } else {
-
       closeExplanationModal();
-
       if (inlineBox) inlineBox.classList.add('show');
-
       const reopenBtn = document.getElementById('btnReopenExpCard');
-
       if (reopenBtn) reopenBtn.style.display = 'none';
-
     }
-
   }
-
-
 
   if (typeof showToast === 'function') {
-
-    showToast(next === 'popup' ? '🎯 โหมดเฉลย: ป๊อปอัปกลางจอ' : '⏬ โหมดเฉลย: เลื่อนแสดงด้านล่าง');
-
+    showToast(targetMode === 'popup' ? '🎯 โหมดเฉลย: ป๊อปอัปกลางจอ' : '⏬ โหมดเฉลย: เลื่อนแสดงด้านล่าง');
   }
+}
 
+function toggleExpDisplayMode() {
+  const current = getExpDisplayMode();
+  const next = (current === 'popup') ? 'inline' : 'popup';
+  setExpDisplayMode(next);
 }
 
 
 
 function openExplanationModal(q, isCorrect, correctLetter) {
-
   if (!q) return;
-
   const modal = document.getElementById('explanationModal');
-
   if (!modal) return;
 
-
-
   const modalBadge = document.getElementById('modalExpBadge');
-
-  const modalLabel = document.getElementById('modalCorrectChoiceLabel');
-
   const modalTitle = document.getElementById('modalExpTitle');
-
   const modalText = document.getElementById('modalExplanationText');
-
   const modalImgWrap = document.getElementById('modalAnsImgWrap');
-
   const modalImg = document.getElementById('modalAnsImg');
-
   const modalNote = document.getElementById('modalExpNote');
 
-
-
   if (isCorrect) {
-
-    modalBadge.className = 'exp-badge badge-correct';
-
-    modalBadge.innerHTML = '✅ ตอบถูกต้อง!';
-
-    modalTitle.textContent = '💡 คำอธิบายเฉลย:';
-
+    if (modalBadge) {
+      modalBadge.className = 'exp-badge badge-correct';
+      modalBadge.innerHTML = '✅ ตอบถูกต้อง!';
+    }
+    if (modalTitle) modalTitle.textContent = '💡 คำอธิบายเฉลย:';
   } else {
-
-    modalBadge.className = 'exp-badge badge-wrong';
-
-    modalBadge.innerHTML = `❌ ยังไม่ถูกต้อง (เฉลยข้อ ${correctLetter})`;
-
-    modalTitle.textContent = '💡 คำอธิบายข้อที่ถูกต้อง:';
-
+    if (modalBadge) {
+      modalBadge.className = 'exp-badge badge-wrong';
+      modalBadge.innerHTML = `❌ ยังไม่ถูกต้อง (เฉลยข้อ ${correctLetter})`;
+    }
+    if (modalTitle) modalTitle.textContent = '💡 คำอธิบายข้อที่ถูกต้อง:';
   }
-
-
-
-  if (modalLabel) modalLabel.textContent = `ข้อที่ถูก: ตัวเลือกที่ ${correctLetter}`;
 
   if (modalText) modalText.innerHTML = q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
 
-
-
   if (q.answerImage) {
-
-    modalImg.src = q.answerImage;
-
-    modalImgWrap.style.display = 'block';
-
+    if (modalImg) modalImg.src = q.answerImage;
+    if (modalImgWrap) modalImgWrap.style.display = 'block';
   } else {
-
-    modalImg.src = '';
-
-    modalImgWrap.style.display = 'none';
-
+    if (modalImg) modalImg.src = '';
+    if (modalImgWrap) modalImgWrap.style.display = 'none';
   }
-
-
 
   if (q.note) {
-
-    modalNote.innerHTML = `📌 หมายเหตุ: ${sanitizeExamNote(q.note)}`;
-
-    modalNote.style.display = 'block';
-
+    if (modalNote) {
+      modalNote.innerHTML = `📌 หมายเหตุ: ${sanitizeExamNote(q.note)}`;
+      modalNote.style.display = 'block';
+    }
   } else {
-
-    modalNote.style.display = 'none';
-
+    if (modalNote) modalNote.style.display = 'none';
   }
 
-
-
   // Update modal validate button state
-
   const btnModal = document.getElementById('btnValidateCardModal');
-
   const countModal = document.getElementById('valCountCardModal');
-
   const isValid = isQuestionValidatedByUser(q.id);
-
   const cnt = getQuestionValidationCount(q.id);
-
   if (btnModal) btnModal.classList.toggle('validated', isValid);
-
   if (countModal) countModal.textContent = cnt;
 
-
-
   // Show modal
-
   modal.classList.add('show');
-
   modal.style.display = 'flex';
 
-
-
   // Show reopen button on card so user can re-open after closing
-
   const reopenBtn = document.getElementById('btnReopenExpCard');
-
   if (reopenBtn) reopenBtn.style.display = 'inline-flex';
-
 }
 
 
