@@ -11074,7 +11074,7 @@ async function fetchLiveSheetQuestions(sheetName) {
             const getVal = (i) => (i != null && c[i] && c[i].v != null ? String(c[i].v).trim() : '');
 
             const firstCol = getVal(0);
-            if (firstCol.includes('คำถาม') || firstCol.includes('กลับหน้าแรก') || firstCol.includes('ข้อที่')) return;
+            if (firstCol === 'ลำดับ' || firstCol === 'ข้อที่' || firstCol === 'No.' || firstCol === 'คำถาม' || firstCol.includes('กลับหน้าแรก') || firstCol.includes('Go to Home Page')) return;
 
             let itemNo = parseInt(firstCol, 10) || (qs.length + 1);
 
@@ -11182,7 +11182,8 @@ async function fetchLiveSheetQuestions(sheetName) {
 
             if (!qText && !c1) return;
 
-            if (qText.includes('คำถาม') || qText.includes('กลับหน้าแรก')) return;
+            const qLower = qText.toLowerCase();
+            if (qText === 'คำถาม' || qLower === 'question' || qText.includes('กลับสู่หน้าแรก') || qText.includes('กลับหน้าแรก') || qLower.includes('go to home page')) return;
 
 
 
@@ -12092,6 +12093,13 @@ function enterQuizCategoryDirectly(catName, track) {
       const filtered = applyPracticeFilters();
 
       activeQuizQuestions = filtered.slice();
+
+      // Synchronize category subtitle count with updated active question count
+      const catSub = document.getElementById('quizCategorySub');
+      if (catSub) {
+        const modeBadge = appQuizMode === 'exam' ? '⏱️ โหมดสอบจริง' : (appQuizMode === 'scroll' ? '📜 เลื่อนอ่านโหมด' : '📖 โหมดฝึกฝน');
+        catSub.textContent = `${modeBadge} (${activeQuizQuestions.length} ข้อ)`;
+      }
 
       if (practiceViewStyle === 'scroll') {
 
