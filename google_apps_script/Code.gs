@@ -55,6 +55,7 @@ function onOpen() {
     .addItem('📥 สร้าง/รีเซ็ต Tab นำเข้าข้อสอบด่วน', 'setupQuickIngestionTab')
     .addSeparator()
     .addItem('🤖 ตั้งค่าชีตรายงานปัญหา (Setup Report_Quiz_Issues)', 'setupReportIssuesSheet')
+    .addItem('🔑 กดที่นี่เพื่ออนุญาตสิทธิ์และทดสอบ AI (Authorize & Test Gemini)', 'testGeminiConnectionManual')
     .addItem('⚡ ประมวลผล AI ข้อที่ยังค้างอยู่ (Process Pending Reports)', 'processPendingReports')
     .addItem('✅ อนุมัติข้อที่เลือกทั้งหมดลงชีตจริง (Apply All Approved Reports)', 'applyAllApprovedReports')
     .addToUi();
@@ -233,6 +234,46 @@ function doGet(e) {
         message: 'PLE-CC Quiz API is Live 🚀',
         timestamp: new Date().toISOString()
       });
+    }
+
+    // Set Gemini API Key
+    if (action === 'setGeminiApiKey') {
+      const key = String(params.key || '').trim();
+      if (key) {
+        PropertiesService.getScriptProperties().setProperty('GEMINI_API_KEY', key);
+        return jsonResponse_({ success: true, message: 'บันทึก GEMINI_API_KEY ใน Script Properties เรียบร้อย' });
+      }
+      return jsonResponse_({ success: false, error: 'ไม่พบ parameter key' });
+    }
+
+    // Test Gemini Direct Call
+    if (action === 'testGemini') {
+      const apiKey = getGeminiApiKey_();
+      const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=' + apiKey;
+      try {
+        const response = UrlFetchApp.fetch(url, {
+          method: 'post',
+          contentType: 'application/json',
+          payload: JSON.stringify({
+            contents: [{ parts: [{ text: 'Hello' }] }]
+          }),
+          muteHttpExceptions: true
+        });
+        return jsonResponse_({
+          apiKeyLen: apiKey ? apiKey.length : 0,
+          apiKeyPrefix: apiKey ? apiKey.substring(0, 8) : '',
+          status: response.getResponseCode(),
+          body: response.getContentText()
+        });
+      } catch (e) {
+        return jsonResponse_({ error: e.toString() });
+      }
+    }
+
+    // Trigger Process Pending Reports
+    if (action === 'processReports') {
+      const count = processPendingReportsInternal_();
+      return jsonResponse_({ success: true, processedCount: count });
     }
 
     // 2. ดึงรายชื่อหมวดหมู่ / Tabs ทั้งหมด (ข้าม Log, Report, Eval, สารบัญ, Config และ 📥 Ingestion Tabs)
@@ -1485,19 +1526,20 @@ function extractInCellImagesFromXlsx_() {
 // AI QUIZ REPORT AUTO-RESOLVER & ONE-CLICK APPROVAL SYSTEM
 // ────────────────────────────────────────────────────────────────────────────
 
-const DEFAULT_GEMINI_API_KEY = ''; // ระบุใน Script Properties ชื่อ GEMINI_API_KEY เพื่อความปลอดภัย
-
 function getGeminiApiKey_() {
   try {
     const propKey = PropertiesService.getScriptProperties().getProperty('GEMINI_API_KEY');
     if (propKey && propKey.trim()) return propKey.trim();
   } catch (e) {}
-  return DEFAULT_GEMINI_API_KEY;
+  return '';
 }
 
 function callGeminiQuizResolver(category, questionId, originalQ, studentReport) {
   const apiKey = getGeminiApiKey_();
-  if (!apiKey) return null;
+  if (!apiKey) {
+    Logger.log('callGeminiQuizResolver: GEMINI_API_KEY is not set');
+    return null;
+  }
 
   const candidateModels = [
     'gemini-flash-lite-latest',
@@ -1508,18 +1550,19 @@ function callGeminiQuizResolver(category, questionId, originalQ, studentReport) 
 
   const systemInstruction = 
     "คุณเป็นเภสัชกรผู้เชี่ยวชาญ คณะกรรมการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC)\n" +
-    "หน้าที่ของคุณคือ วิเคราะห์รายงานปัญหาข้อสอบที่นิสิตส่งเข้ามา ตรวจสอบกับแนวทางเวชปฏิบัติสากล (CPG เช่น GINA, GOLD, CPG HTN, ADA, IDSA, CINV) หรือเภสัชตำรับ (USP, BP, Thai Pharmacopoeia)\n" +
+    "หน้าที่ของคุณคือ วิเคราะห์รายงานปัญหาข้อสอบที่นิสิตส่งเข้ามา ตรวจสอบกับแนวทางเวชปฏิบัติสากล (CPG เช่น GINA, GOLD, CPG HTN, ADA, IDSA, CINV) สถิติชีวเวชศาสตร์ หรือเภสัชตำรับ (USP, BP, Thai Pharmacopoeia)\n" +
     "กฎเหล็ก:\n" +
     "1. ห้ามใช้เครื่องหมายดอกจัน (*) หรือ (**) ในคำตอบเด็ดขาด ให้ใช้ข้อความธรรมดา (Plain text)\n" +
-    "2. ใช้ภาษาอังกฤษสำหรับคำศัพท์ทางการแพทย์และชื่อยา (เช่น hydrolyze, prodrug, active metabolite, first-line)\n" +
-    "3. คำอธิบายเฉลยต้องมีโครงสร้าง 3 ส่วนอย่างเคร่งครัด:\n" +
+    "2. ใช้ภาษาอังกฤษสำหรับคำศัพท์ทางการแพทย์ ชื่อยา และชื่อสถิติ (เช่น Nested case-control study, Odds Ratio, Relative Risk, hydrolyze, prodrug, active metabolite)\n" +
+    "3. หากนิสิตแจ้งว่าโจทย์กำกวม ตกหล่น หรือไม่สมบูรณ์: ให้เรียบเรียง proposedQuestion ให้เป็นคำถามทางวิชาการที่สมบูรณ์ ชัดเจน อ่านแล้วตอบได้ทันที\n" +
+    "4. คำอธิบายเฉลยต้องมีโครงสร้าง 3 ส่วนอย่างเคร่งครัด:\n" +
     "   ✅ คำตอบที่ถูกต้อง: ข้อ [ก-จ]. [ข้อความตัวเลือก]\n\n" +
     "   🎯 ทำไมข้อนี้ถึงถูก:\n" +
-    "   [เหตุผลตรงประเด็น อ้างอิง Guideline 1-3 บรรทัด]\n\n" +
+    "   [เหตุผลตรงประเด็น อ้างอิง Guideline/หลักการทางเภสัช 1-3 บรรทัด]\n\n" +
     "   🔍 ข้ออื่นผิดเพราะอะไร:\n" +
     "   • ข้อ [ก-จ].: [เหตุผลที่ผิด แยกทีละข้อ ห้ามรวมย่อหน้า]\n" +
-    "4. proposedAnswer ต้องเป็นตัวเลขลำดับตัวเลือกที่ถูกต้อง 1 ถึง 5 (1=ก, 2=ข, 3=ค, 4=ง, 5=จ)\n" +
-    "5. ตอบกลับเป็น JSON เท่านั้น";
+    "5. proposedAnswer ต้องเป็นตัวเลขลำดับตัวเลือกที่ถูกต้อง 1 ถึง 5 (1=ก, 2=ข, 3=ค, 4=ง, 5=จ)\n" +
+    "6. ตอบกลับเป็น JSON เท่านั้น";
 
   const userPrompt = 
     'หมวดวิชา: ' + (category || 'ไม่ระบุ') + '\n' +
@@ -1531,9 +1574,9 @@ function callGeminiQuizResolver(category, questionId, originalQ, studentReport) 
     'กรุณาวินิจฉัยและส่งออก JSON ในรูปแบบนี้เท่านั้น:\n' +
     '{\n' +
     '  "verdict": "AGREE / DISAGREE / PARTIAL",\n' +
-    '  "diagnosis": "สรุปผลการวินิจฉัยและ CPG อ้างอิง สั้นกระชับ 1-3 บรรทัด",\n' +
+    '  "diagnosis": "สรุปผลการวินิจฉัยและ CPG/หลักวิชาอ้างอิง สั้นกระชับ 1-3 บรรทัด",\n' +
+    '  "proposedQuestion": "ข้อความโจทย์ใหม่ที่เรียบเรียงชัดเจนสมบูรณ์ (หากโจทย์เดิมดีอยู่แล้วให้คงเดิม)",\n' +
     '  "proposedAnswer": 1,\n' +
-    '  "proposedQuestion": "ข้อความโจทย์ใหม่",\n' +
     '  "proposedExplanation": "คำอธิบายเฉลย 3 ส่วนตามกฎเหล็กโดยไม่มีดอกจัน",\n' +
     '  "confidence": "HIGH / MEDIUM / LOW"\n' +
     '}';
@@ -1562,8 +1605,8 @@ function callGeminiQuizResolver(category, questionId, originalQ, studentReport) 
           const rawText = json.candidates[0].content.parts[0].text;
           const parsed = JSON.parse(rawText);
           if (parsed.diagnosis) parsed.diagnosis = parsed.diagnosis.replace(/\*\*/g, '').replace(/\*/g, '');
-          if (parsed.proposedExplanation) parsed.proposedExplanation = parsed.proposedExplanation.replace(/\*\*/g, '').replace(/\*/g, '');
           if (parsed.proposedQuestion) parsed.proposedQuestion = parsed.proposedQuestion.replace(/\*\*/g, '').replace(/\*/g, '');
+          if (parsed.proposedExplanation) parsed.proposedExplanation = parsed.proposedExplanation.replace(/\*\*/g, '').replace(/\*/g, '');
 
           // ตรวจสอบความสอดคล้องของตัวเลขเฉลย (ก=1, ข=2, ค=3, ง=4, จ=5)
           const mChoice = (parsed.proposedExplanation || '').match(/คำตอบที่ถูกต้อง:\s*ข้อ\s*([ก-จ])/);
@@ -1576,6 +1619,8 @@ function callGeminiQuizResolver(category, questionId, originalQ, studentReport) 
 
           return parsed;
         }
+      } else {
+        Logger.log('Gemini model ' + model + ' HTTP ' + response.getResponseCode() + ': ' + response.getContentText().substring(0, 150));
       }
     } catch (err) {
       Logger.log('Gemini model ' + model + ' error: ' + err.toString());
@@ -1593,8 +1638,8 @@ function onEdit(e) {
     const row = e.range.getRow();
     const col = e.range.getColumn();
 
-    // Column K (11) คือ Status
-    if (col === 11 && row > 1) {
+    // Column L (12) คือ Status
+    if (col === 12 && row > 1) {
       const val = String(e.value || e.range.getValue() || '').trim();
       if (val.includes('อนุมัติ') || val.includes('Approved')) {
         applyReportIssueApproved(row);
@@ -1610,11 +1655,21 @@ function applyReportIssueApproved(rowNum) {
   const reportSheet = ss.getSheetByName('Report_Quiz_Issues');
   if (!reportSheet) return { success: false, error: 'ไม่พบชีต Report_Quiz_Issues' };
 
-  const rowVals = reportSheet.getRange(rowNum, 1, 1, 12).getValues()[0];
+  const rowVals = reportSheet.getRange(rowNum, 1, 1, 13).getValues()[0];
   const cat = String(rowVals[2] || '').trim();
   const qId = String(rowVals[3] || '').trim();
-  const proposedAns = parseInt(rowVals[8], 10);
-  const proposedExp = String(rowVals[9] || '').trim();
+  const aiDiag = String(rowVals[7] || '').trim();
+  const proposedQ = String(rowVals[8] || '').trim();
+  const proposedAns = parseInt(rowVals[9], 10);
+  const proposedExp = String(rowVals[10] || '').trim();
+
+  // ป้องกันกรณีที่ AI ยังไม่ได้วิเคราะห์ หรือยังไม่มีข้อมูลแก้ไข
+  const hasValidFix = (proposedQ && proposedQ !== '-') || (!isNaN(proposedAns) && proposedAns >= 1 && proposedAns <= 5) || (proposedExp && proposedExp !== '-');
+  if (!hasValidFix || aiDiag.includes('อยู่ระหว่างเตรียม') || !aiDiag) {
+    reportSheet.getRange(rowNum, 12).setValue('⏳ รอประธานอนุมัติ (Pending)');
+    reportSheet.getRange(rowNum, 13).setValue('⚠️ ยังไม่มีข้อมูลที่ AI เสนอแก้ กรุณารอ AI วิเคราะห์หรือกดเมนู ⚡ ประมวลผล AI ก่อน');
+    return { success: false, error: 'ยังไม่มีข้อมูล AI' };
+  }
 
   let targetSheetName = cat;
   let targetRowNum = 0;
@@ -1626,27 +1681,40 @@ function applyReportIssueApproved(rowNum) {
   }
 
   if (!targetSheetName || targetRowNum < 3) {
-    reportSheet.getRange(rowNum, 12).setValue('ข้อผิดพลาด: ไม่พบตำแหน่งแถวในชีตต้นทาง (qId: ' + qId + ')');
+    reportSheet.getRange(rowNum, 13).setValue('ข้อผิดพลาด: ไม่พบตำแหน่งแถวในชีตต้นทาง (qId: ' + qId + ')');
     return { success: false, error: 'ตำแหน่งแถวไม่ถูกต้อง' };
   }
 
   const targetSheet = findSheetSafely_(ss, targetSheetName);
   if (!targetSheet) {
-    reportSheet.getRange(rowNum, 12).setValue('ข้อผิดพลาด: ไม่พบชีต ' + targetSheetName);
+    reportSheet.getRange(rowNum, 13).setValue('ข้อผิดพลาด: ไม่พบชีต ' + targetSheetName);
     return { success: false, error: 'ไม่พบชีตเป้าหมาย' };
   }
 
   // ดึงข้อมูลเดิมเพื่อทำ Audit Trail
   const oldVals = targetSheet.getRange(targetRowNum, 1, 1, 12).getValues()[0];
+  const oldQuestion = String(oldVals[1] || '').trim();
   const oldAns = oldVals[8];
-  const oldExp = oldVals[9];
+  const oldExp = String(oldVals[9] || '').trim();
 
-  // อัปเดตชีตเป้าหมาย: Col I (9) = เฉลย, Col J (10) = คำอธิบาย
+  let changesList = [];
+
+  // 1. อัปเดตโจทย์ (Col B = 2) ถ้า AI เสนอแก้โจทย์ใหม่
+  if (proposedQ && proposedQ !== '-' && proposedQ !== oldQuestion) {
+    targetSheet.getRange(targetRowNum, 2).setValue(proposedQ);
+    changesList.push('โจทย์');
+  }
+
+  // 2. อัปเดตเฉลย (Col I = 9)
   if (!isNaN(proposedAns) && proposedAns >= 1 && proposedAns <= 5) {
     targetSheet.getRange(targetRowNum, 9).setValue(proposedAns);
+    changesList.push('เฉลยเป็นข้อ ' + proposedAns);
   }
-  if (proposedExp) {
+
+  // 3. อัปเดตคำอธิบาย 3 ส่วน (Col J = 10)
+  if (proposedExp && proposedExp !== '-') {
     targetSheet.getRange(targetRowNum, 10).setValue(proposedExp);
+    changesList.push('คำอธิบาย 3 ส่วน');
   }
 
   // บันทึกลง Log_Question_Edits
@@ -1659,19 +1727,19 @@ function applyReportIssueApproved(rowNum) {
       qId,
       targetSheetName,
       targetRowNum,
-      String(oldVals[1] || '').substring(0, 150),
-      String(oldVals[1] || '').substring(0, 150),
+      oldQuestion.substring(0, 150),
+      (proposedQ || oldQuestion).substring(0, 150),
       String(oldAns || ''),
-      String(proposedAns || oldAns),
-      String(oldExp || '').substring(0, 150),
-      proposedExp.substring(0, 150),
-      'Approved from Report'
+      String(!isNaN(proposedAns) ? proposedAns : oldAns),
+      oldExp.substring(0, 150),
+      (proposedExp || oldExp).substring(0, 150),
+      'Approved from Report (' + (changesList.length ? changesList.join(', ') : 'ไม่มีการเปลี่ยนแปลง') + ')'
     ]);
   }
 
   const thaiTime = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
-  reportSheet.getRange(rowNum, 11).setValue('🚀 นำไปใช้ในชีตข้อสอบแล้ว (Applied)');
-  reportSheet.getRange(rowNum, 12).setValue('อัปเดตชีต ' + targetSheetName + ' แถว ' + targetRowNum + ' สำเร็จ เมื่อ ' + thaiTime);
+  reportSheet.getRange(rowNum, 12).setValue('🚀 นำไปใช้ในชีตข้อสอบแล้ว (Applied)');
+  reportSheet.getRange(rowNum, 13).setValue('อัปเดตชีต ' + targetSheetName + ' แถว ' + targetRowNum + ' (' + (changesList.length ? changesList.join(', ') : 'ไม่มีส่วนที่แก้') + ') สำเร็จ เมื่อ ' + thaiTime);
 
   return { success: true };
 }
@@ -1692,6 +1760,7 @@ function setupReportIssuesSheet() {
     "Student Detail (สิ่งที่นิสิตแจ้ง)",
     "Current Exam & Key (โจทย์และเฉลยเดิม)",
     "AI Diagnosis & Reason (AI วินิจฉัย & CPG อ้างอิง)",
+    "AI Proposed Question (โจทย์ใหม่ที่ AI เสนอ)",
     "AI Proposed Answer (เฉลยใหม่ 1-5)",
     "AI Proposed Explanation (เฉลย 3 ส่วนใหม่)",
     "Status (สถานะการอนุมัติ)",
@@ -1716,12 +1785,13 @@ function setupReportIssuesSheet() {
   sheet.setColumnWidth(6, 250); // Student Detail
   sheet.setColumnWidth(7, 250); // Current Exam
   sheet.setColumnWidth(8, 300); // AI Diagnosis
-  sheet.setColumnWidth(9, 100); // Proposed Ans
-  sheet.setColumnWidth(10, 350); // Proposed Exp
-  sheet.setColumnWidth(11, 200); // Status Dropdown
-  sheet.setColumnWidth(12, 220); // Applied Log
+  sheet.setColumnWidth(9, 250); // Proposed Question
+  sheet.setColumnWidth(10, 100); // Proposed Ans
+  sheet.setColumnWidth(11, 350); // Proposed Exp
+  sheet.setColumnWidth(12, 200); // Status Dropdown
+  sheet.setColumnWidth(13, 250); // Applied Log
 
-  // ตั้ง Data Validation สำหรับ Status Dropdown (Col K)
+  // ตั้ง Data Validation สำหรับ Status Dropdown (Col L = 12)
   const rule = SpreadsheetApp.newDataValidation()
     .requireValueInList([
       '⏳ รอประธานอนุมัติ (Pending)',
@@ -1733,7 +1803,7 @@ function setupReportIssuesSheet() {
     .setAllowInvalid(false)
     .build();
 
-  sheet.getRange(2, 11, 500, 1).setDataValidation(rule);
+  sheet.getRange(2, 12, 500, 1).setDataValidation(rule);
 
   return sheet;
 }
@@ -1750,25 +1820,19 @@ function applyStatusValidationToRow_(sheet, rowNum) {
       ], true)
       .setAllowInvalid(false)
       .build();
-    sheet.getRange(rowNum, 11).setDataValidation(rule);
+    sheet.getRange(rowNum, 12).setDataValidation(rule);
   } catch (e) {}
 }
 
-function processPendingReports() {
+function processPendingReportsInternal_() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = ss.getSheetByName('Report_Quiz_Issues');
-  if (!sheet) {
-    SpreadsheetApp.getUi().alert('ไม่พบชีต Report_Quiz_Issues');
-    return;
-  }
+  if (!sheet) return 0;
 
   const lastRow = sheet.getLastRow();
-  if (lastRow < 2) {
-    SpreadsheetApp.getUi().alert('ไม่มีข้อมูลรายงานในชีต');
-    return;
-  }
+  if (lastRow < 2) return 0;
 
-  const data = sheet.getRange(2, 1, lastRow - 1, 12).getValues();
+  const data = sheet.getRange(2, 1, lastRow - 1, 13).getValues();
   let count = 0;
 
   for (let i = 0; i < data.length; i++) {
@@ -1777,10 +1841,13 @@ function processPendingReports() {
     const qId = String(data[i][3] || '').trim();
     const issueType = String(data[i][4] || '').trim();
     const detail = String(data[i][5] || '').trim();
-    const currentExp = String(data[i][7] || '').trim();
-    const status = String(data[i][10] || '').trim();
+    const currentDiag = String(data[i][7] || '').trim();
+    const status = String(data[i][11] || '').trim();
 
-    if ((!currentExp || currentExp.includes('อยู่ระหว่างเตรียม')) && (!status || status.includes('Pending') || status.includes('รอดำเนินการ'))) {
+    // ถ้ายังไม่ได้วินิจฉัย หรือวินิจฉัยค้างไว้
+    const needProcess = (!currentDiag || currentDiag.includes('อยู่ระหว่างเตรียม') || currentDiag === 'null');
+
+    if (needProcess) {
       let originalQ = { question: '', choices: [], answer: '', explanation: '' };
       let targetSheetName = cat;
       let targetRowNum = 0;
@@ -1805,42 +1872,80 @@ function processPendingReports() {
       const ai = callGeminiQuizResolver(targetSheetName, qId, originalQ, { issueType, detail });
       if (ai) {
         sheet.getRange(rowNum, 8).setValue('[' + ai.verdict + '] ' + ai.diagnosis);
-        if (ai.proposedAnswer) sheet.getRange(rowNum, 9).setValue(ai.proposedAnswer);
-        if (ai.proposedExplanation) sheet.getRange(rowNum, 10).setValue(ai.proposedExplanation);
-        sheet.getRange(rowNum, 11).setValue('⏳ รอประธานอนุมัติ (Pending)');
+        if (ai.proposedQuestion) sheet.getRange(rowNum, 9).setValue(ai.proposedQuestion);
+        if (ai.proposedAnswer) sheet.getRange(rowNum, 10).setValue(ai.proposedAnswer);
+        if (ai.proposedExplanation) sheet.getRange(rowNum, 11).setValue(ai.proposedExplanation);
+        sheet.getRange(rowNum, 12).setValue('⏳ รอประธานอนุมัติ (Pending)');
+        sheet.getRange(rowNum, 13).setValue('AI วิเคราะห์สำเร็จ พร้อมให้ประธานตรวจสอบและกดอนุมัติ');
+        applyStatusValidationToRow_(sheet, rowNum);
         count++;
       }
     }
   }
 
-  SpreadsheetApp.getUi().alert('🤖 ประมวลผลข้อที่ค้างสำเร็จทั้งหมด ' + count + ' ข้อ');
+  return count;
+}
+
+function processPendingReports() {
+  const count = processPendingReportsInternal_();
+  try {
+    SpreadsheetApp.getUi().alert('🤖 ประมวลผลข้อที่ค้างสำเร็จทั้งหมด ' + count + ' ข้อ');
+  } catch (e) {}
 }
 
 function applyAllApprovedReports() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = ss.getSheetByName('Report_Quiz_Issues');
   if (!sheet) {
-    SpreadsheetApp.getUi().alert('ไม่พบชีต Report_Quiz_Issues');
+    try { SpreadsheetApp.getUi().alert('ไม่พบชีต Report_Quiz_Issues'); } catch (e) {}
     return;
   }
 
   const lastRow = sheet.getLastRow();
   if (lastRow < 2) {
-    SpreadsheetApp.getUi().alert('ไม่มีข้อมูลรายงานในชีต');
+    try { SpreadsheetApp.getUi().alert('ไม่มีข้อมูลรายงานในชีต'); } catch (e) {}
     return;
   }
 
-  const data = sheet.getRange(2, 1, lastRow - 1, 12).getValues();
+  const data = sheet.getRange(2, 1, lastRow - 1, 13).getValues();
   let count = 0;
 
   for (let i = 0; i < data.length; i++) {
     const rowNum = i + 2;
-    const status = String(data[i][10] || '').trim();
+    const status = String(data[i][11] || '').trim();
     if (status.includes('อนุมัติ') || status.includes('Approved')) {
       const res = applyReportIssueApproved(rowNum);
       if (res && res.success) count++;
     }
   }
 
-  SpreadsheetApp.getUi().alert('✅ อัปเดตข้อสอบลงชีตหลักสำเร็จทั้งหมด ' + count + ' ข้อ');
+  try {
+    SpreadsheetApp.getUi().alert('✅ อัปเดตข้อสอบลงชีตหลักสำเร็จทั้งหมด ' + count + ' ข้อ');
+  } catch (e) {}
+}
+
+function testGeminiConnectionManual() {
+  try {
+    const apiKey = getGeminiApiKey_();
+    if (!apiKey) {
+      SpreadsheetApp.getUi().alert('⚠️ ไม่พบคีย์ GEMINI_API_KEY ใน Script Properties');
+      return;
+    }
+    const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=' + apiKey;
+    const response = UrlFetchApp.fetch(url, {
+      method: 'post',
+      contentType: 'application/json',
+      payload: JSON.stringify({
+        contents: [{ parts: [{ text: 'ตอบสั้นๆ ว่า OK' }] }]
+      }),
+      muteHttpExceptions: true
+    });
+    if (response.getResponseCode() === 200) {
+      SpreadsheetApp.getUi().alert('🟢 ยินดีด้วยครับ! การอนุญาตสิทธิ์และการเชื่อมต่อ Gemini API สำเร็จ 100% พร้อมใช้งาน');
+    } else {
+      SpreadsheetApp.getUi().alert('⚠️ การเชื่อมต่อล้มเหลว (HTTP ' + response.getResponseCode() + '): ' + response.getContentText().substring(0, 150));
+    }
+  } catch (err) {
+    SpreadsheetApp.getUi().alert('ข้อผิดพลาด: ' + err.toString());
+  }
 }
