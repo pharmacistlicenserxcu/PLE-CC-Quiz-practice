@@ -1925,27 +1925,35 @@ function applyAllApprovedReports() {
 }
 
 function testGeminiConnectionManual() {
-  try {
-    const apiKey = getGeminiApiKey_();
-    if (!apiKey) {
-      SpreadsheetApp.getUi().alert('⚠️ ไม่พบคีย์ GEMINI_API_KEY ใน Script Properties');
-      return;
-    }
-    const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=' + apiKey;
-    const response = UrlFetchApp.fetch(url, {
-      method: 'post',
-      contentType: 'application/json',
-      payload: JSON.stringify({
-        contents: [{ parts: [{ text: 'ตอบสั้นๆ ว่า OK' }] }]
-      }),
-      muteHttpExceptions: true
-    });
-    if (response.getResponseCode() === 200) {
-      SpreadsheetApp.getUi().alert('🟢 ยินดีด้วยครับ! การอนุญาตสิทธิ์และการเชื่อมต่อ Gemini API สำเร็จ 100% พร้อมใช้งาน');
-    } else {
-      SpreadsheetApp.getUi().alert('⚠️ การเชื่อมต่อล้มเหลว (HTTP ' + response.getResponseCode() + '): ' + response.getContentText().substring(0, 150));
-    }
-  } catch (err) {
-    SpreadsheetApp.getUi().alert('ข้อผิดพลาด: ' + err.toString());
+  console.log('=== เริ่มทดสอบการเชื่อมต่อ Gemini API ===');
+  const apiKey = getGeminiApiKey_();
+  console.log('API Key length: ' + (apiKey ? apiKey.length : 0));
+  
+  if (!apiKey) {
+    console.error('❌ ไม่พบ GEMINI_API_KEY ใน Script Properties');
+    return 'ไม่พบคีย์ GEMINI_API_KEY';
   }
+
+  const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=' + apiKey;
+  const response = UrlFetchApp.fetch(url, {
+    method: 'post',
+    contentType: 'application/json',
+    payload: JSON.stringify({
+      contents: [{ parts: [{ text: 'Hello, reply OK' }] }]
+    }),
+    muteHttpExceptions: true
+  });
+  
+  const status = response.getResponseCode();
+  const text = response.getContentText();
+  console.log('HTTP Status: ' + status);
+  console.log('Response: ' + text);
+  
+  if (status === 200) {
+    console.log('🟢 การเชื่อมต่อ Gemini API สำเร็จ 100% พร้อมใช้งาน!');
+  } else {
+    console.error('⚠️ การเชื่อมต่อไม่สำเร็จ: ' + text);
+  }
+  
+  return 'HTTP ' + status;
 }
