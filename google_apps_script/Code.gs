@@ -1063,22 +1063,24 @@ function doPost(e) {
       }
 
       const aiDiagnosis = aiResult ? ('[' + aiResult.verdict + '] ' + aiResult.diagnosis) : 'AI อยู่ระหว่างเตรียมประมวลผล หรือกรุณากดเมนูเพื่อรันย้อนหลัง';
+      const aiProposedQ = aiResult ? (aiResult.proposedQuestion || '') : '';
       const aiProposedAns = aiResult ? (aiResult.proposedAnswer || '') : '';
       const aiProposedExp = aiResult ? (aiResult.proposedExplanation || '') : '';
 
       const newRow = [
-        thaiTimestamp,
-        user,
-        targetSheetName,
-        qId,
-        issueType,
-        detail,
-        currentExamSnippet,
-        aiDiagnosis,
-        aiProposedAns,
-        aiProposedExp,
-        '⏳ รอประธานอนุมัติ (Pending)',
-        ''
+        thaiTimestamp,      // Col 1 (A)
+        user,               // Col 2 (B)
+        targetSheetName,    // Col 3 (C)
+        qId,                // Col 4 (D)
+        issueType,          // Col 5 (E)
+        detail,             // Col 6 (F)
+        currentExamSnippet, // Col 7 (G)
+        aiDiagnosis,        // Col 8 (H)
+        aiProposedQ,        // Col 9 (I) -> โจทย์ใหม่ที่ AI เสนอ
+        aiProposedAns,      // Col 10 (J) -> เฉลยใหม่ (1-5)
+        aiProposedExp,      // Col 11 (K) -> คำอธิบาย 3 ส่วนใหม่
+        '⏳ รอประธานอนุมัติ (Pending)', // Col 12 (L) -> สถานะอนุมัติ
+        ''                  // Col 13 (M) -> บันทึกการนำไปใช้
       ];
 
       sheet.appendRow(newRow);
