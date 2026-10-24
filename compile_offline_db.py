@@ -187,6 +187,20 @@ def extract_in_cell_images(drive_service, images_dir):
         print(f"     [WARN] In-cell image extraction skipped: {e}")
     return extracted_map
 
+
+def normalize_math_and_entities(val):
+    if not val:
+        return ""
+    s = str(val).strip()
+    s = re.sub(r'\$it;', '<', s, flags=re.IGNORECASE)
+    s = re.sub(r'&it;', '<', s, flags=re.IGNORECASE)
+    s = re.sub(r'\$lt;', '<', s, flags=re.IGNORECASE)
+    s = re.sub(r'\$gt;', '>', s, flags=re.IGNORECASE)
+    s = re.sub(r'&amp;lt;', '<', s, flags=re.IGNORECASE)
+    s = re.sub(r'&amp;gt;', '>', s, flags=re.IGNORECASE)
+    s = re.sub(r'/sqrt(?=[(\[{a-zA-Z0-9\s])', r'\\sqrt', s)
+    return s
+
 def bump_service_worker_cache(sw_path):
     """Automatically increment Service Worker cache version in sw.js."""
     if not os.path.exists(sw_path):
@@ -322,6 +336,184 @@ TOPIC_TO_SHEET_MAP = {
     'research': '3. Research & Biostats',
 }
 
+
+def compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=False):
+    import openpyxl
+    print("=" * 65)
+    print("  🚀 [Fast Local Mode] Compiling quiz-data-offline.js from Excel")
+    print(f"  Source: {excel_path}")
+    print("=" * 65)
+    
+    start_time = time.time()
+    wb = openpyxl.load_workbook(excel_path, data_only=True)
+    all_records = []
+    categories_meta = []
+    offline_questions = {}
+
+    quiz_sheets = [
+        '1. Musculoskeleton', '2. Cardiovascular', '3. Dermatologic', '4. Endocrine',
+        '5. Gastrointestinal', '6. Hematologic', '7. Immunologic', '8. Infectious diseases',
+        '9. Neurologic', '10. Psychiatric', '11. Pulmonary', '12. GynaecologicGenitourinary',
+        '13. Eye disorder', '14. Oncologic', '15. Renal', '16. Toxicology & Poisoning',
+        '18. Clinical Nutrition', '17. Herbal Medicine & Products',
+        '1. Titrations', '2. Chromatography', '3. Spectroscopy & Optics', '4. Preformulation & GMP',
+        '5. Pharmaceutical Calc', '6. Solid Dosage Forms', '7. Liquid & Semisolids',
+        '8. Biopharm & Drug Release', '9. Sterile & Special Forms', '10. Biotech Products',
+        '12. Food Products & QA', '13. Medicinal Chemistry',
+        '1. Pharmacy Laws & Ethics', '2. Pharmacy Administration & Sy', '3. Research & Biostats',
+        '📥 รวมข้อสอบด่วน'
+    ]
+
+    for sname in quiz_sheets:
+        if sname not in wb.sheetnames:
+            continue
+        ws = wb[sname]
+        case_ctx_col, q_col, img_q_col = 2, 3, 4
+        c1_col, c2_col, c3_col, c4_col, c5_col = 5, 6, 7, 8, 9
+        ans_col, exp_col, img_a_col = 10, 11, 12
+        topic_col, subtopic_col, track_col = 13, 14, 15
+        note_col, type_col, year_col, case_col = 16, 17, 18, 19
+
+        for r in (1, 2):
+            for c in range(1, max(20, ws.max_column + 1)):
+                v = str(ws.cell(row=r, column=c).value or '').strip()
+                if not v: continue
+                if 'สถานการณ์' in v or 'Scenario' in v or 'ข้อมูลผู้ป่วย' in v: case_ctx_col = c
+                elif 'คำถาม' in v or 'Question' in v: q_col = c
+                elif 'รูปถาม' in v or 'Question Image' in v: img_q_col = c
+                elif 'ตัวเลือก 1' in v or 'Choice 1' in v: c1_col = c
+                elif 'ตัวเลือก 2' in v or 'Choice 2' in v: c2_col = c
+                elif 'ตัวเลือก 3' in v or 'Choice 3' in v: c3_col = c
+                elif 'ตัวเลือก 4' in v or 'Choice 4' in v: c4_col = c
+                elif 'ตัวเลือก 5' in v or 'Choice 5' in v: c5_col = c
+                elif 'เฉลย' in v and ('ตัวเลข' in v or 'Answer' in v or 'Key' in v): ans_col = c
+                elif 'คำอธิบาย' in v or 'Rationale' in v or ('เฉลย' in v and 'อธิบาย' in v): exp_col = c
+                elif 'รูปเฉลย' in v or 'Answer Image' in v: img_a_col = c
+                elif 'หัวข้อโรคสภาฯ' in v or 'Topic' in v: topic_col = c
+                elif 'หัวข้อย่อย' in v or 'Subtopic' in v or 'Filter' in v: subtopic_col = c
+                elif 'Product' in v or 'Track' in v: track_col = c
+                elif 'หมายเหตุ' in v or 'Note' in v: note_col = c
+                elif 'ประเภท' in v or 'Type' in v: type_col = c
+                elif 'ปี' in v or 'Year' in v: year_col = c
+                elif 'Case' in v or 'รหัสเคส' in v: case_col = c
+
+        sheet_count = 0
+        sheet_track = get_track_for_sheet(sname)
+        sheet_records = []
+
+        for r in range(3, ws.max_row + 1):
+            q_val = ws.cell(row=r, column=q_col).value
+            case_ctx_val = ws.cell(row=r, column=case_ctx_col).value
+            if (not q_val or not str(q_val).strip()) and (not case_ctx_val or not str(case_ctx_val).strip()):
+                continue
+
+            case_ctx = normalize_math_and_entities(str(case_ctx_val or '').replace('**', '').strip())
+            q_text = normalize_math_and_entities(str(q_val or '').replace('**', '').strip())
+            if not q_text and case_ctx:
+                q_text = case_ctx
+                case_ctx = ""
+
+            choices = []
+            for col_i in [c1_col, c2_col, c3_col, c4_col, c5_col]:
+                val = ws.cell(row=r, column=col_i).value
+                choices.append(normalize_math_and_entities(str(val or '').replace('**', '').strip()))
+
+            ans_raw = ws.cell(row=r, column=ans_col).value
+            ans_num = 1
+            if ans_raw is not None:
+                m = re.search(r'\d+', str(ans_raw))
+                if m: ans_num = int(m.group(0))
+
+            raw_exp = str(ws.cell(row=r, column=exp_col).value or '')
+            raw_exp = normalize_math_and_entities(raw_exp.replace('**', '').strip())
+            raw_exp = re.sub(r'\r\n|\r|\n', '\n', raw_exp)
+            raw_exp = re.sub(r'\n{2,}', '<br><br>', raw_exp).replace('\n', '<br>')
+
+            topic = str(ws.cell(row=r, column=topic_col).value or '').strip()
+            subtopic = str(ws.cell(row=r, column=subtopic_col).value or '').strip()
+            img_q = str(ws.cell(row=r, column=img_q_col).value or '').strip()
+            img_a = str(ws.cell(row=r, column=img_a_col).value or '').strip()
+            note = str(ws.cell(row=r, column=note_col).value or '').strip()
+            exam_type = str(ws.cell(row=r, column=type_col).value or '').strip()
+            exam_year = str(ws.cell(row=r, column=year_col).value or '').strip()
+            case_id = str(ws.cell(row=r, column=case_col).value or '').strip()
+
+            if exam_type in ['ข้อสอบเก่า', '2567']:
+                if exam_type == '2567' and not exam_year: exam_year = '2567'
+                exam_type = 'ข้อสอบจริง'
+            elif exam_type.lower() == 'mock':
+                exam_type = 'ข้อสอบจำลอง'
+
+            rec = {
+                'id': f"{sname}::{r}",
+                'itemNo': sheet_count + 1,
+                'category': sname,
+                'topic': topic or sname,
+                'subtopic': subtopic or topic or sname,
+                'track': sheet_track,
+                'caseContext': case_ctx,
+                'caseStem': case_ctx,
+                'question': q_text,
+                'questionImage': img_q,
+                'choices': choices,
+                'answer': ans_num,
+                'explanation': raw_exp,
+                'answerImage': img_a,
+                'note': note,
+                'examType': exam_type,
+                'examYear': exam_year,
+                'caseGroupId': case_id,
+                'caseOrder': 0,
+                'caseType': ''
+            }
+            sheet_records.append(rec)
+            all_records.append(rec)
+            sheet_count += 1
+
+        print(f"  [OK] {sname:<35} : {sheet_count:>4} questions ({sheet_track})")
+        if sheet_count > 0:
+            categories_meta.append({
+                'name': sname,
+                'count': sheet_count,
+                'track': sheet_track
+            })
+            offline_questions[sname] = sheet_records
+
+    print("-" * 65)
+    print(f"  Grand Total: {len(all_records)} questions across {len(categories_meta)} categories.")
+
+    post_process_cases(offline_questions)
+
+    timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
+    header_comment = f"""/**
+ * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.1 Pro Edition)
+ * Total Questions: {len(all_records)} across {len(categories_meta)} Categories
+ * Build Timestamp: {timestamp}
+ * Build Mode: Fast Local (openpyxl)
+ */
+
+window.QUIZ_GOOGLE_SHEET_ID = "1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w";
+window.QUIZ_GAS_SCRIPT_ID = '1LB8brFu49jQwb5xR3WeeyW2Su_M8e1X2XX3mxD6sxlO7yVwWpDPwG-tS';
+window.QUIZ_GAS_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycby14F6sdMW67mOv2D6EzRW3NMP6rVnzUHKWjwr_8i10y3NWTOrQPvqmmy6p9LIITNrM/exec';
+
+window.QUIZ_OFFLINE_CATEGORIES = {json.dumps(categories_meta, ensure_ascii=False, indent=2)};
+
+window.QUIZ_OFFLINE_QUESTIONS = {json.dumps(offline_questions, ensure_ascii=False, indent=2)};
+
+window.QUIZ_OFFLINE_DB = {json.dumps(all_records, ensure_ascii=False, indent=2)};
+"""
+
+    with open(output_js, 'w', encoding='utf-8') as f:
+        f.write(header_comment)
+
+    print(f"  💾 Successfully written {len(all_records)} records to {output_js}")
+    
+    if not no_sw_bump:
+        bump_service_worker_cache(sw_js)
+
+    elapsed = time.time() - start_time
+    print(f"  ⏱️ Time taken: {elapsed:.2f} seconds.\n")
+
 def main():
     parser = argparse.ArgumentParser(description='PLE-CC Quiz Offline Database Compiler (v2.1 Pro)')
     parser.add_argument('--mode', choices=['all', 'category', 'track'], default='all',
@@ -332,6 +524,8 @@ def main():
                         help='Path to PLE CC Quiz web directory')
     parser.add_argument('--skip-images', action='store_true',
                         help='Skip in-cell image extraction export')
+    parser.add_argument('--source', choices=['auto', 'excel', 'sheets'], default='auto',
+                        help='Data source: auto (prefers local Excel if present), excel (PLE CC QUIZ.xlsx), sheets (Google Sheets API)')
     parser.add_argument('--no-sw-bump', action='store_true',
                         help='Do not bump Service Worker cache version')
     args = parser.parse_args()
@@ -353,6 +547,14 @@ def main():
     print("=" * 65)
 
     start_time = time.time()
+    excel_path = os.path.join(web_dir, 'PLE CC QUIZ.xlsx')
+    if (args.source == 'excel') or (args.source == 'auto' and mode == 'all' and not query and os.path.exists(excel_path)):
+        try:
+            compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=args.no_sw_bump)
+            return
+        except Exception as ex_err:
+            print(f"  [WARN] Fast local Excel compile failed: {ex_err}. Falling back to Google Sheets API...")
+
     creds = get_google_credentials()
     service = build('sheets', 'v4', credentials=creds)
     drive_service = build('drive', 'v3', credentials=creds)
@@ -455,33 +657,35 @@ def main():
         # Inspect Row 2 header
         header_row = [str(x or '').strip().lower() for x in rows[0]]
         
-        # Standard 18-column mapping (A-R: 0-17)
+        # Standard 19-column mapping
         col_map = {
             'q_num': 0,        # Col A: ข้อที่
-            'q_text': 1,       # Col B: คำถาม
-            'q_img': 2,        # Col C: รูปถาม
-            'c1': 3,           # Col D: ตัวเลือก 1
-            'c2': 4,           # Col E: ตัวเลือก 2
-            'c3': 5,           # Col F: ตัวเลือก 3
-            'c4': 6,           # Col G: ตัวเลือก 4
-            'c5': 7,           # Col H: ตัวเลือก 5
-            'ans': 8,          # Col I: เฉลย (ตัวเลข 1-5)
-            'exp': 9,          # Col J: คำอธิบายเฉลย
-            'ans_img': 10,     # Col K: รูปเฉลย
-            'topic': 11,       # Col L: หัวข้อโรคสภาฯ (Topic)
-            'subtopic': 12,    # Col M: หัวข้อย่อย (Subtopic)
-            'track': 13,       # Col N: Product / Clinic (Track)
-            'note': 14,        # Col O: หมายเหตุ (Note)
-            'exam_type': 15,   # Col P: ประเภทข้อสอบ (Exam Type)
-            'exam_year': 16,   # Col Q: ปี / เลขชุด (Exam Year/Set)
-            'case_id': 17,     # Col R: Case ID (รหัสเคส)
-            'category_tag': 18 # Col S (ถ้ามี ใน Ingestion sheet)
+            'case_ctx': 1,     # Col B: สถานการณ์เคส / ข้อมูลผู้ป่วย
+            'q_text': 2,       # Col C: คำถาม
+            'q_img': 3,        # Col D: รูปถาม
+            'c1': 4,           # Col E: ตัวเลือก 1
+            'c2': 5,           # Col F: ตัวเลือก 2
+            'c3': 6,           # Col G: ตัวเลือก 3
+            'c4': 7,           # Col H: ตัวเลือก 4
+            'c5': 8,           # Col I: ตัวเลือก 5
+            'ans': 9,          # Col J: เฉลย (ตัวเลข 1-5)
+            'exp': 10,         # Col K: คำอธิบายเฉลย
+            'ans_img': 11,     # Col L: รูปเฉลย
+            'topic': 12,       # Col M: หัวข้อโรคสภาฯ (Topic)
+            'subtopic': 13,    # Col N: หัวข้อย่อย (Subtopic)
+            'track': 14,       # Col O: Product / Clinic (Track)
+            'note': 15,        # Col P: หมายเหตุ (Note)
+            'exam_type': 16,   # Col Q: ประเภทข้อสอบ (Exam Type)
+            'exam_year': 17,   # Col R: ปี / เลขชุด (Exam Year/Set)
+            'case_id': 18,     # Col S: Case ID (รหัสเคส)
+            'category_tag': 19 # Col T (ถ้ามี ใน Ingestion sheet)
         }
 
         # Auto-detect column headers dynamically
         for h_idx, h_text in enumerate(header_row):
             if not h_text: continue
-            if 'คำถาม' in h_text or 'question' in h_text: col_map['q_text'] = h_idx
+            if 'สถานการณ์' in h_text or 'scenario' in h_text or 'ข้อมูลผู้ป่วย' in h_text or 'case context' in h_text: col_map['case_ctx'] = h_idx
+            elif 'คำถาม' in h_text or 'question' in h_text: col_map['q_text'] = h_idx
             elif 'รูปถาม' in h_text or 'q_img' in h_text: col_map['q_img'] = h_idx
             elif 'ตัวเลือก 1' in h_text or 'choice 1' in h_text: col_map['c1'] = h_idx
             elif 'ตัวเลือก 2' in h_text or 'choice 2' in h_text: col_map['c2'] = h_idx
@@ -509,6 +713,8 @@ def main():
                 r.append('')
 
             q_num_raw = str(r[col_map['q_num']] or '').strip()
+            case_ctx_idx = col_map.get('case_ctx', 1)
+            case_ctx_raw = str(r[case_ctx_idx] or '').strip() if case_ctx_idx < len(r) else ''
             q_text_raw = str(r[col_map['q_text']] or '').strip()
             q_img_raw = str(r[col_map['q_img']] or '').strip()
             c1_raw = str(r[col_map['c1']] or '').strip()
@@ -694,6 +900,8 @@ def main():
             clean_exam_type = exam_type.strip()
             clean_exam_year = exam_year.strip()
 
+            case_ctx_clean = normalize_math_and_entities(clean_text_advanced(case_ctx_raw, is_choice=False))
+            q_clean = normalize_math_and_entities(q_clean)
             q_obj = {
                 'id': f"{s_name}::{row_num}",
                 'itemNo': item_no,
@@ -701,7 +909,9 @@ def main():
                 'topic': target_topic,
                 'subtopic': target_sub,
                 'track': target_track,
-                'question': q_html,
+                'caseContext': case_ctx_clean,
+                'caseStem': case_ctx_clean,
+                'question': q_clean,
                 'questionImage': q_img,
                 'choices': choices,
                 'answer': ans_num,

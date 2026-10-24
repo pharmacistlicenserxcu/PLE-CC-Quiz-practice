@@ -573,9 +573,9 @@ function doPost(e) {
         return jsonResponse_({ success: false, error: 'ไม่พบชีตเป้าหมาย: ' + sheetName });
       }
 
-      // ดึงข้อมูลเดิมเพื่อทำ Audit Snapshot
-      const lastCol = Math.max(targetSheet.getLastColumn(), 16);
-      const oldValues = targetSheet.getRange(rowNum, 1, 1, Math.min(lastCol, 17)).getValues()[0];
+      const colMap = resolveSheetColumnMap_(targetSheet);
+      const lastCol = Math.max(targetSheet.getLastColumn(), 19);
+      const oldValues = targetSheet.getRange(rowNum, 1, 1, lastCol).getValues()[0];
 
       // บันทึกลง Log_Question_Edits (Audit Trail)
       let logSheet = ss.getSheetByName('Log_Question_Edits');
@@ -592,6 +592,7 @@ function doPost(e) {
 
       const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
       const editor = String(data.editorName || 'Admin');
+      const newCaseContext = String(data.caseContext || data.caseStem || '').replace(/\*\*/g, '').trim();
       const newQuestion = String(data.question || '').replace(/\*\*/g, '').trim();
       const newAns = parseInt(data.correctAnswer != null ? data.correctAnswer : data.answer, 10) || 1;
       const newExplanation = String(data.explanation || '').replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
@@ -602,22 +603,17 @@ function doPost(e) {
         qId,
         sheetName,
         rowNum,
-        String(oldValues[1] || '').substring(0, 200),
+        String(oldValues[colMap.question - 1] || '').substring(0, 200),
         newQuestion.substring(0, 200),
-        String(oldValues[8] || ''),
+        String(oldValues[colMap.answer - 1] || ''),
         String(newAns),
-        String(oldValues[9] || '').substring(0, 200),
+        String(oldValues[colMap.explanation - 1] || '').substring(0, 200),
         newExplanation.substring(0, 200),
         "Updated"
       ]);
 
-      // เตรียมข้อมูลเขียนทับลงชีตเป้าหมาย (คอลัมน์ B ถึง P)
       const choices = Array.isArray(data.choices) ? data.choices : [];
-      const c1 = String(choices[0] || '').replace(/\*\*/g, '').trim();
-      const c2 = String(choices[1] || '').replace(/\*\*/g, '').trim();
-      const c3 = String(choices[2] || '').replace(/\*\*/g, '').trim();
-      const c4 = String(choices[3] || '').replace(/\*\*/g, '').trim();
-      const c5 = String(choices[4] || '').replace(/\*\*/g, '').trim();
+      const cleanChoices = choices.map(c => String(c || '').replace(/\*\*/g, '').trim());
 
       let qImg = String(data.questionImage || '').trim();
       let aImg = String(data.answerImage || '').trim();
@@ -629,15 +625,12 @@ function doPost(e) {
         aImg = saveBase64ImageToDrive_(aImg, sheetName, rowNum, 'A');
       }
 
-      // Format for Google Sheets cell:
-      // If we have a direct URL, format as =IMAGE("url") so Google Sheets renders the real picture!
       const qImgCellValue = (qImg && qImg.startsWith('http')) ? `=IMAGE("${qImg}")` : qImg;
       const aImgCellValue = (aImg && aImg.startsWith('http')) ? `=IMAGE("${aImg}")` : aImg;
 
       const subtopic = String(data.subtopic || '').replace(/\*\*/g, '').trim();
       const track = String(data.track || '').trim();
-      
-      // Note: ถ้ามี caseGroupId ให้ผนวกแท็ก [CASE: ...] ลงไปใน Note ด้วย
+
       let note = String(data.note || '').replace(/\*\*/g, '').trim();
       if (data.caseGroupId) {
         const caseTag = `[CASE: ${data.caseGroupId}${data.caseOrder ? '_Q' + data.caseOrder : ''}]`;
@@ -651,48 +644,31 @@ function doPost(e) {
       const examYear = String(data.examYear || '').trim();
       const caseId = String(data.caseId || data.caseGroupId || '').trim();
 
-      // เขียนทับคอลัมน์ B ถึง R (17 คอลัมน์: col 2 ถึง 18)
-      const updateData = [
-        newQuestion,      // Col B (2)
-        qImgCellValue,    // Col C (3)
-        c1,               // Col D (4)
-        c2,               // Col E (5)
-        c3,               // Col F (6)
-        c4,               // Col G (7)
-        c5,               // Col H (8)
-        newAns,           // Col I (9)
-        newExplanation,   // Col J (10)
-        aImgCellValue,    // Col K (11)
-        topic,            // Col L (12)
-        subtopic,         // Col M (13)
-        track,            // Col N (14)
-        note,             // Col O (15)
-        examType,         // Col P (16)
-        examYear,         // Col Q (17)
-        caseId            // Col R (18)
-      ];
+      const updates = {
+        itemNo: (data.itemNo != null && String(data.itemNo).trim() !== '') ? parseInt(data.itemNo, 10) : undefined,
+        caseContext: newCaseContext,
+        question: newQuestion,
+        imgQ: qImgCellValue,
+        choices: cleanChoices,
+        answer: newAns,
+        explanation: newExplanation,
+        imgA: aImgCellValue,
+        topic: topic,
+        subtopic: subtopic,
+        track: track,
+        note: note,
+        examType: examType,
+        examYear: examYear,
+        caseId: caseId
+      };
 
-      targetSheet.getRange(rowNum, 2, 1, 17).setValues([updateData]);
+      applyUpdatesToRowValues_(targetSheet, rowNum, colMap, updates);
 
-      // Add direct URL in Cell Note for quick reference
-      if (qImg && qImg.startsWith('http')) {
-        try { targetSheet.getRange(rowNum, 3).setNote(qImg); } catch(e) {}
+      if (qImg && qImg.startsWith('http') && colMap.imgQ) {
+        try { targetSheet.getRange(rowNum, colMap.imgQ).setNote(qImg); } catch(e) {}
       }
-      if (aImg && aImg.startsWith('http')) {
-        try { targetSheet.getRange(rowNum, 11).setNote(aImg); } catch(e) {}
-      }
-
-      // ถ้ามีการแก้ไขเลขข้อ (ItemNo) ในคอลัมน์ A
-      if (data.itemNo != null && String(data.itemNo).trim() !== '') {
-        const itemNo = parseInt(data.itemNo, 10);
-        if (!isNaN(itemNo)) {
-          targetSheet.getRange(rowNum, 1).setValue(itemNo);
-        }
-      }
-
-      // ถ้าเป็นชีต Quick Ingestion (📥) และมีส่ง categoryTag
-      if (isIngestionSheet_(sheetName) && data.categoryTag) {
-        targetSheet.getRange(rowNum, 19).setValue(String(data.categoryTag).trim());
+      if (aImg && aImg.startsWith('http') && colMap.imgA) {
+        try { targetSheet.getRange(rowNum, colMap.imgA).setNote(aImg); } catch(e) {}
       }
 
       return jsonResponse_({
@@ -773,27 +749,26 @@ function doPost(e) {
       const examType = String(data.examType || '').trim();
       const examYear = String(data.examYear || '').trim();
 
-      const rowData = [
-        nextItemNo,       // Col A (1)
-        newQuestion,      // Col B (2)
-        qImgCellValue,    // Col C (3)
-        c1,               // Col D (4)
-        c2,               // Col E (5)
-        c3,               // Col F (6)
-        c4,               // Col G (7)
-        c5,               // Col H (8)
-        newAns,           // Col I (9)
-        newExplanation,   // Col J (10)
-        aImgCellValue,    // Col K (11)
-        topic,            // Col L (12)
-        subtopic,         // Col M (13)
-        track,            // Col N (14)
-        note,             // Col O (15)
-        examType,         // Col P (16)
-        examYear,         // Col Q (17)
-        caseId            // Col R (18)
-      ];
+      const colMap = resolveSheetColumnMap_(targetSheet);
+      const addData = {
+        itemNo: nextItemNo,
+        caseContext: String(data.caseContext || data.caseStem || '').replace(/\*\*/g, '').trim(),
+        question: newQuestion,
+        imgQ: qImgCellValue,
+        choices: [c1, c2, c3, c4, c5],
+        answer: newAns,
+        explanation: newExplanation,
+        imgA: aImgCellValue,
+        topic: String(data.topic || '').trim(),
+        subtopic: subtopic,
+        track: track,
+        note: note,
+        examType: examType,
+        examYear: examYear,
+        caseId: String(data.caseId || data.caseGroupId || '').trim()
+      };
 
+      const rowData = buildRowArrayForSheet_(colMap, addData);
       targetSheet.appendRow(rowData);
       const actualRow = targetSheet.getLastRow();
       const newQId = `${sheetName}::${actualRow}`;
@@ -922,11 +897,11 @@ function doPost(e) {
         return jsonResponse_({ success: false, error: 'ไม่พบชีตต้นทางหรือปลายทาง' });
       }
 
-      // อ่านข้อมูลจากชีตต้นทาง
-      const lastCol = Math.max(sourceSheet.getLastColumn(), 16);
-      const rowValues = sourceSheet.getRange(sourceRowNum, 1, 1, Math.min(lastCol, 17)).getValues()[0];
+      const sourceColMap = resolveSheetColumnMap_(sourceSheet);
+      const destColMap = resolveSheetColumnMap_(destSheet);
 
-      // คำนวณ Item No ในชีตปลายทาง
+      const oldVals = sourceSheet.getRange(sourceRowNum, 1, 1, Math.max(19, sourceSheet.getLastColumn())).getValues()[0];
+
       const destNextRow = destSheet.getLastRow() + 1;
       let destItemNo = 1;
       if (destNextRow > 3) {
@@ -935,66 +910,74 @@ function doPost(e) {
         destItemNo = isNaN(parsed) ? (destNextRow - 2) : (parsed + 1);
       }
 
-      // ปรับปรุง Item No สำหรับชีตใหม่
-      rowValues[0] = destItemNo;
+      const choices = Array.isArray(data.choices) ? data.choices : [
+        String(oldVals[sourceColMap.c1 - 1] || ''),
+        String(oldVals[sourceColMap.c2 - 1] || ''),
+        String(oldVals[sourceColMap.c3 - 1] || ''),
+        String(oldVals[sourceColMap.c4 - 1] || ''),
+        String(oldVals[sourceColMap.c5 - 1] || '')
+      ];
 
-      // ถ้ามีการส่งข้อมูลแก้ไขล่าสุดมาด้วย ให้ใช้ข้อมูลใหม่
-      if (data.question) rowValues[1] = String(data.question).replace(/\*\*/g, '').trim();
-      if (data.questionImage != null) rowValues[2] = String(data.questionImage).trim();
-      if (Array.isArray(data.choices)) {
-        for (let c = 0; c < 5; c++) {
-          rowValues[3 + c] = String(data.choices[c] || '').replace(/\*\*/g, '').trim();
-        }
-      }
-      if (data.correctAnswer != null || data.answer != null) rowValues[8] = parseInt(data.correctAnswer != null ? data.correctAnswer : data.answer, 10) || 1;
-      if (data.explanation) rowValues[9] = String(data.explanation).replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim();
-      if (data.answerImage != null) rowValues[10] = String(data.answerImage).trim();
-      if (data.subtopic != null) rowValues[11] = String(data.subtopic).replace(/\*\*/g, '').trim();
-      if (data.track != null) rowValues[12] = String(data.track).trim();
-      if (data.note != null) rowValues[13] = String(data.note).replace(/\*\*/g, '').trim();
-      if (data.examType != null) rowValues[14] = String(data.examType).trim();
-      if (data.examYear != null) rowValues[15] = String(data.examYear).trim();
+      const moveData = {
+        itemNo: destItemNo,
+        caseContext: data.caseContext != null ? String(data.caseContext) : (sourceColMap.caseContext ? String(oldVals[sourceColMap.caseContext - 1] || '') : ''),
+        question: data.question ? String(data.question).replace(/\*\*/g, '').trim() : String(oldVals[sourceColMap.question - 1] || ''),
+        imgQ: data.questionImage != null ? String(data.questionImage).trim() : (sourceColMap.imgQ ? String(oldVals[sourceColMap.imgQ - 1] || '') : ''),
+        choices: choices.map(c => String(c || '').replace(/\*\*/g, '').trim()),
+        answer: (data.correctAnswer != null || data.answer != null) ? parseInt(data.correctAnswer != null ? data.correctAnswer : data.answer, 10) : oldVals[sourceColMap.answer - 1],
+        explanation: data.explanation ? String(data.explanation).replace(/\*\*/g, '').replace(/<br\s*\/?>/gi, '\n').trim() : String(oldVals[sourceColMap.explanation - 1] || ''),
+        imgA: data.answerImage != null ? String(data.answerImage).trim() : (sourceColMap.imgA ? String(oldVals[sourceColMap.imgA - 1] || '') : ''),
+        topic: data.topic != null ? String(data.topic).trim() : (sourceColMap.topic ? String(oldVals[sourceColMap.topic - 1] || '') : ''),
+        subtopic: data.subtopic != null ? String(data.subtopic).replace(/\*\*/g, '').trim() : (sourceColMap.subtopic ? String(oldVals[sourceColMap.subtopic - 1] || '') : ''),
+        track: data.track != null ? String(data.track).trim() : (sourceColMap.track ? String(oldVals[sourceColMap.track - 1] || '') : ''),
+        note: (data.note != null ? String(data.note).replace(/\*\*/g, '').trim() : (sourceColMap.note ? String(oldVals[sourceColMap.note - 1] || '') : '')) + ` [ย้ายจาก ${sourceSheetName}::${sourceRowNum}]`,
+        examType: data.examType != null ? String(data.examType).trim() : (sourceColMap.examType ? String(oldVals[sourceColMap.examType - 1] || '') : ''),
+        examYear: data.examYear != null ? String(data.examYear).trim() : (sourceColMap.examYear ? String(oldVals[sourceColMap.examYear - 1] || '') : ''),
+        caseId: data.caseId != null ? String(data.caseId).trim() : (sourceColMap.caseId ? String(oldVals[sourceColMap.caseId - 1] || '') : '')
+      };
 
-      // เขียนลงชีตปลายทาง
-      destSheet.appendRow(rowValues.slice(0, 16));
+      const newRowVals = buildRowArrayForSheet_(destColMap, moveData);
+      destSheet.appendRow(newRowVals);
       const newRowNum = destSheet.getLastRow();
       const newQId = `${targetSheetName}::${newRowNum}`;
 
-      // ลบแถวเดิมออกจากชีตต้นทาง
-      sourceSheet.deleteRow(sourceRowNum);
+      try {
+        sourceSheet.deleteRow(sourceRowNum);
+      } catch (delErr) {
+        try {
+          sourceSheet.getRange(sourceRowNum, sourceColMap.question).setValue(`[ย้ายไป ${newQId}] ${moveData.question}`);
+        } catch (e) {}
+      }
 
-      // บันทึกลง Log_Question_Edits
       let logSheet = ss.getSheetByName('Log_Question_Edits');
       if (logSheet) {
         const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
         logSheet.appendRow([
           thaiTimestamp,
           String(data.editorName || 'Admin'),
-          qId,
-          sourceSheetName,
-          sourceRowNum,
-          String(rowValues[1] || '').substring(0, 100),
-          `[MOVED to ${newQId}]`,
-          "-",
-          "-",
-          "-",
-          `Moved from ${sourceSheetName}::${sourceRowNum} to ${newQId}`,
-          "Moved"
+          qId + ' -> ' + newQId,
+          targetSheetName,
+          newRowNum,
+          String(oldVals[sourceColMap.question - 1] || '').substring(0, 150),
+          moveData.question.substring(0, 150),
+          String(oldVals[sourceColMap.answer - 1] || ''),
+          String(moveData.answer),
+          String(oldVals[sourceColMap.explanation - 1] || '').substring(0, 150),
+          moveData.explanation.substring(0, 150),
+          'Moved to ' + targetSheetName
         ]);
       }
 
       return jsonResponse_({
         success: true,
-        message: `ย้ายข้อสอบจาก ${sourceSheetName} ไปยัง ${targetSheetName} แถวที่ ${newRowNum} สำเร็จแล้ว`,
+        message: `ย้ายข้อสอบไปยังหมวด ${targetSheetName} (แถวที่ ${newRowNum}) สำเร็จแล้ว`,
         oldQuestionId: qId,
         newQuestionId: newQId,
-        sheet: targetSheetName,
-        row: newRowNum,
-        itemNo: destItemNo
+        newRow: newRowNum,
+        targetSheet: targetSheetName
       });
     }
 
-    // บันทึกรายงานข้อสอบผิดพลาด พร้อมเรียก AI วิเคราะห์และร่างเฉลยให้อัตโนมัติ (AI Quiz Report Auto-Resolver)
     if (action === 'reportIssue') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
       let sheet = ss.getSheetByName('Report_Quiz_Issues');
@@ -1011,10 +994,15 @@ function doPost(e) {
 
       // ดึงข้อมูลข้อสอบเดิมจากชีตวิชาหรือจาก payload
       let originalQ = {
+        caseContext: String(data.caseContext || data.caseStem || ''),
         question: String(data.question || ''),
         choices: Array.isArray(data.choices) ? data.choices : [],
         answer: data.answer || '',
-        explanation: String(data.explanation || '')
+        explanation: String(data.explanation || ''),
+        topic: String(data.topic || ''),
+        subtopic: String(data.subtopic || ''),
+        track: String(data.track || ''),
+        caseId: String(data.caseId || '')
       };
 
       let targetSheetName = cat;
@@ -1029,29 +1017,37 @@ function doPost(e) {
       if (targetSheetName && targetRowNum >= 3) {
         const targetSheet = findSheetSafely_(ss, targetSheetName);
         if (targetSheet && targetRowNum <= targetSheet.getLastRow()) {
-          const rowVals = targetSheet.getRange(targetRowNum, 1, 1, 12).getValues()[0];
-          if (!originalQ.question) originalQ.question = String(rowVals[1] || '');
+          const colMap = resolveSheetColumnMap_(targetSheet);
+          const rowVals = targetSheet.getRange(targetRowNum, 1, 1, Math.max(19, targetSheet.getLastColumn())).getValues()[0];
+          
+          if (!originalQ.caseContext && colMap.caseContext) originalQ.caseContext = String(rowVals[colMap.caseContext - 1] || '');
+          if (!originalQ.question) originalQ.question = String(rowVals[colMap.question - 1] || '');
           if (!originalQ.choices.length) {
             originalQ.choices = [
-              String(rowVals[3] || ''),
-              String(rowVals[4] || ''),
-              String(rowVals[5] || ''),
-              String(rowVals[6] || ''),
-              String(rowVals[7] || '')
+              String(rowVals[colMap.c1 - 1] || ''),
+              String(rowVals[colMap.c2 - 1] || ''),
+              String(rowVals[colMap.c3 - 1] || ''),
+              String(rowVals[colMap.c4 - 1] || ''),
+              String(rowVals[colMap.c5 - 1] || '')
             ].filter(Boolean);
           }
-          if (!originalQ.answer) originalQ.answer = rowVals[8];
-          if (!originalQ.explanation) originalQ.explanation = String(rowVals[9] || '');
+          if (!originalQ.answer) originalQ.answer = rowVals[colMap.answer - 1];
+          if (!originalQ.explanation) originalQ.explanation = String(rowVals[colMap.explanation - 1] || '');
+          if (!originalQ.topic && colMap.topic) originalQ.topic = String(rowVals[colMap.topic - 1] || '');
+          if (!originalQ.subtopic && colMap.subtopic) originalQ.subtopic = String(rowVals[colMap.subtopic - 1] || '');
+          if (!originalQ.track && colMap.track) originalQ.track = String(rowVals[colMap.track - 1] || '');
+          if (!originalQ.caseId && colMap.caseId) originalQ.caseId = String(rowVals[colMap.caseId - 1] || '');
         }
       }
 
       // สรุปข้อสอบและเฉลยเดิม
       const currentExamSnippet = 
+        (originalQ.caseContext ? 'เคส: ' + originalQ.caseContext.substring(0, 70) + '...\n' : '') +
         'โจทย์: ' + originalQ.question.substring(0, 100) + '\n' +
         'ตัวเลือก: 1.' + (originalQ.choices[0] || '-') + ' | 2.' + (originalQ.choices[1] || '-') + ' | 3.' + (originalQ.choices[2] || '-') + '\n' +
         'เฉลยเดิม: ข้อ ' + (originalQ.answer || '-');
 
-      // เรียก Gemini AI วินิจฉัยข้อสอบ
+      // เรียก Gemini AI วินิจฉัยข้อสอบครบทุกฟิลด์
       let aiResult = null;
       try {
         aiResult = callGeminiQuizResolver(targetSheetName, qId, originalQ, {
@@ -1063,40 +1059,49 @@ function doPost(e) {
       }
 
       const aiDiagnosis = aiResult ? ('[' + aiResult.verdict + '] ' + aiResult.diagnosis) : 'AI อยู่ระหว่างเตรียมประมวลผล หรือกรุณากดเมนูเพื่อรันย้อนหลัง';
+      const aiProposedCase = aiResult ? (aiResult.proposedCaseContext || '') : '';
       const aiProposedQ = aiResult ? (aiResult.proposedQuestion || '') : '';
+      const aiProposedChoices = (aiResult && Array.isArray(aiResult.proposedChoices)) ? aiResult.proposedChoices.map((c, i) => `${i+1}. ${c}`).join('\n') : '';
       const aiProposedAns = aiResult ? (aiResult.proposedAnswer || '') : '';
       const aiProposedExp = aiResult ? (aiResult.proposedExplanation || '') : '';
+      const aiProposedTargetSheet = aiResult ? (aiResult.proposedTargetSheet || targetSheetName) : targetSheetName;
+      const aiProposedTopicSubtopic = aiResult ? ((aiResult.proposedTopic || '') + (aiResult.proposedSubtopic ? ' / ' + aiResult.proposedSubtopic : '')) : '';
+      const aiProposedTrack = aiResult ? (aiResult.proposedTrack || '') : '';
 
       const newRow = [
-        thaiTimestamp,      // Col 1 (A)
-        user,               // Col 2 (B)
-        targetSheetName,    // Col 3 (C)
-        qId,                // Col 4 (D)
-        issueType,          // Col 5 (E)
-        detail,             // Col 6 (F)
-        currentExamSnippet, // Col 7 (G)
-        aiDiagnosis,        // Col 8 (H)
-        aiProposedQ,        // Col 9 (I) -> โจทย์ใหม่ที่ AI เสนอ
-        aiProposedAns,      // Col 10 (J) -> เฉลยใหม่ (1-5)
-        aiProposedExp,      // Col 11 (K) -> คำอธิบาย 3 ส่วนใหม่
-        '⏳ รอประธานอนุมัติ (Pending)', // Col 12 (L) -> สถานะอนุมัติ
-        ''                  // Col 13 (M) -> บันทึกการนำไปใช้
+        thaiTimestamp,           // Col 1
+        user,                    // Col 2
+        targetSheetName,         // Col 3
+        qId,                     // Col 4
+        issueType,               // Col 5
+        detail,                  // Col 6
+        currentExamSnippet,      // Col 7
+        aiDiagnosis,             // Col 8
+        aiProposedCase,          // Col 9 -> AI Proposed Case Context
+        aiProposedQ,             // Col 10 -> AI Proposed Question
+        aiProposedChoices,       // Col 11 -> AI Proposed Choices
+        aiProposedAns,           // Col 12 -> AI Proposed Answer (1-5)
+        aiProposedExp,           // Col 13 -> AI Proposed Explanation
+        aiProposedTargetSheet,   // Col 14 -> AI Proposed Target Sheet
+        aiProposedTopicSubtopic, // Col 15 -> AI Proposed Topic & Subtopic
+        aiProposedTrack,         // Col 16 -> AI Proposed Track
+        '⏳ รอประธานอนุมัติ (Pending)', // Col 17 -> Status
+        'AI วิเคราะห์ครบทุกฟิลด์สำเร็จ พร้อมให้ประธานตรวจสอบ', // Col 18 -> Log
+        JSON.stringify(aiResult || {}) // Col 19 -> Full AI JSON
       ];
 
       sheet.appendRow(newRow);
       const lastRow = sheet.getLastRow();
 
-      // ใส่ Data Validation Dropdown ที่ Column K
       applyStatusValidationToRow_(sheet, lastRow);
 
       return jsonResponse_({
         success: true,
-        message: 'บันทึกรายงานปัญหาและ AI วิเคราะห์เรียบร้อย',
+        message: 'บันทึกรายงานปัญหาและ AI วิเคราะห์ครบทุกฟิลด์เรียบร้อย',
         aiResult: aiResult
       });
     }
 
-    // บันทึกการยืนยันข้อสอบถูกต้อง (Question Validation / Upvote)
     if (action === 'validateQuestion') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
       let sheet = ss.getSheetByName('Log_Question_Validations');
@@ -1280,6 +1285,161 @@ function doPost(e) {
   } catch (err) {
     return jsonResponse_({ success: false, error: err.toString() });
   }
+}
+
+
+/**
+ * ════════════════════════════════════════════════════════════════════════
+ * 🧭 Dynamic Sheet Column Resolver (รองรับทั้ง 19-Column Schema และ Legacy 12/16-Column)
+ * ════════════════════════════════════════════════════════════════════════
+ */
+function resolveSheetColumnMap_(sheet) {
+  const map = {
+    caseContext: 2,
+    question: 3,
+    imgQ: 4,
+    c1: 5, c2: 6, c3: 7, c4: 8, c5: 9,
+    answer: 10,
+    explanation: 11,
+    imgA: 12,
+    topic: 13,
+    subtopic: 14,
+    track: 15,
+    note: 16,
+    examType: 17,
+    examYear: 18,
+    caseId: 19,
+    hasSeparateCase: true
+  };
+  if (!sheet) return map;
+  const lastCol = Math.max(20, sheet.getLastColumn());
+  const headerVals = sheet.getRange(2, 1, 1, lastCol).getValues()[0];
+
+  let hasSeparateCase = false;
+  for (let c = 0; c < headerVals.length; c++) {
+    const v = String(headerVals[c] || '').trim();
+    if (!v) continue;
+    const colNum = c + 1;
+    if (v.includes('สถานการณ์') || v.includes('Scenario') || v.includes('ข้อมูลผู้ป่วย')) {
+      map.caseContext = colNum;
+      hasSeparateCase = true;
+    } else if (v.includes('คำถาม') || v.includes('Question')) {
+      map.question = colNum;
+    } else if (v.includes('รูปถาม') || v.includes('Question Image')) {
+      map.imgQ = colNum;
+    } else if (v.includes('ตัวเลือก 1') || v.includes('Choice 1')) {
+      map.c1 = colNum;
+    } else if (v.includes('ตัวเลือก 2') || v.includes('Choice 2')) {
+      map.c2 = colNum;
+    } else if (v.includes('ตัวเลือก 3') || v.includes('Choice 3')) {
+      map.c3 = colNum;
+    } else if (v.includes('ตัวเลือก 4') || v.includes('Choice 4')) {
+      map.c4 = colNum;
+    } else if (v.includes('ตัวเลือก 5') || v.includes('Choice 5')) {
+      map.c5 = colNum;
+    } else if (v.includes('เฉลย') && (v.includes('ตัวเลข') || v.includes('Answer') || v.includes('Key'))) {
+      map.answer = colNum;
+    } else if (v.includes('คำอธิบาย') || v.includes('Rationale')) {
+      map.explanation = colNum;
+    } else if (v.includes('รูปเฉลย') || v.includes('Answer Image')) {
+      map.imgA = colNum;
+    } else if (v.includes('หัวข้อโรคสภาฯ') || v.includes('Topic')) {
+      map.topic = colNum;
+    } else if (v.includes('หัวข้อย่อย') || v.includes('Subtopic')) {
+      map.subtopic = colNum;
+    } else if (v.includes('Track') || v.includes('สายวิชา') || v.includes('Product')) {
+      map.track = colNum;
+    } else if (v.includes('หมายเหตุ') || v.includes('Note')) {
+      map.note = colNum;
+    } else if (v.includes('ประเภท') || v.includes('Type')) {
+      map.examType = colNum;
+    } else if (v.includes('ปี') || v.includes('Year')) {
+      map.examYear = colNum;
+    } else if (v.includes('Case') || v.includes('รหัสเคส')) {
+      map.caseId = colNum;
+    }
+  }
+  map.hasSeparateCase = hasSeparateCase;
+  // Fallback สำหรับชีตแบบเก่าที่ไม่มีคอลัมน์สถานการณ์เคสแยก
+  if (!hasSeparateCase && headerVals[1] && String(headerVals[1]).includes('คำถาม')) {
+    map.caseContext = 0;
+    map.question = 2;
+    map.imgQ = 3;
+    map.c1 = 4; map.c2 = 5; map.c3 = 6; map.c4 = 7; map.c5 = 8;
+    map.answer = 9; map.explanation = 10; map.imgA = 11;
+    map.topic = 12; map.subtopic = 13; map.track = 14; map.note = 15;
+    map.examType = 16; map.examYear = 17; map.caseId = 18;
+  }
+  return map;
+}
+
+function buildRowArrayForSheet_(colMap, data) {
+  const maxCol = Math.max(19, colMap.caseId || 19);
+  const row = new Array(maxCol).fill('');
+
+  if (data.itemNo != null) row[0] = data.itemNo;
+  if (colMap.caseContext && colMap.caseContext > 0) {
+    row[colMap.caseContext - 1] = data.caseContext || data.caseStem || '';
+  }
+  if (colMap.question && colMap.question > 0) {
+    row[colMap.question - 1] = data.question || '';
+  }
+  if (colMap.imgQ && colMap.imgQ > 0) {
+    row[colMap.imgQ - 1] = data.imgQ || '';
+  }
+  const choices = Array.isArray(data.choices) ? data.choices : [];
+  if (colMap.c1 && colMap.c1 > 0) row[colMap.c1 - 1] = choices[0] || '';
+  if (colMap.c2 && colMap.c2 > 0) row[colMap.c2 - 1] = choices[1] || '';
+  if (colMap.c3 && colMap.c3 > 0) row[colMap.c3 - 1] = choices[2] || '';
+  if (colMap.c4 && colMap.c4 > 0) row[colMap.c4 - 1] = choices[3] || '';
+  if (colMap.c5 && colMap.c5 > 0) row[colMap.c5 - 1] = choices[4] || '';
+  if (colMap.answer && colMap.answer > 0) row[colMap.answer - 1] = data.answer || 1;
+  if (colMap.explanation && colMap.explanation > 0) row[colMap.explanation - 1] = data.explanation || '';
+  if (colMap.imgA && colMap.imgA > 0) row[colMap.imgA - 1] = data.imgA || '';
+  if (colMap.topic && colMap.topic > 0) row[colMap.topic - 1] = data.topic || '';
+  if (colMap.subtopic && colMap.subtopic > 0) row[colMap.subtopic - 1] = data.subtopic || '';
+  if (colMap.track && colMap.track > 0) row[colMap.track - 1] = data.track || '';
+  if (colMap.note && colMap.note > 0) row[colMap.note - 1] = data.note || '';
+  if (colMap.examType && colMap.examType > 0) row[colMap.examType - 1] = data.examType || '';
+  if (colMap.examYear && colMap.examYear > 0) row[colMap.examYear - 1] = data.examYear || '';
+  if (colMap.caseId && colMap.caseId > 0) row[colMap.caseId - 1] = data.caseId || '';
+
+  return row;
+}
+
+function applyUpdatesToRowValues_(targetSheet, rowNum, colMap, updates) {
+  const lastCol = Math.max(19, targetSheet.getLastColumn());
+  const existingRow = targetSheet.getRange(rowNum, 1, 1, lastCol).getValues()[0];
+
+  if (updates.itemNo != null && updates.itemNo !== '') existingRow[0] = updates.itemNo;
+  if (colMap.caseContext && colMap.caseContext > 0 && updates.caseContext !== undefined) {
+    existingRow[colMap.caseContext - 1] = updates.caseContext;
+  }
+  if (colMap.question && colMap.question > 0 && updates.question !== undefined) {
+    existingRow[colMap.question - 1] = updates.question;
+  }
+  if (colMap.imgQ && colMap.imgQ > 0 && updates.imgQ !== undefined) {
+    existingRow[colMap.imgQ - 1] = updates.imgQ;
+  }
+  if (Array.isArray(updates.choices)) {
+    if (colMap.c1 && colMap.c1 > 0 && updates.choices[0] !== undefined) existingRow[colMap.c1 - 1] = updates.choices[0];
+    if (colMap.c2 && colMap.c2 > 0 && updates.choices[1] !== undefined) existingRow[colMap.c2 - 1] = updates.choices[1];
+    if (colMap.c3 && colMap.c3 > 0 && updates.choices[2] !== undefined) existingRow[colMap.c3 - 1] = updates.choices[2];
+    if (colMap.c4 && colMap.c4 > 0 && updates.choices[3] !== undefined) existingRow[colMap.c4 - 1] = updates.choices[3];
+    if (colMap.c5 && colMap.c5 > 0 && updates.choices[4] !== undefined) existingRow[colMap.c5 - 1] = updates.choices[4];
+  }
+  if (colMap.answer && colMap.answer > 0 && updates.answer !== undefined) existingRow[colMap.answer - 1] = updates.answer;
+  if (colMap.explanation && colMap.explanation > 0 && updates.explanation !== undefined) existingRow[colMap.explanation - 1] = updates.explanation;
+  if (colMap.imgA && colMap.imgA > 0 && updates.imgA !== undefined) existingRow[colMap.imgA - 1] = updates.imgA;
+  if (colMap.topic && colMap.topic > 0 && updates.topic !== undefined) existingRow[colMap.topic - 1] = updates.topic;
+  if (colMap.subtopic && colMap.subtopic > 0 && updates.subtopic !== undefined) existingRow[colMap.subtopic - 1] = updates.subtopic;
+  if (colMap.track && colMap.track > 0 && updates.track !== undefined) existingRow[colMap.track - 1] = updates.track;
+  if (colMap.note && colMap.note > 0 && updates.note !== undefined) existingRow[colMap.note - 1] = updates.note;
+  if (colMap.examType && colMap.examType > 0 && updates.examType !== undefined) existingRow[colMap.examType - 1] = updates.examType;
+  if (colMap.examYear && colMap.examYear > 0 && updates.examYear !== undefined) existingRow[colMap.examYear - 1] = updates.examYear;
+  if (colMap.caseId && colMap.caseId > 0 && updates.caseId !== undefined) existingRow[colMap.caseId - 1] = updates.caseId;
+
+  targetSheet.getRange(rowNum, 1, 1, existingRow.length).setValues([existingRow]);
 }
 
 function findSheetSafely_(ss, sheetName) {
@@ -1550,107 +1710,105 @@ function callGeminiQuizResolver(category, questionId, originalQ, studentReport) 
     'gemini-flash-latest'
   ];
 
-  const systemInstruction = 
-    "คุณเป็นเภสัชกรผู้เชี่ยวชาญ คณะกรรมการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC)\n" +
-    "หน้าที่ของคุณคือ วิเคราะห์รายงานปัญหาข้อสอบที่นิสิตส่งเข้ามา ตรวจสอบกับแนวทางเวชปฏิบัติสากล (CPG เช่น GINA, GOLD, CPG HTN, ADA, IDSA, CINV) สถิติชีวเวชศาสตร์ หรือเภสัชตำรับ (USP, BP, Thai Pharmacopoeia)\n" +
-    "กฎเหล็กด้านภาษาและรูปแบบ (Mandatory Rules):\n" +
-    "1. ภาษาหลัก: ทั้งโจทย์ (proposedQuestion) และคำอธิบายเฉลย (proposedExplanation) ต้องเขียนเป็นภาษาไทยสละสลวยตามมาตรฐานข้อสอบสภาเภสัชกรรม ห้ามเขียนเป็นภาษาอังกฤษทั้งประโยคเด็ดขาด\n" +
-    "2. คำศัพท์เฉพาะ: ให้คงชื่อยา คำศัพท์ทางการแพทย์ และชื่อทางสถิติเป็นภาษาอังกฤษตรงตัว (เช่น Prospective cohort study, Odds Ratio, Relative Risk, hydrolyze, prodrug, active metabolite)\n" +
-    "3. การแก้โจทย์ตกหล่น/กำกวม: หากโจทย์เดิมสั้นเกินไปหรือไม่มีประโยคคำถาม ให้แต่งเรียบเรียงเป็นประโยคคำถามภาษาไทยที่ชัดเจน สมบูรณ์ สละสลวย ตรงประเด็น และวัดความรู้ทางเภสัชกรรมได้อย่างถูกต้อง\n" +
-    "4. คำอธิบายเฉลยต้องมีโครงสร้าง 3 ส่วนอย่างเคร่งครัด:\n" +
-    "   ✅ คำตอบที่ถูกต้อง: ข้อ [ก-จ]. [ข้อความตัวเลือก]\n\n" +
-    "   🎯 ทำไมข้อนี้ถึงถูก:\n" +
-    "   [เหตุผลตรงประเด็นภาษาไทย อ้างอิง Guideline/หลักการทางเภสัช 1-3 บรรทัด]\n\n" +
-    "   🔍 ข้ออื่นผิดเพราะอะไร:\n" +
-    "   • ข้อ [ก-จ].: [เหตุผลภาษาไทยที่ผิด แยกทีละข้อ ห้ามรวมย่อหน้า]\n" +
-    "5. ห้ามมีเครื่องหมายดอกจัน (*) หรือ (**) ในข้อความเด็ดขาด\n" +
-    "6. proposedAnswer ต้องเป็นตัวเลขลำดับตัวเลือกที่ถูกต้อง 1 ถึง 5 (1=ก, 2=ข, 3=ค, 4=ง, 5=จ)\n" +
-    "7. ตอบกลับเป็น JSON เท่านั้น";
+  const systemInstruction = `คุณเป็นประธานและเภสัชกรผู้เชี่ยวชาญ คณะกรรมการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC)
+หน้าที่ของคุณคือ ตรวจสอบและแก้ไขรายงานปัญหาข้อสอบที่นิสิตส่งเข้ามาแบบครบวงจร (Full-Scope Diagnostic & Revision) ทั้งสถานการณ์เคส, ประโยคคำถาม, ตัวเลือกทั้ง 5 ข้อ, เฉลย, คำอธิบายเฉลย, หมวดวิชา/ชีตที่ถูกต้อง, หัวข้อโรคสภาฯ, หัวข้อย่อย และสายวิชา
 
-  const userPrompt = 
-    'หมวดวิชา: ' + (category || 'ไม่ระบุ') + '\n' +
-    'รหัสข้อสอบ: ' + (questionId || 'ไม่ระบุ') + '\n' +
-    'ข้อสอบและตัวเลือกเดิม:\n' + JSON.stringify(originalQ, null, 2) + '\n\n' +
-    'สิ่งที่นิสิตรายงานปัญหา:\n' +
-    '- ประเภทปัญหา: ' + (studentReport.issueType || 'ทั่วไป') + '\n' +
-    '- รายละเอียด: ' + (studentReport.detail || 'ไม่มี') + '\n\n' +
-    'กรุณาวินิจฉัยและส่งออก JSON ในรูปแบบนี้เท่านั้น:\n' +
-    '{\n' +
-    '  "verdict": "AGREE / DISAGREE / PARTIAL",\n' +
-    '  "diagnosis": "สรุปผลการวินิจฉัยและ CPG/หลักวิชาอ้างอิง สั้นกระชับ 1-3 บรรทัด",\n' +
-    '  "proposedQuestion": "ข้อความโจทย์ใหม่ที่เรียบเรียงชัดเจนสมบูรณ์ (หากโจทย์เดิมดีอยู่แล้วให้คงเดิม)",\n' +
-    '  "proposedAnswer": 1,\n' +
-    '  "proposedExplanation": "คำอธิบายเฉลย 3 ส่วนตามกฎเหล็กโดยไม่มีดอกจัน",\n' +
-    '  "confidence": "HIGH / MEDIUM / LOW"\n' +
-    '}';
+กฎเหล็กมาตรฐานสภาเภสัชกรรม (Mandatory Blueprint Rules):
+1. การแยกสถานการณ์เคสและประโยคคำถาม (Case Scenario & Question Prompt Separation):
+   - หากโจทย์มีประวัติคนไข้/ผลแล็บ/ข้อมูลตำรับ/บริบทเคสผู้ป่วย ให้แยกข้อมูลเคสทั้งหมดใส่ใน proposedCaseContext
+   - ใน proposedQuestion ให้ใส่เฉพาะ 'ประโยคคำถามเฉพาะข้อ' ที่ชัดเจน สละสลวย ตรงประเด็น (ห้ามนำเคสคนไข้มาปนซ้ำใน question)
+   - หากเป็นข้อสอบเดี่ยวทั่วไปที่ไม่มีเคสคนไข้ ให้ proposedCaseContext เป็นค่าว่าง ("")
+2. ตรวจสอบและเกลาตัวเลือกทั้ง 5 ข้อ (Choices 1-5):
+   - ส่งคืน Array proposedChoices ครบทั้ง 5 ข้อเสมอ โดยแก้ไขคำสะกดผิด ชื่อยาผิด หน่วยผิด หรือปรับตัวลวงให้สอดคล้องกับหลักวิชาการ
+3. ตรวจสอบความถูกต้องของเฉลยและคำอธิบาย 3 ส่วน:
+   - proposedAnswer เป็นตัวเลข 1 ถึง 5 (1=ก, 2=ข, 3=ค, 4=ง, 5=จ) สอดคล้องกับแนวทางเวชปฏิบัติปัจจุบัน (CPG ล่าสุด)
+   - proposedExplanation ต้องมีโครงสร้าง 3 ส่วนอย่างเคร่งครัด:
+     ✅ คำตอบที่ถูกต้อง: ข้อ [ก-จ]. [ข้อความตัวเลือก]
+     🎯 ทำไมข้อนี้ถึงถูก:
+     [เหตุผลตรงประเด็นภาษาไทย อ้างอิง Guideline/หลักการทางเภสัช 1-3 บรรทัด]
+     🔍 ข้ออื่นผิดเพราะอะไร:
+     • ข้อ [ก-จ].: [เหตุผลที่ผิด แยกทีละข้อ ห้ามรวมย่อหน้า]
+4. ตรวจสอบการจัดหมวดวิชาและชีต (Target Sheet Reclassification):
+   - หากข้อสอบอยู่ผิดหมวดวิชา เช่น คำถามเป็นการคำนวณไทเทรต/เคมีวิเคราะห์ แต่อยู่ในหมวดคลินิก หรือคำถามเป็นกฎหมายยา แต่อยู่ในหมวดโรค ให้ระบุชื่อชีตที่ถูกต้องใน proposedTargetSheet (เช่น 1. Titrations, 13. Medicinal Chemistry, 1. Pharmacy Laws & Ethics, 2. Cardiovascular, 5. Research & Biostats)
+   - หากข้อสอบอยู่ถูกหมวดแล้ว ให้ proposedTargetSheet เท่ากับหมวดเดิม
+5. หัวข้อโรคสภาฯ (Topic), หัวข้อย่อย (Subtopic) และสายวิชา (Track):
+   - proposedTopic: ระบุกลุ่มโรค/หัวข้อหลักตามหลักสูตรสภาเภสัชกรรม เช่น 2. Cardiovascular, 4. Endocrine, 8. Infectious diseases, Product Group 6: Solid Dosage Forms, 1. Law & Regulations
+   - proposedSubtopic: ระบุรหัสและชื่อหัวข้อย่อยมาตรฐาน เช่น 2.1 Hypertension, 4.1 Diabetes mellitus, 8.7 Pneumonia, 6.1 Tablet Manufacturing, 5.2 สถิติวิเคราะห์ (RR, OR)
+   - proposedTrack: Clinic หรือ Product หรือ SAP
+   - proposedCaseId: ระบุรหัสเคสร่วม เช่น CASE-CVD-01 (ถ้าเป็นข้อสอบเคสต่อเนื่อง)
+6. ภาษาและสมการ KaTeX:
+   - ภาษาไทยสละสลวย คงคำศัพท์ทางการแพทย์และชื่อยาเป็นภาษาอังกฤษตรงตัว (hydrolyze, prodrug, active metabolite)
+   - ห้ามมีดอกจัน (*) หรือ (**) เด็ดขาด
+   - สูตรคำนวณ สแควร์รูท และเศษส่วน ต้องครอบด้วย $...$ ในรูปแบบ KaTeX เสมอ เช่น $BSA = \\sqrt{\\frac{Height \\times Weight}{3600}}$, $t_{1/2} = \\frac{0.693}{k_e}$, eGFR < 30 (ห้ามใช้ /sqrt หรือ $it; หรือ &lt; เด็ดขาด)
+7. ตอบกลับเป็น JSON เท่านั้น`;
 
-  for (let i = 0; i < candidateModels.length; i++) {
-    const model = candidateModels[i];
+  const userPrompt = `หมวดวิชาปัจจุบัน: ` + (category || 'ไม่ระบุ') + `\n` +
+    `รหัสข้อสอบ: ` + (questionId || 'ไม่ระบุ') + `\n` +
+    `ข้อมูลข้อสอบเดิม:\n` +
+    JSON.stringify(originalQ, null, 2) + `\n\n` +
+    `สิ่งที่นิสิตรายงานปัญหา:\n` +
+    `- ประเภทปัญหา: ` + (studentReport.issueType || 'ทั่วไป') + `\n` +
+    `- รายละเอียด: ` + (studentReport.detail || 'ไม่มี') + `\n\n` +
+    `กรุณาวินิจฉัยและส่งออก JSON ในรูปแบบนี้เท่านั้น:\n` +
+    `{\n` +
+    `  "verdict": "AGREE / DISAGREE / PARTIAL",\n` +
+    `  "diagnosis": "สรุปผลการวินิจฉัยและ CPG/หลักวิชาอ้างอิง สั้นกระชับ 1-3 บรรทัด",\n` +
+    `  "proposedCaseContext": "สถานการณ์เคส/ข้อมูลผู้ป่วย (หรือเว้นว่างถ้าเป็นข้อเดี่ยว)",\n` +
+    `  "proposedQuestion": "ประโยคคำถามเฉพาะข้อที่ปรับปรุงแล้ว",\n` +
+    `  "proposedChoices": ["ตัวเลือก 1", "ตัวเลือก 2", "ตัวเลือก 3", "ตัวเลือก 4", "ตัวเลือก 5"],\n` +
+    `  "proposedAnswer": 1,\n` +
+    `  "proposedExplanation": "เฉลย 3 ส่วนมาตรฐาน (✅ / 🎯 / 🔍) ไม่มีดอกจัน",\n` +
+    `  "proposedTargetSheet": "ชื่อชีตปลายทางที่ถูกต้อง",\n` +
+    `  "proposedTopic": "หัวข้อโรคสภาฯ",\n` +
+    `  "proposedSubtopic": "รหัสและชื่อหัวข้อย่อย",\n` +
+    `  "proposedTrack": "Clinic / Product / SAP",\n` +
+    `  "proposedCaseId": "รหัสเคส (ถ้ามี)"\n` +
+    `}`;
+
+  for (let m = 0; m < candidateModels.length; m++) {
+    const model = candidateModels[m];
     const url = 'https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + apiKey;
+
+    const payload = {
+      contents: [{
+        role: 'user',
+        parts: [{ text: userPrompt }]
+      }],
+      systemInstruction: {
+        parts: [{ text: systemInstruction }]
+      },
+      generationConfig: {
+        temperature: 0.1,
+        responseMimeType: 'application/json'
+      }
+    };
+
     try {
-      const response = UrlFetchApp.fetch(url, {
+      const resp = UrlFetchApp.fetch(url, {
         method: 'post',
         contentType: 'application/json',
-        payload: JSON.stringify({
-          systemInstruction: { parts: [{ text: systemInstruction }] },
-          contents: [{ parts: [{ text: userPrompt }] }],
-          generationConfig: {
-            responseMimeType: 'application/json',
-            temperature: 0.1
-          }
-        }),
+        payload: JSON.stringify(payload),
         muteHttpExceptions: true
       });
 
-      if (response.getResponseCode() === 200) {
-        const json = JSON.parse(response.getContentText());
-        if (json.candidates && json.candidates[0] && json.candidates[0].content) {
-          const rawText = json.candidates[0].content.parts[0].text;
-          const parsed = JSON.parse(rawText);
-          if (parsed.diagnosis) parsed.diagnosis = parsed.diagnosis.replace(/\*\*/g, '').replace(/\*/g, '');
-          if (parsed.proposedQuestion) parsed.proposedQuestion = parsed.proposedQuestion.replace(/\*\*/g, '').replace(/\*/g, '');
-          if (parsed.proposedExplanation) parsed.proposedExplanation = parsed.proposedExplanation.replace(/\*\*/g, '').replace(/\*/g, '');
-
-          // ตรวจสอบความสอดคล้องของตัวเลขเฉลย (ก=1, ข=2, ค=3, ง=4, จ=5)
-          const mChoice = (parsed.proposedExplanation || '').match(/คำตอบที่ถูกต้อง:\s*ข้อ\s*([ก-จ])/);
-          if (mChoice) {
-            const letterMap = { 'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5 };
-            if (letterMap[mChoice[1]]) {
-              parsed.proposedAnswer = letterMap[mChoice[1]];
-            }
-          }
-
+      const status = resp.getResponseCode();
+      if (status === 200) {
+        const json = JSON.parse(resp.getContentText());
+        const candidate = json.candidates && json.candidates[0];
+        const text = candidate && candidate.content && candidate.content.parts && candidate.content.parts[0] && candidate.content.parts[0].text;
+        if (text) {
+          const parsed = JSON.parse(text);
           return parsed;
         }
       } else {
-        Logger.log('Gemini model ' + model + ' HTTP ' + response.getResponseCode() + ': ' + response.getContentText().substring(0, 150));
+        Logger.log('Model ' + model + ' failed with status ' + status + ': ' + resp.getContentText());
       }
     } catch (err) {
-      Logger.log('Gemini model ' + model + ' error: ' + err.toString());
+      Logger.log('Model ' + model + ' fetch error: ' + err.toString());
     }
   }
+
   return null;
-}
-
-function onEdit(e) {
-  if (!e || !e.range) return;
-  try {
-    const sheet = e.range.getSheet();
-    if (sheet.getName() !== 'Report_Quiz_Issues') return;
-
-    const row = e.range.getRow();
-    const col = e.range.getColumn();
-
-    // Column L (12) คือ Status
-    if (col === 12 && row > 1) {
-      const val = String(e.value || e.range.getValue() || '').trim();
-      if (val.includes('อนุมัติ') || val.includes('Approved')) {
-        applyReportIssueApproved(row);
-      }
-    }
-  } catch (err) {
-    Logger.log('onEdit error: ' + err.toString());
-  }
 }
 
 function applyReportIssueApproved(rowNum) {
@@ -1658,67 +1816,208 @@ function applyReportIssueApproved(rowNum) {
   const reportSheet = ss.getSheetByName('Report_Quiz_Issues');
   if (!reportSheet) return { success: false, error: 'ไม่พบชีต Report_Quiz_Issues' };
 
-  const rowVals = reportSheet.getRange(rowNum, 1, 1, 13).getValues()[0];
+  const lastCol = Math.max(19, reportSheet.getLastColumn());
+  const rowVals = reportSheet.getRange(rowNum, 1, 1, lastCol).getValues()[0];
   const cat = String(rowVals[2] || '').trim();
   const qId = String(rowVals[3] || '').trim();
   const aiDiag = String(rowVals[7] || '').trim();
-  const proposedQ = String(rowVals[8] || '').trim();
-  const proposedAns = parseInt(rowVals[9], 10);
-  const proposedExp = String(rowVals[10] || '').trim();
 
-  // ป้องกันกรณีที่ AI ยังไม่ได้วิเคราะห์ หรือยังไม่มีข้อมูลแก้ไข
+  // ตรวจสอบว่ามี JSON ก้อนเต็มใน Col 19 หรือไม่
+  let ai = null;
+  if (rowVals.length >= 19 && rowVals[18]) {
+    try {
+      ai = JSON.parse(String(rowVals[18]));
+    } catch (e) {}
+  }
+
+  // ดึงข้อมูลที่เสนอแก้ไข (จาก JSON หรือจากคอลัมน์)
+  const proposedCase = ai ? (ai.proposedCaseContext || '') : String(rowVals[8] || '').trim();
+  const proposedQ = ai ? (ai.proposedQuestion || '') : (rowVals.length >= 19 ? String(rowVals[9] || '').trim() : String(rowVals[8] || '').trim());
+  const proposedChoices = (ai && Array.isArray(ai.proposedChoices)) ? ai.proposedChoices : null;
+  const proposedAns = ai ? parseInt(ai.proposedAnswer, 10) : parseInt(rowVals.length >= 19 ? rowVals[11] : rowVals[9], 10);
+  const proposedExp = ai ? (ai.proposedExplanation || '') : (rowVals.length >= 19 ? String(rowVals[12] || '').trim() : String(rowVals[10] || '').trim());
+  const proposedTargetSheet = ai ? (ai.proposedTargetSheet || '').trim() : (rowVals.length >= 19 ? String(rowVals[13] || '').trim() : '');
+  const proposedTopic = ai ? (ai.proposedTopic || '').trim() : (rowVals.length >= 19 ? String(rowVals[14] || '').trim() : '');
+  const proposedSubtopic = ai ? (ai.proposedSubtopic || '').trim() : '';
+  const proposedTrack = ai ? (ai.proposedTrack || '').trim() : (rowVals.length >= 19 ? String(rowVals[15] || '').trim() : '');
+  const proposedCaseId = ai ? (ai.proposedCaseId || '').trim() : '';
+
+  const statusCol = rowVals.length >= 17 ? 17 : 12;
+  const logCol = rowVals.length >= 18 ? 18 : 13;
+
   const hasValidFix = (proposedQ && proposedQ !== '-') || (!isNaN(proposedAns) && proposedAns >= 1 && proposedAns <= 5) || (proposedExp && proposedExp !== '-');
   if (!hasValidFix || aiDiag.includes('อยู่ระหว่างเตรียม') || !aiDiag) {
-    reportSheet.getRange(rowNum, 12).setValue('⏳ รอประธานอนุมัติ (Pending)');
-    reportSheet.getRange(rowNum, 13).setValue('⚠️ ยังไม่มีข้อมูลที่ AI เสนอแก้ กรุณารอ AI วิเคราะห์หรือกดเมนู ⚡ ประมวลผล AI ก่อน');
+    reportSheet.getRange(rowNum, statusCol).setValue('⏳ รอประธานอนุมัติ (Pending)');
+    reportSheet.getRange(rowNum, logCol).setValue('⚠️ ยังไม่มีข้อมูลที่ AI เสนอแก้ กรุณารอ AI วิเคราะห์หรือกดเมนู ⚡ ประมวลผล AI ก่อน');
     return { success: false, error: 'ยังไม่มีข้อมูล AI' };
   }
 
-  let targetSheetName = cat;
-  let targetRowNum = 0;
-
+  let sourceSheetName = cat;
+  let sourceRowNum = 0;
   if (qId.includes('::')) {
     const parts = qId.split('::');
-    targetSheetName = parts[0].trim();
-    targetRowNum = parseInt(parts[1], 10);
+    sourceSheetName = parts[0].trim();
+    sourceRowNum = parseInt(parts[1], 10);
   }
 
-  if (!targetSheetName || targetRowNum < 3) {
-    reportSheet.getRange(rowNum, 13).setValue('ข้อผิดพลาด: ไม่พบตำแหน่งแถวในชีตต้นทาง (qId: ' + qId + ')');
+  if (!sourceSheetName || sourceRowNum < 3) {
+    reportSheet.getRange(rowNum, logCol).setValue('ข้อผิดพลาด: ไม่พบตำแหน่งแถวในชีตต้นทาง (qId: ' + qId + ')');
     return { success: false, error: 'ตำแหน่งแถวไม่ถูกต้อง' };
   }
 
-  const targetSheet = findSheetSafely_(ss, targetSheetName);
-  if (!targetSheet) {
-    reportSheet.getRange(rowNum, 13).setValue('ข้อผิดพลาด: ไม่พบชีต ' + targetSheetName);
-    return { success: false, error: 'ไม่พบชีตเป้าหมาย' };
+  const sourceSheet = findSheetSafely_(ss, sourceSheetName);
+  if (!sourceSheet) {
+    reportSheet.getRange(rowNum, logCol).setValue('ข้อผิดพลาด: ไม่พบชีต ' + sourceSheetName);
+    return { success: false, error: 'ไม่พบชีตต้นทาง' };
   }
 
-  // ดึงข้อมูลเดิมเพื่อทำ Audit Trail
-  const oldVals = targetSheet.getRange(targetRowNum, 1, 1, 12).getValues()[0];
-  const oldQuestion = String(oldVals[1] || '').trim();
-  const oldAns = oldVals[8];
-  const oldExp = String(oldVals[9] || '').trim();
+  const sourceColMap = resolveSheetColumnMap_(sourceSheet);
+  const oldVals = sourceSheet.getRange(sourceRowNum, 1, 1, Math.max(19, sourceSheet.getLastColumn())).getValues()[0];
+  const oldQuestion = String(oldVals[sourceColMap.question - 1] || '').trim();
+  const oldAns = oldVals[sourceColMap.answer - 1];
+  const oldExp = String(oldVals[sourceColMap.explanation - 1] || '').trim();
 
   let changesList = [];
 
-  // 1. อัปเดตโจทย์ (Col B = 2) ถ้า AI เสนอแก้โจทย์ใหม่
-  if (proposedQ && proposedQ !== '-' && proposedQ !== oldQuestion) {
-    targetSheet.getRange(targetRowNum, 2).setValue(proposedQ);
-    changesList.push('โจทย์');
+  // ══════════════════════════════════════════════════════════════════════
+  // กรณีที่ 1: AI วินิจฉัยให้ย้ายหมวดวิชา/ชีต (Reclassify & Move to New Sheet)
+  // ══════════════════════════════════════════════════════════════════════
+  const isMoveSheet = proposedTargetSheet && proposedTargetSheet !== sourceSheetName;
+  if (isMoveSheet) {
+    const destSheet = findSheetSafely_(ss, proposedTargetSheet);
+    if (destSheet) {
+      const destColMap = resolveSheetColumnMap_(destSheet);
+      const destNextRow = destSheet.getLastRow() + 1;
+      let destItemNo = 1;
+      if (destNextRow > 3) {
+        const lastItemVal = destSheet.getRange(destNextRow - 1, 1).getValue();
+        const parsed = parseInt(lastItemVal, 10);
+        destItemNo = isNaN(parsed) ? (destNextRow - 2) : (parsed + 1);
+      }
+
+      // รวบรวม choices
+      let finalChoices = [];
+      if (proposedChoices && proposedChoices.length === 5) {
+        finalChoices = proposedChoices;
+      } else {
+        finalChoices = [
+          String(oldVals[sourceColMap.c1 - 1] || ''),
+          String(oldVals[sourceColMap.c2 - 1] || ''),
+          String(oldVals[sourceColMap.c3 - 1] || ''),
+          String(oldVals[sourceColMap.c4 - 1] || ''),
+          String(oldVals[sourceColMap.c5 - 1] || '')
+        ];
+      }
+
+      const moveData = {
+        itemNo: destItemNo,
+        caseContext: proposedCase || (sourceColMap.caseContext ? String(oldVals[sourceColMap.caseContext - 1] || '') : ''),
+        question: proposedQ || oldQuestion,
+        imgQ: sourceColMap.imgQ ? String(oldVals[sourceColMap.imgQ - 1] || '') : '',
+        choices: finalChoices,
+        answer: (!isNaN(proposedAns) && proposedAns >= 1 && proposedAns <= 5) ? proposedAns : oldAns,
+        explanation: proposedExp || oldExp,
+        imgA: sourceColMap.imgA ? String(oldVals[sourceColMap.imgA - 1] || '') : '',
+        topic: proposedTopic || (sourceColMap.topic ? String(oldVals[sourceColMap.topic - 1] || '') : ''),
+        subtopic: proposedSubtopic || (sourceColMap.subtopic ? String(oldVals[sourceColMap.subtopic - 1] || '') : ''),
+        track: proposedTrack || (sourceColMap.track ? String(oldVals[sourceColMap.track - 1] || '') : ''),
+        note: (sourceColMap.note ? String(oldVals[sourceColMap.note - 1] || '') : '') + ` [ย้ายจาก ${sourceSheetName}::${sourceRowNum}]`,
+        examType: sourceColMap.examType ? String(oldVals[sourceColMap.examType - 1] || '') : '',
+        examYear: sourceColMap.examYear ? String(oldVals[sourceColMap.examYear - 1] || '') : '',
+        caseId: proposedCaseId || (sourceColMap.caseId ? String(oldVals[sourceColMap.caseId - 1] || '') : '')
+      };
+
+      const newRowVals = buildRowArrayForSheet_(destColMap, moveData);
+      destSheet.appendRow(newRowVals);
+      const actualNewRow = destSheet.getLastRow();
+      const newQId = `${destSheet.getName()}::${actualNewRow}`;
+
+      // ทำเครื่องหมายย้ายในแถวเดิม หรือลบแถว
+      try {
+        sourceSheet.getRange(sourceRowNum, sourceColMap.question).setValue(`[ย้ายไป ${newQId}] ${oldQuestion}`);
+      } catch (e) {}
+
+      changesList.push(`ย้ายหมวดจาก ${sourceSheetName} ไปยัง ${destSheet.getName()} (แถวใหม่ ${actualNewRow})`);
+
+      // บันทึกลง Log_Question_Edits
+      let logSheet = ss.getSheetByName('Log_Question_Edits');
+      if (logSheet) {
+        const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+        logSheet.appendRow([
+          thaiTimestamp,
+          'AI Auto-Resolver (Reclassified & Moved)',
+          qId + ' -> ' + newQId,
+          destSheet.getName(),
+          actualNewRow,
+          oldQuestion.substring(0, 150),
+          (moveData.question).substring(0, 150),
+          String(oldAns || ''),
+          String(moveData.answer),
+          oldExp.substring(0, 150),
+          (moveData.explanation).substring(0, 150),
+          'Reclassified to ' + destSheet.getName()
+        ]);
+      }
+
+      const thaiTime = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
+      reportSheet.getRange(rowNum, 4).setValue(newQId);
+      reportSheet.getRange(rowNum, statusCol).setValue('🚀 นำไปใช้ในชีตข้อสอบแล้ว (Applied)');
+      reportSheet.getRange(rowNum, logCol).setValue(`ย้ายไป ${destSheet.getName()} แถว ${actualNewRow} สำเร็จ เมื่อ ${thaiTime}`);
+      return { success: true, moved: true, newQId: newQId };
+    }
   }
 
-  // 2. อัปเดตเฉลย (Col I = 9)
+  // ══════════════════════════════════════════════════════════════════════
+  // กรณีที่ 2: แก้ไขในชีตเดิม (In-Place Full Attribute Revision)
+  // ══════════════════════════════════════════════════════════════════════
+  const updates = {};
+
+  if (proposedCase && sourceColMap.caseContext) {
+    updates.caseContext = proposedCase;
+    changesList.push('สถานการณ์เคส');
+  }
+
+  if (proposedQ && proposedQ !== '-' && proposedQ !== oldQuestion) {
+    updates.question = proposedQ;
+    changesList.push('ประโยคคำถาม');
+  }
+
+  if (proposedChoices && proposedChoices.length === 5) {
+    updates.choices = proposedChoices;
+    changesList.push('ตัวเลือก 1-5');
+  }
+
   if (!isNaN(proposedAns) && proposedAns >= 1 && proposedAns <= 5) {
-    targetSheet.getRange(targetRowNum, 9).setValue(proposedAns);
+    updates.answer = proposedAns;
     changesList.push('เฉลยเป็นข้อ ' + proposedAns);
   }
 
-  // 3. อัปเดตคำอธิบาย 3 ส่วน (Col J = 10)
   if (proposedExp && proposedExp !== '-') {
-    targetSheet.getRange(targetRowNum, 10).setValue(proposedExp);
+    updates.explanation = proposedExp;
     changesList.push('คำอธิบาย 3 ส่วน');
   }
+
+  if (proposedTopic) {
+    updates.topic = proposedTopic;
+    changesList.push('หัวข้อโรคสภาฯ (' + proposedTopic + ')');
+  }
+
+  if (proposedSubtopic) {
+    updates.subtopic = proposedSubtopic;
+    changesList.push('หัวข้อย่อย (' + proposedSubtopic + ')');
+  }
+
+  if (proposedTrack) {
+    updates.track = proposedTrack;
+    changesList.push('สายวิชา (' + proposedTrack + ')');
+  }
+
+  if (proposedCaseId) {
+    updates.caseId = proposedCaseId;
+    changesList.push('รหัสเคส (' + proposedCaseId + ')');
+  }
+
+  applyUpdatesToRowValues_(sourceSheet, sourceRowNum, sourceColMap, updates);
 
   // บันทึกลง Log_Question_Edits
   let logSheet = ss.getSheetByName('Log_Question_Edits');
@@ -1726,23 +2025,23 @@ function applyReportIssueApproved(rowNum) {
     const thaiTimestamp = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
     logSheet.appendRow([
       thaiTimestamp,
-      'AI Auto-Resolver (Approved)',
+      'AI Auto-Resolver (Approved Full Update)',
       qId,
-      targetSheetName,
-      targetRowNum,
+      sourceSheetName,
+      sourceRowNum,
       oldQuestion.substring(0, 150),
-      (proposedQ || oldQuestion).substring(0, 150),
+      (updates.question || oldQuestion).substring(0, 150),
       String(oldAns || ''),
-      String(!isNaN(proposedAns) ? proposedAns : oldAns),
+      String(updates.answer !== undefined ? updates.answer : oldAns),
       oldExp.substring(0, 150),
-      (proposedExp || oldExp).substring(0, 150),
+      (updates.explanation || oldExp).substring(0, 150),
       'Approved from Report (' + (changesList.length ? changesList.join(', ') : 'ไม่มีการเปลี่ยนแปลง') + ')'
     ]);
   }
 
   const thaiTime = Utilities.formatDate(new Date(), "Asia/Bangkok", "dd/MM/yyyy HH:mm:ss");
-  reportSheet.getRange(rowNum, 12).setValue('🚀 นำไปใช้ในชีตข้อสอบแล้ว (Applied)');
-  reportSheet.getRange(rowNum, 13).setValue('อัปเดตชีต ' + targetSheetName + ' แถว ' + targetRowNum + ' (' + (changesList.length ? changesList.join(', ') : 'ไม่มีส่วนที่แก้') + ') สำเร็จ เมื่อ ' + thaiTime);
+  reportSheet.getRange(rowNum, statusCol).setValue('🚀 นำไปใช้ในชีตข้อสอบแล้ว (Applied)');
+  reportSheet.getRange(rowNum, logCol).setValue(`อัปเดตชีต ${sourceSheetName} แถว ${sourceRowNum} (${changesList.length ? changesList.join(', ') : 'ไม่มีส่วนที่แก้'}) สำเร็จ เมื่อ ${thaiTime}`);
 
   return { success: true };
 }
@@ -1757,17 +2056,23 @@ function setupReportIssuesSheet() {
   const headers = [
     "Timestamp (เวลาไทย)",
     "User (ผู้แจ้ง)",
-    "Category (หมวดวิชา)",
+    "Category (หมวดวิชาปัจจุบัน)",
     "Question ID (รหัสข้อ)",
     "Issue Type (ประเภทปัญหา)",
     "Student Detail (สิ่งที่นิสิตแจ้ง)",
     "Current Exam & Key (โจทย์และเฉลยเดิม)",
     "AI Diagnosis & Reason (AI วินิจฉัย & CPG อ้างอิง)",
-    "AI Proposed Question (โจทย์ใหม่ที่ AI เสนอ)",
+    "AI Proposed Case Context (สถานการณ์เคสใหม่)",
+    "AI Proposed Question (โจทย์คำถามใหม่)",
+    "AI Proposed Choices (ตัวเลือกใหม่ 1-5)",
     "AI Proposed Answer (เฉลยใหม่ 1-5)",
     "AI Proposed Explanation (เฉลย 3 ส่วนใหม่)",
+    "AI Proposed Target Sheet (ชีตเป้าหมาย)",
+    "AI Proposed Topic & Subtopic (หัวข้อโรค & หัวข้อย่อย)",
+    "AI Proposed Track (สายวิชา)",
     "Status (สถานะการอนุมัติ)",
-    "Applied Log (บันทึกการนำไปใช้)"
+    "Applied Log (บันทึกการนำไปใช้)",
+    "AI Full Payload JSON (JSON ก้อนเต็ม)"
   ];
 
   sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
@@ -1779,22 +2084,26 @@ function setupReportIssuesSheet() {
 
   sheet.setFrozenRows(1);
 
-  // กำหนดความกว้างคอลัมน์ให้อ่านง่าย
   sheet.setColumnWidth(1, 140); // Timestamp
   sheet.setColumnWidth(2, 100); // User
-  sheet.setColumnWidth(3, 130); // Category
+  sheet.setColumnWidth(3, 140); // Category
   sheet.setColumnWidth(4, 130); // Question ID
-  sheet.setColumnWidth(5, 120); // Issue Type
-  sheet.setColumnWidth(6, 250); // Student Detail
-  sheet.setColumnWidth(7, 250); // Current Exam
-  sheet.setColumnWidth(8, 300); // AI Diagnosis
-  sheet.setColumnWidth(9, 250); // Proposed Question
-  sheet.setColumnWidth(10, 100); // Proposed Ans
-  sheet.setColumnWidth(11, 350); // Proposed Exp
-  sheet.setColumnWidth(12, 200); // Status Dropdown
-  sheet.setColumnWidth(13, 250); // Applied Log
+  sheet.setColumnWidth(5, 130); // Issue Type
+  sheet.setColumnWidth(6, 220); // Student Detail
+  sheet.setColumnWidth(7, 220); // Current Exam
+  sheet.setColumnWidth(8, 260); // AI Diagnosis
+  sheet.setColumnWidth(9, 220); // AI Proposed Case Context
+  sheet.setColumnWidth(10, 220); // AI Proposed Question
+  sheet.setColumnWidth(11, 200); // AI Proposed Choices
+  sheet.setColumnWidth(12, 90);  // AI Proposed Ans
+  sheet.setColumnWidth(13, 280); // AI Proposed Exp
+  sheet.setColumnWidth(14, 140); // AI Proposed Target Sheet
+  sheet.setColumnWidth(15, 180); // AI Proposed Topic & Subtopic
+  sheet.setColumnWidth(16, 90);  // AI Proposed Track
+  sheet.setColumnWidth(17, 200); // Status Dropdown
+  sheet.setColumnWidth(18, 250); // Applied Log
+  sheet.setColumnWidth(19, 150); // AI Full Payload JSON
 
-  // ตั้ง Data Validation สำหรับ Status Dropdown (Col L = 12)
   const rule = SpreadsheetApp.newDataValidation()
     .requireValueInList([
       '⏳ รอประธานอนุมัติ (Pending)',
@@ -1806,7 +2115,7 @@ function setupReportIssuesSheet() {
     .setAllowInvalid(false)
     .build();
 
-  sheet.getRange(2, 12, 500, 1).setDataValidation(rule);
+  sheet.getRange(2, 17, 500, 1).setDataValidation(rule);
 
   return sheet;
 }
@@ -1823,7 +2132,7 @@ function applyStatusValidationToRow_(sheet, rowNum) {
       ], true)
       .setAllowInvalid(false)
       .build();
-    sheet.getRange(rowNum, 12).setDataValidation(rule);
+    sheet.getRange(rowNum, 17).setDataValidation(rule);
   } catch (e) {}
 }
 
@@ -1835,7 +2144,8 @@ function processPendingReportsInternal_() {
   const lastRow = sheet.getLastRow();
   if (lastRow < 2) return 0;
 
-  const data = sheet.getRange(2, 1, lastRow - 1, 13).getValues();
+  const lastCol = Math.max(19, sheet.getLastColumn());
+  const data = sheet.getRange(2, 1, lastRow - 1, lastCol).getValues();
   let count = 0;
 
   for (let i = 0; i < data.length; i++) {
@@ -1845,13 +2155,11 @@ function processPendingReportsInternal_() {
     const issueType = String(data[i][4] || '').trim();
     const detail = String(data[i][5] || '').trim();
     const currentDiag = String(data[i][7] || '').trim();
-    const status = String(data[i][11] || '').trim();
 
-    // ถ้ายังไม่ได้วินิจฉัย หรือวินิจฉัยค้างไว้
     const needProcess = (!currentDiag || currentDiag.includes('อยู่ระหว่างเตรียม') || currentDiag === 'null');
 
     if (needProcess) {
-      let originalQ = { question: '', choices: [], answer: '', explanation: '' };
+      let originalQ = { question: '', choices: [], answer: '', explanation: '', caseContext: '', topic: '', subtopic: '', track: '', caseId: '' };
       let targetSheetName = cat;
       let targetRowNum = 0;
       if (qId.includes('::')) {
@@ -1862,12 +2170,24 @@ function processPendingReportsInternal_() {
       if (targetSheetName && targetRowNum >= 3) {
         const targetSheet = findSheetSafely_(ss, targetSheetName);
         if (targetSheet && targetRowNum <= targetSheet.getLastRow()) {
-          const rowVals = targetSheet.getRange(targetRowNum, 1, 1, 12).getValues()[0];
+          const colMap = resolveSheetColumnMap_(targetSheet);
+          const rowVals = targetSheet.getRange(targetRowNum, 1, 1, Math.max(19, targetSheet.getLastColumn())).getValues()[0];
           originalQ = {
-            question: String(rowVals[1] || ''),
-            choices: [String(rowVals[3] || ''), String(rowVals[4] || ''), String(rowVals[5] || ''), String(rowVals[6] || ''), String(rowVals[7] || '')].filter(Boolean),
-            answer: rowVals[8],
-            explanation: String(rowVals[9] || '')
+            caseContext: colMap.caseContext ? String(rowVals[colMap.caseContext - 1] || '') : '',
+            question: String(rowVals[colMap.question - 1] || ''),
+            choices: [
+              String(rowVals[colMap.c1 - 1] || ''),
+              String(rowVals[colMap.c2 - 1] || ''),
+              String(rowVals[colMap.c3 - 1] || ''),
+              String(rowVals[colMap.c4 - 1] || ''),
+              String(rowVals[colMap.c5 - 1] || '')
+            ].filter(Boolean),
+            answer: rowVals[colMap.answer - 1],
+            explanation: String(rowVals[colMap.explanation - 1] || ''),
+            topic: colMap.topic ? String(rowVals[colMap.topic - 1] || '') : '',
+            subtopic: colMap.subtopic ? String(rowVals[colMap.subtopic - 1] || '') : '',
+            track: colMap.track ? String(rowVals[colMap.track - 1] || '') : '',
+            caseId: colMap.caseId ? String(rowVals[colMap.caseId - 1] || '') : ''
           };
         }
       }
@@ -1875,11 +2195,17 @@ function processPendingReportsInternal_() {
       const ai = callGeminiQuizResolver(targetSheetName, qId, originalQ, { issueType, detail });
       if (ai) {
         sheet.getRange(rowNum, 8).setValue('[' + ai.verdict + '] ' + ai.diagnosis);
-        if (ai.proposedQuestion) sheet.getRange(rowNum, 9).setValue(ai.proposedQuestion);
-        if (ai.proposedAnswer) sheet.getRange(rowNum, 10).setValue(ai.proposedAnswer);
-        if (ai.proposedExplanation) sheet.getRange(rowNum, 11).setValue(ai.proposedExplanation);
-        sheet.getRange(rowNum, 12).setValue('⏳ รอประธานอนุมัติ (Pending)');
-        sheet.getRange(rowNum, 13).setValue('AI วิเคราะห์สำเร็จ พร้อมให้ประธานตรวจสอบและกดอนุมัติ');
+        sheet.getRange(rowNum, 9).setValue(ai.proposedCaseContext || '');
+        sheet.getRange(rowNum, 10).setValue(ai.proposedQuestion || '');
+        sheet.getRange(rowNum, 11).setValue(Array.isArray(ai.proposedChoices) ? ai.proposedChoices.map((c, idx) => `${idx+1}. ${c}`).join('\n') : '');
+        sheet.getRange(rowNum, 12).setValue(ai.proposedAnswer || '');
+        sheet.getRange(rowNum, 13).setValue(ai.proposedExplanation || '');
+        sheet.getRange(rowNum, 14).setValue(ai.proposedTargetSheet || targetSheetName);
+        sheet.getRange(rowNum, 15).setValue((ai.proposedTopic || '') + (ai.proposedSubtopic ? ' / ' + ai.proposedSubtopic : ''));
+        sheet.getRange(rowNum, 16).setValue(ai.proposedTrack || '');
+        sheet.getRange(rowNum, 17).setValue('⏳ รอประธานอนุมัติ (Pending)');
+        sheet.getRange(rowNum, 18).setValue('AI วิเคราะห์ครบทุกฟิลด์สำเร็จ พร้อมให้ประธานกดอนุมัติ');
+        sheet.getRange(rowNum, 19).setValue(JSON.stringify(ai));
         applyStatusValidationToRow_(sheet, rowNum);
         count++;
       }
@@ -1887,13 +2213,6 @@ function processPendingReportsInternal_() {
   }
 
   return count;
-}
-
-function processPendingReports() {
-  const count = processPendingReportsInternal_();
-  try {
-    SpreadsheetApp.getUi().alert('🤖 ประมวลผลข้อที่ค้างสำเร็จทั้งหมด ' + count + ' ข้อ');
-  } catch (e) {}
 }
 
 function applyAllApprovedReports() {

@@ -1,9 +1,12 @@
-const CACHE_NAME = 'ple-cc-quiz-practice-v82';
+const CACHE_NAME = 'ple-cc-quiz-practice-v86';
 const ASSETS = [
   './',
   './index.html',
   './quiz-data-offline.js',
-  './manifest.json'
+  './manifest.json',
+  './vendor/katex/katex.min.css',
+  './vendor/katex/katex.min.js',
+  './vendor/katex/auto-render.min.js'
 ];
 
 self.addEventListener('install', (e) => {

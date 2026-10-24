@@ -22,6 +22,11 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 
+  <!-- KaTeX Math Equation Engine (Local Offline PWA + CDN Fallback) -->
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="vendor/katex/auto-render.min.js"></script>
+
   <style>
 
     :root {
@@ -2680,10 +2685,41 @@
 
 
 
+    .case-scenario-card {
+      background: var(--clinic-soft, #f8fafc);
+      border: 1px solid var(--clinic-border, #cbd5e1);
+      border-left: 5px solid var(--clinic, #3b82f6);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 14px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      transition: all 0.2s ease;
+    }
+    .case-scenario-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .case-scenario-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(8, 145, 178, 0.12);
+      color: var(--clinic-pill, #0e7490);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+    .case-scenario-body {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: var(--ink);
+      white-space: pre-line;
+    }
     .question-text {
-
       font-size: 15.5px; font-weight: 600; line-height: 1.55; color: var(--ink); margin-bottom: 14px;
-
     }
 
 
@@ -6729,6 +6765,13 @@
 
         <div class="case-cluster-banner" id="caseClusterBanner" style="display:none;"></div>
 
+        <div class="case-scenario-card" id="caseScenarioCard" style="display:none;">
+          <div class="case-scenario-header">
+            <span class="case-scenario-badge">📋 ข้อมูลผู้ป่วย / บริบทสถานการณ์</span>
+          </div>
+          <div class="case-scenario-body" id="caseScenarioBody"></div>
+        </div>
+
 
 
         <div class="question-img-wrap" id="qImgWrap">
@@ -8169,6 +8212,8 @@
         <select class="form-input" id="reportIssueType">
 
           <option value="เฉลยไม่ถูกต้อง / ขัดแย้งกับ Guideline">เฉลยไม่ถูกต้อง / ขัดแย้งกับ Guideline ปัจจุบัน</option>
+          <option value="แท็กโรคผิด / ข้อสอบอยู่ผิดหมวดวิชา">แท็กโรคผิด / ข้อสอบอยู่ผิดหมวดวิชา (Reclassify)</option>
+          <option value="ข้อมูลเคสผู้ป่วยไม่สมบูรณ์ / แยกเคสผิด">ข้อมูลเคสผู้ป่วยไม่สมบูรณ์ / แยกเคสผิด (Case Context Issue)</option>
 
           <option value="โจทย์กำกวม / พิมพ์ตกหล่น">โจทย์กำกวม / พิมพ์ตกหล่น / คำผิด</option>
 
@@ -8815,6 +8860,17 @@
         </div>
 
 
+
+        <!-- Case Context / Patient Scenario Input -->
+        <div style="margin-bottom:12px;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+            <label class="paper-label" for="peCaseContextInput" style="margin-bottom:0; font-weight:700; color:#1e40af;">
+              📋 สถานการณ์เคส / ข้อมูลผู้ป่วย (Case Scenario):
+            </label>
+            <span style="font-size:11px; color:#64748b;">(เว้นว่างไว้หากเป็นข้อสอบเดี่ยวทั่วไป)</span>
+          </div>
+          <textarea class="paper-textarea" id="peCaseContextInput" rows="3" placeholder="ระบุข้อมูลผู้ป่วย, ผลตรวจทางห้องปฏิบัติการ, ประวัติการใช้ยา, สูตรตำรับ หรือบริบทเคส... (หากเป็นข้อสอบเดี่ยวให้เว้นว่าง)" style="border-left: 4px solid #3b82f6;"></textarea>
+        </div>
 
         <!-- Question Rich Toolbar -->
 
@@ -10489,91 +10545,133 @@ function getCategoryEmoji(catName, idx, track) {
 
 
 
-// Clean text formatter for Choices (Standard plain text, standardized math symbols, NO blue highlight, NO bolding)
-
-function formatChoiceText(text) {
-
+// Smart Math & Corrupted Entity Normalizer (KaTeX-ready)
+function normalizeMathAndEntities(text) {
   if (!text) return '';
+  var s = String(text);
 
-  var str = String(text);
+  // 1. Repair corrupted entities & OCR slips ($it;, $lt;, &amp;lt;, &lt;)
+  s = s.replace(/\$it;/gi, '<')
+       .replace(/&it;/gi, '<')
+       .replace(/\$lt;/gi, '<')
+       .replace(/\$gt;/gi, '>')
+       .replace(/&amp;lt;/gi, '<')
+       .replace(/&amp;gt;/gi, '>')
+       .replace(/&lt;/gi, '<')
+       .replace(/&gt;/gi, '>');
 
-  // Strip HTML tags
+  // 2. Repair square root slips (/sqrt -> \sqrt)
+  s = s.replace(/\/sqrt(?=[(\[{a-zA-Z0-9\s])/g, '\\sqrt');
 
-  str = str.replace(/<[^>]+>/g, '');
+  // 3. Auto-convert Mosteller BSA and standard square root formulas:
+  // Matches: sqrt((Height [cm] x Weight [kg]) / 3600), sqrt([150 x 54] / 3600), sqrt(150 * 54 / 3600)
+  s = s.replace(/sqrt\s*\(\s*([^/]+?)\s*\/\s*(\d+)\s*\)/gi, function(match, inner, denom) {
+    var cleanInner = inner.trim();
+    if ((cleanInner.startsWith('(') && cleanInner.endsWith(')')) || (cleanInner.startsWith('[') && cleanInner.endsWith(']'))) {
+      cleanInner = cleanInner.substring(1, cleanInner.length - 1).trim();
+    }
+    cleanInner = cleanInner.replace(/\[/g, '(').replace(/\]/g, ')');
+    cleanInner = cleanInner.replace(/[•*x]/g, ' \\times ').replace(/\s+/g, ' ').trim();
+    return '$\\sqrt{\\frac{' + cleanInner + '}{' + denom + '}}$';
+  });
+
+  // 4. Wrap naked LaTeX commands ONLY if not already inside $...$
+  var parts = s.split('$');
+  for (var i = 0; i < parts.length; i += 2) {
+    var chunk = parts[i];
+    chunk = chunk.replace(/(\\sqrt\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}|\\frac\{[^{}]+\}\{[^{}]+\})/g, '$$$$1$$');
+    parts[i] = chunk;
+  }
+  s = parts.join('$');
+
+  // Clean any accidental triple or quadruple $
+  s = s.replace(/\${3,}/g, '$$');
+
+  return s;
+}
+
+// Global KaTeX renderer for DOM containers
+function renderMathInContainer(element) {
+  if (!element) return;
+  if (typeof renderMathInElement !== 'function') {
+    if (window.katex) {
+      setTimeout(function() { renderMathInContainer(element); }, 80);
+    }
+    return;
+  }
+  try {
+    renderMathInElement(element, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+      throwOnError: false,
+      errorColor: '#dc2626',
+      strict: false
+    });
+  } catch (err) {
+    console.warn('[KaTeX auto-render]:', err);
+  }
+}
+
+// Clean text formatter for Choices (Standard plain text, standardized math symbols, NO blue highlight, NO bolding)
+function formatChoiceText(text) {
+  if (!text) return '';
+  var str = normalizeMathAndEntities(text);
+
+  // Strip real HTML tags safely (preserving < and > for math/inequalities)
+  str = str.replace(/<\/?(?:div|span|b|i|u|strong|em|p|br|table|tr|td|th|ul|ol|li|img|a|svg|path)[^>]*>/gi, '');
 
   // Normalize whitespace
-
   str = str.replace(/\s+/g, ' ').trim();
 
   // Escape HTML entities
-
   var escaped = str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
   // Math & comparison symbol normalization
-
   escaped = escaped.replace(/&gt;=/g, '≥').replace(/>=/g, '≥').replace(/&ge;/g, '≥');
-
   escaped = escaped.replace(/&lt;=/g, '≤').replace(/<=/g, '≤').replace(/&le;/g, '≤');
-
   escaped = escaped.replace(/\+\/-/g, '±').replace(/&plusmn;/g, '±');
-
   escaped = escaped.replace(/-&gt;/g, '→').replace(/->/g, '→');
 
   return escaped;
-
 }
 
-
-
 // Clean text formatter for Question text (Standard plain text, preserved line breaks, NO blue drug highlights, NO student tags)
-
 function formatQuestionText(text) {
-
   if (!text) return '';
-
-  var str = String(text);
+  var str = normalizeMathAndEntities(text);
 
   // Strip markdown asterisks per strict plain text guidelines
-
   str = str.replace(/\*\*/g, '');
 
   // Strip student recollection tags e.g. (ไอซ์ 010), (ข้อสอบจำรุ่น)
-
   str = str.replace(/\((?:ไอซ์|ice)\s*\d+[^)]*\)/gi, '');
-
   str = str.replace(/\((?:เฉลย|ตัวเลือกที่ไฮไลต์)[^)]*\)/gi, '');
 
   // Convert <br> tags to newline
-
   str = str.replace(/<\s*br\s*\/?>/gi, '\n');
 
-  // Strip HTML tags
-
-  str = str.replace(/<[^>]+>/g, '');
+  // Strip real HTML tags safely (preserving < and > for math/inequalities)
+  str = str.replace(/<\/?(?:div|span|b|i|u|strong|em|p|table|tr|td|th|ul|ol|li|img|a|svg|path)[^>]*>/gi, '');
 
   // Escape HTML
-
   var escaped = str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
   // Math & comparison symbol normalization
-
   escaped = escaped.replace(/&gt;=/g, '≥').replace(/>=/g, '≥').replace(/&ge;/g, '≥');
-
   escaped = escaped.replace(/&lt;=/g, '≤').replace(/<=/g, '≤').replace(/&le;/g, '≤');
-
   escaped = escaped.replace(/\+\/-/g, '±').replace(/&plusmn;/g, '±');
-
   escaped = escaped.replace(/-&gt;/g, '→').replace(/->/g, '→');
 
   // Line breaks to <br>
-
   escaped = escaped.replace(/\r\n|\r|\n/g, '<br>');
 
   return escaped;
-
 }
-
-
 
 // Rich Formatter ONLY for Explanations (คำอธิบายเฉลย)
 
@@ -10710,6 +10808,7 @@ function formatExplanationHtml(text) {
 function _baseFormatExp(text) {
 
   if (!text) return '';
+  text = normalizeMathAndEntities(text);
 
   var hasHtmlTags = /<\/?(span|b|i|u|br|strong|em|div|p)[^>]*>/i.test(text);
 
@@ -17013,6 +17112,14 @@ function renderScrollPractice() {
 
         ${caseBannerHtml}
 
+        ${(q.caseContext || q.caseStem) ? `
+        <div class="case-scenario-card" style="margin-bottom:12px;">
+          <div class="case-scenario-header">
+            <span class="case-scenario-badge">📋 ข้อมูลผู้ป่วย / บริบทสถานการณ์</span>
+          </div>
+          <div class="case-scenario-body">${formatPlainTextToHtml(q.caseContext || q.caseStem)}</div>
+        </div>` : ''}
+
         <div class="scroll-q-text">${formatPlainTextToHtml(q.question || '')}</div>
 
         ${imgHtml}
@@ -17066,6 +17173,7 @@ function renderScrollPractice() {
   } else {
 
     container.innerHTML = html;
+    renderMathInContainer(container);
 
   }
 
@@ -17371,6 +17479,20 @@ function renderCurrentQuestion(direction) {
 
   document.getElementById('questionText').innerHTML = rawQText;
 
+  // Render Case Scenario Card (2-Column Split Architecture)
+  const caseCard = document.getElementById('caseScenarioCard');
+  const caseBody = document.getElementById('caseScenarioBody');
+  const caseCtxText = q.caseContext || q.caseStem || '';
+  if (caseCard && caseBody) {
+    if (caseCtxText && caseCtxText.trim()) {
+      caseBody.innerHTML = formatQuestionText(caseCtxText);
+      caseCard.style.display = 'block';
+    } else {
+      caseCard.style.display = 'none';
+      caseBody.innerHTML = '';
+    }
+  }
+
 
 
   // Render Choices
@@ -17406,6 +17528,10 @@ function renderCurrentQuestion(direction) {
   container.innerHTML = cHtml;
 
 
+
+  
+  const cardElem = document.getElementById('quizCard');
+  if (cardElem) renderMathInContainer(cardElem);
 
   // Explanation Box & Popup Modal reset
 
@@ -17626,6 +17752,8 @@ function submitAnswerPracticeMode() {
 
   
   if (expText) expText.innerHTML = q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
+
+    if (expBox) renderMathInContainer(expBox);
 
   // Answer Image
   const ansImgWrap = document.getElementById('ansImgWrap');
@@ -18361,6 +18489,13 @@ function renderExamReview() {
 
 
 
+        ${(q.caseContext || q.caseStem) ? `
+        <div class="case-scenario-card" style="margin-bottom:10px;">
+          <div class="case-scenario-header">
+            <span class="case-scenario-badge">📋 ข้อมูลผู้ป่วย / บริบทสถานการณ์</span>
+          </div>
+          <div class="case-scenario-body">${formatQuestionText(q.caseContext || q.caseStem)}</div>
+        </div>` : ''}
         <div class="browse-card-question">${formatQuestionText(q.question || '')}</div>
 
 
@@ -18408,6 +18543,7 @@ function renderExamReview() {
   } else {
 
     container.innerHTML = html;
+    renderMathInContainer(container);
 
   }
 
@@ -18869,6 +19005,13 @@ function renderBrowseList(reset = true) {
 
 
 
+        ${(q.caseContext || q.caseStem) ? `
+        <div class="case-scenario-card" style="margin-bottom:10px;">
+          <div class="case-scenario-header">
+            <span class="case-scenario-badge">📋 ข้อมูลผู้ป่วย / บริบทสถานการณ์</span>
+          </div>
+          <div class="case-scenario-body">${formatQuestionText(q.caseContext || q.caseStem)}</div>
+        </div>` : ''}
         <div class="browse-card-question">${formatQuestionText(q.question || '')}</div>
 
 
@@ -18939,7 +19082,8 @@ function renderBrowseList(reset = true) {
 
     container.insertAdjacentHTML('beforeend', loadMoreHtml);
 
-  }
+    renderMathInContainer(container);
+}
 
 }
 
@@ -19110,7 +19254,10 @@ function openExplanationModal(q, isCorrect, correctLetter) {
     if (modalTitle) modalTitle.textContent = '💡 คำอธิบายข้อที่ถูกต้อง:';
   }
 
-  if (modalText) modalText.innerHTML = q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
+  if (modalText) {
+    modalText.innerHTML = q.explanation ? formatExplanationHtml(q.explanation) : 'ไม่มีคำอธิบายเพิ่มเติมสำหรับข้อนี้';
+    renderMathInContainer(modalText);
+  }
 
   if (q.answerImage) {
     if (modalImg) modalImg.src = q.answerImage;
@@ -19776,10 +19923,15 @@ function submitReportIssue() {
     user: currentUser ? currentUser.displayName : 'Anonymous',
     category: cat,
     questionId: qId,
+    caseContext: currentQ ? (currentQ.caseContext || currentQ.caseStem || '') : '',
     question: qText,
     choices: cleanChoices,
     answer: cleanAns,
     explanation: cleanExp,
+    topic: currentQ ? (currentQ.topic || '') : '',
+    subtopic: currentQ ? (currentQ.subtopic || '') : '',
+    track: currentQ ? (currentQ.track || '') : '',
+    caseId: currentQ ? (currentQ.caseGroupId || currentQ.caseId || '') : '',
     issueType: type,
     detail: detail
   });
@@ -20850,7 +21002,7 @@ function openPaperEditorModal(q) {
 
     // Case Scenario
 
-    const hasCase = !!(q.caseGroupId || q.caseStem);
+    const hasCase = !!(q.caseGroupId || q.caseStem || q.caseContext);
 
     const caseCheck = document.getElementById('peIsCaseClusterCheckbox');
 
@@ -20874,7 +21026,11 @@ function openPaperEditorModal(q) {
 
     const csInput = document.getElementById('peCaseStemInput');
 
-    if (csInput) csInput.value = q.caseStem || '';
+    if (csInput) csInput.value = q.caseContext || q.caseStem || '';
+
+    const ccInput = document.getElementById('peCaseContextInput');
+
+    if (ccInput) ccInput.value = q.caseContext || q.caseStem || '';
 
 
 
@@ -21272,7 +21428,7 @@ async function savePaperEditorData() {
 
     const caseType = hasCase ? (document.getElementById('peCaseTypeSelect')?.value || '').trim() : '';
 
-    const caseStem = hasCase ? (document.getElementById('peCaseStemInput')?.value || '').trim() : '';
+    const caseStem = (document.getElementById('peCaseContextInput')?.value || (hasCase ? document.getElementById('peCaseStemInput')?.value : '') || '').trim();
 
 
 
@@ -21352,6 +21508,7 @@ async function savePaperEditorData() {
 
       target.caseType = caseType;
 
+      target.caseContext = caseStem;
       target.caseStem = caseStem;
 
       target.question = questionText;
@@ -21413,6 +21570,12 @@ async function savePaperEditorData() {
         caseType: caseType,
 
         caseStem: caseStem,
+
+        caseContext: caseStem,
+
+        caseId: caseGroupId,
+
+        topic: (document.getElementById('peTopicInput')?.value || '').trim(),
 
         question: questionText,
 
@@ -21771,6 +21934,12 @@ async function savePaperEditorData() {
       caseType: caseType,
 
       caseStem: caseStem,
+
+      caseContext: caseStem,
+
+      caseId: caseGroupId,
+
+      topic: (document.getElementById('peTopicInput')?.value || targetQ?.topic || '').trim(),
 
       question: questionText,
 

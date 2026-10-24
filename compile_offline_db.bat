@@ -1,65 +1,89 @@
 @echo off
 chcp 65001 >nul
+setlocal enabledelayedexpansion
+title PLE-CC Quiz Practice -- Compile ^& Push to GitHub
 cd /d "%~dp0"
 
-echo.
-echo ============================================
-echo   📝 PLE-CC Quiz Practice - Compiler v2.1
-echo ============================================
+echo ================================================================
+echo   [PLE-CC Quiz Practice] Compiler ^& GitHub Deploy
+echo   Target: pharmacistlicenserxcu/PLE-CC-Quiz-practice (main)
+echo ================================================================
 echo.
 
 if not "%~1"=="" (
     python compile_offline_db.py %*
-    goto git_push
+    goto :GIT_DEPLOY
 )
 
 echo เลือกโหมดการทำงาน:
-echo   [1] Rebuild ทั้งหมดทุกหมวด (All - 34 หมวด)
-echo   [2] Rebuild แยกเรื่อง / เฉพาะหมวดวิชา (Category)
-echo   [3] Rebuild แยกสายวิชา (Track - Clinic / Product / SAP)
+echo   [1] Fast Local Compile (จาก PLE CC QUIZ.xlsx) และ Push ขึ้น GitHub (~3 วิ)
+echo   [2] Cloud Sync Compile (ดึงสดจาก Google Sheets) และ Push ขึ้น GitHub (~30 วิ)
+echo   [3] Rebuild เฉพาะหมวดวิชา (Selective Category)
+echo   [4] Git Push ทันที (ไม่ Recompile ข้อมูล)
 echo.
-set /p choice="กรุณาใส่ตัวเลข [1-3] (Default: 1): "
+set "CHOICE=1"
+set /p "CHOICE=กรุณาเลือก [1-4] (กด Enter เลือก [1] Fast Local): "
 
-if "%choice%"=="2" (
+if "%CHOICE%"=="1" (
     echo.
-    set /p cat_query="พิมพ์ชื่อหมวดวิชา (เช่น Musculo, Cardio, Calc, Titration): "
-    python compile_offline_db.py --mode category --query "%cat_query%"
-) else if "%choice%"=="3" (
+    echo [1/2] กำลัง Recompile ข้อมูลจาก PLE CC QUIZ.xlsx...
+    python compile_offline_db.py --source excel
+) else if "%CHOICE%"=="2" (
     echo.
-    set /p track_query="พิมพ์สายวิชา [Clinic / Product / SAP]: "
-    python compile_offline_db.py --mode track --query "%track_query%"
+    echo [1/2] กำลังดึงข้อมูลและ Recompile จาก Google Sheets...
+    python compile_offline_db.py --source sheets
+) else if "%CHOICE%"=="3" (
+    echo.
+    set /p "CAT_QUERY=พิมพ์ชื่อหมวดวิชา (เช่น Musculo, Cardio, Calc, Titration): "
+    python compile_offline_db.py --mode category --query "!CAT_QUERY!"
+) else if "%CHOICE%"=="4" (
+    echo.
+    echo [INFO] ข้ามขั้นตอน Compile...
+    goto :GIT_DEPLOY
 ) else (
-    python compile_offline_db.py --mode all
+    echo.
+    echo [1/2] กำลัง Recompile ข้อมูลจาก PLE CC QUIZ.xlsx...
+    python compile_offline_db.py --source excel
 )
 
-:git_push
 if %ERRORLEVEL% NEQ 0 (
     echo.
-    echo [ERROR] Compilation failed! Check error details above.
-    echo [SKIP]  Git push skipped due to compile error.
-    echo.
+    echo ================================================================
+    echo  [ERROR] การ Compile ข้อมูลไม่สำเร็จ กรุณาตรวจสอบข้อผิดพลาดด้านบน
+    echo ================================================================
     pause
     exit /b 1
 )
 
+:GIT_DEPLOY
 echo.
-echo [SUCCESS] quiz-data-offline.js compiled successfully.
+echo [2/2] กำลังเตรียม Push ไฟล์ขึ้น GitHub...
+git status --short
 echo.
-echo ============================================
-echo   🚀 Pushing to GitHub (Submodule)...
-echo ============================================
-echo.
+set MYDATE=%date:~0,10%
+set MYTIME=%time:~0,5%
+set COMMIT_MSG=update: sync quiz database and web app %MYDATE% %MYTIME%
 
-git add quiz-data-offline.js sw.js
-git commit -m "chore: recompile quiz offline database [local auto]"
+git add -A
+git commit -m "%COMMIT_MSG%"
+echo.
+echo [INFO] กำลัง Pull Rebase เพื่อป้องกันข้อขัดแย้ง...
+git pull --rebase origin main
+echo.
+echo [INFO] กำลัง Push ขึ้น GitHub origin main...
 git push origin main
 
-if %ERRORLEVEL% NEQ 0 (
+if %ERRORLEVEL% EQU 0 (
     echo.
-    echo [WARN] Git push in submodule failed. Check your network or credentials.
+    echo ================================================================
+    echo   [SUCCESS] Deploy สำเร็จเรียบร้อยแล้ว!
+    echo   เว็บไซต์พร้อมใช้งานที่: https://pharmacistlicenserxcu.github.io/PLE-CC-Quiz-practice/
+    echo ================================================================
 ) else (
     echo.
-    echo [DONE] Pushed to GitHub submodule successfully!
+    echo ================================================================
+    echo   [WARNING] Git Push ไม่สำเร็จ กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ต
+    echo ================================================================
 )
 
 echo.
