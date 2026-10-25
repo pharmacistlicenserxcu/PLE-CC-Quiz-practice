@@ -5446,16 +5446,65 @@
 
       }
 
-      .print-q-card {
-
+      .print-case-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f1f5f9 !important;
+        border-left: 3pt solid #0284c7 !important;
+        padding: 3pt 6pt;
+        margin-bottom: 5pt;
+        font-size: 8.5pt;
+        font-weight: 700;
+        color: #0f172a;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
         page-break-inside: avoid;
-
         break-inside: avoid;
+      }
 
+      .print-case-tag {
+        background: #e2e8f0 !important;
+        padding: 1pt 5pt;
+        border-radius: 3pt;
+        font-size: 8pt;
+        font-weight: 600;
+        color: #334155;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .print-case-card {
+        background: #f8fafc !important;
+        border: 1px solid #cbd5e1 !important;
+        border-left: 3.5pt solid #0891b2 !important;
+        border-radius: 4pt;
+        padding: 5pt 8pt;
+        margin-bottom: 6pt;
+        font-size: 9.5pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .print-case-card-title {
+        font-weight: 700;
+        color: #0e7490;
+        font-size: 8.5pt;
+        margin-bottom: 2pt;
+      }
+
+      .print-case-card-body {
+        color: #334155;
+        line-height: 1.4;
+      }
+
+      .print-q-card {
+        page-break-inside: avoid;
+        break-inside: avoid;
         margin-bottom: 12pt;
-
         padding-bottom: 8pt;
-
         border-bottom: 1px dotted #ccc;
 
       }
@@ -19687,37 +19736,36 @@ function toggleFullscreen() {
 
 
 async function forceClearCacheAndReload() {
-
-  if (confirm('ต้องการล้างแคชทั้งหมดและโหลดข้อสอบล่าสุดใหม่หรือไม่?')) {
-
+  if (confirm('ต้องการล้างแคชข้อสอบและข้อมูลที่แก้ไขค้างในเครื่องทั้งหมด แล้วรีโหลดข้อสอบสดจาก Google Sheet หรือไม่?')) {
     try {
-
+      localStorage.removeItem(LS_ADMIN_OVERRIDES);
+      localStorage.removeItem('ple_quiz_admin_overrides_v1');
       if ('caches' in window) {
-
         const keys = await caches.keys();
-
         await Promise.all(keys.map(k => caches.delete(k)));
-
       }
-
       if ('serviceWorker' in navigator) {
-
         const regs = await navigator.serviceWorker.getRegistrations();
-
         for (const reg of regs) {
-
           await reg.unregister();
-
         }
-
       }
-
     } catch(e) {}
-
     window.location.reload(true);
-
   }
+}
 
+function purgeLocalOverridesAndResync() {
+  if (!confirm('ต้องการล้างประวัติการแก้ไขและแคชในเครื่องทั้งหมด เพื่อให้ข้อสอบอิงตาม Google Sheet จริง 100% หรือไม่?')) return;
+  try {
+    localStorage.removeItem(LS_ADMIN_OVERRIDES);
+    localStorage.removeItem('ple_quiz_admin_overrides_v1');
+    showToast('🧹 ล้างแคชค้างในเครื่องเรียบร้อย กำลังซิงค์ข้อมูลจาก Google Sheet...');
+    syncDataFromSheet();
+  } catch(e) {
+    console.error('purgeLocalOverridesAndResync error:', e);
+    showToast('⚠️ เกิดข้อผิดพลาดในการล้างแคช');
+  }
 }
 
 
@@ -22320,22 +22368,49 @@ function executePrintExam() {
 
 
 
+    // 1. Continuous Case Banner
+    let caseClusterHtml = '';
+    if (q.caseGroupId && (q.caseTotal > 1 || q.caseType === 'INT')) {
+      const isInt = (q.caseType === 'INT' || (q.caseGroupId && q.caseGroupId.includes('_INT_')));
+      const trackLabel = isInt ? `Integrated (${q.track || 'Clinic'})` : `หมวด ${q.track || 'Clinic'}`;
+      caseClusterHtml = `
+        <div class="print-case-banner">
+          <span>📋 ข้อสอบกรณีศึกษาต่อเนื่อง (ข้อ ${q.caseOrder || 1} จากทั้งหมด ${q.caseTotal || '?'} ข้อ)</span>
+          <span class="print-case-tag">${trackLabel}</span>
+        </div>`;
+    }
+
+    // 2. Case Scenario Card
+    let caseBoxHtml = '';
+    const caseText = (q.caseContext || q.caseStem || '').trim();
+    if (caseText) {
+      caseBoxHtml = `
+        <div class="print-case-card">
+          <div class="print-case-card-title">📋 ข้อมูลผู้ป่วย / บริบทสถานการณ์:</div>
+          <div class="print-case-card-body">${formatQuestionText(caseText)}</div>
+        </div>`;
+    }
+
+    // 3. Question Stem (prevent duplicate scenario text if already in case box)
+    let displayQText = (q.question || '').trim();
+    if (caseText && displayQText.startsWith(caseText)) {
+      displayQText = displayQText.substring(caseText.length).replace(/^[\r\n]+/, '').trim();
+    }
+    if (!displayQText && caseText) {
+      displayQText = caseText;
+      caseBoxHtml = '';
+    }
+
     qHtml += `
-
       <div class="print-q-card">
-
+        ${caseClusterHtml}
+        ${caseBoxHtml}
         <div class="print-q-title">
-
-          <span>ข้อที่ ${idx + 1}.</span> ${formatQuestionText(q.question || '')}
-
+          <span>ข้อที่ ${idx + 1}.</span> ${formatQuestionText(displayQText || 'ไม่มีข้อความโจทย์')}
         </div>
-
         ${q.questionImage ? `<div class="print-img-wrap"><img class="print-q-img" src="${q.questionImage}" alt="รูปประกอบข้อที่ ${idx + 1}"></div>` : ''}
-
         <div class="print-choices">
-
           ${choicesHtml}
-
         </div>
 
         ${layoutMode === 'solution_book' ? `
