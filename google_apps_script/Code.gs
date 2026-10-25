@@ -337,75 +337,104 @@ function doGet(e) {
         const lastRow = sheet.getLastRow();
         if (lastRow < 3) return; // แถว 1=Banner, แถว 2=Header
 
-        // Quick Ingestion Tab (📥) มีคอลัมน์ Q พิเศษสำหรับ Category Tag → อ่าน 17 คอลัมน์
-        // Sheet ปกติอ่าน 16 คอลัมน์ (A-P)
         const isIngest = isIngestionSheet_(sName);
-        const numCols  = isIngest ? 17 : 16;
-        const values   = sheet.getRange(3, 1, lastRow - 2, numCols).getValues();
+        const colMap = resolveSheetColumnMap_(sheet);
+        const lastCol = Math.max(sheet.getLastColumn(), 19);
+        const values = sheet.getRange(3, 1, lastRow - 2, lastCol).getValues();
 
         values.forEach((row, idx) => {
-          const rowNum   = idx + 3;
+          const rowNum = idx + 3;
           const firstVal = String(row[0] || '').trim();
+          const itemNo = parseInt(firstVal, 10) || (allQuestions.length + 1);
 
-          let offset = 0;
-          let itemNo = allQuestions.length + 1;
-          if (/^\d+$/.test(firstVal) || (row.length >= numCols && firstVal.length <= 4)) {
-            offset = 1;
-            itemNo = parseInt(firstVal, 10) || (allQuestions.length + 1);
+          const caseContext = colMap.caseContext ? String(row[colMap.caseContext - 1] || '').trim() : '';
+          let questionText = colMap.question ? String(row[colMap.question - 1] || '').trim() : '';
+          if (!questionText && caseContext) {
+            questionText = caseContext;
           }
 
-          const questionText = String(row[offset + 0] || '').trim();
-          const rawQImg      = row[offset + 1];
-          const c1           = String(row[offset + 2] || '').trim();
-          const c2           = String(row[offset + 3] || '').trim();
-          const c3           = String(row[offset + 4] || '').trim();
-          const c4           = String(row[offset + 5] || '').trim();
-          const c5           = String(row[offset + 6] || '').trim();
-          const answerKey    = parseInt(row[offset + 7], 10) || 1;
-          const explanation  = String(row[offset + 8] || '').trim();
-          const rawAImg      = row[offset + 9];
-          const topic        = String(row[offset + 10] || '').trim();
-          const subtopic     = String(row[offset + 11] || '').trim();
-          const track        = String(row[offset + 12] || 'Clinic').trim();
-          const note         = String(row[offset + 13] || '').trim();
-          const examType     = String(row[offset + 14] || '').trim();
-          const examYear     = String(row[offset + 15] || '').trim();
-          const caseIdRaw    = String(row[offset + 16] || '').trim();
+          const rawQImg = colMap.imgQ ? row[colMap.imgQ - 1] : '';
+          const c1 = colMap.c1 ? String(row[colMap.c1 - 1] || '').trim() : '';
+          const c2 = colMap.c2 ? String(row[colMap.c2 - 1] || '').trim() : '';
+          const c3 = colMap.c3 ? String(row[colMap.c3 - 1] || '').trim() : '';
+          const c4 = colMap.c4 ? String(row[colMap.c4 - 1] || '').trim() : '';
+          const c5 = colMap.c5 ? String(row[colMap.c5 - 1] || '').trim() : '';
+          const answerKey = colMap.answer ? (parseInt(row[colMap.answer - 1], 10) || 1) : 1;
+          const explanation = colMap.explanation ? String(row[colMap.explanation - 1] || '').trim() : '';
+          const rawAImg = colMap.imgA ? row[colMap.imgA - 1] : '';
+          const topic = colMap.topic ? String(row[colMap.topic - 1] || '').trim() : '';
+          const subtopic = colMap.subtopic ? String(row[colMap.subtopic - 1] || '').trim() : '';
+          const track = colMap.track ? String(row[colMap.track - 1] || '').trim() : '';
+          const note = colMap.note ? String(row[colMap.note - 1] || '').trim() : '';
+          const examType = colMap.examType ? String(row[colMap.examType - 1] || '').trim() : '';
+          const examYear = colMap.examYear ? String(row[colMap.examYear - 1] || '').trim() : '';
+          const caseIdRaw = colMap.caseId ? String(row[colMap.caseId - 1] || '').trim() : '';
 
-          // ─── Quick Ingestion / Flexible Tab: อ่าน Category Tag หรือจับคู่จาก Topic (Col L) ───
           let category = sName;
           if (isIngest) {
-            const categoryTag = String(row[offset + 17] || '').trim();
+            const categoryTag = colMap.caseId && row[colMap.caseId] ? String(row[colMap.caseId] || '').trim() : '';
             category = categoryTag || topic || sName;
           }
 
           if (!questionText && !c1) return;
 
-          const qImgColIdx  = offset + 1;
-          const aImgColIdx  = offset + 9;
-          const questionImg = resolveImageUrl_(rawQImg, sName, rowNum, qImgColIdx, inCellImages);
-          const answerImg   = resolveImageUrl_(rawAImg, sName, rowNum, aImgColIdx, inCellImages);
+          const questionImg = resolveImageUrl_(rawQImg, sName, rowNum, colMap.imgQ, inCellImages);
+          const answerImg = resolveImageUrl_(rawAImg, sName, rowNum, colMap.imgA, inCellImages);
 
           const choices = [c1, c2, c3, c4];
           if (c5) choices.push(c5);
 
+          let caseGroupId = '';
+          let caseOrder = 0;
+          let caseType = '';
+          if (caseIdRaw && caseIdRaw.toLowerCase() !== 'null' && caseIdRaw !== '-') {
+            const rawTrim = caseIdRaw.trim();
+            if (/^CASE[_\-]/i.test(rawTrim) || /^\[CASE:/i.test(rawTrim)) {
+              const cleanCase = rawTrim.replace(/^\[CASE:\s*/i, '').replace(/\]$/, '').replace(/\s+/g, '').toUpperCase();
+              const mQ = cleanCase.match(/^(.*?)(?:[_\-]Q(\d+))?$/i);
+              if (mQ && mQ[2]) {
+                caseGroupId = mQ[1];
+                caseOrder = parseInt(mQ[2], 10);
+              } else {
+                caseGroupId = cleanCase;
+                caseOrder = 0;
+              }
+              if (caseGroupId.includes('_INT_') || caseGroupId.startsWith('CASE_INT') || caseGroupId.startsWith('CASE-INT')) {
+                caseType = 'INT';
+              } else if (caseGroupId.includes('_CLN_') || caseGroupId.startsWith('CASE_CLN') || caseGroupId.startsWith('CASE-CLN')) {
+                caseType = 'CLN';
+              } else if (caseGroupId.includes('_PRD_') || caseGroupId.startsWith('CASE_PRD') || caseGroupId.startsWith('CASE-PRD')) {
+                caseType = 'PRD';
+              } else if (caseGroupId.includes('_SAP_') || caseGroupId.startsWith('CASE_SAP') || caseGroupId.startsWith('CASE-SAP')) {
+                caseType = 'SAP';
+              } else {
+                caseType = 'STD';
+              }
+            }
+          }
+
           allQuestions.push({
-            id:            sName + '::' + rowNum,
-            itemNo:        itemNo,
-            category:      category,
-            topic:         topic || category,
-            subtopic:      subtopic || topic || category,
-            track:         track,
-            examType:      examType,
-            examYear:      examYear,
-            question:      questionText,
+            id: sName + '::' + rowNum,
+            itemNo: itemNo,
+            category: category,
+            topic: topic || category,
+            subtopic: subtopic || topic || category,
+            track: track || 'Clinic',
+            caseContext: caseContext,
+            caseStem: caseContext,
+            question: questionText,
             questionImage: questionImg,
-            choices:       choices,
-            answer:        answerKey,
-            explanation:   explanation,
-            answerImage:   answerImg,
-            note:          note,
-            fromIngestion: isIngest                          // ← flag บอกว่ามาจาก 📥 tab
+            choices: choices,
+            answer: answerKey,
+            explanation: explanation,
+            answerImage: answerImg,
+            note: note,
+            examType: examType,
+            examYear: examYear,
+            caseGroupId: caseGroupId,
+            caseOrder: caseOrder,
+            caseType: caseType,
+            fromIngestion: isIngest
           });
         });
       });

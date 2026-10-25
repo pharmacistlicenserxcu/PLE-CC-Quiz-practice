@@ -11049,105 +11049,68 @@ function renderSubtopicBadgesHtml(subtopicStr, tagClass = 'clinic-tag', track = 
 // ─── REALTIME FETCH FROM GOOGLE SHEET ───
 
 async function fetchLiveSheetQuestions(sheetName) {
-
   try {
-
     // 1. Primary: Google Apps Script Web App (Full support for in-cell images & native formulas)
-
     if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
-
       try {
-
         let fetchOpts = {};
-
         if (typeof AbortController !== 'undefined') {
-
           const ctrl = new AbortController();
-
           setTimeout(() => ctrl.abort(), 12000);
-
           fetchOpts.signal = ctrl.signal;
-
         }
 
         const gasUrl = window.QUIZ_GAS_WEBAPP_URL + '?action=getQuestions&sheet=' + encodeURIComponent(sheetName) + '&_nocache=' + Date.now();
-
         const gasResp = await fetch(gasUrl, fetchOpts);
-
         if (gasResp.ok) {
-
           const gasJson = await gasResp.json();
-
           if (gasJson.success && gasJson.questions && gasJson.questions.length > 0) {
-            // Schema check: verify GAS does not return shifted columns (e.g. note in examType)
+            // Schema check: verify GAS returns valid question format with choices array
             const sampleQ = gasJson.questions[0];
-            const sampleType = (sampleQ.examType || '').trim();
-            if (sampleType.startsWith('[') || sampleType.includes('เล่มม่วง') || sampleType.includes('ข้อ ') || !sampleQ.topic) {
-              console.warn('Stale GAS WebApp schema detected (Col P shifted). Falling back to dynamic GViz.');
-              throw new Error('Stale GAS schema');
+            if (!sampleQ || !Array.isArray(sampleQ.choices) || sampleQ.choices.length < 3 || sampleQ.question === undefined) {
+              console.warn('Invalid GAS WebApp schema detected. Falling back to dynamic GViz.');
+              throw new Error('Incompatible GAS schema');
             }
 
             return gasJson.questions.map(q => ({
-
               ...q,
-
               subtopic: sheetName.toLowerCase().includes('musculo') ? normalizeMusculoSubtopics(q.subtopic) : q.subtopic,
-
               questionImage: normalizeImageUrl(q.questionImage),
-
               answerImage: normalizeImageUrl(q.answerImage)
-
             }));
-
           }
-
         }
-
       } catch(gasErr) {
-
         console.warn('GAS fetch fallback:', gasErr);
-
       }
-
     }
 
-
-
     // 2. Secondary: Google Sheets GViz endpoint
-
     try {
-
       const url = 'https://docs.google.com/spreadsheets/d/' + window.QUIZ_GOOGLE_SHEET_ID + '/gviz/tq?tqx=out:json&sheet=' + encodeURIComponent(sheetName) + '&_nocache=' + Date.now();
-
       const resp = await fetch(url, { cache: 'no-store' });
-
       if (resp.ok) {
-
         const text = await resp.text();
-
         const jsonStr = text.substring(text.indexOf('{'), text.lastIndexOf('}') + 1);
-
         const data = JSON.parse(jsonStr);
-
         const rows = data.table.rows;
-
         if (rows && rows.length > 0) {
-
           const qs = [];
-
-          // Dynamic Header Auto-Detection from Row 0 (Row 2 in Google Sheet)
-          const headerCells = rows[0]?.c || [];
           const colMap = {};
-          headerCells.forEach((cell, idx) => {
-            const h = String(cell?.v || '').trim().toLowerCase();
+
+          // Dynamic Header Auto-Detection from data.table.cols
+          const cols = data.table.cols || [];
+          cols.forEach((col, idx) => {
+            const h = String(col?.label || '').trim().toLowerCase();
             if (!h) return;
-            if (h.includes('คำถาม') || h.includes('question')) colMap.qText = idx;
+            if (h.includes('สถานการณ์') || h.includes('บริบท') || h.includes('case context') || h.includes('scenario')) colMap.caseContext = idx;
+            else if (h.includes('คำถาม') || h.includes('question') || h.includes('stem')) colMap.qText = idx;
             else if (h.includes('รูปถาม')) colMap.qImg = idx;
-            else if (h.includes('ตัวเลือก 1')) colMap.c1 = idx;
-            else if (h.includes('ตัวเลือก 2')) colMap.c2 = idx;
-            else if (h.includes('ตัวเลือก 3')) colMap.c3 = idx;
-            else if (h.includes('ตัวเลือก 4')) colMap.c4 = idx;
-            else if (h.includes('ตัวเลือก 5')) colMap.c5 = idx;
+            else if (h.includes('ตัวเลือก 1') || h.includes('choice 1')) colMap.c1 = idx;
+            else if (h.includes('ตัวเลือก 2') || h.includes('choice 2')) colMap.c2 = idx;
+            else if (h.includes('ตัวเลือก 3') || h.includes('choice 3')) colMap.c3 = idx;
+            else if (h.includes('ตัวเลือก 4') || h.includes('choice 4')) colMap.c4 = idx;
+            else if (h.includes('ตัวเลือก 5') || h.includes('choice 5')) colMap.c5 = idx;
             else if (h.includes('เฉลย') && (h.includes('ตัวเลข') || h.includes('1-5') || h.includes('answer'))) colMap.ans = idx;
             else if (h.includes('คำอธิบาย') || h.includes('explanation')) colMap.exp = idx;
             else if (h.includes('รูปเฉลย')) colMap.ansImg = idx;
@@ -11157,258 +11120,198 @@ async function fetchLiveSheetQuestions(sheetName) {
             else if (h.includes('หมายเหตุ') || h.includes('note')) colMap.note = idx;
             else if (h.includes('ประเภท') || h.includes('exam type')) colMap.examType = idx;
             else if (h.includes('ปี') || h.includes('เลขชุด') || h.includes('year')) colMap.examYear = idx;
-            else if (h.includes('case') || h.includes('เคส')) colMap.caseId = idx;
+            else if (h.includes('case id') || h.includes('รหัสเคส') || h.includes('case_id')) colMap.caseId = idx;
           });
 
-          // Topic Col L fallback if subtopic Col M was detected
-          if (colMap.subtopic != null && colMap.topic == null) {
-            colMap.topic = colMap.subtopic - 1;
+          // Check if Row 0 contains header strings (if cols lacked them)
+          let hasHeaderRow0 = false;
+          if (colMap.qText == null) {
+            const headerCells = rows[0]?.c || [];
+            headerCells.forEach((cell, idx) => {
+              const h = String(cell?.v || '').trim().toLowerCase();
+              if (!h) return;
+              if (h.includes('สถานการณ์') || h.includes('บริบท')) colMap.caseContext = idx;
+              else if (h.includes('คำถาม') || h.includes('question')) { colMap.qText = idx; hasHeaderRow0 = true; }
+              else if (h.includes('รูปถาม')) colMap.qImg = idx;
+              else if (h.includes('ตัวเลือก 1')) colMap.c1 = idx;
+              else if (h.includes('ตัวเลือก 2')) colMap.c2 = idx;
+              else if (h.includes('ตัวเลือก 3')) colMap.c3 = idx;
+              else if (h.includes('ตัวเลือก 4')) colMap.c4 = idx;
+              else if (h.includes('ตัวเลือก 5')) colMap.c5 = idx;
+              else if (h.includes('เฉลย') && (h.includes('ตัวเลข') || h.includes('1-5') || h.includes('answer'))) colMap.ans = idx;
+              else if (h.includes('คำอธิบาย') || h.includes('explanation')) colMap.exp = idx;
+              else if (h.includes('รูปเฉลย')) colMap.ansImg = idx;
+              else if (h.includes('หัวข้อย่อย') || h.includes('subtopic')) colMap.subtopic = idx;
+              else if (h.includes('หัวข้อโรค') || h.includes('topic')) colMap.topic = idx;
+              else if (h.includes('product') || h.includes('clinic') || h.includes('track')) colMap.track = idx;
+              else if (h.includes('หมายเหตุ') || h.includes('note')) colMap.note = idx;
+              else if (h.includes('ประเภท') || h.includes('exam type')) colMap.examType = idx;
+              else if (h.includes('ปี') || h.includes('เลขชุด') || h.includes('year')) colMap.examYear = idx;
+              else if (h.includes('case') || h.includes('เคส')) colMap.caseId = idx;
+            });
           }
 
+          // Active 19-Column Schema Defaults (0-indexed)
+          if (colMap.caseContext == null) colMap.caseContext = 1;
+          if (colMap.qText == null) colMap.qText = 2;
+          if (colMap.qImg == null) colMap.qImg = 3;
+          if (colMap.c1 == null) colMap.c1 = 4;
+          if (colMap.c2 == null) colMap.c2 = 5;
+          if (colMap.c3 == null) colMap.c3 = 6;
+          if (colMap.c4 == null) colMap.c4 = 7;
+          if (colMap.c5 == null) colMap.c5 = 8;
+          if (colMap.ans == null) colMap.ans = 9;
+          if (colMap.exp == null) colMap.exp = 10;
+          if (colMap.ansImg == null) colMap.ansImg = 11;
+          if (colMap.topic == null) colMap.topic = 12;
+          if (colMap.subtopic == null) colMap.subtopic = 13;
+          if (colMap.track == null) colMap.track = 14;
+          if (colMap.note == null) colMap.note = 15;
+          if (colMap.examType == null) colMap.examType = 16;
+          if (colMap.examYear == null) colMap.examYear = 17;
+          if (colMap.caseId == null) colMap.caseId = 18;
+
           rows.forEach((r, idx) => {
-            if (idx === 0) return; // Skip Row 0 (Header row)
+            if (hasHeaderRow0 && idx === 0) return;
 
             const c = r.c;
             if (!c) return;
             const getVal = (i) => (i != null && c[i] && c[i].v != null ? String(c[i].v).trim() : '');
 
             const firstCol = getVal(0);
-            if (firstCol === 'ลำดับ' || firstCol === 'ข้อที่' || firstCol === 'No.' || firstCol === 'คำถาม' || firstCol.includes('กลับหน้าแรก') || firstCol.includes('Go to Home Page')) return;
+            const qStem = getVal(colMap.qText);
+            if (firstCol.includes('ลำดับ') || firstCol.includes('ข้อที่') || firstCol.includes('No.') || qStem === 'คำถาม' || qStem.toLowerCase() === 'question' || firstCol.includes('กลับหน้าแรก') || firstCol.includes('Go to Home Page')) return;
 
             let itemNo = parseInt(firstCol, 10) || (qs.length + 1);
+            const caseContext = getVal(colMap.caseContext);
+            const c1 = getVal(colMap.c1);
+            const c2 = getVal(colMap.c2);
+            const c3 = getVal(colMap.c3);
+            const c4 = getVal(colMap.c4);
+            const c5 = getVal(colMap.c5);
 
-            const qText = getVal(colMap.qText != null ? colMap.qText : 1);
-            if (!qText) return;
+            if (!qStem && !caseContext && !c1) return;
 
-            const qImg = getVal(colMap.qImg != null ? colMap.qImg : 2);
-            const c1 = getVal(colMap.c1 != null ? colMap.c1 : 3);
-            const c2 = getVal(colMap.c2 != null ? colMap.c2 : 4);
-            const c3 = getVal(colMap.c3 != null ? colMap.c3 : 5);
-            const c4 = getVal(colMap.c4 != null ? colMap.c4 : 6);
-            const c5 = getVal(colMap.c5 != null ? colMap.c5 : 7);
-            const ansRaw = getVal(colMap.ans != null ? colMap.ans : 8);
-            const explanation = getVal(colMap.exp != null ? colMap.exp : 9);
-            const ansImg = getVal(colMap.ansImg != null ? colMap.ansImg : 10);
-            const topic = getVal(colMap.topic != null ? colMap.topic : 11);
-            let subtopic = getVal(colMap.subtopic != null ? colMap.subtopic : 12);
-            const track = getVal(colMap.track != null ? colMap.track : 13) || 'Clinic';
-            const note = getVal(colMap.note != null ? colMap.note : 14);
-            const examType = getVal(colMap.examType != null ? colMap.examType : 15);
-            const examYear = getVal(colMap.examYear != null ? colMap.examYear : 16);
+            const qImg = getVal(colMap.qImg);
+            const ansRaw = getVal(colMap.ans);
+            const explanation = getVal(colMap.exp);
+            const ansImg = getVal(colMap.ansImg);
+            const topic = getVal(colMap.topic);
+            let subtopic = getVal(colMap.subtopic);
+            const track = getVal(colMap.track) || 'Clinic';
+            const note = getVal(colMap.note);
+            const examType = getVal(colMap.examType);
+            const examYear = getVal(colMap.examYear);
 
-            // Case ID extraction
-            let caseIdRaw = getVal(colMap.caseId != null ? colMap.caseId : 17);
-
-            if (!caseIdRaw) {
-
-              for (let colI = 0; colI < c.length; colI++) {
-
-                const cv = getVal(colI);
-
-                if (/^CASE_/i.test(cv)) {
-
-                  caseIdRaw = cv;
-
-                  break;
-
-                }
-
-              }
-
+            // Case ID extraction with strict regex guard (must be CASE_ or [CASE:)
+            let caseIdRaw = getVal(colMap.caseId);
+            if (caseIdRaw && !(/^CASE[_\-]/i.test(caseIdRaw) || /^\[CASE:/i.test(caseIdRaw))) {
+              caseIdRaw = '';
             }
-
             if (!caseIdRaw && note) {
-
               const mCase = note.match(/\[CASE:\s*([^\]]+)\]/i);
-
               if (mCase) caseIdRaw = mCase[1].trim();
-
             }
-
-
 
             let caseGroupId = '';
-
             let caseOrder = 0;
-
             let caseType = '';
 
             if (caseIdRaw) {
-
-              const cleanCase = caseIdRaw.replace(/\s+/g, '').toUpperCase();
-
-              const mQ = cleanCase.match(/^(.*?)(?:[_\-]Q(\d+))?$/);
-
-              if (mQ) {
-
+              const cleanCase = caseIdRaw.replace(/^\[CASE:\s*/i, '').replace(/\]$/, '').replace(/\s+/g, '').toUpperCase();
+              const mQ = cleanCase.match(/^(.*?)(?:[_\-]Q(\d+))?$/i);
+              if (mQ && mQ[2]) {
                 caseGroupId = mQ[1];
-
-                caseOrder = mQ[2] ? parseInt(mQ[2], 10) : 0;
-
+                caseOrder = parseInt(mQ[2], 10);
               } else {
-
                 caseGroupId = cleanCase;
-
                 caseOrder = 0;
-
               }
 
-              if (caseGroupId.includes('_INT_') || caseGroupId.startsWith('CASE_INT')) {
-
+              if (caseGroupId.includes('_INT_') || caseGroupId.startsWith('CASE_INT') || caseGroupId.startsWith('CASE-INT')) {
                 caseType = 'INT';
-
-              } else if (caseGroupId.includes('_CLN_') || caseGroupId.startsWith('CASE_CLN')) {
-
+              } else if (caseGroupId.includes('_CLN_') || caseGroupId.startsWith('CASE_CLN') || caseGroupId.startsWith('CASE-CLN')) {
                 caseType = 'CLN';
-
-              } else if (caseGroupId.includes('_PRD_') || caseGroupId.startsWith('CASE_PRD')) {
-
+              } else if (caseGroupId.includes('_PRD_') || caseGroupId.startsWith('CASE_PRD') || caseGroupId.startsWith('CASE-PRD')) {
                 caseType = 'PRD';
-
-              } else if (caseGroupId.includes('_SAP_') || caseGroupId.startsWith('CASE_SAP')) {
-
+              } else if (caseGroupId.includes('_SAP_') || caseGroupId.startsWith('CASE_SAP') || caseGroupId.startsWith('CASE-SAP')) {
                 caseType = 'SAP';
-
               } else {
-
                 caseType = 'STD';
-
               }
-
             }
-
-
-
-            if (!qText && !c1) return;
-
-            const qLower = qText.toLowerCase();
-            if (qText === 'คำถาม' || qLower === 'question' || qText.includes('กลับสู่หน้าแรก') || qText.includes('กลับหน้าแรก') || qLower.includes('go to home page')) return;
-
-
 
             // Preserve image from offline cache if GViz returns empty
-
             let finalQImg = normalizeImageUrl(qImg);
-
             let finalAnsImg = normalizeImageUrl(ansImg);
-
             const offlineCategory = (window.QUIZ_OFFLINE_QUESTIONS || {})[sheetName];
-
             if (!finalQImg && offlineCategory && offlineCategory[idx] && offlineCategory[idx].questionImage) {
-
               finalQImg = offlineCategory[idx].questionImage;
-
             }
-
             if (!finalAnsImg && offlineCategory && offlineCategory[idx] && offlineCategory[idx].answerImage) {
-
               finalAnsImg = offlineCategory[idx].answerImage;
-
             }
 
-
-
-            // Normalize Musculoskeleton subtopics (supports multi-subtopics e.g. OA / RA)
-
+            // Normalize Musculoskeleton subtopics
             if (sheetName.toLowerCase().includes('musculo')) {
-
               subtopic = normalizeMusculoSubtopics(subtopic);
-
             }
-
-
 
             let ansKey = 1;
-
             const ansMap = {'ก': 1, 'ข': 2, 'ค': 3, 'ง': 4, 'จ': 5, 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5};
-
             if (ansMap[ansRaw.toLowerCase()]) {
-
               ansKey = ansMap[ansRaw.toLowerCase()];
-
             } else {
-
               ansKey = parseInt(ansRaw.replace(/\D/g, ''), 10) || 1;
-
             }
 
-
-
             const cleanC = (s) => (s || '').replace(/<\s*br\s*\/?>/gi, ' ').replace(/---/g, '').replace(/\s+/g, ' ').trim();
-
             const choices = [cleanC(c1), cleanC(c2), cleanC(c3), cleanC(c4)];
-
             if (c5) choices.push(cleanC(c5));
 
-
+            let fullQuestion = qStem;
+            if (caseContext && qStem && !qStem.includes(caseContext)) {
+              fullQuestion = caseContext + '\n\n' + qStem;
+            } else if (!fullQuestion && caseContext) {
+              fullQuestion = caseContext;
+            }
 
             qs.push({
-
-              id: sheetName + '::' + (idx + 2),
-
+              id: sheetName + '::' + (idx + (hasHeaderRow0 ? 2 : 3)),
               itemNo: itemNo,
-
               category: sheetName,
-
               topic: topic || sheetName,
-
               subtopic: subtopic || '',
-
               track: track,
-
               examType: examType,
-
               examYear: examYear,
-
               caseGroupId: caseGroupId,
-
               caseOrder: caseOrder,
-
               caseType: caseType,
-
-              question: formatPlainTextToHtml(qText),
-
+              caseContext: formatPlainTextToHtml(caseContext),
+              question: formatPlainTextToHtml(fullQuestion),
+              caseStem: formatPlainTextToHtml(qStem || caseContext),
               questionImage: finalQImg,
-
               choices: choices,
-
               answer: ansKey,
-
               explanation: formatPlainTextToHtml(explanation),
-
               answerImage: finalAnsImg,
-
               note: note
-
             });
-
           });
 
           normalizeCaseClusters(qs);
-
           if (qs.length > 0) return qs;
-
         }
-
       }
-
     } catch(gvizErr) {
-
       console.warn('GViz fetch fallback:', gvizErr);
-
     }
-
     return null;
-
   } catch(e) {
-
     return null;
-
   }
-
 }
-
-
 
 // ─── MAINTENANCE MODE & ACCESS CONTROL (Maxnum/Maxnux only for Admin functions) ───
 
@@ -11791,17 +11694,17 @@ async function syncDataFromSheet() {
       const live = await fetchLiveSheetQuestions(cat.name);
 
       if (live && live.length > 0) {
-
-        const existingIngested = (allQuestionsMap[cat.name] || []).filter(q => q.fromIngestion || (q.id && (q.id.includes('📥') || q.id.includes('QI_'))));
-
+        const currentQs = allQuestionsMap[cat.name] || [];
+        if (currentQs.length > 0 && live.length < currentQs.length * 0.8) {
+          console.warn(`Sync skipped for ${cat.name}: question count dropped from ${currentQs.length} to ${live.length}`);
+          continue;
+        }
+        const existingIngested = currentQs.filter(q => q.fromIngestion || (q.id && (q.id.includes('📥') || q.id.includes('QI_'))));
         const liveIds = new Set(live.map(q => q.id));
-
         const preserved = existingIngested.filter(q => !liveIds.has(q.id));
 
         allQuestionsMap[cat.name] = live.concat(preserved);
-
         cat.count = allQuestionsMap[cat.name].length;
-
       }
 
     }
@@ -12164,33 +12067,33 @@ function enterQuizCategoryDirectly(catName, track) {
   // Background Live Sync: ดึงข้อมูลล่าสุดจากชีตสด (รวมรูปภาพที่เพิ่งแทรกในเซลล์) แบบไม่ค้างหน้าจอ
 
   fetchLiveSheetQuestions(catName).then(liveQs => {
-
     if (liveQs && liveQs.length > 0 && currentCategory === catName && currentAppMode === 'quiz') {
+      const currentQs = allQuestionsMap[catName] || [];
+      // Safety guard: Reject live sync if question count drops significantly (> 20% loss)
+      if (currentQs.length > 0 && liveQs.length < currentQs.length * 0.8) {
+        console.warn(`Live sync rejected for ${catName}: question count dropped significantly from ${currentQs.length} to ${liveQs.length}`);
+        return;
+      }
+      // Safety guard: Reject if choices are invalid
+      const sampleValid = liveQs[0] && Array.isArray(liveQs[0].choices) && liveQs[0].choices.length >= 3;
+      if (!sampleValid) {
+        console.warn('Live sync rejected: invalid choices format in live data');
+        return;
+      }
 
       // สงวนรักษาข้อสอบที่มาจากแท็บ "📥 รวมข้อสอบด่วน" ไม่ให้ถูกข้อมูลชีตหลักเขียนทับจนหายไป
-
       const existingIngested = (allQuestionsMap[catName] || []).filter(q => q.fromIngestion || (q.id && (q.id.includes('📥') || q.id.includes('QI_'))));
-
       const liveIds = new Set(liveQs.map(q => q.id));
-
       const preserved = existingIngested.filter(q => !liveIds.has(q.id));
-
-
 
       allQuestionsMap[catName] = liveQs.concat(preserved);
 
-      
-
       // อัปเดต Dropdown หัวข้อย่อยและประเภทข้อสอบให้ครอบคลุมข้อที่มาจาก Ingestion ด้วย
-
       populatePracticeSubtopicDropdowns(allQuestionsMap[catName]);
       populatePracticeExamTypeDropdowns(allQuestionsMap[catName]);
       populatePracticeExamYearDropdowns(allQuestionsMap[catName]);
 
-
-
       const filtered = applyPracticeFilters();
-
       activeQuizQuestions = filtered.slice();
 
       // Synchronize category subtitle count with updated active question count
@@ -12201,19 +12104,15 @@ function enterQuizCategoryDirectly(catName, track) {
       }
 
       if (practiceViewStyle === 'scroll') {
-
         renderScrollPractice();
-
         updateScrollPracticeStats();
-
       } else {
-
-        renderCurrentQuestion();
-
+        // Only re-render if the user is still at question 1 and hasn't answered yet
+        if (currentQuestionIndex === 0 && !userAnswers[currentQuestionIndex]) {
+          renderCurrentQuestion();
+        }
       }
-
     }
-
   }).catch(() => {});
 
 }
