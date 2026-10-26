@@ -9262,6 +9262,12 @@
         <div style="font-size:12px; font-weight:700; color:#334155; margin-bottom:10px;">📑 ข้อมูลการจัดหมวดและการจำแนกข้อสอบ (Metadata)</div>
 
         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:10px;">
+          <div>
+            <label class="paper-label">หัวข้อโรคสภาฯ (Topic)</label>
+            <input type="text" class="paper-input" id="peTopicInput" placeholder="เช่น 2. Cardiovascular, 4. Endocrine">
+          </div>
+
+
 
           <div>
 
@@ -20834,6 +20840,8 @@ function openPaperEditorForNewQuestion(defaultCat) {
   const subInput = document.getElementById('peSubtopicInput');
 
   if (subInput) subInput.value = '';
+  const topInput = document.getElementById('peTopicInput');
+  if (topInput) topInput.value = '';
 
   const trkSelect = document.getElementById('peTrackSelect');
 
@@ -21090,6 +21098,8 @@ function openPaperEditorModal(q) {
     const subInput = document.getElementById('peSubtopicInput');
 
     if (subInput) subInput.value = subVal;
+  const topInput = document.getElementById('peTopicInput');
+  if (topInput) topInput.value = q.topic || '';
 
     const trkSelect = document.getElementById('peTrackSelect');
 
@@ -21420,6 +21430,7 @@ async function savePaperEditorData() {
 
 
     const subtopic = (document.getElementById('peSubtopicInput')?.value || '').trim();
+    const topic = (document.getElementById('peTopicInput')?.value || currentEditingQuestion?.topic || '').trim();
 
     const track = (document.getElementById('peTrackSelect')?.value || 'Clinic').trim();
 
@@ -21479,6 +21490,7 @@ async function savePaperEditorData() {
       target.answerImage = answerImg;
 
       target.subtopic = subtopic;
+      target.topic = topic;
 
       target.subtopics = subtopic.split(/[,;\n]/).map(s => s.trim()).filter(Boolean);
 
@@ -21528,7 +21540,7 @@ async function savePaperEditorData() {
 
         caseId: caseGroupId,
 
-        topic: (document.getElementById('peTopicInput')?.value || '').trim(),
+        topic: topic,
 
         question: questionText,
 
@@ -21597,8 +21609,9 @@ async function savePaperEditorData() {
           caseType: caseType,
 
           caseStem: caseStem,
-
-          question: questionText,
+        caseContext: caseStem,
+        topic: topic,
+        question: questionText,
 
           questionImage: finalQImg,
 
@@ -21892,7 +21905,7 @@ async function savePaperEditorData() {
 
       caseId: caseGroupId,
 
-      topic: (document.getElementById('peTopicInput')?.value || targetQ?.topic || '').trim(),
+      topic: topic,
 
       question: questionText,
 
