@@ -1,9 +1,16 @@
-const CACHE_NAME = 'ple-cc-quiz-practice-v123';
+const CACHE_NAME = 'ple-cc-quiz-practice-v124';
 const ASSETS = [
   './',
   './index.html',
   './quiz-data-offline.js',
   './manifest.json',
+  './favicon.svg',
+  './favicon.ico',
+  './favicon-16x16.png',
+  './favicon-32x32.png',
+  './apple-touch-icon.png',
+  './icon-192.png',
+  './icon-512.png',
   './vendor/katex/katex.min.css',
   './vendor/katex/katex.min.js',
   './vendor/katex/auto-render.min.js'
