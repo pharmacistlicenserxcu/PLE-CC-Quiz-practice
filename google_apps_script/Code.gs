@@ -61,6 +61,36 @@ function onOpen() {
     .addToUi();
 }
 
+/**
+ * onEdit — ดักจับเหตุการณ์การเลือก Dropdown สถานะในชีต Report_Quiz_Issues
+ * เมื่อเลือก "✅ อนุมัติ (Approved)" จะนำข้อมูลไปอัปเดตลงชีตข้อสอบจริงทันที
+ */
+function onEdit(e) {
+  if (!e || !e.range) return;
+  try {
+    const sheet = e.range.getSheet();
+    if (!sheet || sheet.getName() !== 'Report_Quiz_Issues') return;
+
+    const startCol = e.range.getColumn();
+    const endCol = startCol + e.range.getNumColumns() - 1;
+    // คอลัมน์ 17 คือ Status (สถานะการอนุมัติ)
+    if (startCol > 17 || endCol < 17) return;
+
+    const startRow = Math.max(2, e.range.getRow());
+    const numRows = e.range.getNumRows();
+
+    for (let r = 0; r < numRows; r++) {
+      const currentRow = startRow + r;
+      const statusVal = String(sheet.getRange(currentRow, 17).getValue() || '').trim();
+      if (statusVal.includes('อนุมัติ') || statusVal.includes('Approved')) {
+        applyReportIssueApproved(currentRow);
+      }
+    }
+  } catch (err) {
+    Logger.log('onEdit error: ' + err.toString());
+  }
+}
+
 // ────────────────────────────────────────────────────────────────────────────
 // setupQuickIngestionTab — สร้าง Tab "📥 รวมข้อสอบด่วน" พร้อม Dropdown
 // รันฟังก์ชันนี้ครั้งเดียวจาก Apps Script Editor หรือผ่านเมนู
@@ -249,7 +279,7 @@ function doGet(e) {
     // Test Gemini Direct Call
     if (action === 'testGemini') {
       const apiKey = getGeminiApiKey_();
-      const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=' + apiKey;
+      const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' + apiKey;
       try {
         const response = UrlFetchApp.fetch(url, {
           method: 'post',
@@ -1733,10 +1763,10 @@ function callGeminiQuizResolver(category, questionId, originalQ, studentReport) 
   }
 
   const candidateModels = [
-    'gemini-flash-lite-latest',
-    'gemini-3.5-flash-lite',
-    'gemini-3.8-flash',
-    'gemini-flash-latest'
+    'gemini-2.0-flash',
+    'gemini-1.5-flash',
+    'gemini-2.5-flash',
+    'gemini-1.5-pro'
   ];
 
   const systemInstruction = `คุณเป็นประธานและเภสัชกรผู้เชี่ยวชาญ คณะกรรมการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC)
@@ -1851,7 +1881,7 @@ function applyReportIssueApproved(rowNum) {
   const qId = String(rowVals[3] || '').trim();
   const aiDiag = String(rowVals[7] || '').trim();
 
-  // ตรวจสอบว่ามี JSON ก้อนเต็มใน Col 19 หรือไม่
+  // 1. ตรวจสอบว่ามี JSON ก้อนเต็มใน Col 19 หรือไม่
   let ai = null;
   if (rowVals.length >= 19 && rowVals[18]) {
     try {
@@ -1859,26 +1889,83 @@ function applyReportIssueApproved(rowNum) {
     } catch (e) {}
   }
 
-  // ดึงข้อมูลที่เสนอแก้ไข (จาก JSON หรือจากคอลัมน์)
-  const proposedCase = ai ? (ai.proposedCaseContext || '') : String(rowVals[8] || '').trim();
-  const proposedQ = ai ? (ai.proposedQuestion || '') : (rowVals.length >= 19 ? String(rowVals[9] || '').trim() : String(rowVals[8] || '').trim());
-  const proposedChoices = (ai && Array.isArray(ai.proposedChoices)) ? ai.proposedChoices : null;
-  const proposedAns = ai ? parseInt(ai.proposedAnswer, 10) : parseInt(rowVals.length >= 19 ? rowVals[11] : rowVals[9], 10);
-  const proposedExp = ai ? (ai.proposedExplanation || '') : (rowVals.length >= 19 ? String(rowVals[12] || '').trim() : String(rowVals[10] || '').trim());
-  const proposedTargetSheet = ai ? (ai.proposedTargetSheet || '').trim() : (rowVals.length >= 19 ? String(rowVals[13] || '').trim() : '');
-  const proposedTopic = ai ? (ai.proposedTopic || '').trim() : (rowVals.length >= 19 ? String(rowVals[14] || '').trim() : '');
-  const proposedSubtopic = ai ? (ai.proposedSubtopic || '').trim() : '';
-  const proposedTrack = ai ? (ai.proposedTrack || '').trim() : (rowVals.length >= 19 ? String(rowVals[15] || '').trim() : '');
+  // 2. ดึงข้อมูลที่เสนอแก้ไข โดยให้ความสำคัญกับค่าในเซลล์จริงก่อน (Cell-First Architecture)
+  // Col 9 = Proposed Case Context
+  const cellCase = rowVals.length >= 9 ? String(rowVals[8] || '').trim() : '';
+  const proposedCase = cellCase || (ai ? (ai.proposedCaseContext || '') : '');
+
+  // Col 10 = Proposed Question
+  const cellQ = rowVals.length >= 10 ? String(rowVals[9] || '').trim() : '';
+  const proposedQ = cellQ || (ai ? (ai.proposedQuestion || '') : '');
+
+  // Col 11 = Proposed Choices
+  const cellChoicesStr = rowVals.length >= 11 ? String(rowVals[10] || '').trim() : '';
+  let proposedChoices = null;
+  if (cellChoicesStr) {
+    const lines = cellChoicesStr.split('\n').map(l => l.trim()).filter(Boolean);
+    if (lines.length === 5) {
+      proposedChoices = lines.map(l => l.replace(/^(\d+[\.\)]|[ก-จ][\.\)])\s*/, '').trim());
+    }
+  }
+  if (!proposedChoices && ai && Array.isArray(ai.proposedChoices) && ai.proposedChoices.length === 5) {
+    proposedChoices = ai.proposedChoices;
+  }
+
+  // Col 12 = Proposed Answer
+  const cellAnsRaw = rowVals.length >= 12 ? rowVals[11] : '';
+  let proposedAns = NaN;
+  if (cellAnsRaw !== '' && cellAnsRaw !== null && cellAnsRaw !== undefined) {
+    const parsedAns = parseInt(cellAnsRaw, 10);
+    if (!isNaN(parsedAns) && parsedAns >= 1 && parsedAns <= 5) {
+      proposedAns = parsedAns;
+    }
+  }
+  if (isNaN(proposedAns) && ai && ai.proposedAnswer) {
+    const parsedAiAns = parseInt(ai.proposedAnswer, 10);
+    if (!isNaN(parsedAiAns) && parsedAiAns >= 1 && parsedAiAns <= 5) {
+      proposedAns = parsedAiAns;
+    }
+  }
+
+  // Col 13 = Proposed Explanation
+  const cellExp = rowVals.length >= 13 ? String(rowVals[12] || '').trim() : '';
+  const proposedExp = cellExp || (ai ? (ai.proposedExplanation || '') : '');
+
+  // Col 14 = Proposed Target Sheet
+  const cellTargetSheet = rowVals.length >= 14 ? String(rowVals[13] || '').trim() : '';
+  const proposedTargetSheet = cellTargetSheet || (ai ? (ai.proposedTargetSheet || '').trim() : '');
+
+  // Col 15 = Proposed Topic & Subtopic
+  const cellTopicSubtopic = rowVals.length >= 15 ? String(rowVals[14] || '').trim() : '';
+  let proposedTopic = '';
+  let proposedSubtopic = '';
+  if (cellTopicSubtopic) {
+    if (cellTopicSubtopic.includes('/')) {
+      const parts = cellTopicSubtopic.split('/');
+      proposedTopic = parts[0].trim();
+      proposedSubtopic = parts.slice(1).join('/').trim();
+    } else {
+      proposedTopic = cellTopicSubtopic;
+    }
+  }
+  if (!proposedTopic && ai && ai.proposedTopic) proposedTopic = (ai.proposedTopic || '').trim();
+  if (!proposedSubtopic && ai && ai.proposedSubtopic) proposedSubtopic = (ai.proposedSubtopic || '').trim();
+
+  // Col 16 = Proposed Track
+  const cellTrack = rowVals.length >= 16 ? String(rowVals[15] || '').trim() : '';
+  const proposedTrack = cellTrack || (ai ? (ai.proposedTrack || '').trim() : '');
+
+  // Case ID from AI JSON
   const proposedCaseId = ai ? (ai.proposedCaseId || '').trim() : '';
 
-  const statusCol = rowVals.length >= 17 ? 17 : 12;
-  const logCol = rowVals.length >= 18 ? 18 : 13;
+  const statusCol = 17;
+  const logCol = 18;
 
   const hasValidFix = (proposedQ && proposedQ !== '-') || (!isNaN(proposedAns) && proposedAns >= 1 && proposedAns <= 5) || (proposedExp && proposedExp !== '-');
-  if (!hasValidFix || aiDiag.includes('อยู่ระหว่างเตรียม') || !aiDiag) {
+  if (!hasValidFix) {
     reportSheet.getRange(rowNum, statusCol).setValue('⏳ รอประธานอนุมัติ (Pending)');
-    reportSheet.getRange(rowNum, logCol).setValue('⚠️ ยังไม่มีข้อมูลที่ AI เสนอแก้ กรุณารอ AI วิเคราะห์หรือกดเมนู ⚡ ประมวลผล AI ก่อน');
-    return { success: false, error: 'ยังไม่มีข้อมูล AI' };
+    reportSheet.getRange(rowNum, logCol).setValue('⚠️ ยังไม่มีข้อมูลที่เสนอแก้ กรุณากรอกข้อมูลในคอลัมน์ 9-13 หรือกดเมนู ⚡ ประมวลผล AI ก่อน');
+    return { success: false, error: 'ยังไม่มีข้อมูลข้อสอบที่เสนอแก้' };
   }
 
   let sourceSheetName = cat;
@@ -2001,14 +2088,14 @@ function applyReportIssueApproved(rowNum) {
   // ══════════════════════════════════════════════════════════════════════
   const updates = {};
 
-  if (proposedCase && sourceColMap.caseContext) {
+  if (proposedCase !== undefined && proposedCase !== null && sourceColMap.caseContext) {
     updates.caseContext = proposedCase;
-    changesList.push('สถานการณ์เคส');
+    if (proposedCase) changesList.push('สถานการณ์เคส');
   }
 
-  if (proposedQ && proposedQ !== '-' && proposedQ !== oldQuestion) {
+  if (proposedQ && proposedQ !== '-') {
     updates.question = proposedQ;
-    changesList.push('ประโยคคำถาม');
+    if (proposedQ !== oldQuestion) changesList.push('ประโยคคำถาม');
   }
 
   if (proposedChoices && proposedChoices.length === 5) {
@@ -2018,17 +2105,17 @@ function applyReportIssueApproved(rowNum) {
 
   if (!isNaN(proposedAns) && proposedAns >= 1 && proposedAns <= 5) {
     updates.answer = proposedAns;
-    changesList.push('เฉลยเป็นข้อ ' + proposedAns);
+    if (proposedAns !== oldAns) changesList.push('เฉลยเป็นข้อ ' + proposedAns);
   }
 
   if (proposedExp && proposedExp !== '-') {
     updates.explanation = proposedExp;
-    changesList.push('คำอธิบาย 3 ส่วน');
+    if (proposedExp !== oldExp) changesList.push('คำอธิบาย 3 ส่วน');
   }
 
   if (proposedTopic) {
     updates.topic = proposedTopic;
-    changesList.push('หัวข้อโรคสภาฯ (' + proposedTopic + ')');
+    changesList.push('หัวข้อโรค (' + proposedTopic + ')');
   }
 
   if (proposedSubtopic) {
@@ -2244,6 +2331,13 @@ function processPendingReportsInternal_() {
   return count;
 }
 
+function processPendingReports() {
+  const count = processPendingReportsInternal_();
+  try {
+    SpreadsheetApp.getUi().alert('⚡ ประมวลผล AI ข้อที่ค้างอยู่สำเร็จทั้งหมด ' + count + ' ข้อ');
+  } catch (e) {}
+}
+
 function applyAllApprovedReports() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = ss.getSheetByName('Report_Quiz_Issues');
@@ -2258,20 +2352,30 @@ function applyAllApprovedReports() {
     return;
   }
 
-  const data = sheet.getRange(2, 1, lastRow - 1, 13).getValues();
+  const lastCol = Math.max(19, sheet.getLastColumn());
+  const data = sheet.getRange(2, 1, lastRow - 1, lastCol).getValues();
   let count = 0;
+  let errorMsgs = [];
 
   for (let i = 0; i < data.length; i++) {
     const rowNum = i + 2;
-    const status = String(data[i][11] || '').trim();
+    const status = String(data[i][16] || '').trim(); // Column 17 is Index 16
     if (status.includes('อนุมัติ') || status.includes('Approved')) {
       const res = applyReportIssueApproved(rowNum);
-      if (res && res.success) count++;
+      if (res && res.success) {
+        count++;
+      } else if (res && res.error) {
+        errorMsgs.push('แถว ' + rowNum + ': ' + res.error);
+      }
     }
   }
 
   try {
-    SpreadsheetApp.getUi().alert('✅ อัปเดตข้อสอบลงชีตหลักสำเร็จทั้งหมด ' + count + ' ข้อ');
+    let alertText = '✅ อัปเดตข้อสอบลงชีตหลักสำเร็จทั้งหมด ' + count + ' ข้อ';
+    if (errorMsgs.length > 0) {
+      alertText += '\n⚠️ มีข้อผิดพลาดบางแถว:\n' + errorMsgs.slice(0, 5).join('\n');
+    }
+    SpreadsheetApp.getUi().alert(alertText);
   } catch (e) {}
 }
 
