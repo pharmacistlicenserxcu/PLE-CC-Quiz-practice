@@ -306,6 +306,19 @@ function doGet(e) {
       return jsonResponse_({ success: true, processedCount: count });
     }
 
+    if (action === 'getReports') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const sheet = ss.getSheetByName('Report_Quiz_Issues');
+      if (!sheet) return jsonResponse_({ success: false, error: 'No Report_Quiz_Issues sheet' });
+      const lastRow = sheet.getLastRow();
+      if (lastRow < 2) return jsonResponse_({ success: true, rows: [] });
+      const lastCol = Math.max(19, sheet.getLastColumn());
+      const startR = Math.max(2, lastRow - 9);
+      const numR = lastRow - startR + 1;
+      const data = sheet.getRange(startR, 1, numR, lastCol).getValues();
+      return jsonResponse_({ success: true, lastRow: lastRow, startRow: startR, rows: data });
+    }
+
     // 2. ดึงรายชื่อหมวดหมู่ / Tabs ทั้งหมด (ข้าม Log, Report, Eval, สารบัญ, Config และ 📥 Ingestion Tabs)
     if (action === 'getCategories' || action === 'getSheetList') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -1763,10 +1776,10 @@ function callGeminiQuizResolver(category, questionId, originalQ, studentReport) 
   }
 
   const candidateModels = [
-    'gemini-2.0-flash',
-    'gemini-1.5-flash',
-    'gemini-2.5-flash',
-    'gemini-1.5-pro'
+    'gemini-flash-lite-latest',
+    'gemini-3.5-flash-lite',
+    'gemini-3.8-flash',
+    'gemini-flash-latest'
   ];
 
   const systemInstruction = `คุณเป็นประธานและเภสัชกรผู้เชี่ยวชาญ คณะกรรมการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC)
@@ -2385,6 +2398,7 @@ function testGeminiConnectionManual() {
   console.log('API Key length: ' + (apiKey ? apiKey.length : 0));
   
   if (!apiKey) {
+    try { SpreadsheetApp.getUi().alert('❌ ไม่พบ GEMINI_API_KEY ใน Script Properties'); } catch (e) {}
     console.error('❌ ไม่พบ GEMINI_API_KEY ใน Script Properties');
     return 'ไม่พบคีย์ GEMINI_API_KEY';
   }
@@ -2406,8 +2420,10 @@ function testGeminiConnectionManual() {
   
   if (status === 200) {
     console.log('🟢 การเชื่อมต่อ Gemini API สำเร็จ 100% พร้อมใช้งาน!');
+    try { SpreadsheetApp.getUi().alert('🟢 การเชื่อมต่อ Gemini AI สำเร็จ 100% พร้อมใช้งาน!'); } catch (e) {}
   } else {
     console.error('⚠️ การเชื่อมต่อไม่สำเร็จ: ' + text);
+    try { SpreadsheetApp.getUi().alert('⚠️ การเชื่อมต่อไม่สำเร็จ (HTTP ' + status + '):\n' + text.substring(0, 200)); } catch (e) {}
   }
   
   return 'HTTP ' + status;
