@@ -7346,6 +7346,12 @@
 
         </button>
 
+                <select class="browse-select" id="browseTrackFilter" onchange="onBrowseTrackChange()" title="กรองสายวิชา (Column O)">
+          <option value="all">🏥 ทุกสายวิชา</option>
+          <option value="Clinic">💊 Clinic</option>
+          <option value="Product">🔬 Product</option>
+          <option value="SAP">⚖️ SAP</option>
+        </select>
         <select class="browse-select" id="browseCategoryFilter" onchange="onBrowseCategoryChange()">
 
           <option value="all">🌟 ทุกหมวดวิชา</option>
@@ -18561,6 +18567,30 @@ function switchAppMode(mode) {
 
 
 
+function onBrowseTrackChange() {
+  const selectedTrack = (document.getElementById('browseTrackFilter')?.value || 'all').trim();
+  const catSel = document.getElementById('browseCategoryFilter');
+  if (catSel) {
+    let catHtml = '<option value="all">🌟 ทุกหมวดวิชา</option>';
+    const filteredCats = (selectedTrack === 'all')
+      ? categories
+      : categories.filter(c => (c.track || '').toLowerCase() === selectedTrack.toLowerCase());
+    
+    filteredCats.forEach(c => {
+      catHtml += `<option value="${c.name}">${c.name} (${c.count} ข้อ)</option>`;
+    });
+    catSel.innerHTML = catHtml;
+    catSel.value = 'all';
+  }
+
+  const subSel = document.getElementById('browseSubtopicFilter');
+  if (subSel) {
+    subSel.innerHTML = '<option value="all">📂 ทุกหัวข้อย่อย</option>';
+  }
+
+  renderBrowseList(true);
+}
+
 function onBrowseCategoryChange() {
 
   const cat = document.getElementById('browseCategoryFilter').value;
@@ -18629,22 +18659,20 @@ function renderBrowseList(reset = true) {
 
     browseRenderedCount = 0;
 
+    const trackSel = document.getElementById('browseTrackFilter');
+    const selectedTrack = (trackSel ? trackSel.value : 'all').trim();
+
     // Populate category filter if empty
-
     const catSel = document.getElementById('browseCategoryFilter');
-
     if (catSel && catSel.options.length <= 1) {
-
       let catHtml = '<option value="all">🌟 ทุกหมวดวิชา</option>';
-
-      categories.forEach(c => {
-
+      const filteredCats = (selectedTrack === 'all')
+        ? categories
+        : categories.filter(c => (c.track || '').toLowerCase() === selectedTrack.toLowerCase());
+      filteredCats.forEach(c => {
         catHtml += `<option value="${c.name}">${c.name} (${c.count} ข้อ)</option>`;
-
       });
-
       catSel.innerHTML = catHtml;
-
     }
 
 
@@ -18660,31 +18688,25 @@ function renderBrowseList(reset = true) {
 
 
     const selectedCat = catSel ? catSel.value : 'all';
-
     const subSel = document.getElementById('browseSubtopicFilter');
-
     const selectedSub = subSel ? subSel.value : 'all';
-
     const selectedExam = examSel ? examSel.value : 'all';
-
     const term = document.getElementById('browseSearchInput').value.trim().toLowerCase();
 
-
-
     let list = [];
-
     if (selectedCat === 'all') {
-
-      categories.forEach(c => {
-
+      const activeCats = (selectedTrack === 'all')
+        ? categories
+        : categories.filter(c => (c.track || '').toLowerCase() === selectedTrack.toLowerCase());
+      activeCats.forEach(c => {
         list = list.concat(allQuestionsMap[c.name] || []);
-
       });
-
     } else {
-
       list = (allQuestionsMap[selectedCat] || []).slice();
+    }
 
+    if (selectedTrack !== 'all') {
+      list = list.filter(q => (q.track || '').toLowerCase() === selectedTrack.toLowerCase());
     }
 
 
