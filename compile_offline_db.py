@@ -17,7 +17,7 @@ Features:
 =============================================================================
 """
 
-import os, sys, json, re, zipfile, io, time, argparse
+import os, sys, json, re, zipfile, io, time, argparse, urllib.request
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -337,6 +337,26 @@ TOPIC_TO_SHEET_MAP = {
 }
 
 
+def download_live_spreadsheet_if_needed(excel_path):
+    """Download the latest spreadsheet from Google Sheets via export link in CI or when requested."""
+    export_url = f"https://docs.google.com/spreadsheets/d/{SPREADSHEET_ID}/export?format=xlsx"
+    print(f"\n  🌐 Attempting to fetch latest live spreadsheet from Google Sheets...")
+    try:
+        req = urllib.request.Request(export_url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=40) as resp:
+            if resp.status == 200:
+                data = resp.read()
+                if len(data) > 100000:
+                    with open(excel_path, 'wb') as f:
+                        f.write(data)
+                    print(f"  ✅ Live spreadsheet downloaded successfully ({len(data):,} bytes)")
+                    return True
+                else:
+                    print(f"  [WARN] Downloaded file too small ({len(data)} bytes), skipping")
+    except Exception as e:
+        print(f"  [WARN] Could not download live spreadsheet: {e}")
+    return False
+
 def compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=False):
     import openpyxl
     print("=" * 65)
@@ -548,6 +568,12 @@ def main():
 
     start_time = time.time()
     excel_path = os.path.join(web_dir, 'PLE CC QUIZ.xlsx')
+    
+    # In CI or if remote sync requested, fetch fresh live sheet from Google Sheets
+    is_ci = os.environ.get('GITHUB_ACTIONS') == 'true' or os.environ.get('CI') == 'true'
+    if is_ci or args.source in ['sheets', 'auto']:
+        download_live_spreadsheet_if_needed(excel_path)
+
     if (args.source == 'excel') or (args.source == 'auto' and mode == 'all' and not query and os.path.exists(excel_path)):
         try:
             compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=args.no_sw_bump)
