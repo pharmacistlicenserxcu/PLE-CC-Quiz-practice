@@ -52,12 +52,13 @@ function isSystemSheet_(name) {
 function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('⚡ ระบบคลังข้อสอบ PLE')
-    .addItem('📥 สร้าง/รีเซ็ต Tab นำเข้าข้อสอบด่วน', 'setupQuickIngestionTab')
-    .addSeparator()
-    .addItem('🤖 ตั้งค่าชีตรายงานปัญหา (Setup Report_Quiz_Issues)', 'setupReportIssuesSheet')
-    .addItem('🔑 กดที่นี่เพื่ออนุญาตสิทธิ์และทดสอบ AI (Authorize & Test Gemini)', 'testGeminiConnectionManual')
+    .addItem('🚀 อนุมัติทั้งหมดในคลิกเดียว (Approve All Pending)', 'approveAllPendingReports')
     .addItem('⚡ ประมวลผล AI ข้อที่ยังค้างอยู่ (Process Pending Reports)', 'processPendingReports')
-    .addItem('✅ อนุมัติข้อที่เลือกทั้งหมดลงชีตจริง (Apply All Approved Reports)', 'applyAllApprovedReports')
+    .addSeparator()
+    .addItem('📥 สร้าง/รีเซ็ต Tab นำเข้าข้อสอบด่วน', 'setupQuickIngestionTab')
+    .addItem('🤖 ตั้งค่าชีตรายงานปัญหา (Setup Report_Quiz_Issues)', 'setupReportIssuesSheet')
+    .addItem('🔑 ตรวจสอบสิทธิ์ AI (Authorize & Test Gemini)', 'testGeminiConnectionManual')
+    .addItem('⏱️ ตั้งเวลาระบบ AI ตรวจสอบอัตโนมัติทุก 10 นาที (Install Auto-Retry Trigger)', 'installReportAutoTrigger')
     .addToUi();
 }
 
@@ -279,7 +280,7 @@ function doGet(e) {
     // Test Gemini Direct Call
     if (action === 'testGemini') {
       const apiKey = getGeminiApiKey_();
-      const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' + apiKey;
+      const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=' + apiKey;
       try {
         const response = UrlFetchApp.fetch(url, {
           method: 'post',
@@ -304,6 +305,24 @@ function doGet(e) {
     if (action === 'processReports') {
       const count = processPendingReportsInternal_();
       return jsonResponse_({ success: true, processedCount: count });
+    }
+
+    // Trigger Apply All Approved Reports
+    if (action === 'applyAllApproved') {
+      const count = applyAllApprovedReportsInternal_();
+      return jsonResponse_({ success: true, appliedCount: count });
+    }
+
+    // Trigger Approve All Pending Reports in One Click
+    if (action === 'approveAllPending') {
+      const res = approveAllPendingReportsInternal_();
+      return jsonResponse_(res);
+    }
+
+    // Trigger Install Auto Background Trigger
+    if (action === 'installAutoTrigger') {
+      installReportAutoTrigger();
+      return jsonResponse_({ success: true, message: 'Auto-retry trigger installed successfully' });
     }
 
     if (action === 'getReports') {
@@ -1768,6 +1787,29 @@ function getGeminiApiKey_() {
   return '';
 }
 
+function sanitizeAndParseJson_(rawText) {
+  if (!rawText) return null;
+  var cleaned = String(rawText).trim();
+  if (cleaned.indexOf('```json') === 0) {
+    cleaned = cleaned.replace(/^```json\s*/i, '').replace(/\s*```$/, '');
+  } else if (cleaned.indexOf('```') === 0) {
+    cleaned = cleaned.replace(/^```\s*/, '').replace(/\s*```$/, '');
+  }
+
+  try {
+    return JSON.parse(cleaned);
+  } catch (e1) {
+    try {
+      // Fix unescaped backslashes in KaTeX formulas (e.g. \sqrt, \frac, \alpha, \pm, \mu, \times)
+      var fixed = cleaned.replace(/\\([^"\\\/bfnrtu])/g, '\\\\$1');
+      return JSON.parse(fixed);
+    } catch (e2) {
+      Logger.log('sanitizeAndParseJson_ error: ' + e2.toString());
+      return null;
+    }
+  }
+}
+
 function callGeminiQuizResolver(category, questionId, originalQ, studentReport) {
   const apiKey = getGeminiApiKey_();
   if (!apiKey) {
@@ -1869,8 +1911,8 @@ function callGeminiQuizResolver(category, questionId, originalQ, studentReport) 
         const candidate = json.candidates && json.candidates[0];
         const text = candidate && candidate.content && candidate.content.parts && candidate.content.parts[0] && candidate.content.parts[0].text;
         if (text) {
-          const parsed = JSON.parse(text);
-          return parsed;
+          const parsed = sanitizeAndParseJson_(text);
+          if (parsed) return parsed;
         }
       } else {
         Logger.log('Model ' + model + ' failed with status ' + status + ': ' + resp.getContentText());
@@ -2351,24 +2393,76 @@ function processPendingReports() {
   } catch (e) {}
 }
 
-function applyAllApprovedReports() {
+function approveAllPendingReportsInternal_() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = ss.getSheetByName('Report_Quiz_Issues');
-  if (!sheet) {
-    try { SpreadsheetApp.getUi().alert('ไม่พบชีต Report_Quiz_Issues'); } catch (e) {}
-    return;
-  }
+  if (!sheet) return { success: false, error: 'ไม่พบชีต Report_Quiz_Issues', count: 0 };
 
   const lastRow = sheet.getLastRow();
-  if (lastRow < 2) {
-    try { SpreadsheetApp.getUi().alert('ไม่มีข้อมูลรายงานในชีต'); } catch (e) {}
-    return;
-  }
+  if (lastRow < 2) return { success: true, count: 0, message: 'ไม่มีข้อมูลรายงานในชีต' };
 
   const lastCol = Math.max(19, sheet.getLastColumn());
   const data = sheet.getRange(2, 1, lastRow - 1, lastCol).getValues();
   let count = 0;
-  let errorMsgs = [];
+  let skipped = 0;
+  let errors = [];
+
+  for (let i = 0; i < data.length; i++) {
+    const rowNum = i + 2;
+    const status = String(data[i][16] || '').trim(); // Col 17 (index 16)
+    const diag = String(data[i][7] || '').trim();    // Col 8 (index 7)
+
+    // ข้ามแถวที่นำไปใช้แล้ว หรือ ไม่อนุมัติ
+    if (status.includes('Applied') || status.includes('นำไปใช้') || status.includes('Rejected') || status.includes('ไม่อนุมัติ')) {
+      continue;
+    }
+
+    // ข้ามแถวที่ AI ยังไม่ได้ประมวลผล
+    if (!diag || diag.includes('อยู่ระหว่างเตรียม') || diag === 'null') {
+      skipped++;
+      continue;
+    }
+
+    try {
+      const res = applyReportIssueApproved(rowNum);
+      if (res && res.success) {
+        count++;
+      } else if (res && res.error) {
+        errors.push('แถว ' + rowNum + ': ' + res.error);
+      }
+    } catch (err) {
+      errors.push('แถว ' + rowNum + ': ' + err.toString());
+    }
+  }
+
+  return { success: true, count: count, skipped: skipped, errors: errors };
+}
+
+function approveAllPendingReports() {
+  const res = approveAllPendingReportsInternal_();
+  try {
+    let msg = '🚀 อนุมัติและนำไปใช้ในชีตข้อสอบสำเร็จทั้งหมด ' + res.count + ' ข้อ!';
+    if (res.skipped > 0) {
+      msg += '\n(ข้าม ' + res.skipped + ' ข้อที่ AI ยังไม่ได้วินิจฉัย)';
+    }
+    if (res.errors && res.errors.length > 0) {
+      msg += '\n⚠️ มีข้อผิดพลาดบางแถว:\n' + res.errors.slice(0, 5).join('\n');
+    }
+    SpreadsheetApp.getUi().alert(msg);
+  } catch (e) {}
+}
+
+function applyAllApprovedReportsInternal_() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = ss.getSheetByName('Report_Quiz_Issues');
+  if (!sheet) return 0;
+
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) return 0;
+
+  const lastCol = Math.max(19, sheet.getLastColumn());
+  const data = sheet.getRange(2, 1, lastRow - 1, lastCol).getValues();
+  let count = 0;
 
   for (let i = 0; i < data.length; i++) {
     const rowNum = i + 2;
@@ -2377,19 +2471,41 @@ function applyAllApprovedReports() {
       const res = applyReportIssueApproved(rowNum);
       if (res && res.success) {
         count++;
-      } else if (res && res.error) {
-        errorMsgs.push('แถว ' + rowNum + ': ' + res.error);
       }
     }
   }
+  return count;
+}
 
+function applyAllApprovedReports() {
+  const count = applyAllApprovedReportsInternal_();
   try {
-    let alertText = '✅ อัปเดตข้อสอบลงชีตหลักสำเร็จทั้งหมด ' + count + ' ข้อ';
-    if (errorMsgs.length > 0) {
-      alertText += '\n⚠️ มีข้อผิดพลาดบางแถว:\n' + errorMsgs.slice(0, 5).join('\n');
-    }
-    SpreadsheetApp.getUi().alert(alertText);
+    SpreadsheetApp.getUi().alert('✅ อัปเดตข้อสอบลงชีตหลักสำเร็จทั้งหมด ' + count + ' ข้อ');
   } catch (e) {}
+}
+
+function installReportAutoTrigger() {
+  const triggers = ScriptApp.getProjectTriggers();
+  for (let i = 0; i < triggers.length; i++) {
+    if (triggers[i].getHandlerFunction() === 'autoProcessPendingReportsTrigger') {
+      ScriptApp.deleteTrigger(triggers[i]);
+    }
+  }
+  ScriptApp.newTrigger('autoProcessPendingReportsTrigger')
+    .timeBased()
+    .everyMinutes(10)
+    .create();
+  try {
+    SpreadsheetApp.getUi().alert('⏱️ ติดตั้งตัวตั้งเวลาตรวจจับข้อค้างอัตโนมัติทุก 10 นาทีเรียบร้อยแล้ว');
+  } catch (e) {}
+}
+
+function autoProcessPendingReportsTrigger() {
+  try {
+    processPendingReportsInternal_();
+  } catch (err) {
+    Logger.log('autoProcessPendingReportsTrigger error: ' + err.toString());
+  }
 }
 
 function testGeminiConnectionManual() {
