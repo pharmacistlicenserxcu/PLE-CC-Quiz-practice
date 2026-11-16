@@ -1,0 +1,227 @@
+[
+  {
+    "filename": "countdown_t25.png",
+    "tag": "T-25",
+    "date": "2026-11-16",
+    "thaiDate": "16 พ.ย. 2569",
+    "desc": "นั่งเปิดสมุดอ่านหนังสือ",
+    "row": 0,
+    "col": 0
+  },
+  {
+    "filename": "countdown_t24.png",
+    "tag": "T-24",
+    "date": "2026-11-17",
+    "thaiDate": "17 พ.ย. 2569",
+    "desc": "นั่งพิมพ์งานและค้นคว้าบนแล็ปท็อป",
+    "row": 0,
+    "col": 1
+  },
+  {
+    "filename": "countdown_t23.png",
+    "tag": "T-23",
+    "date": "2026-11-18",
+    "thaiDate": "18 พ.ย. 2569",
+    "desc": "ถือปากกาเน้นข้อความ ไฮไลต์ประเด็นสำคัญ",
+    "row": 0,
+    "col": 2
+  },
+  {
+    "filename": "countdown_t22.png",
+    "tag": "T-22",
+    "date": "2026-11-19",
+    "thaiDate": "19 พ.ย. 2569",
+    "desc": "นั่งอ่านหนังสือท่ามกลางกองตำรา",
+    "row": 0,
+    "col": 3
+  },
+  {
+    "filename": "countdown_t21.png",
+    "tag": "T-21",
+    "date": "2026-11-20",
+    "thaiDate": "20 พ.ย. 2569",
+    "desc": "เปิดโคมไฟอ่านหนังสือรอบดึก",
+    "row": 0,
+    "col": 4
+  },
+  {
+    "filename": "countdown_t20.png",
+    "tag": "T-20",
+    "date": "2026-11-21",
+    "thaiDate": "21 พ.ย. 2569",
+    "desc": "นั่งจดบันทึกสรุปและคิดวิเคราะห์",
+    "row": 1,
+    "col": 0
+  },
+  {
+    "filename": "countdown_t19.png",
+    "tag": "T-19",
+    "date": "2026-11-22",
+    "thaiDate": "22 พ.ย. 2569",
+    "desc": "จดชอร์ตโน้ตพร้อมดูเวลาจับความเร็ว",
+    "row": 1,
+    "col": 1
+  },
+  {
+    "filename": "countdown_t18.png",
+    "tag": "T-18",
+    "date": "2026-11-23",
+    "thaiDate": "23 พ.ย. 2569",
+    "desc": "เครียดเล็กน้อย กุมขมับ จิบกาแฟเติมพลัง",
+    "row": 1,
+    "col": 2
+  },
+  {
+    "filename": "countdown_t17.png",
+    "tag": "T-17",
+    "date": "2026-11-24",
+    "thaiDate": "24 พ.ย. 2569",
+    "desc": "กอดตำราเล่มหนา ท่องจำเนื้อหาแน่นๆ",
+    "row": 1,
+    "col": 3
+  },
+  {
+    "filename": "countdown_t16.png",
+    "tag": "T-16",
+    "date": "2026-11-25",
+    "thaiDate": "25 พ.ย. 2569",
+    "desc": "ชูกำปั้น สู้ตาย ท่องจำสำเร็จไปอีกเล่ม",
+    "row": 1,
+    "col": 4
+  },
+  {
+    "filename": "countdown_t15.png",
+    "tag": "T-15",
+    "date": "2026-11-26",
+    "thaiDate": "26 พ.ย. 2569",
+    "desc": "แปะ Post-it สรุปประเด็นบนบอร์ดความจำ",
+    "row": 2,
+    "col": 0
+  },
+  {
+    "filename": "countdown_t14.png",
+    "tag": "T-14",
+    "date": "2026-11-27",
+    "thaiDate": "27 พ.ย. 2569",
+    "desc": "หลับพักสายตาบนกองหนังสือ ชาร์จพลัง",
+    "row": 2,
+    "col": 1
+  },
+  {
+    "filename": "countdown_t13.png",
+    "tag": "T-13",
+    "date": "2026-11-28",
+    "thaiDate": "28 พ.ย. 2569",
+    "desc": "อ่านหนังสือสรุปเนื้อหาอย่างมีสมาธิ",
+    "row": 2,
+    "col": 2
+  },
+  {
+    "filename": "countdown_t12.png",
+    "tag": "T-12",
+    "date": "2026-11-29",
+    "thaiDate": "29 พ.ย. 2569",
+    "desc": "ยืนชี้กระดาน ติวสรุปเข้มให้เพื่อนๆ",
+    "row": 2,
+    "col": 3
+  },
+  {
+    "filename": "countdown_t11.png",
+    "tag": "T-11",
+    "date": "2026-11-30",
+    "thaiDate": "30 พ.ย. 2569",
+    "desc": "ท่องจำ Flashcards ทบทวนคำศัพท์และสูตร",
+    "row": 2,
+    "col": 4
+  },
+  {
+    "filename": "countdown_t10.png",
+    "tag": "T-10",
+    "date": "2026-12-01",
+    "thaiDate": "1 ธ.ค. 2569",
+    "desc": "นั่งติวกลุ่มกับเพื่อนๆ ร่วมสู้ไปด้วยกัน",
+    "row": 3,
+    "col": 0
+  },
+  {
+    "filename": "countdown_t09.png",
+    "tag": "T-9",
+    "date": "2026-12-02",
+    "thaiDate": "2 ธ.ค. 2569",
+    "desc": "ประคบเจลเย็นบนหัว ปาดน้ำตาแล้วสู้ต่อ",
+    "row": 3,
+    "col": 1
+  },
+  {
+    "filename": "countdown_t08.png",
+    "tag": "T-8",
+    "date": "2026-12-03",
+    "thaiDate": "3 ธ.ค. 2569",
+    "desc": "ปลุกพลังใจ ฮึดสู้ โค้งสุดท้ายพร้อมลุย",
+    "row": 3,
+    "col": 2
+  },
+  {
+    "filename": "countdown_t07.png",
+    "tag": "T-7",
+    "date": "2026-12-04",
+    "thaiDate": "4 ธ.ค. 2569",
+    "desc": "เปิดแฟ้มตะลุยโจทย์ข้อสอบเก่า",
+    "row": 3,
+    "col": 3
+  },
+  {
+    "filename": "countdown_t06.png",
+    "tag": "T-6",
+    "date": "2026-12-05",
+    "thaiDate": "5 ธ.ค. 2569",
+    "desc": "ชูป้าย Fighting ส่งพลังใจเต็มร้อย",
+    "row": 3,
+    "col": 4
+  },
+  {
+    "filename": "countdown_t05.png",
+    "tag": "T-5",
+    "date": "2026-12-06",
+    "thaiDate": "6 ธ.ค. 2569",
+    "desc": "ตรวจทานใบสั่งยา ฝึกวิเคราะห์เคสคลินิก",
+    "row": 4,
+    "col": 0
+  },
+  {
+    "filename": "countdown_t04.png",
+    "tag": "T-4",
+    "date": "2026-12-07",
+    "thaiDate": "7 ธ.ค. 2569",
+    "desc": "เช็กความพร้อมตาม Checklist อย่างมั่นใจ",
+    "row": 4,
+    "col": 1
+  },
+  {
+    "filename": "countdown_t03.png",
+    "tag": "T-3",
+    "date": "2026-12-08",
+    "thaiDate": "8 ธ.ค. 2569",
+    "desc": "จำลองทำข้อสอบ Mock Exam เสมือนจริง",
+    "row": 4,
+    "col": 2
+  },
+  {
+    "filename": "countdown_t02.png",
+    "tag": "T-2",
+    "date": "2026-12-10",
+    "thaiDate": "10 ธ.ค. 2569",
+    "desc": "ใส่แว่น ยกนิ้วโป้ง พร้อมลุยสนามสอบ",
+    "row": 4,
+    "col": 3
+  },
+  {
+    "filename": "countdown_dday.png",
+    "tag": "D-DAY",
+    "date": "2026-12-11",
+    "thaiDate": "11 ธ.ค. 2569",
+    "desc": "วันสอบใบประกอบวิชาชีพ ชูกำปั้นคว้าชัยชนะ!",
+    "row": 4,
+    "col": 4
+  }
+]

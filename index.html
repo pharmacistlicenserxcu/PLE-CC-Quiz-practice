@@ -5959,6 +5959,218 @@
 
 
 
+  
+    /* ─── DAILY COUNTDOWN MASCOT WIDGET ─── */
+    .lobby-countdown-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: linear-gradient(135deg, #ffffff 0%, #fff7ed 55%, #ffedd5 100%);
+      border: 1.5px solid #fed7aa;
+      border-radius: 16px;
+      padding: 14px 18px;
+      margin-top: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(234, 88, 12, 0.08);
+      transition: all 0.22s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+    .lobby-countdown-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(234, 88, 12, 0.16);
+      border-color: #f97316;
+    }
+    .countdown-card-left {
+      flex-shrink: 0;
+    }
+    .countdown-mascot-frame {
+      position: relative;
+      width: 82px;
+      height: 102px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #fdba74;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .countdown-mascot-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .countdown-mascot-badge {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      background: rgba(194, 65, 12, 0.92);
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+    }
+    .countdown-card-right {
+      flex: 1;
+      min-width: 0;
+    }
+    .countdown-header-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+    }
+    .countdown-title-pill {
+      background: #ea580c;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      letter-spacing: 0.2px;
+    }
+    .countdown-days-badge {
+      background: #fff;
+      border: 1px solid #fdba74;
+      color: #c2410c;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 12px;
+    }
+    .countdown-target-desc {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 3px;
+    }
+    .countdown-daily-quote {
+      font-size: 12px;
+      color: #7c2d12;
+      line-height: 1.45;
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+    .countdown-action-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #ea580c;
+      transition: color 0.15s;
+    }
+    .lobby-countdown-card:hover .countdown-action-hint {
+      color: #9a3412;
+    }
+
+    /* Top Nav Countdown Pill */
+    .countdown-nav-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+      border: 1px solid #fdba74;
+      padding: 3px 8px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .countdown-nav-pill:hover {
+      background: #fed7aa;
+      border-color: #ea580c;
+      transform: scale(1.03);
+    }
+
+    /* Countdown Calendar Grid Modal */
+    .countdown-grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      padding: 10px 0;
+      max-height: 68vh;
+      overflow-y: auto;
+    }
+    @media (max-width: 600px) {
+      .countdown-grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+      .lobby-countdown-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .countdown-mascot-frame {
+        width: 100px;
+        height: 124px;
+      }
+    }
+    .countdown-grid-item {
+      border: 1.5px solid #e2e8f0;
+      border-radius: 12px;
+      background: #ffffff;
+      padding: 6px;
+      text-align: center;
+      transition: all 0.2s;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .countdown-grid-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-color: #fdba74;
+    }
+    .countdown-grid-item.active-today {
+      border: 2.5px solid #ea580c;
+      background: #fff7ed;
+      box-shadow: 0 0 16px rgba(234, 88, 12, 0.35);
+      animation: pulseToday 2s infinite;
+    }
+    @keyframes pulseToday {
+      0%, 100% { box-shadow: 0 0 10px rgba(234, 88, 12, 0.25); }
+      50% { box-shadow: 0 0 20px rgba(234, 88, 12, 0.55); }
+    }
+    .countdown-grid-item.past-day {
+      opacity: 0.75;
+      background: #f8fafc;
+    }
+    .countdown-grid-img {
+      width: 100%;
+      height: 105px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 4px;
+    }
+    .countdown-grid-tag {
+      font-size: 11px;
+      font-weight: 800;
+      color: #ea580c;
+    }
+    .countdown-grid-date {
+      font-size: 10px;
+      color: #64748b;
+    }
+    .countdown-grid-badge-today {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      background: #ea580c;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: 800;
+      padding: 1px 5px;
+      border-radius: 4px;
+    }
+
   </style>
 
 </head>
@@ -6145,6 +6357,10 @@
 
       <div style="display:flex; align-items:center; gap:5px;">
 
+                <button class="countdown-nav-pill" onclick="openCountdownCalendarModal()" title="ดูปฏิทินนับถอยหลัง D-DAY สอบใบประกอบ (PLE-CC1)">
+          <img id="navCountdownIcon" src="images/countdown/countdown_t24.png" alt="Mascot" style="width:20px; height:24px; object-fit:contain; border-radius:3px;">
+          <span id="navCountdownText" style="font-weight:700; font-size:11.5px; color:#c2410c;">T-24 (11 ธ.ค.)</span>
+        </button>
         <div class="lobby-user-pill">
 
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
@@ -6254,6 +6470,29 @@
           <p id="lobbyGreetingTrackDesc">เลือกหมวดโรคด้านล่างเพื่อเริ่มทำข้อสอบ หรือเลือกโหมด <b>สุ่มทำข้อสอบ</b> เพื่อจำลองสถานการณ์จริง</p>
 
           <div class="lobby-streak-badge" id="lobbyStreakBadge">📚 วันนี้ยังไม่ได้เริ่มทำข้อสอบ มาลุยกัน!</div>
+
+          <!-- 🐶 Daily Countdown Mascot Card -->
+          <div id="lobbyCountdownCard" class="lobby-countdown-card" onclick="openCountdownCalendarModal()" title="คลิกเพื่อดูปฏิทินนับถอยหลัง 25 วันฉบับเต็ม">
+            <div class="countdown-card-left">
+              <div class="countdown-mascot-frame">
+                <img id="countdownMascotImg" src="images/countdown/countdown_t24.png" alt="มาสคอตนับถอยหลัง" class="countdown-mascot-img">
+                <span id="countdownMascotBadge" class="countdown-mascot-badge">T-24</span>
+              </div>
+            </div>
+            <div class="countdown-card-right">
+              <div class="countdown-header-row">
+                <span class="countdown-title-pill">⏳ นับถอยหลังสอบใบประกอบ PLE-CC1</span>
+                <span id="countdownDaysLeftBadge" class="countdown-days-badge">เหลืออีก 24 วัน</span>
+              </div>
+              <div id="countdownTargetDesc" class="countdown-target-desc">D-DAY: สอบใบประกอบวิชาชีพเภสัชกรรม (11 ธันวาคม 2569)</div>
+              <div id="countdownDailyQuote" class="countdown-daily-quote">"วันนี้ลุยตะลุยค้นคว้าบนแล็ปท็อป สู้ไปด้วยกันนะว่าที่เภสัชกร! 💻✨"</div>
+              <div class="countdown-action-hint">
+                <span>📅 คลิกเพื่อดูปฏิทินนับถอยหลัง 25 วันฉบับเต็ม</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              </div>
+            </div>
+          </div>
+
 
 
 
@@ -8098,7 +8337,38 @@
 
 
 
-  <!-- Guideline Modal -->
+    <!-- 🗓️ Countdown Calendar Modal -->
+  <div class="modal-overlay" id="countdownCalendarModal">
+    <div class="modal-box" style="max-width: 780px;">
+      <div class="modal-head">
+        <div>
+          <h3 style="display:flex; align-items:center; gap:8px;">🗓️ เส้นทางนับถอยหลังสู่ D-DAY สอบใบประกอบ (PLE-CC1)</h3>
+          <p style="font-size:12px; color:var(--ink-soft); margin-top:2px;">เป้าหมายวันสอบจริง 11 ธันวาคม 2569 • ส่งพลังใจให้นิสิตเภสัชฯ ทุกคน</p>
+        </div>
+        <button class="modal-close" onclick="closeCountdownCalendarModal()">✕</button>
+      </div>
+
+      <div style="background:#fff7ed; border:1px solid #fed7aa; border-radius:12px; padding:10px 14px; margin-bottom:12px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+        <div style="font-size:12.5px; color:#c2410c; font-weight:700;" id="modalCountdownStatusText">
+          📌 วันนี้: T-24 (17 พ.ย. 2569) • เหลืออีก 24 วันก่อนสอบ
+        </div>
+        <div style="font-size:11.5px; color:#7c2d12;">
+          🎯 D-DAY: 11 ธ.ค. 2569 (วันสอบใบประกอบวิชาชีพ)
+        </div>
+      </div>
+
+      <!-- 25 Tiles Grid Container -->
+      <div class="countdown-grid-container" id="countdownCalendarGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div style="margin-top:14px; padding-top:10px; border-top:1px solid var(--border); display:flex; justify-content:flex-end;">
+        <button class="btn btn-secondary" onclick="closeCountdownCalendarModal()" style="font-size:12px; padding:6px 16px;">ปิดหน้าต่าง</button>
+      </div>
+    </div>
+  </div>
+
+<!-- Guideline Modal -->
 
   <div class="modal-overlay" id="guidelineModal">
 
@@ -23748,6 +24018,160 @@ function showToast(msg) {
 
 }
 
+
+
+
+// ─── DAILY COUNTDOWN MASCOT ENGINE ───
+const PLE_COUNTDOWN_ROOSTER = [
+  { tag: "T-25", date: "2026-11-16", thaiDate: "16 พ.ย. 2569", file: "countdown_t25.png", title: "เปิดตำราเริ่มต้น", quote: "จุดเริ่มต้นของการเตรียมตัวสู่ความสำเร็จ เปิดตำราอ่านอย่างมุ่งมั่น 📚" },
+  { tag: "T-24", date: "2026-11-17", thaiDate: "17 พ.ย. 2569", file: "countdown_t24.png", title: "ค้นคว้าข้อมูลบนแล็ปท็อป", quote: "ลุยค้นคว้าบนแล็ปท็อป หาข้อมูลสรุปประเด็น สู้ไปด้วยกันนะว่าที่เภสัชกร! 💻✨" },
+  { tag: "T-23", date: "2026-11-18", thaiDate: "18 พ.ย. 2569", file: "countdown_t23.png", title: "ไฮไลต์ประเด็นสำคัญ", quote: "จับปากกาไฮไลต์เน้นย้ำจุดออกสอบบ่อย จำให้แม่น ย้ำให้ชัวร์ 🖍️" },
+  { tag: "T-22", date: "2026-11-19", thaiDate: "19 พ.ย. 2569", file: "countdown_t22.png", title: "เจาะลึกกองตำรา", quote: "แม้หนังสือจะกองพะเนิน แต่ความพยายามของเราสูงกว่าเสมอ 📖💪" },
+  { tag: "T-21", date: "2026-11-20", thaiDate: "20 พ.ย. 2569", file: "countdown_t21.png", title: "เปิดไฟสู้รอบดึก", quote: "เปิดโคมไฟสู้ยามค่ำคืน ทุกความตั้งใจวันนี้คือคะแนนในวันสอบ 💡🌙" },
+  { tag: "T-20", date: "2026-11-21", thaiDate: "21 พ.ย. 2569", file: "countdown_t20.png", title: "วิเคราะห์และตกผลึก", quote: "นั่งคิดวิเคราะห์ เชื่อมโยงกลไกยาให้เป็นภาพรวม 🧠📝" },
+  { tag: "T-19", date: "2026-11-22", thaiDate: "22 พ.ย. 2569", file: "countdown_t19.png", title: "จับเวลาจดสรุป", quote: "ฝึกความเร็วและสปีดในการทำข้อสอบ แข่งกับเข็มนาฬิกา ⏱️⚡" },
+  { tag: "T-18", date: "2026-11-23", thaiDate: "23 พ.ย. 2569", file: "countdown_t18.png", title: "จิบกาแฟฮึดสู้", quote: "เหนื่อยก็พัก จิบกาแฟอุ่นๆ สักแก้ว แล้วกลับมาลุยต่อ อย่าเพิ่งท้อนะ ☕❤️" },
+  { tag: "T-17", date: "2026-11-24", thaiDate: "24 พ.ย. 2569", file: "countdown_t17.png", title: "ทบทวนเล่มหลัก", quote: "ทบทวนแกนวิชาสำคัญ Clinic Product SAP ให้แม่นยำทุกรายละเอียด 📚🔍" },
+  { tag: "T-16", date: "2026-11-25", thaiDate: "25 พ.ย. 2569", file: "countdown_t16.png", title: "ชูกำปั้นคว้าชัย", quote: "อ่านจบไปอีกหนึ่งวิชา ชูกำปั้นให้กำลังใจตัวเอง เราทำได้แน่นอน! ✊🎉" },
+  { tag: "T-15", date: "2026-11-26", thaiDate: "26 พ.ย. 2569", file: "countdown_t15.png", title: "แปะบอร์ดความจำ", quote: "แปะ Post-it สรุปประเด็นช่วยจำ มองเห็นทุกวัน จำได้ติดตา 📌📋" },
+  { tag: "T-14", date: "2026-11-27", thaiDate: "27 พ.ย. 2569", file: "countdown_t14.png", title: "พักสายตาชาร์จพลัง", quote: "การพักผ่อนคือส่วนหนึ่งของการเตรียมตัว นอนหลับให้สมองได้จัดระเบียบ 😴💤" },
+  { tag: "T-13", date: "2026-11-28", thaiDate: "28 พ.ย. 2569", file: "countdown_t13.png", title: "รวบรวมสมาธิ", quote: "ตั้งจิตและสมาธิให้แน่วแน่ ทุกข้อสอบมีคำตอบซ่อนอยู่เสมอ 🧘‍♂️📖" },
+  { tag: "T-12", date: "2026-11-29", thaiDate: "29 พ.ย. 2569", file: "countdown_t12.png", title: "ติวสรุปให้เพื่อน", quote: "การสอนและอธิบายให้เพื่อนฟัง คือวิธีทบทวนที่ทำให้เราจำได้ดีที่สุด 🧑‍🏫💡" },
+  { tag: "T-11", date: "2026-11-30", thaiDate: "30 พ.ย. 2569", file: "countdown_t11.png", title: "ทวน Flashcards สรุปเร็ว", quote: "พลิกการ์ด Flashcards ทวนสูตรคำนวณและข้อห้ามใช้ยาให้ขึ้นใจ 🃏🔄" },
+  { tag: "T-10", date: "2026-12-01", thaiDate: "1 ธ.ค. 2569", file: "countdown_t10.png", title: "รวมพลังติวกลุ่ม", quote: "เข้าสู่เดือนธันวาคม! ติวเข้มร่วมกับเพื่อนๆ พากันก้าวข้ามทุกความท้าทาย 🤝🔥" },
+  { tag: "T-9",  date: "2026-12-02", thaiDate: "2 ธ.ค. 2569", file: "countdown_t09.png", title: "ประคบเย็นสู้ต่อ", quote: "แม้จะปวดหัวหรือล้าแค่ไหน ประคบเย็นแล้วฮึดสู้ต่อ อีกแค่อึดใจเดียว! 🧊🩹" },
+  { tag: "T-8",  date: "2026-12-03", thaiDate: "3 ธ.ค. 2569", file: "countdown_t08.png", title: "ไฟลุกปลุกใจ", quote: "ไฟแห่งความหวังลุกโชน เราอ่านมาเยอะแล้ว มั่นใจในตัวเองได้เลย! 💥🙌" },
+  { tag: "T-7",  date: "2026-12-04", thaiDate: "4 ธ.ค. 2569", file: "countdown_t07.png", title: "ตะลุยโจทย์ข้อสอบเก่า", quote: "สัปดาห์สุดท้าย! ตะลุยโจทย์เสมือนจริง จับทางข้อสอบให้ทะลุปรุโปร่ง 📑🎯" },
+  { tag: "T-6",  date: "2026-12-05", thaiDate: "5 ธ.ค. 2569", file: "countdown_t06.png", title: "Fighting ชูป้ายสู้", quote: "ชูป้าย Fighting ส่งพลังใจให้ทุกคน วันสอบใกล้เข้ามาแล้ว สู้สุดใจ! 🎌✨" },
+  { tag: "T-5",  date: "2026-12-06", thaiDate: "6 ธ.ค. 2569", file: "countdown_t05.png", title: "เช็กใบสั่งยาและเคสคลินิก", quote: "ทบทวนการจ่ายยา ตรวจสอบ DRP และเคสผู้ป่วยให้เฉียบคม 💊🩺" },
+  { tag: "T-4",  date: "2026-12-07", thaiDate: "7 ธ.ค. 2569", file: "countdown_t04.png", title: "ตรวจความพร้อมรอบด้าน", quote: "เช็ก Checklist ทุกวิชาว่าเก็บตกครบถ้วนแล้วหรือยัง 📋✔️" },
+  { tag: "T-3",  date: "2026-12-08", thaiDate: "8 ธ.ค. 2569", file: "countdown_t03.png", title: "จำลองสอบวันสุดท้าย", quote: "3 วันสุดท้าย ทบทวนประเด็นไฮไลต์ รักษาสุขภาพกายและใจให้พร้อมที่สุด 🧘‍♂️✨" },
+  { tag: "T-2",  date: "2026-12-10", thaiDate: "10 ธ.ค. 2569", file: "countdown_t02.png", title: "ใส่แว่นพร้อมลุย", quote: "วันพรุ่งนี้คือวันสำคัญ! เตรียมอุปกรณ์ บัตรประชาชน และความมั่นใจเต็มร้อย 👓👍" },
+  { tag: "D-DAY", date: "2026-12-11", thaiDate: "11 ธ.ค. 2569", file: "countdown_dday.png", title: "วันสอบใบประกอบวิชาชีพ", quote: "D-DAY! ก้าวเข้าสู่ห้องสอบด้วยความสง่างาม คว้าชัยชนะและใบประกอบวิชาชีพมาให้ได้! 🎓🎉" }
+];
+
+function getBangkokDateString() {
+  try {
+    const now = new Date();
+    const formatter = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'Asia/Bangkok',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit'
+    });
+    return formatter.format(now);
+  } catch(e) {
+    const d = new Date();
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${y}-${m}-${day}`;
+  }
+}
+
+function initDailyCountdown() {
+  const todayStr = getBangkokDateString();
+  let currentTile = null;
+  let activeIndex = -1;
+
+  if (todayStr <= PLE_COUNTDOWN_ROOSTER[0].date) {
+    currentTile = PLE_COUNTDOWN_ROOSTER[0];
+    activeIndex = 0;
+  } else if (todayStr >= PLE_COUNTDOWN_ROOSTER[PLE_COUNTDOWN_ROOSTER.length - 1].date) {
+    currentTile = PLE_COUNTDOWN_ROOSTER[PLE_COUNTDOWN_ROOSTER.length - 1];
+    activeIndex = PLE_COUNTDOWN_ROOSTER.length - 1;
+  } else {
+    for (let i = 0; i < PLE_COUNTDOWN_ROOSTER.length; i++) {
+      if (PLE_COUNTDOWN_ROOSTER[i].date === todayStr) {
+        currentTile = PLE_COUNTDOWN_ROOSTER[i];
+        activeIndex = i;
+        break;
+      } else if (PLE_COUNTDOWN_ROOSTER[i].date > todayStr) {
+        currentTile = PLE_COUNTDOWN_ROOSTER[Math.max(0, i - 1)];
+        activeIndex = Math.max(0, i - 1);
+        break;
+      }
+    }
+  }
+
+  if (!currentTile) {
+    currentTile = PLE_COUNTDOWN_ROOSTER[1];
+    activeIndex = 1;
+  }
+
+  // Calculate days left to D-DAY (2026-12-11)
+  const ddayDate = new Date('2026-12-11T00:00:00+07:00');
+  const todayDate = new Date(todayStr + 'T00:00:00+07:00');
+  const diffDays = Math.ceil((ddayDate - todayDate) / (1000 * 60 * 60 * 24));
+
+  // Update UI Elements
+  const mascotImg = document.getElementById('countdownMascotImg');
+  const mascotBadge = document.getElementById('countdownMascotBadge');
+  const daysBadge = document.getElementById('countdownDaysLeftBadge');
+  const dailyQuote = document.getElementById('countdownDailyQuote');
+  const navIcon = document.getElementById('navCountdownIcon');
+  const navText = document.getElementById('navCountdownText');
+  const modalStatus = document.getElementById('modalCountdownStatusText');
+
+  const imgSrc = 'images/countdown/' + currentTile.file;
+
+  if (mascotImg) mascotImg.src = imgSrc;
+  if (mascotBadge) mascotBadge.textContent = currentTile.tag;
+  if (daysBadge) {
+    if (diffDays > 0) {
+      daysBadge.textContent = 'เหลืออีก ' + diffDays + ' วัน';
+    } else if (diffDays === 0) {
+      daysBadge.textContent = '🎉 D-DAY วันนี้!';
+    } else {
+      daysBadge.textContent = '🎓 วันสอบเสร็จสิ้นแล้ว';
+    }
+  }
+  if (dailyQuote) dailyQuote.textContent = '"' + currentTile.quote + '"';
+
+  if (navIcon) navIcon.src = imgSrc;
+  if (navText) navText.textContent = currentTile.tag + ' (11 ธ.ค.)';
+
+  if (modalStatus) {
+    modalStatus.textContent = '📌 วันนี้: ' + currentTile.tag + ' (' + currentTile.thaiDate + ')' + (diffDays > 0 ? ' • เหลืออีก ' + diffDays + ' วันก่อนสอบ' : '');
+  }
+
+  renderCountdownCalendarGrid(activeIndex, todayStr);
+}
+
+function renderCountdownCalendarGrid(activeIndex, todayStr) {
+  const grid = document.getElementById('countdownCalendarGrid');
+  if (!grid) return;
+
+  grid.innerHTML = PLE_COUNTDOWN_ROOSTER.map((item, idx) => {
+    const isToday = (idx === activeIndex);
+    const isPast = (item.date < todayStr);
+    const classes = ['countdown-grid-item'];
+    if (isToday) classes.push('active-today');
+    else if (isPast) classes.push('past-day');
+
+    return `
+      <div class="${classes.join(' ')}" title="${item.tag}: ${item.thaiDate} - ${item.title}">
+        ${isToday ? '<span class="countdown-grid-badge-today">📌 วันนี้</span>' : ''}
+        <img src="images/countdown/${item.file}" alt="${item.tag}" class="countdown-grid-img" loading="lazy">
+        <div class="countdown-grid-tag">${item.tag}</div>
+        <div class="countdown-grid-date">${item.thaiDate}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function openCountdownCalendarModal() {
+  const modal = document.getElementById('countdownCalendarModal');
+  if (modal) modal.classList.add('show');
+}
+
+function closeCountdownCalendarModal() {
+  const modal = document.getElementById('countdownCalendarModal');
+  if (modal) modal.classList.remove('show');
+}
+
+// Auto-init countdown on load
+try { initDailyCountdown(); } catch(e) { console.error('Countdown init err:', e); }
 
 
 // Initial card animation state
