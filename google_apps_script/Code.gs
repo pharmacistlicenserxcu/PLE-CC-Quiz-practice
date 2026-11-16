@@ -1854,7 +1854,12 @@ function callGeminiQuizResolver(category, questionId, originalQ, studentReport) 
    - ภาษาไทยสละสลวย คงคำศัพท์ทางการแพทย์และชื่อยาเป็นภาษาอังกฤษตรงตัว (hydrolyze, prodrug, active metabolite)
    - ห้ามมีดอกจัน (*) หรือ (**) เด็ดขาด
    - สูตรคำนวณ สแควร์รูท และเศษส่วน ต้องครอบด้วย $...$ ในรูปแบบ KaTeX เสมอ เช่น $BSA = \\sqrt{\\frac{Height \\times Weight}{3600}}$, $t_{1/2} = \\frac{0.693}{k_e}$, eGFR < 30 (ห้ามใช้ /sqrt หรือ $it; หรือ &lt; เด็ดขาด)
-7. ตอบกลับเป็น JSON เท่านั้น`;
+7. กฎเหล็กการอนุรักษ์เจตนารมณ์ดั้งเดิมและสมรรถนะแกนของข้อสอบ (Original Intent & Core Competency Preservation Rule):
+   - ห้ามดัดแปลงหรือบิดเบือนแก่นวิชาและสมรรถนะเดิมของข้อสอบโดยเด็ดขาด (Never alter the core scientific discipline or tested competency)
+   - หากโจทย์เดิมเป็นการทดสอบทางเคมี, การตรวจเอกลักษณ์ทางเคมี (Identification / Color test เช่น Dragendorff, Shinoda), การสังเคราะห์/โครงสร้างเคมี, เภสัชวิเคราะห์ หรือเทคโนโลยีเภสัชกรรม ห้ามแปลงโจทย์เป็นแบบประเมินทางจิตเวชหรือการซักประวัติทางคลินิกเด็ดขาด
+   - หากข้อสอบเดิมอยู่ในหมวดวิชาที่ไม่ตรงกับแก่นคำถาม (Misplaced Subject/Sheet) เช่น ข้อสอบเคมี/เทคโนฯ ไปอยู่ในหมวดจิตเวช ให้คงตัวข้อสอบเดิมไว้ แล้วทำการย้ายหมวดวิชาผ่าน proposedTargetSheet (เช่น 13. Medicinal Chemistry หรือชีต Product ที่ถูกต้อง) แทนที่จะดัดแปลงตัวข้อสอบให้กลืนไปกับชีตที่วางผิด
+   - ทุกการบูรณะตัวเลือก (Choices Reconstruction) ต้องรักษาโครงข้อสอบเดิมและบูรณะตัวลวงในศาสตร์เดียวกันเท่านั้น (เช่น ถาม Alkaloid test ตัวลวงต้องเป็น Dragendorff, Mayer, Wagner, Shinoda ห้ามนำชื่อยาจิตเวชมาใส่เด็ดขาด)
+8. ตอบกลับเป็น JSON เท่านั้น`;
 
   const userPrompt = `หมวดวิชาปัจจุบัน: ` + (category || 'ไม่ระบุ') + `\n` +
     `รหัสข้อสอบ: ` + (questionId || 'ไม่ระบุ') + `\n` +
