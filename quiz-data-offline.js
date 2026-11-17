@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.1 Pro Edition)
- * Total Questions: 4866 across 32 Categories
- * Build Timestamp: 2026-11-16 17:54:03
+ * Total Questions: 4870 across 32 Categories
+ * Build Timestamp: 2026-11-17 19:46:34
  * Build Mode: Fast Local (openpyxl)
  */
 
@@ -17,7 +17,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "2. Cardiovascular",
-    "count": 202,
+    "count": 204,
     "track": "Clinic"
   },
   {
@@ -47,7 +47,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "8. Infectious diseases",
-    "count": 378,
+    "count": 379,
     "track": "Clinic"
   },
   {
@@ -157,7 +157,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "1. Pharmacy Laws & Ethics",
-    "count": 238,
+    "count": 239,
     "track": "SAP"
   },
   {
@@ -6579,7 +6579,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-MS-MOCK-GOUT-01",
       "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 3
     },
     {
       "id": "1. Musculoskeleton::226",
@@ -6608,7 +6608,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-MS-MOCK-GOUT-01",
       "caseOrder": 2,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 3
     },
     {
       "id": "1. Musculoskeleton::227",
@@ -6637,7 +6637,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-MS-MOCK-GOUT-01",
       "caseOrder": 3,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 3
     },
     {
       "id": "1. Musculoskeleton::228",
@@ -6646,27 +6646,27 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "topic": "Musculoskeletal",
       "subtopic": "Gout",
       "track": "Clinic",
-      "caseContext": "[กรณีศึกษา 3]\nผู้ป่วยปวดนิ้วโป้งเท้ามาก บวม แดง อ้วน เป็นความดัน ไขมันในเลือดสูง ได้ยา HCTZ ดื่มสุรา ได้รับการวินิจฉัยเป็นโรคเกาต์",
-      "caseStem": "[กรณีศึกษา 3]\nผู้ป่วยปวดนิ้วโป้งเท้ามาก บวม แดง อ้วน เป็นความดัน ไขมันในเลือดสูง ได้ยา HCTZ ดื่มสุรา ได้รับการวินิจฉัยเป็นโรคเกาต์",
-      "question": "อาหารที่แนะนำให้ ผู้ป่วยรับประทาน",
+      "caseContext": "[กรณีศึกษา 3]<br>ผู้ป่วยชายมีอาการปวด บวม แดง บริเวณข้อโคนนิ้วโป้งเท้าอย่างฉับพลัน ได้รับการวินิจฉัยเป็นโรคเกาต์ (Gout) มีประวัติโรคความดันโลหิตสูง ไขมันในเลือดสูง ได้รับยา Hydrochlorothiazide (HCTZ) และมีพฤติกรรมดื่มสุราเป็นประจำ",
+      "caseStem": "[กรณีศึกษา 3]<br>ผู้ป่วยชายมีอาการปวด บวม แดง บริเวณข้อโคนนิ้วโป้งเท้าอย่างฉับพลัน ได้รับการวินิจฉัยเป็นโรคเกาต์ (Gout) มีประวัติโรคความดันโลหิตสูง ไขมันในเลือดสูง ได้รับยา Hydrochlorothiazide (HCTZ) และมีพฤติกรรมดื่มสุราเป็นประจำ",
+      "question": "จากข้อมูลข้างต้น อาหารหรือเครื่องดื่มใดที่ผู้ป่วยโรคเกาต์รายนี้ควร \"หลีกเลี่ยง\" มากที่สุด",
       "questionImage": "",
       "choices": [
-        "ปลาดุกย่าง",
-        "เครื่องในสัตว์",
-        "ปลาหมึกไข่นึ่งมะนาว",
-        "ไวน์",
-        "ผัดหน่อไม้ฝรั่ง"
+        "นมจืดพร่องมันเนย",
+        "เต้าหู้และผลิตภัณฑ์จากถั่วเหลือง",
+        "ผักคะน้าและดอกกะหล่ำ",
+        "เครื่องในสัตว์และแอลกอฮอล์",
+        "ปลาทะเลน้ำจืดขนาดเล็ก"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. ปลาดุกย่าง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (เครื่องในสัตว์): ไม่ตรงกับหลักการหรือข้อบ่งใช้ที่ถูกต้องตามโจทย์กำหนด<br>• ข้อ ค. (ปลาหมึกไข่นึ่งมะนาว): ไม่ตรงกับหลักการหรือข้อบ่งใช้ที่ถูกต้องตามโจทย์กำหนด<br>• ข้อ ง. (ไวน์): ไม่ตรงกับหลักการหรือข้อบ่งใช้ที่ถูกต้องตามโจทย์กำหนด<br>• ข้อ จ. (ผัดหน่อไม้ฝรั่ง): ไม่ตรงกับหลักการหรือข้อบ่งใช้ที่ถูกต้องตามโจทย์กำหนด",
+      "answer": 4,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. เครื่องในสัตว์และแอลกอฮอล์<br>🎯 ทำไมข้อนี้ถึงถูก:<br>เครื่องในสัตว์เป็นอาหารที่มีสาร purine สูงมาก ซึ่งจะถูกเมตาบอลิซึมไปเป็นกรดยูริกในเลือดสูงขึ้น และแอลกอฮอล์ (โดยเฉพาะเบียร์และสุรา) จะไปลดการขับกรดยูริกทางไตและเพิ่มการสร้างกรดยูริก จึงเป็นสิ่งกระตุ้นอาการกำเริบของโรคเกาต์ที่ต้องหลีกเลี่ยงเด็ดขาด<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (นมจืดพร่องมันเนย): ผลิตภัณฑ์นมพร่องมันเนยช่วยลดระดับกรดยูริกในเลือดและแนะนำให้บริโภคได้<br>• ข้อ ข. (เต้าหู้และผลิตภัณฑ์จากถั่วเหลือง): พืชตระกูลถั่วและผลิตภัณฑ์จากถั่วเหลืองมีพิวรีนปานกลางแต่ไม่พบว่าเพิ่มความเสี่ยงโรคเกาต์ สามารถรับประทานได้ในปริมาณที่เหมาะสม<br>• ข้อ ค. (ผักคะน้าและดอกกะหล่ำ): ผักที่มีพิวรีนสูงจากพืชไม่ได้เพิ่มความเสี่ยงต่อการเกิดโรคเกาต์กำเริบเหมือนพิวรีนจากเนื้อสัตว์<br>• ข้อ จ. (ปลาทะเลน้ำจืดขนาดเล็ก): ปลาบางชนิดทานได้ในปริมาณพอเหมาะ ต่างจากเครื่องในสัตว์และแอลกอฮอล์ที่ควรหลีกเลี่ยงอย่างเด็ดขาด",
       "answerImage": "",
       "note": "[SOURCE: Pharma Plus เล่มม่วง 2 - ข้อสอบย้อนหลังปี 2558 วันที่ 2 ข้อ 20]",
       "examType": "ข้อสอบจริง",
-      "examYear": "2558",
+      "examYear": "2558.0",
       "caseGroupId": "CASE-MS-MOCK-GOUT-01",
-      "caseOrder": 4,
+      "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 1
     },
     {
       "id": "1. Musculoskeleton::229",
@@ -14812,6 +14812,62 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
+    },
+    {
+      "id": "2. Cardiovascular::205",
+      "itemNo": 203,
+      "category": "2. Cardiovascular",
+      "topic": "2. Cardiovascular",
+      "subtopic": "2.6 Other cardiovascular disorders",
+      "track": "Clinic",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "การใช้ยา propranolol ในการป้องกันไมเกรน ควรระวังการใช้มากที่สุดในผู้ป่วยที่มีโรคร่วมใด",
+      "questionImage": "",
+      "choices": [
+        "เบาหวาน",
+        "หืด",
+        "ซึมเศร้า",
+        "กรดไหลย้อน",
+        "ไตเรื้อรัง"
+      ],
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. หืด<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Propranolol เป็นยากลุ่ม non-selective beta-blocker ซึ่งมีฤทธิ์บล็อกตัวรับทั้ง beta-1 และ beta-2 adrenergic receptors การบล็อก beta-2 receptors ที่หลอดลมจะทำให้เกิดการหดเกร็งของหลอดลม (bronchospasm) จึงเป็นข้อห้ามใช้เด็ดขาด (absolute contraindication) ในผู้ป่วยโรคหืด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (เบาหวาน): Propranolol อาจบังคับหรือบังอาการเตือนของภาวะน้ำตาลในเลือดต่ำ (hypoglycemia) เช่น อาการใจสั่น แต่ไม่ใช่ข้อห้ามใช้เด็ดขาดเท่าโรคหืด<br>• ข้อ ค. (ซึมเศร้า): Propranolol สามารถผ่าน blood-brain barrier ได้ดีและอาจทำให้อาการซึมเศร้าแย่ลงได้ แต่ไม่ใช่ข้อห้ามใช้หลักเทียบเท่าระบบทางเดินหายใจ<br>• ข้อ ง. (กรดไหลย้อน): ยากลุ่ม beta-blockers ไม่มีผลโดยตรงต่อการเกิดกรดไหลย้อน<br>• ข้อ จ. (ไตเรื้อรัง): Propranolol ถูกกำจัดหลักผ่านทางตับ (hepatic metabolism) จึงไม่ได้มีข้อจำกัดหลักในผู้ป่วยโรคไตเรื้อรัง",
+      "answerImage": "",
+      "note": "แบบฝึกหัด PLE-CC 1 ข้อ 111 [ย้ายจาก 4. Endocrine::83]",
+      "examType": "แบบฝึกหัด",
+      "examYear": "เล่มม่วง",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
+    },
+    {
+      "id": "2. Cardiovascular::206",
+      "itemNo": 204,
+      "category": "2. Cardiovascular",
+      "topic": "2. Cardiovascular",
+      "subtopic": "2.1 Hypertension",
+      "track": "Clinic",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "การใช้ propranolol ในการป้องกันไมเกรน ควรระวังและเป็นข้อห้ามใช้ในผู้ป่วยที่มีโรคร่วมใดมากที่สุด",
+      "questionImage": "",
+      "choices": [
+        "เบาหวาน",
+        "หืด",
+        "ซึมเศร้า",
+        "กรดไหลย้อน",
+        "ไตเรื้อรัง"
+      ],
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. หืด<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Propranolol เป็น non-selective beta-blocker ที่มีฤทธิ์บล็อกตัวรับ $_x0008_eta_2$ ที่หลอดลม ทำให้เกิดหลอดลมหดเกร็ง (bronchospasm) จึงเป็นข้อห้ามใช้เด็ดขาด (absolute contraindication) ในผู้ป่วยโรคหืด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (เบาหวาน): Propranolol อาจบังคับอาการเตือนของภาวะน้ำตาลในเลือดต่ำ (hypoglycemia) เช่น หัวใจเต้นเร็ว แต่ไม่ใช่ข้อห้ามใช้เด็ดขาดเท่าโรคหืด<br>• ข้อ ค. (ซึมเศร้า): Propranolol ผ่าน blood-brain barrier ได้ดี อาจทำให้อาการซึมเศร้าแย่ลงได้ แต่ไม่ใช่ข้อห้ามใช้หลักเทียบเท่าโรคหืด<br>• ข้อ ง. (กรดไหลย้อน): ยากลุ่ม beta-blockers ไม่มีผลโดยตรงที่ทำให้โรคกรดไหลย้อนแย่ลงอย่างมีนัยสำคัญ<br>• ข้อ จ. (ไตเรื้อรัง): Propranolol ถูกเมแทบอลิซึมผ่านตับเป็นหลัก จึงไม่ใช่ข้อห้ามใช้ในผู้ป่วยโรคไตเรื้อรัง",
+      "answerImage": "",
+      "note": "แบบฝึกหัด PLE-CC 1 ข้อ 111 [ย้ายจาก 4. Endocrine::83]",
+      "examType": "แบบฝึกหัด",
+      "examYear": "เล่มม่วง",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
     }
   ],
   "3. Dermatologic": [
@@ -16228,7 +16284,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
       "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 6
+      "caseTotal": 5
     },
     {
       "id": "3. Dermatologic::52",
@@ -16257,7 +16313,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
       "caseOrder": 2,
       "caseType": "",
-      "caseTotal": 6
+      "caseTotal": 5
     },
     {
       "id": "3. Dermatologic::53",
@@ -16266,9 +16322,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "topic": "3. Dermatologic",
       "subtopic": "3.4 Eczema & Dermatitis",
       "track": "Clinic",
-      "caseContext": "กรณีศึกษา: ผู้ป่วยชายไทยสูงอายุ 68 ปี มาโรงพยาบาลด้วยอาการปวดแสบร้อนเหมือนไฟลวกและเสียวแปลบตามแนวชายโครงด้านขวามา 2 วัน วันนี้เริ่มสังเกตเห็นตุ่มน้ำใส (grouped vesicles on erythematous base) เรียงตัวเป็นแนวยาวตามแนวเส้นประสาทเดอร์มาโทม (Dermatome T7-T8) ซีกขวาเพียงข้างเดียว ไม่ข้ามแนวกึ่งกลางลำตัว แพทย์วินิจฉัยว่าเป็นโรคงูสวัด (Herpes zoster)",
-      "caseStem": "กรณีศึกษา: ผู้ป่วยชายไทยสูงอายุ 68 ปี มาโรงพยาบาลด้วยอาการปวดแสบร้อนเหมือนไฟลวกและเสียวแปลบตามแนวชายโครงด้านขวามา 2 วัน วันนี้เริ่มสังเกตเห็นตุ่มน้ำใส (grouped vesicles on erythematous base) เรียงตัวเป็นแนวยาวตามแนวเส้นประสาทเดอร์มาโทม (Dermatome T7-T8) ซีกขวาเพียงข้างเดียว ไม่ข้ามแนวกึ่งกลางลำตัว แพทย์วินิจฉัยว่าเป็นโรคงูสวัด (Herpes zoster)",
-      "question": "ผู้ป่วยหญิง มีอาชีพทำสวน ผู้ป่วยมีปื้นแดง ขอบเขตชัด มีสะเก็ดสีเงินขึ้นปกคลุม เป็นมากบริเวณข้อศอกและหัวเข่า เมื่อมีอาการผู้ป่วยจะทา clobetasol cream\nโรคดังกล่าวของป่วยมีสาเหตุมาจากอะไร",
+      "caseContext": "ผู้ป่วยหญิง อาชีพทำสวน มีอาการทางผิวหนังเรื้อรัง มาพบเภสัชกรที่ร้านยาเพื่อขอคำปรึกษา ตรวจร่างกายพบปื้นแดง ขอบเขตชัดเจน มีสะเก็ดสีเงิน (silvery scale) ขึ้นปกคลุม เป็นมากบริเวณข้อศอกและหัวเข่า ผู้ป่วยให้ประวัติว่าเมื่อมีอาการกำเริบมักจะใช้ยาทา clobetasol cream เพื่อบรรเทาอาการ",
+      "caseStem": "ผู้ป่วยหญิง อาชีพทำสวน มีอาการทางผิวหนังเรื้อรัง มาพบเภสัชกรที่ร้านยาเพื่อขอคำปรึกษา ตรวจร่างกายพบปื้นแดง ขอบเขตชัดเจน มีสะเก็ดสีเงิน (silvery scale) ขึ้นปกคลุม เป็นมากบริเวณข้อศอกและหัวเข่า ผู้ป่วยให้ประวัติว่าเมื่อมีอาการกำเริบมักจะใช้ยาทา clobetasol cream เพื่อบรรเทาอาการ",
+      "question": "กลไกการเกิดโรคผิวหนังอักเสบเรื้อรังตามอาการและรอยโรคของผู้ป่วยรายนี้ จัดเป็นความผิดปกติในกลุ่มใด",
       "questionImage": "",
       "choices": [
         "Infection",
@@ -16278,15 +16334,15 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "ไม่มีข้อใดถูก"
       ],
       "answer": 3,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Autoimmune disease<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Autoimmune disease: Psoriasis (โรคสะเก็ดเงิน) เป็นโรคผิวหนังอักเสบเรื้อรังที่มีกลไกหลักเกี่ยวข้องกับภูมิคุ้มกันตนเอง (Autoimmune-mediated disease) ส่งผลให้มีการเพิ่มจำนวนของเซลล์ผิวหนังเร็วกว่าปกติ (hyperproliferation)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Infection): Psoriasis ไม่ได้เกิดจากการติดเชื้อแบคทีเรีย ไวรัส หรือเชื้อราโดยตรง จึงไม่สามารถรักษาให้หายขาดได้ด้วยยาปฏิชีวนะหรือยาต้านจุลชีพ<br>• ข้อ ข. (Allergic reaction): Allergic reaction มักกระตุ้นผ่าน IgE หรือ Type IV hypersensitivity จากสารภายนอก ทำให้เกิดผื่นลมพิษหรือ Contact dermatitis ซึ่งไม่ใช่พยาธิกำเนิดของโรคสะเก็ดเงิน<br>• ข้อ ง. (Seborrhea inflammation): Seborrhea inflammation เป็นกลไกการอักเสบของต่อมไขมันและยีสต์ใน Seborrheic dermatitis ไม่ใช่สาเหตุหลักของการแบ่งตัวผิดปกติของเซลล์เคราติโนไซต์ในโรคสะเก็ดเงิน<br>• ข้อ จ. (ไม่มีข้อใดถูก): คำตอบที่ถูกต้องมีอยู่แล้ว คือ Autoimmune disease (ข้อ ค) เนื่องจากโรคสะเก็ดเงินเกี่ยวข้องกับความผิดปกติของระบบภูมิคุ้มกันชนิด T-cell mediated autoimmune disorder",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Autoimmune disease<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Autoimmune disease: Psoriasis (โรคสะเก็ดเงิน) เป็นโรคผิวหนังอักเสบเรื้อรังที่มีกลไกหลักเกี่ยวข้องกับภูมิคุ้มกันตนเอง (Autoimmune-mediated / T-cell mediated disease) ส่งผลให้มีการเพิ่มจำนวนของเซลล์ผิวหนังเร็วกว่าปกติ (hyperproliferation) และเกิดรอยโรคเป็นปื้นแดงมีสะเก็ดสีเงิน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Infection): Psoriasis ไม่ได้เกิดจากการติดเชื้อแบคทีเรีย ไวรัส หรือเชื้อราโดยตรง จึงไม่สามารถรักษาให้หายขาดได้ด้วยยาปฏิชีวนะหรือยาต้านจุลชีพ<br>• ข้อ ข. (Allergic reaction): Allergic reaction มักกระตุ้นผ่าน IgE หรือ Type IV hypersensitivity จากสารภายนอก ทำให้เกิดผื่นลมพิษหรือ Contact dermatitis ซึ่งไม่ใช่พยาธิกำเนิดของโรคสะเก็ดเงิน<br>• ข้อ ง. (Seborrhea inflammation): Seborrhea inflammation เป็นกลไกการอักเสบของต่อมไขมันและยีสต์ใน Seborrheic dermatitis ไม่ใช่สาเหตุหลักของการแบ่งตัวผิดปกติของเซลล์เคราติโนไซต์ในโรคสะเก็ดเงิน<br>• ข้อ จ. (ไม่มีข้อใดถูก): คำตอบที่ถูกต้องมีอยู่แล้ว คือ Autoimmune disease (ข้อ ค) เนื่องจากโรคสะเก็ดเงินเกี่ยวข้องกับความผิดปกติของระบบภูมิคุ้มกัน",
       "answerImage": "",
       "note": "ข้อ 51 Pharma Plus เล่มม่วง (เฉลยข้อ ค)",
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
-      "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
-      "caseOrder": 3,
+      "caseGroupId": "CASE-DERM-PSORIASIS-01",
+      "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 6
+      "caseTotal": 1
     },
     {
       "id": "3. Dermatologic::54",
@@ -16313,9 +16369,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
-      "caseOrder": 4,
+      "caseOrder": 3,
       "caseType": "",
-      "caseTotal": 6
+      "caseTotal": 5
     },
     {
       "id": "3. Dermatologic::55",
@@ -16342,9 +16398,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
-      "caseOrder": 5,
+      "caseOrder": 4,
       "caseType": "",
-      "caseTotal": 6
+      "caseTotal": 5
     },
     {
       "id": "3. Dermatologic::56",
@@ -16371,9 +16427,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
-      "caseOrder": 6,
+      "caseOrder": 5,
       "caseType": "",
-      "caseTotal": 6
+      "caseTotal": 5
     },
     {
       "id": "3. Dermatologic::57",
@@ -20134,11 +20190,11 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "itemNo": 17,
       "category": "4. Endocrine",
       "topic": "4. Endocrine",
-      "subtopic": "4.3 Obesity & Metabolic syndrome",
+      "subtopic": "4.1 Diabetes mellitus",
       "track": "Clinic",
       "caseContext": "ผู้ป่วยชายไทยอายุ 65 ปี น้ำหนัก 90 kg ส่วนสูง 165 cm (BMI 33.0 kg/m²) สงสัยว่าเป็นโรคเบาหวาน โดยมีอาการอ่อนเพลีย กระหายน้ำบ่อย ปัสสาวะตอนกลางคืน 3-4 ครั้ง หิวบ่อย กินจุ แต่น้ำหนักไม่เพิ่ม\nประวัติครอบครัว (FH): มารดาเป็นโรคเบาหวาน ความดันโลหิตสูง และเสียชีวิตจากโรคหลอดเลือดหัวใจขาดเลือด\nประวัติส่วนตัว (SH): รับราชการ สูบบุหรี่วันละ 20 มวน ดื่มไวน์ 1-2 แก้วต่อเดือน ออกกำลังกาย 1-2 ครั้งต่อเดือน",
       "caseStem": "ผู้ป่วยชายไทยอายุ 65 ปี น้ำหนัก 90 kg ส่วนสูง 165 cm (BMI 33.0 kg/m²) สงสัยว่าเป็นโรคเบาหวาน โดยมีอาการอ่อนเพลีย กระหายน้ำบ่อย ปัสสาวะตอนกลางคืน 3-4 ครั้ง หิวบ่อย กินจุ แต่น้ำหนักไม่เพิ่ม\nประวัติครอบครัว (FH): มารดาเป็นโรคเบาหวาน ความดันโลหิตสูง และเสียชีวิตจากโรคหลอดเลือดหัวใจขาดเลือด\nประวัติส่วนตัว (SH): รับราชการ สูบบุหรี่วันละ 20 มวน ดื่มไวน์ 1-2 แก้วต่อเดือน ออกกำลังกาย 1-2 ครั้งต่อเดือน",
-      "question": "หากผู้ป่วยได้รับการตรวจเลือดขณะอดอาหารพบ FBS 140 mg/dL และวัดความดันโลหิตได้ 130/80 mmHg การประเมินและแนวทางการจัดการข้อใดถูกต้องที่สุด?",
+      "question": "หากผู้ป่วยได้รับการตรวจเลือดขณะอดอาหารพบ FBS 140 mg/dL และวัดความดันโลหิตได้ 130/80 mmHg การประเมินและแนวทางการจัดการข้อใดถูกต้องที่สุด",
       "questionImage": "",
       "choices": [
         "ผู้ป่วยเป็น pre-diabetes ให้เปลี่ยนพฤติกรรมการกิน และคอยตรวจเป็นประจำทุก 1-3 ปี",
@@ -20148,7 +20204,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "ผู้ป่วยเป็น DM type 2 ให้รีบส่งต่อผู้ป่วย"
       ],
       "answer": 3,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. เป็น DM type 2 ต้องรีบให้ยาพร้อมปรับเปลี่ยนพฤติกรรมเพื่อรักษาผู้ป่วย<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เป็น DM type 2 ต้องรีบให้ยาพร้อมปรับเปลี่ยนพฤติกรรมเพื่อรักษาผู้ป่วย เป็นคำตอบที่ถูกต้องและตรงตามแนวทางการรักษามาตรฐาน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (ผู้ป่วยเป็น pre-diabetes ให้เปลี่ยนพฤติกรรมการกิน และคอยตรวจเป็นประจำทุก 1-3 ปี): ผู้ป่วยมีระดับ FBS 140 mg/dL ซึ่งเข้าเกณฑ์วินิจฉัยเป็นเบาหวาน (มากกว่า 126 mg/dL) จึงไม่ใช่ Pre-diabetes<br>• ข้อ ข. (สงสัยว่าผู้ป่วยเป็นเบาหวาน แนะนำให้ออกกำลังกาย): FBS > 126 mg/dL ถือว่าวินิจฉัยเป็นเบาหวานแล้ว ไม่ใช่เพียงแค่สงสัย และต้องเริ่มการรักษาด้วยยาพร้อมปรับพฤติกรรมทันที<br>• ข้อ ง. (ผู้ป่วยเป็น pre-diabetes แนะนำให้มาเจาะเลือดทุก 3 ปี): ผู้ป่วยมีค่า FBS เกินเกณฑ์ Pre-diabetes ไปแล้ว และคำแนะนำการเจาะเลือดสำหรับ Pre-diabetes คือทุก 1 ปี ไม่ใช่ทุก 3 ปี<br>• ข้อ จ. (ผู้ป่วยเป็น DM type 2 ให้รีบส่งต่อผู้ป่วย): แม้เป็น DM type 2 แต่สามารถรักษาเบื้องต้นได้ที่ระดับปฐมภูมิด้วยยากิน ไม่มีความจำเป็นต้องส่งต่อผู้ป่วย (Refer) ในทันทีเว้นแต่มีภาวะแทรกซ้อนรุนแรง",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. เป็น DM type 2 ต้องรีบให้ยาพร้อมปรับเปลี่ยนพฤติกรรมเพื่อรักษาผู้ป่วย<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ผู้ป่วยมีระดับ FBS 140 mg/dL ซึ่งเกินเกณฑ์ $\\ge$ 126 mg/dL ร่วมกับมีอาการคลาสสิกของ hyperglycemia (ปัสสาวะบ่อย กระหายน้ำ น้ำหนักลด) จึงวินิจฉัยเป็น DM type 2 และตามมาตรฐานการรักษาปัจจุบัน (ADA Guideline) ต้องเริ่มการปรับเปลี่ยนพฤติกรรมร่วมกับการใช้ยา (เช่น Metformin) ทันที<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผู้ป่วยมีระดับ FBS 140 mg/dL ซึ่งเข้าเกณฑ์วินิจฉัยเป็นเบาหวานแล้ว จึงไม่ใช่ Pre-diabetes<br>• ข้อ ข.: FBS $\\ge$ 126 mg/dL ถือว่าวินิจฉัยเป็นเบาหวานแล้ว ไม่ใช่เพียงแค่สงสัย และต้องเริ่มการรักษาด้วยยาพร้อมปรับพฤติกรรมทันที<br>• ข้อ ง.: ผู้ป่วยมีค่า FBS เกินเกณฑ์ Pre-diabetes ไปแล้ว การวินิจฉัยชัดเจนว่าเป็นเบาหวาน<br>• ข้อ จ.: แม้เป็น DM type 2 แต่สามารถดูแลรักษาเบื้องต้นได้ที่สถานพยาบาลปฐมภูมิด้วยยากิน ไม่มีความจำเป็นต้องส่งต่อ (Refer) ทันทีหากยังไม่มีภาวะแทรกซ้อนรุนแรง",
       "answerImage": "",
       "note": "ข้อ 16 Pharma Plus เล่มม่วง (เฉลยข้อ ค)",
       "examType": "แบบฝึกหัด",
@@ -21191,17 +21247,17 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "Lispro insulin จัดอยู่ในประเภทใด",
+      "question": "Lispro insulin จัดอยู่ในประเภทอินซูลินกลุ่มใดตามระยะเวลาการออกฤทธิ์",
       "questionImage": "",
       "choices": [
         "Rapid acting insulin",
         "Short acting insulin",
         "Intermediate acting insulin",
         "Long acting insulin",
-        "Lente insulin"
+        "Ultra long acting insulin"
       ],
-      "answer": 4,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Long acting insulin<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Long acting insulin: Lispro insulin เป็น rapid-acting insulin analog ที่มีการปรับเปลี่ยนโครงสร้างกรดอะมิโนทำให้ดูดซึมเร็ว ออกฤทธิ์เร็ว (onset 10-15 นาที) ใช้ฉีดก่อนอาหารทันทีเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Rapid acting insulin): Lispro จัดเป็น Rapid-acting insulin ตามหลักการทางเภสัชวิทยา แต่โจทย์ข้อนี้เฉลยตัวเลือกอื่น ซึ่งตามทฤษฎีแล้วข้อนี้คือข้อมูลที่ถูกต้องของยา<br>• ข้อ ข. (Short acting insulin): Short-acting insulin หมายถึง Regular insulin (RI) ไม่ใช่ Lispro ซึ่งมีการสลับตำแหน่งกรดอะมิโนให้ออกฤทธิ์เร็วกว่า<br>• ข้อ ค. (Intermediate acting insulin): Intermediate-acting insulin คือ NPH ซึ่งมีระยะเวลาการออกฤทธิ์นานกว่า Lispro อย่างชัดเจน<br>• ข้อ จ. (Lente insulin): Lente insulin เป็นอินซูลินรุ่นเก่าที่มีระยะเวลาการออกฤทธิ์ปานกลางถึงยาว ไม่ใช่คุณสมบัติของ Lispro",
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Rapid acting insulin<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Insulin lispro เป็น rapid-acting insulin analog ที่มีการสลับตำแหน่งกรดอะมิโน (Proline และ Lysine ที่ตำแหน่ง B28 และ B29) ทำให้ฟอร์มตัวเป็น hexamer ได้น้อยลงและดูดซึมเข้าสู่กระแสเลือดได้เร็ว ออกฤทธิ์เร็วภายใน 10-15 นาที ใช้ฉีดก่อนอาหารทันทีเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Short acting insulin): Short-acting insulin หมายถึง Regular insulin (RI) ซึ่งออกฤทธิ์ช้ากว่ากลุ่ม rapid-acting<br>• ข้อ ค. (Intermediate acting insulin): Intermediate-acting insulin คือ NPH insulin ซึ่งมีระยะเวลาการออกฤทธิ์ปานกลาง ออกฤทธิ์นาน 12-18 ชั่วโมง<br>• ข้อ ง. (Long acting insulin): Long acting insulin ได้แก่ Insulin glargine หรือ Insulin detemir ซึ่งออกฤทธิ์นานตลอด 24 ชั่วโมงโดยไม่มีpeak<br>• ข้อ จ. (Ultra long acting insulin): Ultra long acting insulin ได้แก่ Insulin degludec ซึ่งมีระยะเวลาการออกฤทธิ์ยาวนานกว่า 42 ชั่วโมง",
       "answerImage": "",
       "note": "ข้อ 92 Pharma Plus เล่มม่วง (เฉลยข้อ ง)",
       "examType": "แบบฝึกหัด",
@@ -21560,17 +21616,17 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "ผู้ป่วยโรคเบาหวานชนิดที่ 2 อายุ 56 ปี ได้รับการรักษาด้วยยาลดระดับน้ำตาลชนิดรับประทานหลายชนิดในขนาดสูงสุดแล้ว ผลการตรวจทางห้องปฏิบัติการล่าสุดพบค่าระดับ HbA1c เท่ากับ 9.0% (ตามแนวทางเวชปฏิบัติ ADA Standards of Care)",
       "caseStem": "ผู้ป่วยโรคเบาหวานชนิดที่ 2 อายุ 56 ปี ได้รับการรักษาด้วยยาลดระดับน้ำตาลชนิดรับประทานหลายชนิดในขนาดสูงสุดแล้ว ผลการตรวจทางห้องปฏิบัติการล่าสุดพบค่าระดับ HbA1c เท่ากับ 9.0% (ตามแนวทางเวชปฏิบัติ ADA Standards of Care)",
-      "question": "หากต้องการพิจารณาเพิ่มยาฉีดเพื่อควบคุมระดับน้ำตาล ยาในกลุ่มใดมีความเหมาะสมสูงสุดในการลดระดับ HbA1c และลดความเสี่ยงต่อหัวใจและไต?",
+      "question": "หากต้องการพิจารณาเพิ่มยาฉีดเพื่อควบคุมระดับน้ำตาล ยาในกลุ่มใดมีความเหมาะสมสูงสุดในการลดระดับ HbA1c และลดความเสี่ยงต่อโรคหัวใจและหลอดเลือด รวมถึงโรคไต?",
       "questionImage": "",
       "choices": [
         "Sitagliptin",
         "Empagliflozin",
         "Acarbose",
         "Semaglutide SC",
-        "insulin SC"
+        "Insulin glargine SC"
       ],
-      "answer": 3,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Acarbose<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก Acarbose เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Alpha-glucosidase inhibitor ชะลอการย่อยคาร์โบไฮเดรตในทางเดินอาหาร ลด postprandial glucose แต่อาจเกิดท้องอืด ผายลม (flatulence) หากเกิด hypoglycemia ต้องแก้ด้วย pure glucose เท่านั้น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Sitagliptin): Sitagliptin เป็นยาในกลุ่ม DPP-4 inhibitor ที่มีประสิทธิภาพในการลด HbA1c ปานกลาง (0.5-0.8%) อาจไม่เพียงพอสำหรับผู้ป่วยที่ A1C 9%<br>• ข้อ ข. (Empagliflozin): Empagliflozin เป็นยาในกลุ่ม SGLT2i แม้จะมีผลดีต่อหัวใจและไต แต่ประสิทธิภาพการลดน้ำตาลอาจไม่เพียงพอที่จะดึง A1C ลงมาจาก 9% ได้อย่างรวดเร็ว<br>• ข้อ ง. (Semaglutide SC): Semaglutide มีประสิทธิภาพสูงในการลด A1C แต่มีราคาสูงและอาจต้องพิจารณาความพร้อมของผู้ป่วยในการใช้ยาฉีด<br>• ข้อ จ. (insulin SC): การเริ่ม Insulin จะพิจารณาเมื่อมีอาการของภาวะน้ำตาลในเลือดสูงรุนแรง (catabolism) หรือ A1C > 10% ตามคำแนะนำของ ADA",
+      "answer": 4,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Semaglutide SC<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Semaglutide SC เป็นยาในกลุ่ม GLP-1 receptor agonist ชนิดฉีด ซึ่งมีประสิทธิภาพสูงมากในการลดระดับ HbA1c น้ำหนักตัว และได้รับการพิสูจน์ตามแนวทาง ADA Standards of Care ว่ามีประโยชน์เด่นชัดในการลดความเสี่ยงโรคหัวใจและหลอดเลือด (ASCVD) และโรคไตเรื้อรัง (CKD)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Sitagliptin): เป็นยารับประทานในกลุ่ม DPP-4 inhibitor และไม่ใช่ยาฉีดตามที่โจทย์ระบุ<br>• ข้อ ข. (Empagliflozin): เป็นยารับประทานในกลุ่ม SGLT2 inhibitor ไม่ใช่ยาฉีด<br>• ข้อ ค. (Acarbose): เป็นยารับประทานในกลุ่ม Alpha-glucosidase inhibitor ไม่ใช่ยาฉีด และมีประสิทธิภาพลด HbA1c ต่ำ<br>• ข้อ จ. (Insulin glargine SC): เป็นยาฉีดอินซูลินที่ช่วยลดระดับน้ำตาลได้ดี แต่ไม่มีผลปกป้องโรคหัวใจและไตโดยตรงเท่ากับกลุ่ม GLP-1 RA และทำให้น้ำหนักเพิ่มขึ้น",
       "answerImage": "",
       "note": "แบบฝึกหัด PLE-CC 1 ข้อ 27",
       "examType": "แบบฝึกหัด",
@@ -21786,17 +21842,17 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "พืชผัก ในข้อใด มีผลลดระดับน้ำตาลในเลือด",
+      "question": "พืชผักในข้อใดมีผลลดระดับน้ำตาลในเลือดตามหลักฐานเชิงประจักษ์ทางเภสัชเวท",
       "questionImage": "",
       "choices": [
         "ยอดฝักแม้ว",
-        "ใบกะหล ่าปลี",
+        "ใบกะหล่ำปลี",
         "ผลบวบงู",
         "ผลมะระขี้นก",
         "ช่อดอกบล็อคโคลี"
       ],
-      "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. ใบกะหล ่าปลี<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก ใบกะหล ่าปลี เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Diabetes mellitus โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (ยอดฝักแม้ว): ยอดฝักแม้วไม่มีสารสำคัญหรือหลักฐานทางคลินิกที่ยืนยันถึงสรรพคุณในการลดระดับน้ำตาลในเลือด<br>• ข้อ ค. (ผลบวบงู): ผลบวบงูเป็นผักที่มีกากใยสูง แต่ไม่มีการศึกษาเภสัชเวทที่รองรับฤทธิ์ลดน้ำตาลในเลือดที่ชัดเจน<br>• ข้อ ง. (ผลมะระขี้นก): ผลมะระขี้นก (Bitter melon) มีสาร charantin ช่วยลดน้ำตาลในเลือดได้จริง แต่โจทย์เฉลยเป็นตัวเลือกอื่น<br>• ข้อ จ. (ช่อดอกบล็อคโคลี): บล็อคโคลีมีสารต้านอนุมูลอิสระและใยอาหารสูง แต่ไม่ได้มีสารออกฤทธิ์ทางเภสัชวิทยาที่ลดระดับน้ำตาลในเลือดได้โดยตรง",
+      "answer": 4,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. ผลมะระขี้นก<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ผลมะระขี้นก (Momordica charantia) มีสารสำคัญกลุ่ม charantin, vicine และสารคล้ายอินซูลิน (polypeptide-p) ซึ่งมีข้อมูลสนับสนุนทางเภสัชเวทและคลินิกว่าช่วยลดระดับน้ำตาลในเลือดได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ยอดฝักแม้วไม่มีสารสำคัญหรือหลักฐานทางคลินิกที่ยืนยันถึงสรรพคุณในการลดระดับน้ำตาลในเลือด<br>• ข้อ ข. ใบกะหล่ำปลีเป็นผักที่มีใยอาหารสูง แต่ไม่มีสารออกฤทธิ์จำเพาะในการลดระดับน้ำตาลในเลือด<br>• ข้อ ค. ผลบวบงูไม่มีการศึกษาทางเภสัชเวทที่รองรับฤทธิ์ลดน้ำตาลในเลือดที่ชัดเจน<br>• ข้อ จ. ช่อดอกบล็อคโคลีมีสารต้านอนุมูลอิสระและใยอาหารสูง แต่ไม่มีฤทธิ์ลดระดับน้ำตาลในเลือดโดยตรงเหมือนมะระขี้นก",
       "answerImage": "",
       "note": "แบบฝึกหัด PLE-CC 1 ข้อ 39",
       "examType": "แบบฝึกหัด",
@@ -21954,7 +22010,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "[ย้ายไป 2. Cardiovascular::204] ใช้ propranolol ในการป้องกันไมเกรน ควรระวังในผู้ป่วยที่มีโรคร่วมใดมากที่สุด",
+      "question": "[ย้ายไป 2. Cardiovascular::206] [ย้ายไป 2. Cardiovascular::205] [ย้ายไป 2. Cardiovascular::204] ใช้ propranolol ในการป้องกันไมเกรน ควรระวังในผู้ป่วยที่มีโรคร่วมใดมากที่สุด",
       "questionImage": "",
       "choices": [
         "เบาหวาน",
@@ -23597,7 +23653,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "ผู้ป่วยชาย อายุ 60 ปี มีโรคประจำตัวเป็นเบาหวานชนิดที่ 2 มาประมาณ 10 ปี ปัจจุบันได้รับยาดังนี้ Metformin 500 mg รับประทานครั้งละ 2 เม็ด วันละ 2 ครั้ง หลังอาหาร, Glipizide 5 mg รับประทานครั้งละ 2 เม็ด วันละ 2 ครั้ง ก่อนอาหาร, Pioglitazone 30 mg รับประทานครั้งละ 1 เม็ด วันละ 1 ครั้ง หลังอาหาร ผู้ป่วยไม่มีโรคประจำตัวอื่น และยังไม่มีภาวะแทรกซ้อนของโรคเบาหวาน",
       "caseStem": "ผู้ป่วยชาย อายุ 60 ปี มีโรคประจำตัวเป็นเบาหวานชนิดที่ 2 มาประมาณ 10 ปี ปัจจุบันได้รับยาดังนี้ Metformin 500 mg รับประทานครั้งละ 2 เม็ด วันละ 2 ครั้ง หลังอาหาร, Glipizide 5 mg รับประทานครั้งละ 2 เม็ด วันละ 2 ครั้ง ก่อนอาหาร, Pioglitazone 30 mg รับประทานครั้งละ 1 เม็ด วันละ 1 ครั้ง หลังอาหาร ผู้ป่วยไม่มีโรคประจำตัวอื่น และยังไม่มีภาวะแทรกซ้อนของโรคเบาหวาน",
-      "question": "ผลการตรวจทางห้องปฏิบัติการ HbA1c ของผู้ป่วยวันนี้เท่ากับ 9.0% ตามแนวทาง ADA Guidelines ยาลดระดับน้ำตาลในเลือดชนิดใดที่ควรได้รับการพิจารณาเพิ่มเป็นลำดับแรก",
+      "question": "ผลการตรวจทางห้องปฏิบัติการ HbA1c ของผู้ป่วยวันนี้เท่ากับ 9.0% ตามแนวทาง ADA Guidelines ยาลดระดับน้ำตาลในเลือดชนิดฉีดกลุ่มใดที่ควรได้รับการพิจารณาเพิ่มเป็นลำดับแรกก่อนเริ่มยาฉีดอินซูลิน",
       "questionImage": "",
       "choices": [
         "Sitagliptin",
@@ -23607,7 +23663,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Insulin SC"
       ],
       "answer": 4,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Semaglutide SC<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ผู้ป่วยรายนี้ได้รับยากิน 3 ชนิดร่วมกันแล้ว (Metformin + SU + TZD) แต่ระดับ HbA1c ยังสูงถึง 9.0% ตามแนวทาง ADA Standards of Care in Diabetes 2024 ในผู้ป่วยเบาหวานชนิดที่ 2 ที่ต้องเริ่มยาฉีด (injectable therapy) เพื่อเพิ่มประสิทธิภาพการลดน้ำตาล แนะนำให้เลือกยากลุ่ม GLP-1 Receptor Agonist (เช่น Semaglutide SC) เป็นตัวเลือกแรกก่อนเริ่มยาฉีดอินซูลิน เนื่องจากมีประสิทธิภาพในการลดน้ำตาลสูงมาก ช่วยลดน้ำหนัก และมีความเสี่ยงต่อภาวะน้ำตาลในเลือดต่ำน้อยกว่าอินซูลิน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Sitagliptin: เป็นยากลุ่ม DPP-4 inhibitor ซึ่งมีกลไกเพิ่ม incretin เหมือนกับ GLP-1 RA แต่มีประสิทธิภาพในการลด HbA1c ต่ำกว่า (ประมาณ 0.5-0.8%) ไม่เพียงพอต่อการลดระดับ HbA1c จาก 9.0% ลงมาสู่เป้าหมาย<br>• ข้อ ข. Empagliflozin: แม้ SGLT2i จะมีประโยชน์ต่อไตและหัวใจ แต่ประสิทธิภาพในการลด HbA1c เฉลี่ยอยู่ที่ 0.7-1.0% ซึ่งน้อยกว่า GLP-1 RA ชนิดที่มี efficacy สูงมากอย่าง Semaglutide<br>• ข้อ ค. Acarbose: เป็น alpha-glucosidase inhibitor มีประสิทธิภาพลดระดับน้ำตาลต่ำและมีผลข้างเคียงต่อระบบทางเดินอาหารสูง<br>• ข้อ จ. Insulin SC: ในอดีตมักเริ่มอินซูลินเมื่อ HbA1c สูง แต่คำแนะนำ ADA ล่าสุดระบุชัดเจนว่าหากต้องใช้ยาฉีด ให้พิจารณา GLP-1 RA ก่อนอินซูลิน ยกเว้นผู้ป่วยมีอาการของ catabolism ชัดเจน (เช่น น้ำหนักลดรวดเร็ว ปัสสาวะบ่อย กระหายน้ำมาก)<br>• --",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 4. Semaglutide SC<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ผู้ป่วยรายนี้ได้รับยากิน 3 ชนิดร่วมกันแล้วแต่ระดับ HbA1c ยังสูงถึง 9.0% ตามแนวทาง ADA Standards of Care ในผู้ป่วยเบาหวานชนิดที่ 2 ที่ต้องเริ่มยาฉีดเพื่อเพิ่มประสิทธิภาพ แนะนำให้เลือกยากลุ่ม GLP-1 Receptor Agonist เช่น Semaglutide SC เป็นตัวเลือกแรกก่อนเริ่มยาฉีดอินซูลิน เนื่องจากมีประสิทธิภาพสูงในการลดน้ำตาล ลดน้ำหนัก และมีความเสี่ยงต่อภาวะน้ำตาลในเลือดต่ำน้อยกว่าอินซูลิน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 1. Sitagliptin: เป็นยากลุ่ม DPP-4 inhibitor มีประสิทธิภาพในการลด HbA1c ต่ำเกินไป (ประมาณ 0.5-0.8%) ไม่เพียงพอต่อการลดระดับจาก 9.0%<br>• ข้อ 2. Empagliflozin: เป็นยากลุ่ม SGLT2 inhibitor มีประโยชน์ต่อไตและหัวใจ แต่ประสิทธิภาพในการลด HbA1c (0.7-1.0%) น้อยกว่า GLP-1 RA ชนิดที่มี efficacy สูง<br>• ข้อ 3. Acarbose: เป็น alpha-glucosidase inhibitor มีประสิทธิภาพลดระดับน้ำตาลต่ำและมีผลข้างเคียงต่อระบบทางเดินอาหารสูง<br>• ข้อ 5. Insulin SC: คำแนะนำ ADA ระบุชัดเจนว่าหากต้องใช้ยาฉีด ให้พิจารณา GLP-1 RA ก่อนอินซูลิน ยกเว้นผู้ป่วยมีอาการของ catabolism ชัดเจน เช่น น้ำหนักลดรวดเร็ว หรือมีภาวะน้ำตาลในเลือดสูงรุนแรง",
       "answerImage": "",
       "note": "ข้อ 27 Mock RxCU83",
       "examType": "ข้อสอบจำลอง",
@@ -48018,6 +48074,35 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
+    },
+    {
+      "id": "8. Infectious diseases::381",
+      "itemNo": 379,
+      "category": "8. Infectious diseases",
+      "topic": "8. Infectious diseases",
+      "subtopic": "8.8 Tuberculosis",
+      "track": "Clinic",
+      "caseContext": "ผู้ป่วยวัณโรคเกิดภาวะตับอักเสบจากยา (Drug-Induced Liver Injury: DILI) หลังจากได้รับยาสูตรผสม IRZE (Isoniazid, Rifampicin, Pyrazinamide, Ethambutol) โดยมีระดับเอนไซม์ตับ AST/ALT สูงเกิน 5 เท่าของค่าปกติ แพทย์จึงสั่งหยุดยาที่มีพิษต่อตับทั้งหมดชั่วคราว",
+      "caseStem": "ผู้ป่วยวัณโรคเกิดภาวะตับอักเสบจากยา (Drug-Induced Liver Injury: DILI) หลังจากได้รับยาสูตรผสม IRZE (Isoniazid, Rifampicin, Pyrazinamide, Ethambutol) โดยมีระดับเอนไซม์ตับ AST/ALT สูงเกิน 5 เท่าของค่าปกติ แพทย์จึงสั่งหยุดยาที่มีพิษต่อตับทั้งหมดชั่วคราว",
+      "question": "ยาต้านจุลชีพชนิดฉีดในข้อใดต่อไปนี้ ที่จัดเป็นยาทางเลือกที่ไม่มีพิษต่อตับ (Non-hepatotoxic alternative regimen) ที่สามารถนำมาใช้รักษาทดแทนยาขนานหลักในผู้ป่วยรายนี้",
+      "questionImage": "",
+      "choices": [
+        "PAS (Para-aminosalicylic acid)",
+        "Streptomycin (ยาฉีดกลุ่ม Aminoglycoside)",
+        "Thalidomide",
+        "Ethionamide",
+        "Linezolid"
+      ],
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Streptomycin (ยาฉีดกลุ่ม Aminoglycoside)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามแนวทางการรักษาวัณโรคขององค์การอนามัยโลก (WHO) และกรมควบคุมโรค กระทรวงสาธารณสุข ในกรณีที่ผู้ป่วยเกิดภาวะตับอักเสบรุนแรงจากยา (DILI) จนต้องหยุดยาขนานหลัก (INH, RIF, PZA) ยาต้านวัณโรคทางเลือกที่ไม่มีพิษต่อตับ (Non-hepatotoxic regimen) ที่แนะนำให้ใช้คือ Streptomycin (ยาฉีดเข้ากล้ามเนื้อ) ร่วมกับ Ethambutol และ Fluoroquinolone<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: PAS มีผลข้างเคียงต่อระบบทางเดินอาหารสูงมากและอาจทำให้เกิดการระคายเคืองตับได้<br>• ข้อ ค.: Thalidomide ไม่ใช่ยาต้านวัณโรคและมีผลทำให้ทารกพิการรุนแรง (Teratogenicity)<br>• ข้อ ง.: Ethionamide มีโครงสร้างคล้าย INH และมีพิษต่อตับสูง (Hepatotoxicity) ห้ามใช้ในภาวะ DILI<br>• ข้อ จ.: Linezolid เป็นยาต้านวัณโรคดื้อยาขนานที่สอง ไม่ใช่ยาหลักที่เลือกใช้แทนในภาวะตับอักเสบทั่วไป",
+      "answerImage": "",
+      "note": "ข้อ 12 (PLE_CC1_2562_Key.md) [RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์] [ย้ายจาก 9. Sterile & Special Forms::9]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2562.0",
+      "caseGroupId": "CASE-TB-01",
+      "caseOrder": 1,
+      "caseType": "",
+      "caseTotal": 1
     }
   ],
   "9. Neurologic": [
@@ -70708,11 +70793,11 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "itemNo": 17,
       "category": "15. Renal",
       "topic": "15. Renal",
-      "subtopic": "15.2 Chronic kidney diseases",
+      "subtopic": "15.4 Drug-induced nephrotoxicity",
       "track": "Clinic",
-      "caseContext": "",
-      "caseStem": "",
-      "question": "อาการข้างต้น อาจเกิดได้จากยาในข้อใด",
+      "caseContext": "ผู้ป่วยชายไทยอายุ 65 ปี เป็นโรคความดันโลหิตสูงและไขมันในเลือดสูง ได้รับยา Simvastatin 40 mg วันละครั้ง ต่อมาผู้ป่วยมีอาการปวดกล้ามเนื้อน่องอย่างรุนแรง ปัสสาวะมีสีเข้มคล้ายน้ำปลา ผลตรวจทางห้องปฏิบัติการพบค่า Creatine kinase (CK) สูงกว่าปกติ 10 เท่า และมีภาวะ Acute kidney injury (AKI)",
+      "caseStem": "ผู้ป่วยชายไทยอายุ 65 ปี เป็นโรคความดันโลหิตสูงและไขมันในเลือดสูง ได้รับยา Simvastatin 40 mg วันละครั้ง ต่อมาผู้ป่วยมีอาการปวดกล้ามเนื้อน่องอย่างรุนแรง ปัสสาวะมีสีเข้มคล้ายน้ำปลา ผลตรวจทางห้องปฏิบัติการพบค่า Creatine kinase (CK) สูงกว่าปกติ 10 เท่า และมีภาวะ Acute kidney injury (AKI)",
+      "question": "อาการข้างต้นและภาวะไตวายเฉียบพลันดังกล่าว น่าจะเกิดจากอาการไม่พึงประสงค์ของยาในข้อใด",
       "questionImage": "",
       "choices": [
         "Atenolol",
@@ -70722,14 +70807,15 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Felodipine"
       ],
       "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Simvastatin<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Simvastatin: คำถามต่อเนื่องจากโจทย์ก่อนหน้า (เกี่ยวข้องกับอาการบวมน้ำหรือความผิดปกติทางไต/อิเล็กโทรไลต์) โดยกลุ่มยา Dihydropyridine calcium channel blockers เช่น Felodipine ทำให้เกิด peripheral edema ได้บ่อยจาก arteriolar vasodilation<br>เป็น moderate-intensity statin เมแทบอไลต์ผ่าน CYP3A4 เด่นชัด ห้ามใช้ dose 80 mg และมี drug interactions สูงกับ CYP3A4 inhibitors (clarithromycin, ketoconazole)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Atenolol): เป็น hydrophilic cardioselective beta-1 blocker ขับออกทางไตเป็นหลัก แต่ evidence ในการลด stroke และ cardiovascular events ด้อยกว่า antihypertensive อื่นๆ<br>• ข้อ ค. (Aspirin): เป็น irreversible COX-1 inhibitor ยับยั้ง Thromboxane A2 เป็นแกนหลักใน antiplatelet secondary prevention ของ CVD (ขนาดยา 75-100 mg/day)<br>• ข้อ ง. (Hydralazine): เป็น direct arteriolar vasodilator ใช้ร่วมกับ isosorbide dinitrate ใน HFrEF (โดยเฉพาะคนผิวดำ) หรือรักษา severe HTN ในหญิงตั้งครรภ์ แต่เสี่ยงต่อ drug-induced lupus<br>• ข้อ จ. (Felodipine): Felodipine ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Simvastatin<br>🎯 ทำไมข้อนี้ถึงถูก:<br>Simvastatin เป็นยาลดไขมันกลุ่ม Statin ที่มีรายงานการเกิดอาการไม่พึงประสงค์รุนแรงคือ ภาวะกล้ามเนื้อลายสลาย (Rhabdomyolysis) ซึ่งสาร myoglobin ที่หลั่งออกมาจากกล้ามเนื้อที่ถูกทำลายจะเข้าไปอุดตันและเป็นพิษต่อท่อไต ส่งผลให้เกิดภาวะไตวายเฉียบพลัน (Acute kidney injury) ได้<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Atenolol: เป็นยา beta-1 selective blocker ใช้รักษาความดันโลหิตสูงและโรคหัวใจขาดเลือด อาการไม่พึงประสงค์หลักคือ bradycardia และ fatigue ไม่ใช่กล้ามเนื้อลายสลาย<br>• ข้อ ค. Aspirin: เป็นยาต้านเกล็ดเลือด อาการไม่พึงประสงค์สำคัญคือเลือดออกทางเดินอาหารและแผลในกระเพาะอาหาร ไม่ใช่กล้ามเนื้อลายสลาย<br>• ข้อ ง. Hydralazine: เป็นยาขยายหลอดเลือดแดงโดยตรง อาการไม่พึงประสงค์สำคัญคือ reflex tachycardia, headache และ drug-induced lupus-like syndrome<br>• ข้อ จ. Felodipine: เป็นยาในกลุ่ม calcium channel blocker (dihydropyridine) อาการไม่พึงประสงค์เด่นคือ peripheral edema และ headache จากการขยายหลอดเลือด ไม่ใช่กล้ามเนื้อลายสลาย",
       "answerImage": "Clinic",
       "note": "ข้อ 17 Pharma Plus เล่มม่วง (เฉลยข้อ ข)",
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
-      "caseGroupId": "",
-      "caseOrder": 0,
-      "caseType": ""
+      "caseGroupId": "CASE-RENAL-01",
+      "caseOrder": 1,
+      "caseType": "",
+      "caseTotal": 1
     },
     {
       "id": "15. Renal::20",
@@ -96718,7 +96804,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "[ย้ายไป 1. Pharmacy Laws & Ethics::240] ผู้ป่วยไปซื้อยา diclofenac tablet มาจากรานขายของชำ รานชำ สามารถขายยาชนิดนี้ไดหรือไม!",
+      "question": "[ย้ายไป 1. Pharmacy Laws & Ethics::241] [ย้ายไป 1. Pharmacy Laws & Ethics::240] ผู้ป่วยไปซื้อยา diclofenac tablet มาจากรานขายของชำ รานชำ สามารถขายยาชนิดนี้ไดหรือไม!",
       "questionImage": "",
       "choices": [
         "ขายไดเพราะเปEนยาแผนปtจจุบันบรรจุเสร็จ",
@@ -96970,21 +97056,21 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "ในการพัฒนาสูตรตำรับ Pyrazinamide tablet พบว่าตัวยา pyrazinamide สามารถละลายน้ำได้น้อย ควรเติมสารใด เพือเพิ่มการละลาย (1) Sodium starch glycolate (2) Croscarmellose sodium (3) Colloidal silicon dioxide (4) Magnesium stearate (5) Sodium lauryl sulfate",
+      "question": "ในการพัฒนาสูตรตำรับยาเม็ด Pyrazinamide ซึ่งเป็นตัวยาสำคัญที่มีคุณสมบัติไหลยากและอัดเม็ดได้ยาก (Poor flowability and compressibility) วิธีการเตรียมตำรับใดมีความเหมาะสมมากที่สุดในการผลิตยาเม็ดในระดับอุตสาหกรรม",
       "questionImage": "",
       "choices": [
-        "Direct Compression tableting method",
         "Wet Granulation tableting method",
-        "Dry Granulation (Roller Compaction)",
-        "Fluidized Bed Granulation",
-        "Film Coating with Hydroxypropyl methylcellulose (HPMC)"
+        "Direct Compression tableting method",
+        "Dry Granulation using Slugging method",
+        "Layered Tablet Compression method",
+        "Direct Pelletization method"
       ],
       "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Direct Compression tableting method<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก Direct Compression tableting method เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Tablet Manufacturing โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br>USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Tablet Manufacturing)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Wet Granulation tableting method): Wet granulation เพิ่ม flowability, compressibility โดยใช้ binder liquid สร้าง granules เหมาะสำหรับยาที่ไม่ทนความชื้นไม่ได้<br>• ข้อ ค. (Dry Granulation (Roller Compaction)): Dry granulation ใช้ slugging หรือ roller compaction ไม่ใช้ liquid binder เหมาะสำหรับยาที่ moisture/heat sensitive<br>• ข้อ ง. (Fluidized Bed Granulation): Fluidized Bed Granulation ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ. (Film Coating with Hydroxypropyl methylcellulose (HPMC)): เป็น Hydroxypropyl methylcellulose ใช้เป็น Film coating polymer ที่ละลายในกระเพาะอาหาร และใช้เป็น Hydrophilic matrix สำหรับ sustained release tablets",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Wet Granulation tableting method<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Pyrazinamide เป็นผงยาที่มีคุณสมบัติการไหล (Flowability) และการอัดตัว (Compressibility) ไม่ดี การใช้กระบวนการ Wet Granulation ช่วยเพิ่มขนาดอนุภาคและเชื่อมประสานผงยาด้วยสารยึดเกาะ (Binder) ทำให้ผงยามีคุณสมบัติการไหลดีขึ้นและสามารถอัดเป็นเม็ดได้แข็งแรงตามมาตรฐาน USP<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Direct Compression tableting method): ไม่เหมาะสมเนื่องจาก Pyrazinamide ไม่มีคุณสมบัติการไหลและการอัดเม็ดโดยตรงที่ดีพอ เว้นแต่จะใช้สารช่วยอัดเม็ดปริมาณมาก<br>• ข้อ ค. (Dry Granulation using Slugging method): แม้จะใช้กับยาที่ไวต่อความชื้นได้ แต่ Wet Granulation นิยมมากกว่าในกรณีที่ต้องการแก้ไขปัญหาการไหลและการกระจายตัวของสารออกฤทธิ์ปริมาณมาก<br>• ข้อ ง. (Layered Tablet Compression method): เป็นวิธีสำหรับทำยาเม็ดหลายชั้น (Layered tablets) ไม่ใช่กระบวนการผลิตยาเม็ดมาตรฐานทั่วไป<br>• ข้อ จ. (Direct Pelletization method): เป็นกระบวนการขึ้นรูปเม็ดกลม (Pellets) ไม่ใช่กระบวนการผลิตยาเม็ดอัด (Compressed tablets) ทั่วไป",
       "answerImage": "",
       "note": "ข้อ 22 (PLE_CC1_2557.md)",
       "examType": "ข้อสอบจริง",
-      "examYear": "2557",
+      "examYear": "2557.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -117491,8 +117577,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Ethylene oxide gas sterilization",
         "Gamma radiation sterilization"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Dry heat sterilization<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sterile Products การเลือก Sterile Products เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Autoclave & Sterilization โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: (Dry heat sterilization): Dry heat sterilization ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค.: (Sterile filtration): Sterile filtration ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง.: (Steam sterilization): Steam sterilization ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ.: (Ethylene oxide gas sterilization): Ethylene oxide gas sterilization ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Sterile filtration<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Insulin เป็นโปรตีนสายเปปไทด์ที่มีโครงสร้างสามมิติซึ่งง่ายต่อการเสียสภาพธรรมชาติ (denaturation) เมื่อได้รับความร้อนสูง ดังนั้นกระบวนการ sterilization ที่เหมาะสมสำหรับผลิตภัณฑ์สำเร็จรูปที่เป็นสารละลายโปรตีนหรือชีววัตถุคือการกรองผ่านเยื่อกรองเชื้อ (Sterile filtration) โดยใช้ฟิลเตอร์ขนาด 0.22 ไมครอน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Dry heat sterilization ใช้ความร้อนสูงมาก ซึ่งจะทำให้อินซูลินเกิดการเสื่อมสลายและสูญเสียฤทธิ์ทางยา<br>• ข้อ ค.: Steam sterilization (Autoclave) ใช้ไอน้ำและความร้อนสูง ทำให้โปรตีนอินซูลินเกิดการจับตัวและเสื่อมสภาพ<br>• ข้อ ง.: Ethylene oxide gas sterilization ใช้แก๊สพิษและสารตกค้าง ซึ่งไม่เหมาะสำหรับผลิตภัณฑ์ที่เป็นของเหลวสำเร็จรูปฉีดเข้าสู่ร่างกายโดยตรง<br>• ข้อ จ.: Gamma radiation sterilization รังสีแกมมาอาจทำลายโครงสร้างทางเคมีและพันธะของโมเลกุลโปรตีนอินซูลินให้เสียหายได้",
       "answerImage": "",
       "note": "แบบฝึกหัด PLE-CC 1 ข้อ 32",
       "examType": "แบบฝึกหัด",
@@ -117538,7 +117624,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "เหตุผลหลักในการตรวจ Bacterial endotoxin ใน Paclitaxel injection",
+      "question": "เหตุผลหลักในการตรวจ Bacterial endotoxin ในผลิตภัณฑ์ Paclitaxel injection คือข้อใด",
       "questionImage": "",
       "choices": [
         "เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา",
@@ -117547,8 +117633,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง",
         "เพื่อวัดความแรงในการออกฤทธิ์ต้านมะเร็ง"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sterile Products การเลือก Sterile Products เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Sterility & Pyrogen testing โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: (เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา): เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค.: (เพื่อป้องกันการเกิด Pyrogenic reaction): เพื่อป้องกันการเกิด Pyrogenic reaction ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง.: (เพื่อวัดความเข้มข้นของสารกันเสีย): เพื่อวัดความเข้มข้นของสารกันเสีย ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ.: (เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง): เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เพื่อป้องกันการเกิด Pyrogenic reaction<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Bacterial endotoxin หรือ lipopolysaccharide จากผนังเซลล์แบคทีเรียแกรมลบเมื่อเข้าสู่ร่างกายทางหลอดเลือดจะเหนี่ยวนำให้เกิดไข้และการอักเสบรุนแรง (Pyrogenic reaction) การทดสอบ Bacterial endotoxin จึงมีความสำคัญเพื่อความปลอดภัยของผู้ป่วย<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา: เป็นการประเมินการปนเปื้อนเชื้อจุลชีพทั่วไปหรือทดสอบความปลอดเชื้อ (Sterility test) ไม่ใช่เป้าหมายหลักของการตรวจ endotoxin<br>• ข้อ ค.: เพื่อวัดความเข้มข้นของสารกันเสีย: การตรวจสารกันเสียใช้ analytical methods เช่น HPLC ไม่ใช่การตรวจ endotoxin<br>• ข้อ ง.: เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง: การประเมินความคงตัวใช้วิธี Stability testing ไม่ใช่การทดสอบ endotoxin<br>• ข้อ จ.: เพื่อวัดความแรงในการออกฤทธิ์ต้านมะเร็ง: ความแรงของยาประเมินด้วย Assay หรือ Potency testing ไม่ใช่ Bacterial endotoxin test",
       "answerImage": "",
       "note": "แบบฝึกหัด PLE-CC 1 ข้อ 75",
       "examType": "แบบฝึกหัด",
@@ -117650,7 +117736,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "ผู้ป่วยวัณโรคเกิดภาวะตับอักเสบจากยา (Drug-Induced Liver Injury: DILI) หลังจากได้รับยาสูตรผสม IRZE (Isoniazid, Rifampicin, Pyrazinamide, Ethambutol) โดยมีระดับเอนไซม์ตับ AST/ALT สูงเกิน 5 เท่าของค่าปกติ แพทย์จึงสั่งหยุดยาที่มีพิษต่อตับทั้งหมดชั่วคราว",
       "caseStem": "ผู้ป่วยวัณโรคเกิดภาวะตับอักเสบจากยา (Drug-Induced Liver Injury: DILI) หลังจากได้รับยาสูตรผสม IRZE (Isoniazid, Rifampicin, Pyrazinamide, Ethambutol) โดยมีระดับเอนไซม์ตับ AST/ALT สูงเกิน 5 เท่าของค่าปกติ แพทย์จึงสั่งหยุดยาที่มีพิษต่อตับทั้งหมดชั่วคราว",
-      "question": "ยาต้านจุลชีพชนิดฉีดในข้อใดต่อไปนี้ ที่จัดเป็นยาทางเลือกที่ไม่มีพิษต่อตับ (Non-hepatotoxic alternative regimen) ที่สามารถนำมาใช้รักษาทดแทนยาขนานหลักในช่วงที่ตับกำลังฟื้นตัว",
+      "question": "[ย้ายไป 8. Infectious diseases::381] ยาต้านจุลชีพชนิดฉีดในข้อใดต่อไปนี้ ที่จัดเป็นยาทางเลือกที่ไม่มีพิษต่อตับ (Non-hepatotoxic alternative regimen) ที่สามารถนำมาใช้รักษาทดแทนยาขนานหลักในช่วงที่ตับกำลังฟื้นตัว",
       "questionImage": "",
       "choices": [
         "PAS (Para-aminosalicylic acid)",
@@ -117734,7 +117820,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "การทดสอบโดยการฉีดเข้าไปในหูกระต่ายแล้ววัดอุณหภูมิของกระต่ายที่สูงขึ้น เป็นการทดสอบอะไร",
+      "question": "การทดสอบโดยการฉีดเข้าไปในหูกระต่ายแล้ววัดอุณหภูมิของกระต่ายที่สูงขึ้นเป็นการทดสอบอะไร",
       "questionImage": "",
       "choices": [
         "Clarity test",
@@ -117743,12 +117829,12 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Pyrogen test",
         "Toxicity test"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Clarity test<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก Clarity test เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Parenterals & Ophthalmic โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br>USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Parenterals & Ophthalmic)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: (Sterility test): Sterility test ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค.: (Purity test): Purity test ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง.: (Pyrogen test): Pyrogen test ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ.: (Toxicity test): Toxicity test ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+      "answer": 4,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Pyrogen test<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Pyrogen test เป็นการทดสอบเพื่อตรวจหาปริมาณสารก่อไข้ (pyrogen) ในผลิตภัณฑ์ยาฉีด โดยการฉีดตัวอย่างยาเข้าทางหลอดเลือดดำของกระต่าย และวัดอุณหภูมิร่างกายที่สูงขึ้นตามมาตรฐาน USP<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Clarity test เป็นการตรวจสอบความใสของผลิตภัณฑ์ยาฉีดด้วยตาเปล่า<br>• ข้อ ข.: Sterility test เป็นการทดสอบความปลอดเชื้อของผลิตภัณฑ์โดยนำไปเพาะเชื้อในอาหารเลี้ยงเชื้อ<br>• ข้อ ค.: Purity test เป็นการทดสอบความบริสุทธิ์เพื่อตรวจสอบสารเจือปนในวัตถุดิบหรือตำรับยา<br>• ข้อ จ.: Toxicity test เป็นการทดสอบความเป็นพิษของสารต่อสิ่งมีชีวิตหรือเซลล์",
       "answerImage": "",
       "note": "ข้อ 18 (PLE_CC1_2555 Day 1.md)",
       "examType": "ข้อสอบจริง",
-      "examYear": "2555",
+      "examYear": "2555.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -117795,16 +117881,16 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "choices": [
         "Tonicity",
         "Preservatives",
-        "Sterity",
+        "Sterility",
         "Volume",
         "pH"
       ],
-      "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Preservatives<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก Preservatives เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Parenterals & Ophthalmic โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br>USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Parenterals & Ophthalmic)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: (Tonicity): Tonicity ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค.: (Sterity): Sterity ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง.: (Volume): Volume ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ.: (pH): pH ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+      "answer": 3,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Sterility<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sterility (ความปราศจากเชื้อ) เป็นข้อกำหนดสำคัญที่สุดในการเตรียมยาหยอดตา เนื่องจากดวงตามีความไวต่อการติดเชื้อสูง การที่ยาไม่ปราศจากเชื้ออาจทำให้เกิดการติดเชื้อที่กระจกตา (microbial keratitis) ซึ่งรุนแรงถึงขั้นสูญเสียการมองเห็นได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: (Tonicity): Tonicity สำคัญในการลดความระคายเคืองและป้องกันการไหลเข้าออกของน้ำในเซลล์ แต่รองจากความปราศจากเชื้อ<br>• ข้อ ข.: (Preservatives): Preservatives สำคัญในยาที่ใช้หลายครั้ง (multidose) เพื่อป้องกันการปนเปื้อนระหว่างใช้งาน แต่สำหรับยาหยอดตาแบบ unit-dose หรือในแง่ความปลอดภัยพื้นฐาน Sterility สำคัญกว่า<br>• ข้อ ง.: (Volume): Volume เป็นเรื่องของขนาดบรรจุและการบริหารยา ไม่ใช่ปัจจัยความปลอดภัยด้านจุลชีววิทยาหลัก<br>• ข้อ จ.: (pH): pH สำคัญต่อความคงตัวและความสบายตา แต่สามารถปรับแต่งได้รองจากความจำเป็นต้องปราศจากเชื้อ",
       "answerImage": "",
       "note": "ข้อ 7 (PLE_CC1_2554 SET2.md)",
       "examType": "ข้อสอบจริง",
-      "examYear": "2554",
+      "examYear": "2554.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -134729,6 +134815,34 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
+    },
+    {
+      "id": "1. Pharmacy Laws & Ethics::241",
+      "itemNo": 239,
+      "category": "1. Pharmacy Laws & Ethics",
+      "topic": "1. Law & Regulations",
+      "subtopic": "1.1 พระราชบัญญัติยา",
+      "track": "SAP",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "ผู้ป่วยไปซื้อยา diclofenac tablet มาจากร้านขายของชำ ร้านชำสามารถขายยาชนิดนี้ได้หรือไม่",
+      "questionImage": "",
+      "choices": [
+        "ขายได้เพราะเป็นยาแผนปัจจุบันบรรจุเสร็จ",
+        "ขายได้เพราะเป็นยาสามัญประจำบ้าน",
+        "ขายได้เพราะยานี้ไม่จำเป็นต้องขายโดยเภสัชกร",
+        "ขายไม่ได้ในร้านชำ เพราะเป็นยาอันตราย",
+        "ขายไม่ได้ในร้านชำ เพราะเป็นยาควบคุมพิเศษ"
+      ],
+      "answer": 4,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. ขายไม่ได้ในร้านชำ เพราะเป็นยาอันตราย<br>🎯 ทำไมข้อนี้ถึงถูก:<br>Diclofenac เป็นยาอันตรายตามพระราชบัญญัติยา การขายยาอันตรายจะต้องกระทำโดยผู้รับอนุญาตขายยาแผนปัจจุบัน หรือผู้ประกอบวิชาชีพเวชกรรม ฯลฯ ในสถานที่ขายยาที่ได้รับอนุญาตเท่านั้น ร้านขายของชำทั่วไปไม่มีใบอนุญาตขายยา จึงไม่สามารถจำหน่ายยาอันตรายได้<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ขายได้เพราะเป็นยาแผนปัจจุบันบรรจุเสร็จ ผิด เนื่องจากยาแผนปัจจุบันบรรจุเสร็จแบ่งเป็นหลายประเภท หากเป็นยาอันตรายหรือยาควบคุมพิเศษ ร้านชำไม่สามารถขายได้<br>• ข้อ ข.: ขายได้เพราะเป็นยาสามัญประจำบ้าน ผิด เพราะ Diclofenac ไม่ใช่ยาสามัญประจำบ้าน<br>• ข้อ ค.: ขายได้เพราะยานี้ไม่จำเป็นต้องขายโดยเภสัชกร ผิด แม้ร้านขายยาบรรจุเสร็จบางประเภทจะไม่ต้องมีเภสัชกรอยู่ตลอดเวลา แต่ร้านชำทั่วไปก็ไม่มีสิทธิ์ขายยาอันตราย<br>• ข้อ จ.: ขายไม่ได้ในร้านชำ เพราะเป็นยาควบคุมพิเศษ ผิด เนื่องจาก Diclofenac จัดเป็นยาอันตราย ไม่ใช่ยาควบคุมพิเศษ",
+      "answerImage": "",
+      "note": "ข้อ 20 (PLE_CC1_2561_Key.md) [ย้ายจาก 6. Solid Dosage Forms::79]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2561.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
     }
   ],
   "2. Pharmacy Administration & Sy": [
@@ -144172,7 +144286,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-MS-MOCK-GOUT-01",
     "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 3
   },
   {
     "id": "1. Musculoskeleton::226",
@@ -144201,7 +144315,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-MS-MOCK-GOUT-01",
     "caseOrder": 2,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 3
   },
   {
     "id": "1. Musculoskeleton::227",
@@ -144230,7 +144344,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-MS-MOCK-GOUT-01",
     "caseOrder": 3,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 3
   },
   {
     "id": "1. Musculoskeleton::228",
@@ -144239,27 +144353,27 @@ window.QUIZ_OFFLINE_DB = [
     "topic": "Musculoskeletal",
     "subtopic": "Gout",
     "track": "Clinic",
-    "caseContext": "[กรณีศึกษา 3]\nผู้ป่วยปวดนิ้วโป้งเท้ามาก บวม แดง อ้วน เป็นความดัน ไขมันในเลือดสูง ได้ยา HCTZ ดื่มสุรา ได้รับการวินิจฉัยเป็นโรคเกาต์",
-    "caseStem": "[กรณีศึกษา 3]\nผู้ป่วยปวดนิ้วโป้งเท้ามาก บวม แดง อ้วน เป็นความดัน ไขมันในเลือดสูง ได้ยา HCTZ ดื่มสุรา ได้รับการวินิจฉัยเป็นโรคเกาต์",
-    "question": "อาหารที่แนะนำให้ ผู้ป่วยรับประทาน",
+    "caseContext": "[กรณีศึกษา 3]<br>ผู้ป่วยชายมีอาการปวด บวม แดง บริเวณข้อโคนนิ้วโป้งเท้าอย่างฉับพลัน ได้รับการวินิจฉัยเป็นโรคเกาต์ (Gout) มีประวัติโรคความดันโลหิตสูง ไขมันในเลือดสูง ได้รับยา Hydrochlorothiazide (HCTZ) และมีพฤติกรรมดื่มสุราเป็นประจำ",
+    "caseStem": "[กรณีศึกษา 3]<br>ผู้ป่วยชายมีอาการปวด บวม แดง บริเวณข้อโคนนิ้วโป้งเท้าอย่างฉับพลัน ได้รับการวินิจฉัยเป็นโรคเกาต์ (Gout) มีประวัติโรคความดันโลหิตสูง ไขมันในเลือดสูง ได้รับยา Hydrochlorothiazide (HCTZ) และมีพฤติกรรมดื่มสุราเป็นประจำ",
+    "question": "จากข้อมูลข้างต้น อาหารหรือเครื่องดื่มใดที่ผู้ป่วยโรคเกาต์รายนี้ควร \"หลีกเลี่ยง\" มากที่สุด",
     "questionImage": "",
     "choices": [
-      "ปลาดุกย่าง",
-      "เครื่องในสัตว์",
-      "ปลาหมึกไข่นึ่งมะนาว",
-      "ไวน์",
-      "ผัดหน่อไม้ฝรั่ง"
+      "นมจืดพร่องมันเนย",
+      "เต้าหู้และผลิตภัณฑ์จากถั่วเหลือง",
+      "ผักคะน้าและดอกกะหล่ำ",
+      "เครื่องในสัตว์และแอลกอฮอล์",
+      "ปลาทะเลน้ำจืดขนาดเล็ก"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. ปลาดุกย่าง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (เครื่องในสัตว์): ไม่ตรงกับหลักการหรือข้อบ่งใช้ที่ถูกต้องตามโจทย์กำหนด<br>• ข้อ ค. (ปลาหมึกไข่นึ่งมะนาว): ไม่ตรงกับหลักการหรือข้อบ่งใช้ที่ถูกต้องตามโจทย์กำหนด<br>• ข้อ ง. (ไวน์): ไม่ตรงกับหลักการหรือข้อบ่งใช้ที่ถูกต้องตามโจทย์กำหนด<br>• ข้อ จ. (ผัดหน่อไม้ฝรั่ง): ไม่ตรงกับหลักการหรือข้อบ่งใช้ที่ถูกต้องตามโจทย์กำหนด",
+    "answer": 4,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. เครื่องในสัตว์และแอลกอฮอล์<br>🎯 ทำไมข้อนี้ถึงถูก:<br>เครื่องในสัตว์เป็นอาหารที่มีสาร purine สูงมาก ซึ่งจะถูกเมตาบอลิซึมไปเป็นกรดยูริกในเลือดสูงขึ้น และแอลกอฮอล์ (โดยเฉพาะเบียร์และสุรา) จะไปลดการขับกรดยูริกทางไตและเพิ่มการสร้างกรดยูริก จึงเป็นสิ่งกระตุ้นอาการกำเริบของโรคเกาต์ที่ต้องหลีกเลี่ยงเด็ดขาด<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (นมจืดพร่องมันเนย): ผลิตภัณฑ์นมพร่องมันเนยช่วยลดระดับกรดยูริกในเลือดและแนะนำให้บริโภคได้<br>• ข้อ ข. (เต้าหู้และผลิตภัณฑ์จากถั่วเหลือง): พืชตระกูลถั่วและผลิตภัณฑ์จากถั่วเหลืองมีพิวรีนปานกลางแต่ไม่พบว่าเพิ่มความเสี่ยงโรคเกาต์ สามารถรับประทานได้ในปริมาณที่เหมาะสม<br>• ข้อ ค. (ผักคะน้าและดอกกะหล่ำ): ผักที่มีพิวรีนสูงจากพืชไม่ได้เพิ่มความเสี่ยงต่อการเกิดโรคเกาต์กำเริบเหมือนพิวรีนจากเนื้อสัตว์<br>• ข้อ จ. (ปลาทะเลน้ำจืดขนาดเล็ก): ปลาบางชนิดทานได้ในปริมาณพอเหมาะ ต่างจากเครื่องในสัตว์และแอลกอฮอล์ที่ควรหลีกเลี่ยงอย่างเด็ดขาด",
     "answerImage": "",
     "note": "[SOURCE: Pharma Plus เล่มม่วง 2 - ข้อสอบย้อนหลังปี 2558 วันที่ 2 ข้อ 20]",
     "examType": "ข้อสอบจริง",
-    "examYear": "2558",
+    "examYear": "2558.0",
     "caseGroupId": "CASE-MS-MOCK-GOUT-01",
-    "caseOrder": 4,
+    "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 1
   },
   {
     "id": "1. Musculoskeleton::229",
@@ -152405,6 +152519,62 @@ window.QUIZ_OFFLINE_DB = [
     "caseType": ""
   },
   {
+    "id": "2. Cardiovascular::205",
+    "itemNo": 203,
+    "category": "2. Cardiovascular",
+    "topic": "2. Cardiovascular",
+    "subtopic": "2.6 Other cardiovascular disorders",
+    "track": "Clinic",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "การใช้ยา propranolol ในการป้องกันไมเกรน ควรระวังการใช้มากที่สุดในผู้ป่วยที่มีโรคร่วมใด",
+    "questionImage": "",
+    "choices": [
+      "เบาหวาน",
+      "หืด",
+      "ซึมเศร้า",
+      "กรดไหลย้อน",
+      "ไตเรื้อรัง"
+    ],
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. หืด<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Propranolol เป็นยากลุ่ม non-selective beta-blocker ซึ่งมีฤทธิ์บล็อกตัวรับทั้ง beta-1 และ beta-2 adrenergic receptors การบล็อก beta-2 receptors ที่หลอดลมจะทำให้เกิดการหดเกร็งของหลอดลม (bronchospasm) จึงเป็นข้อห้ามใช้เด็ดขาด (absolute contraindication) ในผู้ป่วยโรคหืด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (เบาหวาน): Propranolol อาจบังคับหรือบังอาการเตือนของภาวะน้ำตาลในเลือดต่ำ (hypoglycemia) เช่น อาการใจสั่น แต่ไม่ใช่ข้อห้ามใช้เด็ดขาดเท่าโรคหืด<br>• ข้อ ค. (ซึมเศร้า): Propranolol สามารถผ่าน blood-brain barrier ได้ดีและอาจทำให้อาการซึมเศร้าแย่ลงได้ แต่ไม่ใช่ข้อห้ามใช้หลักเทียบเท่าระบบทางเดินหายใจ<br>• ข้อ ง. (กรดไหลย้อน): ยากลุ่ม beta-blockers ไม่มีผลโดยตรงต่อการเกิดกรดไหลย้อน<br>• ข้อ จ. (ไตเรื้อรัง): Propranolol ถูกกำจัดหลักผ่านทางตับ (hepatic metabolism) จึงไม่ได้มีข้อจำกัดหลักในผู้ป่วยโรคไตเรื้อรัง",
+    "answerImage": "",
+    "note": "แบบฝึกหัด PLE-CC 1 ข้อ 111 [ย้ายจาก 4. Endocrine::83]",
+    "examType": "แบบฝึกหัด",
+    "examYear": "เล่มม่วง",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "2. Cardiovascular::206",
+    "itemNo": 204,
+    "category": "2. Cardiovascular",
+    "topic": "2. Cardiovascular",
+    "subtopic": "2.1 Hypertension",
+    "track": "Clinic",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "การใช้ propranolol ในการป้องกันไมเกรน ควรระวังและเป็นข้อห้ามใช้ในผู้ป่วยที่มีโรคร่วมใดมากที่สุด",
+    "questionImage": "",
+    "choices": [
+      "เบาหวาน",
+      "หืด",
+      "ซึมเศร้า",
+      "กรดไหลย้อน",
+      "ไตเรื้อรัง"
+    ],
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. หืด<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Propranolol เป็น non-selective beta-blocker ที่มีฤทธิ์บล็อกตัวรับ $_x0008_eta_2$ ที่หลอดลม ทำให้เกิดหลอดลมหดเกร็ง (bronchospasm) จึงเป็นข้อห้ามใช้เด็ดขาด (absolute contraindication) ในผู้ป่วยโรคหืด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (เบาหวาน): Propranolol อาจบังคับอาการเตือนของภาวะน้ำตาลในเลือดต่ำ (hypoglycemia) เช่น หัวใจเต้นเร็ว แต่ไม่ใช่ข้อห้ามใช้เด็ดขาดเท่าโรคหืด<br>• ข้อ ค. (ซึมเศร้า): Propranolol ผ่าน blood-brain barrier ได้ดี อาจทำให้อาการซึมเศร้าแย่ลงได้ แต่ไม่ใช่ข้อห้ามใช้หลักเทียบเท่าโรคหืด<br>• ข้อ ง. (กรดไหลย้อน): ยากลุ่ม beta-blockers ไม่มีผลโดยตรงที่ทำให้โรคกรดไหลย้อนแย่ลงอย่างมีนัยสำคัญ<br>• ข้อ จ. (ไตเรื้อรัง): Propranolol ถูกเมแทบอลิซึมผ่านตับเป็นหลัก จึงไม่ใช่ข้อห้ามใช้ในผู้ป่วยโรคไตเรื้อรัง",
+    "answerImage": "",
+    "note": "แบบฝึกหัด PLE-CC 1 ข้อ 111 [ย้ายจาก 4. Endocrine::83]",
+    "examType": "แบบฝึกหัด",
+    "examYear": "เล่มม่วง",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
     "id": "3. Dermatologic::3",
     "itemNo": 1,
     "category": "3. Dermatologic",
@@ -153817,7 +153987,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
     "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 6
+    "caseTotal": 5
   },
   {
     "id": "3. Dermatologic::52",
@@ -153846,7 +154016,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
     "caseOrder": 2,
     "caseType": "",
-    "caseTotal": 6
+    "caseTotal": 5
   },
   {
     "id": "3. Dermatologic::53",
@@ -153855,9 +154025,9 @@ window.QUIZ_OFFLINE_DB = [
     "topic": "3. Dermatologic",
     "subtopic": "3.4 Eczema & Dermatitis",
     "track": "Clinic",
-    "caseContext": "กรณีศึกษา: ผู้ป่วยชายไทยสูงอายุ 68 ปี มาโรงพยาบาลด้วยอาการปวดแสบร้อนเหมือนไฟลวกและเสียวแปลบตามแนวชายโครงด้านขวามา 2 วัน วันนี้เริ่มสังเกตเห็นตุ่มน้ำใส (grouped vesicles on erythematous base) เรียงตัวเป็นแนวยาวตามแนวเส้นประสาทเดอร์มาโทม (Dermatome T7-T8) ซีกขวาเพียงข้างเดียว ไม่ข้ามแนวกึ่งกลางลำตัว แพทย์วินิจฉัยว่าเป็นโรคงูสวัด (Herpes zoster)",
-    "caseStem": "กรณีศึกษา: ผู้ป่วยชายไทยสูงอายุ 68 ปี มาโรงพยาบาลด้วยอาการปวดแสบร้อนเหมือนไฟลวกและเสียวแปลบตามแนวชายโครงด้านขวามา 2 วัน วันนี้เริ่มสังเกตเห็นตุ่มน้ำใส (grouped vesicles on erythematous base) เรียงตัวเป็นแนวยาวตามแนวเส้นประสาทเดอร์มาโทม (Dermatome T7-T8) ซีกขวาเพียงข้างเดียว ไม่ข้ามแนวกึ่งกลางลำตัว แพทย์วินิจฉัยว่าเป็นโรคงูสวัด (Herpes zoster)",
-    "question": "ผู้ป่วยหญิง มีอาชีพทำสวน ผู้ป่วยมีปื้นแดง ขอบเขตชัด มีสะเก็ดสีเงินขึ้นปกคลุม เป็นมากบริเวณข้อศอกและหัวเข่า เมื่อมีอาการผู้ป่วยจะทา clobetasol cream\nโรคดังกล่าวของป่วยมีสาเหตุมาจากอะไร",
+    "caseContext": "ผู้ป่วยหญิง อาชีพทำสวน มีอาการทางผิวหนังเรื้อรัง มาพบเภสัชกรที่ร้านยาเพื่อขอคำปรึกษา ตรวจร่างกายพบปื้นแดง ขอบเขตชัดเจน มีสะเก็ดสีเงิน (silvery scale) ขึ้นปกคลุม เป็นมากบริเวณข้อศอกและหัวเข่า ผู้ป่วยให้ประวัติว่าเมื่อมีอาการกำเริบมักจะใช้ยาทา clobetasol cream เพื่อบรรเทาอาการ",
+    "caseStem": "ผู้ป่วยหญิง อาชีพทำสวน มีอาการทางผิวหนังเรื้อรัง มาพบเภสัชกรที่ร้านยาเพื่อขอคำปรึกษา ตรวจร่างกายพบปื้นแดง ขอบเขตชัดเจน มีสะเก็ดสีเงิน (silvery scale) ขึ้นปกคลุม เป็นมากบริเวณข้อศอกและหัวเข่า ผู้ป่วยให้ประวัติว่าเมื่อมีอาการกำเริบมักจะใช้ยาทา clobetasol cream เพื่อบรรเทาอาการ",
+    "question": "กลไกการเกิดโรคผิวหนังอักเสบเรื้อรังตามอาการและรอยโรคของผู้ป่วยรายนี้ จัดเป็นความผิดปกติในกลุ่มใด",
     "questionImage": "",
     "choices": [
       "Infection",
@@ -153867,15 +154037,15 @@ window.QUIZ_OFFLINE_DB = [
       "ไม่มีข้อใดถูก"
     ],
     "answer": 3,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Autoimmune disease<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Autoimmune disease: Psoriasis (โรคสะเก็ดเงิน) เป็นโรคผิวหนังอักเสบเรื้อรังที่มีกลไกหลักเกี่ยวข้องกับภูมิคุ้มกันตนเอง (Autoimmune-mediated disease) ส่งผลให้มีการเพิ่มจำนวนของเซลล์ผิวหนังเร็วกว่าปกติ (hyperproliferation)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Infection): Psoriasis ไม่ได้เกิดจากการติดเชื้อแบคทีเรีย ไวรัส หรือเชื้อราโดยตรง จึงไม่สามารถรักษาให้หายขาดได้ด้วยยาปฏิชีวนะหรือยาต้านจุลชีพ<br>• ข้อ ข. (Allergic reaction): Allergic reaction มักกระตุ้นผ่าน IgE หรือ Type IV hypersensitivity จากสารภายนอก ทำให้เกิดผื่นลมพิษหรือ Contact dermatitis ซึ่งไม่ใช่พยาธิกำเนิดของโรคสะเก็ดเงิน<br>• ข้อ ง. (Seborrhea inflammation): Seborrhea inflammation เป็นกลไกการอักเสบของต่อมไขมันและยีสต์ใน Seborrheic dermatitis ไม่ใช่สาเหตุหลักของการแบ่งตัวผิดปกติของเซลล์เคราติโนไซต์ในโรคสะเก็ดเงิน<br>• ข้อ จ. (ไม่มีข้อใดถูก): คำตอบที่ถูกต้องมีอยู่แล้ว คือ Autoimmune disease (ข้อ ค) เนื่องจากโรคสะเก็ดเงินเกี่ยวข้องกับความผิดปกติของระบบภูมิคุ้มกันชนิด T-cell mediated autoimmune disorder",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Autoimmune disease<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Autoimmune disease: Psoriasis (โรคสะเก็ดเงิน) เป็นโรคผิวหนังอักเสบเรื้อรังที่มีกลไกหลักเกี่ยวข้องกับภูมิคุ้มกันตนเอง (Autoimmune-mediated / T-cell mediated disease) ส่งผลให้มีการเพิ่มจำนวนของเซลล์ผิวหนังเร็วกว่าปกติ (hyperproliferation) และเกิดรอยโรคเป็นปื้นแดงมีสะเก็ดสีเงิน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Infection): Psoriasis ไม่ได้เกิดจากการติดเชื้อแบคทีเรีย ไวรัส หรือเชื้อราโดยตรง จึงไม่สามารถรักษาให้หายขาดได้ด้วยยาปฏิชีวนะหรือยาต้านจุลชีพ<br>• ข้อ ข. (Allergic reaction): Allergic reaction มักกระตุ้นผ่าน IgE หรือ Type IV hypersensitivity จากสารภายนอก ทำให้เกิดผื่นลมพิษหรือ Contact dermatitis ซึ่งไม่ใช่พยาธิกำเนิดของโรคสะเก็ดเงิน<br>• ข้อ ง. (Seborrhea inflammation): Seborrhea inflammation เป็นกลไกการอักเสบของต่อมไขมันและยีสต์ใน Seborrheic dermatitis ไม่ใช่สาเหตุหลักของการแบ่งตัวผิดปกติของเซลล์เคราติโนไซต์ในโรคสะเก็ดเงิน<br>• ข้อ จ. (ไม่มีข้อใดถูก): คำตอบที่ถูกต้องมีอยู่แล้ว คือ Autoimmune disease (ข้อ ค) เนื่องจากโรคสะเก็ดเงินเกี่ยวข้องกับความผิดปกติของระบบภูมิคุ้มกัน",
     "answerImage": "",
     "note": "ข้อ 51 Pharma Plus เล่มม่วง (เฉลยข้อ ค)",
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
-    "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
-    "caseOrder": 3,
+    "caseGroupId": "CASE-DERM-PSORIASIS-01",
+    "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 6
+    "caseTotal": 1
   },
   {
     "id": "3. Dermatologic::54",
@@ -153902,9 +154072,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
-    "caseOrder": 4,
+    "caseOrder": 3,
     "caseType": "",
-    "caseTotal": 6
+    "caseTotal": 5
   },
   {
     "id": "3. Dermatologic::55",
@@ -153931,9 +154101,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
-    "caseOrder": 5,
+    "caseOrder": 4,
     "caseType": "",
-    "caseTotal": 6
+    "caseTotal": 5
   },
   {
     "id": "3. Dermatologic::56",
@@ -153960,9 +154130,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "CASE-DERM-ZOSTER-ELDERLY-01",
-    "caseOrder": 6,
+    "caseOrder": 5,
     "caseType": "",
-    "caseTotal": 6
+    "caseTotal": 5
   },
   {
     "id": "3. Dermatologic::57",
@@ -157721,11 +157891,11 @@ window.QUIZ_OFFLINE_DB = [
     "itemNo": 17,
     "category": "4. Endocrine",
     "topic": "4. Endocrine",
-    "subtopic": "4.3 Obesity & Metabolic syndrome",
+    "subtopic": "4.1 Diabetes mellitus",
     "track": "Clinic",
     "caseContext": "ผู้ป่วยชายไทยอายุ 65 ปี น้ำหนัก 90 kg ส่วนสูง 165 cm (BMI 33.0 kg/m²) สงสัยว่าเป็นโรคเบาหวาน โดยมีอาการอ่อนเพลีย กระหายน้ำบ่อย ปัสสาวะตอนกลางคืน 3-4 ครั้ง หิวบ่อย กินจุ แต่น้ำหนักไม่เพิ่ม\nประวัติครอบครัว (FH): มารดาเป็นโรคเบาหวาน ความดันโลหิตสูง และเสียชีวิตจากโรคหลอดเลือดหัวใจขาดเลือด\nประวัติส่วนตัว (SH): รับราชการ สูบบุหรี่วันละ 20 มวน ดื่มไวน์ 1-2 แก้วต่อเดือน ออกกำลังกาย 1-2 ครั้งต่อเดือน",
     "caseStem": "ผู้ป่วยชายไทยอายุ 65 ปี น้ำหนัก 90 kg ส่วนสูง 165 cm (BMI 33.0 kg/m²) สงสัยว่าเป็นโรคเบาหวาน โดยมีอาการอ่อนเพลีย กระหายน้ำบ่อย ปัสสาวะตอนกลางคืน 3-4 ครั้ง หิวบ่อย กินจุ แต่น้ำหนักไม่เพิ่ม\nประวัติครอบครัว (FH): มารดาเป็นโรคเบาหวาน ความดันโลหิตสูง และเสียชีวิตจากโรคหลอดเลือดหัวใจขาดเลือด\nประวัติส่วนตัว (SH): รับราชการ สูบบุหรี่วันละ 20 มวน ดื่มไวน์ 1-2 แก้วต่อเดือน ออกกำลังกาย 1-2 ครั้งต่อเดือน",
-    "question": "หากผู้ป่วยได้รับการตรวจเลือดขณะอดอาหารพบ FBS 140 mg/dL และวัดความดันโลหิตได้ 130/80 mmHg การประเมินและแนวทางการจัดการข้อใดถูกต้องที่สุด?",
+    "question": "หากผู้ป่วยได้รับการตรวจเลือดขณะอดอาหารพบ FBS 140 mg/dL และวัดความดันโลหิตได้ 130/80 mmHg การประเมินและแนวทางการจัดการข้อใดถูกต้องที่สุด",
     "questionImage": "",
     "choices": [
       "ผู้ป่วยเป็น pre-diabetes ให้เปลี่ยนพฤติกรรมการกิน และคอยตรวจเป็นประจำทุก 1-3 ปี",
@@ -157735,7 +157905,7 @@ window.QUIZ_OFFLINE_DB = [
       "ผู้ป่วยเป็น DM type 2 ให้รีบส่งต่อผู้ป่วย"
     ],
     "answer": 3,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. เป็น DM type 2 ต้องรีบให้ยาพร้อมปรับเปลี่ยนพฤติกรรมเพื่อรักษาผู้ป่วย<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เป็น DM type 2 ต้องรีบให้ยาพร้อมปรับเปลี่ยนพฤติกรรมเพื่อรักษาผู้ป่วย เป็นคำตอบที่ถูกต้องและตรงตามแนวทางการรักษามาตรฐาน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (ผู้ป่วยเป็น pre-diabetes ให้เปลี่ยนพฤติกรรมการกิน และคอยตรวจเป็นประจำทุก 1-3 ปี): ผู้ป่วยมีระดับ FBS 140 mg/dL ซึ่งเข้าเกณฑ์วินิจฉัยเป็นเบาหวาน (มากกว่า 126 mg/dL) จึงไม่ใช่ Pre-diabetes<br>• ข้อ ข. (สงสัยว่าผู้ป่วยเป็นเบาหวาน แนะนำให้ออกกำลังกาย): FBS > 126 mg/dL ถือว่าวินิจฉัยเป็นเบาหวานแล้ว ไม่ใช่เพียงแค่สงสัย และต้องเริ่มการรักษาด้วยยาพร้อมปรับพฤติกรรมทันที<br>• ข้อ ง. (ผู้ป่วยเป็น pre-diabetes แนะนำให้มาเจาะเลือดทุก 3 ปี): ผู้ป่วยมีค่า FBS เกินเกณฑ์ Pre-diabetes ไปแล้ว และคำแนะนำการเจาะเลือดสำหรับ Pre-diabetes คือทุก 1 ปี ไม่ใช่ทุก 3 ปี<br>• ข้อ จ. (ผู้ป่วยเป็น DM type 2 ให้รีบส่งต่อผู้ป่วย): แม้เป็น DM type 2 แต่สามารถรักษาเบื้องต้นได้ที่ระดับปฐมภูมิด้วยยากิน ไม่มีความจำเป็นต้องส่งต่อผู้ป่วย (Refer) ในทันทีเว้นแต่มีภาวะแทรกซ้อนรุนแรง",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. เป็น DM type 2 ต้องรีบให้ยาพร้อมปรับเปลี่ยนพฤติกรรมเพื่อรักษาผู้ป่วย<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ผู้ป่วยมีระดับ FBS 140 mg/dL ซึ่งเกินเกณฑ์ $\\ge$ 126 mg/dL ร่วมกับมีอาการคลาสสิกของ hyperglycemia (ปัสสาวะบ่อย กระหายน้ำ น้ำหนักลด) จึงวินิจฉัยเป็น DM type 2 และตามมาตรฐานการรักษาปัจจุบัน (ADA Guideline) ต้องเริ่มการปรับเปลี่ยนพฤติกรรมร่วมกับการใช้ยา (เช่น Metformin) ทันที<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผู้ป่วยมีระดับ FBS 140 mg/dL ซึ่งเข้าเกณฑ์วินิจฉัยเป็นเบาหวานแล้ว จึงไม่ใช่ Pre-diabetes<br>• ข้อ ข.: FBS $\\ge$ 126 mg/dL ถือว่าวินิจฉัยเป็นเบาหวานแล้ว ไม่ใช่เพียงแค่สงสัย และต้องเริ่มการรักษาด้วยยาพร้อมปรับพฤติกรรมทันที<br>• ข้อ ง.: ผู้ป่วยมีค่า FBS เกินเกณฑ์ Pre-diabetes ไปแล้ว การวินิจฉัยชัดเจนว่าเป็นเบาหวาน<br>• ข้อ จ.: แม้เป็น DM type 2 แต่สามารถดูแลรักษาเบื้องต้นได้ที่สถานพยาบาลปฐมภูมิด้วยยากิน ไม่มีความจำเป็นต้องส่งต่อ (Refer) ทันทีหากยังไม่มีภาวะแทรกซ้อนรุนแรง",
     "answerImage": "",
     "note": "ข้อ 16 Pharma Plus เล่มม่วง (เฉลยข้อ ค)",
     "examType": "แบบฝึกหัด",
@@ -158778,17 +158948,17 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "Lispro insulin จัดอยู่ในประเภทใด",
+    "question": "Lispro insulin จัดอยู่ในประเภทอินซูลินกลุ่มใดตามระยะเวลาการออกฤทธิ์",
     "questionImage": "",
     "choices": [
       "Rapid acting insulin",
       "Short acting insulin",
       "Intermediate acting insulin",
       "Long acting insulin",
-      "Lente insulin"
+      "Ultra long acting insulin"
     ],
-    "answer": 4,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Long acting insulin<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Long acting insulin: Lispro insulin เป็น rapid-acting insulin analog ที่มีการปรับเปลี่ยนโครงสร้างกรดอะมิโนทำให้ดูดซึมเร็ว ออกฤทธิ์เร็ว (onset 10-15 นาที) ใช้ฉีดก่อนอาหารทันทีเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Rapid acting insulin): Lispro จัดเป็น Rapid-acting insulin ตามหลักการทางเภสัชวิทยา แต่โจทย์ข้อนี้เฉลยตัวเลือกอื่น ซึ่งตามทฤษฎีแล้วข้อนี้คือข้อมูลที่ถูกต้องของยา<br>• ข้อ ข. (Short acting insulin): Short-acting insulin หมายถึง Regular insulin (RI) ไม่ใช่ Lispro ซึ่งมีการสลับตำแหน่งกรดอะมิโนให้ออกฤทธิ์เร็วกว่า<br>• ข้อ ค. (Intermediate acting insulin): Intermediate-acting insulin คือ NPH ซึ่งมีระยะเวลาการออกฤทธิ์นานกว่า Lispro อย่างชัดเจน<br>• ข้อ จ. (Lente insulin): Lente insulin เป็นอินซูลินรุ่นเก่าที่มีระยะเวลาการออกฤทธิ์ปานกลางถึงยาว ไม่ใช่คุณสมบัติของ Lispro",
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Rapid acting insulin<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Insulin lispro เป็น rapid-acting insulin analog ที่มีการสลับตำแหน่งกรดอะมิโน (Proline และ Lysine ที่ตำแหน่ง B28 และ B29) ทำให้ฟอร์มตัวเป็น hexamer ได้น้อยลงและดูดซึมเข้าสู่กระแสเลือดได้เร็ว ออกฤทธิ์เร็วภายใน 10-15 นาที ใช้ฉีดก่อนอาหารทันทีเพื่อควบคุมระดับน้ำตาลหลังมื้ออาหาร<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Short acting insulin): Short-acting insulin หมายถึง Regular insulin (RI) ซึ่งออกฤทธิ์ช้ากว่ากลุ่ม rapid-acting<br>• ข้อ ค. (Intermediate acting insulin): Intermediate-acting insulin คือ NPH insulin ซึ่งมีระยะเวลาการออกฤทธิ์ปานกลาง ออกฤทธิ์นาน 12-18 ชั่วโมง<br>• ข้อ ง. (Long acting insulin): Long acting insulin ได้แก่ Insulin glargine หรือ Insulin detemir ซึ่งออกฤทธิ์นานตลอด 24 ชั่วโมงโดยไม่มีpeak<br>• ข้อ จ. (Ultra long acting insulin): Ultra long acting insulin ได้แก่ Insulin degludec ซึ่งมีระยะเวลาการออกฤทธิ์ยาวนานกว่า 42 ชั่วโมง",
     "answerImage": "",
     "note": "ข้อ 92 Pharma Plus เล่มม่วง (เฉลยข้อ ง)",
     "examType": "แบบฝึกหัด",
@@ -159147,17 +159317,17 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "ผู้ป่วยโรคเบาหวานชนิดที่ 2 อายุ 56 ปี ได้รับการรักษาด้วยยาลดระดับน้ำตาลชนิดรับประทานหลายชนิดในขนาดสูงสุดแล้ว ผลการตรวจทางห้องปฏิบัติการล่าสุดพบค่าระดับ HbA1c เท่ากับ 9.0% (ตามแนวทางเวชปฏิบัติ ADA Standards of Care)",
     "caseStem": "ผู้ป่วยโรคเบาหวานชนิดที่ 2 อายุ 56 ปี ได้รับการรักษาด้วยยาลดระดับน้ำตาลชนิดรับประทานหลายชนิดในขนาดสูงสุดแล้ว ผลการตรวจทางห้องปฏิบัติการล่าสุดพบค่าระดับ HbA1c เท่ากับ 9.0% (ตามแนวทางเวชปฏิบัติ ADA Standards of Care)",
-    "question": "หากต้องการพิจารณาเพิ่มยาฉีดเพื่อควบคุมระดับน้ำตาล ยาในกลุ่มใดมีความเหมาะสมสูงสุดในการลดระดับ HbA1c และลดความเสี่ยงต่อหัวใจและไต?",
+    "question": "หากต้องการพิจารณาเพิ่มยาฉีดเพื่อควบคุมระดับน้ำตาล ยาในกลุ่มใดมีความเหมาะสมสูงสุดในการลดระดับ HbA1c และลดความเสี่ยงต่อโรคหัวใจและหลอดเลือด รวมถึงโรคไต?",
     "questionImage": "",
     "choices": [
       "Sitagliptin",
       "Empagliflozin",
       "Acarbose",
       "Semaglutide SC",
-      "insulin SC"
+      "Insulin glargine SC"
     ],
-    "answer": 3,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Acarbose<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก Acarbose เป็นคำตอบที่ถูกต้องตามแนวทางการรักษามาตรฐาน เนื่องจาก เป็น Alpha-glucosidase inhibitor ชะลอการย่อยคาร์โบไฮเดรตในทางเดินอาหาร ลด postprandial glucose แต่อาจเกิดท้องอืด ผายลม (flatulence) หากเกิด hypoglycemia ต้องแก้ด้วย pure glucose เท่านั้น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Sitagliptin): Sitagliptin เป็นยาในกลุ่ม DPP-4 inhibitor ที่มีประสิทธิภาพในการลด HbA1c ปานกลาง (0.5-0.8%) อาจไม่เพียงพอสำหรับผู้ป่วยที่ A1C 9%<br>• ข้อ ข. (Empagliflozin): Empagliflozin เป็นยาในกลุ่ม SGLT2i แม้จะมีผลดีต่อหัวใจและไต แต่ประสิทธิภาพการลดน้ำตาลอาจไม่เพียงพอที่จะดึง A1C ลงมาจาก 9% ได้อย่างรวดเร็ว<br>• ข้อ ง. (Semaglutide SC): Semaglutide มีประสิทธิภาพสูงในการลด A1C แต่มีราคาสูงและอาจต้องพิจารณาความพร้อมของผู้ป่วยในการใช้ยาฉีด<br>• ข้อ จ. (insulin SC): การเริ่ม Insulin จะพิจารณาเมื่อมีอาการของภาวะน้ำตาลในเลือดสูงรุนแรง (catabolism) หรือ A1C > 10% ตามคำแนะนำของ ADA",
+    "answer": 4,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Semaglutide SC<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Semaglutide SC เป็นยาในกลุ่ม GLP-1 receptor agonist ชนิดฉีด ซึ่งมีประสิทธิภาพสูงมากในการลดระดับ HbA1c น้ำหนักตัว และได้รับการพิสูจน์ตามแนวทาง ADA Standards of Care ว่ามีประโยชน์เด่นชัดในการลดความเสี่ยงโรคหัวใจและหลอดเลือด (ASCVD) และโรคไตเรื้อรัง (CKD)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Sitagliptin): เป็นยารับประทานในกลุ่ม DPP-4 inhibitor และไม่ใช่ยาฉีดตามที่โจทย์ระบุ<br>• ข้อ ข. (Empagliflozin): เป็นยารับประทานในกลุ่ม SGLT2 inhibitor ไม่ใช่ยาฉีด<br>• ข้อ ค. (Acarbose): เป็นยารับประทานในกลุ่ม Alpha-glucosidase inhibitor ไม่ใช่ยาฉีด และมีประสิทธิภาพลด HbA1c ต่ำ<br>• ข้อ จ. (Insulin glargine SC): เป็นยาฉีดอินซูลินที่ช่วยลดระดับน้ำตาลได้ดี แต่ไม่มีผลปกป้องโรคหัวใจและไตโดยตรงเท่ากับกลุ่ม GLP-1 RA และทำให้น้ำหนักเพิ่มขึ้น",
     "answerImage": "",
     "note": "แบบฝึกหัด PLE-CC 1 ข้อ 27",
     "examType": "แบบฝึกหัด",
@@ -159373,17 +159543,17 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "พืชผัก ในข้อใด มีผลลดระดับน้ำตาลในเลือด",
+    "question": "พืชผักในข้อใดมีผลลดระดับน้ำตาลในเลือดตามหลักฐานเชิงประจักษ์ทางเภสัชเวท",
     "questionImage": "",
     "choices": [
       "ยอดฝักแม้ว",
-      "ใบกะหล ่าปลี",
+      "ใบกะหล่ำปลี",
       "ผลบวบงู",
       "ผลมะระขี้นก",
       "ช่อดอกบล็อคโคลี"
     ],
-    "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. ใบกะหล ่าปลี<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก ใบกะหล ่าปลี เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Diabetes mellitus โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (ยอดฝักแม้ว): ยอดฝักแม้วไม่มีสารสำคัญหรือหลักฐานทางคลินิกที่ยืนยันถึงสรรพคุณในการลดระดับน้ำตาลในเลือด<br>• ข้อ ค. (ผลบวบงู): ผลบวบงูเป็นผักที่มีกากใยสูง แต่ไม่มีการศึกษาเภสัชเวทที่รองรับฤทธิ์ลดน้ำตาลในเลือดที่ชัดเจน<br>• ข้อ ง. (ผลมะระขี้นก): ผลมะระขี้นก (Bitter melon) มีสาร charantin ช่วยลดน้ำตาลในเลือดได้จริง แต่โจทย์เฉลยเป็นตัวเลือกอื่น<br>• ข้อ จ. (ช่อดอกบล็อคโคลี): บล็อคโคลีมีสารต้านอนุมูลอิสระและใยอาหารสูง แต่ไม่ได้มีสารออกฤทธิ์ทางเภสัชวิทยาที่ลดระดับน้ำตาลในเลือดได้โดยตรง",
+    "answer": 4,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. ผลมะระขี้นก<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ผลมะระขี้นก (Momordica charantia) มีสารสำคัญกลุ่ม charantin, vicine และสารคล้ายอินซูลิน (polypeptide-p) ซึ่งมีข้อมูลสนับสนุนทางเภสัชเวทและคลินิกว่าช่วยลดระดับน้ำตาลในเลือดได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ยอดฝักแม้วไม่มีสารสำคัญหรือหลักฐานทางคลินิกที่ยืนยันถึงสรรพคุณในการลดระดับน้ำตาลในเลือด<br>• ข้อ ข. ใบกะหล่ำปลีเป็นผักที่มีใยอาหารสูง แต่ไม่มีสารออกฤทธิ์จำเพาะในการลดระดับน้ำตาลในเลือด<br>• ข้อ ค. ผลบวบงูไม่มีการศึกษาทางเภสัชเวทที่รองรับฤทธิ์ลดน้ำตาลในเลือดที่ชัดเจน<br>• ข้อ จ. ช่อดอกบล็อคโคลีมีสารต้านอนุมูลอิสระและใยอาหารสูง แต่ไม่มีฤทธิ์ลดระดับน้ำตาลในเลือดโดยตรงเหมือนมะระขี้นก",
     "answerImage": "",
     "note": "แบบฝึกหัด PLE-CC 1 ข้อ 39",
     "examType": "แบบฝึกหัด",
@@ -159541,7 +159711,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "[ย้ายไป 2. Cardiovascular::204] ใช้ propranolol ในการป้องกันไมเกรน ควรระวังในผู้ป่วยที่มีโรคร่วมใดมากที่สุด",
+    "question": "[ย้ายไป 2. Cardiovascular::206] [ย้ายไป 2. Cardiovascular::205] [ย้ายไป 2. Cardiovascular::204] ใช้ propranolol ในการป้องกันไมเกรน ควรระวังในผู้ป่วยที่มีโรคร่วมใดมากที่สุด",
     "questionImage": "",
     "choices": [
       "เบาหวาน",
@@ -161184,7 +161354,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "ผู้ป่วยชาย อายุ 60 ปี มีโรคประจำตัวเป็นเบาหวานชนิดที่ 2 มาประมาณ 10 ปี ปัจจุบันได้รับยาดังนี้ Metformin 500 mg รับประทานครั้งละ 2 เม็ด วันละ 2 ครั้ง หลังอาหาร, Glipizide 5 mg รับประทานครั้งละ 2 เม็ด วันละ 2 ครั้ง ก่อนอาหาร, Pioglitazone 30 mg รับประทานครั้งละ 1 เม็ด วันละ 1 ครั้ง หลังอาหาร ผู้ป่วยไม่มีโรคประจำตัวอื่น และยังไม่มีภาวะแทรกซ้อนของโรคเบาหวาน",
     "caseStem": "ผู้ป่วยชาย อายุ 60 ปี มีโรคประจำตัวเป็นเบาหวานชนิดที่ 2 มาประมาณ 10 ปี ปัจจุบันได้รับยาดังนี้ Metformin 500 mg รับประทานครั้งละ 2 เม็ด วันละ 2 ครั้ง หลังอาหาร, Glipizide 5 mg รับประทานครั้งละ 2 เม็ด วันละ 2 ครั้ง ก่อนอาหาร, Pioglitazone 30 mg รับประทานครั้งละ 1 เม็ด วันละ 1 ครั้ง หลังอาหาร ผู้ป่วยไม่มีโรคประจำตัวอื่น และยังไม่มีภาวะแทรกซ้อนของโรคเบาหวาน",
-    "question": "ผลการตรวจทางห้องปฏิบัติการ HbA1c ของผู้ป่วยวันนี้เท่ากับ 9.0% ตามแนวทาง ADA Guidelines ยาลดระดับน้ำตาลในเลือดชนิดใดที่ควรได้รับการพิจารณาเพิ่มเป็นลำดับแรก",
+    "question": "ผลการตรวจทางห้องปฏิบัติการ HbA1c ของผู้ป่วยวันนี้เท่ากับ 9.0% ตามแนวทาง ADA Guidelines ยาลดระดับน้ำตาลในเลือดชนิดฉีดกลุ่มใดที่ควรได้รับการพิจารณาเพิ่มเป็นลำดับแรกก่อนเริ่มยาฉีดอินซูลิน",
     "questionImage": "",
     "choices": [
       "Sitagliptin",
@@ -161194,7 +161364,7 @@ window.QUIZ_OFFLINE_DB = [
       "Insulin SC"
     ],
     "answer": 4,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Semaglutide SC<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ผู้ป่วยรายนี้ได้รับยากิน 3 ชนิดร่วมกันแล้ว (Metformin + SU + TZD) แต่ระดับ HbA1c ยังสูงถึง 9.0% ตามแนวทาง ADA Standards of Care in Diabetes 2024 ในผู้ป่วยเบาหวานชนิดที่ 2 ที่ต้องเริ่มยาฉีด (injectable therapy) เพื่อเพิ่มประสิทธิภาพการลดน้ำตาล แนะนำให้เลือกยากลุ่ม GLP-1 Receptor Agonist (เช่น Semaglutide SC) เป็นตัวเลือกแรกก่อนเริ่มยาฉีดอินซูลิน เนื่องจากมีประสิทธิภาพในการลดน้ำตาลสูงมาก ช่วยลดน้ำหนัก และมีความเสี่ยงต่อภาวะน้ำตาลในเลือดต่ำน้อยกว่าอินซูลิน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Sitagliptin: เป็นยากลุ่ม DPP-4 inhibitor ซึ่งมีกลไกเพิ่ม incretin เหมือนกับ GLP-1 RA แต่มีประสิทธิภาพในการลด HbA1c ต่ำกว่า (ประมาณ 0.5-0.8%) ไม่เพียงพอต่อการลดระดับ HbA1c จาก 9.0% ลงมาสู่เป้าหมาย<br>• ข้อ ข. Empagliflozin: แม้ SGLT2i จะมีประโยชน์ต่อไตและหัวใจ แต่ประสิทธิภาพในการลด HbA1c เฉลี่ยอยู่ที่ 0.7-1.0% ซึ่งน้อยกว่า GLP-1 RA ชนิดที่มี efficacy สูงมากอย่าง Semaglutide<br>• ข้อ ค. Acarbose: เป็น alpha-glucosidase inhibitor มีประสิทธิภาพลดระดับน้ำตาลต่ำและมีผลข้างเคียงต่อระบบทางเดินอาหารสูง<br>• ข้อ จ. Insulin SC: ในอดีตมักเริ่มอินซูลินเมื่อ HbA1c สูง แต่คำแนะนำ ADA ล่าสุดระบุชัดเจนว่าหากต้องใช้ยาฉีด ให้พิจารณา GLP-1 RA ก่อนอินซูลิน ยกเว้นผู้ป่วยมีอาการของ catabolism ชัดเจน (เช่น น้ำหนักลดรวดเร็ว ปัสสาวะบ่อย กระหายน้ำมาก)<br>• --",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 4. Semaglutide SC<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ผู้ป่วยรายนี้ได้รับยากิน 3 ชนิดร่วมกันแล้วแต่ระดับ HbA1c ยังสูงถึง 9.0% ตามแนวทาง ADA Standards of Care ในผู้ป่วยเบาหวานชนิดที่ 2 ที่ต้องเริ่มยาฉีดเพื่อเพิ่มประสิทธิภาพ แนะนำให้เลือกยากลุ่ม GLP-1 Receptor Agonist เช่น Semaglutide SC เป็นตัวเลือกแรกก่อนเริ่มยาฉีดอินซูลิน เนื่องจากมีประสิทธิภาพสูงในการลดน้ำตาล ลดน้ำหนัก และมีความเสี่ยงต่อภาวะน้ำตาลในเลือดต่ำน้อยกว่าอินซูลิน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 1. Sitagliptin: เป็นยากลุ่ม DPP-4 inhibitor มีประสิทธิภาพในการลด HbA1c ต่ำเกินไป (ประมาณ 0.5-0.8%) ไม่เพียงพอต่อการลดระดับจาก 9.0%<br>• ข้อ 2. Empagliflozin: เป็นยากลุ่ม SGLT2 inhibitor มีประโยชน์ต่อไตและหัวใจ แต่ประสิทธิภาพในการลด HbA1c (0.7-1.0%) น้อยกว่า GLP-1 RA ชนิดที่มี efficacy สูง<br>• ข้อ 3. Acarbose: เป็น alpha-glucosidase inhibitor มีประสิทธิภาพลดระดับน้ำตาลต่ำและมีผลข้างเคียงต่อระบบทางเดินอาหารสูง<br>• ข้อ 5. Insulin SC: คำแนะนำ ADA ระบุชัดเจนว่าหากต้องใช้ยาฉีด ให้พิจารณา GLP-1 RA ก่อนอินซูลิน ยกเว้นผู้ป่วยมีอาการของ catabolism ชัดเจน เช่น น้ำหนักลดรวดเร็ว หรือมีภาวะน้ำตาลในเลือดสูงรุนแรง",
     "answerImage": "",
     "note": "ข้อ 27 Mock RxCU83",
     "examType": "ข้อสอบจำลอง",
@@ -185599,6 +185769,35 @@ window.QUIZ_OFFLINE_DB = [
     "caseType": ""
   },
   {
+    "id": "8. Infectious diseases::381",
+    "itemNo": 379,
+    "category": "8. Infectious diseases",
+    "topic": "8. Infectious diseases",
+    "subtopic": "8.8 Tuberculosis",
+    "track": "Clinic",
+    "caseContext": "ผู้ป่วยวัณโรคเกิดภาวะตับอักเสบจากยา (Drug-Induced Liver Injury: DILI) หลังจากได้รับยาสูตรผสม IRZE (Isoniazid, Rifampicin, Pyrazinamide, Ethambutol) โดยมีระดับเอนไซม์ตับ AST/ALT สูงเกิน 5 เท่าของค่าปกติ แพทย์จึงสั่งหยุดยาที่มีพิษต่อตับทั้งหมดชั่วคราว",
+    "caseStem": "ผู้ป่วยวัณโรคเกิดภาวะตับอักเสบจากยา (Drug-Induced Liver Injury: DILI) หลังจากได้รับยาสูตรผสม IRZE (Isoniazid, Rifampicin, Pyrazinamide, Ethambutol) โดยมีระดับเอนไซม์ตับ AST/ALT สูงเกิน 5 เท่าของค่าปกติ แพทย์จึงสั่งหยุดยาที่มีพิษต่อตับทั้งหมดชั่วคราว",
+    "question": "ยาต้านจุลชีพชนิดฉีดในข้อใดต่อไปนี้ ที่จัดเป็นยาทางเลือกที่ไม่มีพิษต่อตับ (Non-hepatotoxic alternative regimen) ที่สามารถนำมาใช้รักษาทดแทนยาขนานหลักในผู้ป่วยรายนี้",
+    "questionImage": "",
+    "choices": [
+      "PAS (Para-aminosalicylic acid)",
+      "Streptomycin (ยาฉีดกลุ่ม Aminoglycoside)",
+      "Thalidomide",
+      "Ethionamide",
+      "Linezolid"
+    ],
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Streptomycin (ยาฉีดกลุ่ม Aminoglycoside)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามแนวทางการรักษาวัณโรคขององค์การอนามัยโลก (WHO) และกรมควบคุมโรค กระทรวงสาธารณสุข ในกรณีที่ผู้ป่วยเกิดภาวะตับอักเสบรุนแรงจากยา (DILI) จนต้องหยุดยาขนานหลัก (INH, RIF, PZA) ยาต้านวัณโรคทางเลือกที่ไม่มีพิษต่อตับ (Non-hepatotoxic regimen) ที่แนะนำให้ใช้คือ Streptomycin (ยาฉีดเข้ากล้ามเนื้อ) ร่วมกับ Ethambutol และ Fluoroquinolone<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: PAS มีผลข้างเคียงต่อระบบทางเดินอาหารสูงมากและอาจทำให้เกิดการระคายเคืองตับได้<br>• ข้อ ค.: Thalidomide ไม่ใช่ยาต้านวัณโรคและมีผลทำให้ทารกพิการรุนแรง (Teratogenicity)<br>• ข้อ ง.: Ethionamide มีโครงสร้างคล้าย INH และมีพิษต่อตับสูง (Hepatotoxicity) ห้ามใช้ในภาวะ DILI<br>• ข้อ จ.: Linezolid เป็นยาต้านวัณโรคดื้อยาขนานที่สอง ไม่ใช่ยาหลักที่เลือกใช้แทนในภาวะตับอักเสบทั่วไป",
+    "answerImage": "",
+    "note": "ข้อ 12 (PLE_CC1_2562_Key.md) [RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์] [ย้ายจาก 9. Sterile & Special Forms::9]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2562.0",
+    "caseGroupId": "CASE-TB-01",
+    "caseOrder": 1,
+    "caseType": "",
+    "caseTotal": 1
+  },
+  {
     "id": "9. Neurologic::3",
     "itemNo": 1,
     "category": "9. Neurologic",
@@ -208273,11 +208472,11 @@ window.QUIZ_OFFLINE_DB = [
     "itemNo": 17,
     "category": "15. Renal",
     "topic": "15. Renal",
-    "subtopic": "15.2 Chronic kidney diseases",
+    "subtopic": "15.4 Drug-induced nephrotoxicity",
     "track": "Clinic",
-    "caseContext": "",
-    "caseStem": "",
-    "question": "อาการข้างต้น อาจเกิดได้จากยาในข้อใด",
+    "caseContext": "ผู้ป่วยชายไทยอายุ 65 ปี เป็นโรคความดันโลหิตสูงและไขมันในเลือดสูง ได้รับยา Simvastatin 40 mg วันละครั้ง ต่อมาผู้ป่วยมีอาการปวดกล้ามเนื้อน่องอย่างรุนแรง ปัสสาวะมีสีเข้มคล้ายน้ำปลา ผลตรวจทางห้องปฏิบัติการพบค่า Creatine kinase (CK) สูงกว่าปกติ 10 เท่า และมีภาวะ Acute kidney injury (AKI)",
+    "caseStem": "ผู้ป่วยชายไทยอายุ 65 ปี เป็นโรคความดันโลหิตสูงและไขมันในเลือดสูง ได้รับยา Simvastatin 40 mg วันละครั้ง ต่อมาผู้ป่วยมีอาการปวดกล้ามเนื้อน่องอย่างรุนแรง ปัสสาวะมีสีเข้มคล้ายน้ำปลา ผลตรวจทางห้องปฏิบัติการพบค่า Creatine kinase (CK) สูงกว่าปกติ 10 เท่า และมีภาวะ Acute kidney injury (AKI)",
+    "question": "อาการข้างต้นและภาวะไตวายเฉียบพลันดังกล่าว น่าจะเกิดจากอาการไม่พึงประสงค์ของยาในข้อใด",
     "questionImage": "",
     "choices": [
       "Atenolol",
@@ -208287,14 +208486,15 @@ window.QUIZ_OFFLINE_DB = [
       "Felodipine"
     ],
     "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Simvastatin<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Simvastatin: คำถามต่อเนื่องจากโจทย์ก่อนหน้า (เกี่ยวข้องกับอาการบวมน้ำหรือความผิดปกติทางไต/อิเล็กโทรไลต์) โดยกลุ่มยา Dihydropyridine calcium channel blockers เช่น Felodipine ทำให้เกิด peripheral edema ได้บ่อยจาก arteriolar vasodilation<br>เป็น moderate-intensity statin เมแทบอไลต์ผ่าน CYP3A4 เด่นชัด ห้ามใช้ dose 80 mg และมี drug interactions สูงกับ CYP3A4 inhibitors (clarithromycin, ketoconazole)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Atenolol): เป็น hydrophilic cardioselective beta-1 blocker ขับออกทางไตเป็นหลัก แต่ evidence ในการลด stroke และ cardiovascular events ด้อยกว่า antihypertensive อื่นๆ<br>• ข้อ ค. (Aspirin): เป็น irreversible COX-1 inhibitor ยับยั้ง Thromboxane A2 เป็นแกนหลักใน antiplatelet secondary prevention ของ CVD (ขนาดยา 75-100 mg/day)<br>• ข้อ ง. (Hydralazine): เป็น direct arteriolar vasodilator ใช้ร่วมกับ isosorbide dinitrate ใน HFrEF (โดยเฉพาะคนผิวดำ) หรือรักษา severe HTN ในหญิงตั้งครรภ์ แต่เสี่ยงต่อ drug-induced lupus<br>• ข้อ จ. (Felodipine): Felodipine ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Simvastatin<br>🎯 ทำไมข้อนี้ถึงถูก:<br>Simvastatin เป็นยาลดไขมันกลุ่ม Statin ที่มีรายงานการเกิดอาการไม่พึงประสงค์รุนแรงคือ ภาวะกล้ามเนื้อลายสลาย (Rhabdomyolysis) ซึ่งสาร myoglobin ที่หลั่งออกมาจากกล้ามเนื้อที่ถูกทำลายจะเข้าไปอุดตันและเป็นพิษต่อท่อไต ส่งผลให้เกิดภาวะไตวายเฉียบพลัน (Acute kidney injury) ได้<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Atenolol: เป็นยา beta-1 selective blocker ใช้รักษาความดันโลหิตสูงและโรคหัวใจขาดเลือด อาการไม่พึงประสงค์หลักคือ bradycardia และ fatigue ไม่ใช่กล้ามเนื้อลายสลาย<br>• ข้อ ค. Aspirin: เป็นยาต้านเกล็ดเลือด อาการไม่พึงประสงค์สำคัญคือเลือดออกทางเดินอาหารและแผลในกระเพาะอาหาร ไม่ใช่กล้ามเนื้อลายสลาย<br>• ข้อ ง. Hydralazine: เป็นยาขยายหลอดเลือดแดงโดยตรง อาการไม่พึงประสงค์สำคัญคือ reflex tachycardia, headache และ drug-induced lupus-like syndrome<br>• ข้อ จ. Felodipine: เป็นยาในกลุ่ม calcium channel blocker (dihydropyridine) อาการไม่พึงประสงค์เด่นคือ peripheral edema และ headache จากการขยายหลอดเลือด ไม่ใช่กล้ามเนื้อลายสลาย",
     "answerImage": "Clinic",
     "note": "ข้อ 17 Pharma Plus เล่มม่วง (เฉลยข้อ ข)",
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
-    "caseGroupId": "",
-    "caseOrder": 0,
-    "caseType": ""
+    "caseGroupId": "CASE-RENAL-01",
+    "caseOrder": 1,
+    "caseType": "",
+    "caseTotal": 1
   },
   {
     "id": "15. Renal::20",
@@ -234265,7 +234465,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "[ย้ายไป 1. Pharmacy Laws & Ethics::240] ผู้ป่วยไปซื้อยา diclofenac tablet มาจากรานขายของชำ รานชำ สามารถขายยาชนิดนี้ไดหรือไม!",
+    "question": "[ย้ายไป 1. Pharmacy Laws & Ethics::241] [ย้ายไป 1. Pharmacy Laws & Ethics::240] ผู้ป่วยไปซื้อยา diclofenac tablet มาจากรานขายของชำ รานชำ สามารถขายยาชนิดนี้ไดหรือไม!",
     "questionImage": "",
     "choices": [
       "ขายไดเพราะเปEนยาแผนปtจจุบันบรรจุเสร็จ",
@@ -234517,21 +234717,21 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "ในการพัฒนาสูตรตำรับ Pyrazinamide tablet พบว่าตัวยา pyrazinamide สามารถละลายน้ำได้น้อย ควรเติมสารใด เพือเพิ่มการละลาย (1) Sodium starch glycolate (2) Croscarmellose sodium (3) Colloidal silicon dioxide (4) Magnesium stearate (5) Sodium lauryl sulfate",
+    "question": "ในการพัฒนาสูตรตำรับยาเม็ด Pyrazinamide ซึ่งเป็นตัวยาสำคัญที่มีคุณสมบัติไหลยากและอัดเม็ดได้ยาก (Poor flowability and compressibility) วิธีการเตรียมตำรับใดมีความเหมาะสมมากที่สุดในการผลิตยาเม็ดในระดับอุตสาหกรรม",
     "questionImage": "",
     "choices": [
-      "Direct Compression tableting method",
       "Wet Granulation tableting method",
-      "Dry Granulation (Roller Compaction)",
-      "Fluidized Bed Granulation",
-      "Film Coating with Hydroxypropyl methylcellulose (HPMC)"
+      "Direct Compression tableting method",
+      "Dry Granulation using Slugging method",
+      "Layered Tablet Compression method",
+      "Direct Pelletization method"
     ],
     "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Direct Compression tableting method<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก Direct Compression tableting method เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Tablet Manufacturing โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br>USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Tablet Manufacturing)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Wet Granulation tableting method): Wet granulation เพิ่ม flowability, compressibility โดยใช้ binder liquid สร้าง granules เหมาะสำหรับยาที่ไม่ทนความชื้นไม่ได้<br>• ข้อ ค. (Dry Granulation (Roller Compaction)): Dry granulation ใช้ slugging หรือ roller compaction ไม่ใช้ liquid binder เหมาะสำหรับยาที่ moisture/heat sensitive<br>• ข้อ ง. (Fluidized Bed Granulation): Fluidized Bed Granulation ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ. (Film Coating with Hydroxypropyl methylcellulose (HPMC)): เป็น Hydroxypropyl methylcellulose ใช้เป็น Film coating polymer ที่ละลายในกระเพาะอาหาร และใช้เป็น Hydrophilic matrix สำหรับ sustained release tablets",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Wet Granulation tableting method<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Pyrazinamide เป็นผงยาที่มีคุณสมบัติการไหล (Flowability) และการอัดตัว (Compressibility) ไม่ดี การใช้กระบวนการ Wet Granulation ช่วยเพิ่มขนาดอนุภาคและเชื่อมประสานผงยาด้วยสารยึดเกาะ (Binder) ทำให้ผงยามีคุณสมบัติการไหลดีขึ้นและสามารถอัดเป็นเม็ดได้แข็งแรงตามมาตรฐาน USP<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Direct Compression tableting method): ไม่เหมาะสมเนื่องจาก Pyrazinamide ไม่มีคุณสมบัติการไหลและการอัดเม็ดโดยตรงที่ดีพอ เว้นแต่จะใช้สารช่วยอัดเม็ดปริมาณมาก<br>• ข้อ ค. (Dry Granulation using Slugging method): แม้จะใช้กับยาที่ไวต่อความชื้นได้ แต่ Wet Granulation นิยมมากกว่าในกรณีที่ต้องการแก้ไขปัญหาการไหลและการกระจายตัวของสารออกฤทธิ์ปริมาณมาก<br>• ข้อ ง. (Layered Tablet Compression method): เป็นวิธีสำหรับทำยาเม็ดหลายชั้น (Layered tablets) ไม่ใช่กระบวนการผลิตยาเม็ดมาตรฐานทั่วไป<br>• ข้อ จ. (Direct Pelletization method): เป็นกระบวนการขึ้นรูปเม็ดกลม (Pellets) ไม่ใช่กระบวนการผลิตยาเม็ดอัด (Compressed tablets) ทั่วไป",
     "answerImage": "",
     "note": "ข้อ 22 (PLE_CC1_2557.md)",
     "examType": "ข้อสอบจริง",
-    "examYear": "2557",
+    "examYear": "2557.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -255032,8 +255232,8 @@ window.QUIZ_OFFLINE_DB = [
       "Ethylene oxide gas sterilization",
       "Gamma radiation sterilization"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Dry heat sterilization<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sterile Products การเลือก Sterile Products เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Autoclave & Sterilization โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: (Dry heat sterilization): Dry heat sterilization ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค.: (Sterile filtration): Sterile filtration ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง.: (Steam sterilization): Steam sterilization ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ.: (Ethylene oxide gas sterilization): Ethylene oxide gas sterilization ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Sterile filtration<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Insulin เป็นโปรตีนสายเปปไทด์ที่มีโครงสร้างสามมิติซึ่งง่ายต่อการเสียสภาพธรรมชาติ (denaturation) เมื่อได้รับความร้อนสูง ดังนั้นกระบวนการ sterilization ที่เหมาะสมสำหรับผลิตภัณฑ์สำเร็จรูปที่เป็นสารละลายโปรตีนหรือชีววัตถุคือการกรองผ่านเยื่อกรองเชื้อ (Sterile filtration) โดยใช้ฟิลเตอร์ขนาด 0.22 ไมครอน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Dry heat sterilization ใช้ความร้อนสูงมาก ซึ่งจะทำให้อินซูลินเกิดการเสื่อมสลายและสูญเสียฤทธิ์ทางยา<br>• ข้อ ค.: Steam sterilization (Autoclave) ใช้ไอน้ำและความร้อนสูง ทำให้โปรตีนอินซูลินเกิดการจับตัวและเสื่อมสภาพ<br>• ข้อ ง.: Ethylene oxide gas sterilization ใช้แก๊สพิษและสารตกค้าง ซึ่งไม่เหมาะสำหรับผลิตภัณฑ์ที่เป็นของเหลวสำเร็จรูปฉีดเข้าสู่ร่างกายโดยตรง<br>• ข้อ จ.: Gamma radiation sterilization รังสีแกมมาอาจทำลายโครงสร้างทางเคมีและพันธะของโมเลกุลโปรตีนอินซูลินให้เสียหายได้",
     "answerImage": "",
     "note": "แบบฝึกหัด PLE-CC 1 ข้อ 32",
     "examType": "แบบฝึกหัด",
@@ -255079,7 +255279,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "เหตุผลหลักในการตรวจ Bacterial endotoxin ใน Paclitaxel injection",
+    "question": "เหตุผลหลักในการตรวจ Bacterial endotoxin ในผลิตภัณฑ์ Paclitaxel injection คือข้อใด",
     "questionImage": "",
     "choices": [
       "เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา",
@@ -255088,8 +255288,8 @@ window.QUIZ_OFFLINE_DB = [
       "เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง",
       "เพื่อวัดความแรงในการออกฤทธิ์ต้านมะเร็ง"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sterile Products การเลือก Sterile Products เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Sterility & Pyrogen testing โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: (เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา): เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค.: (เพื่อป้องกันการเกิด Pyrogenic reaction): เพื่อป้องกันการเกิด Pyrogenic reaction ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง.: (เพื่อวัดความเข้มข้นของสารกันเสีย): เพื่อวัดความเข้มข้นของสารกันเสีย ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ.: (เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง): เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เพื่อป้องกันการเกิด Pyrogenic reaction<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Bacterial endotoxin หรือ lipopolysaccharide จากผนังเซลล์แบคทีเรียแกรมลบเมื่อเข้าสู่ร่างกายทางหลอดเลือดจะเหนี่ยวนำให้เกิดไข้และการอักเสบรุนแรง (Pyrogenic reaction) การทดสอบ Bacterial endotoxin จึงมีความสำคัญเพื่อความปลอดภัยของผู้ป่วย<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: เพื่อให้มั่นใจว่าไม่มีเชื้อราเจริญเติบโตในยา: เป็นการประเมินการปนเปื้อนเชื้อจุลชีพทั่วไปหรือทดสอบความปลอดเชื้อ (Sterility test) ไม่ใช่เป้าหมายหลักของการตรวจ endotoxin<br>• ข้อ ค.: เพื่อวัดความเข้มข้นของสารกันเสีย: การตรวจสารกันเสียใช้ analytical methods เช่น HPLC ไม่ใช่การตรวจ endotoxin<br>• ข้อ ง.: เพื่อประเมินความคงตัวของยาที่อุณหภูมิสูง: การประเมินความคงตัวใช้วิธี Stability testing ไม่ใช่การทดสอบ endotoxin<br>• ข้อ จ.: เพื่อวัดความแรงในการออกฤทธิ์ต้านมะเร็ง: ความแรงของยาประเมินด้วย Assay หรือ Potency testing ไม่ใช่ Bacterial endotoxin test",
     "answerImage": "",
     "note": "แบบฝึกหัด PLE-CC 1 ข้อ 75",
     "examType": "แบบฝึกหัด",
@@ -255191,7 +255391,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "ผู้ป่วยวัณโรคเกิดภาวะตับอักเสบจากยา (Drug-Induced Liver Injury: DILI) หลังจากได้รับยาสูตรผสม IRZE (Isoniazid, Rifampicin, Pyrazinamide, Ethambutol) โดยมีระดับเอนไซม์ตับ AST/ALT สูงเกิน 5 เท่าของค่าปกติ แพทย์จึงสั่งหยุดยาที่มีพิษต่อตับทั้งหมดชั่วคราว",
     "caseStem": "ผู้ป่วยวัณโรคเกิดภาวะตับอักเสบจากยา (Drug-Induced Liver Injury: DILI) หลังจากได้รับยาสูตรผสม IRZE (Isoniazid, Rifampicin, Pyrazinamide, Ethambutol) โดยมีระดับเอนไซม์ตับ AST/ALT สูงเกิน 5 เท่าของค่าปกติ แพทย์จึงสั่งหยุดยาที่มีพิษต่อตับทั้งหมดชั่วคราว",
-    "question": "ยาต้านจุลชีพชนิดฉีดในข้อใดต่อไปนี้ ที่จัดเป็นยาทางเลือกที่ไม่มีพิษต่อตับ (Non-hepatotoxic alternative regimen) ที่สามารถนำมาใช้รักษาทดแทนยาขนานหลักในช่วงที่ตับกำลังฟื้นตัว",
+    "question": "[ย้ายไป 8. Infectious diseases::381] ยาต้านจุลชีพชนิดฉีดในข้อใดต่อไปนี้ ที่จัดเป็นยาทางเลือกที่ไม่มีพิษต่อตับ (Non-hepatotoxic alternative regimen) ที่สามารถนำมาใช้รักษาทดแทนยาขนานหลักในช่วงที่ตับกำลังฟื้นตัว",
     "questionImage": "",
     "choices": [
       "PAS (Para-aminosalicylic acid)",
@@ -255275,7 +255475,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "การทดสอบโดยการฉีดเข้าไปในหูกระต่ายแล้ววัดอุณหภูมิของกระต่ายที่สูงขึ้น เป็นการทดสอบอะไร",
+    "question": "การทดสอบโดยการฉีดเข้าไปในหูกระต่ายแล้ววัดอุณหภูมิของกระต่ายที่สูงขึ้นเป็นการทดสอบอะไร",
     "questionImage": "",
     "choices": [
       "Clarity test",
@@ -255284,12 +255484,12 @@ window.QUIZ_OFFLINE_DB = [
       "Pyrogen test",
       "Toxicity test"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Clarity test<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก Clarity test เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Parenterals & Ophthalmic โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br>USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Parenterals & Ophthalmic)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: (Sterility test): Sterility test ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค.: (Purity test): Purity test ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง.: (Pyrogen test): Pyrogen test ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ.: (Toxicity test): Toxicity test ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+    "answer": 4,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Pyrogen test<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Pyrogen test เป็นการทดสอบเพื่อตรวจหาปริมาณสารก่อไข้ (pyrogen) ในผลิตภัณฑ์ยาฉีด โดยการฉีดตัวอย่างยาเข้าทางหลอดเลือดดำของกระต่าย และวัดอุณหภูมิร่างกายที่สูงขึ้นตามมาตรฐาน USP<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Clarity test เป็นการตรวจสอบความใสของผลิตภัณฑ์ยาฉีดด้วยตาเปล่า<br>• ข้อ ข.: Sterility test เป็นการทดสอบความปลอดเชื้อของผลิตภัณฑ์โดยนำไปเพาะเชื้อในอาหารเลี้ยงเชื้อ<br>• ข้อ ค.: Purity test เป็นการทดสอบความบริสุทธิ์เพื่อตรวจสอบสารเจือปนในวัตถุดิบหรือตำรับยา<br>• ข้อ จ.: Toxicity test เป็นการทดสอบความเป็นพิษของสารต่อสิ่งมีชีวิตหรือเซลล์",
     "answerImage": "",
     "note": "ข้อ 18 (PLE_CC1_2555 Day 1.md)",
     "examType": "ข้อสอบจริง",
-    "examYear": "2555",
+    "examYear": "2555.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -255336,16 +255536,16 @@ window.QUIZ_OFFLINE_DB = [
     "choices": [
       "Tonicity",
       "Preservatives",
-      "Sterity",
+      "Sterility",
       "Volume",
       "pH"
     ],
-    "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Preservatives<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก Preservatives เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Parenterals & Ophthalmic โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br>USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Parenterals & Ophthalmic)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: (Tonicity): Tonicity ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค.: (Sterity): Sterity ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง.: (Volume): Volume ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ.: (pH): pH ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+    "answer": 3,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Sterility<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sterility (ความปราศจากเชื้อ) เป็นข้อกำหนดสำคัญที่สุดในการเตรียมยาหยอดตา เนื่องจากดวงตามีความไวต่อการติดเชื้อสูง การที่ยาไม่ปราศจากเชื้ออาจทำให้เกิดการติดเชื้อที่กระจกตา (microbial keratitis) ซึ่งรุนแรงถึงขั้นสูญเสียการมองเห็นได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: (Tonicity): Tonicity สำคัญในการลดความระคายเคืองและป้องกันการไหลเข้าออกของน้ำในเซลล์ แต่รองจากความปราศจากเชื้อ<br>• ข้อ ข.: (Preservatives): Preservatives สำคัญในยาที่ใช้หลายครั้ง (multidose) เพื่อป้องกันการปนเปื้อนระหว่างใช้งาน แต่สำหรับยาหยอดตาแบบ unit-dose หรือในแง่ความปลอดภัยพื้นฐาน Sterility สำคัญกว่า<br>• ข้อ ง.: (Volume): Volume เป็นเรื่องของขนาดบรรจุและการบริหารยา ไม่ใช่ปัจจัยความปลอดภัยด้านจุลชีววิทยาหลัก<br>• ข้อ จ.: (pH): pH สำคัญต่อความคงตัวและความสบายตา แต่สามารถปรับแต่งได้รองจากความจำเป็นต้องปราศจากเชื้อ",
     "answerImage": "",
     "note": "ข้อ 7 (PLE_CC1_2554 SET2.md)",
     "examType": "ข้อสอบจริง",
-    "examYear": "2554",
+    "examYear": "2554.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -272257,6 +272457,34 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 4,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. ขายไม่ได้ในร้านชำ เพราะเป็นยาอันตราย<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Diclofenac เป็นยาแผนปัจจุบันที่ถูกจัดให้เป็นยาอันตราย ตามพระราชบัญญัติยา พ.ศ. 2517 การจำหน่ายต้องกระทำโดยผู้มีหน้าที่ปฏิบัติการในร้านขายยาแผนปัจจุบัน (เภสัชกร) เท่านั้น ร้านขายของชำทั่วไปจึงไม่มีสิทธิ์จำหน่าย<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: แม้จะเป็นยาแผนปัจจุบันบรรจุเสร็จ แต่หากจัดเป็นยาอันตรายหรือยาควบคุมพิเศษ จะไม่ได้รับอนุญาตให้จำหน่ายทั่วไปในร้านชำ<br>• ข้อ ข.: ยา Diclofenac ไม่ได้จัดอยู่ในบัญชียาสามัญประจำบ้านที่อนุญาตให้ขายทั่วไปได้<br>• ข้อ ค.: ยาอันตรายทุกชนิดจำเป็นต้องมีการส่งมอบและให้คำแนะนำโดยเภสัชกรชั้นหนึ่ง<br>• ข้อ จ.: Diclofenac เป็นยาอันตราย ไม่ใช่ยาควบคุมพิเศษที่ต้องมีใบสั่งแพทย์ทุกครั้งและต้องทำบัญชีรับ-จ่ายยา แต่ก็ยังไม่ ่ อนุญาตให้ขายในร้านชำ",
+    "answerImage": "",
+    "note": "ข้อ 20 (PLE_CC1_2561_Key.md) [ย้ายจาก 6. Solid Dosage Forms::79]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2561.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "1. Pharmacy Laws & Ethics::241",
+    "itemNo": 239,
+    "category": "1. Pharmacy Laws & Ethics",
+    "topic": "1. Law & Regulations",
+    "subtopic": "1.1 พระราชบัญญัติยา",
+    "track": "SAP",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "ผู้ป่วยไปซื้อยา diclofenac tablet มาจากร้านขายของชำ ร้านชำสามารถขายยาชนิดนี้ได้หรือไม่",
+    "questionImage": "",
+    "choices": [
+      "ขายได้เพราะเป็นยาแผนปัจจุบันบรรจุเสร็จ",
+      "ขายได้เพราะเป็นยาสามัญประจำบ้าน",
+      "ขายได้เพราะยานี้ไม่จำเป็นต้องขายโดยเภสัชกร",
+      "ขายไม่ได้ในร้านชำ เพราะเป็นยาอันตราย",
+      "ขายไม่ได้ในร้านชำ เพราะเป็นยาควบคุมพิเศษ"
+    ],
+    "answer": 4,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. ขายไม่ได้ในร้านชำ เพราะเป็นยาอันตราย<br>🎯 ทำไมข้อนี้ถึงถูก:<br>Diclofenac เป็นยาอันตรายตามพระราชบัญญัติยา การขายยาอันตรายจะต้องกระทำโดยผู้รับอนุญาตขายยาแผนปัจจุบัน หรือผู้ประกอบวิชาชีพเวชกรรม ฯลฯ ในสถานที่ขายยาที่ได้รับอนุญาตเท่านั้น ร้านขายของชำทั่วไปไม่มีใบอนุญาตขายยา จึงไม่สามารถจำหน่ายยาอันตรายได้<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ขายได้เพราะเป็นยาแผนปัจจุบันบรรจุเสร็จ ผิด เนื่องจากยาแผนปัจจุบันบรรจุเสร็จแบ่งเป็นหลายประเภท หากเป็นยาอันตรายหรือยาควบคุมพิเศษ ร้านชำไม่สามารถขายได้<br>• ข้อ ข.: ขายได้เพราะเป็นยาสามัญประจำบ้าน ผิด เพราะ Diclofenac ไม่ใช่ยาสามัญประจำบ้าน<br>• ข้อ ค.: ขายได้เพราะยานี้ไม่จำเป็นต้องขายโดยเภสัชกร ผิด แม้ร้านขายยาบรรจุเสร็จบางประเภทจะไม่ต้องมีเภสัชกรอยู่ตลอดเวลา แต่ร้านชำทั่วไปก็ไม่มีสิทธิ์ขายยาอันตราย<br>• ข้อ จ.: ขายไม่ได้ในร้านชำ เพราะเป็นยาควบคุมพิเศษ ผิด เนื่องจาก Diclofenac จัดเป็นยาอันตราย ไม่ใช่ยาควบคุมพิเศษ",
     "answerImage": "",
     "note": "ข้อ 20 (PLE_CC1_2561_Key.md) [ย้ายจาก 6. Solid Dosage Forms::79]",
     "examType": "ข้อสอบจริง",
