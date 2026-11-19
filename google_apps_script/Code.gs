@@ -1823,9 +1823,9 @@ function callGeminiQuizResolver(category, questionId, originalQ, studentReport) 
   }
 
   const candidateModels = [
+    'gemini-2.5-flash-lite',
+    'gemini-2.5-flash',
     'gemini-flash-lite-latest',
-    'gemini-3.5-flash-lite',
-    'gemini-3.8-flash',
     'gemini-flash-latest'
   ];
 
@@ -2318,6 +2318,8 @@ function applyStatusValidationToRow_(sheet, rowNum) {
 }
 
 function processPendingReportsInternal_() {
+  const startTimeMs = Date.now();
+  const MAX_RUNTIME_MS = 210000; // 3.5 minutes guard (prevents 6-min GAS timeout)
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = ss.getSheetByName('Report_Quiz_Issues');
   if (!sheet) return 0;
@@ -2327,8 +2329,9 @@ function processPendingReportsInternal_() {
 
   const lastCol = Math.max(19, sheet.getLastColumn());
   const data = sheet.getRange(2, 1, lastRow - 1, lastCol).getValues();
-  let count = 0;
 
+  // Pre-collect genuine pending rows so we can show accurate 1/N progress
+  const pendingTargets = [];
   for (let i = 0; i < data.length; i++) {
     const rowNum = i + 2;
     const cat = String(data[i][2] || '').trim();
@@ -2336,62 +2339,106 @@ function processPendingReportsInternal_() {
     const issueType = String(data[i][4] || '').trim();
     const detail = String(data[i][5] || '').trim();
     const currentDiag = String(data[i][7] || '').trim();
+    const statusVal = String(data[i][16] || '').trim();
+
+    if (!qId) continue;
+    if (issueType === 'ข้อสอบถูกต้อง') continue;
+    if (statusVal.includes('นำไปใช้') || statusVal.includes('Applied') || statusVal.includes('ปฏิเสธ') || statusVal.includes('Rejected')) continue;
 
     const needProcess = (!currentDiag || currentDiag.includes('อยู่ระหว่างเตรียม') || currentDiag === 'null');
-
     if (needProcess) {
-      let originalQ = { question: '', choices: [], answer: '', explanation: '', caseContext: '', topic: '', subtopic: '', track: '', caseId: '' };
-      let targetSheetName = cat;
-      let targetRowNum = 0;
-      if (qId.includes('::')) {
-        const parts = qId.split('::');
-        targetSheetName = parts[0].trim();
-        targetRowNum = parseInt(parts[1], 10);
-      }
-      if (targetSheetName && targetRowNum >= 3) {
-        const targetSheet = findSheetSafely_(ss, targetSheetName);
-        if (targetSheet && targetRowNum <= targetSheet.getLastRow()) {
-          const colMap = resolveSheetColumnMap_(targetSheet);
-          const rowVals = targetSheet.getRange(targetRowNum, 1, 1, Math.max(19, targetSheet.getLastColumn())).getValues()[0];
-          originalQ = {
-            caseContext: colMap.caseContext ? String(rowVals[colMap.caseContext - 1] || '') : '',
-            question: String(rowVals[colMap.question - 1] || ''),
-            choices: [
-              String(rowVals[colMap.c1 - 1] || ''),
-              String(rowVals[colMap.c2 - 1] || ''),
-              String(rowVals[colMap.c3 - 1] || ''),
-              String(rowVals[colMap.c4 - 1] || ''),
-              String(rowVals[colMap.c5 - 1] || '')
-            ].filter(Boolean),
-            answer: rowVals[colMap.answer - 1],
-            explanation: String(rowVals[colMap.explanation - 1] || ''),
-            topic: colMap.topic ? String(rowVals[colMap.topic - 1] || '') : '',
-            subtopic: colMap.subtopic ? String(rowVals[colMap.subtopic - 1] || '') : '',
-            track: colMap.track ? String(rowVals[colMap.track - 1] || '') : '',
-            caseId: colMap.caseId ? String(rowVals[colMap.caseId - 1] || '') : ''
-          };
-        }
-      }
-
-      const ai = callGeminiQuizResolver(targetSheetName, qId, originalQ, { issueType, detail });
-      if (ai) {
-        sheet.getRange(rowNum, 8).setValue('[' + ai.verdict + '] ' + ai.diagnosis);
-        sheet.getRange(rowNum, 9).setValue(ai.proposedCaseContext || '');
-        sheet.getRange(rowNum, 10).setValue(ai.proposedQuestion || '');
-        sheet.getRange(rowNum, 11).setValue(Array.isArray(ai.proposedChoices) ? ai.proposedChoices.map((c, idx) => `${idx+1}. ${c}`).join('\n') : '');
-        sheet.getRange(rowNum, 12).setValue(ai.proposedAnswer || '');
-        sheet.getRange(rowNum, 13).setValue(ai.proposedExplanation || '');
-        sheet.getRange(rowNum, 14).setValue(ai.proposedTargetSheet || targetSheetName);
-        sheet.getRange(rowNum, 15).setValue((ai.proposedTopic || '') + (ai.proposedSubtopic ? ' / ' + ai.proposedSubtopic : ''));
-        sheet.getRange(rowNum, 16).setValue(ai.proposedTrack || '');
-        sheet.getRange(rowNum, 17).setValue('⏳ รอประธานอนุมัติ (Pending)');
-        sheet.getRange(rowNum, 18).setValue('AI วิเคราะห์ครบทุกฟิลด์สำเร็จ พร้อมให้ประธานกดอนุมัติ');
-        sheet.getRange(rowNum, 19).setValue(JSON.stringify(ai));
-        applyStatusValidationToRow_(sheet, rowNum);
-        count++;
-      }
+      pendingTargets.push({ rowNum, cat, qId, issueType, detail });
     }
   }
+
+  if (pendingTargets.length === 0) {
+    try { ss.toast('ไม่มีข้อสอบค้างประมวลผล AI แล้วครับ', '⚡ AI Auto-Resolver', 4); } catch (e) {}
+    return 0;
+  }
+
+  let count = 0;
+  let failedCount = 0;
+
+  for (let idx = 0; idx < pendingTargets.length; idx++) {
+    if (Date.now() - startTimeMs > MAX_RUNTIME_MS) {
+      try {
+        ss.toast('หยุดชั่วคราวเพื่อป้องกัน Timeout (ทำไปแล้ว ' + count + '/' + pendingTargets.length + ' ข้อ กดรันอีกครั้งเพื่อทำต่อ)', '⏱️ Time Guard', 8);
+      } catch (e) {}
+      break;
+    }
+
+    const item = pendingTargets[idx];
+    const { rowNum, cat, qId, issueType, detail } = item;
+
+    try {
+      ss.toast('กำลังวิเคราะห์ข้อที่ ' + (idx + 1) + '/' + pendingTargets.length + ' (แถว ' + rowNum + ': ' + qId + ')...', '⚡ AI Auto-Resolver', 15);
+    } catch (e) {}
+
+    let originalQ = { question: '', choices: [], answer: '', explanation: '', caseContext: '', topic: '', subtopic: '', track: '', caseId: '' };
+    let targetSheetName = cat;
+    let targetRowNum = 0;
+    if (qId.includes('::')) {
+      const parts = qId.split('::');
+      targetSheetName = parts[0].trim();
+      targetRowNum = parseInt(parts[1], 10);
+    }
+    if (targetSheetName && targetRowNum >= 3) {
+      const targetSheet = findSheetSafely_(ss, targetSheetName);
+      if (targetSheet && targetRowNum <= targetSheet.getLastRow()) {
+        const colMap = resolveSheetColumnMap_(targetSheet);
+        const rowVals = targetSheet.getRange(targetRowNum, 1, 1, Math.max(19, targetSheet.getLastColumn())).getValues()[0];
+        originalQ = {
+          caseContext: colMap.caseContext ? String(rowVals[colMap.caseContext - 1] || '') : '',
+          question: String(rowVals[colMap.question - 1] || ''),
+          choices: [
+            String(rowVals[colMap.c1 - 1] || ''),
+            String(rowVals[colMap.c2 - 1] || ''),
+            String(rowVals[colMap.c3 - 1] || ''),
+            String(rowVals[colMap.c4 - 1] || ''),
+            String(rowVals[colMap.c5 - 1] || '')
+          ].filter(Boolean),
+          answer: rowVals[colMap.answer - 1],
+          explanation: String(rowVals[colMap.explanation - 1] || ''),
+          topic: colMap.topic ? String(rowVals[colMap.topic - 1] || '') : '',
+          subtopic: colMap.subtopic ? String(rowVals[colMap.subtopic - 1] || '') : '',
+          track: colMap.track ? String(rowVals[colMap.track - 1] || '') : '',
+          caseId: colMap.caseId ? String(rowVals[colMap.caseId - 1] || '') : ''
+        };
+      }
+    }
+
+    const ai = callGeminiQuizResolver(targetSheetName, qId, originalQ, { issueType, detail });
+    if (ai) {
+      const choicesStr = Array.isArray(ai.proposedChoices) ? ai.proposedChoices.map((c, cIdx) => `${cIdx + 1}. ${c}`).join('\n') : '';
+      const topicSubStr = (ai.proposedTopic || '') + (ai.proposedSubtopic ? ' / ' + ai.proposedSubtopic : '');
+      const rowUpdate = [[
+        '[' + (ai.verdict || 'AGREE') + '] ' + (ai.diagnosis || ''),
+        ai.proposedCaseContext || '',
+        ai.proposedQuestion || '',
+        choicesStr,
+        ai.proposedAnswer || '',
+        ai.proposedExplanation || '',
+        ai.proposedTargetSheet || targetSheetName,
+        topicSubStr,
+        ai.proposedTrack || '',
+        '⏳ รอประธานอนุมัติ (Pending)',
+        'AI วิเคราะห์ครบทุกฟิลด์สำเร็จ พร้อมให้ประธานกดอนุมัติ',
+        JSON.stringify(ai)
+      ]];
+      sheet.getRange(rowNum, 8, 1, 12).setValues(rowUpdate);
+      applyStatusValidationToRow_(sheet, rowNum);
+      SpreadsheetApp.flush();
+      count++;
+    } else {
+      failedCount++;
+      sheet.getRange(rowNum, 18).setValue('⚠️ AI ตอบกลับไม่สำเร็จ (Quota/Timeout) กรุณาลองกดรันอีกครั้ง');
+      SpreadsheetApp.flush();
+    }
+  }
+
+  try {
+    ss.toast('เสร็จสิ้น! สำเร็จ ' + count + ' ข้อ' + (failedCount > 0 ? ' (ไม่สำเร็จ ' + failedCount + ' ข้อ)' : ''), '✅ AI Auto-Resolver', 6);
+  } catch (e) {}
 
   return count;
 }
