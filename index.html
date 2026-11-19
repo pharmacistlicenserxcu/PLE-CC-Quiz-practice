@@ -6157,6 +6157,176 @@
         height: 100px;
       }
     }
+    /* ─── QUIZ QUICK NAVIGATOR & SEARCH MODAL ─── */
+    #quizProgressCount {
+      cursor: pointer;
+      padding: 2px 8px;
+      border-radius: 10px;
+      transition: background 0.15s, color 0.15s;
+    }
+    #quizProgressCount:hover {
+      background: rgba(2, 132, 199, 0.12);
+      color: #0284c7;
+    }
+    .qnav-search-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .qnav-search-input {
+      flex: 1;
+      padding: 9px 12px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: 13px;
+      font-family: inherit;
+      background: var(--bg);
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .qnav-search-input:focus {
+      border-color: #0284c7;
+      background: var(--card);
+    }
+    .qnav-status-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 7px 10px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      font-size: 11.5px;
+      color: var(--ink-soft);
+    }
+    .qnav-filter-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .qnav-filter-pill {
+      padding: 4px 10px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--ink-soft);
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .qnav-filter-pill.active {
+      background: #0284c7;
+      border-color: #0284c7;
+      color: #ffffff;
+    }
+    .qnav-body-scroll {
+      max-height: 52vh;
+      overflow-y: auto;
+      padding: 4px 2px;
+    }
+    .qnav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+      gap: 6px;
+    }
+    .qnav-num-btn {
+      height: 36px;
+      border-radius: 9px;
+      border: 1.5px solid var(--border);
+      background: var(--card);
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 700;
+      font-family: 'IBM Plex Mono', monospace;
+      cursor: pointer;
+      transition: all 0.12s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .qnav-num-btn:hover {
+      border-color: #0284c7;
+      transform: translateY(-1px);
+    }
+    .qnav-num-btn.is-correct {
+      background: #ecfdf5;
+      border-color: #10b981;
+      color: #047857;
+    }
+    .qnav-num-btn.is-wrong {
+      background: #fef2f2;
+      border-color: #ef4444;
+      color: #b91c1c;
+    }
+    .qnav-num-btn.is-current {
+      background: #0284c7;
+      border-color: #0369a1;
+      color: #ffffff;
+      box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.25);
+    }
+    .qnav-search-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .qnav-search-item {
+      text-align: left;
+      padding: 9px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card);
+      cursor: pointer;
+      transition: all 0.12s;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .qnav-search-item:hover {
+      border-color: #0284c7;
+      background: rgba(2, 132, 199, 0.04);
+    }
+    .qnav-search-num {
+      flex-shrink: 0;
+      min-width: 44px;
+      text-align: center;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      font-family: 'IBM Plex Mono', monospace;
+      background: var(--bg);
+      color: var(--ink);
+      border: 1px solid var(--border);
+    }
+    .qnav-search-num.is-correct { background: #ecfdf5; border-color: #10b981; color: #047857; }
+    .qnav-search-num.is-wrong { background: #fef2f2; border-color: #ef4444; color: #b91c1c; }
+    .qnav-search-num.is-current { background: #0284c7; border-color: #0369a1; color: #ffffff; }
+    .qnav-search-text {
+      flex: 1;
+      font-size: 12.5px;
+      color: var(--ink);
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .qnav-footer {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
   </style>
 
 </head>
@@ -6850,9 +7020,21 @@
 
         </button>
 
+        <button class="icon-btn" id="btnOpenQuizNav" onclick="openQuizNavigatorModal()" title="🔍 ค้นหาโจทย์ & เลือกกระโดดไปข้อที่ต้องการ">
+
+          <span style="font-size:13px;">🔍</span>
+
+        </button>
+
         <button class="icon-btn" id="btnShufflePractice" onclick="shuffleCurrentQuizDeck()" title="🔀 สลับลำดับข้อสอบ (Shuffle)">
 
           <span style="font-size:13px;">🔀</span>
+
+        </button>
+
+        <button class="icon-btn" id="btnResetPracticeState" onclick="confirmResetPracticeState()" title="🔄 รีเซ็ตความคืบหน้ากลับข้อ 1 (เรียงตามลำดับเดิม)">
+
+          <span style="font-size:13px;">🔄</span>
 
         </button>
 
@@ -6957,7 +7139,7 @@
 
       <div class="progress-row">
 
-        <span class="progress-count" id="quizProgressCount">0/0</span>
+        <span class="progress-count" id="quizProgressCount" onclick="openQuizNavigatorModal()" title="คลิกเพื่อค้นหาหรือเลือกกระโดดไปข้อที่ต้องการ">0/0</span>
 
         <div class="progress-track"><div class="progress-fill" id="quizProgressFill"></div></div>
 
@@ -8351,7 +8533,48 @@
 
 
 
-    <!-- Guideline Modal -->
+    <!-- 🔍 Quick Search & Question Navigator Modal -->
+  <div class="modal-overlay" id="quizNavigatorModal" onclick="if(event.target===this) closeQuizNavigatorModal()">
+    <div class="modal-box" style="max-width: 600px;">
+      <div class="modal-head">
+        <h3>🔍 ค้นหาโจทย์ & เลือกข้อสอบ</h3>
+        <button class="modal-close" onclick="closeQuizNavigatorModal()">✕</button>
+      </div>
+
+      <div class="qnav-status-strip">
+        <span id="qnavOrderBadge">📋 ลำดับปกติ (เรียงตามคลัง)</span>
+        <span id="qnavProgressSummary">ตอบแล้ว 0 / 0 ข้อ</span>
+      </div>
+
+      <div class="qnav-search-bar">
+        <input type="text" id="qnavSearchInput" class="qnav-search-input"
+               placeholder="พิมพ์เลขข้อ (เช่น 100) หรือคำค้นในโจทย์ / ตัวเลือก..."
+               oninput="renderQuizNavigatorContent()"
+               onkeydown="handleQuizNavSearchKeyDown(event)">
+        <button class="btn btn-secondary" onclick="clearQuizNavSearch()" style="padding:0 12px; font-size:12px;">ล้าง</button>
+      </div>
+
+      <div class="qnav-filter-row" id="qnavFilterRow">
+        <button class="qnav-filter-pill active" data-filter="all" onclick="setQuizNavFilter('all')">ทั้งหมด</button>
+        <button class="qnav-filter-pill" data-filter="unanswered" onclick="setQuizNavFilter('unanswered')">ยังไม่ทำ</button>
+        <button class="qnav-filter-pill" data-filter="wrong" onclick="setQuizNavFilter('wrong')">ตอบผิด</button>
+        <button class="qnav-filter-pill" data-filter="correct" onclick="setQuizNavFilter('correct')">ตอบถูก</button>
+      </div>
+
+      <div class="qnav-body-scroll" id="qnavBodyContainer">
+        <!-- Populated dynamically -->
+      </div>
+
+      <div class="qnav-footer">
+        <button class="btn btn-secondary" onclick="confirmResetPracticeState()" style="font-size:12px; padding:6px 12px; color:#b91c1c; border-color:#fecaca; background:#fef2f2;">
+          🔄 รีเซ็ตกลับข้อ 1 (เรียงลำดับเดิม)
+        </button>
+        <button class="btn btn-secondary" onclick="closeQuizNavigatorModal()" style="font-size:12px; padding:6px 16px;">ปิดหน้าต่าง</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Guideline Modal -->
 
   <div class="modal-overlay" id="guidelineModal">
 
@@ -12425,7 +12648,25 @@ function enterQuizCategoryDirectly(catName, track) {
       populatePracticeExamYearDropdowns(allQuestionsMap[catName]);
 
       const filtered = applyPracticeFilters();
-      activeQuizQuestions = filtered.slice();
+      // Preserve existing order (including saved shuffled order) & current index during background live sync
+      if (activeQuizQuestions && activeQuizQuestions.length > 0 && appQuizMode !== 'exam') {
+        const filteredById = new Map(filtered.map(q => [q.id, q]));
+        const refreshed = [];
+        const seen = new Set();
+        activeQuizQuestions.forEach(oldQ => {
+          const fresh = filteredById.get(oldQ.id);
+          if (fresh) {
+            refreshed.push(fresh);
+            seen.add(fresh.id);
+          }
+        });
+        filtered.forEach(q => {
+          if (!seen.has(q.id)) refreshed.push(q);
+        });
+        activeQuizQuestions = refreshed;
+      } else {
+        activeQuizQuestions = filtered.slice();
+      }
 
       // Synchronize category subtitle count with updated active question count
       const catSub = document.getElementById('quizCategorySub');
@@ -15920,20 +16161,72 @@ function onQuizExamYearFilterChange() {
   showToast('🔍 ปรับตัวกรองชุด/ปีข้อสอบแล้ว (' + filtered.length + ' ข้อ)');
 }
 
-function startQuizWithQuestions(qs, titleText) {
+function startQuizWithQuestions(qs, titleText, options = {}) {
+  const skipRestore = !!(options && options.skipRestore);
   activeQuizQuestions = qs.slice();
   currentQuestionIndex = 0;
   userAnswersExamMode = {};
   selectedChoiceIndex = null;
   isAnswerSubmitted = false;
   scrollUserAnswers = {};
+  practiceSessionAnswers = {};
+  isCurrentDeckShuffled = false;
   scrollShowAllExp = false;
   scrollFilterSubtopic = '__all__';
   scrollSearchQuery = '';
 
+  let restoredToastMsg = '';
+  if (!skipRestore && appQuizMode !== 'exam' && activeQuizQuestions.length > 0) {
+    const savedState = loadCurrentPracticeState();
+    if (savedState) {
+      // Restore shuffled order if user shuffled previously
+      if (savedState.isShuffled && Array.isArray(savedState.orderedIds) && savedState.orderedIds.length > 0) {
+        const qById = new Map(activeQuizQuestions.map(q => [q.id, q]));
+        const reordered = [];
+        const seen = new Set();
+        savedState.orderedIds.forEach(id => {
+          const found = qById.get(id);
+          if (found && !seen.has(id)) {
+            reordered.push(found);
+            seen.add(id);
+          }
+        });
+        // Append any newly added questions at the end
+        activeQuizQuestions.forEach(q => {
+          if (!seen.has(q.id)) reordered.push(q);
+        });
+        if (reordered.length > 0) {
+          activeQuizQuestions = reordered;
+          isCurrentDeckShuffled = true;
+        }
+      }
+      // Restore answered map & score
+      if (savedState.answers && typeof savedState.answers === 'object') {
+        practiceSessionAnswers = Object.assign({}, savedState.answers);
+        activeQuizQuestions.forEach((q, idx) => {
+          if (practiceSessionAnswers[q.id]) {
+            scrollUserAnswers[idx] = {
+              choice: practiceSessionAnswers[q.id].choice,
+              isCorrect: !!practiceSessionAnswers[q.id].isCorrect
+            };
+          }
+        });
+      }
+      // Restore current question index
+      if (typeof savedState.currentIndex === 'number' && savedState.currentIndex >= 0) {
+        currentQuestionIndex = Math.min(savedState.currentIndex, Math.max(0, activeQuizQuestions.length - 1));
+      }
+      const ansCount = Object.keys(practiceSessionAnswers).length;
+      if (currentQuestionIndex > 0 || isCurrentDeckShuffled || ansCount > 0) {
+        restoredToastMsg = `📌 ทำต่อจากเดิม: ข้อ ${currentQuestionIndex + 1}/${activeQuizQuestions.length}` + (isCurrentDeckShuffled ? ' (โหมดสุ่มที่บันทึกไว้)' : '');
+      }
+    }
+  }
+
+  const restoredCorrect = Object.values(practiceSessionAnswers).filter(a => a && a.isCorrect).length;
   sessionResults = {
     total: activeQuizQuestions.length,
-    score: 0,
+    score: restoredCorrect,
     wrongQuestions: []
   };
 
@@ -15963,10 +16256,18 @@ function startQuizWithQuestions(qs, titleText) {
   const toggleBar = document.getElementById('examPaletteToggleBar');
   if (toggleBar) toggleBar.classList.toggle('show', appQuizMode === 'exam');
 
-  // Shuffle button in practice and scroll mode
+  // Shuffle, Search/Navigator & Reset buttons in practice and scroll mode
   const shuffleBtn = document.getElementById('btnShufflePractice');
   if (shuffleBtn) {
     shuffleBtn.style.display = (appQuizMode !== 'exam') ? 'inline-flex' : 'none';
+  }
+  const navSearchBtn = document.getElementById('btnOpenQuizNav');
+  if (navSearchBtn) {
+    navSearchBtn.style.display = (appQuizMode !== 'exam') ? 'inline-flex' : 'none';
+  }
+  const resetStateBtn = document.getElementById('btnResetPracticeState');
+  if (resetStateBtn) {
+    resetStateBtn.style.display = (appQuizMode !== 'exam') ? 'inline-flex' : 'none';
   }
 
   // Toggle button between card and scroll view
@@ -15986,8 +16287,18 @@ function startQuizWithQuestions(qs, titleText) {
 
   if (appQuizMode === 'scroll' || (appQuizMode === 'practice' && practiceViewStyle === 'scroll')) {
     showScrollViewport();
+    if (currentQuestionIndex > 0) {
+      setTimeout(() => {
+        const targetCard = document.getElementById('scrollCard_' + currentQuestionIndex);
+        if (targetCard) targetCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 120);
+    }
   } else {
     showCardViewport();
+  }
+
+  if (restoredToastMsg) {
+    setTimeout(() => showToast(restoredToastMsg), 220);
   }
 }
 
@@ -15997,10 +16308,19 @@ function shuffleCurrentQuizDeck() {
     return;
   }
   activeQuizQuestions = shuffleClusterAwareQuestions(activeQuizQuestions);
+  isCurrentDeckShuffled = true;
   currentQuestionIndex = 0;
   selectedChoiceIndex = null;
   isAnswerSubmitted = false;
   scrollUserAnswers = {};
+  practiceSessionAnswers = {};
+  sessionResults = {
+    total: activeQuizQuestions.length,
+    score: 0,
+    wrongQuestions: []
+  };
+
+  saveCurrentPracticeState();
 
   if (practiceViewStyle === 'scroll' && appQuizMode !== 'exam') {
     renderScrollPractice();
@@ -16008,7 +16328,7 @@ function shuffleCurrentQuizDeck() {
   } else {
     renderCurrentQuestion();
   }
-  showToast('🔀 สุ่มสลับข้อสอบ (เคสต่อเนื่องอยู่ติดกันเป็นกลุ่ม) เรียบร้อยแล้ว!');
+  showToast('🔀 สุ่มสลับข้อสอบและบันทึก State การสุ่มไว้แล้ว! (กด 🔄 เพื่อรีเซ็ตกลับลำดับเดิม)');
 }
 
 // ─── SCROLL DOWN PRACTICE MODE CONTROLLERS ───
@@ -17422,6 +17742,9 @@ function onScrollChoiceClick(qIdx, choiceNum) {
   const isCorrect = (choiceNum === q.answer);
 
   scrollUserAnswers[qIdx] = { choice: choiceNum, isCorrect: isCorrect };
+  practiceSessionAnswers[q.id] = { choice: choiceNum, isCorrect: isCorrect };
+  currentQuestionIndex = qIdx;
+  saveCurrentPracticeState();
 
 
 
@@ -17934,6 +18257,9 @@ function submitAnswerPracticeMode() {
 
   // Save progress
   saveQuestionProgress(q.id, selectedChoiceIndex, isCorrect, q.category);
+  practiceSessionAnswers[q.id] = { choice: selectedChoiceIndex, isCorrect: isCorrect };
+  scrollUserAnswers[currentQuestionIndex] = { choice: selectedChoiceIndex, isCorrect: isCorrect };
+  saveCurrentPracticeState();
 
   // Apply styling to choices
   const items = document.querySelectorAll('.choice-item');
@@ -18173,6 +18499,8 @@ function goPrevQuestion() {
 
     currentQuestionIndex--;
 
+    if (appQuizMode !== 'exam') saveCurrentPracticeState();
+
     renderCurrentQuestion('prev');
 
   }
@@ -18186,6 +18514,8 @@ function goNextQuestion() {
   if (currentQuestionIndex + 1 < activeQuizQuestions.length) {
 
     currentQuestionIndex++;
+
+    if (appQuizMode !== 'exam') saveCurrentPracticeState();
 
     renderCurrentQuestion('next');
 
@@ -24014,6 +24344,226 @@ function showToast(msg) {
 
 
 
+
+// ─── PER-CATEGORY PRACTICE STATE PERSISTENCE & QUICK SEARCH NAVIGATOR ───
+const LS_PRACTICE_STATE = 'ple_quiz_practice_state_v1';
+let practiceSessionAnswers = {};
+let isCurrentDeckShuffled = false;
+let quizNavCurrentFilter = 'all';
+
+function getCurrentPracticeStateKey() {
+  const cat = (currentCategory || document.getElementById('quizCategoryTitle')?.textContent || '').trim();
+  if (!cat) return '';
+  const sub = currentSubtopic || '__all__';
+  const et = practiceExamTypeFilter || 'all';
+  const ey = practiceExamYearFilter || 'all';
+  return `${cat}::${sub}::${et}::${ey}`;
+}
+
+function loadAllPracticeStates_() {
+  try {
+    const raw = localStorage.getItem(LS_PRACTICE_STATE);
+    return raw ? JSON.parse(raw) : {};
+  } catch (e) {
+    return {};
+  }
+}
+
+function loadCurrentPracticeState() {
+  const key = getCurrentPracticeStateKey();
+  if (!key) return null;
+  const all = loadAllPracticeStates_();
+  return all[key] || null;
+}
+
+function saveCurrentPracticeState() {
+  if (appQuizMode === 'exam') return;
+  const key = getCurrentPracticeStateKey();
+  if (!key || !activeQuizQuestions || activeQuizQuestions.length === 0) return;
+  try {
+    const all = loadAllPracticeStates_();
+    all[key] = {
+      currentIndex: currentQuestionIndex,
+      isShuffled: !!isCurrentDeckShuffled,
+      orderedIds: isCurrentDeckShuffled ? activeQuizQuestions.map(q => q.id) : null,
+      answers: practiceSessionAnswers || {},
+      updatedAt: Date.now()
+    };
+    localStorage.setItem(LS_PRACTICE_STATE, JSON.stringify(all));
+  } catch (e) {
+    console.warn('Could not save practice state:', e);
+  }
+}
+
+function clearCurrentPracticeState() {
+  const key = getCurrentPracticeStateKey();
+  if (!key) return;
+  try {
+    const all = loadAllPracticeStates_();
+    delete all[key];
+    localStorage.setItem(LS_PRACTICE_STATE, JSON.stringify(all));
+  } catch (e) {}
+}
+
+function confirmResetPracticeState() {
+  if (appQuizMode === 'exam') return;
+  if (!confirm('รีเซ็ตความคืบหน้าของหมวดนี้กลับไปเริ่มข้อที่ 1 และเรียงตามลำดับเดิมใช่หรือไม่?')) return;
+
+  clearCurrentPracticeState();
+  isCurrentDeckShuffled = false;
+  practiceSessionAnswers = {};
+  scrollUserAnswers = {};
+  currentQuestionIndex = 0;
+  selectedChoiceIndex = null;
+  isAnswerSubmitted = false;
+
+  const freshList = applyPracticeFilters();
+  const titleText = currentCategory || document.getElementById('quizCategoryTitle')?.textContent || 'หมวดวิชา';
+  closeQuizNavigatorModal();
+  startQuizWithQuestions(freshList, titleText, { skipRestore: true });
+  showToast('🔄 รีเซ็ตกลับข้อที่ 1 (เรียงตามลำดับเดิม) เรียบร้อยแล้ว');
+}
+
+function openQuizNavigatorModal() {
+  if (!activeQuizQuestions || activeQuizQuestions.length === 0) return;
+  quizNavCurrentFilter = 'all';
+  document.querySelectorAll('#qnavFilterRow .qnav-filter-pill').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.filter === 'all');
+  });
+  const inp = document.getElementById('qnavSearchInput');
+  if (inp) inp.value = '';
+
+  const orderBadge = document.getElementById('qnavOrderBadge');
+  if (orderBadge) {
+    orderBadge.textContent = isCurrentDeckShuffled
+      ? '🔀 โหมดสุ่มลำดับ (บันทึก State ไว้แล้ว)'
+      : '📋 ลำดับปกติ (เรียงตามคลัง)';
+  }
+  const ansCount = Object.keys(practiceSessionAnswers || {}).length;
+  const correctCount = Object.values(practiceSessionAnswers || {}).filter(a => a && a.isCorrect).length;
+  const progEl = document.getElementById('qnavProgressSummary');
+  if (progEl) {
+    progEl.textContent = `ข้อปัจจุบัน: ${currentQuestionIndex + 1}/${activeQuizQuestions.length} • ตอบแล้ว ${ansCount} (ถูก ${correctCount})`;
+  }
+
+  renderQuizNavigatorContent();
+  const modal = document.getElementById('quizNavigatorModal');
+  if (modal) modal.classList.add('show');
+  if (inp) setTimeout(() => inp.focus(), 80);
+}
+
+function closeQuizNavigatorModal() {
+  const modal = document.getElementById('quizNavigatorModal');
+  if (modal) modal.classList.remove('show');
+}
+
+function clearQuizNavSearch() {
+  const inp = document.getElementById('qnavSearchInput');
+  if (inp) {
+    inp.value = '';
+    inp.focus();
+  }
+  renderQuizNavigatorContent();
+}
+
+function setQuizNavFilter(filterKey) {
+  quizNavCurrentFilter = filterKey;
+  document.querySelectorAll('#qnavFilterRow .qnav-filter-pill').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.filter === filterKey);
+  });
+  renderQuizNavigatorContent();
+}
+
+function handleQuizNavSearchKeyDown(e) {
+  if (e.key === 'Enter') {
+    const val = (document.getElementById('qnavSearchInput')?.value || '').trim();
+    if (/^\d+$/.test(val)) {
+      const targetNum = parseInt(val, 10);
+      if (targetNum >= 1 && targetNum <= activeQuizQuestions.length) {
+        e.preventDefault();
+        jumpToPracticeQuestion(targetNum - 1);
+      }
+    }
+  } else if (e.key === 'Escape') {
+    closeQuizNavigatorModal();
+  }
+}
+
+function renderQuizNavigatorContent() {
+  const container = document.getElementById('qnavBodyContainer');
+  if (!container || !activeQuizQuestions) return;
+
+  const query = (document.getElementById('qnavSearchInput')?.value || '').trim().toLowerCase();
+  const isPureNumber = /^\d+$/.test(query);
+
+  const matched = [];
+  for (let i = 0; i < activeQuizQuestions.length; i++) {
+    const q = activeQuizQuestions[i];
+    const ans = practiceSessionAnswers[q.id] || scrollUserAnswers[i] || null;
+    const status = ans ? (ans.isCorrect ? 'correct' : 'wrong') : 'unanswered';
+
+    if (quizNavCurrentFilter !== 'all' && status !== quizNavCurrentFilter) continue;
+
+    if (query) {
+      const numStr = String(i + 1);
+      if (isPureNumber) {
+        if (!numStr.includes(query)) continue;
+      } else {
+        const hay = [
+          numStr,
+          q.question || '',
+          q.caseContext || '',
+          q.subtopic || '',
+          q.topic || '',
+          ...(q.choices || [])
+        ].join(' ').toLowerCase();
+        if (!hay.includes(query)) continue;
+      }
+    }
+    matched.push({ idx: i, q, status });
+  }
+
+  if (matched.length === 0) {
+    container.innerHTML = '<div style="text-align:center; padding:24px; color:var(--ink-soft); font-size:13px;">ไม่พบข้อสอบที่ตรงกับเงื่อนไข</div>';
+    return;
+  }
+
+  // If user typed a text query -> show searchable preview list; otherwise show fast compact number grid
+  if (query && !isPureNumber) {
+    container.innerHTML = '<div class="qnav-search-list">' + matched.slice(0, 80).map(item => {
+      const cls = item.idx === currentQuestionIndex ? 'is-current' : (item.status === 'correct' ? 'is-correct' : (item.status === 'wrong' ? 'is-wrong' : ''));
+      const safeText = String(item.q.question || item.q.caseContext || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      return `
+        <button class="qnav-search-item" onclick="jumpToPracticeQuestion(${item.idx})">
+          <span class="qnav-search-num ${cls}">ข้อ ${item.idx + 1}</span>
+          <span class="qnav-search-text">${safeText}</span>
+        </button>
+      `;
+    }).join('') + (matched.length > 80 ? `<div style="text-align:center; font-size:11.5px; color:var(--ink-soft); padding:6px;">แสดง 80 จาก ${matched.length} ข้อที่ตรงกัน (พิมพ์คำให้เฉพาะเจาะจงขึ้น)</div>` : '') + '</div>';
+  } else {
+    container.innerHTML = '<div class="qnav-grid">' + matched.map(item => {
+      const cls = item.idx === currentQuestionIndex ? 'is-current' : (item.status === 'correct' ? 'is-correct' : (item.status === 'wrong' ? 'is-wrong' : ''));
+      return `<button class="qnav-num-btn ${cls}" onclick="jumpToPracticeQuestion(${item.idx})" title="ไปที่ข้อ ${item.idx + 1}">${item.idx + 1}</button>`;
+    }).join('') + '</div>';
+  }
+}
+
+function jumpToPracticeQuestion(targetIdx) {
+  if (targetIdx < 0 || targetIdx >= activeQuizQuestions.length) return;
+  currentQuestionIndex = targetIdx;
+  saveCurrentPracticeState();
+  closeQuizNavigatorModal();
+
+  if (practiceViewStyle === 'scroll' && appQuizMode !== 'exam') {
+    const card = document.getElementById('scrollCard_' + targetIdx);
+    if (card) {
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  } else {
+    renderCurrentQuestion();
+  }
+  showToast(`🎯 กระโดดไปยังข้อที่ ${targetIdx + 1}/${activeQuizQuestions.length}`);
+}
 
 // ─── DAILY COUNTDOWN MASCOT ENGINE (WITH LIVE BIG CLOCK) ───
 const PLE_COUNTDOWN_ROOSTER = [
