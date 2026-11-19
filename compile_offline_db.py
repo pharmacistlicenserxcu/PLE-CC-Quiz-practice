@@ -366,6 +366,38 @@ def compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=False):
     
     start_time = time.time()
     wb = openpyxl.load_workbook(excel_path, data_only=True)
+    wb_formulas = openpyxl.load_workbook(excel_path, data_only=False)
+    from urllib.parse import unquote
+
+    def extract_image_ref(val_data, val_formula):
+        raw_candidates = [val_formula, val_data]
+        for cand in raw_candidates:
+            if cand is None:
+                continue
+            s = str(cand).strip()
+            if not s or s.lower() in ('none', 'null', 'cellimage') or s.startswith('#'):
+                continue
+            # Handle =IMAGE("...") formula
+            m = re.search(r'IMAGE\(\s*["\']([^"\']+)["\']', s, re.IGNORECASE)
+            if m and m.group(1):
+                s = m.group(1).strip()
+            elif s.startswith('='):
+                continue
+            # Convert own GitHub Pages / raw GitHub URLs to local relative images/... for fast offline/online loading
+            gh_prefixes = (
+                'https://pharmacistlicenserxcu.github.io/PLE-CC-Quiz-practice/images/',
+                'https://raw.githubusercontent.com/pharmacistlicenserxcu/PLE-CC-Quiz-practice/main/images/',
+            )
+            for pref in gh_prefixes:
+                if s.startswith(pref):
+                    return 'images/' + unquote(s[len(pref):]).lstrip('/')
+            if s.startswith('http://') or s.startswith('https://') or s.startswith('data:image/') or s.startswith('images/'):
+                return s
+            if re.search(r'\.(png|jpg|jpeg|webp|gif|svg)$', s, re.IGNORECASE):
+                return 'images/' + s.lstrip('/')
+            return s
+        return ''
+
     all_records = []
     categories_meta = []
     offline_questions = {}
@@ -388,6 +420,7 @@ def compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=False):
         if sname not in wb.sheetnames:
             continue
         ws = wb[sname]
+        ws_f = wb_formulas[sname] if sname in wb_formulas.sheetnames else ws
         case_ctx_col, q_col, img_q_col = 2, 3, 4
         c1_col, c2_col, c3_col, c4_col, c5_col = 5, 6, 7, 8, 9
         ans_col, exp_col, img_a_col = 10, 11, 12
@@ -451,8 +484,8 @@ def compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=False):
 
             topic = str(ws.cell(row=r, column=topic_col).value or '').strip()
             subtopic = str(ws.cell(row=r, column=subtopic_col).value or '').strip()
-            img_q = str(ws.cell(row=r, column=img_q_col).value or '').strip()
-            img_a = str(ws.cell(row=r, column=img_a_col).value or '').strip()
+            img_q = extract_image_ref(ws.cell(row=r, column=img_q_col).value, ws_f.cell(row=r, column=img_q_col).value)
+            img_a = extract_image_ref(ws.cell(row=r, column=img_a_col).value, ws_f.cell(row=r, column=img_a_col).value)
             note = str(ws.cell(row=r, column=note_col).value or '').strip()
             exam_type = str(ws.cell(row=r, column=type_col).value or '').strip()
             exam_year = str(ws.cell(row=r, column=year_col).value or '').strip()

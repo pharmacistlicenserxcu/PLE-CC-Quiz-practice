@@ -11254,9 +11254,15 @@ function normalizeImageUrl(val) {
 
   if (!val) return '';
 
-  const s = String(val).trim();
+  let s = String(val).trim();
 
   if (!s || s === 'CellImage' || s === 'null' || s === 'undefined') return '';
+
+  // Support =IMAGE("...") formula strings
+  if (s.toUpperCase().indexOf('IMAGE(') !== -1) {
+    const m = s.match(/IMAGE\(\s*["']([^"']+)["']/i);
+    if (m && m[1]) s = m[1].trim();
+  }
 
   if (s.startsWith('http://') || s.startsWith('https://') || s.startsWith('data:image/') || s.startsWith('images/')) {
 
@@ -11278,6 +11284,11 @@ function normalizeImageUrl(val) {
 
     return s;
 
+  }
+
+  // Support bare relative image filenames (e.g. "pharmtutor2024/set2_q86.png")
+  if (/\.(png|jpg|jpeg|webp|gif|svg)$/i.test(s)) {
+    return 'images/' + s.replace(/^\/+/, '');
   }
 
   return '';

@@ -402,7 +402,10 @@ function doGet(e) {
         const isIngest = isIngestionSheet_(sName);
         const colMap = resolveSheetColumnMap_(sheet);
         const lastCol = Math.max(sheet.getLastColumn(), 19);
-        const values = sheet.getRange(3, 1, lastRow - 2, lastCol).getValues();
+        const rangeAll = sheet.getRange(3, 1, lastRow - 2, lastCol);
+        const values = rangeAll.getValues();
+        const qImgFormulas = colMap.imgQ ? sheet.getRange(3, colMap.imgQ, lastRow - 2, 1).getFormulas() : null;
+        const aImgFormulas = colMap.imgA ? sheet.getRange(3, colMap.imgA, lastRow - 2, 1).getFormulas() : null;
 
         values.forEach((row, idx) => {
           const rowNum = idx + 3;
@@ -415,7 +418,8 @@ function doGet(e) {
             questionText = caseContext;
           }
 
-          const rawQImg = colMap.imgQ ? row[colMap.imgQ - 1] : '';
+          const rawQImgFormula = (qImgFormulas && qImgFormulas[idx] && qImgFormulas[idx][0]) ? String(qImgFormulas[idx][0]).trim() : '';
+          const rawQImg = rawQImgFormula || (colMap.imgQ ? row[colMap.imgQ - 1] : '');
           const c1 = colMap.c1 ? String(row[colMap.c1 - 1] || '').trim() : '';
           const c2 = colMap.c2 ? String(row[colMap.c2 - 1] || '').trim() : '';
           const c3 = colMap.c3 ? String(row[colMap.c3 - 1] || '').trim() : '';
@@ -423,7 +427,8 @@ function doGet(e) {
           const c5 = colMap.c5 ? String(row[colMap.c5 - 1] || '').trim() : '';
           const answerKey = colMap.answer ? (parseInt(row[colMap.answer - 1], 10) || 1) : 1;
           const explanation = colMap.explanation ? String(row[colMap.explanation - 1] || '').trim() : '';
-          const rawAImg = colMap.imgA ? row[colMap.imgA - 1] : '';
+          const rawAImgFormula = (aImgFormulas && aImgFormulas[idx] && aImgFormulas[idx][0]) ? String(aImgFormulas[idx][0]).trim() : '';
+          const rawAImg = rawAImgFormula || (colMap.imgA ? row[colMap.imgA - 1] : '');
           const topic = colMap.topic ? String(row[colMap.topic - 1] || '').trim() : '';
           const subtopic = colMap.subtopic ? String(row[colMap.subtopic - 1] || '').trim() : '';
           const track = colMap.track ? String(row[colMap.track - 1] || '').trim() : '';

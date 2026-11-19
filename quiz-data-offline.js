@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.1 Pro Edition)
  * Total Questions: 4873 across 32 Categories
- * Build Timestamp: 2026-11-18 16:07:41
+ * Build Timestamp: 2026-11-19 12:53:35
  * Build Mode: Fast Local (openpyxl)
  */
 
@@ -8829,7 +8829,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "ผู้ป่วยชายไทยคู่ อายุ 52 ปี มาพบแพทย์ด้วยอาการปวดบวมแดงร้อนอย่างเฉียบพลันที่บริเวณข้อนิ้วหัวแม่เท้าข้างขวา (1st MTP joint) ตรวจพบระดับกรดยูริกในเลือด (Serum Uric Acid) เท่ากับ 11 mg/dL ได้รับการวินิจฉัยเป็น Acute Gouty Arthritis และได้รับยา Colchicine",
       "caseStem": "ผู้ป่วยชายไทยคู่ อายุ 52 ปี มาพบแพทย์ด้วยอาการปวดบวมแดงร้อนอย่างเฉียบพลันที่บริเวณข้อนิ้วหัวแม่เท้าข้างขวา (1st MTP joint) ตรวจพบระดับกรดยูริกในเลือด (Serum Uric Acid) เท่ากับ 11 mg/dL ได้รับการวินิจฉัยเป็น Acute Gouty Arthritis และได้รับยา Colchicine",
       "question": "อาการไม่พึงประสงค์จากการใช้ยา (ADR) ในข้อใดเป็นอาการแสดงของพิษต่อระบบทางเดินอาหารที่พบได้บ่อยที่สุดเมื่อได้รับยา Colchicine ขนาดสูง",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image127.png",
       "choices": [
         "Stevens-Johnson Syndrome (SJS)",
         "Nephrotic syndrome",
@@ -10206,7 +10206,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อใดคือกลไกการออกฤทธิ์ของยา Amlodipine ในการลดความดันโลหิต",
-      "questionImage": "",
+      "questionImage": "images/pharmtutor2024/set1_q76.png",
       "choices": [
         "ยับยั้ง renin",
         "ยับยั้ง calcium channel",
@@ -13260,7 +13260,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "[RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์] ยาในกลุ่ม Calcium Channel Blockers (CCBs) ออกฤทธิ์ยับยั้งแคลเซียมแชนแนลชนิดใด และกลุ่มย่อยใดที่มีความจำเพาะในการขยายหลอดเลือดแดงส่วนปลาย (Vasodilation) สูงที่สุด",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image7.png",
       "choices": [
         "L-type calcium channels และกลุ่ม Dihydropyridines (DHPs เช่น Amlodipine)",
         "L-type calcium channels และกลุ่ม Non-dihydropyridines (Non-DHPs เช่น Verapamil)",
@@ -21474,7 +21474,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "ผู้ป่วยหญิงได้รับการวินิจฉัยว่าเป็นภาวะต่อมไทรอยด์ทำงานเกิน (Hyperthyroidism / Toxic Goiter) และเริ่มได้รับการรักษาด้วยยาต้านไทรอยด์ Propylthiouracil (PTU) 50 mg รับประทานครั้งละ 2 เม็ด วันละ 3 ครั้ง ร่วมกับยา Propranolol 10 mg วันละ 3 ครั้ง เพื่อควบคุมอาการใจสั่นและมือสั่น",
       "caseStem": "ผู้ป่วยหญิงได้รับการวินิจฉัยว่าเป็นภาวะต่อมไทรอยด์ทำงานเกิน (Hyperthyroidism / Toxic Goiter) และเริ่มได้รับการรักษาด้วยยาต้านไทรอยด์ Propylthiouracil (PTU) 50 mg รับประทานครั้งละ 2 เม็ด วันละ 3 ครั้ง ร่วมกับยา Propranolol 10 mg วันละ 3 ครั้ง เพื่อควบคุมอาการใจสั่นและมือสั่น",
       "question": "ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับคุณสมบัติและกลไกการออกฤทธิ์ของยา Propylthiouracil (PTU)?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image24.png",
       "choices": [
         "เป็นอนุพันธ์ของ thiourea",
         "ยับยั้งการหลั่งของ thyroid hormone",
@@ -23454,7 +23454,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อใดคือกลไกการออกฤทธิ์ของยา Glipizide",
-      "questionImage": "pharmtutor2024/set1_q76.png",
+      "questionImage": "images/pharmtutor2024/set1_q76.png",
       "choices": [
         "กระตุ้นเอนไซม์ AMPK ในเซลล์ตับ",
         "ลดการดูดซึมกลูโคสบริเวณลำไส้",
@@ -23796,7 +23796,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากความสัมพันธ์ระหว่างโครงสร้างและการออกฤทธิ์ (SAR) ของยาลดระดับน้ำตาลในเลือดกลุ่ม Thiazolidinediones (TZDs เช่น Pioglitazone) ข้อใดกล่าวถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p15_img1.png",
       "choices": [
         "กลไกการออกฤทธิ์หลักคือ เข้าจับและกระตุ้นตัวรับ Peroxisome Proliferator-Activated Receptor gamma (PPAR-gamma) ในเซลล์ไขมันและกล้ามเนื้อ",
         "โครงสร้าง Thiazolidinedione ring ไม่มีความสำคัญต่อการออกฤทธิ์ลดน้ำตาล",
@@ -28194,7 +28194,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ยาในกลุ่ม Proton Pump Inhibitors (PPIs) ในข้อใดที่จัดอยู่ใน Pregnancy Category C (ตามเกณฑ์ดั้งเดิมของ US-FDA) และไม่แนะนำให้เลือกใช้เป็นอันดับแรกในหญิงตั้งครรภ์หากมียาตัวอื่นที่ปลอดภัยกว่า",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p30_img5.png",
       "choices": [
         "Omeprazole (Category C)",
         "Lansoprazole (Category B)",
@@ -36623,7 +36623,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "หากผู้ป่วยมีประวัติรับประทานยาที่มีโครงสร้างที่กำหนดให้ แล้วมีอาการผื่นคัน บวมแดง ปากบวม และหายใจลำบาก ในฐานะเภสัชกรควรหลีกเลี่ยงการจ่ายยาชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/pharmtutor2024/set1_q68.png",
       "choices": [
         "โครงสร้างในข้อ ก",
         "โครงสร้างในข้อ ข",
@@ -54224,7 +54224,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพโครงสร้างทางเคมีของ Nicotine ที่เป็นสารออกฤทธิ์ในหมากฝรั่งช่วยเลิกบุหรี่ (Nicotine gum) สารเคมีหรือปฏิกิริยาในข้อใดเหมาะสมที่สุดในการตรวจพิสูจน์เอกลักษณ์ (Identification test)",
-      "questionImage": "pharmtutor2024/set2_q86.png",
+      "questionImage": "images/pharmtutor2024/set2_q86.png",
       "choices": [
         "Shinoda's test",
         "Dragendorff's reagent",
@@ -56360,7 +56360,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างยาแก้ปวด/ต้านชัก/ไมเกรนหรือยาที่มีหมู่ Sulfonamide moiety (-SO2NH2) ในโมเลกุล ควรระมัดระวังเป็นพิเศษในผู้ป่วยประเภทใด\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p32_img5.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p32_img5.png",
       "choices": [
         "ผู้ป่วยที่มีประวัติแพ้ยาปฏิชีวนะกลุ่ม Sulfonamides (Sulfa allergy)",
         "ผู้ป่วยที่ได้รับยา CYP3A4 inhibitors",
@@ -60991,7 +60991,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อใดกล่าวผิดเกี่ยวกับคุณสมบัติและเทคนิคการใช้ยาพ่นชนิดหลอดกด (Metered-Dose Inhalers: MDIs)",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p30_img4.png",
       "choices": [
         "การกดยาและการสูดหายใจเข้าต้องทำพร้อมกันอย่างสัมพันธ์กัน (Hand-breath coordination)",
         "ตัวยาละลายหรือแขวนลอยอยู่ในรูปของเหลวภายในหลอดโลหะ",
@@ -75189,7 +75189,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "หากต้องการตรวจสอบเอกลักษณ์และคุณภาพผงสมุนไพรส่วนใบ (Folia / Leaves) ด้วยวิธีการส่องกล้องจุลทรรศน์ (Microscopic examination) เนื้อเยื่อและองค์ประกอบทางกายวิภาคข้อใดที่บ่งชี้ว่าผงดังกล่าวมาจากส่วนใบของพืช",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image21.png",
       "choices": [
         "พบเซลล์คุม ปากใบ (Stomata) และเนื้อเยื่อพาลิเซด (Palisade mesophyll)",
         "พบเนื้อเยื่อคอร์ก (Cork) และแคมเบียม (Cambium) หนาแน่น",
@@ -77486,7 +77486,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของ nicotine ที่กำหนดให้ ข้อใดคือวิธีการทดสอบที่เหมาะสม (MCQ ธ.ค. 66)",
-      "questionImage": "pharmtutor2024/set2_q86.png",
+      "questionImage": "images/pharmtutor2024/set2_q86.png",
       "choices": [
         "Dragendorff's test",
         "Folin-Ciocalteu Content",
@@ -77570,7 +77570,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "สารสำคัญกลุ่ม Sennosides (Anthraquinone glycosides) ที่พบในใบมะขามแขก มีขั้วสูงเนื่องจากมีหมู่ฟังก์ชันไฮดรอกซิลและน้ำตาลหลายตำแหน่ง ควรเลือกใช้ตัวทำละลายใดในการสกัดที่เหมาะสมที่สุด",
-      "questionImage": "cc1_product/image6.png",
+      "questionImage": "images/cc1_product/image6.png",
       "choices": [
         "Ethyl acetate",
         "Hexane",
@@ -77598,7 +77598,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างทางเคมีของสารในข้อใดต่อไปนี้ ไม่จัดเป็น สารกลุ่ม Phytoestrogen และไม่ช่วยบรรเทาอาการร้อนวูบวาบ (Vasomotor symptoms) ในสตรีวัยหมดประจำเดือน",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image53.png",
       "choices": [
         "Phytosterol",
         "Anthraquinone",
@@ -77608,7 +77608,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Anthraquinone<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Anthraquinone (เช่น Sennosides, Aloin) เป็นสารกลุ่มไกลโคไซด์ที่ออกฤทธิ์เป็นยาระบายกระตุ้นการบีบตัวของลำไส้ใหญ่ (Stimulant laxative) ไม่มีโครงสร้างคล้ายคลึงกับเอสโตรเจนและไม่มีฤทธิ์จับกับ Estrogen receptor จึงไม่ช่วยบรรเทาอาการวัยทอง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Phytosterol (เช่น Beta-sitosterol) มีโครงสร้างสเตอรอยด์พื้นฐานใกล้เคียงกับฮอร์โมนเพศและแสดงฤทธิ์ estrogenic เล็กน้อย<br>• ข้อ ค.: Stilbene (เช่น Resveratrol) จัดเป็น Phytoestrogen ที่มีฤทธิ์จับกับ Estrogen receptor ได้<br>• ข้อ ง.: Isoflavone (เช่น Genistein, Daidzein ในถั่วเหลือง) เป็น Phytoestrogen กลุ่มสำคัญที่มีหลักฐานชัดเจนในการบรรเทาอาการร้อนวูบวาบ<br>• ข้อ จ.: Lignan (พบใน Flaxseed) เป็น Phytoestrogen สำคัญอีกกลุ่มหนึ่งที่ร่างกายจะเปลี่ยนเป็น enterolactone ออกฤทธิ์คล้ายเอสโตรเจน",
-      "answerImage": "cc1_product/image53.png",
+      "answerImage": "images/cc1_product/image53.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 42]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -77626,7 +77626,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "หากต้องการตรวจสอบเอกลักษณ์ทางเคมีเบื้องต้นของโครงสร้างวงแหวนสเตียรอยด์ (Steroid nucleus / Cyclopentanoperhydrophenanthrene) ในตำรับยา ควรเลือกใช้น้ำยาทดสอบในข้อใดต่อไปนี้",
-      "questionImage": "cc1_product/image21.png",
+      "questionImage": "images/cc1_product/image21.png",
       "choices": [
         "Liebermann-Burchard test",
         "Dragendorff's test",
@@ -78326,7 +78326,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "สมุนไพรในข้อใดที่มีข้อควรระวังสำคัญคือไม่ควรแนะนำให้ใช้ในผู้ป่วยโรคเบาหวาน เนื่องจากอาจส่งผลรบกวนระดับน้ำตาลในเลือด",
-      "questionImage": "cc1_product/image100.png",
+      "questionImage": "images/cc1_product/image100.png",
       "choices": [
         "เถาวัลย์เปรียง",
         "รางจืด",
@@ -79484,7 +79484,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในการตรวจวิเคราะห์หาปริมาณแคลเซียมคาร์บอเนต (Calcium Carbonate raw material) ตามเภสัชตำรับ USP/BP กำหนดให้ละลายตัวยาในกรดเจือจาง ปรับสภาวะเป็นด่างรุนแรง (pH ประมาณ 12-13 ด้วย NaOH) เพื่อตกตะกอนแมกนีเซียม แล้วไตเตรทด้วยสารละลายมาตรฐาน Disodium EDTA การวิเคราะห์นี้ใช้อินดิเคเตอร์ชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image92.png",
       "choices": [
         "Hydroxynaphthol blue (หรือ Calconcarboxylic acid / Murexide)",
         "Phenolphthalein",
@@ -80660,7 +80660,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากข้อกำหนดในเภสัชตำรับหัวข้อการหาปริมาณ Aspirin ระบุว่า:\nนำตัวยา 1.5 กรัมใส่ในขวดรูปชมพู่ เติม 0.5 N NaOH 50 mL ต้มให้เดือดเบาๆ 10 นาที เติม Phenolphthalein แล้วไทเทรตสารละลายด่างส่วนเกินด้วย 0.5 N H2SO4",
       "caseStem": "จากข้อกำหนดในเภสัชตำรับหัวข้อการหาปริมาณ Aspirin ระบุว่า:\nนำตัวยา 1.5 กรัมใส่ในขวดรูปชมพู่ เติม 0.5 N NaOH 50 mL ต้มให้เดือดเบาๆ 10 นาที เติม Phenolphthalein แล้วไทเทรตสารละลายด่างส่วนเกินด้วย 0.5 N H2SO4",
       "question": "การวิเคราะห์หาปริมาณตัวยาสำคัญดังกล่าวจัดเป็นเทคนิคการไทเทรตชนิดใด",
-      "questionImage": "cc1_product/image80.png",
+      "questionImage": "images/cc1_product/image80.png",
       "choices": [
         "Direct titration โดยมี Sodium hydroxide เป็น Titrant",
         "Direct titration โดยมี Sulfuric acid เป็น Titrant",
@@ -80688,7 +80688,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากการตรวจวิเคราะห์ปริมาณตัวยา Salbutamol sulfate (มวลโมเลกุล 576.70 กรัมต่อโมล) ด้วยวิธี Non-aqueous titration โดยการไตเตรตด้วย 0.1 N Perchloric acid สารละลาย 0.1 N Perchloric acid 1 มิลลิลิตร จะเทียบเท่ากับ Salbutamol sulfate กี่มิลลิกรัม",
-      "questionImage": "cc1_product/image81.png",
+      "questionImage": "images/cc1_product/image81.png",
       "choices": [
         "14.42 มิลลิกรัม",
         "28.84 มิลลิกรัม",
@@ -80828,7 +80828,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "การตรวจหาปริมาณ Sodium chloride (NaCl) โดยการทำปฏิกิริยากับสารละลายมาตรฐาน Silver nitrate (AgNO3) เกิดเป็นตะกอนสีขาวของ Silver chloride (AgCl) จัดเป็นการวิเคราะห์โดยการไทเทรตประเภทใด",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image90.png",
       "choices": [
         "Karl Fischer titration",
         "Oxidation-reduction titration",
@@ -82573,7 +82573,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "หากต้องการเพิ่มประสิทธิภาพเทคนิคการวิเคราะห์ High-performance liquid chromatography ข้อใดไม่ควรปฏิบัติ",
-      "questionImage": "pharmtutor2024/set2_q89.png",
+      "questionImage": "images/pharmtutor2024/set2_q89.png",
       "choices": [
         "เพิ่มความยาว column",
         "ลด flow rate",
@@ -82601,7 +82601,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากการวิเคราะห์ system suitability ของยาชนิดหนึ่งด้วยวิธี high performance liquid chromatography พบว่าพีคของยามีพารามิเตอร์ ดังต่อไปนี้: Retention time = 200 mins, ความสูงของพีค = 25 cm, ความกว้างของพีคที่ฐาน = 20 cm, ความกว้างของพีคครึ่งหนึ่ง = 10 cm หากค่ามาตรฐานของ theoretical plate number เท่ากับ 2000 การวิเคราะห์ system suitability ครั้งนี้ผ่านหรือไม่ กำหนดความยาวของคอลัมน์เท่ากับ 25 cm สูตรการคำนวณ N = 16 x (tR / W)^2 และ H = L / N (MCQ ธ.ค. 66)",
-      "questionImage": "pharmtutor2024/set2_q90.png",
+      "questionImage": "images/pharmtutor2024/set2_q90.png",
       "choices": [
         "ผ่าน เนื่องจากมี theoretical plate number ผ่านเกณฑ์",
         "ผ่าน เนื่องจากมี plate height ผ่านเกณฑ์",
@@ -82769,7 +82769,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "นำตัวอย่างยา Metronidazole และเมแทบอไลต์ 2 ชนิด ได้แก่ Metronidazole metabolite ที่มีหมู่ carboxyl เพิ่มขึ้น และ metabolite ที่มีทั้งหมู่ hydroxyl และ carboxyl เพิ่มขึ้น ไปวิเคราะห์ด้วย TLC โดยใช้ Silica gel เป็น stationary phase และ Chloroform : Methanol (9:1) เป็น mobile phase จงเรียงลำดับค่า Rf จากน้อยไปมาก",
-      "questionImage": "cc1_product/image20.png",
+      "questionImage": "images/cc1_product/image20.png",
       "choices": [
         "Metronidazole < Metronidazole + carboxyl < Metronidazole + hydroxyl + carboxyl",
         "Metronidazole + hydroxyl + carboxyl < Metronidazole + carboxyl < Metronidazole",
@@ -82825,7 +82825,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพเครื่องมือที่มีส่วนประกอบของ Autosampler, Solvent delivery pump, คอลัมน์บรรจุสารแบบของเหลว และ UV-Vis Detector เครื่องมือดังกล่าวคือเครื่องมือวิเคราะห์ชนิดใด",
-      "questionImage": "cc1_product/image72.png",
+      "questionImage": "images/cc1_product/image72.png",
       "choices": [
         "Gas Chromatography",
         "Gas-Liquid Chromatography",
@@ -82881,7 +82881,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในการทดสอบความเหมาะสมของระบบโครมาโทกราฟี (System Suitability Testing; SST) สำหรับการวิเคราะห์ด้วยเครื่อง HPLC ค่าการแยกจำแนกพีค (Resolution; Rs) ระหว่างสองพีคที่อยู่ติดกันตามข้อกำหนดมาตรฐานทั่วไปในเภสัชตำรับ USP ควรมีค่าไม่น้อยกว่าเท่าใดเพื่อให้การแยกสมบูรณ์แบบ Baseline separation",
-      "questionImage": "cc1_product/image78.png",
+      "questionImage": "images/cc1_product/image78.png",
       "choices": [
         "ไม่น้อยกว่า 1.0",
         "ไม่น้อยกว่า 1.5",
@@ -82965,7 +82965,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพโครมาโตแกรมที่แสดงพีคการแยกของสารอนุพันธ์ต่างๆ โดยมีแกน X เป็น Retention time และแกน Y เป็น Absorbance ภาพดังกล่าวเป็นผลที่ได้จากการแยกวิเคราะห์ด้วยเทคนิคเครื่องมือชนิดใด",
-      "questionImage": "cc1_product/image83.png",
+      "questionImage": "images/cc1_product/image83.png",
       "choices": [
         "High Performance Liquid Chromatography (HPLC)",
         "Capillary electrophoresis",
@@ -83021,7 +83021,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพโครมาโทแกรมที่มีแกน X แสดงเวลาที่ใช้ในการชะสาร (Retention time; นาที) และแกน Y แสดงค่าการดูดกลืนแสง (Absorbance / mV) โดยปรากฏพีคแหลมคมแยกออกจากกันอย่างชัดเจนตามลำดับเวลา การวิเคราะห์นี้ใช้เครื่องมือใด",
-      "questionImage": "cc1_product/image89.png",
+      "questionImage": "images/cc1_product/image89.png",
       "choices": [
         "Differential Scanning Calorimetry (DSC)",
         "UV-Visible Spectrophotometer แบบสแกนความยาวคลื่น",
@@ -83077,7 +83077,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "หากต้องการแยกสารอนุพันธ์และวิเคราะห์ปริมาณตัวยาสำคัญ โดยผลการวิเคราะห์แสดงพีคของสารต่างๆ ตามเวลาที่สารชะออกจากคอลัมน์ (Retention time) ดังแสดงในโครมาโทแกรมตามภาพ การวิเคราะห์ดังกล่าวอาศัยเครื่องมือและวิธีวิเคราะห์ใด",
-      "questionImage": "cc1_product/image94.png",
+      "questionImage": "images/cc1_product/image94.png",
       "choices": [
         "High Performance Liquid Chromatography (HPLC)",
         "Capillary Electrophoresis (CE)",
@@ -83105,7 +83105,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างโมเลกุลของตัวยาที่กำหนดให้ในภาพ วิธีวิเคราะห์มาตรฐานที่เหมาะสมที่สุดในการควบคุมคุณภาพเพื่อแยกและหาปริมาณตัวยาสำคัญ (Assay) พร้อมทั้งตรวจวัดสิ่งเจือปนที่เกี่ยวข้อง (Related substances) คือวิธีใด",
-      "questionImage": "cc1_product/image95.png",
+      "questionImage": "images/cc1_product/image95.png",
       "choices": [
         "Confocal microscope",
         "Immunohistochemistry",
@@ -83329,7 +83329,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "ในการตรวจวิเคราะห์ยา Omeprazole และ Omeprazole Related Compound A ด้วยคอลัมน์ HPLC ได้ผลการทดสอบดังนี้:\n• Omeprazole: Retention time (tR1) = 8.5 นาที, ความกว้างฐานพีค (W1) = 0.8 นาที\n• Omeprazole Related Compound A: Retention time (tR2) = 10.5 นาที, ความกว้างฐานพีค (W2) = 1.2 นาที",
       "caseStem": "ในการตรวจวิเคราะห์ยา Omeprazole และ Omeprazole Related Compound A ด้วยคอลัมน์ HPLC ได้ผลการทดสอบดังนี้:\n• Omeprazole: Retention time (tR1) = 8.5 นาที, ความกว้างฐานพีค (W1) = 0.8 นาที\n• Omeprazole Related Compound A: Retention time (tR2) = 10.5 นาที, ความกว้างฐานพีค (W2) = 1.2 นาที",
       "question": "จงคำนวณหาค่า Resolution (Rs) ระหว่างพีคของสารทั้งสองชนิด และประเมินว่าระบบสามารถแยกสารทั้งสองออกจากกันได้อย่างสมบูรณ์ตามเกณฑ์มาตรฐานหรือไม่",
-      "questionImage": "cc1_product/image109.png",
+      "questionImage": "images/cc1_product/image109.png",
       "choices": [
         "2.4",
         "4.8",
@@ -83413,7 +83413,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากกราฟการวิเคราะห์เปรียบเทียบระหว่างตัวยาสำคัญ A และสารมาตรฐานภายใน B (Internal standard) ด้วยเทคนิค HPLC (แสดงเส้นตรง Calibration curve ที่มีค่า R ยกกำลังสอง = 0.9999) ข้อใดกล่าวถูกต้อง",
-      "questionImage": "cc1_product/image112.png",
+      "questionImage": "images/cc1_product/image112.png",
       "choices": [
         "ความเข้มข้นของสาร B มีผลทำให้ความชันของกราฟแปรเปลี่ยนไปในแต่ละจุดวิเคราะห์",
         "ความเข้มข้นของสาร A มีผลโดยตรงต่อการกำหนดจุดตัดแกนตั้ง (Y-intercept)",
@@ -83441,7 +83441,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพแผนผังการทำงานของระบบเครื่องมือวิเคราะห์ (ประกอบด้วย Solvent reservoirs, Degasser, High-pressure pump, Autosampler injector, Analytical column, และ UV/Vis Detector) เป็นการวิเคราะห์โดยใช้เครื่องมือชนิดใด",
-      "questionImage": "cc1_product/image115.png",
+      "questionImage": "images/cc1_product/image115.png",
       "choices": [
         "High Performance Liquid Chromatography (HPLC)",
         "Gas chromatography (GC)",
@@ -83525,7 +83525,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในการตรวจวิเคราะห์สารสลายตัวและสารปนเปื้อน (Related substances / Impurities) ของวัตถุดิบยา Acyclovir ด้วยเทคนิค HPLC กำหนดเกณฑ์มาตรฐานว่า ต้องพบ Guanine ไม่เกิน 2.0% และสารปนเปื้อนอื่นแต่ละตัวไม่เกิน 0.5% หากผลการทดสอบพบพื้นที่ใต้พีค (Peak Area) ของ Guanine = 500, Acyclovir = 19,300 และ Impurity อื่น = 200 (พื้นที่รวมทั้งหมด = 20,000) ผลการทดสอบนี้สรุปได้ตามข้อใด",
-      "questionImage": "mock_rxcu83/page_31_Im4.jpg",
+      "questionImage": "images/mock_rxcu83/page_31_Im4.jpg",
       "choices": [
         "Guanine คิดเป็น 2.5% และ Impurity อื่นคิดเป็น 1.0% จึงสรุปว่า ไม่ผ่านเกณฑ์มาตรฐาน",
         "Guanine คิดเป็น 1.5% และ Impurity อื่นคิดเป็น 0.3% จึงสรุปว่า ผ่านเกณฑ์มาตรฐาน",
@@ -83553,7 +83553,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างทางเคมีของตัวยาสำคัญดังกล่าว ซึ่งมีหมู่วงแหวนอะโรมาติกคอนจูเกต (Conjugated chromophore) และตรวจวิเคราะห์ด้วยเทคนิคโครมาโทกราฟีของเหลวสมรรถนะสูง ข้อใดกล่าวถูกต้องที่สุดเกี่ยวกับข้อกำหนดและการตรวจวิเคราะห์คุณภาพยาตามเภสัชตำรับ",
-      "questionImage": "mock2_rxcu83/page_6_Im1.png",
+      "questionImage": "images/mock2_rxcu83/page_6_Im1.png",
       "choices": [
         "สามารถใช้ค่า Retention time ของพีคหลักจากการทดสอบ Assay ด้วยเทคนิค Reverse-Phase HPLC ร่วมกับการเปรียบเทียบกับสารมาตรฐานเป็นส่วนหนึ่งในการตรวจเอกลักษณ์ (Identification) ได้",
         "ไม่สามารถใช้วิธี HPLC-UV ในการตรวจเอกลักษณ์ได้เนื่องจากไม่มีพันธะคู่",
@@ -83581,7 +83581,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพแสดงกลไกการแยกสารโดยคอลัมน์ที่มีประจุบวกหรือประจุลบบนผิว stationary phase และมีไอออนที่มีประจุตรงข้ามมาแย่งจับและชะหลุดออกมา แสดงถึงวิธีการวิเคราะห์ด้วยเทคนิคโครมาโทกราฟีแบบใด\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p26_img2.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p26_img2.png",
       "choices": [
         "Adsorption chromatography",
         "Ion-exchange chromatography",
@@ -84011,7 +84011,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากการตรวจวิเคราะห์เอกลักษณ์ของตัวยาสำคัญด้วย Infrared Spectroscopy (IR Spectrum) พบพีคการดูดกลืนแสงที่คมชัดและรุนแรง (Strong sharp band) ที่เลขคลื่นประมาณ 1,700 cm⁻¹ (1690 - 1750 cm⁻¹) พีคดังกล่าวแสดงถึงการสั่นแบบยืดตัว (Stretching vibration) ของหมู่ฟังก์ชันใดในโครงสร้างโมเลกุล",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image53.png",
       "choices": [
         "Carbonyl group (C=O stretching เช่น ใน ketone, ester, carboxylic acid)",
         "Hydroxyl group (O-H stretching ใน alcohol หรือ phenol)",
@@ -84433,7 +84433,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากใบรายงานผลการวิเคราะห์ (COA) ของวัตถุดิบ Raltegravir potassium หากผลการทดสอบพบว่าค่า Assay = 99.5% (เกณฑ์ 98.0 - 102.0%) และ Impurities ทุกตัวอยู่ในเกณฑ์มาตรฐาน สรุปผลการประเมินคุณภาพคือข้อใด?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image124.png",
       "choices": [
         "วัตถุดิบผ่านเกณฑ์มาตรฐานการยอมรับและสามารถนำไปใช้ในการผลิตยาได้ (Approved for production)",
         "ต้องกักกันวัตถุดิบไว้เนื่องจากไม่ตรงตามเป้าหมาย 100.0%",
@@ -84659,7 +84659,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "หากต้องการควบคุมคุณภาพวัตถุดิบ Griseofulvin ให้เป็นไอโซเมอร์ที่มีโครงสร้าง 3 มิติถูกต้องตามรูปภาพ [📷 มีรูปภาพประกอบ: image110.png] ควรเลือกใช้เครื่องมือวิเคราะห์ชนิดใด?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image110.png",
       "choices": [
         "Polarimeter (ตรวจวัดค่าการหมุนระนาบแสงโพลาไรซ์จำเพาะ Specific Optical Rotation)",
         "Refractometer (เครื่องวัดดัชนีหักเหของแสง)",
@@ -85107,7 +85107,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ผลการวิเคราะห์ใดเหมาะสำหรับการระบุเอกลักษณ์ของยา phenytoin",
-      "questionImage": "pharmtutor2024/set1_q95.png",
+      "questionImage": "images/pharmtutor2024/set1_q95.png",
       "choices": [
         "FTIR absorption spectrum (สเปกตรัมอินฟราเรดที่มี absorption bands สอดคล้องกับมาตรฐาน phenytoin)",
         "UV absorption spectrum เดียว",
@@ -85135,7 +85135,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จาก spectrum ของ nicotine ที่กำหนดให้ สามารถแสดงถึงข้อมูลใดได้บ้าง (MCQ ธ.ค. 66)",
-      "questionImage": "pharmtutor2024/set2_q88.png",
+      "questionImage": "images/pharmtutor2024/set2_q88.png",
       "choices": [
         "Plane polarized light",
         "Molecular weight",
@@ -85285,7 +85285,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. C=O stretching<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>สัญญาณการดูดกลืนรังสีอินฟราเรดที่ช่วงความถี่ 1650-1850 cm-1 เป็นสัญญาณพีคที่แรงและคมชัดอย่างยิ่งของหมู่ Carbonyl (C=O stretching) โดยที่ 1699 cm-1 เป็นสัญญาณจำเพาะของ carbonyl ในกรดคาร์บอกซิลิก คีโตน หรือแอไมด์<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: O-H stretching จะปรากฏเป็นพีคกว้าง (broad band) ในช่วงความถี่สูง 3200-3650 cm-1<br>• ข้อ ค.: C-O stretching จะปรากฏการดูดกลืนแสงในช่วงความถี่ต่ำ 1000-1300 cm-1<br>• ข้อ ง.: C-H (sp3) stretching ของหมู่อัลคิลจะปรากฏที่ความถี่ประมาณ 2850-2960 cm-1<br>• ข้อ จ.: C-C stretching ในโครงสร้างวงแหวนหรือแกนคาร์บอนจะปรากฏในช่วง fingerprint region 800-1200 cm-1",
-      "answerImage": "cc1_product/image53.png",
+      "answerImage": "images/cc1_product/image53.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 10]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -85303,7 +85303,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในการตรวจพิสูจน์เอกลักษณ์และหาปริมาณตัวยาสำคัญของยาเม็ด Paracetamol ตามมาตรฐานเภสัชตำรับ USP/BP ในขั้นตอนทดสอบเบื้องต้นระดับห้องปฏิบัติการทั่วไป นิยมใช้เครื่องมือวิเคราะห์ชนิดใด",
-      "questionImage": "cc1_product/image71.png",
+      "questionImage": "images/cc1_product/image71.png",
       "choices": [
         "Fluorescence spectrophotometer",
         "High Performance Liquid Chromatography",
@@ -85359,7 +85359,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "สเปกตรัมที่ได้จากการตรวจวิเคราะห์ด้วยเครื่องมืออินฟราเรดสเปกโทรสโกปี (Infrared Spectroscopy; IR) ตามมาตรฐานสากล แกน X และแกน Y ของกราฟแสดงผลคือค่าพารามิเตอร์ใดตามลำดับ",
-      "questionImage": "cc1_product/image76.png",
+      "questionImage": "images/cc1_product/image76.png",
       "choices": [
         "แกน X คือ Absorbance และแกน Y คือ Wavelength",
         "แกน X คือ Percent Transmittance และแกน Y คือ Wavenumber",
@@ -85387,7 +85387,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "เครื่องมือวิเคราะห์ทางเคมีชนิดใดที่สามารถระบุมวลโมเลกุลที่แม่นยำ (Accurate molecular weight) และรูปแบบการแตกหักของโครงสร้างโมเลกุล (Fragmentation pattern) เพื่อใช้ในการยืนยันโครงสร้างทางเคมีของสารสังเคราะห์และสารสกัดสมุนไพร",
-      "questionImage": "cc1_product/image82.png",
+      "questionImage": "images/cc1_product/image82.png",
       "choices": [
         "UV-Vis spectrophotometer",
         "Mass spectrometer",
@@ -85415,7 +85415,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างโมเลกุลของยา Griseofulvin ซึ่งมี Chiral centers ในโครงสร้าง การตรวจสอบควบคุมคุณภาพในข้อใดช่วยยืนยันเอกลักษณ์เฉพาะของโครงสร้างสเตอริโอไอโซเมอร์ที่ออกฤทธิ์ทางชีวภาพ (Active stereoisomer)",
-      "questionImage": "cc1_product/image87.png",
+      "questionImage": "images/cc1_product/image87.png",
       "choices": [
         "Refractive index (ดัชนีหักเหของแสง)",
         "Infrared (IR) spectroscopy",
@@ -85443,7 +85443,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากการตรวจวิเคราะห์สารด้วยเทคนิค Infrared (IR) spectroscopy พบพีคการดูดกลืนแสงที่ชัดเจนและรุนแรงที่เลขคลื่น 1685.16 cm⁻¹ พีคดังกล่าวแสดงถึงการสั่นของพันธะเคมีหรือหมู่ฟังก์ชันใดในโครงสร้างโมเลกุล",
-      "questionImage": "cc1_product/image88.png",
+      "questionImage": "images/cc1_product/image88.png",
       "choices": [
         "หมู่คาร์บอนิล (-C=O stretch)",
         "พันธะคู่ระหว่างคาร์บอน (-C=C- stretch)",
@@ -85471,7 +85471,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างโมเลกุลของยาต้านวัณโรค Rifampicin ซึ่งมีระบบพันธะคู่คอนจูเกตขนาดใหญ่ (Extensive conjugated chromophore) และสารละลายมีสีส้มแดงเข้มชัดเจน เครื่องมือวิเคราะห์สเปกโทรสโกปีชนิดใดเหมาะสมที่สุดในการหาปริมาณยาสำคัญได้อย่างสะดวกรวดเร็วตามกฎของ Beer-Lambert",
-      "questionImage": "cc1_product/image92.png",
+      "questionImage": "images/cc1_product/image92.png",
       "choices": [
         "UV-Visible Spectrophotometer",
         "Fourier-Transform Infrared Spectrometer (FT-IR)",
@@ -85499,7 +85499,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากข้อมูลสเปกตรัมของเครื่องมือวิเคราะห์ที่กำหนดให้ในภาพ (เครื่องมือ A แสดงสัญญาณเคมิคอลชิฟต์ของไฮโดรเจน/คาร์บอน, เครื่องมือ B แสดงการแตกตัวของไอออนตามอัตราส่วนมวลต่อประจุ m/z, เครื่องมือ C แสดงการดูดกลืนรังสีอินฟราเรดของหมู่ฟังก์ชัน) การตรวจวิเคราะห์ด้วยเครื่องมือคู่ใดร่วมกันที่สามารถนำมาใช้ระบุมวลโมเลกุลที่แน่นอนและพิสูจน์โครงสร้างทางเคมีที่สมบูรณ์ของสารได้อย่างชัดเจนที่สุด",
-      "questionImage": "cc1_product/image96.png",
+      "questionImage": "images/cc1_product/image96.png",
       "choices": [
         "เครื่องมือ A เท่านั้น",
         "เครื่องมือ B เท่านั้น",
@@ -85957,7 +85957,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 3,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Inductively Coupled Plasma Mass Spectrometry (ICP-MS) หรือ ICP-OES<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ICP-MS และ ICP-OES เป็นเครื่องมือวิเคราะห์ระดับอะตอม (Atomic spectroscopy) ที่ใช้วิเคราะห์หาชนิดและปริมาณของธาตุโลหะและกึ่งโลหะอนินทรีย์ (Elemental analysis) พลาสมาอุณหภูมิสูงจะทำลายพันธะเคมีของสารอินทรีย์จนแตกออกเป็นอะตอมเดี่ยวทั้งหมด จึงไม่สามารถใช้ระบุเอกลักษณ์โครงสร้างโมเลกุลสารอินทรีย์อย่าง Ethinyl Estradiol ได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: HPLC-UV เป็นวิธีมาตรฐานที่สามารถใช้ระบุเอกลักษณ์ได้ โดยเปรียบเทียบ Retention time ของตัวอย่างกับสารมาตรฐาน Ethinyl Estradiol<br>• ข้อ ข.: LC-MS เป็นเทคนิคที่มีความจำเพาะสูงมาก สามารถระบุน้ำหนักโมเลกุล ($m/z$) และ Fragmentation pattern ของ Ethinyl Estradiol ได้อย่างสมบูรณ์<br>• ข้อ ง.: FTIR เป็นวิธีมาตรฐานตามเภสัชตำรับ (Identification test) ในการยืนยันโครงสร้างของ Ethinyl Estradiol โดยเปรียบเทียบ Fingerprint region กับสเปกตรัมมาตรฐาน<br>• ข้อ จ.: NMR Spectroscopy (ทั้ง $^1\\text{H-NMR}$ และ $^{13}\\text{C-NMR}$) สามารถให้ข้อมูลการจัดเรียงอะตอมและโครงสร้างเคมี 3 มิติของโมเลกุล Ethinyl Estradiol ได้อย่างละเอียดแม่นยำ",
-      "answerImage": "mock2_rxcu83/page_10_Im1.png",
+      "answerImage": "images/mock2_rxcu83/page_10_Im1.png",
       "note": "2567",
       "examType": "ข้อสอบจำลอง",
       "examYear": "Mock RxCU83 ชุดที่ 2",
@@ -85975,7 +85975,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "พิจารณาจากโครงสร้างของโมเลกุลยาที่มี Chiral center (สาร chiral molecule ที่เป็น enantiomer) หัวข้อการทดสอบใดจำเป็นสำหรับการควบคุมคุณภาพยานี้\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p25_img3.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p25_img3.png",
       "choices": [
         "Optical rotation",
         "Enantiomeric purity",
@@ -89029,7 +89029,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จงประเมิน Certificate of Analysis (CoA) ของยา favipiravir ขนาด 200 mg (MCQ ธ.ค. 66)",
-      "questionImage": "pharmtutor2024/set2_q91.png",
+      "questionImage": "images/pharmtutor2024/set2_q91.png",
       "choices": [
         "ผ่านเกณฑ์ทุกข้อ",
         "ไม่ผ่าน เนื่องจากปริมาณสารสำคัญไม่อยู่ในช่วงมาตรฐาน",
@@ -89169,7 +89169,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากกราฟการสลายตัวของยาชนิดหนึ่ง ข้อใดคืออันดับปฏิกิริยาของยาชนิดนี้ (MCQ ธ.ค. 66)",
-      "questionImage": "pharmtutor2024/set2_q119.png",
+      "questionImage": "images/pharmtutor2024/set2_q119.png",
       "choices": [
         "Zero order",
         "First order",
@@ -89711,7 +89711,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 1,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. เพื่อประเมินความคงตัวและความปลอดภัยของยา โดยควบคุมสารสลายตัวไม่ให้เกินเกณฑ์กำหนดที่อาจก่อความเป็นพิษ<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การทดสอบสิ่งเจือปน (Impurities testing) มุ่งเน้นการตรวจวัดสารอินทรีย์แปลกปลอม สารตั้งต้นสังเคราะห์ที่หลงเหลือ และสารสลายตัวที่เกิดขึ้นระหว่างการเก็บรักษา เพื่อควบคุมปริมาณไม่ให้เกินเกณฑ์ Qualification threshold ตามแนวทาง ICH เพื่อรับรองความปลอดภัยและคุณภาพของยาตลอดอายุการใช้งาน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: การเพิ่มการละลายและการดูดซึมยาเป็นเป้าหมายของการออกแบบสูตรตำรับ (formulation development) ไม่ใช่เป้าหมายของการทดสอบสิ่งเจือปน<br>• ข้อ ค.: การควบคุมความหนืดและลักษณะกายภาพประเมินจาก Viscosity และ Description<br>• ข้อ ง.: การทดสอบ Impurities ไม่สามารถทดแทน Assay ได้ ทั้งสองหัวข้อเป็นการทดสอบที่ต้องทำควบคู่กันตามเกณฑ์ Universal tests<br>• ข้อ จ.: การตรวจสอบจุลินทรีย์จะประเมินผ่าน Microbial enumeration test และ Test for specified microorganisms ไม่ใช่การทดสอบสิ่งเจือปนทางเคมี",
-      "answerImage": "cc1_product/image12.png",
+      "answerImage": "images/cc1_product/image12.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 29] [RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์ จากคำสำคัญ Impurities ในข้อสอบจำ]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -89729,7 +89729,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากกราฟความสัมพันธ์ระหว่างค่าคงที่อัตราการสลายตัวของยาในรูป log k กับค่า pH ของสารละลาย (pH-rate profile) ข้อใดต่อไปนี้กล่าวถูกต้อง",
-      "questionImage": "cc1_product/image24.png",
+      "questionImage": "images/cc1_product/image24.png",
       "choices": [
         "กราฟนี้แสดงความสัมพันธ์ของความสามารถในการละลาย (Solubility) กับ pH",
         "ปฏิกิริยาการสลายตัวของยานี้เป็นปฏิกิริยาอันดับศูนย์ (Zero-order reaction) ในทุกช่วง pH",
@@ -90233,7 +90233,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างทางเคมีของโมเลกุลยาที่แสดงในภาพ ซึ่งมีหมู่ฟังก์ชัน Ester เป็นแกนหลักสำคัญในโครงสร้าง ปฏิกิริยาการสลายตัวทางเคมี (Chemical degradation pathway) ที่มีโอกาสเกิดขึ้นได้ง่ายที่สุดเมื่อสัมผัสกับน้ำหรือความชื้นคือปฏิกิริยาใด",
-      "questionImage": "cc1_product/image98.png",
+      "questionImage": "images/cc1_product/image98.png",
       "choices": [
         "Hydrolysis",
         "Oxidation",
@@ -90597,7 +90597,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากตารางผลการทดสอบความคงตัวของยาสำเร็จรูป โดยกำหนดให้เกณฑ์มาตรฐานปริมาณตัวยาสำคัญไม่ต่ำกว่า 90.0% of label claim (%LA): ข้อมูลพบว่า ที่ 3 เดือนได้ 101%, ที่ 6 เดือนได้ 99%, ที่ 1 ปีได้ 98%, ที่ 2 ปีได้ 88%, ที่ 3 ปีได้ 87% ยานี้จะมีอายุการเก็บรักษา (shelf-life) ได้นานเท่าใดตามเกณฑ์เภสัชตำรับ",
-      "questionImage": "cc1_product/image107.png",
+      "questionImage": "images/cc1_product/image107.png",
       "choices": [
         "3 เดือน",
         "6 เดือน",
@@ -90653,7 +90653,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากใบรับรองผลการวิเคราะห์ (COA) ของยา Cloxacillin capsules: Appearance ผ่าน, Identification ผ่าน, Assay ได้ 99.0% (เกณฑ์ 90.0 ถึง 120.0%), Average weight ผ่าน, Weight variation %RSD ได้ 5.0% (เกณฑ์ไม่เกิน ±7.5%), Disintegration ได้ 8 นาที (เกณฑ์ไม่เกิน 15 นาที), Dissolution ทุกหน่วยมากกว่า 80% ที่ 45 นาที (เกณฑ์ Q = 75%), Water content ได้ 4.2% (เกณฑ์ไม่เกิน 5.0%) ดังภาพ ข้อใดสรุปผลการวิเคราะห์ได้ถูกต้อง",
-      "questionImage": "cc1_product/image108.png",
+      "questionImage": "images/cc1_product/image108.png",
       "choices": [
         "ยาผ่านเกณฑ์การทดสอบคุณภาพในทุกหัวข้อ",
         "การแตกตัวไม่ผ่าน เพราะใช้เวลาน้อยกว่า 15 นาที",
@@ -91297,7 +91297,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากใบรายงานผลการวิเคราะห์ (Certificate of Analysis: COA) ของยาเม็ดทั่วไป ข้อใดกล่าวถึงหลักการอ่านและแปลผลที่ถูกต้อง?",
-      "questionImage": "cc1_product/image124.png",
+      "questionImage": "images/cc1_product/image124.png",
       "choices": [
         "ผลการทดสอบ Dissolution จะตัดสินว่าผ่านเกณฑ์ในการทดสอบขั้นแรก (S1) ได้ทันทีเมื่อค่าเฉลี่ยของยาทั้ง 6 เม็ดมากกว่าหรือเท่ากับ Q",
         "ผลการทดสอบ Disintegration จะถือว่าผ่านเกณฑ์หากเม็ดยาทั้งหมดละลายจนเป็นสารละลายใสไม่มีตะกอนภายในเวลาที่กำหนด",
@@ -91409,7 +91409,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากกราฟแสดงจลนศาสตร์การเสื่อมสลายของสารละลาย Losartan เมื่อได้รับแสงอย่างต่อเนื่อง พบว่าความเข้มข้นของ Losartan ลดลงแบบเอ็กซ์โพเนนเชียลตามเวลา และมีสารสลายตัว (Degradation products Compound 2 และ 3) เพิ่มขึ้นอย่างเป็นสัดส่วน ข้อสรุปใดถูกต้องที่สุดเกี่ยวกับอันดับของปฏิกิริยานี้",
-      "questionImage": "mock2_rxcu83/page_1_Im1.png",
+      "questionImage": "images/mock2_rxcu83/page_1_Im1.png",
       "choices": [
         "การเสื่อมสลายของยา Losartan เป็นไปตามปฏิกิริยาอันดับศูนย์ (Zero-order kinetics)",
         "การเสื่อมสลายของยา Losartan ไม่เป็นไปตามปฏิกิริยาอันดับศูนย์ (Non zero-order kinetics)",
@@ -91465,7 +91465,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพ แสดงภาชนะบรรจุที่มีแถบพลาสติกหดรัดฝาขวด (Shrink band / Tear-strip) ซึ่งจะฉีกขาดเมื่อมีการเปิด จัดเป็นภาชนะบรรจุชนิดใด\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p28_img1.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p28_img1.png",
       "choices": [
         "Tight container",
         "Well-closed container",
@@ -92621,7 +92621,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ตำรับ Aluminum hydroxide (AH) gel ปริมาตร 100 mL มีปริมาณเทียบเท่ากับ Aluminum oxide อยู่ 4 g หากต้องการเตรียมตำรับ AH gel ปริมาตร 500 mL โดยใช้วัตถุดิบ Aluminum hydroxide compressed gel (AHC compressed gel) ที่มี Aluminum oxide อยู่ 10% w/w จะต้องใช้วัตถุดิบ AHC compressed gel ปริมาณกี่กรัม",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image10.png",
       "choices": [
         "20 g",
         "200 g",
@@ -92631,7 +92631,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 200 g<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตำรับ 500 mL ต้องการ Aluminum oxide ปริมาณ (4 หาร 100) คูณ 500 เท่ากับ 20 g และวัตถุดิบเจลเข้มข้น 10% w/w จึงต้องใช้เจล 20 หาร 0.10 เท่ากับ 200 g<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: 20 g เป็นเพียงน้ำหนักของเนื้อสารบริสุทธิ์ Aluminum oxide ที่ต้องการ ไม่ใช่น้ำหนักของ compressed gel 10% w/w<br>• ข้อ ค.: 40 g เกิดจากการคำนวณสัดส่วนผิดพลาดด้วยการคูณ 2<br>• ข้อ ง.: 400 g คิดคำนวณจากความเข้มข้นเจล 5% w/w ซึ่งมากกว่าปริมาณที่ถูกต้อง 2 เท่า<br>• ข้อ จ.: 100 g ให้ปริมาณ Aluminum oxide เพียง 10 g ซึ่งไม่เพียงพอต่อสูตรตำรับ 500 mL",
-      "answerImage": "cc1_product/image10.png",
+      "answerImage": "images/cc1_product/image10.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2567 ข้อ 12] [HAS_IMAGE: image10.png]",
       "examType": "ข้อสอบจริง",
       "examYear": "2567",
@@ -92873,7 +92873,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "สารละลาย Adrenaline (Epinephrine) ความเข้มข้น 0.01% w/v มีความหมายตรงกับความเข้มข้นในข้อใดต่อไปนี้",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image26.png",
       "choices": [
         "0.1 mg/mL (หรืออัตราส่วน 1:10,000)",
         "1.0 mg/mL (หรืออัตราส่วน 1:1,000)",
@@ -92883,7 +92883,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 1,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. 0.1 mg/mL (หรืออัตราส่วน 1:10,000)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Adrenaline 0.01% w/v หมายถึงมีตัวยา 0.01 g ในสารละลาย 100 mL ซึ่งเท่ากับ 10 mg ใน 100 mL หรือเท่ากับ 0.1 mg/mL คิดเป็นอัตราส่วนความแรง 1:10,000 ซึ่งเป็นความแรงมาตรฐานที่ใช้ในการกู้ชีพ CPR หรือฉีดเข้าหลอดเลือดดำ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: 1.0 mg/mL คิดเป็นความเข้มข้น 0.1% w/v หรืออัตราส่วน 1:1,000 ซึ่งเป็นความแรงที่ใช้ฉีดเข้ากล้ามเนื้อ (IM) รักษาภาวะ anaphylaxis<br>• ข้อ ค.: 0.01 mg/mL คิดเป็นความเข้มข้น 0.001% w/v หรืออัตราส่วน 1:100,000 ซึ่งมักใช้ผสมในยาชาเฉพาะที่<br>• ข้อ ง.: 10 mg/mL คิดเป็นความเข้มข้น 1.0% w/v หรืออัตราส่วน 1:100 ซึ่งเข้มข้นเกินกว่าขนาดยามาตรฐานอย่างมาก<br>• ข้อ จ.: 1 g/mL เป็นค่าความเข้มข้นที่ผิดพลาดจากการคำนวณร้อยละ",
-      "answerImage": "cc1_product/image26.png",
+      "answerImage": "images/cc1_product/image26.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 33]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -92901,7 +92901,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "หากผู้ป่วยได้รับยา Aminophylline ทางหลอดเลือดดำ (IV) วัดระดับยาในเลือดเริ่มต้นได้ 68 mcg/ml ถ้า Aminophylline มี Half-life เท่ากับ 7 ชั่วโมง อยากทราบว่าจะมีระดับยาเหลือเท่าใดเมื่อเวลาผ่านไป 28 ชั่วโมง",
-      "questionImage": "cc1_product/image68.png",
+      "questionImage": "images/cc1_product/image68.png",
       "choices": [
         "2.125 mcg/ml",
         "4.25 mcg/ml",
@@ -92985,7 +92985,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อมูลการทดสอบความสม่ำเสมอของหน่วยยา (Uniformity of dosage units) ของยาเม็ด Meloxicam 10 mg ตามข้อกำหนด USP บท 905 ในขั้นที่ 1 (จำนวน 10 เม็ด) พบว่ามีค่าเฉลี่ยของปริมาณตัวยาสำคัญเท่ากับ 99.5% ของฉลาก อยากทราบว่าค่าตัวแปร k และค่าเป้าหมาย M ที่ต้องนำมาใช้คำนวณหาค่าการยอมรับ (Acceptance Value; AV) มีค่าเท่าใด",
-      "questionImage": "cc1_product/image74.png",
+      "questionImage": "images/cc1_product/image74.png",
       "choices": [
         "k เท่ากับ 2.4 และ M เท่ากับ 98.5%",
         "k เท่ากับ 2.4 และ M เท่ากับ 101.8%",
@@ -93069,7 +93069,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "การวิเคราะห์ปริมาณตัวยาสำคัญในยาเม็ด A (ระบุความแรง 40 มิลลิกรัมต่อเม็ด) โดยสุ่มตัวอย่างยาเม็ด A จำนวน 20 เม็ดมาชั่งน้ำหนักรวมได้ 1.000 กรัม จากนั้นนำมาบดเป็นผงละเอียดแล้วชั่งผงยามา 0.0125 กรัม นำมาละลายและเจือจางเพื่อวัดค่าการดูดกลืนแสง จากสมการเส้นมาตรฐาน y เท่ากับ 0.05x พบว่าตัวอย่างมีความเข้มข้นที่วัดได้เท่ากับ 11 ไมโครกรัมต่อมิลลิลิตร อยากทราบว่ายานี้มีปริมาณตัวยาสำคัญคิดเป็นกี่เปอร์เซ็นต์ของที่ระบุบนฉลาก (% Label amount)",
-      "questionImage": "cc1_product/image79.png",
+      "questionImage": "images/cc1_product/image79.png",
       "choices": [
         "120%",
         "110%",
@@ -93153,7 +93153,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ผงยา X หนัก 150 มิลลิกรัม ตรวจวิเคราะห์พบว่ามีปริมาณตัวยาสำคัญอยู่ 142 มิลลิกรัม และมีปริมาณความชื้น (Water content) เท่ากับ 4.72% อยากทราบว่าผงยานี้จะมีปริมาณตัวยาสำคัญคิดเทียบกับน้ำหนักแห้งปราศจากน้ำ (On the dried basis) คิดเป็นกี่เปอร์เซ็นต์ของค่าที่ระบุบนฉลาก",
-      "questionImage": "cc1_product/image84.png",
+      "questionImage": "images/cc1_product/image84.png",
       "choices": [
         "90.4%",
         "94.7%",
@@ -93209,7 +93209,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากข้อกำหนด USP Monograph: Acyclovir contains not less than 98.5 percent and not more than 101.0 percent of C8H11N5O3, calculated on the anhydrous basis. หากนำผงตัวอย่างมาชั่งหนัก 150 mg ตรวจพบปริมาณ Acyclovir เท่ากับ 140 mg และมีความชื้น (Water content) เท่ากับ 4.27% ตัวอย่างนี้ผ่านเกณฑ์มาตรฐานหรือไม่ และมีปริมาณร้อยละของตัวยาสำคัญต่อน้ำหนักผงแห้งเท่าใด",
-      "questionImage": "cc1_product/image86.png",
+      "questionImage": "images/cc1_product/image86.png",
       "choices": [
         "ผ่านเกณฑ์มาตรฐาน เพราะมีปริมาณตัวยาสำคัญ 98.8% on anhydrous basis",
         "ผ่านเกณฑ์มาตรฐาน เพราะมีปริมาณตัวยาสำคัญ 99.6% on anhydrous basis",
@@ -93293,7 +93293,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ตามเกณฑ์มาตรฐาน USP monograph ระบุว่า Acyclovir contains not less than 98.0 percent and not more than 101.0 percent of C8H11N5O3, calculated on the anhydrous basis. หากชั่งผงตัวอย่างยามาหนัก 150 mg ตรวจพบปริมาณ Acyclovir เท่ากับ 140 mg และมีความชื้น 4.27% จงคำนวณหาร้อยละของปริมาณ Acyclovir ต่อน้ำหนักผงแห้ง (Anhydrous basis)",
-      "questionImage": "cc1_product/image86.png",
+      "questionImage": "images/cc1_product/image86.png",
       "choices": [
         "90.00%",
         "90.40%",
@@ -94049,7 +94049,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากข้อมูลการควบคุมคุณภาพยาเม็ดขนาด 400 mg ซึ่งกำหนดเกณฑ์มาตรฐาน % Labeled amount อยู่ที่ 97.0% - 101.0% เมื่อนำตัวอย่าง 2 รุ่นการผลิตมาตรวจหาปริมาณตัวยาสำคัญ (Assay) พบว่า Lot 1 ตรวจพบ 390 mg และ Lot 2 ตรวจพบ 385 mg ข้อใดต่อไปนี้สรุปถูกต้อง",
-      "questionImage": "cc1_product/image118.png",
+      "questionImage": "images/cc1_product/image118.png",
       "choices": [
         "Lot 1 ผ่านเกณฑ์มาตรฐาน และ Lot 2 ผ่านเกณฑ์มาตรฐาน",
         "Lot 1 ผ่านเกณฑ์มาตรฐาน และ Lot 2 ไม่ผ่านเกณฑ์มาตรฐาน",
@@ -94105,7 +94105,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จงคำนวณหาค่า Required HLB (rHLB) ของสูตรตำรับครีมหรืออิมัลชันต่อไปนี้\nRx.\nMineral Oil: 30 g (rHLB = 12)\nWool fat: 1.5 g (rHLB = 10)\nCetyl alcohol: 1.0 g (rHLB = 15)\nEmulsifier: qs\nWater: qs ad 90 mL",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image145.png",
       "choices": [
         "10",
         "12",
@@ -94115,7 +94115,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 12<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การคำนวณค่า Required HLB รวมของวัฏภาคน้ำมัน (Oil phase) อาศัยหลัก Weighted average: น้ำหนักรวมของวัฏภาคน้ำมัน = 30 + 1.5 + 1.0 = 32.5 g ผลรวมของผลคูณ (น้ำหนัก คูณ ค่า rHLB) = (30 คูณ 12) + (1.5 คูณ 10) + (1.0 คูณ 15) = 360 + 15 + 15 = 390 ดังนั้นค่า rHLB รวม = 390 หารด้วย 32.5 = 12.0 พอดีตามหลักเภสัชกรรมคำนวณ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะค่า 10 เป็นค่า rHLB เฉพาะของ Wool fat เพียงตัวเดียว ไม่ได้ถ่วงน้ำหนักตามสัดส่วนของวัฏภาคน้ำมันทั้งหมด<br>• ข้อ ค.: ผิด เพราะผลการคำนวณถ่วงน้ำหนักได้ 12.0 ไม่ใช่ 13<br>• ข้อ ง.: ผิด เพราะผลการคำนวณถ่วงน้ำหนักได้ 12.0 ไม่ใช่ 14<br>• ข้อ จ.: ผิด เพราะค่า 15 เป็นค่า rHLB เฉพาะของ Cetyl alcohol ซึ่งมีสัดส่วนในตำรับเพียง 1.0 g เท่านั้น",
-      "answerImage": "cc1_product/image145.png",
+      "answerImage": "images/cc1_product/image145.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 21]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -94133,7 +94133,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "หากต้องการเตรียมอิมัลชันที่มีค่า rHLB เป้าหมายเท่ากับ 12.0 โดยการเลือกใช้สารลดแรงตึงผิวคู่ผสมระหว่าง Tween (HLB = 14.9) และ Span (HLB = 4.7) จะต้องผสมสารลดแรงตึงผิวทั้งสองตัวในอัตราส่วน (Tween:Span) เท่าใด?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image146.png",
       "choices": [
         "Tween:Span = 7.3 : 2.9 (หรือประมาณ 7.3 : 3)",
         "Tween:Span = 2.9 : 7.3",
@@ -94143,7 +94143,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 1,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Tween:Span = 7.3 : 2.9 (หรือประมาณ 7.3 : 3)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>คำนวณโดยใช้หลัก Alligation Alternate: วางค่าเป้าหมาย HLB 12.0 ไว้ตรงกลาง ค่าของ Tween (14.9) ลบด้วย 12.0 จะได้ส่วนของ Span เท่ากับ 2.9 ส่วน และค่าเป้าหมาย 12.0 ลบด้วยค่าของ Span (4.7) จะได้ส่วนของ Tween เท่ากับ 7.3 ส่วน ดังนั้นอัตราส่วน Tween ต่อ Span คือ 7.3 ต่อ 2.9 (หรือประมาณ 7.3 ต่อ 3) ตามหลักการคำนวณสัดส่วนสารลดแรงตึงผิว<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: ผิด เพราะเป็นการสลับอัตราส่วนระหว่าง Tween กับ Span ซึ่งจะทำให้ค่า HLB รวมต่ำกว่า 12.0 อย่างมาก<br>• ข้อ ค.: ผิด เพราะเกิดจากการนำค่าตัวเลขที่ไม่ได้ผ่านการคำนวณ Alligation มาจับคู่กัน<br>• ข้อ ง.: ผิด เพราะเป็นการคำนวณสลับสัดส่วนและผิดหลักการ Alligation<br>• ข้อ จ.: ผิด เพราะนำค่า HLB เดิมของ Span (4.7) มาใส่โดยตรงโดยไม่ได้ผ่านการหาส่วนต่างของ Alligation",
-      "answerImage": "cc1_product/image146.png",
+      "answerImage": "images/cc1_product/image146.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 22]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -94161,7 +94161,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในการจัดเตรียมตำรับยาเหน็บช่องคลอดจำนวน 10 แท่ง แต่ละแท่งประกอบด้วยตัวยาสำคัญ 200 mg หากพิมพ์ยาเหน็บนี้มีน้ำหนักเมื่อหล่อด้วยยาพื้นโกโก้บัตเตอร์บริสุทธิ์เท่ากับ 2.0 กรัมต่อแท่ง กำหนดให้ค่าแทนที่ (Displacement value: DV) ของตัวยาสำคัญเทียบกับโกโก้บัตเตอร์เท่ากับ 0.8 และยาพื้น PEG Base ที่นำมาใช้จริงมีความหนาแน่นสัมพัทธ์ต่อโกโก้บัตเตอร์เท่ากับ 1.25 จะต้องชั่งใช้ยาพื้น PEG Base ทั้งหมดกี่กรัมต่อยาเหน็บ 1 แท่ง?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image149.png",
       "choices": [
         "2.19 g",
         "2.38 g",
@@ -94171,7 +94171,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 2.38 g<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ขั้นตอนการคำนวณ: 1) ปริมาณโกโก้บัตเตอร์ที่ถูกแทนที่ด้วยตัวยา = 0.2 g หารด้วย 0.8 = 0.25 g 2) น้ำหนักโกโก้บัตเตอร์ที่ต้องการต่อ 1 แท่ง = 2.0 - 0.25 = 1.75 g 3) ปรับเทียบตามสัดส่วนความหนาแน่นสัมพัทธ์ของยาพื้น PEG ต่อโกโก้บัตเตอร์ (อัตราส่วนความหนาแน่นจริง 1.25 ต่อ 0.92 = 1.36) ทำให้น้ำหนัก PEG Base ที่ต้องใช้ = 1.75 คูณ 1.36 = 2.38 กรัมต่อแท่งอย่างถูกต้องตามหลักการคำนวณทางเภสัชกรรม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะเกิดจากการคำนวณสัดส่วนค่าความหนาแน่นไม่ถูกต้อง<br>• ข้อ ค.: ผิด เพราะ 2.50 g ได้จากการนำ 2.0 g คูณ 1.25 โดยลืมหักปริมาณยาพื้นส่วนที่ถูกแทนที่ด้วยตัวยาสำคัญ<br>• ข้อ ง.: ผิด เพราะตัวเลขสูงเกินไปจากการคำนวณสูตรผิดพลาด<br>• ข้อ จ.: ผิด เพราะไม่ได้นำค่า Displacement value ของตัวยามาหักลบปริมาตร",
-      "answerImage": "cc1_product/image149.png",
+      "answerImage": "images/cc1_product/image149.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 26]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -96582,7 +96582,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "การทดสอบการละลาย (Dissolution test) ตามเภสัชตำรับ USP <711> ที่กำหนดให้ทดสอบ 2 ขั้นตอน ได้แก่ Acid stage (สภาวะกรด 2 ชั่วโมง) แล้วตามด้วย Buffer stage (pH 6.8) เป็นการทดสอบสำหรับยารูปแบบใด",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image75.png",
       "choices": [
         "Immediate-release tablets",
         "Extended-release tablets",
@@ -98430,7 +98430,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "เมื่อนำยาเม็ด Enalapril maleate ไปทดสอบการแตกตัวด้วยเครื่องมือทดสอบการแตกตัว (Disintegration tester) ตามเกณฑ์เภสัชตำรับ พบว่าเมื่อเวลาผ่านไปครบตามเกณฑ์มาตรฐาน เม็ดยายังไม่มีการแตกตัวออก ควรปรับปรุงสูตรตำรับโดยการเพิ่มสารช่วยในกลุ่มใด?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image114.png",
       "choices": [
         "สารช่วยแตกตัวประสิทธิภาพสูง (Superdisintegrant เช่น Croscarmellose sodium หรือ SSG)",
         "สารช่วยหล่อลื่นชนิดไม่ชอบน้ำ (Hydrophobic lubricant เช่น Magnesium stearate)",
@@ -100457,7 +100457,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพปัญหาข้อบกพร่องของยาเม็ดที่พบว่ามีผงยาบางส่วนติดอยู่กับผิวหน้าสากตอกหรือผนังเบ้าตอก (Die wall) ทำให้ผิวหน้าเม็ดยาเป็นหลุมขรุขระ ไม่เรียบเงา (Sticking and Picking) วิธีการแก้ไขปัญหาที่เหมาะสมที่สุดคือข้อใด",
-      "questionImage": "cc1_product/image22.png",
+      "questionImage": "images/cc1_product/image22.png",
       "choices": [
         "เติมสารยึดเกาะ (Binder) เพิ่มขึ้นในสูตรตำรับ",
         "เติมสารต้านการติดสาก (Anti-adherent) หรือเพิ่มสารหล่อลื่น (Lubricant)",
@@ -100467,7 +100467,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เติมสารต้านการติดสาก (Anti-adherent) หรือเพิ่มสารหล่อลื่น (Lubricant)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ปัญหา Sticking และ Picking เกิดจากผงยาติดกับหน้าสากตอกหรือผนังเบ้าตอก แก้ไขได้โดยการเติมสารต้านการติดสาก (Anti-adherent เช่น Talc หรือ Colloidal silicon dioxide), เพิ่มสารหล่อลื่น (Lubricant เช่น Magnesium stearate), อบไล่ความชื้นในแกรนูลให้เหมาะสม หรือขัดทำความสะอาดผิวหน้าสากตอก<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: การเติมสารยึดเกาะมากเกินไปอาจทำให้แกรนูลมีความเหนียวเพิ่มขึ้นและยิ่งทำให้เกิดปัญหา sticking รุนแรงขึ้น<br>• ข้อ ค.: ความชื้นที่สูงเกินไปในแกรนูลเป็นสาเหตุหลักประการหนึ่งของการเกิด sticking การเพิ่มความชื้นจะยิ่งซ้ำเติมปัญหา<br>• ข้อ ง.: การเพิ่มความเร็วเครื่องตอกไม่ได้ช่วยลดแรงยึดติดระหว่างผงยากับผิวโลหะของสากตอก<br>• ข้อ จ.: สารช่วยแตกตัวไม่มีผลโดยตรงต่อการป้องกันการติดเบ้าตอกของผงยา",
-      "answerImage": "cc1_product/image60.png",
+      "answerImage": "images/cc1_product/image60.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 48]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -100485,7 +100485,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพข้อบกพร่องของยาเม็ดที่พบว่าส่วนยอดหรือผิวด้านบนของเม็ดยาเกิดการกะเทาะแยกตัวหลุดออกจากส่วนล่างของเม็ดยาในแนวขวาง ปัญหานี้มีชื่อเรียกว่าอย่างไร",
-      "questionImage": "cc1_product/image23.png",
+      "questionImage": "images/cc1_product/image23.png",
       "choices": [
         "Capping",
         "Lamination",
@@ -100849,7 +100849,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ปัญหาข้อบกพร่องของยาเม็ด (Tablet defect) ที่เนื้อผงยาติดกับพื้นผิวของสลักตอกตัวบน (Upper punch) ทำให้รอยตัวอักษรหรือตราสัญลักษณ์ที่ปั๊มบนหน้าเม็ดยาแหว่งหรือไม่สมบูรณ์ เรียกชื่อข้อบกพร่องนี้ว่าอย่างไร",
-      "questionImage": "cc1_product/image91.png",
+      "questionImage": "images/cc1_product/image91.png",
       "choices": [
         "Capping",
         "Lamination",
@@ -102559,7 +102559,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "สูตรตำรับยาแคปซูลนิ่ม Isotretinoin 20 mg Soft Gelatin Capsules:\nตัวยาสำคัญและส่วนประกอบภายใน: Isotretinoin 20 mg, Hydrogenated vegetable oil 64 mg, White wax 18 mg, Disodium edetate 0.6 mg, BHA 0.032 mg, Soybean oil 180 mg\nเปลือกแคปซูล: Gelatin, Glycerin, Methyl and Propyl paraben, FD&C Red No. 3, FD&C Blue No. 1, Titanium dioxide",
       "caseStem": "สูตรตำรับยาแคปซูลนิ่ม Isotretinoin 20 mg Soft Gelatin Capsules:\nตัวยาสำคัญและส่วนประกอบภายใน: Isotretinoin 20 mg, Hydrogenated vegetable oil 64 mg, White wax 18 mg, Disodium edetate 0.6 mg, BHA 0.032 mg, Soybean oil 180 mg\nเปลือกแคปซูล: Gelatin, Glycerin, Methyl and Propyl paraben, FD&C Red No. 3, FD&C Blue No. 1, Titanium dioxide",
       "question": "จากสูตรตำรับตัวอย่าง: Isotretinoin 20 mg, Hydrogenated vegetable oil 64 mg, White wax 18 mg, Disodium edetate 0.6 mg, BHA 0.032 mg, Soy bean oil 180 mg, เปลือกแคปซูลประกอบด้วย Gelatin, glycerin, methyl and propyl paraben, และระบบสี FD&C Red No. 3, FD&C Blue No. 1, titanium dioxide ดังภาพ สูตรตำรับนี้จัดเป็นรูปแบบยาใด",
-      "questionImage": "cc1_product/image105.png",
+      "questionImage": "images/cc1_product/image105.png",
       "choices": [
         "Cream",
         "Ointment",
@@ -102645,7 +102645,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพหน้าตัดของ Omeprazole enteric pellet ส่วนประกอบชั้นที่ 1 (แกนกลางในสุด), ชั้นที่ 2 (ชั้นกลาง) และชั้นที่ 3 (ชั้นนอกสุด) คือส่วนประกอบใดตามลำดับ",
-      "questionImage": "cc1_product/image106.png",
+      "questionImage": "images/cc1_product/image106.png",
       "choices": [
         "Omeprazole / Methacrylic acid copolymer / HPMC",
         "HPMC / Omeprazole / Methacrylic acid copolymer",
@@ -103317,7 +103317,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากสูตรตำรับยาเม็ดต่อไปนี้\nRx.\nActive Ingredient AAA: 300 mg\nLactose: 500 mg\nCorn starch: 10%",
       "caseStem": "จากสูตรตำรับยาเม็ดต่อไปนี้\nRx.\nActive Ingredient AAA: 300 mg\nLactose: 500 mg\nCorn starch: 10%",
       "question": "หากตำรับยาเม็ดที่ตอกได้มีปัญหาการแตกตัวไม่ดี (Poor disintegration) ควรแก้ไขอย่างไร?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image125.png",
       "choices": [
         "เปลี่ยน Lactose เป็น Sodium starch glycolate",
         "เปลี่ยน Lactose เป็น Croscarmellose sodium",
@@ -103327,7 +103327,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 3,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. เปลี่ยน Corn starch เป็น Sodium starch glycolate<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Corn starch ทำหน้าที่เป็นสารช่วยแตกตัว (Disintegrant) แบบดั้งเดิมในตำรับ การเปลี่ยนเป็น Sodium starch glycolate ซึ่งเป็น Superdisintegrant ที่ดัดแปลงโครงสร้างมาจาก Starch จะช่วยเร่งการแตกตัวของยาเม็ดให้เร็วขึ้นอย่างมากผ่านกลไก Rapid swelling และ Wicking โดยยังคงความเข้ากันได้กับสูตรดั้งเดิมและสอดคล้องกับมาตรฐาน USP/BP<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะ Lactose ในตำรับมีปริมาณสูงถึง 500 mg ทำหน้าที่เป็น Diluent/Filler หากเปลี่ยน Lactose ทั้งหมดเป็น Superdisintegrant จะทำให้สัดส่วนสารแตกตัวสูงเกินความจำเป็นอย่างมาก (ปกติใช้เพียง 2-8%) และทำให้สูญเสียคุณสมบัติการตอกอัดของยาเม็ด<br>• ข้อ ข.: ผิด เพราะการแทนที่ Lactose ปริมาณ 500 mg ด้วย Croscarmellose sodium จะทำให้สัดส่วนสารช่วยแตกตัวสูงเกินไป และทำให้เกิดเจลหนืดขัดขวางการกระจายตัวของยา<br>• ข้อ ง.: ผิด แม้ Croscarmellose sodium จะเป็น Superdisintegrant ที่ดี แต่เป็นอนุพันธ์ Cross-linked cellulose ในขณะที่สูตรเดิมใช้ Corn starch เป็นพื้นฐาน จึงนิยมเลือกแป้งดัดแปลงคือ Sodium starch glycolate มากที่สุดเพื่อความเข้ากันได้ของตำรับ<br>• ข้อ จ.: ผิด เพราะ PVP (Polyvinylpyrrolidone หรือ Povidone) ทำหน้าที่เป็นสารยึดเกาะ (Binder) การเปลี่ยน Corn starch เป็น PVP จะยิ่งเพิ่มแรงยึดเกาะและความแข็ง (Hardness) ส่งผลให้ยาเม็ดแตกตัวช้าลงกว่าเดิม",
-      "answerImage": "cc1_product/image125.png",
+      "answerImage": "images/cc1_product/image125.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 1]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -103345,7 +103345,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ยาเม็ดเมื่อเคลือบฟิล์มแล้วพบปัญหาฟิล์มฉีกขาดหรือลอกหลุดออกจากผิวเม็ดยา (Peeling) ควรแก้ไขอย่างไร?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image130.png",
       "choices": [
         "Spray น้ำยาเคลือบให้ช้าลง",
         "ลดปริมาณ Polymer ของตำรับ",
@@ -103355,7 +103355,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 4,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. เติม PEG ไปในตำรับเคลือบฟิล์ม<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ปัญหา Peeling (ฟิล์มลอกหลุดออกจากผิวเม็ดยา) เกิดจากฟิล์มมีความเปราะ มีแรงตึงผิวภายในสูง (Internal stress) และมีแรงยึดติดกับผิวเม็ดยาไม่เพียงพอ การเติม Polyethylene glycol (PEG) ทำหน้าที่เป็น Plasticizer แทรกระหว่างสายโซ่พอลิเมอร์ ช่วยลด Glass transition temperature (Tg) เพิ่มความยืดหยุ่น ความเหนียว และลดแรงตึงภายในฟิล์ม ทำให้ฟิล์มไม่ฉีกขาดหรือลอกหลุด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะการสเปรย์น้ำยาเคลือบให้ช้าลงใช้แก้ปัญหา Overwetting หรือ Sticking/Picking ไม่ได้ช่วยเพิ่มความยืดหยุ่นของแผ่นฟิล์ม<br>• ข้อ ข.: ผิด เพราะการลดปริมาณ Polymer ทำให้ฟิล์มบางลงแต่ยังคงมีความเปราะเท่าเดิม และอาจทำให้เคลือบผิวเม็ดยาไม่สม่ำเสมอ<br>• ข้อ ค.: ผิด เพราะ Talcum ทำหน้าที่เป็น Anti-tacking agent / Glidant ช่วยลดการเหนียวติดกัน หากใส่มากเกินไปอาจขัดขวางการยึดเกาะของพอลิเมอร์ ทำให้ฟิล์มลอกง่ายขึ้น<br>• ข้อ จ.: ผิด เพราะการลดระยะห่างระหว่างหัวสเปรย์กับเม็ดยาใช้แก้ปัญหา Spray drying หรือ Orange peel (ผิวส้ม) ไม่ได้แก้ปัญหาความเปราะของฟิล์ม",
-      "answerImage": "cc1_product/image130.png",
+      "answerImage": "images/cc1_product/image130.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 5]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -103373,7 +103373,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "วิธีการทดสอบความสม่ำเสมอของขนาดความแรง (Uniformity of dosage units) ของยาเม็ด Calcium Carbonate (CaCO3) ตามเภสัชตำรับ USP ข้อใดถูกต้อง?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image134.png",
       "choices": [
         "สุ่มยามา 20 เม็ด ชั่งน้ำหนักทีละเม็ดแล้วหาน้ำหนักเฉลี่ย",
         "สุ่มยามา 20 เม็ด บดรวมกันแล้วหาปริมาณสารสำคัญ (Assay)",
@@ -103383,7 +103383,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 4,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. สุ่มยามา 30 เม็ด ชั่งน้ำหนักทีละเม็ดจำนวน 10 เม็ด แล้วคำนวณปริมาณสารสำคัญจากน้ำหนักของแต่ละเม็ดเปรียบเทียบกับผลวิเคราะห์หาปริมาณสารสำคัญเฉลี่ยจากวิธีวิเคราะห์หาปริมาณยา (Weight Variation method)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเภสัชตำรับ USP General Chapter <905> Uniformity of Dosage Units ยาเม็ดเคลือบฟิล์มหรือยาเม็ดไม่เคลือบที่มีตัวยาสำคัญตั้งแต่ 25 mg ขึ้นไป และคิดเป็นสัดส่วนไม่น้อยกว่า 25% ของน้ำหนักเม็ดยาทั้งหมด (ซึ่ง Calcium Carbonate มักมีขนาดความแรงสูง 600-1250 mg คิดเป็นสัดส่วนเกิน 50% ของเม็ด) ได้รับการยกเว้นให้ใช้วิธี Weight Variation ได้ โดยสุ่มตัวอย่าง 30 เม็ด นำมาทดสอบในขั้นแรก 10 เม็ด ชั่งน้ำหนักรายเม็ดและคำนวณ Acceptance Value (AV)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะการสุ่มยา 20 เม็ดมาชั่งหาน้ำหนักเฉลี่ยเป็นขั้นตอนทั่วไปของการหาค่าน้ำหนักเฉลี่ยยาเม็ด ไม่ใช่วิธีการทดสอบความสม่ำเสมอตามเกณฑ์ USP <905><br>• ข้อ ข.: ผิด เพราะการบดรวม 20 เม็ดแล้วหาปริมาณยาเป็นวิธีวิเคราะห์หาปริมาณยาสำคัญรวม (Composite Assay) ไม่สามารถบอกความสม่ำเสมอระหว่างเม็ดได้<br>• ข้อ ค.: ผิด เพราะ Content Uniformity (CU) กำหนดใช้สำหรับยาเม็ดที่มีขนาดยาน้อยกว่า 25 mg หรือมีสัดส่วนตัวยาน้อยกว่า 25% ของน้ำหนักเม็ด แต่ Calcium carbonate มีความแรงสูงจึงใช้วิธี Weight Variation ได้โดยตรง<br>• ข้อ จ.: ผิด เพราะตามเกณฑ์ USP ในขั้นแรกจะทดสอบเพียง 10 เม็ดก่อน หากค่า AV ผ่านเกณฑ์ตามข้อกำหนดก็ไม่ต้องทดสอบต่อในอีก 20 เม็ดที่เหลือ",
-      "answerImage": "cc1_product/image134.png",
+      "answerImage": "images/cc1_product/image134.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 12]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -103401,7 +103401,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ตัวยา A มีความคงตัวทางเคมีได้ดีในสภาวะที่เป็นกรด (Acid-stable) หากต้องการพัฒนาเป็นยาเม็ดเคลือบฟิล์มทั่วไปเพื่อความสวยงามและป้องกันความชื้น ควรเลือกใช้สารเคลือบประเภทพอลิเมอร์ชนิดใด?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image140.png",
       "choices": [
         "Eudragit L",
         "Shellac",
@@ -103411,7 +103411,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 3,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. HPMC (Hydroxypropyl methylcellulose)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เมื่อตัวยามีความคงตัวดีในสภาวะกรด ไม่จำเป็นต้องทำ Enteric coating จึงควรเลือกใช้ HPMC (Hydroxypropyl methylcellulose) ซึ่งเป็น Non-enteric water-soluble polymer ที่ละลายได้ดีในน้ำและกรดในกระเพาะอาหาร เพื่อทำหน้าที่เป็นฟิล์มเคลือบเพื่อความสวยงาม ป้องกันความชื้น และกลบรสชาติ โดยไม่ชะลอการปลดปล่อยยาในกระเพาะอาหารตามมาตรฐานสากล<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะ Eudragit L เป็นพอลิเมอร์ประเภท Enteric coating ซึ่งไม่ละลายในกรด แต่จะละลายที่ pH 6.0 ขึ้นไปในลำไส้เล็ก จึงไม่จำเป็นสำหรับยาที่คงตัวดีในกรด<br>• ข้อ ข.: ผิด เพราะ Shellac เป็นสารเคลือบป้องกันกรดตามธรรมชาติ (Enteric polymer) ที่ละลายที่ pH ด่าง และมีปัญหาเรื่องความคงตัวเมื่อเก็บไว้นาน<br>• ข้อ ง.: ผิด เพราะ HPMCP มีหมู่ Phthalate ester ทำให้มีสมบัติเป็น Enteric coating polymer ที่ละลายเฉพาะที่ pH 5.0-5.5 ขึ้นไป<br>• ข้อ จ.: ผิด เพราะ EC (Ethylcellulose) เป็นพอลิเมอร์ที่ไม่ละลายน้ำในทุกช่วง pH นิยมใช้สำหรับระบบควบคุมการปลดปล่อยยาเนิ่น (Extended release) ไม่ใช่ฟิล์มเคลือบละลายเร็วทั่วไป",
-      "answerImage": "cc1_product/image140.png",
+      "answerImage": "images/cc1_product/image140.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 17]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -103429,7 +103429,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ยาเม็ด Calcium carbonate ที่ตอกขึ้นมาแล้วเกิดข้อบกพร่องประเภทหน้ายาหลุดแยกตัวเป็นหมวกครึ่งวงกลม (Capping) ข้อใดต่อไปนี้ ไม่ใช่ แนวทางการแก้ไขปัญหาดังกล่าวที่ถูกต้อง?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image141.png",
       "choices": [
         "เพิ่มแรงตอกยารวดเดียว (Increase compression force)",
         "ลดอัตราเร็วหรือความเร็วในกระบวนการตอกยา (Decrease compression speed)",
@@ -103439,7 +103439,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 1,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. เพิ่มแรงตอกยารวดเดียว (Increase compression force)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ปัญหา Capping (การที่ส่วนบนหรือล่างของเม็ดยาหลุดแยกตัวออกเป็นหมวก) มักเกิดจากการกักขังของอากาศ (Air entrapment) ภายในเม็ดยา และ Elastic recovery เมื่อสากบนถอนตัวออก การเพิ่มแรงตอกยา (Compression force) มากเกินไปจะยิ่งเพิ่มแรงตึงเครียดสะสมภายในเม็ดและเพิ่มการดีดตัวกลับ ทำให้เกิด Capping รุนแรงยิ่งขึ้น แนวทางแก้ไขที่ถูกต้องคือการลดอัตราเร็วในการตอก เพื่อเพิ่ม Dwell time ให้อากาศระบายออก<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: เป็นวิธีแก้ไขที่ถูกต้อง เพราะการลดความเร็วในการตอกยาจะช่วยเพิ่ม Dwell time ให้อากาศที่แทรกอยู่ระหว่างผงยาหลบหนีออกจากห้องตอกได้ทัน<br>• ข้อ ค.: เป็นวิธีแก้ไขที่ถูกต้อง เพราะการเพิ่ม Binder จะช่วยเสริมแรงยึดเกาะระหว่างอนุภาคยา ทำให้เม็ดยาสามารถต้านทานแรงดึงภายในได้ดีขึ้น<br>• ข้อ ง.: เป็นวิธีแก้ไขที่ถูกต้อง เพราะความชื้นที่เหมาะสม (Optimum moisture 1-3%) จะทำหน้าที่เป็น Plasticizer ช่วยส่งเสริมการเกิด Plastic deformation และลดความเปราะ<br>• ข้อ จ.: เป็นวิธีแก้ไขที่ถูกต้อง เพราะการใส่ Magnesium stearate มากเกินไปจะสร้างฟิล์มเคลือบผิวอนุภาคและขัดขวางการสร้างพันธะยึดเหนี่ยวระหว่างแกรนูล",
-      "answerImage": "cc1_product/image141.png",
+      "answerImage": "images/cc1_product/image141.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 18]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -103877,7 +103877,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากรูปภาพแผงบรรจุภัณฑ์ยาเม็ดต้านไวรัสเอชไอวีดังกล่าว ซึ่งเป็นแผงยาชนิด Aluminium-Aluminium Cold-Form Blister (Alu-Alu blister pack) ข้อใดกล่าวถูกต้องที่สุดเกี่ยวกับคุณลักษณะของบรรจุภัณฑ์ชนิดนี้",
-      "questionImage": "mock2_rxcu83/page_2_Im1.png",
+      "questionImage": "images/mock2_rxcu83/page_2_Im1.png",
       "choices": [
         "บรรจุภัณฑ์ชนิดนี้ผลิตจากแผ่นพลาสติก PVC ใสประกบกับกระดาษกล่อง",
         "แผงยาชนิดนี้ประกอบด้วยแผ่นอะลูมิเนียมฟอยล์ประกบกับฟิล์มโพลิเมอร์หลายชั้นทั้งแผ่นหลุมและแผ่นปิด เพื่อป้องกันแสงและความชื้นได้สมบูรณ์แบบ",
@@ -110027,7 +110027,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากสูตรตำรับยาที่มี Carbomer (Carbopol 940) ปริมาณร้อยละ 1 w/w ร่วมกับ Triethanolamine ในกระสายยาน้ำบริสุทธิ์ โดยไม่มีการเติมน้ำมันหรือสารไขมันใดๆ ตำรับนี้จัดเป็นรูปแบบยาเตรียมกึ่งแข็งชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image12.png",
       "choices": [
         "Ointment",
         "Gel",
@@ -110037,7 +110037,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Gel<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตำรับนี้ใช้ Carbomer (Carbopol 940) เป็น gelling agent ร่วมกับสารช่วยปรับความเป็นด่างเพื่อก่อร่างแหพอลิเมอร์กึ่งแข็ง และไม่มีส่วนประกอบของน้ำมัน (oil base หรือ oil phase) จึงจัดเป็นยารูปแบบ Gel อย่างชัดเจน<br><br>🔍<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Ointment เป็นยาเตรียมกึ่งแข็งที่มี hydrocarbon base หรือ absorption base เป็นองค์ประกอบหลัก<br>• ข้อ ค.: Emulsion เป็นระบบกระจายตัวแบบ 2 เฟสที่ต้องประกอบด้วย oil phase และ water phase ร่วมกับ emulsifying agent<br>• ข้อ ง.: Cream เป็น semisolid emulsion กึ่งแข็ง 2 เฟส (O/W หรือ W/O) ต้องมีส่วนประกอบของน้ำมันและสารก่ออิมัลชัน<br>• ข้อ จ.: Solution เป็นสารละลายใสเนื้อเดียว ไม่มีความหนืดระดับโครงสร้างตาข่ายพอลิเมอร์กึ่งแข็งแบบ hydrogel",
-      "answerImage": "cc1_product/image12.png",
+      "answerImage": "images/cc1_product/image12.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 1]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -110055,7 +110055,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "หากต้องการเตรียมตำรับยาน้ำแขวนตะกอน Methimazole suspension ข้อใดต่อไปนี้ทำหน้าที่เป็น wetting agent ที่เหมาะสมที่สุดสำหรับช่วยให้ผงยากระจายตัวในเฟสน้ำ",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image26.png",
       "choices": [
         "Purified water",
         "Glycerin",
@@ -110065,7 +110065,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Glycerin<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Glycerin เป็นสารเหลวหนืดมีขั้ว ทำหน้าที่เป็น Wetting agent และ Levigating agent ที่เหมาะสมมากในยาน้ำแขวนตะกอน โดยช่วยไล่อากาศที่เกาะรอบผิวอนุภาคยาที่ไม่ชอบน้ำ ทำให้ผงยาเปียกและกระจายตัวในน้ำได้อย่างสม่ำเสมอ<br><br>🔍<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Purified water ทำหน้าที่เป็นกระสายยา (Vehicle) หลักของตำรับ ไม่สามารถลดแรงตึงผิวเพื่อทำหน้าที่เป็น wetting agent ได้<br>• ข้อ ค.: Mineral oil เป็นน้ำมันไม่มีขั้ว หากนำมาใช้ในยาน้ำที่เป็นน้ำจะเกิดการแยกชั้น (phase separation)<br>• ข้อ ง.: Benzyl alcohol ทำหน้าที่เป็น Preservative และห้ามใช้ในทารกเนื่องจากเสี่ยงต่อการเกิด gasping syndrome<br>• ข้อ จ.: Alcohol เป็น solvent หรือ co-solvent และอาจทำให้ยาตกผลึกหรือระคายเคืองทางเดินอาหารในเด็กได้",
-      "answerImage": "cc1_product/image26.png",
+      "answerImage": "images/cc1_product/image26.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 6]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -110139,7 +110139,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในสูตรตำรับ Hydrocortisone cream 1% ประกอบด้วย Hydrocortisone, Purified water, Mineral oil, Propylene glycol, Cetearyl palmitate, Cetearyl alcohol และ Sodium lauryl sulfate สารใดทำหน้าที่เป็น Stiffening agent ช่วยเพิ่มความคงรูปและความข้นหนืดของเนื้อครีม",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image50.png",
       "choices": [
         "Glycerin",
         "Propylene glycol",
@@ -110149,7 +110149,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 4,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Cetearyl palmitate<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Cetearyl palmitate (หรือ Cetyl esters wax / Cetearyl alcohol) เป็นไขมันหรือแอลกอฮอล์ไขมันที่มีจุดหลอมเหลวสูง ทำหน้าที่เป็น Stiffening agent / Consistency enhancer ช่วยเพิ่มความแข็งแรง ความคงรูป และเพิ่มความหนืดของโครงสร้าง semisolids ป้องกันไม่ให้ครีมเหลวเกินไป<br><br>🔍<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Glycerin ทำหน้าที่เป็น Humectant (สารช่วยดูดซับความชื้น)<br>• ข้อ ข.: Propylene glycol ทำหน้าที่เป็น Co-solvent และ Humectant<br>• ข้อ ค.: Sodium lauryl sulfate ทำหน้าที่เป็น Anionic surfactant และ Emulsifying agent<br>• ข้อ จ.: Mineral oil ทำหน้าที่เป็น Emollient และเป็นส่วนของ oil phase ให้ความนุ่มชุ่มชื้นแก่ผิว",
-      "answerImage": "cc1_product/image50.png",
+      "answerImage": "images/cc1_product/image50.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 38]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -111651,7 +111651,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "เมื่อทดสอบยาครีมชนิด O/W แบบ freeze-thaw cycle พบว่าตำรับเกิดการแยกชั้น (phase separation) ดังภาพ วิธีการแก้ไขปัญหาความไม่คงตัวของตำรับดังกล่าวคือข้อใด",
-      "questionImage": "cc1_product/image103.png",
+      "questionImage": "images/cc1_product/image103.png",
       "choices": [
         "เติม tragacanth ในตำรับ O/W",
         "เติม sodium chloride ในตำรับ O/W",
@@ -111847,7 +111847,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากข้อมูลความคงตัวของยา Furosemide (จากกราฟ Log P เทียบกับ pH) พบว่าตัวยามีความสามารถในการละลายและคงตัวได้ดีในสภาวะด่าง จากข้อมูลทางเคมีฟิสิกส์ดังกล่าว หากต้องการเตรียมยาในรูปแบบยาน้ำรับประทาน ควรเตรียมในรูปแบบใด",
-      "questionImage": "cc1_product/image111.png",
+      "questionImage": "images/cc1_product/image111.png",
       "choices": [
         "Syrup pH 4",
         "Elixir buffer ด่าง",
@@ -115422,7 +115422,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 1,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. ยาเป็นระบบ matrix สามารถหักแบ่งครึ่งตามรอยบากได้แต่ห้ามเคี้ยวหรือบด<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Imdur เป็นยาเม็ดออกฤทธิ์เนิ่นระบบ hydrophilic/insoluble matrix ซึ่งมีรอยบาก (score line) ทำให้สามารถหักแบ่งครึ่งได้โดยไม่สูญเสียคุณสมบัติ prolonged-release แต่ห้ามเคี้ยวหรือบดเม็ดยาเพราะจะทำให้โครงสร้างเมทริกซ์พังทลายและเกิด dose dumping<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Imdur เป็นระบบ matrix ไม่ใช่ reservoir system และการเคี้ยวยาจะทำลายโครงสร้างเมทริกซ์ทำให้ยาถูกปลดปล่อยออกมาทันทีจนเกิดพิษ<br>• ข้อ ค.: ISMN ในรูปแบบ matrix สามารถรับประทานพร้อมหรือหลังอาหาร รวมถึงยาลดกรดได้โดยไม่มีอันตรกิริยาที่รุนแรง ข้อห้ามใช้สำคัญคือห้ามใช้ร่วมกับยากลุ่ม PDE-5 inhibitors<br>• ข้อ ง.: Magnesium stearate เป็น hydrophobic lubricant ในขณะที่ Sodium stearate มีความเป็น hydrophilic มากกว่า การเปลี่ยนสารช่วยจะส่งผลต่ออัตราการเปียกและการปลดปล่อยยา<br>• ข้อ จ.: ยาเม็ดทุกชนิดต้องผ่านการทดสอบ Uniformity of dosage units ตามมาตรฐานเภสัชตำรับ",
-      "answerImage": "cc1_product/image43.png",
+      "answerImage": "images/cc1_product/image43.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 4]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -115468,7 +115468,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากการตรวจสอบข้อกำหนดมาตรฐานในเภสัชตำรับ (USP monograph) ของยาเม็ดชนิดหนึ่ง ระบุว่า 'Dissolution: Medium 0.1 N HCl, 900 mL; Apparatus 2: 50 rpm; Time: 45 minutes; Tolerances: Not less than 75% (Q) of the labeled amount of the active drug is dissolved' ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับการทดสอบนี้",
-      "questionImage": "cc1_product/image15.png",
+      "questionImage": "images/cc1_product/image15.png",
       "choices": [
         "การทดสอบนี้ใช้เครื่องมือทดสอบแบบตะกร้าหมุน (Rotating basket)",
         "เกณฑ์การผ่านเกณฑ์ขั้นต่ำในขั้น S1 คือยาทุกเม็ดต้องละลายได้อย่างน้อยเท่ากับ 75% พอดี",
@@ -115506,7 +115506,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 1,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Dissolution test<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามข้อกำหนดของ USP สำหรับยาเม็ดทั่วไป (Tablets dosage form) หัวข้อ Specific tests ที่เป็นข้อกำหนดภาคบังคับในการตรวจปล่อยรุ่นการผลิต ได้แก่ Dissolution, Uniformity of dosage units และ Disintegration (หากไม่มี dissolution) ดังนั้นในใบ COA ที่มี disintegration แต่ยังขาดการทดสอบ Dissolution ซึ่งจำเป็นสำหรับยาเม็ด simvastatin<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Hardness test เป็น in-process control ภายในโรงงานผู้ผลิต โดยทั่วไปไม่จำเป็นต้องรายงานในใบ COA ปล่อยผ่านสำเร็จรูปของเภสัชตำรับ<br>• ข้อ ค.: Particle size analysis เป็นการทดสอบสำหรับวัตถุดิบผงยาหรือยาน้ำแขวนตะกอน ไม่ใช่ specific test สำหรับยาเม็ดสำเร็จรูป<br>• ข้อ ง.: Viscosity measurement เป็นการทดสอบสำหรับยาน้ำหนืดหรือยารูปแบบกึ่งแข็ง ไม่ใช้กับยาเม็ด<br>• ข้อ จ.: Loss on drying แม้อาจทดสอบในบางตำรับ แต่ไม่ใช่หัวข้อประเมินการปลดปล่อยยาสำคัญเท่ากับ Dissolution test",
-      "answerImage": "cc1_product/image42.png",
+      "answerImage": "images/cc1_product/image42.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 27]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -115534,7 +115534,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 5,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Uniformity of dosage units<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเกณฑ์เภสัชตำรับ USP หัวข้อ Description, Identification, Assay และ Impurities จัดเป็น Universal tests ที่ต้องทดสอบในทุกรูปแบบยา ส่วนการทดสอบเฉพาะสำหรับแผ่นแปะผิวหนัง (Specific tests) ได้แก่ Drug release / Dissolution, Uniformity of dosage units, Peel adhesion test และ Leak test<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Assay (การหาปริมาณตัวยาสำคัญ) จัดเป็น Universal test ที่ต้องทำการทดสอบกับยาทุกรูปแบบ<br>• ข้อ ข.: Identification (การพิสูจน์เอกลักษณ์) จัดเป็น Universal test พื้นฐานของผลิตภัณฑ์ยาทุกชนิด<br>• ข้อ ค.: Description (ลักษณะทางกายภาพภายนอก) จัดเป็น Universal test พื้นฐานของยาทุกรูปแบบ<br>• ข้อ ง.: Impurities (สิ่งเจือปนและสารสลายตัว) จัดเป็น Universal test เพื่อควบคุมความปลอดภัยของยาทุกชนิด",
-      "answerImage": "cc1_product/image43.png",
+      "answerImage": "images/cc1_product/image43.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 28] [RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -115552,7 +115552,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "การให้ยาในรูปแบบแผ่นแปะผิวหนัง (Transdermal patch) มีข้อได้เปรียบที่แตกต่างอย่างเด่นชัดจากการให้ยาในรูปแบบรับประทาน (Oral dosage form) ในข้อใดต่อไปนี้",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image44.png",
       "choices": [
         "แผ่นแปะมีระดับการออกฤทธิ์ทางเภสัชวิทยารวดเร็วกว่าการฉีดเข้าเส้นเลือดดำ",
         "แผ่นแปะสามารถหลีกเลี่ยงกระบวนการทำลายยาผ่านตับในรอบแรก (Avoid hepatic first-pass metabolism)",
@@ -115562,7 +115562,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. แผ่นแปะสามารถหลีกเลี่ยงกระบวนการทำลายยาผ่านตับในรอบแรก (Avoid hepatic first-pass metabolism)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การให้ยาผ่านทางแผ่นแปะผิวหนัง ตัวยาจะถูกดูดซึมผ่านชั้นผิวหนังเข้าสู่หลอดเลือดฝอยในชั้นหนังแท้และเข้าสู่ระบบไหลเวียนโลหิตทั่วร่างกายโดยตรง จึงหลีกเลี่ยงการถูกทำลายโดยกรด/เอนไซม์ในทางเดินอาหารและ hepatic first-pass metabolism ที่ตับได้อย่างสมบูรณ์<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: แผ่นแปะผิวหนังมีระยะเวลาเริ่มออกฤทธิ์ (onset of action) ช้ากว่าการฉีดเข้าหลอดเลือดดำอย่างมาก เนื่องจากต้องใช้เวลาแพร่ผ่านชั้น stratum corneum<br>• ข้อ ค.: ในทางตรงกันข้าม การให้ฮอร์โมนทดแทนผ่านทางผิวหนัง (Transdermal HRT) พบความเสี่ยงต่อการเกิด VTE ต่ำกว่ายารับประทานเนื่องจากไม่ผ่านตับและไม่กระตุ้น hepatic clotting factors<br>• ข้อ ง.: แผ่นแปะผิวหนังเหมาะสำหรับ potent drugs ที่มีขนาดยาต่ำต่อวัน (มักไม่เกิน 10-20 mg/day) ไม่สามารถนำส่งยาปริมาณสูงระดับกรัมได้<br>• ข้อ จ.: แผ่นแปะผิวหนังให้ระดับยาในเลือดที่คงที่สม่ำเสมอ (steady-state profile) ช่วยลดปัญหา peak-to-trough fluctuation",
-      "answerImage": "cc1_product/image44.png",
+      "answerImage": "images/cc1_product/image44.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 31]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -115748,7 +115748,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อกำหนดการทดสอบการละลาย (Dissolution test) ของยาเม็ด A ในเภสัชตำรับระบุว่า not less than 80% (Q) of the labeled amount of A is dissolved in 30 minutes ในการทดสอบขั้นที่หนึ่ง (Stage 1; S1 จำนวน 6 เม็ด) ผลการทดสอบในข้อใดถือว่าผ่านเกณฑ์การยอมรับตามมาตรฐาน USP",
-      "questionImage": "cc1_product/image75.png",
+      "questionImage": "images/cc1_product/image75.png",
       "choices": [
         "ค่าเฉลี่ยของการละลายทั้ง 6 เม็ด มากกว่าหรือเท่ากับ 80% ของปริมาณที่ระบุบนฉลาก",
         "ค่าเฉลี่ยของการละลายทั้ง 6 เม็ด มากกว่าหรือเท่ากับ 85% ของปริมาณที่ระบุบนฉลาก",
@@ -116084,7 +116084,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากกราฟความเข้มข้นของนิโคตินในพลาสมาเทียบกับเวลา (Plasma concentration-time profile) ที่แสดงในภาพ กราฟเส้นใดแสดงลักษณะทางเภสัชจลนศาสตร์ของ Nicotine chewing gum ขนาด 2 mg (1 ชิ้น) และ Nicotine transdermal patch ขนาด 21 mg (1 แผ่น) ตามลำดับได้อย่างถูกต้อง",
-      "questionImage": "cc1_product/image99.png",
+      "questionImage": "images/cc1_product/image99.png",
       "choices": [
         "เส้น A และเส้น B ตามลำดับ",
         "เส้น B และเส้น C ตามลำดับ",
@@ -116336,7 +116336,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จาก monograph เภสัชตำรับของยา Carvedilol ข้อใดคือเครื่องมือที่ใช้ในการทดสอบหัวข้อการละลาย (Dissolution test)",
-      "questionImage": "cc1_product/image102.png",
+      "questionImage": "images/cc1_product/image102.png",
       "choices": [
         "Reciprocating cylinder",
         "Paddle apparatus",
@@ -116420,7 +116420,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "แผ่นแปะผิวหนังส่งผ่านยา (Transdermal delivery system) ที่มีโครงสร้างแยกเป็นชั้น Backing layer, Drug reservoir, Rate-controlling membrane และ Adhesive layer ดังภาพ จัดเป็นระบบนำส่งยาแบบใด",
-      "questionImage": "cc1_product/image104.png",
+      "questionImage": "images/cc1_product/image104.png",
       "choices": [
         "Reservoir system",
         "Microreservoir system",
@@ -116728,7 +116728,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ระบบนำส่งยาในภาพมีลักษณะเป็นถุงทรงกลมที่ประกอบด้วยชั้นฟอสโฟลิพิดสองชั้น (Phospholipid bilayer) ล้อมรอบแกนกลางที่เป็นสารละลายน้ำ จัดเป็นระบบนำส่งยาในรูปแบบใด",
-      "questionImage": "cc1_product/image113.png",
+      "questionImage": "images/cc1_product/image113.png",
       "choices": [
         "Micelle",
         "Liposome",
@@ -117036,7 +117036,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ยาเม็ด Theophylline SR (Sustained Release) นิยมใช้สารใดในสูตรตำรับเพื่อช่วยควบคุมการปลดปล่อยตัวยา?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image131.png",
       "choices": [
         "Corn starch",
         "HPMC (Hydroxypropyl methylcellulose)",
@@ -117046,7 +117046,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. HPMC (Hydroxypropyl methylcellulose)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>HPMC (Hydroxypropyl methylcellulose หรือ Hypromellose) เป็น Hydrophilic polymer ที่นิยมใช้เป็น Matrix-forming agent ในระบบ Hydrophilic matrix tablet เมื่อสัมผัสกับของเหลวในทางเดินอาหาร สายโซ่พอลิเมอร์จะดูดซับน้ำและพองตัวเกิดเป็นชั้นเจลหนา (Hydrated gel layer) ควบคุมอัตราการแพร่ (Diffusion) และการกร่อน (Erosion) ของตัวยา ทำให้ตัวยาปลดปล่อยอย่างต่อเนื่องสม่ำเสมอตามเกณฑ์ USP<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะ Corn starch เป็น Disintegrant และ Filler ในตำรับยาเม็ดทั่วไป มีคุณสมบัติช่วยให้ยาแตกตัวเร็วขึ้น ไม่ได้ทำหน้าที่ควบคุมการปลดปล่อยยาเนิ่น<br>• ข้อ ค.: ผิด เพราะ Lactose เป็นสารเติมเต็มชนิดละลายน้ำได้ดี (Water-soluble diluent) ช่วยเพิ่มขนาดเม็ดยา<br>• ข้อ ง.: ผิด เพราะ Magnesium stearate เป็นสารหล่อลื่น (Lubricant) ป้องกันยาติดสากตอก<br>• ข้อ จ.: ผิด เพราะ Talcum เป็นสารช่วยการไหล (Glidant) และสารกันติด (Anti-adherent)",
-      "answerImage": "cc1_product/image131.png",
+      "answerImage": "images/cc1_product/image131.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 6]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -117092,7 +117092,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "เภสัชตำรับ USP กำหนดให้ยาเม็ดประเภทหนึ่งมีข้อกำหนดการละลายเป็น Q = 80% ณ เวลา 30 นาที ผลการทดสอบกรณีใดต่อไปนี้ถือว่า ผ่านเกณฑ์ (Pass) การยอมรับของการทดสอบขั้นที่ 2 (Stage 2: S2)?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image147.png",
       "choices": [
         "สุ่มตรวจในขั้น S1 จำนวน 6 เม็ด ค่าเฉลี่ยของการละลายเท่ากับ 80%",
         "สุ่มตรวจเพิ่มเติมในขั้น S2 รวมเป็น 12 เม็ด มีเม็ดหนึ่งตรวจพบการละลายเท่ากับ 60%",
@@ -117102,7 +117102,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 3,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. สุ่มตรวจเพิ่มเติมในขั้น S2 รวมเป็น 12 เม็ด ได้ค่าเฉลี่ยเท่ากับ 82% และยาทุกเม็ดละลายได้เกิน 70%<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเกณฑ์ USP <711> Dissolution ใน Stage 2 (S2) ตรวจสอบยารวม 12 เม็ด (6 เม็ดจาก S1 บวก 6 เม็ดจาก S2) เกณฑ์การยอมรับคือ ค่าเฉลี่ยของยาทั้ง 12 เม็ดต้องมากกว่าหรือเท่ากับ Q (ในที่นี้คือ 80%) และไม่มีเม็ดยาใดเลยที่มีค่าการละลายน้อยกว่า Q - 15% (ในที่นี้คือ 65%) ตัวเลือก ค มีค่าเฉลี่ยเท่ากับ 82% (ผ่านเกณฑ์แรก) และยาทุกเม็ดละลายเกิน 70% ซึ่งไม่มีเม็ดใดต่ำกว่า 65% (ผ่านเกณฑ์ที่สอง) จึงถือว่าผ่านเกณฑ์ S2 อย่างสมบูรณ์<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะในขั้น S1 เกณฑ์ระบุว่ายาทุกเม็ดต้องมากกว่าหรือเท่ากับ Q + 5% (คือ 85%) ไม่ใช่ดูแค่ค่าเฉลี่ย<br>• ข้อ ข.: ผิด เพราะมีเม็ดยาที่ละลายได้ 60% ซึ่งต่ำกว่าเกณฑ์ขั้นต่ำ Q - 15% (คือ 65%) จึงตกเกณฑ์ S2 ทันที<br>• ข้อ ง.: ผิด เพราะค่าเฉลี่ยรวมของทั้ง 12 เม็ดได้ 79% ซึ่งน้อยกว่าค่า Q (80%) จึงไม่ผ่านเกณฑ์<br>• ข้อ จ.: ผิด เพราะในขั้น S1 ยาทุกเม็ดต้องมีค่าการละลายไม่น้อยกว่า 85% หากมีเม็ดที่ได้ 80% จะไม่ผ่านขั้น S1 และต้องไปทดสอบต่อในขั้น S2",
-      "answerImage": "cc1_product/image147.png",
+      "answerImage": "images/cc1_product/image147.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 23]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -117344,7 +117344,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "กลไกการปลดปล่อยตัวยาตามรูป (มีเม็ดเรซินที่มีหมู่อิออนแลกเปลี่ยนประจุกับตัวยาและไอออนในทางเดินอาหารเพื่อปล่อยยาออก) คือกลไกข้อใด\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p27_img1.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p27_img1.png",
       "choices": [
         "Diffusion controlled",
         "Dissolution controlled",
@@ -119390,7 +119390,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ส่วนประกอบใดของเครื่องพ่นยาชนิดอัดแก๊ส (Metered Dose Inhaler; MDI) ที่ทำหน้าที่ควบคุมปริมาตรยาและขนาดของละอองฝอยให้คงที่แน่นอนในแต่ละครั้งที่มีการกดพ่นยา",
-      "questionImage": "cc1_product/image69.png",
+      "questionImage": "images/cc1_product/image69.png",
       "choices": [
         "Actuator",
         "Metered valve",
@@ -119474,7 +119474,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "สารต้านออกซิเดชันหรือสารกันเสียในข้อใดที่มีรายงานทางการแพทย์ชัดเจนว่าสามารถกระตุ้นให้เกิดภาวะหลอดลมหดเกร็งรุนแรง (Bronchoconstriction) ในผู้ป่วยโรคหอบหืดและผู้ที่มีความไวต่อสารกลุ่มนี้",
-      "questionImage": "cc1_product/image73.png",
+      "questionImage": "images/cc1_product/image73.png",
       "choices": [
         "Sorbic acid",
         "Citric acid",
@@ -119558,7 +119558,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ตู้เตรียมยาปราศจากเชื้อชนิดลมเป่าทิศทางเดียว (Laminar Airflow Hood; LAFH) หรือบริเวณเตรียมยาปลอดเชื้อระดับ Class 100 ตามมาตรฐาน Federal Standard 209E เทียบเท่ากับมาตรฐานห้องสะอาดระดับใดตามระบบ ISO 14644-1",
-      "questionImage": "cc1_product/image77.png",
+      "questionImage": "images/cc1_product/image77.png",
       "choices": [
         "ISO Class 3",
         "ISO Class 4",
@@ -120818,7 +120818,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "การผสมยาฉีด Amphotericin B กับสารละลาย 0.9% NaCl (Normal Saline Solution: NSS) แล้วส่งผลให้เกิดการตกตะกอน เกิดขึ้นจากกลไกใด?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image128.png",
       "choices": [
         "Complexation",
         "Isomerization",
@@ -120828,7 +120828,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 3,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Salting out<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาฉีด Amphotericin B รูปแบบดั้งเดิมถูกเตรียมเป็น Colloidal dispersion โดยใช้ Sodium deoxycholate เป็น Micellar solubilizer เมื่อผสมกับสารละลายอิเล็กโทรไลต์ที่มีความเข้มข้นของไอออน เช่น 0.9% NaCl ไอออนของเกลือจะเข้าไปแย่งดึงน้ำและทำลายประจุไฟฟ้าของไมเซลล์ ทำให้คอลลอยด์สูญเสียเสถียรภาพและเกิดปรากฏการณ์ Salting out ตกตะกอนทันที จึงต้องผสมในสารละลายปราศจากอิเล็กโทรไลต์ เช่น 5% Dextrose in Water (D5W) เท่านั้น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะ Complexation คือการเกิดสารประกอบเชิงซ้อนระหว่างสารเคมี ไม่ใช่กลไกการทำลายไมเซลล์ด้วยความเข้มข้นของไอออนเกลือ<br>• ข้อ ข.: ผิด เพราะ Isomerization คือการเปลี่ยนโครงสร้างระหว่างไอโซเมอร์ ซึ่งเป็นปฏิกิริยาเคมี ไม่ได้ทำให้เกิดการตกตะกอนเฉียบพลันทางกายภาพ<br>• ข้อ ง.: ผิด เพราะ Epimerization คือการเปลี่ยนแปลงคอนฟิกูเรชันของ Chiral center เพียงตำแหน่งเดียว มักเกิดขึ้นช้าๆ ในสารละลายบางประเภท ไม่เกี่ยวข้องกับการตกตะกอนจากเกลือ<br>• ข้อ จ.: ผิด เพราะ Polymerization คือการเชื่อมต่อของมอนอเมอร์เป็นสายโซ่พอลิเมอร์โมเลกุลใหญ่ ไม่ใช่กลไกการตกตะกอนของไมเซลล์ Amphotericin B",
-      "answerImage": "cc1_product/image128.png",
+      "answerImage": "images/cc1_product/image128.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 3]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -120846,7 +120846,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ขนาดอนุภาค (Aerodynamic diameter) ของผงยาพ่นสูดที่มีประสิทธิภาพสูงสุดในการลงไปถึงบริเวณถุงลมปอด (Alveoli) คือเท่าใด?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image132.png",
       "choices": [
         "น้อยกว่า 0.5 micron",
         "0.5 - 1 micron",
@@ -120856,7 +120856,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 3,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. 1 - 5 micron<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามหลักสรีรวิทยาและหลักการนำส่งยาทางการหายใจ อนุภาคยาพ่นสูดที่มีขนาด Aerodynamic diameter ในช่วง 1-5 micron (Fine particle fraction) มีความเหมาะสมสูงสุดที่จะเคลื่อนที่ผ่านทางเดินหายใจส่วนบนและตกสะสมในบริเวณหลอดลมฝอยส่วนปลายและถุงลมปอด (Deep lung / Alveolar deposition) ด้วยกลไก Sedimentation และ Diffusion ตามมาตรฐานสากล<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะอนุภาคขนาดเล็กกว่า 0.5 micron มีมวลน้อยเกินไป จะลอยฟุ้งอยู่ในอากาศและถูกหายใจออก (Exhaled) สู่ภายนอกโดยไม่ตกสะสมบนเนื้อเยื่อปอด<br>• ข้อ ข.: ผิด เพราะช่วงขนาด 0.5-1 micron มีประสิทธิภาพการตกตะกอนต่ำ มักถูกขับออกพร้อมลมหายใจออก<br>• ข้อ ง.: ผิด เพราะอนุภาคขนาด 5-10 micron จะตกสะสมอยู่บริเวณทางเดินหายใจส่วนต้น เช่น หลอดลมใหญ่ (Tracheobronchial region) ไม่สามารถลงลึกถึงถุงลมปอด<br>• ข้อ จ.: ผิด เพราะอนุภาคขนาดใหญ่กว่า 10 micron จะถูกดักจับและชนติดอยู่บริเวณช่องปากและคอหอย (Oropharynx) ด้วยแรงเฉื่อย (Inertial impaction) และถูกกลืนลงกระเพาะอาหาร",
-      "answerImage": "cc1_product/image132.png",
+      "answerImage": "images/cc1_product/image132.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 7]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -120874,7 +120874,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อใดกล่าวได้ถูกต้องเกี่ยวกับเครื่องมือพ่นยาชนิดละอองลอยกำหนดขนาดการสูดเข้าทางปาก (Metered-Dose Inhaler: MDI)?",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image133.png",
       "choices": [
         "ใช้ Lactose เป็นสารตัวพา (Carrier) เพื่อช่วยนำส่งยา",
         "ผู้ป่วยไม่จำเป็นต้องกดพ่นยาให้สัมพันธ์กับการสูดหายใจเข้า",
@@ -120884,7 +120884,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 4,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. มี Metered valve ในการควบคุมปริมาตรยาที่พ่นแต่ละครั้งให้คงที่<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Metered-Dose Inhaler (MDI) บรรจุตัวยาในรูปสารละลายหรือสารแขวนตะกอนร่วมกับสารขับดันเหลวอัดความดัน โดยมี Metered valve ทำหน้าที่ตวงและควบคุมปริมาตรของเหลวยา (มักอยู่ที่ 25-100 microliters) ในแต่ละครั้งที่กดพ่น ทำให้ผู้ป่วยได้รับขนาดยา (Dose) ที่สม่ำเสมอและแม่นยำตามมาตรฐานเภสัชตำรับ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะการใช้ Coarse lactose เป็นสารตัวพา (Carrier) เป็นลักษณะเฉพาะของอุปกรณ์พ่นยาชนิดผงแห้ง (Dry Powder Inhaler: DPI) ไม่ใช่ MDI<br>• ข้อ ข.: ผิด เพราะ MDI จำเป็นต้องอาศัยเทคนิค Hand-breath coordination คือการกดพ่นยาพร้อมกับสูดหายใจเข้าช้าๆ ลึกๆ อย่างแม่นยำ<br>• ข้อ ค.: ผิด เพราะ MDI จำเป็นต้องใช้สารขับดัน (Propellant เช่น Hydrofluoroalkane: HFA) เพื่อสร้างแรงดันขับละอองยาออกมา<br>• ข้อ จ.: ผิด เพราะกระป๋องยา MDI เป็นภาชนะอัดความดัน (Pressurized canister) การเผาไฟจะทำให้สารขับดันขยายตัวและเกิดการระเบิดอย่างรุนแรง",
-      "answerImage": "cc1_product/image133.png",
+      "answerImage": "images/cc1_product/image133.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 8]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -121388,7 +121388,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 1,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Sterility testing (การทดสอบความปราศจากเชื้อ)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>แผ่นแปะผิวหนัง (Transdermal Delivery Systems / Patches) เป็นเภสัชภัณฑ์สำหรับใช้ภายนอกบนผิวหนังปกติที่ไม่มีบาดแผล จัดเป็น non-sterile dosage form จึงไม่ต้องผ่านการทดสอบ Sterility (ปราศจากเชื้อ) เหมือนยาฉีดหรือยาตา แต่จะควบคุมด้วย Microbial Enumeration Tests แทน ส่วนหัวข้อ Adhesive testing, In vitro release, Assay และ Uniformity of dosage units เป็นข้อกำหนดมาตรฐานที่จำเป็นต้องทดสอบตาม USP<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Identification เป็นข้อกำหนดบังคับสำหรับทุกเภสัชภัณฑ์เพื่อยืนยันชนิดของตัวยาสำคัญ<br>• ข้อ ค.: Assay เป็นข้อกำหนดบังคับเพื่อยืนยันปริมาณตัวยาสำคัญในแผ่นแปะ<br>• ข้อ ง.: In vitro drug release test (USP <724>) เป็นการทดสอบวิกฤตสำหรับระบบนำส่งยาทางผิวหนัง<br>• ข้อ จ.: Peel adhesion test เป็นข้อกำหนดเฉพาะที่จำเป็นสำหรับ Transdermal Patches เพื่อประกันว่าแผ่นยาจะติดแน่นกับผิวหนังตลอดระยะเวลาการใช้งาน",
-      "answerImage": "mock2_rxcu83/page_10_Im1.png",
+      "answerImage": "images/mock2_rxcu83/page_10_Im1.png",
       "note": "2567",
       "examType": "ข้อสอบจำลอง",
       "examYear": "Mock RxCU83 ชุดที่ 2",
@@ -123911,7 +123911,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากสูตรโครงสร้างของ cimetidine และ ranitidine พบว่า ranitidine มีฤทธิ์แรงกว่า cimetidine ถึง 10 เท่า เนื่องจาก ranitidine มีโครงสร้างที่เรียกว่าอะไรแทนที่โครงสร้าง imidazole ring ใน cimetidine",
-      "questionImage": "",
+      "questionImage": "images/qimg_medchem_r3_c2.png",
       "choices": [
         "Methyl cyanide",
         "Nitro",
@@ -123967,7 +123967,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้าง Simvastatin และ Pravastatin ข้อใดถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/purple2/simvastatin_pravastatin_q15_16.png",
       "choices": [
         "Cholestyramine ลดการดูดซึมของยา simvastatin เพราะโครงสร้าง Simvastatin มี lactone ring",
         "Cholestyramine ลดการดูดซึมของยา pravastatin เพราะโครงสร้าง Pravastatin มี carboxylic acid",
@@ -124919,7 +124919,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "สารสำคัญกลุ่ม Sennosides (Anthraquinone glycosides) ที่พบในใบมะขามแขก มีขั้วสูงเนื่องจากมีหมู่ฟังก์ชันไฮดรอกซิลและน้ำตาลหลายตำแหน่ง ควรเลือกใช้ตัวทำละลายใดในการสกัดที่เหมาะสมที่สุด",
-      "questionImage": "",
+      "questionImage": "images/cc1_product/image6.png",
       "choices": [
         "Ethyl acetate",
         "Hexane",
@@ -125955,7 +125955,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างใดกระตุ้นการเกิด rhabdomyolysis น้อยที่สุด (พิจารณาจากภาพโครงสร้างยากลุ่ม HMG-CoA reductase inhibitors ในตัวเลือก)",
-      "questionImage": "pharmtutor2024/set1_q10.png",
+      "questionImage": "images/pharmtutor2024/set1_q10.png",
       "choices": [
         "Simvastatin (โครงสร้าง ก)",
         "Pravastatin (โครงสร้าง ข)",
@@ -125983,7 +125983,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้าง dexamethasone บริเวณใดไม่สำคัญต่อการออกฤทธิ์ (พิจารณาตำแหน่ง A, B, C, D, E บนโครงสร้าง)",
-      "questionImage": "pharmtutor2024/set1_q18.png",
+      "questionImage": "images/pharmtutor2024/set1_q18.png",
       "choices": [
         "A",
         "B",
@@ -126011,7 +126011,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างในข้อใดออกฤทธิ์แบบ chain termination (พิจารณาจากภาพโครงสร้างยากลุ่ม Nucleoside Reverse Transcriptase Inhibitors ในตัวเลือก)",
-      "questionImage": "pharmtutor2024/set1_q34.png",
+      "questionImage": "images/pharmtutor2024/set1_q34.png",
       "choices": [
         "Zidovudine / NRTI structure (โครงสร้าง ก)",
         "โครงสร้าง ข",
@@ -126039,7 +126039,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างใดเข้าจับกับ binding site ของ GABA receptor ได้แตกต่างจากพวก",
-      "questionImage": "pharmtutor2024/set1_q59.png",
+      "questionImage": "images/pharmtutor2024/set1_q59.png",
       "choices": [
         "โครงสร้างในข้อ ก",
         "โครงสร้างในข้อ ข",
@@ -126067,7 +126067,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของ glucocorticosteroids ที่กำหนดให้ หากต้องการเพิ่มประสิทธิภาพของฤทธิ์ต้านการอักเสบควรพัฒนาที่ตำแหน่งใด",
-      "questionImage": "pharmtutor2024/set1_q63.png",
+      "questionImage": "images/pharmtutor2024/set1_q63.png",
       "choices": [
         "A และ B",
         "A และ C",
@@ -126095,7 +126095,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างใดไม่สามารถจับกับ estrogen receptor ได้",
-      "questionImage": "pharmtutor2024/set1_q70.png",
+      "questionImage": "images/pharmtutor2024/set1_q70.png",
       "choices": [
         "โครงสร้างในข้อ ก",
         "โครงสร้างในข้อ ข",
@@ -126123,7 +126123,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้าง chlorpropamide และ glipizide ความแตกต่างบริเวณใดทำให้เกิด hypoglycemia ได้ลดน้อยลง",
-      "questionImage": "pharmtutor2024/set1_q77.png",
+      "questionImage": "images/pharmtutor2024/set1_q77.png",
       "choices": [
         "1",
         "2",
@@ -126151,7 +126151,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างยา Digoxin ข้างต้น หากต้องการทดสอบสารสำคัญตามวงกลมในภาพ (โครงสร้าง cyclopentanoperhydrophenanthrene หรือ steroid nucleus) ควรใช้การทดสอบใดเพื่อพิสูจน์เอกลักษณ์สารดังกล่าว",
-      "questionImage": "pharmtutor2024/set1_q91.png",
+      "questionImage": "images/pharmtutor2024/set1_q91.png",
       "choices": [
         "Folin-Ciocalteu Content",
         "DPPH assay",
@@ -126207,7 +126207,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างที่กำหนดให้ ข้อใดไม่มีฤทธิ์ต้านการอักเสบ",
-      "questionImage": "pharmtutor2024/set2_q20.png",
+      "questionImage": "images/pharmtutor2024/set2_q20.png",
       "choices": [
         "โครงสร้าง A (Dexamethasone/Betamethasone)",
         "โครงสร้าง B (Prednisolone)",
@@ -126235,7 +126235,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้าง Omeprazole ตำแหน่งใด เข้าจับกับ proton pump receptor",
-      "questionImage": "pharmtutor2024/set2_q23.png",
+      "questionImage": "images/pharmtutor2024/set2_q23.png",
       "choices": [
         "A",
         "B",
@@ -126263,7 +126263,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของยากลุ่ม Integrase strand transfer inhibitors ที่กำหนดให้ บริเวณใดบ้างที่ส่งผลต่อการออกฤทธิ์ (MCQ ธ.ค. 66)",
-      "questionImage": "pharmtutor2024/set2_q35.png",
+      "questionImage": "images/pharmtutor2024/set2_q35.png",
       "choices": [
         "A: C-terminal domain",
         "B: Catalytic domain",
@@ -126291,7 +126291,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างที่กำหนดให้ต่อไปนี้ ข้อใดกล่าวผิดเกี่ยวกับคุณสมบัติของยา",
-      "questionImage": "pharmtutor2024/set2_q57.png",
+      "questionImage": "images/pharmtutor2024/set2_q57.png",
       "choices": [
         "Diazepam ผ่านกระบวนการ demethylation และ hydroxylation ได้ oxazepam",
         "Oxazepam มีค่าครึ่งชีวิตต่ำกว่า diazepam",
@@ -126347,7 +126347,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างในข้อใดมีความจำเพาะกับ progesterone receptor มากที่สุด",
-      "questionImage": "pharmtutor2024/set2_q68.png",
+      "questionImage": "images/pharmtutor2024/set2_q68.png",
       "choices": [
         "โครงสร้าง A",
         "โครงสร้าง B",
@@ -126403,7 +126403,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อใดคือ active form ของ cyclophosphamide (MCQ ธ.ค. 66)",
-      "questionImage": "pharmtutor2024/set2_q81.png",
+      "questionImage": "images/pharmtutor2024/set2_q81.png",
       "choices": [
         "4-Hydroxycyclophosphamide (ดูภาพประกอบ)",
         "Aldophosphamide (ดูภาพประกอบ)",
@@ -126431,7 +126431,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อใดต่อไปนี้ถูกต้อง",
-      "questionImage": "pharmtutor2024/set2_q85.png",
+      "questionImage": "images/pharmtutor2024/set2_q85.png",
       "choices": [
         "Fexofenadine เป็น active metabolite ของ Terfenadine",
         "Fexofenadine เป็น racemic mixture ของ Terfenadine",
@@ -126459,7 +126459,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ผู้ป่วยชาย อายุ 35 ปี มาขอซื้อยารักษาไซนัสอักเสบ ยาปฏิชีวนะในข้อใดไม่คงตัวในสภาวะกรดของกระเพาะอาหาร เนื่องจากโครงสร้างโมเลกุลสามารถเกิดปฏิกิริยา acid-catalyzed internal ketal formation ได้",
-      "questionImage": "cc1_product/image1.png",
+      "questionImage": "images/cc1_product/image1.png",
       "choices": [
         "Azithromycin (กลุ่ม Macrolides)",
         "Doxycycline (กลุ่ม Tetracyclines)",
@@ -126469,7 +126469,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 1,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Azithromycin (กลุ่ม Macrolides)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยากลุ่ม Macrolides (เช่น Erythromycin หรือ Azithromycin) มีวงแหวน macrolactone ring ที่มี ketone carbonyl และ hydroxyl group อยู่ใกล้กัน จึงเกิด intramolecular reaction ในกรดกลายเป็น cyclic ketal (anhydro form) ที่หมดฤทธิ์และระคายเคืองกระเพาะ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Doxycycline ในกลุ่ม Tetracyclines สลายตัวในกรดเกิด epimerization หรือ dehydration ได้สาร anhydrotetracycline แต่ไม่เกิด cyclic ketal formation<br>• ข้อ ค.: Amoxicillin ในกลุ่ม Penicillins ไม่คงตัวในกรดจากการเปิดวงแหวน beta-lactam ด้วยปฏิกิริยา hydrolysis<br>• ข้อ ง.: Levofloxacin ในกลุ่ม Fluoroquinolones มีความคงตัวสูงในสภาวะกรด ไม่เกิดปฏิกิริยา internal ketal<br>• ข้อ จ.: Sulfamethoxazole ในกลุ่ม Sulfonamides มีความคงตัวในกรดดีและไม่มีโครงสร้าง hydroxy-ketone ที่จะเกิด ketalization",
-      "answerImage": "cc1_product/image8.png",
+      "answerImage": "images/cc1_product/image8.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2567 ข้อ 8] [HAS_IMAGE: image1.png, image8.png] [RECONSTRUCTED: ปรับแต่งและเติมเต็มตัวเลือกให้สมบูรณ์]",
       "examType": "ข้อสอบจริง",
       "examYear": "2567",
@@ -126515,7 +126515,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในโครงสร้างทางเคมีของ Hypromellose (HPMC) หมู่ฟังก์ชันใดมีบทบาทสำคัญที่สุดในการสร้างพันธะไฮโดรเจนกับน้ำเพื่อกักเก็บความชุ่มชื้นในดวงตา",
-      "questionImage": "cc1_product/image3.png",
+      "questionImage": "images/cc1_product/image3.png",
       "choices": [
         "Hydrocarbon side chain",
         "Ester group",
@@ -126543,7 +126543,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ยารักษาโรคเกาต์ในข้อใดมีโครงสร้างทางเคมีเป็นอนุพันธ์ของ Purine และออกฤทธิ์ยับยั้งเอนไซม์ Xanthine oxidase เพื่อลดการสร้างกรดยูริกในร่างกาย",
-      "questionImage": "cc1_product/image4.png",
+      "questionImage": "images/cc1_product/image4.png",
       "choices": [
         "Allopurinol",
         "Febuxostat",
@@ -126571,7 +126571,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อใดต่อไปนี้คือรูปแบบโครงสร้างทางเคมีของสารในรูปแบบที่ออกฤทธิ์ (active form) ของยา Tenofovir alafenamide (TAF) หลังจากเข้าสู่เซลล์เป้าหมายในร่างกาย",
-      "questionImage": "cc1_product/image5.png",
+      "questionImage": "images/cc1_product/image5.png",
       "choices": [
         "Tenofovir diphosphate (Tenofovir-DP)",
         "Tenofovir monophosphate (Tenofovir-MP)",
@@ -126599,7 +126599,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในโครงสร้างทางเคมีของ Triamcinolone acetonide หมู่ฟังก์ชันในตำแหน่งหมายเลข 5 (หมู่ 16-alpha, 17-alpha acetonide) มีบทบาทสำคัญที่สุดในการเพิ่มสมบัติใดของโมเลกุลยา",
-      "questionImage": "cc1_product/image7.png",
+      "questionImage": "images/cc1_product/image7.png",
       "choices": [
         "เพิ่มความชอบน้ำ (Hydrophilicity) เพื่อให้ละลายน้ำได้ดีขึ้น",
         "เพิ่มความชอบไขมัน (Lipophilicity) เพื่อเพิ่มการซึมผ่านผิวหนังและเยื่อบุ",
@@ -126711,7 +126711,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างทางเคมีของฮอร์โมนโปรเจสติน Levonorgestrel การมีหมู่แทนที่ที่ตำแหน่งใดในโครงสร้างที่ช่วยลดฤทธิ์ฮอร์โมนเพศชาย (Androgenic effect) เมื่อเปรียบเทียบกับอนุพันธ์รุ่นแรกอย่าง Norethindrone",
-      "questionImage": "cc1_product/image13.png",
+      "questionImage": "images/cc1_product/image13.png",
       "choices": [
         "หมู่ Ethynyl (-C≡CH) ที่ตำแหน่ง C-17alpha",
         "หมู่ Hydroxyl (-OH) ที่ตำแหน่ง C-17beta",
@@ -126739,7 +126739,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างทางเคมีของยา Loratadine (Second-generation antihistamine) โครงสร้างส่วนใดทำหน้าที่สำคัญในการสร้างแรงยึดจับที่จำเพาะเจาะจงกับ Histamine H1-receptor",
-      "questionImage": "cc1_product/image14.png",
+      "questionImage": "images/cc1_product/image14.png",
       "choices": [
         "วงแหวน Pyridine และ Benzocycloheptene",
         "หมู่ Carbethoxy ester ที่ต่อกับวง Piperidine",
@@ -126767,7 +126767,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากข้อมูลคุณสมบัติทางเภสัชวิทยาและเคมีของ Nicotine และเมแทบอไลต์ ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับ Nicotine และ Cotinine",
-      "questionImage": "cc1_product/image17.png",
+      "questionImage": "images/cc1_product/image17.png",
       "choices": [
         "Nicotine แสดงคุณสมบัติเป็นกรดอ่อน มีค่า pKa เท่ากับ 8.0",
         "Nicotine ในสภาวะแตกตัวเป็นไอออนอย่างสมบูรณ์สามารถแพร่ผ่านเยื่อหุ้มเซลล์ได้ดีกว่ารูปที่ไม่แตกตัว",
@@ -126777,7 +126777,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 3,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Cotinine เป็นเมแทบอไลต์หลัก (Major active metabolite) ของ Nicotine ที่เกิดจากปฏิกิริยาออกซิเดชันผ่านเอนไซม์ CYP2A6<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Cotinine เป็น major metabolite ของ nicotine ซึ่งเกิดจากปฏิกิริยา C-oxidation โดยเอนไซม์ CYP2A6 ในตับ (ประมาณร้อยละ 70-80 ของ nicotine จะเปลี่ยนเป็น cotinine) และมีค่าครึ่งชีวิตยาวนานกว่า nicotine มาก (ประมาณ 16-20 ชั่วโมง เทียบกับ nicotine ที่มี half-life เพียง 1-2 ชั่วโมง)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Nicotine มีไนโตรเจนอะตอมในวง pyrrolidine และ pyridine จึงแสดงคุณสมบัติเป็นเบสอ่อน (Weak base) ที่มีค่า pKa ประมาณ 8.02 ไม่ใช่กรดอ่อน<br>• ข้อ ข.: Nicotine ในรูปไม่แตกตัวเป็นไอออน (non-ionized form) จะมีความชอบไขมันสูงและแพร่ผ่านเยื่อหุ้มเซลล์และเยื่อบุช่องปากได้ดีกว่ารูปไอออน<br>• ข้อ ง.: Cotinine มี half-life ยาวนานประมาณ 16-20 ชั่วโมง จึงนิยมใช้เป็น biomarker ในการตรวจประเมินการสูบบุหรี่ ในขณะที่ nicotine มี half-life สั้นมากเพียง 1-2 ชั่วโมง<br>• ข้อ จ.: Nicotine ถูกเปลี่ยนแปลงอย่างกว้างขวางที่ตับโดยผ่านกระบวนการ hepatic metabolism มีเพียงประมาณร้อยละ 10 เท่านั้นที่ขับออกทางไตในรูปเดิม",
-      "answerImage": "cc1_product/image45.png",
+      "answerImage": "images/cc1_product/image45.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 32]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -126823,7 +126823,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างทางเคมีของยากลุ่ม Proton pump inhibitor หากค่า pKa ของอะตอมไนโตรเจนบนวงแหวน Pyridine (pKa1) มีค่าลดลง จะส่งผลต่อคุณสมบัติและการออกฤทธิ์ของยาอย่างไร",
-      "questionImage": "cc1_product/image18.png",
+      "questionImage": "images/cc1_product/image18.png",
       "choices": [
         "ยาจะถูกกระตุ้น (protonated) ได้ยากขึ้น ส่งผลให้ออกฤทธิ์ช้าลง",
         "ยาจะจับกับเอนไซม์เป้าหมายได้แน่นขึ้นและออกฤทธิ์นานขึ้น",
@@ -126861,7 +126861,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 3,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Racemic mixture (Racemate)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>สารผสมในอัตราส่วน 1:1 (50:50) ระหว่างคู่ enantiomers ที่เป็นภาพสะท้อนในกระจกเงาของกันและกัน เรียกว่า Racemic mixture หรือ Racemate ซึ่งจะมีค่าการหมุนระนาบแสงโพลาไรซ์สุทธิเท่ากับศูนย์ (optically inactive)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Cis/Trans isomerism เป็น stereoisomer ชนิด geometric isomers ที่เกิดจากข้อจำกัดในการหมุนรอบพันธะคู่หรือในวงแหวน ไม่ใช่ chiral enantiomers<br>• ข้อ ข.: Diastereomers คือ stereoisomers ที่ไม่ใช่ภาพสะท้อนในกระจกเงาของกันและกัน (non-superimposable non-mirror images)<br>• ข้อ ง.: Conformational isomers เป็นไอโซเมอร์ที่เกิดจากการหมุนรอบพันธะเดี่ยว carbon-carbon<br>• ข้อ จ.: Meso compound เป็นโมเลกุลเดี่ยวที่มี chiral centers หลายตำแหน่งแต่มี internal plane of symmetry ทำให้ไม่มี chiral activity ในตัวเอง",
-      "answerImage": "cc1_product/image58.png",
+      "answerImage": "images/cc1_product/image58.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 43]",
       "examType": "ข้อสอบจริง",
       "examYear": "2565",
@@ -126879,7 +126879,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โมเลกุลยาชนิดหนึ่งมีหมู่ฟังก์ชันที่ให้ประจุ 2 ตำแหน่ง โดยตำแหน่ง A เป็นกรดอ่อนมีค่า pKa เท่ากับ 4.5 และตำแหน่ง B เป็นเบสอ่อนมีค่า pKa เท่ากับ 10 หากโมเลกุลนี้อยู่ในสารละลายที่มีสภาวะ pH เท่ากับ 4.5 สัดส่วนการแตกตัวของตำแหน่ง A และ B จะเป็นไปตามข้อใด",
-      "questionImage": "cc1_product/image70.png",
+      "questionImage": "images/cc1_product/image70.png",
       "choices": [
         "หมู่ A แตกตัว 100% และหมู่ B แตกตัว 0%",
         "หมู่ A แตกตัว 50% และหมู่ B แตกตัว 0%",
@@ -126935,7 +126935,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "รูปโครงสร้าง allopurinol ข้อใดถูกต้องที่สุด\n[ภาพโครงสร้าง Allopurinol]\n1. เป็น purine analog คล้าย hypoxanthine ยับยั้งเอนไซม์ xanthine oxidase\n2. log P มีค่าเป็นลบ (-1.8) แปลว่าชอบน้ำ (hydrophilic) สูง ผ่านเยื่อหุ้มเซลล์ด้วยการแพร่ผ่านได้ไม่ดี\n3. pKa ประมาณ 10.2 เมื่ออยู่ใน physiological pH 7.4 จะอยู่ในรูปที่ไม่แตกตัว (unionized form)",
-      "questionImage": "mock_rxcu83/page_3_Im1.png",
+      "questionImage": "images/mock_rxcu83/page_3_Im1.png",
       "choices": [
         "ข้อ 1 ถูก",
         "ข้อ 2 และ 3 ถูก",
@@ -127019,7 +127019,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างทางเคมีและความสัมพันธ์ระหว่างโครงสร้างกับฤทธิ์ (SAR) ของยา Dolutegravir (Integrase inhibitor) บริเวณโครงสร้างส่วนใดที่ทำหน้าที่สำคัญที่สุดในการจับคีเลตกับไอออนโลหะคู่ (Mg²⁺ chelation) บริเวณตำแหน่งเร่งของเอนไซม์ Integrase",
-      "questionImage": "mock2_rxcu83/page_2_Im2.png",
+      "questionImage": "images/mock2_rxcu83/page_2_Im2.png",
       "choices": [
         "วงแหวนไตรอะซีนที่มีอะตอมออกซิเจนเรียงตัว 3 ตำแหน่ง (Tris-oxygen chelating triad core)",
         "หมู่วงแหวน Difluorophenyl ด้านข้างโครงสร้าง",
@@ -127047,7 +127047,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างทางเคมีของยา Efavirenz (Non-nucleoside reverse transcriptase inhibitor: NNRTI) หมู่ฟังก์ชันหรือส่วนของโครงสร้างในข้อใดที่เป็นลักษณะเฉพาะสำคัญที่ช่วยให้ยาจับใน Allosteric pocket (NNRTI binding pocket) ได้อย่างแนบแน่น",
-      "questionImage": "mock2_rxcu83/page_2_Im3.png",
+      "questionImage": "images/mock2_rxcu83/page_2_Im3.png",
       "choices": [
         "หมู่ Cyclopropylacetylene และ Trifluoromethyl",
         "หมู่น้ำตาล Deoxyribose",
@@ -127075,7 +127075,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "การพัฒนาโครงสร้างจาก Tenofovir disoproxil fumarate (TDF) ไปเป็น Tenofovir alafenamide (TAF) ส่งผลให้ยามีพิษต่อไตและกระดูก (Renal and bone toxicity) ลดลงอย่างมาก เหตุผลเชิงโครงสร้างและเภสัชจลนศาสตร์ระดับโมเลกุลในข้อใดอธิบายปรากฏการณ์นี้ได้ถูกต้องที่สุด",
-      "questionImage": "mock2_rxcu83/page_2_Im4.png",
+      "questionImage": "images/mock2_rxcu83/page_2_Im4.png",
       "choices": [
         "TAF เป็น Prodrug ชนิด Phosphonoamidate ที่มีความคงตัวในพลาสมาสูงกว่า TDF ทำให้เข้าสู่เซลล์เม็ดเลือดขาวเป้าหมายได้ดีกว่าและมีระดับ Free Tenofovir ในกระแสเลือดต่ำกว่าถึงร้อยละ 90",
         "TAF ไม่ถูกเปลี่ยนเป็น Tenofovir diphosphate ภายในเซลล์ จึงไม่มีผลต่อการสร้างดีเอ็นเอของเซลล์ไต",
@@ -127103,7 +127103,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในผู้ป่วยที่รับประทานยา Calcium carbonate ร่วมกับยา Ciprofloxacin เกิดปัญหาการดูดซึมยา Ciprofloxacin ลดลงอย่างมาก (Reduced oral bioavailability) ส่วนของโครงสร้างทางเคมี (Functional groups) ในข้อใดของโมเลกุล Ciprofloxacin ที่ทำปฏิกิริยาคีเลชันกับไอออนแคลเซียม (Ca²⁺ chelation)",
-      "questionImage": "mock2_rxcu83/page_4_Im1.png",
+      "questionImage": "images/mock2_rxcu83/page_4_Im1.png",
       "choices": [
         "หมู่ 3-Carboxylic acid และ 4-Keto oxygen บนวงแหวน Quinolone",
         "วงแหวน Piperazine ที่ตำแหน่ง 7",
@@ -127327,7 +127327,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของยากลุ่ม Beta-2 adrenergic agonists โครงสร้างใดจัดเป็น Long-Acting Beta-2 Agonist (LABA) ที่มีสายยาวช่วยจับกับ Exosite บนรีเซปเตอร์\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p30_img2.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p30_img2.png",
       "choices": [
         "Terbutaline",
         "Formoterol",
@@ -127411,7 +127411,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของยา Misoprostol ข้อใดกล่าวผิด\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p30_img6.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p30_img6.png",
       "choices": [
         "โครงสร้างของยาเป็น Analogue ของ PGE1",
         "ยาอยู่ในรูป Prodrug",
@@ -127439,7 +127439,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ส่วนประกอบใดในโครงสร้างของยา Cephalosporins รุ่นที่สองและสาม (เช่น Cefamandole, Cefotetan, Cefoperazone) ที่เป็นสาเหตุทำให้เกิดภาวะเลือดออกผิดปกติ (Hypoprothrombinemia) และ Disulfiram-like reaction\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p31_img1.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p31_img1.png",
       "choices": [
         "หมู่ N-methylthiotetrazole (NMTT) ที่ตำแหน่ง C3",
         "หมู่ 7-methoxy group บนวงเบต้าแลกแทม",
@@ -127467,7 +127467,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของยากลุ่ม Fluoroquinolones (เช่น Ciprofloxacin) บริเวณใดของโครงสร้างที่ทำหน้าที่จับกับเอนไซม์เป้าหมาย (DNA gyrase และ Topoisomerase IV) ร่วมกับคีเลตของไอออนโลหะ\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p31_img3.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p31_img3.png",
       "choices": [
         "บริเวณ A (วง Piperazine)",
         "บริเวณ B (หมู่ Fluorine ที่ C6)",
@@ -127495,7 +127495,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพโครงสร้างของยา Pioglitazone (ยากลุ่ม Thiazolidinedione: TZD) ข้อใดกล่าวถูกต้อง\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p31_img7.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p31_img7.png",
       "choices": [
         "กลไกการออกฤทธิ์ของยา คือ กระตุ้น PPAR-gamma receptor ในเซลล์ไขมันและกล้ามเนื้อ",
         "ออกฤทธิ์โดยตรงในการกระตุ้นการหลั่งอินซูลินจากตับอ่อนเหมือนยากลุ่ม Sulfonylurea",
@@ -127523,7 +127523,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของ Estradiol ข้อใดถูกต้อง\nA) ระยะห่างระหว่างหมู่ Hydroxyl สองหมู่ที่เหมาะสม (3-OH ถึง 17-beta-OH) ส่งผลต่อการจับกับ Estrogen receptor\nB) การเติมหมู่ 17-alpha-alkyl (เช่น 17-alpha-ethinyl) ที่โครงสร้างจะป้องกันการเกิด oxidation ที่ตำแหน่ง 17 ทำให้สามารถบริหารโดยการรับประทานได้ (เช่น Ethinyl estradiol)\nC) Estradiol เมื่อถูก Metabolism จะได้ Estrone และ Estriol ซึ่ง Estriol มีความแรงมากกว่า Estrone\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p31_img9.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p31_img9.png",
       "choices": [
         "ข้อ A และ C ถูก",
         "ข้อ A และ B ถูก",
@@ -127551,7 +127551,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของ Morphine (โครงสร้าง 1: 3-OH, 6-OH), Codeine (โครงสร้าง 2: 3-OCH3, 6-OH) และ Heroin (โครงสร้าง 3: 3-OCOCH3, 6-OCOCH3) ข้อใดเรียงลำดับความแรงในการออกฤทธิ์ระงับปวด (Analgesic potency) จากมากไปน้อยได้ถูกต้อง\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p32_img1.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p32_img1.png",
       "choices": [
         "1 > 2 > 3",
         "2 > 1 > 3",
@@ -127579,7 +127579,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อใดกล่าวผิดเกี่ยวกับความสัมพันธ์ระหว่างโครงสร้างและการออกฤทธิ์ของยา Dicloxacillin และ Amoxicillin\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p32_img3.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p32_img3.png",
       "choices": [
         "หมายเลข 1 ในโครงสร้างของยา Dicloxacillin และ Amoxicillin คือ Thiazolidine ring",
         "หมายเลข 3 ในโครงสร้างของยา Dicloxacillin คือ Isoxazolyl ring ซึ่งวางตัวเกะกะ (Steric hindrance) ขัดขวางไม่ให้ Beta-lactamase enzyme เข้าจับได้",
@@ -130944,7 +130944,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "เภสัชกรผู้มีหน้าที่ปฏิบัติการในร้านขายยาแผนปัจจุบัน ไม่สวมเสื้อกาวน์และไม่ติดป้ายชื่อแสดงตนขณะส่งมอบยาและให้คำปรึกษาแก่ผู้รับบริการ ถือเป็นการกระทำที่ผิดต่อข้อบังคับและกฎหมายใด",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p24_img1.png",
       "choices": [
         "พระราชบัญญัติวิชาชีพเภสัชกรรม พ.ศ. 2537 และข้อบังคับสภาเภสัชกรรมว่าด้วยจรรยาบรรณแห่งวิชาชีพ",
         "พระราชบัญญัติยาเสพติดให้โทษ พ.ศ. 2522",
@@ -133877,7 +133877,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 5,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. 24 เดือน<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามประกาศกระทรวงสาธารณสุขและระเบียบปฏิบัติของสำนักงานคณะกรรมการอาหารและยา (อย.) ภายใต้ พ.ร.บ. ยา พ.ศ. 2510 ยาใหม่ (New Drugs) ที่ได้รับอนุมัติทะเบียนตำรับยาต้องเข้าสู่โครงการ Safety Monitoring Program (SMP) เพื่อติดตามและประเมินอาการไม่พึงประสงค์จากการใช้ยา (ADR) ในกลุ่มประชากรไทยเป็นระยะเวลาอย่างน้อย 2 ปี (24 เดือน)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะระยะเวลา 3 เดือนสั้นเกินไป ไม่เพียงพอต่อการประเมินสัญญาณความปลอดภัย (Safety signals) และอาการไม่พึงประสงค์ที่เกิดขึ้นได้ยาก<br>• ข้อ ข.: ผิด เพราะระยะเวลา 6 เดือนยังอยู่ในช่วงเริ่มต้นของการจำหน่าย ยาถูกใช้ในกลุ่มประชากรที่จำกัด<br>• ข้อ ค.: ผิด เพราะ 12 เดือน (1 ปี) ยังไม่ครบเกณฑ์ขั้นต่ำตามกฎหมายกำหนด โดย อย. กำหนดระยะเวลาติดตามอย่างน้อย 2 ปีเต็ม (24 เดือน)<br>• ข้อ ง.: ผิด เพราะ 18 เดือนยังไม่ครบระยะเวลาตามเกณฑ์มาตรฐานความปลอดภัยที่ระบุไว้ 2 ปี (24 เดือน)",
-      "answerImage": "cc1_product/image127.png",
+      "answerImage": "images/cc1_product/image127.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 2]",
       "examType": "ข้อสอบจริง",
       "examYear": "2558",
@@ -137155,7 +137155,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากกราฟข้างต้นเป็นกราฟแสดงการกระจายรายได้ของคนไทยในปี 2545 จากกราฟข้างต้นสามารถสรุปได้ว่าอย่างไร",
-      "questionImage": "pharmtutor2024/set1_q117.png",
+      "questionImage": "images/pharmtutor2024/set1_q117.png",
       "choices": [
         "การกระจายของข้อมูลเป็นแบบปกติ normal distribution",
         "การกระจายของข้อมูลเป็นแบบปกติ normal distribution (Mean > Mode)",
@@ -137211,7 +137211,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากการศึกษาผลของการใช้ยา Semaglutide ในการลดระดับน้ำตาลในเลือด",
       "caseStem": "จากการศึกษาผลของการใช้ยา Semaglutide ในการลดระดับน้ำตาลในเลือด",
       "question": "ข้อใดต่อไปนี้กล่าวถูกต้อง",
-      "questionImage": "pharmtutor2024/set2_q111.png",
+      "questionImage": "images/pharmtutor2024/set2_q111.png",
       "choices": [
         "การศึกษาการใช้ยา oral semaglutide เทียบกับ placebo ผลลัพธ์ของการศึกษาแตกต่างกันทางคลินิก แต่ไม่มีนัยสำคัญทางสถิติ",
         "การหาค่า I square แสดงถึงความแตกต่างกันของการศึกษาหากมีค่ามากแสดงว่า การศึกษาแต่ละชนิด ไม่มีความแตกต่างกัน",
@@ -137239,7 +137239,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากการศึกษาแบบ Cohort study เกี่ยวกับความสัมพันธ์ระหว่างการใช้ยาลดความดันกลุ่ม ACEIs กับการเกิดอาการไอ โดยมีข้อมูลดังตาราง (ผู้ใช้ ACEIs เกิดอาการไอ 20 จาก 200 ราย, ผู้ไม่ใช้ ACEIs เกิดอาการไอ 15 จาก 500 ราย) จงหาค่า Relative Risk (RR) ของอาการไอกับการใช้ยา ACEIs",
-      "questionImage": "cc1_product/image2.png",
+      "questionImage": "images/cc1_product/image2.png",
       "choices": [
         "3.59",
         "3.33",
@@ -137249,7 +137249,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       ],
       "answer": 2,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 3.33<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Relative Risk คำนวณจากอุบัติการณ์ในกลุ่มที่ได้รับยา (20 หาร 200 เท่ากับ 0.10) หารด้วยอุบัติการณ์ในกลุ่มที่ไม่ได้รับยา (15 หาร 500 เท่ากับ 0.03) ได้ค่า 0.10 หาร 0.03 เท่ากับ 3.33<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: 3.59 เป็นค่าที่ได้จากการคำนวณ Odds Ratio (20 คูณ 485 หารด้วย 180 คูณ 15 เท่ากับ 3.59) ซึ่งไม่ใช่ Relative Risk ของการศึกษา cohort<br>• ข้อ ค.: 0.28 เป็นส่วนกลับของ Relative Risk หรือเกิดจากการนำกลุ่ม unexposed มาตั้งหารด้วยกลุ่ม exposed<br>• ข้อ ง.: 2.69 เป็นตัวเลขหลอกที่คำนวณจากสัดส่วนกลุ่มตัวอย่างคลาดเคลื่อน<br>• ข้อ จ.: 0.30 เป็นค่าความเสี่ยงของกลุ่มควบคุมที่เลื่อนตำแหน่งทศนิยมผิดพลาด (0.03 กลายเป็น 0.30)",
-      "answerImage": "cc1_product/image9.png",
+      "answerImage": "images/cc1_product/image9.png",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2567 ข้อ 9] [HAS_IMAGE: image2.png, image9.png]",
       "examType": "ข้อสอบจริง",
       "examYear": "2567",
@@ -137575,7 +137575,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากภาพแสดงผลลัพธ์ Forest plot ของการศึกษาอภิมาน (Meta-analysis) เกี่ยวกับความเสี่ยงการเกิดการเสียชีวิตจากโรคหัวใจและหลอดเลือดจากการใช้ยากลุ่ม macrolides (รวมผลการศึกษาทั้งหมดได้ค่า Summary Relative Risk = 1.34, 95% CI: 1.05 - 1.70) ข้อใดกล่าวถูกต้อง\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p25_img1.png\">",
-      "questionImage": "",
+      "questionImage": "images/quiz_cc1/quiz_cc1_p25_img1.png",
       "choices": [
         "การได้รับยาในกลุ่ม macrolides สามารถเพิ่มความเสี่ยงในการเกิดการเสียชีวิตจากโรคหัวใจและหลอดเลือดได้ 34% อย่างมีนัยสำคัญทางสถิติ",
         "การได้รับยาในกลุ่ม macrolides สามารถลดความเสี่ยงในการเกิดการเสียชีวิตจากโรคหัวใจและหลอดเลือดได้อย่างมีนัยสำคัญทางสถิติ",
@@ -146621,7 +146621,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "ผู้ป่วยชายไทยคู่ อายุ 52 ปี มาพบแพทย์ด้วยอาการปวดบวมแดงร้อนอย่างเฉียบพลันที่บริเวณข้อนิ้วหัวแม่เท้าข้างขวา (1st MTP joint) ตรวจพบระดับกรดยูริกในเลือด (Serum Uric Acid) เท่ากับ 11 mg/dL ได้รับการวินิจฉัยเป็น Acute Gouty Arthritis และได้รับยา Colchicine",
     "caseStem": "ผู้ป่วยชายไทยคู่ อายุ 52 ปี มาพบแพทย์ด้วยอาการปวดบวมแดงร้อนอย่างเฉียบพลันที่บริเวณข้อนิ้วหัวแม่เท้าข้างขวา (1st MTP joint) ตรวจพบระดับกรดยูริกในเลือด (Serum Uric Acid) เท่ากับ 11 mg/dL ได้รับการวินิจฉัยเป็น Acute Gouty Arthritis และได้รับยา Colchicine",
     "question": "อาการไม่พึงประสงค์จากการใช้ยา (ADR) ในข้อใดเป็นอาการแสดงของพิษต่อระบบทางเดินอาหารที่พบได้บ่อยที่สุดเมื่อได้รับยา Colchicine ขนาดสูง",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image127.png",
     "choices": [
       "Stevens-Johnson Syndrome (SJS)",
       "Nephrotic syndrome",
@@ -147996,7 +147996,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อใดคือกลไกการออกฤทธิ์ของยา Amlodipine ในการลดความดันโลหิต",
-    "questionImage": "",
+    "questionImage": "images/pharmtutor2024/set1_q76.png",
     "choices": [
       "ยับยั้ง renin",
       "ยับยั้ง calcium channel",
@@ -151050,7 +151050,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "[RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์] ยาในกลุ่ม Calcium Channel Blockers (CCBs) ออกฤทธิ์ยับยั้งแคลเซียมแชนแนลชนิดใด และกลุ่มย่อยใดที่มีความจำเพาะในการขยายหลอดเลือดแดงส่วนปลาย (Vasodilation) สูงที่สุด",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image7.png",
     "choices": [
       "L-type calcium channels และกลุ่ม Dihydropyridines (DHPs เช่น Amlodipine)",
       "L-type calcium channels และกลุ่ม Non-dihydropyridines (Non-DHPs เช่น Verapamil)",
@@ -159260,7 +159260,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "ผู้ป่วยหญิงได้รับการวินิจฉัยว่าเป็นภาวะต่อมไทรอยด์ทำงานเกิน (Hyperthyroidism / Toxic Goiter) และเริ่มได้รับการรักษาด้วยยาต้านไทรอยด์ Propylthiouracil (PTU) 50 mg รับประทานครั้งละ 2 เม็ด วันละ 3 ครั้ง ร่วมกับยา Propranolol 10 mg วันละ 3 ครั้ง เพื่อควบคุมอาการใจสั่นและมือสั่น",
     "caseStem": "ผู้ป่วยหญิงได้รับการวินิจฉัยว่าเป็นภาวะต่อมไทรอยด์ทำงานเกิน (Hyperthyroidism / Toxic Goiter) และเริ่มได้รับการรักษาด้วยยาต้านไทรอยด์ Propylthiouracil (PTU) 50 mg รับประทานครั้งละ 2 เม็ด วันละ 3 ครั้ง ร่วมกับยา Propranolol 10 mg วันละ 3 ครั้ง เพื่อควบคุมอาการใจสั่นและมือสั่น",
     "question": "ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับคุณสมบัติและกลไกการออกฤทธิ์ของยา Propylthiouracil (PTU)?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image24.png",
     "choices": [
       "เป็นอนุพันธ์ของ thiourea",
       "ยับยั้งการหลั่งของ thyroid hormone",
@@ -161240,7 +161240,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อใดคือกลไกการออกฤทธิ์ของยา Glipizide",
-    "questionImage": "pharmtutor2024/set1_q76.png",
+    "questionImage": "images/pharmtutor2024/set1_q76.png",
     "choices": [
       "กระตุ้นเอนไซม์ AMPK ในเซลล์ตับ",
       "ลดการดูดซึมกลูโคสบริเวณลำไส้",
@@ -161582,7 +161582,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากความสัมพันธ์ระหว่างโครงสร้างและการออกฤทธิ์ (SAR) ของยาลดระดับน้ำตาลในเลือดกลุ่ม Thiazolidinediones (TZDs เช่น Pioglitazone) ข้อใดกล่าวถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p15_img1.png",
     "choices": [
       "กลไกการออกฤทธิ์หลักคือ เข้าจับและกระตุ้นตัวรับ Peroxisome Proliferator-Activated Receptor gamma (PPAR-gamma) ในเซลล์ไขมันและกล้ามเนื้อ",
       "โครงสร้าง Thiazolidinedione ring ไม่มีความสำคัญต่อการออกฤทธิ์ลดน้ำตาล",
@@ -165978,7 +165978,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ยาในกลุ่ม Proton Pump Inhibitors (PPIs) ในข้อใดที่จัดอยู่ใน Pregnancy Category C (ตามเกณฑ์ดั้งเดิมของ US-FDA) และไม่แนะนำให้เลือกใช้เป็นอันดับแรกในหญิงตั้งครรภ์หากมียาตัวอื่นที่ปลอดภัยกว่า",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p30_img5.png",
     "choices": [
       "Omeprazole (Category C)",
       "Lansoprazole (Category B)",
@@ -174403,7 +174403,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "หากผู้ป่วยมีประวัติรับประทานยาที่มีโครงสร้างที่กำหนดให้ แล้วมีอาการผื่นคัน บวมแดง ปากบวม และหายใจลำบาก ในฐานะเภสัชกรควรหลีกเลี่ยงการจ่ายยาชนิดใด",
-    "questionImage": "",
+    "questionImage": "images/pharmtutor2024/set1_q68.png",
     "choices": [
       "โครงสร้างในข้อ ก",
       "โครงสร้างในข้อ ข",
@@ -191998,7 +191998,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพโครงสร้างทางเคมีของ Nicotine ที่เป็นสารออกฤทธิ์ในหมากฝรั่งช่วยเลิกบุหรี่ (Nicotine gum) สารเคมีหรือปฏิกิริยาในข้อใดเหมาะสมที่สุดในการตรวจพิสูจน์เอกลักษณ์ (Identification test)",
-    "questionImage": "pharmtutor2024/set2_q86.png",
+    "questionImage": "images/pharmtutor2024/set2_q86.png",
     "choices": [
       "Shinoda's test",
       "Dragendorff's reagent",
@@ -194134,7 +194134,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างยาแก้ปวด/ต้านชัก/ไมเกรนหรือยาที่มีหมู่ Sulfonamide moiety (-SO2NH2) ในโมเลกุล ควรระมัดระวังเป็นพิเศษในผู้ป่วยประเภทใด\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p32_img5.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p32_img5.png",
     "choices": [
       "ผู้ป่วยที่มีประวัติแพ้ยาปฏิชีวนะกลุ่ม Sulfonamides (Sulfa allergy)",
       "ผู้ป่วยที่ได้รับยา CYP3A4 inhibitors",
@@ -198763,7 +198763,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อใดกล่าวผิดเกี่ยวกับคุณสมบัติและเทคนิคการใช้ยาพ่นชนิดหลอดกด (Metered-Dose Inhalers: MDIs)",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p30_img4.png",
     "choices": [
       "การกดยาและการสูดหายใจเข้าต้องทำพร้อมกันอย่างสัมพันธ์กัน (Hand-breath coordination)",
       "ตัวยาละลายหรือแขวนลอยอยู่ในรูปของเหลวภายในหลอดโลหะ",
@@ -212947,7 +212947,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "หากต้องการตรวจสอบเอกลักษณ์และคุณภาพผงสมุนไพรส่วนใบ (Folia / Leaves) ด้วยวิธีการส่องกล้องจุลทรรศน์ (Microscopic examination) เนื้อเยื่อและองค์ประกอบทางกายวิภาคข้อใดที่บ่งชี้ว่าผงดังกล่าวมาจากส่วนใบของพืช",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image21.png",
     "choices": [
       "พบเซลล์คุม ปากใบ (Stomata) และเนื้อเยื่อพาลิเซด (Palisade mesophyll)",
       "พบเนื้อเยื่อคอร์ก (Cork) และแคมเบียม (Cambium) หนาแน่น",
@@ -215244,7 +215244,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของ nicotine ที่กำหนดให้ ข้อใดคือวิธีการทดสอบที่เหมาะสม (MCQ ธ.ค. 66)",
-    "questionImage": "pharmtutor2024/set2_q86.png",
+    "questionImage": "images/pharmtutor2024/set2_q86.png",
     "choices": [
       "Dragendorff's test",
       "Folin-Ciocalteu Content",
@@ -215328,7 +215328,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "สารสำคัญกลุ่ม Sennosides (Anthraquinone glycosides) ที่พบในใบมะขามแขก มีขั้วสูงเนื่องจากมีหมู่ฟังก์ชันไฮดรอกซิลและน้ำตาลหลายตำแหน่ง ควรเลือกใช้ตัวทำละลายใดในการสกัดที่เหมาะสมที่สุด",
-    "questionImage": "cc1_product/image6.png",
+    "questionImage": "images/cc1_product/image6.png",
     "choices": [
       "Ethyl acetate",
       "Hexane",
@@ -215356,7 +215356,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างทางเคมีของสารในข้อใดต่อไปนี้ ไม่จัดเป็น สารกลุ่ม Phytoestrogen และไม่ช่วยบรรเทาอาการร้อนวูบวาบ (Vasomotor symptoms) ในสตรีวัยหมดประจำเดือน",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image53.png",
     "choices": [
       "Phytosterol",
       "Anthraquinone",
@@ -215366,7 +215366,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Anthraquinone<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Anthraquinone (เช่น Sennosides, Aloin) เป็นสารกลุ่มไกลโคไซด์ที่ออกฤทธิ์เป็นยาระบายกระตุ้นการบีบตัวของลำไส้ใหญ่ (Stimulant laxative) ไม่มีโครงสร้างคล้ายคลึงกับเอสโตรเจนและไม่มีฤทธิ์จับกับ Estrogen receptor จึงไม่ช่วยบรรเทาอาการวัยทอง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Phytosterol (เช่น Beta-sitosterol) มีโครงสร้างสเตอรอยด์พื้นฐานใกล้เคียงกับฮอร์โมนเพศและแสดงฤทธิ์ estrogenic เล็กน้อย<br>• ข้อ ค.: Stilbene (เช่น Resveratrol) จัดเป็น Phytoestrogen ที่มีฤทธิ์จับกับ Estrogen receptor ได้<br>• ข้อ ง.: Isoflavone (เช่น Genistein, Daidzein ในถั่วเหลือง) เป็น Phytoestrogen กลุ่มสำคัญที่มีหลักฐานชัดเจนในการบรรเทาอาการร้อนวูบวาบ<br>• ข้อ จ.: Lignan (พบใน Flaxseed) เป็น Phytoestrogen สำคัญอีกกลุ่มหนึ่งที่ร่างกายจะเปลี่ยนเป็น enterolactone ออกฤทธิ์คล้ายเอสโตรเจน",
-    "answerImage": "cc1_product/image53.png",
+    "answerImage": "images/cc1_product/image53.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 42]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -215384,7 +215384,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "หากต้องการตรวจสอบเอกลักษณ์ทางเคมีเบื้องต้นของโครงสร้างวงแหวนสเตียรอยด์ (Steroid nucleus / Cyclopentanoperhydrophenanthrene) ในตำรับยา ควรเลือกใช้น้ำยาทดสอบในข้อใดต่อไปนี้",
-    "questionImage": "cc1_product/image21.png",
+    "questionImage": "images/cc1_product/image21.png",
     "choices": [
       "Liebermann-Burchard test",
       "Dragendorff's test",
@@ -216084,7 +216084,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "สมุนไพรในข้อใดที่มีข้อควรระวังสำคัญคือไม่ควรแนะนำให้ใช้ในผู้ป่วยโรคเบาหวาน เนื่องจากอาจส่งผลรบกวนระดับน้ำตาลในเลือด",
-    "questionImage": "cc1_product/image100.png",
+    "questionImage": "images/cc1_product/image100.png",
     "choices": [
       "เถาวัลย์เปรียง",
       "รางจืด",
@@ -217240,7 +217240,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในการตรวจวิเคราะห์หาปริมาณแคลเซียมคาร์บอเนต (Calcium Carbonate raw material) ตามเภสัชตำรับ USP/BP กำหนดให้ละลายตัวยาในกรดเจือจาง ปรับสภาวะเป็นด่างรุนแรง (pH ประมาณ 12-13 ด้วย NaOH) เพื่อตกตะกอนแมกนีเซียม แล้วไตเตรทด้วยสารละลายมาตรฐาน Disodium EDTA การวิเคราะห์นี้ใช้อินดิเคเตอร์ชนิดใด",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image92.png",
     "choices": [
       "Hydroxynaphthol blue (หรือ Calconcarboxylic acid / Murexide)",
       "Phenolphthalein",
@@ -218416,7 +218416,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากข้อกำหนดในเภสัชตำรับหัวข้อการหาปริมาณ Aspirin ระบุว่า:\nนำตัวยา 1.5 กรัมใส่ในขวดรูปชมพู่ เติม 0.5 N NaOH 50 mL ต้มให้เดือดเบาๆ 10 นาที เติม Phenolphthalein แล้วไทเทรตสารละลายด่างส่วนเกินด้วย 0.5 N H2SO4",
     "caseStem": "จากข้อกำหนดในเภสัชตำรับหัวข้อการหาปริมาณ Aspirin ระบุว่า:\nนำตัวยา 1.5 กรัมใส่ในขวดรูปชมพู่ เติม 0.5 N NaOH 50 mL ต้มให้เดือดเบาๆ 10 นาที เติม Phenolphthalein แล้วไทเทรตสารละลายด่างส่วนเกินด้วย 0.5 N H2SO4",
     "question": "การวิเคราะห์หาปริมาณตัวยาสำคัญดังกล่าวจัดเป็นเทคนิคการไทเทรตชนิดใด",
-    "questionImage": "cc1_product/image80.png",
+    "questionImage": "images/cc1_product/image80.png",
     "choices": [
       "Direct titration โดยมี Sodium hydroxide เป็น Titrant",
       "Direct titration โดยมี Sulfuric acid เป็น Titrant",
@@ -218444,7 +218444,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากการตรวจวิเคราะห์ปริมาณตัวยา Salbutamol sulfate (มวลโมเลกุล 576.70 กรัมต่อโมล) ด้วยวิธี Non-aqueous titration โดยการไตเตรตด้วย 0.1 N Perchloric acid สารละลาย 0.1 N Perchloric acid 1 มิลลิลิตร จะเทียบเท่ากับ Salbutamol sulfate กี่มิลลิกรัม",
-    "questionImage": "cc1_product/image81.png",
+    "questionImage": "images/cc1_product/image81.png",
     "choices": [
       "14.42 มิลลิกรัม",
       "28.84 มิลลิกรัม",
@@ -218584,7 +218584,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "การตรวจหาปริมาณ Sodium chloride (NaCl) โดยการทำปฏิกิริยากับสารละลายมาตรฐาน Silver nitrate (AgNO3) เกิดเป็นตะกอนสีขาวของ Silver chloride (AgCl) จัดเป็นการวิเคราะห์โดยการไทเทรตประเภทใด",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image90.png",
     "choices": [
       "Karl Fischer titration",
       "Oxidation-reduction titration",
@@ -220327,7 +220327,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "หากต้องการเพิ่มประสิทธิภาพเทคนิคการวิเคราะห์ High-performance liquid chromatography ข้อใดไม่ควรปฏิบัติ",
-    "questionImage": "pharmtutor2024/set2_q89.png",
+    "questionImage": "images/pharmtutor2024/set2_q89.png",
     "choices": [
       "เพิ่มความยาว column",
       "ลด flow rate",
@@ -220355,7 +220355,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากการวิเคราะห์ system suitability ของยาชนิดหนึ่งด้วยวิธี high performance liquid chromatography พบว่าพีคของยามีพารามิเตอร์ ดังต่อไปนี้: Retention time = 200 mins, ความสูงของพีค = 25 cm, ความกว้างของพีคที่ฐาน = 20 cm, ความกว้างของพีคครึ่งหนึ่ง = 10 cm หากค่ามาตรฐานของ theoretical plate number เท่ากับ 2000 การวิเคราะห์ system suitability ครั้งนี้ผ่านหรือไม่ กำหนดความยาวของคอลัมน์เท่ากับ 25 cm สูตรการคำนวณ N = 16 x (tR / W)^2 และ H = L / N (MCQ ธ.ค. 66)",
-    "questionImage": "pharmtutor2024/set2_q90.png",
+    "questionImage": "images/pharmtutor2024/set2_q90.png",
     "choices": [
       "ผ่าน เนื่องจากมี theoretical plate number ผ่านเกณฑ์",
       "ผ่าน เนื่องจากมี plate height ผ่านเกณฑ์",
@@ -220523,7 +220523,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "นำตัวอย่างยา Metronidazole และเมแทบอไลต์ 2 ชนิด ได้แก่ Metronidazole metabolite ที่มีหมู่ carboxyl เพิ่มขึ้น และ metabolite ที่มีทั้งหมู่ hydroxyl และ carboxyl เพิ่มขึ้น ไปวิเคราะห์ด้วย TLC โดยใช้ Silica gel เป็น stationary phase และ Chloroform : Methanol (9:1) เป็น mobile phase จงเรียงลำดับค่า Rf จากน้อยไปมาก",
-    "questionImage": "cc1_product/image20.png",
+    "questionImage": "images/cc1_product/image20.png",
     "choices": [
       "Metronidazole < Metronidazole + carboxyl < Metronidazole + hydroxyl + carboxyl",
       "Metronidazole + hydroxyl + carboxyl < Metronidazole + carboxyl < Metronidazole",
@@ -220579,7 +220579,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพเครื่องมือที่มีส่วนประกอบของ Autosampler, Solvent delivery pump, คอลัมน์บรรจุสารแบบของเหลว และ UV-Vis Detector เครื่องมือดังกล่าวคือเครื่องมือวิเคราะห์ชนิดใด",
-    "questionImage": "cc1_product/image72.png",
+    "questionImage": "images/cc1_product/image72.png",
     "choices": [
       "Gas Chromatography",
       "Gas-Liquid Chromatography",
@@ -220635,7 +220635,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในการทดสอบความเหมาะสมของระบบโครมาโทกราฟี (System Suitability Testing; SST) สำหรับการวิเคราะห์ด้วยเครื่อง HPLC ค่าการแยกจำแนกพีค (Resolution; Rs) ระหว่างสองพีคที่อยู่ติดกันตามข้อกำหนดมาตรฐานทั่วไปในเภสัชตำรับ USP ควรมีค่าไม่น้อยกว่าเท่าใดเพื่อให้การแยกสมบูรณ์แบบ Baseline separation",
-    "questionImage": "cc1_product/image78.png",
+    "questionImage": "images/cc1_product/image78.png",
     "choices": [
       "ไม่น้อยกว่า 1.0",
       "ไม่น้อยกว่า 1.5",
@@ -220719,7 +220719,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพโครมาโตแกรมที่แสดงพีคการแยกของสารอนุพันธ์ต่างๆ โดยมีแกน X เป็น Retention time และแกน Y เป็น Absorbance ภาพดังกล่าวเป็นผลที่ได้จากการแยกวิเคราะห์ด้วยเทคนิคเครื่องมือชนิดใด",
-    "questionImage": "cc1_product/image83.png",
+    "questionImage": "images/cc1_product/image83.png",
     "choices": [
       "High Performance Liquid Chromatography (HPLC)",
       "Capillary electrophoresis",
@@ -220775,7 +220775,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพโครมาโทแกรมที่มีแกน X แสดงเวลาที่ใช้ในการชะสาร (Retention time; นาที) และแกน Y แสดงค่าการดูดกลืนแสง (Absorbance / mV) โดยปรากฏพีคแหลมคมแยกออกจากกันอย่างชัดเจนตามลำดับเวลา การวิเคราะห์นี้ใช้เครื่องมือใด",
-    "questionImage": "cc1_product/image89.png",
+    "questionImage": "images/cc1_product/image89.png",
     "choices": [
       "Differential Scanning Calorimetry (DSC)",
       "UV-Visible Spectrophotometer แบบสแกนความยาวคลื่น",
@@ -220831,7 +220831,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "หากต้องการแยกสารอนุพันธ์และวิเคราะห์ปริมาณตัวยาสำคัญ โดยผลการวิเคราะห์แสดงพีคของสารต่างๆ ตามเวลาที่สารชะออกจากคอลัมน์ (Retention time) ดังแสดงในโครมาโทแกรมตามภาพ การวิเคราะห์ดังกล่าวอาศัยเครื่องมือและวิธีวิเคราะห์ใด",
-    "questionImage": "cc1_product/image94.png",
+    "questionImage": "images/cc1_product/image94.png",
     "choices": [
       "High Performance Liquid Chromatography (HPLC)",
       "Capillary Electrophoresis (CE)",
@@ -220859,7 +220859,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างโมเลกุลของตัวยาที่กำหนดให้ในภาพ วิธีวิเคราะห์มาตรฐานที่เหมาะสมที่สุดในการควบคุมคุณภาพเพื่อแยกและหาปริมาณตัวยาสำคัญ (Assay) พร้อมทั้งตรวจวัดสิ่งเจือปนที่เกี่ยวข้อง (Related substances) คือวิธีใด",
-    "questionImage": "cc1_product/image95.png",
+    "questionImage": "images/cc1_product/image95.png",
     "choices": [
       "Confocal microscope",
       "Immunohistochemistry",
@@ -221083,7 +221083,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "ในการตรวจวิเคราะห์ยา Omeprazole และ Omeprazole Related Compound A ด้วยคอลัมน์ HPLC ได้ผลการทดสอบดังนี้:\n• Omeprazole: Retention time (tR1) = 8.5 นาที, ความกว้างฐานพีค (W1) = 0.8 นาที\n• Omeprazole Related Compound A: Retention time (tR2) = 10.5 นาที, ความกว้างฐานพีค (W2) = 1.2 นาที",
     "caseStem": "ในการตรวจวิเคราะห์ยา Omeprazole และ Omeprazole Related Compound A ด้วยคอลัมน์ HPLC ได้ผลการทดสอบดังนี้:\n• Omeprazole: Retention time (tR1) = 8.5 นาที, ความกว้างฐานพีค (W1) = 0.8 นาที\n• Omeprazole Related Compound A: Retention time (tR2) = 10.5 นาที, ความกว้างฐานพีค (W2) = 1.2 นาที",
     "question": "จงคำนวณหาค่า Resolution (Rs) ระหว่างพีคของสารทั้งสองชนิด และประเมินว่าระบบสามารถแยกสารทั้งสองออกจากกันได้อย่างสมบูรณ์ตามเกณฑ์มาตรฐานหรือไม่",
-    "questionImage": "cc1_product/image109.png",
+    "questionImage": "images/cc1_product/image109.png",
     "choices": [
       "2.4",
       "4.8",
@@ -221167,7 +221167,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากกราฟการวิเคราะห์เปรียบเทียบระหว่างตัวยาสำคัญ A และสารมาตรฐานภายใน B (Internal standard) ด้วยเทคนิค HPLC (แสดงเส้นตรง Calibration curve ที่มีค่า R ยกกำลังสอง = 0.9999) ข้อใดกล่าวถูกต้อง",
-    "questionImage": "cc1_product/image112.png",
+    "questionImage": "images/cc1_product/image112.png",
     "choices": [
       "ความเข้มข้นของสาร B มีผลทำให้ความชันของกราฟแปรเปลี่ยนไปในแต่ละจุดวิเคราะห์",
       "ความเข้มข้นของสาร A มีผลโดยตรงต่อการกำหนดจุดตัดแกนตั้ง (Y-intercept)",
@@ -221195,7 +221195,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพแผนผังการทำงานของระบบเครื่องมือวิเคราะห์ (ประกอบด้วย Solvent reservoirs, Degasser, High-pressure pump, Autosampler injector, Analytical column, และ UV/Vis Detector) เป็นการวิเคราะห์โดยใช้เครื่องมือชนิดใด",
-    "questionImage": "cc1_product/image115.png",
+    "questionImage": "images/cc1_product/image115.png",
     "choices": [
       "High Performance Liquid Chromatography (HPLC)",
       "Gas chromatography (GC)",
@@ -221279,7 +221279,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในการตรวจวิเคราะห์สารสลายตัวและสารปนเปื้อน (Related substances / Impurities) ของวัตถุดิบยา Acyclovir ด้วยเทคนิค HPLC กำหนดเกณฑ์มาตรฐานว่า ต้องพบ Guanine ไม่เกิน 2.0% และสารปนเปื้อนอื่นแต่ละตัวไม่เกิน 0.5% หากผลการทดสอบพบพื้นที่ใต้พีค (Peak Area) ของ Guanine = 500, Acyclovir = 19,300 และ Impurity อื่น = 200 (พื้นที่รวมทั้งหมด = 20,000) ผลการทดสอบนี้สรุปได้ตามข้อใด",
-    "questionImage": "mock_rxcu83/page_31_Im4.jpg",
+    "questionImage": "images/mock_rxcu83/page_31_Im4.jpg",
     "choices": [
       "Guanine คิดเป็น 2.5% และ Impurity อื่นคิดเป็น 1.0% จึงสรุปว่า ไม่ผ่านเกณฑ์มาตรฐาน",
       "Guanine คิดเป็น 1.5% และ Impurity อื่นคิดเป็น 0.3% จึงสรุปว่า ผ่านเกณฑ์มาตรฐาน",
@@ -221307,7 +221307,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างทางเคมีของตัวยาสำคัญดังกล่าว ซึ่งมีหมู่วงแหวนอะโรมาติกคอนจูเกต (Conjugated chromophore) และตรวจวิเคราะห์ด้วยเทคนิคโครมาโทกราฟีของเหลวสมรรถนะสูง ข้อใดกล่าวถูกต้องที่สุดเกี่ยวกับข้อกำหนดและการตรวจวิเคราะห์คุณภาพยาตามเภสัชตำรับ",
-    "questionImage": "mock2_rxcu83/page_6_Im1.png",
+    "questionImage": "images/mock2_rxcu83/page_6_Im1.png",
     "choices": [
       "สามารถใช้ค่า Retention time ของพีคหลักจากการทดสอบ Assay ด้วยเทคนิค Reverse-Phase HPLC ร่วมกับการเปรียบเทียบกับสารมาตรฐานเป็นส่วนหนึ่งในการตรวจเอกลักษณ์ (Identification) ได้",
       "ไม่สามารถใช้วิธี HPLC-UV ในการตรวจเอกลักษณ์ได้เนื่องจากไม่มีพันธะคู่",
@@ -221335,7 +221335,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพแสดงกลไกการแยกสารโดยคอลัมน์ที่มีประจุบวกหรือประจุลบบนผิว stationary phase และมีไอออนที่มีประจุตรงข้ามมาแย่งจับและชะหลุดออกมา แสดงถึงวิธีการวิเคราะห์ด้วยเทคนิคโครมาโทกราฟีแบบใด\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p26_img2.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p26_img2.png",
     "choices": [
       "Adsorption chromatography",
       "Ion-exchange chromatography",
@@ -221763,7 +221763,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากการตรวจวิเคราะห์เอกลักษณ์ของตัวยาสำคัญด้วย Infrared Spectroscopy (IR Spectrum) พบพีคการดูดกลืนแสงที่คมชัดและรุนแรง (Strong sharp band) ที่เลขคลื่นประมาณ 1,700 cm⁻¹ (1690 - 1750 cm⁻¹) พีคดังกล่าวแสดงถึงการสั่นแบบยืดตัว (Stretching vibration) ของหมู่ฟังก์ชันใดในโครงสร้างโมเลกุล",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image53.png",
     "choices": [
       "Carbonyl group (C=O stretching เช่น ใน ketone, ester, carboxylic acid)",
       "Hydroxyl group (O-H stretching ใน alcohol หรือ phenol)",
@@ -222185,7 +222185,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากใบรายงานผลการวิเคราะห์ (COA) ของวัตถุดิบ Raltegravir potassium หากผลการทดสอบพบว่าค่า Assay = 99.5% (เกณฑ์ 98.0 - 102.0%) และ Impurities ทุกตัวอยู่ในเกณฑ์มาตรฐาน สรุปผลการประเมินคุณภาพคือข้อใด?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image124.png",
     "choices": [
       "วัตถุดิบผ่านเกณฑ์มาตรฐานการยอมรับและสามารถนำไปใช้ในการผลิตยาได้ (Approved for production)",
       "ต้องกักกันวัตถุดิบไว้เนื่องจากไม่ตรงตามเป้าหมาย 100.0%",
@@ -222411,7 +222411,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "หากต้องการควบคุมคุณภาพวัตถุดิบ Griseofulvin ให้เป็นไอโซเมอร์ที่มีโครงสร้าง 3 มิติถูกต้องตามรูปภาพ [📷 มีรูปภาพประกอบ: image110.png] ควรเลือกใช้เครื่องมือวิเคราะห์ชนิดใด?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image110.png",
     "choices": [
       "Polarimeter (ตรวจวัดค่าการหมุนระนาบแสงโพลาไรซ์จำเพาะ Specific Optical Rotation)",
       "Refractometer (เครื่องวัดดัชนีหักเหของแสง)",
@@ -222859,7 +222859,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ผลการวิเคราะห์ใดเหมาะสำหรับการระบุเอกลักษณ์ของยา phenytoin",
-    "questionImage": "pharmtutor2024/set1_q95.png",
+    "questionImage": "images/pharmtutor2024/set1_q95.png",
     "choices": [
       "FTIR absorption spectrum (สเปกตรัมอินฟราเรดที่มี absorption bands สอดคล้องกับมาตรฐาน phenytoin)",
       "UV absorption spectrum เดียว",
@@ -222887,7 +222887,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จาก spectrum ของ nicotine ที่กำหนดให้ สามารถแสดงถึงข้อมูลใดได้บ้าง (MCQ ธ.ค. 66)",
-    "questionImage": "pharmtutor2024/set2_q88.png",
+    "questionImage": "images/pharmtutor2024/set2_q88.png",
     "choices": [
       "Plane polarized light",
       "Molecular weight",
@@ -223037,7 +223037,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. C=O stretching<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>สัญญาณการดูดกลืนรังสีอินฟราเรดที่ช่วงความถี่ 1650-1850 cm-1 เป็นสัญญาณพีคที่แรงและคมชัดอย่างยิ่งของหมู่ Carbonyl (C=O stretching) โดยที่ 1699 cm-1 เป็นสัญญาณจำเพาะของ carbonyl ในกรดคาร์บอกซิลิก คีโตน หรือแอไมด์<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: O-H stretching จะปรากฏเป็นพีคกว้าง (broad band) ในช่วงความถี่สูง 3200-3650 cm-1<br>• ข้อ ค.: C-O stretching จะปรากฏการดูดกลืนแสงในช่วงความถี่ต่ำ 1000-1300 cm-1<br>• ข้อ ง.: C-H (sp3) stretching ของหมู่อัลคิลจะปรากฏที่ความถี่ประมาณ 2850-2960 cm-1<br>• ข้อ จ.: C-C stretching ในโครงสร้างวงแหวนหรือแกนคาร์บอนจะปรากฏในช่วง fingerprint region 800-1200 cm-1",
-    "answerImage": "cc1_product/image53.png",
+    "answerImage": "images/cc1_product/image53.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 10]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -223055,7 +223055,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในการตรวจพิสูจน์เอกลักษณ์และหาปริมาณตัวยาสำคัญของยาเม็ด Paracetamol ตามมาตรฐานเภสัชตำรับ USP/BP ในขั้นตอนทดสอบเบื้องต้นระดับห้องปฏิบัติการทั่วไป นิยมใช้เครื่องมือวิเคราะห์ชนิดใด",
-    "questionImage": "cc1_product/image71.png",
+    "questionImage": "images/cc1_product/image71.png",
     "choices": [
       "Fluorescence spectrophotometer",
       "High Performance Liquid Chromatography",
@@ -223111,7 +223111,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "สเปกตรัมที่ได้จากการตรวจวิเคราะห์ด้วยเครื่องมืออินฟราเรดสเปกโทรสโกปี (Infrared Spectroscopy; IR) ตามมาตรฐานสากล แกน X และแกน Y ของกราฟแสดงผลคือค่าพารามิเตอร์ใดตามลำดับ",
-    "questionImage": "cc1_product/image76.png",
+    "questionImage": "images/cc1_product/image76.png",
     "choices": [
       "แกน X คือ Absorbance และแกน Y คือ Wavelength",
       "แกน X คือ Percent Transmittance และแกน Y คือ Wavenumber",
@@ -223139,7 +223139,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "เครื่องมือวิเคราะห์ทางเคมีชนิดใดที่สามารถระบุมวลโมเลกุลที่แม่นยำ (Accurate molecular weight) และรูปแบบการแตกหักของโครงสร้างโมเลกุล (Fragmentation pattern) เพื่อใช้ในการยืนยันโครงสร้างทางเคมีของสารสังเคราะห์และสารสกัดสมุนไพร",
-    "questionImage": "cc1_product/image82.png",
+    "questionImage": "images/cc1_product/image82.png",
     "choices": [
       "UV-Vis spectrophotometer",
       "Mass spectrometer",
@@ -223167,7 +223167,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างโมเลกุลของยา Griseofulvin ซึ่งมี Chiral centers ในโครงสร้าง การตรวจสอบควบคุมคุณภาพในข้อใดช่วยยืนยันเอกลักษณ์เฉพาะของโครงสร้างสเตอริโอไอโซเมอร์ที่ออกฤทธิ์ทางชีวภาพ (Active stereoisomer)",
-    "questionImage": "cc1_product/image87.png",
+    "questionImage": "images/cc1_product/image87.png",
     "choices": [
       "Refractive index (ดัชนีหักเหของแสง)",
       "Infrared (IR) spectroscopy",
@@ -223195,7 +223195,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากการตรวจวิเคราะห์สารด้วยเทคนิค Infrared (IR) spectroscopy พบพีคการดูดกลืนแสงที่ชัดเจนและรุนแรงที่เลขคลื่น 1685.16 cm⁻¹ พีคดังกล่าวแสดงถึงการสั่นของพันธะเคมีหรือหมู่ฟังก์ชันใดในโครงสร้างโมเลกุล",
-    "questionImage": "cc1_product/image88.png",
+    "questionImage": "images/cc1_product/image88.png",
     "choices": [
       "หมู่คาร์บอนิล (-C=O stretch)",
       "พันธะคู่ระหว่างคาร์บอน (-C=C- stretch)",
@@ -223223,7 +223223,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างโมเลกุลของยาต้านวัณโรค Rifampicin ซึ่งมีระบบพันธะคู่คอนจูเกตขนาดใหญ่ (Extensive conjugated chromophore) และสารละลายมีสีส้มแดงเข้มชัดเจน เครื่องมือวิเคราะห์สเปกโทรสโกปีชนิดใดเหมาะสมที่สุดในการหาปริมาณยาสำคัญได้อย่างสะดวกรวดเร็วตามกฎของ Beer-Lambert",
-    "questionImage": "cc1_product/image92.png",
+    "questionImage": "images/cc1_product/image92.png",
     "choices": [
       "UV-Visible Spectrophotometer",
       "Fourier-Transform Infrared Spectrometer (FT-IR)",
@@ -223251,7 +223251,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากข้อมูลสเปกตรัมของเครื่องมือวิเคราะห์ที่กำหนดให้ในภาพ (เครื่องมือ A แสดงสัญญาณเคมิคอลชิฟต์ของไฮโดรเจน/คาร์บอน, เครื่องมือ B แสดงการแตกตัวของไอออนตามอัตราส่วนมวลต่อประจุ m/z, เครื่องมือ C แสดงการดูดกลืนรังสีอินฟราเรดของหมู่ฟังก์ชัน) การตรวจวิเคราะห์ด้วยเครื่องมือคู่ใดร่วมกันที่สามารถนำมาใช้ระบุมวลโมเลกุลที่แน่นอนและพิสูจน์โครงสร้างทางเคมีที่สมบูรณ์ของสารได้อย่างชัดเจนที่สุด",
-    "questionImage": "cc1_product/image96.png",
+    "questionImage": "images/cc1_product/image96.png",
     "choices": [
       "เครื่องมือ A เท่านั้น",
       "เครื่องมือ B เท่านั้น",
@@ -223709,7 +223709,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 3,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Inductively Coupled Plasma Mass Spectrometry (ICP-MS) หรือ ICP-OES<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ICP-MS และ ICP-OES เป็นเครื่องมือวิเคราะห์ระดับอะตอม (Atomic spectroscopy) ที่ใช้วิเคราะห์หาชนิดและปริมาณของธาตุโลหะและกึ่งโลหะอนินทรีย์ (Elemental analysis) พลาสมาอุณหภูมิสูงจะทำลายพันธะเคมีของสารอินทรีย์จนแตกออกเป็นอะตอมเดี่ยวทั้งหมด จึงไม่สามารถใช้ระบุเอกลักษณ์โครงสร้างโมเลกุลสารอินทรีย์อย่าง Ethinyl Estradiol ได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: HPLC-UV เป็นวิธีมาตรฐานที่สามารถใช้ระบุเอกลักษณ์ได้ โดยเปรียบเทียบ Retention time ของตัวอย่างกับสารมาตรฐาน Ethinyl Estradiol<br>• ข้อ ข.: LC-MS เป็นเทคนิคที่มีความจำเพาะสูงมาก สามารถระบุน้ำหนักโมเลกุล ($m/z$) และ Fragmentation pattern ของ Ethinyl Estradiol ได้อย่างสมบูรณ์<br>• ข้อ ง.: FTIR เป็นวิธีมาตรฐานตามเภสัชตำรับ (Identification test) ในการยืนยันโครงสร้างของ Ethinyl Estradiol โดยเปรียบเทียบ Fingerprint region กับสเปกตรัมมาตรฐาน<br>• ข้อ จ.: NMR Spectroscopy (ทั้ง $^1\\text{H-NMR}$ และ $^{13}\\text{C-NMR}$) สามารถให้ข้อมูลการจัดเรียงอะตอมและโครงสร้างเคมี 3 มิติของโมเลกุล Ethinyl Estradiol ได้อย่างละเอียดแม่นยำ",
-    "answerImage": "mock2_rxcu83/page_10_Im1.png",
+    "answerImage": "images/mock2_rxcu83/page_10_Im1.png",
     "note": "2567",
     "examType": "ข้อสอบจำลอง",
     "examYear": "Mock RxCU83 ชุดที่ 2",
@@ -223727,7 +223727,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "พิจารณาจากโครงสร้างของโมเลกุลยาที่มี Chiral center (สาร chiral molecule ที่เป็น enantiomer) หัวข้อการทดสอบใดจำเป็นสำหรับการควบคุมคุณภาพยานี้\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p25_img3.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p25_img3.png",
     "choices": [
       "Optical rotation",
       "Enantiomeric purity",
@@ -226779,7 +226779,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จงประเมิน Certificate of Analysis (CoA) ของยา favipiravir ขนาด 200 mg (MCQ ธ.ค. 66)",
-    "questionImage": "pharmtutor2024/set2_q91.png",
+    "questionImage": "images/pharmtutor2024/set2_q91.png",
     "choices": [
       "ผ่านเกณฑ์ทุกข้อ",
       "ไม่ผ่าน เนื่องจากปริมาณสารสำคัญไม่อยู่ในช่วงมาตรฐาน",
@@ -226919,7 +226919,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากกราฟการสลายตัวของยาชนิดหนึ่ง ข้อใดคืออันดับปฏิกิริยาของยาชนิดนี้ (MCQ ธ.ค. 66)",
-    "questionImage": "pharmtutor2024/set2_q119.png",
+    "questionImage": "images/pharmtutor2024/set2_q119.png",
     "choices": [
       "Zero order",
       "First order",
@@ -227461,7 +227461,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 1,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. เพื่อประเมินความคงตัวและความปลอดภัยของยา โดยควบคุมสารสลายตัวไม่ให้เกินเกณฑ์กำหนดที่อาจก่อความเป็นพิษ<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การทดสอบสิ่งเจือปน (Impurities testing) มุ่งเน้นการตรวจวัดสารอินทรีย์แปลกปลอม สารตั้งต้นสังเคราะห์ที่หลงเหลือ และสารสลายตัวที่เกิดขึ้นระหว่างการเก็บรักษา เพื่อควบคุมปริมาณไม่ให้เกินเกณฑ์ Qualification threshold ตามแนวทาง ICH เพื่อรับรองความปลอดภัยและคุณภาพของยาตลอดอายุการใช้งาน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: การเพิ่มการละลายและการดูดซึมยาเป็นเป้าหมายของการออกแบบสูตรตำรับ (formulation development) ไม่ใช่เป้าหมายของการทดสอบสิ่งเจือปน<br>• ข้อ ค.: การควบคุมความหนืดและลักษณะกายภาพประเมินจาก Viscosity และ Description<br>• ข้อ ง.: การทดสอบ Impurities ไม่สามารถทดแทน Assay ได้ ทั้งสองหัวข้อเป็นการทดสอบที่ต้องทำควบคู่กันตามเกณฑ์ Universal tests<br>• ข้อ จ.: การตรวจสอบจุลินทรีย์จะประเมินผ่าน Microbial enumeration test และ Test for specified microorganisms ไม่ใช่การทดสอบสิ่งเจือปนทางเคมี",
-    "answerImage": "cc1_product/image12.png",
+    "answerImage": "images/cc1_product/image12.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 29] [RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์ จากคำสำคัญ Impurities ในข้อสอบจำ]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -227479,7 +227479,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากกราฟความสัมพันธ์ระหว่างค่าคงที่อัตราการสลายตัวของยาในรูป log k กับค่า pH ของสารละลาย (pH-rate profile) ข้อใดต่อไปนี้กล่าวถูกต้อง",
-    "questionImage": "cc1_product/image24.png",
+    "questionImage": "images/cc1_product/image24.png",
     "choices": [
       "กราฟนี้แสดงความสัมพันธ์ของความสามารถในการละลาย (Solubility) กับ pH",
       "ปฏิกิริยาการสลายตัวของยานี้เป็นปฏิกิริยาอันดับศูนย์ (Zero-order reaction) ในทุกช่วง pH",
@@ -227983,7 +227983,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างทางเคมีของโมเลกุลยาที่แสดงในภาพ ซึ่งมีหมู่ฟังก์ชัน Ester เป็นแกนหลักสำคัญในโครงสร้าง ปฏิกิริยาการสลายตัวทางเคมี (Chemical degradation pathway) ที่มีโอกาสเกิดขึ้นได้ง่ายที่สุดเมื่อสัมผัสกับน้ำหรือความชื้นคือปฏิกิริยาใด",
-    "questionImage": "cc1_product/image98.png",
+    "questionImage": "images/cc1_product/image98.png",
     "choices": [
       "Hydrolysis",
       "Oxidation",
@@ -228347,7 +228347,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากตารางผลการทดสอบความคงตัวของยาสำเร็จรูป โดยกำหนดให้เกณฑ์มาตรฐานปริมาณตัวยาสำคัญไม่ต่ำกว่า 90.0% of label claim (%LA): ข้อมูลพบว่า ที่ 3 เดือนได้ 101%, ที่ 6 เดือนได้ 99%, ที่ 1 ปีได้ 98%, ที่ 2 ปีได้ 88%, ที่ 3 ปีได้ 87% ยานี้จะมีอายุการเก็บรักษา (shelf-life) ได้นานเท่าใดตามเกณฑ์เภสัชตำรับ",
-    "questionImage": "cc1_product/image107.png",
+    "questionImage": "images/cc1_product/image107.png",
     "choices": [
       "3 เดือน",
       "6 เดือน",
@@ -228403,7 +228403,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากใบรับรองผลการวิเคราะห์ (COA) ของยา Cloxacillin capsules: Appearance ผ่าน, Identification ผ่าน, Assay ได้ 99.0% (เกณฑ์ 90.0 ถึง 120.0%), Average weight ผ่าน, Weight variation %RSD ได้ 5.0% (เกณฑ์ไม่เกิน ±7.5%), Disintegration ได้ 8 นาที (เกณฑ์ไม่เกิน 15 นาที), Dissolution ทุกหน่วยมากกว่า 80% ที่ 45 นาที (เกณฑ์ Q = 75%), Water content ได้ 4.2% (เกณฑ์ไม่เกิน 5.0%) ดังภาพ ข้อใดสรุปผลการวิเคราะห์ได้ถูกต้อง",
-    "questionImage": "cc1_product/image108.png",
+    "questionImage": "images/cc1_product/image108.png",
     "choices": [
       "ยาผ่านเกณฑ์การทดสอบคุณภาพในทุกหัวข้อ",
       "การแตกตัวไม่ผ่าน เพราะใช้เวลาน้อยกว่า 15 นาที",
@@ -229047,7 +229047,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากใบรายงานผลการวิเคราะห์ (Certificate of Analysis: COA) ของยาเม็ดทั่วไป ข้อใดกล่าวถึงหลักการอ่านและแปลผลที่ถูกต้อง?",
-    "questionImage": "cc1_product/image124.png",
+    "questionImage": "images/cc1_product/image124.png",
     "choices": [
       "ผลการทดสอบ Dissolution จะตัดสินว่าผ่านเกณฑ์ในการทดสอบขั้นแรก (S1) ได้ทันทีเมื่อค่าเฉลี่ยของยาทั้ง 6 เม็ดมากกว่าหรือเท่ากับ Q",
       "ผลการทดสอบ Disintegration จะถือว่าผ่านเกณฑ์หากเม็ดยาทั้งหมดละลายจนเป็นสารละลายใสไม่มีตะกอนภายในเวลาที่กำหนด",
@@ -229159,7 +229159,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากกราฟแสดงจลนศาสตร์การเสื่อมสลายของสารละลาย Losartan เมื่อได้รับแสงอย่างต่อเนื่อง พบว่าความเข้มข้นของ Losartan ลดลงแบบเอ็กซ์โพเนนเชียลตามเวลา และมีสารสลายตัว (Degradation products Compound 2 และ 3) เพิ่มขึ้นอย่างเป็นสัดส่วน ข้อสรุปใดถูกต้องที่สุดเกี่ยวกับอันดับของปฏิกิริยานี้",
-    "questionImage": "mock2_rxcu83/page_1_Im1.png",
+    "questionImage": "images/mock2_rxcu83/page_1_Im1.png",
     "choices": [
       "การเสื่อมสลายของยา Losartan เป็นไปตามปฏิกิริยาอันดับศูนย์ (Zero-order kinetics)",
       "การเสื่อมสลายของยา Losartan ไม่เป็นไปตามปฏิกิริยาอันดับศูนย์ (Non zero-order kinetics)",
@@ -229215,7 +229215,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพ แสดงภาชนะบรรจุที่มีแถบพลาสติกหดรัดฝาขวด (Shrink band / Tear-strip) ซึ่งจะฉีกขาดเมื่อมีการเปิด จัดเป็นภาชนะบรรจุชนิดใด\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p28_img1.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p28_img1.png",
     "choices": [
       "Tight container",
       "Well-closed container",
@@ -230369,7 +230369,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ตำรับ Aluminum hydroxide (AH) gel ปริมาตร 100 mL มีปริมาณเทียบเท่ากับ Aluminum oxide อยู่ 4 g หากต้องการเตรียมตำรับ AH gel ปริมาตร 500 mL โดยใช้วัตถุดิบ Aluminum hydroxide compressed gel (AHC compressed gel) ที่มี Aluminum oxide อยู่ 10% w/w จะต้องใช้วัตถุดิบ AHC compressed gel ปริมาณกี่กรัม",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image10.png",
     "choices": [
       "20 g",
       "200 g",
@@ -230379,7 +230379,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 200 g<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตำรับ 500 mL ต้องการ Aluminum oxide ปริมาณ (4 หาร 100) คูณ 500 เท่ากับ 20 g และวัตถุดิบเจลเข้มข้น 10% w/w จึงต้องใช้เจล 20 หาร 0.10 เท่ากับ 200 g<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: 20 g เป็นเพียงน้ำหนักของเนื้อสารบริสุทธิ์ Aluminum oxide ที่ต้องการ ไม่ใช่น้ำหนักของ compressed gel 10% w/w<br>• ข้อ ค.: 40 g เกิดจากการคำนวณสัดส่วนผิดพลาดด้วยการคูณ 2<br>• ข้อ ง.: 400 g คิดคำนวณจากความเข้มข้นเจล 5% w/w ซึ่งมากกว่าปริมาณที่ถูกต้อง 2 เท่า<br>• ข้อ จ.: 100 g ให้ปริมาณ Aluminum oxide เพียง 10 g ซึ่งไม่เพียงพอต่อสูตรตำรับ 500 mL",
-    "answerImage": "cc1_product/image10.png",
+    "answerImage": "images/cc1_product/image10.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2567 ข้อ 12] [HAS_IMAGE: image10.png]",
     "examType": "ข้อสอบจริง",
     "examYear": "2567",
@@ -230621,7 +230621,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "สารละลาย Adrenaline (Epinephrine) ความเข้มข้น 0.01% w/v มีความหมายตรงกับความเข้มข้นในข้อใดต่อไปนี้",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image26.png",
     "choices": [
       "0.1 mg/mL (หรืออัตราส่วน 1:10,000)",
       "1.0 mg/mL (หรืออัตราส่วน 1:1,000)",
@@ -230631,7 +230631,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 1,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. 0.1 mg/mL (หรืออัตราส่วน 1:10,000)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Adrenaline 0.01% w/v หมายถึงมีตัวยา 0.01 g ในสารละลาย 100 mL ซึ่งเท่ากับ 10 mg ใน 100 mL หรือเท่ากับ 0.1 mg/mL คิดเป็นอัตราส่วนความแรง 1:10,000 ซึ่งเป็นความแรงมาตรฐานที่ใช้ในการกู้ชีพ CPR หรือฉีดเข้าหลอดเลือดดำ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: 1.0 mg/mL คิดเป็นความเข้มข้น 0.1% w/v หรืออัตราส่วน 1:1,000 ซึ่งเป็นความแรงที่ใช้ฉีดเข้ากล้ามเนื้อ (IM) รักษาภาวะ anaphylaxis<br>• ข้อ ค.: 0.01 mg/mL คิดเป็นความเข้มข้น 0.001% w/v หรืออัตราส่วน 1:100,000 ซึ่งมักใช้ผสมในยาชาเฉพาะที่<br>• ข้อ ง.: 10 mg/mL คิดเป็นความเข้มข้น 1.0% w/v หรืออัตราส่วน 1:100 ซึ่งเข้มข้นเกินกว่าขนาดยามาตรฐานอย่างมาก<br>• ข้อ จ.: 1 g/mL เป็นค่าความเข้มข้นที่ผิดพลาดจากการคำนวณร้อยละ",
-    "answerImage": "cc1_product/image26.png",
+    "answerImage": "images/cc1_product/image26.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 33]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -230649,7 +230649,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "หากผู้ป่วยได้รับยา Aminophylline ทางหลอดเลือดดำ (IV) วัดระดับยาในเลือดเริ่มต้นได้ 68 mcg/ml ถ้า Aminophylline มี Half-life เท่ากับ 7 ชั่วโมง อยากทราบว่าจะมีระดับยาเหลือเท่าใดเมื่อเวลาผ่านไป 28 ชั่วโมง",
-    "questionImage": "cc1_product/image68.png",
+    "questionImage": "images/cc1_product/image68.png",
     "choices": [
       "2.125 mcg/ml",
       "4.25 mcg/ml",
@@ -230733,7 +230733,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อมูลการทดสอบความสม่ำเสมอของหน่วยยา (Uniformity of dosage units) ของยาเม็ด Meloxicam 10 mg ตามข้อกำหนด USP บท 905 ในขั้นที่ 1 (จำนวน 10 เม็ด) พบว่ามีค่าเฉลี่ยของปริมาณตัวยาสำคัญเท่ากับ 99.5% ของฉลาก อยากทราบว่าค่าตัวแปร k และค่าเป้าหมาย M ที่ต้องนำมาใช้คำนวณหาค่าการยอมรับ (Acceptance Value; AV) มีค่าเท่าใด",
-    "questionImage": "cc1_product/image74.png",
+    "questionImage": "images/cc1_product/image74.png",
     "choices": [
       "k เท่ากับ 2.4 และ M เท่ากับ 98.5%",
       "k เท่ากับ 2.4 และ M เท่ากับ 101.8%",
@@ -230817,7 +230817,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "การวิเคราะห์ปริมาณตัวยาสำคัญในยาเม็ด A (ระบุความแรง 40 มิลลิกรัมต่อเม็ด) โดยสุ่มตัวอย่างยาเม็ด A จำนวน 20 เม็ดมาชั่งน้ำหนักรวมได้ 1.000 กรัม จากนั้นนำมาบดเป็นผงละเอียดแล้วชั่งผงยามา 0.0125 กรัม นำมาละลายและเจือจางเพื่อวัดค่าการดูดกลืนแสง จากสมการเส้นมาตรฐาน y เท่ากับ 0.05x พบว่าตัวอย่างมีความเข้มข้นที่วัดได้เท่ากับ 11 ไมโครกรัมต่อมิลลิลิตร อยากทราบว่ายานี้มีปริมาณตัวยาสำคัญคิดเป็นกี่เปอร์เซ็นต์ของที่ระบุบนฉลาก (% Label amount)",
-    "questionImage": "cc1_product/image79.png",
+    "questionImage": "images/cc1_product/image79.png",
     "choices": [
       "120%",
       "110%",
@@ -230901,7 +230901,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ผงยา X หนัก 150 มิลลิกรัม ตรวจวิเคราะห์พบว่ามีปริมาณตัวยาสำคัญอยู่ 142 มิลลิกรัม และมีปริมาณความชื้น (Water content) เท่ากับ 4.72% อยากทราบว่าผงยานี้จะมีปริมาณตัวยาสำคัญคิดเทียบกับน้ำหนักแห้งปราศจากน้ำ (On the dried basis) คิดเป็นกี่เปอร์เซ็นต์ของค่าที่ระบุบนฉลาก",
-    "questionImage": "cc1_product/image84.png",
+    "questionImage": "images/cc1_product/image84.png",
     "choices": [
       "90.4%",
       "94.7%",
@@ -230957,7 +230957,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากข้อกำหนด USP Monograph: Acyclovir contains not less than 98.5 percent and not more than 101.0 percent of C8H11N5O3, calculated on the anhydrous basis. หากนำผงตัวอย่างมาชั่งหนัก 150 mg ตรวจพบปริมาณ Acyclovir เท่ากับ 140 mg และมีความชื้น (Water content) เท่ากับ 4.27% ตัวอย่างนี้ผ่านเกณฑ์มาตรฐานหรือไม่ และมีปริมาณร้อยละของตัวยาสำคัญต่อน้ำหนักผงแห้งเท่าใด",
-    "questionImage": "cc1_product/image86.png",
+    "questionImage": "images/cc1_product/image86.png",
     "choices": [
       "ผ่านเกณฑ์มาตรฐาน เพราะมีปริมาณตัวยาสำคัญ 98.8% on anhydrous basis",
       "ผ่านเกณฑ์มาตรฐาน เพราะมีปริมาณตัวยาสำคัญ 99.6% on anhydrous basis",
@@ -231041,7 +231041,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ตามเกณฑ์มาตรฐาน USP monograph ระบุว่า Acyclovir contains not less than 98.0 percent and not more than 101.0 percent of C8H11N5O3, calculated on the anhydrous basis. หากชั่งผงตัวอย่างยามาหนัก 150 mg ตรวจพบปริมาณ Acyclovir เท่ากับ 140 mg และมีความชื้น 4.27% จงคำนวณหาร้อยละของปริมาณ Acyclovir ต่อน้ำหนักผงแห้ง (Anhydrous basis)",
-    "questionImage": "cc1_product/image86.png",
+    "questionImage": "images/cc1_product/image86.png",
     "choices": [
       "90.00%",
       "90.40%",
@@ -231797,7 +231797,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากข้อมูลการควบคุมคุณภาพยาเม็ดขนาด 400 mg ซึ่งกำหนดเกณฑ์มาตรฐาน % Labeled amount อยู่ที่ 97.0% - 101.0% เมื่อนำตัวอย่าง 2 รุ่นการผลิตมาตรวจหาปริมาณตัวยาสำคัญ (Assay) พบว่า Lot 1 ตรวจพบ 390 mg และ Lot 2 ตรวจพบ 385 mg ข้อใดต่อไปนี้สรุปถูกต้อง",
-    "questionImage": "cc1_product/image118.png",
+    "questionImage": "images/cc1_product/image118.png",
     "choices": [
       "Lot 1 ผ่านเกณฑ์มาตรฐาน และ Lot 2 ผ่านเกณฑ์มาตรฐาน",
       "Lot 1 ผ่านเกณฑ์มาตรฐาน และ Lot 2 ไม่ผ่านเกณฑ์มาตรฐาน",
@@ -231853,7 +231853,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จงคำนวณหาค่า Required HLB (rHLB) ของสูตรตำรับครีมหรืออิมัลชันต่อไปนี้\nRx.\nMineral Oil: 30 g (rHLB = 12)\nWool fat: 1.5 g (rHLB = 10)\nCetyl alcohol: 1.0 g (rHLB = 15)\nEmulsifier: qs\nWater: qs ad 90 mL",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image145.png",
     "choices": [
       "10",
       "12",
@@ -231863,7 +231863,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 12<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การคำนวณค่า Required HLB รวมของวัฏภาคน้ำมัน (Oil phase) อาศัยหลัก Weighted average: น้ำหนักรวมของวัฏภาคน้ำมัน = 30 + 1.5 + 1.0 = 32.5 g ผลรวมของผลคูณ (น้ำหนัก คูณ ค่า rHLB) = (30 คูณ 12) + (1.5 คูณ 10) + (1.0 คูณ 15) = 360 + 15 + 15 = 390 ดังนั้นค่า rHLB รวม = 390 หารด้วย 32.5 = 12.0 พอดีตามหลักเภสัชกรรมคำนวณ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะค่า 10 เป็นค่า rHLB เฉพาะของ Wool fat เพียงตัวเดียว ไม่ได้ถ่วงน้ำหนักตามสัดส่วนของวัฏภาคน้ำมันทั้งหมด<br>• ข้อ ค.: ผิด เพราะผลการคำนวณถ่วงน้ำหนักได้ 12.0 ไม่ใช่ 13<br>• ข้อ ง.: ผิด เพราะผลการคำนวณถ่วงน้ำหนักได้ 12.0 ไม่ใช่ 14<br>• ข้อ จ.: ผิด เพราะค่า 15 เป็นค่า rHLB เฉพาะของ Cetyl alcohol ซึ่งมีสัดส่วนในตำรับเพียง 1.0 g เท่านั้น",
-    "answerImage": "cc1_product/image145.png",
+    "answerImage": "images/cc1_product/image145.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 21]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -231881,7 +231881,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "หากต้องการเตรียมอิมัลชันที่มีค่า rHLB เป้าหมายเท่ากับ 12.0 โดยการเลือกใช้สารลดแรงตึงผิวคู่ผสมระหว่าง Tween (HLB = 14.9) และ Span (HLB = 4.7) จะต้องผสมสารลดแรงตึงผิวทั้งสองตัวในอัตราส่วน (Tween:Span) เท่าใด?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image146.png",
     "choices": [
       "Tween:Span = 7.3 : 2.9 (หรือประมาณ 7.3 : 3)",
       "Tween:Span = 2.9 : 7.3",
@@ -231891,7 +231891,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 1,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Tween:Span = 7.3 : 2.9 (หรือประมาณ 7.3 : 3)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>คำนวณโดยใช้หลัก Alligation Alternate: วางค่าเป้าหมาย HLB 12.0 ไว้ตรงกลาง ค่าของ Tween (14.9) ลบด้วย 12.0 จะได้ส่วนของ Span เท่ากับ 2.9 ส่วน และค่าเป้าหมาย 12.0 ลบด้วยค่าของ Span (4.7) จะได้ส่วนของ Tween เท่ากับ 7.3 ส่วน ดังนั้นอัตราส่วน Tween ต่อ Span คือ 7.3 ต่อ 2.9 (หรือประมาณ 7.3 ต่อ 3) ตามหลักการคำนวณสัดส่วนสารลดแรงตึงผิว<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: ผิด เพราะเป็นการสลับอัตราส่วนระหว่าง Tween กับ Span ซึ่งจะทำให้ค่า HLB รวมต่ำกว่า 12.0 อย่างมาก<br>• ข้อ ค.: ผิด เพราะเกิดจากการนำค่าตัวเลขที่ไม่ได้ผ่านการคำนวณ Alligation มาจับคู่กัน<br>• ข้อ ง.: ผิด เพราะเป็นการคำนวณสลับสัดส่วนและผิดหลักการ Alligation<br>• ข้อ จ.: ผิด เพราะนำค่า HLB เดิมของ Span (4.7) มาใส่โดยตรงโดยไม่ได้ผ่านการหาส่วนต่างของ Alligation",
-    "answerImage": "cc1_product/image146.png",
+    "answerImage": "images/cc1_product/image146.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 22]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -231909,7 +231909,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในการจัดเตรียมตำรับยาเหน็บช่องคลอดจำนวน 10 แท่ง แต่ละแท่งประกอบด้วยตัวยาสำคัญ 200 mg หากพิมพ์ยาเหน็บนี้มีน้ำหนักเมื่อหล่อด้วยยาพื้นโกโก้บัตเตอร์บริสุทธิ์เท่ากับ 2.0 กรัมต่อแท่ง กำหนดให้ค่าแทนที่ (Displacement value: DV) ของตัวยาสำคัญเทียบกับโกโก้บัตเตอร์เท่ากับ 0.8 และยาพื้น PEG Base ที่นำมาใช้จริงมีความหนาแน่นสัมพัทธ์ต่อโกโก้บัตเตอร์เท่ากับ 1.25 จะต้องชั่งใช้ยาพื้น PEG Base ทั้งหมดกี่กรัมต่อยาเหน็บ 1 แท่ง?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image149.png",
     "choices": [
       "2.19 g",
       "2.38 g",
@@ -231919,7 +231919,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 2.38 g<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ขั้นตอนการคำนวณ: 1) ปริมาณโกโก้บัตเตอร์ที่ถูกแทนที่ด้วยตัวยา = 0.2 g หารด้วย 0.8 = 0.25 g 2) น้ำหนักโกโก้บัตเตอร์ที่ต้องการต่อ 1 แท่ง = 2.0 - 0.25 = 1.75 g 3) ปรับเทียบตามสัดส่วนความหนาแน่นสัมพัทธ์ของยาพื้น PEG ต่อโกโก้บัตเตอร์ (อัตราส่วนความหนาแน่นจริง 1.25 ต่อ 0.92 = 1.36) ทำให้น้ำหนัก PEG Base ที่ต้องใช้ = 1.75 คูณ 1.36 = 2.38 กรัมต่อแท่งอย่างถูกต้องตามหลักการคำนวณทางเภสัชกรรม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะเกิดจากการคำนวณสัดส่วนค่าความหนาแน่นไม่ถูกต้อง<br>• ข้อ ค.: ผิด เพราะ 2.50 g ได้จากการนำ 2.0 g คูณ 1.25 โดยลืมหักปริมาณยาพื้นส่วนที่ถูกแทนที่ด้วยตัวยาสำคัญ<br>• ข้อ ง.: ผิด เพราะตัวเลขสูงเกินไปจากการคำนวณสูตรผิดพลาด<br>• ข้อ จ.: ผิด เพราะไม่ได้นำค่า Displacement value ของตัวยามาหักลบปริมาตร",
-    "answerImage": "cc1_product/image149.png",
+    "answerImage": "images/cc1_product/image149.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 26]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -234328,7 +234328,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "การทดสอบการละลาย (Dissolution test) ตามเภสัชตำรับ USP <711> ที่กำหนดให้ทดสอบ 2 ขั้นตอน ได้แก่ Acid stage (สภาวะกรด 2 ชั่วโมง) แล้วตามด้วย Buffer stage (pH 6.8) เป็นการทดสอบสำหรับยารูปแบบใด",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image75.png",
     "choices": [
       "Immediate-release tablets",
       "Extended-release tablets",
@@ -236176,7 +236176,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "เมื่อนำยาเม็ด Enalapril maleate ไปทดสอบการแตกตัวด้วยเครื่องมือทดสอบการแตกตัว (Disintegration tester) ตามเกณฑ์เภสัชตำรับ พบว่าเมื่อเวลาผ่านไปครบตามเกณฑ์มาตรฐาน เม็ดยายังไม่มีการแตกตัวออก ควรปรับปรุงสูตรตำรับโดยการเพิ่มสารช่วยในกลุ่มใด?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image114.png",
     "choices": [
       "สารช่วยแตกตัวประสิทธิภาพสูง (Superdisintegrant เช่น Croscarmellose sodium หรือ SSG)",
       "สารช่วยหล่อลื่นชนิดไม่ชอบน้ำ (Hydrophobic lubricant เช่น Magnesium stearate)",
@@ -238203,7 +238203,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพปัญหาข้อบกพร่องของยาเม็ดที่พบว่ามีผงยาบางส่วนติดอยู่กับผิวหน้าสากตอกหรือผนังเบ้าตอก (Die wall) ทำให้ผิวหน้าเม็ดยาเป็นหลุมขรุขระ ไม่เรียบเงา (Sticking and Picking) วิธีการแก้ไขปัญหาที่เหมาะสมที่สุดคือข้อใด",
-    "questionImage": "cc1_product/image22.png",
+    "questionImage": "images/cc1_product/image22.png",
     "choices": [
       "เติมสารยึดเกาะ (Binder) เพิ่มขึ้นในสูตรตำรับ",
       "เติมสารต้านการติดสาก (Anti-adherent) หรือเพิ่มสารหล่อลื่น (Lubricant)",
@@ -238213,7 +238213,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เติมสารต้านการติดสาก (Anti-adherent) หรือเพิ่มสารหล่อลื่น (Lubricant)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ปัญหา Sticking และ Picking เกิดจากผงยาติดกับหน้าสากตอกหรือผนังเบ้าตอก แก้ไขได้โดยการเติมสารต้านการติดสาก (Anti-adherent เช่น Talc หรือ Colloidal silicon dioxide), เพิ่มสารหล่อลื่น (Lubricant เช่น Magnesium stearate), อบไล่ความชื้นในแกรนูลให้เหมาะสม หรือขัดทำความสะอาดผิวหน้าสากตอก<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: การเติมสารยึดเกาะมากเกินไปอาจทำให้แกรนูลมีความเหนียวเพิ่มขึ้นและยิ่งทำให้เกิดปัญหา sticking รุนแรงขึ้น<br>• ข้อ ค.: ความชื้นที่สูงเกินไปในแกรนูลเป็นสาเหตุหลักประการหนึ่งของการเกิด sticking การเพิ่มความชื้นจะยิ่งซ้ำเติมปัญหา<br>• ข้อ ง.: การเพิ่มความเร็วเครื่องตอกไม่ได้ช่วยลดแรงยึดติดระหว่างผงยากับผิวโลหะของสากตอก<br>• ข้อ จ.: สารช่วยแตกตัวไม่มีผลโดยตรงต่อการป้องกันการติดเบ้าตอกของผงยา",
-    "answerImage": "cc1_product/image60.png",
+    "answerImage": "images/cc1_product/image60.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 48]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -238231,7 +238231,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพข้อบกพร่องของยาเม็ดที่พบว่าส่วนยอดหรือผิวด้านบนของเม็ดยาเกิดการกะเทาะแยกตัวหลุดออกจากส่วนล่างของเม็ดยาในแนวขวาง ปัญหานี้มีชื่อเรียกว่าอย่างไร",
-    "questionImage": "cc1_product/image23.png",
+    "questionImage": "images/cc1_product/image23.png",
     "choices": [
       "Capping",
       "Lamination",
@@ -238595,7 +238595,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ปัญหาข้อบกพร่องของยาเม็ด (Tablet defect) ที่เนื้อผงยาติดกับพื้นผิวของสลักตอกตัวบน (Upper punch) ทำให้รอยตัวอักษรหรือตราสัญลักษณ์ที่ปั๊มบนหน้าเม็ดยาแหว่งหรือไม่สมบูรณ์ เรียกชื่อข้อบกพร่องนี้ว่าอย่างไร",
-    "questionImage": "cc1_product/image91.png",
+    "questionImage": "images/cc1_product/image91.png",
     "choices": [
       "Capping",
       "Lamination",
@@ -240305,7 +240305,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "สูตรตำรับยาแคปซูลนิ่ม Isotretinoin 20 mg Soft Gelatin Capsules:\nตัวยาสำคัญและส่วนประกอบภายใน: Isotretinoin 20 mg, Hydrogenated vegetable oil 64 mg, White wax 18 mg, Disodium edetate 0.6 mg, BHA 0.032 mg, Soybean oil 180 mg\nเปลือกแคปซูล: Gelatin, Glycerin, Methyl and Propyl paraben, FD&C Red No. 3, FD&C Blue No. 1, Titanium dioxide",
     "caseStem": "สูตรตำรับยาแคปซูลนิ่ม Isotretinoin 20 mg Soft Gelatin Capsules:\nตัวยาสำคัญและส่วนประกอบภายใน: Isotretinoin 20 mg, Hydrogenated vegetable oil 64 mg, White wax 18 mg, Disodium edetate 0.6 mg, BHA 0.032 mg, Soybean oil 180 mg\nเปลือกแคปซูล: Gelatin, Glycerin, Methyl and Propyl paraben, FD&C Red No. 3, FD&C Blue No. 1, Titanium dioxide",
     "question": "จากสูตรตำรับตัวอย่าง: Isotretinoin 20 mg, Hydrogenated vegetable oil 64 mg, White wax 18 mg, Disodium edetate 0.6 mg, BHA 0.032 mg, Soy bean oil 180 mg, เปลือกแคปซูลประกอบด้วย Gelatin, glycerin, methyl and propyl paraben, และระบบสี FD&C Red No. 3, FD&C Blue No. 1, titanium dioxide ดังภาพ สูตรตำรับนี้จัดเป็นรูปแบบยาใด",
-    "questionImage": "cc1_product/image105.png",
+    "questionImage": "images/cc1_product/image105.png",
     "choices": [
       "Cream",
       "Ointment",
@@ -240391,7 +240391,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพหน้าตัดของ Omeprazole enteric pellet ส่วนประกอบชั้นที่ 1 (แกนกลางในสุด), ชั้นที่ 2 (ชั้นกลาง) และชั้นที่ 3 (ชั้นนอกสุด) คือส่วนประกอบใดตามลำดับ",
-    "questionImage": "cc1_product/image106.png",
+    "questionImage": "images/cc1_product/image106.png",
     "choices": [
       "Omeprazole / Methacrylic acid copolymer / HPMC",
       "HPMC / Omeprazole / Methacrylic acid copolymer",
@@ -241063,7 +241063,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากสูตรตำรับยาเม็ดต่อไปนี้\nRx.\nActive Ingredient AAA: 300 mg\nLactose: 500 mg\nCorn starch: 10%",
     "caseStem": "จากสูตรตำรับยาเม็ดต่อไปนี้\nRx.\nActive Ingredient AAA: 300 mg\nLactose: 500 mg\nCorn starch: 10%",
     "question": "หากตำรับยาเม็ดที่ตอกได้มีปัญหาการแตกตัวไม่ดี (Poor disintegration) ควรแก้ไขอย่างไร?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image125.png",
     "choices": [
       "เปลี่ยน Lactose เป็น Sodium starch glycolate",
       "เปลี่ยน Lactose เป็น Croscarmellose sodium",
@@ -241073,7 +241073,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 3,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. เปลี่ยน Corn starch เป็น Sodium starch glycolate<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Corn starch ทำหน้าที่เป็นสารช่วยแตกตัว (Disintegrant) แบบดั้งเดิมในตำรับ การเปลี่ยนเป็น Sodium starch glycolate ซึ่งเป็น Superdisintegrant ที่ดัดแปลงโครงสร้างมาจาก Starch จะช่วยเร่งการแตกตัวของยาเม็ดให้เร็วขึ้นอย่างมากผ่านกลไก Rapid swelling และ Wicking โดยยังคงความเข้ากันได้กับสูตรดั้งเดิมและสอดคล้องกับมาตรฐาน USP/BP<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะ Lactose ในตำรับมีปริมาณสูงถึง 500 mg ทำหน้าที่เป็น Diluent/Filler หากเปลี่ยน Lactose ทั้งหมดเป็น Superdisintegrant จะทำให้สัดส่วนสารแตกตัวสูงเกินความจำเป็นอย่างมาก (ปกติใช้เพียง 2-8%) และทำให้สูญเสียคุณสมบัติการตอกอัดของยาเม็ด<br>• ข้อ ข.: ผิด เพราะการแทนที่ Lactose ปริมาณ 500 mg ด้วย Croscarmellose sodium จะทำให้สัดส่วนสารช่วยแตกตัวสูงเกินไป และทำให้เกิดเจลหนืดขัดขวางการกระจายตัวของยา<br>• ข้อ ง.: ผิด แม้ Croscarmellose sodium จะเป็น Superdisintegrant ที่ดี แต่เป็นอนุพันธ์ Cross-linked cellulose ในขณะที่สูตรเดิมใช้ Corn starch เป็นพื้นฐาน จึงนิยมเลือกแป้งดัดแปลงคือ Sodium starch glycolate มากที่สุดเพื่อความเข้ากันได้ของตำรับ<br>• ข้อ จ.: ผิด เพราะ PVP (Polyvinylpyrrolidone หรือ Povidone) ทำหน้าที่เป็นสารยึดเกาะ (Binder) การเปลี่ยน Corn starch เป็น PVP จะยิ่งเพิ่มแรงยึดเกาะและความแข็ง (Hardness) ส่งผลให้ยาเม็ดแตกตัวช้าลงกว่าเดิม",
-    "answerImage": "cc1_product/image125.png",
+    "answerImage": "images/cc1_product/image125.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 1]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -241091,7 +241091,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ยาเม็ดเมื่อเคลือบฟิล์มแล้วพบปัญหาฟิล์มฉีกขาดหรือลอกหลุดออกจากผิวเม็ดยา (Peeling) ควรแก้ไขอย่างไร?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image130.png",
     "choices": [
       "Spray น้ำยาเคลือบให้ช้าลง",
       "ลดปริมาณ Polymer ของตำรับ",
@@ -241101,7 +241101,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 4,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. เติม PEG ไปในตำรับเคลือบฟิล์ม<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ปัญหา Peeling (ฟิล์มลอกหลุดออกจากผิวเม็ดยา) เกิดจากฟิล์มมีความเปราะ มีแรงตึงผิวภายในสูง (Internal stress) และมีแรงยึดติดกับผิวเม็ดยาไม่เพียงพอ การเติม Polyethylene glycol (PEG) ทำหน้าที่เป็น Plasticizer แทรกระหว่างสายโซ่พอลิเมอร์ ช่วยลด Glass transition temperature (Tg) เพิ่มความยืดหยุ่น ความเหนียว และลดแรงตึงภายในฟิล์ม ทำให้ฟิล์มไม่ฉีกขาดหรือลอกหลุด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะการสเปรย์น้ำยาเคลือบให้ช้าลงใช้แก้ปัญหา Overwetting หรือ Sticking/Picking ไม่ได้ช่วยเพิ่มความยืดหยุ่นของแผ่นฟิล์ม<br>• ข้อ ข.: ผิด เพราะการลดปริมาณ Polymer ทำให้ฟิล์มบางลงแต่ยังคงมีความเปราะเท่าเดิม และอาจทำให้เคลือบผิวเม็ดยาไม่สม่ำเสมอ<br>• ข้อ ค.: ผิด เพราะ Talcum ทำหน้าที่เป็น Anti-tacking agent / Glidant ช่วยลดการเหนียวติดกัน หากใส่มากเกินไปอาจขัดขวางการยึดเกาะของพอลิเมอร์ ทำให้ฟิล์มลอกง่ายขึ้น<br>• ข้อ จ.: ผิด เพราะการลดระยะห่างระหว่างหัวสเปรย์กับเม็ดยาใช้แก้ปัญหา Spray drying หรือ Orange peel (ผิวส้ม) ไม่ได้แก้ปัญหาความเปราะของฟิล์ม",
-    "answerImage": "cc1_product/image130.png",
+    "answerImage": "images/cc1_product/image130.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 5]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -241119,7 +241119,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "วิธีการทดสอบความสม่ำเสมอของขนาดความแรง (Uniformity of dosage units) ของยาเม็ด Calcium Carbonate (CaCO3) ตามเภสัชตำรับ USP ข้อใดถูกต้อง?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image134.png",
     "choices": [
       "สุ่มยามา 20 เม็ด ชั่งน้ำหนักทีละเม็ดแล้วหาน้ำหนักเฉลี่ย",
       "สุ่มยามา 20 เม็ด บดรวมกันแล้วหาปริมาณสารสำคัญ (Assay)",
@@ -241129,7 +241129,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 4,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. สุ่มยามา 30 เม็ด ชั่งน้ำหนักทีละเม็ดจำนวน 10 เม็ด แล้วคำนวณปริมาณสารสำคัญจากน้ำหนักของแต่ละเม็ดเปรียบเทียบกับผลวิเคราะห์หาปริมาณสารสำคัญเฉลี่ยจากวิธีวิเคราะห์หาปริมาณยา (Weight Variation method)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเภสัชตำรับ USP General Chapter <905> Uniformity of Dosage Units ยาเม็ดเคลือบฟิล์มหรือยาเม็ดไม่เคลือบที่มีตัวยาสำคัญตั้งแต่ 25 mg ขึ้นไป และคิดเป็นสัดส่วนไม่น้อยกว่า 25% ของน้ำหนักเม็ดยาทั้งหมด (ซึ่ง Calcium Carbonate มักมีขนาดความแรงสูง 600-1250 mg คิดเป็นสัดส่วนเกิน 50% ของเม็ด) ได้รับการยกเว้นให้ใช้วิธี Weight Variation ได้ โดยสุ่มตัวอย่าง 30 เม็ด นำมาทดสอบในขั้นแรก 10 เม็ด ชั่งน้ำหนักรายเม็ดและคำนวณ Acceptance Value (AV)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะการสุ่มยา 20 เม็ดมาชั่งหาน้ำหนักเฉลี่ยเป็นขั้นตอนทั่วไปของการหาค่าน้ำหนักเฉลี่ยยาเม็ด ไม่ใช่วิธีการทดสอบความสม่ำเสมอตามเกณฑ์ USP <905><br>• ข้อ ข.: ผิด เพราะการบดรวม 20 เม็ดแล้วหาปริมาณยาเป็นวิธีวิเคราะห์หาปริมาณยาสำคัญรวม (Composite Assay) ไม่สามารถบอกความสม่ำเสมอระหว่างเม็ดได้<br>• ข้อ ค.: ผิด เพราะ Content Uniformity (CU) กำหนดใช้สำหรับยาเม็ดที่มีขนาดยาน้อยกว่า 25 mg หรือมีสัดส่วนตัวยาน้อยกว่า 25% ของน้ำหนักเม็ด แต่ Calcium carbonate มีความแรงสูงจึงใช้วิธี Weight Variation ได้โดยตรง<br>• ข้อ จ.: ผิด เพราะตามเกณฑ์ USP ในขั้นแรกจะทดสอบเพียง 10 เม็ดก่อน หากค่า AV ผ่านเกณฑ์ตามข้อกำหนดก็ไม่ต้องทดสอบต่อในอีก 20 เม็ดที่เหลือ",
-    "answerImage": "cc1_product/image134.png",
+    "answerImage": "images/cc1_product/image134.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 12]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -241147,7 +241147,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ตัวยา A มีความคงตัวทางเคมีได้ดีในสภาวะที่เป็นกรด (Acid-stable) หากต้องการพัฒนาเป็นยาเม็ดเคลือบฟิล์มทั่วไปเพื่อความสวยงามและป้องกันความชื้น ควรเลือกใช้สารเคลือบประเภทพอลิเมอร์ชนิดใด?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image140.png",
     "choices": [
       "Eudragit L",
       "Shellac",
@@ -241157,7 +241157,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 3,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. HPMC (Hydroxypropyl methylcellulose)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เมื่อตัวยามีความคงตัวดีในสภาวะกรด ไม่จำเป็นต้องทำ Enteric coating จึงควรเลือกใช้ HPMC (Hydroxypropyl methylcellulose) ซึ่งเป็น Non-enteric water-soluble polymer ที่ละลายได้ดีในน้ำและกรดในกระเพาะอาหาร เพื่อทำหน้าที่เป็นฟิล์มเคลือบเพื่อความสวยงาม ป้องกันความชื้น และกลบรสชาติ โดยไม่ชะลอการปลดปล่อยยาในกระเพาะอาหารตามมาตรฐานสากล<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะ Eudragit L เป็นพอลิเมอร์ประเภท Enteric coating ซึ่งไม่ละลายในกรด แต่จะละลายที่ pH 6.0 ขึ้นไปในลำไส้เล็ก จึงไม่จำเป็นสำหรับยาที่คงตัวดีในกรด<br>• ข้อ ข.: ผิด เพราะ Shellac เป็นสารเคลือบป้องกันกรดตามธรรมชาติ (Enteric polymer) ที่ละลายที่ pH ด่าง และมีปัญหาเรื่องความคงตัวเมื่อเก็บไว้นาน<br>• ข้อ ง.: ผิด เพราะ HPMCP มีหมู่ Phthalate ester ทำให้มีสมบัติเป็น Enteric coating polymer ที่ละลายเฉพาะที่ pH 5.0-5.5 ขึ้นไป<br>• ข้อ จ.: ผิด เพราะ EC (Ethylcellulose) เป็นพอลิเมอร์ที่ไม่ละลายน้ำในทุกช่วง pH นิยมใช้สำหรับระบบควบคุมการปลดปล่อยยาเนิ่น (Extended release) ไม่ใช่ฟิล์มเคลือบละลายเร็วทั่วไป",
-    "answerImage": "cc1_product/image140.png",
+    "answerImage": "images/cc1_product/image140.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 17]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -241175,7 +241175,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ยาเม็ด Calcium carbonate ที่ตอกขึ้นมาแล้วเกิดข้อบกพร่องประเภทหน้ายาหลุดแยกตัวเป็นหมวกครึ่งวงกลม (Capping) ข้อใดต่อไปนี้ ไม่ใช่ แนวทางการแก้ไขปัญหาดังกล่าวที่ถูกต้อง?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image141.png",
     "choices": [
       "เพิ่มแรงตอกยารวดเดียว (Increase compression force)",
       "ลดอัตราเร็วหรือความเร็วในกระบวนการตอกยา (Decrease compression speed)",
@@ -241185,7 +241185,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 1,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. เพิ่มแรงตอกยารวดเดียว (Increase compression force)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ปัญหา Capping (การที่ส่วนบนหรือล่างของเม็ดยาหลุดแยกตัวออกเป็นหมวก) มักเกิดจากการกักขังของอากาศ (Air entrapment) ภายในเม็ดยา และ Elastic recovery เมื่อสากบนถอนตัวออก การเพิ่มแรงตอกยา (Compression force) มากเกินไปจะยิ่งเพิ่มแรงตึงเครียดสะสมภายในเม็ดและเพิ่มการดีดตัวกลับ ทำให้เกิด Capping รุนแรงยิ่งขึ้น แนวทางแก้ไขที่ถูกต้องคือการลดอัตราเร็วในการตอก เพื่อเพิ่ม Dwell time ให้อากาศระบายออก<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: เป็นวิธีแก้ไขที่ถูกต้อง เพราะการลดความเร็วในการตอกยาจะช่วยเพิ่ม Dwell time ให้อากาศที่แทรกอยู่ระหว่างผงยาหลบหนีออกจากห้องตอกได้ทัน<br>• ข้อ ค.: เป็นวิธีแก้ไขที่ถูกต้อง เพราะการเพิ่ม Binder จะช่วยเสริมแรงยึดเกาะระหว่างอนุภาคยา ทำให้เม็ดยาสามารถต้านทานแรงดึงภายในได้ดีขึ้น<br>• ข้อ ง.: เป็นวิธีแก้ไขที่ถูกต้อง เพราะความชื้นที่เหมาะสม (Optimum moisture 1-3%) จะทำหน้าที่เป็น Plasticizer ช่วยส่งเสริมการเกิด Plastic deformation และลดความเปราะ<br>• ข้อ จ.: เป็นวิธีแก้ไขที่ถูกต้อง เพราะการใส่ Magnesium stearate มากเกินไปจะสร้างฟิล์มเคลือบผิวอนุภาคและขัดขวางการสร้างพันธะยึดเหนี่ยวระหว่างแกรนูล",
-    "answerImage": "cc1_product/image141.png",
+    "answerImage": "images/cc1_product/image141.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 18]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -241623,7 +241623,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากรูปภาพแผงบรรจุภัณฑ์ยาเม็ดต้านไวรัสเอชไอวีดังกล่าว ซึ่งเป็นแผงยาชนิด Aluminium-Aluminium Cold-Form Blister (Alu-Alu blister pack) ข้อใดกล่าวถูกต้องที่สุดเกี่ยวกับคุณลักษณะของบรรจุภัณฑ์ชนิดนี้",
-    "questionImage": "mock2_rxcu83/page_2_Im1.png",
+    "questionImage": "images/mock2_rxcu83/page_2_Im1.png",
     "choices": [
       "บรรจุภัณฑ์ชนิดนี้ผลิตจากแผ่นพลาสติก PVC ใสประกบกับกระดาษกล่อง",
       "แผงยาชนิดนี้ประกอบด้วยแผ่นอะลูมิเนียมฟอยล์ประกบกับฟิล์มโพลิเมอร์หลายชั้นทั้งแผ่นหลุมและแผ่นปิด เพื่อป้องกันแสงและความชื้นได้สมบูรณ์แบบ",
@@ -247771,7 +247771,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากสูตรตำรับยาที่มี Carbomer (Carbopol 940) ปริมาณร้อยละ 1 w/w ร่วมกับ Triethanolamine ในกระสายยาน้ำบริสุทธิ์ โดยไม่มีการเติมน้ำมันหรือสารไขมันใดๆ ตำรับนี้จัดเป็นรูปแบบยาเตรียมกึ่งแข็งชนิดใด",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image12.png",
     "choices": [
       "Ointment",
       "Gel",
@@ -247781,7 +247781,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Gel<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตำรับนี้ใช้ Carbomer (Carbopol 940) เป็น gelling agent ร่วมกับสารช่วยปรับความเป็นด่างเพื่อก่อร่างแหพอลิเมอร์กึ่งแข็ง และไม่มีส่วนประกอบของน้ำมัน (oil base หรือ oil phase) จึงจัดเป็นยารูปแบบ Gel อย่างชัดเจน<br><br>🔍<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Ointment เป็นยาเตรียมกึ่งแข็งที่มี hydrocarbon base หรือ absorption base เป็นองค์ประกอบหลัก<br>• ข้อ ค.: Emulsion เป็นระบบกระจายตัวแบบ 2 เฟสที่ต้องประกอบด้วย oil phase และ water phase ร่วมกับ emulsifying agent<br>• ข้อ ง.: Cream เป็น semisolid emulsion กึ่งแข็ง 2 เฟส (O/W หรือ W/O) ต้องมีส่วนประกอบของน้ำมันและสารก่ออิมัลชัน<br>• ข้อ จ.: Solution เป็นสารละลายใสเนื้อเดียว ไม่มีความหนืดระดับโครงสร้างตาข่ายพอลิเมอร์กึ่งแข็งแบบ hydrogel",
-    "answerImage": "cc1_product/image12.png",
+    "answerImage": "images/cc1_product/image12.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 1]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -247799,7 +247799,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "หากต้องการเตรียมตำรับยาน้ำแขวนตะกอน Methimazole suspension ข้อใดต่อไปนี้ทำหน้าที่เป็น wetting agent ที่เหมาะสมที่สุดสำหรับช่วยให้ผงยากระจายตัวในเฟสน้ำ",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image26.png",
     "choices": [
       "Purified water",
       "Glycerin",
@@ -247809,7 +247809,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Glycerin<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Glycerin เป็นสารเหลวหนืดมีขั้ว ทำหน้าที่เป็น Wetting agent และ Levigating agent ที่เหมาะสมมากในยาน้ำแขวนตะกอน โดยช่วยไล่อากาศที่เกาะรอบผิวอนุภาคยาที่ไม่ชอบน้ำ ทำให้ผงยาเปียกและกระจายตัวในน้ำได้อย่างสม่ำเสมอ<br><br>🔍<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Purified water ทำหน้าที่เป็นกระสายยา (Vehicle) หลักของตำรับ ไม่สามารถลดแรงตึงผิวเพื่อทำหน้าที่เป็น wetting agent ได้<br>• ข้อ ค.: Mineral oil เป็นน้ำมันไม่มีขั้ว หากนำมาใช้ในยาน้ำที่เป็นน้ำจะเกิดการแยกชั้น (phase separation)<br>• ข้อ ง.: Benzyl alcohol ทำหน้าที่เป็น Preservative และห้ามใช้ในทารกเนื่องจากเสี่ยงต่อการเกิด gasping syndrome<br>• ข้อ จ.: Alcohol เป็น solvent หรือ co-solvent และอาจทำให้ยาตกผลึกหรือระคายเคืองทางเดินอาหารในเด็กได้",
-    "answerImage": "cc1_product/image26.png",
+    "answerImage": "images/cc1_product/image26.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 6]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -247883,7 +247883,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในสูตรตำรับ Hydrocortisone cream 1% ประกอบด้วย Hydrocortisone, Purified water, Mineral oil, Propylene glycol, Cetearyl palmitate, Cetearyl alcohol และ Sodium lauryl sulfate สารใดทำหน้าที่เป็น Stiffening agent ช่วยเพิ่มความคงรูปและความข้นหนืดของเนื้อครีม",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image50.png",
     "choices": [
       "Glycerin",
       "Propylene glycol",
@@ -247893,7 +247893,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 4,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Cetearyl palmitate<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Cetearyl palmitate (หรือ Cetyl esters wax / Cetearyl alcohol) เป็นไขมันหรือแอลกอฮอล์ไขมันที่มีจุดหลอมเหลวสูง ทำหน้าที่เป็น Stiffening agent / Consistency enhancer ช่วยเพิ่มความแข็งแรง ความคงรูป และเพิ่มความหนืดของโครงสร้าง semisolids ป้องกันไม่ให้ครีมเหลวเกินไป<br><br>🔍<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Glycerin ทำหน้าที่เป็น Humectant (สารช่วยดูดซับความชื้น)<br>• ข้อ ข.: Propylene glycol ทำหน้าที่เป็น Co-solvent และ Humectant<br>• ข้อ ค.: Sodium lauryl sulfate ทำหน้าที่เป็น Anionic surfactant และ Emulsifying agent<br>• ข้อ จ.: Mineral oil ทำหน้าที่เป็น Emollient และเป็นส่วนของ oil phase ให้ความนุ่มชุ่มชื้นแก่ผิว",
-    "answerImage": "cc1_product/image50.png",
+    "answerImage": "images/cc1_product/image50.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 38]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -249395,7 +249395,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "เมื่อทดสอบยาครีมชนิด O/W แบบ freeze-thaw cycle พบว่าตำรับเกิดการแยกชั้น (phase separation) ดังภาพ วิธีการแก้ไขปัญหาความไม่คงตัวของตำรับดังกล่าวคือข้อใด",
-    "questionImage": "cc1_product/image103.png",
+    "questionImage": "images/cc1_product/image103.png",
     "choices": [
       "เติม tragacanth ในตำรับ O/W",
       "เติม sodium chloride ในตำรับ O/W",
@@ -249591,7 +249591,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากข้อมูลความคงตัวของยา Furosemide (จากกราฟ Log P เทียบกับ pH) พบว่าตัวยามีความสามารถในการละลายและคงตัวได้ดีในสภาวะด่าง จากข้อมูลทางเคมีฟิสิกส์ดังกล่าว หากต้องการเตรียมยาในรูปแบบยาน้ำรับประทาน ควรเตรียมในรูปแบบใด",
-    "questionImage": "cc1_product/image111.png",
+    "questionImage": "images/cc1_product/image111.png",
     "choices": [
       "Syrup pH 4",
       "Elixir buffer ด่าง",
@@ -253164,7 +253164,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 1,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. ยาเป็นระบบ matrix สามารถหักแบ่งครึ่งตามรอยบากได้แต่ห้ามเคี้ยวหรือบด<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Imdur เป็นยาเม็ดออกฤทธิ์เนิ่นระบบ hydrophilic/insoluble matrix ซึ่งมีรอยบาก (score line) ทำให้สามารถหักแบ่งครึ่งได้โดยไม่สูญเสียคุณสมบัติ prolonged-release แต่ห้ามเคี้ยวหรือบดเม็ดยาเพราะจะทำให้โครงสร้างเมทริกซ์พังทลายและเกิด dose dumping<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Imdur เป็นระบบ matrix ไม่ใช่ reservoir system และการเคี้ยวยาจะทำลายโครงสร้างเมทริกซ์ทำให้ยาถูกปลดปล่อยออกมาทันทีจนเกิดพิษ<br>• ข้อ ค.: ISMN ในรูปแบบ matrix สามารถรับประทานพร้อมหรือหลังอาหาร รวมถึงยาลดกรดได้โดยไม่มีอันตรกิริยาที่รุนแรง ข้อห้ามใช้สำคัญคือห้ามใช้ร่วมกับยากลุ่ม PDE-5 inhibitors<br>• ข้อ ง.: Magnesium stearate เป็น hydrophobic lubricant ในขณะที่ Sodium stearate มีความเป็น hydrophilic มากกว่า การเปลี่ยนสารช่วยจะส่งผลต่ออัตราการเปียกและการปลดปล่อยยา<br>• ข้อ จ.: ยาเม็ดทุกชนิดต้องผ่านการทดสอบ Uniformity of dosage units ตามมาตรฐานเภสัชตำรับ",
-    "answerImage": "cc1_product/image43.png",
+    "answerImage": "images/cc1_product/image43.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 4]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -253210,7 +253210,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากการตรวจสอบข้อกำหนดมาตรฐานในเภสัชตำรับ (USP monograph) ของยาเม็ดชนิดหนึ่ง ระบุว่า 'Dissolution: Medium 0.1 N HCl, 900 mL; Apparatus 2: 50 rpm; Time: 45 minutes; Tolerances: Not less than 75% (Q) of the labeled amount of the active drug is dissolved' ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับการทดสอบนี้",
-    "questionImage": "cc1_product/image15.png",
+    "questionImage": "images/cc1_product/image15.png",
     "choices": [
       "การทดสอบนี้ใช้เครื่องมือทดสอบแบบตะกร้าหมุน (Rotating basket)",
       "เกณฑ์การผ่านเกณฑ์ขั้นต่ำในขั้น S1 คือยาทุกเม็ดต้องละลายได้อย่างน้อยเท่ากับ 75% พอดี",
@@ -253248,7 +253248,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 1,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Dissolution test<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามข้อกำหนดของ USP สำหรับยาเม็ดทั่วไป (Tablets dosage form) หัวข้อ Specific tests ที่เป็นข้อกำหนดภาคบังคับในการตรวจปล่อยรุ่นการผลิต ได้แก่ Dissolution, Uniformity of dosage units และ Disintegration (หากไม่มี dissolution) ดังนั้นในใบ COA ที่มี disintegration แต่ยังขาดการทดสอบ Dissolution ซึ่งจำเป็นสำหรับยาเม็ด simvastatin<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Hardness test เป็น in-process control ภายในโรงงานผู้ผลิต โดยทั่วไปไม่จำเป็นต้องรายงานในใบ COA ปล่อยผ่านสำเร็จรูปของเภสัชตำรับ<br>• ข้อ ค.: Particle size analysis เป็นการทดสอบสำหรับวัตถุดิบผงยาหรือยาน้ำแขวนตะกอน ไม่ใช่ specific test สำหรับยาเม็ดสำเร็จรูป<br>• ข้อ ง.: Viscosity measurement เป็นการทดสอบสำหรับยาน้ำหนืดหรือยารูปแบบกึ่งแข็ง ไม่ใช้กับยาเม็ด<br>• ข้อ จ.: Loss on drying แม้อาจทดสอบในบางตำรับ แต่ไม่ใช่หัวข้อประเมินการปลดปล่อยยาสำคัญเท่ากับ Dissolution test",
-    "answerImage": "cc1_product/image42.png",
+    "answerImage": "images/cc1_product/image42.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 27]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -253276,7 +253276,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 5,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Uniformity of dosage units<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเกณฑ์เภสัชตำรับ USP หัวข้อ Description, Identification, Assay และ Impurities จัดเป็น Universal tests ที่ต้องทดสอบในทุกรูปแบบยา ส่วนการทดสอบเฉพาะสำหรับแผ่นแปะผิวหนัง (Specific tests) ได้แก่ Drug release / Dissolution, Uniformity of dosage units, Peel adhesion test และ Leak test<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Assay (การหาปริมาณตัวยาสำคัญ) จัดเป็น Universal test ที่ต้องทำการทดสอบกับยาทุกรูปแบบ<br>• ข้อ ข.: Identification (การพิสูจน์เอกลักษณ์) จัดเป็น Universal test พื้นฐานของผลิตภัณฑ์ยาทุกชนิด<br>• ข้อ ค.: Description (ลักษณะทางกายภาพภายนอก) จัดเป็น Universal test พื้นฐานของยาทุกรูปแบบ<br>• ข้อ ง.: Impurities (สิ่งเจือปนและสารสลายตัว) จัดเป็น Universal test เพื่อควบคุมความปลอดภัยของยาทุกชนิด",
-    "answerImage": "cc1_product/image43.png",
+    "answerImage": "images/cc1_product/image43.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 28] [RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -253294,7 +253294,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "การให้ยาในรูปแบบแผ่นแปะผิวหนัง (Transdermal patch) มีข้อได้เปรียบที่แตกต่างอย่างเด่นชัดจากการให้ยาในรูปแบบรับประทาน (Oral dosage form) ในข้อใดต่อไปนี้",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image44.png",
     "choices": [
       "แผ่นแปะมีระดับการออกฤทธิ์ทางเภสัชวิทยารวดเร็วกว่าการฉีดเข้าเส้นเลือดดำ",
       "แผ่นแปะสามารถหลีกเลี่ยงกระบวนการทำลายยาผ่านตับในรอบแรก (Avoid hepatic first-pass metabolism)",
@@ -253304,7 +253304,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. แผ่นแปะสามารถหลีกเลี่ยงกระบวนการทำลายยาผ่านตับในรอบแรก (Avoid hepatic first-pass metabolism)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การให้ยาผ่านทางแผ่นแปะผิวหนัง ตัวยาจะถูกดูดซึมผ่านชั้นผิวหนังเข้าสู่หลอดเลือดฝอยในชั้นหนังแท้และเข้าสู่ระบบไหลเวียนโลหิตทั่วร่างกายโดยตรง จึงหลีกเลี่ยงการถูกทำลายโดยกรด/เอนไซม์ในทางเดินอาหารและ hepatic first-pass metabolism ที่ตับได้อย่างสมบูรณ์<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: แผ่นแปะผิวหนังมีระยะเวลาเริ่มออกฤทธิ์ (onset of action) ช้ากว่าการฉีดเข้าหลอดเลือดดำอย่างมาก เนื่องจากต้องใช้เวลาแพร่ผ่านชั้น stratum corneum<br>• ข้อ ค.: ในทางตรงกันข้าม การให้ฮอร์โมนทดแทนผ่านทางผิวหนัง (Transdermal HRT) พบความเสี่ยงต่อการเกิด VTE ต่ำกว่ายารับประทานเนื่องจากไม่ผ่านตับและไม่กระตุ้น hepatic clotting factors<br>• ข้อ ง.: แผ่นแปะผิวหนังเหมาะสำหรับ potent drugs ที่มีขนาดยาต่ำต่อวัน (มักไม่เกิน 10-20 mg/day) ไม่สามารถนำส่งยาปริมาณสูงระดับกรัมได้<br>• ข้อ จ.: แผ่นแปะผิวหนังให้ระดับยาในเลือดที่คงที่สม่ำเสมอ (steady-state profile) ช่วยลดปัญหา peak-to-trough fluctuation",
-    "answerImage": "cc1_product/image44.png",
+    "answerImage": "images/cc1_product/image44.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 31]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -253490,7 +253490,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อกำหนดการทดสอบการละลาย (Dissolution test) ของยาเม็ด A ในเภสัชตำรับระบุว่า not less than 80% (Q) of the labeled amount of A is dissolved in 30 minutes ในการทดสอบขั้นที่หนึ่ง (Stage 1; S1 จำนวน 6 เม็ด) ผลการทดสอบในข้อใดถือว่าผ่านเกณฑ์การยอมรับตามมาตรฐาน USP",
-    "questionImage": "cc1_product/image75.png",
+    "questionImage": "images/cc1_product/image75.png",
     "choices": [
       "ค่าเฉลี่ยของการละลายทั้ง 6 เม็ด มากกว่าหรือเท่ากับ 80% ของปริมาณที่ระบุบนฉลาก",
       "ค่าเฉลี่ยของการละลายทั้ง 6 เม็ด มากกว่าหรือเท่ากับ 85% ของปริมาณที่ระบุบนฉลาก",
@@ -253826,7 +253826,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากกราฟความเข้มข้นของนิโคตินในพลาสมาเทียบกับเวลา (Plasma concentration-time profile) ที่แสดงในภาพ กราฟเส้นใดแสดงลักษณะทางเภสัชจลนศาสตร์ของ Nicotine chewing gum ขนาด 2 mg (1 ชิ้น) และ Nicotine transdermal patch ขนาด 21 mg (1 แผ่น) ตามลำดับได้อย่างถูกต้อง",
-    "questionImage": "cc1_product/image99.png",
+    "questionImage": "images/cc1_product/image99.png",
     "choices": [
       "เส้น A และเส้น B ตามลำดับ",
       "เส้น B และเส้น C ตามลำดับ",
@@ -254078,7 +254078,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จาก monograph เภสัชตำรับของยา Carvedilol ข้อใดคือเครื่องมือที่ใช้ในการทดสอบหัวข้อการละลาย (Dissolution test)",
-    "questionImage": "cc1_product/image102.png",
+    "questionImage": "images/cc1_product/image102.png",
     "choices": [
       "Reciprocating cylinder",
       "Paddle apparatus",
@@ -254162,7 +254162,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "แผ่นแปะผิวหนังส่งผ่านยา (Transdermal delivery system) ที่มีโครงสร้างแยกเป็นชั้น Backing layer, Drug reservoir, Rate-controlling membrane และ Adhesive layer ดังภาพ จัดเป็นระบบนำส่งยาแบบใด",
-    "questionImage": "cc1_product/image104.png",
+    "questionImage": "images/cc1_product/image104.png",
     "choices": [
       "Reservoir system",
       "Microreservoir system",
@@ -254470,7 +254470,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ระบบนำส่งยาในภาพมีลักษณะเป็นถุงทรงกลมที่ประกอบด้วยชั้นฟอสโฟลิพิดสองชั้น (Phospholipid bilayer) ล้อมรอบแกนกลางที่เป็นสารละลายน้ำ จัดเป็นระบบนำส่งยาในรูปแบบใด",
-    "questionImage": "cc1_product/image113.png",
+    "questionImage": "images/cc1_product/image113.png",
     "choices": [
       "Micelle",
       "Liposome",
@@ -254778,7 +254778,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ยาเม็ด Theophylline SR (Sustained Release) นิยมใช้สารใดในสูตรตำรับเพื่อช่วยควบคุมการปลดปล่อยตัวยา?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image131.png",
     "choices": [
       "Corn starch",
       "HPMC (Hydroxypropyl methylcellulose)",
@@ -254788,7 +254788,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. HPMC (Hydroxypropyl methylcellulose)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>HPMC (Hydroxypropyl methylcellulose หรือ Hypromellose) เป็น Hydrophilic polymer ที่นิยมใช้เป็น Matrix-forming agent ในระบบ Hydrophilic matrix tablet เมื่อสัมผัสกับของเหลวในทางเดินอาหาร สายโซ่พอลิเมอร์จะดูดซับน้ำและพองตัวเกิดเป็นชั้นเจลหนา (Hydrated gel layer) ควบคุมอัตราการแพร่ (Diffusion) และการกร่อน (Erosion) ของตัวยา ทำให้ตัวยาปลดปล่อยอย่างต่อเนื่องสม่ำเสมอตามเกณฑ์ USP<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะ Corn starch เป็น Disintegrant และ Filler ในตำรับยาเม็ดทั่วไป มีคุณสมบัติช่วยให้ยาแตกตัวเร็วขึ้น ไม่ได้ทำหน้าที่ควบคุมการปลดปล่อยยาเนิ่น<br>• ข้อ ค.: ผิด เพราะ Lactose เป็นสารเติมเต็มชนิดละลายน้ำได้ดี (Water-soluble diluent) ช่วยเพิ่มขนาดเม็ดยา<br>• ข้อ ง.: ผิด เพราะ Magnesium stearate เป็นสารหล่อลื่น (Lubricant) ป้องกันยาติดสากตอก<br>• ข้อ จ.: ผิด เพราะ Talcum เป็นสารช่วยการไหล (Glidant) และสารกันติด (Anti-adherent)",
-    "answerImage": "cc1_product/image131.png",
+    "answerImage": "images/cc1_product/image131.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 6]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -254834,7 +254834,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "เภสัชตำรับ USP กำหนดให้ยาเม็ดประเภทหนึ่งมีข้อกำหนดการละลายเป็น Q = 80% ณ เวลา 30 นาที ผลการทดสอบกรณีใดต่อไปนี้ถือว่า ผ่านเกณฑ์ (Pass) การยอมรับของการทดสอบขั้นที่ 2 (Stage 2: S2)?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image147.png",
     "choices": [
       "สุ่มตรวจในขั้น S1 จำนวน 6 เม็ด ค่าเฉลี่ยของการละลายเท่ากับ 80%",
       "สุ่มตรวจเพิ่มเติมในขั้น S2 รวมเป็น 12 เม็ด มีเม็ดหนึ่งตรวจพบการละลายเท่ากับ 60%",
@@ -254844,7 +254844,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 3,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. สุ่มตรวจเพิ่มเติมในขั้น S2 รวมเป็น 12 เม็ด ได้ค่าเฉลี่ยเท่ากับ 82% และยาทุกเม็ดละลายได้เกิน 70%<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเกณฑ์ USP <711> Dissolution ใน Stage 2 (S2) ตรวจสอบยารวม 12 เม็ด (6 เม็ดจาก S1 บวก 6 เม็ดจาก S2) เกณฑ์การยอมรับคือ ค่าเฉลี่ยของยาทั้ง 12 เม็ดต้องมากกว่าหรือเท่ากับ Q (ในที่นี้คือ 80%) และไม่มีเม็ดยาใดเลยที่มีค่าการละลายน้อยกว่า Q - 15% (ในที่นี้คือ 65%) ตัวเลือก ค มีค่าเฉลี่ยเท่ากับ 82% (ผ่านเกณฑ์แรก) และยาทุกเม็ดละลายเกิน 70% ซึ่งไม่มีเม็ดใดต่ำกว่า 65% (ผ่านเกณฑ์ที่สอง) จึงถือว่าผ่านเกณฑ์ S2 อย่างสมบูรณ์<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะในขั้น S1 เกณฑ์ระบุว่ายาทุกเม็ดต้องมากกว่าหรือเท่ากับ Q + 5% (คือ 85%) ไม่ใช่ดูแค่ค่าเฉลี่ย<br>• ข้อ ข.: ผิด เพราะมีเม็ดยาที่ละลายได้ 60% ซึ่งต่ำกว่าเกณฑ์ขั้นต่ำ Q - 15% (คือ 65%) จึงตกเกณฑ์ S2 ทันที<br>• ข้อ ง.: ผิด เพราะค่าเฉลี่ยรวมของทั้ง 12 เม็ดได้ 79% ซึ่งน้อยกว่าค่า Q (80%) จึงไม่ผ่านเกณฑ์<br>• ข้อ จ.: ผิด เพราะในขั้น S1 ยาทุกเม็ดต้องมีค่าการละลายไม่น้อยกว่า 85% หากมีเม็ดที่ได้ 80% จะไม่ผ่านขั้น S1 และต้องไปทดสอบต่อในขั้น S2",
-    "answerImage": "cc1_product/image147.png",
+    "answerImage": "images/cc1_product/image147.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 23]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -255086,7 +255086,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "กลไกการปลดปล่อยตัวยาตามรูป (มีเม็ดเรซินที่มีหมู่อิออนแลกเปลี่ยนประจุกับตัวยาและไอออนในทางเดินอาหารเพื่อปล่อยยาออก) คือกลไกข้อใด\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p27_img1.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p27_img1.png",
     "choices": [
       "Diffusion controlled",
       "Dissolution controlled",
@@ -257130,7 +257130,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ส่วนประกอบใดของเครื่องพ่นยาชนิดอัดแก๊ส (Metered Dose Inhaler; MDI) ที่ทำหน้าที่ควบคุมปริมาตรยาและขนาดของละอองฝอยให้คงที่แน่นอนในแต่ละครั้งที่มีการกดพ่นยา",
-    "questionImage": "cc1_product/image69.png",
+    "questionImage": "images/cc1_product/image69.png",
     "choices": [
       "Actuator",
       "Metered valve",
@@ -257214,7 +257214,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "สารต้านออกซิเดชันหรือสารกันเสียในข้อใดที่มีรายงานทางการแพทย์ชัดเจนว่าสามารถกระตุ้นให้เกิดภาวะหลอดลมหดเกร็งรุนแรง (Bronchoconstriction) ในผู้ป่วยโรคหอบหืดและผู้ที่มีความไวต่อสารกลุ่มนี้",
-    "questionImage": "cc1_product/image73.png",
+    "questionImage": "images/cc1_product/image73.png",
     "choices": [
       "Sorbic acid",
       "Citric acid",
@@ -257298,7 +257298,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ตู้เตรียมยาปราศจากเชื้อชนิดลมเป่าทิศทางเดียว (Laminar Airflow Hood; LAFH) หรือบริเวณเตรียมยาปลอดเชื้อระดับ Class 100 ตามมาตรฐาน Federal Standard 209E เทียบเท่ากับมาตรฐานห้องสะอาดระดับใดตามระบบ ISO 14644-1",
-    "questionImage": "cc1_product/image77.png",
+    "questionImage": "images/cc1_product/image77.png",
     "choices": [
       "ISO Class 3",
       "ISO Class 4",
@@ -258558,7 +258558,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "การผสมยาฉีด Amphotericin B กับสารละลาย 0.9% NaCl (Normal Saline Solution: NSS) แล้วส่งผลให้เกิดการตกตะกอน เกิดขึ้นจากกลไกใด?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image128.png",
     "choices": [
       "Complexation",
       "Isomerization",
@@ -258568,7 +258568,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 3,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Salting out<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาฉีด Amphotericin B รูปแบบดั้งเดิมถูกเตรียมเป็น Colloidal dispersion โดยใช้ Sodium deoxycholate เป็น Micellar solubilizer เมื่อผสมกับสารละลายอิเล็กโทรไลต์ที่มีความเข้มข้นของไอออน เช่น 0.9% NaCl ไอออนของเกลือจะเข้าไปแย่งดึงน้ำและทำลายประจุไฟฟ้าของไมเซลล์ ทำให้คอลลอยด์สูญเสียเสถียรภาพและเกิดปรากฏการณ์ Salting out ตกตะกอนทันที จึงต้องผสมในสารละลายปราศจากอิเล็กโทรไลต์ เช่น 5% Dextrose in Water (D5W) เท่านั้น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะ Complexation คือการเกิดสารประกอบเชิงซ้อนระหว่างสารเคมี ไม่ใช่กลไกการทำลายไมเซลล์ด้วยความเข้มข้นของไอออนเกลือ<br>• ข้อ ข.: ผิด เพราะ Isomerization คือการเปลี่ยนโครงสร้างระหว่างไอโซเมอร์ ซึ่งเป็นปฏิกิริยาเคมี ไม่ได้ทำให้เกิดการตกตะกอนเฉียบพลันทางกายภาพ<br>• ข้อ ง.: ผิด เพราะ Epimerization คือการเปลี่ยนแปลงคอนฟิกูเรชันของ Chiral center เพียงตำแหน่งเดียว มักเกิดขึ้นช้าๆ ในสารละลายบางประเภท ไม่เกี่ยวข้องกับการตกตะกอนจากเกลือ<br>• ข้อ จ.: ผิด เพราะ Polymerization คือการเชื่อมต่อของมอนอเมอร์เป็นสายโซ่พอลิเมอร์โมเลกุลใหญ่ ไม่ใช่กลไกการตกตะกอนของไมเซลล์ Amphotericin B",
-    "answerImage": "cc1_product/image128.png",
+    "answerImage": "images/cc1_product/image128.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 3]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -258586,7 +258586,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ขนาดอนุภาค (Aerodynamic diameter) ของผงยาพ่นสูดที่มีประสิทธิภาพสูงสุดในการลงไปถึงบริเวณถุงลมปอด (Alveoli) คือเท่าใด?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image132.png",
     "choices": [
       "น้อยกว่า 0.5 micron",
       "0.5 - 1 micron",
@@ -258596,7 +258596,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 3,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. 1 - 5 micron<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามหลักสรีรวิทยาและหลักการนำส่งยาทางการหายใจ อนุภาคยาพ่นสูดที่มีขนาด Aerodynamic diameter ในช่วง 1-5 micron (Fine particle fraction) มีความเหมาะสมสูงสุดที่จะเคลื่อนที่ผ่านทางเดินหายใจส่วนบนและตกสะสมในบริเวณหลอดลมฝอยส่วนปลายและถุงลมปอด (Deep lung / Alveolar deposition) ด้วยกลไก Sedimentation และ Diffusion ตามมาตรฐานสากล<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะอนุภาคขนาดเล็กกว่า 0.5 micron มีมวลน้อยเกินไป จะลอยฟุ้งอยู่ในอากาศและถูกหายใจออก (Exhaled) สู่ภายนอกโดยไม่ตกสะสมบนเนื้อเยื่อปอด<br>• ข้อ ข.: ผิด เพราะช่วงขนาด 0.5-1 micron มีประสิทธิภาพการตกตะกอนต่ำ มักถูกขับออกพร้อมลมหายใจออก<br>• ข้อ ง.: ผิด เพราะอนุภาคขนาด 5-10 micron จะตกสะสมอยู่บริเวณทางเดินหายใจส่วนต้น เช่น หลอดลมใหญ่ (Tracheobronchial region) ไม่สามารถลงลึกถึงถุงลมปอด<br>• ข้อ จ.: ผิด เพราะอนุภาคขนาดใหญ่กว่า 10 micron จะถูกดักจับและชนติดอยู่บริเวณช่องปากและคอหอย (Oropharynx) ด้วยแรงเฉื่อย (Inertial impaction) และถูกกลืนลงกระเพาะอาหาร",
-    "answerImage": "cc1_product/image132.png",
+    "answerImage": "images/cc1_product/image132.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 7]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -258614,7 +258614,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อใดกล่าวได้ถูกต้องเกี่ยวกับเครื่องมือพ่นยาชนิดละอองลอยกำหนดขนาดการสูดเข้าทางปาก (Metered-Dose Inhaler: MDI)?",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image133.png",
     "choices": [
       "ใช้ Lactose เป็นสารตัวพา (Carrier) เพื่อช่วยนำส่งยา",
       "ผู้ป่วยไม่จำเป็นต้องกดพ่นยาให้สัมพันธ์กับการสูดหายใจเข้า",
@@ -258624,7 +258624,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 4,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. มี Metered valve ในการควบคุมปริมาตรยาที่พ่นแต่ละครั้งให้คงที่<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Metered-Dose Inhaler (MDI) บรรจุตัวยาในรูปสารละลายหรือสารแขวนตะกอนร่วมกับสารขับดันเหลวอัดความดัน โดยมี Metered valve ทำหน้าที่ตวงและควบคุมปริมาตรของเหลวยา (มักอยู่ที่ 25-100 microliters) ในแต่ละครั้งที่กดพ่น ทำให้ผู้ป่วยได้รับขนาดยา (Dose) ที่สม่ำเสมอและแม่นยำตามมาตรฐานเภสัชตำรับ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะการใช้ Coarse lactose เป็นสารตัวพา (Carrier) เป็นลักษณะเฉพาะของอุปกรณ์พ่นยาชนิดผงแห้ง (Dry Powder Inhaler: DPI) ไม่ใช่ MDI<br>• ข้อ ข.: ผิด เพราะ MDI จำเป็นต้องอาศัยเทคนิค Hand-breath coordination คือการกดพ่นยาพร้อมกับสูดหายใจเข้าช้าๆ ลึกๆ อย่างแม่นยำ<br>• ข้อ ค.: ผิด เพราะ MDI จำเป็นต้องใช้สารขับดัน (Propellant เช่น Hydrofluoroalkane: HFA) เพื่อสร้างแรงดันขับละอองยาออกมา<br>• ข้อ จ.: ผิด เพราะกระป๋องยา MDI เป็นภาชนะอัดความดัน (Pressurized canister) การเผาไฟจะทำให้สารขับดันขยายตัวและเกิดการระเบิดอย่างรุนแรง",
-    "answerImage": "cc1_product/image133.png",
+    "answerImage": "images/cc1_product/image133.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 8]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -259128,7 +259128,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 1,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Sterility testing (การทดสอบความปราศจากเชื้อ)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>แผ่นแปะผิวหนัง (Transdermal Delivery Systems / Patches) เป็นเภสัชภัณฑ์สำหรับใช้ภายนอกบนผิวหนังปกติที่ไม่มีบาดแผล จัดเป็น non-sterile dosage form จึงไม่ต้องผ่านการทดสอบ Sterility (ปราศจากเชื้อ) เหมือนยาฉีดหรือยาตา แต่จะควบคุมด้วย Microbial Enumeration Tests แทน ส่วนหัวข้อ Adhesive testing, In vitro release, Assay และ Uniformity of dosage units เป็นข้อกำหนดมาตรฐานที่จำเป็นต้องทดสอบตาม USP<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Identification เป็นข้อกำหนดบังคับสำหรับทุกเภสัชภัณฑ์เพื่อยืนยันชนิดของตัวยาสำคัญ<br>• ข้อ ค.: Assay เป็นข้อกำหนดบังคับเพื่อยืนยันปริมาณตัวยาสำคัญในแผ่นแปะ<br>• ข้อ ง.: In vitro drug release test (USP <724>) เป็นการทดสอบวิกฤตสำหรับระบบนำส่งยาทางผิวหนัง<br>• ข้อ จ.: Peel adhesion test เป็นข้อกำหนดเฉพาะที่จำเป็นสำหรับ Transdermal Patches เพื่อประกันว่าแผ่นยาจะติดแน่นกับผิวหนังตลอดระยะเวลาการใช้งาน",
-    "answerImage": "mock2_rxcu83/page_10_Im1.png",
+    "answerImage": "images/mock2_rxcu83/page_10_Im1.png",
     "note": "2567",
     "examType": "ข้อสอบจำลอง",
     "examYear": "Mock RxCU83 ชุดที่ 2",
@@ -261647,7 +261647,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากสูตรโครงสร้างของ cimetidine และ ranitidine พบว่า ranitidine มีฤทธิ์แรงกว่า cimetidine ถึง 10 เท่า เนื่องจาก ranitidine มีโครงสร้างที่เรียกว่าอะไรแทนที่โครงสร้าง imidazole ring ใน cimetidine",
-    "questionImage": "",
+    "questionImage": "images/qimg_medchem_r3_c2.png",
     "choices": [
       "Methyl cyanide",
       "Nitro",
@@ -261703,7 +261703,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้าง Simvastatin และ Pravastatin ข้อใดถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/purple2/simvastatin_pravastatin_q15_16.png",
     "choices": [
       "Cholestyramine ลดการดูดซึมของยา simvastatin เพราะโครงสร้าง Simvastatin มี lactone ring",
       "Cholestyramine ลดการดูดซึมของยา pravastatin เพราะโครงสร้าง Pravastatin มี carboxylic acid",
@@ -262655,7 +262655,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "สารสำคัญกลุ่ม Sennosides (Anthraquinone glycosides) ที่พบในใบมะขามแขก มีขั้วสูงเนื่องจากมีหมู่ฟังก์ชันไฮดรอกซิลและน้ำตาลหลายตำแหน่ง ควรเลือกใช้ตัวทำละลายใดในการสกัดที่เหมาะสมที่สุด",
-    "questionImage": "",
+    "questionImage": "images/cc1_product/image6.png",
     "choices": [
       "Ethyl acetate",
       "Hexane",
@@ -263691,7 +263691,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างใดกระตุ้นการเกิด rhabdomyolysis น้อยที่สุด (พิจารณาจากภาพโครงสร้างยากลุ่ม HMG-CoA reductase inhibitors ในตัวเลือก)",
-    "questionImage": "pharmtutor2024/set1_q10.png",
+    "questionImage": "images/pharmtutor2024/set1_q10.png",
     "choices": [
       "Simvastatin (โครงสร้าง ก)",
       "Pravastatin (โครงสร้าง ข)",
@@ -263719,7 +263719,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้าง dexamethasone บริเวณใดไม่สำคัญต่อการออกฤทธิ์ (พิจารณาตำแหน่ง A, B, C, D, E บนโครงสร้าง)",
-    "questionImage": "pharmtutor2024/set1_q18.png",
+    "questionImage": "images/pharmtutor2024/set1_q18.png",
     "choices": [
       "A",
       "B",
@@ -263747,7 +263747,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างในข้อใดออกฤทธิ์แบบ chain termination (พิจารณาจากภาพโครงสร้างยากลุ่ม Nucleoside Reverse Transcriptase Inhibitors ในตัวเลือก)",
-    "questionImage": "pharmtutor2024/set1_q34.png",
+    "questionImage": "images/pharmtutor2024/set1_q34.png",
     "choices": [
       "Zidovudine / NRTI structure (โครงสร้าง ก)",
       "โครงสร้าง ข",
@@ -263775,7 +263775,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างใดเข้าจับกับ binding site ของ GABA receptor ได้แตกต่างจากพวก",
-    "questionImage": "pharmtutor2024/set1_q59.png",
+    "questionImage": "images/pharmtutor2024/set1_q59.png",
     "choices": [
       "โครงสร้างในข้อ ก",
       "โครงสร้างในข้อ ข",
@@ -263803,7 +263803,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของ glucocorticosteroids ที่กำหนดให้ หากต้องการเพิ่มประสิทธิภาพของฤทธิ์ต้านการอักเสบควรพัฒนาที่ตำแหน่งใด",
-    "questionImage": "pharmtutor2024/set1_q63.png",
+    "questionImage": "images/pharmtutor2024/set1_q63.png",
     "choices": [
       "A และ B",
       "A และ C",
@@ -263831,7 +263831,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างใดไม่สามารถจับกับ estrogen receptor ได้",
-    "questionImage": "pharmtutor2024/set1_q70.png",
+    "questionImage": "images/pharmtutor2024/set1_q70.png",
     "choices": [
       "โครงสร้างในข้อ ก",
       "โครงสร้างในข้อ ข",
@@ -263859,7 +263859,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้าง chlorpropamide และ glipizide ความแตกต่างบริเวณใดทำให้เกิด hypoglycemia ได้ลดน้อยลง",
-    "questionImage": "pharmtutor2024/set1_q77.png",
+    "questionImage": "images/pharmtutor2024/set1_q77.png",
     "choices": [
       "1",
       "2",
@@ -263887,7 +263887,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างยา Digoxin ข้างต้น หากต้องการทดสอบสารสำคัญตามวงกลมในภาพ (โครงสร้าง cyclopentanoperhydrophenanthrene หรือ steroid nucleus) ควรใช้การทดสอบใดเพื่อพิสูจน์เอกลักษณ์สารดังกล่าว",
-    "questionImage": "pharmtutor2024/set1_q91.png",
+    "questionImage": "images/pharmtutor2024/set1_q91.png",
     "choices": [
       "Folin-Ciocalteu Content",
       "DPPH assay",
@@ -263943,7 +263943,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างที่กำหนดให้ ข้อใดไม่มีฤทธิ์ต้านการอักเสบ",
-    "questionImage": "pharmtutor2024/set2_q20.png",
+    "questionImage": "images/pharmtutor2024/set2_q20.png",
     "choices": [
       "โครงสร้าง A (Dexamethasone/Betamethasone)",
       "โครงสร้าง B (Prednisolone)",
@@ -263971,7 +263971,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้าง Omeprazole ตำแหน่งใด เข้าจับกับ proton pump receptor",
-    "questionImage": "pharmtutor2024/set2_q23.png",
+    "questionImage": "images/pharmtutor2024/set2_q23.png",
     "choices": [
       "A",
       "B",
@@ -263999,7 +263999,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของยากลุ่ม Integrase strand transfer inhibitors ที่กำหนดให้ บริเวณใดบ้างที่ส่งผลต่อการออกฤทธิ์ (MCQ ธ.ค. 66)",
-    "questionImage": "pharmtutor2024/set2_q35.png",
+    "questionImage": "images/pharmtutor2024/set2_q35.png",
     "choices": [
       "A: C-terminal domain",
       "B: Catalytic domain",
@@ -264027,7 +264027,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างที่กำหนดให้ต่อไปนี้ ข้อใดกล่าวผิดเกี่ยวกับคุณสมบัติของยา",
-    "questionImage": "pharmtutor2024/set2_q57.png",
+    "questionImage": "images/pharmtutor2024/set2_q57.png",
     "choices": [
       "Diazepam ผ่านกระบวนการ demethylation และ hydroxylation ได้ oxazepam",
       "Oxazepam มีค่าครึ่งชีวิตต่ำกว่า diazepam",
@@ -264083,7 +264083,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างในข้อใดมีความจำเพาะกับ progesterone receptor มากที่สุด",
-    "questionImage": "pharmtutor2024/set2_q68.png",
+    "questionImage": "images/pharmtutor2024/set2_q68.png",
     "choices": [
       "โครงสร้าง A",
       "โครงสร้าง B",
@@ -264139,7 +264139,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อใดคือ active form ของ cyclophosphamide (MCQ ธ.ค. 66)",
-    "questionImage": "pharmtutor2024/set2_q81.png",
+    "questionImage": "images/pharmtutor2024/set2_q81.png",
     "choices": [
       "4-Hydroxycyclophosphamide (ดูภาพประกอบ)",
       "Aldophosphamide (ดูภาพประกอบ)",
@@ -264167,7 +264167,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อใดต่อไปนี้ถูกต้อง",
-    "questionImage": "pharmtutor2024/set2_q85.png",
+    "questionImage": "images/pharmtutor2024/set2_q85.png",
     "choices": [
       "Fexofenadine เป็น active metabolite ของ Terfenadine",
       "Fexofenadine เป็น racemic mixture ของ Terfenadine",
@@ -264195,7 +264195,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ผู้ป่วยชาย อายุ 35 ปี มาขอซื้อยารักษาไซนัสอักเสบ ยาปฏิชีวนะในข้อใดไม่คงตัวในสภาวะกรดของกระเพาะอาหาร เนื่องจากโครงสร้างโมเลกุลสามารถเกิดปฏิกิริยา acid-catalyzed internal ketal formation ได้",
-    "questionImage": "cc1_product/image1.png",
+    "questionImage": "images/cc1_product/image1.png",
     "choices": [
       "Azithromycin (กลุ่ม Macrolides)",
       "Doxycycline (กลุ่ม Tetracyclines)",
@@ -264205,7 +264205,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 1,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Azithromycin (กลุ่ม Macrolides)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยากลุ่ม Macrolides (เช่น Erythromycin หรือ Azithromycin) มีวงแหวน macrolactone ring ที่มี ketone carbonyl และ hydroxyl group อยู่ใกล้กัน จึงเกิด intramolecular reaction ในกรดกลายเป็น cyclic ketal (anhydro form) ที่หมดฤทธิ์และระคายเคืองกระเพาะ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Doxycycline ในกลุ่ม Tetracyclines สลายตัวในกรดเกิด epimerization หรือ dehydration ได้สาร anhydrotetracycline แต่ไม่เกิด cyclic ketal formation<br>• ข้อ ค.: Amoxicillin ในกลุ่ม Penicillins ไม่คงตัวในกรดจากการเปิดวงแหวน beta-lactam ด้วยปฏิกิริยา hydrolysis<br>• ข้อ ง.: Levofloxacin ในกลุ่ม Fluoroquinolones มีความคงตัวสูงในสภาวะกรด ไม่เกิดปฏิกิริยา internal ketal<br>• ข้อ จ.: Sulfamethoxazole ในกลุ่ม Sulfonamides มีความคงตัวในกรดดีและไม่มีโครงสร้าง hydroxy-ketone ที่จะเกิด ketalization",
-    "answerImage": "cc1_product/image8.png",
+    "answerImage": "images/cc1_product/image8.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2567 ข้อ 8] [HAS_IMAGE: image1.png, image8.png] [RECONSTRUCTED: ปรับแต่งและเติมเต็มตัวเลือกให้สมบูรณ์]",
     "examType": "ข้อสอบจริง",
     "examYear": "2567",
@@ -264251,7 +264251,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในโครงสร้างทางเคมีของ Hypromellose (HPMC) หมู่ฟังก์ชันใดมีบทบาทสำคัญที่สุดในการสร้างพันธะไฮโดรเจนกับน้ำเพื่อกักเก็บความชุ่มชื้นในดวงตา",
-    "questionImage": "cc1_product/image3.png",
+    "questionImage": "images/cc1_product/image3.png",
     "choices": [
       "Hydrocarbon side chain",
       "Ester group",
@@ -264279,7 +264279,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ยารักษาโรคเกาต์ในข้อใดมีโครงสร้างทางเคมีเป็นอนุพันธ์ของ Purine และออกฤทธิ์ยับยั้งเอนไซม์ Xanthine oxidase เพื่อลดการสร้างกรดยูริกในร่างกาย",
-    "questionImage": "cc1_product/image4.png",
+    "questionImage": "images/cc1_product/image4.png",
     "choices": [
       "Allopurinol",
       "Febuxostat",
@@ -264307,7 +264307,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อใดต่อไปนี้คือรูปแบบโครงสร้างทางเคมีของสารในรูปแบบที่ออกฤทธิ์ (active form) ของยา Tenofovir alafenamide (TAF) หลังจากเข้าสู่เซลล์เป้าหมายในร่างกาย",
-    "questionImage": "cc1_product/image5.png",
+    "questionImage": "images/cc1_product/image5.png",
     "choices": [
       "Tenofovir diphosphate (Tenofovir-DP)",
       "Tenofovir monophosphate (Tenofovir-MP)",
@@ -264335,7 +264335,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในโครงสร้างทางเคมีของ Triamcinolone acetonide หมู่ฟังก์ชันในตำแหน่งหมายเลข 5 (หมู่ 16-alpha, 17-alpha acetonide) มีบทบาทสำคัญที่สุดในการเพิ่มสมบัติใดของโมเลกุลยา",
-    "questionImage": "cc1_product/image7.png",
+    "questionImage": "images/cc1_product/image7.png",
     "choices": [
       "เพิ่มความชอบน้ำ (Hydrophilicity) เพื่อให้ละลายน้ำได้ดีขึ้น",
       "เพิ่มความชอบไขมัน (Lipophilicity) เพื่อเพิ่มการซึมผ่านผิวหนังและเยื่อบุ",
@@ -264447,7 +264447,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างทางเคมีของฮอร์โมนโปรเจสติน Levonorgestrel การมีหมู่แทนที่ที่ตำแหน่งใดในโครงสร้างที่ช่วยลดฤทธิ์ฮอร์โมนเพศชาย (Androgenic effect) เมื่อเปรียบเทียบกับอนุพันธ์รุ่นแรกอย่าง Norethindrone",
-    "questionImage": "cc1_product/image13.png",
+    "questionImage": "images/cc1_product/image13.png",
     "choices": [
       "หมู่ Ethynyl (-C≡CH) ที่ตำแหน่ง C-17alpha",
       "หมู่ Hydroxyl (-OH) ที่ตำแหน่ง C-17beta",
@@ -264475,7 +264475,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างทางเคมีของยา Loratadine (Second-generation antihistamine) โครงสร้างส่วนใดทำหน้าที่สำคัญในการสร้างแรงยึดจับที่จำเพาะเจาะจงกับ Histamine H1-receptor",
-    "questionImage": "cc1_product/image14.png",
+    "questionImage": "images/cc1_product/image14.png",
     "choices": [
       "วงแหวน Pyridine และ Benzocycloheptene",
       "หมู่ Carbethoxy ester ที่ต่อกับวง Piperidine",
@@ -264503,7 +264503,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากข้อมูลคุณสมบัติทางเภสัชวิทยาและเคมีของ Nicotine และเมแทบอไลต์ ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับ Nicotine และ Cotinine",
-    "questionImage": "cc1_product/image17.png",
+    "questionImage": "images/cc1_product/image17.png",
     "choices": [
       "Nicotine แสดงคุณสมบัติเป็นกรดอ่อน มีค่า pKa เท่ากับ 8.0",
       "Nicotine ในสภาวะแตกตัวเป็นไอออนอย่างสมบูรณ์สามารถแพร่ผ่านเยื่อหุ้มเซลล์ได้ดีกว่ารูปที่ไม่แตกตัว",
@@ -264513,7 +264513,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 3,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Cotinine เป็นเมแทบอไลต์หลัก (Major active metabolite) ของ Nicotine ที่เกิดจากปฏิกิริยาออกซิเดชันผ่านเอนไซม์ CYP2A6<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Cotinine เป็น major metabolite ของ nicotine ซึ่งเกิดจากปฏิกิริยา C-oxidation โดยเอนไซม์ CYP2A6 ในตับ (ประมาณร้อยละ 70-80 ของ nicotine จะเปลี่ยนเป็น cotinine) และมีค่าครึ่งชีวิตยาวนานกว่า nicotine มาก (ประมาณ 16-20 ชั่วโมง เทียบกับ nicotine ที่มี half-life เพียง 1-2 ชั่วโมง)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Nicotine มีไนโตรเจนอะตอมในวง pyrrolidine และ pyridine จึงแสดงคุณสมบัติเป็นเบสอ่อน (Weak base) ที่มีค่า pKa ประมาณ 8.02 ไม่ใช่กรดอ่อน<br>• ข้อ ข.: Nicotine ในรูปไม่แตกตัวเป็นไอออน (non-ionized form) จะมีความชอบไขมันสูงและแพร่ผ่านเยื่อหุ้มเซลล์และเยื่อบุช่องปากได้ดีกว่ารูปไอออน<br>• ข้อ ง.: Cotinine มี half-life ยาวนานประมาณ 16-20 ชั่วโมง จึงนิยมใช้เป็น biomarker ในการตรวจประเมินการสูบบุหรี่ ในขณะที่ nicotine มี half-life สั้นมากเพียง 1-2 ชั่วโมง<br>• ข้อ จ.: Nicotine ถูกเปลี่ยนแปลงอย่างกว้างขวางที่ตับโดยผ่านกระบวนการ hepatic metabolism มีเพียงประมาณร้อยละ 10 เท่านั้นที่ขับออกทางไตในรูปเดิม",
-    "answerImage": "cc1_product/image45.png",
+    "answerImage": "images/cc1_product/image45.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 32]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -264559,7 +264559,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างทางเคมีของยากลุ่ม Proton pump inhibitor หากค่า pKa ของอะตอมไนโตรเจนบนวงแหวน Pyridine (pKa1) มีค่าลดลง จะส่งผลต่อคุณสมบัติและการออกฤทธิ์ของยาอย่างไร",
-    "questionImage": "cc1_product/image18.png",
+    "questionImage": "images/cc1_product/image18.png",
     "choices": [
       "ยาจะถูกกระตุ้น (protonated) ได้ยากขึ้น ส่งผลให้ออกฤทธิ์ช้าลง",
       "ยาจะจับกับเอนไซม์เป้าหมายได้แน่นขึ้นและออกฤทธิ์นานขึ้น",
@@ -264597,7 +264597,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 3,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Racemic mixture (Racemate)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>สารผสมในอัตราส่วน 1:1 (50:50) ระหว่างคู่ enantiomers ที่เป็นภาพสะท้อนในกระจกเงาของกันและกัน เรียกว่า Racemic mixture หรือ Racemate ซึ่งจะมีค่าการหมุนระนาบแสงโพลาไรซ์สุทธิเท่ากับศูนย์ (optically inactive)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Cis/Trans isomerism เป็น stereoisomer ชนิด geometric isomers ที่เกิดจากข้อจำกัดในการหมุนรอบพันธะคู่หรือในวงแหวน ไม่ใช่ chiral enantiomers<br>• ข้อ ข.: Diastereomers คือ stereoisomers ที่ไม่ใช่ภาพสะท้อนในกระจกเงาของกันและกัน (non-superimposable non-mirror images)<br>• ข้อ ง.: Conformational isomers เป็นไอโซเมอร์ที่เกิดจากการหมุนรอบพันธะเดี่ยว carbon-carbon<br>• ข้อ จ.: Meso compound เป็นโมเลกุลเดี่ยวที่มี chiral centers หลายตำแหน่งแต่มี internal plane of symmetry ทำให้ไม่มี chiral activity ในตัวเอง",
-    "answerImage": "cc1_product/image58.png",
+    "answerImage": "images/cc1_product/image58.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2565 ข้อ 43]",
     "examType": "ข้อสอบจริง",
     "examYear": "2565",
@@ -264615,7 +264615,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โมเลกุลยาชนิดหนึ่งมีหมู่ฟังก์ชันที่ให้ประจุ 2 ตำแหน่ง โดยตำแหน่ง A เป็นกรดอ่อนมีค่า pKa เท่ากับ 4.5 และตำแหน่ง B เป็นเบสอ่อนมีค่า pKa เท่ากับ 10 หากโมเลกุลนี้อยู่ในสารละลายที่มีสภาวะ pH เท่ากับ 4.5 สัดส่วนการแตกตัวของตำแหน่ง A และ B จะเป็นไปตามข้อใด",
-    "questionImage": "cc1_product/image70.png",
+    "questionImage": "images/cc1_product/image70.png",
     "choices": [
       "หมู่ A แตกตัว 100% และหมู่ B แตกตัว 0%",
       "หมู่ A แตกตัว 50% และหมู่ B แตกตัว 0%",
@@ -264671,7 +264671,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "รูปโครงสร้าง allopurinol ข้อใดถูกต้องที่สุด\n[ภาพโครงสร้าง Allopurinol]\n1. เป็น purine analog คล้าย hypoxanthine ยับยั้งเอนไซม์ xanthine oxidase\n2. log P มีค่าเป็นลบ (-1.8) แปลว่าชอบน้ำ (hydrophilic) สูง ผ่านเยื่อหุ้มเซลล์ด้วยการแพร่ผ่านได้ไม่ดี\n3. pKa ประมาณ 10.2 เมื่ออยู่ใน physiological pH 7.4 จะอยู่ในรูปที่ไม่แตกตัว (unionized form)",
-    "questionImage": "mock_rxcu83/page_3_Im1.png",
+    "questionImage": "images/mock_rxcu83/page_3_Im1.png",
     "choices": [
       "ข้อ 1 ถูก",
       "ข้อ 2 และ 3 ถูก",
@@ -264755,7 +264755,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างทางเคมีและความสัมพันธ์ระหว่างโครงสร้างกับฤทธิ์ (SAR) ของยา Dolutegravir (Integrase inhibitor) บริเวณโครงสร้างส่วนใดที่ทำหน้าที่สำคัญที่สุดในการจับคีเลตกับไอออนโลหะคู่ (Mg²⁺ chelation) บริเวณตำแหน่งเร่งของเอนไซม์ Integrase",
-    "questionImage": "mock2_rxcu83/page_2_Im2.png",
+    "questionImage": "images/mock2_rxcu83/page_2_Im2.png",
     "choices": [
       "วงแหวนไตรอะซีนที่มีอะตอมออกซิเจนเรียงตัว 3 ตำแหน่ง (Tris-oxygen chelating triad core)",
       "หมู่วงแหวน Difluorophenyl ด้านข้างโครงสร้าง",
@@ -264783,7 +264783,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างทางเคมีของยา Efavirenz (Non-nucleoside reverse transcriptase inhibitor: NNRTI) หมู่ฟังก์ชันหรือส่วนของโครงสร้างในข้อใดที่เป็นลักษณะเฉพาะสำคัญที่ช่วยให้ยาจับใน Allosteric pocket (NNRTI binding pocket) ได้อย่างแนบแน่น",
-    "questionImage": "mock2_rxcu83/page_2_Im3.png",
+    "questionImage": "images/mock2_rxcu83/page_2_Im3.png",
     "choices": [
       "หมู่ Cyclopropylacetylene และ Trifluoromethyl",
       "หมู่น้ำตาล Deoxyribose",
@@ -264811,7 +264811,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "การพัฒนาโครงสร้างจาก Tenofovir disoproxil fumarate (TDF) ไปเป็น Tenofovir alafenamide (TAF) ส่งผลให้ยามีพิษต่อไตและกระดูก (Renal and bone toxicity) ลดลงอย่างมาก เหตุผลเชิงโครงสร้างและเภสัชจลนศาสตร์ระดับโมเลกุลในข้อใดอธิบายปรากฏการณ์นี้ได้ถูกต้องที่สุด",
-    "questionImage": "mock2_rxcu83/page_2_Im4.png",
+    "questionImage": "images/mock2_rxcu83/page_2_Im4.png",
     "choices": [
       "TAF เป็น Prodrug ชนิด Phosphonoamidate ที่มีความคงตัวในพลาสมาสูงกว่า TDF ทำให้เข้าสู่เซลล์เม็ดเลือดขาวเป้าหมายได้ดีกว่าและมีระดับ Free Tenofovir ในกระแสเลือดต่ำกว่าถึงร้อยละ 90",
       "TAF ไม่ถูกเปลี่ยนเป็น Tenofovir diphosphate ภายในเซลล์ จึงไม่มีผลต่อการสร้างดีเอ็นเอของเซลล์ไต",
@@ -264839,7 +264839,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในผู้ป่วยที่รับประทานยา Calcium carbonate ร่วมกับยา Ciprofloxacin เกิดปัญหาการดูดซึมยา Ciprofloxacin ลดลงอย่างมาก (Reduced oral bioavailability) ส่วนของโครงสร้างทางเคมี (Functional groups) ในข้อใดของโมเลกุล Ciprofloxacin ที่ทำปฏิกิริยาคีเลชันกับไอออนแคลเซียม (Ca²⁺ chelation)",
-    "questionImage": "mock2_rxcu83/page_4_Im1.png",
+    "questionImage": "images/mock2_rxcu83/page_4_Im1.png",
     "choices": [
       "หมู่ 3-Carboxylic acid และ 4-Keto oxygen บนวงแหวน Quinolone",
       "วงแหวน Piperazine ที่ตำแหน่ง 7",
@@ -265063,7 +265063,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของยากลุ่ม Beta-2 adrenergic agonists โครงสร้างใดจัดเป็น Long-Acting Beta-2 Agonist (LABA) ที่มีสายยาวช่วยจับกับ Exosite บนรีเซปเตอร์\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p30_img2.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p30_img2.png",
     "choices": [
       "Terbutaline",
       "Formoterol",
@@ -265147,7 +265147,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของยา Misoprostol ข้อใดกล่าวผิด\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p30_img6.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p30_img6.png",
     "choices": [
       "โครงสร้างของยาเป็น Analogue ของ PGE1",
       "ยาอยู่ในรูป Prodrug",
@@ -265175,7 +265175,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ส่วนประกอบใดในโครงสร้างของยา Cephalosporins รุ่นที่สองและสาม (เช่น Cefamandole, Cefotetan, Cefoperazone) ที่เป็นสาเหตุทำให้เกิดภาวะเลือดออกผิดปกติ (Hypoprothrombinemia) และ Disulfiram-like reaction\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p31_img1.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p31_img1.png",
     "choices": [
       "หมู่ N-methylthiotetrazole (NMTT) ที่ตำแหน่ง C3",
       "หมู่ 7-methoxy group บนวงเบต้าแลกแทม",
@@ -265203,7 +265203,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของยากลุ่ม Fluoroquinolones (เช่น Ciprofloxacin) บริเวณใดของโครงสร้างที่ทำหน้าที่จับกับเอนไซม์เป้าหมาย (DNA gyrase และ Topoisomerase IV) ร่วมกับคีเลตของไอออนโลหะ\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p31_img3.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p31_img3.png",
     "choices": [
       "บริเวณ A (วง Piperazine)",
       "บริเวณ B (หมู่ Fluorine ที่ C6)",
@@ -265231,7 +265231,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพโครงสร้างของยา Pioglitazone (ยากลุ่ม Thiazolidinedione: TZD) ข้อใดกล่าวถูกต้อง\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p31_img7.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p31_img7.png",
     "choices": [
       "กลไกการออกฤทธิ์ของยา คือ กระตุ้น PPAR-gamma receptor ในเซลล์ไขมันและกล้ามเนื้อ",
       "ออกฤทธิ์โดยตรงในการกระตุ้นการหลั่งอินซูลินจากตับอ่อนเหมือนยากลุ่ม Sulfonylurea",
@@ -265259,7 +265259,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของ Estradiol ข้อใดถูกต้อง\nA) ระยะห่างระหว่างหมู่ Hydroxyl สองหมู่ที่เหมาะสม (3-OH ถึง 17-beta-OH) ส่งผลต่อการจับกับ Estrogen receptor\nB) การเติมหมู่ 17-alpha-alkyl (เช่น 17-alpha-ethinyl) ที่โครงสร้างจะป้องกันการเกิด oxidation ที่ตำแหน่ง 17 ทำให้สามารถบริหารโดยการรับประทานได้ (เช่น Ethinyl estradiol)\nC) Estradiol เมื่อถูก Metabolism จะได้ Estrone และ Estriol ซึ่ง Estriol มีความแรงมากกว่า Estrone\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p31_img9.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p31_img9.png",
     "choices": [
       "ข้อ A และ C ถูก",
       "ข้อ A และ B ถูก",
@@ -265287,7 +265287,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของ Morphine (โครงสร้าง 1: 3-OH, 6-OH), Codeine (โครงสร้าง 2: 3-OCH3, 6-OH) และ Heroin (โครงสร้าง 3: 3-OCOCH3, 6-OCOCH3) ข้อใดเรียงลำดับความแรงในการออกฤทธิ์ระงับปวด (Analgesic potency) จากมากไปน้อยได้ถูกต้อง\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p32_img1.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p32_img1.png",
     "choices": [
       "1 > 2 > 3",
       "2 > 1 > 3",
@@ -265315,7 +265315,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อใดกล่าวผิดเกี่ยวกับความสัมพันธ์ระหว่างโครงสร้างและการออกฤทธิ์ของยา Dicloxacillin และ Amoxicillin\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p32_img3.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p32_img3.png",
     "choices": [
       "หมายเลข 1 ในโครงสร้างของยา Dicloxacillin และ Amoxicillin คือ Thiazolidine ring",
       "หมายเลข 3 ในโครงสร้างของยา Dicloxacillin คือ Isoxazolyl ring ซึ่งวางตัวเกะกะ (Steric hindrance) ขัดขวางไม่ให้ Beta-lactamase enzyme เข้าจับได้",
@@ -268678,7 +268678,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "เภสัชกรผู้มีหน้าที่ปฏิบัติการในร้านขายยาแผนปัจจุบัน ไม่สวมเสื้อกาวน์และไม่ติดป้ายชื่อแสดงตนขณะส่งมอบยาและให้คำปรึกษาแก่ผู้รับบริการ ถือเป็นการกระทำที่ผิดต่อข้อบังคับและกฎหมายใด",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p24_img1.png",
     "choices": [
       "พระราชบัญญัติวิชาชีพเภสัชกรรม พ.ศ. 2537 และข้อบังคับสภาเภสัชกรรมว่าด้วยจรรยาบรรณแห่งวิชาชีพ",
       "พระราชบัญญัติยาเสพติดให้โทษ พ.ศ. 2522",
@@ -271611,7 +271611,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 5,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. 24 เดือน<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามประกาศกระทรวงสาธารณสุขและระเบียบปฏิบัติของสำนักงานคณะกรรมการอาหารและยา (อย.) ภายใต้ พ.ร.บ. ยา พ.ศ. 2510 ยาใหม่ (New Drugs) ที่ได้รับอนุมัติทะเบียนตำรับยาต้องเข้าสู่โครงการ Safety Monitoring Program (SMP) เพื่อติดตามและประเมินอาการไม่พึงประสงค์จากการใช้ยา (ADR) ในกลุ่มประชากรไทยเป็นระยะเวลาอย่างน้อย 2 ปี (24 เดือน)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ผิด เพราะระยะเวลา 3 เดือนสั้นเกินไป ไม่เพียงพอต่อการประเมินสัญญาณความปลอดภัย (Safety signals) และอาการไม่พึงประสงค์ที่เกิดขึ้นได้ยาก<br>• ข้อ ข.: ผิด เพราะระยะเวลา 6 เดือนยังอยู่ในช่วงเริ่มต้นของการจำหน่าย ยาถูกใช้ในกลุ่มประชากรที่จำกัด<br>• ข้อ ค.: ผิด เพราะ 12 เดือน (1 ปี) ยังไม่ครบเกณฑ์ขั้นต่ำตามกฎหมายกำหนด โดย อย. กำหนดระยะเวลาติดตามอย่างน้อย 2 ปีเต็ม (24 เดือน)<br>• ข้อ ง.: ผิด เพราะ 18 เดือนยังไม่ครบระยะเวลาตามเกณฑ์มาตรฐานความปลอดภัยที่ระบุไว้ 2 ปี (24 เดือน)",
-    "answerImage": "cc1_product/image127.png",
+    "answerImage": "images/cc1_product/image127.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2558 ข้อ 2]",
     "examType": "ข้อสอบจริง",
     "examYear": "2558",
@@ -274885,7 +274885,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากกราฟข้างต้นเป็นกราฟแสดงการกระจายรายได้ของคนไทยในปี 2545 จากกราฟข้างต้นสามารถสรุปได้ว่าอย่างไร",
-    "questionImage": "pharmtutor2024/set1_q117.png",
+    "questionImage": "images/pharmtutor2024/set1_q117.png",
     "choices": [
       "การกระจายของข้อมูลเป็นแบบปกติ normal distribution",
       "การกระจายของข้อมูลเป็นแบบปกติ normal distribution (Mean > Mode)",
@@ -274941,7 +274941,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากการศึกษาผลของการใช้ยา Semaglutide ในการลดระดับน้ำตาลในเลือด",
     "caseStem": "จากการศึกษาผลของการใช้ยา Semaglutide ในการลดระดับน้ำตาลในเลือด",
     "question": "ข้อใดต่อไปนี้กล่าวถูกต้อง",
-    "questionImage": "pharmtutor2024/set2_q111.png",
+    "questionImage": "images/pharmtutor2024/set2_q111.png",
     "choices": [
       "การศึกษาการใช้ยา oral semaglutide เทียบกับ placebo ผลลัพธ์ของการศึกษาแตกต่างกันทางคลินิก แต่ไม่มีนัยสำคัญทางสถิติ",
       "การหาค่า I square แสดงถึงความแตกต่างกันของการศึกษาหากมีค่ามากแสดงว่า การศึกษาแต่ละชนิด ไม่มีความแตกต่างกัน",
@@ -274969,7 +274969,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากการศึกษาแบบ Cohort study เกี่ยวกับความสัมพันธ์ระหว่างการใช้ยาลดความดันกลุ่ม ACEIs กับการเกิดอาการไอ โดยมีข้อมูลดังตาราง (ผู้ใช้ ACEIs เกิดอาการไอ 20 จาก 200 ราย, ผู้ไม่ใช้ ACEIs เกิดอาการไอ 15 จาก 500 ราย) จงหาค่า Relative Risk (RR) ของอาการไอกับการใช้ยา ACEIs",
-    "questionImage": "cc1_product/image2.png",
+    "questionImage": "images/cc1_product/image2.png",
     "choices": [
       "3.59",
       "3.33",
@@ -274979,7 +274979,7 @@ window.QUIZ_OFFLINE_DB = [
     ],
     "answer": 2,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 3.33<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Relative Risk คำนวณจากอุบัติการณ์ในกลุ่มที่ได้รับยา (20 หาร 200 เท่ากับ 0.10) หารด้วยอุบัติการณ์ในกลุ่มที่ไม่ได้รับยา (15 หาร 500 เท่ากับ 0.03) ได้ค่า 0.10 หาร 0.03 เท่ากับ 3.33<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: 3.59 เป็นค่าที่ได้จากการคำนวณ Odds Ratio (20 คูณ 485 หารด้วย 180 คูณ 15 เท่ากับ 3.59) ซึ่งไม่ใช่ Relative Risk ของการศึกษา cohort<br>• ข้อ ค.: 0.28 เป็นส่วนกลับของ Relative Risk หรือเกิดจากการนำกลุ่ม unexposed มาตั้งหารด้วยกลุ่ม exposed<br>• ข้อ ง.: 2.69 เป็นตัวเลขหลอกที่คำนวณจากสัดส่วนกลุ่มตัวอย่างคลาดเคลื่อน<br>• ข้อ จ.: 0.30 เป็นค่าความเสี่ยงของกลุ่มควบคุมที่เลื่อนตำแหน่งทศนิยมผิดพลาด (0.03 กลายเป็น 0.30)",
-    "answerImage": "cc1_product/image9.png",
+    "answerImage": "images/cc1_product/image9.png",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2567 ข้อ 9] [HAS_IMAGE: image2.png, image9.png]",
     "examType": "ข้อสอบจริง",
     "examYear": "2567",
@@ -275305,7 +275305,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากภาพแสดงผลลัพธ์ Forest plot ของการศึกษาอภิมาน (Meta-analysis) เกี่ยวกับความเสี่ยงการเกิดการเสียชีวิตจากโรคหัวใจและหลอดเลือดจากการใช้ยากลุ่ม macrolides (รวมผลการศึกษาทั้งหมดได้ค่า Summary Relative Risk = 1.34, 95% CI: 1.05 - 1.70) ข้อใดกล่าวถูกต้อง\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p25_img1.png\">",
-    "questionImage": "",
+    "questionImage": "images/quiz_cc1/quiz_cc1_p25_img1.png",
     "choices": [
       "การได้รับยาในกลุ่ม macrolides สามารถเพิ่มความเสี่ยงในการเกิดการเสียชีวิตจากโรคหัวใจและหลอดเลือดได้ 34% อย่างมีนัยสำคัญทางสถิติ",
       "การได้รับยาในกลุ่ม macrolides สามารถลดความเสี่ยงในการเกิดการเสียชีวิตจากโรคหัวใจและหลอดเลือดได้อย่างมีนัยสำคัญทางสถิติ",
