@@ -6327,6 +6327,168 @@
       gap: 8px;
       flex-wrap: wrap;
     }
+  
+    /* ─── UNIFIED TOOLS MENU & MOBILE NO-OVERFLOW FIX ─── */
+    .tools-menu-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      height: 34px;
+      padding: 0 11px;
+      border-radius: 10px;
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      color: var(--ink);
+      font-family: inherit;
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.15s ease;
+    }
+    .tools-menu-btn:hover {
+      border-color: var(--clinic);
+      color: var(--clinic);
+      background: rgba(2, 132, 199, 0.06);
+    }
+
+    .tools-modal-section {
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .tools-modal-section:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .tools-section-title {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: var(--ink-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 8px;
+    }
+    .tools-seg-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+    .tools-seg-grid.two-col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .tools-opt-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 9px 8px;
+      border-radius: 10px;
+      border: 1.5px solid var(--border);
+      background: var(--bg);
+      color: var(--ink);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-align: center;
+    }
+    .tools-opt-btn:hover {
+      border-color: var(--clinic);
+      color: var(--clinic);
+    }
+    .tools-opt-btn.active {
+      background: rgba(2, 132, 199, 0.12);
+      border-color: var(--clinic);
+      color: var(--clinic);
+      box-shadow: 0 2px 6px rgba(2, 132, 199, 0.14);
+    }
+    .tools-action-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+    .tools-action-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 11px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--ink);
+      font-family: inherit;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.15s ease;
+    }
+    .tools-action-btn:hover {
+      border-color: var(--clinic);
+      background: rgba(2, 132, 199, 0.04);
+    }
+    .tools-action-badge {
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 8px;
+      background: var(--bg);
+      color: var(--ink-soft);
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      #quizView, #cardPracticeViewport, #scrollPracticeViewport, #lobbyView {
+        overflow-x: clip !important;
+      }
+      .topbar-secondary-btn {
+        display: none !important;
+      }
+      .quiz-controls-group {
+        display: none !important;
+      }
+      #quizModeSwitchInScroll {
+        display: none !important;
+      }
+      .subtopic-selector-row {
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+        max-width: 100% !important;
+      }
+      .subtopic-select-wrap {
+        min-width: 0 !important;
+        flex: 1 1 calc(50% - 4px) !important;
+      }
+      #quizSubtopicWrap {
+        flex: 1 1 100% !important;
+      }
+      .scroll-controls-actions {
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+      }
+      .lobby-header {
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+      }
+      .lobby-user-pill {
+        max-width: 110px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .countdown-nav-pill {
+        display: none !important;
+      }
+      .tools-action-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
   </style>
 
 </head>
@@ -6525,46 +6687,50 @@
 
         </div>
 
-        <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
+        <button class="icon-btn topbar-secondary-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
 
           <span style="font-size:13px;">📖</span>
 
         </button>
 
-        <button class="icon-btn" id="btnToggleAnimLobby" onclick="toggleCardAnimation()" title="แอนิเมชันพลิกการ์ด (เปิด/ปิด)">
+        <button class="icon-btn topbar-secondary-btn" id="btnToggleAnimLobby" onclick="toggleCardAnimation()" title="แอนิเมชันพลิกการ์ด (เปิด/ปิด)">
 
           <span id="animIconLobby" style="font-size:13px;">🎬</span>
 
         </button>
 
-        <button class="icon-btn" id="btnToggleFontSizeLobby" onclick="cycleFontSizeScale()" title="ขนาดตัวอักษร: ปกติ (คลิกเพื่อขยายใหญ่)">
+        <button class="icon-btn topbar-secondary-btn" id="btnToggleFontSizeLobby" onclick="cycleFontSizeScale()" title="ขนาดตัวอักษร: ปกติ (คลิกเพื่อขยายใหญ่)">
 
           <span style="font-size:12px; font-weight:700; font-family:'IBM Plex Mono', monospace;">Aa</span>
 
         </button>
 
-        <button class="icon-btn" id="btnFullscreenLobby" onclick="toggleFullscreen()" title="โหมดเต็มจอ">
+        <button class="icon-btn topbar-secondary-btn" id="btnFullscreenLobby" onclick="toggleFullscreen()" title="โหมดเต็มจอ">
 
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
 
         </button>
 
-        <button class="icon-btn" onclick="syncDataFromSheet()" title="อัปเดตข้อมูลจาก Google Sheet">
+        <button class="icon-btn topbar-secondary-btn" onclick="syncDataFromSheet()" title="อัปเดตข้อมูลจาก Google Sheet">
 
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
 
         </button>
 
-        <button class="icon-btn" onclick="forceClearCacheAndReload()" title="ล้างแคชและรีโหลดข้อสอบล่าสุดใหม่ทั้งหมด">
+        <button class="icon-btn topbar-secondary-btn" onclick="forceClearCacheAndReload()" title="ล้างแคชและรีโหลดข้อสอบล่าสุดใหม่ทั้งหมด">
 
           <span style="font-size:13px;">🧹</span>
 
         </button>
 
-        <button class="icon-btn" onclick="doLogout()" title="ออกจากระบบ">
+        <button class="icon-btn topbar-secondary-btn" onclick="doLogout()" title="ออกจากระบบ">
 
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
 
+        </button>
+
+        <button class="tools-menu-btn" id="btnLobbyToolsMenu" onclick="openUnifiedToolsModal('lobby')" title="เมนูและตั้งค่าทั้งหมด">
+          <span>⚙️</span><span>เมนู</span>
         </button>
 
       </div>
@@ -7008,13 +7174,13 @@
 
       <div class="topbar-right">
 
-        <button class="icon-btn" id="btnTogglePracticeViewStyle" onclick="togglePracticeViewStyle()" title="สลับมุมมอง: ทีละข้อ (Card) / เลื่อนยาว (Scroll Down)">
+        <button class="icon-btn topbar-secondary-btn" id="btnTogglePracticeViewStyle" onclick="togglePracticeViewStyle()" title="สลับมุมมอง: ทีละข้อ (Card) / เลื่อนยาว (Scroll Down)">
 
           <span id="practiceViewStyleIcon" style="font-size:13px;">📜</span>
 
         </button>
 
-        <button class="icon-btn" id="btnToggleExpMode" onclick="toggleExpDisplayMode()" title="โหมดแสดงเฉลย: 🎯 ป๊อปอัปกลางจอ (คลิกเพื่อเปลี่ยนเป็นแสดงด้านล่าง)">
+        <button class="icon-btn topbar-secondary-btn" id="btnToggleExpMode" onclick="toggleExpDisplayMode()" title="โหมดแสดงเฉลย: 🎯 ป๊อปอัปกลางจอ (คลิกเพื่อเปลี่ยนเป็นแสดงด้านล่าง)">
 
           <span id="expModeIcon" style="font-size:13px;">🎯</span>
 
@@ -7026,40 +7192,44 @@
 
         </button>
 
-        <button class="icon-btn" id="btnShufflePractice" onclick="shuffleCurrentQuizDeck()" title="🔀 สลับลำดับข้อสอบ (Shuffle)">
+        <button class="icon-btn topbar-secondary-btn" id="btnShufflePractice" onclick="shuffleCurrentQuizDeck()" title="🔀 สลับลำดับข้อสอบ (Shuffle)">
 
           <span style="font-size:13px;">🔀</span>
 
         </button>
 
-        <button class="icon-btn" id="btnResetPracticeState" onclick="confirmResetPracticeState()" title="🔄 รีเซ็ตความคืบหน้ากลับข้อ 1 (เรียงตามลำดับเดิม)">
+        <button class="icon-btn topbar-secondary-btn" id="btnResetPracticeState" onclick="confirmResetPracticeState()" title="🔄 รีเซ็ตความคืบหน้ากลับข้อ 1 (เรียงตามลำดับเดิม)">
 
           <span style="font-size:13px;">🔄</span>
 
         </button>
 
-        <button class="icon-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
+        <button class="icon-btn topbar-secondary-btn" onclick="openGuidelineModal()" title="คู่มือการใช้งาน & คีย์ลัด">
 
           <span style="font-size:13px;">📖</span>
 
         </button>
 
-        <button class="icon-btn" id="btnToggleAnim" onclick="toggleCardAnimation()" title="แอนิเมชันพลิกการ์ด (เปิด/ปิด)">
+        <button class="icon-btn topbar-secondary-btn" id="btnToggleAnim" onclick="toggleCardAnimation()" title="แอนิเมชันพลิกการ์ด (เปิด/ปิด)">
 
           <span id="animIcon" style="font-size:13px;">🎬</span>
 
         </button>
 
-        <button class="icon-btn" id="btnToggleFontSizeQuiz" onclick="cycleFontSizeScale()" title="ขนาดตัวอักษร: ปกติ (คลิกเพื่อขยายใหญ่)">
+        <button class="icon-btn topbar-secondary-btn" id="btnToggleFontSizeQuiz" onclick="cycleFontSizeScale()" title="ขนาดตัวอักษร: ปกติ (คลิกเพื่อขยายใหญ่)">
 
           <span style="font-size:12px; font-weight:700; font-family:'IBM Plex Mono', monospace;">Aa</span>
 
         </button>
 
-        <button class="icon-btn" id="btnFullscreenQuiz" onclick="toggleFullscreen()" title="เต็มจอ">
+        <button class="icon-btn topbar-secondary-btn" id="btnFullscreenQuiz" onclick="toggleFullscreen()" title="เต็มจอ">
 
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
 
+        </button>
+
+        <button class="tools-menu-btn" id="btnQuizToolsMenu" onclick="openUnifiedToolsModal('quiz')" title="เมนูเครื่องมือและตั้งค่าทั้งหมด">
+          <span>⚙️</span><span>เมนู</span>
         </button>
 
       </div>
@@ -8574,7 +8744,83 @@
     </div>
   </div>
 
-  <!-- Guideline Modal -->
+    <!-- ⚙️ Unified Tools & Settings Modal -->
+  <div class="modal-overlay" id="unifiedToolsModal" onclick="if(event.target===this) closeUnifiedToolsModal()">
+    <div class="modal-box" style="max-width:460px;">
+      <div class="modal-head">
+        <h3 style="display:flex; align-items:center; gap:7px;">⚙️ เมนูเครื่องมือ & ตั้งค่า</h3>
+        <button class="modal-close" onclick="closeUnifiedToolsModal()">✕</button>
+      </div>
+
+      <!-- Quiz Layout (Quiz Only) -->
+      <div class="tools-modal-section quiz-only-section" id="toolsSectionLayout">
+        <div class="tools-section-title">📐 มุมมองข้อสอบ</div>
+        <div class="tools-seg-grid">
+          <button class="tools-opt-btn" id="menuLayoutSingle" onclick="setPracticeViewLayout('single'); syncUnifiedToolsModalUI();">📖 1 คอลัมน์</button>
+          <button class="tools-opt-btn" id="menuLayoutSplit" onclick="setPracticeViewLayout('split'); syncUnifiedToolsModalUI();">📑 2 คอลัมน์</button>
+          <button class="tools-opt-btn" id="menuLayoutScroll" onclick="setPracticeViewLayout('scroll'); closeUnifiedToolsModal();">📜 เลื่อนอ่าน</button>
+        </div>
+      </div>
+
+      <!-- Explanation Display Mode (Quiz Only) -->
+      <div class="tools-modal-section quiz-only-section" id="toolsSectionExpMode">
+        <div class="tools-section-title">💡 รูปแบบการแสดงเฉลย</div>
+        <div class="tools-seg-grid two-col">
+          <button class="tools-opt-btn" id="menuExpPopup" onclick="setExpDisplayMode('popup'); syncUnifiedToolsModalUI();">🎯 ป๊อปอัปกลางจอ</button>
+          <button class="tools-opt-btn" id="menuExpInline" onclick="setExpDisplayMode('inline'); syncUnifiedToolsModalUI();">⏬ แสดงด้านล่าง</button>
+        </div>
+      </div>
+
+      <!-- Deck Navigation & Actions (Quiz Only) -->
+      <div class="tools-modal-section quiz-only-section" id="toolsSectionDeck">
+        <div class="tools-section-title">🗂️ จัดการข้อสอบ</div>
+        <div class="tools-action-list">
+          <button class="tools-action-btn" onclick="closeUnifiedToolsModal(); openQuizNavigatorModal();">
+            <span>🔍 ค้นหา / กระโดดไปข้อ</span>
+          </button>
+          <button class="tools-action-btn" onclick="closeUnifiedToolsModal(); shuffleCurrentQuizDeck();">
+            <span>🔀 สลับลำดับข้อสอบ</span>
+          </button>
+          <button class="tools-action-btn" onclick="closeUnifiedToolsModal(); confirmResetPracticeState();">
+            <span>🔄 รีเซ็ตกลับข้อ 1</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Display & System (Both Lobby & Quiz) -->
+      <div class="tools-modal-section">
+        <div class="tools-section-title">🎨 การแสดงผล & ระบบ</div>
+        <div class="tools-action-list">
+          <button class="tools-action-btn" onclick="cycleFontSizeScale(); syncUnifiedToolsModalUI();">
+            <span>🔤 ขนาดตัวอักษร (Aa)</span>
+            <span class="tools-action-badge" id="menuFontScaleBadge">ปกติ</span>
+          </button>
+          <button class="tools-action-btn" onclick="toggleCardAnimation(); syncUnifiedToolsModalUI();">
+            <span>🎬 แอนิเมชันพลิกการ์ด</span>
+            <span class="tools-action-badge" id="menuAnimBadge">เปิด</span>
+          </button>
+          <button class="tools-action-btn" onclick="toggleFullscreen(); setTimeout(syncUnifiedToolsModalUI, 150);">
+            <span>⛶ โหมดเต็มจอ</span>
+            <span class="tools-action-badge" id="menuFsBadge">ปกติ</span>
+          </button>
+          <button class="tools-action-btn" onclick="closeUnifiedToolsModal(); openGuidelineModal();">
+            <span>📖 คู่มือ & คีย์ลัด</span>
+          </button>
+          <button class="tools-action-btn lobby-only-item" onclick="closeUnifiedToolsModal(); syncDataFromSheet();">
+            <span>🔄 อัปเดตจาก Sheet</span>
+          </button>
+          <button class="tools-action-btn lobby-only-item" onclick="closeUnifiedToolsModal(); forceClearCacheAndReload();">
+            <span>🧹 ล้างแคช & รีโหลด</span>
+          </button>
+          <button class="tools-action-btn lobby-only-item" onclick="closeUnifiedToolsModal(); doLogout();" style="color:#dc2626; border-color:rgba(220,38,38,0.25);">
+            <span>🚪 ออกจากระบบ</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Guideline Modal -->
 
   <div class="modal-overlay" id="guidelineModal">
 
@@ -24705,6 +24951,69 @@ function startLiveExamCountdown() {
 
 // Auto-init countdown on load
 try { initDailyCountdown(); } catch(e) { console.error('Countdown init err:', e); }
+
+
+// ─── UNIFIED TOOLS & SETTINGS MODAL ───
+let currentToolsModalContext = 'quiz';
+
+function openUnifiedToolsModal(context) {
+  currentToolsModalContext = context || 'quiz';
+  const modal = document.getElementById('unifiedToolsModal');
+  if (!modal) return;
+  const isQuiz = (currentToolsModalContext === 'quiz');
+  modal.querySelectorAll('.quiz-only-section').forEach(el => {
+    el.style.display = isQuiz ? '' : 'none';
+  });
+  modal.querySelectorAll('.lobby-only-item').forEach(el => {
+    el.style.display = isQuiz ? 'none' : '';
+  });
+  syncUnifiedToolsModalUI();
+  modal.classList.add('show');
+}
+
+function closeUnifiedToolsModal() {
+  const modal = document.getElementById('unifiedToolsModal');
+  if (modal) modal.classList.remove('show');
+}
+
+function syncUnifiedToolsModalUI() {
+  // 1. Layout active state
+  const layout = (typeof practiceViewStyle !== 'undefined') ? practiceViewStyle : 'single';
+  const mapLayout = {
+    single: document.getElementById('menuLayoutSingle'),
+    split: document.getElementById('menuLayoutSplit'),
+    scroll: document.getElementById('menuLayoutScroll')
+  };
+  Object.entries(mapLayout).forEach(([k, el]) => {
+    if (el) el.classList.toggle('active', k === layout);
+  });
+
+  // 2. Explanation mode active state
+  const expMode = (typeof getExpDisplayMode === 'function') ? getExpDisplayMode() : 'popup';
+  const btnPop = document.getElementById('menuExpPopup');
+  const btnInl = document.getElementById('menuExpInline');
+  if (btnPop) btnPop.classList.toggle('active', expMode === 'popup');
+  if (btnInl) btnInl.classList.toggle('active', expMode === 'inline');
+
+  // 3. Font scale badge
+  const fontBadge = document.getElementById('menuFontScaleBadge');
+  if (fontBadge && typeof currentFontScale !== 'undefined') {
+    const labels = { normal: 'ปกติ', large: 'ใหญ่', xlarge: 'ใหญ่มาก' };
+    fontBadge.textContent = labels[currentFontScale] || 'ปกติ';
+  }
+
+  // 4. Animation badge
+  const animBadge = document.getElementById('menuAnimBadge');
+  if (animBadge && typeof isCardAnimEnabled !== 'undefined') {
+    animBadge.textContent = isCardAnimEnabled ? 'เปิด' : 'ปิด';
+  }
+
+  // 5. Fullscreen badge
+  const fsBadge = document.getElementById('menuFsBadge');
+  if (fsBadge && typeof isFullscreenActive === 'function') {
+    fsBadge.textContent = isFullscreenActive() ? 'เต็มจอ' : 'ปกติ';
+  }
+}
 
 // Initial card animation state
 
