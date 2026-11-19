@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.1 Pro Edition)
- * Total Questions: 4873 across 32 Categories
- * Build Timestamp: 2026-11-19 12:53:35
+ * Total Questions: 4877 across 32 Categories
+ * Build Timestamp: 2026-11-19 13:21:19
  * Build Mode: Fast Local (openpyxl)
  */
 
@@ -47,7 +47,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "8. Infectious diseases",
-    "count": 379,
+    "count": 380,
     "track": "Clinic"
   },
   {
@@ -77,12 +77,12 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "14. Oncologic",
-    "count": 111,
+    "count": 112,
     "track": "Clinic"
   },
   {
     "name": "15. Renal",
-    "count": 82,
+    "count": 83,
     "track": "Clinic"
   },
   {
@@ -152,7 +152,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "13. Medicinal Chemistry",
-    "count": 154,
+    "count": 155,
     "track": "Product"
   },
   {
@@ -6419,7 +6419,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของยาCelecoxib มีโอกาสทำให้เกิดการเเพ้ sulfonamides cross hypersensitivity หรือไม่ เเละหากเกิดการเเพ้ดังกล่าวได้ ตำเเหน่งใด ทำให้เกิดการเเพ้",
-      "questionImage": "",
+      "questionImage": "images/pubchem/celecoxib.png",
       "choices": [
         "เกิดการเเพ้ได้ ทั้งตำเเหน่งที่1เเละ ตำเเหน่งที่ 2",
         "เกิดการเเพ้ได้ที่ตำเเหน่งที่1เท่านั้น",
@@ -9975,7 +9975,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างทางเคมีของ Simvastatin เป็นยาในรูปแบบ Pro-drug ที่ยังไม่ออกฤทธิ์ ปฏิกิริยาเคมีใดในร่างกายที่เปลี่ยนโครงสร้างของ Simvastatin ให้กลายเป็นรูปที่ออกฤทธิ์ทางชีวภาพ (Active form)",
-      "questionImage": "",
+      "questionImage": "images/pubchem/simvastatin.png",
       "choices": [
         "Hydrolysis ของวงแหวน Lactone ring กลายเป็น Beta-hydroxy acid",
         "Oxidation ของวงแหวน Decalin ring ด้วย CYP3A4",
@@ -10580,7 +10580,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "ผู้ป่วยชายไทย อายุ 60 ปี มาด้วยอาการหอบเหนื่อย นอนราบไม่ได้ มีภาวะน้ำคั่งที่ปอด โรคประจำตัวคือความดันโลหิตสูงและเคยมีประวัติกล้ามเนื้อหัวใจขาดเลือดมาก่อน Current meds: ASA 81 mg, Atenolol 100 mg, Enalapril 20 mg ผลตรวจ: BP 138/80 mmHg, HR 68 bpm, BUN 10 mg/dL, SCr 1.0 mg/dL, LVEF 22% ต่อมาอีก 3 ปี ผู้ป่วยได้รับการวินิจฉัยเป็น Atrial Fibrillation (AF) และได้รับยา Warfarin 3 mg 1 tab hs",
       "caseStem": "ผู้ป่วยชายไทย อายุ 60 ปี มาด้วยอาการหอบเหนื่อย นอนราบไม่ได้ มีภาวะน้ำคั่งที่ปอด โรคประจำตัวคือความดันโลหิตสูงและเคยมีประวัติกล้ามเนื้อหัวใจขาดเลือดมาก่อน Current meds: ASA 81 mg, Atenolol 100 mg, Enalapril 20 mg ผลตรวจ: BP 138/80 mmHg, HR 68 bpm, BUN 10 mg/dL, SCr 1.0 mg/dL, LVEF 22% ต่อมาอีก 3 ปี ผู้ป่วยได้รับการวินิจฉัยเป็น Atrial Fibrillation (AF) และได้รับยา Warfarin 3 mg 1 tab hs",
       "question": "ข้อใดกล่าวถูกต้องเกี่ยวกับลักษณะโครงสร้างทางเคมีและคุณสมบัติทางแสงของยา Warfarin",
-      "questionImage": "",
+      "questionImage": "images/pubchem/warfarin.png",
       "choices": [
         "Racemic mixture หมุน polarize ไม่ได้",
         "มี chiral carbon 2 atom",
@@ -11298,7 +11298,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "[ย้ายไป 11. Pulmonary::168] ยา Enalapril มี half-life เท่ากับ 11 ชั่วโมง ค่า Ke ของยานี้เท่ากับเท่าไหร่ (hr-1)",
+      "question": "[ย้ายไป 15. Renal::85] [ย้ายไป 11. Pulmonary::168] ยา Enalapril มี half-life เท่ากับ 11 ชั่วโมง ค่า Ke ของยานี้เท่ากับเท่าไหร่ (hr-1)",
       "questionImage": "",
       "choices": [
         "0.06",
@@ -15252,7 +15252,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "กรณีศึกษา: นางสาวสมหญิง นักศึกษาชั้นปีที่ 1 มหาวิทยาลัย มีปัญหาสิวอักเสบรุนแรงเรื้อรัง (Severe nodulocystic acne) มีตุ่มหนองและก้อนซีสต์บวมแดงจำนวนมากบริเวณใบหน้าและลำคอ เข้ามาปรึกษาเภสัชกรที่ร้านยาเพื่อขอซื้อยา Isotretinoin ชนิดรับประทาน",
       "caseStem": "กรณีศึกษา: นางสาวสมหญิง นักศึกษาชั้นปีที่ 1 มหาวิทยาลัย มีปัญหาสิวอักเสบรุนแรงเรื้อรัง (Severe nodulocystic acne) มีตุ่มหนองและก้อนซีสต์บวมแดงจำนวนมากบริเวณใบหน้าและลำคอ เข้ามาปรึกษาเภสัชกรที่ร้านยาเพื่อขอซื้อยา Isotretinoin ชนิดรับประทาน",
       "question": "ยา isotretinoin มีสูตรโครงสร้างทางเคมีจัดอยู่ในกลุ่มสารประกอบประเภทใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/isotretinoin.png",
       "choices": [
         "Alkaloid",
         "Flavonoid",
@@ -33082,7 +33082,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของยา HCTZ สามารถวิเคราะห์หาหมู่โครงสร้างได้โดยวิธีการใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/hydrochlorothiazide.png",
       "choices": [
         "Finger print จาก FTIR",
         "Chromatogram จาก TLC",
@@ -39276,7 +39276,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "N3 หรือ Azido group จากโครงสร้างของ AZT มีผลทำให้เกิดสิ่งใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/zidovudine.png",
       "choices": [
         "เพิ่มค่าครึ่งชีวิตให้ยาวขึ้น",
         "เพิ่มการดูดซึม",
@@ -40933,7 +40933,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างยา Itraconazole สารนี้มีคุณสมบัติเป็นอย่างไร",
-      "questionImage": "",
+      "questionImage": "images/pubchem/itraconazole.png",
       "choices": [
         "เป็นกรดอ่อน",
         "เป็นเบสอ่อน",
@@ -41809,7 +41809,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "พิจารณาโครงสร้างของ Ritonavir ท่านคิดว่าข้อใดไม่ถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/ritonavir.png",
       "choices": [
         "เมื่อให้ยาร่วมกับอาหารยาจะออกฤทธิ์ช้าลง",
         "ยามีการละลายน้ำต่ำ จึงดูดซึมได้ไม่ดี",
@@ -43155,7 +43155,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "ผู้ป่วยควรได้รับการรักษาด้วยยาต้านเชื้อวัณโรคสูตรใด",
+      "question": "ผู้ป่วยวัณโรคปอดรายใหม่ควรได้รับการรักษาด้วยยาต้านเชื้อวัณโรคสูตรมาตรฐานใด",
       "questionImage": "",
       "choices": [
         "4HRZE/2HR",
@@ -43164,8 +43164,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "2RZE/10RE",
         "2SHE/16HE"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. 4HRZE/2HR<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก 4HRZE/2HR เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Tuberculosis โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (4HRZE/2HR): สูตร 4HRZE/2HR สลับระยะเวลาการรักษาที่ผิดพลาด เนื่องจากระยะเข้มข้นมาตรฐาน (Intensive phase) กำหนดให้ใช้ยา 4 ขนานเพียง 2 เดือน และระยะต่อเนื่อง (Continuation phase) ใช้ยา 2 ขนานนาน 4 เดือน<br>• ข้อ ข. (2HRZES/1HRZE/5HRE): 2HRZES/1HRZE/5HRE เป็นสูตรยาวัณโรคซ้ำ (Retreatment regimen) ในอดีต ซึ่งองค์การอนามัยโลก (WHO) และแนวทางไทยปัจจุบันยกเลิกการใช้สูตรเติม Streptomycin นี้แล้ว<br>• ข้อ ง. (2RZE/10RE): 2RZE/10RE เป็นสูตรทางเลือกสำหรับผู้ป่วยที่ไม่สามารถทนยา Isoniazid ได้จากภาวะตับอักเสบ แต่ไม่ใช่สูตรแรกเริ่มมาตรฐานสำหรับผู้ป่วยวัณโรครายใหม่ทั่วไป<br>• ข้อ จ. (2SHE/16HE): 2SHE/16HE เป็นสูตรทางเลือกในกรณีที่ผู้ป่วยมีข้อห้ามใช้ Rifampicin อย่างเด็ดขาด ซึ่งต้องใช้เวลารักษานานถึง 18 เดือน ไม่ใช่สูตรแรกเริ่มมาตรฐาน",
+      "answer": 3,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. 2HRZE/4HR<br>🎯 ทำไมข้อนี้ถึงถูก:<br>สูตรมาตรฐานสำหรับการรักษาผู้ป่วยวัณโรครายใหม่ในประเทศไทยและตามแนวทางสากล คือ ระยะเข้มข้นใช้ยา 4 ขนาน H, R, Z, E นาน 2 เดือน (2HRZE) ตามด้วยระยะต่อเนื่องใช้ยา 2 ขนาน H และ R นนาน 4 เดือน (4HR) ซึ่งมีประสิทธิภาพสูงและช่วยป้องกันการดื้อยา<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (4HRZE/2HR): สลับระยะเวลาการรักษาผิดพลาด โดยระยะเข้มข้นกำหนดให้ใช้เพียง 2 เดือน ไม่ใช่ 4 เดือน<br>• ข้อ ข. (2HRZES/1HRZE/5HRE): เป็นสูตรยาวัณโรคสูตรซ้ำซ้อนในอดีต ซึ่งปัจจุบันแนวทางรักษาขององค์การอนามัยโลกและประเทศไทยยกเลิกการใช้แล้ว<br>• ข้อ ง. (2RZE/10RE): เป็นสูตรทางเลือกกรณีผู้ป่วยแพ้ Isoniazid แต่ไม่ใช่สูตรแรกเริ่มสำหรับผู้ป่วยวัณโรครายใหม่ทั่วไป<br>• ข้อ จ. (2SHE/16HE): เป็นสูตรทางเลือกในกรณีที่ผู้ป่วยมีข้อห้ามใช้ Rifampicin และต้องรักษานานถึง 18 เดือน",
       "answerImage": "",
       "note": "ข้อ 1 (PLE_CC1_Practice_Exam.md)",
       "examType": "แบบฝึกหัด",
@@ -48132,6 +48132,34 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseOrder": 1,
       "caseType": "",
       "caseTotal": 1
+    },
+    {
+      "id": "8. Infectious diseases::382",
+      "itemNo": 380,
+      "category": "8. Infectious diseases",
+      "topic": "8. Infectious diseases",
+      "subtopic": "8.5 Urinary Tract Infections (UTI)",
+      "track": "Clinic",
+      "caseContext": "ผู้ป่วยหญิงอายุ 22 ปี ปฏิเสธโรคประจำตัว มาร้านยาด้วยอาการปัสสาวะแสบขัดและกะปริดกะปรอยมา 1 วัน ก่อนเกิดอาการมีประวัติกลั้นปัสสาวะระหว่างเดินทางไปต่างจังหวัด",
+      "caseStem": "ผู้ป่วยหญิงอายุ 22 ปี ปฏิเสธโรคประจำตัว มาร้านยาด้วยอาการปัสสาวะแสบขัดและกะปริดกะปรอยมา 1 วัน ก่อนเกิดอาการมีประวัติกลั้นปัสสาวะระหว่างเดินทางไปต่างจังหวัด",
+      "question": "หากผู้ป่วยมีอาการในข้อใดต่อไปนี้ จัดเป็นสัญญาณเตือนที่รุนแรงแสดงว่าการติดเชื้อลุกลาม และต้องรีบส่งต่อพบแพทย์อย่างเร่งด่วน",
+      "questionImage": "",
+      "choices": [
+        "ปวดท้องน้อย",
+        "ปวดศีรษะ",
+        "เบื่ออาหาร",
+        "ปัสสาวะขุ่น",
+        "มีไข้ หนาวสั่น"
+      ],
+      "answer": 5,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. มีไข้ หนาวสั่น<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>อาการปัสสาวะแสบขัดร่วมกับมีไข้ หนาวสั่น ปวดบั้นเอว หรือคลื่นไส้อาเจียน เป็นสัญญาณเตือนสำคัญของการติดเชื้อทางเดินปัสสาวะส่วนบน (Acute Pyelonephritis / กรวยไตอักเสบเฉียบพลัน) ซึ่งจัดเป็นภาวะแทรกซ้อนที่รุนแรง ต้องได้รับการรักษาด้วยยาต้านจุลชีพแบบฉีดในโรงพยาบาลทันที<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: อาการปวดท้องน้อย (Suprapubic pain) เป็นอาการทั่วไปที่พบได้บ่อยในกระเพาะปัสสาวะอักเสบเฉียบพลัน (Acute cystitis)<br>• ข้อ ข.: ปวดศีรษะอาจเกิดจากความเครียดหรือพักผ่อนไม่เพียงพอ ไม่ใช่สัญญาณบ่งชี้การติดเชื้อกรวยไต<br>• ข้อ ค.: เบื่ออาหารเป็นอาการทั่วไปที่ไม่จำเพาะเจาะจงต่อความรุนแรงของโรคทางเดินปัสสาวะ<br>• ข้อ ง.: ปัสสาวะขุ่นอาจพบได้จากมีเม็ดเลือดขาวและแบคทีเรียในกระเพาะปัสสาวะอักเสบ แต่หากไม่มีไข้ยังถือเป็นการติดเชื้อส่วนล่าง",
+      "answerImage": "",
+      "note": "ข้อ 78 (PLE_CC1_2561_Key.md) [ย้ายจาก 1. Pharmacy Laws & Ethics::121]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2561.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
     }
   ],
   "9. Neurologic": [
@@ -49651,7 +49679,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "ยาใดต่อไปนี้เป็นยารักษาโรคอัลไซเมอร์ ระดับ severe ได้",
+      "question": "ยาในข้อใดเป็นยารักษาโรคอัลไซเมอร์ในระดับรุนแรง (severe) ได้ตามข้อบ่งใช้",
       "questionImage": "",
       "choices": [
         "Donepezil",
@@ -49661,7 +49689,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Memantine"
       ],
       "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Donepezil<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ข้อ ก. (Donepezil) เป็นคำตอบที่ถูกต้องและสอดคล้องกับหลักวิชาการและแนวทางเวชปฏิบัติในการรักษา<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Ginkgo biloba: สารสกัดใบแปะก๊วยมีหลักฐานทางวิชาการจำกัด ไม่ใช่ยามาตรฐานหลักสำหรับระยะรุนแรง<br>• ข้อ ข. Vitamin E ขนาดสูง: ไม่แนะนำให้ใช้เป็นยาหลักเนื่องจากเพิ่มความเสี่ยงต่อการเสียชีวิตและโรคหัวใจ<br>• ข้อ ง. Piracetam: ไม่มีหลักฐานชัดเจนว่าชะลอการดำเนินโรคในอัลไซเมอร์ระยะรุนแรง<br>• ข้อ จ. Fluoxetine: เป็นยาต้านเศร้ากลุ่ม SSRI ใช้เมื่อมีโรคร่วมซึมเศร้า ไม่ใช่ยารักษาอัลไซเมอร์โดยตรง",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Donepezil<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Donepezil เป็นยาในกลุ่ม acetylcholinesterase inhibitor ที่ได้รับการอนุมัติให้ใช้รักษาโรคอัลไซเมอร์ตั้งแต่ระดับ mild, moderate จนถึง severe (ขนาด 10 มก. หรือ 23 มก. ต่อวัน)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Rivastigmine: อนุมัติใช้สำหรับโรคอัลไซเมอร์ระดับ mild ถึง moderate (รูปแบบแผ่นแปะผิวหนัง 13.3 มก./24 ชม. อาจใช้ในระดับ severe ได้ในบางแนวทาง แต่ Donepezil เป็นคำตอบหลักที่ชัดเจนที่สุดในแง่ขนาดยามาตรฐาน)<br>• ข้อ ค. Galantamine: อนุมัติใช้สำหรับโรคอัลไซเมอร์ระดับ mild ถึง moderate เท่านั้น<br>• ข้อ ง. Tacrine: ปัจจุบันเลิกใช้แล้วเนื่องจากมีความเป็นพิษต่อตับสูงมาก<br>• ข้อ จ. Memantine: เป็นยาในกลุ่ม NMDA receptor antagonist ใช้สำหรับโรคอัลไซเมอร์ระดับ moderate ถึง severe แต่หากเทียบตัวเลือก Cholinesterase inhibitor ที่ใช้ได้ถึง severe คือ Donepezil",
       "answerImage": "",
       "note": "ข้อ 54 Pharma Plus เล่มม่วง (เฉลยข้อ ก จ)",
       "examType": "แบบฝึกหัด",
@@ -50960,7 +50988,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างของ Ergotamine ข้อใดถูก",
-      "questionImage": "",
+      "questionImage": "images/pubchem/ergotamine.png",
       "choices": [
         "มี Chiral carbon 4 ตำแหน่ง",
         "ละลายน้ำดี",
@@ -54756,7 +54784,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "Oxazepam มีอัตราเร็วในการเริ่มออกฤทธิ์ช้ากว่า Diazepam เมื่อรับประทานทางปาก (Slower onset of action) เนื่องจากโครงสร้างโมเลกุลมีความแตกต่างกันในจุดใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/oxazepam_vs_diazepam.png",
       "choices": [
         "Oxazepam มีหมู่ 3-Hydroxyl (-OH) ทำให้โมเลกุลมีขั้วเพิ่มขึ้น ละลายในไขมันลดลง จึงซึมผ่าน Blood-Brain Barrier ได้ช้ากว่า Diazepam",
         "Oxazepam มีหมู่ 7-Nitro ที่ทำให้ยาถูกทำลายในกระเพาะอาหารอย่างรวดเร็ว",
@@ -67342,7 +67370,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "ผู้ป่วยโรคมะเร็งตับอ่อน (Pancreatic Cancer) มีแผนการรักษาด้วยยาเคมีบำบัด Gemcitabine ทางหลอดเลือดดำ",
       "caseStem": "ผู้ป่วยโรคมะเร็งตับอ่อน (Pancreatic Cancer) มีแผนการรักษาด้วยยาเคมีบำบัด Gemcitabine ทางหลอดเลือดดำ",
       "question": "จากโครงสร้างทางเคมีของยารักษามะเร็ง Gemcitabine จัดเป็นสารอนุพันธ์ในกลุ่มใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/gemcitabine.png",
       "choices": [
         "Acyclonucleoside analog",
         "Pyrimidine nucleoside analog",
@@ -70271,7 +70299,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
       "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 8
+      "caseTotal": 9
     },
     {
       "id": "14. Oncologic::110",
@@ -70300,7 +70328,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
       "caseOrder": 2,
       "caseType": "",
-      "caseTotal": 8
+      "caseTotal": 9
     },
     {
       "id": "14. Oncologic::111",
@@ -70388,6 +70416,35 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseOrder": 3,
       "caseType": "",
       "caseTotal": 3
+    },
+    {
+      "id": "14. Oncologic::114",
+      "itemNo": 112,
+      "category": "14. Oncologic",
+      "topic": "14. Oncologic",
+      "subtopic": "14.2 Targeted Therapy & Immunotherapy",
+      "track": "Clinic",
+      "caseContext": "ผู้ป่วยโรคมะเร็งปอดชนิด Non-Small Cell Lung Cancer (NSCLC: Adenocarcinoma) ระยะแพร่กระจาย แพทย์วางแผนตรวจคัดกรองตัวบ่งชี้ทางชีวภาพ (Biomarkers) และพิจารณาให้การรักษาด้วยยามุ่งเป้า (Targeted Therapy)",
+      "caseStem": "ผู้ป่วยโรคมะเร็งปอดชนิด Non-Small Cell Lung Cancer (NSCLC: Adenocarcinoma) ระยะแพร่กระจาย แพทย์วางแผนตรวจคัดกรองตัวบ่งชี้ทางชีวภาพ (Biomarkers) และพิจารณาให้การรักษาด้วยยามุ่งเป้า (Targeted Therapy)",
+      "question": "การเกิด exon 19 deletion บนยีน EGFR ส่งผลต่อการทำงานของเอนไซม์ EGFR tyrosine kinase และการตอบสนองต่อยามุ่งเป้า (EGFR-TKI) อย่างไร",
+      "questionImage": "",
+      "choices": [
+        "ทำให้เกิดการกระตุ้นเอนไซม์ไคเนสอย่างต่อเนื่อง (constitutive activation) ทำให้ไวต่อยา EGFR-TKI มากขึ้น",
+        "ทำให้สูญเสียความสามารถในการจับกับ ATP ส่งผลให้ยา EGFR-TKI ออกฤทธิ์แรงขึ้น",
+        "ทำให้โครงสร้างสามมิติของ receptor เปลี่ยนแปลงจนยา EGFR-TKI ไม่สามารถเข้าจับได้ตั้งแต่เริ่มแรก",
+        "เพิ่มการแสดงออกของ ligand ทำให้ต้องใช้ยาขนาดสูงขึ้น",
+        "ยับยั้งการส่งสัญญาณ Downstream signaling pathways ทั้งหมดโดยไม่ต้องใช้ยา"
+      ],
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. ทำให้เกิดการกระตุ้นเอนไซม์ไคเนสอย่างต่อเนื่อง (constitutive activation) ทำให้ไวต่อยา EGFR-TKI มากขึ้น<br>🎯 ทำไมข้อนี้ถึงถูก:<br>Exon 19 deletion เป็น Activating mutation ที่พบบ่อยที่สุดของ EGFR ในโรคมะเร็งปอดชนิด NSCLC ซึ่งการกลายพันธุ์นี้ทำให้เกิด constitutive activation ของ tyrosine kinase domain ทำให้เซลล์มะเร็งเติบโตได้ดี และส่งผลให้ผู้ป่วยมีความไวสูงต่อการรักษาด้วยยา EGFR-TKI เช่น gefitinib หรือ erlotinib<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2.: การกลายพันธุ์นี้ไม่ได้ทำให้สูญเสียการจับ ATP แต่เป็นการเพิ่ม affinity ต่อ ATP และยามุ่งเป้าประเภท reversible TKIs<br>• ข้อ 3.: การดื้อยาตั้งแต่เริ่มต้น (Primary resistance) จาก exon 19 deletion พบได้น้อยมาก โดยทั่วไปการกลายพันธุ์นี้ตอบสนองได้ดีต่อ EGFR-TKI ยกเว้นจะเกิด T790M mutation ภายหลัง<br>• ข้อ 4.: การกลายพันธุ์ดังกล่าวอยู่ที่ intracellular kinase domain ไม่ได้เกี่ยวข้องกับการเพิ่มการแสดงออกของ extracellular ligand<br>• ข้อ 5.: การกลายพันธุ์นี้กระตุ้น downstream signaling pathways (เช่น MAPK, PI3K/AKT) อย่างต่อเนื่อง ไม่ได้ยับยั้ง",
+      "answerImage": "Clinic",
+      "note": "Mock PLE-CC 1 ข้อ 80 [ย้ายจาก 15. Renal::33]",
+      "examType": "แบบฝึกหัด",
+      "examYear": "เล่มม่วง",
+      "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
+      "caseOrder": 3,
+      "caseType": "",
+      "caseTotal": 9
     }
   ],
   "15. Renal": [
@@ -71158,9 +71215,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-      "caseOrder": 3,
+      "caseOrder": 4,
       "caseType": "",
-      "caseTotal": 8
+      "caseTotal": 9
     },
     {
       "id": "15. Renal::30",
@@ -71187,9 +71244,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-      "caseOrder": 4,
+      "caseOrder": 5,
       "caseType": "",
-      "caseTotal": 8
+      "caseTotal": 9
     },
     {
       "id": "15. Renal::31",
@@ -71216,9 +71273,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-      "caseOrder": 5,
+      "caseOrder": 6,
       "caseType": "",
-      "caseTotal": 8
+      "caseTotal": 9
     },
     {
       "id": "15. Renal::32",
@@ -71245,9 +71302,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-      "caseOrder": 6,
+      "caseOrder": 7,
       "caseType": "",
-      "caseTotal": 8
+      "caseTotal": 9
     },
     {
       "id": "15. Renal::33",
@@ -71258,7 +71315,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "ผู้ป่วยโรคมะเร็งปอดชนิด Non-Small Cell Lung Cancer (NSCLC: Adenocarcinoma) ระยะแพร่กระจาย แพทย์วางแผนตรวจคัดกรองตัวบ่งชี้ทางชีวภาพ (Biomarkers) และพิจารณาให้การรักษาด้วยยาเคมีบำบัด ร่วมกับยากลุ่มภูมิคุ้มกันบำบัด (Immunotherapy: Immune Checkpoint Inhibitor) หรือยามุ่งเป้า (Targeted Therapy)",
       "caseStem": "ผู้ป่วยโรคมะเร็งปอดชนิด Non-Small Cell Lung Cancer (NSCLC: Adenocarcinoma) ระยะแพร่กระจาย แพทย์วางแผนตรวจคัดกรองตัวบ่งชี้ทางชีวภาพ (Biomarkers) และพิจารณาให้การรักษาด้วยยาเคมีบำบัด ร่วมกับยากลุ่มภูมิคุ้มกันบำบัด (Immunotherapy: Immune Checkpoint Inhibitor) หรือยามุ่งเป้า (Targeted Therapy)",
-      "question": "[ย้ายไป 14. Oncologic::110] กลไกที่ทำให้เกิด exon 19 deletion บน EGFR ส่งผลต่อกลไกการทำงานของ EGFR tyrosine kinase inhibitor\nยังไง",
+      "question": "[ย้ายไป 14. Oncologic::114] [ย้ายไป 14. Oncologic::110] กลไกที่ทำให้เกิด exon 19 deletion บน EGFR ส่งผลต่อกลไกการทำงานของ EGFR tyrosine kinase inhibitor\nยังไง",
       "questionImage": "",
       "choices": [
         "CKD/AKI",
@@ -71274,9 +71331,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-      "caseOrder": 7,
+      "caseOrder": 8,
       "caseType": "",
-      "caseTotal": 8
+      "caseTotal": 9
     },
     {
       "id": "15. Renal::34",
@@ -71303,9 +71360,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-      "caseOrder": 8,
+      "caseOrder": 9,
       "caseType": "",
-      "caseTotal": 8
+      "caseTotal": 9
     },
     {
       "id": "15. Renal::35",
@@ -72736,6 +72793,34 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "note": "ข้อ 81 (PLE_CC1_2561_Key.md) [ย้ายจาก 1. Pharmacy Laws & Ethics::122]",
       "examType": "ข้อสอบจริง",
       "examYear": "2561.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
+    },
+    {
+      "id": "15. Renal::85",
+      "itemNo": 83,
+      "category": "15. Renal",
+      "topic": "15. Pharmacokinetics",
+      "subtopic": "15.1 Basic Pharmacokinetics",
+      "track": "Clinic",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "ยา Enalapril มี half-life เท่ากับ 11 ชั่วโมง ค่า $k_e$ ของยานี้เท่ากับเท่าไหร่ ($hr^{-1}$)",
+      "questionImage": "",
+      "choices": [
+        "0.06",
+        "0.063",
+        "0.067",
+        "0.07",
+        "0.075"
+      ],
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 0.063<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามสมการจลนศาสตร์อันดับหนึ่ง: $t_{1/2} = _x000c_rac{\\ln(2)}{k_e} = _x000c_rac{0.693}{k_e}$ ดังนั้น $k_e = _x000c_rac{0.693}{t_{1/2}}$ เมื่อแทนค่า $t_{1/2} = 11$ ชั่วโมง จะได้ $k_e = _x000c_rac{0.693}{11} = 0.063 hr^{-1}$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: 0.06 เป็นค่าที่คำนวณคลาดเคลื่อนหรือปัดเศษไม่ถูกต้อง<br>• ข้อ ค.: 0.067 ไม่ใช่ผลลัพธ์จากการหาร 0.693 ด้วย 11<br>• ข้อ ง.: 0.07 เป็นค่าที่ปัดเศษมากเกินไป ไม่ตรงตามหลักคณิตศาสตร์<br>• ข้อ จ.: 0.075 เกิดจากการคำนวณด้วยตัวเลขตั้งต้นที่ไม่ถูกต้อง",
+      "answerImage": "",
+      "note": "ข้อ 5 (PLE_CC1_Practice_Exam.md) [ย้ายจาก 2. Cardiovascular::81]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2558.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -81481,7 +81566,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากการพิจารณาคุณสมบัติทางเคมีและโครงสร้างของยา Febuxostat ซึ่งเป็นสารอินทรีย์โมเลกุลขนาดเล็กที่มีวงแหวน Thiazole และ Carboxylic acid ละลายได้ดีในตัวทำละลายอินทรีย์กึ่งมีขั้ว",
       "caseStem": "จากการพิจารณาคุณสมบัติทางเคมีและโครงสร้างของยา Febuxostat ซึ่งเป็นสารอินทรีย์โมเลกุลขนาดเล็กที่มีวงแหวน Thiazole และ Carboxylic acid ละลายได้ดีในตัวทำละลายอินทรีย์กึ่งมีขั้ว",
       "question": "เทคนิคเครื่องมือวิเคราะห์ในข้อใดต่อไปนี้มีความเหมาะสมสูงสุดสำหรับการตรวจวิเคราะห์หาปริมาณตัวยาสำคัญ (Assay) ของ Febuxostat ในวัตถุดิบและยาเม็ดตามเภสัชตำรับสากล",
-      "questionImage": "",
+      "questionImage": "images/pubchem/febuxostat.png",
       "choices": [
         "Atomic Absorption Spectroscopy (AAS)",
         "High-Performance Liquid Chromatography ควบคู่กับ UV detector (HPLC-UV)",
@@ -82208,8 +82293,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "หากต้องการแยกอนุพันธ์สารประกอบสเตียรอยด์ (Steroid derivatives) ในรูปภาพ [📷 มีรูปภาพประกอบ: image94.png] ซึ่งมีความแตกต่างกันที่หมู่แทนที่บนวงแหวนคาร์บอน เทคนิคการวิเคราะห์ที่ดีที่สุดคือข้อใด?",
-      "questionImage": "",
+      "question": "หากต้องการแยกอนุพันธ์สารประกอบสเตียรอยด์ (Steroid derivatives) ในรูปภาพ ซึ่งมีความแตกต่างกันที่หมู่แทนที่บนวงแหวนคาร์บอน เทคนิคการวิเคราะห์ที่ดีที่สุดคือข้อใด?",
+      "questionImage": "images/cc1_product/image94.png",
       "choices": [
         "High-Performance Liquid Chromatography (HPLC)",
         "Infrared Spectroscopy (FTIR)",
@@ -82236,8 +82321,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "ในการควบคุมคุณภาพและการหาปริมาณตัวยาสำคัญ (Assay) ของวัตถุดิบตัวยาสำคัญที่มีโครงสร้างทางเคมีซับซ้อนตามรูปภาพ [📷 มีรูปภาพประกอบ: image95.png] เทคนิคการวิเคราะห์มาตรฐานที่ให้ความถูกต้องและความจำเพาะเจาะจงสูงสุดตามเภสัชตำรับคือข้อใด?",
-      "questionImage": "",
+      "question": "ในการควบคุมคุณภาพและการหาปริมาณตัวยาสำคัญ (Assay) ของวัตถุดิบตัวยาสำคัญที่มีโครงสร้างทางเคมีซับซ้อนตามรูปภาพ เทคนิคการวิเคราะห์มาตรฐานที่ให้ความถูกต้องและความจำเพาะเจาะจงสูงสุดตามเภสัชตำรับคือข้อใด?",
+      "questionImage": "images/cc1_product/image95.png",
       "choices": [
         "High-Performance Liquid Chromatography (HPLC)",
         "Confocal Laser Scanning Microscopy",
@@ -82488,8 +82573,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "จากภาพแผนผังระบบการวิเคราะห์ทางเครื่องมือ [📷 มีรูปภาพประกอบ: image115.png] ที่ประกอบด้วย Solvent reservoirs, Degasser, High-pressure pump, Autosampler, Column compartment, และ UV/Vis Photodiode Array Detector จัดเป็นเครื่องมือวิเคราะห์ชนิดใด?",
-      "questionImage": "",
+      "question": "จากภาพแผนผังระบบการวิเคราะห์ทางเครื่องมือ ที่ประกอบด้วย Solvent reservoirs, Degasser, High-pressure pump, Autosampler, Column compartment, และ UV/Vis Photodiode Array Detector จัดเป็นเครื่องมือวิเคราะห์ชนิดใด?",
+      "questionImage": "images/cc1_product/image115.png",
       "choices": [
         "High-Performance Liquid Chromatography (HPLC)",
         "Gas Chromatography (GC)",
@@ -84039,7 +84124,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากสูตรโครงสร้างของยาต้านวัณโรค Ethambutol ซึ่งมี Chiral centers จำนวน 2 ตำแหน่งในโมเลกุล ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับไอโซเมอร์ที่นำมาใช้เป็นยารักษาโรค",
-      "questionImage": "",
+      "questionImage": "images/pubchem/ethambutol.png",
       "choices": [
         "ใช้เฉพาะไอโซเมอร์ชนิด (S,S)-(+)-Ethambutol (Dextro-isomer) เนื่องจากมีฤทธิ์ต้านเชื้อวัณโรคสูงกว่า (R,R)-enantiomer ถึง 500 เท่า และมีพิษต่อระบบสายตาน้อยกว่า",
         "ใช้รูปผสม Racemic mixture (50:50) เพราะออกฤทธิ์ได้เท่ากัน",
@@ -84067,7 +84152,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากสูตรโครงสร้างของยา Triprolidine โครงสร้างหรือส่วนใดของโมเลกุลทำหน้าที่เป็น Chromophore ที่ทำให้สารสามารถตรวจวิเคราะห์ได้ด้วยเทคนิค UV-Vis Spectrophotometry",
-      "questionImage": "",
+      "questionImage": "images/pubchem/triprolidine.png",
       "choices": [
         "Phenyl ring (และ Pyridyl ring ที่มี conjugated double bonds)",
         "Pyrrolidine ring (วง aliphatic heterocyclic amine)",
@@ -84517,7 +84602,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างทางเคมีของ Griseofulvin การตรวจวิเคราะห์คุณภาพตามเภสัชตำรับเพื่อยืนยัน Stereochemistry และแยก Active enantiomer ออกจากไอโซเมอร์ที่ไม่ออกฤทธิ์ ต้องใช้เครื่องมือใด?",
-      "questionImage": "",
+      "questionImage": "images/pubchem/griseofulvin.png",
       "choices": [
         "Polarimeter (ตรวจวัดค่าการหมุนระนาบแสงจำเพาะ Specific Optical Rotation [alpha]D)",
         "Proton NMR Spectrometer",
@@ -84686,8 +84771,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "จากข้อมูลความคงตัวและความสามารถในการละลายของยา Furosemide [📷 มีรูปภาพประกอบ: image111.png] ซึ่งพบว่าตัวยาละลายได้ดีในสภาวะด่าง (pH > 7.0) และมีความคงตัวดีที่สุดในสภาวะด่างอ่อน หากต้องการเตรียมเป็นยาน้ำรับประทาน ควรเลือกสูตรตำรับในข้อใด?",
-      "questionImage": "",
+      "question": "จากข้อมูลความคงตัวและความสามารถในการละลายของยา Furosemide ซึ่งพบว่าตัวยาละลายได้ดีในสภาวะด่าง (pH > 7.0) และมีความคงตัวดีที่สุดในสภาวะด่างอ่อน หากต้องการเตรียมเป็นยาน้ำรับประทาน ควรเลือกสูตรตำรับในข้อใด?",
+      "questionImage": "images/cc1_product/image111.png",
       "choices": [
         "ยาน้ำเชื่อมหรือยาอีลิกเซอร์ที่ปรับสภาวะบัฟเฟอร์เป็นด่างอ่อน (Alkaline buffered oral solution / Elixir pH 7.5 - 8.5)",
         "ยาน้ำเชื่อมสภาวะกรดจัด (Syrup pH 3.0)",
@@ -85051,7 +85136,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากการพิจารณาสูตรโครงสร้างทางเคมีของยาต้านวัณโรค Rifampicin ซึ่งมีระบบพันธะคู่สลับพันธะเดี่ยวแบบต่อเนื่อง (Conjugated double bond system) และวงแหวนแอโรมาติกที่ทำหน้าที่เป็น Chromophore ดูดกลืนแสงได้ดี",
       "caseStem": "จากการพิจารณาสูตรโครงสร้างทางเคมีของยาต้านวัณโรค Rifampicin ซึ่งมีระบบพันธะคู่สลับพันธะเดี่ยวแบบต่อเนื่อง (Conjugated double bond system) และวงแหวนแอโรมาติกที่ทำหน้าที่เป็น Chromophore ดูดกลืนแสงได้ดี",
       "question": "เครื่องมือวิเคราะห์ทางสเปกโทรสโกปีในข้อใด เหมาะสมที่สุดสำหรับการตรวจหาปริมาณตัวยาสำคัญ (Assay) ของ Rifampicin ในสารละลายตัวอย่าง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/rifampicin.png",
       "choices": [
         "UV-visible spectrophotometer",
         "Infrared spectroscope",
@@ -85555,7 +85640,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างทางเคมีของยา Griseofulvin ซึ่งมี chiral center การตรวจสอบคุณภาพทางเภสัชวิเคราะห์หัวข้อใดที่ใช้ตรวจวัดคุณสมบัติเฉพาะที่เกี่ยวข้องกับ optical isomer ที่ออกฤทธิ์ทางชีวภาพ",
-      "questionImage": "",
+      "questionImage": "images/pubchem/griseofulvin.png",
       "choices": [
         "1H-NMR",
         "Polarimeter",
@@ -98037,8 +98122,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "จากรูปภาพแสดงโครงสร้างภาคตัดขวางของเม็ด Omeprazole enteric-coated pellet [📷 มีรูปภาพประกอบ: image106.png] ส่วนประกอบชั้นที่ 1, ชั้นที่ 2 และชั้นที่ 3 เรียงลำดับจากชั้นในสุดไปสู่ชั้นนอกสุดคือข้อใด?",
-      "questionImage": "",
+      "question": "จากรูปภาพแสดงโครงสร้างภาคตัดขวางของเม็ด Omeprazole enteric-coated pellet ส่วนประกอบชั้นที่ 1, ชั้นที่ 2 และชั้นที่ 3 เรียงลำดับจากชั้นในสุดไปสู่ชั้นนอกสุดคือข้อใด?",
+      "questionImage": "images/cc1_product/image106.png",
       "choices": [
         "ชั้นที่ 1: Omeprazole drug core / ชั้นที่ 2: HPMC subcoating barrier / ชั้นที่ 3: Methacrylic acid enteric coat",
         "ชั้นที่ 1: HPMC subcoating barrier / ชั้นที่ 2: Omeprazole drug core / ชั้นที่ 3: Methacrylic acid enteric coat",
@@ -98401,8 +98486,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "ระบบนำส่งยาในรูปภาพ [📷 มีรูปภาพประกอบ: image113.png] ที่ประกอบด้วย Semi-permeable membrane, Drug layer, Push layer และ Laser-drilled orifice จัดเป็นระบบนำส่งยาชนิดควบคุมการปลดปล่อยแบบใด?",
-      "questionImage": "",
+      "question": "ระบบนำส่งยาในรูปภาพ ที่ประกอบด้วย Semi-permeable membrane, Drug layer, Push layer และ Laser-drilled orifice จัดเป็นระบบนำส่งยาชนิดควบคุมการปลดปล่อยแบบใด?",
+      "questionImage": "images/cc1_product/image113.png",
       "choices": [
         "ระบบปั๊มออสโมติกชนิดผลักดันสองชั้น (Osmotic-controlled release system / Push-Pull Osmotic Pump: OROS)",
         "ระบบเมทริกซ์ชนิดไม่ละลายน้ำ (Insoluble inert matrix system)",
@@ -123939,7 +124024,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากสูตรโครงสร้างของ praziquantel ตำแหน่งนี้เรียกว่า และมีคุณสมบัติอย่างไร",
-      "questionImage": "",
+      "questionImage": "images/pubchem/praziquantel.png",
       "choices": [
         "Quinoline, base",
         "Isoquinoline, base",
@@ -124023,7 +124108,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "สูตรโครงสร้างของยาต่อไปนี้ข้อใดคือ Dexamethasone",
-      "questionImage": "",
+      "questionImage": "images/pubchem/dexamethasone.png",
       "choices": [
         "โครงสร้างเตียรอยด์มีหมู่ -OH และ -F",
         "โครงสร้าง ACE inhibitor",
@@ -124051,7 +124136,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของ vitamin A ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับ SAR",
-      "questionImage": "",
+      "questionImage": "images/pubchem/retinol.png",
       "choices": [
         "Conjugated double bond เพิ่มขึ้น ทำให้ activity ของ vitamin A ลดลง",
         "Conjugated double bond ลดลง ทำให้ activity ของ vitamin A เพิ่มขึ้น",
@@ -124079,7 +124164,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของ Vitamin A (Retinol) หากเกิดปฏิกิริยาออกซิเดชันเปลี่ยนจากหมู่ไฮดรอกซิล (-OH) เป็นหมู่คาร์บอกซิลิก (-COOH) จะได้เป็นสารออกฤทธิ์ทางเภสัชกรรมในข้อใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/retinol.png",
       "choices": [
         "Tretinoin",
         "Isotretinoin",
@@ -124107,7 +124192,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของยา Gemcitabine เป็นอนุพันธ์ของอะไร",
-      "questionImage": "",
+      "questionImage": "images/pubchem/gemcitabine.png",
       "choices": [
         "Acyclonucleoside analog",
         "Pyrimidine nucleoside analog",
@@ -124163,7 +124248,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากสูตรโครงสร้างของยา doxorubicin โครงสร้างส่วนใดที่ออกฤทธิ์เป็น intercalating ของ DNA",
-      "questionImage": "",
+      "questionImage": "images/pubchem/doxorubicin.png",
       "choices": [
         "Anthracycline ring",
         "- NH2 group",
@@ -124303,7 +124388,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "N3 หรือ Azido group จากสูตรโครงสร้างของ AZT มีผลให้เกิดสิ่งใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/zidovudine.png",
       "choices": [
         "เพิ่มความสามารถในการจับกับโปรตีน albumin",
         "ช่วยเพิ่มการดูดซึมของยา",
@@ -124387,7 +124472,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "สูตรโครงสร้างของยาปฏิชีวนะ Amoxicillin ประกอบด้วยหมู่ฟังก์ชันสำคัญหลายตำแหน่ง: ตำแหน่งที่ 1 = พันธะเอไมด์นอกวง (exocyclic amide linkage), ตำแหน่งที่ 2 = หมู่ฟีนอลิกไฮดรอกซิล (-OH) บนวงเบนซีน, ตำแหน่งที่ 3 = หมู่คาร์บอนิล (C=O) ภายในวงเบต้า-แลกแทม (beta-lactam ring), ตำแหน่งที่ 4 = หมู่อะมิโนอิสระ (-NH2) บนสายข้าง, ตำแหน่งที่ 5 = หมู่คาร์บอกซิล (-COOH) บนวงไทอาโซลิดีน",
       "caseStem": "สูตรโครงสร้างของยาปฏิชีวนะ Amoxicillin ประกอบด้วยหมู่ฟังก์ชันสำคัญหลายตำแหน่ง: ตำแหน่งที่ 1 = พันธะเอไมด์นอกวง (exocyclic amide linkage), ตำแหน่งที่ 2 = หมู่ฟีนอลิกไฮดรอกซิล (-OH) บนวงเบนซีน, ตำแหน่งที่ 3 = หมู่คาร์บอนิล (C=O) ภายในวงเบต้า-แลกแทม (beta-lactam ring), ตำแหน่งที่ 4 = หมู่อะมิโนอิสระ (-NH2) บนสายข้าง, ตำแหน่งที่ 5 = หมู่คาร์บอกซิล (-COOH) บนวงไทอาโซลิดีน",
       "question": "จากสูตรโครงสร้างของยา Amoxicillin ดังกล่าว ตำแหน่งใดเป็นจุดที่ถูกทำลายได้ง่ายที่สุดโดยเอนไซม์ Beta-lactamase ของเชื้อแบคทีเรีย ซึ่งส่งผลให้เกิดปัญหาการดื้อยา",
-      "questionImage": "",
+      "questionImage": "images/pubchem/amoxicillin.png",
       "choices": [
         "ตำแหน่งที่ 1",
         "ตำแหน่งที่ 2",
@@ -124443,7 +124528,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "Doxycycline มีสูตรโครงสร้างรูป เป็นยากลุ่มเดียวกันกับยาใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/doxycycline.png",
       "choices": [
         "Tetracycline",
         "Penicillin",
@@ -124947,7 +125032,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างโมเลกุลของสารแอลคาลอยด์ Nicotine ที่มีวง Pyrrolidine และวง Pyridine ข้อใดต่อไปนี้ระบุตำแหน่งของหมู่ฟังก์ชันและคุณสมบัติความเป็นเบสที่ทำปฏิกิริยากับกรดในการตรวจวิเคราะห์ทางเคมีได้ถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/nicotine.png",
       "choices": [
         "ไนโตรเจนบนวง Pyrrolidine มีคุณสมบัติเป็น Tertiary aliphatic amine (pKa ≈ 8.0) ซึ่งมีความเป็นเบสแรงกว่าไนโตรเจนบนวง Pyridine (pKa ≈ 3.1) และเป็นตำแหน่งแรกที่รับโปรตอน",
         "ไนโตรเจนบนวง Pyridine เป็นเบสที่แรงกว่าวง Pyrrolidine เนื่องจากมี Resonance",
@@ -125283,7 +125368,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[]\nภาพสูตรโครงสร้าง amoxicillin (โครงสร้างบน: aminopenicillin ที่มี p-hydroxy) และ clavulanic acid (โครงสร้างล่าง: oxapenam/beta-lactamase inhibitor)",
       "caseStem": "[]\nภาพสูตรโครงสร้าง amoxicillin (โครงสร้างบน: aminopenicillin ที่มี p-hydroxy) และ clavulanic acid (โครงสร้างล่าง: oxapenam/beta-lactamase inhibitor)",
       "question": "ข้อใดไม่ถูกต้องเกี่ยวกับ amoxicillin/clavulanic acid [แสดงภาพโครงสร้าง amoxicillin และ clavulanic acid]",
-      "questionImage": "",
+      "questionImage": "images/pubchem/amoxicillin_vs_clavulanic_acid.png",
       "choices": [
         "ไม่ถูกทำลายโดย beta lactamase",
         "เกิดปฏิกิริยา hydrolysis",
@@ -125703,7 +125788,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[ความคงตัวของยา Enalapril]\nพิจารณาโครงสร้างทางเคมีของยา Enalapril ซึ่งเป็น ethyl ester prodrug",
       "caseStem": "[ความคงตัวของยา Enalapril]\nพิจารณาโครงสร้างทางเคมีของยา Enalapril ซึ่งเป็น ethyl ester prodrug",
       "question": "โครงสร้างยานี้ สลายตัวด้วยปฏิกิริยาใด (โครงสร้างยา Enalapril)",
-      "questionImage": "",
+      "questionImage": "images/pubchem/enalapril.png",
       "choices": [
         "Hydrolysis",
         "Oxidation",
@@ -125815,7 +125900,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[เคมีทางยาของยา Ergotamine]\nพิจารณาโครงสร้างโมเลกุลของ Ergotamine เพื่อระบุตำแหน่งที่เป็นเบสและสามารถทำปฏิกิริยากับกรดเกิดเป็นเกลือยา (Salt formation)",
       "caseStem": "[เคมีทางยาของยา Ergotamine]\nพิจารณาโครงสร้างโมเลกุลของ Ergotamine เพื่อระบุตำแหน่งที่เป็นเบสและสามารถทำปฏิกิริยากับกรดเกิดเป็นเกลือยา (Salt formation)",
       "question": "จากโครงสร้างของ Ergotamine ตรงไหนจับแล้วทำให้เกิดเกลือ",
-      "questionImage": "",
+      "questionImage": "images/pubchem/ergotamine.png",
       "choices": [
         "ตำแหน่ง 1 (indole NH)",
         "ตำแหน่ง 2 (indole aromatic ring)",
@@ -126655,7 +126740,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในการตรวจพิสูจน์เอกลักษณ์ทางเคมีของ Nicotine ซึ่งเป็นสารออกฤทธิ์ในหมากฝรั่งอดบุหรี่ (Nicotine gum) สารทดสอบ (Reagent) ในข้อใดมีความจำเพาะต่อโครงสร้างของสารดังกล่าว",
-      "questionImage": "",
+      "questionImage": "images/pubchem/nicotine.png",
       "choices": [
         "Shinoda test",
         "Dragendorff reagent",
@@ -127215,7 +127300,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างและกลไกของยาต้านไวรัส Acyclovir triphosphate เอนไซม์เป้าหมายหลักที่ยานี้เข้าไปยับยั้งการทำงานคือเอนไซม์ใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/acyclovir_triphosphate.png",
       "choices": [
         "Viral RNA polymerase",
         "Host DNA topoisomerase",
@@ -127271,7 +127356,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ยาต้านฮิสตามีนชนิดไม่ง่วงรุ่นที่สองในข้อใดที่ได้รับการพัฒนามาจากสารเมแทบอไลต์หรือโครงสร้างของยา Hydroxyzine",
-      "questionImage": "",
+      "questionImage": "images/pubchem/hydroxyzine.png",
       "choices": [
         "Loratadine",
         "Cetirizine",
@@ -127299,7 +127384,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "หมู่ฟังก์ชันใดบนโครงสร้างของ Corticosteroids ที่ไม่จำเป็นสำหรับการจับกับ Glucocorticoid receptor และการออกฤทธิ์ลดการอักเสบ",
-      "questionImage": "",
+      "questionImage": "images/pubchem/dexamethasone.png",
       "choices": [
         "3-carbonyl",
         "Double bond ตำแหน่งที่ 4-5",
@@ -127355,7 +127440,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของ Cimetidine (H2-receptor antagonist) ข้อใดกล่าวผิดเกี่ยวกับคุณสมบัติทางเภสัชวิทยาและเคมี\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p30_img4.png\">",
-      "questionImage": "",
+      "questionImage": "images/pubchem/cimetidine.png",
       "choices": [
         "อยู่ในกลุ่ม H2 receptor antagonist",
         "เป็นเอนไซม์ CYP450 inhibitor",
@@ -127971,7 +128056,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากโครงสร้างทางเคมีของยา Simvastatin ซึ่งมีวงแหวนแลกโทน (Lactone ring) อยู่ในโมเลกุล",
       "caseStem": "จากโครงสร้างทางเคมีของยา Simvastatin ซึ่งมีวงแหวนแลกโทน (Lactone ring) อยู่ในโมเลกุล",
       "question": "ยา Simvastatin จะเปลี่ยนสภาพกลายเป็นรูปออกฤทธิ์ทางเภสัชวิทยา (Active metabolite) เพื่อยับยั้งเอนไซม์ HMG-CoA reductase ด้วยปฏิกิริยาเคมีข้อใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/simvastatin.png",
       "choices": [
         "Demethylation",
         "Hydrolysis",
@@ -128027,7 +128112,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "ยา Cetirizine จัดเป็นยาต้านฮิสตามีนรุ่นที่ 2 (Second-generation H1-antihistamine) ซึ่งพัฒนามาจากโครงสร้างของ Hydroxyzine โดยการเปลี่ยนหมู่ Primary alcohol (-CH2OH) ปลายสายให้กลายเป็นหมู่ Carboxylic acid (-COOH)",
       "caseStem": "ยา Cetirizine จัดเป็นยาต้านฮิสตามีนรุ่นที่ 2 (Second-generation H1-antihistamine) ซึ่งพัฒนามาจากโครงสร้างของ Hydroxyzine โดยการเปลี่ยนหมู่ Primary alcohol (-CH2OH) ปลายสายให้กลายเป็นหมู่ Carboxylic acid (-COOH)",
       "question": "ที่ระดับความเป็นกรด-ด่างของร่างกาย (Physiological pH 7.4) โมเลกุลของ Cetirizine จะมีลักษณะทางเคมีกายภาพอย่างไรที่ส่งผลให้ยาไม่ผ่าน Blood-Brain Barrier",
-      "questionImage": "",
+      "questionImage": "images/pubchem/cetirizine.png",
       "choices": [
         "โมเลกุลไม่มีขั้วอย่างสมบูรณ์ทำให้ไม่สามารถละลายในไขมันได้",
         "โมเลกุลแตกตัวอยู่ในรูป Zwitterion (มีทั้งประจุบวกที่อะตอมไนโตรเจนและประจุลบที่หมู่คาร์บอกซิเลตในโมเลกุลเดียวกัน)",
@@ -128209,6 +128294,34 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 4. เวลาที่ standard กับยา A อยู่ใน column เท่ากัน<br>🎯 ทำไมข้อนี้ถึงถูก:<br>Retention Time ($t_R$) ในโครมาโทกราฟีหมายถึงระยะเวลาที่สารเคลื่อนที่ผ่านคอลัมน์ตั้งแต่เริ่มฉีดสารจนกระทั่งถูกชะออกมาถึงตัวตรวจวัด การที่สารตัวอย่างยา A มี retention time เท่ากับ standard แสดงว่าสารทั้งสองใช้เวลาในการเคลื่อนที่และถูกกักเก็บอยู่ในคอลัมน์เท่ากันภายใต้สภาวะเดียวกัน ซึ่งใช้เป็นเกณฑ์ในการยืนยันเอกลักษณ์เบื้องต้น<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 1.: ปริมาณของสารสะท้อนจากพื้นที่ใต้พีค (Peak Area) หรือความสูงของพีค มิใช่ระยะเวลา Retention Time<br>• ข้อ 2.: การมี retention time เท่ากันภายใต้สภาวะวิเคราะห์เดียวกันบ่งชี้ว่าน่าจะเป็นสารชนิดเดียวกัน มิใช่สารคนละตัว<br>• ข้อ 3.: By-product จะมีโครงสร้างและสมบัติทางเคมีต่างไป จึงมักมี retention time แตกต่างจาก standard<br>• ข้อ 5.: หากมีความชอบพอกับ stationary phase มากกว่า จะต้องใช้เวลาอยู่ในคอลัมน์นานกว่า ทำให้ retention time มากขึ้น",
       "answerImage": "",
       "note": "ข้อ 112 (PLE_CC1_2561_Key.md) [ย้ายจาก 1. Pharmacy Laws & Ethics::124]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2561.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
+    },
+    {
+      "id": "13. Medicinal Chemistry::157",
+      "itemNo": 155,
+      "category": "13. Medicinal Chemistry",
+      "topic": "13. Oncology",
+      "subtopic": "13.1 Chemotherapy Principles & Regimens",
+      "track": "Product",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "จากโครงสร้างยาเคมีบำบัดกลุ่ม Anthracycline (Doxorubicin) ยาดังกล่าวมีกลไกการออกฤทธิ์ต่อเซลล์มะเร็งอย่างไร",
+      "questionImage": "",
+      "choices": [
+        "ยับยั้งเอนไซม์ Topoisomerase II และแทรกตัวระหว่างคู่เบสของ DNA",
+        "ยับยั้งการสร้างผนังเซลล์ของเซลล์มะเร็ง",
+        "จับกับไมโครทูบูลและยับยั้งการแยกตัวของโครโมโซม",
+        "ทำให้เยื่อหุ้มเซลล์รั่วและสูญเสียความสมดุลของไอออน",
+        "ยับยั้งการสร้างกรดโฟลิกเพื่อสังเคราะห์สารพันธุกรรม"
+      ],
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. ยับยั้งเอนไซม์ Topoisomerase II และแทรกตัวระหว่างคู่เบสของ DNA<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Doxorubicin เป็นยาเคมีบำบัดกลุ่ม Anthracycline มีกลไกหลักโดยการแทรกตัวระหว่างคู่เบสของ DNA (DNA intercalation) และยับยั้งเอนไซม์ Topoisomerase II ส่งผลให้เกิดสาย DNA หักและขัดขวางการสังเคราะห์ DNA และ RNA<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2.: การยับยั้งการสร้างผนังเซลล์เป็นกลไกของยาต้านจุลชีพ เช่น กลุ่ม Beta-lactams มิใช่ยามะเร็ง Anthracycline<br>• ข้อ 3.: การออกฤทธิ์ต่อไมโครทูบูลเป็นกลไกของกลุ่ม Vinca alkaloids และ Taxanes<br>• ข้อ 4.: การทำให้เยื่อหุ้มเซลล์รั่วเป็นกลไกของยาต้านเชื้อรากลุ่ม Polyenes เช่น Amphotericin B<br>• ข้อ 5.: การยับยั้งการสร้างกรดโฟลิกเป็นกลไกของยา Antimetabolites เช่น Methotrexate",
+      "answerImage": "",
+      "note": "ข้อ 41 (PLE_CC1_2561_Key.md) [ย้ายจาก 1. Pharmacy Laws & Ethics::117]",
       "examType": "ข้อสอบจริง",
       "examYear": "2561.0",
       "caseGroupId": "",
@@ -131424,8 +131537,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "SAP",
       "caseContext": "",
       "caseStem": "",
-      "question": "จากโครงสร้างยาเคมีบำบัดกลุ่ม Anthracycline (Doxorubicin) ยาดังกล่าวมีกลไกการออกฤทธิ์ต่อเซลล์มะเร็งอย่างไร",
-      "questionImage": "",
+      "question": "[ย้ายไป 13. Medicinal Chemistry::157] จากโครงสร้างยาเคมีบำบัดกลุ่ม Anthracycline (Doxorubicin) ยาดังกล่าวมีกลไกการออกฤทธิ์ต่อเซลล์มะเร็งอย่างไร",
+      "questionImage": "images/pubchem/doxorubicin.png",
       "choices": [
         "มีผลต.อดีเอนเอ",
         "มีผลต.อผนังเซลล",
@@ -131536,7 +131649,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "SAP",
       "caseContext": "ผู้ป่วยหญิงอายุ 22 ปี ปฏิเสธโรคประจำตัว มาร้านยาด้วยอาการปัสสาวะแสบขัดและกะปริดกะปรอยมา 1 วัน ก่อนเกิดอาการมีประวัติกลั้นปัสสาวะระหว่างเดินทางไปต่างจังหวัด",
       "caseStem": "ผู้ป่วยหญิงอายุ 22 ปี ปฏิเสธโรคประจำตัว มาร้านยาด้วยอาการปัสสาวะแสบขัดและกะปริดกะปรอยมา 1 วัน ก่อนเกิดอาการมีประวัติกลั้นปัสสาวะระหว่างเดินทางไปต่างจังหวัด",
-      "question": "[ย้ายไป 8. Infectious diseases::377] [ย้ายไป 8. Infectious diseases::376] [ย้ายไป 8. Infectious diseases::374] [ย้ายไป 8. Infectious diseases::373] หากผู้ป่วยมีอาการในข้อใดต่อไปนี้ จัดเป็นสัญญาณเตือนที่รุนแรงแสดงว่าการติดเชื้อลุกลาม และต้องรีบส่งต่อพบแพทย์อย่างเร่งด่วน",
+      "question": "[ย้ายไป 8. Infectious diseases::382] [ย้ายไป 8. Infectious diseases::377] [ย้ายไป 8. Infectious diseases::376] [ย้ายไป 8. Infectious diseases::374] [ย้ายไป 8. Infectious diseases::373] หากผู้ป่วยมีอาการในข้อใดต่อไปนี้ จัดเป็นสัญญาณเตือนที่รุนแรงแสดงว่าการติดเชื้อลุกลาม และต้องรีบส่งต่อพบแพทย์อย่างเร่งด่วน",
       "questionImage": "",
       "choices": [
         "ปวดท(อง",
@@ -144211,7 +144324,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของยาCelecoxib มีโอกาสทำให้เกิดการเเพ้ sulfonamides cross hypersensitivity หรือไม่ เเละหากเกิดการเเพ้ดังกล่าวได้ ตำเเหน่งใด ทำให้เกิดการเเพ้",
-    "questionImage": "",
+    "questionImage": "images/pubchem/celecoxib.png",
     "choices": [
       "เกิดการเเพ้ได้ ทั้งตำเเหน่งที่1เเละ ตำเเหน่งที่ 2",
       "เกิดการเเพ้ได้ที่ตำเเหน่งที่1เท่านั้น",
@@ -147765,7 +147878,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างทางเคมีของ Simvastatin เป็นยาในรูปแบบ Pro-drug ที่ยังไม่ออกฤทธิ์ ปฏิกิริยาเคมีใดในร่างกายที่เปลี่ยนโครงสร้างของ Simvastatin ให้กลายเป็นรูปที่ออกฤทธิ์ทางชีวภาพ (Active form)",
-    "questionImage": "",
+    "questionImage": "images/pubchem/simvastatin.png",
     "choices": [
       "Hydrolysis ของวงแหวน Lactone ring กลายเป็น Beta-hydroxy acid",
       "Oxidation ของวงแหวน Decalin ring ด้วย CYP3A4",
@@ -148370,7 +148483,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "ผู้ป่วยชายไทย อายุ 60 ปี มาด้วยอาการหอบเหนื่อย นอนราบไม่ได้ มีภาวะน้ำคั่งที่ปอด โรคประจำตัวคือความดันโลหิตสูงและเคยมีประวัติกล้ามเนื้อหัวใจขาดเลือดมาก่อน Current meds: ASA 81 mg, Atenolol 100 mg, Enalapril 20 mg ผลตรวจ: BP 138/80 mmHg, HR 68 bpm, BUN 10 mg/dL, SCr 1.0 mg/dL, LVEF 22% ต่อมาอีก 3 ปี ผู้ป่วยได้รับการวินิจฉัยเป็น Atrial Fibrillation (AF) และได้รับยา Warfarin 3 mg 1 tab hs",
     "caseStem": "ผู้ป่วยชายไทย อายุ 60 ปี มาด้วยอาการหอบเหนื่อย นอนราบไม่ได้ มีภาวะน้ำคั่งที่ปอด โรคประจำตัวคือความดันโลหิตสูงและเคยมีประวัติกล้ามเนื้อหัวใจขาดเลือดมาก่อน Current meds: ASA 81 mg, Atenolol 100 mg, Enalapril 20 mg ผลตรวจ: BP 138/80 mmHg, HR 68 bpm, BUN 10 mg/dL, SCr 1.0 mg/dL, LVEF 22% ต่อมาอีก 3 ปี ผู้ป่วยได้รับการวินิจฉัยเป็น Atrial Fibrillation (AF) และได้รับยา Warfarin 3 mg 1 tab hs",
     "question": "ข้อใดกล่าวถูกต้องเกี่ยวกับลักษณะโครงสร้างทางเคมีและคุณสมบัติทางแสงของยา Warfarin",
-    "questionImage": "",
+    "questionImage": "images/pubchem/warfarin.png",
     "choices": [
       "Racemic mixture หมุน polarize ไม่ได้",
       "มี chiral carbon 2 atom",
@@ -149088,7 +149201,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "[ย้ายไป 11. Pulmonary::168] ยา Enalapril มี half-life เท่ากับ 11 ชั่วโมง ค่า Ke ของยานี้เท่ากับเท่าไหร่ (hr-1)",
+    "question": "[ย้ายไป 15. Renal::85] [ย้ายไป 11. Pulmonary::168] ยา Enalapril มี half-life เท่ากับ 11 ชั่วโมง ค่า Ke ของยานี้เท่ากับเท่าไหร่ (hr-1)",
     "questionImage": "",
     "choices": [
       "0.06",
@@ -153040,7 +153153,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "กรณีศึกษา: นางสาวสมหญิง นักศึกษาชั้นปีที่ 1 มหาวิทยาลัย มีปัญหาสิวอักเสบรุนแรงเรื้อรัง (Severe nodulocystic acne) มีตุ่มหนองและก้อนซีสต์บวมแดงจำนวนมากบริเวณใบหน้าและลำคอ เข้ามาปรึกษาเภสัชกรที่ร้านยาเพื่อขอซื้อยา Isotretinoin ชนิดรับประทาน",
     "caseStem": "กรณีศึกษา: นางสาวสมหญิง นักศึกษาชั้นปีที่ 1 มหาวิทยาลัย มีปัญหาสิวอักเสบรุนแรงเรื้อรัง (Severe nodulocystic acne) มีตุ่มหนองและก้อนซีสต์บวมแดงจำนวนมากบริเวณใบหน้าและลำคอ เข้ามาปรึกษาเภสัชกรที่ร้านยาเพื่อขอซื้อยา Isotretinoin ชนิดรับประทาน",
     "question": "ยา isotretinoin มีสูตรโครงสร้างทางเคมีจัดอยู่ในกลุ่มสารประกอบประเภทใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/isotretinoin.png",
     "choices": [
       "Alkaloid",
       "Flavonoid",
@@ -170864,7 +170977,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของยา HCTZ สามารถวิเคราะห์หาหมู่โครงสร้างได้โดยวิธีการใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/hydrochlorothiazide.png",
     "choices": [
       "Finger print จาก FTIR",
       "Chromatogram จาก TLC",
@@ -177054,7 +177167,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "N3 หรือ Azido group จากโครงสร้างของ AZT มีผลทำให้เกิดสิ่งใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/zidovudine.png",
     "choices": [
       "เพิ่มค่าครึ่งชีวิตให้ยาวขึ้น",
       "เพิ่มการดูดซึม",
@@ -178711,7 +178824,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างยา Itraconazole สารนี้มีคุณสมบัติเป็นอย่างไร",
-    "questionImage": "",
+    "questionImage": "images/pubchem/itraconazole.png",
     "choices": [
       "เป็นกรดอ่อน",
       "เป็นเบสอ่อน",
@@ -179587,7 +179700,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "พิจารณาโครงสร้างของ Ritonavir ท่านคิดว่าข้อใดไม่ถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/ritonavir.png",
     "choices": [
       "เมื่อให้ยาร่วมกับอาหารยาจะออกฤทธิ์ช้าลง",
       "ยามีการละลายน้ำต่ำ จึงดูดซึมได้ไม่ดี",
@@ -180933,7 +181046,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "ผู้ป่วยควรได้รับการรักษาด้วยยาต้านเชื้อวัณโรคสูตรใด",
+    "question": "ผู้ป่วยวัณโรคปอดรายใหม่ควรได้รับการรักษาด้วยยาต้านเชื้อวัณโรคสูตรมาตรฐานใด",
     "questionImage": "",
     "choices": [
       "4HRZE/2HR",
@@ -180942,8 +181055,8 @@ window.QUIZ_OFFLINE_DB = [
       "2RZE/10RE",
       "2SHE/16HE"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. 4HRZE/2HR<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก 4HRZE/2HR เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Tuberculosis โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (4HRZE/2HR): สูตร 4HRZE/2HR สลับระยะเวลาการรักษาที่ผิดพลาด เนื่องจากระยะเข้มข้นมาตรฐาน (Intensive phase) กำหนดให้ใช้ยา 4 ขนานเพียง 2 เดือน และระยะต่อเนื่อง (Continuation phase) ใช้ยา 2 ขนานนาน 4 เดือน<br>• ข้อ ข. (2HRZES/1HRZE/5HRE): 2HRZES/1HRZE/5HRE เป็นสูตรยาวัณโรคซ้ำ (Retreatment regimen) ในอดีต ซึ่งองค์การอนามัยโลก (WHO) และแนวทางไทยปัจจุบันยกเลิกการใช้สูตรเติม Streptomycin นี้แล้ว<br>• ข้อ ง. (2RZE/10RE): 2RZE/10RE เป็นสูตรทางเลือกสำหรับผู้ป่วยที่ไม่สามารถทนยา Isoniazid ได้จากภาวะตับอักเสบ แต่ไม่ใช่สูตรแรกเริ่มมาตรฐานสำหรับผู้ป่วยวัณโรครายใหม่ทั่วไป<br>• ข้อ จ. (2SHE/16HE): 2SHE/16HE เป็นสูตรทางเลือกในกรณีที่ผู้ป่วยมีข้อห้ามใช้ Rifampicin อย่างเด็ดขาด ซึ่งต้องใช้เวลารักษานานถึง 18 เดือน ไม่ใช่สูตรแรกเริ่มมาตรฐาน",
+    "answer": 3,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. 2HRZE/4HR<br>🎯 ทำไมข้อนี้ถึงถูก:<br>สูตรมาตรฐานสำหรับการรักษาผู้ป่วยวัณโรครายใหม่ในประเทศไทยและตามแนวทางสากล คือ ระยะเข้มข้นใช้ยา 4 ขนาน H, R, Z, E นาน 2 เดือน (2HRZE) ตามด้วยระยะต่อเนื่องใช้ยา 2 ขนาน H และ R นนาน 4 เดือน (4HR) ซึ่งมีประสิทธิภาพสูงและช่วยป้องกันการดื้อยา<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (4HRZE/2HR): สลับระยะเวลาการรักษาผิดพลาด โดยระยะเข้มข้นกำหนดให้ใช้เพียง 2 เดือน ไม่ใช่ 4 เดือน<br>• ข้อ ข. (2HRZES/1HRZE/5HRE): เป็นสูตรยาวัณโรคสูตรซ้ำซ้อนในอดีต ซึ่งปัจจุบันแนวทางรักษาขององค์การอนามัยโลกและประเทศไทยยกเลิกการใช้แล้ว<br>• ข้อ ง. (2RZE/10RE): เป็นสูตรทางเลือกกรณีผู้ป่วยแพ้ Isoniazid แต่ไม่ใช่สูตรแรกเริ่มสำหรับผู้ป่วยวัณโรครายใหม่ทั่วไป<br>• ข้อ จ. (2SHE/16HE): เป็นสูตรทางเลือกในกรณีที่ผู้ป่วยมีข้อห้ามใช้ Rifampicin และต้องรักษานานถึง 18 เดือน",
     "answerImage": "",
     "note": "ข้อ 1 (PLE_CC1_Practice_Exam.md)",
     "examType": "แบบฝึกหัด",
@@ -185912,6 +186025,34 @@ window.QUIZ_OFFLINE_DB = [
     "caseTotal": 1
   },
   {
+    "id": "8. Infectious diseases::382",
+    "itemNo": 380,
+    "category": "8. Infectious diseases",
+    "topic": "8. Infectious diseases",
+    "subtopic": "8.5 Urinary Tract Infections (UTI)",
+    "track": "Clinic",
+    "caseContext": "ผู้ป่วยหญิงอายุ 22 ปี ปฏิเสธโรคประจำตัว มาร้านยาด้วยอาการปัสสาวะแสบขัดและกะปริดกะปรอยมา 1 วัน ก่อนเกิดอาการมีประวัติกลั้นปัสสาวะระหว่างเดินทางไปต่างจังหวัด",
+    "caseStem": "ผู้ป่วยหญิงอายุ 22 ปี ปฏิเสธโรคประจำตัว มาร้านยาด้วยอาการปัสสาวะแสบขัดและกะปริดกะปรอยมา 1 วัน ก่อนเกิดอาการมีประวัติกลั้นปัสสาวะระหว่างเดินทางไปต่างจังหวัด",
+    "question": "หากผู้ป่วยมีอาการในข้อใดต่อไปนี้ จัดเป็นสัญญาณเตือนที่รุนแรงแสดงว่าการติดเชื้อลุกลาม และต้องรีบส่งต่อพบแพทย์อย่างเร่งด่วน",
+    "questionImage": "",
+    "choices": [
+      "ปวดท้องน้อย",
+      "ปวดศีรษะ",
+      "เบื่ออาหาร",
+      "ปัสสาวะขุ่น",
+      "มีไข้ หนาวสั่น"
+    ],
+    "answer": 5,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. มีไข้ หนาวสั่น<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>อาการปัสสาวะแสบขัดร่วมกับมีไข้ หนาวสั่น ปวดบั้นเอว หรือคลื่นไส้อาเจียน เป็นสัญญาณเตือนสำคัญของการติดเชื้อทางเดินปัสสาวะส่วนบน (Acute Pyelonephritis / กรวยไตอักเสบเฉียบพลัน) ซึ่งจัดเป็นภาวะแทรกซ้อนที่รุนแรง ต้องได้รับการรักษาด้วยยาต้านจุลชีพแบบฉีดในโรงพยาบาลทันที<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: อาการปวดท้องน้อย (Suprapubic pain) เป็นอาการทั่วไปที่พบได้บ่อยในกระเพาะปัสสาวะอักเสบเฉียบพลัน (Acute cystitis)<br>• ข้อ ข.: ปวดศีรษะอาจเกิดจากความเครียดหรือพักผ่อนไม่เพียงพอ ไม่ใช่สัญญาณบ่งชี้การติดเชื้อกรวยไต<br>• ข้อ ค.: เบื่ออาหารเป็นอาการทั่วไปที่ไม่จำเพาะเจาะจงต่อความรุนแรงของโรคทางเดินปัสสาวะ<br>• ข้อ ง.: ปัสสาวะขุ่นอาจพบได้จากมีเม็ดเลือดขาวและแบคทีเรียในกระเพาะปัสสาวะอักเสบ แต่หากไม่มีไข้ยังถือเป็นการติดเชื้อส่วนล่าง",
+    "answerImage": "",
+    "note": "ข้อ 78 (PLE_CC1_2561_Key.md) [ย้ายจาก 1. Pharmacy Laws & Ethics::121]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2561.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
     "id": "9. Neurologic::3",
     "itemNo": 1,
     "category": "9. Neurologic",
@@ -187427,7 +187568,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "ยาใดต่อไปนี้เป็นยารักษาโรคอัลไซเมอร์ ระดับ severe ได้",
+    "question": "ยาในข้อใดเป็นยารักษาโรคอัลไซเมอร์ในระดับรุนแรง (severe) ได้ตามข้อบ่งใช้",
     "questionImage": "",
     "choices": [
       "Donepezil",
@@ -187437,7 +187578,7 @@ window.QUIZ_OFFLINE_DB = [
       "Memantine"
     ],
     "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Donepezil<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ข้อ ก. (Donepezil) เป็นคำตอบที่ถูกต้องและสอดคล้องกับหลักวิชาการและแนวทางเวชปฏิบัติในการรักษา<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Ginkgo biloba: สารสกัดใบแปะก๊วยมีหลักฐานทางวิชาการจำกัด ไม่ใช่ยามาตรฐานหลักสำหรับระยะรุนแรง<br>• ข้อ ข. Vitamin E ขนาดสูง: ไม่แนะนำให้ใช้เป็นยาหลักเนื่องจากเพิ่มความเสี่ยงต่อการเสียชีวิตและโรคหัวใจ<br>• ข้อ ง. Piracetam: ไม่มีหลักฐานชัดเจนว่าชะลอการดำเนินโรคในอัลไซเมอร์ระยะรุนแรง<br>• ข้อ จ. Fluoxetine: เป็นยาต้านเศร้ากลุ่ม SSRI ใช้เมื่อมีโรคร่วมซึมเศร้า ไม่ใช่ยารักษาอัลไซเมอร์โดยตรง",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Donepezil<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Donepezil เป็นยาในกลุ่ม acetylcholinesterase inhibitor ที่ได้รับการอนุมัติให้ใช้รักษาโรคอัลไซเมอร์ตั้งแต่ระดับ mild, moderate จนถึง severe (ขนาด 10 มก. หรือ 23 มก. ต่อวัน)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Rivastigmine: อนุมัติใช้สำหรับโรคอัลไซเมอร์ระดับ mild ถึง moderate (รูปแบบแผ่นแปะผิวหนัง 13.3 มก./24 ชม. อาจใช้ในระดับ severe ได้ในบางแนวทาง แต่ Donepezil เป็นคำตอบหลักที่ชัดเจนที่สุดในแง่ขนาดยามาตรฐาน)<br>• ข้อ ค. Galantamine: อนุมัติใช้สำหรับโรคอัลไซเมอร์ระดับ mild ถึง moderate เท่านั้น<br>• ข้อ ง. Tacrine: ปัจจุบันเลิกใช้แล้วเนื่องจากมีความเป็นพิษต่อตับสูงมาก<br>• ข้อ จ. Memantine: เป็นยาในกลุ่ม NMDA receptor antagonist ใช้สำหรับโรคอัลไซเมอร์ระดับ moderate ถึง severe แต่หากเทียบตัวเลือก Cholinesterase inhibitor ที่ใช้ได้ถึง severe คือ Donepezil",
     "answerImage": "",
     "note": "ข้อ 54 Pharma Plus เล่มม่วง (เฉลยข้อ ก จ)",
     "examType": "แบบฝึกหัด",
@@ -188736,7 +188877,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างของ Ergotamine ข้อใดถูก",
-    "questionImage": "",
+    "questionImage": "images/pubchem/ergotamine.png",
     "choices": [
       "มี Chiral carbon 4 ตำแหน่ง",
       "ละลายน้ำดี",
@@ -192530,7 +192671,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "Oxazepam มีอัตราเร็วในการเริ่มออกฤทธิ์ช้ากว่า Diazepam เมื่อรับประทานทางปาก (Slower onset of action) เนื่องจากโครงสร้างโมเลกุลมีความแตกต่างกันในจุดใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/oxazepam_vs_diazepam.png",
     "choices": [
       "Oxazepam มีหมู่ 3-Hydroxyl (-OH) ทำให้โมเลกุลมีขั้วเพิ่มขึ้น ละลายในไขมันลดลง จึงซึมผ่าน Blood-Brain Barrier ได้ช้ากว่า Diazepam",
       "Oxazepam มีหมู่ 7-Nitro ที่ทำให้ยาถูกทำลายในกระเพาะอาหารอย่างรวดเร็ว",
@@ -205108,7 +205249,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "ผู้ป่วยโรคมะเร็งตับอ่อน (Pancreatic Cancer) มีแผนการรักษาด้วยยาเคมีบำบัด Gemcitabine ทางหลอดเลือดดำ",
     "caseStem": "ผู้ป่วยโรคมะเร็งตับอ่อน (Pancreatic Cancer) มีแผนการรักษาด้วยยาเคมีบำบัด Gemcitabine ทางหลอดเลือดดำ",
     "question": "จากโครงสร้างทางเคมีของยารักษามะเร็ง Gemcitabine จัดเป็นสารอนุพันธ์ในกลุ่มใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/gemcitabine.png",
     "choices": [
       "Acyclonucleoside analog",
       "Pyrimidine nucleoside analog",
@@ -208037,7 +208178,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
     "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 8
+    "caseTotal": 9
   },
   {
     "id": "14. Oncologic::110",
@@ -208066,7 +208207,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
     "caseOrder": 2,
     "caseType": "",
-    "caseTotal": 8
+    "caseTotal": 9
   },
   {
     "id": "14. Oncologic::111",
@@ -208154,6 +208295,35 @@ window.QUIZ_OFFLINE_DB = [
     "caseOrder": 3,
     "caseType": "",
     "caseTotal": 3
+  },
+  {
+    "id": "14. Oncologic::114",
+    "itemNo": 112,
+    "category": "14. Oncologic",
+    "topic": "14. Oncologic",
+    "subtopic": "14.2 Targeted Therapy & Immunotherapy",
+    "track": "Clinic",
+    "caseContext": "ผู้ป่วยโรคมะเร็งปอดชนิด Non-Small Cell Lung Cancer (NSCLC: Adenocarcinoma) ระยะแพร่กระจาย แพทย์วางแผนตรวจคัดกรองตัวบ่งชี้ทางชีวภาพ (Biomarkers) และพิจารณาให้การรักษาด้วยยามุ่งเป้า (Targeted Therapy)",
+    "caseStem": "ผู้ป่วยโรคมะเร็งปอดชนิด Non-Small Cell Lung Cancer (NSCLC: Adenocarcinoma) ระยะแพร่กระจาย แพทย์วางแผนตรวจคัดกรองตัวบ่งชี้ทางชีวภาพ (Biomarkers) และพิจารณาให้การรักษาด้วยยามุ่งเป้า (Targeted Therapy)",
+    "question": "การเกิด exon 19 deletion บนยีน EGFR ส่งผลต่อการทำงานของเอนไซม์ EGFR tyrosine kinase และการตอบสนองต่อยามุ่งเป้า (EGFR-TKI) อย่างไร",
+    "questionImage": "",
+    "choices": [
+      "ทำให้เกิดการกระตุ้นเอนไซม์ไคเนสอย่างต่อเนื่อง (constitutive activation) ทำให้ไวต่อยา EGFR-TKI มากขึ้น",
+      "ทำให้สูญเสียความสามารถในการจับกับ ATP ส่งผลให้ยา EGFR-TKI ออกฤทธิ์แรงขึ้น",
+      "ทำให้โครงสร้างสามมิติของ receptor เปลี่ยนแปลงจนยา EGFR-TKI ไม่สามารถเข้าจับได้ตั้งแต่เริ่มแรก",
+      "เพิ่มการแสดงออกของ ligand ทำให้ต้องใช้ยาขนาดสูงขึ้น",
+      "ยับยั้งการส่งสัญญาณ Downstream signaling pathways ทั้งหมดโดยไม่ต้องใช้ยา"
+    ],
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. ทำให้เกิดการกระตุ้นเอนไซม์ไคเนสอย่างต่อเนื่อง (constitutive activation) ทำให้ไวต่อยา EGFR-TKI มากขึ้น<br>🎯 ทำไมข้อนี้ถึงถูก:<br>Exon 19 deletion เป็น Activating mutation ที่พบบ่อยที่สุดของ EGFR ในโรคมะเร็งปอดชนิด NSCLC ซึ่งการกลายพันธุ์นี้ทำให้เกิด constitutive activation ของ tyrosine kinase domain ทำให้เซลล์มะเร็งเติบโตได้ดี และส่งผลให้ผู้ป่วยมีความไวสูงต่อการรักษาด้วยยา EGFR-TKI เช่น gefitinib หรือ erlotinib<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2.: การกลายพันธุ์นี้ไม่ได้ทำให้สูญเสียการจับ ATP แต่เป็นการเพิ่ม affinity ต่อ ATP และยามุ่งเป้าประเภท reversible TKIs<br>• ข้อ 3.: การดื้อยาตั้งแต่เริ่มต้น (Primary resistance) จาก exon 19 deletion พบได้น้อยมาก โดยทั่วไปการกลายพันธุ์นี้ตอบสนองได้ดีต่อ EGFR-TKI ยกเว้นจะเกิด T790M mutation ภายหลัง<br>• ข้อ 4.: การกลายพันธุ์ดังกล่าวอยู่ที่ intracellular kinase domain ไม่ได้เกี่ยวข้องกับการเพิ่มการแสดงออกของ extracellular ligand<br>• ข้อ 5.: การกลายพันธุ์นี้กระตุ้น downstream signaling pathways (เช่น MAPK, PI3K/AKT) อย่างต่อเนื่อง ไม่ได้ยับยั้ง",
+    "answerImage": "Clinic",
+    "note": "Mock PLE-CC 1 ข้อ 80 [ย้ายจาก 15. Renal::33]",
+    "examType": "แบบฝึกหัด",
+    "examYear": "เล่มม่วง",
+    "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
+    "caseOrder": 3,
+    "caseType": "",
+    "caseTotal": 9
   },
   {
     "id": "15. Renal::3",
@@ -208922,9 +209092,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-    "caseOrder": 3,
+    "caseOrder": 4,
     "caseType": "",
-    "caseTotal": 8
+    "caseTotal": 9
   },
   {
     "id": "15. Renal::30",
@@ -208951,9 +209121,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-    "caseOrder": 4,
+    "caseOrder": 5,
     "caseType": "",
-    "caseTotal": 8
+    "caseTotal": 9
   },
   {
     "id": "15. Renal::31",
@@ -208980,9 +209150,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-    "caseOrder": 5,
+    "caseOrder": 6,
     "caseType": "",
-    "caseTotal": 8
+    "caseTotal": 9
   },
   {
     "id": "15. Renal::32",
@@ -209009,9 +209179,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-    "caseOrder": 6,
+    "caseOrder": 7,
     "caseType": "",
-    "caseTotal": 8
+    "caseTotal": 9
   },
   {
     "id": "15. Renal::33",
@@ -209022,7 +209192,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "ผู้ป่วยโรคมะเร็งปอดชนิด Non-Small Cell Lung Cancer (NSCLC: Adenocarcinoma) ระยะแพร่กระจาย แพทย์วางแผนตรวจคัดกรองตัวบ่งชี้ทางชีวภาพ (Biomarkers) และพิจารณาให้การรักษาด้วยยาเคมีบำบัด ร่วมกับยากลุ่มภูมิคุ้มกันบำบัด (Immunotherapy: Immune Checkpoint Inhibitor) หรือยามุ่งเป้า (Targeted Therapy)",
     "caseStem": "ผู้ป่วยโรคมะเร็งปอดชนิด Non-Small Cell Lung Cancer (NSCLC: Adenocarcinoma) ระยะแพร่กระจาย แพทย์วางแผนตรวจคัดกรองตัวบ่งชี้ทางชีวภาพ (Biomarkers) และพิจารณาให้การรักษาด้วยยาเคมีบำบัด ร่วมกับยากลุ่มภูมิคุ้มกันบำบัด (Immunotherapy: Immune Checkpoint Inhibitor) หรือยามุ่งเป้า (Targeted Therapy)",
-    "question": "[ย้ายไป 14. Oncologic::110] กลไกที่ทำให้เกิด exon 19 deletion บน EGFR ส่งผลต่อกลไกการทำงานของ EGFR tyrosine kinase inhibitor\nยังไง",
+    "question": "[ย้ายไป 14. Oncologic::114] [ย้ายไป 14. Oncologic::110] กลไกที่ทำให้เกิด exon 19 deletion บน EGFR ส่งผลต่อกลไกการทำงานของ EGFR tyrosine kinase inhibitor\nยังไง",
     "questionImage": "",
     "choices": [
       "CKD/AKI",
@@ -209038,9 +209208,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-    "caseOrder": 7,
+    "caseOrder": 8,
     "caseType": "",
-    "caseTotal": 8
+    "caseTotal": 9
   },
   {
     "id": "15. Renal::34",
@@ -209067,9 +209237,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "CASE-ONCO-NSCLC-TARGETED-IMMUNO",
-    "caseOrder": 8,
+    "caseOrder": 9,
     "caseType": "",
-    "caseTotal": 8
+    "caseTotal": 9
   },
   {
     "id": "15. Renal::35",
@@ -210500,6 +210670,34 @@ window.QUIZ_OFFLINE_DB = [
     "note": "ข้อ 81 (PLE_CC1_2561_Key.md) [ย้ายจาก 1. Pharmacy Laws & Ethics::122]",
     "examType": "ข้อสอบจริง",
     "examYear": "2561.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "15. Renal::85",
+    "itemNo": 83,
+    "category": "15. Renal",
+    "topic": "15. Pharmacokinetics",
+    "subtopic": "15.1 Basic Pharmacokinetics",
+    "track": "Clinic",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "ยา Enalapril มี half-life เท่ากับ 11 ชั่วโมง ค่า $k_e$ ของยานี้เท่ากับเท่าไหร่ ($hr^{-1}$)",
+    "questionImage": "",
+    "choices": [
+      "0.06",
+      "0.063",
+      "0.067",
+      "0.07",
+      "0.075"
+    ],
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 0.063<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามสมการจลนศาสตร์อันดับหนึ่ง: $t_{1/2} = _x000c_rac{\\ln(2)}{k_e} = _x000c_rac{0.693}{k_e}$ ดังนั้น $k_e = _x000c_rac{0.693}{t_{1/2}}$ เมื่อแทนค่า $t_{1/2} = 11$ ชั่วโมง จะได้ $k_e = _x000c_rac{0.693}{11} = 0.063 hr^{-1}$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: 0.06 เป็นค่าที่คำนวณคลาดเคลื่อนหรือปัดเศษไม่ถูกต้อง<br>• ข้อ ค.: 0.067 ไม่ใช่ผลลัพธ์จากการหาร 0.693 ด้วย 11<br>• ข้อ ง.: 0.07 เป็นค่าที่ปัดเศษมากเกินไป ไม่ตรงตามหลักคณิตศาสตร์<br>• ข้อ จ.: 0.075 เกิดจากการคำนวณด้วยตัวเลขตั้งต้นที่ไม่ถูกต้อง",
+    "answerImage": "",
+    "note": "ข้อ 5 (PLE_CC1_Practice_Exam.md) [ย้ายจาก 2. Cardiovascular::81]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2558.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -219235,7 +219433,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากการพิจารณาคุณสมบัติทางเคมีและโครงสร้างของยา Febuxostat ซึ่งเป็นสารอินทรีย์โมเลกุลขนาดเล็กที่มีวงแหวน Thiazole และ Carboxylic acid ละลายได้ดีในตัวทำละลายอินทรีย์กึ่งมีขั้ว",
     "caseStem": "จากการพิจารณาคุณสมบัติทางเคมีและโครงสร้างของยา Febuxostat ซึ่งเป็นสารอินทรีย์โมเลกุลขนาดเล็กที่มีวงแหวน Thiazole และ Carboxylic acid ละลายได้ดีในตัวทำละลายอินทรีย์กึ่งมีขั้ว",
     "question": "เทคนิคเครื่องมือวิเคราะห์ในข้อใดต่อไปนี้มีความเหมาะสมสูงสุดสำหรับการตรวจวิเคราะห์หาปริมาณตัวยาสำคัญ (Assay) ของ Febuxostat ในวัตถุดิบและยาเม็ดตามเภสัชตำรับสากล",
-    "questionImage": "",
+    "questionImage": "images/pubchem/febuxostat.png",
     "choices": [
       "Atomic Absorption Spectroscopy (AAS)",
       "High-Performance Liquid Chromatography ควบคู่กับ UV detector (HPLC-UV)",
@@ -219962,8 +220160,8 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "หากต้องการแยกอนุพันธ์สารประกอบสเตียรอยด์ (Steroid derivatives) ในรูปภาพ [📷 มีรูปภาพประกอบ: image94.png] ซึ่งมีความแตกต่างกันที่หมู่แทนที่บนวงแหวนคาร์บอน เทคนิคการวิเคราะห์ที่ดีที่สุดคือข้อใด?",
-    "questionImage": "",
+    "question": "หากต้องการแยกอนุพันธ์สารประกอบสเตียรอยด์ (Steroid derivatives) ในรูปภาพ ซึ่งมีความแตกต่างกันที่หมู่แทนที่บนวงแหวนคาร์บอน เทคนิคการวิเคราะห์ที่ดีที่สุดคือข้อใด?",
+    "questionImage": "images/cc1_product/image94.png",
     "choices": [
       "High-Performance Liquid Chromatography (HPLC)",
       "Infrared Spectroscopy (FTIR)",
@@ -219990,8 +220188,8 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "ในการควบคุมคุณภาพและการหาปริมาณตัวยาสำคัญ (Assay) ของวัตถุดิบตัวยาสำคัญที่มีโครงสร้างทางเคมีซับซ้อนตามรูปภาพ [📷 มีรูปภาพประกอบ: image95.png] เทคนิคการวิเคราะห์มาตรฐานที่ให้ความถูกต้องและความจำเพาะเจาะจงสูงสุดตามเภสัชตำรับคือข้อใด?",
-    "questionImage": "",
+    "question": "ในการควบคุมคุณภาพและการหาปริมาณตัวยาสำคัญ (Assay) ของวัตถุดิบตัวยาสำคัญที่มีโครงสร้างทางเคมีซับซ้อนตามรูปภาพ เทคนิคการวิเคราะห์มาตรฐานที่ให้ความถูกต้องและความจำเพาะเจาะจงสูงสุดตามเภสัชตำรับคือข้อใด?",
+    "questionImage": "images/cc1_product/image95.png",
     "choices": [
       "High-Performance Liquid Chromatography (HPLC)",
       "Confocal Laser Scanning Microscopy",
@@ -220242,8 +220440,8 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "จากภาพแผนผังระบบการวิเคราะห์ทางเครื่องมือ [📷 มีรูปภาพประกอบ: image115.png] ที่ประกอบด้วย Solvent reservoirs, Degasser, High-pressure pump, Autosampler, Column compartment, และ UV/Vis Photodiode Array Detector จัดเป็นเครื่องมือวิเคราะห์ชนิดใด?",
-    "questionImage": "",
+    "question": "จากภาพแผนผังระบบการวิเคราะห์ทางเครื่องมือ ที่ประกอบด้วย Solvent reservoirs, Degasser, High-pressure pump, Autosampler, Column compartment, และ UV/Vis Photodiode Array Detector จัดเป็นเครื่องมือวิเคราะห์ชนิดใด?",
+    "questionImage": "images/cc1_product/image115.png",
     "choices": [
       "High-Performance Liquid Chromatography (HPLC)",
       "Gas Chromatography (GC)",
@@ -221791,7 +221989,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากสูตรโครงสร้างของยาต้านวัณโรค Ethambutol ซึ่งมี Chiral centers จำนวน 2 ตำแหน่งในโมเลกุล ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับไอโซเมอร์ที่นำมาใช้เป็นยารักษาโรค",
-    "questionImage": "",
+    "questionImage": "images/pubchem/ethambutol.png",
     "choices": [
       "ใช้เฉพาะไอโซเมอร์ชนิด (S,S)-(+)-Ethambutol (Dextro-isomer) เนื่องจากมีฤทธิ์ต้านเชื้อวัณโรคสูงกว่า (R,R)-enantiomer ถึง 500 เท่า และมีพิษต่อระบบสายตาน้อยกว่า",
       "ใช้รูปผสม Racemic mixture (50:50) เพราะออกฤทธิ์ได้เท่ากัน",
@@ -221819,7 +222017,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากสูตรโครงสร้างของยา Triprolidine โครงสร้างหรือส่วนใดของโมเลกุลทำหน้าที่เป็น Chromophore ที่ทำให้สารสามารถตรวจวิเคราะห์ได้ด้วยเทคนิค UV-Vis Spectrophotometry",
-    "questionImage": "",
+    "questionImage": "images/pubchem/triprolidine.png",
     "choices": [
       "Phenyl ring (และ Pyridyl ring ที่มี conjugated double bonds)",
       "Pyrrolidine ring (วง aliphatic heterocyclic amine)",
@@ -222269,7 +222467,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างทางเคมีของ Griseofulvin การตรวจวิเคราะห์คุณภาพตามเภสัชตำรับเพื่อยืนยัน Stereochemistry และแยก Active enantiomer ออกจากไอโซเมอร์ที่ไม่ออกฤทธิ์ ต้องใช้เครื่องมือใด?",
-    "questionImage": "",
+    "questionImage": "images/pubchem/griseofulvin.png",
     "choices": [
       "Polarimeter (ตรวจวัดค่าการหมุนระนาบแสงจำเพาะ Specific Optical Rotation [alpha]D)",
       "Proton NMR Spectrometer",
@@ -222438,8 +222636,8 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "จากข้อมูลความคงตัวและความสามารถในการละลายของยา Furosemide [📷 มีรูปภาพประกอบ: image111.png] ซึ่งพบว่าตัวยาละลายได้ดีในสภาวะด่าง (pH > 7.0) และมีความคงตัวดีที่สุดในสภาวะด่างอ่อน หากต้องการเตรียมเป็นยาน้ำรับประทาน ควรเลือกสูตรตำรับในข้อใด?",
-    "questionImage": "",
+    "question": "จากข้อมูลความคงตัวและความสามารถในการละลายของยา Furosemide ซึ่งพบว่าตัวยาละลายได้ดีในสภาวะด่าง (pH > 7.0) และมีความคงตัวดีที่สุดในสภาวะด่างอ่อน หากต้องการเตรียมเป็นยาน้ำรับประทาน ควรเลือกสูตรตำรับในข้อใด?",
+    "questionImage": "images/cc1_product/image111.png",
     "choices": [
       "ยาน้ำเชื่อมหรือยาอีลิกเซอร์ที่ปรับสภาวะบัฟเฟอร์เป็นด่างอ่อน (Alkaline buffered oral solution / Elixir pH 7.5 - 8.5)",
       "ยาน้ำเชื่อมสภาวะกรดจัด (Syrup pH 3.0)",
@@ -222803,7 +223001,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากการพิจารณาสูตรโครงสร้างทางเคมีของยาต้านวัณโรค Rifampicin ซึ่งมีระบบพันธะคู่สลับพันธะเดี่ยวแบบต่อเนื่อง (Conjugated double bond system) และวงแหวนแอโรมาติกที่ทำหน้าที่เป็น Chromophore ดูดกลืนแสงได้ดี",
     "caseStem": "จากการพิจารณาสูตรโครงสร้างทางเคมีของยาต้านวัณโรค Rifampicin ซึ่งมีระบบพันธะคู่สลับพันธะเดี่ยวแบบต่อเนื่อง (Conjugated double bond system) และวงแหวนแอโรมาติกที่ทำหน้าที่เป็น Chromophore ดูดกลืนแสงได้ดี",
     "question": "เครื่องมือวิเคราะห์ทางสเปกโทรสโกปีในข้อใด เหมาะสมที่สุดสำหรับการตรวจหาปริมาณตัวยาสำคัญ (Assay) ของ Rifampicin ในสารละลายตัวอย่าง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/rifampicin.png",
     "choices": [
       "UV-visible spectrophotometer",
       "Infrared spectroscope",
@@ -223307,7 +223505,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างทางเคมีของยา Griseofulvin ซึ่งมี chiral center การตรวจสอบคุณภาพทางเภสัชวิเคราะห์หัวข้อใดที่ใช้ตรวจวัดคุณสมบัติเฉพาะที่เกี่ยวข้องกับ optical isomer ที่ออกฤทธิ์ทางชีวภาพ",
-    "questionImage": "",
+    "questionImage": "images/pubchem/griseofulvin.png",
     "choices": [
       "1H-NMR",
       "Polarimeter",
@@ -235783,8 +235981,8 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "จากรูปภาพแสดงโครงสร้างภาคตัดขวางของเม็ด Omeprazole enteric-coated pellet [📷 มีรูปภาพประกอบ: image106.png] ส่วนประกอบชั้นที่ 1, ชั้นที่ 2 และชั้นที่ 3 เรียงลำดับจากชั้นในสุดไปสู่ชั้นนอกสุดคือข้อใด?",
-    "questionImage": "",
+    "question": "จากรูปภาพแสดงโครงสร้างภาคตัดขวางของเม็ด Omeprazole enteric-coated pellet ส่วนประกอบชั้นที่ 1, ชั้นที่ 2 และชั้นที่ 3 เรียงลำดับจากชั้นในสุดไปสู่ชั้นนอกสุดคือข้อใด?",
+    "questionImage": "images/cc1_product/image106.png",
     "choices": [
       "ชั้นที่ 1: Omeprazole drug core / ชั้นที่ 2: HPMC subcoating barrier / ชั้นที่ 3: Methacrylic acid enteric coat",
       "ชั้นที่ 1: HPMC subcoating barrier / ชั้นที่ 2: Omeprazole drug core / ชั้นที่ 3: Methacrylic acid enteric coat",
@@ -236147,8 +236345,8 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "ระบบนำส่งยาในรูปภาพ [📷 มีรูปภาพประกอบ: image113.png] ที่ประกอบด้วย Semi-permeable membrane, Drug layer, Push layer และ Laser-drilled orifice จัดเป็นระบบนำส่งยาชนิดควบคุมการปลดปล่อยแบบใด?",
-    "questionImage": "",
+    "question": "ระบบนำส่งยาในรูปภาพ ที่ประกอบด้วย Semi-permeable membrane, Drug layer, Push layer และ Laser-drilled orifice จัดเป็นระบบนำส่งยาชนิดควบคุมการปลดปล่อยแบบใด?",
+    "questionImage": "images/cc1_product/image113.png",
     "choices": [
       "ระบบปั๊มออสโมติกชนิดผลักดันสองชั้น (Osmotic-controlled release system / Push-Pull Osmotic Pump: OROS)",
       "ระบบเมทริกซ์ชนิดไม่ละลายน้ำ (Insoluble inert matrix system)",
@@ -261675,7 +261873,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากสูตรโครงสร้างของ praziquantel ตำแหน่งนี้เรียกว่า และมีคุณสมบัติอย่างไร",
-    "questionImage": "",
+    "questionImage": "images/pubchem/praziquantel.png",
     "choices": [
       "Quinoline, base",
       "Isoquinoline, base",
@@ -261759,7 +261957,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "สูตรโครงสร้างของยาต่อไปนี้ข้อใดคือ Dexamethasone",
-    "questionImage": "",
+    "questionImage": "images/pubchem/dexamethasone.png",
     "choices": [
       "โครงสร้างเตียรอยด์มีหมู่ -OH และ -F",
       "โครงสร้าง ACE inhibitor",
@@ -261787,7 +261985,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของ vitamin A ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับ SAR",
-    "questionImage": "",
+    "questionImage": "images/pubchem/retinol.png",
     "choices": [
       "Conjugated double bond เพิ่มขึ้น ทำให้ activity ของ vitamin A ลดลง",
       "Conjugated double bond ลดลง ทำให้ activity ของ vitamin A เพิ่มขึ้น",
@@ -261815,7 +262013,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของ Vitamin A (Retinol) หากเกิดปฏิกิริยาออกซิเดชันเปลี่ยนจากหมู่ไฮดรอกซิล (-OH) เป็นหมู่คาร์บอกซิลิก (-COOH) จะได้เป็นสารออกฤทธิ์ทางเภสัชกรรมในข้อใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/retinol.png",
     "choices": [
       "Tretinoin",
       "Isotretinoin",
@@ -261843,7 +262041,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของยา Gemcitabine เป็นอนุพันธ์ของอะไร",
-    "questionImage": "",
+    "questionImage": "images/pubchem/gemcitabine.png",
     "choices": [
       "Acyclonucleoside analog",
       "Pyrimidine nucleoside analog",
@@ -261899,7 +262097,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากสูตรโครงสร้างของยา doxorubicin โครงสร้างส่วนใดที่ออกฤทธิ์เป็น intercalating ของ DNA",
-    "questionImage": "",
+    "questionImage": "images/pubchem/doxorubicin.png",
     "choices": [
       "Anthracycline ring",
       "- NH2 group",
@@ -262039,7 +262237,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "N3 หรือ Azido group จากสูตรโครงสร้างของ AZT มีผลให้เกิดสิ่งใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/zidovudine.png",
     "choices": [
       "เพิ่มความสามารถในการจับกับโปรตีน albumin",
       "ช่วยเพิ่มการดูดซึมของยา",
@@ -262123,7 +262321,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "สูตรโครงสร้างของยาปฏิชีวนะ Amoxicillin ประกอบด้วยหมู่ฟังก์ชันสำคัญหลายตำแหน่ง: ตำแหน่งที่ 1 = พันธะเอไมด์นอกวง (exocyclic amide linkage), ตำแหน่งที่ 2 = หมู่ฟีนอลิกไฮดรอกซิล (-OH) บนวงเบนซีน, ตำแหน่งที่ 3 = หมู่คาร์บอนิล (C=O) ภายในวงเบต้า-แลกแทม (beta-lactam ring), ตำแหน่งที่ 4 = หมู่อะมิโนอิสระ (-NH2) บนสายข้าง, ตำแหน่งที่ 5 = หมู่คาร์บอกซิล (-COOH) บนวงไทอาโซลิดีน",
     "caseStem": "สูตรโครงสร้างของยาปฏิชีวนะ Amoxicillin ประกอบด้วยหมู่ฟังก์ชันสำคัญหลายตำแหน่ง: ตำแหน่งที่ 1 = พันธะเอไมด์นอกวง (exocyclic amide linkage), ตำแหน่งที่ 2 = หมู่ฟีนอลิกไฮดรอกซิล (-OH) บนวงเบนซีน, ตำแหน่งที่ 3 = หมู่คาร์บอนิล (C=O) ภายในวงเบต้า-แลกแทม (beta-lactam ring), ตำแหน่งที่ 4 = หมู่อะมิโนอิสระ (-NH2) บนสายข้าง, ตำแหน่งที่ 5 = หมู่คาร์บอกซิล (-COOH) บนวงไทอาโซลิดีน",
     "question": "จากสูตรโครงสร้างของยา Amoxicillin ดังกล่าว ตำแหน่งใดเป็นจุดที่ถูกทำลายได้ง่ายที่สุดโดยเอนไซม์ Beta-lactamase ของเชื้อแบคทีเรีย ซึ่งส่งผลให้เกิดปัญหาการดื้อยา",
-    "questionImage": "",
+    "questionImage": "images/pubchem/amoxicillin.png",
     "choices": [
       "ตำแหน่งที่ 1",
       "ตำแหน่งที่ 2",
@@ -262179,7 +262377,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "Doxycycline มีสูตรโครงสร้างรูป เป็นยากลุ่มเดียวกันกับยาใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/doxycycline.png",
     "choices": [
       "Tetracycline",
       "Penicillin",
@@ -262683,7 +262881,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างโมเลกุลของสารแอลคาลอยด์ Nicotine ที่มีวง Pyrrolidine และวง Pyridine ข้อใดต่อไปนี้ระบุตำแหน่งของหมู่ฟังก์ชันและคุณสมบัติความเป็นเบสที่ทำปฏิกิริยากับกรดในการตรวจวิเคราะห์ทางเคมีได้ถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/nicotine.png",
     "choices": [
       "ไนโตรเจนบนวง Pyrrolidine มีคุณสมบัติเป็น Tertiary aliphatic amine (pKa ≈ 8.0) ซึ่งมีความเป็นเบสแรงกว่าไนโตรเจนบนวง Pyridine (pKa ≈ 3.1) และเป็นตำแหน่งแรกที่รับโปรตอน",
       "ไนโตรเจนบนวง Pyridine เป็นเบสที่แรงกว่าวง Pyrrolidine เนื่องจากมี Resonance",
@@ -263019,7 +263217,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[]\nภาพสูตรโครงสร้าง amoxicillin (โครงสร้างบน: aminopenicillin ที่มี p-hydroxy) และ clavulanic acid (โครงสร้างล่าง: oxapenam/beta-lactamase inhibitor)",
     "caseStem": "[]\nภาพสูตรโครงสร้าง amoxicillin (โครงสร้างบน: aminopenicillin ที่มี p-hydroxy) และ clavulanic acid (โครงสร้างล่าง: oxapenam/beta-lactamase inhibitor)",
     "question": "ข้อใดไม่ถูกต้องเกี่ยวกับ amoxicillin/clavulanic acid [แสดงภาพโครงสร้าง amoxicillin และ clavulanic acid]",
-    "questionImage": "",
+    "questionImage": "images/pubchem/amoxicillin_vs_clavulanic_acid.png",
     "choices": [
       "ไม่ถูกทำลายโดย beta lactamase",
       "เกิดปฏิกิริยา hydrolysis",
@@ -263439,7 +263637,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[ความคงตัวของยา Enalapril]\nพิจารณาโครงสร้างทางเคมีของยา Enalapril ซึ่งเป็น ethyl ester prodrug",
     "caseStem": "[ความคงตัวของยา Enalapril]\nพิจารณาโครงสร้างทางเคมีของยา Enalapril ซึ่งเป็น ethyl ester prodrug",
     "question": "โครงสร้างยานี้ สลายตัวด้วยปฏิกิริยาใด (โครงสร้างยา Enalapril)",
-    "questionImage": "",
+    "questionImage": "images/pubchem/enalapril.png",
     "choices": [
       "Hydrolysis",
       "Oxidation",
@@ -263551,7 +263749,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[เคมีทางยาของยา Ergotamine]\nพิจารณาโครงสร้างโมเลกุลของ Ergotamine เพื่อระบุตำแหน่งที่เป็นเบสและสามารถทำปฏิกิริยากับกรดเกิดเป็นเกลือยา (Salt formation)",
     "caseStem": "[เคมีทางยาของยา Ergotamine]\nพิจารณาโครงสร้างโมเลกุลของ Ergotamine เพื่อระบุตำแหน่งที่เป็นเบสและสามารถทำปฏิกิริยากับกรดเกิดเป็นเกลือยา (Salt formation)",
     "question": "จากโครงสร้างของ Ergotamine ตรงไหนจับแล้วทำให้เกิดเกลือ",
-    "questionImage": "",
+    "questionImage": "images/pubchem/ergotamine.png",
     "choices": [
       "ตำแหน่ง 1 (indole NH)",
       "ตำแหน่ง 2 (indole aromatic ring)",
@@ -264391,7 +264589,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในการตรวจพิสูจน์เอกลักษณ์ทางเคมีของ Nicotine ซึ่งเป็นสารออกฤทธิ์ในหมากฝรั่งอดบุหรี่ (Nicotine gum) สารทดสอบ (Reagent) ในข้อใดมีความจำเพาะต่อโครงสร้างของสารดังกล่าว",
-    "questionImage": "",
+    "questionImage": "images/pubchem/nicotine.png",
     "choices": [
       "Shinoda test",
       "Dragendorff reagent",
@@ -264951,7 +265149,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างและกลไกของยาต้านไวรัส Acyclovir triphosphate เอนไซม์เป้าหมายหลักที่ยานี้เข้าไปยับยั้งการทำงานคือเอนไซม์ใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/acyclovir_triphosphate.png",
     "choices": [
       "Viral RNA polymerase",
       "Host DNA topoisomerase",
@@ -265007,7 +265205,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ยาต้านฮิสตามีนชนิดไม่ง่วงรุ่นที่สองในข้อใดที่ได้รับการพัฒนามาจากสารเมแทบอไลต์หรือโครงสร้างของยา Hydroxyzine",
-    "questionImage": "",
+    "questionImage": "images/pubchem/hydroxyzine.png",
     "choices": [
       "Loratadine",
       "Cetirizine",
@@ -265035,7 +265233,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "หมู่ฟังก์ชันใดบนโครงสร้างของ Corticosteroids ที่ไม่จำเป็นสำหรับการจับกับ Glucocorticoid receptor และการออกฤทธิ์ลดการอักเสบ",
-    "questionImage": "",
+    "questionImage": "images/pubchem/dexamethasone.png",
     "choices": [
       "3-carbonyl",
       "Double bond ตำแหน่งที่ 4-5",
@@ -265091,7 +265289,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของ Cimetidine (H2-receptor antagonist) ข้อใดกล่าวผิดเกี่ยวกับคุณสมบัติทางเภสัชวิทยาและเคมี\n<img src=\"/PLE%20CC%20Quiz/images/quiz_cc1/quiz_cc1_p30_img4.png\">",
-    "questionImage": "",
+    "questionImage": "images/pubchem/cimetidine.png",
     "choices": [
       "อยู่ในกลุ่ม H2 receptor antagonist",
       "เป็นเอนไซม์ CYP450 inhibitor",
@@ -265707,7 +265905,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากโครงสร้างทางเคมีของยา Simvastatin ซึ่งมีวงแหวนแลกโทน (Lactone ring) อยู่ในโมเลกุล",
     "caseStem": "จากโครงสร้างทางเคมีของยา Simvastatin ซึ่งมีวงแหวนแลกโทน (Lactone ring) อยู่ในโมเลกุล",
     "question": "ยา Simvastatin จะเปลี่ยนสภาพกลายเป็นรูปออกฤทธิ์ทางเภสัชวิทยา (Active metabolite) เพื่อยับยั้งเอนไซม์ HMG-CoA reductase ด้วยปฏิกิริยาเคมีข้อใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/simvastatin.png",
     "choices": [
       "Demethylation",
       "Hydrolysis",
@@ -265763,7 +265961,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "ยา Cetirizine จัดเป็นยาต้านฮิสตามีนรุ่นที่ 2 (Second-generation H1-antihistamine) ซึ่งพัฒนามาจากโครงสร้างของ Hydroxyzine โดยการเปลี่ยนหมู่ Primary alcohol (-CH2OH) ปลายสายให้กลายเป็นหมู่ Carboxylic acid (-COOH)",
     "caseStem": "ยา Cetirizine จัดเป็นยาต้านฮิสตามีนรุ่นที่ 2 (Second-generation H1-antihistamine) ซึ่งพัฒนามาจากโครงสร้างของ Hydroxyzine โดยการเปลี่ยนหมู่ Primary alcohol (-CH2OH) ปลายสายให้กลายเป็นหมู่ Carboxylic acid (-COOH)",
     "question": "ที่ระดับความเป็นกรด-ด่างของร่างกาย (Physiological pH 7.4) โมเลกุลของ Cetirizine จะมีลักษณะทางเคมีกายภาพอย่างไรที่ส่งผลให้ยาไม่ผ่าน Blood-Brain Barrier",
-    "questionImage": "",
+    "questionImage": "images/pubchem/cetirizine.png",
     "choices": [
       "โมเลกุลไม่มีขั้วอย่างสมบูรณ์ทำให้ไม่สามารถละลายในไขมันได้",
       "โมเลกุลแตกตัวอยู่ในรูป Zwitterion (มีทั้งประจุบวกที่อะตอมไนโตรเจนและประจุลบที่หมู่คาร์บอกซิเลตในโมเลกุลเดียวกัน)",
@@ -265945,6 +266143,34 @@ window.QUIZ_OFFLINE_DB = [
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 4. เวลาที่ standard กับยา A อยู่ใน column เท่ากัน<br>🎯 ทำไมข้อนี้ถึงถูก:<br>Retention Time ($t_R$) ในโครมาโทกราฟีหมายถึงระยะเวลาที่สารเคลื่อนที่ผ่านคอลัมน์ตั้งแต่เริ่มฉีดสารจนกระทั่งถูกชะออกมาถึงตัวตรวจวัด การที่สารตัวอย่างยา A มี retention time เท่ากับ standard แสดงว่าสารทั้งสองใช้เวลาในการเคลื่อนที่และถูกกักเก็บอยู่ในคอลัมน์เท่ากันภายใต้สภาวะเดียวกัน ซึ่งใช้เป็นเกณฑ์ในการยืนยันเอกลักษณ์เบื้องต้น<br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 1.: ปริมาณของสารสะท้อนจากพื้นที่ใต้พีค (Peak Area) หรือความสูงของพีค มิใช่ระยะเวลา Retention Time<br>• ข้อ 2.: การมี retention time เท่ากันภายใต้สภาวะวิเคราะห์เดียวกันบ่งชี้ว่าน่าจะเป็นสารชนิดเดียวกัน มิใช่สารคนละตัว<br>• ข้อ 3.: By-product จะมีโครงสร้างและสมบัติทางเคมีต่างไป จึงมักมี retention time แตกต่างจาก standard<br>• ข้อ 5.: หากมีความชอบพอกับ stationary phase มากกว่า จะต้องใช้เวลาอยู่ในคอลัมน์นานกว่า ทำให้ retention time มากขึ้น",
     "answerImage": "",
     "note": "ข้อ 112 (PLE_CC1_2561_Key.md) [ย้ายจาก 1. Pharmacy Laws & Ethics::124]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2561.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "13. Medicinal Chemistry::157",
+    "itemNo": 155,
+    "category": "13. Medicinal Chemistry",
+    "topic": "13. Oncology",
+    "subtopic": "13.1 Chemotherapy Principles & Regimens",
+    "track": "Product",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "จากโครงสร้างยาเคมีบำบัดกลุ่ม Anthracycline (Doxorubicin) ยาดังกล่าวมีกลไกการออกฤทธิ์ต่อเซลล์มะเร็งอย่างไร",
+    "questionImage": "",
+    "choices": [
+      "ยับยั้งเอนไซม์ Topoisomerase II และแทรกตัวระหว่างคู่เบสของ DNA",
+      "ยับยั้งการสร้างผนังเซลล์ของเซลล์มะเร็ง",
+      "จับกับไมโครทูบูลและยับยั้งการแยกตัวของโครโมโซม",
+      "ทำให้เยื่อหุ้มเซลล์รั่วและสูญเสียความสมดุลของไอออน",
+      "ยับยั้งการสร้างกรดโฟลิกเพื่อสังเคราะห์สารพันธุกรรม"
+    ],
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. ยับยั้งเอนไซม์ Topoisomerase II และแทรกตัวระหว่างคู่เบสของ DNA<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Doxorubicin เป็นยาเคมีบำบัดกลุ่ม Anthracycline มีกลไกหลักโดยการแทรกตัวระหว่างคู่เบสของ DNA (DNA intercalation) และยับยั้งเอนไซม์ Topoisomerase II ส่งผลให้เกิดสาย DNA หักและขัดขวางการสังเคราะห์ DNA และ RNA<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2.: การยับยั้งการสร้างผนังเซลล์เป็นกลไกของยาต้านจุลชีพ เช่น กลุ่ม Beta-lactams มิใช่ยามะเร็ง Anthracycline<br>• ข้อ 3.: การออกฤทธิ์ต่อไมโครทูบูลเป็นกลไกของกลุ่ม Vinca alkaloids และ Taxanes<br>• ข้อ 4.: การทำให้เยื่อหุ้มเซลล์รั่วเป็นกลไกของยาต้านเชื้อรากลุ่ม Polyenes เช่น Amphotericin B<br>• ข้อ 5.: การยับยั้งการสร้างกรดโฟลิกเป็นกลไกของยา Antimetabolites เช่น Methotrexate",
+    "answerImage": "",
+    "note": "ข้อ 41 (PLE_CC1_2561_Key.md) [ย้ายจาก 1. Pharmacy Laws & Ethics::117]",
     "examType": "ข้อสอบจริง",
     "examYear": "2561.0",
     "caseGroupId": "",
@@ -269158,8 +269384,8 @@ window.QUIZ_OFFLINE_DB = [
     "track": "SAP",
     "caseContext": "",
     "caseStem": "",
-    "question": "จากโครงสร้างยาเคมีบำบัดกลุ่ม Anthracycline (Doxorubicin) ยาดังกล่าวมีกลไกการออกฤทธิ์ต่อเซลล์มะเร็งอย่างไร",
-    "questionImage": "",
+    "question": "[ย้ายไป 13. Medicinal Chemistry::157] จากโครงสร้างยาเคมีบำบัดกลุ่ม Anthracycline (Doxorubicin) ยาดังกล่าวมีกลไกการออกฤทธิ์ต่อเซลล์มะเร็งอย่างไร",
+    "questionImage": "images/pubchem/doxorubicin.png",
     "choices": [
       "มีผลต.อดีเอนเอ",
       "มีผลต.อผนังเซลล",
@@ -269270,7 +269496,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "SAP",
     "caseContext": "ผู้ป่วยหญิงอายุ 22 ปี ปฏิเสธโรคประจำตัว มาร้านยาด้วยอาการปัสสาวะแสบขัดและกะปริดกะปรอยมา 1 วัน ก่อนเกิดอาการมีประวัติกลั้นปัสสาวะระหว่างเดินทางไปต่างจังหวัด",
     "caseStem": "ผู้ป่วยหญิงอายุ 22 ปี ปฏิเสธโรคประจำตัว มาร้านยาด้วยอาการปัสสาวะแสบขัดและกะปริดกะปรอยมา 1 วัน ก่อนเกิดอาการมีประวัติกลั้นปัสสาวะระหว่างเดินทางไปต่างจังหวัด",
-    "question": "[ย้ายไป 8. Infectious diseases::377] [ย้ายไป 8. Infectious diseases::376] [ย้ายไป 8. Infectious diseases::374] [ย้ายไป 8. Infectious diseases::373] หากผู้ป่วยมีอาการในข้อใดต่อไปนี้ จัดเป็นสัญญาณเตือนที่รุนแรงแสดงว่าการติดเชื้อลุกลาม และต้องรีบส่งต่อพบแพทย์อย่างเร่งด่วน",
+    "question": "[ย้ายไป 8. Infectious diseases::382] [ย้ายไป 8. Infectious diseases::377] [ย้ายไป 8. Infectious diseases::376] [ย้ายไป 8. Infectious diseases::374] [ย้ายไป 8. Infectious diseases::373] หากผู้ป่วยมีอาการในข้อใดต่อไปนี้ จัดเป็นสัญญาณเตือนที่รุนแรงแสดงว่าการติดเชื้อลุกลาม และต้องรีบส่งต่อพบแพทย์อย่างเร่งด่วน",
     "questionImage": "",
     "choices": [
       "ปวดท(อง",
