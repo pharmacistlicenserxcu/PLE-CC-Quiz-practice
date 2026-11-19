@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.1 Pro Edition)
- * Total Questions: 4877 across 32 Categories
- * Build Timestamp: 2026-11-19 14:50:57
+ * Total Questions: 4876 across 32 Categories
+ * Build Timestamp: 2026-11-19 15:28:10
  * Build Mode: Fast Local (openpyxl)
  */
 
@@ -152,7 +152,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "13. Medicinal Chemistry",
-    "count": 155,
+    "count": 154,
     "track": "Product"
   },
   {
@@ -9464,7 +9464,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากการพิจารณาคุณสมบัติทางเคมีและโครงสร้างของยากลุ่ม Statins เมื่อบริหารร่วมกับ Cholestyramine ข้อใดสรุปได้ถูกต้องตามหลักเภสัชวิทยา",
-      "questionImage": "",
+      "questionImage": "images/purple2/simvastatin_pravastatin_q15_16.png",
       "choices": [
         "Cholestyramine ลดการดูดซึมยา Simvastatin เนื่องจาก Simvastatin มี Lactone ring ในโครงสร้าง",
         "Cholestyramine ลดการดูดซึมยา Pravastatin เนื่องจาก Pravastatin มีหมู่ Carboxylic acid ที่แตกตัวเป็นประจุลบในโครงสร้าง",
@@ -21276,7 +21276,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "[ย้ายไป 13. Medicinal Chemistry::154] [ย้ายไป 13. Medicinal Chemistry::152] โครงสร้างนี้เป็นของยาตัวใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_glibenclamide.png",
       "choices": [
         "Glibenclamide",
         "Metformin",
@@ -40821,7 +40821,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "คุณสมบัติของยาตามโครงสร้างนี้ ข้อใดผิด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_erythromycin.png",
       "choices": [
         "ละลายน้ำได้น้อย",
         "มีคุณสมบัติในการฆ่าเชื้อเป็นแบบ concentration-dependent",
@@ -41325,7 +41325,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "เมื่อพิจารณาโครงสร้างของ ritonavir ท่านคิดว่าข้อใดไม่ถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/ritonavir.png",
       "choices": [
         "เมื่อให้ยาร่วมกับอาหารจะดูดซึมได้มากขึ้น",
         "ยามีการละลายน้ำต่ำ จึงดูดซึมไม่ดี",
@@ -43829,7 +43829,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[]\nจากกราฟความสัมพันธ์ระหว่างเวลาและระดับแอนติบอดี (Serum titre of antibodies) เส้นประแสดงการตอบสนองแรก และเส้นทึบแสดงการตอบสนองหลัง reinfection",
       "caseStem": "[]\nจากกราฟความสัมพันธ์ระหว่างเวลาและระดับแอนติบอดี (Serum titre of antibodies) เส้นประแสดงการตอบสนองแรก และเส้นทึบแสดงการตอบสนองหลัง reinfection",
       "question": "จากรูป เส้นประ และ เส้นทึบ คืออะไร",
-      "questionImage": "",
+      "questionImage": "images/diagrams/immune_response_igm_igg.png",
       "choices": [
         "IgM / IgG",
         "IgG / IgA",
@@ -43857,7 +43857,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากกราฟข้อ 44. ข้อใดถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/diagrams/immune_response_igm_igg.png",
       "choices": [
         "ฉีดวัคซีนซ้ำ เพื่อกระตุ้นการสร้าง Ab บางอย่างเพิ่มขึ้น",
         "ฉีดวัคซีนซ้ำ เพื่อให้ภูมิคุ้มกันสร้างให้อีกครั้ง",
@@ -58805,7 +58805,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของ salbutamol ที่กำหนดให้ หมู่ฟังก์ชั่นใดที่ทำให้ salbutamol ออกฤทธิ์จำเพาะต่อ β receptor",
-      "questionImage": "",
+      "questionImage": "images/pubchem/salbutamol.png",
       "choices": [
         "A – hydroxyl group",
         "B – methanol group",
@@ -59617,7 +59617,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากโครงสร้าง salmeterol และ formoterol ซึ่งเป็นยากลุ่ม long-acting beta-2 agonist",
       "caseStem": "จากโครงสร้าง salmeterol และ formoterol ซึ่งเป็นยากลุ่ม long-acting beta-2 agonist",
       "question": "ข้อใดถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/formoterol_vs_salmeterol.png",
       "choices": [
         "Salmeterol ออกฤทธิ์เร็วกว่า formoterol เพราะ lipophilicity สูงกว่า",
         "Salmeterol ออกฤทธิ์เร็วกว่า formoterol เพราะ lipophilicity ต่ำกว่า",
@@ -83837,7 +83837,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "การตรวจวิเคราะห์ทางห้องปฏิบัติการควบคุมคุณภาพยาที่ให้ผลการแสดงกราฟิกเป็น 'โครมาโทแกรม' (Chromatogram) ที่แสดงค่า Retention time บนแกนแนวนอน และค่า Response / Peak area (mAU) บนแกนแนวตั้ง",
       "caseStem": "การตรวจวิเคราะห์ทางห้องปฏิบัติการควบคุมคุณภาพยาที่ให้ผลการแสดงกราฟิกเป็น 'โครมาโทแกรม' (Chromatogram) ที่แสดงค่า Retention time บนแกนแนวนอน และค่า Response / Peak area (mAU) บนแกนแนวตั้ง",
       "question": "จัดเป็นผลที่ได้จากเครื่องมือวิเคราะห์ทางเภสัชกรรมชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/diagrams/hplc_chromatogram_unlabeled.png",
       "choices": [
         "Infrared Spectrophotometer (FTIR)",
         "UV-Visible Spectrophotometer",
@@ -84237,7 +84237,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "ผู้ป่วยหญิงไทย อายุ 50 ปี ได้รับการวินิจฉัยว่าเป็น Pulmonary tuberculosis และมีภาวะตับอักเสบเรื้อรัง (Chronic liver disease) ร่วมด้วย โดยแพทย์และเภสัชกรกำลังวางแผนการรักษาด้วยสูตรยาต้านวัณโรคและควบคุมคุณภาพตัวยาสำคัญ",
       "caseStem": "ผู้ป่วยหญิงไทย อายุ 50 ปี ได้รับการวินิจฉัยว่าเป็น Pulmonary tuberculosis และมีภาวะตับอักเสบเรื้อรัง (Chronic liver disease) ร่วมด้วย โดยแพทย์และเภสัชกรกำลังวางแผนการรักษาด้วยสูตรยาต้านวัณโรคและควบคุมคุณภาพตัวยาสำคัญ",
       "question": "โครงสร้างของยาต้านวัณโรคในข้อใดต่อไปนี้ สามารถใช้ค่าการหมุนจำเพาะของแสง (Specific Optical Rotation: $[\\alpha]_D$) ในการตรวจพิสูจน์เอกลักษณ์ (Identification) หรือทดสอบความบริสุทธิ์ทางแสง (Optical purity) ได้",
-      "questionImage": "",
+      "questionImage": "images/pubchem/ethambutol.png",
       "choices": [
         "(S,S)-Ethambutol dihydrochloride (มี Chiral centers 2 ตำแหน่งและเป็น Optically active compound)",
         "Isoniazid (โมเลกุลระนาบแบน ไม่มี Chiral center จัดเป็น Achiral molecule)",
@@ -84630,7 +84630,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "พิจารณาแผนผังโครงสร้างของระบบนำส่งยาผ่านผิวหนังชนิดแผ่นแปะ (Transdermal patch) [📷 มีรูปภาพประกอบ: image104.png] ซึ่งประกอบด้วยชั้นต่างๆ ได้แก่ Backing layer, Drug reservoir (ของเหลวหรือเจลบรรจุตัวยา), Rate-controlling membrane, และ Adhesive layer",
       "caseStem": "พิจารณาแผนผังโครงสร้างของระบบนำส่งยาผ่านผิวหนังชนิดแผ่นแปะ (Transdermal patch) [📷 มีรูปภาพประกอบ: image104.png] ซึ่งประกอบด้วยชั้นต่างๆ ได้แก่ Backing layer, Drug reservoir (ของเหลวหรือเจลบรรจุตัวยา), Rate-controlling membrane, และ Adhesive layer",
       "question": "ระบบนำส่งยาผ่านผิวหนังชนิดแผ่นแปะในภาพโครงสร้างข้างต้น จัดเป็นระบบแผ่นแปะประเภทใด?",
-      "questionImage": "",
+      "questionImage": "images/diagrams/transdermal_reservoir_patch.png",
       "choices": [
         "Membrane-controlled reservoir system",
         "Monolithic matrix dispersion system",
@@ -84659,7 +84659,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "พิจารณาแผนผังโครงสร้างของระบบนำส่งยาผ่านผิวหนังชนิดแผ่นแปะ (Transdermal patch) [📷 มีรูปภาพประกอบ: image104.png] ซึ่งประกอบด้วยชั้นต่างๆ ได้แก่ Backing layer, Drug reservoir (ของเหลวหรือเจลบรรจุตัวยา), Rate-controlling membrane, และ Adhesive layer",
       "caseStem": "พิจารณาแผนผังโครงสร้างของระบบนำส่งยาผ่านผิวหนังชนิดแผ่นแปะ (Transdermal patch) [📷 มีรูปภาพประกอบ: image104.png] ซึ่งประกอบด้วยชั้นต่างๆ ได้แก่ Backing layer, Drug reservoir (ของเหลวหรือเจลบรรจุตัวยา), Rate-controlling membrane, และ Adhesive layer",
       "question": "จากโครงสร้างของระบบแผ่นแปะส่งยาผ่านผิวหนังข้างต้น ตัวยาสำคัญจะถูกกักเก็บและบรรจุอยู่ในชั้นใดของโครงสร้าง?",
-      "questionImage": "",
+      "questionImage": "images/diagrams/transdermal_reservoir_patch.png",
       "choices": [
         "ชั้นกระเปาะบรรจุยา (Drug reservoir layer)",
         "ชั้นแผ่นฟิล์มลอกออกก่อนใช้งาน (Release liner)",
@@ -85080,7 +85080,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากการวิเคราะห์โครงสร้างโมเลกุลด้วย Infrared Spectroscopy (Bruker IR Spectrum) พบพีคการดูดกลืนแสงที่เด่นลึกและแหลมคมอย่างชัดเจนที่ตำแหน่งเลขคลื่น 1685.16 cm⁻¹",
       "caseStem": "จากการวิเคราะห์โครงสร้างโมเลกุลด้วย Infrared Spectroscopy (Bruker IR Spectrum) พบพีคการดูดกลืนแสงที่เด่นลึกและแหลมคมอย่างชัดเจนที่ตำแหน่งเลขคลื่น 1685.16 cm⁻¹",
       "question": "จากข้อมูล IR spectrum ดังกล่าว พีคที่ตำแหน่ง 1685.16 cm⁻¹ แสดงถึงการสั่นของหมู่ฟังก์ชัน (Functional group) ในข้อใด",
-      "questionImage": "",
+      "questionImage": "images/diagrams/ir_spectrum_1685.png",
       "choices": [
         "-C=O",
         "-C=C-",
@@ -85164,7 +85164,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากการตรวจวิเคราะห์ทางเภสัชกรรม ได้รับกราฟสเปกตรัมที่แสดงความสัมพันธ์ระหว่างค่าร้อยละการส่องผ่านแสง (% Transmittance) บนแกน Y และเลขคลื่น (Wavenumber, cm⁻¹) บนแกน X",
       "caseStem": "จากการตรวจวิเคราะห์ทางเภสัชกรรม ได้รับกราฟสเปกตรัมที่แสดงความสัมพันธ์ระหว่างค่าร้อยละการส่องผ่านแสง (% Transmittance) บนแกน Y และเลขคลื่น (Wavenumber, cm⁻¹) บนแกน X",
       "question": "กราฟผลการวิเคราะห์ดังกล่าว เป็นสเปกตรัมที่ให้ข้อมูลเกี่ยวกับคุณสมบัติใดของตัวอย่างยา",
-      "questionImage": "",
+      "questionImage": "images/diagrams/ir_spectrum_1685.png",
       "choices": [
         "หมู่ฟังก์ชัน",
         "มวลโมเลกุล",
@@ -85836,7 +85836,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากการพิจารณาคุณสมบัติโครงสร้างของยา febuxostat วิธีการข้อใด ไม่เหมาะสมที่สุด ในการพัฒนาวิธีวิเคราะห์เพื่อควบคุมคุณภาพยา (หาปริมาณตัวยาสำคัญ หรือ พิสูจน์อัตลักษณ์)",
-      "questionImage": "",
+      "questionImage": "images/pubchem/febuxostat.png",
       "choices": [
         "HPLC-UV",
         "Mass spectrometry",
@@ -86258,7 +86258,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างทางเคมี L-dopa ถูกเปลี่ยนเป็น dopamine ในร่างกายด้วยปฏิกิริยาใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/ldopa_to_dopamine.png",
       "choices": [
         "Decarboxylation",
         "Demethylation",
@@ -88554,7 +88554,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[กรณีศึกษา]\nGriseofulvin มี chiral centers ในโครงสร้างและมีฤทธิ์ทางชีวภาพจำเพาะตาม stereochemistry",
       "caseStem": "[กรณีศึกษา]\nGriseofulvin มี chiral centers ในโครงสร้างและมีฤทธิ์ทางชีวภาพจำเพาะตาม stereochemistry",
       "question": "จากโครงสร้างของ griseofulvin การตรวจสอบคุณภาพใด ทำให้ได้ลักษณะเฉพาะที่ออกฤทธิ์ (optical isomer / active enantiomer)",
-      "questionImage": "",
+      "questionImage": "images/pubchem/griseofulvin.png",
       "choices": [
         "Refractive Index",
         "IR",
@@ -99755,7 +99755,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[กรณีศึกษา]\nจากภาพยาเม็ดเกิดปัญหาการกะเทาะที่ขอบ (edge damage/chipping)",
       "caseStem": "[กรณีศึกษา]\nจากภาพยาเม็ดเกิดปัญหาการกะเทาะที่ขอบ (edge damage/chipping)",
       "question": "ยาเม็ดดังภาพเกิดปัญหาใด",
-      "questionImage": "",
+      "questionImage": "images/diagrams/tablet_defect_chipping.png",
       "choices": [
         "Capping",
         "Chipping",
@@ -116841,7 +116841,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากระบบนำส่งยา Liposome ในข้อ 96 ยาต้านเชื้อรากลุ่ม Azole (เช่น Ketoconazole หรือ Clotrimazole) ซึ่งมีคุณสมบัติไม่ชอบน้ำและละลายในไขมันได้ดี (Lipophilic drug) จะถูกกักเก็บอยู่ในตำแหน่งใดของระบบนำส่งยานี้ (ตำแหน่ง A: แกนกลางน้ำ, ตำแหน่ง B: ส่วนหัวฟอสเฟต, ตำแหน่ง C: ชั้นไขมัน Bilayer, ตำแหน่ง D: สารละลายน้ำภายนอก)",
-      "questionImage": "",
+      "questionImage": "images/diagrams/liposome_positions_a_to_d.png",
       "choices": [
         "ตำแหน่ง A",
         "ตำแหน่ง B",
@@ -124080,7 +124080,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างที่แสดงข้อ 4 สัมพันธ์กับการออกฤทธิ์ของยาอย่างไร",
-      "questionImage": "",
+      "questionImage": "images/purple2/simvastatin_pravastatin_q15_16.png",
       "choices": [
         "Pravastatin เป็น prodrug",
         "Pravastatin และ simvastatin เป็น prodrug",
@@ -124211,7 +124211,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseType": ""
     },
     {
-      "id": "13. Medicinal Chemistry::11",
+      "id": "13. Medicinal Chemistry::12",
       "itemNo": 9,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
@@ -124220,34 +124220,6 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของยา A และยา B ข้อใดถูกต้องเกี่ยวกับยา B",
-      "questionImage": "",
-      "choices": [
-        "ฤทธิ์ต้านแบคทีเรียลดลงอย่างมีนัยสำคัญ",
-        "ความสามารถในการละลายน้ำไม่เปลี่ยนแปลง",
-        "ความถี่ในการรับประทานลดลง",
-        "ไม่คงตัวต่อกรดเช่นเดียวกับยา A",
-        "ไม่คงตัวต่อด่างเช่นเดียวกันกับยา A"
-      ],
-      "answer": 3,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. ความถี่ในการรับประทานลดลง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Doxycycline (ยา B) ขาดหมู่ 6-hydroxyl group (-OH) ทำให้ไม่เกิด acid-catalyzed dehydration เป็น anhydrotetracycline ที่เป็นพิษต่อไต และไม่เกิด base-catalyzed degradation ส่งผลให้มีความคงตัวทางเคมีสูงขึ้น และมี lipophilicity สูงขึ้น ทำให้มี elimination half-life ยาวนานถึง 18-22 ชั่วโมง (เทียบกับ tetracycline 6-10 ชั่วโมง) จึงบริหารยาวันละ 1-2 ครั้ง ทำให้ความถี่ในการรับประทานลดลง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ฤทธิ์ต้านแบคทีเรียลดลงอย่างมีนัยสำคัญ: Doxycycline มี antibacterial potency สูงกว่าหรือเทียบเท่า tetracycline และครอบคลุมเชื้อได้กว้างขวาง<br>• ข้อ ข.: ความสามารถในการละลายน้ำไม่เปลี่ยนแปลง: การไม่มีหมู่ 6-OH ทำให้โมเลกุลมี lipophilicity สูงขึ้นและการละลายน้ำลดลงอย่างชัดเจน<br>• ข้อ ง.: ไม่คงตัวต่อกรดเช่นเดียวกับยา A: Doxycycline คงตัวต่อกรดได้ดีมากเนื่องจากไม่มี 6-OH ให้เกิด dehydration<br>• ข้อ จ.: ไม่คงตัวต่อด่างเช่นเดียวกับยา A: Doxycycline คงตัวต่อด่างได้ดีกว่า tetracycline มากเนื่องจากไม่เกิด lactone cleavage ที่ C6",
-      "answerImage": "",
-      "note": "ข้อ 14 Pharma Plus เล่มม่วง (เฉลยข้อ ค)",
-      "examType": "แบบฝึกหัด",
-      "examYear": "เล่มม่วง",
-      "caseGroupId": "",
-      "caseOrder": 0,
-      "caseType": ""
-    },
-    {
-      "id": "13. Medicinal Chemistry::12",
-      "itemNo": 10,
-      "category": "13. Medicinal Chemistry",
-      "topic": "Product Group 13: Medicinal Chemistry",
-      "subtopic": "17.4 SAR & Drug Design",
-      "track": "Product",
-      "caseContext": "",
-      "caseStem": "",
-      "question": "จากสูตรโครงสร้างของยา doxorubicin โครงสร้างส่วนใดที่ออกฤทธิ์เป็น intercalating ของ DNA",
       "questionImage": "images/pubchem/doxorubicin.png",
       "choices": [
         "Anthracycline ring",
@@ -124268,7 +124240,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::13",
-      "itemNo": 11,
+      "itemNo": 10,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124276,7 +124248,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างนี้ เรียกว่า อะไร",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_zidovudine.png",
       "choices": [
         "Nucleotide ของ Purine",
         "Nucleotide ของ Pyridine",
@@ -124296,7 +124268,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::14",
-      "itemNo": 12,
+      "itemNo": 11,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124304,7 +124276,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อใดกล่าวถูกต้องเกี่ยวกับการพัฒนาโครงสร้างดังแสดงด้านล่าง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/cisplatin_to_carboplatin.png",
       "choices": [
         "เปลี่ยนตัวออกฤทธิ์เป็น Ligand เพื่อช่วยลดอาการไม่พึงประสงค์จากยา",
         "ทำให้โครงสร้างใหญ่ขึ้นเพื่อลดการโดนทำลายหมู่สำคัญในการออกฤทธิ์",
@@ -124324,7 +124296,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::15",
-      "itemNo": 13,
+      "itemNo": 12,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124332,7 +124304,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้าง ข้อใดไม่ถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_warfarin.png",
       "choices": [
         "(S)-form มีฤทธิ์มากกว่า (R)-form",
         "อยู่ในกลุ่ม coumarin",
@@ -124352,7 +124324,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::16",
-      "itemNo": 14,
+      "itemNo": 13,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124360,7 +124332,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้าง ข้อความใดต่อไปนี้ไม่ถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_digoxin.png",
       "choices": [
         "ตัวอย่างยาในกลุ่มนี้ คือ Digoxin",
         "Lactone ring เป็นประเภท bufadienolide",
@@ -124380,7 +124352,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::17",
-      "itemNo": 15,
+      "itemNo": 14,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124408,7 +124380,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::18",
-      "itemNo": 16,
+      "itemNo": 15,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124416,7 +124388,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างต่อไปนี้หมายถึงยาชนิดใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_acyclovir.png",
       "choices": [
         "Zidovudine",
         "Cotrimoxazole",
@@ -124436,7 +124408,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::19",
-      "itemNo": 17,
+      "itemNo": 16,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124464,7 +124436,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::20",
-      "itemNo": 18,
+      "itemNo": 17,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124492,7 +124464,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::21",
-      "itemNo": 19,
+      "itemNo": 18,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124520,7 +124492,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::22",
-      "itemNo": 20,
+      "itemNo": 19,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124548,7 +124520,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::23",
-      "itemNo": 21,
+      "itemNo": 20,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124556,7 +124528,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "เกี่ยวกับโครงสร้างของสารดังรูป ทุกข้อต่อไปนี้ถูกต้อง ยกเว้นข้อใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_primaquine.png",
       "choices": [
         "เป็นสารในกลุ่ม 8-aminoquinoline",
         "ตัวอย่างยาในกลุ่มนี้ได้แก่ primaquine",
@@ -124576,7 +124548,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::24",
-      "itemNo": 22,
+      "itemNo": 21,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124584,7 +124556,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากสูตรโครงสร้างของ folic acid ข้อใดกล่าวไม่ถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/folic_acid.png",
       "choices": [
         "เป็น water soluble vitamin",
         "เรียกอีกอย่างหนึ่งว่า vitamin B9",
@@ -124604,7 +124576,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::25",
-      "itemNo": 23,
+      "itemNo": 22,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124612,7 +124584,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้าง ไม่สามารถใช้ในผู้ป่วยกลุ่มใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_glibenclamide.png",
       "choices": [
         "Pediatric",
         "Cirrhosis/Hepatitis",
@@ -124632,7 +124604,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::26",
-      "itemNo": 24,
+      "itemNo": 23,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124640,7 +124612,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของยา glybenclamide ข้อใดเป็นเหตุผลที่ทำให้ duration นานขึ้น",
-      "questionImage": "",
+      "questionImage": "images/pubchem/glibenclamide.png",
       "choices": [
         "สามารถหมุนแสง polarized ได้",
         "สามารถวิเคราะห์ได้โดยใช้วิธี HPLC-UV detection",
@@ -124660,7 +124632,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::27",
-      "itemNo": 25,
+      "itemNo": 24,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124668,7 +124640,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากสูตรโครงสร้างต่อไปนี้ของยา glipizide จัดว่าเป็นยากลุ่มใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/glipizide.png",
       "choices": [
         "Biguanides",
         "Nicotinic acids",
@@ -124688,7 +124660,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::28",
-      "itemNo": 26,
+      "itemNo": 25,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124696,7 +124668,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างต่อไปนี้เป็นโครงสร้างของยากลุ่มใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_metformin.png",
       "choices": [
         "Iodoperoxidase inhibitor",
         "Sulfonylurea",
@@ -124716,7 +124688,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::29",
-      "itemNo": 27,
+      "itemNo": 26,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124724,7 +124696,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ชื่อเรียกทั่วไปของยาที่มีโครงสร้างในรูป คือ (ยา PTU)",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_propylthiouracil.png",
       "choices": [
         "6 propyl 3 thiouracil",
         "1 propyl 5 thiouracil",
@@ -124744,7 +124716,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::30",
-      "itemNo": 28,
+      "itemNo": 27,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124752,7 +124724,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากโครงสร้างของยา 3 ชนิด (methimazole, carbimazole และ propylthiouracil)",
       "caseStem": "จากโครงสร้างของยา 3 ชนิด (methimazole, carbimazole และ propylthiouracil)",
       "question": "ข้อใดถูกต้องเกี่ยวกับยา methimazole, carbimazole และ propylthiouracil",
-      "questionImage": "",
+      "questionImage": "images/pubchem/antithyroid_3drugs.png",
       "choices": [
         "Methimazole, carbimazole และ propylthiouracil ถูก metabolized โดยปฏิกิริยา desulfunation ก่อนจึงจะได้สารที่มีฤทธิ์ทางเภสัชวิทยา",
         "Propylthiouracil จะถูก metabolized โดยปฏิกิริยา dealkylation ซึ่งจะตัด Propyl group ออกก่อนจึงจะได้สารที่มีฤทธิ์ทางเภสัชวิทยา",
@@ -124772,7 +124744,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::31",
-      "itemNo": 29,
+      "itemNo": 28,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124800,7 +124772,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::32",
-      "itemNo": 30,
+      "itemNo": 29,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124828,7 +124800,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::33",
-      "itemNo": 31,
+      "itemNo": 30,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124856,7 +124828,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::34",
-      "itemNo": 32,
+      "itemNo": 31,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124884,7 +124856,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::35",
-      "itemNo": 33,
+      "itemNo": 32,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124892,7 +124864,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในทางเคมีทางการแพทย์ ตำแหน่งโครงสร้างใดของ Salbutamol ที่แตกต่างจาก Epinephrine และมีบทบาทสำคัญทำให้ยามีความจำเพาะสูงต่อ Beta-2 adrenergic receptor และออกฤทธิ์ได้นานขึ้น",
-      "questionImage": "",
+      "questionImage": "images/pubchem/salbutamol_vs_epinephrine.png",
       "choices": [
         "หมู่ Hydroxymethyl (-CH2OH) ที่ตำแหน่ง C-3 ของวงแหวนเบนซีน และหมู่ tert-butyl บนหมู่อะมิโน",
         "หมู่ Catechol (3,4-dihydroxy) บนวงแหวนเบนซีน และหมู่ N-methyl",
@@ -124912,7 +124884,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::36",
-      "itemNo": 34,
+      "itemNo": 33,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124920,7 +124892,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ในทางเคมีทางการแพทย์และเมแทบอลิซึมของยา การเปลี่ยนแปลงทางโครงสร้างข้อใดที่เปลี่ยนยา Hydroxyzine ให้กลายเป็นยา Cetirizine ซึ่งส่งผลให้ยาลดอาการง่วงซึมลงอย่างมีนัยสำคัญ",
-      "questionImage": "",
+      "questionImage": "images/pubchem/hydroxyzine_to_cetirizine.png",
       "choices": [
         "การเกิด Phase I Oxidation เปลี่ยนหมู่ -CH2OH ปลายสายของ Hydroxyzine ให้กลายเป็น Carboxylic acid (-COOH) ของ Cetirizine",
         "การเกิด Phase II Glucuronidation ที่ตำแหน่งวงแหวน Piperazine",
@@ -124940,7 +124912,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::37",
-      "itemNo": 35,
+      "itemNo": 34,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124968,7 +124940,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::38",
-      "itemNo": 36,
+      "itemNo": 35,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -124996,7 +124968,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::39",
-      "itemNo": 37,
+      "itemNo": 36,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -125024,7 +124996,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::40",
-      "itemNo": 38,
+      "itemNo": 37,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -125052,7 +125024,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::41",
-      "itemNo": 39,
+      "itemNo": 38,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -125080,7 +125052,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::42",
-      "itemNo": 40,
+      "itemNo": 39,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -125108,7 +125080,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::43",
-      "itemNo": 41,
+      "itemNo": 40,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -125136,7 +125108,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::44",
-      "itemNo": 42,
+      "itemNo": 41,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -125164,7 +125136,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::45",
-      "itemNo": 43,
+      "itemNo": 42,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125172,7 +125144,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[กรณีศึกษา 1]\nโครงสร้างยา enalapril ดังภาพ",
       "caseStem": "[กรณีศึกษา 1]\nโครงสร้างยา enalapril ดังภาพ",
       "question": "โครงสร้าง ยา enalapril เสื่อมด้วยกลไกใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/enalapril.png",
       "choices": [
         "Epimerization",
         "Dimerization",
@@ -125192,7 +125164,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::46",
-      "itemNo": 44,
+      "itemNo": 43,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125200,7 +125172,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[]\nจากโครงสร้าง L-dopa ถูกเปลี่ยนเป็น dopamine ด้วยกระบวนการใด (แสดงโครงสร้างทางเคมีของ Levodopa)",
       "caseStem": "[]\nจากโครงสร้าง L-dopa ถูกเปลี่ยนเป็น dopamine ด้วยกระบวนการใด (แสดงโครงสร้างทางเคมีของ Levodopa)",
       "question": "จากโครงสร้าง L-dopa ถูกเปลี่ยนเป็น dopamine ด้วยกระบวนการใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/ldopa_to_dopamine.png",
       "choices": [
         "Decarboxylation",
         "Demethylation",
@@ -125220,7 +125192,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::47",
-      "itemNo": 45,
+      "itemNo": 44,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125228,7 +125200,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[]\nโครงสร้างยา Amphotericin B ดังภาพ",
       "caseStem": "[]\nโครงสร้างยา Amphotericin B ดังภาพ",
       "question": "ข้อใดผิดเกี่ยวกับโครงสร้างยา",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_amphotericin_b.png",
       "choices": [
         "โครงสร้างเป็น amphoteric drug",
         "โครงสร้างเป็นกลุ่ม macrolide ring",
@@ -125248,7 +125220,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::48",
-      "itemNo": 46,
+      "itemNo": 45,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125256,7 +125228,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[]\nจากโครงสร้างยานี้ (Zidovudine / AZT)",
       "caseStem": "[]\nจากโครงสร้างยานี้ (Zidovudine / AZT)",
       "question": "จากโครงสร้างยานี้ ข้อใดถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/unlabeled_zidovudine.png",
       "choices": [
         "โครงสร้างเป็น thymidine analog",
         "ยาออกฤทธิ์ต่อ retro virus",
@@ -125276,7 +125248,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::49",
-      "itemNo": 47,
+      "itemNo": 46,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125304,7 +125276,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::50",
-      "itemNo": 48,
+      "itemNo": 47,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -125312,7 +125284,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[]\nโครงสร้างเคมี spironolactone ถูก metabolism กลายเป็น canrenone (สูตรโครงสร้าง steroid ที่มี 17-lactone ring)",
       "caseStem": "[]\nโครงสร้างเคมี spironolactone ถูก metabolism กลายเป็น canrenone (สูตรโครงสร้าง steroid ที่มี 17-lactone ring)",
       "question": "ข้อใดถูกเกี่ยวกับโครงสร้างยา spironolactone กับ canrenone",
-      "questionImage": "",
+      "questionImage": "images/pubchem/spironolactone_vs_canrenone.png",
       "choices": [
         "ตัวยาออกฤทธิ์โดยจับกับ receptor ภายนอกของ Henle loop",
         "ถ้า lactone ring เปิดออก จะได้สารที่มีฤทธิ์",
@@ -125332,7 +125304,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::51",
-      "itemNo": 49,
+      "itemNo": 48,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125340,7 +125312,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[กรณีศึกษา 1]\nผู้หญิงอายุ 45 อ้วน เพิ่งได้ เลื่อนตำแหน่งเป็นผู้จัดการฝ่ายขาย นอนไม่หลับมา 1 เดือน นอนหลับยาก 1-2 ชม.กว่าจะหลับ (ปกติ 30 นาทีหลับ) ตื่นกลางดึกหลายครั้ง พ่อเพิ่งตายหกเดือน แม่เป็น เบาหวานกับความดัน ไม่สูบบุหรี่ ดื่มชาให้หลับ งีบหลับกลางวัน ออกกำลังก่อนนอน 1 ชม.",
       "caseStem": "[กรณีศึกษา 1]\nผู้หญิงอายุ 45 อ้วน เพิ่งได้ เลื่อนตำแหน่งเป็นผู้จัดการฝ่ายขาย นอนไม่หลับมา 1 เดือน นอนหลับยาก 1-2 ชม.กว่าจะหลับ (ปกติ 30 นาทีหลับ) ตื่นกลางดึกหลายครั้ง พ่อเพิ่งตายหกเดือน แม่เป็น เบาหวานกับความดัน ไม่สูบบุหรี่ ดื่มชาให้หลับ งีบหลับกลางวัน ออกกำลังก่อนนอน 1 ชม.",
       "question": "พัฒนาโครงสร้างยานอนหลับกลุ่ม BZD อย่างไร เพื่อเพิ่มการออกฤทธิ์ [ภาพโครงสร้าง 1,4-benzodiazepine core: วง A (เบนซีนที่มีตำแหน่ง 7, 8, 9), วง B (ไดอะซีปีน 1-NH, 2=O, 3, 4=N, 5), วง C (5-phenyl ring ตำแหน่ง 1' ถึง 6')]",
-      "questionImage": "",
+      "questionImage": "images/pubchem/benzodiazepine_core.png",
       "choices": [
         "เปลี่ยน carbonyl",
         "เปลี่ยน N=C เป็น N-C",
@@ -125360,7 +125332,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::52",
-      "itemNo": 50,
+      "itemNo": 49,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125388,7 +125360,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::53",
-      "itemNo": 51,
+      "itemNo": 50,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125396,7 +125368,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[]\nภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin (indole acetic acid derivative)\nb. โครงสร้าง Alminoprofen / NSAID ที่มีหมู่อะมิโน\nc. โครงสร้าง Celecoxib (diaryl-substituted pyrazole ที่มีหมู่ benzenesulfonamide -SO2NH2)\nd. โครงสร้าง Naproxen (methoxynaphthyl propionic acid)\ne. โครงสร้าง Hydrochlorothiazide (benzothiadiazine 1,1-dioxide ที่มีหมู่ 7-sulfonamoyl -SO2NH2)",
       "caseStem": "[]\nภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin (indole acetic acid derivative)\nb. โครงสร้าง Alminoprofen / NSAID ที่มีหมู่อะมิโน\nc. โครงสร้าง Celecoxib (diaryl-substituted pyrazole ที่มีหมู่ benzenesulfonamide -SO2NH2)\nd. โครงสร้าง Naproxen (methoxynaphthyl propionic acid)\ne. โครงสร้าง Hydrochlorothiazide (benzothiadiazine 1,1-dioxide ที่มีหมู่ 7-sulfonamoyl -SO2NH2)",
       "question": "โครงสร้างใดไม่ควรใช้ในผู้ป่วยที่แพ้ ยา sulfa [แสดงภาพโครงสร้าง 5 สาร: a = Indomethacin, b = อนุพันธ์กรดโพรพิโอนิก, c = Celecoxib, d = Naproxen, e = Hydrochlorothiazide]",
-      "questionImage": "",
+      "questionImage": "images/pubchem/sulfa_5panel_a_to_e.png",
       "choices": [
         "โครงสร้าง a (Indomethacin)",
         "โครงสร้าง b",
@@ -125416,7 +125388,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::54",
-      "itemNo": 52,
+      "itemNo": 51,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -125444,7 +125416,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::55",
-      "itemNo": 53,
+      "itemNo": 52,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125452,7 +125424,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "โครงสร้างในข้อใดที่ไม่สามารถให้โดยการรับประทานได้ [RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์]",
-      "questionImage": "",
+      "questionImage": "images/pubchem/oral_betalactam_5panel.png",
       "choices": [
         "Ampicillin",
         "Phenoxymethylpenicillin",
@@ -125472,7 +125444,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::56",
-      "itemNo": 54,
+      "itemNo": 53,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125500,7 +125472,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::57",
-      "itemNo": 55,
+      "itemNo": 54,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125528,7 +125500,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::58",
-      "itemNo": 56,
+      "itemNo": 55,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125556,7 +125528,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::59",
-      "itemNo": 57,
+      "itemNo": 56,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125584,7 +125556,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::60",
-      "itemNo": 58,
+      "itemNo": 57,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125612,7 +125584,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::61",
-      "itemNo": 59,
+      "itemNo": 58,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125640,7 +125612,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::62",
-      "itemNo": 60,
+      "itemNo": 59,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125668,7 +125640,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::63",
-      "itemNo": 61,
+      "itemNo": 60,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125676,7 +125648,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[กรณีศึกษา]\nโครงสร้างทางเคมีของยาต้านเชื้อรากลุ่ม polyene macrolide (เช่น amphotericin B หรือ nystatin)",
       "caseStem": "[กรณีศึกษา]\nโครงสร้างทางเคมีของยาต้านเชื้อรากลุ่ม polyene macrolide (เช่น amphotericin B หรือ nystatin)",
       "question": "ยาในโครงสร้างกลุ่ม polyene macrolide มีกลไกอย่างไร",
-      "questionImage": "",
+      "questionImage": "images/pubchem/amphotericin_b.png",
       "choices": [
         "เป็นพิษต่อ cell",
         "มีผลต่อ cell wall",
@@ -125696,7 +125668,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::64",
-      "itemNo": 62,
+      "itemNo": 61,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125704,7 +125676,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[กรณีศึกษา]\nโครงสร้างทางเคมีของ naproxen แสดงหมู่ -CH(CH3)COOH บนวง naphthalene",
       "caseStem": "[กรณีศึกษา]\nโครงสร้างทางเคมีของ naproxen แสดงหมู่ -CH(CH3)COOH บนวง naphthalene",
       "question": "โครงสร้าง naproxen มีหมู่อนุพันธ์กรดอินทรีย์หรือ functional group ใดเป็นแกนหลัก",
-      "questionImage": "",
+      "questionImage": "images/pubchem/naproxen.png",
       "choices": [
         "Sulfone",
         "Isobutyric acid",
@@ -125724,7 +125696,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::65",
-      "itemNo": 63,
+      "itemNo": 62,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125752,7 +125724,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::66",
-      "itemNo": 64,
+      "itemNo": 63,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125780,7 +125752,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::67",
-      "itemNo": 65,
+      "itemNo": 64,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -125808,7 +125780,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::68",
-      "itemNo": 66,
+      "itemNo": 65,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -125816,7 +125788,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[เคมีทางยาของยาขับปัสสาวะ Thiazides]\nการสังเคราะห์อนุพันธ์ยา Hydrochlorothiazide (HCTZ) จากสารตั้งต้น Chlorothiazide",
       "caseStem": "[เคมีทางยาของยาขับปัสสาวะ Thiazides]\nการสังเคราะห์อนุพันธ์ยา Hydrochlorothiazide (HCTZ) จากสารตั้งต้น Chlorothiazide",
       "question": "การสังเคราะห์ยา HCTZ จาก chlorothiazide ด้วยปฏิกิริยาใด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/chlorothiazide_to_hctz.png",
       "choices": [
         "Reduction",
         "Oxidation",
@@ -125836,7 +125808,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::69",
-      "itemNo": 67,
+      "itemNo": 66,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -125844,7 +125816,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[เคมีทางยาของยา Simvastatin]\nกลไกการกระตุ้นสารออกฤทธิ์ทางชีวภาพของ Simvastatin ซึ่งเป็น prodrug",
       "caseStem": "[เคมีทางยาของยา Simvastatin]\nกลไกการกระตุ้นสารออกฤทธิ์ทางชีวภาพของ Simvastatin ซึ่งเป็น prodrug",
       "question": "Simvastatin ซึ่งเป็น prodrug ถามว่าจะต้องทำปฏิกิริยาที่โครงสร้างตรงไหนจึงจะออกฤทธิ์",
-      "questionImage": "",
+      "questionImage": "images/pubchem/simvastatin.png",
       "choices": [
         "ตำแหน่ง 1 (ester side chain)",
         "ตำแหน่ง 2 (lactone ring carbonyl)",
@@ -125864,7 +125836,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::70",
-      "itemNo": 68,
+      "itemNo": 67,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -125892,7 +125864,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::71",
-      "itemNo": 69,
+      "itemNo": 68,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -125920,7 +125892,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::72",
-      "itemNo": 70,
+      "itemNo": 69,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -125928,7 +125900,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[สถานการณ์]\nผู้ป่วยชายมีอาการปวดฟันบริเวณฟันคุดและเหงือกบวม ได้รับประทานยา Ibuprofen หลังจากนั้น 2 ชั่วโมง เกิดผื่นแดงราบสลับนูน (Maculopapular rash) และมีประวัติเคยใช้ Diclofenac gel ทาภายนอกแล้วมีผื่นคัน",
       "caseStem": "[สถานการณ์]\nผู้ป่วยชายมีอาการปวดฟันบริเวณฟันคุดและเหงือกบวม ได้รับประทานยา Ibuprofen หลังจากนั้น 2 ชั่วโมง เกิดผื่นแดงราบสลับนูน (Maculopapular rash) และมีประวัติเคยใช้ Diclofenac gel ทาภายนอกแล้วมีผื่นคัน",
       "question": "ข้อใดเป็นโครงสร้างของยาที่ผู้ป่วยแพ้",
-      "questionImage": "",
+      "questionImage": "images/pubchem/nsaid_allergy_5panel.png",
       "choices": [
         "โครงสร้าง Celecoxib (4-[5-(4-methylphenyl)-3-(trifluoromethyl)pyrazol-1-yl]benzenesulfonamide)",
         "โครงสร้าง Ibuprofen (2-(4-isobutylphenyl)propanoic acid)",
@@ -125948,7 +125920,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::73",
-      "itemNo": 71,
+      "itemNo": 70,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -125956,7 +125928,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "[กรณีศึกษา]\nจากรูปโครงสร้าง Nicotine และ Cotinine",
       "caseStem": "[กรณีศึกษา]\nจากรูปโครงสร้าง Nicotine และ Cotinine",
       "question": "จากรูปข้อใดถูก",
-      "questionImage": "",
+      "questionImage": "images/pubchem/nicotine_to_cotinine.png",
       "choices": [
         "Nicotine เป็นกรดอ่อน มี pKa 8.0",
         "Cotinine เป็น major metabolite ของ nicotine",
@@ -125976,7 +125948,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::74",
-      "itemNo": 72,
+      "itemNo": 71,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -126004,7 +125976,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::75",
-      "itemNo": 73,
+      "itemNo": 72,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.2 Stereochemistry",
@@ -126012,7 +125984,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ยา salbutamol ประกอบด้วยรูปแบบ R-salbutamol และ S-salbutamol ในอัตราส่วน 50:50 ลักษณะของส่วนผสมดังกล่าวเรียกว่าอะไร",
-      "questionImage": "",
+      "questionImage": "images/pubchem/salbutamol.png",
       "choices": [
         "Mirror mixture",
         "Chiral mixture",
@@ -126032,7 +126004,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::76",
-      "itemNo": 74,
+      "itemNo": 73,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -126060,7 +126032,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::77",
-      "itemNo": 75,
+      "itemNo": 74,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126088,7 +126060,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::78",
-      "itemNo": 76,
+      "itemNo": 75,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126116,7 +126088,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::79",
-      "itemNo": 77,
+      "itemNo": 76,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126144,7 +126116,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::80",
-      "itemNo": 78,
+      "itemNo": 77,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126172,7 +126144,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::81",
-      "itemNo": 79,
+      "itemNo": 78,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126200,7 +126172,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::82",
-      "itemNo": 80,
+      "itemNo": 79,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126228,7 +126200,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::83",
-      "itemNo": 81,
+      "itemNo": 80,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126256,7 +126228,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::84",
-      "itemNo": 82,
+      "itemNo": 81,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -126284,7 +126256,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::85",
-      "itemNo": 83,
+      "itemNo": 82,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126312,7 +126284,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::86",
-      "itemNo": 84,
+      "itemNo": 83,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126340,7 +126312,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::87",
-      "itemNo": 85,
+      "itemNo": 84,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126368,7 +126340,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::88",
-      "itemNo": 86,
+      "itemNo": 85,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -126396,7 +126368,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::89",
-      "itemNo": 87,
+      "itemNo": 86,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126404,7 +126376,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างของ salbutamol ที่กำหนดให้ หมู่ฟังก์ชั่นใดที่ทำให้ salbutamol ออกฤทธิ์จำเพาะต่อ beta receptor",
-      "questionImage": "",
+      "questionImage": "images/pubchem/salbutamol.png",
       "choices": [
         "A - hydroxyl group",
         "B - methanol group",
@@ -126424,7 +126396,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::90",
-      "itemNo": 88,
+      "itemNo": 87,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126452,7 +126424,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::91",
-      "itemNo": 89,
+      "itemNo": 88,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126480,7 +126452,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::92",
-      "itemNo": 90,
+      "itemNo": 89,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -126508,7 +126480,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::93",
-      "itemNo": 91,
+      "itemNo": 90,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -126536,7 +126508,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::94",
-      "itemNo": 92,
+      "itemNo": 91,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126564,7 +126536,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::95",
-      "itemNo": 93,
+      "itemNo": 92,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126572,7 +126544,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ข้อใดคือโครงสร้างทางเคมีของยาต้านเชื้อรากลุ่ม Azole ที่มี Imidazole ring ซึ่งใช้รักษาโรคติดเชื้อราที่ผิวหนัง (กลากและเกลื้อน)",
-      "questionImage": "",
+      "questionImage": "images/pubchem/clotrimazole.png",
       "choices": [
         "Clotrimazole (มีวงแหวน Imidazole)",
         "Fluconazole (มีวงแหวน Triazole)",
@@ -126592,7 +126564,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::96",
-      "itemNo": 94,
+      "itemNo": 93,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126620,7 +126592,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::97",
-      "itemNo": 95,
+      "itemNo": 94,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126648,7 +126620,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::98",
-      "itemNo": 96,
+      "itemNo": 95,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -126676,7 +126648,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::99",
-      "itemNo": 97,
+      "itemNo": 96,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126704,7 +126676,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::100",
-      "itemNo": 98,
+      "itemNo": 97,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126732,7 +126704,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::101",
-      "itemNo": 99,
+      "itemNo": 98,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126760,7 +126732,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::102",
-      "itemNo": 100,
+      "itemNo": 99,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126768,7 +126740,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "ผู้ป่วยมีประวัติแพ้ยา Ibuprofen เกิดผื่นแบบ urticaria จากการวิเคราะห์โครงสร้างทางเคมียา",
       "caseStem": "ผู้ป่วยมีประวัติแพ้ยา Ibuprofen เกิดผื่นแบบ urticaria จากการวิเคราะห์โครงสร้างทางเคมียา",
       "question": "ข้อใดคือโครงสร้างหลัก (Core structure) ของยากลุ่ม Arylpropionic acid derivative ที่เป็นยา Ibuprofen",
-      "questionImage": "",
+      "questionImage": "images/pubchem/ibuprofen.png",
       "choices": [
         "โครงสร้างที่มี 2-(4-isobutylphenyl)propanoic acid",
         "โครงสร้างที่มี 2-(2,6-dichlorophenylamino)phenylacetic acid",
@@ -126788,7 +126760,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::103",
-      "itemNo": 101,
+      "itemNo": 100,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126816,7 +126788,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::104",
-      "itemNo": 102,
+      "itemNo": 101,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126844,7 +126816,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::105",
-      "itemNo": 103,
+      "itemNo": 102,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -126872,7 +126844,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::106",
-      "itemNo": 104,
+      "itemNo": 103,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126900,7 +126872,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::107",
-      "itemNo": 105,
+      "itemNo": 104,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -126928,7 +126900,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::108",
-      "itemNo": 106,
+      "itemNo": 105,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.2 Stereochemistry",
@@ -126936,7 +126908,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "ยาพ่นขยายหลอดลม Salbutamol (Albuterol) มีไครัลเซนเตอร์ในโครงสร้าง จึงประกอบด้วย (R)-salbutamol และ (S)-salbutamol ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับสารผสมในอัตราส่วน 50:50 ระหว่างอีแนนทิโอเมอร์ทั้งสองชนิด",
-      "questionImage": "",
+      "questionImage": "images/pubchem/salbutamol.png",
       "choices": [
         "Cis/Trans mixture",
         "Chiral diastereomer mixture",
@@ -126956,7 +126928,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::109",
-      "itemNo": 107,
+      "itemNo": 106,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -126984,7 +126956,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::110",
-      "itemNo": 108,
+      "itemNo": 107,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -127012,7 +126984,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::111",
-      "itemNo": 109,
+      "itemNo": 108,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127040,7 +127012,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::112",
-      "itemNo": 110,
+      "itemNo": 109,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.2 Stereochemistry",
@@ -127048,7 +127020,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "Cetirizine เป็นสารผสมราซิมิก (Racemate R/S อัตราส่วน 1:1) โดยพบว่า Levocetirizine ซึ่งเป็น (R)-enantiomer บริสุทธิ์ มีสัมพรรคภาพในการจับกับตัวรับฮิสตามีน H1 สูงกว่า (S)-enantiomer ประมาณ 2 เท่า ข้อใดกล่าวถึงคุณสมบัติทางสเตอริโอเคมีของยาทั้งสองชนิดนี้ได้ถูกต้อง",
-      "questionImage": "",
+      "questionImage": "images/pubchem/cetirizine.png",
       "choices": [
         "Levocetirizine คือ (R)-enantiomer ที่หมุนระนาบแสงโพลาไรซ์ไปทางซ้าย (Levorotatory) มี active binding conformation ที่แนบสนิทกับ H1 receptor",
         "Levocetirizine มีขนาดยาที่ใช้ในการรักษาเท่ากับ Cetirizine คือ 10 mg วันละครั้ง",
@@ -127068,7 +127040,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::113",
-      "itemNo": 111,
+      "itemNo": 110,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -127096,7 +127068,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::114",
-      "itemNo": 112,
+      "itemNo": 111,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127124,7 +127096,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::115",
-      "itemNo": 113,
+      "itemNo": 112,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127152,7 +127124,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::116",
-      "itemNo": 114,
+      "itemNo": 113,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127180,7 +127152,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::117",
-      "itemNo": 115,
+      "itemNo": 114,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127208,7 +127180,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::118",
-      "itemNo": 116,
+      "itemNo": 115,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127236,7 +127208,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::119",
-      "itemNo": 117,
+      "itemNo": 116,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127264,7 +127236,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::120",
-      "itemNo": 118,
+      "itemNo": 117,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127292,7 +127264,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::121",
-      "itemNo": 119,
+      "itemNo": 118,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127320,7 +127292,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::122",
-      "itemNo": 120,
+      "itemNo": 119,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127348,7 +127320,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::123",
-      "itemNo": 121,
+      "itemNo": 120,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127376,7 +127348,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::124",
-      "itemNo": 122,
+      "itemNo": 121,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127404,7 +127376,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::125",
-      "itemNo": 123,
+      "itemNo": 122,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127432,7 +127404,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::126",
-      "itemNo": 124,
+      "itemNo": 123,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127460,7 +127432,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::127",
-      "itemNo": 125,
+      "itemNo": 124,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127488,7 +127460,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::128",
-      "itemNo": 126,
+      "itemNo": 125,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127516,7 +127488,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::129",
-      "itemNo": 127,
+      "itemNo": 126,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127544,7 +127516,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::130",
-      "itemNo": 128,
+      "itemNo": 127,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127572,7 +127544,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::131",
-      "itemNo": 129,
+      "itemNo": 128,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127600,7 +127572,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::132",
-      "itemNo": 130,
+      "itemNo": 129,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127628,7 +127600,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::133",
-      "itemNo": 131,
+      "itemNo": 130,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127656,7 +127628,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::134",
-      "itemNo": 132,
+      "itemNo": 131,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127684,7 +127656,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::135",
-      "itemNo": 133,
+      "itemNo": 132,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -127712,7 +127684,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::136",
-      "itemNo": 134,
+      "itemNo": 133,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -127740,7 +127712,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::137",
-      "itemNo": 135,
+      "itemNo": 134,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127768,7 +127740,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::138",
-      "itemNo": 136,
+      "itemNo": 135,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -127796,7 +127768,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::139",
-      "itemNo": 137,
+      "itemNo": 136,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -127824,7 +127796,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::140",
-      "itemNo": 138,
+      "itemNo": 137,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127852,7 +127824,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::141",
-      "itemNo": 139,
+      "itemNo": 138,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -127880,7 +127852,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::142",
-      "itemNo": 140,
+      "itemNo": 139,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127908,7 +127880,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::143",
-      "itemNo": 141,
+      "itemNo": 140,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -127936,7 +127908,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::144",
-      "itemNo": 142,
+      "itemNo": 141,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127964,7 +127936,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::145",
-      "itemNo": 143,
+      "itemNo": 142,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -127992,7 +127964,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::146",
-      "itemNo": 144,
+      "itemNo": 143,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.4 SAR & Drug Design",
@@ -128020,7 +127992,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::147",
-      "itemNo": 145,
+      "itemNo": 144,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -128048,7 +128020,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::148",
-      "itemNo": 146,
+      "itemNo": 145,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -128076,7 +128048,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::149",
-      "itemNo": 147,
+      "itemNo": 146,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -128104,7 +128076,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::150",
-      "itemNo": 148,
+      "itemNo": 147,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -128133,7 +128105,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::151",
-      "itemNo": 149,
+      "itemNo": 148,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
@@ -128162,7 +128134,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::152",
-      "itemNo": 150,
+      "itemNo": 149,
       "category": "13. Medicinal Chemistry",
       "topic": "4. Endocrine",
       "subtopic": "4.1 Diabetes mellitus",
@@ -128190,7 +128162,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::153",
-      "itemNo": 151,
+      "itemNo": 150,
       "category": "13. Medicinal Chemistry",
       "topic": "13. Medicinal Chemistry",
       "subtopic": "13.1 Drug Synthesis and Structure-Activity Relationship",
@@ -128218,7 +128190,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::154",
-      "itemNo": 152,
+      "itemNo": 151,
       "category": "13. Medicinal Chemistry",
       "topic": "13. Medicinal Chemistry",
       "subtopic": "13.1 Drug Structures and Properties",
@@ -128246,7 +128218,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::155",
-      "itemNo": 153,
+      "itemNo": 152,
       "category": "13. Medicinal Chemistry",
       "topic": "2. Cardiovascular",
       "subtopic": "Dyslipidemias",
@@ -128274,7 +128246,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::156",
-      "itemNo": 154,
+      "itemNo": 153,
       "category": "13. Medicinal Chemistry",
       "topic": "Product Group 2: Chromatography",
       "subtopic": "2.2 HPLC (Liquid Chromatography)",
@@ -128302,7 +128274,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
     },
     {
       "id": "13. Medicinal Chemistry::157",
-      "itemNo": 155,
+      "itemNo": 154,
       "category": "13. Medicinal Chemistry",
       "topic": "13. Oncology",
       "subtopic": "13.1 Chemotherapy Principles & Regimens",
@@ -128310,7 +128282,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "",
       "caseStem": "",
       "question": "จากโครงสร้างยาเคมีบำบัดกลุ่ม Anthracycline (Doxorubicin) ยาดังกล่าวมีกลไกการออกฤทธิ์ต่อเซลล์มะเร็งอย่างไร",
-      "questionImage": "",
+      "questionImage": "images/pubchem/doxorubicin.png",
       "choices": [
         "ยับยั้งเอนไซม์ Topoisomerase II และแทรกตัวระหว่างคู่เบสของ DNA",
         "ยับยั้งการสร้างผนังเซลล์ของเซลล์มะเร็ง",
@@ -136260,7 +136232,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseContext": "จากการศึกษาวิจัยเพื่อเปรียบเทียบการติดเชื้อที่อวัยวะอื่นกับประวัติการเป็นโรคหวัด พบข้อมูลดังตาราง $2 \\times 2$:\n\nภาวะการติดเชื้อ | เป็นโรคหวัด | ไม่เป็นโรคหวัด | รวม\nติดเชื้อที่อวัยวะอื่น | 25 | 15 | 40\nไม่ติดเชื้อที่อวัยวะอื่น | 25 | 30 | 55",
       "caseStem": "จากการศึกษาวิจัยเพื่อเปรียบเทียบการติดเชื้อที่อวัยวะอื่นกับประวัติการเป็นโรคหวัด พบข้อมูลดังตาราง $2 \\times 2$:\n\nภาวะการติดเชื้อ | เป็นโรคหวัด | ไม่เป็นโรคหวัด | รวม\nติดเชื้อที่อวัยวะอื่น | 25 | 15 | 40\nไม่ติดเชื้อที่อวัยวะอื่น | 25 | 30 | 55",
       "question": "จากตารางการศึกษาข้างต้น จงคำนวณหาค่า Odds Ratio (OR) ของการติดเชื้อที่อวัยวะอื่นกับการเป็นโรคหวัด",
-      "questionImage": "",
+      "questionImage": "images/diagrams/biostats_or_2x2_table.png",
       "choices": [
         "1.2",
         "1.5",
@@ -147367,7 +147339,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากการพิจารณาคุณสมบัติทางเคมีและโครงสร้างของยากลุ่ม Statins เมื่อบริหารร่วมกับ Cholestyramine ข้อใดสรุปได้ถูกต้องตามหลักเภสัชวิทยา",
-    "questionImage": "",
+    "questionImage": "images/purple2/simvastatin_pravastatin_q15_16.png",
     "choices": [
       "Cholestyramine ลดการดูดซึมยา Simvastatin เนื่องจาก Simvastatin มี Lactone ring ในโครงสร้าง",
       "Cholestyramine ลดการดูดซึมยา Pravastatin เนื่องจาก Pravastatin มีหมู่ Carboxylic acid ที่แตกตัวเป็นประจุลบในโครงสร้าง",
@@ -159175,7 +159147,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "[ย้ายไป 13. Medicinal Chemistry::154] [ย้ายไป 13. Medicinal Chemistry::152] โครงสร้างนี้เป็นของยาตัวใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_glibenclamide.png",
     "choices": [
       "Glibenclamide",
       "Metformin",
@@ -178712,7 +178684,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "คุณสมบัติของยาตามโครงสร้างนี้ ข้อใดผิด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_erythromycin.png",
     "choices": [
       "ละลายน้ำได้น้อย",
       "มีคุณสมบัติในการฆ่าเชื้อเป็นแบบ concentration-dependent",
@@ -179216,7 +179188,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "เมื่อพิจารณาโครงสร้างของ ritonavir ท่านคิดว่าข้อใดไม่ถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/ritonavir.png",
     "choices": [
       "เมื่อให้ยาร่วมกับอาหารจะดูดซึมได้มากขึ้น",
       "ยามีการละลายน้ำต่ำ จึงดูดซึมไม่ดี",
@@ -181720,7 +181692,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[]\nจากกราฟความสัมพันธ์ระหว่างเวลาและระดับแอนติบอดี (Serum titre of antibodies) เส้นประแสดงการตอบสนองแรก และเส้นทึบแสดงการตอบสนองหลัง reinfection",
     "caseStem": "[]\nจากกราฟความสัมพันธ์ระหว่างเวลาและระดับแอนติบอดี (Serum titre of antibodies) เส้นประแสดงการตอบสนองแรก และเส้นทึบแสดงการตอบสนองหลัง reinfection",
     "question": "จากรูป เส้นประ และ เส้นทึบ คืออะไร",
-    "questionImage": "",
+    "questionImage": "images/diagrams/immune_response_igm_igg.png",
     "choices": [
       "IgM / IgG",
       "IgG / IgA",
@@ -181748,7 +181720,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากกราฟข้อ 44. ข้อใดถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/diagrams/immune_response_igm_igg.png",
     "choices": [
       "ฉีดวัคซีนซ้ำ เพื่อกระตุ้นการสร้าง Ab บางอย่างเพิ่มขึ้น",
       "ฉีดวัคซีนซ้ำ เพื่อให้ภูมิคุ้มกันสร้างให้อีกครั้ง",
@@ -196690,7 +196662,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของ salbutamol ที่กำหนดให้ หมู่ฟังก์ชั่นใดที่ทำให้ salbutamol ออกฤทธิ์จำเพาะต่อ β receptor",
-    "questionImage": "",
+    "questionImage": "images/pubchem/salbutamol.png",
     "choices": [
       "A – hydroxyl group",
       "B – methanol group",
@@ -197502,7 +197474,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากโครงสร้าง salmeterol และ formoterol ซึ่งเป็นยากลุ่ม long-acting beta-2 agonist",
     "caseStem": "จากโครงสร้าง salmeterol และ formoterol ซึ่งเป็นยากลุ่ม long-acting beta-2 agonist",
     "question": "ข้อใดถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/formoterol_vs_salmeterol.png",
     "choices": [
       "Salmeterol ออกฤทธิ์เร็วกว่า formoterol เพราะ lipophilicity สูงกว่า",
       "Salmeterol ออกฤทธิ์เร็วกว่า formoterol เพราะ lipophilicity ต่ำกว่า",
@@ -221704,7 +221676,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "การตรวจวิเคราะห์ทางห้องปฏิบัติการควบคุมคุณภาพยาที่ให้ผลการแสดงกราฟิกเป็น 'โครมาโทแกรม' (Chromatogram) ที่แสดงค่า Retention time บนแกนแนวนอน และค่า Response / Peak area (mAU) บนแกนแนวตั้ง",
     "caseStem": "การตรวจวิเคราะห์ทางห้องปฏิบัติการควบคุมคุณภาพยาที่ให้ผลการแสดงกราฟิกเป็น 'โครมาโทแกรม' (Chromatogram) ที่แสดงค่า Retention time บนแกนแนวนอน และค่า Response / Peak area (mAU) บนแกนแนวตั้ง",
     "question": "จัดเป็นผลที่ได้จากเครื่องมือวิเคราะห์ทางเภสัชกรรมชนิดใด",
-    "questionImage": "",
+    "questionImage": "images/diagrams/hplc_chromatogram_unlabeled.png",
     "choices": [
       "Infrared Spectrophotometer (FTIR)",
       "UV-Visible Spectrophotometer",
@@ -222102,7 +222074,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "ผู้ป่วยหญิงไทย อายุ 50 ปี ได้รับการวินิจฉัยว่าเป็น Pulmonary tuberculosis และมีภาวะตับอักเสบเรื้อรัง (Chronic liver disease) ร่วมด้วย โดยแพทย์และเภสัชกรกำลังวางแผนการรักษาด้วยสูตรยาต้านวัณโรคและควบคุมคุณภาพตัวยาสำคัญ",
     "caseStem": "ผู้ป่วยหญิงไทย อายุ 50 ปี ได้รับการวินิจฉัยว่าเป็น Pulmonary tuberculosis และมีภาวะตับอักเสบเรื้อรัง (Chronic liver disease) ร่วมด้วย โดยแพทย์และเภสัชกรกำลังวางแผนการรักษาด้วยสูตรยาต้านวัณโรคและควบคุมคุณภาพตัวยาสำคัญ",
     "question": "โครงสร้างของยาต้านวัณโรคในข้อใดต่อไปนี้ สามารถใช้ค่าการหมุนจำเพาะของแสง (Specific Optical Rotation: $[\\alpha]_D$) ในการตรวจพิสูจน์เอกลักษณ์ (Identification) หรือทดสอบความบริสุทธิ์ทางแสง (Optical purity) ได้",
-    "questionImage": "",
+    "questionImage": "images/pubchem/ethambutol.png",
     "choices": [
       "(S,S)-Ethambutol dihydrochloride (มี Chiral centers 2 ตำแหน่งและเป็น Optically active compound)",
       "Isoniazid (โมเลกุลระนาบแบน ไม่มี Chiral center จัดเป็น Achiral molecule)",
@@ -222495,7 +222467,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "พิจารณาแผนผังโครงสร้างของระบบนำส่งยาผ่านผิวหนังชนิดแผ่นแปะ (Transdermal patch) [📷 มีรูปภาพประกอบ: image104.png] ซึ่งประกอบด้วยชั้นต่างๆ ได้แก่ Backing layer, Drug reservoir (ของเหลวหรือเจลบรรจุตัวยา), Rate-controlling membrane, และ Adhesive layer",
     "caseStem": "พิจารณาแผนผังโครงสร้างของระบบนำส่งยาผ่านผิวหนังชนิดแผ่นแปะ (Transdermal patch) [📷 มีรูปภาพประกอบ: image104.png] ซึ่งประกอบด้วยชั้นต่างๆ ได้แก่ Backing layer, Drug reservoir (ของเหลวหรือเจลบรรจุตัวยา), Rate-controlling membrane, และ Adhesive layer",
     "question": "ระบบนำส่งยาผ่านผิวหนังชนิดแผ่นแปะในภาพโครงสร้างข้างต้น จัดเป็นระบบแผ่นแปะประเภทใด?",
-    "questionImage": "",
+    "questionImage": "images/diagrams/transdermal_reservoir_patch.png",
     "choices": [
       "Membrane-controlled reservoir system",
       "Monolithic matrix dispersion system",
@@ -222524,7 +222496,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "พิจารณาแผนผังโครงสร้างของระบบนำส่งยาผ่านผิวหนังชนิดแผ่นแปะ (Transdermal patch) [📷 มีรูปภาพประกอบ: image104.png] ซึ่งประกอบด้วยชั้นต่างๆ ได้แก่ Backing layer, Drug reservoir (ของเหลวหรือเจลบรรจุตัวยา), Rate-controlling membrane, และ Adhesive layer",
     "caseStem": "พิจารณาแผนผังโครงสร้างของระบบนำส่งยาผ่านผิวหนังชนิดแผ่นแปะ (Transdermal patch) [📷 มีรูปภาพประกอบ: image104.png] ซึ่งประกอบด้วยชั้นต่างๆ ได้แก่ Backing layer, Drug reservoir (ของเหลวหรือเจลบรรจุตัวยา), Rate-controlling membrane, และ Adhesive layer",
     "question": "จากโครงสร้างของระบบแผ่นแปะส่งยาผ่านผิวหนังข้างต้น ตัวยาสำคัญจะถูกกักเก็บและบรรจุอยู่ในชั้นใดของโครงสร้าง?",
-    "questionImage": "",
+    "questionImage": "images/diagrams/transdermal_reservoir_patch.png",
     "choices": [
       "ชั้นกระเปาะบรรจุยา (Drug reservoir layer)",
       "ชั้นแผ่นฟิล์มลอกออกก่อนใช้งาน (Release liner)",
@@ -222945,7 +222917,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากการวิเคราะห์โครงสร้างโมเลกุลด้วย Infrared Spectroscopy (Bruker IR Spectrum) พบพีคการดูดกลืนแสงที่เด่นลึกและแหลมคมอย่างชัดเจนที่ตำแหน่งเลขคลื่น 1685.16 cm⁻¹",
     "caseStem": "จากการวิเคราะห์โครงสร้างโมเลกุลด้วย Infrared Spectroscopy (Bruker IR Spectrum) พบพีคการดูดกลืนแสงที่เด่นลึกและแหลมคมอย่างชัดเจนที่ตำแหน่งเลขคลื่น 1685.16 cm⁻¹",
     "question": "จากข้อมูล IR spectrum ดังกล่าว พีคที่ตำแหน่ง 1685.16 cm⁻¹ แสดงถึงการสั่นของหมู่ฟังก์ชัน (Functional group) ในข้อใด",
-    "questionImage": "",
+    "questionImage": "images/diagrams/ir_spectrum_1685.png",
     "choices": [
       "-C=O",
       "-C=C-",
@@ -223029,7 +223001,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากการตรวจวิเคราะห์ทางเภสัชกรรม ได้รับกราฟสเปกตรัมที่แสดงความสัมพันธ์ระหว่างค่าร้อยละการส่องผ่านแสง (% Transmittance) บนแกน Y และเลขคลื่น (Wavenumber, cm⁻¹) บนแกน X",
     "caseStem": "จากการตรวจวิเคราะห์ทางเภสัชกรรม ได้รับกราฟสเปกตรัมที่แสดงความสัมพันธ์ระหว่างค่าร้อยละการส่องผ่านแสง (% Transmittance) บนแกน Y และเลขคลื่น (Wavenumber, cm⁻¹) บนแกน X",
     "question": "กราฟผลการวิเคราะห์ดังกล่าว เป็นสเปกตรัมที่ให้ข้อมูลเกี่ยวกับคุณสมบัติใดของตัวอย่างยา",
-    "questionImage": "",
+    "questionImage": "images/diagrams/ir_spectrum_1685.png",
     "choices": [
       "หมู่ฟังก์ชัน",
       "มวลโมเลกุล",
@@ -223701,7 +223673,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากการพิจารณาคุณสมบัติโครงสร้างของยา febuxostat วิธีการข้อใด ไม่เหมาะสมที่สุด ในการพัฒนาวิธีวิเคราะห์เพื่อควบคุมคุณภาพยา (หาปริมาณตัวยาสำคัญ หรือ พิสูจน์อัตลักษณ์)",
-    "questionImage": "",
+    "questionImage": "images/pubchem/febuxostat.png",
     "choices": [
       "HPLC-UV",
       "Mass spectrometry",
@@ -224121,7 +224093,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างทางเคมี L-dopa ถูกเปลี่ยนเป็น dopamine ในร่างกายด้วยปฏิกิริยาใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/ldopa_to_dopamine.png",
     "choices": [
       "Decarboxylation",
       "Demethylation",
@@ -226417,7 +226389,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[กรณีศึกษา]\nGriseofulvin มี chiral centers ในโครงสร้างและมีฤทธิ์ทางชีวภาพจำเพาะตาม stereochemistry",
     "caseStem": "[กรณีศึกษา]\nGriseofulvin มี chiral centers ในโครงสร้างและมีฤทธิ์ทางชีวภาพจำเพาะตาม stereochemistry",
     "question": "จากโครงสร้างของ griseofulvin การตรวจสอบคุณภาพใด ทำให้ได้ลักษณะเฉพาะที่ออกฤทธิ์ (optical isomer / active enantiomer)",
-    "questionImage": "",
+    "questionImage": "images/pubchem/griseofulvin.png",
     "choices": [
       "Refractive Index",
       "IR",
@@ -237614,7 +237586,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[กรณีศึกษา]\nจากภาพยาเม็ดเกิดปัญหาการกะเทาะที่ขอบ (edge damage/chipping)",
     "caseStem": "[กรณีศึกษา]\nจากภาพยาเม็ดเกิดปัญหาการกะเทาะที่ขอบ (edge damage/chipping)",
     "question": "ยาเม็ดดังภาพเกิดปัญหาใด",
-    "questionImage": "",
+    "questionImage": "images/diagrams/tablet_defect_chipping.png",
     "choices": [
       "Capping",
       "Chipping",
@@ -254696,7 +254668,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากระบบนำส่งยา Liposome ในข้อ 96 ยาต้านเชื้อรากลุ่ม Azole (เช่น Ketoconazole หรือ Clotrimazole) ซึ่งมีคุณสมบัติไม่ชอบน้ำและละลายในไขมันได้ดี (Lipophilic drug) จะถูกกักเก็บอยู่ในตำแหน่งใดของระบบนำส่งยานี้ (ตำแหน่ง A: แกนกลางน้ำ, ตำแหน่ง B: ส่วนหัวฟอสเฟต, ตำแหน่ง C: ชั้นไขมัน Bilayer, ตำแหน่ง D: สารละลายน้ำภายนอก)",
-    "questionImage": "",
+    "questionImage": "images/diagrams/liposome_positions_a_to_d.png",
     "choices": [
       "ตำแหน่ง A",
       "ตำแหน่ง B",
@@ -261929,7 +261901,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างที่แสดงข้อ 4 สัมพันธ์กับการออกฤทธิ์ของยาอย่างไร",
-    "questionImage": "",
+    "questionImage": "images/purple2/simvastatin_pravastatin_q15_16.png",
     "choices": [
       "Pravastatin เป็น prodrug",
       "Pravastatin และ simvastatin เป็น prodrug",
@@ -262060,7 +262032,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseType": ""
   },
   {
-    "id": "13. Medicinal Chemistry::11",
+    "id": "13. Medicinal Chemistry::12",
     "itemNo": 9,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
@@ -262069,34 +262041,6 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของยา A และยา B ข้อใดถูกต้องเกี่ยวกับยา B",
-    "questionImage": "",
-    "choices": [
-      "ฤทธิ์ต้านแบคทีเรียลดลงอย่างมีนัยสำคัญ",
-      "ความสามารถในการละลายน้ำไม่เปลี่ยนแปลง",
-      "ความถี่ในการรับประทานลดลง",
-      "ไม่คงตัวต่อกรดเช่นเดียวกับยา A",
-      "ไม่คงตัวต่อด่างเช่นเดียวกันกับยา A"
-    ],
-    "answer": 3,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. ความถี่ในการรับประทานลดลง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Doxycycline (ยา B) ขาดหมู่ 6-hydroxyl group (-OH) ทำให้ไม่เกิด acid-catalyzed dehydration เป็น anhydrotetracycline ที่เป็นพิษต่อไต และไม่เกิด base-catalyzed degradation ส่งผลให้มีความคงตัวทางเคมีสูงขึ้น และมี lipophilicity สูงขึ้น ทำให้มี elimination half-life ยาวนานถึง 18-22 ชั่วโมง (เทียบกับ tetracycline 6-10 ชั่วโมง) จึงบริหารยาวันละ 1-2 ครั้ง ทำให้ความถี่ในการรับประทานลดลง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ฤทธิ์ต้านแบคทีเรียลดลงอย่างมีนัยสำคัญ: Doxycycline มี antibacterial potency สูงกว่าหรือเทียบเท่า tetracycline และครอบคลุมเชื้อได้กว้างขวาง<br>• ข้อ ข.: ความสามารถในการละลายน้ำไม่เปลี่ยนแปลง: การไม่มีหมู่ 6-OH ทำให้โมเลกุลมี lipophilicity สูงขึ้นและการละลายน้ำลดลงอย่างชัดเจน<br>• ข้อ ง.: ไม่คงตัวต่อกรดเช่นเดียวกับยา A: Doxycycline คงตัวต่อกรดได้ดีมากเนื่องจากไม่มี 6-OH ให้เกิด dehydration<br>• ข้อ จ.: ไม่คงตัวต่อด่างเช่นเดียวกับยา A: Doxycycline คงตัวต่อด่างได้ดีกว่า tetracycline มากเนื่องจากไม่เกิด lactone cleavage ที่ C6",
-    "answerImage": "",
-    "note": "ข้อ 14 Pharma Plus เล่มม่วง (เฉลยข้อ ค)",
-    "examType": "แบบฝึกหัด",
-    "examYear": "เล่มม่วง",
-    "caseGroupId": "",
-    "caseOrder": 0,
-    "caseType": ""
-  },
-  {
-    "id": "13. Medicinal Chemistry::12",
-    "itemNo": 10,
-    "category": "13. Medicinal Chemistry",
-    "topic": "Product Group 13: Medicinal Chemistry",
-    "subtopic": "17.4 SAR & Drug Design",
-    "track": "Product",
-    "caseContext": "",
-    "caseStem": "",
-    "question": "จากสูตรโครงสร้างของยา doxorubicin โครงสร้างส่วนใดที่ออกฤทธิ์เป็น intercalating ของ DNA",
     "questionImage": "images/pubchem/doxorubicin.png",
     "choices": [
       "Anthracycline ring",
@@ -262117,7 +262061,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::13",
-    "itemNo": 11,
+    "itemNo": 10,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262125,7 +262069,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างนี้ เรียกว่า อะไร",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_zidovudine.png",
     "choices": [
       "Nucleotide ของ Purine",
       "Nucleotide ของ Pyridine",
@@ -262145,7 +262089,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::14",
-    "itemNo": 12,
+    "itemNo": 11,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262153,7 +262097,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อใดกล่าวถูกต้องเกี่ยวกับการพัฒนาโครงสร้างดังแสดงด้านล่าง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/cisplatin_to_carboplatin.png",
     "choices": [
       "เปลี่ยนตัวออกฤทธิ์เป็น Ligand เพื่อช่วยลดอาการไม่พึงประสงค์จากยา",
       "ทำให้โครงสร้างใหญ่ขึ้นเพื่อลดการโดนทำลายหมู่สำคัญในการออกฤทธิ์",
@@ -262173,7 +262117,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::15",
-    "itemNo": 13,
+    "itemNo": 12,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262181,7 +262125,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้าง ข้อใดไม่ถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_warfarin.png",
     "choices": [
       "(S)-form มีฤทธิ์มากกว่า (R)-form",
       "อยู่ในกลุ่ม coumarin",
@@ -262201,7 +262145,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::16",
-    "itemNo": 14,
+    "itemNo": 13,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262209,7 +262153,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้าง ข้อความใดต่อไปนี้ไม่ถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_digoxin.png",
     "choices": [
       "ตัวอย่างยาในกลุ่มนี้ คือ Digoxin",
       "Lactone ring เป็นประเภท bufadienolide",
@@ -262229,7 +262173,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::17",
-    "itemNo": 15,
+    "itemNo": 14,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262257,7 +262201,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::18",
-    "itemNo": 16,
+    "itemNo": 15,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262265,7 +262209,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างต่อไปนี้หมายถึงยาชนิดใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_acyclovir.png",
     "choices": [
       "Zidovudine",
       "Cotrimoxazole",
@@ -262285,7 +262229,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::19",
-    "itemNo": 17,
+    "itemNo": 16,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262313,7 +262257,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::20",
-    "itemNo": 18,
+    "itemNo": 17,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262341,7 +262285,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::21",
-    "itemNo": 19,
+    "itemNo": 18,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262369,7 +262313,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::22",
-    "itemNo": 20,
+    "itemNo": 19,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262397,7 +262341,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::23",
-    "itemNo": 21,
+    "itemNo": 20,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262405,7 +262349,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "เกี่ยวกับโครงสร้างของสารดังรูป ทุกข้อต่อไปนี้ถูกต้อง ยกเว้นข้อใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_primaquine.png",
     "choices": [
       "เป็นสารในกลุ่ม 8-aminoquinoline",
       "ตัวอย่างยาในกลุ่มนี้ได้แก่ primaquine",
@@ -262425,7 +262369,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::24",
-    "itemNo": 22,
+    "itemNo": 21,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262433,7 +262377,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากสูตรโครงสร้างของ folic acid ข้อใดกล่าวไม่ถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/folic_acid.png",
     "choices": [
       "เป็น water soluble vitamin",
       "เรียกอีกอย่างหนึ่งว่า vitamin B9",
@@ -262453,7 +262397,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::25",
-    "itemNo": 23,
+    "itemNo": 22,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262461,7 +262405,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้าง ไม่สามารถใช้ในผู้ป่วยกลุ่มใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_glibenclamide.png",
     "choices": [
       "Pediatric",
       "Cirrhosis/Hepatitis",
@@ -262481,7 +262425,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::26",
-    "itemNo": 24,
+    "itemNo": 23,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262489,7 +262433,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของยา glybenclamide ข้อใดเป็นเหตุผลที่ทำให้ duration นานขึ้น",
-    "questionImage": "",
+    "questionImage": "images/pubchem/glibenclamide.png",
     "choices": [
       "สามารถหมุนแสง polarized ได้",
       "สามารถวิเคราะห์ได้โดยใช้วิธี HPLC-UV detection",
@@ -262509,7 +262453,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::27",
-    "itemNo": 25,
+    "itemNo": 24,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262517,7 +262461,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากสูตรโครงสร้างต่อไปนี้ของยา glipizide จัดว่าเป็นยากลุ่มใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/glipizide.png",
     "choices": [
       "Biguanides",
       "Nicotinic acids",
@@ -262537,7 +262481,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::28",
-    "itemNo": 26,
+    "itemNo": 25,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262545,7 +262489,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างต่อไปนี้เป็นโครงสร้างของยากลุ่มใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_metformin.png",
     "choices": [
       "Iodoperoxidase inhibitor",
       "Sulfonylurea",
@@ -262565,7 +262509,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::29",
-    "itemNo": 27,
+    "itemNo": 26,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262573,7 +262517,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ชื่อเรียกทั่วไปของยาที่มีโครงสร้างในรูป คือ (ยา PTU)",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_propylthiouracil.png",
     "choices": [
       "6 propyl 3 thiouracil",
       "1 propyl 5 thiouracil",
@@ -262593,7 +262537,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::30",
-    "itemNo": 28,
+    "itemNo": 27,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262601,7 +262545,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากโครงสร้างของยา 3 ชนิด (methimazole, carbimazole และ propylthiouracil)",
     "caseStem": "จากโครงสร้างของยา 3 ชนิด (methimazole, carbimazole และ propylthiouracil)",
     "question": "ข้อใดถูกต้องเกี่ยวกับยา methimazole, carbimazole และ propylthiouracil",
-    "questionImage": "",
+    "questionImage": "images/pubchem/antithyroid_3drugs.png",
     "choices": [
       "Methimazole, carbimazole และ propylthiouracil ถูก metabolized โดยปฏิกิริยา desulfunation ก่อนจึงจะได้สารที่มีฤทธิ์ทางเภสัชวิทยา",
       "Propylthiouracil จะถูก metabolized โดยปฏิกิริยา dealkylation ซึ่งจะตัด Propyl group ออกก่อนจึงจะได้สารที่มีฤทธิ์ทางเภสัชวิทยา",
@@ -262621,7 +262565,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::31",
-    "itemNo": 29,
+    "itemNo": 28,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262649,7 +262593,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::32",
-    "itemNo": 30,
+    "itemNo": 29,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262677,7 +262621,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::33",
-    "itemNo": 31,
+    "itemNo": 30,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262705,7 +262649,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::34",
-    "itemNo": 32,
+    "itemNo": 31,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262733,7 +262677,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::35",
-    "itemNo": 33,
+    "itemNo": 32,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262741,7 +262685,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในทางเคมีทางการแพทย์ ตำแหน่งโครงสร้างใดของ Salbutamol ที่แตกต่างจาก Epinephrine และมีบทบาทสำคัญทำให้ยามีความจำเพาะสูงต่อ Beta-2 adrenergic receptor และออกฤทธิ์ได้นานขึ้น",
-    "questionImage": "",
+    "questionImage": "images/pubchem/salbutamol_vs_epinephrine.png",
     "choices": [
       "หมู่ Hydroxymethyl (-CH2OH) ที่ตำแหน่ง C-3 ของวงแหวนเบนซีน และหมู่ tert-butyl บนหมู่อะมิโน",
       "หมู่ Catechol (3,4-dihydroxy) บนวงแหวนเบนซีน และหมู่ N-methyl",
@@ -262761,7 +262705,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::36",
-    "itemNo": 34,
+    "itemNo": 33,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262769,7 +262713,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ในทางเคมีทางการแพทย์และเมแทบอลิซึมของยา การเปลี่ยนแปลงทางโครงสร้างข้อใดที่เปลี่ยนยา Hydroxyzine ให้กลายเป็นยา Cetirizine ซึ่งส่งผลให้ยาลดอาการง่วงซึมลงอย่างมีนัยสำคัญ",
-    "questionImage": "",
+    "questionImage": "images/pubchem/hydroxyzine_to_cetirizine.png",
     "choices": [
       "การเกิด Phase I Oxidation เปลี่ยนหมู่ -CH2OH ปลายสายของ Hydroxyzine ให้กลายเป็น Carboxylic acid (-COOH) ของ Cetirizine",
       "การเกิด Phase II Glucuronidation ที่ตำแหน่งวงแหวน Piperazine",
@@ -262789,7 +262733,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::37",
-    "itemNo": 35,
+    "itemNo": 34,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262817,7 +262761,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::38",
-    "itemNo": 36,
+    "itemNo": 35,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262845,7 +262789,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::39",
-    "itemNo": 37,
+    "itemNo": 36,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262873,7 +262817,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::40",
-    "itemNo": 38,
+    "itemNo": 37,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262901,7 +262845,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::41",
-    "itemNo": 39,
+    "itemNo": 38,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262929,7 +262873,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::42",
-    "itemNo": 40,
+    "itemNo": 39,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262957,7 +262901,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::43",
-    "itemNo": 41,
+    "itemNo": 40,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -262985,7 +262929,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::44",
-    "itemNo": 42,
+    "itemNo": 41,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -263013,7 +262957,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::45",
-    "itemNo": 43,
+    "itemNo": 42,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263021,7 +262965,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[กรณีศึกษา 1]\nโครงสร้างยา enalapril ดังภาพ",
     "caseStem": "[กรณีศึกษา 1]\nโครงสร้างยา enalapril ดังภาพ",
     "question": "โครงสร้าง ยา enalapril เสื่อมด้วยกลไกใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/enalapril.png",
     "choices": [
       "Epimerization",
       "Dimerization",
@@ -263041,7 +262985,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::46",
-    "itemNo": 44,
+    "itemNo": 43,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263049,7 +262993,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[]\nจากโครงสร้าง L-dopa ถูกเปลี่ยนเป็น dopamine ด้วยกระบวนการใด (แสดงโครงสร้างทางเคมีของ Levodopa)",
     "caseStem": "[]\nจากโครงสร้าง L-dopa ถูกเปลี่ยนเป็น dopamine ด้วยกระบวนการใด (แสดงโครงสร้างทางเคมีของ Levodopa)",
     "question": "จากโครงสร้าง L-dopa ถูกเปลี่ยนเป็น dopamine ด้วยกระบวนการใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/ldopa_to_dopamine.png",
     "choices": [
       "Decarboxylation",
       "Demethylation",
@@ -263069,7 +263013,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::47",
-    "itemNo": 45,
+    "itemNo": 44,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263077,7 +263021,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[]\nโครงสร้างยา Amphotericin B ดังภาพ",
     "caseStem": "[]\nโครงสร้างยา Amphotericin B ดังภาพ",
     "question": "ข้อใดผิดเกี่ยวกับโครงสร้างยา",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_amphotericin_b.png",
     "choices": [
       "โครงสร้างเป็น amphoteric drug",
       "โครงสร้างเป็นกลุ่ม macrolide ring",
@@ -263097,7 +263041,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::48",
-    "itemNo": 46,
+    "itemNo": 45,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263105,7 +263049,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[]\nจากโครงสร้างยานี้ (Zidovudine / AZT)",
     "caseStem": "[]\nจากโครงสร้างยานี้ (Zidovudine / AZT)",
     "question": "จากโครงสร้างยานี้ ข้อใดถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/unlabeled_zidovudine.png",
     "choices": [
       "โครงสร้างเป็น thymidine analog",
       "ยาออกฤทธิ์ต่อ retro virus",
@@ -263125,7 +263069,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::49",
-    "itemNo": 47,
+    "itemNo": 46,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263153,7 +263097,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::50",
-    "itemNo": 48,
+    "itemNo": 47,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -263161,7 +263105,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[]\nโครงสร้างเคมี spironolactone ถูก metabolism กลายเป็น canrenone (สูตรโครงสร้าง steroid ที่มี 17-lactone ring)",
     "caseStem": "[]\nโครงสร้างเคมี spironolactone ถูก metabolism กลายเป็น canrenone (สูตรโครงสร้าง steroid ที่มี 17-lactone ring)",
     "question": "ข้อใดถูกเกี่ยวกับโครงสร้างยา spironolactone กับ canrenone",
-    "questionImage": "",
+    "questionImage": "images/pubchem/spironolactone_vs_canrenone.png",
     "choices": [
       "ตัวยาออกฤทธิ์โดยจับกับ receptor ภายนอกของ Henle loop",
       "ถ้า lactone ring เปิดออก จะได้สารที่มีฤทธิ์",
@@ -263181,7 +263125,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::51",
-    "itemNo": 49,
+    "itemNo": 48,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263189,7 +263133,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[กรณีศึกษา 1]\nผู้หญิงอายุ 45 อ้วน เพิ่งได้ เลื่อนตำแหน่งเป็นผู้จัดการฝ่ายขาย นอนไม่หลับมา 1 เดือน นอนหลับยาก 1-2 ชม.กว่าจะหลับ (ปกติ 30 นาทีหลับ) ตื่นกลางดึกหลายครั้ง พ่อเพิ่งตายหกเดือน แม่เป็น เบาหวานกับความดัน ไม่สูบบุหรี่ ดื่มชาให้หลับ งีบหลับกลางวัน ออกกำลังก่อนนอน 1 ชม.",
     "caseStem": "[กรณีศึกษา 1]\nผู้หญิงอายุ 45 อ้วน เพิ่งได้ เลื่อนตำแหน่งเป็นผู้จัดการฝ่ายขาย นอนไม่หลับมา 1 เดือน นอนหลับยาก 1-2 ชม.กว่าจะหลับ (ปกติ 30 นาทีหลับ) ตื่นกลางดึกหลายครั้ง พ่อเพิ่งตายหกเดือน แม่เป็น เบาหวานกับความดัน ไม่สูบบุหรี่ ดื่มชาให้หลับ งีบหลับกลางวัน ออกกำลังก่อนนอน 1 ชม.",
     "question": "พัฒนาโครงสร้างยานอนหลับกลุ่ม BZD อย่างไร เพื่อเพิ่มการออกฤทธิ์ [ภาพโครงสร้าง 1,4-benzodiazepine core: วง A (เบนซีนที่มีตำแหน่ง 7, 8, 9), วง B (ไดอะซีปีน 1-NH, 2=O, 3, 4=N, 5), วง C (5-phenyl ring ตำแหน่ง 1' ถึง 6')]",
-    "questionImage": "",
+    "questionImage": "images/pubchem/benzodiazepine_core.png",
     "choices": [
       "เปลี่ยน carbonyl",
       "เปลี่ยน N=C เป็น N-C",
@@ -263209,7 +263153,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::52",
-    "itemNo": 50,
+    "itemNo": 49,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263237,7 +263181,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::53",
-    "itemNo": 51,
+    "itemNo": 50,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263245,7 +263189,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[]\nภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin (indole acetic acid derivative)\nb. โครงสร้าง Alminoprofen / NSAID ที่มีหมู่อะมิโน\nc. โครงสร้าง Celecoxib (diaryl-substituted pyrazole ที่มีหมู่ benzenesulfonamide -SO2NH2)\nd. โครงสร้าง Naproxen (methoxynaphthyl propionic acid)\ne. โครงสร้าง Hydrochlorothiazide (benzothiadiazine 1,1-dioxide ที่มีหมู่ 7-sulfonamoyl -SO2NH2)",
     "caseStem": "[]\nภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin (indole acetic acid derivative)\nb. โครงสร้าง Alminoprofen / NSAID ที่มีหมู่อะมิโน\nc. โครงสร้าง Celecoxib (diaryl-substituted pyrazole ที่มีหมู่ benzenesulfonamide -SO2NH2)\nd. โครงสร้าง Naproxen (methoxynaphthyl propionic acid)\ne. โครงสร้าง Hydrochlorothiazide (benzothiadiazine 1,1-dioxide ที่มีหมู่ 7-sulfonamoyl -SO2NH2)",
     "question": "โครงสร้างใดไม่ควรใช้ในผู้ป่วยที่แพ้ ยา sulfa [แสดงภาพโครงสร้าง 5 สาร: a = Indomethacin, b = อนุพันธ์กรดโพรพิโอนิก, c = Celecoxib, d = Naproxen, e = Hydrochlorothiazide]",
-    "questionImage": "",
+    "questionImage": "images/pubchem/sulfa_5panel_a_to_e.png",
     "choices": [
       "โครงสร้าง a (Indomethacin)",
       "โครงสร้าง b",
@@ -263265,7 +263209,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::54",
-    "itemNo": 52,
+    "itemNo": 51,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -263293,7 +263237,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::55",
-    "itemNo": 53,
+    "itemNo": 52,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263301,7 +263245,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "โครงสร้างในข้อใดที่ไม่สามารถให้โดยการรับประทานได้ [RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์]",
-    "questionImage": "",
+    "questionImage": "images/pubchem/oral_betalactam_5panel.png",
     "choices": [
       "Ampicillin",
       "Phenoxymethylpenicillin",
@@ -263321,7 +263265,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::56",
-    "itemNo": 54,
+    "itemNo": 53,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263349,7 +263293,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::57",
-    "itemNo": 55,
+    "itemNo": 54,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263377,7 +263321,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::58",
-    "itemNo": 56,
+    "itemNo": 55,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263405,7 +263349,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::59",
-    "itemNo": 57,
+    "itemNo": 56,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263433,7 +263377,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::60",
-    "itemNo": 58,
+    "itemNo": 57,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263461,7 +263405,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::61",
-    "itemNo": 59,
+    "itemNo": 58,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263489,7 +263433,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::62",
-    "itemNo": 60,
+    "itemNo": 59,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263517,7 +263461,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::63",
-    "itemNo": 61,
+    "itemNo": 60,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263525,7 +263469,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[กรณีศึกษา]\nโครงสร้างทางเคมีของยาต้านเชื้อรากลุ่ม polyene macrolide (เช่น amphotericin B หรือ nystatin)",
     "caseStem": "[กรณีศึกษา]\nโครงสร้างทางเคมีของยาต้านเชื้อรากลุ่ม polyene macrolide (เช่น amphotericin B หรือ nystatin)",
     "question": "ยาในโครงสร้างกลุ่ม polyene macrolide มีกลไกอย่างไร",
-    "questionImage": "",
+    "questionImage": "images/pubchem/amphotericin_b.png",
     "choices": [
       "เป็นพิษต่อ cell",
       "มีผลต่อ cell wall",
@@ -263545,7 +263489,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::64",
-    "itemNo": 62,
+    "itemNo": 61,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263553,7 +263497,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[กรณีศึกษา]\nโครงสร้างทางเคมีของ naproxen แสดงหมู่ -CH(CH3)COOH บนวง naphthalene",
     "caseStem": "[กรณีศึกษา]\nโครงสร้างทางเคมีของ naproxen แสดงหมู่ -CH(CH3)COOH บนวง naphthalene",
     "question": "โครงสร้าง naproxen มีหมู่อนุพันธ์กรดอินทรีย์หรือ functional group ใดเป็นแกนหลัก",
-    "questionImage": "",
+    "questionImage": "images/pubchem/naproxen.png",
     "choices": [
       "Sulfone",
       "Isobutyric acid",
@@ -263573,7 +263517,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::65",
-    "itemNo": 63,
+    "itemNo": 62,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263601,7 +263545,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::66",
-    "itemNo": 64,
+    "itemNo": 63,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263629,7 +263573,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::67",
-    "itemNo": 65,
+    "itemNo": 64,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -263657,7 +263601,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::68",
-    "itemNo": 66,
+    "itemNo": 65,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -263665,7 +263609,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[เคมีทางยาของยาขับปัสสาวะ Thiazides]\nการสังเคราะห์อนุพันธ์ยา Hydrochlorothiazide (HCTZ) จากสารตั้งต้น Chlorothiazide",
     "caseStem": "[เคมีทางยาของยาขับปัสสาวะ Thiazides]\nการสังเคราะห์อนุพันธ์ยา Hydrochlorothiazide (HCTZ) จากสารตั้งต้น Chlorothiazide",
     "question": "การสังเคราะห์ยา HCTZ จาก chlorothiazide ด้วยปฏิกิริยาใด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/chlorothiazide_to_hctz.png",
     "choices": [
       "Reduction",
       "Oxidation",
@@ -263685,7 +263629,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::69",
-    "itemNo": 67,
+    "itemNo": 66,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -263693,7 +263637,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[เคมีทางยาของยา Simvastatin]\nกลไกการกระตุ้นสารออกฤทธิ์ทางชีวภาพของ Simvastatin ซึ่งเป็น prodrug",
     "caseStem": "[เคมีทางยาของยา Simvastatin]\nกลไกการกระตุ้นสารออกฤทธิ์ทางชีวภาพของ Simvastatin ซึ่งเป็น prodrug",
     "question": "Simvastatin ซึ่งเป็น prodrug ถามว่าจะต้องทำปฏิกิริยาที่โครงสร้างตรงไหนจึงจะออกฤทธิ์",
-    "questionImage": "",
+    "questionImage": "images/pubchem/simvastatin.png",
     "choices": [
       "ตำแหน่ง 1 (ester side chain)",
       "ตำแหน่ง 2 (lactone ring carbonyl)",
@@ -263713,7 +263657,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::70",
-    "itemNo": 68,
+    "itemNo": 67,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -263741,7 +263685,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::71",
-    "itemNo": 69,
+    "itemNo": 68,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -263769,7 +263713,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::72",
-    "itemNo": 70,
+    "itemNo": 69,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263777,7 +263721,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[สถานการณ์]\nผู้ป่วยชายมีอาการปวดฟันบริเวณฟันคุดและเหงือกบวม ได้รับประทานยา Ibuprofen หลังจากนั้น 2 ชั่วโมง เกิดผื่นแดงราบสลับนูน (Maculopapular rash) และมีประวัติเคยใช้ Diclofenac gel ทาภายนอกแล้วมีผื่นคัน",
     "caseStem": "[สถานการณ์]\nผู้ป่วยชายมีอาการปวดฟันบริเวณฟันคุดและเหงือกบวม ได้รับประทานยา Ibuprofen หลังจากนั้น 2 ชั่วโมง เกิดผื่นแดงราบสลับนูน (Maculopapular rash) และมีประวัติเคยใช้ Diclofenac gel ทาภายนอกแล้วมีผื่นคัน",
     "question": "ข้อใดเป็นโครงสร้างของยาที่ผู้ป่วยแพ้",
-    "questionImage": "",
+    "questionImage": "images/pubchem/nsaid_allergy_5panel.png",
     "choices": [
       "โครงสร้าง Celecoxib (4-[5-(4-methylphenyl)-3-(trifluoromethyl)pyrazol-1-yl]benzenesulfonamide)",
       "โครงสร้าง Ibuprofen (2-(4-isobutylphenyl)propanoic acid)",
@@ -263797,7 +263741,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::73",
-    "itemNo": 71,
+    "itemNo": 70,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -263805,7 +263749,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "[กรณีศึกษา]\nจากรูปโครงสร้าง Nicotine และ Cotinine",
     "caseStem": "[กรณีศึกษา]\nจากรูปโครงสร้าง Nicotine และ Cotinine",
     "question": "จากรูปข้อใดถูก",
-    "questionImage": "",
+    "questionImage": "images/pubchem/nicotine_to_cotinine.png",
     "choices": [
       "Nicotine เป็นกรดอ่อน มี pKa 8.0",
       "Cotinine เป็น major metabolite ของ nicotine",
@@ -263825,7 +263769,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::74",
-    "itemNo": 72,
+    "itemNo": 71,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263853,7 +263797,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::75",
-    "itemNo": 73,
+    "itemNo": 72,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.2 Stereochemistry",
@@ -263861,7 +263805,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ยา salbutamol ประกอบด้วยรูปแบบ R-salbutamol และ S-salbutamol ในอัตราส่วน 50:50 ลักษณะของส่วนผสมดังกล่าวเรียกว่าอะไร",
-    "questionImage": "",
+    "questionImage": "images/pubchem/salbutamol.png",
     "choices": [
       "Mirror mixture",
       "Chiral mixture",
@@ -263881,7 +263825,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::76",
-    "itemNo": 74,
+    "itemNo": 73,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -263909,7 +263853,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::77",
-    "itemNo": 75,
+    "itemNo": 74,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -263937,7 +263881,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::78",
-    "itemNo": 76,
+    "itemNo": 75,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -263965,7 +263909,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::79",
-    "itemNo": 77,
+    "itemNo": 76,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -263993,7 +263937,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::80",
-    "itemNo": 78,
+    "itemNo": 77,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264021,7 +263965,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::81",
-    "itemNo": 79,
+    "itemNo": 78,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264049,7 +263993,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::82",
-    "itemNo": 80,
+    "itemNo": 79,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264077,7 +264021,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::83",
-    "itemNo": 81,
+    "itemNo": 80,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264105,7 +264049,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::84",
-    "itemNo": 82,
+    "itemNo": 81,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -264133,7 +264077,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::85",
-    "itemNo": 83,
+    "itemNo": 82,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264161,7 +264105,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::86",
-    "itemNo": 84,
+    "itemNo": 83,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264189,7 +264133,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::87",
-    "itemNo": 85,
+    "itemNo": 84,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264217,7 +264161,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::88",
-    "itemNo": 86,
+    "itemNo": 85,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -264245,7 +264189,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::89",
-    "itemNo": 87,
+    "itemNo": 86,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264253,7 +264197,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างของ salbutamol ที่กำหนดให้ หมู่ฟังก์ชั่นใดที่ทำให้ salbutamol ออกฤทธิ์จำเพาะต่อ beta receptor",
-    "questionImage": "",
+    "questionImage": "images/pubchem/salbutamol.png",
     "choices": [
       "A - hydroxyl group",
       "B - methanol group",
@@ -264273,7 +264217,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::90",
-    "itemNo": 88,
+    "itemNo": 87,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264301,7 +264245,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::91",
-    "itemNo": 89,
+    "itemNo": 88,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264329,7 +264273,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::92",
-    "itemNo": 90,
+    "itemNo": 89,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -264357,7 +264301,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::93",
-    "itemNo": 91,
+    "itemNo": 90,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -264385,7 +264329,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::94",
-    "itemNo": 92,
+    "itemNo": 91,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264413,7 +264357,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::95",
-    "itemNo": 93,
+    "itemNo": 92,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264421,7 +264365,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ข้อใดคือโครงสร้างทางเคมีของยาต้านเชื้อรากลุ่ม Azole ที่มี Imidazole ring ซึ่งใช้รักษาโรคติดเชื้อราที่ผิวหนัง (กลากและเกลื้อน)",
-    "questionImage": "",
+    "questionImage": "images/pubchem/clotrimazole.png",
     "choices": [
       "Clotrimazole (มีวงแหวน Imidazole)",
       "Fluconazole (มีวงแหวน Triazole)",
@@ -264441,7 +264385,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::96",
-    "itemNo": 94,
+    "itemNo": 93,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264469,7 +264413,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::97",
-    "itemNo": 95,
+    "itemNo": 94,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264497,7 +264441,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::98",
-    "itemNo": 96,
+    "itemNo": 95,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -264525,7 +264469,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::99",
-    "itemNo": 97,
+    "itemNo": 96,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264553,7 +264497,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::100",
-    "itemNo": 98,
+    "itemNo": 97,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264581,7 +264525,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::101",
-    "itemNo": 99,
+    "itemNo": 98,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264609,7 +264553,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::102",
-    "itemNo": 100,
+    "itemNo": 99,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264617,7 +264561,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "ผู้ป่วยมีประวัติแพ้ยา Ibuprofen เกิดผื่นแบบ urticaria จากการวิเคราะห์โครงสร้างทางเคมียา",
     "caseStem": "ผู้ป่วยมีประวัติแพ้ยา Ibuprofen เกิดผื่นแบบ urticaria จากการวิเคราะห์โครงสร้างทางเคมียา",
     "question": "ข้อใดคือโครงสร้างหลัก (Core structure) ของยากลุ่ม Arylpropionic acid derivative ที่เป็นยา Ibuprofen",
-    "questionImage": "",
+    "questionImage": "images/pubchem/ibuprofen.png",
     "choices": [
       "โครงสร้างที่มี 2-(4-isobutylphenyl)propanoic acid",
       "โครงสร้างที่มี 2-(2,6-dichlorophenylamino)phenylacetic acid",
@@ -264637,7 +264581,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::103",
-    "itemNo": 101,
+    "itemNo": 100,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264665,7 +264609,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::104",
-    "itemNo": 102,
+    "itemNo": 101,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264693,7 +264637,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::105",
-    "itemNo": 103,
+    "itemNo": 102,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -264721,7 +264665,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::106",
-    "itemNo": 104,
+    "itemNo": 103,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264749,7 +264693,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::107",
-    "itemNo": 105,
+    "itemNo": 104,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264777,7 +264721,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::108",
-    "itemNo": 106,
+    "itemNo": 105,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.2 Stereochemistry",
@@ -264785,7 +264729,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "ยาพ่นขยายหลอดลม Salbutamol (Albuterol) มีไครัลเซนเตอร์ในโครงสร้าง จึงประกอบด้วย (R)-salbutamol และ (S)-salbutamol ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับสารผสมในอัตราส่วน 50:50 ระหว่างอีแนนทิโอเมอร์ทั้งสองชนิด",
-    "questionImage": "",
+    "questionImage": "images/pubchem/salbutamol.png",
     "choices": [
       "Cis/Trans mixture",
       "Chiral diastereomer mixture",
@@ -264805,7 +264749,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::109",
-    "itemNo": 107,
+    "itemNo": 106,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -264833,7 +264777,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::110",
-    "itemNo": 108,
+    "itemNo": 107,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -264861,7 +264805,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::111",
-    "itemNo": 109,
+    "itemNo": 108,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264889,7 +264833,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::112",
-    "itemNo": 110,
+    "itemNo": 109,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.2 Stereochemistry",
@@ -264897,7 +264841,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "Cetirizine เป็นสารผสมราซิมิก (Racemate R/S อัตราส่วน 1:1) โดยพบว่า Levocetirizine ซึ่งเป็น (R)-enantiomer บริสุทธิ์ มีสัมพรรคภาพในการจับกับตัวรับฮิสตามีน H1 สูงกว่า (S)-enantiomer ประมาณ 2 เท่า ข้อใดกล่าวถึงคุณสมบัติทางสเตอริโอเคมีของยาทั้งสองชนิดนี้ได้ถูกต้อง",
-    "questionImage": "",
+    "questionImage": "images/pubchem/cetirizine.png",
     "choices": [
       "Levocetirizine คือ (R)-enantiomer ที่หมุนระนาบแสงโพลาไรซ์ไปทางซ้าย (Levorotatory) มี active binding conformation ที่แนบสนิทกับ H1 receptor",
       "Levocetirizine มีขนาดยาที่ใช้ในการรักษาเท่ากับ Cetirizine คือ 10 mg วันละครั้ง",
@@ -264917,7 +264861,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::113",
-    "itemNo": 111,
+    "itemNo": 110,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -264945,7 +264889,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::114",
-    "itemNo": 112,
+    "itemNo": 111,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -264973,7 +264917,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::115",
-    "itemNo": 113,
+    "itemNo": 112,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265001,7 +264945,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::116",
-    "itemNo": 114,
+    "itemNo": 113,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265029,7 +264973,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::117",
-    "itemNo": 115,
+    "itemNo": 114,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265057,7 +265001,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::118",
-    "itemNo": 116,
+    "itemNo": 115,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265085,7 +265029,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::119",
-    "itemNo": 117,
+    "itemNo": 116,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265113,7 +265057,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::120",
-    "itemNo": 118,
+    "itemNo": 117,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265141,7 +265085,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::121",
-    "itemNo": 119,
+    "itemNo": 118,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265169,7 +265113,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::122",
-    "itemNo": 120,
+    "itemNo": 119,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265197,7 +265141,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::123",
-    "itemNo": 121,
+    "itemNo": 120,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265225,7 +265169,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::124",
-    "itemNo": 122,
+    "itemNo": 121,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265253,7 +265197,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::125",
-    "itemNo": 123,
+    "itemNo": 122,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265281,7 +265225,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::126",
-    "itemNo": 124,
+    "itemNo": 123,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265309,7 +265253,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::127",
-    "itemNo": 125,
+    "itemNo": 124,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265337,7 +265281,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::128",
-    "itemNo": 126,
+    "itemNo": 125,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265365,7 +265309,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::129",
-    "itemNo": 127,
+    "itemNo": 126,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265393,7 +265337,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::130",
-    "itemNo": 128,
+    "itemNo": 127,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265421,7 +265365,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::131",
-    "itemNo": 129,
+    "itemNo": 128,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265449,7 +265393,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::132",
-    "itemNo": 130,
+    "itemNo": 129,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265477,7 +265421,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::133",
-    "itemNo": 131,
+    "itemNo": 130,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265505,7 +265449,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::134",
-    "itemNo": 132,
+    "itemNo": 131,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265533,7 +265477,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::135",
-    "itemNo": 133,
+    "itemNo": 132,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -265561,7 +265505,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::136",
-    "itemNo": 134,
+    "itemNo": 133,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -265589,7 +265533,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::137",
-    "itemNo": 135,
+    "itemNo": 134,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265617,7 +265561,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::138",
-    "itemNo": 136,
+    "itemNo": 135,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -265645,7 +265589,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::139",
-    "itemNo": 137,
+    "itemNo": 136,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -265673,7 +265617,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::140",
-    "itemNo": 138,
+    "itemNo": 137,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265701,7 +265645,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::141",
-    "itemNo": 139,
+    "itemNo": 138,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -265729,7 +265673,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::142",
-    "itemNo": 140,
+    "itemNo": 139,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265757,7 +265701,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::143",
-    "itemNo": 141,
+    "itemNo": 140,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -265785,7 +265729,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::144",
-    "itemNo": 142,
+    "itemNo": 141,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265813,7 +265757,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::145",
-    "itemNo": 143,
+    "itemNo": 142,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265841,7 +265785,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::146",
-    "itemNo": 144,
+    "itemNo": 143,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.4 SAR & Drug Design",
@@ -265869,7 +265813,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::147",
-    "itemNo": 145,
+    "itemNo": 144,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -265897,7 +265841,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::148",
-    "itemNo": 146,
+    "itemNo": 145,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.3 Prodrug & Drug Metabolism",
@@ -265925,7 +265869,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::149",
-    "itemNo": 147,
+    "itemNo": 146,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -265953,7 +265897,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::150",
-    "itemNo": 148,
+    "itemNo": 147,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -265982,7 +265926,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::151",
-    "itemNo": 149,
+    "itemNo": 148,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
@@ -266011,7 +265955,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::152",
-    "itemNo": 150,
+    "itemNo": 149,
     "category": "13. Medicinal Chemistry",
     "topic": "4. Endocrine",
     "subtopic": "4.1 Diabetes mellitus",
@@ -266039,7 +265983,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::153",
-    "itemNo": 151,
+    "itemNo": 150,
     "category": "13. Medicinal Chemistry",
     "topic": "13. Medicinal Chemistry",
     "subtopic": "13.1 Drug Synthesis and Structure-Activity Relationship",
@@ -266067,7 +266011,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::154",
-    "itemNo": 152,
+    "itemNo": 151,
     "category": "13. Medicinal Chemistry",
     "topic": "13. Medicinal Chemistry",
     "subtopic": "13.1 Drug Structures and Properties",
@@ -266095,7 +266039,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::155",
-    "itemNo": 153,
+    "itemNo": 152,
     "category": "13. Medicinal Chemistry",
     "topic": "2. Cardiovascular",
     "subtopic": "Dyslipidemias",
@@ -266123,7 +266067,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::156",
-    "itemNo": 154,
+    "itemNo": 153,
     "category": "13. Medicinal Chemistry",
     "topic": "Product Group 2: Chromatography",
     "subtopic": "2.2 HPLC (Liquid Chromatography)",
@@ -266151,7 +266095,7 @@ window.QUIZ_OFFLINE_DB = [
   },
   {
     "id": "13. Medicinal Chemistry::157",
-    "itemNo": 155,
+    "itemNo": 154,
     "category": "13. Medicinal Chemistry",
     "topic": "13. Oncology",
     "subtopic": "13.1 Chemotherapy Principles & Regimens",
@@ -266159,7 +266103,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "",
     "caseStem": "",
     "question": "จากโครงสร้างยาเคมีบำบัดกลุ่ม Anthracycline (Doxorubicin) ยาดังกล่าวมีกลไกการออกฤทธิ์ต่อเซลล์มะเร็งอย่างไร",
-    "questionImage": "",
+    "questionImage": "images/pubchem/doxorubicin.png",
     "choices": [
       "ยับยั้งเอนไซม์ Topoisomerase II และแทรกตัวระหว่างคู่เบสของ DNA",
       "ยับยั้งการสร้างผนังเซลล์ของเซลล์มะเร็ง",
@@ -274103,7 +274047,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseContext": "จากการศึกษาวิจัยเพื่อเปรียบเทียบการติดเชื้อที่อวัยวะอื่นกับประวัติการเป็นโรคหวัด พบข้อมูลดังตาราง $2 \\times 2$:\n\nภาวะการติดเชื้อ | เป็นโรคหวัด | ไม่เป็นโรคหวัด | รวม\nติดเชื้อที่อวัยวะอื่น | 25 | 15 | 40\nไม่ติดเชื้อที่อวัยวะอื่น | 25 | 30 | 55",
     "caseStem": "จากการศึกษาวิจัยเพื่อเปรียบเทียบการติดเชื้อที่อวัยวะอื่นกับประวัติการเป็นโรคหวัด พบข้อมูลดังตาราง $2 \\times 2$:\n\nภาวะการติดเชื้อ | เป็นโรคหวัด | ไม่เป็นโรคหวัด | รวม\nติดเชื้อที่อวัยวะอื่น | 25 | 15 | 40\nไม่ติดเชื้อที่อวัยวะอื่น | 25 | 30 | 55",
     "question": "จากตารางการศึกษาข้างต้น จงคำนวณหาค่า Odds Ratio (OR) ของการติดเชื้อที่อวัยวะอื่นกับการเป็นโรคหวัด",
-    "questionImage": "",
+    "questionImage": "images/diagrams/biostats_or_2x2_table.png",
     "choices": [
       "1.2",
       "1.5",
