@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.1 Pro Edition)
- * Total Questions: 4876 across 32 Categories
- * Build Timestamp: 2026-11-19 09:40:26
+ * Total Questions: 4885 across 32 Categories
+ * Build Timestamp: 2026-11-20 08:14:12
  * Build Mode: Fast Local (openpyxl)
  */
 
@@ -12,7 +12,7 @@ window.QUIZ_GAS_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycby14F6sdMW
 window.QUIZ_OFFLINE_CATEGORIES = [
   {
     "name": "1. Musculoskeleton",
-    "count": 310,
+    "count": 311,
     "track": "Clinic"
   },
   {
@@ -22,7 +22,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "3. Dermatologic",
-    "count": 170,
+    "count": 171,
     "track": "Clinic"
   },
   {
@@ -32,7 +32,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "5. Gastrointestinal",
-    "count": 232,
+    "count": 233,
     "track": "Clinic"
   },
   {
@@ -102,7 +102,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "1. Titrations",
-    "count": 79,
+    "count": 80,
     "track": "Product"
   },
   {
@@ -152,12 +152,12 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "13. Medicinal Chemistry",
-    "count": 154,
+    "count": 157,
     "track": "Product"
   },
   {
     "name": "1. Pharmacy Laws & Ethics",
-    "count": 239,
+    "count": 241,
     "track": "SAP"
   },
   {
@@ -6751,36 +6751,36 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE_2564_RA_01",
       "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 2
+      "caseTotal": 1
     },
     {
       "id": "1. Musculoskeleton::232",
       "itemNo": 230,
       "category": "1. Musculoskeleton",
-      "topic": "Musculoskeletal",
-      "subtopic": "Rheumatoid arthritis",
+      "topic": "1. Musculoskeletal",
+      "subtopic": "1.2 Rheumatoid arthritis",
       "track": "Clinic",
-      "caseContext": "[สถานการณ์]\nผู้ป่วยโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis: RA) ได้รับยา Naproxen 250 mg รับประทานวันละ 3 ครั้ง หลังอาหาร เพื่อบรรเทาอาการปวดและอักเสบ",
-      "caseStem": "[สถานการณ์]\nผู้ป่วยโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis: RA) ได้รับยา Naproxen 250 mg รับประทานวันละ 3 ครั้ง หลังอาหาร เพื่อบรรเทาอาการปวดและอักเสบ",
-      "question": "ควรแก้ไขปัญหาดังกล่าวอย่างไร",
+      "caseContext": "ผู้ป่วยโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis) อายุ 62 ปี ได้รับยา Naproxen 250 mg รับประทานวันละ 3 ครั้ง หลังอาหาร เพื่อบรรเทาอาการปวดข้อ ผู้ป่วยมีโรคประจำตัวคือ Ischemic heart disease ต่อมาผู้ป่วยมาพบเภสัชกรเนื่องจากมีอาการแสบร้อนยอดอกและปวดแสบลิ้นปี่หลังรับประทานยา",
+      "caseStem": "ผู้ป่วยโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis) อายุ 62 ปี ได้รับยา Naproxen 250 mg รับประทานวันละ 3 ครั้ง หลังอาหาร เพื่อบรรเทาอาการปวดข้อ ผู้ป่วยมีโรคประจำตัวคือ Ischemic heart disease ต่อมาผู้ป่วยมาพบเภสัชกรเนื่องจากมีอาการแสบร้อนยอดอกและปวดแสบลิ้นปี่หลังรับประทานยา",
+      "question": "เภสัชกรควรแนะนำการจัดการด้านยาเพื่อบรรเทาปัญหาทางเดินอาหารของผู้ป่วยรายนี้อย่างไร",
       "questionImage": "",
       "choices": [
-        "Naproxen 250 mg + PPI",
-        "Naproxen 500 mg + antacid gel",
-        "เปลี่ยนเป็น celecoxib",
-        "จ่าย methotrexate",
-        "เพิ่มขนาดยา เป็น naproxen 500 mg 1x3 pc"
+        "ให้ Naproxen 250 mg รับประทานร่วมกับ PPI",
+        "ให้ Naproxen 500 mg รับประทานร่วมกับ antacid gel",
+        "เปลี่ยนยาเป็น celecoxib 200 mg รับประทานวันละ 1 ครั้ง",
+        "จ่ายยา methotrexate เพิ่มเพื่อบรรเทาอาการปวด",
+        "เพิ่มขนาดยาเป็น Naproxen 500 mg รับประทานวันละ 3 ครั้ง"
       ],
-      "answer": 3,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. เปลี่ยนเป็น celecoxib<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เมื่อผู้ป่วยจำเป็นต้องใช้ยาแก้ปวดลดการอักเสบแต่เกิดปัญหาทางเดินอาหารจาก non-selective NSAID การเปลี่ยนเป็น COX-2 selective inhibitor เช่น celecoxib (หรือการให้ non-selective NSAID คู่กับ PPI) เป็นแนวทางที่มีหลักฐานเชิงประจักษ์ชัดเจนในการลดพิษต่อระบบทางเดินอาหารส่วนบน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: การลดขนาดยาลงเป็น naproxen 250 mg เคยพิสูจน์แล้วว่าควบคุมอาการปวดของผู้ป่วยไม่ได้<br>• ข้อ ข.: Antacid gel ให้ผลเพียงบรรเทากรดชั่วคราว ไม่สามารถรักษาและป้องกันแผลในกระเพาะอาหารจาก NSAID ในระยะยาวได้<br>• ข้อ ง.: แม้ methotrexate จะเป็น DMARDs หลักสำหรับ rheumatoid arthritis แต่ออกฤทธิ์ช้า (ใช้เวลา 4-12 สัปดาห์) ไม่สามารถแก้ปัญหาอาการแสบยอดอกจาก naproxen ในทันทีได้<br>• ข้อ จ.: การเพิ่มขนาดยา naproxen จะยิ่งทำให้การระคายเคืองและแผลในกระเพาะอาหารรุนแรงจนเสี่ยงต่อ GI bleeding",
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. ให้ Naproxen 250 mg รับประทานร่วมกับ PPI<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ผู้ป่วยมีอาการระคายเคืองทางเดินอาหารจาก Naproxen และมีโรคร่วม Ischemic heart disease (High CV risk) ตามแนวทางเวชปฏิบัติของ ACG และ AHA/ACC หากจำเป็นต้องใช้ NSAIDs ในผู้ป่วยที่มีความเสี่ยงต่อระบบหัวใจและหลอดเลือดสูง ควรเลือกใช้ Naproxen ซึ่งมีความปลอดภัยต่อระบบหัวใจและหลอดเลือดมากกว่า และต้องให้ร่วมกับ Proton Pump Inhibitor (PPI) เพื่อป้องกันและรักษาภาวะแทรกซ้อนต่อทางเดินอาหาร<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Antacid gel ออกฤทธิ์ลดกรดเพียงชั่วคราว ไม่สามารถป้องกันการเกิดแผลในทางเดินอาหารจาก NSAIDs ได้ และการเพิ่มขนาดยา Naproxen จะยิ่งเพิ่มความเป็นพิษต่อกระเพาะอาหาร<br>• ข้อ ค.: Celecoxib มีความสัมพันธ์กับการเพิ่มความเสี่ยงของ thrombotic cardiovascular events จึงควรหลีกเลี่ยงในผู้ป่วยที่มีประวัติ Ischemic heart disease<br>• ข้อ ง.: Methotrexate เป็นยากลุ่ม csDMARDs ที่มี onset ช้า (4-12 สัปดาห์) ไม่มีฤทธิ์ลดกรดหรือบรรเทาอาการแสบร้อนยอดอกที่เกิดขึ้นเฉียบพลัน<br>• ข้อ จ.: การเพิ่มขนาดยา Naproxen จะยิ่งเพิ่มความเสี่ยงต่อการเกิดแผลและภาวะเลือดออกในทางเดินอาหาร (GI bleeding)",
       "answerImage": "",
       "note": "[SOURCE: Pharma Plus เล่มม่วง 2 - ข้อสอบย้อนหลัง PLE-CC1 ปี 2564 วันที่ 1 ข้อ 40]",
       "examType": "ข้อสอบจริง",
-      "examYear": "2564",
-      "caseGroupId": "CASE_2564_RA_01",
-      "caseOrder": 2,
+      "examYear": "2564.0",
+      "caseGroupId": "CASE-RA-01",
+      "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 2
+      "caseTotal": 1
     },
     {
       "id": "1. Musculoskeleton::233",
@@ -8824,12 +8824,12 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "itemNo": 303,
       "category": "1. Musculoskeleton",
       "topic": "Musculoskeletal",
-      "subtopic": "Gout & Colchicine Adverse Effects",
+      "subtopic": "Gout",
       "track": "Clinic",
       "caseContext": "ผู้ป่วยชายไทยคู่ อายุ 52 ปี มาพบแพทย์ด้วยอาการปวดบวมแดงร้อนอย่างเฉียบพลันที่บริเวณข้อนิ้วหัวแม่เท้าข้างขวา (1st MTP joint) ตรวจพบระดับกรดยูริกในเลือด (Serum Uric Acid) เท่ากับ 11 mg/dL ได้รับการวินิจฉัยเป็น Acute Gouty Arthritis และได้รับยา Colchicine",
       "caseStem": "ผู้ป่วยชายไทยคู่ อายุ 52 ปี มาพบแพทย์ด้วยอาการปวดบวมแดงร้อนอย่างเฉียบพลันที่บริเวณข้อนิ้วหัวแม่เท้าข้างขวา (1st MTP joint) ตรวจพบระดับกรดยูริกในเลือด (Serum Uric Acid) เท่ากับ 11 mg/dL ได้รับการวินิจฉัยเป็น Acute Gouty Arthritis และได้รับยา Colchicine",
       "question": "อาการไม่พึงประสงค์จากการใช้ยา (ADR) ในข้อใดเป็นอาการแสดงของพิษต่อระบบทางเดินอาหารที่พบได้บ่อยที่สุดเมื่อได้รับยา Colchicine ขนาดสูง",
-      "questionImage": "images/cc1_product/image127.png",
+      "questionImage": "",
       "choices": [
         "Stevens-Johnson Syndrome (SJS)",
         "Nephrotic syndrome",
@@ -8840,7 +8840,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "answer": 4,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. อาการท้องเสียถ่ายเหลว คลื่นไส้ และปวดเกร็งท้อง (Diarrhea and abdominal cramping)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Colchicine มีกลไกยับยั้งการรวมตัวของ Tubulin (Tubulin polymerization inhibition) ซึ่งส่งผลกระทบต่อเซลล์ที่มีอัตราการแบ่งตัวอย่างรวดเร็ว โดยเฉพาะเซลล์เยื่อบุผิวทางเดินอาหาร (Gastrointestinal epithelium) ทำให้เกิดอาการข้างเคียงต่อระบบทางเดินอาหาร ได้แก่ ท้องเสีย คลื่นไส้ อาเจียน และปวดท้อง ซึ่งพบได้บ่อยที่สุด (มากถึง 80% ในขนาดรักษาแบบเดิม) และเป็นสัญญาณเตือนแรกเริ่มของภาวะพิษจากยา Colchicine<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ผิดเพราะ: SJS เป็นอาการแพ้ยาทางผิวหนังรุนแรงที่สัมพันธ์กับยา Allopurinol ไม่ใช่ Colchicine<br>• ข้อ ข. ผิดเพราะ: Nephrotic syndrome ไม่ใช่อาการข้างเคียงทั่วไปของ Colchicine<br>• ข้อ ค. ผิดเพราะ: อาการปวดศีรษะไม่ใช่ผลข้างเคียงเด่นของ Colchicine<br>• ข้อ จ. ผิดเพราะ: Colchicine ไม่มีฤทธิ์กดประสาทส่วนกลางหรือง่วงซึม",
       "answerImage": "",
-      "note": "ข้อสอบจริง PLE-CC1 ปี 2566 Day 1 ข้อ 60 [CASE_2566_GOUT_01]",
+      "note": "ข้อสอบจริง PLE-CC1 ปี 2566 Day 1 ข้อ 60 [CASE_2566_GOUT_01] [CASE: CASE_2566_GOUT_01_Q1]",
       "examType": "ข้อสอบจริง",
       "examYear": "2566 Day 1",
       "caseGroupId": "CASE_2566_GOUT_01",
@@ -9045,6 +9045,34 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "note": "ข้อ 21 (PLE_CC1_2561_Key.md) [ย้ายจาก 6. Solid Dosage Forms::78]",
       "examType": "ข้อสอบจริง",
       "examYear": "2561.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
+    },
+    {
+      "id": "1. Musculoskeleton::313",
+      "itemNo": 311,
+      "category": "1. Musculoskeleton",
+      "topic": "Product Group 5: Liquid Dosage Forms",
+      "subtopic": "5.1 Pharmaceutical Calculations",
+      "track": "Clinic",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "จากสูตรตำรับ $\text{Ferrous sulfate}$ 5 mL (1 ช้อนชา) มีปริมาณธาตุเหล็กองค์ประกอบ ($\text{elementary iron}$) อยู่ 20% ของตัวยาสำคัญ $\text{ferrous sulfate}$ โดยกำหนดให้ $\text{ferrous sulfate}$ ความเข้มข้น $300\text{ mg/5 mL}$ จะให้ $\text{elementary iron}$ ปริมาณเท่าใด",
+      "questionImage": "",
+      "choices": [
+        "20 mg",
+        "30 mg",
+        "60 mg",
+        "100 mg",
+        "200 mg"
+      ],
+      "answer": 3,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. 60 mg<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>จากสูตร $\text{Ferrous sulfate}$ ความเข้มข้น $300\text{ mg}$ ใน 5 mL (1 ช้อนชา) และมี $\text{elementary iron}$ อยู่ 20% ดังนั้นการคำนวณหาปริมาณธาตุเหล็กองค์ประกอบคือ $300\text{ mg} \times 0.20 = 60\text{ mg}$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. 20 mg: เป็นการคำนวณผิดพลาดจากการใช้สัดส่วนเปอร์เซ็นต์ที่ไม่ถูกต้อง<br>• ข้อ ข. 30 mg: เป็นการคำนวณที่ให้ค่าคลาดเคลื่อนจากการคิดความเข้มข้นตัวยาผิดพลาด<br>• ข้อ ง. 100 mg: เป็นค่าปริมาณสมมติที่ไม่สอดคล้องกับความเข้มข้นและสัดส่วนของเกลือเหล็กในตำรับมาตรฐาน<br>• ข้อ จ. 200 mg: เกินกว่าปริมาณตัวยาทั้งหมดที่มีอยู่ใน 1 ช้อนชา ($300\text{ mg}$) จึงเป็นไปไม่ได้",
+      "answerImage": "",
+      "note": "ข้อ 6 (PLE_CC1_2554 SET2.md) [ย้ายจาก 6. Hematologic::58]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2554.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -19723,6 +19751,34 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Creams<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Creams: สูตรตำรับที่มีส่วนผสมของ Cetostearyl alcohol, Sodium lauryl sulphate, White soft paraffin, Liquid paraffin และ Purified water จัดเป็นระบบอิมัลชันกึ่งแข็งชนิดน้ำมันในน้ำหรือน้ำในน้ำมัน (Emulsion base) ที่ให้เนื้อสัมผัสแบบครีม เกลี่ยง่าย ล้างออกด้วยน้ำได้ดี เหมาะสำหรับยาทาภายนอกเช่น acyclovir cream<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Lotions): โลชั่น (Lotions) เป็นรูปแบบของเหลวหรือกึ่งเหลวที่มีความหนืดต่ำกว่าครีม มีน้ำเป็นส่วนประกอบหลักเพื่อการทาในบริเวณกว้าง<br>• ข้อ ข. (Ointments): ขี้ผึ้ง (Ointments) มีเบสเป็นไขมันไฮโดรคาร์บอนล้วน เช่น white petrolatum ไม่มีน้ำเป็นส่วนประกอบหลัก ให้ความชุ่มชื้นสูงและมีความเหนียวหนืดมาก<br>• ข้อ ง. (Pastes): ยาพอก (Pastes) มีส่วนประกอบของผงยาแขวนตะกอนในปริมาณสูงมาก (มักเกินร้อยละ 20) ทำให้มีความคงตัวและหนาแน่นสูงเพื่อใช้ปกป้องผิวหนัง<br>• ข้อ จ. (Gels): เจล (Gels) เป็นระบบกึ่งแข็งที่ใช้ gelling agent เช่นcarbomers, cellulose derivatives กระจายตัวในของเหลว ไม่ได้ใช้เบสที่เป็นอิมัลชันน้ำมันและแวกซ์",
       "answerImage": "",
       "note": "ข้อ 8 Pharma Plus เล่มม่วง (เฉลยข้อ จ) [ย้ายจาก 8. Infectious diseases::94]",
+      "examType": "แบบฝึกหัด",
+      "examYear": "เล่มม่วง",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
+    },
+    {
+      "id": "3. Dermatologic::173",
+      "itemNo": 171,
+      "category": "3. Dermatologic",
+      "topic": "Product Group 3: Pharmaceutical Calculations",
+      "subtopic": "3.1 Concentration & Dosages Calculations",
+      "track": "Clinic",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "4% w/v Ferrous sulfate จำนวน 1 mL จะมีปริมาณ elemental iron เท่ากับกี่มิลลิกรัม (กำหนดให้ Fe = 56, S = 32, O = 16, H = 1)",
+      "questionImage": "",
+      "choices": [
+        "7.37 mg",
+        "14.74 mg",
+        "29.48 mg",
+        "40.00 mg",
+        "56.00 mg"
+      ],
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 14.74 mg<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Ferrous sulfate ในรูป anhydrous มีสูตรโมเลกุล $FeSO_4$ มีน้ำหนักโมเลกุลเท่ากับ $56 + 32 + (16 \times 4) = 152$ g/mol โดยยาสูตรตำรับ 4% w/v หมายถึงมีสาร $4 \text{ g}$ หรือ $4000 \text{ mg}$ ใน $100 \text{ mL}$ ดังนั้นใน $1 \text{ mL}$ จะมี $40 \text{ mg}$ ของ $FeSO_4$ ปริมาณ elemental iron คำนวณได้จาก $_x000c_rac{56}{152} \times 40 \text{ mg} = 14.74 \text{ mg}$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. 7.37 mg: เป็นการคำนวณที่ผิดพลาดโดยใช้อัตราส่วนโมเลกุลหารด้วยสองหรือใช้สูตรเกลือเฮปตาไฮเดรตที่ไม่ตรงกับโจทย์<br>• ข้อ ค. 29.48 mg: เป็นค่าที่คำนวณเกินความเป็นจริงโดยคิดสัดส่วนธาตุเหล็กผิดพลาดหรือใช้ปริมาตร 2 mL<br>• ข้อ ง. 40.00 mg: เป็นปริมาณของเกลือ $FeSO_4$ ทั้งหมดใน 1 mL ยังไม่ได้คูณสัดส่วนน้ำหนักอะตอมของ elemental iron<br>• ข้อ จ. 56.00 mg: เป็นค่าน้ำหนักอะตอมของธาตุเหล็ก (Fe) โดยตรง ไม่ได้นำไปคำนวณสัดส่วนตามความเข้มข้นและน้ำหนักโมเลกุลของเกลือ",
+      "answerImage": "",
+      "note": "แบบฝึกหัด PLE-CC 1 ข้อ 59 [ย้ายจาก 6. Hematologic::42]",
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "",
@@ -31557,6 +31613,34 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseOrder": 1,
       "caseType": "",
       "caseTotal": 1
+    },
+    {
+      "id": "5. Gastrointestinal::235",
+      "itemNo": 233,
+      "category": "5. Gastrointestinal",
+      "topic": "5. Research & Biostats",
+      "subtopic": "5.2 สถิติวิเคราะห์และชีวสถิติ",
+      "track": "Clinic",
+      "caseContext": "การศึกษาในผู้ป่วย 500 คนที่สงสัยว่าป่วยเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb) ของผู้ป่วยและแบ่งกลุ่มผู้ป่วยตามเพศเพื่อศึกษาระดับ Hb ที่แตกต่างกันในเพศชายและหญิง",
+      "caseStem": "การศึกษาในผู้ป่วย 500 คนที่สงสัยว่าป่วยเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb) ของผู้ป่วยและแบ่งกลุ่มผู้ป่วยตามเพศเพื่อศึกษาระดับ Hb ที่แตกต่างกันในเพศชายและหญิง",
+      "question": "ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับชนิดของตัวแปรและการเลือกใช้การวิเคราะห์ทางสถิติ",
+      "questionImage": "",
+      "choices": [
+        "Hb เป็นตัวแปรเชิงกลุ่ม (categorical variable) เสมอ จึงควรใช้ Chi-square test ในการเปรียบเทียบระหว่างเพศ",
+        "Hb เป็นตัวแปรเชิงจำนวน (continuous variable) และควรใช้ Paired-T test ในการเปรียบเทียบระหว่างเพศ",
+        "หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการศึกษาความสัมพันธ์ระหว่างเพศ",
+        "Hb เป็นข้อมูลเชิงจำนวน แต่ควรใช้ Mann-Whitney U Test ในการวิเคราะห์เนื่องจากข้อมูลทางชีววิทยามักไม่ปกติ",
+        "Hb เป็นตัวแปร ordinal เนื่องจากมีค่าจากต ่าไปสูง"
+      ],
+      "answer": 3,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการศึกษาความสัมพันธ์ระหว่างเพศ<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เมื่อมีการแปลงตัวแปรต่อเนื่อง (เช่น ระดับ Hemoglobin) ให้กลายเป็นตัวแปรกลุ่ม (categorical variable เช่น ภาวะซีดหรือไม่ซีด) ข้อมูลจะเปลี่ยนเป็นประเภท nominal หรือ ordinal ซึ่งสามารถนำมาวิเคราะห์ความสัมพันธ์โดยใช้ Chi-square test ได้อย่างถูกต้องตามหลักสถิติชีววิเคราะห์<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Hemoglobin เป็นข้อมูลต่อเนื่อง (continuous variable) โดยธรรมชาติ ไม่ใช่ตัวแปรเชิงกลุ่มเสมอไป<br>• ข้อ ข.: การเปรียบเทียบค่า Hb ระหว่างเพศชายและหญิงเป็นการศึกษาใน 2 กลุ่มประชากรที่เป็นอิสระต่อกัน จึงต้องใช้ Independent t-test ไม่ใช่ Paired t-test<br>• ข้อ ง.: ข้อมูลทางชีววิทยาในกลุ่มตัวอย่างขนาดใหญ่ มักอนุโลมใช้ Parametric test ได้ตาม Central Limit Theorem และไม่ได้บังคับใช้ Mann-Whitney U Test เสมอไป<br>• ข้อ จ.: Hemoglobin เป็นตัวแปรเชิงปริมาณแบบ Ratio scale ที่มีหน่วยวัดและจุดศูนย์แท้ ไม่ใช่ตัวแปรเชิงอันดับ (ordinal variable)",
+      "answerImage": "",
+      "note": "แบบฝึกหัด PLE-CC 1 ข้อ 65 [ย้ายจาก 6. Hematologic::44]",
+      "examType": "แบบฝึกหัด",
+      "examYear": "เล่มม่วง",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
     }
   ],
   "6. Hematologic": [
@@ -32687,7 +32771,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\n4%w/v Ferrous sulphate จำนวน 100 mg จะมีจำนวน elemental iron ที่ได้รับเท่ากับเท่าใด (กำหนดให้\nmolecular weight ของ Ferrous sulphate heptahydrate = 278, Iron = 56)",
+      "question": "[ย้ายไป 3. Dermatologic::173] of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\n4%w/v Ferrous sulphate จำนวน 100 mg จะมีจำนวน elemental iron ที่ได้รับเท่ากับเท่าใด (กำหนดให้\nmolecular weight ของ Ferrous sulphate heptahydrate = 278, Iron = 56)",
       "questionImage": "",
       "choices": [
         "Anemia",
@@ -32743,7 +32827,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\nการศึกษาในผู้ป่วย 500 คนที่สงสัยว่าป่วยเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb)\nของผู้ป่วยและแบ่งกลุ่มผู้ป่วยตามเพศเพื่อศึกษาระดับ Hb ที่แตกต่างกันในเพศชายและหญิง",
       "caseStem": "of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\nการศึกษาในผู้ป่วย 500 คนที่สงสัยว่าป่วยเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb)\nของผู้ป่วยและแบ่งกลุ่มผู้ป่วยตามเพศเพื่อศึกษาระดับ Hb ที่แตกต่างกันในเพศชายและหญิง",
-      "question": "ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับชนิดของตัวแปรและการเลือกใช้การวิเคราะห์ทางสถิติ",
+      "question": "[ย้ายไป 5. Gastrointestinal::235] ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับชนิดของตัวแปรและการเลือกใช้การวิเคราะห์ทางสถิติ",
       "questionImage": "",
       "choices": [
         "Hb เป็นตัวแปรเชิงกลุ่ม (categorical variable) เสมอ จึงควรใช้ Chi-square test ในการเปรียบเทียบระหว่างเพศ",
@@ -32799,7 +32883,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "[ย้ายไป 1. Titrations::81] ให้สมการเคมีมาแล้วถามว่าเป็นการtitrate แบบใด ตัวเลือก(น่าจะเป็นCerium กับFerrous)",
+      "question": "[ย้ายไป 1. Titrations::82] [ย้ายไป 1. Titrations::81] ให้สมการเคมีมาแล้วถามว่าเป็นการtitrate แบบใด ตัวเลือก(น่าจะเป็นCerium กับFerrous)",
       "questionImage": "",
       "choices": [
         "Anemia",
@@ -32941,7 +33025,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "ข้อใดคือผลขางเคียงจากยา ferrous sulfate",
+      "question": "ข้อใดคืออาการไม่พึงประสงค์ที่พบบ่อยที่สุดจากการรับประทานยา ferrous sulfate",
       "questionImage": "",
       "choices": [
         "Diarrhea",
@@ -32950,12 +33034,12 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Constipation",
         "Hypokalemia"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Diarrhea<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก Diarrhea เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anemia โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Headache): อาการปวดศีรษะ (Headache) ไม่ใช่อาการข้างเคียงที่พบบ่อยหรือเป็นลักษณะเฉพาะของการรับประทานเกลือแร่ธาตุเหล็กเสริม<br>• ข้อ ค. (Tachycardia): ภาวะหัวใจเต้นเร็ว (Tachycardia) มักเป็นอาการแสดงของภาวะโลหิตจางจากการปรับตัวของระบบไหลเวียนโลหิต ไม่ใช่ผลข้างเคียงโดยตรงจากยา Ferrous sulfate<br>• ข้อ ง. (Constipation): อาการท้องผูก (Constipation) เป็นผลข้างเคียงที่พบได้บ่อยที่สุดจากการรับประทานยาธาตุเหล็ก เนื่องจากการรบกวนการบีบตัวของกล้ามเนื้อลำไส้<br>• ข้อ จ. (Hypokalemia): ภาวะโพแทสเซียมในเลือดต่ำ (Hypokalemia) ไม่ได้เกิดจากการใช้ยาธาตุเหล็ก แต่อาจพบได้ในช่วงแรกของการรักษาภาวะขาดวิตามินบี 12 จากการนำโพแทสเซียมไปใช้สร้างเม็ดเลือดใหม่อย่างรวดเร็ว",
+      "answer": 4,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Constipation<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>อาการท้องผูก (Constipation) เป็นผลข้างเคียงที่พบบ่อยที่สุดจากการใช้ยาเสริมธาตุเหล็ก (Ferrous sulfate) เกิดจากการที่ธาตุเหล็กทำให้เกิดการระคายเคืองทางเดินอาหารและลดการบีบตัวของลำไส้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Diarrhea): อาการท้องเสียไม่ใช่ผลข้างเคียงที่พบบ่อยที่สุดของธาตุเหล็ก แม้บางรายอาจพบอุจจาระดำหรือระคายเคืองได้<br>• ข้อ ข. (Headache): อาการปวดศีรษะไม่ใช่อาการข้างเคียงจำเพาะจากการรับประทานธาตุเหล็ก<br>• ข้อ ค. (Tachycardia): ภาวะหัวใจเต้นเร็วไม่ได้เกิดจากผลข้างเคียงโดยตรงของยาธาตุเหล็ก แต่เป็นอาการแสดงของภาวะโลหิตจาง<br>• ข้อ จ. (Hypokalemia): ภาวะโพแทสเซียมในเลือดต่ำไม่เกี่ยวข้องกับการใช้ยา ferrous sulfate",
       "answerImage": "",
       "note": "ข้อ 14 (PLE_CC1_2561_Key.md)",
       "examType": "ข้อสอบจริง",
-      "examYear": "2561",
+      "examYear": "2561.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -32997,7 +33081,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "[ย้ายไป 13. Medicinal Chemistry::153] การสังเคราะห์ HCTZ จงระบุว่า A คือข้อใด",
+      "question": "[ย้ายไป 13. Medicinal Chemistry::159] [ย้ายไป 13. Medicinal Chemistry::153] การสังเคราะห์ HCTZ จงระบุว่า A คือข้อใด",
       "questionImage": "",
       "choices": [
         "H-CO-H",
@@ -33025,7 +33109,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "Ferrous sulfate กระปุกละ 100 เม็ด เป็นยาประเภทใด",
+      "question": "[ย้ายไป 1. Pharmacy Laws & Ethics::243] Ferrous sulfate กระปุกละ 100 เม็ด เป็นยาประเภทใด",
       "questionImage": "",
       "choices": [
         "ยาเสพติดให้โทษ ประเภทที่ 3",
@@ -33081,7 +33165,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "จากโครงสร้างของยา HCTZ สามารถวิเคราะห์หาหมู่โครงสร้างได้โดยวิธีการใด",
+      "question": "[ย้ายไป 13. Medicinal Chemistry::160] จากโครงสร้างของยา HCTZ สามารถวิเคราะห์หาหมู่โครงสร้างได้โดยวิธีการใด",
       "questionImage": "images/pubchem/hydrochlorothiazide.png",
       "choices": [
         "Finger print จาก FTIR",
@@ -33137,7 +33221,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "จากสูตรนั่น ถ้า FeSo4มี elementary iron 20% ให้ยา 1 ช้อนชา จะได้ elementary iron เท่าไหร่ elementary iron 20% หมายถึง ferrous sulfate 100 mg จะให้ elemental iron 20 mg ดังนั้น ferrous sulfate 12.5 mg จะให้ elemental iron (2012.5)/100 = 2.5mg แสดงว่า 100 ml จะให้ elemental iron 2.5 mg ถ้า 5 ml จะให้ elemental iron 0.125 mg",
+      "question": "[ย้ายไป 1. Musculoskeleton::313] จากสูตรนั่น ถ้า FeSo4มี elementary iron 20% ให้ยา 1 ช้อนชา จะได้ elementary iron เท่าไหร่ elementary iron 20% หมายถึง ferrous sulfate 100 mg จะให้ elemental iron 20 mg ดังนั้น ferrous sulfate 12.5 mg จะให้ elemental iron (2012.5)/100 = 2.5mg แสดงว่า 100 ml จะให้ elemental iron 2.5 mg ถ้า 5 ml จะให้ elemental iron 0.125 mg",
       "questionImage": "",
       "choices": [
         "Vitamin C 500 mg OD",
@@ -36713,12 +36797,12 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "choices": [
         "Td (Purified diphtheria toxoid 1-2 Lf และ Purified tetanus toxoid 5-10 Lf) 1 เข็มเข้ากล้าม",
         "Td (Purified diphtheria toxoid 1-2 Lf และ Purified tetanus toxoid 5-10 Lf) ฉีดเข้ากล้าม 3 ครั้งวันที่ 0, 1 เดือน, 6 เดือน",
-        "DT (Purified diphtheria toxoid 25-30 Lf และ Purified tetanus toxoid 5-10 Lf) เข็มเข้ากล้าม",
-        "DT (Purified diphtheria toxoid 25-30 Lf และ Purified tetanus toxoid 5-10 Lf) เข็มเข้ากล้าม 3 ครั้ง วันที่ 0, 1 เดือน, 6 เดือน",
+        "DT (Purified diphtheria toxoid 25-30 Lf และ Purified tetanus toxoid 5-10 Lf) 1 เข็มเข้ากล้าม",
+        "DT (Purified diphtheria toxoid 25-30 Lf และ Purified tetanus toxoid 5-10 Lf) ฉีดเข้ากล้าม 3 ครั้ง วันที่ 0, 1 เดือน, 6 เดือน",
         "DTw (diphtheria, tetanus toxoids, whole-cell pertussis vaccines) ฉีดเข้ากล้าม วันที่ 0, 1 เดือน, 6 เดือน"
       ],
-      "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Td (Purified diphtheria toxoid 1-2 Lf และ Purified tetanus toxoid 5-10 Lf) ฉีดเข้ากล้าม 3 ครั้งวันที่ 0, 1 เดือน, 6 เดือน<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเฉลยทางการของแบบทดสอบชุดนี้เลือกข้อ ข. ซึ่งใช้วัคซีนสูตร Td (Tetanus-diphtheria toxoid สำหรับผู้ใหญ่ที่มีปริมาณ Diphtheria toxoid ลดลงเหลือ 1-2 Lf เพื่อลดปฏิกิริยาข้างเคียง) อย่างไรก็ตาม ในแนวทางเวชปฏิบัติสากลปัจจุบัน หากผู้ป่วยเคยได้รับวัคซีนครบ 3 เข็มมาก่อนแล้ว การมีแผลเสี่ยงต่อบาดทะยักเมื่อเกิน 5 ปี จะให้วัคซีนกระตุ้นเพียง 1 เข็ม (Booster dose) เท่านั้น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Td 1 เข็ม เป็นแนวทางปฏิบัติมาตรฐานสากล แต่แบบทดสอบทางการชุดนี้เฉลยข้อ ข.<br>• ข้อ ค.: DT มีปริมาณ Diphtheria toxoid สูง (25-30 Lf) สำหรับเด็กอายุต่ำกว่า 7 ปี หากนำมาใช้ในผู้ใหญ่จะทำให้เกิดปฏิกิริยาบวมแดงปวดเฉพาะที่และไข้สูงรุนแรง (Arthus-type reaction)<br>• ข้อ ง.: DT ไม่เหมาะสำหรับผู้ใหญ่และไม่ควรฉีดซ้ำซ้อน<br>• ข้อ จ.: DTw เป็นวัคซีนรวมที่มีส่วนประกอบของเชื้อไอกรนชนิดทั้งเซลล์ (Whole-cell pertussis) ซึ่งมีข้อห้ามใช้ในผู้ใหญ่เนื่องจากก่อปฏิกิริยาข้างเคียงทางระบบประสาทและไข้สูงรุนแรง",
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Td (Purified diphtheria toxoid 1-2 Lf และ Purified tetanus toxoid 5-10 Lf) 1 เข็มเข้ากล้าม<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามแนวทางเวชปฏิบัติสากล (CDC/ACIP) และกระทรวงสาธารณสุขไทย สำหรับผู้ป่วยที่มีแผลสกปรกเสี่ยงต่อบาดทะยัก (Dirty/Contaminated wound) หากมีประวัติได้รับวัคซีนป้องกันบาดทะยักครบชุด $\\ge 3$ ครั้ง และได้รับเข็มสุดท้ายเกิน 5 ปี ให้ฉีดวัคซีนกระตุ้น (Booster dose) เพียง 1 เข็มเท่านั้น โดยในผู้ใหญ่ต้องใช้สูตร Td ซึ่งลดปริมาณ Diphtheria toxoid ลงเหลือ 1-2 Lf เพื่อป้องกันการเกิดปฏิกิริยาไม่พึงประสงค์เฉพาะที่รุนแรง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: การฉีด 3 ครั้ง (0, 1, 6 เดือน) แนะนำสำหรับผู้ที่ไม่เคยได้รับวัคซีนมาก่อน ฉีดไม่ครบ 3 ครั้ง หรือจำประวัติไม่ได้เท่านั้น<br>• ข้อ ค.: DT มีปริมาณ Diphtheria toxoid สูง (25-30 Lf) เหมาะสำหรับเด็กอายุต่ำกว่า 7 ปี หากนำมาใช้ในผู้ใหญ่จะก่อให้เกิดปฏิกิริยาบวมแดงปวดรุนแรง (Arthus-type reaction) และมีไข้สูง<br>• ข้อ ง.: DT ไม่เหมาะสมสำหรับผู้ใหญ่อายุ 45 ปี และไม่จำเป็นต้องฉีด 3 เข็มในผู้ที่มีประวัติครบชุด<br>• ข้อ จ.: DTw เป็นวัคซีนชนิด Whole-cell pertussis สำหรับเด็กเล็ก มีข้อห้ามใช้ในผู้ใหญ่เนื่องจากกระตุ้นให้เกิดผลข้างเคียงทางระบบประสาทและไข้สูงรุนแรง",
       "answerImage": "",
       "note": "[RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์]",
       "examType": "ข้อสอบจำลอง",
@@ -81553,6 +81637,34 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
+    },
+    {
+      "id": "1. Titrations::82",
+      "itemNo": 80,
+      "category": "1. Titrations",
+      "topic": "1. Pharmaceutical Analysis",
+      "subtopic": "1.1 Titrations and Volumetric Analysis",
+      "track": "Product",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "ปฏิกิริยาการไทเทรตระหว่าง Cerium(IV) และ Ferrous ion จัดเป็นการไทเทรตประเภทใด",
+      "questionImage": "",
+      "choices": [
+        "Acid-Base Titration",
+        "Precipitation Titration",
+        "Complexometric Titration",
+        "Redox Titration",
+        "Non-aqueous Titration"
+      ],
+      "answer": 4,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Redox Titration<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การไทเทรตระหว่าง Cerium(IV) ซึ่งเป็นสารออกซิไดซ์ และ Ferrous ion ($Fe^{2+}$) ซึ่งเป็นสารรีดิวซ์ เกี่ยวข้องกับการถ่ายโอนอิเล็กตรอน จึงจัดเป็นการไทเทรตแบบรีดอกซ์ (Redox Titration หรือ Oxidation-Reduction Titration)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Acid-Base Titration): เป็นการไทเทรตที่อาศัยปฏิกิริยาระหว่างกรดและเบส ไม่ใช่การถ่ายโอนอิเล็กตรอน<br>• ข้อ ข. (Precipitation Titration): เป็นการไทเทรตที่เกิดตะกอน เช่น การวิเคราะห์ไอออนของฮาไลด์ด้วยซิลเวอร์ไนเตรต<br>• ข้อ ค. (Complexometric Titration): เป็นการไทเทรตที่เกิดสารประกอบเชิงซ้อน เช่น การใช้ EDTA วิเคราะห์ไอออนของโลหะ<br>• ข้อ จ. (Non-aqueous Titration): เป็นการไทเทรตในตัวทำละลายที่ไม่ใช่น้ำ สำหรับสารที่มีสมบัติเป็นกรดหรือเบสอ่อนมากที่ไม่สามารถไทเทรตในน้ำได้",
+      "answerImage": "",
+      "note": "PLE-CC1 ปี 2566 Day 1 ข้อ 24 [ย้ายจาก 6. Hematologic::46]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2566.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
     }
   ],
   "2. Chromatography": [
@@ -86257,7 +86369,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "จากโครงสร้างทางเคมี L-dopa ถูกเปลี่ยนเป็น dopamine ในร่างกายด้วยปฏิกิริยาใด",
+      "question": "[ย้ายไป 13. Medicinal Chemistry::158] จากโครงสร้างทางเคมี L-dopa ถูกเปลี่ยนเป็น dopamine ในร่างกายด้วยปฏิกิริยาใด",
       "questionImage": "images/pubchem/ldopa_to_dopamine.png",
       "choices": [
         "Decarboxylation",
@@ -86621,7 +86733,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "ชายอายุ 28 ปี มาขอซื้อยา Tramadol capsules เพื่อบรรเทาอาการปวดจากโรคประจำตัวและแจ้งว่าต้องการพกติดตัวไปต่างประเทศ เภสัชกรจึงจ่ายยาให้ไปจำนวน 30 เม็ด พร้อมเขียนฉลากระบุข้อบ่งใช้ วิธีบริหารยา และข้อควรระวังครบถ้วน",
       "caseStem": "ชายอายุ 28 ปี มาขอซื้อยา Tramadol capsules เพื่อบรรเทาอาการปวดจากโรคประจำตัวและแจ้งว่าต้องการพกติดตัวไปต่างประเทศ เภสัชกรจึงจ่ายยาให้ไปจำนวน 30 เม็ด พร้อมเขียนฉลากระบุข้อบ่งใช้ วิธีบริหารยา และข้อควรระวังครบถ้วน",
-      "question": "จากสถานการณ์ดังกล่าวข้อใดสรุปถูกต้องตามกฎหมายและจรรยาบรรณวิชาชีพเภสัชกรรม",
+      "question": "[ย้ายไป 1. Pharmacy Laws & Ethics::242] จากสถานการณ์ดังกล่าวข้อใดสรุปถูกต้องตามกฎหมายและจรรยาบรรณวิชาชีพเภสัชกรรม",
       "questionImage": "",
       "choices": [
         "สามารถขายได้ ไม่ผิดกฎหมาย และผิดจรรยาบรรณ",
@@ -86794,7 +86906,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "choices": [
         "Benzyl alcohol",
         "Amylmetacresol",
-        "Benzocaine (ยาชาลงท้ายด้วย -caine)",
+        "Benzocaine",
         "Dichlorobenzyl alcohol",
         "Menthol"
       ],
@@ -86803,7 +86915,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "answerImage": "",
       "note": "ข้อสอบจริง Product ปี 2566 ข้อ 32",
       "examType": "ข้อสอบจริง",
-      "examYear": "2566",
+      "examYear": "2566.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -106693,21 +106805,21 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "จากบัญชียาหลักแห่งชาติ ยาสมุนไพรใดสามารถใช้แทน clotrimazole cream ได้",
+      "question": "จากบัญชียาหลักแห่งชาติ ยาสมุนไพรใดสามารถใช้แทน clotrimazole cream ในการรักษาโรคติดเชื้อราที่ผิวหนัง",
       "questionImage": "",
       "choices": [
         "ยาครีมบัวบก",
         "ยาทิงเจอร์ทองพันชั่ง",
         "ยาโลชั่นไพล",
         "ยาเปลือกมังคุด",
-        "ยาขี ผึ งเสลดพังพอน"
+        "ยาขีผึ้งเสลดพังพอน"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. ยาครีมบัวบก<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก ยาครีมบัวบก เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Creams & Ointments โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br>USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Creams & Ointments)<br><br>🔍<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: (ยาทิงเจอร์ทองพันชั่ง): ยาทิงเจอร์ทองพันชั่ง ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค.: (ยาโลชั่นไพล): ยาโลชั่นไพล ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง.: (ยาเปลือกมังคุด): ยาเปลือกมังคุด ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ.: (ยาขี ผึ งเสลดพังพอน): ยาขี ผึ งเสลดพังพอน ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. ยาทิงเจอร์ทองพันชั่ง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาทิงเจอร์ทองพันชั่ง (Rhinacanthus nasutus) จัดอยู่ในบัญชียาหลักแห่งชาติ ด้านยาสมุนไพร มีฤทธิ์ต้านเชื้อรา (antifungal activity) จึงใช้เป็นทางเลือกในการรักษาโรคกลาก เกลื้อน และเชื้อราที่ผิวหนังแทนยาล้อมกลุ่ม azole เช่น clotrimazole cream ได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ยาครีมบัวบก ใช้สำหรับสมานแผลและลดการอักเสบ ไม่ได้มีข้อบ่งใช้หลักในการรักษาเชื้อราผิวหนัง<br>• ข้อ ค.: ยาโลชั่นไพล ใช้สำหรับบรรเทาอาการปวดเมื่อยกล้ามเนื้อและอักเสบ<br>• ข้อ ง.: ยาเปลือกมังคุด มักใช้สมานแผลหรือรักษาอาการท้องเสีย ไม่มีข้อบ่งใช้หลักเป็นยาทาแก้เชื้อราในรูปแบบทดแทน clotrimazole<br>• ข้อ จ.: ยาขีผึ้งเสลดพังพอน ใช้สำหรับบรรเทาอาการแมลงสัตว์กัดต่อยและผื่นคันจากลมพิษ",
       "answerImage": "",
       "note": "ข้อ 8 (PLE_CC1_2560 22 April Set 1.md)",
       "examType": "ข้อสอบจริง",
-      "examYear": "2560",
+      "examYear": "2560.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -128299,6 +128411,90 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
+    },
+    {
+      "id": "13. Medicinal Chemistry::158",
+      "itemNo": 155,
+      "category": "13. Medicinal Chemistry",
+      "topic": "13. Medicinal Chemistry",
+      "subtopic": "13.1 Drug Metabolism and Pharmacokinetics",
+      "track": "Product",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "จากโครงสร้างทางเคมี L-dopa ถูกเปลี่ยนเป็น dopamine ในร่างกายด้วยปฏิกิริยาใด",
+      "questionImage": "",
+      "choices": [
+        "Decarboxylation",
+        "Demethylation",
+        "Deamination",
+        "Hydrolysis",
+        "Oxidation"
+      ],
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Decarboxylation<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ข้อ ก. ถูกต้อง เพราะปฏิกิริยา Decarboxylation คือการดึงหมู่คาร์บอกซิล (COOH) ออกจากโครงสร้าง L-dopa โดยเอนไซม์ aromatic L-amino acid decarboxylase (AADC) ทำให้ได้โมเลกุล Dopamine ซึ่งเกิดขึ้นทั้งในระบบประสาทส่วนกลางและเนื้อเยื่อส่วนปลาย<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Demethylation): เป็นการตัดหมู่เมทิล (-CH3) ออกจากโมเลกุล เช่น ปฏิกิริยา O-demethylation หรือ N-demethylation ไม่ใช่ปฏิกิริยาเปลี่ยน L-dopa เป็น dopamine<br>• ข้อ ค. (Deamination): เป็นการตัดหมู่อะมิโน (-NH2) ออกจากโครงสร้าง เช่น ปฏิกิริยา Oxidative deamination โดยเอนไซม์ MAO ซึ่งทำหน้าที่ทำลาย dopamine ต่อไป<br>• ข้อ ง. (Hydrolysis): เป็นการสลายพันธะด้วยน้ำ เช่น พันธะเอสเทอร์หรือเอไมด์ ไม่เกี่ยวข้องกับการเปลี่ยน L-dopa เป็น dopamine<br>• ข้อ จ. (Oxidation): เป็นปฏิกิริยาการสูญเสียอิเล็กตรอนหรือเพิ่มออกซิเจน ไม่ใช่ปฏิกิริยาหลักในการสร้าง dopamine จาก L-dopa",
+      "answerImage": "",
+      "note": "ข้อสอบเตรียมสอบเภสัช [ย้ายจาก 4. Preformulation & GMP::6]",
+      "examType": "แบบฝึกหัด",
+      "examYear": "เล่มม่วง",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
+    },
+    {
+      "id": "13. Medicinal Chemistry::159",
+      "itemNo": 156,
+      "category": "13. Medicinal Chemistry",
+      "topic": "Product Group 1: Medicinal Chemistry",
+      "subtopic": "13.1 Drug Synthesis and Structure",
+      "track": "Product",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "การสังเคราะห์ Hydrochlorothiazide (HCTZ) จากสารตั้งต้น 4-chloro-6-sulfamoylaniline ปฏิกิริยาการปิดวงแหวน (cyclization) นิยมใช้สารตั้งต้น A ใดในการทำปฏิกิริยาควบแน่น",
+      "questionImage": "",
+      "choices": [
+        "Formaldehyde",
+        "Formic acid",
+        "Phosgene",
+        "Acetaldehyde",
+        "Carbon dioxide"
+      ],
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Formaldehyde<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การสังเคราะห์ยาในกลุ่ม Thiazide เช่น Hydrochlorothiazide อาศัยปฏิกิริยาการควบแน่นระหว่าง 4-chloro-6-sulfamoylaniline กับ Formaldehyde (H-CO-H) เพื่อปิดวงแหวน thiadiazine 1,1-dioxide ให้เป็นโครงสร้างหลักของยา<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Formic acid): Formic acid มีระดับออกซิเดชันสูงเกินไป ไม่ให้ผลิตภัณฑ์วงแหวนไตรอะซีนหรือไทอาไซด์ที่ต้องการในสภาวะการสังเคราะห์นี้<br>• ข้อ ค. (Phosgene): Phosgene ให้หมู่คาร์บอนิลซึ่งจะให้ผลิตภัณฑ์เป็นอนุพันธ์ quinazolinone หรือสารอื่นที่ไม่ใช่ thiazide core<br>• ข้อ ง. (Acetaldehyde): Acetaldehyde จะให้สารตั้งต้นที่มีการต่อหมู่เมทิลเพิ่มที่ตำแหน่ง C2 ซึ่งไม่ใช่โครงสร้างของ Hydrochlorothiazide<br>• ข้อ จ. (Carbon dioxide): Carbon dioxide ไม่ทำปฏิกิริยาควบแน่นเพื่อปิดวงแหวนในสภาวะการสังเคราะห์ดังกล่าว",
+      "answerImage": "",
+      "note": "ข้อ 7 (PLE_CC1_2560 22 April Set 2.md) [ย้ายจาก 6. Hematologic::53]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2560.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
+    },
+    {
+      "id": "13. Medicinal Chemistry::160",
+      "itemNo": 157,
+      "category": "13. Medicinal Chemistry",
+      "topic": "13. Medicinal Chemistry & Pharmaceutical Analysis",
+      "subtopic": "13.1 Drug Identification and Spectroscopy",
+      "track": "Product",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "จากโครงสร้างของยา Hydrochlorothiazide (HCTZ) การวิเคราะห์จำแนกเอกลักษณ์และหมู่ฟังก์ชันเฉพาะในโครงสร้างทางเคมีสามารถวิเคราะห์ได้อย่างแม่นยำด้วยวิธีใด",
+      "questionImage": "",
+      "choices": [
+        "Finger print region จาก FTIR spectroscopy",
+        "Chromatogram จาก Thin Layer Chromatography (TLC)",
+        "UV-Visible spectrophotometry สำหรับการหาปริมาณรวม",
+        "Colorimetric assay ด้วยการเกิดสีทั่วไป",
+        "Melting point determination"
+      ],
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Finger print region จาก FTIR spectroscopy<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การวิเคราะห์ย่าน Finger print จากเครื่องมือ Fourier Transform Infrared (FTIR) spectroscopy เป็นวิธีมาตรฐานทางเภสัชเวทและเคมีวิเคราะห์ที่ใช้ตรวจเอกลักษณ์โครงสร้างโมเลกุลและหมู่ฟังก์ชันเฉพาะของยา โดยเฉพาะกลุ่มซัลโฟนาไมด์และวงแหวนไทอาไซด์ของ HCTZ ได้อย่างจำเพาะเจาะจงที่สุด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Chromatogram จาก Thin Layer Chromatography (TLC)): TLC ใช้สำหรับการทดสอบการปนเปื้อนหรือตรวจเอกลักษณ์เบื้องต้นเชิงเปรียบเทียบ ไม่สามารถระบุรายละเอียดของหมู่ฟังก์ชันทางเคมีได้อย่างละเอียด<br>• ข้อ ค. (UV-Visible spectrophotometry สำหรับการหาปริมาณรวม): UV spectroscopy ใช้สำหรับการวิเคราะห์เชิงปริมาณโดยอาศัยโครโมฟอร์ แต่ไม่สามารถจำแนกรายละเอียดโครงสร้างหรือหมู่ฟังก์ชันเชิงลึกได้เท่ากับ FTIR<br>• ข้อ ง. (Colorimetric assay ด้วยการเกิดสีทั่วไป): การทดสอบการเกิดสีเป็นปฏิกิริยาเคมีทั่วไปที่ไม่จำเพาะเจาะจงต่อโครงสร้างทั้งหมดของโมเลกุลยา<br>• ข้อ จ. (Melting point determination): จุดหลอมเหลวเป็นเพียงสมบัติทางกายภาพเบื้องต้นสำหรับการบ่งบอกความบริสุทธิ์ แต่ไม่สามารถยืนยันโครงสร้างทางเคมีหรือหมู่ฟังก์ชันได้",
+      "answerImage": "",
+      "note": "ข้อ 32 (PLE_CC1_2555 Day 1.md) [ย้ายจาก 6. Hematologic::56]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2555.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
     }
   ],
   "1. Pharmacy Laws & Ethics": [
@@ -135010,6 +135206,62 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "note": "ข้อ 20 (PLE_CC1_2561_Key.md) [ย้ายจาก 6. Solid Dosage Forms::79]",
       "examType": "ข้อสอบจริง",
       "examYear": "2561.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
+    },
+    {
+      "id": "1. Pharmacy Laws & Ethics::242",
+      "itemNo": 240,
+      "category": "1. Pharmacy Laws & Ethics",
+      "topic": "1. Law & Regulations",
+      "subtopic": "1.1 พ.ร.บ. ยา",
+      "track": "SAP",
+      "caseContext": "ชายอายุ 28 ปี มาขอซื้อยา Tramadol capsules เพื่อบรรเทาอาการปวดจากโรคประจำตัวและแจ้งว่าต้องการพกติดตัวไปต่างประเทศ เภสัชกรจึงจ่ายยาให้ไปจำนวน 30 เม็ด พร้อมเขียนฉลากระบุข้อบ่งใช้ วิธีบริหารยา และข้อควรระวังครบถ้วน",
+      "caseStem": "ชายอายุ 28 ปี มาขอซื้อยา Tramadol capsules เพื่อบรรเทาอาการปวดจากโรคประจำตัวและแจ้งว่าต้องการพกติดตัวไปต่างประเทศ เภสัชกรจึงจ่ายยาให้ไปจำนวน 30 เม็ด พร้อมเขียนฉลากระบุข้อบ่งใช้ วิธีบริหารยา และข้อควรระวังครบถ้วน",
+      "question": "จากสถานการณ์ดังกล่าวข้อใดสรุปถูกต้องตามกฎหมายและจรรยาบรรณวิชาชีพเภสัชกรรม",
+      "questionImage": "",
+      "choices": [
+        "สามารถขายได้ ไม่ผิดกฎหมาย และผิดจรรยาบรรณ",
+        "ไม่สามารถขายได้ การจ่ายยานี้ผิดกฎหมาย และผิดจรรยาบรรณวิชาชีพ",
+        "สามารถขายได้ ไม่ผิดกฎหมาย และไม่ผิดจรรยาบรรณ",
+        "ไม่สามารถขายได้ ผิดกฎหมาย แต่ไม่ผิดจรรยาบรรณ",
+        "ไม่สามารถขายได้ ไม่ผิดกฎหมาย แต่ผิดจรรยาบรรณ"
+      ],
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 2. ไม่สามารถขายได้ การจ่ายยานี้ผิดกฎหมาย และผิดจรรยาบรรณวิชาชีพ<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามประกาศกระทรวงสาธารณสุขและมาตรการควบคุมการจำหน่ายยา Tramadol ในร้านยากำหนดให้จำกัดปริมาณการจำหน่ายไม่เกิน 20 เม็ด/แคปซูล ต่อครั้ง ดังนั้น การจ่ายยาให้ผู้ป่วยจำนวน 30 เม็ด จึงเป็นการฝ่าฝืนกฎหมาย พ.ร.บ. ยา และขัดต่อจรรยาบรรณแห่งวิชาชีพเภสัชกรรม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 1.: ผิด เพราะการจ่ายยาเกิน 20 เม็ด เป็นการฝ่าฝืนกฎหมายควบคุมยาอันตราย<br>• ข้อ 3.: ผิด เพราะการกระทำดังกล่าวผิดทั้งข้อบังคับทางกฎหมายและมาตรฐานจริยธรรมวิชาชีพ<br>• ข้อ 4.: ผิด เพราะการละเมิดกฎหมายควบคุมยาเสี่ยงต่อการเสพติดถือเป็นการละเมิดจรรยาบรรณวิชาชีพด้วย<br>• ข้อ 5.: ผิด เพราะการจ่ายยาเกินปริมาณที่กำหนดมีความผิดตามกฎหมาย พ.ร.บ. ยา ชัดเจน",
+      "answerImage": "",
+      "note": "ข้อสอบจริง Product ปี 2567 ข้อ 38 [ย้ายจาก 4. Preformulation & GMP::19]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2567.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
+    },
+    {
+      "id": "1. Pharmacy Laws & Ethics::243",
+      "itemNo": 241,
+      "category": "1. Pharmacy Laws & Ethics",
+      "topic": "1. Law & Regulations",
+      "subtopic": "1.1 พ.ร.บ. ยา",
+      "track": "SAP",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "Ferrous sulfate ขนาดบรรจุ 100 เม็ด จัดเป็นยาประเภทใดตามพระราชบัญญัติยา",
+      "questionImage": "",
+      "choices": [
+        "ยาเสพติดให้โทษ ประเภทที่ 3",
+        "ยาอันตราย",
+        "ยาควบคุมพิเศษ",
+        "วัตถุออกฤทธิ์ต่อจิตและประสาท ประเภท 3",
+        "ยาสามัญประจำบ้าน"
+      ],
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. ยาอันตราย<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Ferrous sulfate ชนิดรับประทานที่มีขนาดบรรจุใหญ่ (เช่น 100 เม็ด) จัดเป็นยาอันตรายตามประกาศกระทรวงสาธารณสุข ซึ่งการจำหน่ายต้องอยู่ภายใต้การควบคุมของเภสัชกรในร้านยาแผนปัจจุบัน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (ยาเสพติดให้โทษ ประเภทที่ 3): เป็นกลุ่มยาเสพติดที่มีตำรับยาผสมอยู่และมีประโยชน์ในการรักษา เช่น ยาแก้ไอมีส่วนผสมของโคเดอีน ไม่ใช่เกลือแร่ธาตุเหล็ก<br>• ข้อ ค. (ยาควบคุมพิเศษ): เป็นกลุ่มยาที่มีพิษภัยสูงหรือต้องใช้ใบสั่งแพทย์อย่างเคร่งครัด เช่น สเตียรอยด์หรือยาปฏิชีวนะบางกลุ่ม ยาธาตุเหล็กไม่ใช่ยาควบคุมพิเศษ<br>• ข้อ ง. (วัตถุออกฤทธิ์ต่อจิตและประสาท ประเภท 3): เป็นกลุ่มยาที่มีผลต่อระบบประสาทส่วนกลาง เช่น ยากล่อมประสาท ไม่เกี่ยวข้องกับยาบำรุงเลือด<br>• ข้อ จ. (ยาสามัญประจำบ้าน): ยาสามัญประจำบ้านมักมีขนาดบรรจุเล็กและมีความปลอดภัยสูงเพื่อการ ใช้อบรมรักษาอาการเจ็บป่วยเบื้องต้นด้วยตนเอง เช่น Ferrous sulfate ขนาดบรรจุไม่เกินเม็ดละจำนวนน้อยตามประกาศกำหนด แต่ขนาด 100 เม็ดจัดเป็นยาอันตราย",
+      "answerImage": "",
+      "note": "ข้อ 4 (LAW-CU-71.md) [ย้ายจาก 6. Hematologic::54]",
+      "examType": "ข้อสอบจำลอง",
+      "examYear": "Mock กฎหมาย CU71",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -144628,36 +144880,36 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE_2564_RA_01",
     "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 2
+    "caseTotal": 1
   },
   {
     "id": "1. Musculoskeleton::232",
     "itemNo": 230,
     "category": "1. Musculoskeleton",
-    "topic": "Musculoskeletal",
-    "subtopic": "Rheumatoid arthritis",
+    "topic": "1. Musculoskeletal",
+    "subtopic": "1.2 Rheumatoid arthritis",
     "track": "Clinic",
-    "caseContext": "[สถานการณ์]\nผู้ป่วยโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis: RA) ได้รับยา Naproxen 250 mg รับประทานวันละ 3 ครั้ง หลังอาหาร เพื่อบรรเทาอาการปวดและอักเสบ",
-    "caseStem": "[สถานการณ์]\nผู้ป่วยโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis: RA) ได้รับยา Naproxen 250 mg รับประทานวันละ 3 ครั้ง หลังอาหาร เพื่อบรรเทาอาการปวดและอักเสบ",
-    "question": "ควรแก้ไขปัญหาดังกล่าวอย่างไร",
+    "caseContext": "ผู้ป่วยโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis) อายุ 62 ปี ได้รับยา Naproxen 250 mg รับประทานวันละ 3 ครั้ง หลังอาหาร เพื่อบรรเทาอาการปวดข้อ ผู้ป่วยมีโรคประจำตัวคือ Ischemic heart disease ต่อมาผู้ป่วยมาพบเภสัชกรเนื่องจากมีอาการแสบร้อนยอดอกและปวดแสบลิ้นปี่หลังรับประทานยา",
+    "caseStem": "ผู้ป่วยโรคข้ออักเสบรูมาตอยด์ (Rheumatoid arthritis) อายุ 62 ปี ได้รับยา Naproxen 250 mg รับประทานวันละ 3 ครั้ง หลังอาหาร เพื่อบรรเทาอาการปวดข้อ ผู้ป่วยมีโรคประจำตัวคือ Ischemic heart disease ต่อมาผู้ป่วยมาพบเภสัชกรเนื่องจากมีอาการแสบร้อนยอดอกและปวดแสบลิ้นปี่หลังรับประทานยา",
+    "question": "เภสัชกรควรแนะนำการจัดการด้านยาเพื่อบรรเทาปัญหาทางเดินอาหารของผู้ป่วยรายนี้อย่างไร",
     "questionImage": "",
     "choices": [
-      "Naproxen 250 mg + PPI",
-      "Naproxen 500 mg + antacid gel",
-      "เปลี่ยนเป็น celecoxib",
-      "จ่าย methotrexate",
-      "เพิ่มขนาดยา เป็น naproxen 500 mg 1x3 pc"
+      "ให้ Naproxen 250 mg รับประทานร่วมกับ PPI",
+      "ให้ Naproxen 500 mg รับประทานร่วมกับ antacid gel",
+      "เปลี่ยนยาเป็น celecoxib 200 mg รับประทานวันละ 1 ครั้ง",
+      "จ่ายยา methotrexate เพิ่มเพื่อบรรเทาอาการปวด",
+      "เพิ่มขนาดยาเป็น Naproxen 500 mg รับประทานวันละ 3 ครั้ง"
     ],
-    "answer": 3,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. เปลี่ยนเป็น celecoxib<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เมื่อผู้ป่วยจำเป็นต้องใช้ยาแก้ปวดลดการอักเสบแต่เกิดปัญหาทางเดินอาหารจาก non-selective NSAID การเปลี่ยนเป็น COX-2 selective inhibitor เช่น celecoxib (หรือการให้ non-selective NSAID คู่กับ PPI) เป็นแนวทางที่มีหลักฐานเชิงประจักษ์ชัดเจนในการลดพิษต่อระบบทางเดินอาหารส่วนบน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: การลดขนาดยาลงเป็น naproxen 250 mg เคยพิสูจน์แล้วว่าควบคุมอาการปวดของผู้ป่วยไม่ได้<br>• ข้อ ข.: Antacid gel ให้ผลเพียงบรรเทากรดชั่วคราว ไม่สามารถรักษาและป้องกันแผลในกระเพาะอาหารจาก NSAID ในระยะยาวได้<br>• ข้อ ง.: แม้ methotrexate จะเป็น DMARDs หลักสำหรับ rheumatoid arthritis แต่ออกฤทธิ์ช้า (ใช้เวลา 4-12 สัปดาห์) ไม่สามารถแก้ปัญหาอาการแสบยอดอกจาก naproxen ในทันทีได้<br>• ข้อ จ.: การเพิ่มขนาดยา naproxen จะยิ่งทำให้การระคายเคืองและแผลในกระเพาะอาหารรุนแรงจนเสี่ยงต่อ GI bleeding",
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. ให้ Naproxen 250 mg รับประทานร่วมกับ PPI<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ผู้ป่วยมีอาการระคายเคืองทางเดินอาหารจาก Naproxen และมีโรคร่วม Ischemic heart disease (High CV risk) ตามแนวทางเวชปฏิบัติของ ACG และ AHA/ACC หากจำเป็นต้องใช้ NSAIDs ในผู้ป่วยที่มีความเสี่ยงต่อระบบหัวใจและหลอดเลือดสูง ควรเลือกใช้ Naproxen ซึ่งมีความปลอดภัยต่อระบบหัวใจและหลอดเลือดมากกว่า และต้องให้ร่วมกับ Proton Pump Inhibitor (PPI) เพื่อป้องกันและรักษาภาวะแทรกซ้อนต่อทางเดินอาหาร<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Antacid gel ออกฤทธิ์ลดกรดเพียงชั่วคราว ไม่สามารถป้องกันการเกิดแผลในทางเดินอาหารจาก NSAIDs ได้ และการเพิ่มขนาดยา Naproxen จะยิ่งเพิ่มความเป็นพิษต่อกระเพาะอาหาร<br>• ข้อ ค.: Celecoxib มีความสัมพันธ์กับการเพิ่มความเสี่ยงของ thrombotic cardiovascular events จึงควรหลีกเลี่ยงในผู้ป่วยที่มีประวัติ Ischemic heart disease<br>• ข้อ ง.: Methotrexate เป็นยากลุ่ม csDMARDs ที่มี onset ช้า (4-12 สัปดาห์) ไม่มีฤทธิ์ลดกรดหรือบรรเทาอาการแสบร้อนยอดอกที่เกิดขึ้นเฉียบพลัน<br>• ข้อ จ.: การเพิ่มขนาดยา Naproxen จะยิ่งเพิ่มความเสี่ยงต่อการเกิดแผลและภาวะเลือดออกในทางเดินอาหาร (GI bleeding)",
     "answerImage": "",
     "note": "[SOURCE: Pharma Plus เล่มม่วง 2 - ข้อสอบย้อนหลัง PLE-CC1 ปี 2564 วันที่ 1 ข้อ 40]",
     "examType": "ข้อสอบจริง",
-    "examYear": "2564",
-    "caseGroupId": "CASE_2564_RA_01",
-    "caseOrder": 2,
+    "examYear": "2564.0",
+    "caseGroupId": "CASE-RA-01",
+    "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 2
+    "caseTotal": 1
   },
   {
     "id": "1. Musculoskeleton::233",
@@ -146701,12 +146953,12 @@ window.QUIZ_OFFLINE_DB = [
     "itemNo": 303,
     "category": "1. Musculoskeleton",
     "topic": "Musculoskeletal",
-    "subtopic": "Gout & Colchicine Adverse Effects",
+    "subtopic": "Gout",
     "track": "Clinic",
     "caseContext": "ผู้ป่วยชายไทยคู่ อายุ 52 ปี มาพบแพทย์ด้วยอาการปวดบวมแดงร้อนอย่างเฉียบพลันที่บริเวณข้อนิ้วหัวแม่เท้าข้างขวา (1st MTP joint) ตรวจพบระดับกรดยูริกในเลือด (Serum Uric Acid) เท่ากับ 11 mg/dL ได้รับการวินิจฉัยเป็น Acute Gouty Arthritis และได้รับยา Colchicine",
     "caseStem": "ผู้ป่วยชายไทยคู่ อายุ 52 ปี มาพบแพทย์ด้วยอาการปวดบวมแดงร้อนอย่างเฉียบพลันที่บริเวณข้อนิ้วหัวแม่เท้าข้างขวา (1st MTP joint) ตรวจพบระดับกรดยูริกในเลือด (Serum Uric Acid) เท่ากับ 11 mg/dL ได้รับการวินิจฉัยเป็น Acute Gouty Arthritis และได้รับยา Colchicine",
     "question": "อาการไม่พึงประสงค์จากการใช้ยา (ADR) ในข้อใดเป็นอาการแสดงของพิษต่อระบบทางเดินอาหารที่พบได้บ่อยที่สุดเมื่อได้รับยา Colchicine ขนาดสูง",
-    "questionImage": "images/cc1_product/image127.png",
+    "questionImage": "",
     "choices": [
       "Stevens-Johnson Syndrome (SJS)",
       "Nephrotic syndrome",
@@ -146717,7 +146969,7 @@ window.QUIZ_OFFLINE_DB = [
     "answer": 4,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. อาการท้องเสียถ่ายเหลว คลื่นไส้ และปวดเกร็งท้อง (Diarrhea and abdominal cramping)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Colchicine มีกลไกยับยั้งการรวมตัวของ Tubulin (Tubulin polymerization inhibition) ซึ่งส่งผลกระทบต่อเซลล์ที่มีอัตราการแบ่งตัวอย่างรวดเร็ว โดยเฉพาะเซลล์เยื่อบุผิวทางเดินอาหาร (Gastrointestinal epithelium) ทำให้เกิดอาการข้างเคียงต่อระบบทางเดินอาหาร ได้แก่ ท้องเสีย คลื่นไส้ อาเจียน และปวดท้อง ซึ่งพบได้บ่อยที่สุด (มากถึง 80% ในขนาดรักษาแบบเดิม) และเป็นสัญญาณเตือนแรกเริ่มของภาวะพิษจากยา Colchicine<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ผิดเพราะ: SJS เป็นอาการแพ้ยาทางผิวหนังรุนแรงที่สัมพันธ์กับยา Allopurinol ไม่ใช่ Colchicine<br>• ข้อ ข. ผิดเพราะ: Nephrotic syndrome ไม่ใช่อาการข้างเคียงทั่วไปของ Colchicine<br>• ข้อ ค. ผิดเพราะ: อาการปวดศีรษะไม่ใช่ผลข้างเคียงเด่นของ Colchicine<br>• ข้อ จ. ผิดเพราะ: Colchicine ไม่มีฤทธิ์กดประสาทส่วนกลางหรือง่วงซึม",
     "answerImage": "",
-    "note": "ข้อสอบจริง PLE-CC1 ปี 2566 Day 1 ข้อ 60 [CASE_2566_GOUT_01]",
+    "note": "ข้อสอบจริง PLE-CC1 ปี 2566 Day 1 ข้อ 60 [CASE_2566_GOUT_01] [CASE: CASE_2566_GOUT_01_Q1]",
     "examType": "ข้อสอบจริง",
     "examYear": "2566 Day 1",
     "caseGroupId": "CASE_2566_GOUT_01",
@@ -146922,6 +147174,34 @@ window.QUIZ_OFFLINE_DB = [
     "note": "ข้อ 21 (PLE_CC1_2561_Key.md) [ย้ายจาก 6. Solid Dosage Forms::78]",
     "examType": "ข้อสอบจริง",
     "examYear": "2561.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "1. Musculoskeleton::313",
+    "itemNo": 311,
+    "category": "1. Musculoskeleton",
+    "topic": "Product Group 5: Liquid Dosage Forms",
+    "subtopic": "5.1 Pharmaceutical Calculations",
+    "track": "Clinic",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "จากสูตรตำรับ $\text{Ferrous sulfate}$ 5 mL (1 ช้อนชา) มีปริมาณธาตุเหล็กองค์ประกอบ ($\text{elementary iron}$) อยู่ 20% ของตัวยาสำคัญ $\text{ferrous sulfate}$ โดยกำหนดให้ $\text{ferrous sulfate}$ ความเข้มข้น $300\text{ mg/5 mL}$ จะให้ $\text{elementary iron}$ ปริมาณเท่าใด",
+    "questionImage": "",
+    "choices": [
+      "20 mg",
+      "30 mg",
+      "60 mg",
+      "100 mg",
+      "200 mg"
+    ],
+    "answer": 3,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. 60 mg<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>จากสูตร $\text{Ferrous sulfate}$ ความเข้มข้น $300\text{ mg}$ ใน 5 mL (1 ช้อนชา) และมี $\text{elementary iron}$ อยู่ 20% ดังนั้นการคำนวณหาปริมาณธาตุเหล็กองค์ประกอบคือ $300\text{ mg} \times 0.20 = 60\text{ mg}$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. 20 mg: เป็นการคำนวณผิดพลาดจากการใช้สัดส่วนเปอร์เซ็นต์ที่ไม่ถูกต้อง<br>• ข้อ ข. 30 mg: เป็นการคำนวณที่ให้ค่าคลาดเคลื่อนจากการคิดความเข้มข้นตัวยาผิดพลาด<br>• ข้อ ง. 100 mg: เป็นค่าปริมาณสมมติที่ไม่สอดคล้องกับความเข้มข้นและสัดส่วนของเกลือเหล็กในตำรับมาตรฐาน<br>• ข้อ จ. 200 mg: เกินกว่าปริมาณตัวยาทั้งหมดที่มีอยู่ใน 1 ช้อนชา ($300\text{ mg}$) จึงเป็นไปไม่ได้",
+    "answerImage": "",
+    "note": "ข้อ 6 (PLE_CC1_2554 SET2.md) [ย้ายจาก 6. Hematologic::58]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2554.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -157596,6 +157876,34 @@ window.QUIZ_OFFLINE_DB = [
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Creams<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Creams: สูตรตำรับที่มีส่วนผสมของ Cetostearyl alcohol, Sodium lauryl sulphate, White soft paraffin, Liquid paraffin และ Purified water จัดเป็นระบบอิมัลชันกึ่งแข็งชนิดน้ำมันในน้ำหรือน้ำในน้ำมัน (Emulsion base) ที่ให้เนื้อสัมผัสแบบครีม เกลี่ยง่าย ล้างออกด้วยน้ำได้ดี เหมาะสำหรับยาทาภายนอกเช่น acyclovir cream<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Lotions): โลชั่น (Lotions) เป็นรูปแบบของเหลวหรือกึ่งเหลวที่มีความหนืดต่ำกว่าครีม มีน้ำเป็นส่วนประกอบหลักเพื่อการทาในบริเวณกว้าง<br>• ข้อ ข. (Ointments): ขี้ผึ้ง (Ointments) มีเบสเป็นไขมันไฮโดรคาร์บอนล้วน เช่น white petrolatum ไม่มีน้ำเป็นส่วนประกอบหลัก ให้ความชุ่มชื้นสูงและมีความเหนียวหนืดมาก<br>• ข้อ ง. (Pastes): ยาพอก (Pastes) มีส่วนประกอบของผงยาแขวนตะกอนในปริมาณสูงมาก (มักเกินร้อยละ 20) ทำให้มีความคงตัวและหนาแน่นสูงเพื่อใช้ปกป้องผิวหนัง<br>• ข้อ จ. (Gels): เจล (Gels) เป็นระบบกึ่งแข็งที่ใช้ gelling agent เช่นcarbomers, cellulose derivatives กระจายตัวในของเหลว ไม่ได้ใช้เบสที่เป็นอิมัลชันน้ำมันและแวกซ์",
     "answerImage": "",
     "note": "ข้อ 8 Pharma Plus เล่มม่วง (เฉลยข้อ จ) [ย้ายจาก 8. Infectious diseases::94]",
+    "examType": "แบบฝึกหัด",
+    "examYear": "เล่มม่วง",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "3. Dermatologic::173",
+    "itemNo": 171,
+    "category": "3. Dermatologic",
+    "topic": "Product Group 3: Pharmaceutical Calculations",
+    "subtopic": "3.1 Concentration & Dosages Calculations",
+    "track": "Clinic",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "4% w/v Ferrous sulfate จำนวน 1 mL จะมีปริมาณ elemental iron เท่ากับกี่มิลลิกรัม (กำหนดให้ Fe = 56, S = 32, O = 16, H = 1)",
+    "questionImage": "",
+    "choices": [
+      "7.37 mg",
+      "14.74 mg",
+      "29.48 mg",
+      "40.00 mg",
+      "56.00 mg"
+    ],
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 14.74 mg<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Ferrous sulfate ในรูป anhydrous มีสูตรโมเลกุล $FeSO_4$ มีน้ำหนักโมเลกุลเท่ากับ $56 + 32 + (16 \times 4) = 152$ g/mol โดยยาสูตรตำรับ 4% w/v หมายถึงมีสาร $4 \text{ g}$ หรือ $4000 \text{ mg}$ ใน $100 \text{ mL}$ ดังนั้นใน $1 \text{ mL}$ จะมี $40 \text{ mg}$ ของ $FeSO_4$ ปริมาณ elemental iron คำนวณได้จาก $_x000c_rac{56}{152} \times 40 \text{ mg} = 14.74 \text{ mg}$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. 7.37 mg: เป็นการคำนวณที่ผิดพลาดโดยใช้อัตราส่วนโมเลกุลหารด้วยสองหรือใช้สูตรเกลือเฮปตาไฮเดรตที่ไม่ตรงกับโจทย์<br>• ข้อ ค. 29.48 mg: เป็นค่าที่คำนวณเกินความเป็นจริงโดยคิดสัดส่วนธาตุเหล็กผิดพลาดหรือใช้ปริมาตร 2 mL<br>• ข้อ ง. 40.00 mg: เป็นปริมาณของเกลือ $FeSO_4$ ทั้งหมดใน 1 mL ยังไม่ได้คูณสัดส่วนน้ำหนักอะตอมของ elemental iron<br>• ข้อ จ. 56.00 mg: เป็นค่าน้ำหนักอะตอมของธาตุเหล็ก (Fe) โดยตรง ไม่ได้นำไปคำนวณสัดส่วนตามความเข้มข้นและน้ำหนักโมเลกุลของเกลือ",
+    "answerImage": "",
+    "note": "แบบฝึกหัด PLE-CC 1 ข้อ 59 [ย้ายจาก 6. Hematologic::42]",
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "",
@@ -169428,6 +169736,34 @@ window.QUIZ_OFFLINE_DB = [
     "caseTotal": 1
   },
   {
+    "id": "5. Gastrointestinal::235",
+    "itemNo": 233,
+    "category": "5. Gastrointestinal",
+    "topic": "5. Research & Biostats",
+    "subtopic": "5.2 สถิติวิเคราะห์และชีวสถิติ",
+    "track": "Clinic",
+    "caseContext": "การศึกษาในผู้ป่วย 500 คนที่สงสัยว่าป่วยเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb) ของผู้ป่วยและแบ่งกลุ่มผู้ป่วยตามเพศเพื่อศึกษาระดับ Hb ที่แตกต่างกันในเพศชายและหญิง",
+    "caseStem": "การศึกษาในผู้ป่วย 500 คนที่สงสัยว่าป่วยเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb) ของผู้ป่วยและแบ่งกลุ่มผู้ป่วยตามเพศเพื่อศึกษาระดับ Hb ที่แตกต่างกันในเพศชายและหญิง",
+    "question": "ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับชนิดของตัวแปรและการเลือกใช้การวิเคราะห์ทางสถิติ",
+    "questionImage": "",
+    "choices": [
+      "Hb เป็นตัวแปรเชิงกลุ่ม (categorical variable) เสมอ จึงควรใช้ Chi-square test ในการเปรียบเทียบระหว่างเพศ",
+      "Hb เป็นตัวแปรเชิงจำนวน (continuous variable) และควรใช้ Paired-T test ในการเปรียบเทียบระหว่างเพศ",
+      "หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการศึกษาความสัมพันธ์ระหว่างเพศ",
+      "Hb เป็นข้อมูลเชิงจำนวน แต่ควรใช้ Mann-Whitney U Test ในการวิเคราะห์เนื่องจากข้อมูลทางชีววิทยามักไม่ปกติ",
+      "Hb เป็นตัวแปร ordinal เนื่องจากมีค่าจากต ่าไปสูง"
+    ],
+    "answer": 3,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. หากจำแนก Hb เป็นกลุ่ม สามารถใช้ Chi-square test ในการศึกษาความสัมพันธ์ระหว่างเพศ<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เมื่อมีการแปลงตัวแปรต่อเนื่อง (เช่น ระดับ Hemoglobin) ให้กลายเป็นตัวแปรกลุ่ม (categorical variable เช่น ภาวะซีดหรือไม่ซีด) ข้อมูลจะเปลี่ยนเป็นประเภท nominal หรือ ordinal ซึ่งสามารถนำมาวิเคราะห์ความสัมพันธ์โดยใช้ Chi-square test ได้อย่างถูกต้องตามหลักสถิติชีววิเคราะห์<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Hemoglobin เป็นข้อมูลต่อเนื่อง (continuous variable) โดยธรรมชาติ ไม่ใช่ตัวแปรเชิงกลุ่มเสมอไป<br>• ข้อ ข.: การเปรียบเทียบค่า Hb ระหว่างเพศชายและหญิงเป็นการศึกษาใน 2 กลุ่มประชากรที่เป็นอิสระต่อกัน จึงต้องใช้ Independent t-test ไม่ใช่ Paired t-test<br>• ข้อ ง.: ข้อมูลทางชีววิทยาในกลุ่มตัวอย่างขนาดใหญ่ มักอนุโลมใช้ Parametric test ได้ตาม Central Limit Theorem และไม่ได้บังคับใช้ Mann-Whitney U Test เสมอไป<br>• ข้อ จ.: Hemoglobin เป็นตัวแปรเชิงปริมาณแบบ Ratio scale ที่มีหน่วยวัดและจุดศูนย์แท้ ไม่ใช่ตัวแปรเชิงอันดับ (ordinal variable)",
+    "answerImage": "",
+    "note": "แบบฝึกหัด PLE-CC 1 ข้อ 65 [ย้ายจาก 6. Hematologic::44]",
+    "examType": "แบบฝึกหัด",
+    "examYear": "เล่มม่วง",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
     "id": "6. Hematologic::3",
     "itemNo": 1,
     "category": "6. Hematologic",
@@ -170554,7 +170890,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\n4%w/v Ferrous sulphate จำนวน 100 mg จะมีจำนวน elemental iron ที่ได้รับเท่ากับเท่าใด (กำหนดให้\nmolecular weight ของ Ferrous sulphate heptahydrate = 278, Iron = 56)",
+    "question": "[ย้ายไป 3. Dermatologic::173] of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\n4%w/v Ferrous sulphate จำนวน 100 mg จะมีจำนวน elemental iron ที่ได้รับเท่ากับเท่าใด (กำหนดให้\nmolecular weight ของ Ferrous sulphate heptahydrate = 278, Iron = 56)",
     "questionImage": "",
     "choices": [
       "Anemia",
@@ -170610,7 +170946,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\nการศึกษาในผู้ป่วย 500 คนที่สงสัยว่าป่วยเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb)\nของผู้ป่วยและแบ่งกลุ่มผู้ป่วยตามเพศเพื่อศึกษาระดับ Hb ที่แตกต่างกันในเพศชายและหญิง",
     "caseStem": "of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\nการศึกษาในผู้ป่วย 500 คนที่สงสัยว่าป่วยเป็นโรคโลหิตจาง (anemia) นักวิจัยได้วัดระดับ Hemoglobin (Hb)\nของผู้ป่วยและแบ่งกลุ่มผู้ป่วยตามเพศเพื่อศึกษาระดับ Hb ที่แตกต่างกันในเพศชายและหญิง",
-    "question": "ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับชนิดของตัวแปรและการเลือกใช้การวิเคราะห์ทางสถิติ",
+    "question": "[ย้ายไป 5. Gastrointestinal::235] ข้อใดต่อไปนี้ถูกต้องเกี่ยวกับชนิดของตัวแปรและการเลือกใช้การวิเคราะห์ทางสถิติ",
     "questionImage": "",
     "choices": [
       "Hb เป็นตัวแปรเชิงกลุ่ม (categorical variable) เสมอ จึงควรใช้ Chi-square test ในการเปรียบเทียบระหว่างเพศ",
@@ -170666,7 +171002,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "[ย้ายไป 1. Titrations::81] ให้สมการเคมีมาแล้วถามว่าเป็นการtitrate แบบใด ตัวเลือก(น่าจะเป็นCerium กับFerrous)",
+    "question": "[ย้ายไป 1. Titrations::82] [ย้ายไป 1. Titrations::81] ให้สมการเคมีมาแล้วถามว่าเป็นการtitrate แบบใด ตัวเลือก(น่าจะเป็นCerium กับFerrous)",
     "questionImage": "",
     "choices": [
       "Anemia",
@@ -170808,7 +171144,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "ข้อใดคือผลขางเคียงจากยา ferrous sulfate",
+    "question": "ข้อใดคืออาการไม่พึงประสงค์ที่พบบ่อยที่สุดจากการรับประทานยา ferrous sulfate",
     "questionImage": "",
     "choices": [
       "Diarrhea",
@@ -170817,12 +171153,12 @@ window.QUIZ_OFFLINE_DB = [
       "Constipation",
       "Hypokalemia"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Diarrhea<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก Diarrhea เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Anemia โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Headache): อาการปวดศีรษะ (Headache) ไม่ใช่อาการข้างเคียงที่พบบ่อยหรือเป็นลักษณะเฉพาะของการรับประทานเกลือแร่ธาตุเหล็กเสริม<br>• ข้อ ค. (Tachycardia): ภาวะหัวใจเต้นเร็ว (Tachycardia) มักเป็นอาการแสดงของภาวะโลหิตจางจากการปรับตัวของระบบไหลเวียนโลหิต ไม่ใช่ผลข้างเคียงโดยตรงจากยา Ferrous sulfate<br>• ข้อ ง. (Constipation): อาการท้องผูก (Constipation) เป็นผลข้างเคียงที่พบได้บ่อยที่สุดจากการรับประทานยาธาตุเหล็ก เนื่องจากการรบกวนการบีบตัวของกล้ามเนื้อลำไส้<br>• ข้อ จ. (Hypokalemia): ภาวะโพแทสเซียมในเลือดต่ำ (Hypokalemia) ไม่ได้เกิดจากการใช้ยาธาตุเหล็ก แต่อาจพบได้ในช่วงแรกของการรักษาภาวะขาดวิตามินบี 12 จากการนำโพแทสเซียมไปใช้สร้างเม็ดเลือดใหม่อย่างรวดเร็ว",
+    "answer": 4,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Constipation<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>อาการท้องผูก (Constipation) เป็นผลข้างเคียงที่พบบ่อยที่สุดจากการใช้ยาเสริมธาตุเหล็ก (Ferrous sulfate) เกิดจากการที่ธาตุเหล็กทำให้เกิดการระคายเคืองทางเดินอาหารและลดการบีบตัวของลำไส้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Diarrhea): อาการท้องเสียไม่ใช่ผลข้างเคียงที่พบบ่อยที่สุดของธาตุเหล็ก แม้บางรายอาจพบอุจจาระดำหรือระคายเคืองได้<br>• ข้อ ข. (Headache): อาการปวดศีรษะไม่ใช่อาการข้างเคียงจำเพาะจากการรับประทานธาตุเหล็ก<br>• ข้อ ค. (Tachycardia): ภาวะหัวใจเต้นเร็วไม่ได้เกิดจากผลข้างเคียงโดยตรงของยาธาตุเหล็ก แต่เป็นอาการแสดงของภาวะโลหิตจาง<br>• ข้อ จ. (Hypokalemia): ภาวะโพแทสเซียมในเลือดต่ำไม่เกี่ยวข้องกับการใช้ยา ferrous sulfate",
     "answerImage": "",
     "note": "ข้อ 14 (PLE_CC1_2561_Key.md)",
     "examType": "ข้อสอบจริง",
-    "examYear": "2561",
+    "examYear": "2561.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -170864,7 +171200,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "[ย้ายไป 13. Medicinal Chemistry::153] การสังเคราะห์ HCTZ จงระบุว่า A คือข้อใด",
+    "question": "[ย้ายไป 13. Medicinal Chemistry::159] [ย้ายไป 13. Medicinal Chemistry::153] การสังเคราะห์ HCTZ จงระบุว่า A คือข้อใด",
     "questionImage": "",
     "choices": [
       "H-CO-H",
@@ -170892,7 +171228,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "Ferrous sulfate กระปุกละ 100 เม็ด เป็นยาประเภทใด",
+    "question": "[ย้ายไป 1. Pharmacy Laws & Ethics::243] Ferrous sulfate กระปุกละ 100 เม็ด เป็นยาประเภทใด",
     "questionImage": "",
     "choices": [
       "ยาเสพติดให้โทษ ประเภทที่ 3",
@@ -170948,7 +171284,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "จากโครงสร้างของยา HCTZ สามารถวิเคราะห์หาหมู่โครงสร้างได้โดยวิธีการใด",
+    "question": "[ย้ายไป 13. Medicinal Chemistry::160] จากโครงสร้างของยา HCTZ สามารถวิเคราะห์หาหมู่โครงสร้างได้โดยวิธีการใด",
     "questionImage": "images/pubchem/hydrochlorothiazide.png",
     "choices": [
       "Finger print จาก FTIR",
@@ -171004,7 +171340,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "จากสูตรนั่น ถ้า FeSo4มี elementary iron 20% ให้ยา 1 ช้อนชา จะได้ elementary iron เท่าไหร่ elementary iron 20% หมายถึง ferrous sulfate 100 mg จะให้ elemental iron 20 mg ดังนั้น ferrous sulfate 12.5 mg จะให้ elemental iron (2012.5)/100 = 2.5mg แสดงว่า 100 ml จะให้ elemental iron 2.5 mg ถ้า 5 ml จะให้ elemental iron 0.125 mg",
+    "question": "[ย้ายไป 1. Musculoskeleton::313] จากสูตรนั่น ถ้า FeSo4มี elementary iron 20% ให้ยา 1 ช้อนชา จะได้ elementary iron เท่าไหร่ elementary iron 20% หมายถึง ferrous sulfate 100 mg จะให้ elemental iron 20 mg ดังนั้น ferrous sulfate 12.5 mg จะให้ elemental iron (2012.5)/100 = 2.5mg แสดงว่า 100 ml จะให้ elemental iron 2.5 mg ถ้า 5 ml จะให้ elemental iron 0.125 mg",
     "questionImage": "",
     "choices": [
       "Vitamin C 500 mg OD",
@@ -174578,12 +174914,12 @@ window.QUIZ_OFFLINE_DB = [
     "choices": [
       "Td (Purified diphtheria toxoid 1-2 Lf และ Purified tetanus toxoid 5-10 Lf) 1 เข็มเข้ากล้าม",
       "Td (Purified diphtheria toxoid 1-2 Lf และ Purified tetanus toxoid 5-10 Lf) ฉีดเข้ากล้าม 3 ครั้งวันที่ 0, 1 เดือน, 6 เดือน",
-      "DT (Purified diphtheria toxoid 25-30 Lf และ Purified tetanus toxoid 5-10 Lf) เข็มเข้ากล้าม",
-      "DT (Purified diphtheria toxoid 25-30 Lf และ Purified tetanus toxoid 5-10 Lf) เข็มเข้ากล้าม 3 ครั้ง วันที่ 0, 1 เดือน, 6 เดือน",
+      "DT (Purified diphtheria toxoid 25-30 Lf และ Purified tetanus toxoid 5-10 Lf) 1 เข็มเข้ากล้าม",
+      "DT (Purified diphtheria toxoid 25-30 Lf และ Purified tetanus toxoid 5-10 Lf) ฉีดเข้ากล้าม 3 ครั้ง วันที่ 0, 1 เดือน, 6 เดือน",
       "DTw (diphtheria, tetanus toxoids, whole-cell pertussis vaccines) ฉีดเข้ากล้าม วันที่ 0, 1 เดือน, 6 เดือน"
     ],
-    "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Td (Purified diphtheria toxoid 1-2 Lf และ Purified tetanus toxoid 5-10 Lf) ฉีดเข้ากล้าม 3 ครั้งวันที่ 0, 1 เดือน, 6 เดือน<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเฉลยทางการของแบบทดสอบชุดนี้เลือกข้อ ข. ซึ่งใช้วัคซีนสูตร Td (Tetanus-diphtheria toxoid สำหรับผู้ใหญ่ที่มีปริมาณ Diphtheria toxoid ลดลงเหลือ 1-2 Lf เพื่อลดปฏิกิริยาข้างเคียง) อย่างไรก็ตาม ในแนวทางเวชปฏิบัติสากลปัจจุบัน หากผู้ป่วยเคยได้รับวัคซีนครบ 3 เข็มมาก่อนแล้ว การมีแผลเสี่ยงต่อบาดทะยักเมื่อเกิน 5 ปี จะให้วัคซีนกระตุ้นเพียง 1 เข็ม (Booster dose) เท่านั้น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Td 1 เข็ม เป็นแนวทางปฏิบัติมาตรฐานสากล แต่แบบทดสอบทางการชุดนี้เฉลยข้อ ข.<br>• ข้อ ค.: DT มีปริมาณ Diphtheria toxoid สูง (25-30 Lf) สำหรับเด็กอายุต่ำกว่า 7 ปี หากนำมาใช้ในผู้ใหญ่จะทำให้เกิดปฏิกิริยาบวมแดงปวดเฉพาะที่และไข้สูงรุนแรง (Arthus-type reaction)<br>• ข้อ ง.: DT ไม่เหมาะสำหรับผู้ใหญ่และไม่ควรฉีดซ้ำซ้อน<br>• ข้อ จ.: DTw เป็นวัคซีนรวมที่มีส่วนประกอบของเชื้อไอกรนชนิดทั้งเซลล์ (Whole-cell pertussis) ซึ่งมีข้อห้ามใช้ในผู้ใหญ่เนื่องจากก่อปฏิกิริยาข้างเคียงทางระบบประสาทและไข้สูงรุนแรง",
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Td (Purified diphtheria toxoid 1-2 Lf และ Purified tetanus toxoid 5-10 Lf) 1 เข็มเข้ากล้าม<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามแนวทางเวชปฏิบัติสากล (CDC/ACIP) และกระทรวงสาธารณสุขไทย สำหรับผู้ป่วยที่มีแผลสกปรกเสี่ยงต่อบาดทะยัก (Dirty/Contaminated wound) หากมีประวัติได้รับวัคซีนป้องกันบาดทะยักครบชุด $\\ge 3$ ครั้ง และได้รับเข็มสุดท้ายเกิน 5 ปี ให้ฉีดวัคซีนกระตุ้น (Booster dose) เพียง 1 เข็มเท่านั้น โดยในผู้ใหญ่ต้องใช้สูตร Td ซึ่งลดปริมาณ Diphtheria toxoid ลงเหลือ 1-2 Lf เพื่อป้องกันการเกิดปฏิกิริยาไม่พึงประสงค์เฉพาะที่รุนแรง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: การฉีด 3 ครั้ง (0, 1, 6 เดือน) แนะนำสำหรับผู้ที่ไม่เคยได้รับวัคซีนมาก่อน ฉีดไม่ครบ 3 ครั้ง หรือจำประวัติไม่ได้เท่านั้น<br>• ข้อ ค.: DT มีปริมาณ Diphtheria toxoid สูง (25-30 Lf) เหมาะสำหรับเด็กอายุต่ำกว่า 7 ปี หากนำมาใช้ในผู้ใหญ่จะก่อให้เกิดปฏิกิริยาบวมแดงปวดรุนแรง (Arthus-type reaction) และมีไข้สูง<br>• ข้อ ง.: DT ไม่เหมาะสมสำหรับผู้ใหญ่อายุ 45 ปี และไม่จำเป็นต้องฉีด 3 เข็มในผู้ที่มีประวัติครบชุด<br>• ข้อ จ.: DTw เป็นวัคซีนชนิด Whole-cell pertussis สำหรับเด็กเล็ก มีข้อห้ามใช้ในผู้ใหญ่เนื่องจากกระตุ้นให้เกิดผลข้างเคียงทางระบบประสาทและไข้สูงรุนแรง",
     "answerImage": "",
     "note": "[RECONSTRUCTED: ปรับแต่งและเติมเต็มบริบทโจทย์เพื่อความสมบูรณ์]",
     "examType": "ข้อสอบจำลอง",
@@ -219396,6 +219732,34 @@ window.QUIZ_OFFLINE_DB = [
     "caseType": ""
   },
   {
+    "id": "1. Titrations::82",
+    "itemNo": 80,
+    "category": "1. Titrations",
+    "topic": "1. Pharmaceutical Analysis",
+    "subtopic": "1.1 Titrations and Volumetric Analysis",
+    "track": "Product",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "ปฏิกิริยาการไทเทรตระหว่าง Cerium(IV) และ Ferrous ion จัดเป็นการไทเทรตประเภทใด",
+    "questionImage": "",
+    "choices": [
+      "Acid-Base Titration",
+      "Precipitation Titration",
+      "Complexometric Titration",
+      "Redox Titration",
+      "Non-aqueous Titration"
+    ],
+    "answer": 4,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Redox Titration<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การไทเทรตระหว่าง Cerium(IV) ซึ่งเป็นสารออกซิไดซ์ และ Ferrous ion ($Fe^{2+}$) ซึ่งเป็นสารรีดิวซ์ เกี่ยวข้องกับการถ่ายโอนอิเล็กตรอน จึงจัดเป็นการไทเทรตแบบรีดอกซ์ (Redox Titration หรือ Oxidation-Reduction Titration)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Acid-Base Titration): เป็นการไทเทรตที่อาศัยปฏิกิริยาระหว่างกรดและเบส ไม่ใช่การถ่ายโอนอิเล็กตรอน<br>• ข้อ ข. (Precipitation Titration): เป็นการไทเทรตที่เกิดตะกอน เช่น การวิเคราะห์ไอออนของฮาไลด์ด้วยซิลเวอร์ไนเตรต<br>• ข้อ ค. (Complexometric Titration): เป็นการไทเทรตที่เกิดสารประกอบเชิงซ้อน เช่น การใช้ EDTA วิเคราะห์ไอออนของโลหะ<br>• ข้อ จ. (Non-aqueous Titration): เป็นการไทเทรตในตัวทำละลายที่ไม่ใช่น้ำ สำหรับสารที่มีสมบัติเป็นกรดหรือเบสอ่อนมากที่ไม่สามารถไทเทรตในน้ำได้",
+    "answerImage": "",
+    "note": "PLE-CC1 ปี 2566 Day 1 ข้อ 24 [ย้ายจาก 6. Hematologic::46]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2566.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
     "id": "2. Chromatography::3",
     "itemNo": 1,
     "category": "2. Chromatography",
@@ -224092,7 +224456,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "จากโครงสร้างทางเคมี L-dopa ถูกเปลี่ยนเป็น dopamine ในร่างกายด้วยปฏิกิริยาใด",
+    "question": "[ย้ายไป 13. Medicinal Chemistry::158] จากโครงสร้างทางเคมี L-dopa ถูกเปลี่ยนเป็น dopamine ในร่างกายด้วยปฏิกิริยาใด",
     "questionImage": "images/pubchem/ldopa_to_dopamine.png",
     "choices": [
       "Decarboxylation",
@@ -224456,7 +224820,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "ชายอายุ 28 ปี มาขอซื้อยา Tramadol capsules เพื่อบรรเทาอาการปวดจากโรคประจำตัวและแจ้งว่าต้องการพกติดตัวไปต่างประเทศ เภสัชกรจึงจ่ายยาให้ไปจำนวน 30 เม็ด พร้อมเขียนฉลากระบุข้อบ่งใช้ วิธีบริหารยา และข้อควรระวังครบถ้วน",
     "caseStem": "ชายอายุ 28 ปี มาขอซื้อยา Tramadol capsules เพื่อบรรเทาอาการปวดจากโรคประจำตัวและแจ้งว่าต้องการพกติดตัวไปต่างประเทศ เภสัชกรจึงจ่ายยาให้ไปจำนวน 30 เม็ด พร้อมเขียนฉลากระบุข้อบ่งใช้ วิธีบริหารยา และข้อควรระวังครบถ้วน",
-    "question": "จากสถานการณ์ดังกล่าวข้อใดสรุปถูกต้องตามกฎหมายและจรรยาบรรณวิชาชีพเภสัชกรรม",
+    "question": "[ย้ายไป 1. Pharmacy Laws & Ethics::242] จากสถานการณ์ดังกล่าวข้อใดสรุปถูกต้องตามกฎหมายและจรรยาบรรณวิชาชีพเภสัชกรรม",
     "questionImage": "",
     "choices": [
       "สามารถขายได้ ไม่ผิดกฎหมาย และผิดจรรยาบรรณ",
@@ -224629,7 +224993,7 @@ window.QUIZ_OFFLINE_DB = [
     "choices": [
       "Benzyl alcohol",
       "Amylmetacresol",
-      "Benzocaine (ยาชาลงท้ายด้วย -caine)",
+      "Benzocaine",
       "Dichlorobenzyl alcohol",
       "Menthol"
     ],
@@ -224638,7 +225002,7 @@ window.QUIZ_OFFLINE_DB = [
     "answerImage": "",
     "note": "ข้อสอบจริง Product ปี 2566 ข้อ 32",
     "examType": "ข้อสอบจริง",
-    "examYear": "2566",
+    "examYear": "2566.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -244522,21 +244886,21 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "จากบัญชียาหลักแห่งชาติ ยาสมุนไพรใดสามารถใช้แทน clotrimazole cream ได้",
+    "question": "จากบัญชียาหลักแห่งชาติ ยาสมุนไพรใดสามารถใช้แทน clotrimazole cream ในการรักษาโรคติดเชื้อราที่ผิวหนัง",
     "questionImage": "",
     "choices": [
       "ยาครีมบัวบก",
       "ยาทิงเจอร์ทองพันชั่ง",
       "ยาโลชั่นไพล",
       "ยาเปลือกมังคุด",
-      "ยาขี ผึ งเสลดพังพอน"
+      "ยาขีผึ้งเสลดพังพอน"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. ยาครีมบัวบก<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การเลือก ยาครีมบัวบก เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Creams & Ointments โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br>USP/NF, British Pharmacopoeia (BP) และ Remington: The Science and Practice of Pharmacy (หัวข้อ Creams & Ointments)<br><br>🔍<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: (ยาทิงเจอร์ทองพันชั่ง): ยาทิงเจอร์ทองพันชั่ง ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค.: (ยาโลชั่นไพล): ยาโลชั่นไพล ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง.: (ยาเปลือกมังคุด): ยาเปลือกมังคุด ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ.: (ยาขี ผึ งเสลดพังพอน): ยาขี ผึ งเสลดพังพอน ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. ยาทิงเจอร์ทองพันชั่ง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาทิงเจอร์ทองพันชั่ง (Rhinacanthus nasutus) จัดอยู่ในบัญชียาหลักแห่งชาติ ด้านยาสมุนไพร มีฤทธิ์ต้านเชื้อรา (antifungal activity) จึงใช้เป็นทางเลือกในการรักษาโรคกลาก เกลื้อน และเชื้อราที่ผิวหนังแทนยาล้อมกลุ่ม azole เช่น clotrimazole cream ได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: ยาครีมบัวบก ใช้สำหรับสมานแผลและลดการอักเสบ ไม่ได้มีข้อบ่งใช้หลักในการรักษาเชื้อราผิวหนัง<br>• ข้อ ค.: ยาโลชั่นไพล ใช้สำหรับบรรเทาอาการปวดเมื่อยกล้ามเนื้อและอักเสบ<br>• ข้อ ง.: ยาเปลือกมังคุด มักใช้สมานแผลหรือรักษาอาการท้องเสีย ไม่มีข้อบ่งใช้หลักเป็นยาทาแก้เชื้อราในรูปแบบทดแทน clotrimazole<br>• ข้อ จ.: ยาขีผึ้งเสลดพังพอน ใช้สำหรับบรรเทาอาการแมลงสัตว์กัดต่อยและผื่นคันจากลมพิษ",
     "answerImage": "",
     "note": "ข้อ 8 (PLE_CC1_2560 22 April Set 1.md)",
     "examType": "ข้อสอบจริง",
-    "examYear": "2560",
+    "examYear": "2560.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -266122,6 +266486,90 @@ window.QUIZ_OFFLINE_DB = [
     "caseType": ""
   },
   {
+    "id": "13. Medicinal Chemistry::158",
+    "itemNo": 155,
+    "category": "13. Medicinal Chemistry",
+    "topic": "13. Medicinal Chemistry",
+    "subtopic": "13.1 Drug Metabolism and Pharmacokinetics",
+    "track": "Product",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "จากโครงสร้างทางเคมี L-dopa ถูกเปลี่ยนเป็น dopamine ในร่างกายด้วยปฏิกิริยาใด",
+    "questionImage": "",
+    "choices": [
+      "Decarboxylation",
+      "Demethylation",
+      "Deamination",
+      "Hydrolysis",
+      "Oxidation"
+    ],
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Decarboxylation<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ข้อ ก. ถูกต้อง เพราะปฏิกิริยา Decarboxylation คือการดึงหมู่คาร์บอกซิล (COOH) ออกจากโครงสร้าง L-dopa โดยเอนไซม์ aromatic L-amino acid decarboxylase (AADC) ทำให้ได้โมเลกุล Dopamine ซึ่งเกิดขึ้นทั้งในระบบประสาทส่วนกลางและเนื้อเยื่อส่วนปลาย<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Demethylation): เป็นการตัดหมู่เมทิล (-CH3) ออกจากโมเลกุล เช่น ปฏิกิริยา O-demethylation หรือ N-demethylation ไม่ใช่ปฏิกิริยาเปลี่ยน L-dopa เป็น dopamine<br>• ข้อ ค. (Deamination): เป็นการตัดหมู่อะมิโน (-NH2) ออกจากโครงสร้าง เช่น ปฏิกิริยา Oxidative deamination โดยเอนไซม์ MAO ซึ่งทำหน้าที่ทำลาย dopamine ต่อไป<br>• ข้อ ง. (Hydrolysis): เป็นการสลายพันธะด้วยน้ำ เช่น พันธะเอสเทอร์หรือเอไมด์ ไม่เกี่ยวข้องกับการเปลี่ยน L-dopa เป็น dopamine<br>• ข้อ จ. (Oxidation): เป็นปฏิกิริยาการสูญเสียอิเล็กตรอนหรือเพิ่มออกซิเจน ไม่ใช่ปฏิกิริยาหลักในการสร้าง dopamine จาก L-dopa",
+    "answerImage": "",
+    "note": "ข้อสอบเตรียมสอบเภสัช [ย้ายจาก 4. Preformulation & GMP::6]",
+    "examType": "แบบฝึกหัด",
+    "examYear": "เล่มม่วง",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "13. Medicinal Chemistry::159",
+    "itemNo": 156,
+    "category": "13. Medicinal Chemistry",
+    "topic": "Product Group 1: Medicinal Chemistry",
+    "subtopic": "13.1 Drug Synthesis and Structure",
+    "track": "Product",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "การสังเคราะห์ Hydrochlorothiazide (HCTZ) จากสารตั้งต้น 4-chloro-6-sulfamoylaniline ปฏิกิริยาการปิดวงแหวน (cyclization) นิยมใช้สารตั้งต้น A ใดในการทำปฏิกิริยาควบแน่น",
+    "questionImage": "",
+    "choices": [
+      "Formaldehyde",
+      "Formic acid",
+      "Phosgene",
+      "Acetaldehyde",
+      "Carbon dioxide"
+    ],
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Formaldehyde<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การสังเคราะห์ยาในกลุ่ม Thiazide เช่น Hydrochlorothiazide อาศัยปฏิกิริยาการควบแน่นระหว่าง 4-chloro-6-sulfamoylaniline กับ Formaldehyde (H-CO-H) เพื่อปิดวงแหวน thiadiazine 1,1-dioxide ให้เป็นโครงสร้างหลักของยา<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Formic acid): Formic acid มีระดับออกซิเดชันสูงเกินไป ไม่ให้ผลิตภัณฑ์วงแหวนไตรอะซีนหรือไทอาไซด์ที่ต้องการในสภาวะการสังเคราะห์นี้<br>• ข้อ ค. (Phosgene): Phosgene ให้หมู่คาร์บอนิลซึ่งจะให้ผลิตภัณฑ์เป็นอนุพันธ์ quinazolinone หรือสารอื่นที่ไม่ใช่ thiazide core<br>• ข้อ ง. (Acetaldehyde): Acetaldehyde จะให้สารตั้งต้นที่มีการต่อหมู่เมทิลเพิ่มที่ตำแหน่ง C2 ซึ่งไม่ใช่โครงสร้างของ Hydrochlorothiazide<br>• ข้อ จ. (Carbon dioxide): Carbon dioxide ไม่ทำปฏิกิริยาควบแน่นเพื่อปิดวงแหวนในสภาวะการสังเคราะห์ดังกล่าว",
+    "answerImage": "",
+    "note": "ข้อ 7 (PLE_CC1_2560 22 April Set 2.md) [ย้ายจาก 6. Hematologic::53]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2560.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "13. Medicinal Chemistry::160",
+    "itemNo": 157,
+    "category": "13. Medicinal Chemistry",
+    "topic": "13. Medicinal Chemistry & Pharmaceutical Analysis",
+    "subtopic": "13.1 Drug Identification and Spectroscopy",
+    "track": "Product",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "จากโครงสร้างของยา Hydrochlorothiazide (HCTZ) การวิเคราะห์จำแนกเอกลักษณ์และหมู่ฟังก์ชันเฉพาะในโครงสร้างทางเคมีสามารถวิเคราะห์ได้อย่างแม่นยำด้วยวิธีใด",
+    "questionImage": "",
+    "choices": [
+      "Finger print region จาก FTIR spectroscopy",
+      "Chromatogram จาก Thin Layer Chromatography (TLC)",
+      "UV-Visible spectrophotometry สำหรับการหาปริมาณรวม",
+      "Colorimetric assay ด้วยการเกิดสีทั่วไป",
+      "Melting point determination"
+    ],
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Finger print region จาก FTIR spectroscopy<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การวิเคราะห์ย่าน Finger print จากเครื่องมือ Fourier Transform Infrared (FTIR) spectroscopy เป็นวิธีมาตรฐานทางเภสัชเวทและเคมีวิเคราะห์ที่ใช้ตรวจเอกลักษณ์โครงสร้างโมเลกุลและหมู่ฟังก์ชันเฉพาะของยา โดยเฉพาะกลุ่มซัลโฟนาไมด์และวงแหวนไทอาไซด์ของ HCTZ ได้อย่างจำเพาะเจาะจงที่สุด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Chromatogram จาก Thin Layer Chromatography (TLC)): TLC ใช้สำหรับการทดสอบการปนเปื้อนหรือตรวจเอกลักษณ์เบื้องต้นเชิงเปรียบเทียบ ไม่สามารถระบุรายละเอียดของหมู่ฟังก์ชันทางเคมีได้อย่างละเอียด<br>• ข้อ ค. (UV-Visible spectrophotometry สำหรับการหาปริมาณรวม): UV spectroscopy ใช้สำหรับการวิเคราะห์เชิงปริมาณโดยอาศัยโครโมฟอร์ แต่ไม่สามารถจำแนกรายละเอียดโครงสร้างหรือหมู่ฟังก์ชันเชิงลึกได้เท่ากับ FTIR<br>• ข้อ ง. (Colorimetric assay ด้วยการเกิดสีทั่วไป): การทดสอบการเกิดสีเป็นปฏิกิริยาเคมีทั่วไปที่ไม่จำเพาะเจาะจงต่อโครงสร้างทั้งหมดของโมเลกุลยา<br>• ข้อ จ. (Melting point determination): จุดหลอมเหลวเป็นเพียงสมบัติทางกายภาพเบื้องต้นสำหรับการบ่งบอกความบริสุทธิ์ แต่ไม่สามารถยืนยันโครงสร้างทางเคมีหรือหมู่ฟังก์ชันได้",
+    "answerImage": "",
+    "note": "ข้อ 32 (PLE_CC1_2555 Day 1.md) [ย้ายจาก 6. Hematologic::56]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2555.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
     "id": "1. Pharmacy Laws & Ethics::3",
     "itemNo": 1,
     "category": "1. Pharmacy Laws & Ethics",
@@ -272829,6 +273277,62 @@ window.QUIZ_OFFLINE_DB = [
     "note": "ข้อ 20 (PLE_CC1_2561_Key.md) [ย้ายจาก 6. Solid Dosage Forms::79]",
     "examType": "ข้อสอบจริง",
     "examYear": "2561.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "1. Pharmacy Laws & Ethics::242",
+    "itemNo": 240,
+    "category": "1. Pharmacy Laws & Ethics",
+    "topic": "1. Law & Regulations",
+    "subtopic": "1.1 พ.ร.บ. ยา",
+    "track": "SAP",
+    "caseContext": "ชายอายุ 28 ปี มาขอซื้อยา Tramadol capsules เพื่อบรรเทาอาการปวดจากโรคประจำตัวและแจ้งว่าต้องการพกติดตัวไปต่างประเทศ เภสัชกรจึงจ่ายยาให้ไปจำนวน 30 เม็ด พร้อมเขียนฉลากระบุข้อบ่งใช้ วิธีบริหารยา และข้อควรระวังครบถ้วน",
+    "caseStem": "ชายอายุ 28 ปี มาขอซื้อยา Tramadol capsules เพื่อบรรเทาอาการปวดจากโรคประจำตัวและแจ้งว่าต้องการพกติดตัวไปต่างประเทศ เภสัชกรจึงจ่ายยาให้ไปจำนวน 30 เม็ด พร้อมเขียนฉลากระบุข้อบ่งใช้ วิธีบริหารยา และข้อควรระวังครบถ้วน",
+    "question": "จากสถานการณ์ดังกล่าวข้อใดสรุปถูกต้องตามกฎหมายและจรรยาบรรณวิชาชีพเภสัชกรรม",
+    "questionImage": "",
+    "choices": [
+      "สามารถขายได้ ไม่ผิดกฎหมาย และผิดจรรยาบรรณ",
+      "ไม่สามารถขายได้ การจ่ายยานี้ผิดกฎหมาย และผิดจรรยาบรรณวิชาชีพ",
+      "สามารถขายได้ ไม่ผิดกฎหมาย และไม่ผิดจรรยาบรรณ",
+      "ไม่สามารถขายได้ ผิดกฎหมาย แต่ไม่ผิดจรรยาบรรณ",
+      "ไม่สามารถขายได้ ไม่ผิดกฎหมาย แต่ผิดจรรยาบรรณ"
+    ],
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 2. ไม่สามารถขายได้ การจ่ายยานี้ผิดกฎหมาย และผิดจรรยาบรรณวิชาชีพ<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามประกาศกระทรวงสาธารณสุขและมาตรการควบคุมการจำหน่ายยา Tramadol ในร้านยากำหนดให้จำกัดปริมาณการจำหน่ายไม่เกิน 20 เม็ด/แคปซูล ต่อครั้ง ดังนั้น การจ่ายยาให้ผู้ป่วยจำนวน 30 เม็ด จึงเป็นการฝ่าฝืนกฎหมาย พ.ร.บ. ยา และขัดต่อจรรยาบรรณแห่งวิชาชีพเภสัชกรรม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 1.: ผิด เพราะการจ่ายยาเกิน 20 เม็ด เป็นการฝ่าฝืนกฎหมายควบคุมยาอันตราย<br>• ข้อ 3.: ผิด เพราะการกระทำดังกล่าวผิดทั้งข้อบังคับทางกฎหมายและมาตรฐานจริยธรรมวิชาชีพ<br>• ข้อ 4.: ผิด เพราะการละเมิดกฎหมายควบคุมยาเสี่ยงต่อการเสพติดถือเป็นการละเมิดจรรยาบรรณวิชาชีพด้วย<br>• ข้อ 5.: ผิด เพราะการจ่ายยาเกินปริมาณที่กำหนดมีความผิดตามกฎหมาย พ.ร.บ. ยา ชัดเจน",
+    "answerImage": "",
+    "note": "ข้อสอบจริง Product ปี 2567 ข้อ 38 [ย้ายจาก 4. Preformulation & GMP::19]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2567.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "1. Pharmacy Laws & Ethics::243",
+    "itemNo": 241,
+    "category": "1. Pharmacy Laws & Ethics",
+    "topic": "1. Law & Regulations",
+    "subtopic": "1.1 พ.ร.บ. ยา",
+    "track": "SAP",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "Ferrous sulfate ขนาดบรรจุ 100 เม็ด จัดเป็นยาประเภทใดตามพระราชบัญญัติยา",
+    "questionImage": "",
+    "choices": [
+      "ยาเสพติดให้โทษ ประเภทที่ 3",
+      "ยาอันตราย",
+      "ยาควบคุมพิเศษ",
+      "วัตถุออกฤทธิ์ต่อจิตและประสาท ประเภท 3",
+      "ยาสามัญประจำบ้าน"
+    ],
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. ยาอันตราย<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Ferrous sulfate ชนิดรับประทานที่มีขนาดบรรจุใหญ่ (เช่น 100 เม็ด) จัดเป็นยาอันตรายตามประกาศกระทรวงสาธารณสุข ซึ่งการจำหน่ายต้องอยู่ภายใต้การควบคุมของเภสัชกรในร้านยาแผนปัจจุบัน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (ยาเสพติดให้โทษ ประเภทที่ 3): เป็นกลุ่มยาเสพติดที่มีตำรับยาผสมอยู่และมีประโยชน์ในการรักษา เช่น ยาแก้ไอมีส่วนผสมของโคเดอีน ไม่ใช่เกลือแร่ธาตุเหล็ก<br>• ข้อ ค. (ยาควบคุมพิเศษ): เป็นกลุ่มยาที่มีพิษภัยสูงหรือต้องใช้ใบสั่งแพทย์อย่างเคร่งครัด เช่น สเตียรอยด์หรือยาปฏิชีวนะบางกลุ่ม ยาธาตุเหล็กไม่ใช่ยาควบคุมพิเศษ<br>• ข้อ ง. (วัตถุออกฤทธิ์ต่อจิตและประสาท ประเภท 3): เป็นกลุ่มยาที่มีผลต่อระบบประสาทส่วนกลาง เช่น ยากล่อมประสาท ไม่เกี่ยวข้องกับยาบำรุงเลือด<br>• ข้อ จ. (ยาสามัญประจำบ้าน): ยาสามัญประจำบ้านมักมีขนาดบรรจุเล็กและมีความปลอดภัยสูงเพื่อการ ใช้อบรมรักษาอาการเจ็บป่วยเบื้องต้นด้วยตนเอง เช่น Ferrous sulfate ขนาดบรรจุไม่เกินเม็ดละจำนวนน้อยตามประกาศกำหนด แต่ขนาด 100 เม็ดจัดเป็นยาอันตราย",
+    "answerImage": "",
+    "note": "ข้อ 4 (LAW-CU-71.md) [ย้ายจาก 6. Hematologic::54]",
+    "examType": "ข้อสอบจำลอง",
+    "examYear": "Mock กฎหมาย CU71",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
