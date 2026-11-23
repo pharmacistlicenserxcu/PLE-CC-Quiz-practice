@@ -6667,7 +6667,7 @@
 
           <h1>PLE-CC Quiz Practice</h1>
 
-          <p>คลังข้อสอบปรนัยเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม</p>
+          <p style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;"><span>คลังข้อสอบปรนัยเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม</span><span style="color:#94a3b8;">•</span><span id="lobbyDbTimestampBadge" style="display:inline-flex; align-items:center; gap:4px; font-weight:600; color:#0284c7; font-size:11.5px; background:rgba(2, 132, 199, 0.08); padding:1px 7px; border-radius:6px; border:1px solid rgba(2, 132, 199, 0.2);"><span style="display:inline-block; width:6px; height:6px; background:#10b981; border-radius:50%;"></span><span id="lobbyDbTimestampText">อัปเดต: กำลังโหลด...</span></span></p>
 
         </div>
 
@@ -6857,6 +6857,8 @@
               <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px; flex-wrap:wrap;">
 
                 <span style="background:#0284c7; color:#fff; font-size:10.5px; font-weight:700; padding:2px 7px; border-radius:6px; letter-spacing:0.3px;">VERSION ทดลอง</span>
+
+                <span id="bannerDbTimestampBadge" style="background:#047857; color:#fff; font-size:10.5px; font-weight:700; padding:2px 7px; border-radius:6px; letter-spacing:0.3px;">ข้อสอบล่าสุด: กำลังโหลด...</span>
 
                 <span style="font-weight:700; color:#0369a1;">โครงการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC)</span>
 
@@ -8750,6 +8752,21 @@
       <div class="modal-head">
         <h3 style="display:flex; align-items:center; gap:7px;">⚙️ เมนูเครื่องมือ & ตั้งค่า</h3>
         <button class="modal-close" onclick="closeUnifiedToolsModal()">✕</button>
+      </div>
+
+      <!-- Database Status Section -->
+      <div class="tools-modal-section" style="background:rgba(2, 132, 199, 0.05); border:1px solid rgba(2, 132, 199, 0.2); border-radius:10px; padding:10px 12px; margin-bottom:12px;">
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+          <span style="font-weight:700; font-size:12px; color:#0369a1; display:flex; align-items:center; gap:5px;">
+            <span style="display:inline-block; width:7px; height:7px; background:#10b981; border-radius:50%;"></span>
+            สถานะฐานข้อมูลข้อสอบ
+          </span>
+          <span class="tools-action-badge" style="background:#e0f2fe; color:#0284c7; font-weight:700; font-size:10px;" id="menuDbSourceBadge">Google Sheets</span>
+        </div>
+        <div style="font-size:11.5px; color:#475569; line-height:1.45;">
+          <div>🕒 อัปเดตล่าสุด: <b id="menuDbTimestamp" style="color:#0f172a;">-</b></div>
+          <div>📊 จำนวนข้อสอบทั้งหมด: <b id="menuDbTotal" style="color:#0f172a;">-</b></div>
+        </div>
       </div>
 
       <!-- Quiz Layout (Quiz Only) -->
@@ -12136,6 +12153,8 @@ function isUserAllowedAdmin(username) {
 // ─── INITIALIZATION ───
 
 window.addEventListener('load', () => {
+
+  updateDbTimestampUI();
 
   updateFullscreenBtnUI();
 
@@ -25013,11 +25032,65 @@ function syncUnifiedToolsModalUI() {
   if (fsBadge && typeof isFullscreenActive === 'function') {
     fsBadge.textContent = isFullscreenActive() ? 'เต็มจอ' : 'ปกติ';
   }
+
+  // 6. Database status in menu
+  updateDbTimestampUI();
 }
 
-// Initial card animation state
+function formatThaiDateTime(dateStr) {
+  if (!dateStr) return 'ไม่ระบุ';
+  try {
+    const parts = dateStr.trim().split(/[\sT]+/);
+    if (parts.length >= 2) {
+      const dParts = parts[0].split('-');
+      const tParts = parts[1].split(':');
+      if (dParts.length === 3 && tParts.length >= 2) {
+        const yearCE = parseInt(dParts[0], 10);
+        const yearBE = yearCE < 2500 ? yearCE + 543 : yearCE;
+        const monthNum = parseInt(dParts[1], 10);
+        const thaiMonths = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
+        const mStr = thaiMonths[monthNum - 1] || dParts[1];
+        const day = parseInt(dParts[2], 10);
+        const hh = tParts[0].padStart(2, '0');
+        const mm = tParts[1].padStart(2, '0');
+        return `${day} ${mStr} ${yearBE} เวลา ${hh}:${mm} น.`;
+      }
+    }
+  } catch (e) {
+    console.warn('formatThaiDateTime error:', e);
+  }
+  return dateStr;
+}
 
+function updateDbTimestampUI() {
+  const ts = window.QUIZ_BUILD_TIMESTAMP || '';
+  const total = window.QUIZ_TOTAL_QUESTIONS || (window.QUIZ_OFFLINE_DB ? window.QUIZ_OFFLINE_DB.length : 0);
+  const source = window.QUIZ_BUILD_SOURCE || 'Google Sheets';
+  const formatted = ts ? formatThaiDateTime(ts) : 'สดจาก Google Sheets';
+
+  const elLobbyText = document.getElementById('lobbyDbTimestampText');
+  if (elLobbyText) {
+    elLobbyText.textContent = `อัปเดต: ${formatted}`;
+  }
+
+  const elBanner = document.getElementById('bannerDbTimestampBadge');
+  if (elBanner) {
+    elBanner.textContent = `ข้อสอบล่าสุด: ${formatted}`;
+  }
+
+  const elMenuTs = document.getElementById('menuDbTimestamp');
+  if (elMenuTs) elMenuTs.textContent = formatted;
+
+  const elMenuTot = document.getElementById('menuDbTotal');
+  if (elMenuTot) elMenuTot.textContent = `${total.toLocaleString()} ข้อ`;
+
+  const elMenuSrc = document.getElementById('menuDbSourceBadge');
+  if (elMenuSrc) elMenuSrc.textContent = source;
+}
+
+// Initial card animation state & database status
 if (typeof updateAnimBtnUI === 'function') updateAnimBtnUI();
+updateDbTimestampUI();
 
 </script>
 

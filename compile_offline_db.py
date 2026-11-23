@@ -357,11 +357,13 @@ def download_live_spreadsheet_if_needed(excel_path):
         print(f"  [WARN] Could not download live spreadsheet: {e}")
     return False
 
-def compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=False):
+def compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=False, is_live_sheets=False):
     import openpyxl
+    source_label = "Google Sheets (Live Sync)" if is_live_sheets else "Local Excel (Offline Cache)"
     print("=" * 65)
-    print("  🚀 [Fast Local Mode] Compiling quiz-data-offline.js from Excel")
-    print(f"  Source: {excel_path}")
+    print(f"  🚀 [{source_label}] Compiling quiz-data-offline.js")
+    print(f"  Source File: {excel_path}")
+    print(f"  Target Sheet: {SPREADSHEET_ID}")
     print("=" * 65)
     
     start_time = time.time()
@@ -537,17 +539,23 @@ def compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=False):
 
     post_process_cases(offline_questions)
 
-    timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
+    from datetime import datetime, timezone, timedelta
+    tz_thai = timezone(timedelta(hours=7))
+    timestamp = datetime.now(tz_thai).strftime('%Y-%m-%d %H:%M:%S')
     header_comment = f"""/**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.1 Pro Edition)
  * Total Questions: {len(all_records)} across {len(categories_meta)} Categories
- * Build Timestamp: {timestamp}
- * Build Mode: Fast Local (openpyxl)
+ * Build Timestamp: {timestamp} (UTC+7)
+ * Build Source: {source_label}
+ * Google Sheet ID: {SPREADSHEET_ID}
  */
 
-window.QUIZ_GOOGLE_SHEET_ID = "1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w";
-window.QUIZ_GAS_SCRIPT_ID = '1LB8brFu49jQwb5xR3WeeyW2Su_M8e1X2XX3mxD6sxlO7yVwWpDPwG-tS';
-window.QUIZ_GAS_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycby14F6sdMW67mOv2D6EzRW3NMP6rVnzUHKWjwr_8i10y3NWTOrQPvqmmy6p9LIITNrM/exec';
+window.QUIZ_GOOGLE_SHEET_ID = "{SPREADSHEET_ID}";
+window.QUIZ_GAS_SCRIPT_ID = '{GAS_SCRIPT_ID}';
+window.QUIZ_GAS_WEBAPP_URL = '{GAS_WEBAPP_URL}';
+window.QUIZ_BUILD_TIMESTAMP = "{timestamp}";
+window.QUIZ_BUILD_SOURCE = "{source_label}";
+window.QUIZ_TOTAL_QUESTIONS = {len(all_records)};
 
 window.QUIZ_OFFLINE_CATEGORIES = {json.dumps(categories_meta, ensure_ascii=False, indent=2)};
 
@@ -577,8 +585,10 @@ def main():
                         help='Path to PLE CC Quiz web directory')
     parser.add_argument('--skip-images', action='store_true',
                         help='Skip in-cell image extraction export')
-    parser.add_argument('--source', choices=['auto', 'excel', 'sheets'], default='auto',
-                        help='Data source: auto (prefers local Excel if present), excel (PLE CC QUIZ.xlsx), sheets (Google Sheets API)')
+    parser.add_argument('--source', choices=['sheets', 'auto', 'excel'], default='sheets',
+                        help='Data source: sheets (Google Sheets live sync, default), auto, excel (local only)')
+    parser.add_argument('--allow-local', action='store_true',
+                        help='Explicitly allow compiling from local excel without downloading from Google Sheets')
     parser.add_argument('--no-sw-bump', action='store_true',
                         help='Do not bump Service Worker cache version')
     args = parser.parse_args()
@@ -604,15 +614,33 @@ def main():
     
     # In CI or if remote sync requested, fetch fresh live sheet from Google Sheets
     is_ci = os.environ.get('GITHUB_ACTIONS') == 'true' or os.environ.get('CI') == 'true'
-    if is_ci or args.source in ['sheets', 'auto']:
-        download_live_spreadsheet_if_needed(excel_path)
+    download_success = False
 
-    if (args.source == 'excel') or (args.source == 'auto' and mode == 'all' and not query and os.path.exists(excel_path)):
+    if args.source == 'excel':
+        if not args.allow_local and not is_ci:
+            print("\n  ⚠️ [WARNING] Fast Local mode will compile from the local Excel file on disk,")
+            print("     which may NOT contain the latest questions updated on Google Sheets!")
+            ans = input("  Are you sure you want to compile from local Excel? (y/N): ").strip().lower()
+            if ans != 'y':
+                print("  [CANCELLED] Compilation cancelled. Run with --source sheets to sync from Google Sheets.")
+                sys.exit(0)
+        print("\n  ⚠️ [NOTICE] Compiling from LOCAL EXCEL file without downloading from Google Sheets.")
+    else:
+        # Default or sheets: ALWAYS download live spreadsheet directly from Google Sheets
+        download_success = download_live_spreadsheet_if_needed(excel_path)
+        if not download_success:
+            print("\n  ❌ [ERROR] Could not download live spreadsheet from Google Sheets!")
+            print("     Compilation aborted to prevent using stale local data.")
+            print("     Please check your internet connection or Google Sheets permissions.")
+            sys.exit(1)
+
+    if (args.source == 'excel') or (mode == 'all' and not query and os.path.exists(excel_path)):
         try:
-            compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=args.no_sw_bump)
+            is_live = (args.source != 'excel' and download_success)
+            compile_from_excel_direct(excel_path, output_js, sw_js, no_sw_bump=args.no_sw_bump, is_live_sheets=is_live)
             return
         except Exception as ex_err:
-            print(f"  [WARN] Fast local Excel compile failed: {ex_err}. Falling back to Google Sheets API...")
+            print(f"  [WARN] Fast Excel compile failed: {ex_err}. Falling back to Google Sheets API...")
 
     creds = get_google_credentials()
     service = build('sheets', 'v4', credentials=creds)
@@ -1015,15 +1043,20 @@ def main():
     # 8. Write quiz-data-offline.js
     print(f"\n  💾 Writing to {output_js}...")
     with open(output_js, 'w', encoding='utf-8') as f:
+        curr_ts = time_str()
         f.write("/**\n")
         f.write(" * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.1 Pro Edition)\n")
         f.write(f" * Total Questions: {total_q_count} across {len(offline_categories)} Categories\n")
-        f.write(f" * Build Timestamp: {time_str()}\n")
-        f.write(f" * Build Mode: {mode} (query: '{query}')\n")
+        f.write(f" * Build Timestamp: {curr_ts} (UTC+7)\n")
+        f.write(f" * Build Source: Google Sheets (API Sync)\n")
+        f.write(f" * Google Sheet ID: {SPREADSHEET_ID}\n")
         f.write(" */\n\n")
         f.write(f'window.QUIZ_GOOGLE_SHEET_ID = "{SPREADSHEET_ID}";\n')
         f.write(f"window.QUIZ_GAS_SCRIPT_ID = '{GAS_SCRIPT_ID}';\n")
-        f.write(f"window.QUIZ_GAS_WEBAPP_URL = '{GAS_WEBAPP_URL}';\n\n")
+        f.write(f"window.QUIZ_GAS_WEBAPP_URL = '{GAS_WEBAPP_URL}';\n")
+        f.write(f'window.QUIZ_BUILD_TIMESTAMP = "{curr_ts}";\n')
+        f.write(f'window.QUIZ_BUILD_SOURCE = "Google Sheets (API Sync)";\n')
+        f.write(f'window.QUIZ_TOTAL_QUESTIONS = {total_q_count};\n\n')
         f.write("window.QUIZ_OFFLINE_CATEGORIES = ")
         f.write(json.dumps(offline_categories, ensure_ascii=False, indent=2))
         f.write(";\n\n")
@@ -1044,7 +1077,9 @@ def main():
     print(f"  ⏱️ Time taken: {elapsed:.2f} seconds.\n")
 
 def time_str():
-    import datetime
+    from datetime import datetime, timezone, timedelta
+    tz_thai = timezone(timedelta(hours=7))
+    return datetime.now(tz_thai).strftime("%Y-%m-%d %H:%M:%S")
     return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 if __name__ == '__main__':
