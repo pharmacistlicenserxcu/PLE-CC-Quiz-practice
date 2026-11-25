@@ -1038,25 +1038,46 @@
 
 
     .lobby-greeting {
-
-      background: var(--card); border: 1px solid var(--border); border-radius: 18px;
-
-      padding: 16px 18px; margin-bottom: 14px; box-shadow: var(--shadow-sm);
-
+      background: linear-gradient(135deg, #fffdf9 0%, #fff7ed 100%);
+      border: 1.5px solid #fed7aa;
+      border-radius: 20px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 18px rgba(234, 88, 12, 0.06);
     }
 
-    .lobby-greeting h2 { font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
+    .lobby-greeting-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
-    .lobby-greeting p { font-size: 13px; color: var(--ink-soft); }
+    .lobby-greeting-title-wrap {
+      display: flex;
+      align-items: stretch;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .lobby-greeting-accent {
+      width: 4px;
+      border-radius: 4px;
+      background: linear-gradient(180deg, #ea580c 0%, #f97316 100%);
+      flex-shrink: 0;
+    }
+
+    .lobby-greeting h2 { font-size: 19px; font-weight: 800; color: var(--ink); margin-bottom: 3px; line-height: 1.25; }
+
+    .lobby-greeting p { font-size: 13px; color: var(--ink-soft); margin: 0; }
 
     .lobby-streak-badge {
-
       display: inline-flex; align-items: center; gap: 5px;
-
-      background: #FFF7ED; border: 1px solid #FED7AA; color: #C2410C;
-
-      font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-top: 8px;
-
+      background: #ffffff; border: 1px solid #fed7aa; color: #c2410c;
+      font-size: 11.5px; font-weight: 700; padding: 4px 11px; border-radius: 20px;
+      box-shadow: 0 1px 4px rgba(234, 88, 12, 0.08);
+      flex-shrink: 0;
     }
 
 
@@ -5960,36 +5981,71 @@
 
 
   
-    /* ─── DAILY COUNTDOWN MASCOT WIDGET ─── */
+    /* ─── DAILY COUNTDOWN MASCOT WIDGET (2-COLUMN HERO) ─── */
     .lobby-countdown-card {
-      background: linear-gradient(135deg, #ffffff 0%, #fff7ed 55%, #ffedd5 100%);
-      border: 1.5px solid #fed7aa;
-      border-radius: 20px;
-      padding: 18px 22px;
+      display: grid;
+      grid-template-columns: minmax(210px, 240px) 1fr;
+      gap: 16px;
+      align-items: stretch;
       margin-top: 14px;
-      box-shadow: 0 4px 18px rgba(234, 88, 12, 0.08);
+      background: transparent;
+      border: none;
+      padding: 0;
+      box-shadow: none;
+    }
+    .countdown-mascot-frame {
       position: relative;
+      border-radius: 18px;
       overflow: hidden;
-    }
-    .countdown-clock-wrapper {
-      text-align: center;
-      margin-bottom: 16px;
-    }
-    .countdown-clock-header {
+      border: 1.5px solid #fed7aa;
+      background: linear-gradient(145deg, #fff7ed 0%, #ffedd5 100%);
+      box-shadow: 0 4px 14px rgba(234, 88, 12, 0.08);
+      padding: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
+      min-height: 220px;
+    }
+    .countdown-mascot-img {
+      width: 100%;
+      height: 100%;
+      max-height: 250px;
+      object-fit: contain;
+      border-radius: 12px;
+      display: block;
+    }
+    .countdown-mascot-badge {
+      display: none;
+    }
+    .countdown-info-panel {
+      background: #ffffff;
+      border: 1.5px solid #fed7aa;
+      border-radius: 18px;
+      padding: 16px 20px;
+      box-shadow: 0 4px 14px rgba(234, 88, 12, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 0;
+    }
+    .countdown-clock-wrapper {
+      text-align: center;
+    }
+    .countdown-clock-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
       margin-bottom: 12px;
     }
     .countdown-title-pill {
-      background: #ea580c;
+      background: linear-gradient(90deg, #ea580c 0%, #f97316 100%);
       color: #ffffff;
-      font-size: 11.5px;
+      font-size: 12px;
       font-weight: 700;
-      padding: 3px 10px;
-      border-radius: 12px;
+      padding: 4px 14px;
+      border-radius: 20px;
       letter-spacing: 0.2px;
       box-shadow: 0 2px 6px rgba(234, 88, 12, 0.25);
     }
@@ -6002,15 +6058,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 8px;
     }
     .countdown-time-unit {
-      background: #ffffff;
-      border: 1.5px solid #fdba74;
+      background: #fffdfb;
+      border: 1.5px solid #fed7aa;
       border-radius: 14px;
-      padding: 8px 16px;
-      min-width: 72px;
-      box-shadow: 0 3px 8px rgba(234, 88, 12, 0.08);
+      padding: 8px 14px;
+      min-width: 68px;
+      box-shadow: 0 3px 8px rgba(234, 88, 12, 0.07);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -6019,7 +6075,7 @@
     }
     .countdown-time-unit .time-val {
       font-family: 'IBM Plex Mono', monospace, system-ui;
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 800;
       color: #ea580c;
       line-height: 1.05;
@@ -6033,7 +6089,7 @@
     }
     .countdown-big-timer .time-colon {
       font-family: 'IBM Plex Mono', monospace;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 800;
       color: #f97316;
       margin-top: -12px;
@@ -6043,49 +6099,10 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.35; }
     }
-    .countdown-mascot-row {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      background: rgba(255, 255, 255, 0.7);
-      border: 1px solid #fed7aa;
-      border-radius: 14px;
-      padding: 12px 16px;
-    }
-    .countdown-mascot-frame {
-      position: relative;
-      width: 76px;
-      height: 94px;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 2px solid #fdba74;
-      background: #ffffff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .countdown-mascot-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .countdown-mascot-badge {
-      position: absolute;
-      top: 4px;
-      left: 4px;
-      background: rgba(194, 65, 12, 0.92);
-      color: #ffffff;
-      font-size: 9.5px;
-      font-weight: 800;
-      padding: 1px 5px;
-      border-radius: 5px;
-      letter-spacing: 0.3px;
-    }
     .countdown-mascot-info {
-      flex: 1;
+      border-top: 1px solid #ffedd5;
+      padding-top: 12px;
+      margin-top: 12px;
       min-width: 0;
     }
     .countdown-mascot-title-line {
@@ -6093,10 +6110,10 @@
       align-items: center;
       gap: 8px;
       flex-wrap: wrap;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
     }
     .mascot-name-tag {
-      font-size: 13.5px;
+      font-size: 14px;
       font-weight: 800;
       color: #c2410c;
     }
@@ -6106,11 +6123,11 @@
       color: #9a3412;
       font-size: 11px;
       font-weight: 700;
-      padding: 2px 7px;
-      border-radius: 8px;
+      padding: 2px 9px;
+      border-radius: 10px;
     }
     .countdown-daily-quote {
-      font-size: 12px;
+      font-size: 12.5px;
       color: #7c2d12;
       line-height: 1.45;
       font-style: italic;
@@ -6137,7 +6154,21 @@
       box-shadow: 0 1px 4px rgba(234, 88, 12, 0.08);
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 720px) {
+      .lobby-countdown-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .countdown-mascot-frame {
+        min-height: 160px;
+        max-height: 200px;
+      }
+      .countdown-mascot-img {
+        max-height: 180px;
+      }
+      .countdown-info-panel {
+        padding: 14px 12px;
+      }
       .countdown-time-unit {
         min-width: 52px;
         padding: 6px 8px;
@@ -6147,14 +6178,6 @@
       }
       .countdown-big-timer .time-colon {
         font-size: 18px;
-      }
-      .countdown-mascot-row {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .countdown-mascot-frame {
-        width: 80px;
-        height: 100px;
       }
     }
     /* ─── QUIZ QUICK NAVIGATOR & SEARCH MODAL ─── */
@@ -6786,53 +6809,58 @@
       <div class="lobby-main-col">
 
         <div class="lobby-greeting">
-
-          <h2>สวัสดี, <span id="lobbyGreetingName">ผู้ใช้งาน</span> 👋</h2>
-
-          <p id="lobbyGreetingTrackDesc">เลือกหมวดโรคด้านล่างเพื่อเริ่มทำข้อสอบ หรือเลือกโหมด <b>สุ่มทำข้อสอบ</b> เพื่อจำลองสถานการณ์จริง</p>
-
-          <div class="lobby-streak-badge" id="lobbyStreakBadge">📚 วันนี้ยังไม่ได้เริ่มทำข้อสอบ มาลุยกัน!</div>
-
-          <!-- 🐶 Daily Countdown Mascot Card with Live Big Clock -->
-          <div id="lobbyCountdownCard" class="lobby-countdown-card">
-            <!-- Top: Big Centered Live Countdown Clock -->
-            <div class="countdown-clock-wrapper">
-              <div class="countdown-clock-header">
-                <span class="countdown-title-pill">⏳ นับถอยหลังสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC1)</span>
-                <span class="countdown-dday-target">🎯 D-DAY: 11 ธันวาคม 2569 (08:30 น.)</span>
-              </div>
-              <div class="countdown-big-timer">
-                <div class="countdown-time-unit">
-                  <span class="time-val" id="cdDays">24</span>
-                  <span class="time-lbl">วัน</span>
-                </div>
-                <span class="time-colon">:</span>
-                <div class="countdown-time-unit">
-                  <span class="time-val" id="cdHours">07</span>
-                  <span class="time-lbl">ชั่วโมง</span>
-                </div>
-                <span class="time-colon">:</span>
-                <div class="countdown-time-unit">
-                  <span class="time-val" id="cdMinutes">15</span>
-                  <span class="time-lbl">นาที</span>
-                </div>
-                <span class="time-colon">:</span>
-                <div class="countdown-time-unit">
-                  <span class="time-val" id="cdSeconds">30</span>
-                  <span class="time-lbl">วินาที</span>
-                </div>
+          <div class="lobby-greeting-header">
+            <div class="lobby-greeting-title-wrap">
+              <div class="lobby-greeting-accent"></div>
+              <div>
+                <h2>สวัสดี, <span id="lobbyGreetingName">ผู้ใช้งาน</span> 👋</h2>
+                <p id="lobbyGreetingTrackDesc">เลือกหมวดโรคด้านล่างเพื่อเริ่มทำข้อสอบ หรือเลือกโหมด <b>สุ่มทำข้อสอบ</b> เพื่อจำลองสถานการณ์จริง</p>
               </div>
             </div>
+            <div class="lobby-streak-badge" id="lobbyStreakBadge">📚 วันนี้ยังไม่ได้เริ่มทำข้อสอบ มาลุยกัน!</div>
+          </div>
 
-            <!-- Bottom: Kai Toon Mascot + Daily Mission & Mystery Quote -->
-            <div class="countdown-mascot-row">
-              <div class="countdown-mascot-frame">
-                <img id="countdownMascotImg" src="images/countdown/countdown_t24.png" alt="ไข่ตุ๋นนักเรียนเภสัชฯ" class="countdown-mascot-img">
-                <span id="countdownMascotBadge" class="countdown-mascot-badge">T-24</span>
+          <!-- 🐶 Daily Countdown Mascot Card (2-Column Hero Layout) -->
+          <div id="lobbyCountdownCard" class="lobby-countdown-card">
+            <!-- Left Column: Full Mascot Artwork -->
+            <div class="countdown-mascot-frame">
+              <img id="countdownMascotImg" src="images/countdown/countdown_t24.png" alt="ไข่ตุ๋นนักเรียนเภสัชฯ" class="countdown-mascot-img">
+              <span id="countdownMascotBadge" class="countdown-mascot-badge">T-24</span>
+            </div>
+
+            <!-- Right Column: Live Countdown Clock + Kai Toon Quote -->
+            <div class="countdown-info-panel">
+              <div class="countdown-clock-wrapper">
+                <div class="countdown-clock-header">
+                  <span class="countdown-title-pill">⏳ นับถอยหลังสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC1)</span>
+                  <span class="countdown-dday-target">📅 D-DAY: 11 ธันวาคม 2569 (08:30 น.)</span>
+                </div>
+                <div class="countdown-big-timer">
+                  <div class="countdown-time-unit">
+                    <span class="time-val" id="cdDays">24</span>
+                    <span class="time-lbl">วัน</span>
+                  </div>
+                  <span class="time-colon">:</span>
+                  <div class="countdown-time-unit">
+                    <span class="time-val" id="cdHours">07</span>
+                    <span class="time-lbl">ชั่วโมง</span>
+                  </div>
+                  <span class="time-colon">:</span>
+                  <div class="countdown-time-unit">
+                    <span class="time-val" id="cdMinutes">15</span>
+                    <span class="time-lbl">นาที</span>
+                  </div>
+                  <span class="time-colon">:</span>
+                  <div class="countdown-time-unit">
+                    <span class="time-val" id="cdSeconds">30</span>
+                    <span class="time-lbl">วินาที</span>
+                  </div>
+                </div>
               </div>
+
               <div class="countdown-mascot-info">
                 <div class="countdown-mascot-title-line">
-                  <span class="mascot-name-tag">🐶 ไข่ตุ๋นชวนติว</span>
+                  <span class="mascot-name-tag">📣 ไข่ตุ๋นชวนติว</span>
                   <span id="countdownDailyMission" class="mascot-mission-tag">ภารกิจวันนี้: T-24 (17 พ.ย. 2569)</span>
                 </div>
                 <div id="countdownDailyQuote" class="countdown-daily-quote">"ลุยค้นคว้าบนแล็ปท็อป หาข้อมูลสรุปประเด็น สู้ไปด้วยกันนะว่าที่เภสัชกร! 💻✨"</div>
@@ -6843,47 +6871,25 @@
             </div>
           </div>
 
-
-
-
-          <!-- ⚠️ Lobby Notice Banner (Dismissible) -->
-
-          <div id="lobbyDisclaimerBanner" style="display:flex; align-items:flex-start; gap:12px; background:linear-gradient(135deg, rgba(2, 132, 199, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%); border:1px solid rgba(2, 132, 199, 0.25); border-radius:12px; padding:12px 14px; margin-top:12px; font-size:12.5px; line-height:1.55; color:#0f172a;">
-
-            <div style="font-size:22px; line-height:1; flex-shrink:0;">🧪</div>
-
-            <div style="flex:1;">
-
-              <div style="display:flex; align-items:center; gap:6px; margin-bottom:4px; flex-wrap:wrap;">
-
-                <span style="background:#0284c7; color:#fff; font-size:10.5px; font-weight:700; padding:2px 7px; border-radius:6px; letter-spacing:0.3px;">VERSION ทดลอง</span>
-
-                <span id="bannerDbTimestampBadge" style="background:#047857; color:#fff; font-size:10.5px; font-weight:700; padding:2px 7px; border-radius:6px; letter-spacing:0.3px;">ข้อสอบล่าสุด: กำลังโหลด...</span>
-
-                <span style="font-weight:700; color:#0369a1;">โครงการเตรียมสอบใบประกอบวิชาชีพเภสัชกรรม (PLE-CC)</span>
-
+          <!-- ⚠️ Lobby Notice Banner (Compact 2-Line Blue Banner) -->
+          <div id="lobbyDisclaimerBanner" style="display:flex; align-items:center; gap:10px; background:#eff6ff; border:1px solid #bfdbfe; border-radius:14px; padding:10px 14px; margin-top:14px; font-size:12px; line-height:1.5; color:#1e3a8a;">
+            <div style="font-size:18px; line-height:1; flex-shrink:0;">✅</div>
+            <div style="flex:1; min-width:0;">
+              <div>
+                <b>ข่าวสาร/แจ้งเตือน :</b> <i>"ร่วมด้วยช่วยกันตรวจทาน เพื่อส่งข้อสอบที่มีคุณภาพสำหรับทุกคนครับ"</i> ระบบนี้อยู่ในช่วงทดสอบใช้งาน ทีมงานกำลังทยอยตรวจสอบ ปรับปรุง และแก้ไขข้อผิดพลาดอย่างต่อเนื่อง
               </div>
-
-              <div style="color:#334155;">
-
-                ✨ <b>"ร่วมด้วยช่วยกันตรวจทาน เพื่อคลังข้อสอบที่มีคุณภาพสำหรับทุกคนครับ"</b> ระบบนี้อยู่ในช่วงทดสอบใช้งาน ทีมงานกำลังทยอยตรวจสอบ ปรับปรุง และแก้ไขข้อสอบ/เฉลยให้อย่างต่อเนื่อง
-
+              <div style="margin-top:4px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:11.5px;">
+                <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  <span style="background:#0284c7; color:#fff; font-size:10px; font-weight:700; padding:1px 7px; border-radius:6px;">VERSION ทดลอง</span>
+                  <span id="bannerDbTimestampBadge" style="background:#047857; color:#fff; font-size:10px; font-weight:700; padding:1px 7px; border-radius:6px;">ข้อสอบล่าสุด: กำลังโหลด...</span>
+                </div>
+                <div style="color:#475569;">
+                  | <b style="color:#047857;">✅ ข้อสอบถูกต้อง</b> | <b style="color:#b91c1c;">🚩 แจ้งปัญหา</b> ได้ตลอดเวลาครับ
+                </div>
               </div>
-
-              <div style="margin-top:5px; font-size:11.8px; color:#475569; display:flex; gap:14px; flex-wrap:wrap;">
-
-                <span>• ถ้าข้อไหนโอเคถูกต้องแล้ว กดปุ่ม <b style="color:#047857;">✅ "ข้อสอบถูกต้อง"</b> เพื่อยืนยันความถูกต้อง</span>
-
-                <span>• ถ้าพบจุดผิดพลาด กดปุ่ม <b style="color:#b91c1c;">🚩 "แจ้งปัญหา"</b> ได้ตลอดเวลาครับ</span>
-
-              </div>
-
             </div>
-
-            <button type="button" onclick="document.getElementById('lobbyDisclaimerBanner').style.display='none'" style="background:none; border:none; color:#64748b; cursor:pointer; font-size:15px; font-weight:700; padding:2px 6px;" title="ปิดการแจ้งเตือนนี้">✕</button>
-
+            <button type="button" onclick="document.getElementById('lobbyDisclaimerBanner').style.display='none'" style="background:none; border:none; color:#64748b; cursor:pointer; font-size:15px; font-weight:700; padding:2px 6px; flex-shrink:0;" title="ปิดการแจ้งเตือนนี้">✕</button>
           </div>
-
         </div>
 
 
