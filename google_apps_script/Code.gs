@@ -515,16 +515,16 @@ function doGet(e) {
     }
 
 
-    // 4. ดึงข้อมูลตารางอันดับคนขยัน (Leaderboard Top 10) & สถิติจำนวนสมาชิก
+    // 4. ดึงข้อมูลตารางอันดับคนขยัน (Leaderboard Top 50) & สถิติจำนวนสมาชิก
     if (action === 'getLeaderboard') {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
       const sheet = ss.getSheetByName('User_Profiles');
       if (!sheet) {
-        return jsonResponse_({ success: true, totalMembers: 0, totalAnsweredAll: 0, leaderboard: [] });
+        return jsonResponse_({ success: true, totalMembers: 0, totalAnsweredAll: 0, leaderboard: [], data: { totalMembers: 0, totalAnsweredAll: 0, leaderboard: [] } });
       }
       const lastRow = sheet.getLastRow();
       if (lastRow < 3) {
-        return jsonResponse_({ success: true, totalMembers: 0, totalAnsweredAll: 0, leaderboard: [] });
+        return jsonResponse_({ success: true, totalMembers: 0, totalAnsweredAll: 0, leaderboard: [], data: { totalMembers: 0, totalAnsweredAll: 0, leaderboard: [] } });
       }
 
       const rows = sheet.getRange(3, 1, lastRow - 2, 7).getValues();
@@ -537,7 +537,22 @@ function doGet(e) {
         const dn = String(r[1] || u).trim();
         const ans = Number(r[2] || 0);
         const cor = Number(r[3] || 0);
-        const acc = String(r[4] || '0%').trim();
+        
+        // Cleanly parse accuracy into integer percentage (e.g. 73) and formatted string (e.g. "73%")
+        const accRaw = r[4];
+        let accNum = 0;
+        if (typeof accRaw === 'number') {
+          accNum = accRaw <= 1.0 ? Math.round(accRaw * 100) : Math.round(accRaw);
+        } else {
+          const accStr = String(accRaw || '').replace('%', '').trim();
+          const f = parseFloat(accStr);
+          if (!isNaN(f)) {
+            accNum = (f <= 1.0 && accStr.indexOf('.') !== -1) ? Math.round(f * 100) : Math.round(f);
+          } else if (ans > 0) {
+            accNum = Math.round((cor / ans) * 100);
+          }
+        }
+
         const streak = Number(r[5] || 0);
         const last = String(r[6] || '').trim();
         totalQuestionsAll += ans;
@@ -545,23 +560,31 @@ function doGet(e) {
         usersList.push({
           username: u,
           displayName: dn,
+          total: ans,
           totalAnswered: ans,
+          correct: cor,
           totalCorrect: cor,
-          accuracy: acc,
+          accuracy: accNum,
+          accuracyPct: accNum + '%',
           streak: streak,
           lastActive: last
         });
       });
 
-      // เรียงลำดับจาก TotalCorrect มากไปน้อย
-      usersList.sort((a, b) => b.totalCorrect - a.totalCorrect);
-      const top10 = usersList.slice(0, 10);
+      // เรียงลำดับจาก TotalCorrect มากไปน้อย และตามด้วย Accuracy มากไปน้อย
+      usersList.sort((a, b) => (b.totalCorrect - a.totalCorrect) || (b.accuracy - a.accuracy) || (b.totalAnswered - a.totalAnswered));
+      const top50 = usersList.slice(0, 50);
 
       return jsonResponse_({
         success: true,
         totalMembers: usersList.length,
         totalAnsweredAll: totalQuestionsAll,
-        leaderboard: top10
+        leaderboard: top50,
+        data: {
+          totalMembers: usersList.length,
+          totalAnsweredAll: totalQuestionsAll,
+          leaderboard: top50
+        }
       });
     }
 

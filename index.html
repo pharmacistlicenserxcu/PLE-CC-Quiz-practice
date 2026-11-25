@@ -23591,326 +23591,231 @@ function refreshLeaderboardLive() {
 
 
 
+let communityCachedLeaderboardMeta = { totalMembers: 0, totalAnsweredAll: 0 };
+
 async function loadLeaderboardData() {
-
-  let users = [];
-
-
+  let rawList = [];
+  let totalMembersFromGas = 0;
+  let totalAnsweredFromGas = 0;
 
   // Try fetching from Google Apps Script
-
   if (window.QUIZ_GAS_WEBAPP_URL && !window.QUIZ_GAS_WEBAPP_URL.includes('SAMPLE')) {
-
     try {
-
       const resp = await fetch(window.QUIZ_GAS_WEBAPP_URL + '?action=getLeaderboard&_nocache=' + Date.now());
-
       if (resp.ok) {
-
         const json = await resp.json();
-
-        if (json.success && json.data && json.data.leaderboard && json.data.leaderboard.length > 0) {
-
-          users = json.data.leaderboard;
-
+        // Support both json.leaderboard and json.data.leaderboard
+        const lb = (json && (json.leaderboard || (json.data && json.data.leaderboard))) || [];
+        if (Array.isArray(lb) && lb.length > 0) {
+          rawList = lb;
+          totalMembersFromGas = Number(json.totalMembers || (json.data && json.data.totalMembers) || rawList.length) || 0;
+          totalAnsweredFromGas = Number(json.totalAnsweredAll || (json.data && json.data.totalAnsweredAll) || 0) || 0;
+          communityCachedLeaderboardMeta = {
+            totalMembers: totalMembersFromGas,
+            totalAnsweredAll: totalAnsweredFromGas
+          };
         }
-
       }
-
-    } catch(e) {}
-
+    } catch(e) {
+      console.warn('Leaderboard fetch warning:', e);
+    }
   }
 
+  // Normalize each user entry from GAS
+  let users = rawList.map(u => {
+    const tot = Number(u.total != null ? u.total : (u.totalAnswered != null ? u.totalAnswered : 0)) || 0;
+    const cor = Number(u.correct != null ? u.correct : (u.totalCorrect != null ? u.totalCorrect : 0)) || 0;
 
+    let acc = 0;
+    if (u.accuracy != null) {
+      const accStr = String(u.accuracy).replace('%', '').trim();
+      const num = parseFloat(accStr);
+      if (!isNaN(num)) {
+        acc = (num <= 1.0 && accStr.includes('.')) ? Math.round(num * 100) : Math.round(num);
+      }
+    } else if (tot > 0) {
+      acc = Math.round((cor / tot) * 100);
+    }
+
+    return {
+      rank: 0,
+      username: u.username || '',
+      displayName: u.displayName || u.username || 'นิสิต RxCU',
+      track: u.track || 'Clinic',
+      total: tot,
+      totalAnswered: tot,
+      correct: cor,
+      totalCorrect: cor,
+      accuracy: acc,
+      streak: Number(u.streak || 1),
+      lastActive: u.lastActive || '',
+      badge: u.badge || 'นิสิต RxCU'
+    };
+  });
 
   // Merge current user's local real progress
-
   if (currentUser && currentUser.username !== 'anonymous') {
-
     const prog = getQuizProgress();
-
     const myTotal = Object.keys(prog).length;
-
     const myCorrect = Object.values(prog).filter(v => v.isCorrect).length;
-
     const myAcc = myTotal ? Math.round((myCorrect / myTotal) * 100) : 0;
 
+    const myU = (currentUser.username || '').toLowerCase();
+    const myDn = (currentUser.displayName || '').toLowerCase();
 
-
-    const existingIdx = users.findIndex(u => u.username === currentUser.username || u.displayName === currentUser.displayName);
+    const existingIdx = users.findIndex(u => 
+      (myU && (u.username || '').toLowerCase() === myU) || 
+      (myDn && (u.displayName || '').toLowerCase() === myDn)
+    );
 
     if (existingIdx !== -1) {
-
-      if (myTotal > users[existingIdx].total) {
-
+      if (myTotal >= users[existingIdx].total) {
         users[existingIdx].total = myTotal;
-
+        users[existingIdx].totalAnswered = myTotal;
         users[existingIdx].correct = myCorrect;
-
+        users[existingIdx].totalCorrect = myCorrect;
         users[existingIdx].accuracy = myAcc;
-
       }
-
     } else if (myTotal > 0) {
-
       users.push({
-
         rank: 99,
-
         username: currentUser.username,
-
         displayName: currentUser.displayName,
-
         track: currentTrack || 'Clinic',
-
         total: myTotal,
-
+        totalAnswered: myTotal,
         correct: myCorrect,
-
+        totalCorrect: myCorrect,
         accuracy: myAcc,
-
+        streak: 1,
+        lastActive: new Date().toISOString(),
         badge: 'นิสิต'
-
       });
-
     }
-
   }
 
-
-
-  // Sort by correct desc then accuracy desc
-
-  users.sort((a, b) => (b.correct - a.correct) || (b.accuracy - a.accuracy));
-
+  // Sort by correct desc then accuracy desc then total desc
+  users.sort((a, b) => (b.correct - a.correct) || (b.accuracy - a.accuracy) || (b.total - a.total));
   users.forEach((u, idx) => u.rank = idx + 1);
 
-
-
   communityLeaderboardList = users;
-
-  renderLeaderboard(users);
-
+  renderLeaderboard(users, totalMembersFromGas, totalAnsweredFromGas);
   if (typeof renderSidebarRank === 'function') renderSidebarRank(users);
-
 }
-
-
 
 function toggleLeaderboardPrivacy(isPrivate) {
-
   localStorage.setItem('ple_leaderboard_private', isPrivate ? '1' : '0');
-
   updateLeaderboardPrivacyUI();
-
   if (communityLeaderboardList && communityLeaderboardList.length) {
-
     renderLeaderboard(communityLeaderboardList);
-
+    if (typeof renderSidebarRank === 'function') renderSidebarRank(communityLeaderboardList);
   }
-
 }
-
-
 
 function updateLeaderboardPrivacyUI() {
-
   const isPrivate = localStorage.getItem('ple_leaderboard_private') === '1';
-
   const chk = document.getElementById('chkLeaderboardPrivacy');
-
   if (chk) chk.checked = isPrivate;
-
   const chkSide = document.getElementById('chkSidebarPrivacy');
-
   if (chkSide) chkSide.checked = isPrivate;
-
   const sideText = document.getElementById('sidebarPrivacyText');
-
   if (sideText) sideText.textContent = isPrivate ? 'ซ่อน' : 'แสดง';
 
-
-
   const badge = document.getElementById('lbPrivacyStatusBadge');
-
   if (badge) {
-
     badge.textContent = isPrivate ? '🔒 เปิดโหมดซ่อนชื่อแล้ว' : '🌐 แสดงชื่อปกติ';
-
     badge.style.background = isPrivate ? '#fef3c7' : '#ecfdf5';
-
     badge.style.color = isPrivate ? '#b45309' : '#047857';
-
   }
-
 }
 
-
-
-function renderLeaderboard(users) {
-
+function renderLeaderboard(users, totalMembersArg, totalAnsweredAllArg) {
   updateLeaderboardPrivacyUI();
-
   const isPrivate = localStorage.getItem('ple_leaderboard_private') === '1';
 
-  
-
   // Transform users to apply privacy if isMe
-
   const sanitizedUsers = (users || []).map(u => {
-
     const isMe = currentUser && (u.username === currentUser.username || u.displayName === currentUser.displayName);
-
     if (isMe && isPrivate) {
-
       return Object.assign({}, u, { displayName: 'นิสิตไม่ประสงค์ออกนาม (คุณ)', isAnonymous: true });
-
     }
-
     return u;
-
   });
-
-
 
   const top10 = sanitizedUsers.slice(0, 10);
-
-  const totalMembers = users.length;
-
-  const totalAnsweredAll = users.reduce((acc, u) => acc + (u.total || 0), 0);
-
-  const avgAcc = users.length ? Math.round(users.reduce((acc, u) => acc + (u.accuracy || 0), 0) / users.length) : 0;
-
-
+  const totalMembers = totalMembersArg || (communityCachedLeaderboardMeta && communityCachedLeaderboardMeta.totalMembers) || users.length;
+  const totalAnsweredAll = totalAnsweredAllArg || (communityCachedLeaderboardMeta && communityCachedLeaderboardMeta.totalAnsweredAll) || users.reduce((acc, u) => acc + (u.total || 0), 0);
+  const avgAcc = users.length ? Math.round(users.reduce((acc, u) => acc + (Number(u.accuracy) || 0), 0) / users.length) : 0;
 
   // Stats boxes
-
-  document.getElementById('lbStatTotalMembers').textContent = `${totalMembers} คน`;
-
-  document.getElementById('lbStatTotalAnswered').textContent = `${totalAnsweredAll.toLocaleString()} ข้อ`;
-
-  document.getElementById('lbStatAvgAccuracy').textContent = `${avgAcc}%`;
-
-
+  const elMembers = document.getElementById('lbStatTotalMembers');
+  if (elMembers) elMembers.textContent = `${totalMembers} คน`;
+  const elAns = document.getElementById('lbStatTotalAnswered');
+  if (elAns) elAns.textContent = `${totalAnsweredAll.toLocaleString()} ข้อ`;
+  const elAcc = document.getElementById('lbStatAvgAccuracy');
+  if (elAcc) elAcc.textContent = `${avgAcc}%`;
 
   // Podium (Top 3)
-
   const podiumContainer = document.getElementById('lbPodiumContainer');
-
   if (podiumContainer) {
-
     if (top10.length >= 3) {
-
       podiumContainer.style.display = 'flex';
-
       const r1 = top10[0], r2 = top10[1], r3 = top10[2];
-
       podiumContainer.innerHTML = `
-
         <div class="podium-slot rank-2">
-
           <div class="podium-avatar">🥈</div>
-
-          <div class="podium-name" title="${r2.displayName}">${r2.displayName}</div>
-
+          <div class="podium-name" title="${escapeHtml(r2.displayName)}">${escapeHtml(r2.displayName)}</div>
           <div class="podium-score">${r2.correct}/${r2.total}</div>
-
-          <div style="font-size:10px; color:var(--ink-soft);">${r2.accuracy}%</div>
-
+          <div style="font-size:10px; color:var(--ink-soft);">${r2.accuracy}% แม่นยำ</div>
         </div>
-
         <div class="podium-slot rank-1">
-
           <div class="podium-avatar">👑</div>
-
-          <div class="podium-name" style="color:#B45309;" title="${r1.displayName}">${r1.displayName}</div>
-
+          <div class="podium-name" style="color:#B45309;" title="${escapeHtml(r1.displayName)}">${escapeHtml(r1.displayName)}</div>
           <div class="podium-score" style="color:#B45309;">${r1.correct}/${r1.total}</div>
-
           <div style="font-size:10.5px; font-weight:700; color:#B45309;">${r1.accuracy}% แม่นยำ</div>
-
         </div>
-
         <div class="podium-slot rank-3">
-
           <div class="podium-avatar">🥉</div>
-
-          <div class="podium-name" title="${r3.displayName}">${r3.displayName}</div>
-
+          <div class="podium-name" title="${escapeHtml(r3.displayName)}">${escapeHtml(r3.displayName)}</div>
           <div class="podium-score">${r3.correct}/${r3.total}</div>
-
-          <div style="font-size:10px; color:var(--ink-soft);">${r3.accuracy}%</div>
-
+          <div style="font-size:10px; color:var(--ink-soft);">${r3.accuracy}% แม่นยำ</div>
         </div>`;
-
     } else {
-
       podiumContainer.style.display = 'none';
-
     }
-
   }
-
-
 
   // Top 10 Table
-
   const tbody = document.getElementById('lbTableBody');
+  if (tbody) {
+    if (!top10.length) {
+      tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:32px; color:var(--ink-faint);">ยังไม่มีข้อมูลอันดับในขณะนี้ เมื่อเริ่มทำข้อสอบอันดับจะปรากฏที่นี่</td></tr>';
+      return;
+    }
+    let tHtml = '';
+    top10.forEach(u => {
+      const isMe = currentUser && (u.username === currentUser.username || u.displayName === currentUser.displayName);
+      let badgeClass = 'lb-rank-badge';
+      if (u.rank === 1) badgeClass += ' rank-1-badge';
+      else if (u.rank === 2) badgeClass += ' rank-2-badge';
+      else if (u.rank === 3) badgeClass += ' rank-3-badge';
 
-  if (!top10.length) {
-
-    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; padding:32px; color:var(--ink-faint);">ยังไม่มีข้อมูลอันดับในขณะนี้ เมื่อเริ่มทำข้อสอบอันดับจะปรากฏที่นี่</td></tr>';
-
-    return;
-
+      tHtml += `
+        <tr class="${isMe ? 'my-row' : ''}">
+          <td style="text-align:center;"><span class="${badgeClass}">${u.rank}</span></td>
+          <td>
+            <div style="font-weight:700; color:var(--ink);">${escapeHtml(u.displayName)} ${isMe ? '⭐ (คุณ)' : ''}</div>
+            <div style="font-size:10.5px; color:var(--ink-soft);">${escapeHtml(u.badge || 'นิสิต RxCU')}</div>
+          </td>
+          <td style="text-align:center;"><span class="tag clinic-tag" style="padding:1px 6px; font-size:10.5px;">${escapeHtml(u.track || 'Clinic')}</span></td>
+          <td style="text-align:right; font-family:'IBM Plex Mono', monospace;">${u.total} ข้อ</td>
+          <td style="text-align:right; font-family:'IBM Plex Mono', monospace; font-weight:700; color:var(--confident);">${u.correct}</td>
+          <td style="text-align:right; font-family:'IBM Plex Mono', monospace; font-weight:700;">${u.accuracy}%</td>
+        </tr>`;
+    });
+    tbody.innerHTML = tHtml;
   }
-
-  let tHtml = '';
-
-  top10.forEach(u => {
-
-    const isMe = currentUser && (u.username === currentUser.username || u.displayName === currentUser.displayName);
-
-    let badgeClass = 'lb-rank-badge';
-
-    if (u.rank === 1) badgeClass += ' rank-1-badge';
-
-    else if (u.rank === 2) badgeClass += ' rank-2-badge';
-
-    else if (u.rank === 3) badgeClass += ' rank-3-badge';
-
-
-
-    tHtml += `
-
-      <tr class="${isMe ? 'my-row' : ''}">
-
-        <td style="text-align:center;"><span class="${badgeClass}">${u.rank}</span></td>
-
-        <td>
-
-          <div style="font-weight:700; color:var(--ink);">${u.displayName} ${isMe ? '⭐ (คุณ)' : ''}</div>
-
-          <div style="font-size:10.5px; color:var(--ink-soft);">${u.badge || 'นิสิต RxCU'}</div>
-
-        </td>
-
-        <td style="text-align:center;"><span class="tag clinic-tag" style="padding:1px 6px; font-size:10.5px;">${u.track || 'Clinic'}</span></td>
-
-        <td style="text-align:right; font-family:'IBM Plex Mono', monospace;">${u.total} ข้อ</td>
-
-        <td style="text-align:right; font-family:'IBM Plex Mono', monospace; font-weight:700; color:var(--confident);">${u.correct}</td>
-
-        <td style="text-align:right; font-family:'IBM Plex Mono', monospace; font-weight:700;">${u.accuracy}%</td>
-
-      </tr>`;
-
-  });
-
-  tbody.innerHTML = tHtml;
-
 }
-
 
 
 // ─── COMMUNITY OPEN CHAT ───
@@ -24266,37 +24171,59 @@ function sendCommunityChatMessage() {
 
 
 function syncCurrentUserProfile() {
-
   if (!currentUser || currentUser.username === 'anonymous') return;
-
   const p = getQuizProgress();
-
   const total = Object.keys(p).length;
-
   const correct = Object.values(p).filter(v => v.isCorrect).length;
-
   const acc = total ? Math.round((correct / total) * 100) : 0;
 
-
+  // Optimistically update communityLeaderboardList in memory
+  if (communityLeaderboardList && Array.isArray(communityLeaderboardList)) {
+    const myU = (currentUser.username || '').toLowerCase();
+    const myDn = (currentUser.displayName || '').toLowerCase();
+    const existing = communityLeaderboardList.find(u => 
+      (myU && (u.username || '').toLowerCase() === myU) || 
+      (myDn && (u.displayName || '').toLowerCase() === myDn)
+    );
+    if (existing) {
+      if (total >= existing.total) {
+        existing.total = total;
+        existing.totalAnswered = total;
+        existing.correct = correct;
+        existing.totalCorrect = correct;
+        existing.accuracy = acc;
+      }
+    } else if (total > 0) {
+      communityLeaderboardList.push({
+        rank: 99,
+        username: currentUser.username,
+        displayName: currentUser.displayName,
+        track: currentTrack || 'Clinic',
+        total: total,
+        totalAnswered: total,
+        correct: correct,
+        totalCorrect: correct,
+        accuracy: acc,
+        streak: 1,
+        lastActive: new Date().toISOString(),
+        badge: 'นิสิต'
+      });
+    }
+    communityLeaderboardList.sort((a, b) => (b.correct - a.correct) || (b.accuracy - a.accuracy) || (b.total - a.total));
+    communityLeaderboardList.forEach((u, idx) => u.rank = idx + 1);
+    renderLeaderboard(communityLeaderboardList);
+    if (typeof renderSidebarRank === 'function') renderSidebarRank(communityLeaderboardList);
+  }
 
   sendGasPostRequest({
-
     action: 'syncUserProfile',
-
     username: currentUser.username,
-
     displayName: currentUser.displayName,
-
     track: currentTrack || 'Clinic',
-
     totalAnswered: total,
-
     totalCorrect: correct,
-
     accuracy: acc
-
   });
-
 }
 
 
@@ -24503,7 +24430,7 @@ function renderSidebarRank(users) {
 
           <div class="sidebar-rank-score-val">${u.correct || u.totalCorrect || 0} ข้อ</div>
 
-          <div class="sidebar-rank-score-acc">${u.accuracy || '0%'} แม่นยำ</div>
+          <div class="sidebar-rank-score-acc">${u.accuracy != null ? u.accuracy : 0}% แม่นยำ</div>
 
         </div>
 
