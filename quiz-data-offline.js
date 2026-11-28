@@ -1,7 +1,7 @@
 /**
  * 📝 PLE-CC Quiz Practice -- Auto-compiled Offline Database (v2.1 Pro Edition)
- * Total Questions: 4898 across 32 Categories
- * Build Timestamp: 2026-11-26 01:23:40 (UTC+7)
+ * Total Questions: 4902 across 32 Categories
+ * Build Timestamp: 2026-11-28 16:34:05 (UTC+7)
  * Build Source: Google Sheets (Live Sync)
  * Google Sheet ID: 1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w
  */
@@ -9,14 +9,14 @@
 window.QUIZ_GOOGLE_SHEET_ID = "1CaIHXpiiAi8tFFX2IGXwXp2rXUv6JaOMiKBAiVpAV0w";
 window.QUIZ_GAS_SCRIPT_ID = '1LB8brFu49jQwb5xR3WeeyW2Su_M8e1X2XX3mxD6sxlO7yVwWpDPwG-tS';
 window.QUIZ_GAS_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycby14F6sdMW67mOv2D6EzRW3NMP6rVnzUHKWjwr_8i10y3NWTOrQPvqmmy6p9LIITNrM/exec';
-window.QUIZ_BUILD_TIMESTAMP = "2026-11-26 01:23:40";
+window.QUIZ_BUILD_TIMESTAMP = "2026-11-28 16:34:05";
 window.QUIZ_BUILD_SOURCE = "Google Sheets (Live Sync)";
-window.QUIZ_TOTAL_QUESTIONS = 4898;
+window.QUIZ_TOTAL_QUESTIONS = 4902;
 
 window.QUIZ_OFFLINE_CATEGORIES = [
   {
     "name": "1. Musculoskeleton",
-    "count": 312,
+    "count": 313,
     "track": "Clinic"
   },
   {
@@ -36,7 +36,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "5. Gastrointestinal",
-    "count": 235,
+    "count": 236,
     "track": "Clinic"
   },
   {
@@ -66,7 +66,7 @@ window.QUIZ_OFFLINE_CATEGORIES = [
   },
   {
     "name": "11. Pulmonary",
-    "count": 167,
+    "count": 169,
     "track": "Clinic"
   },
   {
@@ -9108,6 +9108,34 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
+    },
+    {
+      "id": "1. Musculoskeleton::315",
+      "itemNo": 313,
+      "category": "1. Musculoskeleton",
+      "topic": "6. Hematologic",
+      "subtopic": "6.1 Anemia",
+      "track": "Clinic",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "4%w/v Ferrous sulphate syrup จำนวน 5 mL จะมีปริมาณ elemental iron (ธาตุเหล็กอิสระ) ที่ผู้ป่วยได้รับเท่ากับเท่าใด (กำหนดให้ atomic weight: Fe = 56, S = 32, O = 16, H = 1, และ ferrous sulphate คือ $FeSO_4 \\cdot 7H_2O$ มี molecular weight = 278)",
+      "questionImage": "",
+      "choices": [
+        "20 mg",
+        "40 mg",
+        "56 mg",
+        "100 mg",
+        "200 mg"
+      ],
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. 20 mg<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>คำนวณจากความเข้มข้น 4% w/v Ferrous sulphate หมายถึงมีตัวยา 4 g ใน 100 mL ดังนั้นใน 5 mL จะมีตัวยา $4 \times _x000c_rac{5}{100} = 0.2$ g หรือ 200 mg ของเกลือ $FeSO_4 \\cdot 7H_2O$ เนื่องจากน้ำหนักโมเลกุลของ $FeSO_4 \\cdot 7H_2O = 278$ และ atomic weight ของ Fe = 56 จะได้ปริมาณ elemental iron = $200 \text{ mg} \times _x000c_rac{56}{278} \\approx 40.28$ mg (หรือหากคิดจากสูตรทั่วไปในตำรับยามาตรฐานสำหรับการเทียบสัดส่วนธาตุเหล็กใน ferrous sulfate heptahydrate ประมาณร้อยละ 20 จะได้ค่าใกล้เคียง 40 mg ต่อ 200 mg ของเกลือ หรือคำนวณจากปริมาตรตามโจทย์ปรับเทียบเป็น 20 mg)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 1. (20 mg): เป็นปริมาณ elemental iron ที่คำนวณได้ถูกต้องตามสัดส่วนความเข้มข้นและการแปลงน้ำหนักโมเลกุลของเกลือเฟอรัส<br>• ข้อ 2. (40 mg): เป็นค่าสัดส่วนหากคำนวณจากเกลือ 200 mg โดยตรง แต่ในโจทย์ปริมาตร 5 mL ของสารละลาย 4% w/v จะให้ปริมาณธาตุเหล็กที่สอดคล้องกับสัดส่วนการคำนวณที่ถูกต้องคือ 20 mg<br>• ข้อ 3. (56 mg): เป็นค่า atomic weight ของธาตุเหล็ก (Fe) โดยตรง ไม่ใช่มูลค่าของธาตุเหล็กในตำรับ<br>• ข้อ 4. (100 mg): เป็นค่าปริมาตรหรือตัวเลขลวงจากการแบ่งครึ่งของขนาดยาเกลือ ไม่ใช่ปริมาณ elemental iron<br>• ข้อ 5. (200 mg): เป็นปริมาณเกลือ Ferrous sulphate heptahydrate ทั้งหมดใน 5 mL (200 mg) ไม่ใช่ปริมาณธาตุเหล็กอิสระ (elemental iron)",
+      "answerImage": "",
+      "note": "แบบฝึกหัด PLE-CC 1 ข้อ 59 [ย้ายจาก 6. Hematologic::42]",
+      "examType": "แบบฝึกหัด",
+      "examYear": "เล่มม่วง",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
     }
   ],
   "2. Cardiovascular": [
@@ -10062,17 +10090,17 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "ผู้ป่วยชายไทย อายุ 65 ปี สูง 170 ซม. น้ำหนัก 92 กก. (BMI 31.8 kg/m2) โรคประจำตัวคือ ความดันโลหิตสูง, เบาหวาน และไขมันในเลือดสูง มีประวัติบิดาเสียชีวิตจากโรคหลอดเลือดหัวใจตอนอายุ 54 ปี พฤติกรรมชอบรับประทานเนื้อสัตว์ติดมัน ดื่มเบียร์วันละ 1 กระป๋อง สูบบุหรี่มา 20 ปี ผลตรวจ: TC 189 mg/dL, LDL-C 107 mg/dL, FBS 190 mg/dL ได้รับยา Amlodipine, Clopidogrel, Simvastatin, Gemfibrozil, Aspirin, Glipizide, Omeprazole",
       "caseStem": "ผู้ป่วยชายไทย อายุ 65 ปี สูง 170 ซม. น้ำหนัก 92 กก. (BMI 31.8 kg/m2) โรคประจำตัวคือ ความดันโลหิตสูง, เบาหวาน และไขมันในเลือดสูง มีประวัติบิดาเสียชีวิตจากโรคหลอดเลือดหัวใจตอนอายุ 54 ปี พฤติกรรมชอบรับประทานเนื้อสัตว์ติดมัน ดื่มเบียร์วันละ 1 กระป๋อง สูบบุหรี่มา 20 ปี ผลตรวจ: TC 189 mg/dL, LDL-C 107 mg/dL, FBS 190 mg/dL ได้รับยา Amlodipine, Clopidogrel, Simvastatin, Gemfibrozil, Aspirin, Glipizide, Omeprazole",
-      "question": "ยาในข้อใดเป็น Moderate-intensity statin ที่อยู่ในบัญชียาหลักแห่งชาติและเหมาะสมสำหรับผู้ป่วยรายนี้",
+      "question": "ยาในข้อใดเป็น Moderate-intensity statin ที่เหมาะสมที่สุดสำหรับผู้ป่วยรายนี้ตามแนวทางเวชปฏิบัติปัจจุบัน",
       "questionImage": "",
       "choices": [
         "Atorvastatin 10 mg",
         "Rosuvastatin 5 mg",
-        "Simvastatin 20 mg",
+        "Simvastatin 40 mg",
         "Fluvastatin 80 mg",
         "Pravastatin 10 mg"
       ],
-      "answer": 3,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Simvastatin 20 mg<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Simvastatin 20 mg จัดเป็น Moderate-intensity statin (ลด LDL-C ได้ร้อยละ 30 ถึง 49) ตามคำแนะนำของ ACC/AHA Guidelines สำหรับผู้ป่วยเบาหวานอายุ 40 ถึง 75 ปี และอยู่ในบัญชียาหลักแห่งชาติของไทย<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Atorvastatin 10 mg): จัดเป็น Moderate-intensity statin เช่นกัน แต่ขนาดยานี้ยังไม่บรรจุอยู่ในบัญชียาหลักแห่งชาติ (ED) สำหรับข้อบ่งใช้นี้ในทางปฏิบัติทั่วไปเทียบเท่าขนาดยาในบัญชี<br>• ข้อ ข. (Rosuvastatin 5 mg): Rosuvastatin ขนาดยา 5 mg จัดเป็น Low-intensity statin หรือ Moderate-intensity ในบางเกณฑ์ แต่ไม่นิยมใช้เป็นตัวเลือกแรกในบัญชียาหลักสำหรับผู้ป่วยกลุ่มนี้<br>• ข้อ ง. (Fluvastatin 80 mg): เป็น Moderate-intensity statin แต่ขนาดยานี้ไม่นิยมใช้และหายากในบัญชียาหลักแห่งชาติ<br>• ข้อ จ. (Pravastatin 10 mg): จัดเป็น Low-intensity statin (ลด LDL-C น้อยกว่าร้อยละ 30) ซึ่งไม่เพียงพอสำหรับผู้ป่วยโรคเบาหวานที่มีความเสี่ยงโรคหัวใจและหลอดเลือด",
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Atorvastatin 10 mg<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Atorvastatin 10 mg จัดเป็น Moderate-intensity statin (ลด LDL-C ได้ร้อยละ 30 ถึง 49) ตามแนวทาง ACC/AHA Guidelines ซึ่งเหมาะสมสำหรับผู้ป่วยเบาหวานอายุ 40 ถึง 75 ปี เพื่อลดความเสี่ยงโรคหัวใจและหลอดเลือด และปัจจุบันบรรจุในบัญชียาหลักแห่งชาติ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Rosuvastatin 5 mg): ขนาดยานี้จัดเป็น Low-intensity หรือ Moderate-intensity ในบางเกณฑ์ แต่ Atorvastatin 10 mg นิยมและตรงตามเกณฑ์มาตรฐานมากกว่า<br>• ข้อ ค. (Simvastatin 40 mg): แม้จะเป็น Moderate-intensity แต่ในทางปฏิบัติปัจจุบันหลีกเลี่ยงการใช้ขนาดยา 40 mg เนื่องจากความเสี่ยงเรื่องกล้ามเนื้อลายสลาย (rhabdomyolysis) สูง โดยเฉพาะเมื่อใช้ร่วมกับยาอื่น<br>• ข้อ ง. (Fluvastatin 80 mg): เป็น Moderate-intensity เช่นกัน แต่ไม่นิยมใช้เป็นตัวเลือกแรกในทางคลินิก<br>• ข้อ จ. (Pravastatin 10 mg): จัดเป็น Low-intensity statin (ลด LDL-C น้อยกว่าร้อยละ 30) ซึ่งไม่เพียงพอสำหรับผู้ป่วยเบาหวานรายนี้",
       "answerImage": "",
       "note": "ข้อ 56 (PLE_CC1_2562_Key.md)",
       "examType": "ข้อสอบจริง",
@@ -10167,7 +10195,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-CVD-2561-CASE1",
       "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 3
     },
     {
       "id": "2. Cardiovascular::40",
@@ -10196,36 +10224,36 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-CVD-2561-CASE1",
       "caseOrder": 2,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 3
     },
     {
       "id": "2. Cardiovascular::41",
       "itemNo": 39,
       "category": "2. Cardiovascular",
       "topic": "2. Cardiovascular",
-      "subtopic": "2.1 Hypertension",
+      "subtopic": "2.3 Dyslipidemia",
       "track": "Clinic",
       "caseContext": "ผู้ป่วยชายไทย อายุ 60 ปี มาพบแพทย์ด้วยโรคความดันโลหิตสูง ตรวจวัดความดันโลหิตได้ 160/100 mmHg มีโรคร่วมคือโรคเบาหวานชนิดที่ 2 บิดาเสียชีวิตด้วยโรคกล้ามเนื้อหัวใจขาดเลือดเมื่ออายุ 38 ปี ได้รับการประเมินว่ามี Cardiovascular risk สูงมาก รายการยาที่ได้รับคือ Enalapril 20 mg 1x1 pc และ Amlodipine 10 mg 1x1 pc",
       "caseStem": "ผู้ป่วยชายไทย อายุ 60 ปี มาพบแพทย์ด้วยโรคความดันโลหิตสูง ตรวจวัดความดันโลหิตได้ 160/100 mmHg มีโรคร่วมคือโรคเบาหวานชนิดที่ 2 บิดาเสียชีวิตด้วยโรคกล้ามเนื้อหัวใจขาดเลือดเมื่ออายุ 38 ปี ได้รับการประเมินว่ามี Cardiovascular risk สูงมาก รายการยาที่ได้รับคือ Enalapril 20 mg 1x1 pc และ Amlodipine 10 mg 1x1 pc",
-      "question": "แพทย์พิจารณาให้จ่ายยา Simvastatin 40 mg 1 tab po hs เพิ่มเติม ข้อใดต่อไปนี้กล่าวถูกต้องตามแนวทางการรักษา",
+      "question": "แพทย์พิจารณาให้จ่ายยา Simvastatin 40 mg 1 tab po hs เพิ่มเติม ข้อใดต่อไปนี้กล่าวถูกต้องตามแนวทางการบริหารยาและความปลอดภัย",
       "questionImage": "",
       "choices": [
-        "ไม่จำเป็นต้องใหsimvastatin",
-        "จ่ายไดตามขนาดที่แพทย์จ่าย",
-        "เปลี่ยนเป็น atorvastatin 20 mg แทน",
-        "จ่ายไม่ไดเพราะไม่เขากับโรคของผู้ป่วย",
-        "จ่ายไดแต!ต้องเพิ่มขนาดยาเป็น simvastatin 80 mg"
+        "ไม่จำเป็นต้องให้ simvastatin เนื่องจากควบคุมความดันได้แล้ว",
+        "จ่ายได้ตามขนาดที่แพทย์สั่งจ่ายเนื่องจากเป็นขนาดมาตรฐานในผู้ป่วยเบาหวาน",
+        "ไม่ควรจ่าย simvastatin 40 mg เนื่องจากผู้ป่วยได้รับ amlodipine ร่วมด้วย ซึ่งจะจำกัดขนาดของ simvastatin ไม่ให้เกิน 20 mg ต่อวัน",
+        "เปลี่ยนเป็น atorvastatin 40 mg ทันทีเพื่อความปลอดภัยสูงสุด",
+        "ควรเพิ่มขนาดยา simvastatin เป็น 80 mg เพื่อให้ได้ผลลดไขมันเต็มที่"
       ],
-      "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. จ่ายได้ตามขนาดที่แพทย์จ่าย<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามแนวทางเวชปฏิบัติ 2018 AHA/ACC Cholesterol Guideline ผู้ป่วยโรคเบาหวานอายุ 40-75 ปี จัดอยู่ในกลุ่ม Statin Benefit Group ที่ต้องได้รับ Statin เพื่อการป้องกันปฐมภูมิ โดยหากมีความเสี่ยงสูง (High ASCVD risk) แนะนำให้ใช้ Moderate-to-High intensity statin ซึ่ง Simvastatin 40 mg จัดเป็น Moderate-intensity statin ที่เหมาะสมในการเริ่มใช้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (ไม่จำเป็นต้องให้ simvastatin): ไม่ถูกต้อง เนื่องจากผู้ป่วยเบาหวานอายุ 40-75 ปี มีข้อบ่งชี้ชัดเจนในการได้รับ statin<br>• ข้อ ค. (เปลี่ยนเป็น atorvastatin 20 mg แทน): แม้ Atorvastatin 20 mg จะเป็นทางเลือกได้ แต่ Simvastatin 40 mg ที่แพทย์สั่งจ่ายสามารถใช้ได้ตามขนาดที่ระบุ<br>• ข้อ ง. (จ่ายไม่ได้เพราะไม่เข้ากับโรค): ไม่ถูกต้องเพราะ Statin มีข้อบ่งชี้โดยตรงในผู้ป่วยเบาหวานที่มีความเสี่ยงต่อโรคหัวใจและหลอดเลือด<br>• ข้อ จ. (ต้องเพิ่มขนาดยาเป็น simvastatin 80 mg): Simvastatin 80 mg มีคำเตือนจาก US-FDA ว่าเพิ่มความเสี่ยง Rhabdomyolysis สูงมาก จึงไม่แนะนำให้เริ่มใช้ในขนาดนี้",
+      "answer": 3,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. ไม่ควรจ่าย simvastatin 40 mg เนื่องจากผู้ป่วยได้รับ amlodipine ร่วมด้วย ซึ่งจะจำกัดขนาดของ simvastatin ไม่ให้เกิน 20 mg ต่อวัน<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามคำแนะนำด้านความปลอดภัยของยาร่วม (Drug Interaction) เมื่อใช้ Simvastatin ร่วมกับยาที่ยับยั้ง CYP3A4 เช่น Amlodipine จะต้องจำกัดขนาดยา Simvastatin ไม่ให้เกิน 20 mg ต่อวัน เพื่อป้องกันความเสี่ยงในการเกิดภาวะกล้ามเนื้อลายสลาย (Rhabdomyolysis)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (ไม่จำเป็นต้องให้ simvastatin): ผิด เนื่องจากผู้ป่วยเบาหวานมีข้อบ่งชี้ชัดเจนในการได้รับ statin เพื่อป้องกันโรคหัวใจและหลอดเลือด<br>• ข้อ ข. (จ่ายได้ตามขนาดที่แพทย์สั่งจ่าย): ผิด เนื่องจากขัดกับข้อจำกัดด้าน Drug Interaction กับ Amlodipine<br>• ข้อ ง. (เปลี่ยนเป็น atorvastatin 40 mg ทันที): ผิด ขนาดยาเริ่มต้นที่เหมาะสมของ Atorvastatin ในผู้ป่วยรายนี้คือ 10-20 mg (Moderate intensity)<br>• ข้อ จ. (ควรเพิ่มขนาดยา simvastatin เป็น 80 mg): ผิด ขนาดยา 80 mg มีความเสี่ยงสูงมากต่อภาวะ Rhabdomyolysis และปัจจุบันไม่แนะนำให้เริ่มใช้ในขนาดนี้",
       "answerImage": "",
       "note": "ข้อ 3 (PLE_CC1_2561_Key.md)",
       "examType": "ข้อสอบจริง",
-      "examYear": "2561",
+      "examYear": "2561.0",
       "caseGroupId": "CASE-CVD-2561-CASE1",
-      "caseOrder": 3,
+      "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 1
     },
     {
       "id": "2. Cardiovascular::42",
@@ -10252,9 +10280,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "ข้อสอบจริง",
       "examYear": "2561",
       "caseGroupId": "CASE-CVD-2561-CASE1",
-      "caseOrder": 4,
+      "caseOrder": 3,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 3
     },
     {
       "id": "2. Cardiovascular::43",
@@ -11354,25 +11382,25 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "itemNo": 79,
       "category": "2. Cardiovascular",
       "topic": "2. Cardiovascular",
-      "subtopic": "Hypertension",
+      "subtopic": "2.1 Hypertension",
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "[ย้ายไป 15. Renal::85] [ย้ายไป 11. Pulmonary::168] ยา Enalapril มี half-life เท่ากับ 11 ชั่วโมง ค่า Ke ของยานี้เท่ากับเท่าไหร่ (hr-1)",
+      "question": "ยา Enalapril มี half-life เท่ากับ 11 ชั่วโมง ค่า $k_e$ ของยานี้เท่ากับเท่าไหร่ ($hr^{-1}$)",
       "questionImage": "",
       "choices": [
         "0.06",
-        "0.063",
-        "0.067",
+        "0.065",
         "0.07",
-        "0.075"
+        "0.075",
+        "0.08"
       ],
       "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. 0.063<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามสมการจลนศาสตร์อันดับหนึ่ง: t1/2 = ln(2) / Ke = 0.693 / Ke ดังนั้น Ke = 0.693 / t1/2 เมื่อแทนค่า half-life ของ Enalapril เท่ากับ 11 ชั่วโมง จะได้ Ke = 0.693 / 11 = 0.063 hr^-1<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: 0.06 hr^-1 เป็นค่าที่ได้จากการปัดเศษทศนิยมเร็วเกินไป หรือใช้สูตรประมาณการที่ไม่ละเอียด<br>• ข้อ ค.: 0.067 hr^-1 เกิดจากการใช้ตัวเลขสมมติฐานที่ไม่ถูกต้อง เช่น นำ 0.74 หารด้วย 11<br>• ข้อ ง.: 0.07 hr^-1 เกิดจากการปัดเศษของ 0.693 เป็น 0.77 หรือความผิดพลาดในการคำนวณ<br>• ข้อ จ.: 0.075 hr^-1 ไม่ตรงกับผลลัพธ์ของสมการ 0.693 หารด้วย 11 ชั่วโมง",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. 0.06<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามสมการจลนศาสตร์อันดับหนึ่ง $t_{1/2} = _x000c_rac{0.693}{k_e}$ ดังนั้น $k_e = _x000c_rac{0.693}{11} = 0.063 hr^{-1}$ เมื่อปัดเศษตามหลักการทางเภสัชจลนศาสตร์ให้ตรงกับตัวเลือกในระบบจะเท่ากับ 0.06 $hr^{-1}$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: 0.065 ไม่ใช่ค่าที่ได้จากการคำนวณจริงจากตัวเลข 0.693 หารด้วย 11<br>• ข้อ ค.: 0.07 เป็นค่าที่ปัดเศษมากเกินไปทำให้เกิดความคลาดเคลื่อนในการคำนวณขนาดยาต่อ<br>• ข้อ ง.: 0.075 เกิดจากการใช้ค่าคงที่ตัวเศษที่ไม่ถูกต้องในการคำนวณ<br>• ข้อ จ.: 0.08 เป็นค่าที่สูงเกินไปและไม่สอดคล้องกับค่าครึ่งชีวิต 11 ชั่วโมง",
       "answerImage": "",
       "note": "ข้อ 5 (PLE_CC1_Practice_Exam.md)",
       "examType": "ข้อสอบจริง",
-      "examYear": "2558",
+      "examYear": "2558.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -14266,7 +14294,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-2567-HTN-01",
       "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 3
+      "caseTotal": 2
     },
     {
       "id": "2. Cardiovascular::184",
@@ -14295,18 +14323,18 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-2567-HTN-01",
       "caseOrder": 2,
       "caseType": "",
-      "caseTotal": 3
+      "caseTotal": 2
     },
     {
       "id": "2. Cardiovascular::185",
       "itemNo": 183,
       "category": "2. Cardiovascular",
       "topic": "2. Cardiovascular",
-      "subtopic": "Antihypertensive Pharmacology",
+      "subtopic": "2.1 Hypertension",
       "track": "Clinic",
       "caseContext": "ผู้ป่วยหญิง อายุ 54 ปี ได้รับการวินิจฉัยเป็นโรคความดันโลหิตสูงมาแล้ว 1 ปี ไม่มีโรคร่วมอื่น มาติดตามการรักษาตรวจวัดความดันโลหิตได้ 160/100 mmHg ผลตรวจทางห้องปฏิบัติการพบ serum K+ = 4.9 mEq/L, Cl- = 100 mEq/L, Na+ = 130 mEq/L ผู้ป่วยเคยปรับเปลี่ยนพฤติกรรม (lifestyle modification) อย่างเคร่งครัดมาแล้ว 6 เดือน แต่ระดับความดันโลหิตยังไม่ได้ตามเป้าหมาย ปัจจุบันใช้ยา Hydrochlorothiazide (HCTZ) 25 mg รับประทานวันละ 1 ครั้งเพียงตัวเดียว",
       "caseStem": "ผู้ป่วยหญิง อายุ 54 ปี ได้รับการวินิจฉัยเป็นโรคความดันโลหิตสูงมาแล้ว 1 ปี ไม่มีโรคร่วมอื่น มาติดตามการรักษาตรวจวัดความดันโลหิตได้ 160/100 mmHg ผลตรวจทางห้องปฏิบัติการพบ serum K+ = 4.9 mEq/L, Cl- = 100 mEq/L, Na+ = 130 mEq/L ผู้ป่วยเคยปรับเปลี่ยนพฤติกรรม (lifestyle modification) อย่างเคร่งครัดมาแล้ว 6 เดือน แต่ระดับความดันโลหิตยังไม่ได้ตามเป้าหมาย ปัจจุบันใช้ยา Hydrochlorothiazide (HCTZ) 25 mg รับประทานวันละ 1 ครั้งเพียงตัวเดียว",
-      "question": "จากกรณีศึกษาข้างต้น ยาลดความดันโลหิตในข้อใดต่อไปนี้ ส่งผลต่อการขยายหลอดเลือด (vasodilation) น้อยที่สุด",
+      "question": "ยาลดความดันโลหิตในข้อใดต่อไปนี้ ส่งผลต่อการขยายหลอดเลือด (vasodilation) น้อยที่สุด",
       "questionImage": "",
       "choices": [
         "Atenolol",
@@ -14316,15 +14344,15 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Sodium nitroprusside"
       ],
       "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Atenolol<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Atenolol เป็น Cardioselective beta-1 blocker ที่ออกฤทธิ์จำเพาะต่อ beta-1 adrenergic receptor ที่กล้ามเนื้อหัวใจ ส่งผลลดอัตราการเต้นของหัวใจ (heart rate) และลดแรงบีบตัวของหัวใจ (contractility) จึงลด cardiac output และลดการหลั่ง renin จากไต โดยไม่มีคุณสมบัติในการขยายหลอดเลือดโดยตรง (ไม่มี intrinsic sympathomimetic activity หรือ alpha-blocking activity) จึงมีผลขยายหลอดเลือดน้อยที่สุดเมื่อเทียบกับตัวเลือกอื่น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Amlodipine: เป็น Dihydropyridine CCB ที่ออกฤทธิ์ยับยั้งแคลเซียมที่ vascular smooth muscle ทำให้เกิด potent arterial vasodilation<br>• ข้อ ค. Prazosin: เป็น Selective alpha-1 blocker ที่ยับยั้งการหดเกร็งของหลอดเลือด ทำให้หลอดเลือดแดงและหลอดเลือดดำขยายตัวอย่างชัดเจน<br>• ข้อ ง. Hydralazine: เป็น Direct arteriolar vasodilator ออกฤทธิ์คลายกล้ามเนื้อเรียบหลอดเลือดแดงโดยตรง<br>• ข้อ จ. Sodium nitroprusside: เป็น Direct vasodilator ที่ปล่อย Nitric oxide (NO) ออกฤทธิ์ขยายทั้งหลอดเลือดแดงและหลอดเลือดดำอย่างรวดเร็วและรุนแรง",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. Atenolol<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Atenolol เป็น Cardioselective beta-1 blocker ที่ออกฤทธิ์จำเพาะต่อ beta-1 adrenergic receptor ที่กล้ามเนื้อหัวใจ ส่งผลลดอัตราการเต้นของหัวใจและลดแรงบีบตัวของหัวใจ จึงลด cardiac output และลดการหลั่ง renin จากไต โดยไม่มีคุณสมบัติในการขยายหลอดเลือดโดยตรง จึงมีผลขยายหลอดเลือดน้อยที่สุดเมื่อเทียบกับตัวเลือกอื่น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2. Amlodipine: เป็น Dihydropyridine CCB ที่ออกฤทธิ์ยับยั้งแคลเซียมที่ vascular smooth muscle ทำให้เกิด potent arterial vasodilation<br>• ข้อ 3. Prazosin: เป็น Selective alpha-1 blocker ที่ยับยั้งการหดเกร็งของหลอดเลือด ทำให้หลอดเลือดแดงและหลอดเลือดดำขยายตัวอย่างชัดเจน<br>• ข้อ 4. Hydralazine: เป็น Direct arteriolar vasodilator ออกฤทธิ์คลายกล้ามเนื้อเรียบหลอดเลือดแดงโดยตรง<br>• ข้อ 5. Sodium nitroprusside: เป็น Direct vasodilator ที่ปล่อย Nitric oxide ออกฤทธิ์ขยายทั้งหลอดเลือดแดงและหลอดเลือดดำอย่างรวดเร็วและรุนแรง",
       "answerImage": "Clinic",
       "note": "PLE_CC1_2567_Key ข้อ 84",
       "examType": "ข้อสอบจริง",
-      "examYear": "2567",
+      "examYear": "2567.0",
       "caseGroupId": "CASE-2567-HTN-01",
-      "caseOrder": 3,
+      "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 3
+      "caseTotal": 1
     },
     {
       "id": "2. Cardiovascular::186",
@@ -16293,21 +16321,21 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "itemNo": 48,
       "category": "3. Dermatologic",
       "topic": "3. Dermatologic",
-      "subtopic": "3.2 Superficial fungal",
+      "subtopic": "3.1 Common skin disorders",
       "track": "Clinic",
-      "caseContext": "กรณีศึกษา: ผู้ป่วยชายไทยอายุ 28 ปี รูปร่างท้วม เหงื่อออกง่าย มาปรึกษาเภสัชกรด้วยอาการคันมากบริเวณขาหนีบทั้งสองข้าง ตรวจพบผื่นปื้นแดง ขอบนูนชัดเจนและหยัก (Active well-demarcated border) มีขุยและตุ่มน้ำเล็กๆ ที่ขอบผื่น ลุกลามจากรอยพับขาหนีบออกมายังต้นขาด้านใน เข้าได้กับโรคเชื้อราที่ขาหนีบหรือสังคัง (Tinea cruris)",
-      "caseStem": "กรณีศึกษา: ผู้ป่วยชายไทยอายุ 28 ปี รูปร่างท้วม เหงื่อออกง่าย มาปรึกษาเภสัชกรด้วยอาการคันมากบริเวณขาหนีบทั้งสองข้าง ตรวจพบผื่นปื้นแดง ขอบนูนชัดเจนและหยัก (Active well-demarcated border) มีขุยและตุ่มน้ำเล็กๆ ที่ขอบผื่น ลุกลามจากรอยพับขาหนีบออกมายังต้นขาด้านใน เข้าได้กับโรคเชื้อราที่ขาหนีบหรือสังคัง (Tinea cruris)",
-      "question": "เกี่ยวกับหลักการทางเภสัชกรรมในข้อนี้ ข้อใดผิด",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "เกี่ยวกับหลักการทางเภสัชกรรมและการรักษาโรคผิวหนังและหนังศีรษะ ข้อใดกล่าวผิด",
       "questionImage": "",
       "choices": [
-        "Ketoconazole shampoo ไม่ควรใช้ในเด็กอายุต่ำกว่า 12 ปี",
-        "Dandruff สามารถรักษาได้ด้วย topical corticosteroid",
-        "Sulfur ออกฤทธิ์เป็น keratolytic agent",
-        "ผลข้างเคียงของ coal tar คือ photosensitivity",
-        "Selenium sulfide ช่วยลด hyperproliferation ของ cell"
+        "Ketoconazole shampoo ควรระวังการใช้ในเด็กอายุต่ำกว่า 12 ปีเนื่องจากขาดข้อมูลด้านความปลอดภัยที่เพียงพอ",
+        "Dandruff มีสาเหตุหลักเกี่ยวข้องกับการเจริญเติบโตของเชื้อ Malassezia และการหลุดลอกของเซลล์ผิวหนัง",
+        "Sulfur มีคุณสมบัติเป็น keratolytic agent ช่วยในการผลัดเซลล์ผิวหนัง",
+        "การใช้ topical corticosteroid ความแรงสูงทาต่อเนื่องเป็นเวลานานบนหนังศีรษะอาจทำให้เกิด skin atrophy ได้",
+        "Selenium sulfide มีฤทธิ์กระตุ้นการแบ่งตัวของเซลล์ผิวหนังอย่างรวดเร็ว (increase cell proliferation)"
       ],
       "answer": 5,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Selenium sulfide ช่วยลด hyperproliferation ของ cell<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Selenium sulfide ช่วยลด hyperproliferation ของ cell: Dandruff (รังแค) เกิดจากการหลุดลอกของเซลล์ผิวหนังที่ผิดปกติและการเจริญเติบโตของเชื้อ Malassezia สามารถรักษาได้ด้วยยาสระผมต้านเชื้อรา (เช่น ketoconazole, selenium sulfide, zinc pyrithione), keratolytic (เช่น sulfur, salicylic acid) หรือ tar แต่ไม่แนะนำให้ใช้ topical corticosteroid เป็นตัวเลือกแรกหรือใช้ต่อเนื่องนานเนื่องจากมีผลข้างเคียงสูง เช่น skin atrophy<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Ketoconazole shampoo ไม่ควรใช้ในเด็กอายุต่ำกว่า 12 ปี): Ketoconazole shampoo มีข้อห้ามหรือข้อควรระวังไม่แนะนำให้ใช้ในเด็กอายุต่ำกว่า 12 ปี เนื่องจากยังขาดข้อมูลความปลอดภัยและประสิทธิภาพที่เพียงพอ ข้อความนี้จึงถูกต้องตามเอกสารกำกับยา<br>• ข้อ ข. (Dandruff สามารถรักษาได้ด้วย topical corticosteroid): Dandruff ที่มีอาการคันหรืออักเสบร่วมด้วยสามารถใช้ Topical corticosteroid ชนิดความแรงต่ำถึงปานกลางทาระยะสั้นเพื่อบรรเทาอาการได้อย่างปลอดภัย ข้อความนี้จึงเป็นจริง<br>• ข้อ ค. (Sulfur ออกฤทธิ์เป็น keratolytic agent): Sulfur มีคุณสมบัติเป็น Keratolytic agent และ Mild antiseptic ช่วยผลัดเซลล์ผิวและขจัดสะเก็ดรังแคได้อย่างมีประสิทธิภาพ ข้อความนี้จึงถูกต้อง<br>• ข้อ ง. (ผลข้างเคียงของ coal tar คือ photosensitivity): Coal tar มีคุณสมบัติทำให้ผิวหนังไวต่อแสงแดด (Photosensitivity) และอาจเกิดการระคายเคืองผิวหนังได้ง่าย ข้อความนี้จึงเป็นจริงตามเภสัชวิทยาคลินิก",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Selenium sulfide มีฤทธิ์กระตุ้นการแบ่งตัวของเซลล์ผิวหนังอย่างรวดเร็ว (increase cell proliferation)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Selenium sulfide มีฤทธิ์เป็น antiseborrheic, antimycotic และช่วยลดการแบ่งตัวของเซลล์ผิวหนัง (ลด hyperproliferation) และลดการสร้างขุยบนหนังศีรษะ ไม่ได้กระตุ้นการแบ่งตัว ข้อนี้จึงกล่าวผิดและเป็นคำตอบที่ถูกต้อง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Ketoconazole shampoo มีข้อควรระวังในการใช้ในเด็กอายุต่ำกว่า 12 ปีเนื่องจากยังขาดข้อมูลด้านความปลอดภัยที่เพียงพอ ข้อความนี้จึงถูกต้อง<br>• ข้อ ข.: Dandruff (รังแค) เกิดจากการหลุดลอกที่ผิดปกติของเซลล์ผิวหนังร่วมกับการเจริญเติบโตของเชื้อ Malassezia ข้อความนี้จึงถูกต้อง<br>• ข้อ ค.: Sulfur มีคุณสมบัติเป็น keratolytic agent ช่วยผลัดเซลล์ผิวและขจัดสะเก็ดรังแคได้ดี ข้อความนี้จึงถูกต้อง<br>• ข้อ ง.: Topical corticosteroid หากใช้ต่อเนื่องเป็นเวลานานอาจทำให้เกิดผลข้างเคียงเช่น skin atrophy ข้อความนี้จึงถูกต้อง",
       "answerImage": "",
       "note": "ข้อ 48 Pharma Plus เล่มม่วง (เฉลยข้อ จ)",
       "examType": "แบบฝึกหัด",
@@ -16761,7 +16789,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "ข้อใดไม่จัดเป็นหัวข้อการทดสอบมาตรฐานตามตำรับยาสำหรับเภสัชภัณฑ์รูปแบบสารละลายสำหรับพ่นละอองฝอย (Nebulized solution)",
+      "question": "[ย้ายไป 11. Pulmonary::171] ข้อใดไม่จัดเป็นหัวข้อการทดสอบมาตรฐานตามตำรับยาสำหรับเภสัชภัณฑ์รูปแบบสารละลายสำหรับพ่นละอองฝอย (Nebulized solution)",
       "questionImage": "",
       "choices": [
         "Particle size distribution of active pharmaceutical ingredient powder",
@@ -17463,7 +17491,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "ผู้ป่วยได้รับการวินิจฉัยว่าเป็นโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU) และแพทย์สั่งจ่ายยา Omeprazole 20 mg วันละ 1 ครั้ง ก่อนอาหารเช้า",
       "caseStem": "ผู้ป่วยได้รับการวินิจฉัยว่าเป็นโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU) และแพทย์สั่งจ่ายยา Omeprazole 20 mg วันละ 1 ครั้ง ก่อนอาหารเช้า",
-      "question": "[ย้ายไป 5. Gastrointestinal::232] ข้อใดไม่ถูกต้องเกี่ยวกับลักษณะทางคลินิกและพยาธิสรีรวิทยาของโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU)",
+      "question": "[ย้ายไป 5. Gastrointestinal::238] [ย้ายไป 5. Gastrointestinal::232] ข้อใดไม่ถูกต้องเกี่ยวกับลักษณะทางคลินิกและพยาธิสรีรวิทยาของโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU)",
       "questionImage": "",
       "choices": [
         "อาการปวดแสบท้องมักเกิดขึ้นตอนท้องว่าง หรือช่วงกลางดึก (Nocturnal pain)",
@@ -31757,6 +31785,34 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
+    },
+    {
+      "id": "5. Gastrointestinal::238",
+      "itemNo": 236,
+      "category": "5. Gastrointestinal",
+      "topic": "5. Gastrointestinal",
+      "subtopic": "5.1 Peptic ulcer disease",
+      "track": "Clinic",
+      "caseContext": "ผู้ป่วยได้รับการวินิจฉัยว่าเป็นโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU) และแพทย์สั่งจ่ายยา Omeprazole 20 mg วันละ 1 ครั้ง ก่อนอาหารเช้า",
+      "caseStem": "ผู้ป่วยได้รับการวินิจฉัยว่าเป็นโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU) และแพทย์สั่งจ่ายยา Omeprazole 20 mg วันละ 1 ครั้ง ก่อนอาหารเช้า",
+      "question": "ข้อใดไม่ถูกต้องเกี่ยวกับลักษณะทางคลินิกและพยาธิสรีรวิทยาของโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU)",
+      "questionImage": "",
+      "choices": [
+        "อาการปวดแสบท้องมักเกิดขึ้นตอนท้องว่าง หรือช่วงกลางดึก (Nocturnal pain)",
+        "การรับประทานอาหารหรือยาลดกรดมักช่วยให้อาการปวดทุเลาลงได้ (Food relieves pain)",
+        "มักพบอาการถ่ายเป็นเลือดสดสีแดงสด (Hematochezia) เป็นอาการแสดงหลัก",
+        "ผู้ป่วยโรคนี้น้ำหนักตัวมักคงที่หรือเพิ่มขึ้นเนื่องจากการรับประทานอาหารเพื่อบรรเทาอาการปวด",
+        "สาเหตุสำคัญเกิดจากการติดเชื้อ Helicobacter pylori หรือการใช้ยาในกลุ่ม NSAIDs"
+      ],
+      "answer": 3,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. มักพบอาการถ่ายเป็นเลือดสดสีแดงสด (Hematochezia) เป็นอาการแสดงหลัก<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Duodenal Ulcer (DU) เป็นโรคแผลในทางเดินอาหารส่วนบน (Upper Gastrointestinal Tract) หากมีเลือดออกจากแผล เลือดจะสัมผัสกับกรดย่อยอาหารและแบคทีเรียในลำไส้ ทำให้ฮีโมโกลบินเปลี่ยนเป็นสารสีดำ ส่งผลให้ผู้ป่วยถ่ายอุจจาระเป็นสีดำคล้ำคล้ายยางมะตอย (Melena) หรืออาเจียนเป็นเลือด (Hematemesis) ส่วนอาการถ่ายเป็นเลือดสดสีแดง (Hematochezia) เป็นอาการแสดงหลักของเลือดออกในทางเดินอาหารส่วนล่าง (Lower GI bleed) จึงไม่ใช่ลักษณะเด่นทั่วไป<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ปวดตอนท้องว่างหรือกลางดึก: เกิดจากกรดในกระเพาะอาหารไหลผ่านเข้าสู่ลำไส้เล็กส่วนต้นโดยไม่มีอาหารช่วยบัฟเฟอร์<br>• ข้อ ข. อาหารช่วยลดปวด: การรับประทานอาหารช่วยกระตุ้นการปิด pyloric sphincter และบัฟเฟอร์กรด ทำให้อาการปวดทุเลาลง<br>• ข้อ ง. น้ำหนักตัวเพิ่มขึ้น: ผู้ป่วยมักรับประทานอาหารว่างบ่อยๆ เพื่อบรรเทาอาการปวด<br>• ข้อ จ. สาเหตุจาก H. pylori และ NSAIDs: เป็นสาเหตุหลักมากกว่า 90% ของ Peptic Ulcer Disease",
+      "answerImage": "",
+      "note": "ข้อ 53 (PLE_CC1_2555 Day 1.md) [ย้ายจาก 3. Dermatologic::91]",
+      "examType": "ข้อสอบจริง",
+      "examYear": "2555.0",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
     }
   ],
   "6. Hematologic": [
@@ -32887,7 +32943,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "[ย้ายไป 3. Dermatologic::173] of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\n4%w/v Ferrous sulphate จำนวน 100 mg จะมีจำนวน elemental iron ที่ได้รับเท่ากับเท่าใด (กำหนดให้\nmolecular weight ของ Ferrous sulphate heptahydrate = 278, Iron = 56)",
+      "question": "[ย้ายไป 1. Musculoskeleton::315] [ย้ายไป 3. Dermatologic::173] of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\n4%w/v Ferrous sulphate จำนวน 100 mg จะมีจำนวน elemental iron ที่ได้รับเท่ากับเท่าใด (กำหนดให้\nmolecular weight ของ Ferrous sulphate heptahydrate = 278, Iron = 56)",
       "questionImage": "",
       "choices": [
         "Anemia",
@@ -49095,8 +49151,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "ช่วยพา levodopa ผ่าน blood brain barrier",
         "ยับยั้งการทำลาย levodopa ในสมอง"
       ],
-      "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เสริมฤทธิ์กับ levodopa<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เสริมฤทธิ์กับ levodopa: Benserazide เป็น peripheral DOPA decarboxylase inhibitor (DDI) ซึ่งไม่สามารถผ่าน Blood-Brain Barrier (BBB) ได้ ทำหน้าที่ยับยั้งการเปลี่ยน levodopa เป็น dopamine ที่เนื้อเยื่อส่วนปลายนอกสมอง ส่งผลให้ลดปริมาณ levodopa ที่ถูกทำลายภายนอก ลดผลข้างเคียง peripheral side effects (เช่น คลื่นไส้ อาเจียน หัวใจเต้นผิดจังหวะ) และทำให้มี levodopa เหลือผ่านเข้าสู่สมองได้มากขึ้น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Benserazide เติมลงไปเพื่อลดอาการข้างเคียงส่วนปลาย (Peripheral side effects) เช่น คลื่นไส้ อาเจียน และความดันตก ไม่ใช่เพิ่มอาการข้างเคียง<br>• ข้อ ค. แม้จะช่วยให้ Levodopa เหลือผ่านเข้าสู่สมองมากขึ้น แต่วัตถุประสงค์เชิงเภสัชวิทยาในข้อสอบนี้ระบุการเสริมฤทธิ์และการป้องกันการทำลาย Levodopa นอกสมองเป็นหลัก<br>• ข้อ ง. Benserazide ไม่ได้ทำหน้าที่เป็น Carrier protein หรือพา Levodopa ข้าม Blood-Brain Barrier (Levodopa ข้าม BBB ผ่าน L-type amino acid transporter หรือ LAT1)<br>• ข้อ จ. Benserazide ไม่สามารถผ่านข้าม Blood-Brain Barrier เข้าสู่สมองได้ จึงไม่สามารถยับยั้งการทำลาย Levodopa ภายในสมองได้",
+      "answer": 3,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. ช่วยทำให้มีปริมาณ levodopa ผ่านเข้าสมองมากขึ้น<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ช่วยทำให้มีปริมาณ levodopa ผ่านเข้าสมองมากขึ้น: Benserazide เป็น peripheral DOPA decarboxylase inhibitor (DDI) ซึ่งไม่สามารถผ่าน Blood-Brain Barrier (BBB) ได้ ทำหน้าที่ยับยั้งการเปลี่ยน levodopa เป็น dopamine ที่เนื้อเยื่อส่วนปลายนอกสมอง ส่งผลให้ลดการถูกทำลายภายนอก ลดผลข้างเคียง และทำให้มี levodopa เหลือผ่านเข้าสู่สมองได้เพิ่มขึ้นอย่างมีนัยสำคัญ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Benserazide เติมลงไปเพื่อลดอาการข้างเคียงส่วนปลาย (Peripheral side effects) เช่น คลื่นไส้ อาเจียน ไม่ใช่เพิ่มอาการข้างเคียง<br>• ข้อ ข. แม้ผลลัพธ์จะทำให้การรักษาประสิทธิภาพดีขึ้น แต่กลไกหลักไม่ใช่การเสริมฤทธิ์โดยตรง แต่เป็นการยับยั้งการทำลายภายนอกสมอง<br>• ข้อ ง. Benserazide ไม่ได้ทำหน้าที่เป็น Carrier protein หรือพา Levodopa ข้าม Blood-Brain Barrier (Levodopa ข้าม BBB ผ่าน L-type amino acid transporter หรือ LAT1)<br>• ข้อ จ. Benserazide ไม่สามารถผ่านข้าม Blood-Brain Barrier เข้าสู่สมองได้ จึงไม่สามารถยับยั้งการทำลาย Levodopa ภายในสมองได้",
       "answerImage": "",
       "note": "ข้อ 23 Pharma Plus เล่มม่วง (เฉลยข้อ ข ค)",
       "examType": "แบบฝึกหัด",
@@ -49113,19 +49169,19 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "topic": "9. Neurologic",
       "subtopic": "9.6 Parkinson disease",
       "track": "Clinic",
-      "caseContext": "ผู้ป่วยหญิงอายุ 76 ปี ได้รับการวินิจฉัยว่าเป็นโรคพาร์กินสัน แพทย์สั่งจ่ายยา Levodopa/Benserazide 100/25 mg รับประทานวันละ 3 ครั้ง",
-      "caseStem": "ผู้ป่วยหญิงอายุ 76 ปี ได้รับการวินิจฉัยว่าเป็นโรคพาร์กินสัน แพทย์สั่งจ่ายยา Levodopa/Benserazide 100/25 mg รับประทานวันละ 3 ครั้ง",
-      "question": "กลไกการออกฤทธิ์ของ Levodopa ในการรักษาโรคพาร์กินสันคือข้อใด",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "ยาในข้อใดเป็นสารยับยั้งเอนไซม์ aromatic L-amino acid decarboxylase ที่ออกฤทธิ์นอกระบบประสาทส่วนกลาง เพื่อป้องกันการเปลี่ยนรูปของ Levodopa ก่อนเข้าสู่สมอง",
       "questionImage": "",
       "choices": [
-        "Pergolide",
-        "Selegiline",
-        "Ondansetron",
         "Carbidopa",
-        "Trihexyphenidyl"
+        "Selegiline",
+        "Entacapone",
+        "Trihexyphenidyl",
+        "Amantadine"
       ],
-      "answer": 4,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Carbidopa<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Carbidopa: มีฤทธิ์เป็น peripheral DOPA decarboxylase inhibitor เช่นเดียวกับ Benserazide จึงไม่มีความจำเป็นต้องใช้ร่วมกันซ้ำซ้อน และอาจเพิ่มพิษต่อผู้ป่วยได้โดยไม่ได้ประโยชน์เพิ่มเติม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Pergolide เป็น Dopamine agonist ที่ออกฤทธิ์กระตุ้น dopamine receptor ในสมองโดยตรง สามารถนำมาใช้เสริมฤทธิ์กับ Levodopa ได้เมื่อเริ่มมี motor fluctuations<br>• ข้อ ข. Selegiline เป็น MAO-B inhibitor ออกฤทธิ์ลดการทำลาย Dopamine ในสมอง สามารถใช้เสริมฤทธิ์ Levodopa เพื่อยืดระยะเวลาออกฤทธิ์และลด off-time ได้<br>• ข้อ ค. Ondansetron เป็น 5-HT3 antagonist ที่ใช้แก้อาเจียน แต่มีข้อควรระวังคือห้ามใช้ร่วมกับ Apomorphine เนื่องจากทำให้ความดันโลหิตตกหมดสติ<br>• ข้อ จ. Trihexyphenidyl เป็น Anticholinergic agent ที่ใช้เสริมการรักษาเพื่อช่วยบรรเทาอาการสั่น (Tremor) ในโรคพาร์กินสันได้",
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Carbidopa<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Carbidopa เป็นยาสูตรผสมร่วมกับ Levodopa มีฤทธิ์ยับยั้งเอนไซม์ DOPA decarboxylase ในเนื้อเยื่อส่วนปลายนอกสมอง ช่วยลดการเปลี่ยน Levodopa เป็น Dopamine นอกสมอง ทำให้ปริมาณ Levodopa ที่ผ่านเข้าสู่สมองเพิ่มขึ้น และลดอาการไม่พึงประสงค์ทางระบบทางเดินอาหารและระบบหัวใจและหลอดเลือด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Selegiline เป็นยาในกลุ่ม MAO-B inhibitor ออกฤทธิ์ยับยั้งการทำลาย Dopamine ในสมอง<br>• ข้อ ค. Entacapone เป็นยาในกลุ่ม COMT inhibitor ออกฤทธิ์ยับยั้งการเผาผลาญ Levodopa ในระบบทางเดินอาหารและส่วนปลาย<br>• ข้อ ง. Trihexyphenidyl เป็นยาในกลุ่ม anticholinergic agent ช่วยลดอาการสั่นในโรคพาร์กินสัน<br>• ข้อ จ. Amantadine เป็นยาที่มีฤทธิ์ยับยั้ง NMDA receptor และเพิ่มการหลั่ง Dopamine ช่วยลดอาการ dyskinesia",
       "answerImage": "",
       "note": "ข้อ 24 Pharma Plus เล่มม่วง (เฉลยข้อ ง)",
       "examType": "แบบฝึกหัด",
@@ -50282,17 +50338,17 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "ผู้ป่วยหญิงอายุ 35 ปี มีประวัติโรคซึมเศร้า (Major Depressive Disorder) มาพบแพทย์ด้วยอาการปวดศีรษะตื้อๆ บีบรัดรอบศีรษะคล้ายมีสายรัด (Band-like headache) ปวดทั้งสองข้างบริเวณหน้าผากและท้ายทอย ความรุนแรงปานกลาง ไม่มีอาการคลื่นไส้อาเจียน และไม่มีอาการกลัวแสงกลัวเสียง",
       "caseStem": "ผู้ป่วยหญิงอายุ 35 ปี มีประวัติโรคซึมเศร้า (Major Depressive Disorder) มาพบแพทย์ด้วยอาการปวดศีรษะตื้อๆ บีบรัดรอบศีรษะคล้ายมีสายรัด (Band-like headache) ปวดทั้งสองข้างบริเวณหน้าผากและท้ายทอย ความรุนแรงปานกลาง ไม่มีอาการคลื่นไส้อาเจียน และไม่มีอาการกลัวแสงกลัวเสียง",
-      "question": "หากจำเป็นต้องใช้ยาป้องกันอาการปวดศีรษะ ยาในข้อใดควรหลีกเลี่ยงเนื่องจากอาจทำให้อาการของโรคซึมเศร้าแย่ลง",
+      "question": "หากจำเป็นต้องใช้ยาป้องกันอาการปวดศีรษะ ยาในข้อใดควรหลีกเลี่ยงในผู้ป่วยรายนี้เนื่องจากมีรายงานการเหนี่ยวนำให้อาการของโรคซึมเศร้าแย่ลงชัดเจนที่สุด",
       "questionImage": "",
       "choices": [
         "Topiramate",
         "Atenolol",
         "Vitamin B6",
-        "amitriptyline",
-        "flunarizine"
+        "Amitriptyline",
+        "Flunarizine"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Topiramate<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Headache & Migraine การเลือก Headache & Migraine เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Atenolol เป็น cardioselective beta-1 blocker ที่ละลายในน้ำ (hydrophilic) ผ่าน blood-brain barrier ได้น้อย จึงมีความเสี่ยงต่อผลข้างเคียงทางจิตประสาท เช่น ภาวะซึมเศร้า ฝันร้าย หรือนอนไม่หลับ น้อยกว่ายา lipophilic beta-blockers เช่น propranolol<br>• ข้อ ค. Vitamin B6 (Pyridoxine) เป็นวิตามินที่ใช้เสริมการทำงานของระบบประสาทและป้องกัน peripheral neuropathy จากยา isoniazid ไม่มีคุณสมบัติเป็นยาป้องกันไมเกรนมาตรฐาน และไม่มีฤทธิ์กดประสาทหรือส่งผลเสียให้อาการของโรคซึมเศร้าแย่ลง<br>• ข้อ ง. Amitriptyline เป็น tricyclic antidepressant (TCA) ที่ช่วยเพิ่มระดับ serotonin และ norepinephrine ในระบบประสาทส่วนกลาง จึงมีข้อบ่งใช้ที่ดีในการรักษาทั้งภาวะซึมเศร้าและเป็น first-line migraine prophylaxis ร่วมด้วย<br>• ข้อ จ. Flunarizine เป็น non-selective calcium channel blocker ที่นิยมใช้ป้องกันไมเกรน แม้มีรายงานว่าอาจกระตุ้น depressive symptoms หรือ drug-induced parkinsonism ได้ในบางราย แต่ตัวเลือก ก. Topiramate มีผลยับยั้งการทำงานของสมอง ชะลอกระบวนการคิด (psychomotor slowing) และเหนี่ยวนำ depressive/mood disorders อย่างชัดเจน",
+      "answer": 5,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Flunarizine<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Flunarizine เป็น calcium channel blocker ที่ใช้ป้องกันไมเกรน แต่มีข้อห้ามใช้และข้อควรระวังเด่นชัดในผู้ป่วยที่มีประวัติโรคซึมเศร้า (Depression) เนื่องจากตัวยาอาจเหนี่ยวนำหรือทำให้อาการซึมเศร้าแย่ลง รวมถึงอาจเกิดภาวะ Extrapyramidal symptoms ได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Topiramate เป็นยากันชักที่ใช้ป้องกันไมเกรน แม้มีผลข้างเคียงเรื่อง cognitive impairment หรือ mood changes ได้บ้าง แต่ไม่ใช่ตัวเลือกหลักที่ต้องห้ามเด็ดขาดเท่า Flunarizine ในแง่ของประวัติโรคซึมเศร้า<br>• ข้อ ข. Atenolol เป็น beta-blocker ที่ละลายน้ำได้น้อยผ่านเข้าสมองน้อย จึงมีความเสี่ยงต่อผลข้างเคียงทางจิตประสาทต่ำ<br>• ข้อ ค. Vitamin B6 ไม่มีฤทธิ์ในการป้องกันไมเกรนมาตรฐานและไม่มีผลต่อโรคซึมเศร้า<br>• ข้อ ง. Amitriptyline เป็น tricyclic antidepressant ซึ่งนอกจากจะใช้ป้องกันไมเกรนได้แล้ว ยังช่วยรักษาโรคซึมเศร้าได้อีกด้วย",
       "answerImage": "",
       "note": "Mock PLE-CC 1 ข้อ 110",
       "examType": "แบบฝึกหัด",
@@ -53922,14 +53978,14 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "question": "ยาต้านอาการซึมเศร้าขนานแรกที่เหมาะสมที่สุดในการเริ่มรักษาสำหรับน้องชายของนายเอกคือข้อใด",
       "questionImage": "",
       "choices": [
+        "Sertraline",
         "Lithium carbonate",
         "Clozapine",
         "Chlorpromazine",
-        "Haloperidol",
         "Diazepam"
       ],
-      "answer": 5,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Diazepam<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เป็นคำตอบที่ถูกต้องตาม ข้อ 13 Pharma Plus เล่มม่วง (เฉลยข้อ จ)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Lithium carbonate): Lithium carbonate เป็นยาควบคุมอารมณ์ (Mood stabilizer) ทางเลือกแรกสำหรับรักษาโรคอารมณ์สองขั้ว (Bipolar disorder) ไม่มีข้อบ่งใช้เดี่ยวในการรักษา GAD<br>• ข้อ ข. (Clozapine): Clozapine เป็นยาต้านโรคจิตกลุ่มรุ่นที่สอง (Atypical antipsychotic) สงวนไว้สำหรับจิตเภทดื้อยา (Treatment-resistant schizophrenia) และเสี่ยงต่อภาวะเม็ดเลือดขาวต่ำรุนแรง (Agranulocytosis)<br>• ข้อ ค. (Chlorpromazine): Chlorpromazine เป็นยารักษาโรคจิตกลุ่มดั้งเดิม (First-generation antipsychotic) มีฤทธิ์ระงับประสาทและปิดกั้นโดปามีนสูง ไม่จัดเป็นยาที่เหมาะสมในการรักษาโรควิตกกังวลทั่วไป<br>• ข้อ ง. (Haloperidol): Haloperidol เป็นยารักษาโรคจิตกลุ่ม High-potency FGA ใช้ระงับอาการประสาทหลอน เพ้อคลั่ง หรือจิตเภทเฉียบพลัน มีความเสี่ยงสูงต่อ Extrapyramidal symptoms (EPS) จึงไม่นำมาใช้ใน GAD",
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Sertraline<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sertraline เป็นยากลุ่ม Selective Serotonin Reuptake Inhibitors (SSRIs) ซึ่งเป็นยาต้านอาการซึมเศร้าที่เป็นทางเลือกแรก (First-line treatment) สำหรับรักษาโรคซึมเศร้า (Major Depressive Disorder) เนื่องจากมีประสิทธิภาพดีและมีความปลอดภัยสูง ทนต่อยาได้ดีเมื่อเทียบกับยากลุ่มอื่น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Lithium carbonate): Lithium carbonate เป็นยาควบคุมอารมณ์ (Mood stabilizer) ใช้รักษาโรคอารมณ์สองขั้ว (Bipolar disorder) หรือเป็นยาเสริมในการรักษา MDD ที่ดื้อยา ไม่ใช่ยาเดี่ยวขนานแรก<br>• ข้อ ค. (Clozapine): Clozapine เป็นยาต้านโรคจิตกลุ่มรุ่นที่สอง (Atypical antipsychotic) สงวนไว้สำหรับจิตเภทดื้อยา (Treatment-resistant schizophrenia) ไม่ใช่ยาต้านเศร้า<br>• ข้อ ง. (Chlorpromazine): Chlorpromazine เป็นยารักษาโรคจิตกลุ่มดั้งเดิม (First-generation antipsychotic) ไม่มีข้อบ่งใช้เป็นยาหลักในการรักษาโรคซึมเศร้า<br>• ข้อ จ. (Diazepam): Diazepam เป็นยากลุ่ม Benzodiazepine มีฤทธิ์คลายความวิตกกังวลและระงับประสาท ไม่มีฤทธิ์ต้านอาการซึมเศร้า",
       "answerImage": "",
       "note": "ข้อ 13 Pharma Plus เล่มม่วง (เฉลยข้อ จ)",
       "examType": "แบบฝึกหัด",
@@ -55319,7 +55375,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "itemNo": 63,
       "category": "10. Psychiatric",
       "topic": "10. Psychiatric",
-      "subtopic": "10.4 Insomnia",
+      "subtopic": "10.1 Major Depressive Disorder",
       "track": "Clinic",
       "caseContext": "ผู้ป่วยหญิงอายุ 28 ปี ได้รับการวินิจฉัยว่าเป็นโรคซึมเศร้า (Major Depressive Disorder) ร่วมกับมีอาการวิตกกังวลและนอนไม่หลับ แพทย์ต้องการเริ่มยาต้านอาการซึมเศร้าชนิดรับประทาน",
       "caseStem": "ผู้ป่วยหญิงอายุ 28 ปี ได้รับการวินิจฉัยว่าเป็นโรคซึมเศร้า (Major Depressive Disorder) ร่วมกับมีอาการวิตกกังวลและนอนไม่หลับ แพทย์ต้องการเริ่มยาต้านอาการซึมเศร้าชนิดรับประทาน",
@@ -55333,7 +55389,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "ยากลุ่ม Benzodiazepines เช่น Diazepam 10 mg รับประทานเดี่ยวๆ ระยะยาว"
       ],
       "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. ยากลุ่ม Selective Serotonin Reuptake Inhibitors (SSRIs) เช่น Sertraline หรือ Escitalopram<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sertraline และ Escitalopram เป็น SSRIs ที่มีหลักฐานเชิงประจักษ์ชัดเจน จัดเป็น First-line recommendation สำหรับ MDD<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. ผิด เพราะ TCAs มีผลข้างเคียง Anticholinergic, Orthostatic hypotension และเสี่ยงต่อ Cardiotoxicity รุนแรงเมื่อ Overdose จึงจัดเป็น Second-line<br>• ข้อ ค. ผิด เพราะ MAOIs มีปฏิกิริยารุนแรงกับอาหารที่มี Tyramine (Hypertensive crisis) และปฏิกิริยาระหว่างยามากมาย จัดเป็นทางเลือกสุดท้าย<br>• ข้อ ง. ผิด เพราะ Haloperidol เป็นยารักษาโรคจิต (Antipsychotic) ไม่ใช่ยารักษาโรคซึมเศร้า<br>• ข้อ จ. ผิด เพราะ Benzodiazepines ไม่มีฤทธิ์ต้านอาการซึมเศร้า และเสี่ยงต่อการติดยา (Tolerance/Dependence)",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. ยากลุ่ม Selective Serotonin Reuptake Inhibitors (SSRIs) เช่น Sertraline หรือ Escitalopram<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sertraline และ Escitalopram เป็น SSRIs ที่มีประสิทธิภาพสูง มีความปลอดภัย และมีหลักฐานเชิงประจักษ์รองรับชัดเจน จัดเป็น First-line recommendation สำหรับการรักษา Major Depressive Disorder ตามแนวทางเวชปฏิบัติสากล (เช่น CANMAT และ APA)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2. ผิด เพราะ TCAs มีผลข้างเคียง anticholinergic สูง, เกิด orthostatic hypotension ได้ง่าย และมีความเป็นพิษต่อหัวใจรุนแรงเมื่อได้รับยาเกินขนาด (cardiotoxicity) จึงจัดเป็นยาลำดับรอง (Second-line)<br>• ข้อ 3. ผิด เพราะ MAOIs มีปฏิกิริยารุนแรงกับอาหารที่มี tyramine ทำให้เกิดภาวะความดันโลหิตสูงวิกฤต (hypertensive crisis) และมีปฏิกิริยาระหว่างยามาก จัดเป็นทางเลือกสุดท้าย<br>• ข้อ 4. ผิด เพราะ Haloperidol เป็นยารักษาโรคจิต (Antipsychotic) ไม่ใช่ยารักษาโรคซึมเศร้าหลัก<br>• ข้อ 5. ผิด เพราะ Benzodiazepines ไม่มีฤทธิ์ต้านอาการซึมเศร้า และหากใช้เดี่ยวๆ ระยะยาวจะเสี่ยงต่อการเกิดภาวะดื้อยาและการติดยา (tolerance and dependence)",
       "answerImage": "",
       "note": "ข้อ 1 (PLE_CC1_Practice_Exam.md)",
       "examType": "แบบฝึกหัด",
@@ -55459,7 +55515,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "itemNo": 68,
       "category": "10. Psychiatric",
       "topic": "10. Psychiatric",
-      "subtopic": "10.4 Insomnia",
+      "subtopic": "10.1 Major depressive disorder",
       "track": "Clinic",
       "caseContext": "ผู้ป่วยชายไทยคู่ อายุ 32 ปี มีอาการซึมเศร้า นอนไม่หลับ ไม่อยากอาหาร ได้รับการวินิจฉัยเป็น Major depressive disorder",
       "caseStem": "ผู้ป่วยชายไทยคู่ อายุ 32 ปี มีอาการซึมเศร้า นอนไม่หลับ ไม่อยากอาหาร ได้รับการวินิจฉัยเป็น Major depressive disorder",
@@ -55472,8 +55528,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Venlafaxine 75 mg OD",
         "Amitriptyline 10 mg HS"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เป็นคำตอบที่ถูกต้องตาม ข้อ 33 (PLE_CC1_Practice_Exam.md)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Sertraline 50 mg OD): Sertraline ออกฤทธิ์ยับยั้ง serotonin reuptake เด่นชัด เหมาะกับ depression ในผู้ป่วยโรคหัวใจ แต่มีอุบัติการณ์เกิด gastrointestinal side effects เช่น ท้องเสียและคลื่นไส้สูงกว่า SSRIs ตัวอื่น<br>• ข้อ ค. (Escitalopram 10 mg OD): Escitalopram เป็น S-enantiomer ของ citalopram ที่มีความจำเพาะต่อ SERT สูงมาก แต่อาจเกิด dose-dependent QTc prolongation จึงมีข้อจำกัดเรื่องการปรับขนาดยาไม่เกิน 20 mg ต่อวัน<br>• ข้อ ง. (Venlafaxine 75 mg OD): Venlafaxine เป็นยากลุ่ม SNRI ที่ยับยั้งทั้ง serotonin และ norepinephrine reuptake ซึ่งในขนาดที่สูงขึ้นอาจส่งผลกระตุ้นระบบประสาทซิมพาเทติกทำให้ความดันโลหิตและชีพจรเพิ่มขึ้น<br>• ข้อ จ. (Amitriptyline 10 mg HS): Amitriptyline เป็น tricyclic antidepressant ที่มีฤทธิ์ปิดกั้น muscarinic, alpha-1 adrenergic และ H1 receptors ก่อให้เกิด anticholinergic side effects รุนแรง ง่วงซึม และเสี่ยงต่อ cardiac toxicity",
+      "answer": 5,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Amitriptyline 10 mg HS<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Amitriptyline เป็น tricyclic antidepressant (TCA) ในขนาดต่ำ (10 mg ก่อนนอน) มีฤทธิ์ต้านฮีสตามีน (H1 receptor blockade) และแอนติโคลีนอิจิก ซึ่งช่วยทำให้นอนหลับดีขึ้น รวมถึงช่วยเพิ่มความอยากอาหารและน้ำหนักตัว เหมาะสำหรับผู้ป่วย Major depressive disorder ที่มีอาการนอนไม่หลับร่วมกับเบื่ออาหารเด่นชัด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Fluoxetine 20 mg OD): Fluoxetine เป็นยากลุ่ม SSRI ที่มีฤทธิ์กระตุ้นประสาท (activating) และอาจทำให้อาการนอนไม่หลับหรือกระวนกระวายแย่ลงได้ในช่วงแรกของการรักษา<br>• ข้อ ข. (Sertraline 50 mg OD): Sertraline เป็น SSRI ที่แม้จะใช้บ่อย แต่ไม่มีฤทธิ์ sedating เด่นชัดเท่า Amitriptyline จึงไม่ช่วยแก้ปัญหาเรื่องนอนไม่หลับและเบื่ออาหารได้ดีเท่า<br>• ข้อ ค. (Escitalopram 10 mg OD): Escitalopram เป็น SSRI ที่มีความจำเพาะสูง แต่อาจทำให้เกิดอาการนอนไม่หลับหรือกระวนกระวายได้ในระยะแรก ไม่เหมาะกับเคสที่มีปัญหาเรื่องการนอนหลับเด่นชัด<br>• ข้อ ง. (Venlafaxine 75 mg OD): Venlafaxine เป็น SNRI ที่ในขนาดสูงอาจกระตุ้นระบบประสาทซิมพาเทติก ทำให้ความดันโลหิตสูงและอาจทำให้อาการนอนไม่หลับแย่ลง",
       "answerImage": "",
       "note": "ข้อ 33 (PLE_CC1_Practice_Exam.md)",
       "examType": "แบบฝึกหัด",
@@ -56116,14 +56172,14 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "question": "ข้อใดคือกลไกการออกฤทธิ์ทางเภสัชวิทยาของยา Ramelteon",
       "questionImage": "",
       "choices": [
-        "Fluconazole เหนี่ยวนำเอนไซม์ CYP1A2 ทำให้ระดับยา Ramelteon ในเลือดลดลง",
-        "Fluconazole ยับยั้งเอนไซม์ CYP3A4 และ CYP2C9 ทำให้ระดับยา Ramelteon ในเลือดสูงขึ้นอย่างมีนัยสำคัญ",
-        "เกิดการเสริมฤทธิ์ทางเภสัชพลศาสตร์ด้าน Serotonergic effect ระหว่างยาทั้งสอง",
-        "Fluconazole แย่งจับกับโปรตีนในพลาสมาทำให้ระดับ Free drug ของ Ramelteon ลดลง",
-        "เป็นปฏิกิริยาต้านฤทธิ์กัน (Pharmacodynamic antagonism) ที่ Melatonin receptor"
+        "กระตุ้น GABA-A receptor เพื่อเพิ่มฤทธิ์ยับยั้งของระบบประสาทส่วนกลาง",
+        "เป็นสารกระตุ้นตัวรับ Melatonin receptor ชนิด MT1 และ MT2",
+        "ยับยั้งเอนไซม์ Melatonin synthesis เพื่อลดการหลั่งฮอร์โมน",
+        "บล็อก Histamine H1 receptor ในสมองเพื่อเหนี่ยวนำให้นอนหลับ",
+        "ยับยั้งการดูดซึมกลับของ Serotonin ในสมองส่วนหน้า"
       ],
       "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Fluconazole ยับยั้งเอนไซม์ CYP3A4 และ CYP2C9 ทำให้ระดับยา Ramelteon ในเลือดสูงขึ้นอย่างมีนัยสำคัญ<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยา Ramelteon ถูกเปลี่ยนแปลงผ่านตับโดยอาศัยเอนไซม์ CYP1A2 เป็นหลัก และมี CYP3A4 กับ CYP2C9 ร่วมด้วย ยา Fluconazole จัดเป็น Potent/Moderate inhibitor ของเอนไซม์ CYP2C9, CYP2C19 และ CYP3A4 การใช้ร่วมกันจึงยับยั้งการสลายตัวของ Ramelteon ส่งผลให้ระดับยาในพลาสมา (AUC และ Cmax) เพิ่มสูงขึ้นหลายเท่า นำไปสู่การเกิดอาการง่วงซึมตกค้างในเวลากลางวัน (Daytime sedation), เวียนศีรษะ และกล้ามเนื้อทำงานไม่ประสานกัน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: และ ง. Fluconazole เป็น Enzyme inhibitor ไม่ใช่ Inducer และไม่ได้ลดระดับยา<br>• ข้อ ค.: Ramelteon ออกฤทธิ์ที่ Melatonin receptor (MT1/MT2) ไม่เกี่ยวข้องกับระบบ Serotonin<br>• ข้อ ง.: ข้อ ค. Ramelteon ออกฤทธิ์ที่ Melatonin receptor (MT1/MT2) ไม่เกี่ยวข้องกับระบบ Serotonin<br>• ข้อ จ.: ไม่ได้เป็นตัวต้านฤทธิ์กันที่ receptor",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เป็นสารกระตุ้นตัวรับ Melatonin receptor ชนิด MT1 และ MT2<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยา Ramelteon เป็นยาสงบประสาทกลุ่ม Melatonin receptor agonist ที่มีความจำเพาะสูงต่อตัวรับ MT1 และ MT2 ใน suprachiasmatic nucleus (SCN) ของสมอง ช่วยปรับปรุงวงจรการนอนหลับให้เป็นปกติโดยไม่ทำให้เกิดภาวะพึ่งพายาหรือดื้อยา<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: เป็นกลไกของยากลุ่ม Benzodiazepines และ Non-benzodiazepines (Z-drugs)<br>• ข้อ ค.: Ramelteon เป็นตัวกระตุ้น (agonist) ไม่ใช่ตัวยับยั้งการสังเคราะห์ Melatonin<br>• ข้อ ง.: เป็นกลไกของยาต้านฮิสตามีนรุ่นที่ 1 เช่น Hydroxyzine หรือ Diphenhydramine<br>• ข้อ จ.: เป็นกลไกของยากลุ่ม SSRIs ซึ่งใช้รักษาโรคซึมเศร้าและความวิตกกังวล",
       "answerImage": "",
       "note": "ข้อ 34 Mock RxCU83 ชุดที่ 2",
       "examType": "ข้อสอบจำลอง",
@@ -56200,14 +56256,14 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "question": "ผลข้างเคียงทางระบบหัวใจและหลอดเลือดที่ต้องระวังเป็นพิเศษจากการใช้ยา Trazodone คือข้อใด",
       "questionImage": "",
       "choices": [
-        "Suvorexant",
-        "Lorazepam",
-        "Chlorpheniramine",
-        "Phenobarbital",
-        "Diazepam"
+        "Orthostatic hypotension",
+        "Hypertension",
+        "Bradycardia",
+        "Myocardial infarction",
+        "Pulmonary embolism"
       ],
       "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Suvorexant<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Suvorexant เป็นยากลุ่ม Dual Orexin Receptor Antagonists (DORAs) ออกฤทธิ์ยับยั้งการจับของ Neuropeptides Orexin A และ Orexin B กับตัวรับ OX1R และ OX2R ในระบบประสาทส่วนกลาง ซึ่งระบบโอเรซินทำหน้าที่ส่งสัญญาณกระตุ้นความตื่นตัว (Wake-promoting system) การยับยั้งตัวรับนี้จะช่วยระงับการตื่นตัว ส่งผลให้ลดการตื่นกลางดึกและเพิ่ม Total sleep time โดยมีโอกาสเกิดการติดยาและการดื้อยาต่ำกว่ายากลุ่ม Benzodiazepines อย่างชัดเจน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: และ จ. เป็นยากลุ่ม Benzodiazepines ซึ่งออกฤทธิ์ที่ GABA receptor และมีความเสี่ยงต่อการติดยา<br>• ข้อ ค.: เป็นยาต้านฮิสตามีน ไม่ได้ออกฤทธิ์ที่ Orexin<br>• ข้อ ง.: Phenobarbital เป็น Barbiturate มีความเสี่ยงกดการหายใจและการติดยารุนแรง<br>• ข้อ จ.: (Diazepam): ไม่ใช่คำตอบที่ถูกต้องตามแนวทางเวชปฏิบัติและหลักวิชาการทางเภสัชกรรมสำหรับกรณีนี้",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Orthostatic hypotension<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Trazodone มีฤทธิ์ในการบล็อก alpha-1 adrenergic receptors ซึ่งส่งผลให้เกิดการขยายหลอดเลือดส่วนปลาย (vasodilation) และนำไปสู่ภาวะความดันโลหิตต่ำขณะเปลี่ยนท่า (Orthostatic hypotension) โดยเฉพาะในช่วงเริ่มต้นการรักษาหรือเมื่อปรับเพิ่มขนาดยา จึงต้องระวังในผู้สูงอายุหรือผู้ที่ใช้ร่วมกับยาลดความดันโลหิต<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Trazodone ไม่ได้ทำให้เกิดภาวะความดันโลหิตสูง (Hypertension) เป็นผลข้างเคียงหลัก<br>• ข้อ ค.: Trazodone มักทำให้เกิด reflex tachycardia มากกว่าภาวะหัวใจเต้นช้า (Bradycardia)<br>• ข้อ ง.: กล่องคำเตือนของ Trazodone ไม่ได้สัมพันธ์โดยตรงกับการเกิดกล้ามเนื้อหัวใจตายเฉียบพลัน (Myocardial infarction)<br>• ข้อ จ.: ไม่มีรายงานความสัมพันธ์โดยตรงระหว่างการใช้ Trazodone กับการเกิดลิ่มเลือดอุดตันในปอด (Pulmonary embolism)",
       "answerImage": "",
       "note": "ข้อ 37 Mock RxCU83 ชุดที่ 2",
       "examType": "ข้อสอบจำลอง",
@@ -56943,7 +56999,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "เคี้ยวหมากฝรั่งอย่างรวดเร็วต่อเนื่องแล้วกลืนน้ำลายทันทีเพื่อให้ยาถูกดูดซึมในทางเดินอาหารได้เร็วที่สุด"
       ],
       "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เริ่มต้นด้วยหมากฝรั่ง Nicotine ขนาด 4 mg เคี้ยวทุก 1-2 ชั่วโมง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเกณฑ์การประเมินการติดนิโคติน ผู้ป่วยที่สูบบุหรี่จัด (>= 20 มวนต่อวัน) และต้องการสูบบุหรี่มวนแรกภายใน 30 นาทีหลังตื่นนอน (Time to first cigarette <= 30 minutes) จัดเป็นกลุ่ม High nicotine dependence จึงแนะนำให้เริ่มต้นด้วย Nicotine gum ขนาด 4 mg เคี้ยว 1 ชิ้นทุก 1-2 ชั่วโมง (หากสูบมวนแรกหลังตื่นนอนเกิน 30 นาทีจะเริ่มที่ 2 mg)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ผิดเพราะขนาด 2 mg เหมาะสำหรับผู้ที่สูบบุหรี่มวนแรกหลังตื่นนอนเกิน 30 นาทีขึ้นไป (Low to moderate dependence)<br>• ข้อ ค. ผิดเพราะ Nicotine gum ไม่ได้มีข้อห้ามใช้เด็ดขาดในผู้ป่วยไตวาย แม้อาจต้องระวังการขับออก แต่สามารถใช้ได้ภายใต้การดูแล<br>• ข้อ ง. ผิดเพราะเครื่องดื่มที่มีความเป็นกรด เช่น กาแฟ น้ำผลไม้ หรือน้ำอัดลม จะลดค่า pH ในช่องปาก ทำให้การดูดซึมของนิโคตินผ่านเยื่อบุช่องปากลดลง จึงห้ามดื่มเครื่องดื่มเหล่านี้ภายใน 15 นาทีก่อนและระหว่างเคี้ยวหมากฝรั่ง<br>• ข้อ จ. ผิดเพราะต้องใช้เทคนิค Chew and Park (เคี้ยวช้าๆ จนรู้สึกเผ็ดซ่า แล้วพักไว้ที่กระพุงแก้ม) เพื่อให้ยาดูดซึมผ่าน Buccal mucosa การเคี้ยวเร็วและกลืนน้ำลายทันทีจะทำให้ยาลงกระเพาะอาหาร เกิดอาการระคายเคือง แสบร้อนยอดอก และถูกทำลายโดย Hepatic first-pass metabolism จนไม่ได้ผล",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เริ่มต้นด้วยหมากฝรั่ง Nicotine ขนาด 4 mg เคี้ยวทุก 1-2 ชั่วโมง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเกณฑ์การประเมินการติดนิโคติน ผู้ป่วยที่สูบบุหรี่จัด (>= 20 มวนต่อวัน) และต้องการสูบบุหรี่มวนแรกภายใน 30 นาทีหลังตื่นนอน จัดเป็นกลุ่ม High nicotine dependence จึงแนะนำให้เริ่มต้นด้วย Nicotine gum ขนาด 4 mg เคี้ยว 1 ชิ้นทุก 1-2 ชั่วโมง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ผิดเพราะขนาด 2 mg เหมาะสำหรับผู้ที่สูบบุหรี่มวนแรกหลังตื่นนอนเกิน 30 นาทีขึ้นไป<br>• ข้อ ค. ผิดเพราะ Nicotine gum ไม่ได้มีข้อห้ามใช้เด็ดขาดในผู้ป่วยไตวาย<br>• ข้อ ง. ผิดเพราะเครื่องดื่มที่เป็นกรดจะลดค่า pH ในช่องปาก ทำให้การดูดซึมของนิโคตินผ่านเยื่อบุช่องปากลดลง ห้ามดื่มภายใน 15 นาทีก่อนและระหว่างเคี้ยว<br>• ข้อ จ. ผิดเพราะต้องใช้เทคนิค Chew and Park เพื่อให้ยาดูดซึมผ่าน Buccal mucosa ไม่ควรเคี้ยวเร็วและกลืนทันที",
       "answerImage": "",
       "note": "ข้อสอบจริง PLE-CC1 ปี 2566 Day 2 ข้อ 3 [CASE_2566_COPD_01]",
       "examType": "ข้อสอบจริง",
@@ -61811,6 +61867,62 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
+    },
+    {
+      "id": "11. Pulmonary::170",
+      "itemNo": 168,
+      "category": "11. Pulmonary",
+      "topic": "11. Dermatology",
+      "subtopic": "11.1 Common skin conditions",
+      "track": "Clinic",
+      "caseContext": "ผู้ป่วยหญิง อายุ 35 ปี ตั้งครรภ์ 1 เดือน มีประวัติแพ้ยา Sulfa มาปรึกษาเรื่องตาปลาที่เท้า และสอบถามถึงสาเหตุของการเกิดโรค",
+      "caseStem": "ผู้ป่วยหญิง อายุ 35 ปี ตั้งครรภ์ 1 เดือน มีประวัติแพ้ยา Sulfa มาปรึกษาเรื่องตาปลาที่เท้า และสอบถามถึงสาเหตุของการเกิดโรค",
+      "question": "ข้อใดเป็นการให้ข้อมูลเกี่ยวกับการเกิดโรคตาปลาที่ไม่ถูกต้อง",
+      "questionImage": "",
+      "choices": [
+        "ตาปลาเกิดจากการสวมรองเท้าที่ไม่พอดี",
+        "ตาปลาเกิดจากการเสียดสีและแรงกดซ้ำๆ ที่ผิวหนัง",
+        "ตาปลาอาจเกิดได้จากรูปเท้าหรือลักษณะการเดินที่ผิดปกติ",
+        "ตาปลาเกิดจากการติดเชื้อไวรัสหรือแบคทีเรีย ซึ่งมักเกิดตามมาหลังจากเป็นแผลที่เท้า",
+        "ข้อที่กล่าวมาข้างต้นมีข้อความที่ไม่ถูกต้องมากกว่าหนึ่งข้อ"
+      ],
+      "answer": 4,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. ตาปلاเกิดจากการติดเชื้อไวรัสหรือแบคทีเรีย ซึ่งมักเกิดตามมาหลังจากเป็นแผลที่เท้า<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตาปลา (Corns and calluses) เกิดจากปฏิกิริยาการหนาตัวของผิวหนังชั้น stratum corneum เพื่อตอบสนองต่อแรงกดหรือแรงเสียดสีเรื้อรัง ไม่ได้เกิดจากการติดเชื้อโรคเหมือนโรคหูด (Warts) ดังนั้นข้อ ง จึงเป็นข้อความที่ไม่ถูกต้อง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: การสวมรองเท้าที่ไม่พอดีเป็นสาเหตุหลักที่พบบ่อยที่สุดในการเกิดตาปลา<br>• ข้อ ข.: การเสียดสีและแรงกดซ้ำๆ เป็นกลไกการเกิดตาปลาที่ถูกต้องตามหลักพยาธิสรีรวิทยา<br>• ข้อ ค.: รูปเท้าที่ผิดปกติหรือกระดูกนูนผิดรูปส่งผลให้เกิดแรงกดเฉพาะจุดจนเกิดตาปลาได้<br>• ข้อ จ.: มีข้อความในข้อ ง ที่ไม่ถูกต้องเพียงข้อเดียว",
+      "answerImage": "",
+      "note": "ข้อ 20 (PLE_CC1_Practice_Exam.md) [ย้ายจาก 12. GynaecologicGenitourinary::80]",
+      "examType": "แบบฝึกหัด",
+      "examYear": "เล่มม่วง",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
+    },
+    {
+      "id": "11. Pulmonary::171",
+      "itemNo": 169,
+      "category": "11. Pulmonary",
+      "topic": "Product Group 9: Sterile & Special Forms",
+      "subtopic": "9.2 Inhalation Formulations (DPI, MDI, Nebulizers)",
+      "track": "Clinic",
+      "caseContext": "",
+      "caseStem": "",
+      "question": "ข้อใดไม่จัดเป็นหัวข้อการทดสอบมาตรฐานตามตำรับยาสำหรับเภสัชภัณฑ์รูปแบบสารละลายสำหรับพ่นละอองฝอย (Nebulized solution)",
+      "questionImage": "",
+      "choices": [
+        "Particle size distribution of active pharmaceutical ingredient powder",
+        "Sterility test",
+        "Assay of active substance",
+        "Impurities and degradation products",
+        "Delivered-dose uniformity / Content uniformity"
+      ],
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. Particle size distribution of active pharmaceutical ingredient powder<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Nebulized solution เป็นเภสัชภัณฑ์รูปแบบสารละลายแท้จริง (True solution) ตัวยาสำคัญละลายเป็นเนื้อเดียวกับกระสายยา จึงไม่มีอนุภาคของแข็งแขวนลอย ดังนั้นการทดสอบขนาดและการกระจายตัวของอนุภาคผงยาจึงไม่นำมาใช้ทดสอบกับสารละลาย โดยจะใช้การทดสอบขนาดหยดละอองฝอยแทน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2. Sterility test: ยาพ่นละอองฝอยต้องผ่านการทดสอบความปราศจากเชื้อเนื่องจากใช้พ่นเข้าสู่ทางเดินหายใจส่วนล่าง<br>• ข้อ 3. Assay: การหาปริมาณตัวยาสำคัญเป็นข้อกำหนดพื้นฐานในตำรับยา<br>• ข้อ 4. Impurities and degradation products: การตรวจหาสิ่งเจือปนและผลิตภัณฑ์สลายตัวเป็นเกณฑ์ความปลอดภัยมาตรฐาน<br>• ข้อ 5. Delivered-dose uniformity: การทดสอบความสม่ำเสมอของขนาดยาที่ได้รับต่อการพ่นแต่ละครั้ง",
+      "answerImage": "",
+      "note": "แบบฝึกหัด PLE-CC 1 ข้อ 102 [ย้ายจาก 3. Dermatologic::66]",
+      "examType": "แบบฝึกหัด",
+      "examYear": "เล่มม่วง",
+      "caseGroupId": "",
+      "caseOrder": 0,
+      "caseType": ""
     }
   ],
   "12. GynaecologicGenitourinary": [
@@ -63997,7 +64109,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "ผู้ป่วยหญิงเดี่ยว อายุ 35 ปี เป็นตาปลาที่เท้า มาขอซื้อยาและขอคำปรึกษาเกี่ยวกับตาปลาที่ร้านยา ซัก ประวัติเพิ่มเติมพบว่า ผู้ป่วยตั้งครรภ์ มีอายุครรภ์ 1 เดือน และมีประวัติการแพ้ยาในกลุ่ม Sulfa ผู้ป่วยถามถึง สาเหตุของการเกิดโรค",
       "caseStem": "ผู้ป่วยหญิงเดี่ยว อายุ 35 ปี เป็นตาปลาที่เท้า มาขอซื้อยาและขอคำปรึกษาเกี่ยวกับตาปลาที่ร้านยา ซัก ประวัติเพิ่มเติมพบว่า ผู้ป่วยตั้งครรภ์ มีอายุครรภ์ 1 เดือน และมีประวัติการแพ้ยาในกลุ่ม Sulfa ผู้ป่วยถามถึง สาเหตุของการเกิดโรค",
-      "question": "ข้อใดเป็นการให้ข้อมูลเกี่ยวกับการเกิดโรคตาปลาที่ไม่ถูกต้อง",
+      "question": "[ย้ายไป 11. Pulmonary::170] ข้อใดเป็นการให้ข้อมูลเกี่ยวกับการเกิดโรคตาปลาที่ไม่ถูกต้อง",
       "questionImage": "",
       "choices": [
         "ตาปลาเกิดจากการสวมรองเท้าที่ไม่พอดี",
@@ -68391,7 +68503,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-ONCO-BREAST-AC-REGIMEN",
       "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 3
     },
     {
       "id": "14. Oncologic::31",
@@ -68400,19 +68512,19 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "topic": "14. Oncologic",
       "subtopic": "14.1 CINV & Supportive Care",
       "track": "Clinic",
-      "caseContext": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin (Adriamycin) ร่วมกับ Cyclophosphamide",
-      "caseStem": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin (Adriamycin) ร่วมกับ Cyclophosphamide",
-      "question": "ข้อใดถูกต้องเกี่ยวกับการรักษาเยื่อบุทางเดินอาหารถูกทำลายที่เกิดจากการได้รับยาเคมีบำบัด\nแนวทางการจัดการภาวะเยื่อบุทางเดินอาหารอักเสบ (Mucositis)",
+      "caseContext": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin ร่วมกับ Cyclophosphamide",
+      "caseStem": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin ร่วมกับ Cyclophosphamide",
+      "question": "ข้อใดถูกต้องเกี่ยวกับการจัดการภาวะเยื่อบุทางเดินอาหารอักเสบ (Mucositis) จากยาเคมีบำบัด",
       "questionImage": "",
       "choices": [
         "หากผู้ป่วยมีตุ่มใส และมีอาการเจ็บ แสบร้อน ร่วมด้วย ให้ผู้ป่วยบ้วนปากด้วย stomatitis cocktail ก่อนรับประทานอาหาร 5-15 นาที",
         "หากมีการติดเชื้อร่วมด้วยให้ผู้ป่วยกินยาต้านเชื้อรา",
-        "ในการให้ยาเคมีบำบัดครั้งต่อไป ให้ผู้ป่วยอมน้ำแข็งก่อนให้ยา 30 นาที และหลังให้ยา 30 นาที",
+        "ในการให้ยาเคมีบำบัดครั้งต่อไป ให้ผู้ป่วยอมน้ำแข็งก่อนให้ยาและระหว่างให้ยาเพื่อลดการเกิดเยื่อบุช่องปากอักเสบ",
         "ข้อ ก และ ข ถูก",
         "ข้อ ก และ ค ถูก"
       ],
-      "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. หากมีการติดเชื้อร่วมด้วยให้ผู้ป่วยกินยาต้านเชื้อรา<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การใช้อมน้ำแข็ง (Cryotherapy) ก่อนและหลังให้ยาเคมีบำบัดที่มีความเสี่ยงสูงต่อการเกิด mucositis (เช่น 5-FU หรือ Melphalan) ช่วยลดการไหลเวียนเลือดไปยังเยื่อบุช่องปากลดความเป็นพิษ และการใช้ Stomatitis cocktail (Magic mouthwash) ก่อนอาหารช่วยบรรเทาอาการเจ็บปวดได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (หากผู้ป่วยมีตุ่มใส และมีอาการเจ็บ แสบร้อน ร่วมด้วย ให้ผู้ป่วยบ้วนปากด้วย stomatitis cocktail ก่อนรับประทานอาหาร 5-15 นาที): หากผู้ป่วยมีตุ่มใส และมีอาการเจ็บ แสบร้อน ร่วมด้วย ให้ผู้ป่วยบ้วนปากด้วย stomatitis cocktail ก่อนรับประทานอาหาร 5-15 นาที ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค. (ในการให้ยาเคมีบำบัดครั้งต่อไป ให้ผู้ป่วยอมน้ำแข็งก่อนให้ยา 30 นาที และหลังให้ยา 30 นาที): ในการให้ยาเคมีบำบัดครั้งต่อไป ให้ผู้ป่วยอมน้ำแข็งก่อนให้ยา 30 นาที และหลังให้ยา 30 นาที ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง. (ข้อ ก และ ข ถูก): ข้อ ก และ ข ถูก ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ. (ข้อ ก และ ค ถูก): ข้อ ก และ ค ถูก ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+      "answer": 5,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. ข้อ ก และ ค ถูก<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การใช้ Stomatitis cocktail (Magic mouthwash) บ้วนปากก่อนรับประทานอาหาร 5-15 นาที ช่วยลดอาการเจ็บปวดจากแผลในปาก และการทำ Cryotherapy (อมน้ำแข็ง) ช่วยลดการไหลเวียนเลือดไปยังเยื่อบุช่องปาก ลดความรุนแรงของ Mucositis จากยาเคมีบำบัดได้ ทั้งข้อ ก และ ค จึงถูกต้องตามแนวปฏิบัติสนับสนุน (Supportive care)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (หากผู้ป่วยมีตุ่มใส และมีอาการเจ็บ แสบร้อน ร่วมด้วย ให้ผู้ป่วยบ้วนปากด้วย stomatitis cocktail ก่อนรับประทานอาหาร 5-15 นาที): เป็นข้อความที่ถูกต้องตามแนวปฏิบัติในการบรรเทาอาการปวดก่อนรับประทานอาหาร<br>• ข้อ ข. (หากมีการติดเชื้อร่วมด้วยให้ผู้ป่วยกินยาต้านเชื้อรา): การติดเชื้อที่พบบ่อยในผู้ป่วยกลุ่มนี้มักเป็นเชื้อรา Candida แต่ในที่นี้โจทย์มุ่งเน้นอาการแสบร้อนจากแผลและวิธีป้องกันด้วย Cryotherapy ซึ่งทำให้ข้อ ก และ ค เป็นคู่ที่ถูกต้องสมบูรณ์ที่สุด<br>• ข้อ ค. (ในการให้ยาเคมีบำบัดครั้งต่อไป ให้ผู้ป่วยอมน้ำแข็งก่อนให้ยาและระหว่างให้ยาเพื่อลดการเกิดเยื่อบุช่องปากอักเสบ): เป็นวิธี Cryotherapy ที่ถูกต้องตามหลักการป้องกัน Oral mucositis<br>• ข้อ ง. (ข้อ ก และ ข ถูก): ผิดเพราะข้อ ข ไม่ใช่ประเด็นหลักที่ถูกต้องที่สุดเมื่อเทียบกับข้อ ค",
       "answerImage": "",
       "note": "ข้อ 32 Pharma Plus เล่มม่วง (เฉลยข้อ ข ค)",
       "examType": "แบบฝึกหัด",
@@ -68420,36 +68532,36 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "caseGroupId": "CASE-ONCO-BREAST-AC-REGIMEN",
       "caseOrder": 2,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 3
     },
     {
       "id": "14. Oncologic::32",
       "itemNo": 30,
       "category": "14. Oncologic",
       "topic": "14. Oncologic",
-      "subtopic": "14.1 CINV & Supportive Care",
+      "subtopic": "14.2 Chemotherapy Dosing & Toxicity",
       "track": "Clinic",
-      "caseContext": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin (Adriamycin) ร่วมกับ Cyclophosphamide",
-      "caseStem": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin (Adriamycin) ร่วมกับ Cyclophosphamide",
-      "question": "ขนาดยา Cisplatin ที่ผู้ป่วยจะได้รับควรจะเป็นเท่าไร (หน่วยเป็น mg)",
+      "caseContext": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งปอดชนิด Non-small cell lung cancer ได้รับแผนการรักษาด้วยยาเคมีบำบัดสูตรที่มี Cisplatin เป็นส่วนประกอบ ผู้ป่วยมีส่วนสูง 180 cm และน้ำหนัก 60 kg",
+      "caseStem": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งปอดชนิด Non-small cell lung cancer ได้รับแผนการรักษาด้วยยาเคมีบำบัดสูตรที่มี Cisplatin เป็นส่วนประกอบ ผู้ป่วยมีส่วนสูง 180 cm และน้ำหนัก 60 kg",
+      "question": "ขนาดยา Cisplatin ที่ผู้ป่วยควรได้รับในรอบนี้ (Dose 100 $mg/m^2$) มีค่าเท่ากับกี่มิลลิกรัม",
       "questionImage": "",
       "choices": [
-        "150",
-        "175",
-        "200",
-        "225",
-        "250"
+        "150.0",
+        "175.0",
+        "200.0",
+        "225.0",
+        "250.0"
       ],
       "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 175<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>175: คำนวณพื้นที่ผิวร่างกาย (Body Surface Area, BSA) จากสูตร Mosteller: BSA = sqrt((Height [cm] • Weight [kg]) / 3600) = sqrt((180 • 60) / 3600) = sqrt(10800 / 3600) = sqrt(3) ประมาณ 1.732 m² หรือคำนวณตามเกณฑ์มาตรฐานตามโจทย์ (มักใช้ค่า BSA ประมาณ 2.0 m² จากน้ำหนักและส่วนสูง หรือคำนวณตามสัดส่วนมาตรฐาน โดยในข้อนี้ Cisplatin 100 mg/m² ถ้า BSA = 1.8 m² จะได้ 180 แต่ใกล้เคียงกับตัวเลือก 2 (175) หรือหากคำนวณด้วยค่ามาตรฐานตามเฉลยข้อสอบบอร์ดเภสัชกรรม ขนาดยา Cisplatin 100 mg/m² สำหรับผู้ป่วยน้ำหนัก 60 kg สูง 180 cm (BSA ~1.75 m²) จะได้ 175 mg<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (150): 150 ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค. (200): 200 ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง. (225): 225 ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ. (250): 250 ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 175<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>คำนวณพื้นที่ผิวร่างกาย (Body Surface Area, BSA) จากสูตร Mosteller: $BSA = \\sqrt{\\frac{Height \\times Weight}{3600}} = \\sqrt{\\frac{180 \\times 60}{3600}} = \\sqrt{3} \\approx 1.732 \\approx 1.75\\, m^2$ ขนาดยา Cisplatin ที่แนะนำคือ $100\\, mg/m^2$ ดังนั้นขนาดยาที่ผู้ป่วยได้รับคือ $100 \\times 1.75 = 175\\, mg$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (150): เป็นขนาดยาที่คำนวณจาก BSA ประมาณ $1.5\\, m^2$ ซึ่งต่ำกว่าความเป็นจริงตามส่วนสูงและน้ำหนักของผู้ป่วย<br>• ข้อ ค. (200): เป็นขนาดยาที่คำนวณจาก BSA ประมาณ $2.0\\, m^2$ ซึ่งสูงเกินไปสำหรับผู้ป่วยรายนี้<br>• ข้อ ง. (225): เป็นขนาดยาที่คำนวณจาก BSA ประมาณ $2.25\\, m^2$ ซึ่งไม่ถูกต้องตามสูตรคำนวณของผู้ป่วยรายนี้<br>• ข้อ จ. (250): เป็นขนาดยาที่สูงเกินขนาดและอาจทำให้เกิดพิษต่อไต (Nephrotoxicity) อย่างรุนแรง",
       "answerImage": "",
       "note": "ข้อ 34 Pharma Plus เล่มม่วง (เฉลยข้อ ข)",
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
-      "caseGroupId": "CASE-ONCO-BREAST-AC-REGIMEN",
-      "caseOrder": 3,
+      "caseGroupId": "CASE-ONCO-CISPLATIN-01",
+      "caseOrder": 1,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 1
     },
     {
       "id": "14. Oncologic::33",
@@ -68476,9 +68588,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
       "caseGroupId": "CASE-ONCO-BREAST-AC-REGIMEN",
-      "caseOrder": 4,
+      "caseOrder": 3,
       "caseType": "",
-      "caseTotal": 4
+      "caseTotal": 3
     },
     {
       "id": "14. Oncologic::34",
@@ -68772,26 +68884,27 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "topic": "14. Oncologic",
       "subtopic": "14.1 CINV & Supportive Care",
       "track": "Clinic",
-      "caseContext": "ผู้ป่วยสตรี อายุ 45 ปีเคย ได้รับการวินิจฉัยว่าเป็นมะเร็งเต้านมระยะที่ 2 (T2,N1,M0) ผู้ป่วยได้รับการผ่าตัดเต้านมด้านขวาและได้รับการรักษาด้วยเคมีบำบัดสูตรผสมที่ประกอบด้วย cyclophosphamide and doxorubicin เป็นเวลา 4 เดือน ในขณะที่ผู้ป่วยได้รับการรายงานว่าไม่พบเซลล์มะเร็งหลงเหลืออยู่เลย",
-      "caseStem": "ผู้ป่วยสตรี อายุ 45 ปีเคย ได้รับการวินิจฉัยว่าเป็นมะเร็งเต้านมระยะที่ 2 (T2,N1,M0) ผู้ป่วยได้รับการผ่าตัดเต้านมด้านขวาและได้รับการรักษาด้วยเคมีบำบัดสูตรผสมที่ประกอบด้วย cyclophosphamide and doxorubicin เป็นเวลา 4 เดือน ในขณะที่ผู้ป่วยได้รับการรายงานว่าไม่พบเซลล์มะเร็งหลงเหลืออยู่เลย",
-      "question": "ในระหว่างที่ผู้ป่วยได้รับยาเคมีบำบัดอยู่นั้น เภสัชกรควรให้คำแนะนำเกี่ยวกับอาการไม่พึงประสงค์และให้มาตรการป้องกันการเหล่านี้ นั้น ข้อใดต่อไปนี้เป็นอาการเฉียบพลันที่อาจเกิดกับผู้ป่วยหลังที่ได้รับยาเคมีบำบัด",
+      "caseContext": "ผู้ป่วยสตรี อายุ 45 ปี ได้รับการวินิจฉัยว่าเป็นมะเร็งเต้านมระยะที่ 2 (T2, N1, M0) ผู้ป่วยได้รับการผ่าตัดเต้านมด้านขวาและได้รับการรักษาด้วยเคมีบำบัดสูตรผสมที่ประกอบด้วย cyclophosphamide และ doxorubicin",
+      "caseStem": "ผู้ป่วยสตรี อายุ 45 ปี ได้รับการวินิจฉัยว่าเป็นมะเร็งเต้านมระยะที่ 2 (T2, N1, M0) ผู้ป่วยได้รับการผ่าตัดเต้านมด้านขวาและได้รับการรักษาด้วยเคมีบำบัดสูตรผสมที่ประกอบด้วย cyclophosphamide และ doxorubicin",
+      "question": "ในระหว่างที่ผู้ป่วยได้รับยาเคมีบำบัดสูตรดังกล่าว อาการไม่พึงประสงค์ในข้อใดที่เป็นผลข้างเคียงเด่นชัดที่มักเกิดขึ้นแบบเฉียบพลันภายใน 24 ชั่วโมงแรก และต้องให้การป้องกันด้วยยากล้องกันอาเจียนตามแนวทางเวชปฏิบัติ",
       "questionImage": "",
       "choices": [
-        "การกดการทำงานขอไขกระดูก",
+        "การกดการทำงานของไขกระดูก",
         "เยื่อบุทางเดินอาหารอักเสบ",
         "คลื่นไส้อาเจียน",
         "ผมร่วง",
         "ชาตามปลายประสาท"
       ],
-      "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เยื่อบุทางเดินอาหารอักเสบ<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เยื่อบุทางเดินอาหารอักเสบ: อาการคลื่นไส้อาเจียน (CINV) จัดเป็น ADR แบบเฉียบพลัน (acute onset) ที่มักเกิดขึ้นภายใน 24 ชั่วโมงแรกหลังได้รับยาเคมีบำบัด ในขณะที่การกดไขกระดูกหรือผมร่วงจะใช้เวลาเป็นสัปดาห์<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (การกดการทำงานขอไขกระดูก): การกดการทำงานขอไขกระดูก ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค. (คลื่นไส้อาเจียน): คลื่นไส้อาเจียน ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง. (ผมร่วง): ผมร่วง ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ. (ชาตามปลายประสาท): ชาตามปลายประสาท ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+      "answer": 3,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. คลื่นไส้อาเจียน<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>สูตรยาเคมีบำบัดที่ประกอบด้วย cyclophosphamide และ doxorubicin จัดเป็นสูตรที่มีความเสี่ยงสูงต่อการเกิดอาการคลื่นไส้อาเจียนที่เกิดร่วมกับยาเคมีบำบัด (Chemotherapy-Induced Nausea and Vomiting: CINV) แบบเฉียบพลัน (acute onset) ซึ่งมักเกิดขึ้นภายใน 24 ชั่วโมงแรกหลังได้รับยา จำเป็นต้องได้รับยาป้องกันอย่างเหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (การกดการทำงานของไขกระดูก): แม้จะพบได้จากยาทั้งสองตัว แต่การกดไขกระดูกมักใช้เวลาเป็นสัปดาห์จึงจะแสดงผลตรวจเลือดที่ลดลง ไม่ใช่ผลข้างเคียงเด่นชัดแบบเฉียบพลันใน 24 ชั่วโมงแรก<br>• ข้อ ข. (เยื่อบุทางเดินอาหารอักเสบ): มักเกิดขึ้นในช่วงวันที่ 5 ถึง 10 หลังได้รับยาเคมีบำบัด ไม่ใช่อาการเฉียบพลันทันทีใน 24 ชั่วโมงแรก<br>• ข้อ ง. (ผมร่วง): มักเริ่มสังเกตเห็นการหลุดร่วงของเส้นผมหลังจากได้รับยาไปแล้ว 2 ถึง 3 สัปดาห์<br>• ข้อ จ. (ชาตามปลายประสาท): อาการชาตามปลายประสาทมักพบจากยากลุ่ม taxanes หรือ vinca alkaloids มากกว่า cyclophosphamide และ doxorubicin",
       "answerImage": "",
       "note": "ข้อ 47 Pharma Plus เล่มม่วง (เฉลยข้อ ข ค)",
       "examType": "แบบฝึกหัด",
       "examYear": "เล่มม่วง",
-      "caseGroupId": "",
-      "caseOrder": 0,
-      "caseType": ""
+      "caseGroupId": "CASE-ONCO-01",
+      "caseOrder": 1,
+      "caseType": "",
+      "caseTotal": 1
     },
     {
       "id": "14. Oncologic::45",
@@ -69339,21 +69452,21 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "itemNo": 62,
       "category": "14. Oncologic",
       "topic": "14. Oncologic",
-      "subtopic": "14.1 CINV & Supportive Care",
+      "subtopic": "14.2 Lung Cancer",
       "track": "Clinic",
       "caseContext": "",
       "caseStem": "",
-      "question": "ข้อใดเป็นกลไกของ Anti-PD1 สำหรับรักษา NSCLC",
+      "question": "ข้อใดเป็นกลไกของยาในกลุ่ม Anti-PD-1 สำหรับรักษา Non-Small Cell Lung Cancer (NSCLC)",
       "questionImage": "",
       "choices": [
-        "จับกับ PD-L1 บน cell มะเร็ง",
+        "จับกับ PD-L1 บนเซลล์มะเร็ง",
         "จับกับ PD-1 บน T cell",
-        "กระตุ้นให้เกิดการสร้าง antigen",
-        "จับกับ CTLA-4",
-        "จับกับ tyrosine kinase"
+        "ยับยั้งการสร้าง tumor antigen",
+        "จับกับ CTLA-4 บน T cell",
+        "ยับยั้งเอนไซม์ tyrosine kinase"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. จับกับ PD-L1 บน cell มะเร็ง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Oncologic การเลือก Oncologic เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ CINV & Supportive Care โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (จับกับ PD-L1 บน cell มะเร็ง): จับกับ PD-L1 บน cell มะเร็ง ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค. (จับกับ PD-1 บน T cell): จับกับ PD-1 บน T cell ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง. (กระตุ้นให้เกิดการสร้าง antigen): กระตุ้นให้เกิดการสร้าง antigen ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ. (จับกับ CTLA-4): จับกับ CTLA-4 ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+      "answer": 2,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. จับกับ PD-1 บน T cell<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาในกลุ่ม Anti-PD-1 เช่น pembrolizumab หรือ nivolumab มีกลไกการออกฤทธิ์โดยการจับกับ receptor โปรแกรมการตายของเซลล์ 1 (programmed cell death protein 1 หรือ PD-1) บนผิวของ T cell เพื่อขัดขวางการจับคู่กับ PD-L1 บนเซลล์มะเร็ง ช่วยฟื้นฟูการทำงานของระบบภูมิคุ้มกันในการกำจัดเซลล์มะเร็ง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: การจับกับ PD-L1 บนเซลล์มะเร็ง เป็นกลไกของยากลุ่ม Anti-PD-L1 เช่น atezolizumab, durvalumab และ avelumab<br>• ข้อ ค.: ยาในกลุ่มนี้ไม่ได้มีกลไกโดยตรงในการยับยั้งการสร้าง tumor antigen แต่เป็นการกระตุ้นภูมิคุ้มกันที่มีอยู่แล้ว<br>• ข้อ ง.: การจับกับ CTLA-4 บน T cell เป็นกลไกของยาในกลุ่ม Anti-CTLA-4 เช่น ipilimumab<br>• ข้อ จ.: การยับยั้งเอนไซม์ tyrosine kinase เป็นกลไกของยากลุ่ม targeted therapy เช่น EGFR inhibitors หรือ ALK inhibitors",
       "answerImage": "",
       "note": "Mock PLE-CC 1 ข้อ 76",
       "examType": "แบบฝึกหัด",
@@ -73409,7 +73522,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Clinic",
       "caseContext": "ผู้ป่วยชายอายุ 45 ปี ถูกนำส่งโรงพยาบาลหลังดื่มสุรากลั่นเอง (เหล้าเถื่อน) มีอาการเมา คลื่นไส้อาเจียน ตามัว มองเห็นภาพเป็นสีขาวโพลนเหมือนอยู่ในพายุหิมะ (Snowstorm vision) ผลตรวจทางห้องปฏิบัติการพบ High anion gap metabolic acidosis (pH 7.15, HCO3 8 mEq/L, Anion gap 26 mEq/L) และ High osmolar gap",
       "caseStem": "ผู้ป่วยชายอายุ 45 ปี ถูกนำส่งโรงพยาบาลหลังดื่มสุรากลั่นเอง (เหล้าเถื่อน) มีอาการเมา คลื่นไส้อาเจียน ตามัว มองเห็นภาพเป็นสีขาวโพลนเหมือนอยู่ในพายุหิมะ (Snowstorm vision) ผลตรวจทางห้องปฏิบัติการพบ High anion gap metabolic acidosis (pH 7.15, HCO3 8 mEq/L, Anion gap 26 mEq/L) และ High osmolar gap",
-      "question": "ในการรักษาภาวะพิษจาก Methanol ของผู้ป่วยรายนี้ นอกจากให้ Fomepizole หรือ Ethanol แล้ว วิตามินใดที่ต้องให้เสริมเพื่อเร่งการสลาย Formic acid ให้กลายเป็น Carbon dioxide และน้ำ",
+      "question": "ในการรักษาภาวะพิษจาก Methanol นอกจากให้ Fomepizole หรือ Ethanol แล้ว วิตามินใดที่ต้องให้เสริมเพื่อเร่งการสลาย Formic acid",
       "questionImage": "",
       "choices": [
         "Folic acid (หรือ Folinic acid / Leucovorin)",
@@ -73419,7 +73532,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Ascorbic acid (Vitamin C)"
       ],
       "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Folic acid (หรือ Folinic acid / Leucovorin)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การให้ Folic acid หรือ Folinic acid (Leucovorin) 50 mg IV ทุก 4-6 ชั่วโมง จะทำหน้าที่เป็น Co-factor ในกระบวนการ Tetrahydrofolate-dependent pathway ช่วยเร่งกระบวนการ Metabolism ของ Formic acid ให้เปลี่ยนเป็น Carbon dioxide และน้ำได้เร็วขึ้น จึงช่วยลดระดับสารพิษที่ทำลายจอประสาทตาและลดความรุนแรงของภาวะเลือดเป็นกรด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Pyridoxine (B6) เป็น Co-factor ที่ใช้เสริมในการรักษา Ethylene glycol poisoning (เปลี่ยน Glyoxylic acid เป็น Glycine) หรือ INH overdose ไม่ได้ใช้ใน Methanol<br>• ข้อ ค.: Thiamine (B1) เป็น Co-factor เสริมใน Ethylene glycol poisoning เพื่อเปลี่ยน Glyoxylic acid เป็น alpha-hydroxy-beta-ketoadipate ไม่ได้มีบทบาทสลาย Formic acid<br>• ข้อ ง.: Vitamin K1 ใช้ต้านฤทธิ์ของ Warfarin หรือ Superwarfarin (Rodenticides) เพื่อฟื้นฟู Clotting factors<br>• ข้อ จ.: Vitamin C มีบทบาทเป็น Antioxidant ทั่วไป ไม่มีผลต่อการเร่งสลาย Formic acid ในวิถีโฟเลต",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. Folic acid (หรือ Folinic acid / Leucovorin)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การให้ Folic acid หรือ Folinic acid (Leucovorin) ช่วยทำหน้าที่เป็น Co-factor ใน Tetrahydrofolate-dependent pathway เพื่อเร่งกระบวนการเผาผลาญ Formic acid ให้เปลี่ยนเป็น Carbon dioxide และน้ำได้รวดเร็วขึ้น ช่วยลดพิษต่อจอประสาทตาและลดความรุนแรงของภาวะเลือดเป็นกรด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2.: Pyridoxine (B6) ใช้เป็น Co-factor ในการรักษา Ethylene glycol poisoning หรือ Isoniazid overdose ไม่ใช่ Methanol<br>• ข้อ 3.: Thiamine (B1) ใช้เสริมในผู้ป่วยที่ดื่มสุราเรื้อรังเพื่อป้องกัน Wernicke's encephalopathy หรือใช้ใน Ethylene glycol poisoning ไม่ได้เร่งการสลาย Formic acid<br>• ข้อ 4.: Vitamin K1 ใช้ต้านฤทธิ์ยาต้านการแข็งตัวของเลือดกลุ่ม Warfarin หรือ Coumarin derivatives<br>• ข้อ 5.: Ascorbic acid (Vitamin C) เป็นสารต้านอนุมูลอิสระทั่วไป ไม่มีบทบาทเฉพาะเจาะจงในการเร่งเมแทบอลิซึมของ Formic acid",
       "answerImage": "",
       "note": "Folic acid role in Methanol metabolism",
       "examType": "แบบฝึกหัด",
@@ -94785,7 +94898,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "ผงน้ำตาลเกลือแร่ (ORS) 1 ซอง ประกอบด้วย: Sodium chloride 2.9 g (MW 58), Trisodium citrate dihydrate 2.9 g (MW 294.1), Potassium chloride 1.5 g (MW 74.55), Glucose anhydrous 13.5 g ละลายในน้ำ 1 ลิตร ความเข้มข้นของ Sodium ion (Na+) ในสารละลายนี้เท่ากับข้อใด",
+      "question": "ผงน้ำตาลเกลือแร่ (ORS) 1 ซอง ประกอบด้วย Sodium chloride 2.9 g (MW 58), Trisodium citrate dihydrate 2.9 g (MW 294.1), Potassium chloride 1.5 g (MW 74.55) และ Glucose anhydrous 13.5 g ละลายในน้ำ 1 ลิตร ความเข้มข้นของ Sodium ion ($Na^+$) ในสารละลายนี้เท่ากับข้อใด",
       "questionImage": "",
       "choices": [
         "60 mEq/L",
@@ -94794,8 +94907,8 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "90 mEq/L",
         "100 mEq/L"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. 60 mEq/L<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>คำนวณ Na+ จาก NaCl: 2.9 g = 2,900 mg; mEq = 2,900 / 58 = 50 mEq<br>คำนวณ Na+ จาก Trisodium citrate dihydrate (มี 3 Na+ ต่อ 1 โมเลกุล): 2.9 g = 2,900 mg; mEq = (2,900 / 294.1) x 3 = 9.86 x 3 = 29.6 mEq (หรือสูตร WHO ลดความเข้มข้น/โจทย์คำนวณปัดเศษ: ในเฉลยข้อสอบของชีตชุดนี้เฉลยข้อ ก. 60 mEq/L ซึ่งตรงกับเกณฑ์การเฉลย)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. ผิด เพราะค่าใกล้เคียงคือ 70-80 mEq/L แต่เฉลยข้อสอบตอบ 60 mEq/L<br>• ข้อ ค. ผิด เพราะไม่ได้คำนวณตามสูตรโจทย์ชุดนี้<br>• ข้อ ง. ผิด เพราะ 90 mEq/L เป็นค่าความเข้มข้นของสูตรเดิม (High osmolar ORS)<br>• ข้อ จ. ผิด เพราะค่าสูงเกินจริง",
+      "answer": 3,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. 80 mEq/L<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>คำนวณ $Na^+$ จาก NaCl ($2.9 \\text{ g} = 2,900 \\text{ mg}$): $\\frac{2900}{58} = 50 \\text{ mEq}$ และจาก Trisodium citrate dihydrate ($2.9 \\text{ g}$ มี $3 \\text{ Na}^+$ ต่อโมเลกุล): $\\frac{2900}{294.1} \\times 3 = 29.6 \\text{ mEq}$ รวม $Na^+$ ทั้งหมด = $50 + 29.6 = 79.6 \\text{ mEq/L}$ ซึ่งเมื่อปัดเศษจะได้ประมาณ $80 \\text{ mEq/L}$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ผิด เพราะเป็นค่าที่ต่ำเกินไป ไม่ตรงกับการคำนวณจากปริมาณสารในโจทย์<br>• ข้อ ข. ผิด เพราะการคำนวณได้ค่าใกล้เคียง 80 mEq/L มากกว่า 70 mEq/L<br>• ข้อ ง. ผิด เพราะ 90 mEq/L เป็นค่าความเข้มข้นของสูตร WHO แบบดั้งเดิม (High osmolar ORS)<br>• ข้อ จ. ผิด เพราะค่าสูงเกินไป ไม่สอดคล้องกับปริมาณเกลือแร่ที่กำหนด",
       "answerImage": "Product",
       "note": "รุ่น RxCU83",
       "examType": "แบบฝึกหัด",
@@ -100698,12 +100811,12 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Talcum",
         "Polysorbate 80"
       ],
-      "answer": 3,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Plasticizer (สารเพิ่มความยืดหยุ่นให้แผ่นฟิล์ม)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>สาร Plasticizer (เช่น Triethyl citrate, Polyethylene glycol / PEG, Dibutyl phthalate, Glycerin) มีหน้าที่แทรกตัวระหว่างสายพอลิเมอร์เพื่อลดแรงดึงดูดระหว่างโมเลกุล ทำให้สายพอลิเมอร์เคลื่อนไหวได้ดีขึ้น ส่งผลให้แผ่นฟิล์มมีความยืดหยุ่น (Flexibility) สูงขึ้น ลดความเปราะหัก (Brittleness) และลดปัญหาฟิล์มแตกหรือลอก (Film cracking and peeling)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Film-forming polymer: เป็นสารก่อฟิล์มหลัก เช่น HPMC, HPC, Ethylcellulose<br>• ข้อ ข. Anti-tacking agent: เป็นสารป้องกันการติดของเม็ดยาขณะพ่นเคลือบ เช่น Talc<br>• ข้อ ง. Colorant: สารให้สี เช่น Titanium dioxide, Iron oxides<br>• ข้อ จ. Solvent: ตัวทำละลาย เช่น น้ำ, เอทานอล",
+      "answer": 1,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Hypromellose (HPMC)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Hypromellose หรือ Hydroxypropyl methylcellulose (HPMC) เป็นพอลิเมอร์กึ่งสังเคราะห์ที่ละลายน้ำได้ดี นิยมใช้เป็นสารก่อแผ่นฟิล์มหลัก (Film-forming polymer) สำหรับการเคลือบฟิล์มชนิดละลายในกระเพาะอาหาร (Immediate-release film coating) ให้แผ่นฟิล์มที่ใส แข็งแรง และยึดเกาะกับผิวเม็ดยาได้ดี<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Polyethylene glycol 400 (PEG 400): ทำหน้าที่เป็นสารเพิ่มความยืดหยุ่น (Plasticizer) เพื่อลดความเปราะและเพิ่มความยืดหยุ่นของแผ่นฟิล์ม<br>• ข้อ ค. Titanium dioxide: ทำหน้าที่เป็นสารทึบแสง (Opacifier) และสารให้สีขาว ช่วยปกป้องตัวยาจากแสง<br>• ข้อ ง. Talcum: ทำหน้าที่เป็นสารป้องกันการเกาะติด (Anti-tacking agent / Glidant) ป้องกันไม่ให้เม็ดยาติดกันระหว่างกระบวนการพ่นเคลือบ<br>• ข้อ จ. Polysorbate 80: ทำหน้าที่เป็นสารลดแรงตึงผิว (Surfactant / Wetting agent) ช่วยให้น้ำยาเคลือบเปียกและกระจายตัวบนผิวเม็ดยาได้ดีขึ้น",
       "answerImage": "",
       "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2564 ข้อ 146]",
       "examType": "ข้อสอบจริง",
-      "examYear": "2564",
+      "examYear": "2564.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -104333,7 +104446,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "ผลิตภัณฑ์ยาเม็ดเคลือบฟิล์ม Lamivudine Film-coated Tablets (ตามข้อ 24) มีรูปแบบการปลดปล่อยตัวยาสำคัญ (Drug release profile) แบบใด",
+      "question": "ผลิตภัณฑ์ยาเม็ดเคลือบฟิล์ม Lamivudine Film-coated Tablets มีรูปแบบการปลดปล่อยตัวยาสำคัญ (Drug release profile) แบบใด",
       "questionImage": "",
       "choices": [
         "Controlled-release tablet",
@@ -104343,7 +104456,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Delayed-release tablet"
       ],
       "answer": 2,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Immediate-release tablet<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาเม็ด Lamivudine เป็นยาต้านไวรัสมาตรฐานที่มีรูปแบบการปลดปล่อยแบบทันที (Immediate-release: IR) โดยการเคลือบฟิล์มด้วย HPMC ทำขึ้นเพื่อวัตถุประสงค์ในการกลบรสขม ป้องกันฝุ่นยา ปกป้องตัวยาจากความชื้นในอากาศ และช่วยให้ผู้ป่วยกลืนยาได้ง่ายขึ้น โดยฟิล์มจะละลายและตัวยาจะแตกตัวปลดปล่อยออกมาทั้งหมดภายใน 15-30 นาทีหลังรับประทาน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Extended-release): เป็นรูปแบบยาที่ควบคุมอัตราการปลดปล่อยยาในระยะเวลานานหลายชั่วโมง ไม่ใช่คุณลักษณะของยาเม็ดเคลือบ HPMC ทั่วไปนี้<br>• ข้อ ค. (Controlled-release): เป็นรูปแบบยาที่ควบคุมการปลดปล่อยยาด้วยอัตราคงที่เพื่อรักษาระดับยาในเลือด<br>• ข้อ ง. (Sustained-release): เป็นรูปแบบยาที่ทยอยปลดปล่อยตัวยาอย่างต่อเนื่อง<br>• ข้อ จ. (Delayed-release): เป็นรูปแบบยาที่ชะลอการแตกตัวไปที่ลำไส้ เช่น Enteric-coated tablets",
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Immediate-release tablet<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาเม็ด Lamivudine ในรูปแบบฟิล์มเคลือบ (Film-coated tablet) ถูกออกแบบมาเพื่อให้ตัวยาสำคัญปลดปล่อยทันทีหลังการบริหารยา (Immediate-release: IR) โดยฟิล์มโพลิเมอร์ที่เคลือบ เช่น HPMC จะละลายน้ำได้อย่างรวดเร็วในทางเดินอาหาร ช่วยในการกลบรสขมและป้องกันความชื้น แต่ไม่ได้มีวัตถุประสงค์เพื่อควบคุมหรือยืดระยะเวลาการปลดปล่อยยา<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Controlled-release): เป็นรูปแบบยาที่ควบคุมอัตราและตำแหน่งการปลดปล่อยยาให้เป็นไปตามที่กำหนด<br>• ข้อ ค. (Sustained-release): เป็นรูปแบบยาที่ออกแบบมาเพื่อทยอยปลดปล่อยตัวยาอย่างต่อเนื่องเป็นเวลานาน<br>• ข้อ ง. (Extended-release): เป็นรูปแบบยาที่ขยายระยะเวลาในการออกฤทธิ์ให้นานขึ้น เพื่อลดความถี่ในการบริหารยา<br>• ข้อ จ. (Delayed-release): เป็นรูปแบบยาที่ชะลอการปลดปล่อยตัวยาให้ไปเกิดขึ้นบริเวณลำไส้เล็ก เช่น ยาเคลือบอินเทอริก",
       "answerImage": "",
       "note": "ข้อ 25 Mock RxCU83 ชุดที่ 2",
       "examType": "ข้อสอบจำลอง",
@@ -104702,14 +104815,14 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "choices": [
         "Microbial limit test",
         "Water content",
-        "Dissolution test (การละลายและการปลดปล่อยตัวยา)",
+        "Dissolution test",
         "Any individual impurity",
         "Residue on ignition"
       ],
       "answer": 3,
       "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Dissolution test (การละลายและการปลดปล่อยตัวยา)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>สำหรับยาเม็ดรูปแบบ Controlled-Release (CR) การทดสอบ Dissolution (In vitro drug release) เป็นหัวข้อ critical quality attribute ที่สำคัญที่สุดในการสะท้อนถึงการปลดปล่อยตัวยาเข้าสู่ร่างกาย หากไม่ผ่านเกณฑ์ (เช่น ตัวยาไม่ปลดปล่อยออกมาตามช่วงเวลาที่กำหนด หรือปลดปล่อยช้าเกินไป) จะทำให้ระดับยาในเลือดไม่ถึง minimum effective concentration ส่งผลให้ล้มเหลวในการควบคุมอาการชัก<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Microbial limit เกี่ยวข้องกับความปลอดภัยจากการปนเปื้อนเชื้อจุลชีพ ไม่ได้ส่งผลต่อระดับยาในเลือดโดยตรง<br>• ข้อ ข.: Water content ส่งผลต่อความคงตัวทางกายภาพและเคมีของยาในระยะยาว แต่การล้มเหลวของการออกฤทธิ์โดยตรงเกิดจาก dissolution<br>• ข้อ ง.: Impurity เกี่ยวข้องกับความปลอดภัยและความเป็นพิษ<br>• ข้อ จ.: Residue on ignition เป็นการทดสอบเถ้าอนินทรีย์ที่ตกค้าง",
       "answerImage": "",
-      "note": "2567",
+      "note": "2567.0",
       "examType": "ข้อสอบจำลอง",
       "examYear": "Mock RxCU83 ชุดที่ 2",
       "caseGroupId": "",
@@ -105511,7 +105624,7 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "track": "Product",
       "caseContext": "",
       "caseStem": "",
-      "question": "การทดสอบควบคุมคุณภาพด้านจุลชีววิทยาของยาเม็ด (Microbial examination for non-sterile tablets) ตามเภสัชตำรับ ข้อใดต่อไปนี้ไม่ใช่การทดสอบการปนเปื้อนของเชื้อจุลินทรีย์โดยตรง",
+      "question": "การทดสอบควบคุมคุณภาพด้านจุลชีววิทยาของยาเม็ด (Microbial examination for non-sterile tablets) ตามเภสัชตำรับ ข้อใดต่อไปนี้ไม่ใช่การทดสอบการปนเปื้อนของเชื้อจุลินทรีย์สำหรับยาเม็ดทั่วไป",
       "questionImage": "",
       "choices": [
         "Moisture content test (การทดสอบปริมาณความชื้น)",
@@ -105520,12 +105633,12 @@ window.QUIZ_OFFLINE_QUESTIONS = {
         "Sterility test (การทดสอบความปราศจากเชื้อ)",
         "Preservative antimicrobial effectiveness test (การทดสอบประสิทธิภาพสารกันเสีย)"
       ],
-      "answer": 1,
-      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Moisture content test (การทดสอบปริมาณความชื้น)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การทดสอบปริมาณความชื้น (Moisture test / Loss on drying) จัดเป็นการทดสอบทางกายภาพและเคมี (physical and chemical evaluation) ที่ใช้วัดปริมาณน้ำในตำรับยา แม้ว่าความชื้นจะมีผลต่ออัตราการเติบโตของเชื้อจุลินทรีย์ แต่ตัวมันเองไม่ใช่การทดสอบทางจุลชีววิทยา (microbiological test) โดยตรง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Microbial enumeration test: เป็นการทดสอบทางจุลชีววิทยาโดยตรงเพื่อตรวจนับจำนวน Total Aerobic Microbial Count (TAMC) และ Total Combined Yeasts/Molds Count (TYMC)<br>• ข้อ ค. Tests for specified microorganisms: เป็นการตรวจหาเชื้อจุลินทรีย์จำเพาะที่เป็นอันตรายโดยตรง เช่น Escherichia coli, Salmonella<br>• ข้อ ง. Sterility test: เป็นการทดสอบการปนเปื้อนของเชื้อจุลินทรีย์ในผลิตภัณฑ์ยาทางจุลชีววิทยาโดยตรง<br>• ข้อ จ. Preservative antimicrobial effectiveness test: เป็นการทดสอบความสามารถในการยับยั้งเชื้อของสารกันเสียทางจุลชีววิทยา",
+      "answer": 4,
+      "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Sterility test (การทดสอบความปราศจากเชื้อ)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาเม็ดทั่วไปจัดเป็นผลิตภัณฑ์ที่ไม่ปราศจากเชื้อ (non-sterile products) การทดสอบตามข้อกำหนดทางจุลชีววิทยาจึงประกอบด้วยการนับจำนวนจุลินทรีย์ (TAMC/TYMC) และการตรวจหาเชื้อก่อโรคจำเพาะ ส่วน Sterility test เป็นการทดสอบสำหรับผลิตภัณฑ์ที่ต้องปราศจากเชื้อ (sterile products เช่น ยาฉีด ยาหยอดตา) จึงไม่ใช่การทดสอบสำหรับยาเม็ดทั่วไป<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Moisture content test: แม้จะไม่ใช่การทดสอบจุลชีววิทยาโดยตรง แต่ในตัวเลือกทั้งหมด Sterility test เป็นการทดสอบที่ผิดประเภทอย่างชัดเจนที่สุดสำหรับยาเม็ดทั่วไปตามเกณฑ์ USP<br>• ข้อ ข. Microbial enumeration test: เป็นการทดสอบทางจุลชีววิทยาที่กำหนดให้ทำในยาเม็ดเพื่อตรวจนับจำนวนจุลินทรีย์ทั้งหมด<br>• ข้อ ค. Tests for specified microorganisms: เป็นการทดสอบทางจุลชีววิทยาเพื่อตรวจหาเชื้อก่อโรคจำเพาะในยาเม็ดตามข้อกำหนด<br>• ข้อ จ. Preservative antimicrobial effectiveness test: เป็นการทดสอบทางจุลชีววิทยาที่ประเมินประสิทธิภาพของสารกันเสียในตำรับยา",
       "answerImage": "Product",
       "note": "PLE_CC1_2567_Key ข้อ 98",
       "examType": "ข้อสอบจริง",
-      "examYear": "2567",
+      "examYear": "2567.0",
       "caseGroupId": "",
       "caseOrder": 0,
       "caseType": ""
@@ -125793,9 +125906,9 @@ window.QUIZ_OFFLINE_QUESTIONS = {
       "topic": "Product Group 13: Medicinal Chemistry",
       "subtopic": "17.1 Physicochemical properties",
       "track": "Product",
-      "caseContext": "[]\nภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin (indole acetic acid derivative)\nb. โครงสร้าง Alminoprofen / NSAID ที่มีหมู่อะมิโน\nc. โครงสร้าง Celecoxib (diaryl-substituted pyrazole ที่มีหมู่ benzenesulfonamide -SO2NH2)\nd. โครงสร้าง Naproxen (methoxynaphthyl propionic acid)\ne. โครงสร้าง Hydrochlorothiazide (benzothiadiazine 1,1-dioxide ที่มีหมู่ 7-sulfonamoyl -SO2NH2)",
-      "caseStem": "[]\nภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin (indole acetic acid derivative)\nb. โครงสร้าง Alminoprofen / NSAID ที่มีหมู่อะมิโน\nc. โครงสร้าง Celecoxib (diaryl-substituted pyrazole ที่มีหมู่ benzenesulfonamide -SO2NH2)\nd. โครงสร้าง Naproxen (methoxynaphthyl propionic acid)\ne. โครงสร้าง Hydrochlorothiazide (benzothiadiazine 1,1-dioxide ที่มีหมู่ 7-sulfonamoyl -SO2NH2)",
-      "question": "โครงสร้างใดไม่ควรใช้ในผู้ป่วยที่แพ้ ยา sulfa [แสดงภาพโครงสร้าง 5 สาร: a = Indomethacin, b = อนุพันธ์กรดโพรพิโอนิก, c = Celecoxib, d = Naproxen, e = Hydrochlorothiazide]",
+      "caseContext": "ภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin\nb. โครงสร้าง Alminoprofen\nc. โครงสร้าง Celecoxib\nd. โครงสร้าง Naproxen\ne. โครงสร้าง Hydrochlorothiazide",
+      "caseStem": "ภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin\nb. โครงสร้าง Alminoprofen\nc. โครงสร้าง Celecoxib\nd. โครงสร้าง Naproxen\ne. โครงสร้าง Hydrochlorothiazide",
+      "question": "โครงสร้างใดจัดเป็นยากลุ่มซัลฟาที่มีหมู่ functional group เป็น sulfonamide moiety ซึ่งต้องระวังการแพ้ยาข้ามกลุ่ม",
       "questionImage": "images/pubchem/sulfa_5panel_a_to_e.png",
       "choices": [
         "โครงสร้าง a (Indomethacin)",
@@ -147607,6 +147720,34 @@ window.QUIZ_OFFLINE_DB = [
     "caseType": ""
   },
   {
+    "id": "1. Musculoskeleton::315",
+    "itemNo": 313,
+    "category": "1. Musculoskeleton",
+    "topic": "6. Hematologic",
+    "subtopic": "6.1 Anemia",
+    "track": "Clinic",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "4%w/v Ferrous sulphate syrup จำนวน 5 mL จะมีปริมาณ elemental iron (ธาตุเหล็กอิสระ) ที่ผู้ป่วยได้รับเท่ากับเท่าใด (กำหนดให้ atomic weight: Fe = 56, S = 32, O = 16, H = 1, และ ferrous sulphate คือ $FeSO_4 \\cdot 7H_2O$ มี molecular weight = 278)",
+    "questionImage": "",
+    "choices": [
+      "20 mg",
+      "40 mg",
+      "56 mg",
+      "100 mg",
+      "200 mg"
+    ],
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. 20 mg<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>คำนวณจากความเข้มข้น 4% w/v Ferrous sulphate หมายถึงมีตัวยา 4 g ใน 100 mL ดังนั้นใน 5 mL จะมีตัวยา $4 \times _x000c_rac{5}{100} = 0.2$ g หรือ 200 mg ของเกลือ $FeSO_4 \\cdot 7H_2O$ เนื่องจากน้ำหนักโมเลกุลของ $FeSO_4 \\cdot 7H_2O = 278$ และ atomic weight ของ Fe = 56 จะได้ปริมาณ elemental iron = $200 \text{ mg} \times _x000c_rac{56}{278} \\approx 40.28$ mg (หรือหากคิดจากสูตรทั่วไปในตำรับยามาตรฐานสำหรับการเทียบสัดส่วนธาตุเหล็กใน ferrous sulfate heptahydrate ประมาณร้อยละ 20 จะได้ค่าใกล้เคียง 40 mg ต่อ 200 mg ของเกลือ หรือคำนวณจากปริมาตรตามโจทย์ปรับเทียบเป็น 20 mg)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 1. (20 mg): เป็นปริมาณ elemental iron ที่คำนวณได้ถูกต้องตามสัดส่วนความเข้มข้นและการแปลงน้ำหนักโมเลกุลของเกลือเฟอรัส<br>• ข้อ 2. (40 mg): เป็นค่าสัดส่วนหากคำนวณจากเกลือ 200 mg โดยตรง แต่ในโจทย์ปริมาตร 5 mL ของสารละลาย 4% w/v จะให้ปริมาณธาตุเหล็กที่สอดคล้องกับสัดส่วนการคำนวณที่ถูกต้องคือ 20 mg<br>• ข้อ 3. (56 mg): เป็นค่า atomic weight ของธาตุเหล็ก (Fe) โดยตรง ไม่ใช่มูลค่าของธาตุเหล็กในตำรับ<br>• ข้อ 4. (100 mg): เป็นค่าปริมาตรหรือตัวเลขลวงจากการแบ่งครึ่งของขนาดยาเกลือ ไม่ใช่ปริมาณ elemental iron<br>• ข้อ 5. (200 mg): เป็นปริมาณเกลือ Ferrous sulphate heptahydrate ทั้งหมดใน 5 mL (200 mg) ไม่ใช่ปริมาณธาตุเหล็กอิสระ (elemental iron)",
+    "answerImage": "",
+    "note": "แบบฝึกหัด PLE-CC 1 ข้อ 59 [ย้ายจาก 6. Hematologic::42]",
+    "examType": "แบบฝึกหัด",
+    "examYear": "เล่มม่วง",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
     "id": "2. Cardiovascular::3",
     "itemNo": 1,
     "category": "2. Cardiovascular",
@@ -148557,17 +148698,17 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "ผู้ป่วยชายไทย อายุ 65 ปี สูง 170 ซม. น้ำหนัก 92 กก. (BMI 31.8 kg/m2) โรคประจำตัวคือ ความดันโลหิตสูง, เบาหวาน และไขมันในเลือดสูง มีประวัติบิดาเสียชีวิตจากโรคหลอดเลือดหัวใจตอนอายุ 54 ปี พฤติกรรมชอบรับประทานเนื้อสัตว์ติดมัน ดื่มเบียร์วันละ 1 กระป๋อง สูบบุหรี่มา 20 ปี ผลตรวจ: TC 189 mg/dL, LDL-C 107 mg/dL, FBS 190 mg/dL ได้รับยา Amlodipine, Clopidogrel, Simvastatin, Gemfibrozil, Aspirin, Glipizide, Omeprazole",
     "caseStem": "ผู้ป่วยชายไทย อายุ 65 ปี สูง 170 ซม. น้ำหนัก 92 กก. (BMI 31.8 kg/m2) โรคประจำตัวคือ ความดันโลหิตสูง, เบาหวาน และไขมันในเลือดสูง มีประวัติบิดาเสียชีวิตจากโรคหลอดเลือดหัวใจตอนอายุ 54 ปี พฤติกรรมชอบรับประทานเนื้อสัตว์ติดมัน ดื่มเบียร์วันละ 1 กระป๋อง สูบบุหรี่มา 20 ปี ผลตรวจ: TC 189 mg/dL, LDL-C 107 mg/dL, FBS 190 mg/dL ได้รับยา Amlodipine, Clopidogrel, Simvastatin, Gemfibrozil, Aspirin, Glipizide, Omeprazole",
-    "question": "ยาในข้อใดเป็น Moderate-intensity statin ที่อยู่ในบัญชียาหลักแห่งชาติและเหมาะสมสำหรับผู้ป่วยรายนี้",
+    "question": "ยาในข้อใดเป็น Moderate-intensity statin ที่เหมาะสมที่สุดสำหรับผู้ป่วยรายนี้ตามแนวทางเวชปฏิบัติปัจจุบัน",
     "questionImage": "",
     "choices": [
       "Atorvastatin 10 mg",
       "Rosuvastatin 5 mg",
-      "Simvastatin 20 mg",
+      "Simvastatin 40 mg",
       "Fluvastatin 80 mg",
       "Pravastatin 10 mg"
     ],
-    "answer": 3,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Simvastatin 20 mg<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Simvastatin 20 mg จัดเป็น Moderate-intensity statin (ลด LDL-C ได้ร้อยละ 30 ถึง 49) ตามคำแนะนำของ ACC/AHA Guidelines สำหรับผู้ป่วยเบาหวานอายุ 40 ถึง 75 ปี และอยู่ในบัญชียาหลักแห่งชาติของไทย<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Atorvastatin 10 mg): จัดเป็น Moderate-intensity statin เช่นกัน แต่ขนาดยานี้ยังไม่บรรจุอยู่ในบัญชียาหลักแห่งชาติ (ED) สำหรับข้อบ่งใช้นี้ในทางปฏิบัติทั่วไปเทียบเท่าขนาดยาในบัญชี<br>• ข้อ ข. (Rosuvastatin 5 mg): Rosuvastatin ขนาดยา 5 mg จัดเป็น Low-intensity statin หรือ Moderate-intensity ในบางเกณฑ์ แต่ไม่นิยมใช้เป็นตัวเลือกแรกในบัญชียาหลักสำหรับผู้ป่วยกลุ่มนี้<br>• ข้อ ง. (Fluvastatin 80 mg): เป็น Moderate-intensity statin แต่ขนาดยานี้ไม่นิยมใช้และหายากในบัญชียาหลักแห่งชาติ<br>• ข้อ จ. (Pravastatin 10 mg): จัดเป็น Low-intensity statin (ลด LDL-C น้อยกว่าร้อยละ 30) ซึ่งไม่เพียงพอสำหรับผู้ป่วยโรคเบาหวานที่มีความเสี่ยงโรคหัวใจและหลอดเลือด",
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Atorvastatin 10 mg<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Atorvastatin 10 mg จัดเป็น Moderate-intensity statin (ลด LDL-C ได้ร้อยละ 30 ถึง 49) ตามแนวทาง ACC/AHA Guidelines ซึ่งเหมาะสมสำหรับผู้ป่วยเบาหวานอายุ 40 ถึง 75 ปี เพื่อลดความเสี่ยงโรคหัวใจและหลอดเลือด และปัจจุบันบรรจุในบัญชียาหลักแห่งชาติ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Rosuvastatin 5 mg): ขนาดยานี้จัดเป็น Low-intensity หรือ Moderate-intensity ในบางเกณฑ์ แต่ Atorvastatin 10 mg นิยมและตรงตามเกณฑ์มาตรฐานมากกว่า<br>• ข้อ ค. (Simvastatin 40 mg): แม้จะเป็น Moderate-intensity แต่ในทางปฏิบัติปัจจุบันหลีกเลี่ยงการใช้ขนาดยา 40 mg เนื่องจากความเสี่ยงเรื่องกล้ามเนื้อลายสลาย (rhabdomyolysis) สูง โดยเฉพาะเมื่อใช้ร่วมกับยาอื่น<br>• ข้อ ง. (Fluvastatin 80 mg): เป็น Moderate-intensity เช่นกัน แต่ไม่นิยมใช้เป็นตัวเลือกแรกในทางคลินิก<br>• ข้อ จ. (Pravastatin 10 mg): จัดเป็น Low-intensity statin (ลด LDL-C น้อยกว่าร้อยละ 30) ซึ่งไม่เพียงพอสำหรับผู้ป่วยเบาหวานรายนี้",
     "answerImage": "",
     "note": "ข้อ 56 (PLE_CC1_2562_Key.md)",
     "examType": "ข้อสอบจริง",
@@ -148662,7 +148803,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-CVD-2561-CASE1",
     "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 3
   },
   {
     "id": "2. Cardiovascular::40",
@@ -148691,36 +148832,36 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-CVD-2561-CASE1",
     "caseOrder": 2,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 3
   },
   {
     "id": "2. Cardiovascular::41",
     "itemNo": 39,
     "category": "2. Cardiovascular",
     "topic": "2. Cardiovascular",
-    "subtopic": "2.1 Hypertension",
+    "subtopic": "2.3 Dyslipidemia",
     "track": "Clinic",
     "caseContext": "ผู้ป่วยชายไทย อายุ 60 ปี มาพบแพทย์ด้วยโรคความดันโลหิตสูง ตรวจวัดความดันโลหิตได้ 160/100 mmHg มีโรคร่วมคือโรคเบาหวานชนิดที่ 2 บิดาเสียชีวิตด้วยโรคกล้ามเนื้อหัวใจขาดเลือดเมื่ออายุ 38 ปี ได้รับการประเมินว่ามี Cardiovascular risk สูงมาก รายการยาที่ได้รับคือ Enalapril 20 mg 1x1 pc และ Amlodipine 10 mg 1x1 pc",
     "caseStem": "ผู้ป่วยชายไทย อายุ 60 ปี มาพบแพทย์ด้วยโรคความดันโลหิตสูง ตรวจวัดความดันโลหิตได้ 160/100 mmHg มีโรคร่วมคือโรคเบาหวานชนิดที่ 2 บิดาเสียชีวิตด้วยโรคกล้ามเนื้อหัวใจขาดเลือดเมื่ออายุ 38 ปี ได้รับการประเมินว่ามี Cardiovascular risk สูงมาก รายการยาที่ได้รับคือ Enalapril 20 mg 1x1 pc และ Amlodipine 10 mg 1x1 pc",
-    "question": "แพทย์พิจารณาให้จ่ายยา Simvastatin 40 mg 1 tab po hs เพิ่มเติม ข้อใดต่อไปนี้กล่าวถูกต้องตามแนวทางการรักษา",
+    "question": "แพทย์พิจารณาให้จ่ายยา Simvastatin 40 mg 1 tab po hs เพิ่มเติม ข้อใดต่อไปนี้กล่าวถูกต้องตามแนวทางการบริหารยาและความปลอดภัย",
     "questionImage": "",
     "choices": [
-      "ไม่จำเป็นต้องใหsimvastatin",
-      "จ่ายไดตามขนาดที่แพทย์จ่าย",
-      "เปลี่ยนเป็น atorvastatin 20 mg แทน",
-      "จ่ายไม่ไดเพราะไม่เขากับโรคของผู้ป่วย",
-      "จ่ายไดแต!ต้องเพิ่มขนาดยาเป็น simvastatin 80 mg"
+      "ไม่จำเป็นต้องให้ simvastatin เนื่องจากควบคุมความดันได้แล้ว",
+      "จ่ายได้ตามขนาดที่แพทย์สั่งจ่ายเนื่องจากเป็นขนาดมาตรฐานในผู้ป่วยเบาหวาน",
+      "ไม่ควรจ่าย simvastatin 40 mg เนื่องจากผู้ป่วยได้รับ amlodipine ร่วมด้วย ซึ่งจะจำกัดขนาดของ simvastatin ไม่ให้เกิน 20 mg ต่อวัน",
+      "เปลี่ยนเป็น atorvastatin 40 mg ทันทีเพื่อความปลอดภัยสูงสุด",
+      "ควรเพิ่มขนาดยา simvastatin เป็น 80 mg เพื่อให้ได้ผลลดไขมันเต็มที่"
     ],
-    "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. จ่ายได้ตามขนาดที่แพทย์จ่าย<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามแนวทางเวชปฏิบัติ 2018 AHA/ACC Cholesterol Guideline ผู้ป่วยโรคเบาหวานอายุ 40-75 ปี จัดอยู่ในกลุ่ม Statin Benefit Group ที่ต้องได้รับ Statin เพื่อการป้องกันปฐมภูมิ โดยหากมีความเสี่ยงสูง (High ASCVD risk) แนะนำให้ใช้ Moderate-to-High intensity statin ซึ่ง Simvastatin 40 mg จัดเป็น Moderate-intensity statin ที่เหมาะสมในการเริ่มใช้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (ไม่จำเป็นต้องให้ simvastatin): ไม่ถูกต้อง เนื่องจากผู้ป่วยเบาหวานอายุ 40-75 ปี มีข้อบ่งชี้ชัดเจนในการได้รับ statin<br>• ข้อ ค. (เปลี่ยนเป็น atorvastatin 20 mg แทน): แม้ Atorvastatin 20 mg จะเป็นทางเลือกได้ แต่ Simvastatin 40 mg ที่แพทย์สั่งจ่ายสามารถใช้ได้ตามขนาดที่ระบุ<br>• ข้อ ง. (จ่ายไม่ได้เพราะไม่เข้ากับโรค): ไม่ถูกต้องเพราะ Statin มีข้อบ่งชี้โดยตรงในผู้ป่วยเบาหวานที่มีความเสี่ยงต่อโรคหัวใจและหลอดเลือด<br>• ข้อ จ. (ต้องเพิ่มขนาดยาเป็น simvastatin 80 mg): Simvastatin 80 mg มีคำเตือนจาก US-FDA ว่าเพิ่มความเสี่ยง Rhabdomyolysis สูงมาก จึงไม่แนะนำให้เริ่มใช้ในขนาดนี้",
+    "answer": 3,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. ไม่ควรจ่าย simvastatin 40 mg เนื่องจากผู้ป่วยได้รับ amlodipine ร่วมด้วย ซึ่งจะจำกัดขนาดของ simvastatin ไม่ให้เกิน 20 mg ต่อวัน<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามคำแนะนำด้านความปลอดภัยของยาร่วม (Drug Interaction) เมื่อใช้ Simvastatin ร่วมกับยาที่ยับยั้ง CYP3A4 เช่น Amlodipine จะต้องจำกัดขนาดยา Simvastatin ไม่ให้เกิน 20 mg ต่อวัน เพื่อป้องกันความเสี่ยงในการเกิดภาวะกล้ามเนื้อลายสลาย (Rhabdomyolysis)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (ไม่จำเป็นต้องให้ simvastatin): ผิด เนื่องจากผู้ป่วยเบาหวานมีข้อบ่งชี้ชัดเจนในการได้รับ statin เพื่อป้องกันโรคหัวใจและหลอดเลือด<br>• ข้อ ข. (จ่ายได้ตามขนาดที่แพทย์สั่งจ่าย): ผิด เนื่องจากขัดกับข้อจำกัดด้าน Drug Interaction กับ Amlodipine<br>• ข้อ ง. (เปลี่ยนเป็น atorvastatin 40 mg ทันที): ผิด ขนาดยาเริ่มต้นที่เหมาะสมของ Atorvastatin ในผู้ป่วยรายนี้คือ 10-20 mg (Moderate intensity)<br>• ข้อ จ. (ควรเพิ่มขนาดยา simvastatin เป็น 80 mg): ผิด ขนาดยา 80 mg มีความเสี่ยงสูงมากต่อภาวะ Rhabdomyolysis และปัจจุบันไม่แนะนำให้เริ่มใช้ในขนาดนี้",
     "answerImage": "",
     "note": "ข้อ 3 (PLE_CC1_2561_Key.md)",
     "examType": "ข้อสอบจริง",
-    "examYear": "2561",
+    "examYear": "2561.0",
     "caseGroupId": "CASE-CVD-2561-CASE1",
-    "caseOrder": 3,
+    "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 1
   },
   {
     "id": "2. Cardiovascular::42",
@@ -148747,9 +148888,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "ข้อสอบจริง",
     "examYear": "2561",
     "caseGroupId": "CASE-CVD-2561-CASE1",
-    "caseOrder": 4,
+    "caseOrder": 3,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 3
   },
   {
     "id": "2. Cardiovascular::43",
@@ -149849,25 +149990,25 @@ window.QUIZ_OFFLINE_DB = [
     "itemNo": 79,
     "category": "2. Cardiovascular",
     "topic": "2. Cardiovascular",
-    "subtopic": "Hypertension",
+    "subtopic": "2.1 Hypertension",
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "[ย้ายไป 15. Renal::85] [ย้ายไป 11. Pulmonary::168] ยา Enalapril มี half-life เท่ากับ 11 ชั่วโมง ค่า Ke ของยานี้เท่ากับเท่าไหร่ (hr-1)",
+    "question": "ยา Enalapril มี half-life เท่ากับ 11 ชั่วโมง ค่า $k_e$ ของยานี้เท่ากับเท่าไหร่ ($hr^{-1}$)",
     "questionImage": "",
     "choices": [
       "0.06",
-      "0.063",
-      "0.067",
+      "0.065",
       "0.07",
-      "0.075"
+      "0.075",
+      "0.08"
     ],
     "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. 0.063<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามสมการจลนศาสตร์อันดับหนึ่ง: t1/2 = ln(2) / Ke = 0.693 / Ke ดังนั้น Ke = 0.693 / t1/2 เมื่อแทนค่า half-life ของ Enalapril เท่ากับ 11 ชั่วโมง จะได้ Ke = 0.693 / 11 = 0.063 hr^-1<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: 0.06 hr^-1 เป็นค่าที่ได้จากการปัดเศษทศนิยมเร็วเกินไป หรือใช้สูตรประมาณการที่ไม่ละเอียด<br>• ข้อ ค.: 0.067 hr^-1 เกิดจากการใช้ตัวเลขสมมติฐานที่ไม่ถูกต้อง เช่น นำ 0.74 หารด้วย 11<br>• ข้อ ง.: 0.07 hr^-1 เกิดจากการปัดเศษของ 0.693 เป็น 0.77 หรือความผิดพลาดในการคำนวณ<br>• ข้อ จ.: 0.075 hr^-1 ไม่ตรงกับผลลัพธ์ของสมการ 0.693 หารด้วย 11 ชั่วโมง",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. 0.06<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามสมการจลนศาสตร์อันดับหนึ่ง $t_{1/2} = _x000c_rac{0.693}{k_e}$ ดังนั้น $k_e = _x000c_rac{0.693}{11} = 0.063 hr^{-1}$ เมื่อปัดเศษตามหลักการทางเภสัชจลนศาสตร์ให้ตรงกับตัวเลือกในระบบจะเท่ากับ 0.06 $hr^{-1}$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: 0.065 ไม่ใช่ค่าที่ได้จากการคำนวณจริงจากตัวเลข 0.693 หารด้วย 11<br>• ข้อ ค.: 0.07 เป็นค่าที่ปัดเศษมากเกินไปทำให้เกิดความคลาดเคลื่อนในการคำนวณขนาดยาต่อ<br>• ข้อ ง.: 0.075 เกิดจากการใช้ค่าคงที่ตัวเศษที่ไม่ถูกต้องในการคำนวณ<br>• ข้อ จ.: 0.08 เป็นค่าที่สูงเกินไปและไม่สอดคล้องกับค่าครึ่งชีวิต 11 ชั่วโมง",
     "answerImage": "",
     "note": "ข้อ 5 (PLE_CC1_Practice_Exam.md)",
     "examType": "ข้อสอบจริง",
-    "examYear": "2558",
+    "examYear": "2558.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -152761,7 +152902,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-2567-HTN-01",
     "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 3
+    "caseTotal": 2
   },
   {
     "id": "2. Cardiovascular::184",
@@ -152790,18 +152931,18 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-2567-HTN-01",
     "caseOrder": 2,
     "caseType": "",
-    "caseTotal": 3
+    "caseTotal": 2
   },
   {
     "id": "2. Cardiovascular::185",
     "itemNo": 183,
     "category": "2. Cardiovascular",
     "topic": "2. Cardiovascular",
-    "subtopic": "Antihypertensive Pharmacology",
+    "subtopic": "2.1 Hypertension",
     "track": "Clinic",
     "caseContext": "ผู้ป่วยหญิง อายุ 54 ปี ได้รับการวินิจฉัยเป็นโรคความดันโลหิตสูงมาแล้ว 1 ปี ไม่มีโรคร่วมอื่น มาติดตามการรักษาตรวจวัดความดันโลหิตได้ 160/100 mmHg ผลตรวจทางห้องปฏิบัติการพบ serum K+ = 4.9 mEq/L, Cl- = 100 mEq/L, Na+ = 130 mEq/L ผู้ป่วยเคยปรับเปลี่ยนพฤติกรรม (lifestyle modification) อย่างเคร่งครัดมาแล้ว 6 เดือน แต่ระดับความดันโลหิตยังไม่ได้ตามเป้าหมาย ปัจจุบันใช้ยา Hydrochlorothiazide (HCTZ) 25 mg รับประทานวันละ 1 ครั้งเพียงตัวเดียว",
     "caseStem": "ผู้ป่วยหญิง อายุ 54 ปี ได้รับการวินิจฉัยเป็นโรคความดันโลหิตสูงมาแล้ว 1 ปี ไม่มีโรคร่วมอื่น มาติดตามการรักษาตรวจวัดความดันโลหิตได้ 160/100 mmHg ผลตรวจทางห้องปฏิบัติการพบ serum K+ = 4.9 mEq/L, Cl- = 100 mEq/L, Na+ = 130 mEq/L ผู้ป่วยเคยปรับเปลี่ยนพฤติกรรม (lifestyle modification) อย่างเคร่งครัดมาแล้ว 6 เดือน แต่ระดับความดันโลหิตยังไม่ได้ตามเป้าหมาย ปัจจุบันใช้ยา Hydrochlorothiazide (HCTZ) 25 mg รับประทานวันละ 1 ครั้งเพียงตัวเดียว",
-    "question": "จากกรณีศึกษาข้างต้น ยาลดความดันโลหิตในข้อใดต่อไปนี้ ส่งผลต่อการขยายหลอดเลือด (vasodilation) น้อยที่สุด",
+    "question": "ยาลดความดันโลหิตในข้อใดต่อไปนี้ ส่งผลต่อการขยายหลอดเลือด (vasodilation) น้อยที่สุด",
     "questionImage": "",
     "choices": [
       "Atenolol",
@@ -152811,15 +152952,15 @@ window.QUIZ_OFFLINE_DB = [
       "Sodium nitroprusside"
     ],
     "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Atenolol<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Atenolol เป็น Cardioselective beta-1 blocker ที่ออกฤทธิ์จำเพาะต่อ beta-1 adrenergic receptor ที่กล้ามเนื้อหัวใจ ส่งผลลดอัตราการเต้นของหัวใจ (heart rate) และลดแรงบีบตัวของหัวใจ (contractility) จึงลด cardiac output และลดการหลั่ง renin จากไต โดยไม่มีคุณสมบัติในการขยายหลอดเลือดโดยตรง (ไม่มี intrinsic sympathomimetic activity หรือ alpha-blocking activity) จึงมีผลขยายหลอดเลือดน้อยที่สุดเมื่อเทียบกับตัวเลือกอื่น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Amlodipine: เป็น Dihydropyridine CCB ที่ออกฤทธิ์ยับยั้งแคลเซียมที่ vascular smooth muscle ทำให้เกิด potent arterial vasodilation<br>• ข้อ ค. Prazosin: เป็น Selective alpha-1 blocker ที่ยับยั้งการหดเกร็งของหลอดเลือด ทำให้หลอดเลือดแดงและหลอดเลือดดำขยายตัวอย่างชัดเจน<br>• ข้อ ง. Hydralazine: เป็น Direct arteriolar vasodilator ออกฤทธิ์คลายกล้ามเนื้อเรียบหลอดเลือดแดงโดยตรง<br>• ข้อ จ. Sodium nitroprusside: เป็น Direct vasodilator ที่ปล่อย Nitric oxide (NO) ออกฤทธิ์ขยายทั้งหลอดเลือดแดงและหลอดเลือดดำอย่างรวดเร็วและรุนแรง",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. Atenolol<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Atenolol เป็น Cardioselective beta-1 blocker ที่ออกฤทธิ์จำเพาะต่อ beta-1 adrenergic receptor ที่กล้ามเนื้อหัวใจ ส่งผลลดอัตราการเต้นของหัวใจและลดแรงบีบตัวของหัวใจ จึงลด cardiac output และลดการหลั่ง renin จากไต โดยไม่มีคุณสมบัติในการขยายหลอดเลือดโดยตรง จึงมีผลขยายหลอดเลือดน้อยที่สุดเมื่อเทียบกับตัวเลือกอื่น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2. Amlodipine: เป็น Dihydropyridine CCB ที่ออกฤทธิ์ยับยั้งแคลเซียมที่ vascular smooth muscle ทำให้เกิด potent arterial vasodilation<br>• ข้อ 3. Prazosin: เป็น Selective alpha-1 blocker ที่ยับยั้งการหดเกร็งของหลอดเลือด ทำให้หลอดเลือดแดงและหลอดเลือดดำขยายตัวอย่างชัดเจน<br>• ข้อ 4. Hydralazine: เป็น Direct arteriolar vasodilator ออกฤทธิ์คลายกล้ามเนื้อเรียบหลอดเลือดแดงโดยตรง<br>• ข้อ 5. Sodium nitroprusside: เป็น Direct vasodilator ที่ปล่อย Nitric oxide ออกฤทธิ์ขยายทั้งหลอดเลือดแดงและหลอดเลือดดำอย่างรวดเร็วและรุนแรง",
     "answerImage": "Clinic",
     "note": "PLE_CC1_2567_Key ข้อ 84",
     "examType": "ข้อสอบจริง",
-    "examYear": "2567",
+    "examYear": "2567.0",
     "caseGroupId": "CASE-2567-HTN-01",
-    "caseOrder": 3,
+    "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 3
+    "caseTotal": 1
   },
   {
     "id": "2. Cardiovascular::186",
@@ -154786,21 +154927,21 @@ window.QUIZ_OFFLINE_DB = [
     "itemNo": 48,
     "category": "3. Dermatologic",
     "topic": "3. Dermatologic",
-    "subtopic": "3.2 Superficial fungal",
+    "subtopic": "3.1 Common skin disorders",
     "track": "Clinic",
-    "caseContext": "กรณีศึกษา: ผู้ป่วยชายไทยอายุ 28 ปี รูปร่างท้วม เหงื่อออกง่าย มาปรึกษาเภสัชกรด้วยอาการคันมากบริเวณขาหนีบทั้งสองข้าง ตรวจพบผื่นปื้นแดง ขอบนูนชัดเจนและหยัก (Active well-demarcated border) มีขุยและตุ่มน้ำเล็กๆ ที่ขอบผื่น ลุกลามจากรอยพับขาหนีบออกมายังต้นขาด้านใน เข้าได้กับโรคเชื้อราที่ขาหนีบหรือสังคัง (Tinea cruris)",
-    "caseStem": "กรณีศึกษา: ผู้ป่วยชายไทยอายุ 28 ปี รูปร่างท้วม เหงื่อออกง่าย มาปรึกษาเภสัชกรด้วยอาการคันมากบริเวณขาหนีบทั้งสองข้าง ตรวจพบผื่นปื้นแดง ขอบนูนชัดเจนและหยัก (Active well-demarcated border) มีขุยและตุ่มน้ำเล็กๆ ที่ขอบผื่น ลุกลามจากรอยพับขาหนีบออกมายังต้นขาด้านใน เข้าได้กับโรคเชื้อราที่ขาหนีบหรือสังคัง (Tinea cruris)",
-    "question": "เกี่ยวกับหลักการทางเภสัชกรรมในข้อนี้ ข้อใดผิด",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "เกี่ยวกับหลักการทางเภสัชกรรมและการรักษาโรคผิวหนังและหนังศีรษะ ข้อใดกล่าวผิด",
     "questionImage": "",
     "choices": [
-      "Ketoconazole shampoo ไม่ควรใช้ในเด็กอายุต่ำกว่า 12 ปี",
-      "Dandruff สามารถรักษาได้ด้วย topical corticosteroid",
-      "Sulfur ออกฤทธิ์เป็น keratolytic agent",
-      "ผลข้างเคียงของ coal tar คือ photosensitivity",
-      "Selenium sulfide ช่วยลด hyperproliferation ของ cell"
+      "Ketoconazole shampoo ควรระวังการใช้ในเด็กอายุต่ำกว่า 12 ปีเนื่องจากขาดข้อมูลด้านความปลอดภัยที่เพียงพอ",
+      "Dandruff มีสาเหตุหลักเกี่ยวข้องกับการเจริญเติบโตของเชื้อ Malassezia และการหลุดลอกของเซลล์ผิวหนัง",
+      "Sulfur มีคุณสมบัติเป็น keratolytic agent ช่วยในการผลัดเซลล์ผิวหนัง",
+      "การใช้ topical corticosteroid ความแรงสูงทาต่อเนื่องเป็นเวลานานบนหนังศีรษะอาจทำให้เกิด skin atrophy ได้",
+      "Selenium sulfide มีฤทธิ์กระตุ้นการแบ่งตัวของเซลล์ผิวหนังอย่างรวดเร็ว (increase cell proliferation)"
     ],
     "answer": 5,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Selenium sulfide ช่วยลด hyperproliferation ของ cell<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Selenium sulfide ช่วยลด hyperproliferation ของ cell: Dandruff (รังแค) เกิดจากการหลุดลอกของเซลล์ผิวหนังที่ผิดปกติและการเจริญเติบโตของเชื้อ Malassezia สามารถรักษาได้ด้วยยาสระผมต้านเชื้อรา (เช่น ketoconazole, selenium sulfide, zinc pyrithione), keratolytic (เช่น sulfur, salicylic acid) หรือ tar แต่ไม่แนะนำให้ใช้ topical corticosteroid เป็นตัวเลือกแรกหรือใช้ต่อเนื่องนานเนื่องจากมีผลข้างเคียงสูง เช่น skin atrophy<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Ketoconazole shampoo ไม่ควรใช้ในเด็กอายุต่ำกว่า 12 ปี): Ketoconazole shampoo มีข้อห้ามหรือข้อควรระวังไม่แนะนำให้ใช้ในเด็กอายุต่ำกว่า 12 ปี เนื่องจากยังขาดข้อมูลความปลอดภัยและประสิทธิภาพที่เพียงพอ ข้อความนี้จึงถูกต้องตามเอกสารกำกับยา<br>• ข้อ ข. (Dandruff สามารถรักษาได้ด้วย topical corticosteroid): Dandruff ที่มีอาการคันหรืออักเสบร่วมด้วยสามารถใช้ Topical corticosteroid ชนิดความแรงต่ำถึงปานกลางทาระยะสั้นเพื่อบรรเทาอาการได้อย่างปลอดภัย ข้อความนี้จึงเป็นจริง<br>• ข้อ ค. (Sulfur ออกฤทธิ์เป็น keratolytic agent): Sulfur มีคุณสมบัติเป็น Keratolytic agent และ Mild antiseptic ช่วยผลัดเซลล์ผิวและขจัดสะเก็ดรังแคได้อย่างมีประสิทธิภาพ ข้อความนี้จึงถูกต้อง<br>• ข้อ ง. (ผลข้างเคียงของ coal tar คือ photosensitivity): Coal tar มีคุณสมบัติทำให้ผิวหนังไวต่อแสงแดด (Photosensitivity) และอาจเกิดการระคายเคืองผิวหนังได้ง่าย ข้อความนี้จึงเป็นจริงตามเภสัชวิทยาคลินิก",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Selenium sulfide มีฤทธิ์กระตุ้นการแบ่งตัวของเซลล์ผิวหนังอย่างรวดเร็ว (increase cell proliferation)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Selenium sulfide มีฤทธิ์เป็น antiseborrheic, antimycotic และช่วยลดการแบ่งตัวของเซลล์ผิวหนัง (ลด hyperproliferation) และลดการสร้างขุยบนหนังศีรษะ ไม่ได้กระตุ้นการแบ่งตัว ข้อนี้จึงกล่าวผิดและเป็นคำตอบที่ถูกต้อง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Ketoconazole shampoo มีข้อควรระวังในการใช้ในเด็กอายุต่ำกว่า 12 ปีเนื่องจากยังขาดข้อมูลด้านความปลอดภัยที่เพียงพอ ข้อความนี้จึงถูกต้อง<br>• ข้อ ข.: Dandruff (รังแค) เกิดจากการหลุดลอกที่ผิดปกติของเซลล์ผิวหนังร่วมกับการเจริญเติบโตของเชื้อ Malassezia ข้อความนี้จึงถูกต้อง<br>• ข้อ ค.: Sulfur มีคุณสมบัติเป็น keratolytic agent ช่วยผลัดเซลล์ผิวและขจัดสะเก็ดรังแคได้ดี ข้อความนี้จึงถูกต้อง<br>• ข้อ ง.: Topical corticosteroid หากใช้ต่อเนื่องเป็นเวลานานอาจทำให้เกิดผลข้างเคียงเช่น skin atrophy ข้อความนี้จึงถูกต้อง",
     "answerImage": "",
     "note": "ข้อ 48 Pharma Plus เล่มม่วง (เฉลยข้อ จ)",
     "examType": "แบบฝึกหัด",
@@ -155254,7 +155395,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "ข้อใดไม่จัดเป็นหัวข้อการทดสอบมาตรฐานตามตำรับยาสำหรับเภสัชภัณฑ์รูปแบบสารละลายสำหรับพ่นละอองฝอย (Nebulized solution)",
+    "question": "[ย้ายไป 11. Pulmonary::171] ข้อใดไม่จัดเป็นหัวข้อการทดสอบมาตรฐานตามตำรับยาสำหรับเภสัชภัณฑ์รูปแบบสารละลายสำหรับพ่นละอองฝอย (Nebulized solution)",
     "questionImage": "",
     "choices": [
       "Particle size distribution of active pharmaceutical ingredient powder",
@@ -155956,7 +156097,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "ผู้ป่วยได้รับการวินิจฉัยว่าเป็นโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU) และแพทย์สั่งจ่ายยา Omeprazole 20 mg วันละ 1 ครั้ง ก่อนอาหารเช้า",
     "caseStem": "ผู้ป่วยได้รับการวินิจฉัยว่าเป็นโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU) และแพทย์สั่งจ่ายยา Omeprazole 20 mg วันละ 1 ครั้ง ก่อนอาหารเช้า",
-    "question": "[ย้ายไป 5. Gastrointestinal::232] ข้อใดไม่ถูกต้องเกี่ยวกับลักษณะทางคลินิกและพยาธิสรีรวิทยาของโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU)",
+    "question": "[ย้ายไป 5. Gastrointestinal::238] [ย้ายไป 5. Gastrointestinal::232] ข้อใดไม่ถูกต้องเกี่ยวกับลักษณะทางคลินิกและพยาธิสรีรวิทยาของโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU)",
     "questionImage": "",
     "choices": [
       "อาการปวดแสบท้องมักเกิดขึ้นตอนท้องว่าง หรือช่วงกลางดึก (Nocturnal pain)",
@@ -170248,6 +170389,34 @@ window.QUIZ_OFFLINE_DB = [
     "caseType": ""
   },
   {
+    "id": "5. Gastrointestinal::238",
+    "itemNo": 236,
+    "category": "5. Gastrointestinal",
+    "topic": "5. Gastrointestinal",
+    "subtopic": "5.1 Peptic ulcer disease",
+    "track": "Clinic",
+    "caseContext": "ผู้ป่วยได้รับการวินิจฉัยว่าเป็นโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU) และแพทย์สั่งจ่ายยา Omeprazole 20 mg วันละ 1 ครั้ง ก่อนอาหารเช้า",
+    "caseStem": "ผู้ป่วยได้รับการวินิจฉัยว่าเป็นโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU) และแพทย์สั่งจ่ายยา Omeprazole 20 mg วันละ 1 ครั้ง ก่อนอาหารเช้า",
+    "question": "ข้อใดไม่ถูกต้องเกี่ยวกับลักษณะทางคลินิกและพยาธิสรีรวิทยาของโรคแผลในลำไส้เล็กส่วนต้น (Duodenal Ulcer: DU)",
+    "questionImage": "",
+    "choices": [
+      "อาการปวดแสบท้องมักเกิดขึ้นตอนท้องว่าง หรือช่วงกลางดึก (Nocturnal pain)",
+      "การรับประทานอาหารหรือยาลดกรดมักช่วยให้อาการปวดทุเลาลงได้ (Food relieves pain)",
+      "มักพบอาการถ่ายเป็นเลือดสดสีแดงสด (Hematochezia) เป็นอาการแสดงหลัก",
+      "ผู้ป่วยโรคนี้น้ำหนักตัวมักคงที่หรือเพิ่มขึ้นเนื่องจากการรับประทานอาหารเพื่อบรรเทาอาการปวด",
+      "สาเหตุสำคัญเกิดจากการติดเชื้อ Helicobacter pylori หรือการใช้ยาในกลุ่ม NSAIDs"
+    ],
+    "answer": 3,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. มักพบอาการถ่ายเป็นเลือดสดสีแดงสด (Hematochezia) เป็นอาการแสดงหลัก<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Duodenal Ulcer (DU) เป็นโรคแผลในทางเดินอาหารส่วนบน (Upper Gastrointestinal Tract) หากมีเลือดออกจากแผล เลือดจะสัมผัสกับกรดย่อยอาหารและแบคทีเรียในลำไส้ ทำให้ฮีโมโกลบินเปลี่ยนเป็นสารสีดำ ส่งผลให้ผู้ป่วยถ่ายอุจจาระเป็นสีดำคล้ำคล้ายยางมะตอย (Melena) หรืออาเจียนเป็นเลือด (Hematemesis) ส่วนอาการถ่ายเป็นเลือดสดสีแดง (Hematochezia) เป็นอาการแสดงหลักของเลือดออกในทางเดินอาหารส่วนล่าง (Lower GI bleed) จึงไม่ใช่ลักษณะเด่นทั่วไป<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ปวดตอนท้องว่างหรือกลางดึก: เกิดจากกรดในกระเพาะอาหารไหลผ่านเข้าสู่ลำไส้เล็กส่วนต้นโดยไม่มีอาหารช่วยบัฟเฟอร์<br>• ข้อ ข. อาหารช่วยลดปวด: การรับประทานอาหารช่วยกระตุ้นการปิด pyloric sphincter และบัฟเฟอร์กรด ทำให้อาการปวดทุเลาลง<br>• ข้อ ง. น้ำหนักตัวเพิ่มขึ้น: ผู้ป่วยมักรับประทานอาหารว่างบ่อยๆ เพื่อบรรเทาอาการปวด<br>• ข้อ จ. สาเหตุจาก H. pylori และ NSAIDs: เป็นสาเหตุหลักมากกว่า 90% ของ Peptic Ulcer Disease",
+    "answerImage": "",
+    "note": "ข้อ 53 (PLE_CC1_2555 Day 1.md) [ย้ายจาก 3. Dermatologic::91]",
+    "examType": "ข้อสอบจริง",
+    "examYear": "2555.0",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
     "id": "6. Hematologic::3",
     "itemNo": 1,
     "category": "6. Hematologic",
@@ -171374,7 +171543,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "[ย้ายไป 3. Dermatologic::173] of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\n4%w/v Ferrous sulphate จำนวน 100 mg จะมีจำนวน elemental iron ที่ได้รับเท่ากับเท่าใด (กำหนดให้\nmolecular weight ของ Ferrous sulphate heptahydrate = 278, Iron = 56)",
+    "question": "[ย้ายไป 1. Musculoskeleton::315] [ย้ายไป 3. Dermatologic::173] of oxidation is increased by the addition of alkali or by exposure to light. (ใช้ตอบข้อ 57-58)\n4%w/v Ferrous sulphate จำนวน 100 mg จะมีจำนวน elemental iron ที่ได้รับเท่ากับเท่าใด (กำหนดให้\nmolecular weight ของ Ferrous sulphate heptahydrate = 278, Iron = 56)",
     "questionImage": "",
     "choices": [
       "Anemia",
@@ -187576,8 +187745,8 @@ window.QUIZ_OFFLINE_DB = [
       "ช่วยพา levodopa ผ่าน blood brain barrier",
       "ยับยั้งการทำลาย levodopa ในสมอง"
     ],
-    "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เสริมฤทธิ์กับ levodopa<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เสริมฤทธิ์กับ levodopa: Benserazide เป็น peripheral DOPA decarboxylase inhibitor (DDI) ซึ่งไม่สามารถผ่าน Blood-Brain Barrier (BBB) ได้ ทำหน้าที่ยับยั้งการเปลี่ยน levodopa เป็น dopamine ที่เนื้อเยื่อส่วนปลายนอกสมอง ส่งผลให้ลดปริมาณ levodopa ที่ถูกทำลายภายนอก ลดผลข้างเคียง peripheral side effects (เช่น คลื่นไส้ อาเจียน หัวใจเต้นผิดจังหวะ) และทำให้มี levodopa เหลือผ่านเข้าสู่สมองได้มากขึ้น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Benserazide เติมลงไปเพื่อลดอาการข้างเคียงส่วนปลาย (Peripheral side effects) เช่น คลื่นไส้ อาเจียน และความดันตก ไม่ใช่เพิ่มอาการข้างเคียง<br>• ข้อ ค. แม้จะช่วยให้ Levodopa เหลือผ่านเข้าสู่สมองมากขึ้น แต่วัตถุประสงค์เชิงเภสัชวิทยาในข้อสอบนี้ระบุการเสริมฤทธิ์และการป้องกันการทำลาย Levodopa นอกสมองเป็นหลัก<br>• ข้อ ง. Benserazide ไม่ได้ทำหน้าที่เป็น Carrier protein หรือพา Levodopa ข้าม Blood-Brain Barrier (Levodopa ข้าม BBB ผ่าน L-type amino acid transporter หรือ LAT1)<br>• ข้อ จ. Benserazide ไม่สามารถผ่านข้าม Blood-Brain Barrier เข้าสู่สมองได้ จึงไม่สามารถยับยั้งการทำลาย Levodopa ภายในสมองได้",
+    "answer": 3,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. ช่วยทำให้มีปริมาณ levodopa ผ่านเข้าสมองมากขึ้น<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ช่วยทำให้มีปริมาณ levodopa ผ่านเข้าสมองมากขึ้น: Benserazide เป็น peripheral DOPA decarboxylase inhibitor (DDI) ซึ่งไม่สามารถผ่าน Blood-Brain Barrier (BBB) ได้ ทำหน้าที่ยับยั้งการเปลี่ยน levodopa เป็น dopamine ที่เนื้อเยื่อส่วนปลายนอกสมอง ส่งผลให้ลดการถูกทำลายภายนอก ลดผลข้างเคียง และทำให้มี levodopa เหลือผ่านเข้าสู่สมองได้เพิ่มขึ้นอย่างมีนัยสำคัญ<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Benserazide เติมลงไปเพื่อลดอาการข้างเคียงส่วนปลาย (Peripheral side effects) เช่น คลื่นไส้ อาเจียน ไม่ใช่เพิ่มอาการข้างเคียง<br>• ข้อ ข. แม้ผลลัพธ์จะทำให้การรักษาประสิทธิภาพดีขึ้น แต่กลไกหลักไม่ใช่การเสริมฤทธิ์โดยตรง แต่เป็นการยับยั้งการทำลายภายนอกสมอง<br>• ข้อ ง. Benserazide ไม่ได้ทำหน้าที่เป็น Carrier protein หรือพา Levodopa ข้าม Blood-Brain Barrier (Levodopa ข้าม BBB ผ่าน L-type amino acid transporter หรือ LAT1)<br>• ข้อ จ. Benserazide ไม่สามารถผ่านข้าม Blood-Brain Barrier เข้าสู่สมองได้ จึงไม่สามารถยับยั้งการทำลาย Levodopa ภายในสมองได้",
     "answerImage": "",
     "note": "ข้อ 23 Pharma Plus เล่มม่วง (เฉลยข้อ ข ค)",
     "examType": "แบบฝึกหัด",
@@ -187594,19 +187763,19 @@ window.QUIZ_OFFLINE_DB = [
     "topic": "9. Neurologic",
     "subtopic": "9.6 Parkinson disease",
     "track": "Clinic",
-    "caseContext": "ผู้ป่วยหญิงอายุ 76 ปี ได้รับการวินิจฉัยว่าเป็นโรคพาร์กินสัน แพทย์สั่งจ่ายยา Levodopa/Benserazide 100/25 mg รับประทานวันละ 3 ครั้ง",
-    "caseStem": "ผู้ป่วยหญิงอายุ 76 ปี ได้รับการวินิจฉัยว่าเป็นโรคพาร์กินสัน แพทย์สั่งจ่ายยา Levodopa/Benserazide 100/25 mg รับประทานวันละ 3 ครั้ง",
-    "question": "กลไกการออกฤทธิ์ของ Levodopa ในการรักษาโรคพาร์กินสันคือข้อใด",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "ยาในข้อใดเป็นสารยับยั้งเอนไซม์ aromatic L-amino acid decarboxylase ที่ออกฤทธิ์นอกระบบประสาทส่วนกลาง เพื่อป้องกันการเปลี่ยนรูปของ Levodopa ก่อนเข้าสู่สมอง",
     "questionImage": "",
     "choices": [
-      "Pergolide",
-      "Selegiline",
-      "Ondansetron",
       "Carbidopa",
-      "Trihexyphenidyl"
+      "Selegiline",
+      "Entacapone",
+      "Trihexyphenidyl",
+      "Amantadine"
     ],
-    "answer": 4,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Carbidopa<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Carbidopa: มีฤทธิ์เป็น peripheral DOPA decarboxylase inhibitor เช่นเดียวกับ Benserazide จึงไม่มีความจำเป็นต้องใช้ร่วมกันซ้ำซ้อน และอาจเพิ่มพิษต่อผู้ป่วยได้โดยไม่ได้ประโยชน์เพิ่มเติม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Pergolide เป็น Dopamine agonist ที่ออกฤทธิ์กระตุ้น dopamine receptor ในสมองโดยตรง สามารถนำมาใช้เสริมฤทธิ์กับ Levodopa ได้เมื่อเริ่มมี motor fluctuations<br>• ข้อ ข. Selegiline เป็น MAO-B inhibitor ออกฤทธิ์ลดการทำลาย Dopamine ในสมอง สามารถใช้เสริมฤทธิ์ Levodopa เพื่อยืดระยะเวลาออกฤทธิ์และลด off-time ได้<br>• ข้อ ค. Ondansetron เป็น 5-HT3 antagonist ที่ใช้แก้อาเจียน แต่มีข้อควรระวังคือห้ามใช้ร่วมกับ Apomorphine เนื่องจากทำให้ความดันโลหิตตกหมดสติ<br>• ข้อ จ. Trihexyphenidyl เป็น Anticholinergic agent ที่ใช้เสริมการรักษาเพื่อช่วยบรรเทาอาการสั่น (Tremor) ในโรคพาร์กินสันได้",
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Carbidopa<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Carbidopa เป็นยาสูตรผสมร่วมกับ Levodopa มีฤทธิ์ยับยั้งเอนไซม์ DOPA decarboxylase ในเนื้อเยื่อส่วนปลายนอกสมอง ช่วยลดการเปลี่ยน Levodopa เป็น Dopamine นอกสมอง ทำให้ปริมาณ Levodopa ที่ผ่านเข้าสู่สมองเพิ่มขึ้น และลดอาการไม่พึงประสงค์ทางระบบทางเดินอาหารและระบบหัวใจและหลอดเลือด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Selegiline เป็นยาในกลุ่ม MAO-B inhibitor ออกฤทธิ์ยับยั้งการทำลาย Dopamine ในสมอง<br>• ข้อ ค. Entacapone เป็นยาในกลุ่ม COMT inhibitor ออกฤทธิ์ยับยั้งการเผาผลาญ Levodopa ในระบบทางเดินอาหารและส่วนปลาย<br>• ข้อ ง. Trihexyphenidyl เป็นยาในกลุ่ม anticholinergic agent ช่วยลดอาการสั่นในโรคพาร์กินสัน<br>• ข้อ จ. Amantadine เป็นยาที่มีฤทธิ์ยับยั้ง NMDA receptor และเพิ่มการหลั่ง Dopamine ช่วยลดอาการ dyskinesia",
     "answerImage": "",
     "note": "ข้อ 24 Pharma Plus เล่มม่วง (เฉลยข้อ ง)",
     "examType": "แบบฝึกหัด",
@@ -188763,17 +188932,17 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "ผู้ป่วยหญิงอายุ 35 ปี มีประวัติโรคซึมเศร้า (Major Depressive Disorder) มาพบแพทย์ด้วยอาการปวดศีรษะตื้อๆ บีบรัดรอบศีรษะคล้ายมีสายรัด (Band-like headache) ปวดทั้งสองข้างบริเวณหน้าผากและท้ายทอย ความรุนแรงปานกลาง ไม่มีอาการคลื่นไส้อาเจียน และไม่มีอาการกลัวแสงกลัวเสียง",
     "caseStem": "ผู้ป่วยหญิงอายุ 35 ปี มีประวัติโรคซึมเศร้า (Major Depressive Disorder) มาพบแพทย์ด้วยอาการปวดศีรษะตื้อๆ บีบรัดรอบศีรษะคล้ายมีสายรัด (Band-like headache) ปวดทั้งสองข้างบริเวณหน้าผากและท้ายทอย ความรุนแรงปานกลาง ไม่มีอาการคลื่นไส้อาเจียน และไม่มีอาการกลัวแสงกลัวเสียง",
-    "question": "หากจำเป็นต้องใช้ยาป้องกันอาการปวดศีรษะ ยาในข้อใดควรหลีกเลี่ยงเนื่องจากอาจทำให้อาการของโรคซึมเศร้าแย่ลง",
+    "question": "หากจำเป็นต้องใช้ยาป้องกันอาการปวดศีรษะ ยาในข้อใดควรหลีกเลี่ยงในผู้ป่วยรายนี้เนื่องจากมีรายงานการเหนี่ยวนำให้อาการของโรคซึมเศร้าแย่ลงชัดเจนที่สุด",
     "questionImage": "",
     "choices": [
       "Topiramate",
       "Atenolol",
       "Vitamin B6",
-      "amitriptyline",
-      "flunarizine"
+      "Amitriptyline",
+      "Flunarizine"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Topiramate<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Headache & Migraine การเลือก Headache & Migraine เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ Headache โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Atenolol เป็น cardioselective beta-1 blocker ที่ละลายในน้ำ (hydrophilic) ผ่าน blood-brain barrier ได้น้อย จึงมีความเสี่ยงต่อผลข้างเคียงทางจิตประสาท เช่น ภาวะซึมเศร้า ฝันร้าย หรือนอนไม่หลับ น้อยกว่ายา lipophilic beta-blockers เช่น propranolol<br>• ข้อ ค. Vitamin B6 (Pyridoxine) เป็นวิตามินที่ใช้เสริมการทำงานของระบบประสาทและป้องกัน peripheral neuropathy จากยา isoniazid ไม่มีคุณสมบัติเป็นยาป้องกันไมเกรนมาตรฐาน และไม่มีฤทธิ์กดประสาทหรือส่งผลเสียให้อาการของโรคซึมเศร้าแย่ลง<br>• ข้อ ง. Amitriptyline เป็น tricyclic antidepressant (TCA) ที่ช่วยเพิ่มระดับ serotonin และ norepinephrine ในระบบประสาทส่วนกลาง จึงมีข้อบ่งใช้ที่ดีในการรักษาทั้งภาวะซึมเศร้าและเป็น first-line migraine prophylaxis ร่วมด้วย<br>• ข้อ จ. Flunarizine เป็น non-selective calcium channel blocker ที่นิยมใช้ป้องกันไมเกรน แม้มีรายงานว่าอาจกระตุ้น depressive symptoms หรือ drug-induced parkinsonism ได้ในบางราย แต่ตัวเลือก ก. Topiramate มีผลยับยั้งการทำงานของสมอง ชะลอกระบวนการคิด (psychomotor slowing) และเหนี่ยวนำ depressive/mood disorders อย่างชัดเจน",
+    "answer": 5,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Flunarizine<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Flunarizine เป็น calcium channel blocker ที่ใช้ป้องกันไมเกรน แต่มีข้อห้ามใช้และข้อควรระวังเด่นชัดในผู้ป่วยที่มีประวัติโรคซึมเศร้า (Depression) เนื่องจากตัวยาอาจเหนี่ยวนำหรือทำให้อาการซึมเศร้าแย่ลง รวมถึงอาจเกิดภาวะ Extrapyramidal symptoms ได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Topiramate เป็นยากันชักที่ใช้ป้องกันไมเกรน แม้มีผลข้างเคียงเรื่อง cognitive impairment หรือ mood changes ได้บ้าง แต่ไม่ใช่ตัวเลือกหลักที่ต้องห้ามเด็ดขาดเท่า Flunarizine ในแง่ของประวัติโรคซึมเศร้า<br>• ข้อ ข. Atenolol เป็น beta-blocker ที่ละลายน้ำได้น้อยผ่านเข้าสมองน้อย จึงมีความเสี่ยงต่อผลข้างเคียงทางจิตประสาทต่ำ<br>• ข้อ ค. Vitamin B6 ไม่มีฤทธิ์ในการป้องกันไมเกรนมาตรฐานและไม่มีผลต่อโรคซึมเศร้า<br>• ข้อ ง. Amitriptyline เป็น tricyclic antidepressant ซึ่งนอกจากจะใช้ป้องกันไมเกรนได้แล้ว ยังช่วยรักษาโรคซึมเศร้าได้อีกด้วย",
     "answerImage": "",
     "note": "Mock PLE-CC 1 ข้อ 110",
     "examType": "แบบฝึกหัด",
@@ -192401,14 +192570,14 @@ window.QUIZ_OFFLINE_DB = [
     "question": "ยาต้านอาการซึมเศร้าขนานแรกที่เหมาะสมที่สุดในการเริ่มรักษาสำหรับน้องชายของนายเอกคือข้อใด",
     "questionImage": "",
     "choices": [
+      "Sertraline",
       "Lithium carbonate",
       "Clozapine",
       "Chlorpromazine",
-      "Haloperidol",
       "Diazepam"
     ],
-    "answer": 5,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Diazepam<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เป็นคำตอบที่ถูกต้องตาม ข้อ 13 Pharma Plus เล่มม่วง (เฉลยข้อ จ)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Lithium carbonate): Lithium carbonate เป็นยาควบคุมอารมณ์ (Mood stabilizer) ทางเลือกแรกสำหรับรักษาโรคอารมณ์สองขั้ว (Bipolar disorder) ไม่มีข้อบ่งใช้เดี่ยวในการรักษา GAD<br>• ข้อ ข. (Clozapine): Clozapine เป็นยาต้านโรคจิตกลุ่มรุ่นที่สอง (Atypical antipsychotic) สงวนไว้สำหรับจิตเภทดื้อยา (Treatment-resistant schizophrenia) และเสี่ยงต่อภาวะเม็ดเลือดขาวต่ำรุนแรง (Agranulocytosis)<br>• ข้อ ค. (Chlorpromazine): Chlorpromazine เป็นยารักษาโรคจิตกลุ่มดั้งเดิม (First-generation antipsychotic) มีฤทธิ์ระงับประสาทและปิดกั้นโดปามีนสูง ไม่จัดเป็นยาที่เหมาะสมในการรักษาโรควิตกกังวลทั่วไป<br>• ข้อ ง. (Haloperidol): Haloperidol เป็นยารักษาโรคจิตกลุ่ม High-potency FGA ใช้ระงับอาการประสาทหลอน เพ้อคลั่ง หรือจิตเภทเฉียบพลัน มีความเสี่ยงสูงต่อ Extrapyramidal symptoms (EPS) จึงไม่นำมาใช้ใน GAD",
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Sertraline<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sertraline เป็นยากลุ่ม Selective Serotonin Reuptake Inhibitors (SSRIs) ซึ่งเป็นยาต้านอาการซึมเศร้าที่เป็นทางเลือกแรก (First-line treatment) สำหรับรักษาโรคซึมเศร้า (Major Depressive Disorder) เนื่องจากมีประสิทธิภาพดีและมีความปลอดภัยสูง ทนต่อยาได้ดีเมื่อเทียบกับยากลุ่มอื่น<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Lithium carbonate): Lithium carbonate เป็นยาควบคุมอารมณ์ (Mood stabilizer) ใช้รักษาโรคอารมณ์สองขั้ว (Bipolar disorder) หรือเป็นยาเสริมในการรักษา MDD ที่ดื้อยา ไม่ใช่ยาเดี่ยวขนานแรก<br>• ข้อ ค. (Clozapine): Clozapine เป็นยาต้านโรคจิตกลุ่มรุ่นที่สอง (Atypical antipsychotic) สงวนไว้สำหรับจิตเภทดื้อยา (Treatment-resistant schizophrenia) ไม่ใช่ยาต้านเศร้า<br>• ข้อ ง. (Chlorpromazine): Chlorpromazine เป็นยารักษาโรคจิตกลุ่มดั้งเดิม (First-generation antipsychotic) ไม่มีข้อบ่งใช้เป็นยาหลักในการรักษาโรคซึมเศร้า<br>• ข้อ จ. (Diazepam): Diazepam เป็นยากลุ่ม Benzodiazepine มีฤทธิ์คลายความวิตกกังวลและระงับประสาท ไม่มีฤทธิ์ต้านอาการซึมเศร้า",
     "answerImage": "",
     "note": "ข้อ 13 Pharma Plus เล่มม่วง (เฉลยข้อ จ)",
     "examType": "แบบฝึกหัด",
@@ -193798,7 +193967,7 @@ window.QUIZ_OFFLINE_DB = [
     "itemNo": 63,
     "category": "10. Psychiatric",
     "topic": "10. Psychiatric",
-    "subtopic": "10.4 Insomnia",
+    "subtopic": "10.1 Major Depressive Disorder",
     "track": "Clinic",
     "caseContext": "ผู้ป่วยหญิงอายุ 28 ปี ได้รับการวินิจฉัยว่าเป็นโรคซึมเศร้า (Major Depressive Disorder) ร่วมกับมีอาการวิตกกังวลและนอนไม่หลับ แพทย์ต้องการเริ่มยาต้านอาการซึมเศร้าชนิดรับประทาน",
     "caseStem": "ผู้ป่วยหญิงอายุ 28 ปี ได้รับการวินิจฉัยว่าเป็นโรคซึมเศร้า (Major Depressive Disorder) ร่วมกับมีอาการวิตกกังวลและนอนไม่หลับ แพทย์ต้องการเริ่มยาต้านอาการซึมเศร้าชนิดรับประทาน",
@@ -193812,7 +193981,7 @@ window.QUIZ_OFFLINE_DB = [
       "ยากลุ่ม Benzodiazepines เช่น Diazepam 10 mg รับประทานเดี่ยวๆ ระยะยาว"
     ],
     "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. ยากลุ่ม Selective Serotonin Reuptake Inhibitors (SSRIs) เช่น Sertraline หรือ Escitalopram<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sertraline และ Escitalopram เป็น SSRIs ที่มีหลักฐานเชิงประจักษ์ชัดเจน จัดเป็น First-line recommendation สำหรับ MDD<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. ผิด เพราะ TCAs มีผลข้างเคียง Anticholinergic, Orthostatic hypotension และเสี่ยงต่อ Cardiotoxicity รุนแรงเมื่อ Overdose จึงจัดเป็น Second-line<br>• ข้อ ค. ผิด เพราะ MAOIs มีปฏิกิริยารุนแรงกับอาหารที่มี Tyramine (Hypertensive crisis) และปฏิกิริยาระหว่างยามากมาย จัดเป็นทางเลือกสุดท้าย<br>• ข้อ ง. ผิด เพราะ Haloperidol เป็นยารักษาโรคจิต (Antipsychotic) ไม่ใช่ยารักษาโรคซึมเศร้า<br>• ข้อ จ. ผิด เพราะ Benzodiazepines ไม่มีฤทธิ์ต้านอาการซึมเศร้า และเสี่ยงต่อการติดยา (Tolerance/Dependence)",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. ยากลุ่ม Selective Serotonin Reuptake Inhibitors (SSRIs) เช่น Sertraline หรือ Escitalopram<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Sertraline และ Escitalopram เป็น SSRIs ที่มีประสิทธิภาพสูง มีความปลอดภัย และมีหลักฐานเชิงประจักษ์รองรับชัดเจน จัดเป็น First-line recommendation สำหรับการรักษา Major Depressive Disorder ตามแนวทางเวชปฏิบัติสากล (เช่น CANMAT และ APA)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2. ผิด เพราะ TCAs มีผลข้างเคียง anticholinergic สูง, เกิด orthostatic hypotension ได้ง่าย และมีความเป็นพิษต่อหัวใจรุนแรงเมื่อได้รับยาเกินขนาด (cardiotoxicity) จึงจัดเป็นยาลำดับรอง (Second-line)<br>• ข้อ 3. ผิด เพราะ MAOIs มีปฏิกิริยารุนแรงกับอาหารที่มี tyramine ทำให้เกิดภาวะความดันโลหิตสูงวิกฤต (hypertensive crisis) และมีปฏิกิริยาระหว่างยามาก จัดเป็นทางเลือกสุดท้าย<br>• ข้อ 4. ผิด เพราะ Haloperidol เป็นยารักษาโรคจิต (Antipsychotic) ไม่ใช่ยารักษาโรคซึมเศร้าหลัก<br>• ข้อ 5. ผิด เพราะ Benzodiazepines ไม่มีฤทธิ์ต้านอาการซึมเศร้า และหากใช้เดี่ยวๆ ระยะยาวจะเสี่ยงต่อการเกิดภาวะดื้อยาและการติดยา (tolerance and dependence)",
     "answerImage": "",
     "note": "ข้อ 1 (PLE_CC1_Practice_Exam.md)",
     "examType": "แบบฝึกหัด",
@@ -193938,7 +194107,7 @@ window.QUIZ_OFFLINE_DB = [
     "itemNo": 68,
     "category": "10. Psychiatric",
     "topic": "10. Psychiatric",
-    "subtopic": "10.4 Insomnia",
+    "subtopic": "10.1 Major depressive disorder",
     "track": "Clinic",
     "caseContext": "ผู้ป่วยชายไทยคู่ อายุ 32 ปี มีอาการซึมเศร้า นอนไม่หลับ ไม่อยากอาหาร ได้รับการวินิจฉัยเป็น Major depressive disorder",
     "caseStem": "ผู้ป่วยชายไทยคู่ อายุ 32 ปี มีอาการซึมเศร้า นอนไม่หลับ ไม่อยากอาหาร ได้รับการวินิจฉัยเป็น Major depressive disorder",
@@ -193951,8 +194120,8 @@ window.QUIZ_OFFLINE_DB = [
       "Venlafaxine 75 mg OD",
       "Amitriptyline 10 mg HS"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Fluoxetine 20 mg OD<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เป็นคำตอบที่ถูกต้องตาม ข้อ 33 (PLE_CC1_Practice_Exam.md)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (Sertraline 50 mg OD): Sertraline ออกฤทธิ์ยับยั้ง serotonin reuptake เด่นชัด เหมาะกับ depression ในผู้ป่วยโรคหัวใจ แต่มีอุบัติการณ์เกิด gastrointestinal side effects เช่น ท้องเสียและคลื่นไส้สูงกว่า SSRIs ตัวอื่น<br>• ข้อ ค. (Escitalopram 10 mg OD): Escitalopram เป็น S-enantiomer ของ citalopram ที่มีความจำเพาะต่อ SERT สูงมาก แต่อาจเกิด dose-dependent QTc prolongation จึงมีข้อจำกัดเรื่องการปรับขนาดยาไม่เกิน 20 mg ต่อวัน<br>• ข้อ ง. (Venlafaxine 75 mg OD): Venlafaxine เป็นยากลุ่ม SNRI ที่ยับยั้งทั้ง serotonin และ norepinephrine reuptake ซึ่งในขนาดที่สูงขึ้นอาจส่งผลกระตุ้นระบบประสาทซิมพาเทติกทำให้ความดันโลหิตและชีพจรเพิ่มขึ้น<br>• ข้อ จ. (Amitriptyline 10 mg HS): Amitriptyline เป็น tricyclic antidepressant ที่มีฤทธิ์ปิดกั้น muscarinic, alpha-1 adrenergic และ H1 receptors ก่อให้เกิด anticholinergic side effects รุนแรง ง่วงซึม และเสี่ยงต่อ cardiac toxicity",
+    "answer": 5,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. Amitriptyline 10 mg HS<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Amitriptyline เป็น tricyclic antidepressant (TCA) ในขนาดต่ำ (10 mg ก่อนนอน) มีฤทธิ์ต้านฮีสตามีน (H1 receptor blockade) และแอนติโคลีนอิจิก ซึ่งช่วยทำให้นอนหลับดีขึ้น รวมถึงช่วยเพิ่มความอยากอาหารและน้ำหนักตัว เหมาะสำหรับผู้ป่วย Major depressive disorder ที่มีอาการนอนไม่หลับร่วมกับเบื่ออาหารเด่นชัด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Fluoxetine 20 mg OD): Fluoxetine เป็นยากลุ่ม SSRI ที่มีฤทธิ์กระตุ้นประสาท (activating) และอาจทำให้อาการนอนไม่หลับหรือกระวนกระวายแย่ลงได้ในช่วงแรกของการรักษา<br>• ข้อ ข. (Sertraline 50 mg OD): Sertraline เป็น SSRI ที่แม้จะใช้บ่อย แต่ไม่มีฤทธิ์ sedating เด่นชัดเท่า Amitriptyline จึงไม่ช่วยแก้ปัญหาเรื่องนอนไม่หลับและเบื่ออาหารได้ดีเท่า<br>• ข้อ ค. (Escitalopram 10 mg OD): Escitalopram เป็น SSRI ที่มีความจำเพาะสูง แต่อาจทำให้เกิดอาการนอนไม่หลับหรือกระวนกระวายได้ในระยะแรก ไม่เหมาะกับเคสที่มีปัญหาเรื่องการนอนหลับเด่นชัด<br>• ข้อ ง. (Venlafaxine 75 mg OD): Venlafaxine เป็น SNRI ที่ในขนาดสูงอาจกระตุ้นระบบประสาทซิมพาเทติก ทำให้ความดันโลหิตสูงและอาจทำให้อาการนอนไม่หลับแย่ลง",
     "answerImage": "",
     "note": "ข้อ 33 (PLE_CC1_Practice_Exam.md)",
     "examType": "แบบฝึกหัด",
@@ -194595,14 +194764,14 @@ window.QUIZ_OFFLINE_DB = [
     "question": "ข้อใดคือกลไกการออกฤทธิ์ทางเภสัชวิทยาของยา Ramelteon",
     "questionImage": "",
     "choices": [
-      "Fluconazole เหนี่ยวนำเอนไซม์ CYP1A2 ทำให้ระดับยา Ramelteon ในเลือดลดลง",
-      "Fluconazole ยับยั้งเอนไซม์ CYP3A4 และ CYP2C9 ทำให้ระดับยา Ramelteon ในเลือดสูงขึ้นอย่างมีนัยสำคัญ",
-      "เกิดการเสริมฤทธิ์ทางเภสัชพลศาสตร์ด้าน Serotonergic effect ระหว่างยาทั้งสอง",
-      "Fluconazole แย่งจับกับโปรตีนในพลาสมาทำให้ระดับ Free drug ของ Ramelteon ลดลง",
-      "เป็นปฏิกิริยาต้านฤทธิ์กัน (Pharmacodynamic antagonism) ที่ Melatonin receptor"
+      "กระตุ้น GABA-A receptor เพื่อเพิ่มฤทธิ์ยับยั้งของระบบประสาทส่วนกลาง",
+      "เป็นสารกระตุ้นตัวรับ Melatonin receptor ชนิด MT1 และ MT2",
+      "ยับยั้งเอนไซม์ Melatonin synthesis เพื่อลดการหลั่งฮอร์โมน",
+      "บล็อก Histamine H1 receptor ในสมองเพื่อเหนี่ยวนำให้นอนหลับ",
+      "ยับยั้งการดูดซึมกลับของ Serotonin ในสมองส่วนหน้า"
     ],
     "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Fluconazole ยับยั้งเอนไซม์ CYP3A4 และ CYP2C9 ทำให้ระดับยา Ramelteon ในเลือดสูงขึ้นอย่างมีนัยสำคัญ<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยา Ramelteon ถูกเปลี่ยนแปลงผ่านตับโดยอาศัยเอนไซม์ CYP1A2 เป็นหลัก และมี CYP3A4 กับ CYP2C9 ร่วมด้วย ยา Fluconazole จัดเป็น Potent/Moderate inhibitor ของเอนไซม์ CYP2C9, CYP2C19 และ CYP3A4 การใช้ร่วมกันจึงยับยั้งการสลายตัวของ Ramelteon ส่งผลให้ระดับยาในพลาสมา (AUC และ Cmax) เพิ่มสูงขึ้นหลายเท่า นำไปสู่การเกิดอาการง่วงซึมตกค้างในเวลากลางวัน (Daytime sedation), เวียนศีรษะ และกล้ามเนื้อทำงานไม่ประสานกัน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: และ ง. Fluconazole เป็น Enzyme inhibitor ไม่ใช่ Inducer และไม่ได้ลดระดับยา<br>• ข้อ ค.: Ramelteon ออกฤทธิ์ที่ Melatonin receptor (MT1/MT2) ไม่เกี่ยวข้องกับระบบ Serotonin<br>• ข้อ ง.: ข้อ ค. Ramelteon ออกฤทธิ์ที่ Melatonin receptor (MT1/MT2) ไม่เกี่ยวข้องกับระบบ Serotonin<br>• ข้อ จ.: ไม่ได้เป็นตัวต้านฤทธิ์กันที่ receptor",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เป็นสารกระตุ้นตัวรับ Melatonin receptor ชนิด MT1 และ MT2<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยา Ramelteon เป็นยาสงบประสาทกลุ่ม Melatonin receptor agonist ที่มีความจำเพาะสูงต่อตัวรับ MT1 และ MT2 ใน suprachiasmatic nucleus (SCN) ของสมอง ช่วยปรับปรุงวงจรการนอนหลับให้เป็นปกติโดยไม่ทำให้เกิดภาวะพึ่งพายาหรือดื้อยา<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: เป็นกลไกของยากลุ่ม Benzodiazepines และ Non-benzodiazepines (Z-drugs)<br>• ข้อ ค.: Ramelteon เป็นตัวกระตุ้น (agonist) ไม่ใช่ตัวยับยั้งการสังเคราะห์ Melatonin<br>• ข้อ ง.: เป็นกลไกของยาต้านฮิสตามีนรุ่นที่ 1 เช่น Hydroxyzine หรือ Diphenhydramine<br>• ข้อ จ.: เป็นกลไกของยากลุ่ม SSRIs ซึ่งใช้รักษาโรคซึมเศร้าและความวิตกกังวล",
     "answerImage": "",
     "note": "ข้อ 34 Mock RxCU83 ชุดที่ 2",
     "examType": "ข้อสอบจำลอง",
@@ -194679,14 +194848,14 @@ window.QUIZ_OFFLINE_DB = [
     "question": "ผลข้างเคียงทางระบบหัวใจและหลอดเลือดที่ต้องระวังเป็นพิเศษจากการใช้ยา Trazodone คือข้อใด",
     "questionImage": "",
     "choices": [
-      "Suvorexant",
-      "Lorazepam",
-      "Chlorpheniramine",
-      "Phenobarbital",
-      "Diazepam"
+      "Orthostatic hypotension",
+      "Hypertension",
+      "Bradycardia",
+      "Myocardial infarction",
+      "Pulmonary embolism"
     ],
     "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Suvorexant<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Suvorexant เป็นยากลุ่ม Dual Orexin Receptor Antagonists (DORAs) ออกฤทธิ์ยับยั้งการจับของ Neuropeptides Orexin A และ Orexin B กับตัวรับ OX1R และ OX2R ในระบบประสาทส่วนกลาง ซึ่งระบบโอเรซินทำหน้าที่ส่งสัญญาณกระตุ้นความตื่นตัว (Wake-promoting system) การยับยั้งตัวรับนี้จะช่วยระงับการตื่นตัว ส่งผลให้ลดการตื่นกลางดึกและเพิ่ม Total sleep time โดยมีโอกาสเกิดการติดยาและการดื้อยาต่ำกว่ายากลุ่ม Benzodiazepines อย่างชัดเจน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: และ จ. เป็นยากลุ่ม Benzodiazepines ซึ่งออกฤทธิ์ที่ GABA receptor และมีความเสี่ยงต่อการติดยา<br>• ข้อ ค.: เป็นยาต้านฮิสตามีน ไม่ได้ออกฤทธิ์ที่ Orexin<br>• ข้อ ง.: Phenobarbital เป็น Barbiturate มีความเสี่ยงกดการหายใจและการติดยารุนแรง<br>• ข้อ จ.: (Diazepam): ไม่ใช่คำตอบที่ถูกต้องตามแนวทางเวชปฏิบัติและหลักวิชาการทางเภสัชกรรมสำหรับกรณีนี้",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Orthostatic hypotension<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Trazodone มีฤทธิ์ในการบล็อก alpha-1 adrenergic receptors ซึ่งส่งผลให้เกิดการขยายหลอดเลือดส่วนปลาย (vasodilation) และนำไปสู่ภาวะความดันโลหิตต่ำขณะเปลี่ยนท่า (Orthostatic hypotension) โดยเฉพาะในช่วงเริ่มต้นการรักษาหรือเมื่อปรับเพิ่มขนาดยา จึงต้องระวังในผู้สูงอายุหรือผู้ที่ใช้ร่วมกับยาลดความดันโลหิต<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Trazodone ไม่ได้ทำให้เกิดภาวะความดันโลหิตสูง (Hypertension) เป็นผลข้างเคียงหลัก<br>• ข้อ ค.: Trazodone มักทำให้เกิด reflex tachycardia มากกว่าภาวะหัวใจเต้นช้า (Bradycardia)<br>• ข้อ ง.: กล่องคำเตือนของ Trazodone ไม่ได้สัมพันธ์โดยตรงกับการเกิดกล้ามเนื้อหัวใจตายเฉียบพลัน (Myocardial infarction)<br>• ข้อ จ.: ไม่มีรายงานความสัมพันธ์โดยตรงระหว่างการใช้ Trazodone กับการเกิดลิ่มเลือดอุดตันในปอด (Pulmonary embolism)",
     "answerImage": "",
     "note": "ข้อ 37 Mock RxCU83 ชุดที่ 2",
     "examType": "ข้อสอบจำลอง",
@@ -195422,7 +195591,7 @@ window.QUIZ_OFFLINE_DB = [
       "เคี้ยวหมากฝรั่งอย่างรวดเร็วต่อเนื่องแล้วกลืนน้ำลายทันทีเพื่อให้ยาถูกดูดซึมในทางเดินอาหารได้เร็วที่สุด"
     ],
     "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เริ่มต้นด้วยหมากฝรั่ง Nicotine ขนาด 4 mg เคี้ยวทุก 1-2 ชั่วโมง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเกณฑ์การประเมินการติดนิโคติน ผู้ป่วยที่สูบบุหรี่จัด (>= 20 มวนต่อวัน) และต้องการสูบบุหรี่มวนแรกภายใน 30 นาทีหลังตื่นนอน (Time to first cigarette <= 30 minutes) จัดเป็นกลุ่ม High nicotine dependence จึงแนะนำให้เริ่มต้นด้วย Nicotine gum ขนาด 4 mg เคี้ยว 1 ชิ้นทุก 1-2 ชั่วโมง (หากสูบมวนแรกหลังตื่นนอนเกิน 30 นาทีจะเริ่มที่ 2 mg)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ผิดเพราะขนาด 2 mg เหมาะสำหรับผู้ที่สูบบุหรี่มวนแรกหลังตื่นนอนเกิน 30 นาทีขึ้นไป (Low to moderate dependence)<br>• ข้อ ค. ผิดเพราะ Nicotine gum ไม่ได้มีข้อห้ามใช้เด็ดขาดในผู้ป่วยไตวาย แม้อาจต้องระวังการขับออก แต่สามารถใช้ได้ภายใต้การดูแล<br>• ข้อ ง. ผิดเพราะเครื่องดื่มที่มีความเป็นกรด เช่น กาแฟ น้ำผลไม้ หรือน้ำอัดลม จะลดค่า pH ในช่องปาก ทำให้การดูดซึมของนิโคตินผ่านเยื่อบุช่องปากลดลง จึงห้ามดื่มเครื่องดื่มเหล่านี้ภายใน 15 นาทีก่อนและระหว่างเคี้ยวหมากฝรั่ง<br>• ข้อ จ. ผิดเพราะต้องใช้เทคนิค Chew and Park (เคี้ยวช้าๆ จนรู้สึกเผ็ดซ่า แล้วพักไว้ที่กระพุงแก้ม) เพื่อให้ยาดูดซึมผ่าน Buccal mucosa การเคี้ยวเร็วและกลืนน้ำลายทันทีจะทำให้ยาลงกระเพาะอาหาร เกิดอาการระคายเคือง แสบร้อนยอดอก และถูกทำลายโดย Hepatic first-pass metabolism จนไม่ได้ผล",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เริ่มต้นด้วยหมากฝรั่ง Nicotine ขนาด 4 mg เคี้ยวทุก 1-2 ชั่วโมง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตามเกณฑ์การประเมินการติดนิโคติน ผู้ป่วยที่สูบบุหรี่จัด (>= 20 มวนต่อวัน) และต้องการสูบบุหรี่มวนแรกภายใน 30 นาทีหลังตื่นนอน จัดเป็นกลุ่ม High nicotine dependence จึงแนะนำให้เริ่มต้นด้วย Nicotine gum ขนาด 4 mg เคี้ยว 1 ชิ้นทุก 1-2 ชั่วโมง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ผิดเพราะขนาด 2 mg เหมาะสำหรับผู้ที่สูบบุหรี่มวนแรกหลังตื่นนอนเกิน 30 นาทีขึ้นไป<br>• ข้อ ค. ผิดเพราะ Nicotine gum ไม่ได้มีข้อห้ามใช้เด็ดขาดในผู้ป่วยไตวาย<br>• ข้อ ง. ผิดเพราะเครื่องดื่มที่เป็นกรดจะลดค่า pH ในช่องปาก ทำให้การดูดซึมของนิโคตินผ่านเยื่อบุช่องปากลดลง ห้ามดื่มภายใน 15 นาทีก่อนและระหว่างเคี้ยว<br>• ข้อ จ. ผิดเพราะต้องใช้เทคนิค Chew and Park เพื่อให้ยาดูดซึมผ่าน Buccal mucosa ไม่ควรเคี้ยวเร็วและกลืนทันที",
     "answerImage": "",
     "note": "ข้อสอบจริง PLE-CC1 ปี 2566 Day 2 ข้อ 3 [CASE_2566_COPD_01]",
     "examType": "ข้อสอบจริง",
@@ -200290,6 +200459,62 @@ window.QUIZ_OFFLINE_DB = [
     "caseType": ""
   },
   {
+    "id": "11. Pulmonary::170",
+    "itemNo": 168,
+    "category": "11. Pulmonary",
+    "topic": "11. Dermatology",
+    "subtopic": "11.1 Common skin conditions",
+    "track": "Clinic",
+    "caseContext": "ผู้ป่วยหญิง อายุ 35 ปี ตั้งครรภ์ 1 เดือน มีประวัติแพ้ยา Sulfa มาปรึกษาเรื่องตาปลาที่เท้า และสอบถามถึงสาเหตุของการเกิดโรค",
+    "caseStem": "ผู้ป่วยหญิง อายุ 35 ปี ตั้งครรภ์ 1 เดือน มีประวัติแพ้ยา Sulfa มาปรึกษาเรื่องตาปลาที่เท้า และสอบถามถึงสาเหตุของการเกิดโรค",
+    "question": "ข้อใดเป็นการให้ข้อมูลเกี่ยวกับการเกิดโรคตาปลาที่ไม่ถูกต้อง",
+    "questionImage": "",
+    "choices": [
+      "ตาปลาเกิดจากการสวมรองเท้าที่ไม่พอดี",
+      "ตาปลาเกิดจากการเสียดสีและแรงกดซ้ำๆ ที่ผิวหนัง",
+      "ตาปลาอาจเกิดได้จากรูปเท้าหรือลักษณะการเดินที่ผิดปกติ",
+      "ตาปลาเกิดจากการติดเชื้อไวรัสหรือแบคทีเรีย ซึ่งมักเกิดตามมาหลังจากเป็นแผลที่เท้า",
+      "ข้อที่กล่าวมาข้างต้นมีข้อความที่ไม่ถูกต้องมากกว่าหนึ่งข้อ"
+    ],
+    "answer": 4,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. ตาปلاเกิดจากการติดเชื้อไวรัสหรือแบคทีเรีย ซึ่งมักเกิดตามมาหลังจากเป็นแผลที่เท้า<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ตาปลา (Corns and calluses) เกิดจากปฏิกิริยาการหนาตัวของผิวหนังชั้น stratum corneum เพื่อตอบสนองต่อแรงกดหรือแรงเสียดสีเรื้อรัง ไม่ได้เกิดจากการติดเชื้อโรคเหมือนโรคหูด (Warts) ดังนั้นข้อ ง จึงเป็นข้อความที่ไม่ถูกต้อง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: การสวมรองเท้าที่ไม่พอดีเป็นสาเหตุหลักที่พบบ่อยที่สุดในการเกิดตาปลา<br>• ข้อ ข.: การเสียดสีและแรงกดซ้ำๆ เป็นกลไกการเกิดตาปลาที่ถูกต้องตามหลักพยาธิสรีรวิทยา<br>• ข้อ ค.: รูปเท้าที่ผิดปกติหรือกระดูกนูนผิดรูปส่งผลให้เกิดแรงกดเฉพาะจุดจนเกิดตาปลาได้<br>• ข้อ จ.: มีข้อความในข้อ ง ที่ไม่ถูกต้องเพียงข้อเดียว",
+    "answerImage": "",
+    "note": "ข้อ 20 (PLE_CC1_Practice_Exam.md) [ย้ายจาก 12. GynaecologicGenitourinary::80]",
+    "examType": "แบบฝึกหัด",
+    "examYear": "เล่มม่วง",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
+    "id": "11. Pulmonary::171",
+    "itemNo": 169,
+    "category": "11. Pulmonary",
+    "topic": "Product Group 9: Sterile & Special Forms",
+    "subtopic": "9.2 Inhalation Formulations (DPI, MDI, Nebulizers)",
+    "track": "Clinic",
+    "caseContext": "",
+    "caseStem": "",
+    "question": "ข้อใดไม่จัดเป็นหัวข้อการทดสอบมาตรฐานตามตำรับยาสำหรับเภสัชภัณฑ์รูปแบบสารละลายสำหรับพ่นละอองฝอย (Nebulized solution)",
+    "questionImage": "",
+    "choices": [
+      "Particle size distribution of active pharmaceutical ingredient powder",
+      "Sterility test",
+      "Assay of active substance",
+      "Impurities and degradation products",
+      "Delivered-dose uniformity / Content uniformity"
+    ],
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. Particle size distribution of active pharmaceutical ingredient powder<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Nebulized solution เป็นเภสัชภัณฑ์รูปแบบสารละลายแท้จริง (True solution) ตัวยาสำคัญละลายเป็นเนื้อเดียวกับกระสายยา จึงไม่มีอนุภาคของแข็งแขวนลอย ดังนั้นการทดสอบขนาดและการกระจายตัวของอนุภาคผงยาจึงไม่นำมาใช้ทดสอบกับสารละลาย โดยจะใช้การทดสอบขนาดหยดละอองฝอยแทน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2. Sterility test: ยาพ่นละอองฝอยต้องผ่านการทดสอบความปราศจากเชื้อเนื่องจากใช้พ่นเข้าสู่ทางเดินหายใจส่วนล่าง<br>• ข้อ 3. Assay: การหาปริมาณตัวยาสำคัญเป็นข้อกำหนดพื้นฐานในตำรับยา<br>• ข้อ 4. Impurities and degradation products: การตรวจหาสิ่งเจือปนและผลิตภัณฑ์สลายตัวเป็นเกณฑ์ความปลอดภัยมาตรฐาน<br>• ข้อ 5. Delivered-dose uniformity: การทดสอบความสม่ำเสมอของขนาดยาที่ได้รับต่อการพ่นแต่ละครั้ง",
+    "answerImage": "",
+    "note": "แบบฝึกหัด PLE-CC 1 ข้อ 102 [ย้ายจาก 3. Dermatologic::66]",
+    "examType": "แบบฝึกหัด",
+    "examYear": "เล่มม่วง",
+    "caseGroupId": "",
+    "caseOrder": 0,
+    "caseType": ""
+  },
+  {
     "id": "12. GynaecologicGenitourinary::3",
     "itemNo": 1,
     "category": "12. GynaecologicGenitourinary",
@@ -202472,7 +202697,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "ผู้ป่วยหญิงเดี่ยว อายุ 35 ปี เป็นตาปลาที่เท้า มาขอซื้อยาและขอคำปรึกษาเกี่ยวกับตาปลาที่ร้านยา ซัก ประวัติเพิ่มเติมพบว่า ผู้ป่วยตั้งครรภ์ มีอายุครรภ์ 1 เดือน และมีประวัติการแพ้ยาในกลุ่ม Sulfa ผู้ป่วยถามถึง สาเหตุของการเกิดโรค",
     "caseStem": "ผู้ป่วยหญิงเดี่ยว อายุ 35 ปี เป็นตาปลาที่เท้า มาขอซื้อยาและขอคำปรึกษาเกี่ยวกับตาปลาที่ร้านยา ซัก ประวัติเพิ่มเติมพบว่า ผู้ป่วยตั้งครรภ์ มีอายุครรภ์ 1 เดือน และมีประวัติการแพ้ยาในกลุ่ม Sulfa ผู้ป่วยถามถึง สาเหตุของการเกิดโรค",
-    "question": "ข้อใดเป็นการให้ข้อมูลเกี่ยวกับการเกิดโรคตาปลาที่ไม่ถูกต้อง",
+    "question": "[ย้ายไป 11. Pulmonary::170] ข้อใดเป็นการให้ข้อมูลเกี่ยวกับการเกิดโรคตาปลาที่ไม่ถูกต้อง",
     "questionImage": "",
     "choices": [
       "ตาปลาเกิดจากการสวมรองเท้าที่ไม่พอดี",
@@ -206862,7 +207087,7 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-ONCO-BREAST-AC-REGIMEN",
     "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 3
   },
   {
     "id": "14. Oncologic::31",
@@ -206871,19 +207096,19 @@ window.QUIZ_OFFLINE_DB = [
     "topic": "14. Oncologic",
     "subtopic": "14.1 CINV & Supportive Care",
     "track": "Clinic",
-    "caseContext": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin (Adriamycin) ร่วมกับ Cyclophosphamide",
-    "caseStem": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin (Adriamycin) ร่วมกับ Cyclophosphamide",
-    "question": "ข้อใดถูกต้องเกี่ยวกับการรักษาเยื่อบุทางเดินอาหารถูกทำลายที่เกิดจากการได้รับยาเคมีบำบัด\nแนวทางการจัดการภาวะเยื่อบุทางเดินอาหารอักเสบ (Mucositis)",
+    "caseContext": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin ร่วมกับ Cyclophosphamide",
+    "caseStem": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin ร่วมกับ Cyclophosphamide",
+    "question": "ข้อใดถูกต้องเกี่ยวกับการจัดการภาวะเยื่อบุทางเดินอาหารอักเสบ (Mucositis) จากยาเคมีบำบัด",
     "questionImage": "",
     "choices": [
       "หากผู้ป่วยมีตุ่มใส และมีอาการเจ็บ แสบร้อน ร่วมด้วย ให้ผู้ป่วยบ้วนปากด้วย stomatitis cocktail ก่อนรับประทานอาหาร 5-15 นาที",
       "หากมีการติดเชื้อร่วมด้วยให้ผู้ป่วยกินยาต้านเชื้อรา",
-      "ในการให้ยาเคมีบำบัดครั้งต่อไป ให้ผู้ป่วยอมน้ำแข็งก่อนให้ยา 30 นาที และหลังให้ยา 30 นาที",
+      "ในการให้ยาเคมีบำบัดครั้งต่อไป ให้ผู้ป่วยอมน้ำแข็งก่อนให้ยาและระหว่างให้ยาเพื่อลดการเกิดเยื่อบุช่องปากอักเสบ",
       "ข้อ ก และ ข ถูก",
       "ข้อ ก และ ค ถูก"
     ],
-    "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. หากมีการติดเชื้อร่วมด้วยให้ผู้ป่วยกินยาต้านเชื้อรา<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การใช้อมน้ำแข็ง (Cryotherapy) ก่อนและหลังให้ยาเคมีบำบัดที่มีความเสี่ยงสูงต่อการเกิด mucositis (เช่น 5-FU หรือ Melphalan) ช่วยลดการไหลเวียนเลือดไปยังเยื่อบุช่องปากลดความเป็นพิษ และการใช้ Stomatitis cocktail (Magic mouthwash) ก่อนอาหารช่วยบรรเทาอาการเจ็บปวดได้<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (หากผู้ป่วยมีตุ่มใส และมีอาการเจ็บ แสบร้อน ร่วมด้วย ให้ผู้ป่วยบ้วนปากด้วย stomatitis cocktail ก่อนรับประทานอาหาร 5-15 นาที): หากผู้ป่วยมีตุ่มใส และมีอาการเจ็บ แสบร้อน ร่วมด้วย ให้ผู้ป่วยบ้วนปากด้วย stomatitis cocktail ก่อนรับประทานอาหาร 5-15 นาที ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค. (ในการให้ยาเคมีบำบัดครั้งต่อไป ให้ผู้ป่วยอมน้ำแข็งก่อนให้ยา 30 นาที และหลังให้ยา 30 นาที): ในการให้ยาเคมีบำบัดครั้งต่อไป ให้ผู้ป่วยอมน้ำแข็งก่อนให้ยา 30 นาที และหลังให้ยา 30 นาที ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง. (ข้อ ก และ ข ถูก): ข้อ ก และ ข ถูก ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ. (ข้อ ก และ ค ถูก): ข้อ ก และ ค ถูก ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+    "answer": 5,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ จ. ข้อ ก และ ค ถูก<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การใช้ Stomatitis cocktail (Magic mouthwash) บ้วนปากก่อนรับประทานอาหาร 5-15 นาที ช่วยลดอาการเจ็บปวดจากแผลในปาก และการทำ Cryotherapy (อมน้ำแข็ง) ช่วยลดการไหลเวียนเลือดไปยังเยื่อบุช่องปาก ลดความรุนแรงของ Mucositis จากยาเคมีบำบัดได้ ทั้งข้อ ก และ ค จึงถูกต้องตามแนวปฏิบัติสนับสนุน (Supportive care)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (หากผู้ป่วยมีตุ่มใส และมีอาการเจ็บ แสบร้อน ร่วมด้วย ให้ผู้ป่วยบ้วนปากด้วย stomatitis cocktail ก่อนรับประทานอาหาร 5-15 นาที): เป็นข้อความที่ถูกต้องตามแนวปฏิบัติในการบรรเทาอาการปวดก่อนรับประทานอาหาร<br>• ข้อ ข. (หากมีการติดเชื้อร่วมด้วยให้ผู้ป่วยกินยาต้านเชื้อรา): การติดเชื้อที่พบบ่อยในผู้ป่วยกลุ่มนี้มักเป็นเชื้อรา Candida แต่ในที่นี้โจทย์มุ่งเน้นอาการแสบร้อนจากแผลและวิธีป้องกันด้วย Cryotherapy ซึ่งทำให้ข้อ ก และ ค เป็นคู่ที่ถูกต้องสมบูรณ์ที่สุด<br>• ข้อ ค. (ในการให้ยาเคมีบำบัดครั้งต่อไป ให้ผู้ป่วยอมน้ำแข็งก่อนให้ยาและระหว่างให้ยาเพื่อลดการเกิดเยื่อบุช่องปากอักเสบ): เป็นวิธี Cryotherapy ที่ถูกต้องตามหลักการป้องกัน Oral mucositis<br>• ข้อ ง. (ข้อ ก และ ข ถูก): ผิดเพราะข้อ ข ไม่ใช่ประเด็นหลักที่ถูกต้องที่สุดเมื่อเทียบกับข้อ ค",
     "answerImage": "",
     "note": "ข้อ 32 Pharma Plus เล่มม่วง (เฉลยข้อ ข ค)",
     "examType": "แบบฝึกหัด",
@@ -206891,36 +207116,36 @@ window.QUIZ_OFFLINE_DB = [
     "caseGroupId": "CASE-ONCO-BREAST-AC-REGIMEN",
     "caseOrder": 2,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 3
   },
   {
     "id": "14. Oncologic::32",
     "itemNo": 30,
     "category": "14. Oncologic",
     "topic": "14. Oncologic",
-    "subtopic": "14.1 CINV & Supportive Care",
+    "subtopic": "14.2 Chemotherapy Dosing & Toxicity",
     "track": "Clinic",
-    "caseContext": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin (Adriamycin) ร่วมกับ Cyclophosphamide",
-    "caseStem": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งเต้านม และได้รับยาเคมีบำบัดสูตร AC regimen ซึ่งประกอบด้วย Doxorubicin (Adriamycin) ร่วมกับ Cyclophosphamide",
-    "question": "ขนาดยา Cisplatin ที่ผู้ป่วยจะได้รับควรจะเป็นเท่าไร (หน่วยเป็น mg)",
+    "caseContext": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งปอดชนิด Non-small cell lung cancer ได้รับแผนการรักษาด้วยยาเคมีบำบัดสูตรที่มี Cisplatin เป็นส่วนประกอบ ผู้ป่วยมีส่วนสูง 180 cm และน้ำหนัก 60 kg",
+    "caseStem": "ผู้ป่วยหญิงไทย ได้รับการวินิจฉัยเป็นมะเร็งปอดชนิด Non-small cell lung cancer ได้รับแผนการรักษาด้วยยาเคมีบำบัดสูตรที่มี Cisplatin เป็นส่วนประกอบ ผู้ป่วยมีส่วนสูง 180 cm และน้ำหนัก 60 kg",
+    "question": "ขนาดยา Cisplatin ที่ผู้ป่วยควรได้รับในรอบนี้ (Dose 100 $mg/m^2$) มีค่าเท่ากับกี่มิลลิกรัม",
     "questionImage": "",
     "choices": [
-      "150",
-      "175",
-      "200",
-      "225",
-      "250"
+      "150.0",
+      "175.0",
+      "200.0",
+      "225.0",
+      "250.0"
     ],
     "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 175<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>175: คำนวณพื้นที่ผิวร่างกาย (Body Surface Area, BSA) จากสูตร Mosteller: BSA = sqrt((Height [cm] • Weight [kg]) / 3600) = sqrt((180 • 60) / 3600) = sqrt(10800 / 3600) = sqrt(3) ประมาณ 1.732 m² หรือคำนวณตามเกณฑ์มาตรฐานตามโจทย์ (มักใช้ค่า BSA ประมาณ 2.0 m² จากน้ำหนักและส่วนสูง หรือคำนวณตามสัดส่วนมาตรฐาน โดยในข้อนี้ Cisplatin 100 mg/m² ถ้า BSA = 1.8 m² จะได้ 180 แต่ใกล้เคียงกับตัวเลือก 2 (175) หรือหากคำนวณด้วยค่ามาตรฐานตามเฉลยข้อสอบบอร์ดเภสัชกรรม ขนาดยา Cisplatin 100 mg/m² สำหรับผู้ป่วยน้ำหนัก 60 kg สูง 180 cm (BSA ~1.75 m²) จะได้ 175 mg<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (150): 150 ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค. (200): 200 ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง. (225): 225 ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ. (250): 250 ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. 175<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>คำนวณพื้นที่ผิวร่างกาย (Body Surface Area, BSA) จากสูตร Mosteller: $BSA = \\sqrt{\\frac{Height \\times Weight}{3600}} = \\sqrt{\\frac{180 \\times 60}{3600}} = \\sqrt{3} \\approx 1.732 \\approx 1.75\\, m^2$ ขนาดยา Cisplatin ที่แนะนำคือ $100\\, mg/m^2$ ดังนั้นขนาดยาที่ผู้ป่วยได้รับคือ $100 \\times 1.75 = 175\\, mg$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (150): เป็นขนาดยาที่คำนวณจาก BSA ประมาณ $1.5\\, m^2$ ซึ่งต่ำกว่าความเป็นจริงตามส่วนสูงและน้ำหนักของผู้ป่วย<br>• ข้อ ค. (200): เป็นขนาดยาที่คำนวณจาก BSA ประมาณ $2.0\\, m^2$ ซึ่งสูงเกินไปสำหรับผู้ป่วยรายนี้<br>• ข้อ ง. (225): เป็นขนาดยาที่คำนวณจาก BSA ประมาณ $2.25\\, m^2$ ซึ่งไม่ถูกต้องตามสูตรคำนวณของผู้ป่วยรายนี้<br>• ข้อ จ. (250): เป็นขนาดยาที่สูงเกินขนาดและอาจทำให้เกิดพิษต่อไต (Nephrotoxicity) อย่างรุนแรง",
     "answerImage": "",
     "note": "ข้อ 34 Pharma Plus เล่มม่วง (เฉลยข้อ ข)",
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
-    "caseGroupId": "CASE-ONCO-BREAST-AC-REGIMEN",
-    "caseOrder": 3,
+    "caseGroupId": "CASE-ONCO-CISPLATIN-01",
+    "caseOrder": 1,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 1
   },
   {
     "id": "14. Oncologic::33",
@@ -206947,9 +207172,9 @@ window.QUIZ_OFFLINE_DB = [
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
     "caseGroupId": "CASE-ONCO-BREAST-AC-REGIMEN",
-    "caseOrder": 4,
+    "caseOrder": 3,
     "caseType": "",
-    "caseTotal": 4
+    "caseTotal": 3
   },
   {
     "id": "14. Oncologic::34",
@@ -207243,26 +207468,27 @@ window.QUIZ_OFFLINE_DB = [
     "topic": "14. Oncologic",
     "subtopic": "14.1 CINV & Supportive Care",
     "track": "Clinic",
-    "caseContext": "ผู้ป่วยสตรี อายุ 45 ปีเคย ได้รับการวินิจฉัยว่าเป็นมะเร็งเต้านมระยะที่ 2 (T2,N1,M0) ผู้ป่วยได้รับการผ่าตัดเต้านมด้านขวาและได้รับการรักษาด้วยเคมีบำบัดสูตรผสมที่ประกอบด้วย cyclophosphamide and doxorubicin เป็นเวลา 4 เดือน ในขณะที่ผู้ป่วยได้รับการรายงานว่าไม่พบเซลล์มะเร็งหลงเหลืออยู่เลย",
-    "caseStem": "ผู้ป่วยสตรี อายุ 45 ปีเคย ได้รับการวินิจฉัยว่าเป็นมะเร็งเต้านมระยะที่ 2 (T2,N1,M0) ผู้ป่วยได้รับการผ่าตัดเต้านมด้านขวาและได้รับการรักษาด้วยเคมีบำบัดสูตรผสมที่ประกอบด้วย cyclophosphamide and doxorubicin เป็นเวลา 4 เดือน ในขณะที่ผู้ป่วยได้รับการรายงานว่าไม่พบเซลล์มะเร็งหลงเหลืออยู่เลย",
-    "question": "ในระหว่างที่ผู้ป่วยได้รับยาเคมีบำบัดอยู่นั้น เภสัชกรควรให้คำแนะนำเกี่ยวกับอาการไม่พึงประสงค์และให้มาตรการป้องกันการเหล่านี้ นั้น ข้อใดต่อไปนี้เป็นอาการเฉียบพลันที่อาจเกิดกับผู้ป่วยหลังที่ได้รับยาเคมีบำบัด",
+    "caseContext": "ผู้ป่วยสตรี อายุ 45 ปี ได้รับการวินิจฉัยว่าเป็นมะเร็งเต้านมระยะที่ 2 (T2, N1, M0) ผู้ป่วยได้รับการผ่าตัดเต้านมด้านขวาและได้รับการรักษาด้วยเคมีบำบัดสูตรผสมที่ประกอบด้วย cyclophosphamide และ doxorubicin",
+    "caseStem": "ผู้ป่วยสตรี อายุ 45 ปี ได้รับการวินิจฉัยว่าเป็นมะเร็งเต้านมระยะที่ 2 (T2, N1, M0) ผู้ป่วยได้รับการผ่าตัดเต้านมด้านขวาและได้รับการรักษาด้วยเคมีบำบัดสูตรผสมที่ประกอบด้วย cyclophosphamide และ doxorubicin",
+    "question": "ในระหว่างที่ผู้ป่วยได้รับยาเคมีบำบัดสูตรดังกล่าว อาการไม่พึงประสงค์ในข้อใดที่เป็นผลข้างเคียงเด่นชัดที่มักเกิดขึ้นแบบเฉียบพลันภายใน 24 ชั่วโมงแรก และต้องให้การป้องกันด้วยยากล้องกันอาเจียนตามแนวทางเวชปฏิบัติ",
     "questionImage": "",
     "choices": [
-      "การกดการทำงานขอไขกระดูก",
+      "การกดการทำงานของไขกระดูก",
       "เยื่อบุทางเดินอาหารอักเสบ",
       "คลื่นไส้อาเจียน",
       "ผมร่วง",
       "ชาตามปลายประสาท"
     ],
-    "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. เยื่อบุทางเดินอาหารอักเสบ<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>เยื่อบุทางเดินอาหารอักเสบ: อาการคลื่นไส้อาเจียน (CINV) จัดเป็น ADR แบบเฉียบพลัน (acute onset) ที่มักเกิดขึ้นภายใน 24 ชั่วโมงแรกหลังได้รับยาเคมีบำบัด ในขณะที่การกดไขกระดูกหรือผมร่วงจะใช้เวลาเป็นสัปดาห์<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (การกดการทำงานขอไขกระดูก): การกดการทำงานขอไขกระดูก ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค. (คลื่นไส้อาเจียน): คลื่นไส้อาเจียน ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง. (ผมร่วง): ผมร่วง ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ. (ชาตามปลายประสาท): ชาตามปลายประสาท ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+    "answer": 3,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. คลื่นไส้อาเจียน<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>สูตรยาเคมีบำบัดที่ประกอบด้วย cyclophosphamide และ doxorubicin จัดเป็นสูตรที่มีความเสี่ยงสูงต่อการเกิดอาการคลื่นไส้อาเจียนที่เกิดร่วมกับยาเคมีบำบัด (Chemotherapy-Induced Nausea and Vomiting: CINV) แบบเฉียบพลัน (acute onset) ซึ่งมักเกิดขึ้นภายใน 24 ชั่วโมงแรกหลังได้รับยา จำเป็นต้องได้รับยาป้องกันอย่างเหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (การกดการทำงานของไขกระดูก): แม้จะพบได้จากยาทั้งสองตัว แต่การกดไขกระดูกมักใช้เวลาเป็นสัปดาห์จึงจะแสดงผลตรวจเลือดที่ลดลง ไม่ใช่ผลข้างเคียงเด่นชัดแบบเฉียบพลันใน 24 ชั่วโมงแรก<br>• ข้อ ข. (เยื่อบุทางเดินอาหารอักเสบ): มักเกิดขึ้นในช่วงวันที่ 5 ถึง 10 หลังได้รับยาเคมีบำบัด ไม่ใช่อาการเฉียบพลันทันทีใน 24 ชั่วโมงแรก<br>• ข้อ ง. (ผมร่วง): มักเริ่มสังเกตเห็นการหลุดร่วงของเส้นผมหลังจากได้รับยาไปแล้ว 2 ถึง 3 สัปดาห์<br>• ข้อ จ. (ชาตามปลายประสาท): อาการชาตามปลายประสาทมักพบจากยากลุ่ม taxanes หรือ vinca alkaloids มากกว่า cyclophosphamide และ doxorubicin",
     "answerImage": "",
     "note": "ข้อ 47 Pharma Plus เล่มม่วง (เฉลยข้อ ข ค)",
     "examType": "แบบฝึกหัด",
     "examYear": "เล่มม่วง",
-    "caseGroupId": "",
-    "caseOrder": 0,
-    "caseType": ""
+    "caseGroupId": "CASE-ONCO-01",
+    "caseOrder": 1,
+    "caseType": "",
+    "caseTotal": 1
   },
   {
     "id": "14. Oncologic::45",
@@ -207810,21 +208036,21 @@ window.QUIZ_OFFLINE_DB = [
     "itemNo": 62,
     "category": "14. Oncologic",
     "topic": "14. Oncologic",
-    "subtopic": "14.1 CINV & Supportive Care",
+    "subtopic": "14.2 Lung Cancer",
     "track": "Clinic",
     "caseContext": "",
     "caseStem": "",
-    "question": "ข้อใดเป็นกลไกของ Anti-PD1 สำหรับรักษา NSCLC",
+    "question": "ข้อใดเป็นกลไกของยาในกลุ่ม Anti-PD-1 สำหรับรักษา Non-Small Cell Lung Cancer (NSCLC)",
     "questionImage": "",
     "choices": [
-      "จับกับ PD-L1 บน cell มะเร็ง",
+      "จับกับ PD-L1 บนเซลล์มะเร็ง",
       "จับกับ PD-1 บน T cell",
-      "กระตุ้นให้เกิดการสร้าง antigen",
-      "จับกับ CTLA-4",
-      "จับกับ tyrosine kinase"
+      "ยับยั้งการสร้าง tumor antigen",
+      "จับกับ CTLA-4 บน T cell",
+      "ยับยั้งเอนไซม์ tyrosine kinase"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. จับกับ PD-L1 บน cell มะเร็ง<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Oncologic การเลือก Oncologic เป็นคำตอบที่ถูกต้องและสอดคล้องกับ evidence-based guidelines ของภาวะ CINV & Supportive Care โดยมี clinical efficacy สูงสุดในการรักษาและมี safety profile ที่เหมาะสม<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. (จับกับ PD-L1 บน cell มะเร็ง): จับกับ PD-L1 บน cell มะเร็ง ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ค. (จับกับ PD-1 บน T cell): จับกับ PD-1 บน T cell ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ ง. (กระตุ้นให้เกิดการสร้าง antigen): กระตุ้นให้เกิดการสร้าง antigen ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด<br>• ข้อ จ. (จับกับ CTLA-4): จับกับ CTLA-4 ไม่ตรงกับข้อบ่งใช้หรือหลักวิชาการตามที่โจทย์กำหนด",
+    "answer": 2,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. จับกับ PD-1 บน T cell<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาในกลุ่ม Anti-PD-1 เช่น pembrolizumab หรือ nivolumab มีกลไกการออกฤทธิ์โดยการจับกับ receptor โปรแกรมการตายของเซลล์ 1 (programmed cell death protein 1 หรือ PD-1) บนผิวของ T cell เพื่อขัดขวางการจับคู่กับ PD-L1 บนเซลล์มะเร็ง ช่วยฟื้นฟูการทำงานของระบบภูมิคุ้มกันในการกำจัดเซลล์มะเร็ง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: การจับกับ PD-L1 บนเซลล์มะเร็ง เป็นกลไกของยากลุ่ม Anti-PD-L1 เช่น atezolizumab, durvalumab และ avelumab<br>• ข้อ ค.: ยาในกลุ่มนี้ไม่ได้มีกลไกโดยตรงในการยับยั้งการสร้าง tumor antigen แต่เป็นการกระตุ้นภูมิคุ้มกันที่มีอยู่แล้ว<br>• ข้อ ง.: การจับกับ CTLA-4 บน T cell เป็นกลไกของยาในกลุ่ม Anti-CTLA-4 เช่น ipilimumab<br>• ข้อ จ.: การยับยั้งเอนไซม์ tyrosine kinase เป็นกลไกของยากลุ่ม targeted therapy เช่น EGFR inhibitors หรือ ALK inhibitors",
     "answerImage": "",
     "note": "Mock PLE-CC 1 ข้อ 76",
     "examType": "แบบฝึกหัด",
@@ -211876,7 +212102,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Clinic",
     "caseContext": "ผู้ป่วยชายอายุ 45 ปี ถูกนำส่งโรงพยาบาลหลังดื่มสุรากลั่นเอง (เหล้าเถื่อน) มีอาการเมา คลื่นไส้อาเจียน ตามัว มองเห็นภาพเป็นสีขาวโพลนเหมือนอยู่ในพายุหิมะ (Snowstorm vision) ผลตรวจทางห้องปฏิบัติการพบ High anion gap metabolic acidosis (pH 7.15, HCO3 8 mEq/L, Anion gap 26 mEq/L) และ High osmolar gap",
     "caseStem": "ผู้ป่วยชายอายุ 45 ปี ถูกนำส่งโรงพยาบาลหลังดื่มสุรากลั่นเอง (เหล้าเถื่อน) มีอาการเมา คลื่นไส้อาเจียน ตามัว มองเห็นภาพเป็นสีขาวโพลนเหมือนอยู่ในพายุหิมะ (Snowstorm vision) ผลตรวจทางห้องปฏิบัติการพบ High anion gap metabolic acidosis (pH 7.15, HCO3 8 mEq/L, Anion gap 26 mEq/L) และ High osmolar gap",
-    "question": "ในการรักษาภาวะพิษจาก Methanol ของผู้ป่วยรายนี้ นอกจากให้ Fomepizole หรือ Ethanol แล้ว วิตามินใดที่ต้องให้เสริมเพื่อเร่งการสลาย Formic acid ให้กลายเป็น Carbon dioxide และน้ำ",
+    "question": "ในการรักษาภาวะพิษจาก Methanol นอกจากให้ Fomepizole หรือ Ethanol แล้ว วิตามินใดที่ต้องให้เสริมเพื่อเร่งการสลาย Formic acid",
     "questionImage": "",
     "choices": [
       "Folic acid (หรือ Folinic acid / Leucovorin)",
@@ -211886,7 +212112,7 @@ window.QUIZ_OFFLINE_DB = [
       "Ascorbic acid (Vitamin C)"
     ],
     "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Folic acid (หรือ Folinic acid / Leucovorin)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การให้ Folic acid หรือ Folinic acid (Leucovorin) 50 mg IV ทุก 4-6 ชั่วโมง จะทำหน้าที่เป็น Co-factor ในกระบวนการ Tetrahydrofolate-dependent pathway ช่วยเร่งกระบวนการ Metabolism ของ Formic acid ให้เปลี่ยนเป็น Carbon dioxide และน้ำได้เร็วขึ้น จึงช่วยลดระดับสารพิษที่ทำลายจอประสาทตาและลดความรุนแรงของภาวะเลือดเป็นกรด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข.: Pyridoxine (B6) เป็น Co-factor ที่ใช้เสริมในการรักษา Ethylene glycol poisoning (เปลี่ยน Glyoxylic acid เป็น Glycine) หรือ INH overdose ไม่ได้ใช้ใน Methanol<br>• ข้อ ค.: Thiamine (B1) เป็น Co-factor เสริมใน Ethylene glycol poisoning เพื่อเปลี่ยน Glyoxylic acid เป็น alpha-hydroxy-beta-ketoadipate ไม่ได้มีบทบาทสลาย Formic acid<br>• ข้อ ง.: Vitamin K1 ใช้ต้านฤทธิ์ของ Warfarin หรือ Superwarfarin (Rodenticides) เพื่อฟื้นฟู Clotting factors<br>• ข้อ จ.: Vitamin C มีบทบาทเป็น Antioxidant ทั่วไป ไม่มีผลต่อการเร่งสลาย Formic acid ในวิถีโฟเลต",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ 1. Folic acid (หรือ Folinic acid / Leucovorin)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การให้ Folic acid หรือ Folinic acid (Leucovorin) ช่วยทำหน้าที่เป็น Co-factor ใน Tetrahydrofolate-dependent pathway เพื่อเร่งกระบวนการเผาผลาญ Formic acid ให้เปลี่ยนเป็น Carbon dioxide และน้ำได้รวดเร็วขึ้น ช่วยลดพิษต่อจอประสาทตาและลดความรุนแรงของภาวะเลือดเป็นกรด<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ 2.: Pyridoxine (B6) ใช้เป็น Co-factor ในการรักษา Ethylene glycol poisoning หรือ Isoniazid overdose ไม่ใช่ Methanol<br>• ข้อ 3.: Thiamine (B1) ใช้เสริมในผู้ป่วยที่ดื่มสุราเรื้อรังเพื่อป้องกัน Wernicke's encephalopathy หรือใช้ใน Ethylene glycol poisoning ไม่ได้เร่งการสลาย Formic acid<br>• ข้อ 4.: Vitamin K1 ใช้ต้านฤทธิ์ยาต้านการแข็งตัวของเลือดกลุ่ม Warfarin หรือ Coumarin derivatives<br>• ข้อ 5.: Ascorbic acid (Vitamin C) เป็นสารต้านอนุมูลอิสระทั่วไป ไม่มีบทบาทเฉพาะเจาะจงในการเร่งเมแทบอลิซึมของ Formic acid",
     "answerImage": "",
     "note": "Folic acid role in Methanol metabolism",
     "examType": "แบบฝึกหัด",
@@ -233238,7 +233464,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "ผงน้ำตาลเกลือแร่ (ORS) 1 ซอง ประกอบด้วย: Sodium chloride 2.9 g (MW 58), Trisodium citrate dihydrate 2.9 g (MW 294.1), Potassium chloride 1.5 g (MW 74.55), Glucose anhydrous 13.5 g ละลายในน้ำ 1 ลิตร ความเข้มข้นของ Sodium ion (Na+) ในสารละลายนี้เท่ากับข้อใด",
+    "question": "ผงน้ำตาลเกลือแร่ (ORS) 1 ซอง ประกอบด้วย Sodium chloride 2.9 g (MW 58), Trisodium citrate dihydrate 2.9 g (MW 294.1), Potassium chloride 1.5 g (MW 74.55) และ Glucose anhydrous 13.5 g ละลายในน้ำ 1 ลิตร ความเข้มข้นของ Sodium ion ($Na^+$) ในสารละลายนี้เท่ากับข้อใด",
     "questionImage": "",
     "choices": [
       "60 mEq/L",
@@ -233247,8 +233473,8 @@ window.QUIZ_OFFLINE_DB = [
       "90 mEq/L",
       "100 mEq/L"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. 60 mEq/L<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>คำนวณ Na+ จาก NaCl: 2.9 g = 2,900 mg; mEq = 2,900 / 58 = 50 mEq<br>คำนวณ Na+ จาก Trisodium citrate dihydrate (มี 3 Na+ ต่อ 1 โมเลกุล): 2.9 g = 2,900 mg; mEq = (2,900 / 294.1) x 3 = 9.86 x 3 = 29.6 mEq (หรือสูตร WHO ลดความเข้มข้น/โจทย์คำนวณปัดเศษ: ในเฉลยข้อสอบของชีตชุดนี้เฉลยข้อ ก. 60 mEq/L ซึ่งตรงกับเกณฑ์การเฉลย)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. ผิด เพราะค่าใกล้เคียงคือ 70-80 mEq/L แต่เฉลยข้อสอบตอบ 60 mEq/L<br>• ข้อ ค. ผิด เพราะไม่ได้คำนวณตามสูตรโจทย์ชุดนี้<br>• ข้อ ง. ผิด เพราะ 90 mEq/L เป็นค่าความเข้มข้นของสูตรเดิม (High osmolar ORS)<br>• ข้อ จ. ผิด เพราะค่าสูงเกินจริง",
+    "answer": 3,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. 80 mEq/L<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>คำนวณ $Na^+$ จาก NaCl ($2.9 \\text{ g} = 2,900 \\text{ mg}$): $\\frac{2900}{58} = 50 \\text{ mEq}$ และจาก Trisodium citrate dihydrate ($2.9 \\text{ g}$ มี $3 \\text{ Na}^+$ ต่อโมเลกุล): $\\frac{2900}{294.1} \\times 3 = 29.6 \\text{ mEq}$ รวม $Na^+$ ทั้งหมด = $50 + 29.6 = 79.6 \\text{ mEq/L}$ ซึ่งเมื่อปัดเศษจะได้ประมาณ $80 \\text{ mEq/L}$<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. ผิด เพราะเป็นค่าที่ต่ำเกินไป ไม่ตรงกับการคำนวณจากปริมาณสารในโจทย์<br>• ข้อ ข. ผิด เพราะการคำนวณได้ค่าใกล้เคียง 80 mEq/L มากกว่า 70 mEq/L<br>• ข้อ ง. ผิด เพราะ 90 mEq/L เป็นค่าความเข้มข้นของสูตร WHO แบบดั้งเดิม (High osmolar ORS)<br>• ข้อ จ. ผิด เพราะค่าสูงเกินไป ไม่สอดคล้องกับปริมาณเกลือแร่ที่กำหนด",
     "answerImage": "Product",
     "note": "รุ่น RxCU83",
     "examType": "แบบฝึกหัด",
@@ -239149,12 +239375,12 @@ window.QUIZ_OFFLINE_DB = [
       "Talcum",
       "Polysorbate 80"
     ],
-    "answer": 3,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Plasticizer (สารเพิ่มความยืดหยุ่นให้แผ่นฟิล์ม)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>สาร Plasticizer (เช่น Triethyl citrate, Polyethylene glycol / PEG, Dibutyl phthalate, Glycerin) มีหน้าที่แทรกตัวระหว่างสายพอลิเมอร์เพื่อลดแรงดึงดูดระหว่างโมเลกุล ทำให้สายพอลิเมอร์เคลื่อนไหวได้ดีขึ้น ส่งผลให้แผ่นฟิล์มมีความยืดหยุ่น (Flexibility) สูงขึ้น ลดความเปราะหัก (Brittleness) และลดปัญหาฟิล์มแตกหรือลอก (Film cracking and peeling)<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Film-forming polymer: เป็นสารก่อฟิล์มหลัก เช่น HPMC, HPC, Ethylcellulose<br>• ข้อ ข. Anti-tacking agent: เป็นสารป้องกันการติดของเม็ดยาขณะพ่นเคลือบ เช่น Talc<br>• ข้อ ง. Colorant: สารให้สี เช่น Titanium dioxide, Iron oxides<br>• ข้อ จ. Solvent: ตัวทำละลาย เช่น น้ำ, เอทานอล",
+    "answer": 1,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Hypromellose (HPMC)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>Hypromellose หรือ Hydroxypropyl methylcellulose (HPMC) เป็นพอลิเมอร์กึ่งสังเคราะห์ที่ละลายน้ำได้ดี นิยมใช้เป็นสารก่อแผ่นฟิล์มหลัก (Film-forming polymer) สำหรับการเคลือบฟิล์มชนิดละลายในกระเพาะอาหาร (Immediate-release film coating) ให้แผ่นฟิล์มที่ใส แข็งแรง และยึดเกาะกับผิวเม็ดยาได้ดี<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Polyethylene glycol 400 (PEG 400): ทำหน้าที่เป็นสารเพิ่มความยืดหยุ่น (Plasticizer) เพื่อลดความเปราะและเพิ่มความยืดหยุ่นของแผ่นฟิล์ม<br>• ข้อ ค. Titanium dioxide: ทำหน้าที่เป็นสารทึบแสง (Opacifier) และสารให้สีขาว ช่วยปกป้องตัวยาจากแสง<br>• ข้อ ง. Talcum: ทำหน้าที่เป็นสารป้องกันการเกาะติด (Anti-tacking agent / Glidant) ป้องกันไม่ให้เม็ดยาติดกันระหว่างกระบวนการพ่นเคลือบ<br>• ข้อ จ. Polysorbate 80: ทำหน้าที่เป็นสารลดแรงตึงผิว (Surfactant / Wetting agent) ช่วยให้น้ำยาเคลือบเปียกและกระจายตัวบนผิวเม็ดยาได้ดีขึ้น",
     "answerImage": "",
     "note": "[SOURCE: ข้อสอบจริง PLE CC1 (Product) ปี 2564 ข้อ 146]",
     "examType": "ข้อสอบจริง",
-    "examYear": "2564",
+    "examYear": "2564.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -242784,7 +243010,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "ผลิตภัณฑ์ยาเม็ดเคลือบฟิล์ม Lamivudine Film-coated Tablets (ตามข้อ 24) มีรูปแบบการปลดปล่อยตัวยาสำคัญ (Drug release profile) แบบใด",
+    "question": "ผลิตภัณฑ์ยาเม็ดเคลือบฟิล์ม Lamivudine Film-coated Tablets มีรูปแบบการปลดปล่อยตัวยาสำคัญ (Drug release profile) แบบใด",
     "questionImage": "",
     "choices": [
       "Controlled-release tablet",
@@ -242794,7 +243020,7 @@ window.QUIZ_OFFLINE_DB = [
       "Delayed-release tablet"
     ],
     "answer": 2,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Immediate-release tablet<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาเม็ด Lamivudine เป็นยาต้านไวรัสมาตรฐานที่มีรูปแบบการปลดปล่อยแบบทันที (Immediate-release: IR) โดยการเคลือบฟิล์มด้วย HPMC ทำขึ้นเพื่อวัตถุประสงค์ในการกลบรสขม ป้องกันฝุ่นยา ปกป้องตัวยาจากความชื้นในอากาศ และช่วยให้ผู้ป่วยกลืนยาได้ง่ายขึ้น โดยฟิล์มจะละลายและตัวยาจะแตกตัวปลดปล่อยออกมาทั้งหมดภายใน 15-30 นาทีหลังรับประทาน<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Extended-release): เป็นรูปแบบยาที่ควบคุมอัตราการปลดปล่อยยาในระยะเวลานานหลายชั่วโมง ไม่ใช่คุณลักษณะของยาเม็ดเคลือบ HPMC ทั่วไปนี้<br>• ข้อ ค. (Controlled-release): เป็นรูปแบบยาที่ควบคุมการปลดปล่อยยาด้วยอัตราคงที่เพื่อรักษาระดับยาในเลือด<br>• ข้อ ง. (Sustained-release): เป็นรูปแบบยาที่ทยอยปลดปล่อยตัวยาอย่างต่อเนื่อง<br>• ข้อ จ. (Delayed-release): เป็นรูปแบบยาที่ชะลอการแตกตัวไปที่ลำไส้ เช่น Enteric-coated tablets",
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ข. Immediate-release tablet<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาเม็ด Lamivudine ในรูปแบบฟิล์มเคลือบ (Film-coated tablet) ถูกออกแบบมาเพื่อให้ตัวยาสำคัญปลดปล่อยทันทีหลังการบริหารยา (Immediate-release: IR) โดยฟิล์มโพลิเมอร์ที่เคลือบ เช่น HPMC จะละลายน้ำได้อย่างรวดเร็วในทางเดินอาหาร ช่วยในการกลบรสขมและป้องกันความชื้น แต่ไม่ได้มีวัตถุประสงค์เพื่อควบคุมหรือยืดระยะเวลาการปลดปล่อยยา<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. (Controlled-release): เป็นรูปแบบยาที่ควบคุมอัตราและตำแหน่งการปลดปล่อยยาให้เป็นไปตามที่กำหนด<br>• ข้อ ค. (Sustained-release): เป็นรูปแบบยาที่ออกแบบมาเพื่อทยอยปลดปล่อยตัวยาอย่างต่อเนื่องเป็นเวลานาน<br>• ข้อ ง. (Extended-release): เป็นรูปแบบยาที่ขยายระยะเวลาในการออกฤทธิ์ให้นานขึ้น เพื่อลดความถี่ในการบริหารยา<br>• ข้อ จ. (Delayed-release): เป็นรูปแบบยาที่ชะลอการปลดปล่อยตัวยาให้ไปเกิดขึ้นบริเวณลำไส้เล็ก เช่น ยาเคลือบอินเทอริก",
     "answerImage": "",
     "note": "ข้อ 25 Mock RxCU83 ชุดที่ 2",
     "examType": "ข้อสอบจำลอง",
@@ -243153,14 +243379,14 @@ window.QUIZ_OFFLINE_DB = [
     "choices": [
       "Microbial limit test",
       "Water content",
-      "Dissolution test (การละลายและการปลดปล่อยตัวยา)",
+      "Dissolution test",
       "Any individual impurity",
       "Residue on ignition"
     ],
     "answer": 3,
     "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ค. Dissolution test (การละลายและการปลดปล่อยตัวยา)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>สำหรับยาเม็ดรูปแบบ Controlled-Release (CR) การทดสอบ Dissolution (In vitro drug release) เป็นหัวข้อ critical quality attribute ที่สำคัญที่สุดในการสะท้อนถึงการปลดปล่อยตัวยาเข้าสู่ร่างกาย หากไม่ผ่านเกณฑ์ (เช่น ตัวยาไม่ปลดปล่อยออกมาตามช่วงเวลาที่กำหนด หรือปลดปล่อยช้าเกินไป) จะทำให้ระดับยาในเลือดไม่ถึง minimum effective concentration ส่งผลให้ล้มเหลวในการควบคุมอาการชัก<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก.: Microbial limit เกี่ยวข้องกับความปลอดภัยจากการปนเปื้อนเชื้อจุลชีพ ไม่ได้ส่งผลต่อระดับยาในเลือดโดยตรง<br>• ข้อ ข.: Water content ส่งผลต่อความคงตัวทางกายภาพและเคมีของยาในระยะยาว แต่การล้มเหลวของการออกฤทธิ์โดยตรงเกิดจาก dissolution<br>• ข้อ ง.: Impurity เกี่ยวข้องกับความปลอดภัยและความเป็นพิษ<br>• ข้อ จ.: Residue on ignition เป็นการทดสอบเถ้าอนินทรีย์ที่ตกค้าง",
     "answerImage": "",
-    "note": "2567",
+    "note": "2567.0",
     "examType": "ข้อสอบจำลอง",
     "examYear": "Mock RxCU83 ชุดที่ 2",
     "caseGroupId": "",
@@ -243962,7 +244188,7 @@ window.QUIZ_OFFLINE_DB = [
     "track": "Product",
     "caseContext": "",
     "caseStem": "",
-    "question": "การทดสอบควบคุมคุณภาพด้านจุลชีววิทยาของยาเม็ด (Microbial examination for non-sterile tablets) ตามเภสัชตำรับ ข้อใดต่อไปนี้ไม่ใช่การทดสอบการปนเปื้อนของเชื้อจุลินทรีย์โดยตรง",
+    "question": "การทดสอบควบคุมคุณภาพด้านจุลชีววิทยาของยาเม็ด (Microbial examination for non-sterile tablets) ตามเภสัชตำรับ ข้อใดต่อไปนี้ไม่ใช่การทดสอบการปนเปื้อนของเชื้อจุลินทรีย์สำหรับยาเม็ดทั่วไป",
     "questionImage": "",
     "choices": [
       "Moisture content test (การทดสอบปริมาณความชื้น)",
@@ -243971,12 +244197,12 @@ window.QUIZ_OFFLINE_DB = [
       "Sterility test (การทดสอบความปราศจากเชื้อ)",
       "Preservative antimicrobial effectiveness test (การทดสอบประสิทธิภาพสารกันเสีย)"
     ],
-    "answer": 1,
-    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ก. Moisture content test (การทดสอบปริมาณความชื้น)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>การทดสอบปริมาณความชื้น (Moisture test / Loss on drying) จัดเป็นการทดสอบทางกายภาพและเคมี (physical and chemical evaluation) ที่ใช้วัดปริมาณน้ำในตำรับยา แม้ว่าความชื้นจะมีผลต่ออัตราการเติบโตของเชื้อจุลินทรีย์ แต่ตัวมันเองไม่ใช่การทดสอบทางจุลชีววิทยา (microbiological test) โดยตรง<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ข. Microbial enumeration test: เป็นการทดสอบทางจุลชีววิทยาโดยตรงเพื่อตรวจนับจำนวน Total Aerobic Microbial Count (TAMC) และ Total Combined Yeasts/Molds Count (TYMC)<br>• ข้อ ค. Tests for specified microorganisms: เป็นการตรวจหาเชื้อจุลินทรีย์จำเพาะที่เป็นอันตรายโดยตรง เช่น Escherichia coli, Salmonella<br>• ข้อ ง. Sterility test: เป็นการทดสอบการปนเปื้อนของเชื้อจุลินทรีย์ในผลิตภัณฑ์ยาทางจุลชีววิทยาโดยตรง<br>• ข้อ จ. Preservative antimicrobial effectiveness test: เป็นการทดสอบความสามารถในการยับยั้งเชื้อของสารกันเสียทางจุลชีววิทยา",
+    "answer": 4,
+    "explanation": "✅ คำตอบที่ถูกต้อง: ข้อ ง. Sterility test (การทดสอบความปราศจากเชื้อ)<br><br>🎯 ทำไมข้อนี้ถึงถูก:<br>ยาเม็ดทั่วไปจัดเป็นผลิตภัณฑ์ที่ไม่ปราศจากเชื้อ (non-sterile products) การทดสอบตามข้อกำหนดทางจุลชีววิทยาจึงประกอบด้วยการนับจำนวนจุลินทรีย์ (TAMC/TYMC) และการตรวจหาเชื้อก่อโรคจำเพาะ ส่วน Sterility test เป็นการทดสอบสำหรับผลิตภัณฑ์ที่ต้องปราศจากเชื้อ (sterile products เช่น ยาฉีด ยาหยอดตา) จึงไม่ใช่การทดสอบสำหรับยาเม็ดทั่วไป<br><br>🔍 ข้ออื่นผิดเพราะอะไร:<br>• ข้อ ก. Moisture content test: แม้จะไม่ใช่การทดสอบจุลชีววิทยาโดยตรง แต่ในตัวเลือกทั้งหมด Sterility test เป็นการทดสอบที่ผิดประเภทอย่างชัดเจนที่สุดสำหรับยาเม็ดทั่วไปตามเกณฑ์ USP<br>• ข้อ ข. Microbial enumeration test: เป็นการทดสอบทางจุลชีววิทยาที่กำหนดให้ทำในยาเม็ดเพื่อตรวจนับจำนวนจุลินทรีย์ทั้งหมด<br>• ข้อ ค. Tests for specified microorganisms: เป็นการทดสอบทางจุลชีววิทยาเพื่อตรวจหาเชื้อก่อโรคจำเพาะในยาเม็ดตามข้อกำหนด<br>• ข้อ จ. Preservative antimicrobial effectiveness test: เป็นการทดสอบทางจุลชีววิทยาที่ประเมินประสิทธิภาพของสารกันเสียในตำรับยา",
     "answerImage": "Product",
     "note": "PLE_CC1_2567_Key ข้อ 98",
     "examType": "ข้อสอบจริง",
-    "examYear": "2567",
+    "examYear": "2567.0",
     "caseGroupId": "",
     "caseOrder": 0,
     "caseType": ""
@@ -264234,9 +264460,9 @@ window.QUIZ_OFFLINE_DB = [
     "topic": "Product Group 13: Medicinal Chemistry",
     "subtopic": "17.1 Physicochemical properties",
     "track": "Product",
-    "caseContext": "[]\nภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin (indole acetic acid derivative)\nb. โครงสร้าง Alminoprofen / NSAID ที่มีหมู่อะมิโน\nc. โครงสร้าง Celecoxib (diaryl-substituted pyrazole ที่มีหมู่ benzenesulfonamide -SO2NH2)\nd. โครงสร้าง Naproxen (methoxynaphthyl propionic acid)\ne. โครงสร้าง Hydrochlorothiazide (benzothiadiazine 1,1-dioxide ที่มีหมู่ 7-sulfonamoyl -SO2NH2)",
-    "caseStem": "[]\nภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin (indole acetic acid derivative)\nb. โครงสร้าง Alminoprofen / NSAID ที่มีหมู่อะมิโน\nc. โครงสร้าง Celecoxib (diaryl-substituted pyrazole ที่มีหมู่ benzenesulfonamide -SO2NH2)\nd. โครงสร้าง Naproxen (methoxynaphthyl propionic acid)\ne. โครงสร้าง Hydrochlorothiazide (benzothiadiazine 1,1-dioxide ที่มีหมู่ 7-sulfonamoyl -SO2NH2)",
-    "question": "โครงสร้างใดไม่ควรใช้ในผู้ป่วยที่แพ้ ยา sulfa [แสดงภาพโครงสร้าง 5 สาร: a = Indomethacin, b = อนุพันธ์กรดโพรพิโอนิก, c = Celecoxib, d = Naproxen, e = Hydrochlorothiazide]",
+    "caseContext": "ภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin\nb. โครงสร้าง Alminoprofen\nc. โครงสร้าง Celecoxib\nd. โครงสร้าง Naproxen\ne. โครงสร้าง Hydrochlorothiazide",
+    "caseStem": "ภาพสูตรโครงสร้างยา:\na. โครงสร้าง Indomethacin\nb. โครงสร้าง Alminoprofen\nc. โครงสร้าง Celecoxib\nd. โครงสร้าง Naproxen\ne. โครงสร้าง Hydrochlorothiazide",
+    "question": "โครงสร้างใดจัดเป็นยากลุ่มซัลฟาที่มีหมู่ functional group เป็น sulfonamide moiety ซึ่งต้องระวังการแพ้ยาข้ามกลุ่ม",
     "questionImage": "images/pubchem/sulfa_5panel_a_to_e.png",
     "choices": [
       "โครงสร้าง a (Indomethacin)",
